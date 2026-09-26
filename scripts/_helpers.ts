@@ -1,6 +1,9 @@
 import { spawn } from "node:child_process";
 import { createInterface } from "node:readline/promises";
 
+// pick up values saved in the git-ignored .env (e.g. YOUTUBE_CLIENT_ID / YOUTUBE_CLIENT_SECRET)
+try { process.loadEnvFile(".env"); } catch { /* no .env */ }
+
 const rl = createInterface({ input: process.stdin, output: process.stdout });
 
 export async function ask(q: string, envName?: string): Promise<string> {
