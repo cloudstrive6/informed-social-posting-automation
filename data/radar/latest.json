@@ -1,0 +1,699 @@
+{
+  "at": "2026-09-26T03:14:20.563Z",
+  "summary": "Radar snapshot for 26 Sep 2026. This is the first snapshot, so there's no acceleration data yet. Almost everything in the Google Trends feed is sport or entertainment. The only health terms trending were 'adhd' (UK) and 'kratom' (Canada), and neither is backed by a fresh study. The real opportunities came from journals and science news. I checked 14 candidates with web searches.\n\nTop picks for audience fit and earliness:\n(1) BMJ, 23 Sep: pills vs patches for menopause hormone therapy (HRT). Pills raise blood-clot risk at any dose; patches, gels and sprays show no overall increase. Pair it with the Nature Medicine study from 22 Sep on menopause blood proteins and dementia risk to make a strong women's-health package.\n(2) PLOS Medicine, 17 Sep, 95,559 UK Biobank adults: more REM sleep is linked to lower risk of 83 diseases. Mainstream coverage is growing but explainer videos are still few.\n(3) Lancet phase 3 trial REFIT2: fecal transplant failed for IBS. It's a clean contrarian gut-health story that almost no creators have covered.\n(4) NEJM and Nature Medicine: the NHS-Galleri multi-cancer blood test missed its main goal, with an FDA advisory meeting coming.\n(5) Circulation trial DANCODE: vitamin K2 plus D3 slowed the rise in heart calcium scores by 21%. Supplement companies are already hyping it, so a sober 'what it does and doesn't show' video wins.\n\nSeasonal: flu season starts with a new mRNA shot for people 50 and over, and there's a local dengue outbreak in Florida.\n\nSafety: HRT, GLP-1, supplement, peptide and vaccine topics are marked caution. Those scripts must not give dosing or suggest changing medication, and must point viewers to a clinician. No candidate was rejected outright. I left out kratom (no new evidence, high misinformation risk), the smartphone-and-eating-disorder study (would need eating-disorder-safe framing and is a weak fit for a 25–55 audience), and the cychlorphine overdose story (a drug-safety topic we can't cover responsibly).",
+  "candidates": [
+    {
+      "topic": "Oral vs transdermal menopause HRT and blood clots: nationwide BMJ nested case-control study (Sep 23, 2026)",
+      "angle": "'Pill vs patch: the HRT detail almost nobody tells you.' Explain why oral estrogen passes through the liver first and raises clotting factors, while transdermal does not. Walk through what the BMJ found: higher VTE risk with oral use at any dose or duration, no overall increase with patches, gels or sprays, and stroke/MI risk limited to prolonged high-dose oral use. Cover the absolute risk, the limits (observational, no BMI or smoking data), and give a list of questions to ask your doctor. Never suggest switching on your own.",
+      "keywords": [
+        "HRT blood clots",
+        "oral vs patch HRT",
+        "transdermal estrogen blood clot risk",
+        "is HRT safe",
+        "estrogen patch vs pill",
+        "menopause hormone therapy stroke risk",
+        "HRT study 2026"
+      ],
+      "stage": "emerging",
+      "momentum": 82,
+      "predicted_peak": "5–12 days",
+      "why_now": "The BMJ published this on Sep 23. BMJ press release, Healio, News-Medical and Medical Xpress picked it up within 48 hours, but there are few creator explainers so far. HRT is one of the most searched women's-health topics, and the 'form matters' finding is new, useful and easy to share. It pairs with the menopause–dementia Nature Medicine study from the same week.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "PubMed / BMJ",
+          "signal": "Nationwide nested case-control study, published Sep 23, 2026",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42778212/"
+        },
+        {
+          "source": "BMJ Group press release",
+          "signal": "Oral HRT linked to higher VTE risk regardless of dose or duration; transdermal shows no overall increase",
+          "url": "https://bmjgroup.com/oral-menopausal-hormone-therapy-linked-to-higher-blood-clot-risk-in-legs-or-lungs-regardless-of-dose-or-duration/"
+        },
+        {
+          "source": "Healio",
+          "signal": "Clinician-press pickup, Sep 24",
+          "url": "https://www.healio.com/news/endocrinology/20260924/oral-but-not-transdermal-menopausal-ht-may-raise-venous-thromboembolism-risk"
+        },
+        {
+          "source": "Medical Xpress",
+          "signal": "Science-news pickup",
+          "url": "https://medicalxpress.com/news/2026-09-oral-menopausal-hormone-therapy-linked.html"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "More REM sleep linked to lower risk of 83 diseases: 95,559 UK Biobank wearers (PLOS Medicine)",
+      "angle": "'The sleep stage your tracker is quietly scoring.' Explain what REM is, what the accelerometer study found (83 diseases for REM, 7 for deep sleep, 6–8 hours sleep as the sweet spot) and why 'linked to' is not 'causes'. Then cover what actually protects REM: consistent wake time, going easy on alcohol late at night, not cutting the last sleep cycle short. Add a caveat on how accurate consumer wearables are at staging sleep.",
+      "keywords": [
+        "REM sleep benefits",
+        "how to get more REM sleep",
+        "REM sleep 83 diseases",
+        "deep sleep vs REM",
+        "REM sleep study 2026",
+        "how much REM sleep do I need",
+        "sleep tracker REM accuracy"
+      ],
+      "stage": "rising",
+      "momentum": 80,
+      "predicted_peak": "3–7 days",
+      "why_now": "Independent source types are converging: ScienceDaily, US News, Newsweek, Inc., ScienceAlert and Healio all covered it within a week, plus a separate sleep-consistency story (KSNV). Sleep is a top evergreen search topic, and 'track your REM' fits the wearable audience. There's still room before the peak.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "ScienceDaily",
+          "signal": "'More REM sleep linked to lower risk of 83 diseases', Sep 23",
+          "url": "https://www.sciencedaily.com/releases/2026/09/260923035930.htm"
+        },
+        {
+          "source": "US News / HealthDay",
+          "signal": "Mainstream pickup",
+          "url": "https://www.usnews.com/news/health-news/articles/2026-09-18/more-rem-sleep-tied-to-lower-risk-for-83-diseases"
+        },
+        {
+          "source": "Newsweek",
+          "signal": "Mainstream pickup",
+          "url": "https://www.newsweek.com/type-sleep-linked-risk-disease-study-12449293"
+        },
+        {
+          "source": "Healio",
+          "signal": "Sleep patterns may influence 150+ diseases",
+          "url": "https://www.healio.com/news/primary-care/20260923/sleep-patterns-may-influence-over-150-diseases"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "Fecal microbiota transplant fails for IBS in phase 3 REFIT2 trial (The Lancet, Sep 24, 2026)",
+      "angle": "'The poop transplant didn't fix IBS, and that's actually useful news.' Explain why FMT works for C. diff but a large double-blind trial found no benefit over placebo in IBS. Cover what that says about the 'just fix your microbiome' pitch and the IBS treatments with real evidence behind them (low-FODMAP diet, soluble fiber, gut-directed CBT/hypnotherapy, a clinician's work-up). Push back on DIY or at-home FMT.",
+      "keywords": [
+        "fecal transplant IBS",
+        "FMT IBS results",
+        "does FMT work for IBS",
+        "microbiome transplant IBS trial",
+        "IBS treatments that work",
+        "gut microbiome IBS 2026"
+      ],
+      "stage": "emerging",
+      "momentum": 70,
+      "predicted_peak": "7–14 days",
+      "why_now": "The Lancet phase 3 trial came out Sep 24 with an accompanying Lancet commentary on 'interpreting negative findings'. There's almost no mainstream or creator coverage yet. Gut health is a core pillar for the audience, and a well-explained negative result builds trust with hype-skeptical viewers.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "PubMed / The Lancet",
+          "signal": "REFIT2 randomized, double-blind, placebo-controlled phase 3 trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42785338/"
+        },
+        {
+          "source": "The Lancet",
+          "signal": "Abstract: no clinical benefit of FMT in IBS",
+          "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01424-8/abstract"
+        },
+        {
+          "source": "The Lancet commentary",
+          "signal": "'Healthy donor FMT in IBS: interpreting negative findings'",
+          "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01815-5/abstract?rss=yes"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "Menopause leaves a 16-protein blood 'fingerprint' linked to brain aging and dementia risk (Nature Medicine, Sep 22)",
+      "angle": "'Why midlife may be a brain-health window for women.' Explain the UCSF/Toronto proteomics finding (inflammation, metabolic and synaptic proteins, repeated in 4 cohorts) and stress that it does not show menopause causes dementia. Then cover the modifiable levers with good evidence: blood pressure, sleep, exercise, hearing, and treating a first-time hypertensive disorder of pregnancy (there's a JAMA Netw Open link to dementia this month). Can be packaged with the HRT topic.",
+      "keywords": [
+        "menopause dementia risk",
+        "menopause brain fog",
+        "menopause and Alzheimer's",
+        "menopause blood test dementia",
+        "perimenopause brain health",
+        "women dementia risk study 2026"
+      ],
+      "stage": "emerging",
+      "momentum": 72,
+      "predicted_peak": "5–10 days",
+      "why_now": "Nature Medicine, Sep 22. Medical Xpress, Neuroscience News, Newsweek and Contemporary OB/GYN are picking it up, but there's little YouTube coverage. Menopause plus brain health is a fast-growing search space, and a JAMA Netw Open study on hypertensive pregnancy disorders and dementia supports the same angle.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Nature Medicine",
+          "signal": "Blood proteomics of menopause map to brain aging and dementia risk",
+          "url": "https://www.nature.com/articles/s41591-026-04648-4"
+        },
+        {
+          "source": "Medical Xpress",
+          "signal": "'Menopause leaves a fingerprint that may predict dementia risk', Sep 25",
+          "url": "https://medicalxpress.com/news/2026-09-menopause-fingerprint-dementia.html"
+        },
+        {
+          "source": "Neuroscience News",
+          "signal": "Science-news pickup",
+          "url": "https://neurosciencenews.com/molecular-link-between-menopause-and-alzheimers-risk/"
+        },
+        {
+          "source": "PubMed / JAMA Netw Open",
+          "signal": "Hypertensive disorders of pregnancy and incident dementia",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42783371/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "NHS-Galleri multi-cancer blood test misses its main goal in 142,942-person RCT (NEJM + Nature Medicine, Sep 22)",
+      "angle": "'The $949 cancer blood test: what the biggest trial actually showed.' Explain the primary endpoint (no significant drop in stage III–IV cancers), the secondary signals (14% fewer stage IV, more stage I–II), false positives, and why a screening test must reduce deaths, not just find more cancer. Include what to ask before buying one, and why it doesn't replace standard screenings. The FDA advisory meeting is the news peg.",
+      "keywords": [
+        "Galleri test results",
+        "NHS Galleri trial",
+        "multi-cancer early detection test",
+        "is the Galleri test worth it",
+        "cancer blood test 2026",
+        "Galleri FDA"
+      ],
+      "stage": "rising",
+      "momentum": 75,
+      "predicted_peak": "3–10 days (FDA advisory committee news cycle)",
+      "why_now": "Simultaneous NEJM and Nature Medicine publications, a GRAIL press release pushing a positive spin, NEJM's own tweet stressing the negative primary result, and an FDA advisory committee. Consumers are seeing ads for these tests, so a clear 'what it really shows' explainer is valuable and still thin on YouTube.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "NEJM",
+          "signal": "Effect of screening with MCED test on late-stage cancer diagnosis",
+          "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2505723"
+        },
+        {
+          "source": "PubMed / Nat Med",
+          "signal": "Performance of MCED test in the randomized NHS-Galleri trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42773209/"
+        },
+        {
+          "source": "GRAIL press release",
+          "signal": "Company framing: 14% fewer stage IV diagnoses",
+          "url": "https://grail.com/press-releases/landmark-nhs-galleri-trial-demonstrates-a-substantial-reduction-in-stage-iv-cancer-diagnoses-increased-stage-i-and-ii-detection-of-deadly-cancers-and-four-fold-higher-cancer-detection-rate/"
+        },
+        {
+          "source": "Discoveries in Health Policy",
+          "signal": "Six publications timed with the FDA advisory committee",
+          "url": "https://www.discoveriesinhealthpolicy.com/2026/09/cheat-sheet-six-publications-about.html"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "Vitamin K2 + D3 slowed rise in heart calcium scores by 21% in DANCODE RCT (Circulation / ESC 2026)",
+      "angle": "'Can a supplement slow artery calcification? The honest read.' Cover the 398-person, 2-year RCT in adults with severe CAC (median age 71): CAC still rose in both groups, soft plaque didn't change, and there are no heart-attack outcome data. Point out the industry funding and the supplement-brand PR. Contrast with proven levers: LDL, blood pressure, not smoking. No dosing advice. Mention the vitamin K interaction with warfarin, and that anyone on blood thinners should talk to their clinician.",
+      "keywords": [
+        "vitamin K2 heart",
+        "K2 D3 coronary calcium",
+        "vitamin K2 artery calcification",
+        "DANCODE trial",
+        "CAC score supplement",
+        "does vitamin K2 work"
+      ],
+      "stage": "emerging",
+      "momentum": 70,
+      "predicted_peak": "5–14 days",
+      "why_now": "Supplement trade press (NutraIngredients, Nutraceuticals World, Nutraceutical Business Review) and brand press releases are spreading this now. It's a classic case where influencer hype follows within days. A sober, evidence-first video can rank on 'vitamin K2' searches before the hype peaks.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Nutraceutical Business Review",
+          "signal": "'Vitamin K2 and D3 found to slow coronary calcification', Sep 25",
+          "url": "https://nutraceuticalbusinessreview.com/vitamin-k2-d3-slow-coronary-calcification-study"
+        },
+        {
+          "source": "NutraIngredients",
+          "signal": "21% slower CAC progression, Sep 25",
+          "url": "https://www.nutraingredients.com/Article/2026/09/25/balchems-vitamin-k2-linked-to-21-slower-cac-progression/"
+        },
+        {
+          "source": "Balchem (manufacturer)",
+          "signal": "Industry press release: signal of commercial hype",
+          "url": "https://balchem.com/news/hnh-publication-largest-clinical-trial-vitamin-k2-mk-7-and-d3/"
+        },
+        {
+          "source": "Dr. Peter Chang Cardiology",
+          "signal": "Cardiologist caveats: no outcome data, soft plaque unchanged",
+          "url": "https://www.drpetcha.com/blog/vitamin-k2-coronary-artery-calcification"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "10 diets compared for biological aging: no single winner, consistency wins (Nature Communications, ~7,500 adults)",
+      "angle": "'Mediterranean vs DASH vs MIND vs plant-based: the longevity diet showdown ends in a tie.' Explain the epigenetic-clock methods and what the 10 scores share (plants, fiber, legumes, less ultra-processed food). Include the same week's ultra-processed food study and the MIND-diet mechanism piece as supporting points. The takeaway: pick the pattern you'll stick to.",
+      "keywords": [
+        "best diet for longevity",
+        "longevity diet study",
+        "Mediterranean vs DASH diet",
+        "biological age diet",
+        "MIND diet brain",
+        "what diet slows aging"
+      ],
+      "stage": "rising",
+      "momentum": 68,
+      "predicted_peak": "3–7 days",
+      "why_now": "Yahoo Health, Men's Journal, AOL and Medical News Today are covering it, with a MIND-diet mechanism story (Medical Xpress) and an ultra-processed-food study (ABC) in the same week. Longevity-diet searches are high and the 'it's a tie' conclusion is a fresh, anti-hype hook.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Men's Journal",
+          "signal": "'Study of 7,500 adults reveals the diet pattern linked to longevity'",
+          "url": "https://www.mensjournal.com/health/study-of-7500-adults-reveals-the-diet-pattern-linked-to-longevity"
+        },
+        {
+          "source": "Google News / Yahoo Health",
+          "signal": "'New study tested 10 popular eating plans for longevity benefits'",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbXB2YXJ3WlNmOXRoMzl5dnRxRlhRaE1tTi1BclVoWTRJY3h6dXpDbHc0UlU5UE1QbW5UUkZRVUROc3paMUpoUmNKSEtYUHN6ZUJ2M0R3cmNnRU5vbUs2QmpDY1p2LVE5X3Nwa3FmNEMzRE1RQkRvNVZydWY3WVlUdDlEMDZOWGs4cEZVbGw1ckJaS1RZVFBKVDVrZFczUVRjMVhrMkNfRFRWUnAtc1Buc0VB?oc=5"
+        },
+        {
+          "source": "Medical Xpress",
+          "signal": "'How the MIND diet protects aging brains'",
+          "url": "https://medicalxpress.com/news/2026-09-mind-diet-aging-brains.html"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "Stroke rates nearly doubled in adults 20–54 since the 1990s (Neurology, Sep 23)",
+      "angle": "'Strokes aren't just an old-person problem anymore.' Cover the Cincinnati population data (33.9 to 62.2 per 100k), the drivers (blood pressure, diabetes, AFib, and substance use jumping from 4.6% to 40.2% of young stroke patients, mostly cannabis), BE FAST warning signs, and the numbers every 30-something should know. Be careful on cannabis: it's an association, not proof of cause.",
+      "keywords": [
+        "stroke in young adults",
+        "why are young people having strokes",
+        "stroke symptoms BE FAST",
+        "cannabis stroke risk",
+        "stroke under 50",
+        "stroke rates doubled"
+      ],
+      "stage": "rising",
+      "momentum": 70,
+      "predicted_peak": "2–5 days",
+      "why_now": "CNN syndication, US News, Gizmodo, the NY Post and the University of Cincinnati press release all ran it within 72 hours. It's a scary, shareable topic that needs a solution-focused explainer. The cannabis angle drives search curiosity.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "University of Cincinnati",
+          "signal": "Press release on Neurology study, Sep 23",
+          "url": "https://www.uc.edu/news/articles/2026/09/more-young-adult-strokes-uc-study.html"
+        },
+        {
+          "source": "News-Medical",
+          "signal": "Stroke rates nearly doubled among younger adults over three decades",
+          "url": "https://www.news-medical.net/news/20260923/Stroke-rates-nearly-doubled-among-younger-adults-over-three-decades.aspx"
+        },
+        {
+          "source": "Gizmodo",
+          "signal": "Mainstream tech/science pickup",
+          "url": "https://gizmodo.com/stroke-rates-younger-adults-nearly-doubled-2000816135"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "Loneliness and isolation cost up to ~6 years of mentally healthy life (Nature Communications, 277,489 UK Biobank adults)",
+      "angle": "'Loneliness vs isolation: two different risks, and your gym habit only fixes one.' Lifestyle buffered the physical risk of objective isolation but not the mental-health toll of feeling lonely. Men lost ~5.8 years free of depression or anxiety, women ~3.7. Finish with evidence-based ways to build connection. Include crisis-resource wording without going into self-harm detail.",
+      "keywords": [
+        "loneliness health effects",
+        "loneliness vs social isolation",
+        "loneliness study 2026",
+        "how loneliness affects health",
+        "men loneliness",
+        "healthy life expectancy loneliness"
+      ],
+      "stage": "rising",
+      "momentum": 65,
+      "predicted_peak": "3–7 days",
+      "why_now": "US News/HealthDay, Neuroscience News, RealClearScience and Psychreg covered it Sep 23–25. The 'healthy habits don't cancel it out' twist and the male-specific finding are fresh, and there's little YouTube coverage of this specific study.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "US News / HealthDay",
+          "signal": "'Loneliness, isolation can strip away years of healthy life', Sep 25",
+          "url": "https://www.usnews.com/news/health-news/articles/2026-09-25/loneliness-isolation-can-strip-away-years-of-healthy-life-large-study-finds"
+        },
+        {
+          "source": "Neuroscience News",
+          "signal": "'Loneliness erases nearly 6 healthy years'",
+          "url": "https://neurosciencenews.com/loneliness-mental-health-longevity-31238/"
+        },
+        {
+          "source": "RealClearScience",
+          "signal": "Aggregator pickup, Sep 23",
+          "url": "https://www.realclearscience.com/2026/09/23/loneliness_and_isolation_cost_six_years_of_mentally_healthy_life_1207632.html"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "Flu season 2026–27: new mRNA flu shot for 50+, updated subclade K strain, and 'should I wait?'",
+      "angle": "'Your 2026 flu shot, explained in 60 seconds.' Cover what changed (all 3 strains updated, including H3N2 subclade K), the new mRNA option for 50+ (about 26% relative efficacy gain, roughly 1 extra case prevented per 125 people vaccinated, more short-term side effects), and why most people shouldn't delay. Point to the CDC and a pharmacist or clinician for personal choices. Follows CDC guidance and YouTube's vaccine-information policy.",
+      "keywords": [
+        "flu shot 2026",
+        "new mRNA flu vaccine",
+        "subclade K flu",
+        "when to get flu shot 2026",
+        "mRNA flu vaccine side effects",
+        "flu vaccine over 50"
+      ],
+      "stage": "rising",
+      "momentum": 72,
+      "predicted_peak": "1–3 weeks (October vaccination peak)",
+      "why_now": "The seasonal cycle is starting. News outlets are asking 'is the new flu vaccine worth waiting for?' (OregonLive) and 'doctors urge flu shots' (WKEF), the CDC has a 2026–27 season page, and Roche's generic Xofluza licensing is in the news. Search demand rises steeply through October.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "CDC",
+          "signal": "2026–2027 flu season page",
+          "url": "https://www.cdc.gov/flu/season/2026-2027.html"
+        },
+        {
+          "source": "NewYork-Presbyterian",
+          "signal": "Subclade K strain and new mRNA vaccine explainer",
+          "url": "https://www.nyp.org/healthmatters/flu-season-2026-2027-what-to-know-about-the-subclade-k-flu-strain-the-new-mrna-flu-vaccine-and-more"
+        },
+        {
+          "source": "Medical Daily",
+          "signal": "New mRNA flu vaccine coverage",
+          "url": "https://www.medicaldaily.com/new-mrna-flu-vaccine-2026-season-478181"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short",
+        "carousel",
+        "long"
+      ]
+    },
+    {
+      "topic": "GLP-1 drugs and nutrition gaps: 1 in 6 teens developed a deficiency in a year; long-term safety questions",
+      "angle": "'Eating less on a GLP-1? Here's what you might be missing.' Start from the Lurie Children's data (vitamin D deficiency in 12.4%) and the Seattle Times long-term safety piece to explain protein, vitamin D, iron and B12 risks when appetite drops, plus the SELECT analyses showing heart benefit isn't only from weight loss. Frame it as 'questions to raise with your prescriber'. No doses, no changing medication.",
+      "keywords": [
+        "GLP-1 nutrient deficiency",
+        "Ozempic vitamin deficiency",
+        "what to eat on GLP-1",
+        "GLP-1 protein intake",
+        "is long-term Ozempic safe",
+        "semaglutide heart benefits"
+      ],
+      "stage": "rising",
+      "momentum": 66,
+      "predicted_peak": "3–10 days",
+      "why_now": "Several signals in the same week: the ScienceDaily and Scripps syndication of the pediatric study, the Seattle Times long-term safety piece, and two SELECT secondary analyses (Eur Heart J and Diabetes Care). GLP-1 search demand is huge, and the nutrition angle is less saturated than general 'Ozempic' content.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "ScienceDaily",
+          "signal": "GLP-1 drugs linked to nutritional deficiencies in nearly 1 in 6 children",
+          "url": "https://www.sciencedaily.com/releases/2026/09/260923035926.htm"
+        },
+        {
+          "source": "Pharmaceutical Journal",
+          "signal": "Professional pickup",
+          "url": "https://pharmaceutical-journal.com/article/news/children-taking-glp-1s-can-be-at-risk-of-nutritional-deficiencies-study-finds"
+        },
+        {
+          "source": "PubMed / Eur Heart J",
+          "signal": "Semaglutide CV risk reduction: SELECT mediation analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42777687/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "carousel",
+        "short"
+      ]
+    },
+    {
+      "topic": "Peptides (BPC-157 and others): big promises, thin human evidence, and shifting FDA compounding rules",
+      "angle": "'Peptides: what the evidence actually says.' Explain what peptides are, separate approved peptide drugs (e.g. insulin, GLP-1s) from gray-market 'wellness' peptides, and show that BPC-157's evidence is still mostly animal and cell studies. Cover the FDA Category 2 compounding concerns (impurities, immune reactions) and the pending reclassification, and how to spot the red flags. Don't tell anyone how to source or dose them.",
+      "keywords": [
+        "BPC-157",
+        "do peptides work",
+        "peptide therapy evidence",
+        "BPC-157 side effects",
+        "peptides FDA 2026",
+        "peptides for recovery"
+      ],
+      "stage": "rising",
+      "momentum": 74,
+      "predicted_peak": "1–3 weeks",
+      "why_now": "Outside magazine ran 'Peptides: Huge Promises, Unproven Hype' on Sep 26, following STAT, Forbes and The Conversation pieces and the pending FDA reclassification. TikTok is full of pro-peptide content, so demand is high and the evidence-first debunk space is thin.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Google News / Outside Magazine",
+          "signal": "'Peptides: Huge promises, unproven hype', Sep 26",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNkR0aEZSamliS1RjOGt2SW5RYVBpOVFOdXJ4VVBfYnQzVGtCMDdoV0FrTF9SSTFGWmtzaVR2djVZemQ3Qk5QUmY5dnphVG15bnpzY0J2Q0hYMjNUYlpQSFJ4SVk0aDZXaGxwOWFuSjBSd25IZHdkd2t0aTBZWFl2M3pPWQ?oc=5"
+        },
+        {
+          "source": "STAT",
+          "signal": "'BPC-157: the peptide with big claims and scant evidence'",
+          "url": "https://www.statnews.com/2026/02/03/bpc-157-peptide-science-safety-regulatory-questions/"
+        },
+        {
+          "source": "Forbes",
+          "signal": "FDA review of peptides and the hype problem, Jul 2026",
+          "url": "https://www.forbes.com/sites/omerawan/2026/07/21/fdas-review-of-peptides-signals-a-growing-public-health-challenge--separating-science-from-hype/"
+        },
+        {
+          "source": "The Conversation",
+          "signal": "'The peptide problem: hype is outrunning the evidence'",
+          "url": "https://theconversation.com/the-peptide-problem-hype-is-outrunning-the-evidence-280715"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "Why strength fades with age: failing nerve-to-muscle signaling, not just shrinking muscle (J Clin Invest, 2026)",
+      "angle": "'Your muscles might be fine. The wiring is the problem.' Explain the neuromuscular junction finding in weak older adults: signaling failure correlates with weakness, and targeting a key protein helped in animals only. Then give the human evidence you can act on now: power and resistance training improve neural drive. Tie in the IMPACT RCT on vegetarian vs omnivorous diets and muscle mass during resistance training as a protein subtopic.",
+      "keywords": [
+        "why muscles get weaker with age",
+        "sarcopenia cause",
+        "muscle strength after 50",
+        "neuromuscular junction aging",
+        "strength training older adults",
+        "protein for muscle over 60"
+      ],
+      "stage": "emerging",
+      "momentum": 60,
+      "predicted_peak": "7–14 days",
+      "why_now": "ScienceDaily (Sep 24), Futurity and Men's Journal picked it up. Muscle and longevity content is in strong demand, and this 'reason scientists missed' framing is new. The same week's AJCN IMPACT trial adds a diet angle, and few creators have covered either study.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "ScienceDaily",
+          "signal": "'Aging muscles may be losing strength for a reason scientists missed'",
+          "url": "https://www.sciencedaily.com/releases/2026/09/260923035924.htm"
+        },
+        {
+          "source": "Google News / Futurity",
+          "signal": "'Discovery could help older adults maintain muscle strength'",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JZDU0amxycTFweXBxQjVOVmxjZjBpdFg3V3BibG9mTENJUlRLTG1RMTRNVDBpTzlHd0p6X29TUHFYTlJmWXJSd0FFWDdxRm1rel96SlJuR1VxaDlSMG96anlSbEdDYkRJcnRYcg?oc=5"
+        },
+        {
+          "source": "PubMed / Am J Clin Nutr",
+          "signal": "IMPACT RCT: vegetarian vs omnivorous diet, protein and muscle in older adults",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42772454/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "Local dengue outbreak in Florida: 3 Tampa Bay counties declare emergency, 190 local cases, 1 death",
+      "angle": "'Dengue in the US: what's real, who's at risk, and how to protect yourself.' Explain how Aedes mosquitoes spread it, why a second infection can be worse, the warning signs that need urgent care, practical mosquito-proofing (standing water, repellents with EPA-registered ingredients), and why this is 'wildly unusual' for the US. No fear-mongering.",
+      "keywords": [
+        "dengue Florida",
+        "dengue fever symptoms",
+        "dengue outbreak 2026",
+        "dengue Tampa",
+        "how is dengue spread",
+        "dengue second infection"
+      ],
+      "stage": "emerging",
+      "momentum": 62,
+      "predicted_peak": "2–7 days",
+      "why_now": "The Washington Post (Sep 26), WUSF and Pinellas County emergency orders appeared within 48 hours. It's a regional news spike that could go national, and explainer coverage is thin. Mosquito season carries on into October in Florida.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Washington Post",
+          "signal": "Florida counties declare emergency over 'wildly unusual' dengue outbreak",
+          "url": "https://www.washingtonpost.com/nation/2026/09/25/florida-counties-declare-emergency-over-wildly-unusual-dengue-outbreak/"
+        },
+        {
+          "source": "WUSF",
+          "signal": "Hillsborough, Pasco and Pinellas emergency declarations",
+          "url": "https://www.wusf.org/health-news-florida/2026-09-24/hillsborough-pasco-pinellas-counties-declare-states-of-emergency-to-battle-dengue-fever"
+        },
+        {
+          "source": "Northeastern University",
+          "signal": "Researcher Q&A on transmission risk",
+          "url": "https://news.northeastern.edu/2026/09/25/dengue-fever-florida-outbreak/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "How much exercise actually helps chronic low back pain? New dose-response network meta-analysis (BJSM, Sep 24)",
+      "angle": "'The minimum effective dose for back pain.' Cover which exercise types and how much weekly volume the BJSM dose-response NMA found works, alongside the 2026 Frontiers NMA (short, frequent sessions for 16+ weeks ranked highest). Offer a simple starter framework, flag the warning signs that need a clinician first, and give no personal prescriptions.",
+      "keywords": [
+        "best exercise for lower back pain",
+        "how much exercise for back pain",
+        "chronic back pain exercise study",
+        "back pain exercise routine",
+        "exercise dose back pain"
+      ],
+      "stage": "evergreen",
+      "momentum": 55,
+      "predicted_peak": "evergreen; steady search, refreshed by new study",
+      "why_now": "The new BJSM network meta-analysis (Sep 24) gives a fresh hook for one of the highest-volume evergreen health searches. Back pain affects most of the 25–55 audience, and the 'dose' framing sets it apart from generic stretch videos.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "PubMed / Br J Sports Med",
+          "signal": "Optimal exercise dose in chronic LBP: dose-response network meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42785965/"
+        },
+        {
+          "source": "PMC / Frontiers in Physiology",
+          "signal": "2026 NMA: 15–20 min sessions, 6–7×/week, ≥16 weeks ranked highest",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13215899/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "US measles outbreak, worst since 1991 (Pennsylvania at 890 cases): adults' guide to checking your immunity",
+      "angle": "'Are you actually protected against measles? A 2-minute check for adults.' Cover how contagious measles is, who may be under-protected (e.g. some adults vaccinated in certain eras, or with unknown records), how to check your records or ask about a titer, and why the 'died with vs died of' debate misses the point. Pro-evidence, calm, points to a clinician. No politics.",
+      "keywords": [
+        "measles outbreak 2026",
+        "am I immune to measles",
+        "measles booster adults",
+        "MMR vaccine adults",
+        "measles symptoms",
+        "Pennsylvania measles"
+      ],
+      "stage": "peaking",
+      "momentum": 70,
+      "predicted_peak": "ongoing; 1–3 weeks",
+      "why_now": "ABC (890 cases in PA), STAT ('worst US outbreak since 1991'), an NPR Short Wave episode, and local exposures (Allen County IN, Topeka KS). The topic is already saturated, so it's only worth doing with the practical 'check your own immunity' angle.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "STAT",
+          "signal": "'Worst U.S. outbreak since 1991', Sep 24",
+          "url": "https://www.statnews.com/2026/09/24/health-news-measles-contagious-outbreak-u-s-deaths-1991/"
+        },
+        {
+          "source": "Google News / ABC News",
+          "signal": "Pennsylvania outbreak grows to 890 cases",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOV0JPazlweWlGVTZoMkJEdGtQMzV6V0RUWHhMUzNzVUlsa2xaQ0dHLTBEX2pUWkNqVnZ2ZWpYcWEySnMyT19HT21RRDFXUXBZSmlwSG1Ddy1jWF9KYkJsR1d5S3M4bk5BaEE0dDl1Mk5faTBLa1BNNnBfU1k2X0RqbndNM0tUeDd6Umo3SnJoVDlVc1NLcHJ6S0NYVGRnUlHSAaQBQVVfeXFMUDU1Z1p3VFdvMzZqRUM4V0plVGNjanpmc0c3bDZUUUw0UkZPMTRJYWRBZ3VNcmJXOTF0Nnh5MkZ3ZHZOWkRJWkVVaFhNSWpJbXREMFI4SjBEOWtLRkxMN3BaWXlSdXFBV2UwZTM5VkoxZmZhaFBGM1lIVHNJMGlMb0hORXF1ZkdWdVl6U2ZiREpmNkkzeG82dFZOU2xwN0J3clRib0s?oc=5"
+        },
+        {
+          "source": "STAT opinion",
+          "signal": "'Died with vs died of' measles debate",
+          "url": "https://www.statnews.com/2026/09/25/died-with-not-from-measles-physicians-explain-death-certificate-rules/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short",
+        "carousel"
+      ]
+    },
+    {
+      "topic": "'Detox microplastics from your body' tips: what the evidence does and doesn't support",
+      "angle": "'Can you actually get microplastics out of your body?' Fact-check the viral listicles (Verywell's '5 ways'). Separate reducing exposure, which has plausible evidence (heating food in glass rather than plastic, filtered water, fewer bottled drinks), from 'removal' claims with no human evidence (detox supplements, sweating). Be honest about how early the health-effects science still is.",
+      "keywords": [
+        "how to get rid of microplastics",
+        "microplastics in body",
+        "microplastics detox",
+        "reduce microplastic exposure",
+        "microplastics health effects"
+      ],
+      "stage": "evergreen",
+      "momentum": 58,
+      "predicted_peak": "evergreen; spikes with each new study",
+      "why_now": "Verywell Health's '5 ways to get rid of microplastics in your body' (Sep 25) shows steady mainstream demand. The space is full of detox-product hype, so a myth-busting explainer can win on search and fits the brand.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Google News / Verywell Health",
+          "signal": "'5 Ways to Get Rid of Microplastics In Your Body', Sep 25",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaGFqczZlaFFzU0hpY2N4NTRoa3hheWxaN09zVDVXa01zaU42ckVaVlkyOUpkTC1BcVRUYWNJNVVTdFhyVGdXNER5S0N2bXVrVlU1M1lqRGdLdExSOExBVHFBUjh0ZjAzMkRPTzhfd3QwLXNCYWhaT3hieG5TQThab25fVWwyR3dORl83UQ?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short",
+        "carousel",
+        "long"
+      ]
+    }
+  ]
+}

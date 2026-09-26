@@ -1,0 +1,16 @@
+{
+  "working_title": "Why a 10-minute walk after meals matters",
+  "target_keyword": "walking after eating blood sugar",
+  "hook_pattern": "Visceral you scenario",
+  "cta": "Follow for more science-backed habits.",
+  "sources": [
+    { "id": "s1", "title": "The Acute Effects of Interrupting Prolonged Sitting Time in Adults with Standing and Light-Intensity Walking on Biomarkers of Cardiometabolic Health", "publisher": "Sports Medicine", "year": "2022", "url": "https://pubmed.ncbi.nlm.nih.gov/35147900/" }
+  ],
+  "scenes": [
+    { "id": "1", "section": "Short", "narration": "Right after you eat, your blood sugar starts climbing. Here's the easiest way to flatten it.", "on_screen_text": "Do this after you eat", "visual": { "kind": "broll", "stock_query": "family dinner table" }, "retention_device": "open loop", "source_ids": [] },
+    { "id": "2", "section": "Short", "narration": "Researchers pooled seven studies comparing sitting, standing, and light walking after meals.", "on_screen_text": "7 studies compared", "visual": { "kind": "broll", "stock_query": "scientist laboratory" }, "retention_device": "proof", "source_ids": ["s1"] },
+    { "id": "3", "section": "Short", "narration": "Even two to five minutes of light walking lowered the blood sugar spike compared with sitting.", "on_screen_text": "2 to 5 minutes", "visual": { "kind": "stat", "stock_query": "person walking street", "stat_value": "2–5 min", "stat_label": "of light walking helped" }, "retention_device": "surprising stat", "source_ids": ["s1"] },
+    { "id": "4", "section": "Short", "narration": "The best window? Within about an hour of eating, while glucose is rising.", "on_screen_text": "Timing matters", "visual": { "kind": "broll", "stock_query": "clock kitchen" }, "retention_device": "payoff", "source_ids": ["s1"] },
+    { "id": "5", "section": "Short", "narration": "So next time you finish a meal, don't sink into the couch. Take a short walk. Your body will thank you.", "on_screen_text": "Walk it off", "visual": { "kind": "broll", "stock_query": "woman walking park" }, "retention_device": "loop", "source_ids": [] }
+  ]
+}

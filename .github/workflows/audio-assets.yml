@@ -1,0 +1,34 @@
+name: Generate audio assets (one-time)
+# Run manually after adding ELEVENLABS_API_KEY: builds the SFX kit and/or the music library and commits them.
+
+on:
+  workflow_dispatch:
+    inputs:
+      what:
+        description: "sfx, music, or both (music uses a lot of credits: skip on Starter)"
+        default: sfx
+      tracks_per_mood:
+        description: "Music tracks per mood"
+        default: "4"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - if: inputs.what == 'sfx' || inputs.what == 'both'
+        run: npx tsx scripts/audio-assets.ts sfx
+        env: { ELEVENLABS_API_KEY: "${{ secrets.ELEVENLABS_API_KEY }}" }
+      - if: inputs.what == 'music' || inputs.what == 'both'
+        run: npx tsx scripts/audio-assets.ts music ${{ inputs.tracks_per_mood }} 300
+        env: { ELEVENLABS_API_KEY: "${{ secrets.ELEVENLABS_API_KEY }}" }
+      - run: |
+          git config user.name "informed-bot"
+          git config user.email "informed-bot@users.noreply.github.com"
+          git add assets
+          git diff --cached --quiet || (git commit -m "bot: ElevenLabs audio assets" && git push)

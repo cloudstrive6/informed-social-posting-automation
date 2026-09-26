@@ -1,0 +1,180 @@
+{
+  "brand": {
+    "name": "InforMed",
+    "handle": "@InforMedLab",
+    "tagline": "Science-backed health, explained like a friend would.",
+    "mission": "Build a trusted community around science-based health facts: integrity, empowerment, compassion, innovation and transparency.",
+    "colors": {
+      "blue": "#23b1dc",
+      "green": "#95ca5b",
+      "dark": "#232323",
+      "light": "#f2f1f0",
+      "alert": "#ff4d4d",
+      "highlight": "#ffd83d"
+    },
+    "gradient": "linear-gradient(135deg, #23b1dc 0%, #95ca5b 100%)",
+    "fonts": {
+      "display": "Montserrat",
+      "body": "Montserrat",
+      "googleFontsCss": "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap"
+    },
+    "logos": {
+      "horizontalOnLight": "brand/logo-horizontal-dark.png",
+      "horizontalOnDark": "brand/logo-horizontal-light.png",
+      "horizontalWhite": "brand/logo-horizontal-white.png",
+      "icon": "brand/icon-gradient.png",
+      "iconWhite": "brand/icon-white.png"
+    }
+  },
+  "audience": {
+    "description": "English-speaking adults 25-55, mostly US/UK/CA/AU, curious about longevity, nutrition, sleep, gut health, hormones, fitness and new medical research. Skeptical of hype, love 'what actually works' answers.",
+    "timezone": "America/New_York",
+    "language": "en"
+  },
+  "accounts": {
+    "youtube": "https://www.youtube.com/@InforMedLab",
+    "instagram": "https://www.instagram.com/informedlab",
+    "tiktok": "https://www.tiktok.com/@informedlab",
+    "facebook": "https://www.facebook.com/InforMedLab"
+  },
+  "cadence": {
+    "longPerDay": 3,
+    "shortPerDay": 3,
+    "carouselPerDay": 2,
+    "longTargetMinutes": [
+      8,
+      12
+    ],
+    "shortTargetSeconds": [
+      35,
+      58
+    ]
+  },
+  "schedule": {
+    "_comment": "Local times in audience.timezone. Equally spaced around audience online peaks. The analytics agent proposes changes in data/learnings.md.",
+    "youtube_long": [
+      "09:00",
+      "14:00",
+      "19:00"
+    ],
+    "youtube_short": [
+      "11:30",
+      "16:30",
+      "21:00"
+    ],
+    "instagram_reel": [
+      "08:00",
+      "13:00",
+      "20:00"
+    ],
+    "instagram_carousel": [
+      "10:30",
+      "17:30"
+    ],
+    "tiktok": [
+      "09:30",
+      "15:30",
+      "21:30"
+    ],
+    "facebook_reel": [
+      "08:30",
+      "13:30",
+      "19:30"
+    ],
+    "facebook_post": [
+      "11:00",
+      "18:00"
+    ]
+  },
+  "platforms": {
+    "youtube": true,
+    "instagram": true,
+    "facebook": true,
+    "tiktok": true
+  },
+  "voice": {
+    "provider": "elevenlabs",
+    "chatterboxModel": "turbo",
+    "voiceRef": "assets/voice/narrator.wav",
+    "exaggeration": 0.55,
+    "_comment": "provider: elevenlabs (best, paid) | chatterbox (free, expressive) | kokoro (free, fast). Falls back down that list automatically if one fails.",
+    "kokoroVoice": "af_heart",
+    "kokoroShortVoice": "af_heart",
+    "baseSpeed": 1.0,
+    "sampleRate": 24000,
+    "elevenlabs": {
+      "voiceId": "snODv2VnG1inLn1Ba0dk",
+      "_voiceComment": "'Jeremy' (friendly, casual American 'guy next door', built for social media/podcasts), chosen by the owner. Any ElevenLabs Voice Library ID works here.",
+      "model": "eleven_multilingual_v2",
+      "stability": 0.45,
+      "similarity": 0.8,
+      "style": 0.3,
+      "monthlyCredits": 40000,
+      "creditsPerChar": 1,
+      "useFor": [
+        "short"
+      ],
+      "_budgetComment": "Starter = 40,000 credits/month. useFor: which content gets ElevenLabs (short, long). A piece only uses ElevenLabs if its whole narration fits the remaining monthly budget; otherwise Chatterbox. eleven_flash_v2_5 costs 0.5 credits/char (set creditsPerChar 0.5).",
+      "renewDay": 26
+    }
+  },
+  "video": {
+    "style": "animated",
+    "_comment": "style: animated (flat-vector motion graphics, see docs/STYLE.md) | broll (stock footage)",
+    "fps": 60,
+    "quality": "high",
+    "burnCaptionsLong": false,
+    "musicVolume": 0.16,
+    "sfxVolume": 0.55,
+    "brollProvider": "pexels"
+  },
+  "safety": {
+    "policy": "Auto-publish only when the Fact-Checker agent returns PASS. Anything else is held and a GitHub issue is opened for human review.",
+    "maxRevisionRounds": 2,
+    "disclaimer": "This content is for educational purposes only and is not medical advice. Always talk to a qualified healthcare professional about your own situation.",
+    "bannedTopics": [
+      "specific dosing of prescription drugs",
+      "stopping or replacing prescribed medication",
+      "cures for cancer or other serious disease",
+      "anti-vaccine claims",
+      "eating disorder encouragement or extreme dieting",
+      "self-harm methods",
+      "unapproved treatments presented as effective"
+    ]
+  },
+  "models": {
+    "_comment": "Claude Code model aliases or full IDs. 'opus' = latest Opus.",
+    "default": "opus",
+    "trendScout": "opus",
+    "factChecker": "opus",
+    "writer": "opus",
+    "packaging": "opus",
+    "analyst": "opus"
+  },
+  "music": {
+    "provider": "library",
+    "_comment": "library: reuse tracks in assets/music/<mood>/ (generate once with `npm run music:library`, cheapest) | elevenlabs: fresh Eleven Music score per video | generated: free built-in synth",
+    "elevenModel": "music_v1",
+    "prompts": {
+      "wonder": "Warm ambient synth score for an animated science documentary, soft evolving pads, gentle plucked arpeggios, sense of wonder and discovery, 90 bpm, no vocals, no drums until the midpoint, cinematic and uplifting",
+      "curious": "Playful curious ambient electronic score for an animated explainer, light marimba and synth plucks, soft pads, subtle percussion, 100 bpm, no vocals",
+      "tense": "Tense cinematic synth underscore for an animated medical story, pulsing low synths, ticking percussion, rising strings, 95 bpm, no vocals, suspenseful but not horror",
+      "hopeful": "Hopeful uplifting cinematic synth and piano score for an animated health documentary, warm pads, steady gentle pulse, emotional build, 92 bpm, no vocals",
+      "dark": "Dark mysterious ambient score, deep drones, sparse piano notes, slow evolving textures, 70 bpm, no vocals"
+    }
+  },
+  "sfx": {
+    "provider": "kit",
+    "_comment": "kit: assets/sfx/<name>/*.mp3 made once with `npm run sfx:kit` (ElevenLabs), falling back to the built-in synth per sound | synth: built-in only",
+    "customPerVideo": 5
+  },
+  "qa": {
+    "enabled": true,
+    "narrationMaxRetakes": 2,
+    "sceneWerThreshold": 0.12,
+    "maskingWerDelta": 0.03,
+    "visualRounds": 1,
+    "minShotScore": 6,
+    "_comment": "Whisper checks every narrated scene against the script (retakes bad ones) and the final mix for masking; the Visual Critic reviews key frames and sends weak shots back to the Motion Designer."
+  }
+}

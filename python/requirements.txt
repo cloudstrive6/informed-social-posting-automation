@@ -1,0 +1,9 @@
+kokoro>=0.9.4
+soundfile>=0.12
+numpy>=1.26
+scipy>=1.11
+chatterbox-tts>=0.1.7
+faster-whisper>=1.1
+librosa>=0.10
+pyloudnorm>=0.1
+setuptools<81

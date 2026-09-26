@@ -1,0 +1,28 @@
+name: Human review
+# Add the label `approved` or `rejected` to a "Review:" issue and this applies it.
+
+on:
+  issues:
+    types: [labeled]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: review
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: github.event_name == 'workflow_dispatch' || github.event.label.name == 'approved' || github.event.label.name == 'rejected'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - run: npx tsx src/cli.ts review-sync
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: bash scripts/commit-data.sh "bot: review decisions"

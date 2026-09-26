@@ -1,0 +1,12 @@
+node_modules/
+out/
+renders/
+.env
+*.log
+.cache/
+python/.venv/
+brand/fonts/private/
+__pycache__/
+python/.venv-*/
+.env.*
+!.env.example

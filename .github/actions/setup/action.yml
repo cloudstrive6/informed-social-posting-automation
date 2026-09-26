@@ -1,0 +1,49 @@
+name: Setup InforMed pipeline
+description: Node deps, and optionally the media toolchain (Python/Kokoro TTS, ffmpeg, browsers)
+inputs:
+  media:
+    description: Install the video/image toolchain
+    default: "false"
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: npm
+    - run: npm ci
+      shell: bash
+
+    - if: inputs.media == 'true'
+      name: System packages
+      shell: bash
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install -y -qq ffmpeg espeak-ng fonts-noto-color-emoji > /dev/null
+    - if: inputs.media == 'true'
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+        cache: pip
+        cache-dependency-path: python/requirements.txt
+    - if: inputs.media == 'true'
+      name: Voice + audio (Chatterbox, Whisper, Kokoro fallback)
+      shell: bash
+      run: |
+        pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+        pip install -q -r python/requirements.txt
+    - if: inputs.media == 'true'
+      uses: actions/cache@v4
+      with:
+        # voice models (~2 GB) + browsers + fonts: downloaded once, reused every run
+        path: |
+          ~/.cache/huggingface
+          ~/.cache/ms-playwright
+          .cache/fonts
+        key: media-cache-v2-${{ runner.os }}
+    - if: inputs.media == 'true'
+      name: Browsers (Playwright stills + HyperFrames video)
+      shell: bash
+      run: |
+        npx playwright install --with-deps chromium
+        HYPERFRAMES_SKIP_SKILLS=1 npx -y hyperframes@0.8.77 browser ensure
