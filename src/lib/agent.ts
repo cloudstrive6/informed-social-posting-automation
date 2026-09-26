@@ -7,7 +7,7 @@ import { log } from "./log.js";
 export type AgentName =
   | "trend-scout" | "content-strategist" | "fact-checker" | "scriptwriter-long" | "scriptwriter-short"
   | "narration-director" | "title-writer" | "thumbnail-designer" | "seo-writer"
-  | "carousel-designer" | "social-copywriter" | "performance-analyst" | "motion-designer" | "visual-critic" | "sound-designer";
+  | "carousel-designer" | "social-copywriter" | "performance-analyst" | "motion-designer" | "visual-critic" | "sound-designer" | "packaging-editor" | "quality-coach";
 
 export interface AgentRun<T> {
   agent: AgentName;
@@ -36,6 +36,7 @@ function sharedContext(): string {
     `- Never cover: ${config.safety.bannedTopics.join("; ")}`,
     `- Today's date: ${new Date().toISOString().slice(0, 10)}`,
     `\n## What we've learned from our own analytics (apply it)\n${readText(join(DATA, "learnings.md"), "_No learnings yet — first weeks of the channel._")}`,
+    `\n## Craft notes from our own quality checks (recurring mistakes to avoid; apply them)\n${readText(join(DATA, "craft-notes.md"), "_No craft notes yet._")}`,
   ].join("\n");
 }
 

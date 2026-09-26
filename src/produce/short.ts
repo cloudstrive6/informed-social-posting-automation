@@ -6,7 +6,7 @@ import { log } from "../lib/log.js";
 import { creditsThisRun } from "../lib/usage.js";
 import { Script, scriptSchema } from "../lib/schemas.js";
 import { buildVideo } from "../media/buildVideo.js";
-import { checkPackaging, directNarration, narrateChecked, qaBlockers, loadPiece, newItem, socialCopy, workDir, writeWithFactCheck } from "./common.js";
+import { packagingLoop, directNarration, narrateChecked, qaBlockers, loadPiece, newItem, socialCopy, workDir, writeWithFactCheck } from "./common.js";
 
 export async function produceShort(date: string, pieceId: string): Promise<ContentItem> {
   const { plan, piece, index } = loadPiece(date, pieceId);
@@ -38,14 +38,19 @@ export async function produceShort(date: string, pieceId: string): Promise<Conte
   const blockers = qaBlockers(narration, built.qa);
   if (blockers.length && item.status !== "held") { item.status = "held"; item.hold_reason = `Quality check: ${blockers.join("; ")}`; }
   item.media.duration = timeline.duration;
+  // Shorts/Reels/TikTok: we keep every vertical video under 90 s
+  if (timeline.duration > 89.5 && item.status !== "held") { item.status = "held"; item.hold_reason = `Quality check: Short runs ${timeline.duration.toFixed(0)} s (limit 90 s)`; }
 
-  const social = await socialCopy(item, {
+  const summary = {
     hook: script.scenes[0].on_screen_text, narration: script.scenes.map(s => s.narration).join(" "),
     sources: factcheck.verified_sources, cta: script.cta,
-  });
+  };
+  const pk = await packagingLoop(item, await socialCopy(item, summary), factcheck.verified_sources,
+    { script: script.scenes.map(s => ({ narration: s.narration, on_screen_text: s.on_screen_text })) },
+    (draft, fact_check) => socialCopy(item, summary, { draft, fact_check }));
+  const social = pk.packaging;
   item.package = { title: social.youtube_short_title, description: social.youtube_short_description, social, tags: [piece.target_keyword] };
-
-  const pc = await checkPackaging(item, social, factcheck.verified_sources);
-  if (pc.verdict !== "PASS" && item.status !== "held") { item.status = "held"; item.hold_reason = `Packaging check ${pc.verdict}: ${pc.summary}`; }
+  item.qa = { ...item.qa, packaging: { verdict: pk.check.verdict, issues: pk.check.issues } };
+  if (pk.held && item.status !== "held") { item.status = "held"; item.hold_reason = pk.reason; }
   return item;
 }

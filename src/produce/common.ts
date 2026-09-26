@@ -118,23 +118,52 @@ export function qaBlockers(narration: { checks: SceneCheck[] }, video: VideoQa):
   return out;
 }
 
-export async function socialCopy(item: ContentItem, summary: object): Promise<SocialCopy> {
+export async function socialCopy(item: ContentItem, summary: object, revision?: { draft: SocialCopy; fact_check: FactCheck }): Promise<SocialCopy> {
   return runAgent<SocialCopy>({
     agent: "social-copywriter", model: config.models.packaging, schema: socialCopySchema, effort: "medium",
-    input: { kind: item.kind, topic: item.plan.topic, disclaimer: config.safety.disclaimer, accounts: config.accounts, content: summary },
+    input: {
+      kind: item.kind, topic: item.plan.topic, disclaimer: config.safety.disclaimer, accounts: config.accounts, content: summary,
+      ...(revision ? { task: "REVISE the draft captions. Apply every packaging-check fix exactly; keep everything else that works.", ...revision } : {}),
+    },
   });
 }
 
-/** Final consistency check of the packaging (title, thumbnail text, captions) against the verified content. */
-export async function checkPackaging(item: ContentItem, packaging: object, sources: Source[]): Promise<FactCheck> {
+/**
+ * Final consistency check of the packaging (title, thumbnail text, captions) against the fact-checked content.
+ * `verifiedContent` (the approved script or slides) is the source of truth, not the one-line plan topic.
+ */
+export async function checkPackaging(item: ContentItem, packaging: object, sources: Source[], verifiedContent?: object): Promise<FactCheck> {
   return runAgent<FactCheck>({
-    agent: "fact-checker", model: config.models.factChecker, schema: factCheckSchema, maxTurns: 6, effort: "medium",
+    agent: "fact-checker", model: config.models.factChecker, schema: factCheckSchema, web: true, maxTurns: 25, effort: "medium",
     input: {
-      mode: "content_check",
-      note: "Packaging check only: verify the title/thumbnail/captions are accurate and not misleading relative to the already-verified content summary below. Do not re-verify the underlying science.",
-      verified_topic: item.plan.topic, verified_sources: sources, packaging,
+      mode: "packaging_check",
+      note: "Packaging check: are the title / thumbnail text / captions accurate, consistent with the verified content below, and not misleading or unsafe? The verified content already passed a full fact-check, so treat its numbers and wording as correct (the plan topic line is only an early summary and may be less precise). Use the web only to open a source when a packaging claim goes beyond the verified content. Give each problem a precise, copy-paste-ready `fix`.",
+      plan_topic: item.plan.topic, verified_content: verifiedContent, verified_sources: sources, packaging,
     },
   });
+}
+
+/**
+ * Packaging ⇄ checker loop: check, let the packaging writer apply the fixes, re-check (up to 2 revisions).
+ * Only a HOLD verdict or unresolved major/critical issues hold the item for a human.
+ */
+export async function packagingLoop<P extends object>(item: ContentItem, packaging: P, sources: Source[], verifiedContent: object,
+  revise: (current: P, fc: FactCheck) => Promise<P>, view: (p: P) => object = p => p): Promise<{ packaging: P; check: FactCheck; held: boolean; reason?: string }> {
+  let pc = await checkPackaging(item, view(packaging), sources, verifiedContent);
+  for (let round = 0; round < 2 && pc.verdict !== "HOLD" && pc.issues.length; round++) {
+    log.info(`packaging check: ${pc.verdict} with ${pc.issues.length} fixes; revising (round ${round + 1})`);
+    packaging = await revise(packaging, pc);
+    if (pc.verdict === "PASS") return { packaging, check: pc, held: false }; // minor polish applied
+    pc = await checkPackaging(item, view(packaging), sources, verifiedContent);
+  }
+  if (pc.verdict === "REVISE" && pc.issues.length && pc.issues.every(i => i.severity === "minor")) {
+    packaging = await revise(packaging, pc);
+    log.info(`packaging check: ${pc.issues.length} minor fixes applied after the final round; accepted`);
+    return { packaging, check: { ...pc, verdict: "PASS" }, held: false };
+  }
+  const held = pc.verdict !== "PASS";
+  log.info(`packaging check: ${pc.verdict}${held ? " (held for review)" : ""}`);
+  return { packaging, check: pc, held, reason: held ? `Packaging check ${pc.verdict}: ${pc.summary}` : undefined };
 }
 
 export const dataPath = (...p: string[]) => join(DATA, ...p);

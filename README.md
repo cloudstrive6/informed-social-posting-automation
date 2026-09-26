@@ -36,6 +36,8 @@ Every agent is a Claude agent (Claude Agent SDK, running on your Claude subscrip
 | **Social Copywriter** | Native captions for Shorts, Instagram, TikTok and Facebook. |
 | **Visual Critic** | Reviews key frames of every shot (readability, typography, composition, appeal) and sends fixes back to the Motion Designer. |
 | **Sound Designer** | Balances music and sound effects around the voice using measured levels, and adds bespoke effects for key moments. |
+| **Packaging Editor** | Applies the packaging check's fixes to long-video titles, thumbnail text and descriptions (Shorts and carousels are revised by the Social Copywriter), then re-checks them, so fixable issues never reach a human. |
+| **Quality Coach** | Daily: distills recurring QA findings (critic notes, layout, fact-check and packaging fixes) into `data/craft-notes.md`, which every agent reads, so mistakes stop recurring. |
 | **Performance Analyst** | Daily: pulls metrics and rewrites the playbook every other agent follows. |
 
 ## How a day flows

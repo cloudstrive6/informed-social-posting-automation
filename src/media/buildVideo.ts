@@ -6,7 +6,7 @@ import type { Scene, Source } from "../lib/schemas.js";
 import { checkMix, checkSubtitles, measureLevels } from "../qa/audioQa.js";
 import { autoLevel, designSound, speechIntervals } from "../qa/soundDesign.js";
 import { ffmpeg } from "./exec.js";
-import { critiqueShots, keyTimes, layoutAudit, LayoutIssue, ShotReview, technicalFrameChecks } from "../qa/visualQa.js";
+import { critiqueShots, keyTimes, layoutAudit, LayoutIssue, ShotReview, sparseShots, technicalFrameChecks } from "../qa/visualQa.js";
 import { composeAnimated, TimedShot, timeShots } from "./animated.js";
 import { planShots, reviseShots } from "./motionPlan.js";
 import { mixStems, musicMood, musicStem, renderComposition, sfxStem } from "./render.js";
@@ -25,7 +25,11 @@ export interface BuildVideoInput {
 }
 
 export interface VideoQa {
-  visual: { rounds: number; avgScore: number | null; weakShots: number; layoutIssues: number; frameIssues: { kind: string; start: number; detail: string }[] };
+  visual: {
+    rounds: number; avgScore: number | null; weakShots: number; layoutIssues: number; frameIssues: { kind: string; start: number; detail: string }[];
+    /** what the critic and layout audit flagged on the Motion Designer's first draft: feeds the craft notes */
+    notes?: string[]; layoutKinds?: Record<string, number>;
+  };
   audio: { musicGain: number; sfxGain: number; finalWer: number; maskingDelta: number; lufs: number; soundNotes: string } | null;
   subtitles?: { wer: number; diffs: string[] };
   blocking: string[];
@@ -56,8 +60,13 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
     let focus: Set<number> | undefined;
     for (let round = 0; round <= config.qa.visualRounds; round++) {
       qa.visual.rounds = round + 1;
-      layout = await layoutAudit(project, keyTimes(timed).map(k => k.t), W, H).catch(e => { log.warn(`layout audit failed: ${e.message}`); return []; });
+      layout = await layoutAudit(project, keyTimes(timed).map(k => k.t), W, H).catch(e => { log.warn(`layout audit failed: ${e.message}`); return [] as LayoutIssue[]; });
+      layout.push(...sparseShots(timed, W, H));
       reviews = await critiqueShots(project, timed, v.vertical, layout, dir, focus);
+      if (round === 0) {
+        qa.visual.notes = reviews.filter(r => r.score < config.qa.minShotScore || r.readability === "issue").flatMap(r => r.issues).slice(0, 15);
+        qa.visual.layoutKinds = layout.reduce<Record<string, number>>((a, l) => ({ ...a, [l.kind]: (a[l.kind] ?? 0) + 1 }), {});
+      }
       const shotAt = (t: number) => timed.findIndex(s => t >= s.start && t < s.end);
       const badLayout = new Set(layout.map(l => shotAt(l.t)).filter(i => i >= 0));
       const bad = new Set([...reviews.filter(r => r.score < config.qa.minShotScore || r.readability === "issue").map(r => r.shot), ...badLayout]);

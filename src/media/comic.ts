@@ -157,16 +157,19 @@ function layout(s: Slide, x: Ctx): { bg: string; html: string; dark?: boolean } 
         </div>${body(s.body, "font-size:32px")}</div>`,
       };
     case "body_map": {
-      const pos = [[0, 300], [1, 300], [0, 640], [1, 640], [0, 930], [1, 930]];
+      // two flowing columns of callout cards around the central illustration, body text below them:
+      // everything is in normal flow, so nothing can overlap however many items there are
+      const card = (it: typeof items[number], k: number) => `<div class="card" style="width:370px;padding:22px 24px;border-width:5px;box-shadow:7px 7px 0 ${INK};background:${k % 2 ? "#fff" : "#FFFDF0"}">
+            <div style="display:flex;align-items:center;gap:14px">${sticker(it.icon, x.seed + k, 76)}<div class="lbl" style="font-size:38px">${esc(it.label)}</div></div>${it.detail ? `<div class="det" style="font-size:28px">${esc(it.detail)}</div>` : ""}</div>`;
+      const six = items.slice(0, 6);
+      const col = (side: number) => `<div style="display:flex;flex-direction:column;justify-content:space-around;gap:24px">${six.map((it, k) => [it, k] as const).filter(([, k]) => k % 2 === side).map(([it, k]) => card(it, k)).join("")}</div>`;
       return {
         bg: x.bg, html: `<div class="page" style="justify-content:flex-start">${headline(s.headline, 76)}</div>
         <div style="position:absolute;left:50%;top:300px;transform:translateX(-50%)">${sticker(s.icon || "person standing", x.seed, 640)}</div>
-        ${items.slice(0, 6).map((it, k) => {
-          const [side, top] = pos[k];
-          return `<div class="card" style="position:absolute;${side ? "right" : "left"}:44px;top:${top}px;width:370px;padding:22px 24px;border-width:5px;box-shadow:7px 7px 0 ${INK};background:${k % 2 ? "#fff" : "#FFFDF0"}">
-            <div style="display:flex;align-items:center;gap:14px">${sticker(it.icon, x.seed + k, 76)}<div class="lbl" style="font-size:38px">${esc(it.label)}</div></div>${it.detail ? `<div class="det" style="font-size:28px">${esc(it.detail)}</div>` : ""}</div>`;
-        }).join("")}
-        ${s.body ? `<div style="position:absolute;left:78px;right:78px;bottom:150px">${body(s.body, "font-size:30px;text-align:center")}</div>` : ""}`,
+        <div class="flowbox" style="position:absolute;left:44px;right:44px;top:290px;bottom:140px;display:flex;flex-direction:column;gap:26px">
+          <div style="flex:1;display:flex;justify-content:space-between;min-height:0">${col(0)}${col(1)}</div>
+          ${s.body ? `<div style="padding:0 34px">${body(s.body, "font-size:30px;text-align:center")}</div>` : ""}
+        </div>`,
       };
     }
     case "myth_fact":
@@ -226,8 +229,16 @@ export async function renderComicCarousel(carousel: Carousel, outDir: string): P
     // auto-fit: shrink text until nothing runs into the footer or off the canvas
     await page.evaluate(([H]) => {
       const limit = H - 128;
-      const overflow = () => Math.max(...[...document.querySelectorAll(".page > *, .card, .bubble")].map(e => e.getBoundingClientRect().bottom)) > limit;
-      for (let k = 0; k < 8 && overflow(); k++) {
+      // text boxes must stay above the footer AND never overlap each other
+      const boxes = () => [...document.querySelectorAll<HTMLElement>("h1, .card, .bubble, .body")].filter(e => e.offsetParent !== null);
+      const hits = (a: DOMRect, b: DOMRect) => a.left < b.right - 4 && b.left < a.right - 4 && a.top < b.bottom - 4 && b.top < a.bottom - 4;
+      const overlap = () => {
+        const bs = boxes();
+        return bs.some((a, i) => bs.slice(i + 1).some(b => !a.contains(b) && !b.contains(a) && hits(a.getBoundingClientRect(), b.getBoundingClientRect())));
+      };
+      const flowOver = () => [...document.querySelectorAll<HTMLElement>(".flowbox")].some(f => f.scrollHeight > f.clientHeight + 2);
+      const overflow = () => flowOver() || overlap() || Math.max(...[...document.querySelectorAll(".page > *, .card, .bubble")].map(e => e.getBoundingClientRect().bottom)) > limit;
+      for (let k = 0; k < 12 && overflow(); k++) {
         document.querySelectorAll<HTMLElement>("h1, .body, .det, .lbl, .card, .bubble").forEach(e => {
           e.style.fontSize = `${parseFloat(getComputedStyle(e).fontSize) * 0.93}px`;
         });

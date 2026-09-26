@@ -213,6 +213,12 @@ function speechBubbles(c: Ctx, shot: TimedShot, speakers: Speaker[]): string {
   return html;
 }
 
+/** Big-number size that always fits the frame width (heavy display font ≈ 0.64 em per character). */
+const statSize = (text: string, c: Ctx) => {
+  const base = c.vertical ? 230 : 210, room = c.W * (c.vertical ? 0.8 : 0.7);
+  return Math.round(Math.max(96, Math.min(base, room / (Math.max(1, [...text].length) * 0.64))));
+};
+
 function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
   const p = palette(shot.mood);
   const seed = hashStr(shot.scene_id + shot.cue + index);
@@ -294,7 +300,7 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
     c.cues.push({ t, sfx: "hit", gain: 0.7 });
   } else if (tt.style === "stat" && tt.text) {
     const sid = uid(c, "st");
-    overlay += `<div id="${sid}" class="stat" style="top:${c.vertical ? 13 : 28}%"><div class="sv" style="font-size:${c.vertical ? 230 : 210}px">${esc(tt.text)}</div><div class="sl" style="font-size:${c.vertical ? 50 : 46}px">${esc(tt.sub)}</div></div>`;
+    overlay += `<div id="${sid}" class="stat" style="top:${c.vertical ? 13 : 28}%"><div class="sv" style="font-size:${statSize(tt.text, c)}px">${esc(tt.text)}</div><div class="sl" style="font-size:${c.vertical ? 50 : 46}px">${esc(tt.sub)}</div></div>`;
     const t = t0 + 0.3;
     c.anims.push(`tl.fromTo("#${sid} .sv",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.6,ease:"elastic.out(1,0.55)"},${f3(t)});`);
     c.anims.push(`tl.fromTo("#${sid} .sl",{y:40,opacity:0},{y:0,opacity:1,duration:0.4},${f3(t + 0.35)});`);
@@ -321,7 +327,7 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
 
   // the previous shot stays visible under this one while it transitions in
   const visibleEnd = shot.end + TRANS_DUR + 0.05;
-  return `<div id="${shotId}" class="clip shot${p.dark && !LIGHT_BACKDROPS.has(bg) && c.theme !== "doodle" ? "" : " light"}" data-start="${f3(t0)}" data-duration="${f3(visibleEnd - t0)}" style="z-index:${10 + index}">` +
+  return `<div id="${shotId}" class="clip shot${p.dark && !LIGHT_BACKDROPS.has(bg) && c.theme !== "doodle" ? "" : " light"}${LIGHT_BACKDROPS.has(bg) ? " scene" : ""}" data-start="${f3(t0)}" data-duration="${f3(visibleEnd - t0)}" style="z-index:${10 + index}">` +
     `<div id="${camId}" class="cam">${inner}</div>${overlay}</div>`;
 }
 
@@ -349,6 +355,8 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#12072e}
 .chip{font-weight:800;color:#fff;background:#5b2a86;border:4px solid #ff79c6;padding:12px 28px;border-radius:14px;white-space:nowrap}
 .cap{position:absolute;left:8%;right:8%;width:fit-content;margin:0 auto;padding:6px 26px 10px;border-radius:22px;background:rgba(18,10,40,.88);text-wrap:balance;text-align:center;font-weight:900;color:#fff;text-transform:uppercase;-webkit-text-stroke:3px #1b1030;paint-order:stroke fill;text-shadow:0 8px 24px rgba(0,0,0,.6);z-index:900}
 .logo{position:absolute}
+.scene .headline{padding:20px 30px 26px;background:rgba(255,253,245,.92);border:5px solid #1d1440;border-radius:36px;box-shadow:0 10px 0 rgba(29,20,64,.18)}
+.scene .stat{left:6%;right:6%;padding:18px 20px 26px;background:rgba(255,253,245,.92);border:5px solid #1d1440;border-radius:40px;box-shadow:0 10px 0 rgba(29,20,64,.18)}
 .bwrap{position:absolute;left:5%;right:5%;height:0;z-index:40}
 .banchor{position:absolute;width:max-content}
 .bubble{position:relative;font-family:"Fredoka","Brand",sans-serif;font-weight:600;color:#1b1030;background:#fff;border:6px solid #1b1030;border-radius:44px;padding:18px 34px 22px;text-align:center;line-height:1.12;text-wrap:balance;box-shadow:0 12px 0 rgba(0,0,0,.18)}

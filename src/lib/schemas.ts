@@ -132,6 +132,9 @@ export const thumbnailsSchema = obj({
 export interface Seo { description: string; tags: string[]; hashtags: string[]; pinned_comment: string }
 export const seoSchema = obj({ description: str, tags: strArr, hashtags: strArr, pinned_comment: str });
 
+export interface LongPackaging { title: string; thumbnail_headline: string; thumbnail_subtext: string; description: string; pinned_comment: string }
+export const longPackagingSchema = obj({ title: str, thumbnail_headline: str, thumbnail_subtext: str, description: str, pinned_comment: str });
+
 export interface SocialCopy {
   youtube_short_title: string; youtube_short_description: string;
   instagram_caption: string; tiktok_caption: string; facebook_caption: string;

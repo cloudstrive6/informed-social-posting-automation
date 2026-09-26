@@ -11,6 +11,7 @@ import { openReviewIssue, reportFailure } from "../review/issues.js";
 import { facebookAlbumPost, facebookReel, instagramCarousel, instagramReel } from "./meta.js";
 import { downloadFromRelease, publishImages, uploadToRelease } from "./storage.js";
 import { archiveItem } from "./b2.js";
+import { recordQuality, updateCraftNotes } from "../analytics/quality.js";
 import { tiktokPost } from "./tiktok.js";
 import { setThumbnail, uploadVideo } from "./youtube.js";
 
@@ -112,12 +113,15 @@ export async function finalizeDay(date: string) {
       item.review_issue = await openReviewIssue(item);
     }
     saveItem(item);
+    recordQuality(item);
     covered.push({ date, kind: item.kind, topic: item.plan.topic, angle: item.plan.angle, title: item.package.title });
     // merge ElevenLabs spend from the parallel production jobs into the shared monthly counter
     const credits = Number(item.qa?.elevenCredits ?? 0);
     if (credits && process.env.GITHUB_ACTIONS) addElevenUsage(item.kind, credits, false);
   }
   writeJson(coveredPath, covered.slice(-400));
+  // learn from today's QA findings so tomorrow's first drafts avoid them
+  await updateCraftNotes();
 
   // YouTube supports native scheduling: upload now, it goes public exactly at the slot.
   for (const item of loadItems([date])) {

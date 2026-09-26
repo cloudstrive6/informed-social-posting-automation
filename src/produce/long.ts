@@ -6,13 +6,13 @@ import { ContentItem } from "../lib/items.js";
 import { ensureDir, writeJson } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
 import { creditsThisRun } from "../lib/usage.js";
-import { Script, scriptSchema, Seo, seoSchema, Thumbnails, thumbnailsSchema, Titles, titlesSchema } from "../lib/schemas.js";
+import { LongPackaging, longPackagingSchema, Script, scriptSchema, Seo, seoSchema, Thumbnails, thumbnailsSchema, Titles, titlesSchema } from "../lib/schemas.js";
 import { fmtTimestamp } from "../lib/time.js";
 import { buildVideo } from "../media/buildVideo.js";
 import { closeStills, renderThumbnail } from "../media/stills.js";
 import { aiImage, stockPhoto } from "../media/stock.js";
 import type { Timeline } from "../media/tts.js";
-import { checkPackaging, directNarration, narrateChecked, qaBlockers, loadPiece, newItem, workDir, writeWithFactCheck } from "./common.js";
+import { packagingLoop, directNarration, narrateChecked, qaBlockers, loadPiece, newItem, workDir, writeWithFactCheck } from "./common.js";
 
 /** YouTube chapters: first at 0:00, each ≥ 10 s, at least 3 — otherwise omitted. */
 export function chapters(script: Script, tl: Timeline): string {
@@ -88,11 +88,23 @@ export async function produceLong(date: string, pieceId: string): Promise<Conten
     tags: seo.tags, pinned_comment: seo.pinned_comment, thumbnail: concept, chapters: ch,
   };
 
-  // 5) packaging must not overclaim
-  const pc = await checkPackaging(item, { title: titles.chosen, thumbnail_text: concept.headline, thumbnail_subtext: concept.subtext, description_start: seo.description.slice(0, 600) }, factcheck.verified_sources);
-  if (pc.verdict !== "PASS" && item.status !== "held") {
-    const alt = titles.candidates.find(c => c.title !== titles.chosen);
-    item.status = "held"; item.hold_reason = `Packaging check ${pc.verdict}: ${pc.summary}${alt ? ` (alternative title: ${alt.title})` : ""}`;
+  // 5) packaging must not overclaim: check → Packaging Editor applies fixes → re-check
+  const draft: LongPackaging = { title: titles.chosen, thumbnail_headline: concept.headline, thumbnail_subtext: concept.subtext, description: seo.description, pinned_comment: seo.pinned_comment };
+  const pk = await packagingLoop(item, draft, factcheck.verified_sources,
+    { script: script.scenes.map(s => ({ section: s.section, narration: s.narration, on_screen_text: s.on_screen_text })) },
+    (current, fact_check) => runAgent<LongPackaging>({ agent: "packaging-editor", model: config.models.packaging, schema: longPackagingSchema, effort: "medium", input: { packaging: current, fact_check } }),
+    p => ({ ...p, description: p.description.slice(0, 1500) }));
+  const fixed = pk.packaging;
+  if (fixed.thumbnail_headline !== concept.headline || fixed.thumbnail_subtext !== concept.subtext) {
+    concept.headline = fixed.thumbnail_headline; concept.subtext = fixed.thumbnail_subtext;
+    item.media.thumbnail = await renderThumbnail(concept, images, join(final, `${item.id}-thumb.jpg`));
+    await closeStills();
+  }
+  item.package = { ...item.package, title: fixed.title, description: fixed.description, pinned_comment: fixed.pinned_comment, thumbnail: concept };
+  item.qa = { ...item.qa, packaging: { verdict: pk.check.verdict, issues: pk.check.issues } };
+  if (pk.held && item.status !== "held") {
+    const alt = titles.candidates.find(c => c.title !== fixed.title);
+    item.status = "held"; item.hold_reason = `${pk.reason}${alt ? ` (alternative title: ${alt.title})` : ""}`;
   }
   copyFileSync(join(dir, "script.json"), join(final, `${item.id}-script.json`));
   return item;

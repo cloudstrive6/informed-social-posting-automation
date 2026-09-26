@@ -38,7 +38,24 @@ export async function technicalFrameChecks(video: string): Promise<FrameIssue[]>
 }
 
 // ------------------------------------------------------------------ 2) layout audit of text
-export interface LayoutIssue { t: number; kind: "offscreen" | "overlap" | "tiny" | "on-hero"; text: string; detail: string }
+export interface LayoutIssue { t: number; kind: "offscreen" | "overlap" | "tiny" | "on-hero" | "sparse"; text: string; detail: string }
+
+/**
+ * Near-empty shots (a few small props on a plain background) read as unfinished. Estimated straight from the
+ * shot plan: artwork area / frame area. Illustrated backdrops and title beats need less artwork.
+ */
+export function sparseShots(shots: { start: number; end: number; background: string; elements: { size: number; count: number; depth: string }[]; title: { style: string } }[], W: number, H: number): LayoutIssue[] {
+  const filled = new Set(["room", "kitchen", "outdoors", "body", "cells", "bloodstream", "tissue"]);
+  return shots.flatMap(s => {
+    const area = s.elements.reduce((a, e) => a + Math.min(30, Math.max(1, Math.round(e.count))) * ((e.size / 100) * H) ** 2 * (e.depth === "bg" ? 0.64 : 1), 0) / (W * H);
+    const titled = s.title.style === "stat" || s.title.style === "headline";
+    const min = filled.has(s.background) ? 0.06 : 0.12;
+    return !titled && area < min ? [{
+      t: (s.start + s.end) / 2, kind: "sparse" as const, text: "",
+      detail: `shot looks empty: the artwork covers only ~${Math.round(area * 100)}% of the frame on a ${s.background} background. Use one hero at size 35+, or make grouped items bigger (size 18+), or switch to an illustrated backdrop (room/kitchen/outdoors/body).`,
+    }] : [];
+  });
+}
 
 export async function layoutAudit(projectDir: string, times: number[], W: number, H: number): Promise<LayoutIssue[]> {
   const browser = await chromium.launch();
