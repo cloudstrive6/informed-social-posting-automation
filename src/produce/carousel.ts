@@ -3,8 +3,7 @@ import { ContentItem } from "../lib/items.js";
 import { ensureDir } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
 import { Carousel, carouselSchema } from "../lib/schemas.js";
-import { closeStills, renderCarousel } from "../media/stills.js";
-import { stockPhoto } from "../media/stock.js";
+import { renderComicCarousel } from "../media/comic.js";
 import { checkPackaging, loadPiece, newItem, socialCopy, workDir, writeWithFactCheck } from "./common.js";
 
 export async function produceCarousel(date: string, pieceId: string): Promise<ContentItem> {
@@ -18,12 +17,8 @@ export async function produceCarousel(date: string, pieceId: string): Promise<Co
   item.carousel = carousel; item.factcheck = factcheck;
   if (held) { item.status = "held"; item.hold_reason = holdReason; }
 
-  const photos: (string | undefined)[] = [];
-  for (const [i, s] of carousel.slides.entries()) {
-    photos.push(s.image_query ? await stockPhoto(s.image_query, s.kind === "hook" ? "portrait" : "landscape", join(dir, "photos"), i) : undefined);
-  }
-  const slides = await renderCarousel(carousel, photos, final);
-  await closeStills();
+  // comic-style infographic slides built from the illustration packs (no stock photos)
+  const slides = await renderComicCarousel(carousel, final);
   item.media.slides = slides;
 
   const social = await socialCopy(item, { title: carousel.title, slides: carousel.slides, sources: factcheck.verified_sources });

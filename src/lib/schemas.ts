@@ -141,17 +141,35 @@ export const socialCopySchema = obj({
   instagram_caption: str, tiktok_caption: str, facebook_caption: str,
 });
 
-// ---------- Carousels ----------
+// ---------- Carousels (comic infographics) ----------
+export type SlideKind = "hook" | "stat" | "pictogram" | "comparison" | "steps" | "chart" | "icon_grid" | "body_map" | "myth_fact" | "checklist" | "cta";
+export interface SlideItem { label: string; detail: string; icon: string; value: string }
 export interface Slide {
-  kind: "hook" | "point" | "stat" | "myth_fact" | "checklist" | "cta";
-  headline: string; body: string; stat: string; items: string[]; image_query: string;
+  kind: SlideKind;
+  headline: string; body: string;
+  /** big number for stat/pictogram ("1 in 3", "58%") */
+  stat: string;
+  /** main illustration, plain English ("woman sleeping", "health:liver"); "" for none */
+  icon: string;
+  /** what the Medi mascot says in a speech bubble; "" for no mascot */
+  bubble: string;
+  /** pictogram: filled of total people (e.g. 3 of 10) */
+  filled: number; total: number;
+  /** comparison column titles + illustrations */
+  columns: string[]; column_icons: string[];
+  /** rows/tips/steps/bars/callouts depending on kind */
+  items: SlideItem[];
 }
 export interface Carousel { title: string; slides: Slide[]; sources: Source[] }
+const slideItem = obj({ label: str, detail: str, icon: str, value: str });
 export const carouselSchema = obj({
   title: str,
   slides: arr(obj({
-    kind: { enum: ["hook", "point", "stat", "myth_fact", "checklist", "cta"] },
-    headline: str, body: str, stat: str, items: strArr, image_query: str,
+    kind: { enum: ["hook", "stat", "pictogram", "comparison", "steps", "chart", "icon_grid", "body_map", "myth_fact", "checklist", "cta"] },
+    headline: str, body: str, stat: str, icon: str, bubble: str,
+    filled: { type: "number", minimum: 0, maximum: 10 }, total: { type: "number", minimum: 0, maximum: 10 },
+    columns: arr(str, { maxItems: 2 }), column_icons: arr(str, { maxItems: 2 }),
+    items: arr(slideItem, { maxItems: 6 }),
   }), { minItems: 5, maxItems: 10 }),
   sources: arr(obj({ id: str, title: str, publisher: str, year: str, url: str })),
 });

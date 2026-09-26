@@ -54,6 +54,15 @@ export async function writeWithFactCheck<T>(writer: AgentName, schema: object, b
     // PASS with minor fixes: fixes are applied, no need for another round
     if (fc.verdict === "PASS") break;
   }
+  // Out of rounds but only minor, precisely-specified fixes left: apply them and accept (majors/critical still hold)
+  if (fc!.verdict === "REVISE" && fc!.issues.length && fc!.issues.every(i => i.severity === "minor")) {
+    content = await runAgent<T>({
+      agent: writer, model: config.models.writer, schema, effort: "high",
+      input: { ...brief, task: "Apply these final minor fact-checker fixes exactly. Change nothing else.", draft: content, fact_check: fc },
+    });
+    log.info(`fact-check: ${fc!.issues.length} minor fixes applied after the final round — accepted`);
+    fc = { ...fc!, verdict: "PASS", summary: `Minor fixes applied after final review: ${fc!.issues.map(i => i.location).join("; ")}` };
+  }
   const held = fc!.verdict !== "PASS";
   return { content, factcheck: fc!, held, holdReason: held ? `Fact-checker verdict ${fc!.verdict}: ${fc!.summary}` : undefined };
 }

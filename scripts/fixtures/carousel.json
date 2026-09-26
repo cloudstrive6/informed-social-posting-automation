@@ -1,0 +1,34 @@
+{
+  "title": "Pill vs patch: the clot risk nobody explains",
+  "sources": [{ "id": "s1", "title": "Use of hormone replacement therapy and risk of venous thromboembolism", "publisher": "The BMJ", "year": "2019", "url": "https://pubmed.ncbi.nlm.nih.gov/30626577/" }],
+  "slides": [
+    { "kind": "hook", "headline": "Same hormone. Different clot risk.", "body": "It depends on HOW you take it", "stat": "", "icon": "pill", "bubble": "Wait, the pill and the patch aren't the same?!", "filled": 0, "total": 0, "columns": [], "column_icons": [], "items": [] },
+    { "kind": "stat", "headline": "Oral HRT and vein clots", "body": "Tablets were linked to 58% higher odds of a vein clot compared with no HRT, in a study of 80,000+ women.", "stat": "+58%", "icon": "drop of blood", "bubble": "", "filled": 0, "total": 0, "columns": [], "column_icons": [], "items": [] },
+    { "kind": "pictogram", "headline": "But the absolute risk is small", "body": "Most women on HRT will never get a clot. Your age, weight and history matter more.", "stat": "Rare", "icon": "woman", "bubble": "", "filled": 1, "total": 10, "columns": [], "column_icons": [], "items": [] },
+    { "kind": "comparison", "headline": "Pill vs patch at a glance", "body": "", "stat": "", "icon": "", "bubble": "", "filled": 0, "total": 0, "columns": ["Pill", "Patch / gel"], "column_icons": ["pill", "health:contraceptive patch"], "items": [
+      { "label": "Route", "detail": "Swallowed, passes the liver", "icon": "", "value": "Through the skin" },
+      { "label": "Clot odds", "detail": "Higher", "icon": "", "value": "No clear increase" },
+      { "label": "Good for", "detail": "Many women, low risk", "icon": "", "value": "Higher clot risk" }] },
+    { "kind": "steps", "headline": "Why the route matters", "body": "", "stat": "", "icon": "", "bubble": "", "filled": 0, "total": 0, "columns": [], "column_icons": [], "items": [
+      { "label": "You swallow a pill", "detail": "Estrogen enters the gut", "icon": "pill", "value": "" },
+      { "label": "First stop: the liver", "detail": "It processes a big dose at once", "icon": "health:liver", "value": "" },
+      { "label": "More clotting proteins", "detail": "The liver ramps them up", "icon": "drop of blood", "value": "" },
+      { "label": "Patch skips that step", "detail": "Skin sends it into blood gently", "icon": "health:contraceptive patch", "value": "" }] },
+    { "kind": "chart", "headline": "Odds of a vein clot vs no HRT", "body": "Approximate odds ratios from the BMJ 2019 study.", "stat": "", "icon": "", "bubble": "", "filled": 0, "total": 0, "columns": [], "column_icons": [], "items": [
+      { "label": "No HRT", "detail": "", "icon": "woman", "value": "1.0x" },
+      { "label": "Patch or gel", "detail": "", "icon": "health:contraceptive patch", "value": "0.93x" },
+      { "label": "Oral tablets", "detail": "", "icon": "pill", "value": "1.58x" }] },
+    { "kind": "body_map", "headline": "What raises clot risk", "body": "", "stat": "", "icon": "woman standing", "bubble": "", "filled": 0, "total": 0, "columns": [], "column_icons": [], "items": [
+      { "label": "Age", "detail": "Risk rises over 60", "icon": "hourglass", "value": "" },
+      { "label": "Weight", "detail": "Higher BMI adds risk", "icon": "balance scale", "value": "" },
+      { "label": "Smoking", "detail": "Thickens blood", "icon": "cigarette", "value": "" },
+      { "label": "Past clots", "detail": "The biggest red flag", "icon": "drop of blood", "value": "" }] },
+    { "kind": "myth_fact", "headline": "HRT is dangerous for everyone", "body": "For most healthy women under 60 the benefits outweigh the risks, and the route can lower clot risk further.", "stat": "", "icon": "", "bubble": "Talk to your doctor before switching!", "filled": 0, "total": 0, "columns": [], "column_icons": [], "items": [] },
+    { "kind": "icon_grid", "headline": "Questions to ask your doctor", "body": "", "stat": "", "icon": "", "bubble": "", "filled": 0, "total": 0, "columns": [], "column_icons": [], "items": [
+      { "label": "Which route?", "detail": "Pill, patch, gel or spray", "icon": "red question mark", "value": "" },
+      { "label": "My clot risk?", "detail": "Family history counts", "icon": "health:blood cells", "value": "" },
+      { "label": "Which dose?", "detail": "Lowest that works", "icon": "pill", "value": "" },
+      { "label": "Review when?", "detail": "Check in yearly", "icon": "calendar", "value": "" }] },
+    { "kind": "cta", "headline": "Save this for your next appointment", "body": "Same hormone. Different route. Different risk.", "stat": "", "icon": "", "bubble": "Share it with a friend going through menopause!", "filled": 0, "total": 0, "columns": [], "column_icons": [], "items": [] }
+  ]
+}
