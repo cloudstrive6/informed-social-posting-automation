@@ -34,5 +34,7 @@ export async function installBrandAssets(projectDir: string): Promise<string> {
   for (const f of ["icon-gradient.png", "icon-white.png", "logo-horizontal-light.png", "logo-horizontal-white.png", "logo-horizontal-dark.png"]) {
     copyFileSync(join(ROOT, "brand", f), join(assets, f));
   }
-  return `@font-face{font-family:"Brand";src:url("assets/Montserrat.ttf") format("truetype");font-weight:100 900;font-display:block;}`;
+  copyFileSync(await fontFile("Fredoka"), join(assets, "Fredoka.ttf"));
+  return `@font-face{font-family:"Brand";src:url("assets/Montserrat.ttf") format("truetype");font-weight:100 900;font-display:block;}` +
+    `@font-face{font-family:"Fredoka";src:url("assets/Fredoka.ttf") format("truetype");font-weight:300 700;font-display:block;}`;
 }

@@ -27,6 +27,8 @@ export interface ContentItem {
   /** Whisper + visual QA results */
   qa?: Record<string, unknown>;
   release_tag?: string;
+  /** permanent copy in Backblaze B2 (b2://bucket/content/<date>/<id>/) */
+  archive_url?: string;
   /** Public URLs of carousel images (needed by the Instagram API). */
   image_urls?: string[];
   posts: PostTarget[];

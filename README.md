@@ -86,7 +86,7 @@ brand/             logos (from InforMed Logo Files)
 src/trends/        signal scrapers + radar
 src/plan/          daily planning + topic screening
 src/produce/       long / short / carousel pipelines
-src/media/         TTS, stock, b-roll, HyperFrames compositions, stills, render/mix
+src/media/         TTS, animated cartoon compositions (vector/ + cartoon faces, bubbles, backdrops), comic carousels, thumbnails, render/mix
 src/publish/       YouTube, Meta (IG+FB), TikTok, storage, publisher
 src/review/        GitHub-Issue human review
 src/analytics/     metrics + learnings loop

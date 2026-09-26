@@ -35,7 +35,8 @@ if (mode === "sfx") {
     }
   }
 } else if (mode === "music") {
-  const perMood = Number(process.argv[3] ?? 4), seconds = Number(process.argv[4] ?? 300);
+  // ~905 credits per minute of music: one 3-minute track per mood ≈ 13.6k credits for the whole library
+  const perMood = Number(process.argv[3] ?? 1), seconds = Number(process.argv[4] ?? 180);
   for (const [mood, prompt] of Object.entries(config.music.prompts)) {
     const dir = ensureDir(join(ROOT, "assets", "music", mood));
     for (let v = 1; v <= perMood; v++) {
@@ -46,5 +47,5 @@ if (mode === "sfx") {
     }
   }
 } else {
-  console.log("usage: tsx scripts/audio-assets.ts sfx | music [perMood=4] [seconds=300]");
+  console.log("usage: tsx scripts/audio-assets.ts sfx | music [perMood=1] [seconds=180]");
 }

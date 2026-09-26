@@ -3,7 +3,7 @@ import { extname, join } from "node:path";
 import { chromium, Browser } from "playwright";
 import { config, ROOT } from "../lib/config.js";
 import type { ThumbConcept } from "../lib/schemas.js";
-import { esc } from "./compose.js";
+import { esc } from "../lib/html.js";
 import { ensureFont } from "./fonts.js";
 
 const C = config.brand.colors;

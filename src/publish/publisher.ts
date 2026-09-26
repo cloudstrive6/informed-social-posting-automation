@@ -10,6 +10,7 @@ import { coveredPath, CoveredTopic } from "../plan/planDay.js";
 import { openReviewIssue, reportFailure } from "../review/issues.js";
 import { facebookAlbumPost, facebookReel, instagramCarousel, instagramReel } from "./meta.js";
 import { downloadFromRelease, publishImages, uploadToRelease } from "./storage.js";
+import { archiveItem } from "./b2.js";
 import { tiktokPost } from "./tiktok.js";
 import { setThumbnail, uploadVideo } from "./youtube.js";
 
@@ -91,6 +92,7 @@ export async function finalizeDay(date: string) {
     const files = readdirSync(finalDir).map(f => join(finalDir, f));
     await uploadToRelease(tag, files);
     item.release_tag = tag;
+    item.archive_url = await archiveItem(date, id, join(dayOut, id));
     if (item.media.video) item.media.video = basename(item.media.video);
     if (item.media.thumbnail) item.media.thumbnail = basename(item.media.thumbnail);
     if (item.media.slides) {

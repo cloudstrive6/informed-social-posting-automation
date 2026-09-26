@@ -261,7 +261,7 @@ export function mascot(l: Look): string {
   return `<defs><linearGradient id="mg${l.seed}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#23b1dc"/><stop offset="1" stop-color="#95ca5b"/></linearGradient></defs>` +
     `<path d="M0,46 C-46,16 -54,-22 -30,-36 C-16,-44 -4,-36 0,-26 C4,-36 16,-44 30,-36 C54,-22 46,16 0,46Z" fill="url(#mg${l.seed})" stroke="#e8fff4" stroke-width="5"/>` +
     `<circle cx="14" cy="-50" r="9" fill="#95ca5b" stroke="#e8fff4" stroke-width="3"/>` +
-    eyes(-6, 12, 6) + `<path d="M-8,12 q8,8 16,0" stroke="#1b1030" stroke-width="3.5" fill="none" stroke-linecap="round"/>` +
+    eyes(-6, 12, 6) + `<path class="mouth" d="M-8,12 q8,8 16,0" stroke="#1b1030" stroke-width="3.5" fill="none" stroke-linecap="round"/>` +
     `<circle cx="-22" cy="6" r="5" fill="#ff8fb3" opacity=".6"/><circle cx="22" cy="6" r="5" fill="#ff8fb3" opacity=".6"/>`;
 }
 

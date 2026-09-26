@@ -13,6 +13,8 @@ Reference studied: Kurzgesagt, "This Woman Cured Her Cancer with an Insane Metho
 - **Labels, not paragraphs**: short pill labels with an icon ("Natural Killer Cell"), round icon badges with 1–2 word captions ("Alopecia", "Mucositis"), stage chips ("Stage 0 … Stage IV"), a few UI-style cards. Big numbers are rare and dramatic.
 - **Shot length 3–7 s** even while one sentence continues; a cut or camera move lands on key words.
 - A **recurring mascot** (their bird) appears in human-scale scenes for warmth and comic relief.
+- **Personified characters** (MapWarden): objects get googly eyes and big readable expressions, and talk to each other in short comic speech bubbles that add a joke or an emotion the narration doesn't say.
+- **Doodle explainers** (whiteboard style): hand-drawn wobbly lines with marker outlines on paper; the line "boils" slightly so even still drawings feel alive.
 
 ### Sound
 - Warm, confident **human narrator**, measured pace (~150 wpm), short punchy sentences mixed with long flowing ones, dry humor ("We'll spare you the details, but it was not fun.").
@@ -34,7 +36,10 @@ Reference studied: Kurzgesagt, "This Woman Cured Her Cancer with an Insane Metho
 | Constant motion | GSAP motion presets: float, breathe, spin, drift, orbit, wobble, swim, pop, count-up; seek-safe for the renderer |
 | Iris / zoom / whip transitions | Shot transitions rendered in the composition |
 | Mascot | "Medi", a heart-shaped character derived from the InforMed logo |
+| Personified characters | `face` on any element (happy, worried, shocked, sad, angry, sick, proud, sleepy) with automatic blinking; `says` speech bubbles (max 2 per shot, spoken in turn) with an animated talking mouth; `src/media/vector/cartoon.ts` |
+| Illustrated scenes | `room`, `kitchen`, `outdoors` backdrops for human-scale shots and a glowing `body` silhouette for "where in the body" shots |
+| Themes | `video.theme` in `config/channel.json` (or `VIDEO_THEME`): `vibrant` (flat, saturated, Kurzgesagt-like) or `doodle` (paper + hand-drawn wobble, marker outlines, line boil) |
 | SFX | Synthesized SFX kit (pop, whoosh, blip, bubble, ding, riser, sparkle) auto-cued from animation events |
 | Score | Procedurally generated ambient synth bed per mood, or your own tracks in `assets/music/` |
-| Human narrator | Chatterbox TTS (expressive, open source), timed with Whisper word alignment |
+| Human narrator | ElevenLabs (voice "Jeremy") with character timestamps; Chatterbox → Kokoro fallback |
 | Output | 1920×1080 (long) and 1080×1920 (vertical) at **60 fps** |

@@ -15,7 +15,7 @@ export function done() { rl.close(); }
 
 /** Store secrets in the GitHub repo via `gh secret set` (value passed on stdin, never on the command line). */
 export async function offerToSaveSecrets(values: Record<string, string>) {
-  const yes = (await rl.question("\nSave these as GitHub Actions secrets for this repo now? (requires `gh auth login`) [y/N] ")).trim().toLowerCase() === "y";
+  const yes = process.env.SAVE_SECRETS === "1" || (await rl.question("\nSave these as GitHub Actions secrets for this repo now? (requires `gh auth login`) [y/N] ")).trim().toLowerCase() === "y";
   if (!yes) {
     console.log("\nAdd them manually: GitHub repo → Settings → Secrets and variables → Actions → New repository secret.");
     return;

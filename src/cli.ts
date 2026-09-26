@@ -44,7 +44,8 @@ async function doctor() {
   const groups: Record<string, string[]> = {
     "Claude (agents)": ["CLAUDE_CODE_OAUTH_TOKEN"],
     "ElevenLabs (voice, music, SFX)": ["ELEVENLABS_API_KEY"],
-    "Stock footage (need ≥1)": ["PEXELS_API_KEY", "PIXABAY_API_KEY"],
+    "Stock photos (optional thumbnail fallback)": ["PEXELS_API_KEY", "PIXABAY_API_KEY"],
+    "Backblaze B2 archive (optional)": ["B2_KEY_ID", "B2_APPLICATION_KEY"],
     "YouTube upload": ["YOUTUBE_CLIENT_ID", "YOUTUBE_CLIENT_SECRET", "YOUTUBE_REFRESH_TOKEN"],
     "YouTube research (optional)": ["YOUTUBE_API_KEY"],
     "Instagram + Facebook": ["META_PAGE_ACCESS_TOKEN", "META_PAGE_ID", "META_IG_USER_ID"],
@@ -66,21 +67,6 @@ const commands: Record<string, () => Promise<unknown>> = {
   "review-sync": () => syncReviews(),
   analytics: () => runAnalytics(),
   doctor,
-  "demo-short": async () => {
-    // Offline smoke test of the media pipeline with a fixture script (no agents, no publishing).
-    const { narrate } = await import("./media/tts.js");
-    const { buildBroll } = await import("./media/broll.js");
-    const { composeShort } = await import("./media/compose.js");
-    const { renderComposition, muxAudio } = await import("./media/render.js");
-    const script = readJson<any>(join(ROOT, "scripts", "fixtures", "short.json"));
-    const dir = join(OUT, "demo");
-    const { wav, timeline } = await narrate(script.scenes.map((s: any) => ({ id: s.id, text: s.narration, speed: 1, pause_after_ms: 200 })), dir);
-    const segs = script.scenes.map((s: any, i: number) => ({ start: i ? timeline.scenes[i].start : 0, end: timeline.scenes[i + 1]?.start ?? timeline.duration, query: s.visual.stock_query, dim: s.visual.kind !== "broll" }));
-    const bg = await buildBroll(segs, "portrait", join(dir, "broll"), 3.5, "healthy food");
-    const hf = await composeShort(join(dir, "hf"), bg, script.scenes, script.sources, timeline);
-    const silent = await renderComposition(hf, join(dir, "silent.mp4"));
-    log.info(`demo video: ${await muxAudio(silent, wav, join(dir, "demo-short.mp4"), "demo")}`);
-  },
 };
 
 const fn = commands[cmd];

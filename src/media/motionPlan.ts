@@ -74,8 +74,8 @@ function fallbackShot(s: Scene): Shot {
   return {
     scene_id: s.id, cue: s.narration.split(" ").slice(0, 3).join(" "), mood: "brand", background: "bokeh", camera: "push-in", transition: "fade",
     elements: [
-      { type: "cell", variant: "healthy", tone: "primary", x: 50, y: 48, size: 40, count: 1, spread: 0, motion: "breathe", enter: "pop", enter_at: 0, depth: "mid", label: "", flip: false },
-      { type: "molecule", variant: "", tone: "accent", x: 50, y: 50, size: 10, count: 8, spread: 40, motion: "float", enter: "pop", enter_at: 0.2, depth: "bg", label: "", flip: false },
+      { type: "cell", variant: "healthy", tone: "primary", x: 50, y: 48, size: 40, count: 1, spread: 0, motion: "breathe", enter: "pop", enter_at: 0, depth: "mid", label: "", flip: false, face: "happy", says: "" },
+      { type: "molecule", variant: "", tone: "accent", x: 50, y: 50, size: 10, count: 8, spread: 40, motion: "float", enter: "pop", enter_at: 0.2, depth: "bg", label: "", flip: false, face: "none", says: "" },
     ],
     title: { style: s.on_screen_text ? "headline" : "none", text: s.on_screen_text ?? "", sub: "", items: [] },
   };

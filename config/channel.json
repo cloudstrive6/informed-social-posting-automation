@@ -120,13 +120,13 @@
   },
   "video": {
     "style": "animated",
-    "_comment": "style: animated (flat-vector motion graphics, see docs/STYLE.md) | broll (stock footage)",
+    "_comment": "Animated cartoon style only (see docs/STYLE.md). theme: vibrant (Kurzgesagt-like) | doodle (hand-drawn whiteboard look).",
     "fps": 60,
     "quality": "high",
     "burnCaptionsLong": false,
-    "musicVolume": 0.16,
+    "musicVolume": 0.22,
     "sfxVolume": 0.55,
-    "brollProvider": "pexels"
+    "theme": "vibrant"
   },
   "safety": {
     "policy": "Auto-publish only when the Fact-Checker agent returns PASS. Anything else is held and a GitHub issue is opened for human review.",

@@ -8,10 +8,8 @@ import { autoLevel, designSound, speechIntervals } from "../qa/soundDesign.js";
 import { ffmpeg } from "./exec.js";
 import { critiqueShots, keyTimes, layoutAudit, LayoutIssue, ShotReview, technicalFrameChecks } from "../qa/visualQa.js";
 import { composeAnimated, TimedShot, timeShots } from "./animated.js";
-import { buildBroll } from "./broll.js";
-import { composeLong, composeShort } from "./compose.js";
 import { planShots, reviseShots } from "./motionPlan.js";
-import { mixStems, muxAudio, musicMood, musicStem, renderComposition, sfxStem } from "./render.js";
+import { mixStems, musicMood, musicStem, renderComposition, sfxStem } from "./render.js";
 import type { Timeline } from "./tts.js";
 import type { Shot } from "./vector/shots.js";
 
@@ -33,19 +31,10 @@ export interface VideoQa {
   blocking: string[];
 }
 
-/** Visuals → pre-render QA loop → render → per-frame checks → sound design → mix → Whisper masking check. */
+/** Animated visuals → pre-render QA loop → render → per-frame checks → sound design → mix → Whisper masking check. */
 export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; qa: VideoQa }> {
   const { dir, scenes, timeline: tl } = v;
   const qa: VideoQa = { visual: { rounds: 0, avgScore: null, weakShots: 0, layoutIssues: 0, frameIssues: [] }, audio: null, blocking: [] };
-
-  if (config.video.style !== "animated") {
-    const cardKinds = new Set(["stat", "quote", "chapter", "list", "myth_fact"]);
-    const segments = scenes.map((s, i) => ({ start: i === 0 ? 0 : tl.scenes[i].start, end: tl.scenes[i + 1]?.start ?? tl.duration, query: s.visual.stock_query || v.topic, dim: cardKinds.has(s.visual.kind) }));
-    const bg = await buildBroll(segments, v.vertical ? "portrait" : "landscape", join(dir, "broll"), v.vertical ? 3.5 : 6, v.fallbackQuery);
-    const project = v.vertical ? await composeShort(join(dir, "hf"), bg, scenes, v.sources, tl) : await composeLong(join(dir, "hf"), bg, scenes, v.sources, tl);
-    const silent = await renderComposition(project, join(dir, "silent.mp4"));
-    return { video: await muxAudio(silent, v.narrationWav, v.out, { seed: v.id, workDir: dir }), qa };
-  }
 
   const W = v.vertical ? 1080 : 1920, H = v.vertical ? 1920 : 1080;
   const spokenById = new Map(v.spokenScenes.map(s => [s.id, s.text]));
@@ -108,7 +97,15 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
     if (issues.some(i => i.kind === "black")) qa.blocking.push("black frames in render");
   }
 
-  // ---- audio: music + SFX stems, Sound Designer, mix, Whisper masking check
+  const final = await buildAudio({ ...v, timed, cues, silent, qa });
+  writeJson(join(dir, "qa-report.json"), qa);
+  return { video: final, qa };
+}
+
+/** Audio stage: music + SFX stems, auto-level, Sound Designer, mix, Whisper masking check. Fills `qa.audio`. */
+export async function buildAudio(v: Pick<BuildVideoInput, "id" | "dir" | "out" | "timeline" | "narrationWav" | "spokenText" | "narrationWer"> &
+  { timed: TimedShot[]; cues: Awaited<ReturnType<typeof composeAnimated>>["cues"]; silent: string; qa: VideoQa }): Promise<string> {
+  const { dir, timeline: tl, timed, cues, silent, qa } = v;
   const mood = musicMood(timed.map(s => s.mood));
   const speech = speechIntervals(tl.scenes.flatMap(s => s.words));
   let musicGain = config.video.musicVolume, sfxGain = config.video.sfxVolume;
@@ -149,6 +146,5 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
       final = await mixStems(silent, voice, music, sfx, musicGain, sfxGain, v.out);
     }
   }
-  writeJson(join(dir, "qa-report.json"), qa);
-  return { video: final, qa };
+  return final;
 }

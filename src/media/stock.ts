@@ -17,47 +17,6 @@ async function download(url: string, file: string): Promise<string> {
   return file;
 }
 
-interface Found { id: string; url: string; duration?: number }
-
-async function pexelsVideos(query: string, orientation: Orientation): Promise<Found[]> {
-  const key = env("PEXELS_API_KEY");
-  if (!key) return [];
-  const j = await httpJson<any>(`https://api.pexels.com/videos/search?query=${encodeURIComponent(query)}&orientation=${orientation}&per_page=15&size=medium`, { headers: { authorization: key } });
-  const target = orientation === "landscape" ? 1920 : 1080;
-  return (j.videos ?? []).map((v: any) => {
-    const files = (v.video_files ?? []).filter((f: any) => f.file_type === "video/mp4" && f.width && f.height);
-    const dim = (f: any) => orientation === "landscape" ? f.width : Math.min(f.width, f.height);
-    files.sort((a: any, b: any) => Math.abs(dim(a) - target) - Math.abs(dim(b) - target));
-    return files[0] ? { id: `pexels-${v.id}`, url: files[0].link, duration: v.duration } : null;
-  }).filter(Boolean);
-}
-
-async function pixabayVideos(query: string, orientation: Orientation): Promise<Found[]> {
-  const key = env("PIXABAY_API_KEY");
-  if (!key) return [];
-  const j = await httpJson<any>(`https://pixabay.com/api/videos/?key=${key}&q=${encodeURIComponent(query)}&per_page=15&safesearch=true`);
-  return (j.hits ?? [])
-    .filter((h: any) => (orientation === "portrait") === (h.videos.medium.height > h.videos.medium.width) || orientation === "landscape")
-    .map((h: any) => ({ id: `pixabay-${h.id}`, url: (h.videos.large?.url || h.videos.medium.url), duration: h.duration }));
-}
-
-/** Find + download a stock clip for `query`, avoiding clips already used in this video. */
-export async function stockVideo(query: string, orientation: Orientation, dir: string, used: Set<string>): Promise<string | undefined> {
-  ensureDir(dir);
-  const queries = [query, query.split(" ").slice(0, 2).join(" "), query.split(" ")[0]].filter((q, i, a) => q && a.indexOf(q) === i);
-  for (const q of queries) {
-    let found: Found[] = [];
-    try { found = await pexelsVideos(q, orientation); } catch (e) { log.warn(`pexels: ${(e as Error).message.slice(0, 120)}`); }
-    if (!found.length) { try { found = await pixabayVideos(q, orientation); } catch (e) { log.warn(`pixabay: ${(e as Error).message.slice(0, 120)}`); } }
-    const pick = found.find(f => !used.has(f.id)) ?? found[0];
-    if (pick) {
-      used.add(pick.id);
-      try { return await download(pick.url, join(dir, `${pick.id}.mp4`)); } catch (e) { log.warn((e as Error).message); }
-    }
-  }
-  return undefined;
-}
-
 export async function stockPhoto(query: string, orientation: Orientation | "square", dir: string, offset = 0): Promise<string | undefined> {
   ensureDir(dir);
   const key = env("PEXELS_API_KEY");

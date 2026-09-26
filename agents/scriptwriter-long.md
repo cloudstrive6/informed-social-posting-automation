@@ -22,8 +22,8 @@ Then (5–30 s): back the promise with a concrete proof point, say what they'll 
 - Each scene is 1–4 sentences of narration (about 8–25 seconds). Total narration ≈ 1,300–1,900 words for 8–12 minutes (≈150 words per minute). Aim for 45–80 scenes.
 - `section`: the chapter this scene belongs to (short, e.g. "The hidden cost"). Scenes in the same chapter share the exact same section string; these become YouTube chapters.
 - `on_screen_text`: 2–6 punchy words reinforcing the key idea (not a copy of the narration).
-- `visual.kind`: `broll` (default, stock footage), `stat` (big number: fill `stat_value`, e.g. "+58%", and a `stat_label` of at most 8 words), `list` (2–5 `items`), `myth_fact` (`myth` + `fact`), `quote` (`quote` + `attribution`, real quotes only), `chapter` (section title card at the start of a section). Mix them so something new appears on screen every few seconds.
-- `visual.stock_query`: 2–4 word concrete search query for stock footage that literally shows something ("woman sleeping bed", "blood sugar test", "salmon on plate"). Always fill it, even for non-broll scenes (used as background). Never gore, needles in skin, or disturbing medical imagery.
+- `visual.kind`: `broll` (default: an animated cartoon scene), `stat` (big number: fill `stat_value`, e.g. "+58%", and a `stat_label` of at most 8 words), `list` (2–5 `items`), `myth_fact` (`myth` + `fact`), `quote` (`quote` + `attribution`, real quotes only), `chapter` (section title card at the start of a section). Mix them so something new appears on screen every few seconds.
+- `visual.stock_query`: 2–6 words describing what the animators should draw ("liver drowning in sugar cubes", "sleepy brain in bed", "salmon on plate"). Videos are fully animated cartoons, never stock footage. Always fill it. Never gore, needles in skin, or disturbing medical imagery.
 - `source_ids`: which sources back the scene. Every scene with a factual claim needs at least one.
 - `sources`: real, verifiable studies or guidelines with URLs (PubMed, DOI or official sites). Never invent a source.
 - No placeholders. Write the final spoken words.

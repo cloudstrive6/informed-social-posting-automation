@@ -1,5 +1,5 @@
 import { existsSync, readdirSync, renameSync } from "node:fs";
-import { join } from "node:path";
+import { basename, join } from "node:path";
 import { config, ROOT } from "../lib/config.js";
 import { writeJson } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
@@ -44,8 +44,38 @@ export function musicMood(moods: string[]): string {
   return ({ body: "wonder", immune: "tense", clinic: "hopeful", night: "curious", warm: "hopeful", brand: "curious" } as Record<string, string>)[top] ?? "curious";
 }
 
-/** Music stem for a video: your library track → Eleven Music (per video) → built-in synth. */
+/**
+ * Ducking of the music under the voice. Gentle on purpose: about 4-5 dB while the narrator talks,
+ * so the score stays felt and swells back in the pauses. (Level targets in soundDesign.ts assume this.)
+ */
+export const MUSIC_DUCK = "sidechaincompress=threshold=0.08:ratio=3:attack=40:release=600";
+/** Every music stem is brought to this loudness first, so `musicGain` means the same thing for every track. */
+export const MUSIC_REF_LUFS = -16;
+
+async function integratedLufs(file: string): Promise<number | undefined> {
+  const { spawnSync } = await import("node:child_process");
+  const r = spawnSync("ffmpeg", ["-hide_banner", "-nostats", "-t", "180", "-i", file, "-af", "ebur128", "-f", "null", "-"], { encoding: "utf8" });
+  const m = [...(r.stderr ?? "").matchAll(/I:\s+(-?[\d.]+) LUFS/g)].pop();
+  return m ? Number(m[1]) : undefined;
+}
+
+/** Linear gain to MUSIC_REF_LUFS (no dynamics processing), trimmed to the video length. */
+async function normalizeMusic(src: string, seconds: number, workDir: string): Promise<string> {
+  const out = join(workDir, "music-norm.wav");
+  const lufs = await integratedLufs(src);
+  const gainDb = lufs == null || !isFinite(lufs) ? 0 : Math.max(-20, Math.min(20, MUSIC_REF_LUFS - lufs));
+  await ffmpeg(["-stream_loop", "-1", "-i", src, "-t", String(Math.ceil(seconds + 2)), "-af", `volume=${gainDb.toFixed(2)}dB,alimiter=limit=0.95`, "-ar", "48000", out]);
+  log.info(`music: ${basename(src)} ${lufs?.toFixed(1)} LUFS → ${MUSIC_REF_LUFS} LUFS (${gainDb >= 0 ? "+" : ""}${gainDb.toFixed(1)} dB)`);
+  return out;
+}
+
+/** Music stem for a video (loudness-normalized): your library track → Eleven Music (per video) → built-in synth. */
 export async function musicStem(mood: string, seconds: number, seed: string, workDir: string, prompt?: string): Promise<string | undefined> {
+  const src = await pickMusic(mood, seconds, seed, workDir, prompt);
+  return src ? normalizeMusic(src, seconds, workDir) : undefined;
+}
+
+async function pickMusic(mood: string, seconds: number, seed: string, workDir: string, prompt?: string): Promise<string | undefined> {
   const lib = userMusic(mood, seed);
   if (lib && config.music.provider !== "elevenlabs") return lib;
   if (config.music.provider === "elevenlabs" && process.env.ELEVENLABS_API_KEY) {
@@ -81,7 +111,7 @@ export async function mixStems(video: string, narration: string, music: string |
   let idx = 2;
   if (music) {
     inputs.push("-stream_loop", "-1", "-i", music);
-    graph.push(`[${idx}:a]aresample=48000,volume=${musicGain.toFixed(3)}[m]`, `[m][sc]sidechaincompress=threshold=0.04:ratio=6:attack=30:release=500[md]`);
+    graph.push(`[${idx}:a]aresample=48000,volume=${musicGain.toFixed(3)}[m]`, `[m][sc]${MUSIC_DUCK}[md]`);
     mixIn.push("[md]"); idx++;
   }
   if (sfx) { inputs.push("-i", sfx); graph.push(`[${idx}:a]aresample=48000,volume=${sfxGain.toFixed(3)}[fx]`); mixIn.push("[fx]"); }
@@ -120,7 +150,7 @@ export async function muxAudio(video: string, narration: string, out: string, se
   let idx = 2;
   if (music) {
     inputs.push("-stream_loop", "-1", "-i", music);
-    graph.push(`[${idx}:a]aresample=48000,volume=${config.video.musicVolume}[m]`, `[m][sc]sidechaincompress=threshold=0.04:ratio=6:attack=30:release=500[md]`);
+    graph.push(`[${idx}:a]aresample=48000,volume=${config.video.musicVolume}[m]`, `[m][sc]${MUSIC_DUCK}[md]`);
     mixIn.push("[md]"); idx++;
   } else graph[0] = `[1:a]loudnorm=I=-15:TP=-1.5:LRA=9,aresample=48000[v]`;
   if (sfx) {

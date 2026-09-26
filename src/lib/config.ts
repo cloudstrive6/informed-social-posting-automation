@@ -33,8 +33,8 @@ export interface ChannelConfig {
     kokoroVoice: string; kokoroShortVoice: string; baseSpeed: number; sampleRate: number;
   };
   video: {
-    style: "animated" | "broll"; fps: number; quality: "draft" | "standard" | "high";
-    burnCaptionsLong: boolean; musicVolume: number; sfxVolume: number; brollProvider: string;
+    style: "animated"; theme: "vibrant" | "doodle"; fps: number; quality: "draft" | "standard" | "high";
+    burnCaptionsLong: boolean; musicVolume: number; sfxVolume: number;
   };
   music: { provider: "library" | "elevenlabs" | "generated"; elevenModel: string; prompts: Record<string, string> };
   sfx: { provider: "kit" | "synth"; customPerVideo: number };

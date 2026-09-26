@@ -31,10 +31,20 @@ Save the token as the secret **`CLAUDE_CODE_OAUTH_TOKEN`**. The system makes abo
 
 Without the key, everything still works on the free voices (Chatterbox → Kokoro), the built-in synth score and synthesized SFX.
 
-## 2b. Stock photos — required (free)
+## 2b. Stock photos — optional (thumbnail fallback only)
 
 - Pexels: https://www.pexels.com/api/ → secret **`PEXELS_API_KEY`**
 - Pixabay (fallback): https://pixabay.com/api/docs/ → secret **`PIXABAY_API_KEY`**
+
+## 2c. Backblaze B2 — permanent media archive (optional)
+
+Every finished item (video, thumbnail, slides, script, captions, QA reports) is copied to the private bucket
+`informed-lab-media` under `content/<date>/<item-id>/`. GitHub Releases remain the working store for publishing.
+
+1. https://secure.backblaze.com/app_keys.htm → **Add a New Application Key**, restricted to bucket `informed-lab-media`, Read and Write.
+2. Secrets **`B2_KEY_ID`** (the keyID) and **`B2_APPLICATION_KEY`** (shown once).
+3. Optional overrides: `B2_BUCKET`, `B2_REGION` (default `us-west-004`), `B2_ENDPOINT`.
+4. Backfill a day that was produced before the keys existed: `npx tsx src/publish/b2.ts out/<date>`.
 
 ## 3. YouTube
 

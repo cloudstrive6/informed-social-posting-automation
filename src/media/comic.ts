@@ -8,7 +8,7 @@ import { join } from "node:path";
 import { chromium } from "playwright";
 import { config, ROOT } from "../lib/config.js";
 import type { Carousel, Slide, SlideItem } from "../lib/schemas.js";
-import { esc } from "./compose.js";
+import { esc } from "../lib/html.js";
 import { fontFile } from "./fonts.js";
 import { COMPONENTS } from "./vector/components.js";
 import { iconSvg, resolveIcon } from "./vector/iconPack.js";

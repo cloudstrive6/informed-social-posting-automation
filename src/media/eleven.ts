@@ -109,8 +109,11 @@ export async function elevenMusic(prompt: string, seconds: number, out: string):
     res = await post(`/music?output_format=mp3_44100_128`, { ...body, model_id: "music_v1" }, "audio/mpeg");
   }
   writeFileSync(out, Buffer.from(await res.arrayBuffer()));
+  addElevenUsage("music", Math.round((ms / 60000) * MUSIC_CREDITS_PER_MIN));
   return out;
 }
+/** Measured on the Starter plan: a 3-minute track cost ~2,700 credits. */
+const MUSIC_CREDITS_PER_MIN = 905;
 
 /** Eleven sound effect from a text prompt. */
 export async function elevenSfx(prompt: string, seconds: number | undefined, out: string): Promise<string> {

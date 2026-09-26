@@ -1,4 +1,5 @@
 /** Whisper-based audio review: did the voice say exactly the script, and is it still intelligible in the final mix? */
+import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { ROOT } from "../lib/config.js";
 import { readJson } from "../lib/fsx.js";
@@ -84,7 +85,12 @@ export async function checkMix(finalVideo: string, spokenText: string, narration
   const wav = join(workDir, "qa-final-audio.wav");
   await ffmpeg(["-i", finalVideo, "-vn", "-ac", "1", "-ar", "16000", wav]);
   const heard = await transcribe(wav, join(workDir, "qa-final-transcript.json"));
-  const r = wer(normWords(spokenText), normWords(heard.map(w => w.text).join(" ")));
+  // what Whisper heard on the clean narration is the fair reference: only the music/SFX can change it
+  const cleanFile = join(workDir, "qa-narration-transcript.json");
+  const clean = existsSync(cleanFile) ? readJson<{ words: { text: string }[] }>(cleanFile).words : undefined;
+  const reference = clean?.length ? clean.map(w => w.text).join(" ") : spokenText;
+  const r = wer(normWords(reference), normWords(heard.map(w => w.text).join(" ")));
+  if (clean?.length) narrationWer = 0;
   const loud = JSON.parse(await run(py(), [join(ROOT, "python", "qa_audio.py"), "loudness", wav], { quiet: true }));
   return { finalWer: +r.wer.toFixed(3), maskingDelta: +(r.wer - narrationWer).toFixed(3), diffs: r.diffs, lufs: loud.lufs as number, peakDb: loud.peak_db as number };
 }
