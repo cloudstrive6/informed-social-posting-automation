@@ -10,6 +10,10 @@ on:
       date:
         description: "Content date (YYYY-MM-DD, audience timezone). Blank = today."
         required: false
+      test_run:
+        description: "Test run: produce + archive everything, but hold every item for review (nothing is scheduled or published)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -167,5 +171,6 @@ jobs:
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           B2_KEY_ID: ${{ secrets.B2_KEY_ID }}
           B2_APPLICATION_KEY: ${{ secrets.B2_APPLICATION_KEY }}
+          TEST_RUN: ${{ inputs.test_run && '1' || '' }}
       - if: always()
         run: bash scripts/commit-data.sh "bot - daily content ${{ needs.plan.outputs.date }}"

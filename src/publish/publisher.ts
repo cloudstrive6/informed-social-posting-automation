@@ -99,6 +99,11 @@ export async function finalizeDay(date: string) {
       item.image_urls = await publishImages(item.media.slides, `${date}/${item.id}`);
       item.media.slides = item.media.slides.map(f => basename(f));
     }
+    // Test runs: everything waits for a human, nothing is scheduled.
+    if (process.env.TEST_RUN === "1") {
+      item.status = "held";
+      item.hold_reason = [item.hold_reason, "test run: review before publishing"].filter(Boolean).join("; ");
+    }
     // A slot that already passed (e.g. a late re-run) goes out ASAP instead of being skipped.
     for (const p of item.posts) if (Date.parse(p.slot) < Date.now() + 10 * 60_000) p.slot = new Date(Date.now() + 10 * 60_000).toISOString();
 
