@@ -25,4 +25,4 @@ jobs:
       - run: npx tsx src/cli.ts review-sync
         env:
           GH_TOKEN: ${{ github.token }}
-      - run: bash scripts/commit-data.sh "bot: review decisions"
+      - run: bash scripts/commit-data.sh "bot - review decisions"

@@ -166,4 +166,4 @@ jobs:
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
       - if: always()
-        run: bash scripts/commit-data.sh "bot: daily content ${{ needs.plan.outputs.date }}"
+        run: bash scripts/commit-data.sh "bot - daily content ${{ needs.plan.outputs.date }}"

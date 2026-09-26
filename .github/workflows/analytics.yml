@@ -30,4 +30,4 @@ jobs:
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
           META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
-      - run: bash scripts/commit-data.sh "bot: analytics learnings"
+      - run: bash scripts/commit-data.sh "bot - analytics learnings"

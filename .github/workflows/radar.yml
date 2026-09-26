@@ -28,4 +28,4 @@ jobs:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
-      - run: bash scripts/commit-data.sh "bot: trend radar"
+      - run: bash scripts/commit-data.sh "bot - trend radar"
