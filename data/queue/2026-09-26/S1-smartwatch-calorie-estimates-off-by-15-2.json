@@ -12,7 +12,7 @@
     "trend_stage": "emerging",
     "why": "Published today with almost no creator coverage and low competition. Product-specific and visual, the kind of thing that spreads on TikTok and Shorts. Doubles as a myth-buster. | fact-check: Verified: PLOS One, published 29 Jul 2026, 'Body fat, skin tone, and the accuracy of smartwatch caloric expenditure estimates' (PubMed 42525581). n=58 Hispanic adults, one 10-minute recumbent-cycling protocol, compared with indirect calorimetry (COSMED K5). Devices: Apple Watch S8, Fitbit Sense 2, Samsung GW5, Garmin FR955. Median error was ~15–25%. Apple, Garmin and Samsung overestimated, and error grew with body fat. Problems: (1) The '1,200–2,400 kcal a week' figure is our own extrapolation from a 10-minute cycling test, not a study finding. Drop it. (2) 'Eat back your calories' framing pushes calorie-restriction advice at a broad audience, which is an eating-disorder risk. Reframe it as 'treat the number as a rough estimate'. (3) State the limits: one short cycling test, one population, 58 people. Sources: https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0353261 ; https://pubmed.ncbi.nlm.nih.gov/42525581/"
   },
-  "status": "held",
+  "status": "ready",
   "package": {
     "title": "Smartwatch Calories Were Off by 15–25% in a Lab Test #shorts",
     "description": "58 adults, 4 smartwatches, 1 lab gold standard. Calorie counts were off by a median of about 15–25%, and 3 of the 4 watches tended to overestimate. Treat the number as a ballpark, not a receipt.\n#smartwatch #fitnesstracker #caloriesburned #healthscience #shorts\nThis content is for educational purposes only and is not medical advice. Always talk to a qualified healthcare professional about your own situation.",
@@ -37,7 +37,7 @@
       "format": "short",
       "slotKey": "youtube_short",
       "slot": "2026-09-27T00:56:54.590Z",
-      "status": "held",
+      "status": "pending",
       "attempts": 0
     },
     {
@@ -45,7 +45,7 @@
       "format": "reel",
       "slotKey": "instagram_reel",
       "slot": "2026-09-27T00:56:54.590Z",
-      "status": "held",
+      "status": "pending",
       "attempts": 0
     },
     {
@@ -53,7 +53,7 @@
       "format": "short",
       "slotKey": "tiktok",
       "slot": "2026-09-27T00:56:54.590Z",
-      "status": "held",
+      "status": "pending",
       "attempts": 0
     },
     {
@@ -61,7 +61,7 @@
       "format": "reel",
       "slotKey": "facebook_reel",
       "slot": "2026-09-27T00:56:54.590Z",
-      "status": "held",
+      "status": "pending",
       "attempts": 0
     }
   ],
@@ -288,5 +288,6 @@
   "hold_reason": "Packaging check REVISE: I checked the packaging against the verified content summary only, as asked. I did not re-check the science. The YouTube title matches the verified finding and doesn't overpromise. All captions keep the main points right: a median error of about 15–25%, compared against the lab gold standard, \"ballpark, not a receipt,\" and the extra body-fat error described as a link found in this study, not a cause. The IG and FB captions say how limited the study was (one short cycling test in young Hispanic adults). The heart-rate line fits what src3 (Shcherbina 2017) reports for most devices. Four small fixes are needed before publishing. (1) The #appleWatch hashtag suggests Apple Watch was one of the watches tested, which the verified summary doesn't confirm. (2) The Instagram line about being tempted to \"eat back\" your workout could read as encouraging people to eat less, which conflicts with the brand's eating-disorder rule. (3) The TikTok caption has no caveat about the study's size and no disclaimer. (4) The study details (58 adults, 10 minutes of cycling, 3 of 4 watches overestimating, young Hispanic adults) are not in the one-line verified summary I was given. They look like they came from the verified script, but someone should confirm that before this auto-publishes. I could not verify src1 and src2 myself (I had no web access in this run), so they are listed as upstream-verified. src3 is a real publication that I recognize (J Pers Med 2017;7(2):3, PMC5491979); I did not open the link in this run.; test run: review before publishing",
   "release_tag": "content-2026-09-26",
   "archive_url": "b2://informed-lab-media/content/2026-09-26/S1-smartwatch-calorie-estimates-off-by-15-2/",
-  "review_issue": 6
+  "review_issue": 6,
+  "approved_by": "issue #6"
 }

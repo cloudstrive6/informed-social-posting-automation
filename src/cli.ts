@@ -69,7 +69,8 @@ const commands: Record<string, () => Promise<unknown>> = {
   "publish-now": () => publishNow(rest[0], (flag("platforms") ?? "").split(",").filter(Boolean)),
   "review-sync": () => syncReviews(),
   // Telegram button presses → review labels → queued items
-  "telegram-poll": async () => { if (await pollTelegram()) await syncReviews(); },
+  // listen for up to N seconds (default 270), applying each decision as soon as it's tapped
+  "telegram-poll": () => pollTelegram(Number(rest[0] ?? 270), () => syncReviews()),
   analytics: () => runAnalytics(),
   doctor,
 };

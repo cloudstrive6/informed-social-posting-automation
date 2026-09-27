@@ -100,45 +100,62 @@ export async function notifyReview(item: ContentItem, issue: number, files: { vi
 const STATE = `${DATA}/telegram/state.json`;
 const gh = (args: string[]) => run("gh", args, { quiet: true });
 
-/** Read button presses and commands since the last poll; returns true if any review decision was applied. */
-export async function pollTelegram(): Promise<boolean> {
+/**
+ * Listen for button presses and commands. Long-polls Telegram for up to `seconds`, answering each tap within
+ * a second (Telegram only accepts a tap confirmation for a few seconds) and applying the decision right away
+ * via `onDecision` (label the review issue + sync it onto the queued item).
+ */
+export async function pollTelegram(seconds = 0, onDecision: () => Promise<void> = async () => {}): Promise<boolean> {
   if (!token()) { log.warn("TELEGRAM_BOT_TOKEN not set"); return false; }
   const state = readJson<{ offset: number }>(STATE, { offset: 0 });
-  const updates = await tg<any[]>("getUpdates", { offset: state.offset, timeout: 0, allowed_updates: ["callback_query", "message"] });
+  const until = Date.now() + seconds * 1000;
   let decided = false;
-  for (const u of updates) {
-    state.offset = u.update_id + 1;
-    const from = String(u.callback_query?.message?.chat?.id ?? u.message?.chat?.id ?? "");
-    if (!chatId() || from !== chatId()) { log.warn(`telegram: ignoring update from chat ${from}`); continue; }
-
-    if (u.callback_query) {
-      const q = u.callback_query;
-      const m = /^(ap|rj):(\d+)$/.exec(q.data ?? "");
-      if (!m) continue;
-      const label = m[1] === "ap" ? "approved" : "rejected";
-      try {
-        await gh(["issue", "edit", m[2], "--add-label", label]);
-        decided = true;
-        await tg("answerCallbackQuery", { callback_query_id: q.id, text: label === "approved" ? "Approved ✅" : "Rejected 🛑" });
-        await tg("editMessageText", {
-          chat_id: chatId(), message_id: q.message.message_id, parse_mode: "HTML", disable_web_page_preview: true,
-          text: `${q.message.text ? esc(q.message.text).slice(0, 3500) : ""}\n\n<b>${label === "approved" ? "✅ Approved" : "🛑 Rejected"}</b> ${new Date().toISOString().slice(0, 16).replace("T", " ")} UTC`,
-        });
-      } catch (e) {
-        log.warn(`telegram decision on #${m[2]} failed: ${(e as Error).message}`);
-        await tg("answerCallbackQuery", { callback_query_id: q.id, text: `Failed: ${(e as Error).message.slice(0, 150)}` }).catch(() => undefined);
-      }
-    } else if (u.message?.text) {
-      const cmd = u.message.text.trim().split(/\s+/)[0].toLowerCase();
-      if (cmd === "/pending") {
-        const list = JSON.parse(await gh(["issue", "list", "--state", "open", "--label", "needs-review", "--json", "number,title", "--limit", "20"]));
-        if (!list.length) await notify("✅ Nothing is waiting for review.");
-        for (const i of list) await notify(`🟡 #${i.number} ${esc(i.title)}`, { buttons: [[{ text: "✅ Approve", callback_data: `ap:${i.number}` }, { text: "🛑 Reject", callback_data: `rj:${i.number}` }, { text: "Open", url: `${repoUrl()}/issues/${i.number}` }]] });
-      } else if (cmd === "/start" || cmd === "/help") {
-        await notify("👋 InforMed bot is connected.\n\nYou'll get: items that need review (with Approve / Reject), posting reports and pipeline failures.\n\n/pending: list everything waiting for review");
-      }
+  do {
+    const wait = Math.max(0, Math.min(50, Math.floor((until - Date.now()) / 1000)));
+    let updates: any[] = [];
+    try { updates = await tg<any[]>("getUpdates", { offset: state.offset, timeout: wait, allowed_updates: ["callback_query", "message"] }); }
+    catch (e) { log.warn(`telegram getUpdates: ${(e as Error).message}`); await new Promise(r => setTimeout(r, 5000)); continue; }
+    for (const u of updates) {
+      state.offset = u.update_id + 1;
+      writeJson(STATE, state);
+      const from = String(u.callback_query?.message?.chat?.id ?? u.message?.chat?.id ?? "");
+      if (!chatId() || from !== chatId()) { log.warn(`telegram: ignoring update from chat ${from}`); continue; }
+      if (u.callback_query) { if (await handleTap(u.callback_query, onDecision)) decided = true; }
+      else if (u.message?.text) await handleCommand(u.message.text);
     }
-  }
+  } while (Date.now() < until - 2000);
   writeJson(STATE, state);
   return decided;
+}
+
+async function handleTap(q: any, onDecision: () => Promise<void>): Promise<boolean> {
+  const m = /^(ap|rj):(\d+)$/.exec(q.data ?? "");
+  if (!m) return false;
+  const label = m[1] === "ap" ? "approved" : "rejected";
+  // acknowledge immediately; this fails harmlessly if the tap is older than Telegram's window
+  await tg("answerCallbackQuery", { callback_query_id: q.id, text: label === "approved" ? "Approving ✅" : "Rejecting 🛑" }).catch(() => undefined);
+  try {
+    await gh(["issue", "edit", m[2], "--add-label", label]);
+    await onDecision();
+  } catch (e) {
+    await notify(`⚠️ Couldn't apply your ${label === "approved" ? "approval" : "rejection"} of #${m[2]}: ${esc((e as Error).message.slice(0, 300))}`);
+    return false;
+  }
+  // the review message: drop the buttons and stamp the decision
+  await tg("editMessageReplyMarkup", { chat_id: chatId(), message_id: q.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => undefined);
+  await notify(label === "approved"
+    ? `✅ <b>Approved</b> #${m[2]}. It's queued and will post at its next slots (right away where a slot has passed). You'll get a report for each platform.`
+    : `🛑 <b>Rejected</b> #${m[2]}. It won't be posted.`, { buttons: [[{ text: `Issue #${m[2]}`, url: `${repoUrl()}/issues/${m[2]}` }]] });
+  return true;
+}
+
+async function handleCommand(text: string) {
+  const cmd = text.trim().split(/\s+/)[0].toLowerCase();
+  if (cmd === "/pending") {
+    const list = JSON.parse(await gh(["issue", "list", "--state", "open", "--label", "needs-review", "--json", "number,title", "--limit", "20"]));
+    if (!list.length) await notify("✅ Nothing is waiting for review.");
+    for (const i of list) await notify(`🟡 #${i.number} ${esc(i.title)}`, { buttons: [[{ text: "✅ Approve", callback_data: `ap:${i.number}` }, { text: "🛑 Reject", callback_data: `rj:${i.number}` }, { text: "Open", url: `${repoUrl()}/issues/${i.number}` }]] });
+  } else if (cmd === "/start" || cmd === "/help") {
+    await notify("👋 InforMed bot is connected.\n\nYou'll get: items that need review (with Approve / Reject), posting reports and pipeline failures.\n\n/pending: list everything waiting for review");
+  }
 }
