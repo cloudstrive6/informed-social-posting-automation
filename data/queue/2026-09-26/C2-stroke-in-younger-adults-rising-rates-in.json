@@ -1,0 +1,431 @@
+{
+  "id": "C2-stroke-in-younger-adults-rising-rates-in",
+  "date": "2026-09-26",
+  "kind": "carousel",
+  "plan": {
+    "id": "C2",
+    "kind": "carousel",
+    "topic": "Stroke in younger adults: rising rates in ages 20–54 and the BE-FAST warning signs",
+    "angle": "A public-service list: 'Stroke isn't just an old person's disease.' Include a slide per BE-FAST sign (Balance, Eyes, Face, Arms, Speech, Time to call emergency services), the main risk drivers (high blood pressure, diabetes, obesity, smoking/drugs), and why younger adults wait too long to seek care. Quote the 'nearly doubled' figure only if the Neurology paper confirms it (the radar didn't link it). Otherwise say 'rising'.",
+    "working_title": "Stroke Under 55: The 6 Signs That Mean Call Emergency Services Now",
+    "target_keyword": "stroke in young adults",
+    "trend_stage": "rising",
+    "why": "Evergreen life-saving content with a timely hook (2nd snapshot, CBS story). BE-FAST is exactly the kind of list people save and send to family."
+  },
+  "status": "held",
+  "package": {
+    "title": "Stroke Before 50: The 5 Signs That Mean Call Emergency Services Now",
+    "social": {
+      "youtube_short_title": "",
+      "youtube_short_description": "",
+      "instagram_caption": "Stroke isn't just an older person's disease. Here's what to watch for at any age 🧠\n\nCDC data: the share of US adults aged 18–44 who report having had a stroke rose 14.6% between 2011–13 and 2020–22.\nAbout 10–15% of all strokes happen to adults aged 18–50.\nHigh blood pressure is the biggest single driver. Most of the main risk factors can be treated or managed.\nYounger people who go to the ER with dizziness or a headache are more likely to have a stroke missed. Sudden signs still count, even when you're young.\n\nBE-FAST: Balance, Eyes, Face, Arms, Speech, Time. Just one sudden sign is enough to act. Call emergency services, note the time it started and don't drive yourself.\n\nSave this and send it to someone you love. Knowing BE-FAST could save a life.\n\nDid you know strokes could happen in your 20s, 30s and 40s? Tell us in the comments 👇\n\nThis content is for educational purposes only and is not medical advice. Always talk to a qualified healthcare professional about your own situation.\n\n#stroke #strokeawareness #befast #strokesymptoms #youngstroke #bloodpressure #hearthealth #brainhealth #healthliteracy #InforMed",
+      "tiktok_caption": "Stroke in your 20s, 30s or 40s? It happens. Learn the BE-FAST stroke warning signs and what to do in the first minutes. Save this 🧠 #stroke #befast #strokesymptoms #healthtok",
+      "facebook_caption": "A lot of people think stroke only happens to older adults. It doesn't. About 10–15% of all strokes happen to adults aged 18–50. And CDC survey data show the share of US adults aged 18–44 who report having had a stroke rose 14.6% over about a decade.\n\nThe good news is that the biggest drivers, like high blood pressure, diabetes and smoking, can often be treated or managed. It also helps to know the warning signs. BE-FAST stands for Balance, Eyes, Face, Arms, Speech and Time. Even one sudden sign is enough to call emergency services. Note the time it started and don't drive yourself. Every minute counts.\n\nSwipe through, then share it with someone you care about. Did you know strokes could happen this young?\n\n#StrokeAwareness #BEFAST\n\nThis content is for educational purposes only and is not medical advice. Always talk to a qualified healthcare professional about your own situation."
+    }
+  },
+  "media": {
+    "slides": [
+      "slide-01.jpg",
+      "slide-02.jpg",
+      "slide-03.jpg",
+      "slide-04.jpg",
+      "slide-05.jpg",
+      "slide-06.jpg",
+      "slide-07.jpg",
+      "slide-08.jpg",
+      "slide-09.jpg"
+    ]
+  },
+  "posts": [
+    {
+      "platform": "instagram",
+      "format": "carousel",
+      "slotKey": "instagram_carousel",
+      "slot": "2026-09-27T00:56:46.823Z",
+      "status": "held",
+      "attempts": 0
+    },
+    {
+      "platform": "facebook",
+      "format": "post",
+      "slotKey": "facebook_post",
+      "slot": "2026-09-27T00:56:46.823Z",
+      "status": "held",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-09-26T21:35:20.757Z",
+  "carousel": {
+    "title": "Stroke Before 50: The 5 Signs That Mean Call Emergency Services Now",
+    "slides": [
+      {
+        "kind": "hook",
+        "headline": "Stroke isn't just an old person's disease",
+        "body": "Know the BE-FAST signs",
+        "stat": "",
+        "icon": "brain",
+        "bubble": "Wait… people MY age get strokes?!",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      },
+      {
+        "kind": "stat",
+        "headline": "Rise in stroke prevalence among US adults aged 18–44",
+        "body": "CDC survey data: the share of 18–44s who report having had a stroke rose 14.6% from 2011–13 to 2020–22. In 45–64s it rose 15.7%.",
+        "stat": "+14.6%",
+        "icon": "chart increasing",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      },
+      {
+        "kind": "pictogram",
+        "headline": "At least 1 in 10 strokes hits adults aged 18–50",
+        "body": "About 10–15% of all strokes happen to adults aged 18–50, according to a Lancet Neurology review. That's up to about 1 in 8 strokes.",
+        "stat": "10–15%",
+        "icon": "person standing",
+        "bubble": "",
+        "filled": 1,
+        "total": 10,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      },
+      {
+        "kind": "body_map",
+        "headline": "What's driving strokes in younger adults",
+        "body": "These conditions damage or narrow blood vessels over years. Most can be treated or managed (CDC; drug risk: Ekker et al., Lancet Neurology, 2018).",
+        "stat": "",
+        "icon": "health:blood pressure",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "High blood pressure",
+            "detail": "The biggest single driver",
+            "icon": "health:blood pressure",
+            "value": ""
+          },
+          {
+            "label": "Diabetes",
+            "detail": "Damages blood vessel walls",
+            "icon": "health:diabetes",
+            "value": ""
+          },
+          {
+            "label": "Obesity",
+            "detail": "Raises blood pressure and diabetes risk",
+            "icon": "balance scale",
+            "value": ""
+          },
+          {
+            "label": "Smoking",
+            "detail": "Narrows and stiffens arteries",
+            "icon": "cigarette",
+            "value": ""
+          },
+          {
+            "label": "Drugs like cocaine",
+            "detail": "Can trigger a sudden stroke",
+            "icon": "pill",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "kind": "chart",
+        "headline": "Estimated share of strokes linked to selected risk factors",
+        "body": "INTERSTROKE (The Lancet, 2016): about 27,000 people in 32 countries, all ages. Other factors include blood lipids (26.8%) and diet (23.2%). Shares overlap, so they don't add up to 100%.",
+        "stat": "",
+        "icon": "",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "High blood pressure",
+            "detail": "",
+            "icon": "health:blood pressure",
+            "value": "47.9%"
+          },
+          {
+            "label": "Inactivity",
+            "detail": "",
+            "icon": "couch and lamp",
+            "value": "35.8%"
+          },
+          {
+            "label": "Belly fat",
+            "detail": "",
+            "icon": "balance scale",
+            "value": "18.6%"
+          },
+          {
+            "label": "Smoking",
+            "detail": "",
+            "icon": "cigarette",
+            "value": "12.4%"
+          }
+        ]
+      },
+      {
+        "kind": "myth_fact",
+        "headline": "\"I'm too young. It's just a migraine.\"",
+        "body": "Stroke can happen at any age. A large US ER study found stroke was missed more often in patients under 45 who came in with dizziness or headache. A sudden, severe headache with no known cause is a stroke warning sign too. If signs appear suddenly, get help.",
+        "stat": "",
+        "icon": "red question mark",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      },
+      {
+        "kind": "icon_grid",
+        "headline": "BE-FAST: 5 signs + 1 rule",
+        "body": "Symptoms come on suddenly. Even one sign is enough to act.",
+        "stat": "",
+        "icon": "",
+        "bubble": "Screenshot this one",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "B: Balance",
+            "detail": "Sudden dizziness or loss of balance",
+            "icon": "person walking",
+            "value": ""
+          },
+          {
+            "label": "E: Eyes",
+            "detail": "Sudden blurred, double or lost vision",
+            "icon": "eye",
+            "value": ""
+          },
+          {
+            "label": "F: Face",
+            "detail": "One side droops when smiling",
+            "icon": "neutral face",
+            "value": ""
+          },
+          {
+            "label": "A: Arms",
+            "detail": "One arm weak or drifts down",
+            "icon": "flexed biceps",
+            "value": ""
+          },
+          {
+            "label": "S: Speech",
+            "detail": "Slurred, strange or can't speak",
+            "icon": "speech balloon",
+            "value": ""
+          },
+          {
+            "label": "T: Time",
+            "detail": "Call 911 / 999 / 000 now",
+            "icon": "alarm clock",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "kind": "stat",
+        "headline": "Brain cells lost each minute of stroke",
+        "body": "In a typical large-vessel ischaemic stroke, an estimated 1.9 million neurons die every minute without treatment (Saver, Stroke, 2006). Clot treatments work best in the first few hours.",
+        "stat": "1.9M",
+        "icon": "hourglass",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      },
+      {
+        "kind": "cta",
+        "headline": "Save this. Send it to someone you love.",
+        "body": "Sudden sign at any age? Don't wait it out. Call emergency services, note the time it started and don't drive yourself.",
+        "stat": "",
+        "icon": "health:mental health",
+        "bubble": "Share it. Knowing BE-FAST could save a life.",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Prevalence of Stroke — Behavioral Risk Factor Surveillance System, United States, 2011–2022 (MMWR 73(20))",
+        "publisher": "CDC Morbidity and Mortality Weekly Report",
+        "year": "2024",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/wr/mm7320a1.htm"
+      },
+      {
+        "id": "S2",
+        "title": "Epidemiology, aetiology, and management of ischaemic stroke in young adults (Ekker MS et al.): source for the 10–15% share of strokes in adults aged 18–50 and for drug use such as cocaine as a stroke trigger",
+        "publisher": "The Lancet Neurology",
+        "year": "2018",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30129475/"
+      },
+      {
+        "id": "S3",
+        "title": "Global and regional effects of potentially modifiable risk factors associated with acute stroke in 32 countries (INTERSTROKE): a case-control study (O'Donnell MJ et al.)",
+        "publisher": "The Lancet",
+        "year": "2016",
+        "url": "https://www.thelancet.com/article/S0140-6736(16)30506-2/fulltext"
+      },
+      {
+        "id": "S4",
+        "title": "Time is brain—quantified (Saver JL)",
+        "publisher": "Stroke (American Heart Association)",
+        "year": "2006",
+        "url": "https://www.ahajournals.org/doi/10.1161/01.str.0000196957.55928.ab"
+      },
+      {
+        "id": "S5",
+        "title": "Missed diagnosis of stroke in the emergency department: a cross-sectional analysis of a large population-based sample (Newman-Toker DE et al.)",
+        "publisher": "Diagnosis (De Gruyter)",
+        "year": "2014",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28344918/"
+      },
+      {
+        "id": "S6",
+        "title": "Signs and Symptoms of Stroke",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2026",
+        "url": "https://www.cdc.gov/stroke/signs-symptoms/index.html"
+      },
+      {
+        "id": "S7",
+        "title": "Stroke Risk Factors: high blood pressure, diabetes, obesity, smoking",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/stroke/risk-factors/index.html"
+      }
+    ]
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "All the main numbers and study descriptions check out against primary sources. CDC MMWR 73(20) reports stroke prevalence rising 14.6% in 18–44s and 15.7% in 45–64s between 2011–13 and 2020–22. Ekker et al. (Lancet Neurology, 2018) exists and covers adults aged 18–50; the 10–15% figure matches its abstract as I recall it, but the full text was not fetched. INTERSTROKE (Lancet, 2016) reports these population attributable risks: hypertension 47.9%, inactivity 35.8%, ApoB/ApoA1 26.8%, diet 23.2%, waist-to-hip ratio 18.6%, smoking 12.4%. Saver (Stroke, 2006) gives 1.9 million neurons lost per minute. Newman-Toker (Diagnosis, 2014) found missed stroke was more likely in patients under 45 who came in with dizziness or headache. The CDC signs page uses B.E. F.A.S.T. and lists sudden severe headache. The safety messaging is sound: call emergency services, note when symptoms started, don't drive yourself. There is no individual medical advice and no fear without a clear action. The title's promise (\"5 signs\") is paid off. Only small precision fixes are needed, listed below.",
+    "issues": [
+      {
+        "location": "Slide 2 (stat)",
+        "claim": "Rise in stroke among US adults aged 18–44",
+        "problem": "The CDC BRFSS data is self-reported lifetime stroke prevalence (ever told you had a stroke), not new cases per year. The headline could be read as a rise in new strokes.",
+        "severity": "minor",
+        "fix": "Headline: \"Rise in stroke prevalence among US adults aged 18–44\". Body: \"CDC survey data: the share of 18–44s who report having had a stroke rose 14.6% from 2011–13 to 2020–22. In 45–64s it rose 15.7%.\""
+      },
+      {
+        "location": "Slide 8 (stat)",
+        "claim": "In a typical large stroke, about 1.9 million neurons die every minute",
+        "problem": "Saver's figure is a modelled estimate for a typical large-vessel ischaemic stroke, not a measured value for all large strokes.",
+        "severity": "minor",
+        "fix": "Body: \"In a typical large-vessel ischaemic stroke, an estimated 1.9 million neurons die every minute without treatment (Saver, Stroke, 2006). Clot treatments work best in the first few hours.\""
+      },
+      {
+        "location": "Slide 5 (chart)",
+        "claim": "Share of strokes linked to selected risk factors",
+        "problem": "These are estimated population attributable risks from a case-control study. \"Estimated\" makes clear they are not observed shares.",
+        "severity": "minor",
+        "fix": "Headline: \"Estimated share of strokes linked to selected risk factors\""
+      },
+      {
+        "location": "Slide 4 (body_map), 'Drugs like cocaine'",
+        "claim": "Drugs like cocaine can trigger a sudden stroke",
+        "problem": "The cited CDC risk-factor page (S7) does not mention cocaine or illicit drugs. The claim is well established, but only the Ekker young-stroke review (S2) supports it.",
+        "severity": "minor",
+        "fix": "Keep the wording and attribute it to S2 (Ekker et al., Lancet Neurology 2018) in the source notes, not S7."
+      },
+      {
+        "location": "Sources S6",
+        "claim": "Signs and Symptoms of Stroke, CDC, 2024",
+        "problem": "The page's current date is May 19, 2026.",
+        "severity": "minor",
+        "fix": "Change S6 year to \"2026\"."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "Prevalence of Stroke — Behavioral Risk Factor Surveillance System, United States, 2011–2022 (MMWR 73(20))",
+        "publisher": "CDC Morbidity and Mortality Weekly Report",
+        "year": "2024",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/wr/mm7320a1.htm"
+      },
+      {
+        "id": "S2",
+        "title": "Epidemiology, aetiology, and management of ischaemic stroke in young adults (Ekker MS et al.)",
+        "publisher": "The Lancet Neurology",
+        "year": "2018",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30129475/"
+      },
+      {
+        "id": "S3",
+        "title": "Global and regional effects of potentially modifiable risk factors associated with acute stroke in 32 countries (INTERSTROKE): a case-control study (O'Donnell MJ et al.)",
+        "publisher": "The Lancet",
+        "year": "2016",
+        "url": "https://www.thelancet.com/article/S0140-6736(16)30506-2/fulltext"
+      },
+      {
+        "id": "S4",
+        "title": "Time is brain—quantified (Saver JL)",
+        "publisher": "Stroke (American Heart Association)",
+        "year": "2006",
+        "url": "https://www.ahajournals.org/doi/10.1161/01.str.0000196957.55928.ab"
+      },
+      {
+        "id": "S5",
+        "title": "Missed diagnosis of stroke in the emergency department: a cross-sectional analysis of a large population-based sample (Newman-Toker DE et al.)",
+        "publisher": "Diagnosis (De Gruyter)",
+        "year": "2014",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28344918/"
+      },
+      {
+        "id": "S6",
+        "title": "Signs and Symptoms of Stroke",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2026",
+        "url": "https://www.cdc.gov/stroke/signs-symptoms/index.html"
+      },
+      {
+        "id": "S7",
+        "title": "Stroke Risk Factors",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/stroke/risk-factors/index.html"
+      }
+    ]
+  },
+  "release_tag": "content-2026-09-26",
+  "archive_url": "b2://informed-lab-media/content/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/",
+  "image_urls": [
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-01.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-02.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-03.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-04.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-05.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-06.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-07.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-08.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-09.jpg"
+  ],
+  "hold_reason": "test run: review before publishing",
+  "review_issue": 5
+}

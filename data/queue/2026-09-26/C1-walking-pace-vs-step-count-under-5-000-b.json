@@ -1,0 +1,353 @@
+{
+  "id": "C1-walking-pace-vs-step-count-under-5-000-b",
+  "date": "2026-09-26",
+  "kind": "carousel",
+  "plan": {
+    "id": "C1",
+    "kind": "carousel",
+    "topic": "Walking pace vs step count: under 5,000 brisk steps matched 10,000 slow ones for mortality risk (BJSM, 100k+ UK Biobank)",
+    "angle": "'Steps AND pace: a walking cheat sheet.' In 100k+ UK Biobank adults (BJSM 2026), people who walked under 5,000 steps a day but hit a brisker peak pace (>80 steps/min) had a death risk similar to people walking 5,000–7,500 steps at a slow ~60 steps/min. 7,500–10,000 steps was linked to the lowest risk at any pace. Slides: (1) the core finding; (2) cadence guide: ~60 = leisurely, >80 = brisker (study), ~100 = moderate intensity (other research); (3) 15-second self-test: count steps ×4 to check your current pace; (4) how step count and pace combine; (5) 'observational: a link, not proof'; (6) any pace beats none, so build up gradually. Drop the 8,500-steps note unless its source is verified. Title: 'The Walking Pace Cheat Sheet: How Fast Is Fast Enough?' is fine.",
+    "working_title": "The Walking Pace Cheat Sheet: How Fast Is Fast Enough?",
+    "target_keyword": "how fast should I walk",
+    "trend_stage": "rising",
+    "why": "Evergreen fitness topic with a live news hook (National Geographic, MNT, Good Housekeeping this week). Simple, actionable numbers people save and share. | fact-check: Verified: BJSM, 8 Sep 2026, 103,684 UK Biobank participants, 7-day accelerometer. The topic's headline claim is WRONG. The study did not find that under 5,000 brisk steps matched 10,000 slow ones. It found that under 5,000 steps/day with a peak cadence above 80 steps/min carried a mortality risk comparable to 5,000–7,500 steps at ~60 steps/min. 7,500–10,000 steps was linked to the lowest risk at any pace, and at least 30 minutes a day at a brisker pace was linked to lower risk at any step count. Cadence slide: 60 and 80 spm come from the study. 100 spm is the widely used moderate-intensity threshold from other research (Tudor-Locke); label it that way and cite it separately. The 15-second ×4 self-test measures your current cadence, not the study's 'peak cadence', which is an average over your fastest minutes of the day. Say so. The earlier (May) 8,500-steps weight-maintenance result was not verified in this screen. Include it only if the writer confirms the primary source; otherwise drop it. Observational only. Sources: https://bmjgroup.com/different-daily-step-count-and-stepping-pace-combos-may-all-lower-risk-of-early-death/ ; https://www.cnn.com/2026/09/08/health/brisk-walking-pace-steps-wellness"
+  },
+  "status": "held",
+  "package": {
+    "title": "The Walking Pace Cheat Sheet: How Fast Is Fast Enough?",
+    "social": {
+      "youtube_short_title": "",
+      "youtube_short_description": "",
+      "instagram_caption": "Fewer steps, but faster? A big new study says your pace might matter as much as your step count 🚶\n\nIn a BJSM study, 64,743 UK adults who wore activity trackers were followed for about 8 years.\nPeople who took under 5,000 brisk steps a day had a similar risk of early death to people who took 5,000–7,500 slower steps.\nHere, \"brisk\" meant their 30 fastest minutes of the day averaged 80+ steps per minute.\n7,500–10,000 steps a day was still linked to the lowest risk, at any pace.\nThis was an observational study, so it shows a link, not proof. Steps and pace both count.\n\nTry the 15-second pace test: count your steps for 15 seconds and multiply by 4. Around 100+ steps per minute counts as moderate-intensity walking.\n\nSave this for your next walk, and send it to your walking buddy.\n\nWhat's your pace? Take the test and drop your steps per minute below 👇\n\nThis content is for educational purposes only and is not medical advice. Always talk to a qualified healthcare professional about your own situation.\n\n#walking #stepcount #briskwalking #longevity #healthyaging #walkingpace #cadence #healthresearch #evidencebasedhealth #InforMed",
+      "tiktok_caption": "Under 5,000 brisk steps a day was linked to similar early death risk as 5,000–7,500 slower steps in a 64k-person study. Pace counts too 🚶 #walking #stepcount #briskwalking #longevity",
+      "facebook_caption": "Is 10,000 steps the only number that matters? A new study in the British Journal of Sports Medicine suggests your pace counts too.\n\nResearchers followed 64,743 UK adults who wore activity trackers for about 8 years. People who took under 5,000 brisk steps a day had a similar risk of early death to people who took 5,000–7,500 slower steps. Getting 7,500–10,000 steps a day was still linked to the lowest risk at any pace. This was an observational study, so it shows a link, not proof.\n\nQuick pace check: count your steps for 15 seconds and multiply by 4. Around 100+ steps a minute counts as moderate-intensity walking. Are you more of a step counter or a speed walker?\n\nThis content is for educational purposes only and is not medical advice. Always talk to a qualified healthcare professional about your own situation.\n\n#walking #healthyaging"
+    }
+  },
+  "media": {
+    "slides": [
+      "slide-01.jpg",
+      "slide-02.jpg",
+      "slide-03.jpg",
+      "slide-04.jpg",
+      "slide-05.jpg",
+      "slide-06.jpg",
+      "slide-07.jpg",
+      "slide-08.jpg"
+    ]
+  },
+  "posts": [
+    {
+      "platform": "instagram",
+      "format": "carousel",
+      "slotKey": "instagram_carousel",
+      "slot": "2026-09-27T00:56:25.960Z",
+      "status": "held",
+      "attempts": 0
+    },
+    {
+      "platform": "facebook",
+      "format": "post",
+      "slotKey": "facebook_post",
+      "slot": "2026-09-27T00:56:25.960Z",
+      "status": "held",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-09-26T21:35:04.549Z",
+  "carousel": {
+    "title": "The Walking Pace Cheat Sheet: How Fast Is Fast Enough?",
+    "slides": [
+      {
+        "kind": "hook",
+        "headline": "Fewer steps, faster pace: does it count?",
+        "body": "New study: 100,000+ adults tracked",
+        "stat": "",
+        "icon": "person walking",
+        "bubble": "Wait… speed counts, not just steps?!",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      },
+      {
+        "kind": "stat",
+        "headline": "Adults whose steps AND pace were tracked",
+        "body": "UK Biobank adults wore an activity tracker for 7 days. Researchers linked their daily steps and walking pace to risk of early death (BJSM, Sept 2026).",
+        "stat": "103,684",
+        "icon": "watch",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      },
+      {
+        "kind": "chart",
+        "headline": "Your pace cheat sheet, in steps per minute",
+        "body": "60 and 80+ steps/min are 'peak-30' averages from the BJSM 2026 study: your 30 fastest minutes across a whole day. 100 steps/min is a widely used moderate-intensity threshold for a steady walk (Tudor-Locke et al., BJSM 2018).",
+        "stat": "",
+        "icon": "",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "Lower peak pace (study)",
+            "detail": "Avg of your 30 fastest minutes/day",
+            "icon": "turtle",
+            "value": "~60 spm"
+          },
+          {
+            "label": "Brisker peak pace (study)",
+            "detail": "Avg of your 30 fastest minutes/day",
+            "icon": "person walking",
+            "value": "80+ spm"
+          },
+          {
+            "label": "Moderate intensity (other research)",
+            "detail": "Common exercise threshold",
+            "icon": "high voltage",
+            "value": "100 spm"
+          }
+        ]
+      },
+      {
+        "kind": "steps",
+        "headline": "The 15-second pace test",
+        "body": "This measures your walking pace right now. The study's 60/80 figures were day-long averages of people's 30 fastest minutes, so they aren't directly comparable. Use ~100 steps/min as your 'brisk enough' guide.",
+        "stat": "",
+        "icon": "",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "Walk at your usual pace",
+            "detail": "Flat ground, your normal walk",
+            "icon": "person walking",
+            "value": ""
+          },
+          {
+            "label": "Count for 15 seconds",
+            "detail": "Count every step, both feet",
+            "icon": "stopwatch",
+            "value": ""
+          },
+          {
+            "label": "Multiply by 4",
+            "detail": "That's your steps per minute",
+            "icon": "abacus",
+            "value": ""
+          },
+          {
+            "label": "Compare to 100",
+            "detail": "~100+ steps/min ≈ moderate-intensity walking",
+            "icon": "bar chart",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "kind": "myth_fact",
+        "headline": "Myth: only step count matters",
+        "body": "In this study, both mattered. 7,500–10,000 steps a day was linked to the lowest risk at any pace. A brisker peak pace (your 30 fastest minutes averaging 80+ steps/min) was linked to lower risk at any step count.",
+        "stat": "",
+        "icon": "red question mark",
+        "bubble": "Steps and speed are a team!",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      },
+      {
+        "kind": "checklist",
+        "headline": "Start where you are, then build up",
+        "body": "Small, steady changes are easier to keep than big jumps.",
+        "stat": "",
+        "icon": "",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "Add steps gradually",
+            "detail": "Small increases, week by week",
+            "icon": "footprints",
+            "value": ""
+          },
+          {
+            "label": "Add brisk bursts",
+            "detail": "Pick up the pace for a few minutes",
+            "icon": "high voltage",
+            "value": ""
+          },
+          {
+            "label": "Stack brisk minutes",
+            "detail": "Work toward 30 a day",
+            "icon": "alarm clock",
+            "value": ""
+          },
+          {
+            "label": "Check your pace",
+            "detail": "Redo the 15-second test monthly",
+            "icon": "stopwatch",
+            "value": ""
+          },
+          {
+            "label": "Talk to a clinician",
+            "detail": "If you have heart, joint or other conditions",
+            "icon": "health worker",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "kind": "comparison",
+        "headline": "Fewer brisk steps ≈ more slow steps",
+        "body": "BJSM 2026: 64,743 middle-aged UK adults (from 103,684 tracked) followed ~8 years. Observational: a link, not proof. 7,500–10,000 steps was still linked to the lowest risk at any pace.",
+        "stat": "",
+        "icon": "",
+        "bubble": "Plot twist: pace pulls its weight!",
+        "filled": 0,
+        "total": 0,
+        "columns": [
+          "Fewer, brisker steps",
+          "More, slower steps"
+        ],
+        "column_icons": [
+          "high voltage",
+          "turtle"
+        ],
+        "items": [
+          {
+            "label": "Steps a day",
+            "detail": "Under 5,000",
+            "icon": "footprints",
+            "value": "5,000–7,500"
+          },
+          {
+            "label": "Peak pace",
+            "detail": "80+ steps/min",
+            "icon": "stopwatch",
+            "value": "~60 steps/min"
+          },
+          {
+            "label": "Early death risk",
+            "detail": "Similar",
+            "icon": "balance scale",
+            "value": "Similar"
+          }
+        ]
+      },
+      {
+        "kind": "cta",
+        "headline": "Save this before your next walk",
+        "body": "Steps and pace both count: more steps and a brisker pace were each linked to lower risk. Any walking is a start.",
+        "stat": "",
+        "icon": "footprints",
+        "bubble": "Send this to your walking buddy!",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Different daily step count and stepping pace combos may all lower risk of early death",
+        "publisher": "BMJ Group (press release on British Journal of Sports Medicine study, DOI 10.1136/bjsports-2025-111173)",
+        "year": "2026",
+        "url": "https://bmjgroup.com/different-daily-step-count-and-stepping-pace-combos-may-all-lower-risk-of-early-death/"
+      },
+      {
+        "id": "S2",
+        "title": "You may not need 10,000 steps to get health benefits from walking",
+        "publisher": "CNN",
+        "year": "2026",
+        "url": "https://www.cnn.com/2026/09/08/health/brisk-walking-pace-steps-wellness"
+      },
+      {
+        "id": "S3",
+        "title": "How fast is fast enough? Walking cadence (steps/min) as a practical estimate of intensity in adults: a narrative review (Tudor-Locke et al., Br J Sports Med 52(12):776–788)",
+        "publisher": "British Journal of Sports Medicine",
+        "year": "2018",
+        "url": "https://bjsm.bmj.com/content/52/12/776"
+      }
+    ]
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "The carousel is accurate and safe. I checked every study claim against the BMJ Group press release for the BJSM study (DOI 10.1136/bjsports-2025-111173, published 8 Sept 2026). These all match the press release: 103,684 UK Biobank participants, 7-day tracker, ~8-year follow-up, observational design, step bands of <5,000 / 5,000–7,500 / 7,500–10,000 / >10,000, peak-30 cadence thresholds of 60 and 80 steps/min, the lowest risk at 7,500–10,000 steps regardless of pace, and the lower risk with a brisk pace for 30+ min/day across step counts. The key comparison also matches: under 5,000 steps at ≥80 spm had risk similar to 5,000–7,500 steps at 60 spm. The Tudor-Locke 2018 citation is correct (BJSM 52(12):776–788, ~100 steps/min as the moderate-intensity threshold). The content correctly tells readers not to compare the 15-second test with peak-30 averages. It flags the study as observational, uses 'linked to' wording and suggests talking to a clinician. It also sensibly avoids CNN's inconsistent '<5,000 fast ≈ 10,000 slow' and '100 spm optimal' framing. There are two minor accuracy issues and one URL tweak, listed with fixes below. They are optional polish and don't block publishing.",
+    "issues": [
+      {
+        "location": "Slide 1 (hook) body and Slide 7 (comparison) body",
+        "claim": "New study of 103,684 adults / BJSM 2026, 103,684 middle-aged UK adults",
+        "problem": "103,684 is the number of people who wore trackers. The early-death analysis the comparison is based on used 64,743 people (average age 61; 1,697 deaths). Saying 103,684 on the comparison slide slightly overstates the sample behind the finding.",
+        "severity": "minor",
+        "fix": "Slide 7 body: \"BJSM 2026: 64,743 middle-aged UK adults (from 103,684 tracked) followed ~8 years. Observational: a link, not proof. 7,500–10,000 steps was still linked to the lowest risk at any pace.\" Slide 1 can stay as is, or change to \"New study: 100,000+ adults tracked\"."
+      },
+      {
+        "location": "Slide 5 (myth_fact) body",
+        "claim": "30+ minutes a day at a brisker pace was linked to lower risk at any step count.",
+        "problem": "The measure was peak-30 cadence (the average of a person's 30 fastest minutes being ≥80 steps/min), not a set 30-minute brisk walk. The wording is close but could read as a prescribed brisk walk.",
+        "severity": "minor",
+        "fix": "\"In this study, both mattered. 7,500–10,000 steps a day was linked to the lowest risk at any pace. A brisker peak pace (your 30 fastest minutes averaging 80+ steps/min) was linked to lower risk at any step count.\""
+      },
+      {
+        "location": "Sources, S2",
+        "claim": "https://edition.cnn.com/2026/09/08/health/brisk-walking-pace-steps-wellness",
+        "problem": "The edition.cnn.com URL returned HTTP 451 (blocked by region). The same article is indexed at www.cnn.com.",
+        "severity": "minor",
+        "fix": "Replace the URL with https://www.cnn.com/2026/09/08/health/brisk-walking-pace-steps-wellness"
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "Different daily step count and stepping pace combos may all lower risk of early death",
+        "publisher": "BMJ Group (press release on British Journal of Sports Medicine study, DOI 10.1136/bjsports-2025-111173)",
+        "year": "2026",
+        "url": "https://bmjgroup.com/different-daily-step-count-and-stepping-pace-combos-may-all-lower-risk-of-early-death/"
+      },
+      {
+        "id": "S2",
+        "title": "You may not need 10,000 steps to get health benefits from walking",
+        "publisher": "CNN",
+        "year": "2026",
+        "url": "https://www.cnn.com/2026/09/08/health/brisk-walking-pace-steps-wellness"
+      },
+      {
+        "id": "S3",
+        "title": "How fast is fast enough? Walking cadence (steps/min) as a practical estimate of intensity in adults: a narrative review (Tudor-Locke et al., Br J Sports Med 52(12):776–788)",
+        "publisher": "British Journal of Sports Medicine",
+        "year": "2018",
+        "url": "https://bjsm.bmj.com/content/52/12/776"
+      }
+    ]
+  },
+  "hold_reason": "Packaging check REVISE: The title, thumbnail and captions are mostly well framed. They say the study shows a link rather than proof, they don't promise a cure, the 15-second pace test is safe, and the ~100 steps/min moderate-intensity threshold matches Tudor-Locke 2018 (S3). But the package doesn't match itself or the verified summary on two key facts. (1) Sample size: the hook says \"100,000+ adults\" and the verified topic says \"100k+\". All captions say 64,743, which is probably the number analysed after exclusions from the ~100k UK Biobank accelerometer group. (2) The main comparison: the verified topic says under 5,000 brisk steps \"matched 10,000 slow ones\". The captions say it matched \"5,000–7,500 slower steps\". These are different claims, and only one can be what the study reported. The captions' version is the more cautious one. Their other details (80+ steps/min over the 30 fastest minutes; 7,500–10,000 steps lowest risk at any pace; ~8 years follow-up) aren't in the verified summary either. The fixes below remove the sample-size conflict. Before publishing, check the main comparison against S1 and change the topic summary or the captions so they say the same thing. I had no web access in this run, so I couldn't open S1 or S2 (both dated after my knowledge cutoff) and have left them off the verified list. S3 is a known, real paper.; test run: review before publishing",
+  "release_tag": "content-2026-09-26",
+  "archive_url": "b2://informed-lab-media/content/2026-09-26/C1-walking-pace-vs-step-count-under-5-000-b/",
+  "image_urls": [
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C1-walking-pace-vs-step-count-under-5-000-b/slide-01.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C1-walking-pace-vs-step-count-under-5-000-b/slide-02.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C1-walking-pace-vs-step-count-under-5-000-b/slide-03.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C1-walking-pace-vs-step-count-under-5-000-b/slide-04.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C1-walking-pace-vs-step-count-under-5-000-b/slide-05.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C1-walking-pace-vs-step-count-under-5-000-b/slide-06.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C1-walking-pace-vs-step-count-under-5-000-b/slide-07.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C1-walking-pace-vs-step-count-under-5-000-b/slide-08.jpg"
+  ],
+  "review_issue": 4
+}
