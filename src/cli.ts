@@ -12,6 +12,7 @@ import { produceLong } from "./produce/long.js";
 import { produceShort } from "./produce/short.js";
 import { finalizeDay, publishDue, publishNow } from "./publish/publisher.js";
 import { reportFailure, syncReviews } from "./review/issues.js";
+import { pollTelegram } from "./notify/telegram.js";
 import { runRadar } from "./trends/radar.js";
 
 const [cmd, ...rest] = process.argv.slice(2);
@@ -67,6 +68,8 @@ const commands: Record<string, () => Promise<unknown>> = {
   // publish-now <date>/<item-id> [--platforms youtube,tiktok,instagram,facebook]
   "publish-now": () => publishNow(rest[0], (flag("platforms") ?? "").split(",").filter(Boolean)),
   "review-sync": () => syncReviews(),
+  // Telegram button presses → review labels → queued items
+  "telegram-poll": async () => { if (await pollTelegram()) await syncReviews(); },
   analytics: () => runAnalytics(),
   doctor,
 };

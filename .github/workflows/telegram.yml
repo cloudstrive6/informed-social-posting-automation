@@ -1,0 +1,31 @@
+name: Telegram
+# Every 5 minutes: apply Approve / Reject button presses from Telegram to held content
+# (labels the review issue, then syncs the decision onto the queued item for the Publisher).
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: telegram
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - run: npx tsx src/cli.ts telegram-poll
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - if: always()
+        run: bash scripts/commit-data.sh "bot - telegram decisions"

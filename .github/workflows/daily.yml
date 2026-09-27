@@ -31,6 +31,8 @@ env:
   POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
   ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
   GH_TOKEN: ${{ github.token }}
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
 jobs:
   plan:

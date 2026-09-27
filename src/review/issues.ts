@@ -4,6 +4,7 @@ import { ContentItem, itemPath, saveItem } from "../lib/items.js";
 import { ensureDir, readJson, writeText } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
 import { run } from "../media/exec.js";
+import { notify, runUrl } from "../notify/telegram.js";
 
 const gh = (args: string[]) => run("gh", args, { quiet: true });
 const marker = (item: ContentItem) => `<!-- informed-item:${item.date}/${item.id} -->`;
@@ -75,4 +76,6 @@ export async function reportFailure(title: string, details: string) {
     writeText(file, `${details}\n\n${run_url}`);
     await gh(["issue", "create", "--title", title, "--label", "pipeline-failure", "--body-file", file]);
   } catch (e) { log.warn(`could not open failure issue: ${(e as Error).message}`); }
+  const plain = details.replace(/```/g, "").replace(/[<>&]/g, c => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;" }[c]!)).slice(0, 1500);
+  await notify(`🚨 <b>${title.replace(/[<>&]/g, "")}</b>\n\n<pre>${plain}</pre>${runUrl() ? `\n<a href="${runUrl()}">Open the run</a>` : ""}`);
 }

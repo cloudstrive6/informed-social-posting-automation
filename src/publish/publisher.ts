@@ -12,6 +12,7 @@ import { facebookAlbumPost, facebookReel, instagramCarousel, instagramReel } fro
 import { downloadFromRelease, publishImages, releaseAssetUrl, uploadToRelease } from "./storage.js";
 import { archiveItem } from "./b2.js";
 import { recordQuality, updateCraftNotes } from "../analytics/quality.js";
+import { notify, notifyReview } from "../notify/telegram.js";
 import { tiktokPost } from "./tiktok.js";
 import { postForMeEnabled, tiktokViaPostForMe } from "./postforme.js";
 import { setThumbnail, uploadVideo } from "./youtube.js";
@@ -74,6 +75,7 @@ async function attempt(item: ContentItem, p: PostTarget) {
     p.remote_id = r.id; p.url = r.url ?? undefined; p.error = undefined;
     p.published_at = r.scheduled ? p.slot : new Date().toISOString();
     log.info(`✓ ${item.id} → ${p.platform}/${p.format} ${p.status} ${p.url ?? ""}`);
+    await notify(`${p.status === "scheduled" ? "🗓️ Scheduled" : "✅ Posted"} · <b>${p.platform} ${p.format}</b>\n${(item.package.title ?? item.plan.working_title).replace(/[<>&]/g, "")}${p.url ? `\n${p.url}` : ""}${p.status === "scheduled" ? `\nGoes live ${new Date(p.slot).toLocaleString("en-US", { timeZone: config.audience.timezone, dateStyle: "medium", timeStyle: "short" })}` : ""}`, { silent: true });
   } catch (e) {
     p.error = (e as Error).message.slice(0, 800);
     log.error(`✗ ${item.id} → ${p.platform}/${p.format}: ${p.error}`);
@@ -118,6 +120,12 @@ export async function finalizeDay(date: string) {
     if (item.status === "held") {
       for (const p of item.posts) p.status = "held";
       item.review_issue = await openReviewIssue(item);
+      if (item.review_issue) {
+        const local = (n?: string) => (n ? join(finalDir, basename(n)) : undefined);
+        await notifyReview(item, item.review_issue,
+          { video: local(item.media.video), slides: item.media.slides?.map(s => join(finalDir, basename(s))), thumbnail: local(item.media.thumbnail) },
+          process.env.GITHUB_REPOSITORY ? `https://github.com/${process.env.GITHUB_REPOSITORY}/releases/tag/${tag}` : undefined);
+      }
     }
     saveItem(item);
     recordQuality(item);
@@ -129,6 +137,16 @@ export async function finalizeDay(date: string) {
   writeJson(coveredPath, covered.slice(-400));
   // learn from today's QA findings so tomorrow's first drafts avoid them
   await updateCraftNotes();
+
+  // daily summary for the owner
+  const all = loadItems([date]);
+  const line = (i: ContentItem) => `${i.status === "ready" ? "🟢" : i.status === "held" ? "🟡" : "🔴"} ${i.kind} · ${(i.package.title ?? i.plan.working_title).replace(/[<>&]/g, "").slice(0, 80)}`;
+  await notify([
+    `📦 <b>Daily production ${date}</b>`,
+    `${all.filter(i => i.status === "ready").length} ready · ${all.filter(i => i.status === "held").length} held for review · ${all.filter(i => i.status === "failed").length} failed`,
+    "", ...all.map(line),
+    "", `Posting starts ${config.schedule.instagram_reel?.[0] ?? ""} (${config.audience.timezone}). Held items need your ✅ above.`,
+  ].join("\n"));
 
   // YouTube supports native scheduling: upload now, it goes public exactly at the slot.
   for (const item of loadItems([date])) {

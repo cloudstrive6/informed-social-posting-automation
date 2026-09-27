@@ -1,0 +1,137 @@
+/**
+ * Telegram: notifications (held content, posting reports, pipeline failures) and one-tap approvals.
+ * Approve / Reject buttons are applied by `telegram-poll` (GitHub Actions, every 5 min): it reads the button
+ * presses, labels the matching review issue and syncs the decision onto the queued item.
+ * Only the configured chat (TELEGRAM_CHAT_ID) is listened to; everything else is ignored.
+ */
+import { existsSync, readFileSync, statSync } from "node:fs";
+import { basename } from "node:path";
+import { DATA, env } from "../lib/config.js";
+import { readJson, writeJson } from "../lib/fsx.js";
+import type { ContentItem } from "../lib/items.js";
+import { log } from "../lib/log.js";
+import { run } from "../media/exec.js";
+
+type Button = { text: string; callback_data?: string; url?: string };
+const token = () => env("TELEGRAM_BOT_TOKEN");
+const chatId = () => env("TELEGRAM_CHAT_ID");
+export const telegramEnabled = () => !!(token() && chatId());
+
+const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const repoUrl = () => (process.env.GITHUB_REPOSITORY ? `https://github.com/${process.env.GITHUB_REPOSITORY}` : "");
+export const runUrl = () => (process.env.GITHUB_RUN_ID ? `${repoUrl()}/actions/runs/${process.env.GITHUB_RUN_ID}` : "");
+
+async function tg<T = any>(method: string, body: object | FormData): Promise<T> {
+  const res = await fetch(`https://api.telegram.org/bot${token()}/${method}`, body instanceof FormData
+    ? { method: "POST", body }
+    : { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+  const j = await res.json() as { ok: boolean; result: T; description?: string };
+  if (!j.ok) throw new Error(`Telegram ${method}: ${j.description}`);
+  return j.result;
+}
+
+/** Send a message (HTML). Never throws: notifications must not break the pipeline. */
+export async function notify(html: string, opts: { silent?: boolean; buttons?: Button[][] } = {}) {
+  if (!telegramEnabled()) return;
+  try {
+    await tg("sendMessage", {
+      chat_id: chatId(), text: html.slice(0, 4000), parse_mode: "HTML", disable_web_page_preview: true,
+      disable_notification: !!opts.silent, ...(opts.buttons ? { reply_markup: { inline_keyboard: opts.buttons } } : {}),
+    });
+  } catch (e) { log.warn(`telegram notify failed: ${(e as Error).message}`); }
+}
+
+/** Preview media for a review: the video itself (Telegram bots can upload up to 50 MB) or the carousel slides. */
+async function sendPreview(item: ContentItem, files: { video?: string; slides?: string[]; thumbnail?: string }, caption: string) {
+  try {
+    if (files.slides?.length) {
+      const fd = new FormData();
+      fd.append("chat_id", chatId()!);
+      const slides = files.slides.slice(0, 10);
+      fd.append("media", JSON.stringify(slides.map((f, i) => ({ type: "photo", media: `attach://p${i}`, ...(i === 0 ? { caption, parse_mode: "HTML" } : {}) }))));
+      slides.forEach((f, i) => fd.append(`p${i}`, new Blob([readFileSync(f)], { type: "image/jpeg" }), basename(f)));
+      await tg("sendMediaGroup", fd);
+      return;
+    }
+    if (files.video && existsSync(files.video) && statSync(files.video).size < 49 * 1024 * 1024) {
+      const fd = new FormData();
+      fd.append("chat_id", chatId()!); fd.append("caption", caption); fd.append("parse_mode", "HTML"); fd.append("supports_streaming", "true");
+      fd.append("video", new Blob([readFileSync(files.video)], { type: "video/mp4" }), basename(files.video));
+      await tg("sendVideo", fd);
+      return;
+    }
+    if (files.thumbnail && existsSync(files.thumbnail)) {
+      const fd = new FormData();
+      fd.append("chat_id", chatId()!); fd.append("caption", caption); fd.append("parse_mode", "HTML");
+      fd.append("photo", new Blob([readFileSync(files.thumbnail)], { type: "image/jpeg" }), basename(files.thumbnail));
+      await tg("sendPhoto", fd);
+    }
+  } catch (e) { log.warn(`telegram preview failed for ${item.id}: ${(e as Error).message}`); }
+}
+
+/** Held content: preview + reasons + Approve / Reject buttons (tied to the GitHub review issue). */
+export async function notifyReview(item: ContentItem, issue: number, files: { video?: string; slides?: string[]; thumbnail?: string }, mediaUrl?: string) {
+  if (!telegramEnabled()) return;
+  const title = item.package.title ?? item.plan.working_title;
+  await sendPreview(item, files, `🎬 <b>${esc(item.kind.toUpperCase())}</b> · ${esc(title)}`);
+  const issues = (item.factcheck?.issues ?? []).filter(i => i.severity !== "minor").slice(0, 4);
+  await notify([
+    `🟡 <b>Needs your review</b> (${esc(item.kind)}, ${esc(item.date)})`,
+    `<b>${esc(title)}</b>`,
+    "", `<b>Why it was held:</b> ${esc((item.hold_reason ?? "n/a").slice(0, 900))}`,
+    ...(issues.length ? ["", "<b>Checker findings:</b>", ...issues.map(i => `• <i>${esc(i.severity)}</i> ${esc(i.location)}: ${esc(i.problem.slice(0, 220))}`)] : []),
+    "", "Approve to post it at its next slot (or right away if the slot has passed).",
+  ].join("\n"), {
+    buttons: [
+      [{ text: "✅ Approve", callback_data: `ap:${issue}` }, { text: "🛑 Reject", callback_data: `rj:${issue}` }],
+      [{ text: `Issue #${issue}`, url: `${repoUrl()}/issues/${issue}` }, ...(mediaUrl ? [{ text: "Media", url: mediaUrl }] : [])],
+    ],
+  });
+}
+
+// ------------------------------------------------------------------ approvals (polled from Actions)
+const STATE = `${DATA}/telegram/state.json`;
+const gh = (args: string[]) => run("gh", args, { quiet: true });
+
+/** Read button presses and commands since the last poll; returns true if any review decision was applied. */
+export async function pollTelegram(): Promise<boolean> {
+  if (!token()) { log.warn("TELEGRAM_BOT_TOKEN not set"); return false; }
+  const state = readJson<{ offset: number }>(STATE, { offset: 0 });
+  const updates = await tg<any[]>("getUpdates", { offset: state.offset, timeout: 0, allowed_updates: ["callback_query", "message"] });
+  let decided = false;
+  for (const u of updates) {
+    state.offset = u.update_id + 1;
+    const from = String(u.callback_query?.message?.chat?.id ?? u.message?.chat?.id ?? "");
+    if (!chatId() || from !== chatId()) { log.warn(`telegram: ignoring update from chat ${from}`); continue; }
+
+    if (u.callback_query) {
+      const q = u.callback_query;
+      const m = /^(ap|rj):(\d+)$/.exec(q.data ?? "");
+      if (!m) continue;
+      const label = m[1] === "ap" ? "approved" : "rejected";
+      try {
+        await gh(["issue", "edit", m[2], "--add-label", label]);
+        decided = true;
+        await tg("answerCallbackQuery", { callback_query_id: q.id, text: label === "approved" ? "Approved ✅" : "Rejected 🛑" });
+        await tg("editMessageText", {
+          chat_id: chatId(), message_id: q.message.message_id, parse_mode: "HTML", disable_web_page_preview: true,
+          text: `${q.message.text ? esc(q.message.text).slice(0, 3500) : ""}\n\n<b>${label === "approved" ? "✅ Approved" : "🛑 Rejected"}</b> ${new Date().toISOString().slice(0, 16).replace("T", " ")} UTC`,
+        });
+      } catch (e) {
+        log.warn(`telegram decision on #${m[2]} failed: ${(e as Error).message}`);
+        await tg("answerCallbackQuery", { callback_query_id: q.id, text: `Failed: ${(e as Error).message.slice(0, 150)}` }).catch(() => undefined);
+      }
+    } else if (u.message?.text) {
+      const cmd = u.message.text.trim().split(/\s+/)[0].toLowerCase();
+      if (cmd === "/pending") {
+        const list = JSON.parse(await gh(["issue", "list", "--state", "open", "--label", "needs-review", "--json", "number,title", "--limit", "20"]));
+        if (!list.length) await notify("✅ Nothing is waiting for review.");
+        for (const i of list) await notify(`🟡 #${i.number} ${esc(i.title)}`, { buttons: [[{ text: "✅ Approve", callback_data: `ap:${i.number}` }, { text: "🛑 Reject", callback_data: `rj:${i.number}` }, { text: "Open", url: `${repoUrl()}/issues/${i.number}` }]] });
+      } else if (cmd === "/start" || cmd === "/help") {
+        await notify("👋 InforMed bot is connected.\n\nYou'll get: items that need review (with Approve / Reject), posting reports and pipeline failures.\n\n/pending: list everything waiting for review");
+      }
+    }
+  }
+  writeJson(STATE, state);
+  return decided;
+}
