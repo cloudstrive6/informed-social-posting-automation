@@ -29,6 +29,9 @@ export async function uploadToRelease(tag: string, files: string[]) {
   log.info(`uploaded ${files.length} files to release ${tag}`);
 }
 
+/** Public download URL of a release asset (the repo is public, so platforms can fetch it). */
+export const releaseAssetUrl = (tag: string, name: string) => `https://github.com/${repo()}/releases/download/${tag}/${encodeURIComponent(name)}`;
+
 export async function downloadFromRelease(tag: string, name: string): Promise<string> {
   const dir = ensureDir(join(ROOT, ".cache", "media", tag));
   const file = join(dir, name);

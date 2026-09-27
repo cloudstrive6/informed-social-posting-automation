@@ -9,7 +9,7 @@ import { addDays, localDate } from "../lib/time.js";
 import { coveredPath, CoveredTopic } from "../plan/planDay.js";
 import { openReviewIssue, reportFailure } from "../review/issues.js";
 import { facebookAlbumPost, facebookReel, instagramCarousel, instagramReel } from "./meta.js";
-import { downloadFromRelease, publishImages, uploadToRelease } from "./storage.js";
+import { downloadFromRelease, publishImages, releaseAssetUrl, uploadToRelease } from "./storage.js";
 import { archiveItem } from "./b2.js";
 import { recordQuality, updateCraftNotes } from "../analytics/quality.js";
 import { tiktokPost } from "./tiktok.js";
@@ -48,7 +48,10 @@ async function publishOne(item: ContentItem, p: PostTarget) {
       const id = await uploadVideo({ file: await media(item, item.media.video!), title: s!.youtube_short_title, description: s!.youtube_short_description, tags: item.package.tags ?? [], publishAt: p.slot });
       return { id, url: `https://youtube.com/shorts/${id}`, scheduled: Date.parse(p.slot) > Date.now() + 5 * 60_000 };
     }
-    case "instagram:reel": return { ...(await instagramReel(await media(item, item.media.video!), s!.instagram_caption)), scheduled: false };
+    case "instagram:reel": {
+      const url = item.release_tag && process.env.GITHUB_REPOSITORY ? releaseAssetUrl(item.release_tag, basename(item.media.video!)) : undefined;
+      return { ...(await instagramReel(await media(item, item.media.video!), s!.instagram_caption, url)), scheduled: false };
+    }
     case "instagram:carousel": return { ...(await instagramCarousel(item.image_urls!, s!.instagram_caption)), scheduled: false };
     case "tiktok:short": {
       const file = await media(item, item.media.video!);
