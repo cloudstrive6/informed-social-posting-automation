@@ -31,11 +31,6 @@ Save the token as the secret **`CLAUDE_CODE_OAUTH_TOKEN`**. The system makes abo
 
 Without the key, everything still works on the free voices (Chatterbox → Kokoro), the built-in synth score and synthesized SFX.
 
-## 2b. Stock photos — optional (thumbnail fallback only)
-
-- Pexels: https://www.pexels.com/api/ → secret **`PEXELS_API_KEY`**
-- Pixabay (fallback): https://pixabay.com/api/docs/ → secret **`PIXABAY_API_KEY`**
-
 ## 2c. Backblaze B2 — permanent media archive (optional)
 
 Every finished item (video, thumbnail, slides, script, captions, QA reports) is copied to the private bucket

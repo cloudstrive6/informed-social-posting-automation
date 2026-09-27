@@ -9,8 +9,7 @@ import { creditsThisRun } from "../lib/usage.js";
 import { LongPackaging, longPackagingSchema, Script, scriptSchema, Seo, seoSchema, Thumbnails, thumbnailsSchema, Titles, titlesSchema } from "../lib/schemas.js";
 import { fmtTimestamp } from "../lib/time.js";
 import { buildVideo } from "../media/buildVideo.js";
-import { closeStills, renderThumbnail } from "../media/stills.js";
-import { aiImage, stockPhoto } from "../media/stock.js";
+import { pickThumbnail } from "../media/thumbPick.js";
 import type { Timeline } from "../media/tts.js";
 import { packagingLoop, directNarration, narrateChecked, qaBlockers, loadPiece, newItem, workDir, writeWithFactCheck } from "./common.js";
 
@@ -88,14 +87,11 @@ export async function produceLong(date: string, pieceId: string): Promise<Conten
     const summary = { topic: piece.topic, angle: piece.angle, target_keyword: piece.target_keyword, hook: script.scenes[0].narration, sections: [...new Set(script.scenes.map(s => s.section))], cta: script.cta };
     const titles = await runAgent<Titles>({ agent: "title-writer", model: config.models.packaging, schema: titlesSchema, input: { ...summary, working_title: script.working_title } });
     const thumbs = await runAgent<Thumbnails>({ agent: "thumbnail-designer", model: config.models.packaging, schema: thumbnailsSchema, input: { ...summary, title: titles.chosen } });
-    const concept = thumbs.concepts[Math.min(Math.max(0, Math.round(thumbs.chosen_index)), thumbs.concepts.length - 1)];
-    const imgDir = join(dir, "thumb");
-    const main = (await aiImage(concept.image_prompt, 1280, 720, imgDir)) ?? (await stockPhoto(concept.stock_query, "landscape", imgDir));
-    const images = concept.layout === "versus"
-      ? { main, left: await stockPhoto(concept.versus_left, "portrait", imgDir), right: await stockPhoto(concept.versus_right, "portrait", imgDir) }
-      : { main };
-    item.media.thumbnail = await renderThumbnail(concept, images, join(final, `${item.id}-thumb.jpg`));
-    await closeStills();
+    // all three concepts are rendered; the Thumbnail Judge views them at phone size and picks the likeliest click
+    const picked = await pickThumbnail(thumbs, titles.chosen, final, item.id);
+    const concept = picked.concept;
+    item.media.thumbnail = picked.file;
+    item.qa = { ...item.qa, thumbnail: picked.judgement };
 
     const seo = await runAgent<Seo>({
       agent: "seo-writer", model: config.models.polish, schema: seoSchema,
@@ -118,8 +114,7 @@ export async function produceLong(date: string, pieceId: string): Promise<Conten
     const fixed = pk.packaging;
     if (fixed.thumbnail_headline !== concept.headline || fixed.thumbnail_subtext !== concept.subtext) {
       concept.headline = fixed.thumbnail_headline; concept.subtext = fixed.thumbnail_subtext;
-      item.media.thumbnail = await renderThumbnail(concept, images, join(final, `${item.id}-thumb.jpg`));
-      await closeStills();
+      item.media.thumbnail = await picked.rerender(concept);
     }
     item.package = { ...item.package, title: fixed.title, description: fixed.description, pinned_comment: fixed.pinned_comment, thumbnail: concept };
     item.qa = { ...item.qa, packaging: { verdict: pk.check.verdict, issues: pk.check.issues } };

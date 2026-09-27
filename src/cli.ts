@@ -45,7 +45,6 @@ async function doctor() {
   const groups: Record<string, string[]> = {
     "Claude (agents)": ["CLAUDE_CODE_OAUTH_TOKEN"],
     "ElevenLabs (voice, music, SFX)": ["ELEVENLABS_API_KEY"],
-    "Stock photos (optional thumbnail fallback)": ["PEXELS_API_KEY", "PIXABAY_API_KEY"],
     "Backblaze B2 archive (optional)": ["B2_KEY_ID", "B2_APPLICATION_KEY"],
     "YouTube upload": ["YOUTUBE_CLIENT_ID", "YOUTUBE_CLIENT_SECRET", "YOUTUBE_REFRESH_TOKEN"],
     "YouTube research (optional)": ["YOUTUBE_API_KEY"],

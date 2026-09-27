@@ -111,22 +111,35 @@ export const titlesSchema = obj({
   chosen: str, reasoning: str,
 });
 
-export type ThumbLayout = "split-reveal" | "big-number" | "warning" | "object-hero" | "versus";
+export type ThumbLayout = "reaction" | "big-number" | "warning" | "versus" | "mystery" | "before-after";
+export const THUMB_FACES = ["none", "happy", "worried", "shocked", "sad", "angry", "sick", "proud", "sleepy"] as const;
+export const THUMB_PROPS = ["none", "arrow", "red-circle", "question", "cross", "check", "alarm", "magnifier"] as const;
 export interface ThumbConcept {
   headline: string; highlight_word: string; subtext: string; layout: ThumbLayout;
-  emotion: string; image_prompt: string; stock_query: string; accent: "alert" | "highlight" | "green" | "blue";
+  /** the click trigger this concept uses and why it fits the title (curiosity gap, loss aversion, surprise…) */
+  psychology: string; emotion: string;
+  hero_art: string; hero_face: (typeof THUMB_FACES)[number];
+  second_art: string; second_face: (typeof THUMB_FACES)[number];
+  prop: (typeof THUMB_PROPS)[number]; accent: "alert" | "highlight" | "green" | "blue";
   badge: string; versus_left: string; versus_right: string;
 }
 export interface Thumbnails { concepts: ThumbConcept[]; chosen_index: number; reasoning: string }
 export const thumbnailsSchema = obj({
   concepts: arr(obj({
     headline: str, highlight_word: str, subtext: str,
-    layout: { enum: ["split-reveal", "big-number", "warning", "object-hero", "versus"] },
-    emotion: str, image_prompt: str, stock_query: str,
-    accent: { enum: ["alert", "highlight", "green", "blue"] },
+    layout: { enum: ["reaction", "big-number", "warning", "versus", "mystery", "before-after"] },
+    psychology: str, emotion: str,
+    hero_art: str, hero_face: { enum: [...THUMB_FACES] }, second_art: str, second_face: { enum: [...THUMB_FACES] },
+    prop: { enum: [...THUMB_PROPS] }, accent: { enum: ["alert", "highlight", "green", "blue"] },
     badge: str, versus_left: str, versus_right: str,
-  }), { minItems: 3 }),
+  }), { minItems: 3, maxItems: 3 }),
   chosen_index: num, reasoning: str,
+});
+
+export interface ThumbJudgement { scores: { index: number; ctr: number; legibility: number; issues: string[] }[]; best_index: number; reasoning: string }
+export const thumbJudgementSchema = obj({
+  scores: arr(obj({ index: num, ctr: num, legibility: num, issues: strArr })),
+  best_index: num, reasoning: str,
 });
 
 export interface Seo { description: string; tags: string[]; hashtags: string[]; pinned_comment: string }

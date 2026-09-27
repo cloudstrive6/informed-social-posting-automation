@@ -30,7 +30,8 @@ Every agent is a Claude agent (Claude Agent SDK, running on your Claude subscrip
 | **Narration Director** | Rewrites scripts for the ear (contractions, rhythm, pauses, pacing per scene) so the voice sounds human. |
 | **Motion Designer** | Art-directs every shot of the animated flat-vector style (palette, background, characters/cells/organs, motion, camera, transitions, labels), with a new shot every 3–7 s synced to the narration. See [docs/STYLE.md](docs/STYLE.md). |
 | **Title Writer** | 10 CTR-scored title candidates (curiosity gap, specificity, stakes), picks the best. |
-| **Thumbnail Designer** | Art-directs 3 concepts (split-reveal, big-number, warning, object-hero, versus), picks one; rendered in brand with an AI or stock image. |
+| **Thumbnail Designer** | 3 cartoon thumbnail concepts, each built on a different click trigger (curiosity gap, specific number, loss aversion, surprise, comparison) with an expressive character. |
+| **Thumbnail Judge** | Views all 3 rendered thumbnails at full and phone size and picks the likeliest click; the runners-up are saved for YouTube's Test & compare. |
 | **SEO/AEO Writer** | Descriptions built for YouTube search *and* AI answer engines: quick-answer paragraph, chapters, sources, tags. |
 | **Carousel Designer** | Save-worthy 6–9 slide carousels with a scroll-stopping first slide. |
 | **Social Copywriter** | Native captions for Shorts, Instagram, TikTok and Facebook. |
@@ -74,7 +75,7 @@ daily     Analytics → Performance Analyst → data/learnings.md (fed back into
 | Narration | [Chatterbox](https://github.com/resemble-ai/chatterbox) (expressive open-source TTS, optional voice matching) + Whisper word timing; Kokoro as fallback |
 | Sound | Synthesized SFX on every animation event + generated ambient synth score (or your own tracks) |
 | Photos (carousels/thumbnails) | Pexels / Pixabay APIs (free) |
-| Thumbnail images | Pollinations (free AI images), stock-photo fallback |
+| Thumbnails | Cartoon engine (same characters as the videos), 3 psychology-driven concepts, a judge agent picks the likeliest click |
 | Stills | Playwright (HTML → PNG/JPEG) |
 | Storage | GitHub Releases (videos), `media` branch (public carousel image URLs for Instagram) |
 | State | JSON in `data/`, committed by the bot |
