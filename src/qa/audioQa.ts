@@ -26,6 +26,20 @@ function numWords(n: number): string {
 }
 /** Lowercase words with numbers spelled out, so "58%" == "fifty-eight percent". */
 const SAME = new Map([["root", "route"], ["okay", "ok"], ["percentage", "percent"]]); // accepted variants
+const NUMBER_WORDS = new Set(["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]);
+
+/**
+ * British vs American spelling is not a narration error ("recognised" / "recognized", "tumour" / "tumor",
+ * "oestrogen" / "estrogen"). Applied to both sides of the comparison, so over-matching is harmless.
+ */
+const spelling = (w: string) => w
+  .replace(/isation/, "ization").replace(/is(e|ed|es|ing|er|ers)$/, "iz$1")
+  .replace(/our(s|ed|ing|ite|ites|able)?$/, "or$1")
+  .replace(/tre(s)?$/, "ter$1")
+  .replace(/ae/g, "e").replace(/^oe/, "e")
+  .replace(/ll(ed|ing|er|ers)$/, "l$1")
+  .replace(/ogue$/, "og");
+
 export function normWords(s: string): string[] {
   const words = s.toLowerCase()
     .replace(/(\d)\s?[,.]?\s?(\d{3})\b/g, "$1$2") // "80,000" / "80 000" / Whisper's split "80 ,000"
@@ -33,7 +47,14 @@ export function normWords(s: string): string[] {
     .replace(/\d+/g, m => (m.length <= 6 ? numWords(Number(m)) : m))
     .replace(/[-–—/]/g, " ")
     .replace(/[^a-z' ]/g, " ")
-    .split(/\s+/).filter(Boolean).map(w => w.replace(/^'+|'+$/g, "")).map(w => SAME.get(w) ?? w);
+    .split(/\s+/).filter(Boolean).map(w => w.replace(/^'+|'+$/g, "")).map(w => SAME.get(w) ?? w).map(spelling);
+  // years: "two thousand (and) twenty four" == "twenty twenty four"
+  for (let i = 0; i < words.length - 2; i++) {
+    if (words[i] === "two" && words[i + 1] === "thousand") {
+      const k = words[i + 2] === "and" ? i + 3 : i + 2;
+      if (NUMBER_WORDS.has(words[k])) words.splice(i, k - i, "twenty");
+    }
+  }
   // spelled-out acronyms ("h r t") == "hrt"
   const letter = (w: string) => w.length === 1 && w !== "a" && w !== "i";
   const out: string[] = [];
