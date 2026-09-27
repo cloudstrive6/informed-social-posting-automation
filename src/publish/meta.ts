@@ -43,29 +43,28 @@ async function igRendition(file: string): Promise<string> {
 }
 
 /**
- * Instagram Reel: resumable binary upload of an IG-compliant rendition; if Instagram rejects the upload,
- * fall back to letting it fetch the video from a public URL (the GitHub release asset).
+ * Instagram Reel. Preferred: Instagram fetches the video from its public URL (the GitHub release asset).
+ * Fallback when there's no public URL: resumable binary upload of an IG-compliant rendition.
  */
 export async function instagramReel(file: string, caption: string, publicUrl?: string) {
-  const video = await igRendition(file);
-  try {
-    const c = await post(`${igUser()}/media`, { media_type: "REELS", upload_type: "resumable", caption, share_to_feed: "true" });
-    const size = statSync(video).size;
-    const up = await http(`https://rupload.facebook.com/ig-api-upload/${V()}/${c.id}`, {
-      method: "POST", timeoutMs: 30 * 60_000, retries: 1,
-      headers: { authorization: `OAuth ${token()}`, offset: "0", file_size: String(size) },
-      body: readFileSync(video),
-    });
-    if (!up.ok) throw new Error(`IG upload ${up.status}: ${(await up.text()).slice(0, 400)}`);
-    await waitContainer(c.id);
-    return await igPublish(c.id);
-  } catch (e) {
-    if (!publicUrl) throw e;
-    log.warn(`IG resumable upload failed (${(e as Error).message.slice(0, 200)}); retrying with the public video URL`);
-    const c = await post(`${igUser()}/media`, { media_type: "REELS", video_url: publicUrl, caption, share_to_feed: "true" });
-    await waitContainer(c.id);
-    return igPublish(c.id);
+  if (publicUrl) {
+    try {
+      const c = await post(`${igUser()}/media`, { media_type: "REELS", video_url: publicUrl, caption, share_to_feed: "true" });
+      await waitContainer(c.id);
+      return await igPublish(c.id);
+    } catch (e) { log.warn(`IG reel from URL failed (${(e as Error).message.slice(0, 200)}); trying a direct upload`); }
   }
+  const video = await igRendition(file);
+  const c = await post(`${igUser()}/media`, { media_type: "REELS", upload_type: "resumable", caption, share_to_feed: "true" });
+  const size = statSync(video).size;
+  const up = await http(`https://rupload.facebook.com/ig-api-upload/${V()}/${c.id}`, {
+    method: "POST", timeoutMs: 30 * 60_000, retries: 1,
+    headers: { authorization: `OAuth ${token()}`, offset: "0", file_size: String(size) },
+    body: readFileSync(video),
+  });
+  if (!up.ok) throw new Error(`IG upload ${up.status}: ${(await up.text()).slice(0, 400)}`);
+  await waitContainer(c.id);
+  return igPublish(c.id);
 }
 
 /** Instagram carousel. The IG API only accepts public image URLs (we host them on the repo's `media` branch). */
