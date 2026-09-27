@@ -14,6 +14,11 @@ on:
         description: "Test run: produce + archive everything, but hold every item for review (nothing is scheduled or published)"
         type: boolean
         default: false
+      only:
+        description: "Produce only this kind (manual re-runs)"
+        type: choice
+        options: [all, long, short, carousel]
+        default: all
 
 permissions:
   contents: write
@@ -53,6 +58,11 @@ jobs:
           if [ -z "$D" ]; then D=$(TZ=$(jq -r .audience.timezone config/channel.json) date +%F); fi
           echo "date=$D" >> "$GITHUB_OUTPUT"
           npx tsx src/cli.ts plan --date "$D"
+          # manual re-runs: blank out the kinds that weren't asked for
+          ONLY="${{ inputs.only || 'all' }}"
+          if [ "$ONLY" != "all" ]; then
+            for k in long short carousel; do [ "$k" != "$ONLY" ] && sed -i "s/^$k=.*/$k=[]/" "$GITHUB_OUTPUT"; done
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: plan
