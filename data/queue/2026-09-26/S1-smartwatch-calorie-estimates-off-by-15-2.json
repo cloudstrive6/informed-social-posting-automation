@@ -37,32 +37,44 @@
       "format": "short",
       "slotKey": "youtube_short",
       "slot": "2026-09-27T00:56:54.590Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "_wi2SII2R0c",
+      "url": "https://youtube.com/shorts/_wi2SII2R0c",
+      "published_at": "2026-09-27T18:02:26.380Z"
     },
     {
       "platform": "instagram",
       "format": "reel",
       "slotKey": "instagram_reel",
       "slot": "2026-09-27T00:56:54.590Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "18429352882196523",
+      "url": "https://www.instagram.com/reel/DdzNSriEmlC/",
+      "published_at": "2026-09-27T18:03:17.655Z"
     },
     {
       "platform": "tiktok",
       "format": "short",
       "slotKey": "tiktok",
       "slot": "2026-09-27T00:56:54.590Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "v_pub_file~v2-1.7690277130219030546",
+      "url": "https://www.tiktok.com/@informedlab",
+      "published_at": "2026-09-27T18:05:07.070Z"
     },
     {
       "platform": "facebook",
       "format": "reel",
       "slotKey": "facebook_reel",
       "slot": "2026-09-27T00:56:54.590Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "1425377843056489",
+      "url": "https://www.facebook.com/reel/1425377843056489",
+      "published_at": "2026-09-27T18:05:17.996Z"
     }
   ],
   "created_at": "2026-09-26T21:35:25.390Z",
