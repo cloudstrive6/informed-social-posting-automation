@@ -172,6 +172,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+        with: { ffmpeg: "true" } # Telegram preview copies of large videos
       - uses: actions/download-artifact@v4
         with: { name: plan, path: data/ }
       - uses: actions/download-artifact@v4

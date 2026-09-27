@@ -10,7 +10,7 @@ import { DATA, env } from "../lib/config.js";
 import { readJson, writeJson } from "../lib/fsx.js";
 import type { ContentItem } from "../lib/items.js";
 import { log } from "../lib/log.js";
-import { run } from "../media/exec.js";
+import { ffmpeg, run } from "../media/exec.js";
 
 type Button = { text: string; callback_data?: string; url?: string };
 const token = () => env("TELEGRAM_BOT_TOKEN");
@@ -53,10 +53,17 @@ async function sendPreview(item: ContentItem, files: { video?: string; slides?: 
       await tg("sendMediaGroup", fd);
       return;
     }
-    if (files.video && existsSync(files.video) && statSync(files.video).size < 49 * 1024 * 1024) {
+    if (files.video && existsSync(files.video)) {
+      // bots may upload at most 50 MB: send a 720p preview copy of bigger videos
+      let video = files.video;
+      if (statSync(video).size >= 49 * 1024 * 1024) {
+        video = files.video.replace(/\.mp4$/, "-preview.mp4");
+        if (!existsSync(video)) await ffmpeg(["-i", files.video, "-vf", "scale=-2:720", "-r", "30", "-c:v", "libx264", "-crf", "28", "-preset", "veryfast", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", video]);
+      }
+      if (statSync(video).size >= 49 * 1024 * 1024) throw new Error("preview still over 50 MB");
       const fd = new FormData();
       fd.append("chat_id", chatId()!); fd.append("caption", caption); fd.append("parse_mode", "HTML"); fd.append("supports_streaming", "true");
-      fd.append("video", new Blob([readFileSync(files.video)], { type: "video/mp4" }), basename(files.video));
+      fd.append("video", new Blob([readFileSync(video)], { type: "video/mp4" }), basename(video));
       await tg("sendVideo", fd);
       return;
     }
