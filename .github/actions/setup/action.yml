@@ -5,7 +5,7 @@ inputs:
     description: Install the video/image toolchain
     default: "false"
   ffmpeg:
-    description: Install just ffmpeg (publisher: Instagram-compliant re-encodes)
+    description: "Install just ffmpeg (Instagram-compliant re-encodes in the publisher)"
     default: "false"
 runs:
   using: composite
