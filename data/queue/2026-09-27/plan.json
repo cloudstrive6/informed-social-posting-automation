@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-27",
+  "created_at": "2026-09-27T07:43:52.436Z",
+  "rationale": "I skipped three radar topics because we covered them yesterday (2026-09-26) and nothing new has come out since: the HRT pill vs patch clot risk, the smartwatch calorie error and the scented cleaner nanoparticles. A long video on HRT would repeat the same angle within 30 days. I left out REM sleep because it's at its peak and crowded, and the semaglutide (SELECT) story because the radar links no primary paper for it. No radar topic was marked reject.\n\n**The 3 long-form videos cover 3 different body systems:**\n- **L1:** type 2 diabetes, metabolic (emerging, EASD week).\n- **L2:** sleep loss and memory, brain (rising, second mainstream wave via CNN).\n- **L3:** mammogram overdiagnosis, cancer screening. It's the contrarian-but-true piece, timed for Breast Cancer Awareness Month starting October 1.\n\n**The rest of the slate:**\n- **S1:** spin-off of L2, to drive traffic to the long video.\n- **S2:** busts a supplement myth (biotin) with a practical lab-test safety angle.\n- **S3:** the evergreen flu-shot timing question with a seasonal hook, strictly following guidelines.\n- **C1:** a compassionate, save-worthy piece on postpartum intrusive thoughts. It's flagged caution, so it's evidence-first.\n- **C2:** a practical framework on drinking over 50 for the older end of our audience.\n\n**Mix:**\n- About 60% emerging or rising: L1, L2, S1, C1, C2.\n- About 25% evergreen with a timely hook: S3, plus L2's \"running on no sleep\" appeal.\n- About 25% myth-busting: L3, S2.\n\nNo body system gets 3 pieces. Brain has 2 (L2, S1), metabolic 1, and the rest are all different.\n\n**Rules applied from our QA notes:**\n- State the exact outcome each study measured: recognition accuracy, modelled overdiagnosis, self-reported thoughts, heavy-drinking prevalence.\n- Use the analysis sample size.\n- Label observational, abstract, modelled and post-hoc findings clearly.",
+  "pieces": [
+    {
+      "id": "L1",
+      "kind": "long",
+      "topic": "Type 2 diabetes genetic risk vs lifestyle: low ultra-processed food intake plus 150 min/week of activity linked to about 49% lower risk in people at high genetic risk (EASD 2026 abstract, 56,964 UK Biobank adults, 926 cases over 7.8 years)",
+      "angle": "'If diabetes runs in your family, is it written in your DNA?' Walk through what a polygenic risk score is, then the 3 findings: +7% risk per 10% rise in the UPF share of the diet, 39% lower risk when meeting the WHO activity guideline, and about 49% lower risk with both in the high-genetic-risk group. Explain what 'ultra-processed' means (NOVA) and why diet share isn't the same as calories. Add the practical, evidence-backed levers (guideline activity, swapping UPF staples) and link to established prevention evidence such as the Diabetes Prevention Program. Be clear on the limits: observational, a conference abstract not yet peer-reviewed, average age 69.5, mostly white UK participants, and 'linked to' not 'prevents'. Use 56,964 as the sample everywhere.",
+      "working_title": "Diabetes Runs in Your Family? What a 57,000-Person Study Says You Can Still Change",
+      "target_keyword": "can you prevent diabetes if it runs in family",
+      "trend_stage": "emerging",
+      "why": "Low-competition EASD abstract ahead of mainstream coverage during the Sep 28–Oct 2 meeting, with high search intent from people who have a family history."
+    },
+    {
+      "id": "L2",
+      "kind": "long",
+      "topic": "After a sleepless night, a 20-minute workout protected memory about as well as a 90-minute nap (PNAS, 53 adults aged 18–35, after 30 hours awake)",
+      "angle": "After 30 hours awake in a lab, healthy young adults (n = analysed sample from the PNAS paper; coverage says 54) who did 20 minutes of moderate-to-vigorous cycling or took a 90-minute nap recognised about 56% and 57% of images on a later memory test, vs 46% for controls. EEG suggested 2 different routes: the nap reduced sleep-pressure signals, while exercise sharpened responses during learning. Then a sourced 'after a bad night' guide. Limits: small lab study, young adults, one memory task. Exercise doesn't replace sleep and doesn't make drowsy driving safe.",
+      "working_title": "Slept Badly? A 20-Minute Workout Matched a 90-Minute Nap for Memory in This Study",
+      "target_keyword": "how to function on no sleep",
+      "trend_stage": "rising",
+      "why": "CNN syndication (Sep 26) started a second mainstream wave, it's a very relatable 'what works' question, and few videos cite the actual numbers. | fact-check: The study exists: PNAS, 'Protecting episodic memory after sleep loss: Similar benefits of exercise and naps via distinct neural contributions', doi 10.1073/pnas.2528246123 (McGill). Recognition figures of 56% / 57% / 46% are confirmed by coverage (Technology Networks, PsyPost). Two discrepancies: (1) the McGill release and other coverage say 54 participants, not 53. The writer must confirm the analysed n from the PNAS paper (the abstract page returned 403 to us) and use that one number everywhere. (2) Per McGill, memory was tested on images, recognition assessed 3 days later. Say 'remembered 3 days later', not 'right after'. The '22% better' figure in coverage is relative. Don't mix it with the percentage-point numbers. Each practical lever (nap length, light, caffeine timing) needs its own cited source. Don't give caffeine doses."
+    },
+    {
+      "id": "L3",
+      "kind": "long",
+      "topic": "Mammogram overdiagnosis may be under 5%, not the 30–50% often quoted (JNCI reanalysis of 8 major RCTs)",
+      "angle": "'A new reanalysis says mammogram overdiagnosis may be far lower than often quoted.' Define overdiagnosis vs false positives. Explain that the JNCI 2026 reanalysis of 8 RCTs estimates that the excess cases are consistent with under 5% overdiagnosis, why earlier estimates reached 30–50% (lead time, follow-up, DCIS, methods), and what critics say. Then current USPSTF/NHS guidance and real harms (false positives, callbacks). Close with questions to ask your clinician. No individual screening advice. Suggested title: 'Is the Mammogram Overdiagnosis Stat Wrong? A New Reanalysis Says It May Be Under 5%'",
+      "working_title": "The Mammogram Statistic That May Have Been Wrong for Decades",
+      "target_keyword": "mammogram overdiagnosis",
+      "trend_stage": "rising",
+      "why": "Contrarian-but-true slot, in its 3rd radar snapshot, with a strong Breast Cancer Awareness Month tailwind starting in 4 days. | fact-check: The study exists: Njor, Pedersen, Lynge, Smith, Rebolj. 'Breast cancer overdiagnosis in mammography trials—separating signal from noise', JNCI 2026 (ScienceDaily https://www.sciencedaily.com/releases/2026/09/260924020351.htm; MedicalXpress https://medicalxpress.com/news/2026-09-analysis-overdiagnosis-breast-cancer-screening.html). Framing precision: the reanalysis found the excess cancers in the 8 trials were consistent with what's expected in the Danish screening population, where overdiagnosis is estimated at under 5%. It is a modelled or inferred estimate, not a direct count. Say 'estimated' on screen. Overdiagnosis is actively debated (e.g. the Cochrane review and the Nordic Cochrane team gave much higher figures). Include an opposing view so we don't look like we're settling the debate. Check for any author conflicts of interest (Robert A. Smith is at the American Cancer Society) and disclose them if relevant. Title: soften the certainty."
+    },
+    {
+      "id": "S1",
+      "kind": "short",
+      "topic": "A 20-minute workout vs a 90-minute nap after 30 hours awake: memory recognition 56% vs 57% vs 46% for controls (PNAS, 53 adults)",
+      "angle": "After 30 hours awake in a lab, 20 minutes on a bike and a 90-minute nap produced similar memory results: about 56% and 57% of images correctly recognised later, vs 46% for people who did neither (healthy adults 18–35; n per the PNAS paper). The EEG showed different routes. Small lab study. Exercise doesn't replace sleep. Don't drive drowsy. Full breakdown on the channel.",
+      "working_title": "Bad Night's Sleep? 20 Minutes of Exercise Matched a 90-Minute Nap in This Study #shorts",
+      "target_keyword": "nap or exercise after no sleep",
+      "trend_stage": "rising",
+      "why": "Spin-off of L2: the most surprising single finding, pointing to the long video. | fact-check: Same study as L2. The sample size is inconsistent: 53 in the brief vs 54 in the McGill release and coverage. Confirm the analysed n from the PNAS paper and use it in the hook, body, captions and title. The recognition test was done later (coverage says 3 days later). Don't imply an immediate effect. Keep 'in this study' in the title. Recognition % is the share of images correctly recognised, not 'memory improved by X%'."
+    },
+    {
+      "id": "S2",
+      "kind": "short",
+      "topic": "Biotin (hair/nail) supplements can make some blood tests read falsely high or low, including troponin and some tumor markers",
+      "angle": "'The hair vitamin that can confuse your lab results': many lab tests use a biotin–streptavidin 'glue', and high-dose biotin in the blood can interfere with it, so results can read falsely high or low depending on the test design. Name the examples a source actually documents (troponin via FDA safety communications, thyroid tests, some tumor markers per JCO Oncology Practice). Action: tell your clinician or the lab you take biotin before blood work. Add that the evidence that biotin helps hair is weak unless you're deficient. Don't give our own stop-timing or dosing instructions.",
+      "working_title": "Your Hair Vitamin Could Throw Off Your Blood Test #shorts",
+      "target_keyword": "biotin blood test",
+      "trend_stage": "emerging",
+      "why": "Myth-busting plus a practical safety angle on a hugely popular supplement. Low competition, and 'concerning risk' headlines are circulating now."
+    },
+    {
+      "id": "S3",
+      "kind": "short",
+      "topic": "When to get your flu shot for the 2026–27 season and how long protection lasts",
+      "angle": "'Is there a best week for your flu shot?' Follow CDC guidance: for most adults, September–October is ideal, because protection wanes over months and early vaccination (July–August) may leave you less protected late in the season, especially if you're older. Waiting too long is the bigger mistake, and getting vaccinated later still beats skipping it. Strictly pro-vaccine and guideline-based. Mention the new mRNA option or subclade K only if a CDC/FDA source verifies it, and point to your clinician or pharmacist for which vaccine fits you.",
+      "working_title": "The Best Time to Get Your Flu Shot This Year (It's Not 'Whenever') #shorts",
+      "target_keyword": "when to get flu shot 2026",
+      "trend_stage": "rising",
+      "why": "Evergreen seasonal question refreshed with a timely hook. Search demand climbs every October, and a clear guideline-based answer cuts through the noise."
+    },
+    {
+      "id": "C1",
+      "kind": "carousel",
+      "topic": "Unwanted intrusive thoughts after birth are common and weren't linked to more aggression toward the baby (UBC PARLab via The Conversation)",
+      "angle": "'Scary thought ≠ dangerous parent', a compassionate, save-worthy framework. Slides: (1) the finding: about half of new birthing parents reported unwanted thoughts of intentional harm, and nearly all reported accidental-harm thoughts (self-reported; say this on the slide); (2) what intrusive thoughts are and why the brain produces them; (3) parents who reported them were no more likely to be physically aggressive (as measured in the study); (4) intrusive thoughts vs postpartum OCD vs the rare postpartum psychosis (about 1–2 per 1,000 births; cite a source): how they differ; (5) signs it's time to get help now; (6) where to get help: clinician, Postpartum Support International, and local crisis lines (US 988, UK NHS 111/Samaritans). No graphic examples, no diagnosing.",
+      "working_title": "Scary Thoughts About Your Baby? What the Research Says, and When to Get Help",
+      "target_keyword": "postpartum intrusive thoughts",
+      "trend_stage": "emerging",
+      "why": "High-need, low-coverage topic with strong save and share potential in parenting communities. The radar flagged it caution, so the angle stays evidence-first and compassionate."
+    },
+    {
+      "id": "C2",
+      "kind": "carousel",
+      "topic": "Heavy drinking rising among US adults aged 50–64 while younger generations cut back (Annals of Internal Medicine)",
+      "angle": "'Drinking after 50: what changes and what helps', a non-judgmental framework. Slides: (1) the finding, stating exactly what was measured (prevalence of heavy drinking by age group or generation, as defined in the paper; qualifier line under the number); (2) why the same drink hits harder after 50 (body water, metabolism, sleep, and medication interactions, framed generally with no drug specifics); (3) what counts as a standard drink in the US vs UK units; (4) 5 evidence-based cut-back strategies (tracking, alcohol-free days, swaps, not keeping it at home, planning for social situations); (5) signs to talk to a clinician and support resources. No mouse-study claims. Say 'linked to' for health risks.",
+      "working_title": "Drinking After 50: What Changes in Your Body and 5 Ways to Cut Back",
+      "target_keyword": "alcohol after 50",
+      "trend_stage": "rising",
+      "why": "Guardian pickup (Sep 26) on a topic that fits the older half of our 25–55 audience. It adds variety to the slate and gives people a practical checklist to save."
+    }
+  ]
+}
