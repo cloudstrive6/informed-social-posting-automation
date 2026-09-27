@@ -10,7 +10,7 @@ import { planDay } from "./plan/planDay.js";
 import { produceCarousel } from "./produce/carousel.js";
 import { produceLong } from "./produce/long.js";
 import { produceShort } from "./produce/short.js";
-import { finalizeDay, publishDue } from "./publish/publisher.js";
+import { finalizeDay, publishDue, publishNow } from "./publish/publisher.js";
 import { reportFailure, syncReviews } from "./review/issues.js";
 import { runRadar } from "./trends/radar.js";
 
@@ -64,6 +64,8 @@ const commands: Record<string, () => Promise<unknown>> = {
   produce: () => produce(rest[0], rest[1]),
   finalize: () => finalizeDay(date),
   publish: () => publishDue(),
+  // publish-now <date>/<item-id> [--platforms youtube,tiktok,instagram,facebook]
+  "publish-now": () => publishNow(rest[0], (flag("platforms") ?? "").split(",").filter(Boolean)),
   "review-sync": () => syncReviews(),
   analytics: () => runAnalytics(),
   doctor,

@@ -6,6 +6,13 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
+    inputs:
+      item:
+        description: "Publish this item right now (<date>/<item-id>), even if held. Blank = normal scheduled run."
+        required: false
+      platforms:
+        description: "With `item`: comma-separated platforms (youtube,tiktok,instagram,facebook). Blank = all."
+        required: false
 
 permissions:
   contents: write
@@ -22,7 +29,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - run: npm run publish
+      - run: |
+          if [ -n "${{ inputs.item }}" ]; then npx tsx src/cli.ts publish-now "${{ inputs.item }}" --platforms "${{ inputs.platforms }}"; else npm run publish; fi
         env:
           GH_TOKEN: ${{ github.token }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
@@ -34,5 +42,6 @@ jobs:
           TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
           TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+          POSTFORME_API_KEY: ${{ secrets.POSTFORME_API_KEY }}
       - if: always()
         run: bash scripts/commit-data.sh "bot - publish"

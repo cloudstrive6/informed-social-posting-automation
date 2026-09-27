@@ -13,6 +13,7 @@ import { downloadFromRelease, publishImages, uploadToRelease } from "./storage.j
 import { archiveItem } from "./b2.js";
 import { recordQuality, updateCraftNotes } from "../analytics/quality.js";
 import { tiktokPost } from "./tiktok.js";
+import { postForMeEnabled, tiktokViaPostForMe } from "./postforme.js";
 import { setThumbnail, uploadVideo } from "./youtube.js";
 
 const LOG = join(DATA, "published", "log.jsonl");
@@ -49,7 +50,10 @@ async function publishOne(item: ContentItem, p: PostTarget) {
     }
     case "instagram:reel": return { ...(await instagramReel(await media(item, item.media.video!), s!.instagram_caption)), scheduled: false };
     case "instagram:carousel": return { ...(await instagramCarousel(item.image_urls!, s!.instagram_caption)), scheduled: false };
-    case "tiktok:short": return { ...(await tiktokPost(await media(item, item.media.video!), s!.tiktok_caption)), scheduled: false };
+    case "tiktok:short": {
+      const file = await media(item, item.media.video!);
+      return { ...(postForMeEnabled() ? await tiktokViaPostForMe(file, s!.tiktok_caption) : await tiktokPost(file, s!.tiktok_caption)), scheduled: false };
+    }
     case "facebook:reel": return { ...(await facebookReel(await media(item, item.media.video!), s!.facebook_caption)), scheduled: false };
     case "facebook:post": {
       const imgs = await Promise.all(item.media.slides!.map(f => media(item, f)));
@@ -128,6 +132,26 @@ export async function finalizeDay(date: string) {
     if (item.status !== "ready") continue;
     for (const p of item.posts) if (p.platform === "youtube" && p.status === "pending") await attempt(item, p);
   }
+}
+
+/**
+ * Manual override: publish one item right now on the given platforms, even if it's held for review
+ * (a human asked for it). Used by the Publisher workflow's `item` input.
+ */
+export async function publishNow(ref: string, platforms: string[]) {
+  const [date, id] = ref.split("/");
+  const item = loadItems([date]).find(i => i.id === id || i.id.startsWith(`${id}-`));
+  if (!item) throw new Error(`item ${ref} not found in data/queue/${date}`);
+  const targets = item.posts.filter(p => !platforms.length || platforms.includes(p.platform));
+  // one post per platform: the first slot for that platform
+  const seen = new Set<string>();
+  for (const p of targets) {
+    if (seen.has(p.platform) || p.status === "published") continue;
+    seen.add(p.platform);
+    p.slot = new Date().toISOString(); p.attempts = 0;
+    await attempt(item, p);
+  }
+  log.info(`publish-now ${item.id}: ${targets.filter(p => seen.has(p.platform)).map(p => `${p.platform} ${p.status}${p.url ? ` ${p.url}` : ""}`).join(" | ")}`);
 }
 
 /** Runs every ~15 min: publish every pending post whose slot has arrived. */

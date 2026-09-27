@@ -68,11 +68,14 @@ Every finished item (video, thumbnail, slides, script, captions, QA reports) is 
 
 Posting to your own Page and Instagram works in the app's development mode, since you're the app admin. No App Review is needed for your own accounts.
 
-## 5. TikTok
+## 5. TikTok (via Post for Me)
 
-1. https://developers.tiktok.com → create an app → add **Login Kit** and **Content Posting API** (turn on *Direct Post*). Scopes: `user.info.basic, video.upload, video.publish`. Register a redirect URI (any HTTPS page you control, e.g. your website).
-2. `npm run auth:tiktok` → approve as **@informedlab** → paste the redirect URL back. Saves `TIKTOK_CLIENT_KEY`, `TIKTOK_CLIENT_SECRET`, `TIKTOK_REFRESH_TOKEN`.
-3. **Submit the app for audit.** Until TikTok approves it, API posts are forced to *private (SELF_ONLY)*; the publisher logs a warning and posts privately. The refresh token lasts about a year; re-run the script before then.
+TikTok posts go through [Post for Me](https://app.postforme.dev), whose approved TikTok app can post publicly right away.
+1. In Post for Me, the **InforMed** project (Quickstart) has TikTok enabled and **@informedlab** connected (external ID `informedlab`).
+2. Project → API Keys → create a key → secret **`POSTFORME_API_KEY`**. The key only sees accounts in the InforMed project, and the code refuses to post to any account other than @informedlab.
+3. Optional: `TIKTOK_PRIVACY` (`public` by default). Videos are flagged as AI-generated content (AI narration).
+
+The older direct TikTok API path (`npm run auth:tiktok`, `TIKTOK_*` secrets) still works if no Post for Me key is set.
 
 ## 6. Optional trend sources
 
