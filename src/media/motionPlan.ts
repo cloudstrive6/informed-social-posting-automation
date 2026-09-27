@@ -15,7 +15,7 @@ export async function planShots(scenes: Scene[], tl: Timeline, vertical: boolean
   for (let i = 0; i < scenes.length; i += BATCH) batches.push(scenes.slice(i, i + BATCH));
 
   const run = (batch: Scene[], bi: number) => runAgent<ShotPlan>({
-    agent: "motion-designer", model: config.models.writer, schema: shotPlanSchema, effort: "medium",
+    agent: "motion-designer", model: vertical ? config.models.motionShort : config.models.motionLong, schema: shotPlanSchema, effort: "medium",
     input: {
       format: vertical ? "vertical 9:16 (1080x1920)" : "horizontal 16:9 (1920x1080)",
       topic,
@@ -50,7 +50,7 @@ export async function reviseShots(all: Shot[], scenes: Scene[], sceneIds: Set<st
   const target = scenes.filter(s => sceneIds.has(s.id));
   try {
     const plan = await runAgent<ShotPlan>({
-      agent: "motion-designer", model: config.models.writer, schema: shotPlanSchema, effort: "medium",
+      agent: "motion-designer", model: vertical ? config.models.motionShort : config.models.motionLong, schema: shotPlanSchema, effort: "medium",
       input: {
         format: vertical ? "vertical 9:16 (1080x1920)" : "horizontal 16:9 (1920x1080)", topic,
         task: "Revise the shots for ONLY these scenes, applying the critic feedback.",

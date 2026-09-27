@@ -40,7 +40,7 @@ export interface ChannelConfig {
   sfx: { provider: "kit" | "synth"; customPerVideo: number };
   qa: { enabled: boolean; narrationMaxRetakes: number; sceneWerThreshold: number; maskingWerDelta: number; visualRounds: number; minShotScore: number };
   safety: { policy: string; maxRevisionRounds: number; disclaimer: string; bannedTopics: string[] };
-  models: Record<"default" | "trendScout" | "factChecker" | "writer" | "packaging" | "analyst", string>;
+  models: Record<"default" | "trendScout" | "factChecker" | "writer" | "packaging" | "analyst" | "motionShort" | "motionLong" | "critic" | "polish", string>;
 }
 
 export const config: ChannelConfig = JSON.parse(readFileSync(join(ROOT, "config", "channel.json"), "utf8"));

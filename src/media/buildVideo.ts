@@ -57,7 +57,9 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
   let reviews: ShotReview[] = [];
   let layout: LayoutIssue[] = [];
   if (config.qa.enabled && !v.presetShots) {
-    let focus: Set<number> | undefined;
+    // Long videos have 100+ shots: review the first minute (where viewers decide to stay) and every other shot
+    // after it, in one revise pass without a re-review. That's about a third of the critic calls, so less of the usage limit
+    let focus: Set<number> | undefined = v.vertical ? undefined : new Set(timed.map((s, i) => (s.start < 60 || i % 2 === 0 ? i : -1)).filter(i => i >= 0));
     for (let round = 0; round <= config.qa.visualRounds; round++) {
       qa.visual.rounds = round + 1;
       layout = await layoutAudit(project, keyTimes(timed).map(k => k.t), W, H).catch(e => { log.warn(`layout audit failed: ${e.message}`); return [] as LayoutIssue[]; });
@@ -76,6 +78,7 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
       const feedback = [...bad].map(i => ({ shot: i, scene_id: timed[i]?.scene_id, review: reviews.find(r => r.shot === i), layout: layout.filter(l => shotAt(l.t) === i) }));
       shots = await reviseShots(shots, scenes, sceneIds, feedback, tl, v.vertical, v.topic);
       await compose();
+      if (!v.vertical) { layout = [...(await layoutAudit(project, keyTimes(timed).map(k => k.t), W, H).catch(() => [] as LayoutIssue[])), ...sparseShots(timed, W, H)]; break; }
       focus = new Set(timed.map((s, i) => (sceneIds.has(s.scene_id) ? i : -1)).filter(i => i >= 0));
     }
     const scored = reviews.filter(r => r.score);

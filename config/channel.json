@@ -143,13 +143,17 @@
     ]
   },
   "models": {
-    "_comment": "Claude Code model aliases or full IDs. 'opus' = latest Opus.",
+    "_comment": "Claude Code model aliases or full IDs. Opus for thinking-heavy work (research, scripts, fact-checks, titles); Sonnet for high-volume visual and polish work, which uses far less of the subscription's usage limits.",
     "default": "opus",
     "trendScout": "opus",
     "factChecker": "opus",
     "writer": "opus",
     "packaging": "opus",
-    "analyst": "opus"
+    "analyst": "opus",
+    "motionShort": "opus",
+    "motionLong": "sonnet",
+    "critic": "sonnet",
+    "polish": "sonnet"
   },
   "music": {
     "provider": "library",

@@ -27,7 +27,7 @@ export async function designSound(shots: TimedShot[], cues: SfxCue[], levels: Le
   let plan: SoundPlan;
   try {
     plan = await runAgent<SoundPlan>({
-      agent: "sound-designer", model: config.models.packaging, schema, effort: "medium",
+      agent: "sound-designer", model: config.models.polish, schema, effort: "medium",
       input: {
         current_music_gain: musicGain, music_gain_semantics: "multiplier on the current (already auto-leveled) music level; 1.0 = keep",
         custom_sfx_limit: process.env.ELEVENLABS_API_KEY && elevenBudgetLeft() > 0.25 ? config.sfx.customPerVideo : 0,

@@ -62,49 +62,56 @@ export async function produceLong(date: string, pieceId: string): Promise<Conten
   if (blockers.length && item.status !== "held") { item.status = "held"; item.hold_reason = `Quality check: ${blockers.join("; ")}`; }
   item.media.duration = timeline.duration;
 
-  // 4) packaging: title → thumbnail → SEO description
-  const ch = chapters(script, timeline);
-  const summary = { topic: piece.topic, angle: piece.angle, target_keyword: piece.target_keyword, hook: script.scenes[0].narration, sections: [...new Set(script.scenes.map(s => s.section))], cta: script.cta };
-  const titles = await runAgent<Titles>({ agent: "title-writer", model: config.models.packaging, schema: titlesSchema, input: { ...summary, working_title: script.working_title } });
-  const thumbs = await runAgent<Thumbnails>({ agent: "thumbnail-designer", model: config.models.packaging, schema: thumbnailsSchema, input: { ...summary, title: titles.chosen } });
-  const concept = thumbs.concepts[Math.min(Math.max(0, Math.round(thumbs.chosen_index)), thumbs.concepts.length - 1)];
-  const imgDir = join(dir, "thumb");
-  const main = (await aiImage(concept.image_prompt, 1280, 720, imgDir)) ?? (await stockPhoto(concept.stock_query, "landscape", imgDir));
-  const images = concept.layout === "versus"
-    ? { main, left: await stockPhoto(concept.versus_left, "portrait", imgDir), right: await stockPhoto(concept.versus_right, "portrait", imgDir) }
-    : { main };
-  item.media.thumbnail = await renderThumbnail(concept, images, join(final, `${item.id}-thumb.jpg`));
-  await closeStills();
-
-  const seo = await runAgent<Seo>({
-    agent: "seo-writer", model: config.models.packaging, schema: seoSchema,
-    input: {
-      title: titles.chosen, ...summary, chapters: ch, verified_sources: factcheck.verified_sources.length ? factcheck.verified_sources : script.sources,
-      key_points: script.scenes.filter(s => s.visual.kind !== "broll").map(s => s.on_screen_text), disclaimer: config.safety.disclaimer, accounts: config.accounts,
-    },
-  });
-  item.package = {
-    title: titles.chosen, title_candidates: titles.candidates.map(c => c.title), description: seo.description,
-    tags: seo.tags, pinned_comment: seo.pinned_comment, thumbnail: concept, chapters: ch,
-  };
-
-  // 5) packaging must not overclaim: check → Packaging Editor applies fixes → re-check
-  const draft: LongPackaging = { title: titles.chosen, thumbnail_headline: concept.headline, thumbnail_subtext: concept.subtext, description: seo.description, pinned_comment: seo.pinned_comment };
-  const pk = await packagingLoop(item, draft, factcheck.verified_sources,
-    { script: script.scenes.map(s => ({ section: s.section, narration: s.narration, on_screen_text: s.on_screen_text })) },
-    (current, fact_check) => runAgent<LongPackaging>({ agent: "packaging-editor", model: config.models.packaging, schema: longPackagingSchema, effort: "medium", input: { packaging: current, fact_check } }),
-    p => ({ ...p, description: p.description.slice(0, 1500) }));
-  const fixed = pk.packaging;
-  if (fixed.thumbnail_headline !== concept.headline || fixed.thumbnail_subtext !== concept.subtext) {
-    concept.headline = fixed.thumbnail_headline; concept.subtext = fixed.thumbnail_subtext;
+  // Packaging runs after hours of rendering: if it fails, keep the video and hold it for review instead of losing it
+  try {
+    // 4) packaging: title → thumbnail → SEO description
+    const ch = chapters(script, timeline);
+    const summary = { topic: piece.topic, angle: piece.angle, target_keyword: piece.target_keyword, hook: script.scenes[0].narration, sections: [...new Set(script.scenes.map(s => s.section))], cta: script.cta };
+    const titles = await runAgent<Titles>({ agent: "title-writer", model: config.models.packaging, schema: titlesSchema, input: { ...summary, working_title: script.working_title } });
+    const thumbs = await runAgent<Thumbnails>({ agent: "thumbnail-designer", model: config.models.packaging, schema: thumbnailsSchema, input: { ...summary, title: titles.chosen } });
+    const concept = thumbs.concepts[Math.min(Math.max(0, Math.round(thumbs.chosen_index)), thumbs.concepts.length - 1)];
+    const imgDir = join(dir, "thumb");
+    const main = (await aiImage(concept.image_prompt, 1280, 720, imgDir)) ?? (await stockPhoto(concept.stock_query, "landscape", imgDir));
+    const images = concept.layout === "versus"
+      ? { main, left: await stockPhoto(concept.versus_left, "portrait", imgDir), right: await stockPhoto(concept.versus_right, "portrait", imgDir) }
+      : { main };
     item.media.thumbnail = await renderThumbnail(concept, images, join(final, `${item.id}-thumb.jpg`));
     await closeStills();
-  }
-  item.package = { ...item.package, title: fixed.title, description: fixed.description, pinned_comment: fixed.pinned_comment, thumbnail: concept };
-  item.qa = { ...item.qa, packaging: { verdict: pk.check.verdict, issues: pk.check.issues } };
-  if (pk.held && item.status !== "held") {
-    const alt = titles.candidates.find(c => c.title !== fixed.title);
-    item.status = "held"; item.hold_reason = `${pk.reason}${alt ? ` (alternative title: ${alt.title})` : ""}`;
+
+    const seo = await runAgent<Seo>({
+      agent: "seo-writer", model: config.models.polish, schema: seoSchema,
+      input: {
+        title: titles.chosen, ...summary, chapters: ch, verified_sources: factcheck.verified_sources.length ? factcheck.verified_sources : script.sources,
+        key_points: script.scenes.filter(s => s.visual.kind !== "broll").map(s => s.on_screen_text), disclaimer: config.safety.disclaimer, accounts: config.accounts,
+      },
+    });
+    item.package = {
+      title: titles.chosen, title_candidates: titles.candidates.map(c => c.title), description: seo.description,
+      tags: seo.tags, pinned_comment: seo.pinned_comment, thumbnail: concept, chapters: ch,
+    };
+
+    // 5) packaging must not overclaim: check → Packaging Editor applies fixes → re-check
+    const draft: LongPackaging = { title: titles.chosen, thumbnail_headline: concept.headline, thumbnail_subtext: concept.subtext, description: seo.description, pinned_comment: seo.pinned_comment };
+    const pk = await packagingLoop(item, draft, factcheck.verified_sources,
+      { script: script.scenes.map(s => ({ section: s.section, narration: s.narration, on_screen_text: s.on_screen_text })) },
+      (current, fact_check) => runAgent<LongPackaging>({ agent: "packaging-editor", model: config.models.polish, schema: longPackagingSchema, effort: "medium", input: { packaging: current, fact_check } }),
+      p => ({ ...p, description: p.description.slice(0, 1500) }));
+    const fixed = pk.packaging;
+    if (fixed.thumbnail_headline !== concept.headline || fixed.thumbnail_subtext !== concept.subtext) {
+      concept.headline = fixed.thumbnail_headline; concept.subtext = fixed.thumbnail_subtext;
+      item.media.thumbnail = await renderThumbnail(concept, images, join(final, `${item.id}-thumb.jpg`));
+      await closeStills();
+    }
+    item.package = { ...item.package, title: fixed.title, description: fixed.description, pinned_comment: fixed.pinned_comment, thumbnail: concept };
+    item.qa = { ...item.qa, packaging: { verdict: pk.check.verdict, issues: pk.check.issues } };
+    if (pk.held && item.status !== "held") {
+      const alt = titles.candidates.find(c => c.title !== fixed.title);
+      item.status = "held"; item.hold_reason = `${pk.reason}${alt ? ` (alternative title: ${alt.title})` : ""}`;
+    }
+  } catch (e) {
+    log.error(`packaging failed after render: ${(e as Error).message}`);
+    item.package = { ...item.package, title: item.package?.title ?? script.working_title };
+    item.status = "held"; item.hold_reason = `Packaging failed after render (${(e as Error).message.slice(0, 200)}); the video is kept. Re-run packaging or write the title and description by hand.`;
   }
   copyFileSync(join(dir, "script.json"), join(final, `${item.id}-script.json`));
   return item;

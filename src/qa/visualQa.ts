@@ -172,7 +172,7 @@ export async function critiqueShots(projectDir: string, shots: TimedShot[], vert
   const groups: string[][] = [];
   for (let i = 0; i < sheets.length; i += 8) groups.push(sheets.slice(i, i + 8));
   const results = await Promise.all(groups.map(g => runAgent<{ reviews: ShotReview[]; overall: string }>({
-    agent: "visual-critic", model: config.models.writer, schema: reviewSchema, tools: ["Read"], cwd: dir, maxTurns: 20, effort: "medium",
+    agent: "visual-critic", model: config.models.critic, schema: reviewSchema, tools: ["Read"], cwd: dir, maxTurns: 20, effort: "medium",
     input: {
       format: vertical ? "vertical 9:16" : "horizontal 16:9",
       instructions: `Open and inspect each contact sheet image with the Read tool, then review every shot shown. Sheets: ${g.map(f => resolve(f)).join(" ; ")}`,

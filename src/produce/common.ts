@@ -120,7 +120,7 @@ export function qaBlockers(narration: { checks: SceneCheck[] }, video: VideoQa):
 
 export async function socialCopy(item: ContentItem, summary: object, revision?: { draft: SocialCopy; fact_check: FactCheck }): Promise<SocialCopy> {
   return runAgent<SocialCopy>({
-    agent: "social-copywriter", model: config.models.packaging, schema: socialCopySchema, effort: "medium",
+    agent: "social-copywriter", model: config.models.polish, schema: socialCopySchema, effort: "medium",
     input: {
       kind: item.kind, topic: item.plan.topic, disclaimer: config.safety.disclaimer, accounts: config.accounts, content: summary,
       ...(revision ? { task: "REVISE the draft captions. Apply every packaging-check fix exactly; keep everything else that works.", ...revision } : {}),

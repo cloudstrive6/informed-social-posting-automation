@@ -59,13 +59,16 @@ jobs:
           path: data/
           include-hidden-files: true
 
+  # Long videos start once the Shorts are done and run two at a time, so the day's Claude usage is spread out
+  # instead of every job hitting the subscription's usage limit at once. Agents wait out a limit if one is hit anyway.
   long:
-    needs: plan
-    if: needs.plan.outputs.long != '[]'
+    needs: [plan, short]
+    if: always() && needs.plan.result == 'success' && needs.plan.outputs.long != '[]'
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    timeout-minutes: 355
     strategy:
       fail-fast: false
+      max-parallel: 2
       matrix:
         id: ${{ fromJson(needs.plan.outputs.long) }}
     steps:
