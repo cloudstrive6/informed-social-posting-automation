@@ -29,6 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+        with: { ffmpeg: "true" }
       - run: |
           if [ -n "${{ inputs.item }}" ]; then npx tsx src/cli.ts publish-now "${{ inputs.item }}" --platforms "${{ inputs.platforms }}"; else npm run publish; fi
         env:

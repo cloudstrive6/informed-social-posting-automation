@@ -4,6 +4,9 @@ inputs:
   media:
     description: Install the video/image toolchain
     default: "false"
+  ffmpeg:
+    description: Install just ffmpeg (publisher: Instagram-compliant re-encodes)
+    default: "false"
 runs:
   using: composite
   steps:
@@ -14,6 +17,10 @@ runs:
     - run: npm ci
       shell: bash
 
+    - if: inputs.ffmpeg == 'true' && inputs.media != 'true'
+      name: ffmpeg
+      shell: bash
+      run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
     - if: inputs.media == 'true'
       name: System packages
       shell: bash
