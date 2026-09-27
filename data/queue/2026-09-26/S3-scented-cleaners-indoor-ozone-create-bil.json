@@ -47,10 +47,10 @@
       "platform": "instagram",
       "format": "reel",
       "slotKey": "instagram_reel",
-      "slot": "2026-09-27T13:32:09.739Z",
+      "slot": "2026-09-27T13:36:54.927Z",
       "status": "held",
       "attempts": 1,
-      "error": "IG upload 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+      "error": "spawn ffmpeg ENOENT"
     },
     {
       "platform": "tiktok",
