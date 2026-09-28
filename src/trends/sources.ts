@@ -1,5 +1,5 @@
 import { XMLParser } from "fast-xml-parser";
-import { env } from "../lib/config.js";
+import { config, env } from "../lib/config.js";
 import { http, httpJson } from "../lib/http.js";
 import { log } from "../lib/log.js";
 
@@ -66,6 +66,12 @@ async function wikipediaSpikes(): Promise<Signal[]> {
   return rows.slice(0, 40);
 }
 
+const niche = () => (config.niche?.enabled ? config.niche : undefined);
+const NICHE_RX = () => new RegExp(niche()!.radar.match, "i");
+/** Niche-specific sources (their own queries/communities) are trusted; general ones must mention the niche. */
+const NICHE_SOURCES = /^(google-news:|youtube-rising|pubmed\/|reddit\/r\/(Semaglutide|Ozempic|Mounjaro|Zepbound|WegovyWeightLoss|GLP1_Ozempic_Wegovy))/i;
+const onTopic = (s: Signal[]) => (niche() ? s.filter(x => NICHE_SOURCES.test(x.source) || NICHE_RX().test(x.title)) : s);
+
 const SUBREDDITS = ["Health", "nutrition", "longevity", "Supplements", "sleep", "Fitness", "ScientificNutrition",
   "Biohackers", "intermittentfasting", "loseit", "Menopause", "HealthyFood", "medicine", "science"];
 
@@ -84,7 +90,7 @@ async function redditToken(): Promise<string | undefined> {
 async function reddit(): Promise<Signal[]> {
   const token = await redditToken().catch(() => undefined);
   const out: Signal[] = [];
-  for (const sub of SUBREDDITS) {
+  for (const sub of niche()?.radar.subreddits ?? SUBREDDITS) {
     try {
       const url = token ? `https://oauth.reddit.com/r/${sub}/rising?limit=15` : `https://www.reddit.com/r/${sub}/rising.json?limit=15`;
       const j = await httpJson<any>(url, { retries: 1, headers: token ? { authorization: `Bearer ${token}` } : {} });
@@ -105,8 +111,10 @@ const JOURNALS = ["N Engl J Med", "Lancet", "JAMA", "BMJ", "Nat Med", "JAMA Inte
 /** New papers in top journals (last 3 days): the earliest possible signal of a coming news cycle. */
 async function pubmed(): Promise<Signal[]> {
   const key = env("NCBI_API_KEY") ? `&api_key=${env("NCBI_API_KEY")}` : "";
-  const term = `(${JOURNALS.map(j => `"${j}"[ta]`).join(" OR ")}) AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt] OR cohort[tiab] OR trial[tiab])`;
-  const s = await httpJson<any>(`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=60&datetype=edat&reldate=3&sort=relevance&term=${encodeURIComponent(term)}${key}`);
+  const design = "(randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt] OR cohort[tiab] OR trial[tiab])";
+  // niche: any journal, last 7 days (there's less volume); otherwise top journals, last 3 days
+  const term = niche() ? `${niche()!.radar.pubmed} AND ${design}` : `(${JOURNALS.map(j => `"${j}"[ta]`).join(" OR ")}) AND ${design}`;
+  const s = await httpJson<any>(`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=60&datetype=edat&reldate=${niche() ? 7 : 3}&sort=relevance&term=${encodeURIComponent(term)}${key}`);
   const ids: string[] = s.esearchresult?.idlist ?? [];
   if (!ids.length) return [];
   const sum = await httpJson<any>(`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=${ids.join(",")}${key}`);
@@ -127,9 +135,12 @@ const FEEDS: [string, string][] = [
 ];
 
 async function newsFeeds(): Promise<Signal[]> {
-  const res = await Promise.allSettled(FEEDS.map(([n, u]) => rss(n, u, 72, 25)));
+  const feeds: [string, string][] = niche()
+    ? [...niche()!.radar.news.map(q => [`google-news:${q}`, `https://news.google.com/rss/search?q=${encodeURIComponent(q)}+when:3d&hl=en-US&gl=US&ceid=US:en`] as [string, string]), ...FEEDS]
+    : FEEDS;
+  const res = await Promise.allSettled(feeds.map(([n, u]) => rss(n, u, 72, 25)));
   return res.flatMap((r, i) => {
-    if (r.status === "rejected") { log.warn(`feed ${FEEDS[i][0]}: ${String(r.reason).slice(0, 100)}`); return []; }
+    if (r.status === "rejected") { log.warn(`feed ${feeds[i][0]}: ${String(r.reason).slice(0, 100)}`); return []; }
     return r.value;
   });
 }
@@ -142,7 +153,7 @@ async function youtubeOutliers(): Promise<Signal[]> {
   if (!key) { log.warn("youtube research skipped: no YOUTUBE_API_KEY"); return []; }
   const after = new Date(Date.now() - 72 * HOURS).toISOString();
   const ids = new Set<string>();
-  for (const q of YT_QUERIES) {
+  for (const q of niche()?.radar.youtube ?? YT_QUERIES) {
     const j = await httpJson<any>(`https://www.googleapis.com/youtube/v3/search?part=id&type=video&order=viewCount&maxResults=15&relevanceLanguage=en&publishedAfter=${after}&q=${encodeURIComponent(q)}&key=${key}`);
     for (const it of j.items ?? []) ids.add(it.id.videoId);
   }
@@ -179,5 +190,5 @@ export async function collectSignals(): Promise<Signal[]> {
     else log.warn(`signals: ${sources[i][0]} failed: ${String(r.reason).slice(0, 200)}`);
   });
   const seen = new Set<string>();
-  return all.filter(s => { const k = s.title.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; });
+  return onTopic(all).filter(s => { const k = s.title.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; });
 }

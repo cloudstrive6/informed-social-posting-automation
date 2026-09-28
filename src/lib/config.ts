@@ -41,6 +41,10 @@ export interface ChannelConfig {
   qa: { enabled: boolean; narrationMaxRetakes: number; sceneWerThreshold: number; maskingWerDelta: number; visualRounds: number; minShotScore: number };
   safety: { policy: string; maxRevisionRounds: number; disclaimer: string; bannedTopics: string[] };
   review: { mode: "auto" | "human" };
+  niche: {
+    enabled: boolean; name: string; brief: string; pillars: string[]; guardrails: string[];
+    radar: { match: string; subreddits: string[]; youtube: string[]; news: string[]; pubmed: string };
+  };
   models: Record<"default" | "trendScout" | "factChecker" | "writer" | "packaging" | "analyst" | "motionShort" | "motionLong" | "critic" | "polish", string>;
 }
 

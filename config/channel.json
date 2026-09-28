@@ -27,7 +27,7 @@
     }
   },
   "audience": {
-    "description": "English-speaking adults 25-55, mostly US/UK/CA/AU, curious about longevity, nutrition, sleep, gut health, hormones, fitness and new medical research. Skeptical of hype, love 'what actually works' answers.",
+    "description": "English-speaking adults 25-65, mostly US/UK/CA/AU: people on or considering GLP-1 medicines (Ozempic, Wegovy, Mounjaro, Zepbound), people with overweight, obesity, prediabetes or type 2 diabetes, and anyone curious about metabolic health. They want clear, encouraging, science-backed answers.",
     "timezone": "America/New_York",
     "language": "en"
   },
@@ -139,7 +139,9 @@
       "anti-vaccine claims",
       "eating disorder encouragement or extreme dieting",
       "self-harm methods",
-      "unapproved treatments presented as effective"
+      "unapproved treatments presented as effective",
+      "buying GLP-1 medicines without a prescription or from compounded, gray-market or research-chemical sources",
+      "GLP-1 microdosing or self-titration protocols"
     ]
   },
   "models": {
@@ -184,5 +186,61 @@
   "review": {
     "_comment": "auto: the Editor-in-Chief agent makes the final publish/drop call on held content (owner gets Telegram FYIs with a veto button). human: held content waits for Approve/Reject.",
     "mode": "auto"
+  },
+  "niche": {
+    "_comment": "Current editorial focus. Every agent reads this; the trend radar searches these sources. Set enabled=false to go back to general health.",
+    "enabled": true,
+    "name": "GLP-1",
+    "brief": "The channel currently focuses on GLP-1 medicines (semaglutide: Ozempic, Wegovy, Rybelsus; tirzepatide: Mounjaro, Zepbound; liraglutide; new ones such as orforglipron and retatrutide) and the body's own GLP-1 hormone. Tone: positive and encouraging. We explain what GLP-1 is, how it works in the body, the benefits the evidence supports, who it can help and why someone might want to discuss it with their doctor, and how to get the most out of it (protein, strength training, hydration, eating habits, and making common side effects easier). Every piece stays evidence-based and passes the fact-checker.",
+    "pillars": [
+      "How GLP-1 works: the gut hormone, appetite and 'food noise', insulin and blood sugar, gastric emptying, the brain's reward system",
+      "Weight-loss results in the big trials (STEP, SURMOUNT) explained simply, and what keeps results going",
+      "Benefits beyond weight: heart attack and stroke risk (SELECT), kidneys (FLOW), fatty liver (MASH), sleep apnea, blood pressure, type 2 diabetes control, and promising early research (addiction, alcohol, inflammation, brain health)",
+      "Who it's approved for and who may benefit: questions to bring to your doctor",
+      "Getting the most from GLP-1: protein and muscle, strength training, hydration, fibre, eating slower, managing nausea and other common side effects",
+      "Life on GLP-1: habits, meal ideas, mindset, keeping results after stopping",
+      "Myths and misunderstandings, corrected with evidence (always in a positive, helpful tone)",
+      "Natural ways to support your own GLP-1: protein, fibre, eating order, movement (without claiming they replace the medicine)",
+      "New GLP-1 research and approvals: what's coming (pills, next-generation drugs)"
+    ],
+    "guardrails": [
+      "It's a prescription medicine: every script and caption carries a short 'talk to your doctor or prescriber about whether it's right for you' line.",
+      "Positive framing, never false: only benefits the evidence supports, with the right population (e.g. SELECT = adults with heart disease and overweight/obesity). Mention the common side effects briefly and helpfully when relevant.",
+      "No dosing or titration instructions, no switching or stopping advice, no 'microdosing' protocols.",
+      "Never promote compounded, gray-market, research-chemical or online no-prescription sources.",
+      "No before/after body shaming, no extreme-diet messaging; weight is one health measure among many.",
+      "Talk about the medicines generically (GLP-1 / semaglutide / tirzepatide); brand names only for recognition, never as ads."
+    ],
+    "radar": {
+      "match": "glp-?1|semaglutide|tirzepatide|liraglutide|dulaglutide|orforglipron|retatrutide|survodutide|cagrilintide|incretin|ozempic|wegovy|rybelsus|mounjaro|zepbound|saxenda|anti-?obesity|weight-loss (drug|medic|jab|shot|injection)|obesity (drug|medic)",
+      "subreddits": [
+        "Semaglutide",
+        "Ozempic",
+        "Mounjaro",
+        "Zepbound",
+        "WegovyWeightLoss",
+        "GLP1_Ozempic_Wegovy",
+        "loseit",
+        "diabetes_t2"
+      ],
+      "youtube": [
+        "GLP-1",
+        "Ozempic",
+        "semaglutide",
+        "tirzepatide",
+        "Wegovy",
+        "Mounjaro",
+        "Zepbound",
+        "GLP-1 study"
+      ],
+      "news": [
+        "GLP-1",
+        "semaglutide",
+        "tirzepatide",
+        "Wegovy OR Zepbound",
+        "orforglipron OR retatrutide"
+      ],
+      "pubmed": "(\"Glucagon-Like Peptide-1 Receptor Agonists\"[Mesh] OR semaglutide[tiab] OR tirzepatide[tiab] OR liraglutide[tiab] OR \"GLP-1\"[tiab] OR incretin[tiab])"
+    }
   }
 }

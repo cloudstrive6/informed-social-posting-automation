@@ -35,6 +35,11 @@ function sharedContext(): string {
     `- Brand colors: blue ${b.colors.blue}, green ${b.colors.green}, dark ${b.colors.dark}, light ${b.colors.light}`,
     `- Never cover: ${config.safety.bannedTopics.join("; ")}`,
     `- Today's date: ${new Date().toISOString().slice(0, 10)}`,
+    ...(config.niche?.enabled ? [
+      `\n## Current channel focus: ${config.niche.name} (every topic, script, visual and caption must serve it)\n${config.niche.brief}`,
+      `\nContent pillars (rotate through them):\n${config.niche.pillars.map(p => `- ${p}`).join("\n")}`,
+      `\nGuardrails for this niche:\n${config.niche.guardrails.map(g => `- ${g}`).join("\n")}`,
+    ] : []),
     `\n## What we've learned from our own analytics (apply it)\n${readText(join(DATA, "learnings.md"), "_No learnings yet — first weeks of the channel._")}`,
     `\n## Craft notes from our own quality checks (recurring mistakes to avoid; apply them)\n${readText(join(DATA, "craft-notes.md"), "_No craft notes yet._")}`,
   ].join("\n");

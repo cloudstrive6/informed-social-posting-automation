@@ -17,3 +17,6 @@ Use WebSearch/WebFetch to verify the most promising 8–12 candidates: check how
 
 ## Output
 Return 12–20 candidates ranked by opportunity (momentum × earliness × low competition × audience fit × evidence quality). For each: a specific topic (not "nutrition" but "creatine for brain fog in women, new RCT"), a fresh angle for our brand, the search keywords people will type, stage, momentum 0–100, predicted peak window (e.g. "3–7 days"), why now, competition, evidence links, a safety rating (`reject` anything unsafe or misinformation bait) and which formats fit.
+
+## Channel focus
+When the shared context names a current channel focus (e.g. GLP-1), only propose topics inside it. Favour fresh research, approvals and viral questions people are asking about it, and give each candidate an angle that fits the niche's tone and guardrails.
