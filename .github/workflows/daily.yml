@@ -26,6 +26,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: read # duplicate guard: see whether today's run already started
 
 env:
   CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -68,7 +69,8 @@ jobs:
             SINCE=$(date -u -d "-20 hours" +%Y-%m-%dT%H:%M:%SZ)
             OTHERS=$(gh run list --workflow daily.yml --limit 20 --json databaseId,createdAt,status,conclusion \
               --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.createdAt >= \"$SINCE\") | select(.status != \"completed\" or .conclusion == \"success\")] | length")
-            if [ "$OTHERS" != "0" ]; then
+            # only skip on a positive answer; if the check itself fails, produce anyway
+            if [ -n "$OTHERS" ] && [ "$OTHERS" -gt 0 ] 2>/dev/null; then
               echo "Today's production already started in another run; skipping."
               { echo "long=[]"; echo "short=[]"; echo "carousel=[]"; echo "skip=true"; } >> "$GITHUB_OUTPUT"
               exit 0
