@@ -76,9 +76,11 @@
       "format": "carousel",
       "slotKey": "carousel",
       "slot": "2026-09-28T18:00:00.000Z",
-      "status": "pending",
-      "attempts": 1,
-      "error": "HTTP 400 for https://graph.threads.net/v1.0/me/threads_publish: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17947848930362533 cannot be found.\",\"fbtrace_id\":\"AZDfI9DwpMzlMEkX6Cd-2U4\"}}"
+      "status": "published",
+      "attempts": 2,
+      "remote_id": "18067446020769291",
+      "url": "https://www.threads.com/@informedlab/post/Dd2WF-ElSM-",
+      "published_at": "2026-09-28T23:17:27.741Z"
     }
   ],
   "created_at": "2026-09-28T06:55:10.305Z",
