@@ -77,7 +77,7 @@
       "format": "long",
       "slotKey": "youtube_long",
       "slot": "2026-09-27T13:57:55.202Z",
-      "status": "held",
+      "status": "skipped",
       "attempts": 0
     }
   ],
@@ -1543,7 +1543,7 @@
       }
     ]
   },
-  "hold_reason": "Fact-checker verdict REVISE: I checked the core numbers and they are accurate. The new study (Xu W et al., Diabetes 2026, DOI 10.2337/db26-0395) matches the Medical Xpress and Science Media Centre (SMC) coverage: 56,964 adults, average age 69.5, 7.8 years of follow-up, 926 cases, +7% risk per 10% ultra-processed share by weight, −39% for meeting the activity guideline, −49% for both habits in the high-genetic-risk group, and a low-intake cut-off of ≤11%. It used 24-hour recalls, a wrist tracker worn for a week, and genetic data from people of European ancestry only. The supporting sources also check out: the 2019 NIH inpatient trial (20 adults, ~500 kcal/day, 0.9 kg), the 2024 Nature genetics study (611 regions, >2.5M people), the Diabetes Prevention Program (3,234 people, 2.8 years, −58%), the Finnish trial (522 people, NEJM 2001, −58%), the 15-year DPP follow-up (−27%), the TCF7L2 gene analysis (difference between groups not statistically significant, so the hedged wording is right), and the CDC figures (115.2M adults, >2 in 5, 8 in 10 unaware; report dated 16 March 2026).\n\nThe framing is careful: it separates relative from absolute risk, calls the study observational, gives the absolute rate and lists the limits. It includes a medication caveat and tells viewers to see a clinician about testing.\n\nOne major problem: the script leaves out a limitation that two independent experts raised in the SMC reaction. When ultra-processed food was split into subgroups, only ultra-processed drinks stayed significantly linked to diabetes after full adjustment. Without that, Finding 1 and the 'shift the share' advice overstate what the study says about ultra-processed food as a whole. The other items are minor wording fixes.; test run: review before publishing",
+  "hold_reason": "Dropped by Editor-in-Chief: Two major problems are unfixed. The script leaves out the expert-flagged limitation that only ultra-processed drinks stayed significantly linked to type 2 diabetes, so the ultra-processed food finding and the swap advice overstate the study. The YouTube description is cut off mid-word, with no medical disclaimer, no clinician/medication line and no sources.",
   "qa": {
     "narrationWer": 0.042,
     "voice": "chatterbox",

@@ -12,7 +12,7 @@
     "trend_stage": "rising",
     "why": "Spin-off of L1 to drive traffic to the long video while the topic peaks (3–10 days). | fact-check: The same BMJ 2026 Danish nested case-control study as L1 (DOI 10.1136/bmj-2026-100688). The core claims are supported, but a 60-second format tends to drop nuance. Required: take the absolute figure from the paper and say it applies to women aged 50–69. Say it is observational. Say 'no overall increase' with patches/gels, not 'no risk'. Include an on-screen line saying don't change or stop HRT without talking to your clinician. Sources: https://bmjgroup.com/oral-menopausal-hormone-therapy-linked-to-higher-blood-clot-risk-in-legs-or-lungs-regardless-of-dose-or-duration/ ; https://medicalxpress.com/news/2026-09-oral-menopausal-hormone-therapy-linked.html"
   },
-  "status": "held",
+  "status": "ready",
   "package": {
     "title": "HRT pill vs patch: the blood clot number headlines skip #shorts",
     "description": "A large Danish BMJ study linked oral HRT to roughly 1 extra blood clot per 1,000 women a year. Patches and gels showed no overall increase. It's observational, so it shows a link, not proof. Ask your clinician which route fits you.\n#HRT #menopause #bloodclots #womenshealth #shorts\nThis content is for educational purposes only and is not medical advice. Always talk to a qualified healthcare professional about your own situation.",
@@ -36,32 +36,32 @@
       "platform": "youtube",
       "format": "short",
       "slotKey": "youtube_short",
-      "slot": "2026-09-27T00:57:02.421Z",
-      "status": "held",
+      "slot": "2026-09-28T16:45:00.000Z",
+      "status": "pending",
       "attempts": 0
     },
     {
       "platform": "instagram",
       "format": "reel",
       "slotKey": "instagram_reel",
-      "slot": "2026-09-27T00:57:02.421Z",
-      "status": "held",
+      "slot": "2026-09-28T13:15:00.000Z",
+      "status": "pending",
       "attempts": 0
     },
     {
       "platform": "tiktok",
       "format": "short",
       "slotKey": "tiktok",
-      "slot": "2026-09-27T00:57:02.421Z",
-      "status": "held",
+      "slot": "2026-09-28T14:45:00.000Z",
+      "status": "pending",
       "attempts": 0
     },
     {
       "platform": "facebook",
       "format": "reel",
       "slotKey": "facebook_reel",
-      "slot": "2026-09-27T00:57:02.421Z",
-      "status": "held",
+      "slot": "2026-09-28T13:45:00.000Z",
+      "status": "pending",
       "attempts": 0
     }
   ],
@@ -314,6 +314,7 @@
   },
   "release_tag": "content-2026-09-26",
   "archive_url": "b2://informed-lab-media/content/2026-09-26/S2-hrt-pills-vs-patches-the-1-in-1-000-abso/",
-  "hold_reason": "test run: review before publishing",
-  "review_issue": 7
+  "hold_reason": "",
+  "review_issue": 7,
+  "approved_by": "editor-in-chief (low risk): The fact-check passed. The ~1 extra clot per 1,000 women per year (the paper says 1 per 1,055) is shown correctly as an absolute risk, the observational limitation is stated, and the 'don't stop or switch on your own' line is there. The figures match across all captions, and QA is clean. The only issue is a minor source-title fix for src3, which should be changed to the published BMJ title, and it doesn't block publishing."
 }

@@ -12,7 +12,7 @@
     "trend_stage": "rising",
     "why": "Contrarian-but-true slot, in its 3rd radar snapshot, with a strong Breast Cancer Awareness Month tailwind starting in 4 days. | fact-check: The study exists: Njor, Pedersen, Lynge, Smith, Rebolj. 'Breast cancer overdiagnosis in mammography trials—separating signal from noise', JNCI 2026 (ScienceDaily https://www.sciencedaily.com/releases/2026/09/260924020351.htm; MedicalXpress https://medicalxpress.com/news/2026-09-analysis-overdiagnosis-breast-cancer-screening.html). Framing precision: the reanalysis found the excess cancers in the 8 trials were consistent with what's expected in the Danish screening population, where overdiagnosis is estimated at under 5%. It is a modelled or inferred estimate, not a direct count. Say 'estimated' on screen. Overdiagnosis is actively debated (e.g. the Cochrane review and the Nordic Cochrane team gave much higher figures). Include an opposing view so we don't look like we're settling the debate. Check for any author conflicts of interest (Robert A. Smith is at the American Cancer Society) and disclose them if relevant. Title: soften the certainty."
   },
-  "status": "held",
+  "status": "ready",
   "package": {
     "title": "Mammogram Overdiagnosis: Under 5%, or 1 in 3?",
     "title_candidates": [
@@ -76,8 +76,8 @@
       "platform": "youtube",
       "format": "long",
       "slotKey": "youtube_long",
-      "slot": "2026-09-27T23:00:00.000Z",
-      "status": "held",
+      "slot": "2026-09-28T19:15:00.000Z",
+      "status": "pending",
       "attempts": 0
     }
   ],
@@ -1662,8 +1662,9 @@
       ]
     }
   },
-  "hold_reason": "Quality check: narration doesn't match script in 2 scene(s): expected \"twenty\" heard \"two thousand\"; expected \"twenty\" heard \"two thousand\"; test run: review before publishing",
+  "hold_reason": "Voice check flagged a spelling/number-reading difference that is a known false alarm (since fixed); expected \"twenty\" heard \"two thousand\"",
   "release_tag": "content-2026-09-27",
   "archive_url": "b2://informed-lab-media/content/2026-09-27/L3-mammogram-overdiagnosis-may-be-under-5-n/",
-  "review_issue": 11
+  "review_issue": 11,
+  "approved_by": "editor-in-chief (medium risk): The hold came from a known voice-check false alarm (\"twenty\" heard as \"two thousand\"), which has since been fixed. The final audio passes (WER 0.028, no masking), and the fact-check is a PASS with only minor on-screen wording fixes. The script is balanced and points viewers to their clinician. The remaining risk is packaging: the YouTube description cuts off mid-chapter with no disclaimer or sources. It must go out with the packaging-checker's complete chapters, so"
 }

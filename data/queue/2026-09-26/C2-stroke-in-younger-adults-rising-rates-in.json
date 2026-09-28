@@ -12,7 +12,7 @@
     "trend_stage": "rising",
     "why": "Evergreen life-saving content with a timely hook (2nd snapshot, CBS story). BE-FAST is exactly the kind of list people save and send to family."
   },
-  "status": "held",
+  "status": "ready",
   "package": {
     "title": "Stroke Before 50: The 5 Signs That Mean Call Emergency Services Now",
     "social": {
@@ -41,16 +41,16 @@
       "platform": "instagram",
       "format": "carousel",
       "slotKey": "instagram_carousel",
-      "slot": "2026-09-27T00:56:46.823Z",
-      "status": "held",
+      "slot": "2026-09-28T15:45:00.000Z",
+      "status": "pending",
       "attempts": 0
     },
     {
       "platform": "facebook",
       "format": "post",
       "slotKey": "facebook_post",
-      "slot": "2026-09-27T00:56:46.823Z",
-      "status": "held",
+      "slot": "2026-09-28T16:15:00.000Z",
+      "status": "pending",
       "attempts": 0
     }
   ],
@@ -426,6 +426,7 @@
     "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-08.jpg",
     "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-26/C2-stroke-in-younger-adults-rising-rates-in/slide-09.jpg"
   ],
-  "hold_reason": "test run: review before publishing",
-  "review_issue": 5
+  "hold_reason": "",
+  "review_issue": 5,
+  "approved_by": "editor-in-chief (low risk): The fact-check passed. All key figures match the primary sources (CDC MMWR 14.6%, Ekker 10–15%, INTERSTROKE, Saver), and the BE-FAST safety message is correct: call emergency services, note the time, don't drive yourself. The open issues are minor wording fixes: calling the slide 2 rise 'prevalence', and adding 'estimated' to slides 5 and 8. The TikTok caption also has no disclaimer. None of these would mislead viewers or create a safety or policy risk."
 }

@@ -12,7 +12,7 @@
     "trend_stage": "rising",
     "why": "CNN syndication (Sep 26) started a second mainstream wave, it's a very relatable 'what works' question, and few videos cite the actual numbers. | fact-check: The study exists: PNAS, 'Protecting episodic memory after sleep loss: Similar benefits of exercise and naps via distinct neural contributions', doi 10.1073/pnas.2528246123 (McGill). Recognition figures of 56% / 57% / 46% are confirmed by coverage (Technology Networks, PsyPost). Two discrepancies: (1) the McGill release and other coverage say 54 participants, not 53. The writer must confirm the analysed n from the PNAS paper (the abstract page returned 403 to us) and use that one number everywhere. (2) Per McGill, memory was tested on images, recognition assessed 3 days later. Say 'remembered 3 days later', not 'right after'. The '22% better' figure in coverage is relative. Don't mix it with the percentage-point numbers. Each practical lever (nap length, light, caffeine timing) needs its own cited source. Don't give caffeine doses."
   },
-  "status": "held",
+  "status": "ready",
   "package": {
     "title": "No Sleep? A 20-Min Workout Nearly Matched a 90-Min Nap on Memory Test",
     "title_candidates": [
@@ -78,8 +78,8 @@
       "platform": "youtube",
       "format": "long",
       "slotKey": "youtube_long",
-      "slot": "2026-09-27T18:00:00.000Z",
-      "status": "held",
+      "slot": "2026-09-28T14:15:00.000Z",
+      "status": "pending",
       "attempts": 0
     }
   ],
@@ -1454,8 +1454,9 @@
       ]
     }
   },
-  "hold_reason": "Quality check: narration doesn't match script in 1 scene(s): expected \"recognised\" heard \"recognized\"; test run: review before publishing",
+  "hold_reason": "Voice check flagged a spelling/number-reading difference that is a known false alarm (since fixed)",
   "release_tag": "content-2026-09-27",
   "archive_url": "b2://informed-lab-media/content/2026-09-27/L2-after-a-sleepless-night-a-20-minute-work/",
-  "review_issue": 10
+  "review_issue": 10,
+  "approved_by": "editor-in-chief (medium risk): The hold was a voice-check false alarm that has since been fixed. The fact-check passed against the full PNAS paper with only minor precision notes, and the video itself carries the key limits and safety caveats: it doesn't replace sleep, don't drive, and check with a clinician before hard exercise. The truncated YouTube description, which is cut off with no disclaimer, is a real packaging flaw and should be patched after upload, but it doesn't mislead viewers or c"
 }

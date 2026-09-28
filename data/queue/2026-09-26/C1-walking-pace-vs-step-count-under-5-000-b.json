@@ -41,7 +41,7 @@
       "format": "carousel",
       "slotKey": "instagram_carousel",
       "slot": "2026-09-27T00:56:25.960Z",
-      "status": "held",
+      "status": "skipped",
       "attempts": 0
     },
     {
@@ -49,7 +49,7 @@
       "format": "post",
       "slotKey": "facebook_post",
       "slot": "2026-09-27T00:56:25.960Z",
-      "status": "held",
+      "status": "skipped",
       "attempts": 0
     }
   ],
@@ -336,7 +336,7 @@
       }
     ]
   },
-  "hold_reason": "Packaging check REVISE: The title, thumbnail and captions are mostly well framed. They say the study shows a link rather than proof, they don't promise a cure, the 15-second pace test is safe, and the ~100 steps/min moderate-intensity threshold matches Tudor-Locke 2018 (S3). But the package doesn't match itself or the verified summary on two key facts. (1) Sample size: the hook says \"100,000+ adults\" and the verified topic says \"100k+\". All captions say 64,743, which is probably the number analysed after exclusions from the ~100k UK Biobank accelerometer group. (2) The main comparison: the verified topic says under 5,000 brisk steps \"matched 10,000 slow ones\". The captions say it matched \"5,000–7,500 slower steps\". These are different claims, and only one can be what the study reported. The captions' version is the more cautious one. Their other details (80+ steps/min over the 30 fastest minutes; 7,500–10,000 steps lowest risk at any pace; ~8 years follow-up) aren't in the verified summary either. The fixes below remove the sample-size conflict. Before publishing, check the main comparison against S1 and change the topic summary or the captions so they say the same thing. I had no web access in this run, so I couldn't open S1 or S2 (both dated after my knowledge cutoff) and have left them off the verified list. S3 is a known, real paper.; test run: review before publishing",
+  "hold_reason": "Dropped by Editor-in-Chief: The study facts check out: the fact-checker confirmed the cautious comparison in the captions (under 5,000 brisk steps vs 5,000–7,500 slower steps) against the BMJ press release. But the sample size still doesn't match. Slides 1 and 7 say 103,684 adults, which is everyone tracked, while every caption says 64,743, the number actually analysed for the finding, and no fix has been applied. Change both slides to 64,743 (with \"from 103,684 tracked\" if wanted), fix the CNN URL, and it can be published.",
   "release_tag": "content-2026-09-26",
   "archive_url": "b2://informed-lab-media/content/2026-09-26/C1-walking-pace-vs-step-count-under-5-000-b/",
   "image_urls": [
