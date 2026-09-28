@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-28",
+  "created_at": "2026-09-28T06:53:09.037Z",
+  "rationale": "Today's slate is built around EASD 2026, which opens today. Every piece stays inside the GLP-1 focus, and nothing repeats a recent angle (the last 30 days had no GLP-1 pieces).\n\n**Pillar rotation (no pillar used more than twice)**\n- Who may benefit: L1, S1\n- Getting the most from GLP-1: L2, C1\n- New research: L3, S2\n- How GLP-1 works / myths: S3\n- Benefits beyond weight: C2\n\n**Body systems.** Only two pieces are about the heart (L1, S1). The rest cover hair and skin, reproductive and hormonal changes, muscle, the airway and sleep, fat metabolism, and the drug pipeline.\n\n**Mix**\n- About 50% emerging or rising, low-competition trends: L1, L3, S1, C2.\n- About 30% evergreen topics with a timely hook: L2 on hair loss, C1 on muscle.\n- About 20% myth-busting: S2 decodes the CagriSema 'beats Zepbound' headlines, and S3 corrects the brown-fat hype, which so far is mice only.\n\n**Spin-off.** S1 is a spin-off of L1.\n\n**What I skipped**\n- Cannabis, period changes and the scam warning: all marked caution, and today's quota is better spent on clearer evidence.\n- Stopping GLP-1s: marked caution, peaking and high competition.\n- NAION lawsuits: fear-driven coverage.\n- SELECT mediation analysis: it would make a third heart piece. Keep it for tomorrow.\n\n**Craft notes applied**\n- Every angle names the analysed sample, what was actually measured, and the study design (observational, post-hoc or mouse).\n- Relative figures are paired with absolute ones where available.\n- Every script and caption needs a 'talk to your doctor or prescriber' line.",
+  "pieces": [
+    {
+      "id": "L1",
+      "kind": "long",
+      "topic": "EASD 2026 study of 313,145 adults (UK Biobank + Copenhagen): people with a BMI of 25–26.9 and high remnant cholesterol or low-grade inflammation had heart-disease risk similar to groups who qualify for GLP-1s today",
+      "angle": "'Your BMI isn't the whole story.' Start with how GLP-1 eligibility works now: BMI thresholds plus weight-related conditions, and the SELECT population (adults with established heart disease and overweight or obesity, without diabetes). Then the new finding. Among 313,145 adults, 23,134 developed coronary heart disease over 10–18 years. About 44–48% of those with a BMI of 25–26.9 had high remnant cholesterol or inflammation (CRP), and their risk looked similar to groups who are eligible today. Explain what remnant cholesterol and CRP are and how they're measured. Give the questions to bring to your doctor. Limits, said clearly: this is an observational risk study presented at a conference, it did not test GLP-1 drugs, it doesn't show that these people would benefit, and trials are needed. Avoid saying 'millions should be on GLP-1s'. Use the analysed sample size and the source's exact figures throughout.",
+      "working_title": "Not 'Heavy Enough' for a GLP-1? Two Blood Markers That May Matter More Than BMI",
+      "target_keyword": "GLP-1 eligibility BMI",
+      "trend_stage": "emerging",
+      "why": "Presented at EASD, which opens today. Low competition, and almost no creator videos yet. Fills the 'who may benefit' pillar with plenty of depth for 10+ minutes."
+    },
+    {
+      "id": "L2",
+      "kind": "long",
+      "topic": "GLP-1 hair loss: how common it is, why it happens, and what helps (BMJ Group cohort, NYU Langone study, Clinical Dermatology review Sep 2026)",
+      "angle": "Keep the calm myth correction, with these changes. (1) BMJ cohort, adults with type 2 diabetes only: 1.37 times the risk vs SGLT-2 inhibitors and 1.68 times vs DPP-4 inhibitors. Label these as relative risks, say the authors call the absolute risk low, and say the hair loss was nonscarring, so it may be reversible. (2) NYU: describe it as 'a genetic study, not a study of people taking the drugs, suggested a small (~7%) added risk of male-pattern hair loss in men already genetically predisposed.' (3) Explain telogen effluvium and that it is typically temporary. (4) Levers, strongest first: enough protein, a weight-loss pace agreed with your prescriber, and asking your doctor about checking ferritin/iron, vitamin D and thyroid. (5) See a dermatologist if shedding lasts more than about 6 months, comes in patches, or is scarring or painful. No supplement promises, and don't stop the medicine without your prescriber. Title: 'Ozempic Hair Loss: How Common It Really Is and Why It Often Grows Back'. Cite the review by its exact title (e.g. American Journal of Clinical Dermatology 2026).",
+      "working_title": "Ozempic Hair Loss: How Common It Really Is and Why It Usually Grows Back",
+      "target_keyword": "Ozempic hair loss",
+      "trend_stage": "rising",
+      "why": "Highest momentum on the radar (82), with heavy search demand. The Guardian and Times of India explainers ran Sep 27–28. An evergreen side-effect question with a fresh hook, in the 'getting the most from GLP-1' pillar. | fact-check: BMJ study, confirmed via bmjgroup.com and Healio. Adults with type 2 diabetes starting a GLP-1 were compared with adults starting other diabetes drugs, using Penn Medicine electronic health records. Nonscarring alopecia risk was 1.37 times higher than with SGLT-2 inhibitors (12,004 vs 15,221 people) and 1.68 times higher than with DPP-4 inhibitors (11,964 vs 11,238). These are relative risks, and the authors say the absolute risk is low. The NYU Langone study (Journal of Investigative Dermatology, published September 3, 2026) is a genetic study. It used variation in the GLP1R gene as a stand-in for drug activity in more than 205,000 men, and it did not observe people actually taking GLP-1 drugs. It found about 7% added risk of androgenetic alopecia in men who are predisposed, which the script must describe as genetic evidence. Saying 'GLP-1 use may speed up hair loss' as if patients were studied would overstate it. The 'Clinical Dermatology review Sep 2026' could not be identified as named. Candidates that do exist are 'The Impact of GLP-1 Receptor Agonists on Hair' in the American Journal of Clinical Dermatology (2026, PubMed 41957308) and Gupta et al.'s 2026 systematic review (PMC13100445). Cite one of these by its exact title. In the title, soften 'usually grows back' to 'often grows back'. The telogen effluvium evidence supports 'typically temporary', not a guarantee."
+    },
+    {
+      "id": "L3",
+      "kind": "long",
+      "topic": "Orforglipron (the Foundayo pill) and menopause: similar weight loss before, during and after menopause (ATTAIN-1/2 post-hoc analysis, EASD 2026)",
+      "angle": "Same structure. Fix the placebo comparator: 'up to 83% vs 23% on placebo lost at least 5%'. Attribute each 'up to' figure: 'up to about 14% (ATTAIN-1, adults with obesity, highest-dose arm)' and 'up to about 13.6% (ATTAIN-2, adults with obesity and type 2 diabetes)'. Say it was first presented at ADA 2026 with further analyses at EASD 2026. Keep the post-hoc limits, the GI side effects, strength training and protein for midlife women, no HRT advice, and a talk-to-your-prescriber line. Use waist and subgroup sizes only if the abstract or poster confirms them.",
+      "working_title": "Does Menopause Block GLP-1 Weight Loss? New Pill Data Says Not in These Trials",
+      "target_keyword": "GLP-1 menopause weight loss",
+      "trend_stage": "emerging",
+      "why": "Being presented at EASD this week, with low competition. A high-demand topic for our core audience of women aged 40–65, and oral GLP-1 prescriptions are rising. Fills the 'new research' pillar. | fact-check: Confirmed via the Lilly press release, Pharmacy Times and HCPLive. This is a post-hoc analysis of ATTAIN-1 and ATTAIN-2. It was first presented at ADA 2026 and has new analyses at EASD 2026. With the 17.2 mg dose, mean weight loss at week 72 ranged from 12.8% to 14.4% in ATTAIN-1 and from 8.9% to 13.6% in ATTAIN-2, depending on menopause stage. Error: the placebo comparison for at least 5% weight loss is 23%, not 'about 30%'. Up to 83% of people on orforglipron reached it. I could not verify the 12.5 cm waist figure or the 142–225 women per group from these sources. Check both against the poster or abstract, or cut them. ATTAIN-2 was in people with type 2 diabetes, which is why its weight loss was lower. Say so. The brand name Foundayo is for recognition only. No dosing: name the dose only as the trial arm, not as advice."
+    },
+    {
+      "id": "S1",
+      "kind": "short",
+      "topic": "Remnant cholesterol and CRP: 2 blood markers linked to heart risk in people with overweight who don't qualify for GLP-1s (EASD 2026, 313,145 adults)",
+      "angle": "One sharp idea. At a BMI of 25–26.9, roughly half of people in this study had high remnant cholesterol or inflammation, and their heart risk looked similar to groups eligible for GLP-1s today. Standard lipid panel results can be used to estimate remnant cholesterol. Ask your doctor about both markers. Say it on screen too: observational, and the drugs weren't tested. Point viewers to the full video.",
+      "working_title": "The Cholesterol Number Your Doctor Might Not Mention #shorts",
+      "target_keyword": "remnant cholesterol",
+      "trend_stage": "emerging",
+      "why": "Spin-off of L1. It uses the EASD timing to send traffic to the long video."
+    },
+    {
+      "id": "S2",
+      "kind": "short",
+      "topic": "Did CagriSema beat Zepbound? REIMAGINE (type 2 diabetes) vs REDEFINE 4 (obesity)",
+      "angle": "Headline decoder. 'Beats Zepbound' came from REIMAGINE 5, where CagriSema was compared with the lowest tirzepatide dose (5 mg) in adults with type 2 diabetes: 12.4% vs 9.1% at 60 weeks. In the head-to-head obesity trial REDEFINE 4 (809 adults, 84 weeks, open-label), CagriSema reached 23.0% vs 25.5% for tirzepatide's highest dose, assuming everyone stayed on treatment, and missed non-inferiority. Say on screen that this assumes full adherence. Explain amylin in one line (a satiety hormone released with insulin). The company expects an FDA decision in Q4 2026. Lesson: check the comparison group and the dose. No verdict on which drug is better, and add a talk-to-your-prescriber line.",
+      "working_title": "CagriSema 'Beat' Zepbound? Look at the Fine Print #shorts",
+      "target_keyword": "CagriSema vs Zepbound",
+      "trend_stage": "rising",
+      "why": "Contrarian but true. Syndicated headlines conflict with the trade press, and that confusion is our opening. Fills the 'new research' pillar. | fact-check: The 12.4% vs 9.1% result at 60 weeks comes from REIMAGINE 5, not REIMAGINE 2 (Healio, 21 September 2026). It compared CagriSema 1.0/1.0 mg with tirzepatide 5 mg in adults with type 2 diabetes. REDEFINE 4 is confirmed: 809 adults with obesity, open-label, 84 weeks. 23.0% vs 25.5% is the estimand that assumes everyone stayed on treatment. The treatment-regimen estimand is 20.2% vs 23.6%. The trial did not meet non-inferiority. The FDA decision for weight management is expected in Q4 2026 per company guidance; the filing was in December 2025, based on REDEFINE 1 and 2."
+    },
+    {
+      "id": "S3",
+      "kind": "short",
+      "topic": "Tirzepatide switched on calorie-burning brown fat, but only in obese mice",
+      "angle": "'Does Mounjaro speed up your metabolism?' In obese mice, tirzepatide switched brown fat back on. Put 'in mice' on screen. In people there's only an early, small signal from a conference study, and it's not proven to raise calorie burn in a meaningful way. Explain brown fat in one line and why mouse results often don't carry over (adults have much less brown fat). Then what human trials do show: lower appetite and 'food noise', and better blood sugar in type 2 diabetes. Add a talk-to-your-doctor line.",
+      "working_title": "Does Mounjaro Speed Up Your Metabolism? What the Mouse Study Actually Showed #shorts",
+      "target_keyword": "does Mounjaro speed metabolism",
+      "trend_stage": "rising",
+      "why": "Myth-busting slot. Overhyped headlines ran Sep 26–27, momentum is climbing, and it fits the 'how GLP-1 works' pillar. | fact-check: The mouse studies exist (ScienceDaily, September 2026; Life Sciences 2025/PubMed 41412277, which used estrogen-deficient obese diabetic mice). But 'not shown in humans' is too absolute. At ENDO 2026, an Endocrine Society press release on a human study described a 'signal consistent with' brown fat activation after tirzepatide. That is early and preliminary, but it exists. Per the craft notes, avoid absolute claims."
+    },
+    {
+      "id": "C1",
+      "kind": "carousel",
+      "topic": "Protecting muscle on GLP-1s: STEP UP MRI data on thigh muscle, plus a strength and protein framework",
+      "angle": "A save-worthy framework: 'Will I lose muscle on Ozempic?' Slides: (1) the question; (2) what STEP UP's MRI analysis measured: thigh muscle volume, fat infiltration inside the muscle, and physical function, with the exact results from the paper and a qualifier line under each number; (3) why some lean-mass loss happens with any weight loss; (4) protein first at each meal, following general guidance, with no drug dosing; (5) strength training 2–3 times a week, per the activity guidelines; (6) creatine: an early idea only, not a recommendation; (7) talk to your prescriber or a dietitian.",
+      "working_title": "Keep Your Muscle on a GLP-1: The 5-Part Checklist",
+      "target_keyword": "Ozempic muscle loss",
+      "trend_stage": "emerging",
+      "why": "Evergreen core-pillar topic with a timely hook: the STEP UP secondary analysis (Sep 20) and the creatine commentary (Sep 21). A list format people save."
+    },
+    {
+      "id": "C2",
+      "kind": "carousel",
+      "topic": "GLP-1s and sleep apnea: a teammate for CPAP, not a replacement (JAMA Otolaryngology–Head & Neck Surgery review)",
+      "angle": "Slides: (1) 'Can a GLP-1 replace your CPAP?'; (2) what AHI means (breathing pauses per hour); (3) GLP-1s cut events by about 6–22 per hour, with tirzepatide at the top of that range, vs about 31 per hour for CPAP, and the qualifier line 'reduction in events per hour, across studies'; (4) tirzepatide is FDA-approved for moderate-to-severe OSA in adults with obesity; (5) why weight loss helps the airway; (6) keep using CPAP unless your sleep clinician changes your plan; (7) questions to bring to your sleep doctor.",
+      "working_title": "GLP-1 vs CPAP for Sleep Apnea: What the Numbers Show",
+      "target_keyword": "Zepbound sleep apnea",
+      "trend_stage": "rising",
+      "why": "Syndicated nationally Sep 26–28 with low competition. Fills the 'benefits beyond weight' pillar and adds a new body system (airway and sleep) to the day."
+    }
+  ]
+}
