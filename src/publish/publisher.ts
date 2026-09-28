@@ -62,7 +62,7 @@ async function publishOne(item: ContentItem, p: PostTarget) {
     }
     case "facebook:reel": return { ...(await facebookReel(await media(item, item.media.video!), s!.facebook_caption)), scheduled: false };
     case "tiktok:carousel": return { ...(await tiktokPhotosViaPostForMe(item.image_urls!, s!.tiktok_caption, item.package.title ?? "")), scheduled: false };
-    case "threads:carousel": return { ...(await threadsCarousel(item.image_urls!, s!.threads_caption || threadsText(`${s!.instagram_caption}`))), scheduled: false };
+    case "threads:carousel": return { ...(await threadsCarousel(item.image_urls!, threadsText(s!.threads_caption || s!.instagram_caption))), scheduled: false };
     case "facebook:post": {
       const imgs = await Promise.all(item.media.slides!.map(f => media(item, f)));
       return { ...(await facebookAlbumPost(imgs, s!.facebook_caption || `${item.package.title}\n\n${disclaimer}`)), scheduled: false };

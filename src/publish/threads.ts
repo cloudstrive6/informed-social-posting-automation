@@ -38,8 +38,12 @@ async function waitReady(id: string, minutes = 5) {
   throw new Error(`Threads container ${id} not ready after ${minutes} min`);
 }
 
-/** Keep Threads text within its 500-character limit, cutting at a sentence or line break. */
-export function threadsText(text: string) {
+/**
+ * Threads text: no hashtags (house style), within the 500-character limit, cut at a sentence or line break.
+ * Stripping here also covers the fallback that reuses the Instagram caption.
+ */
+export function threadsText(raw: string) {
+  const text = raw.replace(/(^|\s)#[\p{L}\p{N}_]+/gu, "$1").replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
   if (text.length <= 500) return text;
   const cut = text.slice(0, 497);
   const at = Math.max(cut.lastIndexOf("\n"), cut.lastIndexOf(". "));
