@@ -24,6 +24,8 @@ export interface ContentItem {
     thumbnail?: ThumbConcept; social?: SocialCopy; chapters?: string;
   };
   media: { video?: string; thumbnail?: string; slides?: string[]; duration?: number };
+  /** pronunciations learned while narrating this item (merged into data/pronunciations.json at finalize) */
+  pronunciations?: Record<string, string>;
   /** Whisper + visual QA results */
   qa?: Record<string, unknown>;
   release_tag?: string;

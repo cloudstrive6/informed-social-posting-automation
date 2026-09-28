@@ -61,6 +61,7 @@ export async function produceLong(date: string, pieceId: string): Promise<Conten
   const spoken = await directNarration(script.scenes);
   const narration = await narrateChecked(spoken, dir, undefined, "long");
   const { wav, timeline } = narration;
+  if (Object.keys(narration.learned).length) item.pronunciations = narration.learned;
   log.info(`narration: ${(timeline.duration / 60).toFixed(1)} min`);
   const [minMin, maxMin] = config.cadence.longTargetMinutes;
   if ((timeline.duration < minMin * 60 - 10 || timeline.duration > maxMin * 60 + 10) && !held) {

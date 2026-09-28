@@ -30,10 +30,11 @@ def db(x):
     return float(20 * np.log10(np.sqrt(np.mean(np.square(x))) + 1e-9)) if len(x) else -120.0
 
 
-def transcribe(path, out, model="small.en"):
+def transcribe(path, out, model="small.en", prompt_file=None):
     from faster_whisper import WhisperModel
     m = WhisperModel(model, device="cpu", compute_type="int8")
-    segs, _ = m.transcribe(path, word_timestamps=True, language="en", beam_size=5, vad_filter=False)
+    prompt = open(prompt_file, encoding="utf-8").read().strip() if prompt_file else None
+    segs, _ = m.transcribe(path, word_timestamps=True, language="en", beam_size=5, vad_filter=False, initial_prompt=prompt or None)
     words = [{"text": w.word.strip(), "start": round(w.start, 3), "end": round(w.end, 3), "prob": round(w.probability, 3)}
              for s in segs for w in (s.words or []) if w.word.strip()]
     json.dump({"words": words}, open(out, "w", encoding="utf-8"), indent=0)
@@ -82,7 +83,7 @@ def loudness(path):
 if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "transcribe":
-        transcribe(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else "small.en")
+        transcribe(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else "small.en", sys.argv[5] if len(sys.argv) > 5 else None)
     elif cmd == "levels":
         levels(*sys.argv[2:9])
     elif cmd == "loudness":

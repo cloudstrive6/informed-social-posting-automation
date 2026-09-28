@@ -26,6 +26,7 @@ export async function produceShort(date: string, pieceId: string): Promise<Conte
   const spoken = await directNarration(script.scenes);
   const narration = await narrateChecked(spoken, dir, config.voice.kokoroShortVoice, "short");
   const { wav, timeline } = narration;
+  if (Object.keys(narration.learned).length) item.pronunciations = narration.learned;
   log.info(`narration: ${timeline.duration.toFixed(1)} s`);
 
   const built = await buildVideo({

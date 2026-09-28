@@ -14,6 +14,7 @@ import { archiveItem } from "./b2.js";
 import { recordQuality, updateCraftNotes } from "../analytics/quality.js";
 import { notify, notifyDecision, notifyReview } from "../notify/telegram.js";
 import { applyDecision, editorDecision } from "../review/autoReview.js";
+import { saveLearned } from "../media/pronounce.js";
 import { tiktokPost } from "./tiktok.js";
 import { postForMeEnabled, tiktokPhotosViaPostForMe, tiktokViaPostForMe } from "./postforme.js";
 import { threadsCarousel, threadsText } from "./threads.js";
@@ -139,6 +140,7 @@ export async function finalizeDay(date: string) {
     }
     saveItem(item);
     recordQuality(item);
+    if (item.pronunciations) saveLearned(item.pronunciations);
     covered.push({ date, kind: item.kind, topic: item.plan.topic, angle: item.plan.angle, title: item.package.title });
     // merge ElevenLabs spend from the parallel production jobs into the shared monthly counter
     const credits = Number(item.qa?.elevenCredits ?? 0);

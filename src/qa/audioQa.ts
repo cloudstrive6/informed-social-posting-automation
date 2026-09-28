@@ -1,5 +1,5 @@
 /** Whisper-based audio review: did the voice say exactly the script, and is it still intelligible in the final mix? */
-import { existsSync } from "node:fs";
+import { existsSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ROOT } from "../lib/config.js";
 import { readJson } from "../lib/fsx.js";
@@ -9,8 +9,15 @@ import type { Timeline } from "../media/tts.js";
 const py = () => process.env.PYTHON_QA ?? process.env.PYTHON_TTS ?? process.env.PYTHON ?? "python";
 export interface HeardWord { text: string; start: number; end: number; prob: number }
 
-export async function transcribe(audio: string, out: string): Promise<HeardWord[]> {
-  await run(py(), [join(ROOT, "python", "qa_audio.py"), "transcribe", audio, out], { quiet: true });
+/** `vocabulary`: terms the audio should contain (drug names…), given to Whisper so it spells them as written. */
+export async function transcribe(audio: string, out: string, vocabulary: string[] = []): Promise<HeardWord[]> {
+  const args = [join(ROOT, "python", "qa_audio.py"), "transcribe", audio, out];
+  if (vocabulary.length) {
+    const pf = `${out}.prompt.txt`;
+    writeFileSync(pf, `Glossary: ${vocabulary.join(", ")}.`);
+    args.push("small.en", pf);
+  }
+  await run(py(), args, { quiet: true });
   return readJson<{ words: HeardWord[] }>(out).words;
 }
 
@@ -66,19 +73,29 @@ export function normWords(s: string): string[] {
   return out;
 }
 
+/** Levenshtein distance (small strings). */
+function lev(a: string, b: string) {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return d[a.length][b.length];
+}
+/** Same word, allowing the transcriber's spelling of a long technical term ("terzepatide" for "tirzepatide"). */
+export const sameWord = (a: string, b: string) => a === b || (a.length >= 7 && b.length >= 7 && lev(a, b) <= 2);
+
 /** Word error rate + the mismatched stretches (for reports and retakes). */
 export function wer(expected: string[], heard: string[]): { wer: number; diffs: string[] } {
   const n = expected.length, m = heard.length;
   const d = Array.from({ length: n + 1 }, (_, i) => Array.from({ length: m + 1 }, (_, j) => (i === 0 ? j : j === 0 ? i : 0)));
   for (let i = 1; i <= n; i++) for (let j = 1; j <= m; j++) {
-    d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (expected[i - 1] === heard[j - 1] ? 0 : 1));
+    d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (sameWord(expected[i - 1], heard[j - 1]) ? 0 : 1));
   }
   // backtrace mismatches
   const diffs: string[] = [];
   let i = n, j = m, buf: [string[], string[]] = [[], []];
   const flush = () => { if (buf[0].length || buf[1].length) diffs.unshift(`expected "${buf[0].reverse().join(" ")}" heard "${buf[1].reverse().join(" ")}"`); buf = [[], []]; };
   while (i > 0 || j > 0) {
-    if (i > 0 && j > 0 && expected[i - 1] === heard[j - 1] && d[i][j] === d[i - 1][j - 1]) { flush(); i--; j--; }
+    if (i > 0 && j > 0 && sameWord(expected[i - 1], heard[j - 1]) && d[i][j] === d[i - 1][j - 1]) { flush(); i--; j--; }
     else if (i > 0 && j > 0 && d[i][j] === d[i - 1][j - 1] + 1) { buf[0].push(expected[--i]); buf[1].push(heard[--j]); }
     else if (i > 0 && d[i][j] === d[i - 1][j] + 1) buf[0].push(expected[--i]);
     else buf[1].push(heard[--j]);
@@ -90,8 +107,8 @@ export function wer(expected: string[], heard: string[]): { wer: number; diffs: 
 export interface SceneCheck { id: string; wer: number; diffs: string[]; lowConfidence: number }
 
 /** Compare each narrated scene with what it was supposed to say. */
-export async function checkNarration(wav: string, tl: Timeline, spoken: { id: string; text: string }[], workDir: string): Promise<SceneCheck[]> {
-  const heard = await transcribe(wav, join(workDir, "qa-narration-transcript.json"));
+export async function checkNarration(wav: string, tl: Timeline, spoken: { id: string; text: string }[], workDir: string, vocabulary: string[] = []): Promise<SceneCheck[]> {
+  const heard = await transcribe(wav, join(workDir, "qa-narration-transcript.json"), vocabulary);
   const byId = new Map(spoken.map(s => [s.id, s.text]));
   return tl.scenes.map((sc, i) => {
     const end = tl.scenes[i + 1]?.start ?? tl.duration;

@@ -1,6 +1,7 @@
 import { join } from "node:path";
 import type { VideoQa } from "../media/buildVideo.js";
 import { narrate } from "../media/tts.js";
+import { applyLexicon, learnPronunciations, lexiconTerms, loadLexicon } from "../media/pronounce.js";
 import { checkNarration, SceneCheck } from "../qa/audioQa.js";
 import { writeJson } from "../lib/fsx.js";
 import { runAgent, AgentName } from "../lib/agent.js";
@@ -90,24 +91,33 @@ export async function directNarration(scenes: Scene[]): Promise<{ id: string; te
  * ElevenLabs: re-voice only the scenes that came out wrong (up to N retakes). Chatterbox: one full retake.
  */
 export async function narrateChecked(spoken: { id: string; text: string; speed: number; pause_after_ms: number }[], dir: string, voice?: string, kind = "short") {
+  // pronunciation: look up any new hard terms, then give the voice one fixed respelling per term
+  const learned = await learnPronunciations(spoken.map(s => s.text).join("\n"));
+  const lex = { ...loadLexicon(), ...learned };
+  const used = new Set<string>();
+  const voiced = spoken.map(s => { const r = applyLexicon(s.text, lex); r.used.forEach(u => used.add(u)); return { ...s, text: r.text }; });
+  const vocabulary = lexiconTerms([...used]);
+  if (used.size) log.info(`pronunciation: ${[...used].map(t => `${t} → ${lex[t]}`).join(", ")}`);
+  writeJson(join(dir, "pronunciations-used.json"), Object.fromEntries([...used].map(t => [t, lex[t]])));
+
   const redo = new Map<string, number>();
-  let res = await narrate(spoken, dir, voice, redo, kind);
+  let res = await narrate(voiced, dir, voice, redo, kind);
   let checks: SceneCheck[] = [];
-  if (!config.qa.enabled) return { ...res, checks, wer: 0, spokenText: spoken.map(s => s.text).join(" ") };
+  if (!config.qa.enabled) return { ...res, checks, wer: 0, spokenText: spoken.map(s => s.text).join(" "), learned };
   const eleven = res.provider === "elevenlabs";
   for (let attempt = 0; attempt <= config.qa.narrationMaxRetakes; attempt++) {
-    checks = await checkNarration(res.wav, res.timeline, spoken, dir);
+    checks = await checkNarration(res.wav, res.timeline, spoken, dir, vocabulary);
     const bad = checks.filter(c => c.wer > config.qa.sceneWerThreshold);
     log.info(`narration QA: ${checks.length - bad.length}/${checks.length} scenes clean${bad.length ? ` — retake: ${bad.map(b => `${b.id} (${Math.round(b.wer * 100)}% ${b.diffs[0] ?? ""})`).join("; ")}` : ""}`);
     if (!bad.length || attempt === config.qa.narrationMaxRetakes) break;
-    if (eleven) { bad.forEach(b => redo.set(b.id, (redo.get(b.id) ?? 0) + 1)); res = await narrate(spoken, dir, voice, redo, kind); }
-    else if (res.provider === "chatterbox" && attempt === 0) res = await narrate(spoken, dir, voice, new Map(), kind);
+    if (eleven) { bad.forEach(b => redo.set(b.id, (redo.get(b.id) ?? 0) + 1)); res = await narrate(voiced, dir, voice, redo, kind); }
+    else if (res.provider === "chatterbox" && attempt === 0) res = await narrate(voiced, dir, voice, new Map(), kind);
     else break;
   }
   const words = spoken.reduce((a, s) => a + s.text.split(/\s+/).length, 0);
   const wer = checks.reduce((a, c) => a + c.wer * (spoken.find(s => s.id === c.id)?.text.split(/\s+/).length ?? 0), 0) / Math.max(1, words);
   writeJson(join(dir, "qa-narration.json"), { wer, checks });
-  return { ...res, checks, wer: +wer.toFixed(3), spokenText: spoken.map(s => s.text).join(" ") };
+  return { ...res, checks, wer: +wer.toFixed(3), spokenText: spoken.map(s => s.text).join(" "), learned };
 }
 
 /** QA problems that should stop auto-publishing (the item is held for human review instead). */
