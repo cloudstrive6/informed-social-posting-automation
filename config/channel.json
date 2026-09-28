@@ -51,7 +51,7 @@
     ]
   },
   "schedule": {
-    "_comment": "Local times in audience.timezone. Each piece posts at the same time on every platform of its kind: short = YouTube Shorts + Instagram Reels + TikTok + Facebook Reels; carousel = Instagram + Facebook + TikTok (photo) + Threads; long = YouTube.",
+    "_comment": "Local times in audience.timezone (\"+1\" = next day). Each piece posts at the same time on every platform of its kind: short = YouTube Shorts + Instagram Reels + TikTok + Facebook Reels; carousel = Instagram + Facebook + TikTok (photo) + Threads; long = YouTube, spaced 8 hours apart so the videos don't compete for each other's reach.",
     "short": [
       "08:00",
       "13:00",
@@ -59,8 +59,8 @@
     ],
     "long": [
       "09:00",
-      "16:00",
-      "19:00"
+      "17:00",
+      "01:00+1"
     ],
     "carousel": [
       "14:00",

@@ -2,7 +2,7 @@ import { join } from "node:path";
 import { config, DATA, ScheduleKey } from "./config.js";
 import { listDirs, readJson, writeJson } from "./fsx.js";
 import type { Carousel, FactCheck, PlannedPiece, Script, SocialCopy, ThumbConcept } from "./schemas.js";
-import { zonedToUtc } from "./time.js";
+import { slotTime } from "./time.js";
 import { readdirSync, existsSync } from "node:fs";
 
 export type Platform = "youtube" | "instagram" | "facebook" | "tiktok" | "threads";
@@ -59,7 +59,7 @@ export function targetsFor(kind: ContentItem["kind"], index: number, date: strin
   // every platform of a kind shares the kind's slot, so a piece drops everywhere at the same moment
   const times = config.schedule[kind] ?? [];
   if (!times.length) return [];
-  const slot = zonedToUtc(date, times[index % times.length], tz).toISOString();
+  const slot = slotTime(date, times[index % times.length], tz).toISOString();
   const mk = (platform: Platform, format: PostFormat): PostTarget[] =>
     p[platform] ? [{ platform, format, slotKey: kind, slot, status: "pending", attempts: 0 }] : [];
   if (kind === "long") return mk("youtube", "long");

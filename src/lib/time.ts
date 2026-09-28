@@ -23,6 +23,12 @@ export function zonedToUtc(date: string, hhmm: string, tz: string): Date {
 }
 
 /** Today's date (YYYY-MM-DD) in tz. */
+/** A schedule time: "HH:MM" on the content date, or "HH:MM+1" for the next day (e.g. the overnight long video). */
+export function slotTime(date: string, spec: string, tz: string): Date {
+  const [hhmm, plus] = spec.split("+");
+  return zonedToUtc(plus ? addDays(date, Number(plus)) : date, hhmm, tz);
+}
+
 export function localDate(tz: string, d = new Date()): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: tz, year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
 }

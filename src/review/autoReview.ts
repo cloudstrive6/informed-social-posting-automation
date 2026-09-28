@@ -7,7 +7,7 @@ import { runAgent } from "../lib/agent.js";
 import { config } from "../lib/config.js";
 import { ContentItem, loadItems, PostTarget } from "../lib/items.js";
 import { log } from "../lib/log.js";
-import { addDays, localDate, zonedToUtc } from "../lib/time.js";
+import { addDays, localDate, slotTime } from "../lib/time.js";
 
 export interface EditorDecision { decision: "publish" | "drop"; reason: string; risk: "low" | "medium" | "high" }
 const schema = {
@@ -58,7 +58,7 @@ export function rescheduleIntoFreeSlots(item: ContentItem) {
   const today = localDate(tz);
   for (let d = 0; d < 7; d++) {
     for (const hhmm of times) {
-      const iso = new Date(zonedToUtc(addDays(today, d), hhmm, tz).getTime() + (d === 0 ? 0 : 75 * 60_000)).toISOString();
+      const iso = new Date(slotTime(addDays(today, d), hhmm, tz).getTime() + (d === 0 ? 0 : 75 * 60_000)).toISOString();
       if (Date.parse(iso) > now && due.every(p => !taken.has(`${p.platform}:${iso}`))) { for (const p of due) p.slot = iso; return; }
     }
   }
