@@ -5,7 +5,7 @@ import type { Carousel, FactCheck, PlannedPiece, Script, SocialCopy, ThumbConcep
 import { zonedToUtc } from "./time.js";
 import { readdirSync, existsSync } from "node:fs";
 
-export type Platform = "youtube" | "instagram" | "facebook" | "tiktok";
+export type Platform = "youtube" | "instagram" | "facebook" | "tiktok" | "threads";
 export type PostFormat = "long" | "short" | "reel" | "carousel" | "post";
 
 export interface PostTarget {
@@ -56,18 +56,13 @@ export function loadItems(dates?: string[]): ContentItem[] {
 export function targetsFor(kind: ContentItem["kind"], index: number, date: string): PostTarget[] {
   const tz = config.audience.timezone;
   const p = config.platforms;
-  const mk = (platform: Platform, format: PostFormat, slotKey: ScheduleKey): PostTarget[] => {
-    const times = config.schedule[slotKey];
-    if (!p[platform] || !times?.length) return [];
-    const hhmm = times[index % times.length];
-    return [{ platform, format, slotKey, slot: zonedToUtc(date, hhmm, tz).toISOString(), status: "pending", attempts: 0 }];
-  };
-  if (kind === "long") return mk("youtube", "long", "youtube_long");
-  if (kind === "short") return [
-    ...mk("youtube", "short", "youtube_short"),
-    ...mk("instagram", "reel", "instagram_reel"),
-    ...mk("tiktok", "short", "tiktok"),
-    ...mk("facebook", "reel", "facebook_reel"),
-  ];
-  return [...mk("instagram", "carousel", "instagram_carousel"), ...mk("facebook", "post", "facebook_post")];
+  // every platform of a kind shares the kind's slot, so a piece drops everywhere at the same moment
+  const times = config.schedule[kind] ?? [];
+  if (!times.length) return [];
+  const slot = zonedToUtc(date, times[index % times.length], tz).toISOString();
+  const mk = (platform: Platform, format: PostFormat): PostTarget[] =>
+    p[platform] ? [{ platform, format, slotKey: kind, slot, status: "pending", attempts: 0 }] : [];
+  if (kind === "long") return mk("youtube", "long");
+  if (kind === "short") return [...mk("youtube", "short"), ...mk("instagram", "reel"), ...mk("tiktok", "short"), ...mk("facebook", "reel")];
+  return [...mk("instagram", "carousel"), ...mk("facebook", "post"), ...mk("tiktok", "carousel"), ...mk("threads", "carousel")];
 }

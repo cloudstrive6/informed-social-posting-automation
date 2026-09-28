@@ -34,6 +34,29 @@ async function uploadMedia(file: string): Promise<string> {
   return media_url;
 }
 
+/** TikTok photo carousel (the same slides as Instagram), with TikTok's auto-added music. */
+export async function tiktokPhotosViaPostForMe(imageUrls: string[], caption: string, title: string) {
+  const account = await tiktokAccount();
+  const post = await postJson<{ id: string; status: string }>("/social-posts", {
+    caption: caption.slice(0, 2200), social_accounts: [account],
+    media: imageUrls.slice(0, 35).map(url => ({ url })),
+    platform_configurations: { tiktok: { title: title.slice(0, 90), privacy_status: env("TIKTOK_PRIVACY") ?? "public", allow_comment: true, auto_add_music: true } },
+  });
+  return waitResult(post.id);
+}
+
+async function waitResult(postId: string) {
+  for (let i = 0; i < 40; i++) {
+    await sleep(15_000);
+    const r = await get<{ data: { success: boolean; error?: unknown; platform_data?: { id?: string; url?: string } }[] }>(`/social-post-results?post_id=${postId}`);
+    const res = r.data[0];
+    if (!res) continue;
+    if (!res.success) throw new Error(`TikTok (Post for Me) failed: ${JSON.stringify(res.error).slice(0, 400)}`);
+    return { id: res.platform_data?.id ?? postId, url: res.platform_data?.url };
+  }
+  return { id: postId, url: undefined };
+}
+
 export async function tiktokViaPostForMe(file: string, caption: string) {
   const account = await tiktokAccount();
   const url = await uploadMedia(file);

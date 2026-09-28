@@ -49,21 +49,18 @@ export async function editorDecision(item: ContentItem): Promise<EditorDecision>
 export function rescheduleIntoFreeSlots(item: ContentItem) {
   const tz = config.audience.timezone;
   const now = Date.now() + 10 * 60_000;
+  const due = item.posts.filter(p => p.status === "pending" && Date.parse(p.slot) <= now);
+  if (!due.length) return;
+  // one shared slot for the whole piece, free on every platform it posts to
   const taken = new Set(loadItems().filter(i => i.id !== item.id).flatMap(i => i.posts)
-    .filter(p => p.status === "pending" || p.status === "scheduled").map(p => `${p.platform}:${p.format}:${p.slot}`));
+    .filter(p => p.status === "pending" || p.status === "scheduled").map(p => `${p.platform}:${p.slot}`));
+  const times = config.schedule[item.kind] ?? [];
   const today = localDate(tz);
-  for (const p of item.posts) {
-    if (p.status !== "pending" || Date.parse(p.slot) > now) continue;
-    const times = config.schedule[p.slotKey] ?? [];
-    let found: string | undefined;
-    for (let d = 0; d < 7 && !found; d++) {
-      for (const hhmm of times) {
-        const base = zonedToUtc(addDays(today, d), hhmm, tz).getTime() + (d === 0 ? 0 : 75 * 60_000);
-        const iso = new Date(base).toISOString();
-        if (base > now && !taken.has(`${p.platform}:${p.format}:${iso}`)) { found = iso; break; }
-      }
+  for (let d = 0; d < 7; d++) {
+    for (const hhmm of times) {
+      const iso = new Date(zonedToUtc(addDays(today, d), hhmm, tz).getTime() + (d === 0 ? 0 : 75 * 60_000)).toISOString();
+      if (Date.parse(iso) > now && due.every(p => !taken.has(`${p.platform}:${iso}`))) { for (const p of due) p.slot = iso; return; }
     }
-    if (found) { p.slot = found; taken.add(`${p.platform}:${p.format}:${found}`); }
   }
 }
 

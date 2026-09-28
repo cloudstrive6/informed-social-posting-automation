@@ -51,46 +51,28 @@
     ]
   },
   "schedule": {
-    "_comment": "Local times in audience.timezone. Equally spaced around audience online peaks. The analytics agent proposes changes in data/learnings.md.",
-    "youtube_long": [
-      "09:00",
-      "14:00",
-      "19:00"
-    ],
-    "youtube_short": [
-      "11:30",
-      "16:30",
-      "21:00"
-    ],
-    "instagram_reel": [
+    "_comment": "Local times in audience.timezone. Each piece posts at the same time on every platform of its kind: short = YouTube Shorts + Instagram Reels + TikTok + Facebook Reels; carousel = Instagram + Facebook + TikTok (photo) + Threads; long = YouTube.",
+    "short": [
       "08:00",
       "13:00",
       "20:00"
     ],
-    "instagram_carousel": [
-      "10:30",
+    "long": [
+      "09:00",
+      "16:00",
+      "19:00"
+    ],
+    "carousel": [
+      "14:00",
       "17:30"
-    ],
-    "tiktok": [
-      "09:30",
-      "15:30",
-      "21:30"
-    ],
-    "facebook_reel": [
-      "08:30",
-      "13:30",
-      "19:30"
-    ],
-    "facebook_post": [
-      "11:00",
-      "18:00"
     ]
   },
   "platforms": {
     "youtube": true,
     "instagram": true,
     "facebook": true,
-    "tiktok": true
+    "tiktok": true,
+    "threads": true
   },
   "voice": {
     "provider": "elevenlabs",

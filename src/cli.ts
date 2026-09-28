@@ -12,7 +12,8 @@ import { produceLong } from "./produce/long.js";
 import { produceShort } from "./produce/short.js";
 import { finalizeDay, publishDue, publishNow } from "./publish/publisher.js";
 import { reportFailure, syncReviews } from "./review/issues.js";
-import { pollTelegram } from "./notify/telegram.js";
+import { notify, pollTelegram } from "./notify/telegram.js";
+import { refreshThreadsToken } from "./publish/threads.js";
 import { runRadar } from "./trends/radar.js";
 
 const [cmd, ...rest] = process.argv.slice(2);
@@ -71,6 +72,8 @@ const commands: Record<string, () => Promise<unknown>> = {
   // listen for up to N seconds (default 270), applying each decision as soon as it's tapped
   "telegram-poll": () => pollTelegram(Number(rest[0] ?? 270), () => syncReviews()),
   analytics: () => runAnalytics(),
+  // keep the 60-day Threads token alive (stored in B2); alert if renewal fails
+  "threads-refresh": async () => { if (!(await refreshThreadsToken())) await notify("⚠️ Threads token renewal failed. Posting to Threads will stop when the token expires; generate a new one in the Meta app (Threads API → Settings → User Token Generator)."); },
   doctor,
 };
 

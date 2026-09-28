@@ -40,7 +40,7 @@
     {
       "platform": "instagram",
       "format": "carousel",
-      "slotKey": "instagram_carousel",
+      "slotKey": "carousel",
       "slot": "2026-09-28T15:45:00.000Z",
       "status": "pending",
       "attempts": 0
@@ -48,8 +48,24 @@
     {
       "platform": "facebook",
       "format": "post",
-      "slotKey": "facebook_post",
-      "slot": "2026-09-28T16:15:00.000Z",
+      "slotKey": "carousel",
+      "slot": "2026-09-28T15:45:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "platform": "tiktok",
+      "format": "carousel",
+      "slotKey": "carousel",
+      "slot": "2026-09-28T15:45:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "platform": "threads",
+      "format": "carousel",
+      "slotKey": "carousel",
+      "slot": "2026-09-28T15:45:00.000Z",
       "status": "pending",
       "attempts": 0
     }

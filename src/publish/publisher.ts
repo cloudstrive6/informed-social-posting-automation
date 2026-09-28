@@ -15,7 +15,8 @@ import { recordQuality, updateCraftNotes } from "../analytics/quality.js";
 import { notify, notifyDecision, notifyReview } from "../notify/telegram.js";
 import { applyDecision, editorDecision } from "../review/autoReview.js";
 import { tiktokPost } from "./tiktok.js";
-import { postForMeEnabled, tiktokViaPostForMe } from "./postforme.js";
+import { postForMeEnabled, tiktokPhotosViaPostForMe, tiktokViaPostForMe } from "./postforme.js";
+import { threadsCarousel, threadsText } from "./threads.js";
 import { setThumbnail, uploadVideo } from "./youtube.js";
 
 const LOG = join(DATA, "published", "log.jsonl");
@@ -60,6 +61,8 @@ async function publishOne(item: ContentItem, p: PostTarget) {
       return { ...(postForMeEnabled() ? await tiktokViaPostForMe(file, s!.tiktok_caption) : await tiktokPost(file, s!.tiktok_caption)), scheduled: false };
     }
     case "facebook:reel": return { ...(await facebookReel(await media(item, item.media.video!), s!.facebook_caption)), scheduled: false };
+    case "tiktok:carousel": return { ...(await tiktokPhotosViaPostForMe(item.image_urls!, s!.tiktok_caption, item.package.title ?? "")), scheduled: false };
+    case "threads:carousel": return { ...(await threadsCarousel(item.image_urls!, s!.threads_caption || threadsText(`${s!.instagram_caption}`))), scheduled: false };
     case "facebook:post": {
       const imgs = await Promise.all(item.media.slides!.map(f => media(item, f)));
       return { ...(await facebookAlbumPost(imgs, s!.facebook_caption || `${item.package.title}\n\n${disclaimer}`)), scheduled: false };
@@ -152,7 +155,7 @@ export async function finalizeDay(date: string) {
     `📦 <b>Daily production ${date}</b>`,
     `${all.filter(i => i.status === "ready").length} ready · ${all.filter(i => i.status === "held").length} held for review · ${all.filter(i => i.status === "failed").length} failed`,
     "", ...all.map(line),
-    "", config.review.mode === "auto" ? `Posting follows the schedule (${config.audience.timezone}). 🟡 = dropped by the Editor-in-Chief.` : `Posting starts ${config.schedule.instagram_reel?.[0] ?? ""} (${config.audience.timezone}). Held items need your ✅ above.`,
+    "", config.review.mode === "auto" ? `Posting follows the schedule (${config.audience.timezone}). 🟡 = dropped by the Editor-in-Chief.` : `Posting starts ${config.schedule.short?.[0] ?? ""} (${config.audience.timezone}). Held items need your ✅ above.`,
   ].join("\n"));
 
   // YouTube supports native scheduling: upload now, it goes public exactly at the slot.

@@ -7,9 +7,8 @@ try { process.loadEnvFile(join(ROOT, ".env")); } catch { /* no .env */ }
 export const DATA = join(ROOT, "data");
 export const OUT = join(ROOT, "out");
 
-export type ScheduleKey =
-  | "youtube_long" | "youtube_short" | "instagram_reel" | "instagram_carousel"
-  | "tiktok" | "facebook_reel" | "facebook_post";
+/** One posting slot list per content kind: every platform of that kind posts at the same time. */
+export type ScheduleKey = "short" | "long" | "carousel";
 
 export interface ChannelConfig {
   brand: {
@@ -26,7 +25,7 @@ export interface ChannelConfig {
     longTargetMinutes: [number, number]; shortTargetSeconds: [number, number];
   };
   schedule: Record<ScheduleKey, string[]>;
-  platforms: Record<"youtube" | "instagram" | "facebook" | "tiktok", boolean>;
+  platforms: Record<"youtube" | "instagram" | "facebook" | "tiktok" | "threads", boolean>;
   voice: {
     provider: "elevenlabs" | "chatterbox" | "kokoro"; chatterboxModel: "turbo" | "base"; voiceRef?: string; exaggeration: number;
     elevenlabs: { voiceId: string; model: string; stability: number; similarity: number; style: number; monthlyCredits: number; creditsPerChar: number; useFor: string[]; renewDay: number };

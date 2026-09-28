@@ -6,7 +6,7 @@
  */
 import { createReadStream, existsSync, readdirSync, statSync } from "node:fs";
 import { basename, extname, join } from "node:path";
-import { S3Client } from "@aws-sdk/client-s3";
+import { GetObjectCommand, PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import { Upload } from "@aws-sdk/lib-storage";
 import { env } from "../lib/config.js";
 import { log } from "../lib/log.js";
@@ -41,6 +41,24 @@ export async function uploadToB2(file: string, key: string) {
     params: { Bucket: bucket(), Key: key, Body: createReadStream(file), ContentType: TYPES[extname(file).toLowerCase()] ?? "application/octet-stream" },
   });
   await upload.done();
+}
+
+/** Small JSON state kept privately in the bucket (e.g. the auto-renewed Threads token). */
+export async function readFromB2<T>(key: string): Promise<T | undefined> {
+  const s3 = b2();
+  if (!s3) return undefined;
+  try {
+    const r = await s3.send(new GetObjectCommand({ Bucket: bucket(), Key: key }));
+    return JSON.parse(await r.Body!.transformToString()) as T;
+  } catch (e) {
+    if ((e as { name?: string }).name === "NoSuchKey") return undefined;
+    throw e;
+  }
+}
+export async function writeToB2(key: string, value: unknown) {
+  const s3 = b2();
+  if (!s3) throw new Error("B2 is not configured");
+  await s3.send(new PutObjectCommand({ Bucket: bucket(), Key: key, Body: JSON.stringify(value), ContentType: "application/json" }));
 }
 
 /** Archive one produced item. Never throws: archiving must not block publishing. */

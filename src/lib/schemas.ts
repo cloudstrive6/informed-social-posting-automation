@@ -150,11 +150,11 @@ export const longPackagingSchema = obj({ title: str, thumbnail_headline: str, th
 
 export interface SocialCopy {
   youtube_short_title: string; youtube_short_description: string;
-  instagram_caption: string; tiktok_caption: string; facebook_caption: string;
+  instagram_caption: string; tiktok_caption: string; facebook_caption: string; threads_caption: string;
 }
 export const socialCopySchema = obj({
   youtube_short_title: str, youtube_short_description: str,
-  instagram_caption: str, tiktok_caption: str, facebook_caption: str,
+  instagram_caption: str, tiktok_caption: str, facebook_caption: str, threads_caption: str,
 });
 
 // ---------- Carousels (comic infographics) ----------

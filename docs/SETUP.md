@@ -72,6 +72,13 @@ TikTok posts go through [Post for Me](https://app.postforme.dev), whose approved
 
 The older direct TikTok API path (`npm run auth:tiktok`, `TIKTOK_*` secrets) still works if no Post for Me key is set.
 
+## 5b. Threads (Meta app, carousels)
+
+Threads posts go through our Meta app **InforMed Publisher**, which has the **Access the Threads API** use case (permissions `threads_basic`, `threads_content_publish`, `threads_manage_insights`).
+1. App roles → add **informedlab** as a **Threads Tester**, then accept it in Threads → Settings → Account → Website permissions → Invites. (Testers can post without app review.)
+2. Use cases → Access the Threads API → Settings → **User Token Generator** → generate a token → secret **`THREADS_ACCESS_TOKEN`** (also `THREADS_APP_ID`, `THREADS_APP_SECRET`).
+3. Tokens last 60 days. The daily Analytics workflow renews the token and keeps it in the private B2 bucket (`secrets/threads-token.json`), and sends a Telegram alert if renewal ever fails.
+
 ## 6. Optional trend sources
 
 - Reddit (Reddit blocks anonymous requests from GitHub's servers): https://www.reddit.com/prefs/apps → create a "script" app → `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`.
