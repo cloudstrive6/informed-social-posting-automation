@@ -12,7 +12,8 @@ import { facebookAlbumPost, facebookReel, instagramCarousel, instagramReel } fro
 import { downloadFromRelease, publishImages, releaseAssetUrl, uploadToRelease } from "./storage.js";
 import { archiveItem } from "./b2.js";
 import { recordQuality, updateCraftNotes } from "../analytics/quality.js";
-import { notify, notifyReview } from "../notify/telegram.js";
+import { notify, notifyDecision, notifyReview } from "../notify/telegram.js";
+import { applyDecision, editorDecision } from "../review/autoReview.js";
 import { tiktokPost } from "./tiktok.js";
 import { postForMeEnabled, tiktokViaPostForMe } from "./postforme.js";
 import { setThumbnail, uploadVideo } from "./youtube.js";
@@ -117,7 +118,13 @@ export async function finalizeDay(date: string) {
     // A slot that already passed (e.g. a late re-run) goes out ASAP instead of being skipped.
     for (const p of item.posts) if (Date.parse(p.slot) < Date.now() + 10 * 60_000) p.slot = new Date(Date.now() + 10 * 60_000).toISOString();
 
-    if (item.status === "held") {
+    if (item.status === "held" && config.review.mode === "auto" && process.env.TEST_RUN !== "1") {
+      // fully automated: the Editor-in-Chief makes the final call; the owner just gets an FYI (with a veto button)
+      for (const p of item.posts) p.status = "held";
+      const d = await editorDecision(item);
+      applyDecision(item, d);
+      await notifyDecision(item, d);
+    } else if (item.status === "held") {
       for (const p of item.posts) p.status = "held";
       item.review_issue = await openReviewIssue(item);
       if (item.review_issue) {
@@ -145,7 +152,7 @@ export async function finalizeDay(date: string) {
     `📦 <b>Daily production ${date}</b>`,
     `${all.filter(i => i.status === "ready").length} ready · ${all.filter(i => i.status === "held").length} held for review · ${all.filter(i => i.status === "failed").length} failed`,
     "", ...all.map(line),
-    "", `Posting starts ${config.schedule.instagram_reel?.[0] ?? ""} (${config.audience.timezone}). Held items need your ✅ above.`,
+    "", config.review.mode === "auto" ? `Posting follows the schedule (${config.audience.timezone}). 🟡 = dropped by the Editor-in-Chief.` : `Posting starts ${config.schedule.instagram_reel?.[0] ?? ""} (${config.audience.timezone}). Held items need your ✅ above.`,
   ].join("\n"));
 
   // YouTube supports native scheduling: upload now, it goes public exactly at the slot.

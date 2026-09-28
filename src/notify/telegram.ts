@@ -6,9 +6,9 @@
  */
 import { existsSync, readFileSync, statSync } from "node:fs";
 import { basename } from "node:path";
-import { DATA, env } from "../lib/config.js";
+import { config, DATA, env } from "../lib/config.js";
 import { readJson, writeJson } from "../lib/fsx.js";
-import type { ContentItem } from "../lib/items.js";
+import { ContentItem, itemPath, saveItem } from "../lib/items.js";
 import { log } from "../lib/log.js";
 import { ffmpeg, run } from "../media/exec.js";
 
@@ -96,6 +96,20 @@ export async function notifyReview(item: ContentItem, issue: number, files: { vi
   });
 }
 
+/** Fully automated mode: FYI on the Editor-in-Chief's call, with a veto button for anything it publishes. */
+export async function notifyDecision(item: ContentItem, d: { decision: string; reason: string; risk: string }) {
+  if (!telegramEnabled()) return;
+  const title = esc(item.package.title ?? item.plan.working_title);
+  const ref = `${item.date}/${item.id}`;
+  if (d.decision === "publish") {
+    const first = item.posts.map(p => Date.parse(p.slot)).sort((a, b) => a - b)[0];
+    await notify(`🟢 <b>Auto-approved</b> (${esc(item.kind)}, ${esc(d.risk)} risk)\n<b>${title}</b>\n\n${esc(d.reason)}${first ? `\n\nFirst post: ${new Date(first).toLocaleString("en-US", { timeZone: config.audience.timezone, dateStyle: "medium", timeStyle: "short" })}` : ""}`,
+      { silent: true, buttons: `veto:${ref}`.length <= 64 ? [[{ text: "🛑 Don't post", callback_data: `veto:${ref}` }]] : undefined });
+  } else {
+    await notify(`⚪ <b>Dropped by the Editor-in-Chief</b> (${esc(item.kind)})\n<b>${title}</b>\n\n${esc(d.reason)}`, { silent: true });
+  }
+}
+
 // ------------------------------------------------------------------ approvals (polled from Actions)
 const STATE = `${DATA}/telegram/state.json`;
 const gh = (args: string[]) => run("gh", args, { quiet: true });
@@ -128,7 +142,23 @@ export async function pollTelegram(seconds = 0, onDecision: () => Promise<void> 
   return decided;
 }
 
+/** Owner veto of an auto-approved item: nothing that hasn't gone out yet will be posted. */
+async function handleVeto(q: any, ref: string) {
+  await tg("answerCallbackQuery", { callback_query_id: q.id, text: "Stopping it 🛑" }).catch(() => undefined);
+  const [date, id] = ref.split("/");
+  const item = readJson<ContentItem | undefined>(itemPath(date, id), undefined);
+  if (!item) { await notify(`⚠️ Couldn't find ${esc(ref)}`); return; }
+  const ytScheduled = item.posts.filter(p => p.platform === "youtube" && p.status === "scheduled");
+  item.status = "held"; item.hold_reason = "Vetoed by the owner on Telegram";
+  for (const p of item.posts) if (p.status === "pending" || p.status === "held") p.status = "skipped";
+  saveItem(item);
+  await tg("editMessageReplyMarkup", { chat_id: chatId(), message_id: q.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => undefined);
+  const done = item.posts.filter(p => p.status === "published").map(p => p.platform);
+  await notify(`🛑 <b>Stopped</b>: ${esc(item.package.title ?? id)}${done.length ? `\nAlready live on: ${done.join(", ")}` : ""}${ytScheduled.length ? `\n⚠️ YouTube already has it scheduled; delete it in YouTube Studio if needed.` : ""}`);
+}
+
 async function handleTap(q: any, onDecision: () => Promise<void>): Promise<boolean> {
+  if (typeof q.data === "string" && q.data.startsWith("veto:")) { await handleVeto(q, q.data.slice(5)); return false; }
   const m = /^(ap|rj):(\d+)$/.exec(q.data ?? "");
   if (!m) return false;
   const label = m[1] === "ap" ? "approved" : "rejected";

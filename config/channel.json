@@ -180,5 +180,9 @@
     "visualRounds": 1,
     "minShotScore": 6,
     "_comment": "Whisper checks every narrated scene against the script (retakes bad ones) and the final mix for masking; the Visual Critic reviews key frames and sends weak shots back to the Motion Designer."
+  },
+  "review": {
+    "_comment": "auto: the Editor-in-Chief agent makes the final publish/drop call on held content (owner gets Telegram FYIs with a veto button). human: held content waits for Approve/Reject.",
+    "mode": "auto"
   }
 }
