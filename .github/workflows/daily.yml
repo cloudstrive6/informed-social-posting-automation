@@ -4,7 +4,10 @@ name: Daily production
 
 on:
   schedule:
-    - cron: "0 6 * * *" # 02:00 New York (EDT) — everything is ready well before the first slot
+    - cron: "0 6 * * *"  # 02:00 New York (EDT)
+    # backups: GitHub sometimes drops scheduled runs. A backup exits right away if today's run already started.
+    - cron: "30 6 * * *"
+    - cron: "0 7 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -43,6 +46,7 @@ jobs:
       long: ${{ steps.plan.outputs.long }}
       short: ${{ steps.plan.outputs.short }}
       carousel: ${{ steps.plan.outputs.carousel }}
+      skip: ${{ steps.plan.outputs.skip }}
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
@@ -59,6 +63,17 @@ jobs:
           D="${{ inputs.date }}"
           if [ -z "$D" ]; then D=$(TZ=$(jq -r .audience.timezone config/channel.json) date +%F); fi
           echo "date=$D" >> "$GITHUB_OUTPUT"
+          # duplicate guard for scheduled (and backup) starts: one production run per day
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            SINCE=$(date -u -d "-20 hours" +%Y-%m-%dT%H:%M:%SZ)
+            OTHERS=$(gh run list --workflow daily.yml --limit 20 --json databaseId,createdAt,status,conclusion \
+              --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.createdAt >= \"$SINCE\") | select(.status != \"completed\" or .conclusion == \"success\")] | length")
+            if [ "$OTHERS" != "0" ]; then
+              echo "Today's production already started in another run; skipping."
+              { echo "long=[]"; echo "short=[]"; echo "carousel=[]"; echo "skip=true"; } >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          fi
           npx tsx src/cli.ts plan --date "$D"
           # manual re-runs: blank out the kinds that weren't asked for
           ONLY="${{ inputs.only || 'all' }}"
@@ -166,7 +181,7 @@ jobs:
 
   finalize:
     needs: [plan, long, short, carousel]
-    if: always() && needs.plan.result == 'success'
+    if: always() && needs.plan.result == 'success' && needs.plan.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
