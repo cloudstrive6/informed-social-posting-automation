@@ -1,7 +1,7 @@
 # Blueprint: fully automated faceless social channel
 
 How the InforMed system is built, published and operated, written so it can be recreated for another niche.
-(Code: this repo. Setup details: [SETUP.md](SETUP.md). Visual style: [STYLE.md](STYLE.md).)
+(Code: this repo. Setup details: [SETUP.md](SETUP.md). Connecting the social accounts: [SOCIAL-ACCOUNTS-SETUP.md](SOCIAL-ACCOUNTS-SETUP.md). Visual style: [STYLE.md](STYLE.md).)
 _Last updated 2026-09-29._
 
 ---
