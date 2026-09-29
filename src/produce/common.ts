@@ -150,6 +150,9 @@ export async function checkPackaging(item: ContentItem, packaging: object, sourc
       mode: "packaging_check",
       note: "Packaging check: are the title / thumbnail text / captions accurate, consistent with the verified content below, and not misleading or unsafe? The verified content already passed a full fact-check, so treat its numbers and wording as correct (the plan topic line is only an early summary and may be less precise). Use the web only to open a source when a packaging claim goes beyond the verified content. Give each problem a precise, copy-paste-ready `fix`.",
       plan_topic: item.plan.topic, verified_content: verifiedContent, verified_sources: sources, packaging,
+      scope: item.kind === "long"
+        ? "YouTube long-form video only: title, thumbnail text, description and pinned comment. It has no social captions; don't ask for any."
+        : `${item.kind === "short" ? "Short video" : "Carousel"}: check the captions provided for each platform.`,
     },
   });
 }

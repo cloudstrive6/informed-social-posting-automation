@@ -26,6 +26,27 @@ export interface YtUpload {
   categoryId?: string;
 }
 
+/** A YouTube description must never carry other platforms' captions (an agent once pasted them in). */
+export function cleanDescription(d: string): string {
+  const lines = d.split("\n");
+  const cut = lines.findIndex(l => /^\s*(INSTAGRAM|TIKTOK|FACEBOOK|THREADS)\s*(CAPTION)?\s*:/i.test(l));
+  const kept = cut >= 0 ? lines.slice(0, cut) : lines;
+  while (kept.length && /^\s*(-{3,}|—+)?\s*$/.test(kept[kept.length - 1])) kept.pop(); // trailing separators
+  return kept.join("\n");
+}
+
+/** Update the description of an uploaded video (keeps title, tags, category). */
+export async function updateDescription(videoId: string, description: string) {
+  const token = await youtubeToken();
+  const cur = await httpJson<any>(`https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}`, { headers: { authorization: `Bearer ${token}` } });
+  const snippet = cur.items?.[0]?.snippet;
+  if (!snippet) throw new Error(`video ${videoId} not found`);
+  await httpJson<any>("https://www.googleapis.com/youtube/v3/videos?part=snippet", {
+    method: "PUT", headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+    body: JSON.stringify({ id: videoId, snippet: { title: snippet.title, categoryId: snippet.categoryId, tags: snippet.tags, defaultLanguage: snippet.defaultLanguage, defaultAudioLanguage: snippet.defaultAudioLanguage, description: description.slice(0, 4900) } }),
+  });
+}
+
 /** Resumable upload (quota: 1,600 units). Returns the video id. */
 export async function uploadVideo(v: YtUpload): Promise<string> {
   const token = await youtubeToken();
@@ -33,7 +54,7 @@ export async function uploadVideo(v: YtUpload): Promise<string> {
   const future = v.publishAt && Date.parse(v.publishAt) > Date.now() + 5 * 60_000;
   const meta = {
     snippet: {
-      title: v.title.slice(0, 100), description: v.description.slice(0, 4900),
+      title: v.title.slice(0, 100), description: cleanDescription(v.description).slice(0, 4900),
       tags: trimTags(v.tags), categoryId: v.categoryId ?? "27", defaultLanguage: "en", defaultAudioLanguage: "en",
     },
     status: {

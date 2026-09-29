@@ -66,6 +66,19 @@ const commands: Record<string, () => Promise<unknown>> = {
   finalize: () => finalizeDay(date),
   publish: () => publishDue(),
   // publish-now <date>/<item-id> [--platforms youtube,tiktok,instagram,facebook]
+  // youtube-fix-description <date>/<item-id>: strip stray social captions from a long video's description (stored + live)
+  "youtube-fix-description": async () => {
+    const { itemPath, saveItem } = await import("./lib/items.js");
+    const { cleanDescription, updateDescription } = await import("./publish/youtube.js");
+    const [d, id] = rest[0].split("/");
+    const item = readJson<ContentItem>(itemPath(d, id));
+    const before = item.package.description ?? "";
+    item.package.description = cleanDescription(before);
+    saveItem(item);
+    const yt = item.posts.find(p => p.platform === "youtube" && p.remote_id);
+    if (yt?.remote_id) await updateDescription(yt.remote_id, item.package.description);
+    log.info(`description cleaned (${before.length} → ${item.package.description.length} chars)${yt?.remote_id ? `, updated on YouTube ${yt.remote_id}` : ""}`);
+  },
   "publish-now": () => publishNow(rest[0], (flag("platforms") ?? "").split(",").filter(Boolean)),
   "review-sync": () => syncReviews(),
   // Telegram button presses → review labels → queued items

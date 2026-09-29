@@ -19,7 +19,7 @@ The script or slides (`verified_content`) already passed a full content check. C
 - Everything must match the verified content: same numbers, same framing, no stronger claims. Where the plan topic line and the verified content disagree, the verified content wins; that isn't an issue on its own.
 - Hashtags and brand names must not imply things the study didn't show (e.g. a specific product that wasn't tested).
 - Safety: no body-shaming, no restrictive-eating nudges, no advice to change medication without a clinician.
-- Every platform caption carries the disclaimer, or a caveat where the platform has no room for one.
+- Every platform caption that is **present** carries the disclaimer, or a caveat where the platform has no room for one. Only judge the fields you receive: a long-form YouTube video has only a title, thumbnail text, description and pinned comment, so never ask for Instagram, TikTok, Facebook or Threads captions.
 - Mark wording polish as `minor`. Use `major` only for claims that would mislead a viewer.
 - Don't re-verify the science. Open a source only when a packaging claim goes beyond the verified content.
 

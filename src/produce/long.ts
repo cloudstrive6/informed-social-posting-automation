@@ -10,6 +10,7 @@ import { LongPackaging, longPackagingSchema, Script, scriptSchema, Seo, seoSchem
 import { fmtTimestamp } from "../lib/time.js";
 import { buildVideo } from "../media/buildVideo.js";
 import { pickThumbnail } from "../media/thumbPick.js";
+import { cleanDescription } from "../publish/youtube.js";
 import type { Timeline } from "../media/tts.js";
 import { packagingLoop, directNarration, narrateChecked, qaBlockers, loadPiece, newItem, workDir, writeWithFactCheck } from "./common.js";
 
@@ -117,7 +118,7 @@ export async function produceLong(date: string, pieceId: string): Promise<Conten
       concept.headline = fixed.thumbnail_headline; concept.subtext = fixed.thumbnail_subtext;
       item.media.thumbnail = await picked.rerender(concept);
     }
-    item.package = { ...item.package, title: fixed.title, description: fixed.description, pinned_comment: fixed.pinned_comment, thumbnail: concept };
+    item.package = { ...item.package, title: fixed.title, description: cleanDescription(fixed.description), pinned_comment: fixed.pinned_comment, thumbnail: concept };
     item.qa = { ...item.qa, packaging: { verdict: pk.check.verdict, issues: pk.check.issues } };
     if (pk.held && item.status !== "held") {
       const alt = titles.candidates.find(c => c.title !== fixed.title);
