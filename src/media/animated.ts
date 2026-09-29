@@ -233,7 +233,17 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
   const depthZ = { bg: 1, mid: 2, fg: 3 };
   const depthPar = { bg: 0.4, mid: 1, fg: 1.6 };
   const speakers: Speaker[] = [];
-  for (const el of shot.elements) {
+  // Title band: when the shot has a headline or stat, keep every foreground/mid element's top below it
+  const titled = shot.title.style === "headline" || shot.title.style === "stat";
+  const bandBottom = c.vertical ? 34 : 44; // % of frame height the title may use
+  const elements = !titled ? shot.elements : shot.elements.map(e => {
+    if (e.depth === "bg") return e;
+    const half = e.size / 2;
+    const size = Math.min(e.size, (100 - 3 - bandBottom)); // must fit between the band and the bottom edge
+    const y = Math.min(100 - 3 - size / 2, Math.max(e.y, bandBottom + size / 2 + (c.vertical ? 0 : 2)));
+    return y !== e.y || size !== e.size ? { ...e, y, size, spread: Math.min(e.spread, 100 - y - half) } : e;
+  });
+  for (const el of elements) {
     const expr = el.face && el.face !== "none" ? el.face : el.says && canHaveFace(el) ? "happy" : "none";
     const maxCopies = el.type === "person" ? 6 : (["heart", "brain", "liver", "stomach", "lungs", "kidney", "gut"].includes(el.type) ? 2 : 30);
     const copies = Math.max(1, Math.min(maxCopies, Math.round(el.count)));
@@ -294,13 +304,13 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
     c.cues.push({ t, sfx: "blip", gain: 0.55 });
   } else if (tt.style === "headline" && tt.text) {
     const hid = uid(c, "hd");
-    overlay += `<div id="${hid}" class="headline" style="font-size:${c.vertical ? 96 : 118}px;top:${c.vertical ? 14 : 36}%">${esc(tt.text)}${tt.sub ? `<div class="hsub">${esc(tt.sub)}</div>` : ""}</div>`;
+    overlay += `<div id="${hid}" class="headline" style="font-size:${c.vertical ? 96 : 104}px;top:${c.vertical ? 14 : 11}%">${esc(tt.text)}${tt.sub ? `<div class="hsub">${esc(tt.sub)}</div>` : ""}</div>`;
     const t = t0 + 0.25;
     c.anims.push(`tl.fromTo("#${hid}",{opacity:0,scale:1.25},{opacity:1,scale:1,duration:0.45,ease:"power4.out"},${f3(t)});`);
     c.cues.push({ t, sfx: "hit", gain: 0.7 });
   } else if (tt.style === "stat" && tt.text) {
     const sid = uid(c, "st");
-    overlay += `<div id="${sid}" class="stat" style="top:${c.vertical ? 13 : 28}%"><div class="sv" style="font-size:${statSize(tt.text, c)}px">${esc(tt.text)}</div><div class="sl" style="font-size:${c.vertical ? 50 : 46}px">${esc(tt.sub)}</div></div>`;
+    overlay += `<div id="${sid}" class="stat" style="top:${c.vertical ? 13 : 11}%"><div class="sv" style="font-size:${statSize(tt.text, c)}px">${esc(tt.text)}</div><div class="sl" style="font-size:${c.vertical ? 50 : 46}px">${esc(tt.sub)}</div></div>`;
     const t = t0 + 0.3;
     c.anims.push(`tl.fromTo("#${sid} .sv",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.6,ease:"elastic.out(1,0.55)"},${f3(t)});`);
     c.anims.push(`tl.fromTo("#${sid} .sl",{y:40,opacity:0},{y:0,opacity:1,duration:0.4},${f3(t + 0.35)});`);
