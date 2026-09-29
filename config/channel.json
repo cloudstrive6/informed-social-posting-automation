@@ -38,7 +38,7 @@
     "facebook": "https://www.facebook.com/InforMedLab"
   },
   "cadence": {
-    "longPerDay": 3,
+    "longPerDay": 1,
     "shortPerDay": 3,
     "carouselPerDay": 2,
     "longTargetMinutes": [
@@ -51,16 +51,14 @@
     ]
   },
   "schedule": {
-    "_comment": "Local times in audience.timezone (\"+1\" = next day). Each piece posts at the same time on every platform of its kind: short = YouTube Shorts + Instagram Reels + TikTok + Facebook Reels; carousel = Instagram + Facebook + TikTok (photo) + Threads; long = YouTube, spaced 8 hours apart so the videos don't compete for each other's reach.",
+    "_comment": "Local times in audience.timezone (\"+1\" = next day). Each piece posts at the same time on every platform of its kind: short = YouTube Shorts + Instagram Reels + TikTok + Facebook Reels; carousel = Instagram + Facebook + TikTok (photo) + Threads; long = YouTube (1 a day, early afternoon so it's picked up before the US evening peak).",
     "short": [
       "08:00",
       "13:00",
       "20:00"
     ],
     "long": [
-      "09:00",
-      "17:00",
-      "01:00+1"
+      "14:00"
     ],
     "carousel": [
       "14:00",

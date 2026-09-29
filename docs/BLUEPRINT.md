@@ -10,7 +10,7 @@ How the InforMed system is built, published and operated, written so it can be r
 - **Runtime:** GitHub Actions only (public repo = free minutes). No server. State lives in `data/` and is committed back by the bot.
 - **Brains:** Claude agents through the **Claude Agent SDK**, authenticated with one `CLAUDE_CODE_OAUTH_TOKEN` (`claude setup-token`, valid 1 year). Every agent has a prompt in `agents/*.md`; every answer is forced into a JSON schema (`src/lib/schemas.ts`).
 - **Config:** everything channel-specific is in `config/channel.json`: brand, audience, **niche** (brief, pillars, guardrails, radar sources), cadence, **schedule**, platforms, voice, video, music, QA thresholds, safety, review mode, models.
-- **Cadence (per day):** 3 long videos (8–15 min), 3 Shorts (< 90 s), 2 carousels.
+- **Cadence (per day):** 1 long video (8–15 min), 3 Shorts (< 90 s), 2 carousels (all configurable in `config/channel.json`).
 
 ### Workflows (`.github/workflows/`)
 | Workflow | When | Does |
