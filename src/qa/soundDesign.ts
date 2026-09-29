@@ -65,10 +65,10 @@ export async function designSound(shots: TimedShot[], cues: SfxCue[], levels: Le
 export function autoLevel(levels: Levels, musicGain: number, cues: SfxCue[]): { musicGain: number; cues: SfxCue[] } {
   const g = (db: number) => 10 ** (db / 20);
   let mg = musicGain;
-  // Keep the score felt but never competing. Measured BEFORE ducking; the mix ducks another ~4-5 dB under
-  // speech (render.ts MUSIC_DUCK), so -14 here lands at about -18/-19 dB under the voice in the final mix.
+  // Keep the score clearly audible but never competing. Measured BEFORE ducking; the mix ducks another ~4-5 dB
+  // under speech (render.ts MUSIC_DUCK), so -11.5 here lands at about -16 dB under the voice in the final mix.
   const mu = levels.music_under_voice_db;
-  if (mu != null && (mu > -12.5 || mu < -15.5)) mg = Math.min(0.8, musicGain * g(-14 - mu));
+  if (mu != null && (mu > -10 || mu < -13)) mg = Math.min(0.9, musicGain * g(-11.5 - mu));
   const out = cues.map((c, i) => {
     const m = levels.cues.find(x => x.i === i);
     if (!m) return c;

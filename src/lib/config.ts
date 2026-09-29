@@ -27,7 +27,7 @@ export interface ChannelConfig {
   schedule: Record<ScheduleKey, string[]>;
   platforms: Record<"youtube" | "instagram" | "facebook" | "tiktok" | "threads", boolean>;
   voice: {
-    provider: "elevenlabs" | "chatterbox" | "kokoro"; chatterboxModel: "turbo" | "base"; voiceRef?: string; exaggeration: number;
+    provider: "elevenlabs" | "chirp" | "chatterbox" | "kokoro"; chatterboxModel: "turbo" | "base"; voiceRef?: string; exaggeration: number;
     chirp?: { voice: string; monthlyFreeChars: number };
     elevenlabs: { voiceId: string; model: string; stability: number; similarity: number; style: number; monthlyCredits: number; creditsPerChar: number; useFor: string[]; renewDay: number };
     kokoroVoice: string; kokoroShortVoice: string; baseSpeed: number; sampleRate: number;

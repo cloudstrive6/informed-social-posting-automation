@@ -92,7 +92,8 @@ export async function directNarration(scenes: Scene[]): Promise<{ id: string; te
  */
 export async function narrateChecked(spoken: { id: string; text: string; speed: number; pause_after_ms: number }[], dir: string, voice?: string, kind = "short") {
   // pronunciation: look up any new hard terms, then give the voice one fixed respelling per term
-  const learned = await learnPronunciations(spoken.map(s => s.text).join("\n"));
+  // Chirp reads the plain script (it already knows drug names), so the web lookup is only needed for other voices
+  const learned = config.voice.provider === "chirp" ? {} : await learnPronunciations(spoken.map(s => s.text).join("\n"));
   const lex = { ...loadLexicon(), ...learned };
   const used = new Set<string>();
   const voiced = spoken.map(s => { const r = applyLexicon(s.text, lex); r.used.forEach(u => used.add(u)); return { ...s, text: r.text }; });

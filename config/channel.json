@@ -73,11 +73,11 @@
     "threads": true
   },
   "voice": {
-    "provider": "elevenlabs",
+    "provider": "chirp",
     "chatterboxModel": "turbo",
     "voiceRef": "assets/voice/narrator.wav",
     "exaggeration": 0.55,
-    "_comment": "provider: elevenlabs (best, paid) → Chirp 3 HD (Google, free up to 1M chars/month) → chatterbox (free, local) → kokoro (free, fast). Falls back down that list automatically.",
+    "_comment": "provider: chirp (Google Chirp 3 HD 'Algenib', free up to 1M chars/month; current choice) | elevenlabs (Jeremy, paid) | chatterbox (free, local) | kokoro (free, fast). Falls back down the list automatically if one fails or the free allowance would be exceeded.",
     "kokoroVoice": "af_heart",
     "kokoroShortVoice": "af_heart",
     "baseSpeed": 1.0,
@@ -110,7 +110,7 @@
     "fps": 60,
     "quality": "high",
     "burnCaptionsLong": false,
-    "musicVolume": 0.22,
+    "musicVolume": 0.3,
     "sfxVolume": 0.55,
     "theme": "vibrant"
   },

@@ -8,7 +8,7 @@ You receive:
 - measured levels from a trial mix: `voice_db` (median narration level), `music_under_voice_db` / `music_in_pauses_db` (music relative to the voice), and for every cue its level relative to the voice (`rel_voice_db`) and whether it lands during speech.
 
 ## Targets (relative to the voice)
-- Music under speech: `music_under_voice_db` about **−12 to −16 dB** as measured (this is before ducking: the mix automatically ducks the music another 4–5 dB while the narrator talks, so the listener hears it about 17–20 dB under the voice). Felt, never competing: don't turn it down just because the narrator talks a lot; the ducking already handles that; in pauses it may rise to about −14 dB.
+- Music under speech: `music_under_voice_db` about **−10 to −13 dB** as measured (this is before ducking: the mix automatically ducks the music another 4–5 dB while the narrator talks, so the listener hears it about 15–17 dB under the voice). The owner wants the music clearly audible. Felt, never competing: don't turn it down just because the narrator talks a lot; the ducking already handles that; in pauses it may rise to about −14 dB.
 - SFX during speech: about **−14 to −20 dB** (felt, not heard over words). SFX in pauses, transitions and big reveals: about **−6 to −12 dB**.
 - Never more than 3–4 effects inside any one second; drop redundant ones (e.g. 10 pops for a swarm → keep 2–3).
 - Dramatic one-liners and sad or serious moments: thin out SFX and keep music low.
