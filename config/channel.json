@@ -234,5 +234,64 @@
     "long": 8,
     "short": 4,
     "carousel": 3
+  },
+  "youtube": {
+    "_comment": "Playlists: every YouTube video (long + Shorts) goes into its pillar playlist; Shorts also go into the Shorts playlist. Playlists are created on the channel automatically the first time they're needed (public). 'pillar' keys are what the Content Strategist tags each piece with.",
+    "playlists": [
+      {
+        "pillar": "how-it-works",
+        "title": "How GLP-1 Works",
+        "description": "What GLP-1 is and how medicines like semaglutide and tirzepatide work in your body: appetite, food noise, blood sugar and more. Science-backed and easy to follow."
+      },
+      {
+        "pillar": "results",
+        "title": "GLP-1 Results Explained",
+        "description": "The big GLP-1 trials (STEP, SURMOUNT, ATTAIN and more) explained simply: what the numbers mean and what keeps results going."
+      },
+      {
+        "pillar": "beyond-weight",
+        "title": "GLP-1 Benefits Beyond Weight Loss",
+        "description": "Heart, kidneys, liver, sleep apnea, blood pressure and blood sugar: the benefits of GLP-1 medicines beyond the scale, backed by research."
+      },
+      {
+        "pillar": "is-it-for-you",
+        "title": "Is a GLP-1 Right for You?",
+        "description": "Who GLP-1 medicines are approved for, who may benefit, and the questions to bring to your doctor."
+      },
+      {
+        "pillar": "get-the-most",
+        "title": "Getting the Most from Your GLP-1",
+        "description": "Protein, muscle, strength training, hydration and making common side effects easier: practical, evidence-based tips for life on a GLP-1."
+      },
+      {
+        "pillar": "life-on-glp1",
+        "title": "Life on a GLP-1",
+        "description": "Habits, meals, mindset and keeping your results: everyday life on GLP-1 medicines."
+      },
+      {
+        "pillar": "myths",
+        "title": "GLP-1 Myths vs Facts",
+        "description": "Common GLP-1 myths and misunderstandings, answered with the evidence."
+      },
+      {
+        "pillar": "natural-glp1",
+        "title": "Boost Your Natural GLP-1",
+        "description": "Food, fibre, protein, eating order and movement: evidence-based ways to support your body's own GLP-1."
+      },
+      {
+        "pillar": "research",
+        "title": "GLP-1 Research & New Medicines",
+        "description": "The latest GLP-1 research, approvals and next-generation medicines (pills, dual and triple agonists), explained."
+      },
+      {
+        "pillar": "general",
+        "title": "Health Science Explained",
+        "description": "Science-backed health topics explained like a friend would."
+      }
+    ],
+    "shortsPlaylist": {
+      "title": "GLP-1 in 60 Seconds",
+      "description": "Quick, science-backed GLP-1 facts in under a minute."
+    }
   }
 }

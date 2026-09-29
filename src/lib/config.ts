@@ -41,6 +41,7 @@ export interface ChannelConfig {
   qa: { enabled: boolean; narrationMaxRetakes: number; sceneWerThreshold: number; maskingWerDelta: number; visualRounds: number; minShotScore: number };
   safety: { policy: string; maxRevisionRounds: number; disclaimer: string; bannedTopics: string[] };
   review: { mode: "auto" | "human" };
+  youtube?: { playlists: { pillar: string; title: string; description: string }[]; shortsPlaylist?: { title: string; description: string } };
   spacing: Record<"long" | "short" | "carousel", number>;
   niche: {
     enabled: boolean; name: string; brief: string; pillars: string[]; guardrails: string[];

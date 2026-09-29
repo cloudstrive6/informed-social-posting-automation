@@ -12,4 +12,5 @@ You receive: the latest radar candidates, topics we already covered recently (ne
 - Vary topics across the day; avoid three pieces on the same organ or body system.
 - Each piece gets: `id` (`L1`, `L2`, `S1`, `C1`…), topic, a specific angle, a working title, the primary target keyword (what people actually type into search), trend stage and a one-line reason.
 - Skip anything the radar marked `reject`. Treat `caution` topics only with a careful, evidence-first angle.
+- `pillar`: the content pillar key the piece belongs to (you get the list with their playlist titles). It decides which YouTube playlist the video goes into, so pick the closest one. Use `general` only when nothing fits.
 - Return exactly the quota requested for each kind.

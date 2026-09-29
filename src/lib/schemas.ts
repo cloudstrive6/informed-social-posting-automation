@@ -34,13 +34,15 @@ export const radarSchema = obj({
 export interface PlannedPiece {
   id: string; kind: "long" | "short" | "carousel"; topic: string; angle: string;
   working_title: string; target_keyword: string; trend_stage: string; why: string;
+  /** content pillar (config.youtube.playlists[].pillar): decides the YouTube playlist */
+  pillar?: string;
 }
 export interface DayPlan { rationale: string; pieces: PlannedPiece[] }
 export const planSchema = obj({
   rationale: str,
   pieces: arr(obj({
     id: str, kind: { enum: ["long", "short", "carousel"] }, topic: str, angle: str,
-    working_title: str, target_keyword: str, trend_stage: str, why: str,
+    working_title: str, target_keyword: str, trend_stage: str, why: str, pillar: str,
   })),
 });
 

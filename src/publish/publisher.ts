@@ -19,6 +19,7 @@ import { tiktokPost } from "./tiktok.js";
 import { postForMeEnabled, tiktokPhotosViaPostForMe, tiktokViaPostForMe } from "./postforme.js";
 import { threadsCarousel, threadsText } from "./threads.js";
 import { setThumbnail, uploadVideo } from "./youtube.js";
+import { addToPlaylists } from "./playlists.js";
 
 const LOG = join(DATA, "published", "log.jsonl");
 const MAX_ATTEMPTS = 3;
@@ -46,10 +47,12 @@ async function publishOne(item: ContentItem, p: PostTarget) {
     case "youtube:long": {
       const id = await uploadVideo({ file: await media(item, item.media.video!), title: item.package.title!, description: item.package.description!, tags: item.package.tags ?? [], publishAt: p.slot });
       if (item.media.thumbnail) await setThumbnail(id, await media(item, item.media.thumbnail)).catch(e => log.warn(`thumbnail: ${e.message}`));
+      await addToPlaylists(item, id);
       return { id, url: `https://youtu.be/${id}`, scheduled: Date.parse(p.slot) > Date.now() + 5 * 60_000 };
     }
     case "youtube:short": {
       const id = await uploadVideo({ file: await media(item, item.media.video!), title: s!.youtube_short_title, description: s!.youtube_short_description, tags: item.package.tags ?? [], publishAt: p.slot });
+      await addToPlaylists(item, id);
       return { id, url: `https://youtube.com/shorts/${id}`, scheduled: Date.parse(p.slot) > Date.now() + 5 * 60_000 };
     }
     case "instagram:reel": {

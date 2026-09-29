@@ -19,7 +19,7 @@ export async function planDay(date: string): Promise<DayPlan> {
   let plan = await runAgent<DayPlan>({
     agent: "content-strategist",
     schema: planSchema,
-    input: { date, quota, radar_generated_at: radar.at, radar: radar.candidates.filter(c => c.safety !== "reject"), recently_covered: covered },
+    input: { date, quota, pillars: (config.youtube?.playlists ?? []).map(p => ({ pillar: p.pillar, playlist: p.title })), radar_generated_at: radar.at, radar: radar.candidates.filter(c => c.safety !== "reject"), recently_covered: covered },
   });
 
   // Fact-checker screens topics before any production money/time is spent. Rejected slots get re-planned once.
