@@ -24,10 +24,23 @@ export async function narrate(scenes: NarrationScene[], dir: string, voice = con
   const choiceFile = join(dir, "voice-choice.json");
   const choice = readJson<{ provider: string }>(choiceFile, { provider: config.voice.provider === "elevenlabs" && canUseEleven(kind, chars) ? "elevenlabs" : "local" });
   writeJson(choiceFile, choice);
-  if (config.voice.provider === "elevenlabs" && choice.provider !== "elevenlabs") log.info(`ElevenLabs skipped for this ${kind} (budget/useFor); using Chatterbox`);
+  if (config.voice.provider === "elevenlabs" && choice.provider !== "elevenlabs") {
+    log.info(`ElevenLabs skipped for this ${kind} (budget/useFor); using Chatterbox`);
+    if (config.voice.elevenlabs.useFor.includes(kind)) {
+      const { notify } = await import("../notify/telegram.js");
+      await notify(`🎙️ ElevenLabs credits are running low: this ${kind} is being narrated with the backup voice (Chatterbox). Upgrade the ElevenLabs plan and set <code>voice.elevenlabs.monthlyCredits</code> to the new allowance to bring Jeremy back.`);
+    }
+  }
   if (choice.provider === "elevenlabs") {
     try { return { ...(await elevenNarrate(lines, dir, redo, kind)), provider: "elevenlabs" }; }
-    catch (e) { log.warn(`ElevenLabs failed, falling back to Chatterbox: ${(e as Error).message.slice(0, 300)}`); }
+    catch (e) {
+      const msg = (e as Error).message;
+      log.warn(`ElevenLabs failed, falling back to Chatterbox: ${msg.slice(0, 300)}`);
+      if (/quota|credit|limit|401|402/i.test(msg)) {
+        const { notify } = await import("../notify/telegram.js");
+        await notify(`🎙️ ElevenLabs refused the narration (${msg.slice(0, 120).replace(/[<>&]/g, "")}). This ${kind} uses the backup voice. Check the ElevenLabs plan/credits.`);
+      }
+    }
   }
   if (config.voice.provider !== "kokoro") {
     const job = join(dir, "tts-job.json");

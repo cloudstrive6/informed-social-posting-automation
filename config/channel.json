@@ -92,9 +92,10 @@
       "monthlyCredits": 40000,
       "creditsPerChar": 1,
       "useFor": [
-        "short"
+        "short",
+        "long"
       ],
-      "_budgetComment": "Starter = 40,000 credits/month. useFor: which content gets ElevenLabs (short, long). A piece only uses ElevenLabs if its whole narration fits the remaining monthly budget; otherwise Chatterbox. eleven_flash_v2_5 costs 0.5 credits/char (set creditsPerChar 0.5).",
+      "_budgetComment": "monthlyCredits = your plan (Starter 40,000; Pro 600,000). useFor: which content gets ElevenLabs. A piece only uses ElevenLabs if its whole narration fits the remaining monthly budget; otherwise it falls back to Chatterbox and a Telegram alert suggests upgrading. Shorts are produced first each day, so they get the budget first. eleven_flash_v2_5 costs 0.5 credits/char (set creditsPerChar 0.5).",
       "renewDay": 26
     }
   },
