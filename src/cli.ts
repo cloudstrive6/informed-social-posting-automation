@@ -105,6 +105,29 @@ const commands: Record<string, () => Promise<unknown>> = {
     if (!(await addToPlaylists(item, yt.remote_id)).length) throw new Error("not added to any playlist");
     saveItem(item); // keeps the pillar the curator chose
   },
+  // facebook-inspect <date>/<item-id>: print the images and caption actually on the item's Facebook post
+  "facebook-inspect": async () => {
+    const { itemPath } = await import("./lib/items.js");
+    const { facebookPostImages } = await import("./publish/meta.js");
+    const [d, id] = rest[0].split("/");
+    const fb = readJson<ContentItem>(itemPath(d, id)).posts.find(p => p.platform === "facebook" && p.remote_id);
+    if (!fb?.remote_id) throw new Error("no Facebook post for this item");
+    const { message, images } = await facebookPostImages(fb.remote_id);
+    console.log(JSON.stringify({ post: fb.remote_id, message: message.slice(0, 120), images }, null, 1));
+  },
+  // facebook-repost <date>/<item-id>: delete the item's Facebook post and post it again with the item's own slides
+  "facebook-repost": async () => {
+    const { itemPath, saveItem } = await import("./lib/items.js");
+    const { deleteFacebookPost } = await import("./publish/meta.js");
+    const [d, id] = rest[0].split("/");
+    const item = readJson<ContentItem>(itemPath(d, id));
+    const fb = item.posts.find(p => p.platform === "facebook");
+    if (!fb) throw new Error("item has no Facebook post");
+    if (fb.remote_id) { await deleteFacebookPost(fb.remote_id); log.info(`deleted Facebook post ${fb.remote_id}`); }
+    Object.assign(fb, { status: "pending", attempts: 0, remote_id: undefined, url: undefined, published_at: undefined, error: undefined });
+    saveItem(item);
+    await publishNow(rest[0], ["facebook"]);
+  },
   // youtube-unschedule <date>/<item-id>: keep a scheduled video from going public (it stays private)
   "youtube-unschedule": async () => {
     const { itemPath } = await import("./lib/items.js");

@@ -111,6 +111,19 @@ export async function facebookAlbumPost(images: string[], message: string) {
   return { id: j.id as string, url: `https://www.facebook.com/${j.id}` };
 }
 
+/** Image URLs (Facebook CDN, publicly fetchable) and text of a Page post, for checking what actually went out. */
+export async function facebookPostImages(postId: string): Promise<{ message: string; images: string[] }> {
+  const j = await httpJson<any>(G(`${postId}?fields=message,attachments{media{image{src}},subattachments.limit(30){media{image{src}}}}&access_token=${token()}`));
+  const a = j.attachments?.data?.[0];
+  const subs = a?.subattachments?.data ?? (a ? [a] : []);
+  return { message: j.message ?? "", images: subs.map((s: any) => s.media?.image?.src).filter(Boolean) };
+}
+
+export async function deleteFacebookPost(postId: string) {
+  const j = await httpJson<any>(G(`${postId}?access_token=${token()}`), { method: "DELETE" });
+  if (!j.success) throw new Error(`delete ${postId}: ${JSON.stringify(j).slice(0, 200)}`);
+}
+
 export async function igInsights(mediaId: string) {
   return httpJson<any>(G(`${mediaId}/insights?metric=reach,likes,comments,shares,saved,views&access_token=${token()}`)).catch(() => undefined);
 }

@@ -1,4 +1,4 @@
-import { appendFileSync, readdirSync, existsSync } from "node:fs";
+import { appendFileSync, readdirSync, existsSync, renameSync, writeFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { config, DATA, OUT } from "../lib/config.js";
 import { ContentItem, loadItems, PostTarget, saveItem } from "../lib/items.js";
@@ -10,6 +10,7 @@ import { coveredPath, CoveredTopic } from "../plan/planDay.js";
 import { openReviewIssue, reportFailure } from "../review/issues.js";
 import { facebookAlbumPost, facebookReel, instagramCarousel, instagramReel } from "./meta.js";
 import { downloadFromRelease, publishImages, releaseAssetUrl, uploadToRelease } from "./storage.js";
+import { http } from "../lib/http.js";
 import { archiveItem } from "./b2.js";
 import { recordQuality, updateCraftNotes } from "../analytics/quality.js";
 import { notify, notifyDecision, notifyReview } from "../notify/telegram.js";
@@ -37,6 +38,27 @@ async function media(item: ContentItem, name: string) {
   const local = join(OUT, item.date, item.id, "final", name);
   if (existsSync(local)) return local;
   return downloadFromRelease(item.release_tag!, name);
+}
+
+/**
+ * The item's own carousel slides as local files. Downloaded from its per-item public URLs, never from the day's
+ * release by bare name: two carousels on the same day used to share names (slide-01.jpg…), so the later upload
+ * replaced the earlier one's slides in the release and Facebook posted the wrong images.
+ */
+async function slideFiles(item: ContentItem): Promise<string[]> {
+  if (!item.image_urls?.length) return Promise.all(item.media.slides!.map(f => media(item, f)));
+  const dir = ensureDir(join(OUT, ".slides", item.date, item.id));
+  const files: string[] = [];
+  for (const [i, url] of item.image_urls.entries()) {
+    const file = join(dir, `${String(i + 1).padStart(2, "0")}-${basename(new URL(url).pathname)}`);
+    if (!existsSync(file)) {
+      const r = await http(url, { retries: 2 });
+      if (!r.ok) throw new Error(`slide ${url}: HTTP ${r.status}`);
+      writeFileSync(file, Buffer.from(await r.arrayBuffer()));
+    }
+    files.push(file);
+  }
+  return files;
 }
 
 /** Publish (or schedule) a single post. YouTube uses native scheduling (publishAt); others post at slot time. */
@@ -68,7 +90,7 @@ async function publishOne(item: ContentItem, p: PostTarget) {
     case "tiktok:carousel": return { ...(await tiktokPhotosViaPostForMe(item.image_urls!, s!.tiktok_caption, item.package.title ?? "")), scheduled: false };
     case "threads:carousel": return { ...(await threadsCarousel(item.image_urls!, threadsText(s!.threads_caption || s!.instagram_caption))), scheduled: false };
     case "facebook:post": {
-      const imgs = await Promise.all(item.media.slides!.map(f => media(item, f)));
+      const imgs = await slideFiles(item);
       return { ...(await facebookAlbumPost(imgs, s!.facebook_caption || `${item.package.title}\n\n${disclaimer}`)), scheduled: false };
     }
   }
@@ -107,6 +129,13 @@ export async function finalizeDay(date: string) {
   for (const id of ids) {
     const item = readJson<ContentItem>(join(dayOut, id, "item.json"));
     const finalDir = join(dayOut, id, "final");
+    // release assets are shared by the whole day: give slides item-unique names so one carousel can't overwrite another's
+    if (item.media.slides) item.media.slides = item.media.slides.map(s => {
+      const name = basename(s);
+      if (name.startsWith(`${id}-`)) return join(finalDir, name);
+      if (existsSync(join(finalDir, name))) renameSync(join(finalDir, name), join(finalDir, `${id}-${name}`));
+      return join(finalDir, `${id}-${name}`);
+    });
     const files = readdirSync(finalDir).map(f => join(finalDir, f));
     await uploadToRelease(tag, files);
     item.release_tag = tag;

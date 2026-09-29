@@ -23,6 +23,12 @@ on:
       playlist_youtube:
         description: "Maintenance: add this item's uploaded YouTube video to its playlists (<date>/<item-id>)."
         required: false
+      inspect_facebook:
+        description: "Maintenance: show the images/caption actually on this item's Facebook post (<date>/<item-id>)."
+        required: false
+      repost_facebook:
+        description: "Maintenance: delete this item's Facebook post and post it again with its own slides/video (<date>/<item-id>)."
+        required: false
       fix_description:
         description: "Maintenance: strip stray social captions from this long video's YouTube description (<date>/<item-id>)."
         required: false
@@ -34,7 +40,7 @@ permissions:
 
 concurrency:
   # manual runs (post one item now / repairs) get their own lane so they don't wait behind the always-on loop
-  group: ${{ (inputs.item != '' || inputs.fix_description != '' || inputs.replace_youtube != '' || inputs.unschedule_youtube != '' || inputs.playlist_youtube != '') && format('publisher-manual-{0}', github.run_id) || 'publisher' }}
+  group: ${{ (inputs.item != '' || inputs.fix_description != '' || inputs.replace_youtube != '' || inputs.unschedule_youtube != '' || inputs.playlist_youtube != '' || inputs.inspect_facebook != '' || inputs.repost_facebook != '') && format('publisher-manual-{0}', github.run_id) || 'publisher' }}
   cancel-in-progress: false
 
 jobs:
@@ -58,6 +64,14 @@ jobs:
           fi
           if [ -n "${{ inputs.playlist_youtube }}" ]; then
             npx tsx src/cli.ts youtube-playlists "${{ inputs.playlist_youtube }}"
+            exit 0
+          fi
+          if [ -n "${{ inputs.inspect_facebook }}" ]; then
+            for ref in ${{ inputs.inspect_facebook }}; do npx tsx src/cli.ts facebook-inspect "$ref"; done
+            exit 0
+          fi
+          if [ -n "${{ inputs.repost_facebook }}" ]; then
+            npx tsx src/cli.ts facebook-repost "${{ inputs.repost_facebook }}"
             exit 0
           fi
           if [ -n "${{ inputs.fix_description }}" ]; then
