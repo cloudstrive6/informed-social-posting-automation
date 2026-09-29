@@ -20,6 +20,9 @@ on:
       replace_youtube:
         description: "Maintenance: the video file for <date>/<item-id> was remade; delete its old YouTube upload and publish the new one now."
         required: false
+      playlist_youtube:
+        description: "Maintenance: add this item's uploaded YouTube video to its playlists (<date>/<item-id>)."
+        required: false
       fix_description:
         description: "Maintenance: strip stray social captions from this long video's YouTube description (<date>/<item-id>)."
         required: false
@@ -31,12 +34,14 @@ permissions:
 
 concurrency:
   # manual runs (post one item now / repairs) get their own lane so they don't wait behind the always-on loop
-  group: ${{ (inputs.item != '' || inputs.fix_description != '' || inputs.replace_youtube != '' || inputs.unschedule_youtube != '') && format('publisher-manual-{0}', github.run_id) || 'publisher' }}
+  group: ${{ (inputs.item != '' || inputs.fix_description != '' || inputs.replace_youtube != '' || inputs.unschedule_youtube != '' || inputs.playlist_youtube != '') && format('publisher-manual-{0}', github.run_id) || 'publisher' }}
   cancel-in-progress: false
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    env:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }} # playlist curator (untagged items)
     timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
@@ -49,6 +54,10 @@ jobs:
           fi
           if [ -n "${{ inputs.replace_youtube }}" ]; then
             npx tsx src/cli.ts youtube-replace "${{ inputs.replace_youtube }}"
+            exit 0
+          fi
+          if [ -n "${{ inputs.playlist_youtube }}" ]; then
+            npx tsx src/cli.ts youtube-playlists "${{ inputs.playlist_youtube }}"
             exit 0
           fi
           if [ -n "${{ inputs.fix_description }}" ]; then

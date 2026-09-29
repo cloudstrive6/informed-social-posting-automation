@@ -94,6 +94,17 @@ const commands: Record<string, () => Promise<unknown>> = {
     saveItem(item);
     await publishNow(rest[0], ["youtube"]);
   },
+  // youtube-playlists <date>/<item-id>: add the item's uploaded YouTube video to its playlists (pillar + Shorts)
+  "youtube-playlists": async () => {
+    const { itemPath, saveItem } = await import("./lib/items.js");
+    const { addToPlaylists } = await import("./publish/playlists.js");
+    const [d, id] = rest[0].split("/");
+    const item = readJson<ContentItem>(itemPath(d, id));
+    const yt = item.posts.find(p => p.platform === "youtube" && p.remote_id);
+    if (!yt?.remote_id) throw new Error("no uploaded YouTube video for this item");
+    if (!(await addToPlaylists(item, yt.remote_id)).length) throw new Error("not added to any playlist");
+    saveItem(item); // keeps the pillar the curator chose
+  },
   // youtube-unschedule <date>/<item-id>: keep a scheduled video from going public (it stays private)
   "youtube-unschedule": async () => {
     const { itemPath } = await import("./lib/items.js");

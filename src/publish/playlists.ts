@@ -70,7 +70,16 @@ export async function addToPlaylists(item: ContentItem, videoId: string): Promis
   for (const pl of playlistsFor(item)) {
     try {
       const id = await playlistId(pl.title, pl.description);
-      await yt("playlistItems?part=snippet", { method: "POST", body: { snippet: { playlistId: id, resourceId: { kind: "youtube#video", videoId } } } });
+      // a just-created playlist or just-uploaded video can answer 409/5xx for a few seconds: retry with backoff
+      for (let attempt = 1; ; attempt++) {
+        try {
+          await yt("playlistItems?part=snippet", { method: "POST", body: { snippet: { playlistId: id, resourceId: { kind: "youtube#video", videoId } } } });
+          break;
+        } catch (e) {
+          if (attempt >= 5 || !/HTTP (409|5\d\d)/.test((e as Error).message)) throw e;
+          await new Promise(r => setTimeout(r, attempt * 5000));
+        }
+      }
       added.push(pl.title);
     } catch (e) {
       log.warn(`playlist "${pl.title}" for ${videoId}: ${(e as Error).message.slice(0, 200)}`);
