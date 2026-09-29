@@ -94,6 +94,16 @@ const commands: Record<string, () => Promise<unknown>> = {
     saveItem(item);
     await publishNow(rest[0], ["youtube"]);
   },
+  // youtube-unschedule <date>/<item-id>: keep a scheduled video from going public (it stays private)
+  "youtube-unschedule": async () => {
+    const { itemPath } = await import("./lib/items.js");
+    const { makePrivate } = await import("./publish/youtube.js");
+    const [d, id] = rest[0].split("/");
+    const yt = readJson<ContentItem>(itemPath(d, id)).posts.find(p => p.platform === "youtube" && p.remote_id);
+    if (!yt?.remote_id) throw new Error("no uploaded YouTube video for this item");
+    await makePrivate(yt.remote_id);
+    log.info(`YouTube ${yt.remote_id} is now private (unscheduled)`);
+  },
   "publish-now": () => publishNow(rest[0], (flag("platforms") ?? "").split(",").filter(Boolean)),
   "review-sync": () => syncReviews(),
   // Telegram button presses → review labels → queued items
