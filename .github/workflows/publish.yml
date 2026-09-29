@@ -14,6 +14,9 @@ on:
       platforms:
         description: "With `item`: comma-separated platforms (youtube,tiktok,instagram,facebook). Blank = all."
         required: false
+      replace_youtube:
+        description: "Maintenance: the video file for <date>/<item-id> was remade; delete its old YouTube upload and publish the new one now."
+        required: false
       fix_description:
         description: "Maintenance: strip stray social captions from this long video's YouTube description (<date>/<item-id>)."
         required: false
@@ -25,7 +28,7 @@ permissions:
 
 concurrency:
   # manual runs (post one item now / repairs) get their own lane so they don't wait behind the always-on loop
-  group: ${{ (inputs.item != '' || inputs.fix_description != '') && format('publisher-manual-{0}', github.run_id) || 'publisher' }}
+  group: ${{ (inputs.item != '' || inputs.fix_description != '' || inputs.replace_youtube != '') && format('publisher-manual-{0}', github.run_id) || 'publisher' }}
   cancel-in-progress: false
 
 jobs:
@@ -37,6 +40,10 @@ jobs:
       - uses: ./.github/actions/setup
         with: { ffmpeg: "true" }
       - run: |
+          if [ -n "${{ inputs.replace_youtube }}" ]; then
+            npx tsx src/cli.ts youtube-replace "${{ inputs.replace_youtube }}"
+            exit 0
+          fi
           if [ -n "${{ inputs.fix_description }}" ]; then
             npx tsx src/cli.ts youtube-fix-description "${{ inputs.fix_description }}"
             exit 0

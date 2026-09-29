@@ -35,6 +35,13 @@ export function cleanDescription(d: string): string {
   return kept.join("\n");
 }
 
+/** Delete an uploaded video (used when a remade version replaces it). */
+export async function deleteVideo(videoId: string) {
+  const token = await youtubeToken();
+  const res = await http(`https://www.googleapis.com/youtube/v3/videos?id=${videoId}`, { method: "DELETE", headers: { authorization: `Bearer ${token}` } });
+  if (!res.ok && res.status !== 404) throw new Error(`YouTube delete ${res.status}: ${(await res.text()).slice(0, 300)}`);
+}
+
 /** Update the description of an uploaded video (keeps title, tags, category). */
 export async function updateDescription(videoId: string, description: string) {
   const token = await youtubeToken();

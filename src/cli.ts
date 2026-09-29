@@ -79,6 +79,21 @@ const commands: Record<string, () => Promise<unknown>> = {
     if (yt?.remote_id) await updateDescription(yt.remote_id, item.package.description);
     log.info(`description cleaned (${before.length} → ${item.package.description.length} chars)${yt?.remote_id ? `, updated on YouTube ${yt.remote_id}` : ""}`);
   },
+  // youtube-replace <date>/<item-id>: the item's video in the release was remade; delete the old YouTube upload and
+  // publish the new one now (same title, cleaned description, thumbnail, playlists)
+  "youtube-replace": async () => {
+    const { itemPath, saveItem } = await import("./lib/items.js");
+    const { cleanDescription, deleteVideo } = await import("./publish/youtube.js");
+    const [d, id] = rest[0].split("/");
+    const item = readJson<ContentItem>(itemPath(d, id));
+    const yt = item.posts.find(p => p.platform === "youtube");
+    if (!yt) throw new Error("item has no YouTube post");
+    if (yt.remote_id) { await deleteVideo(yt.remote_id); log.info(`deleted old YouTube video ${yt.remote_id}`); }
+    item.package.description = cleanDescription(item.package.description ?? "");
+    Object.assign(yt, { status: "pending", attempts: 0, remote_id: undefined, url: undefined, published_at: undefined, slot: new Date().toISOString() });
+    saveItem(item);
+    await publishNow(rest[0], ["youtube"]);
+  },
   "publish-now": () => publishNow(rest[0], (flag("platforms") ?? "").split(",").filter(Boolean)),
   "review-sync": () => syncReviews(),
   // Telegram button presses → review labels → queued items
