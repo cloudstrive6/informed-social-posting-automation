@@ -119,8 +119,6 @@ export async function finalizeDay(date: string) {
       item.status = "held";
       item.hold_reason = [item.hold_reason, "test run: review before publishing"].filter(Boolean).join("; ");
     }
-    // A slot that already passed (e.g. a late re-run) goes out ASAP instead of being skipped.
-    for (const p of item.posts) if (Date.parse(p.slot) < Date.now() + 10 * 60_000) p.slot = new Date(Date.now() + 10 * 60_000).toISOString();
 
     if (item.status === "held" && config.review.mode === "auto" && process.env.TEST_RUN !== "1") {
       // fully automated: the Editor-in-Chief makes the final call; the owner just gets an FYI (with a veto button)
@@ -160,6 +158,9 @@ export async function finalizeDay(date: string) {
     "", config.review.mode === "auto" ? `Posting follows the schedule (${config.audience.timezone}). 🟡 = dropped by the Editor-in-Chief.` : `Posting starts ${config.schedule.short?.[0] ?? ""} (${config.audience.timezone}). Held items need your ✅ above.`,
   ].join("\n"));
 
+  // Slots that already passed (late production) or collide are moved to the next spaced-out time.
+  spaceOut();
+
   // YouTube supports native scheduling: upload now, it goes public exactly at the slot.
   for (const item of loadItems([date])) {
     if (item.status !== "ready") continue;
@@ -187,21 +188,61 @@ export async function publishNow(ref: string, platforms: string[]) {
   log.info(`publish-now ${item.id}: ${targets.filter(p => seen.has(p.platform)).map(p => `${p.platform} ${p.status}${p.url ? ` ${p.url}` : ""}`).join(" | ")}`);
 }
 
-/** Runs every ~15 min: publish every pending post whose slot has arrived. */
+const gapMs = (kind: ContentItem["kind"]) => (config.spacing?.[kind] ?? 0) * 3600_000 - 60_000; // 1 min tolerance
+/** When each platform last got (or is scheduled to get) a piece of each kind. */
+function lastPosted(items: ContentItem[]) {
+  const last = new Map<string, number>();
+  for (const i of items) for (const p of i.posts) {
+    if (p.status !== "published" && p.status !== "scheduled") continue;
+    const t = Date.parse(p.status === "published" ? p.published_at ?? p.slot : p.slot);
+    const k = `${p.platform}:${i.kind}`;
+    if (!last.has(k) || t > last.get(k)!) last.set(k, t);
+  }
+  return last;
+}
+
+/**
+ * Give every pending piece a slot that is (a) not in the past and (b) at least `spacing[kind]` hours after the
+ * previous piece of that kind on each of its platforms. A piece keeps one shared slot across its platforms.
+ */
+export function spaceOut() {
+  const today = localDate(config.audience.timezone);
+  const items = loadItems([-3, -2, -1, 0, 1, 2].map(d => addDays(today, d)));
+  const last = lastPosted(items);
+  const earliest = Date.now() + 10 * 60_000;
+  const pending = items.filter(i => i.status === "ready" && i.posts.some(p => p.status === "pending"))
+    .sort((a, b) => Math.min(...a.posts.map(p => Date.parse(p.slot))) - Math.min(...b.posts.map(p => Date.parse(p.slot))));
+  for (const item of pending) {
+    const posts = item.posts.filter(p => p.status === "pending");
+    const want = Math.min(...posts.map(p => Date.parse(p.slot)));
+    const t = Math.max(want, earliest, ...posts.map(p => (last.get(`${p.platform}:${item.kind}`) ?? 0) + gapMs(item.kind)));
+    if (t !== want) log.info(`spacing: ${item.id} moved to ${new Date(t).toISOString()}`);
+    for (const p of posts) { p.slot = new Date(t).toISOString(); last.set(`${p.platform}:${item.kind}`, t); }
+    saveItem(item);
+  }
+}
+
+/** Runs every minute (publisher loop): publish every pending post whose slot has arrived. */
 export async function publishDue() {
   const today = localDate(config.audience.timezone);
   // a few days back so late human approvals still get published
   const items = loadItems([-3, -2, -1, 0, 1].map(d => addDays(today, d)));
   const now = Date.now();
-  let n = 0;
-  for (const item of items) {
+  const last = lastPosted(items);
+  let n = 0, deferred = false;
+  for (const item of items.sort((a, b) => Math.min(...a.posts.map(p => Date.parse(p.slot))) - Math.min(...b.posts.map(p => Date.parse(p.slot))))) {
     if (item.status !== "ready") continue;
     for (const p of item.posts) {
       if (p.status !== "pending" || Date.parse(p.slot) > now + 3 * 60_000) continue;
       if (p.attempts >= MAX_ATTEMPTS) continue;
+      // backlog / catch-up guard: never two pieces of a kind on a platform closer than the spacing
+      const prev = last.get(`${p.platform}:${item.kind}`);
+      if (prev && now - prev < gapMs(item.kind)) { deferred = true; continue; }
       await attempt(item, p);
+      if ((p.status as PostTarget["status"]) === "published") last.set(`${p.platform}:${item.kind}`, now);
       n++;
     }
   }
+  if (deferred) spaceOut(); // re-plan anything held back so its new time is explicit
   log.info(`publisher: ${n} post(s) processed`);
 }

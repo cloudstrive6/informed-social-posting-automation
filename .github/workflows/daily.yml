@@ -4,10 +4,11 @@ name: Daily production
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # 02:00 New York (EDT)
-    # backups: GitHub sometimes drops scheduled runs. A backup exits right away if today's run already started.
-    - cron: "30 6 * * *"
-    - cron: "0 7 * * *"
+    # 22:00 New York the evening before (EDT; 21:00 in winter), so even the long videos are ready well before
+    # the first slots. Backups: GitHub sometimes drops scheduled runs; a backup exits if the run already started.
+    - cron: "0 2 * * *"
+    - cron: "30 2 * * *"
+    - cron: "0 3 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -62,11 +63,12 @@ jobs:
       - id: plan
         run: |
           D="${{ inputs.date }}"
-          if [ -z "$D" ]; then D=$(TZ=$(jq -r .audience.timezone config/channel.json) date +%F); fi
+          # content date: tomorrow when started in the evening (anything within 6 h of midnight counts as tomorrow)
+          if [ -z "$D" ]; then D=$(TZ=$(jq -r .audience.timezone config/channel.json) date -d "+6 hours" +%F); fi
           echo "date=$D" >> "$GITHUB_OUTPUT"
           # duplicate guard for scheduled (and backup) starts: one production run per day
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            SINCE=$(date -u -d "-20 hours" +%Y-%m-%dT%H:%M:%SZ)
+            SINCE=$(date -u -d "-6 hours" +%Y-%m-%dT%H:%M:%SZ)
             OTHERS=$(gh run list --workflow daily.yml --limit 20 --json databaseId,createdAt,status,conclusion \
               --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.createdAt >= \"$SINCE\") | select(.status != \"completed\" or .conclusion == \"success\")] | length")
             # only skip on a positive answer; if the check itself fails, produce anyway

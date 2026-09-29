@@ -1,6 +1,7 @@
 name: Publisher
-# Every 15 minutes: post everything whose time slot has arrived (Instagram, TikTok, Facebook;
-# YouTube is pre-scheduled by the daily run but retried here if needed).
+# Always-on publisher: each run checks every minute for ~5.5 hours and posts whatever is due (within about a
+# minute of its slot), then starts its successor. GitHub's own schedule can lag by hours, so the cron below is
+# only a watchdog that restarts the loop if the chain ever breaks.
 
 on:
   schedule:
@@ -17,6 +18,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write # the loop starts its successor run
 
 concurrency:
   group: publisher
@@ -25,13 +27,25 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
         with: { ffmpeg: "true" }
       - run: |
-          if [ -n "${{ inputs.item }}" ]; then npx tsx src/cli.ts publish-now "${{ inputs.item }}" --platforms "${{ inputs.platforms }}"; else npm run publish; fi
+          if [ -n "${{ inputs.item }}" ]; then
+            npx tsx src/cli.ts publish-now "${{ inputs.item }}" --platforms "${{ inputs.platforms }}"
+            exit 0
+          fi
+          git config user.name "informed-bot"; git config user.email "informed-bot@users.noreply.github.com"
+          END=$((SECONDS + 19800)) # ~5.5 h, then hand over to a fresh run
+          while [ $SECONDS -lt $END ]; do
+            git pull -q --rebase -X theirs origin main || git rebase --abort || true   # new items, decisions, vetoes
+            npx tsx src/cli.ts publish || echo "publish cycle failed; retrying next minute"
+            bash scripts/commit-data.sh "bot - publish" || true
+            sleep 60
+          done
+          gh workflow run publish.yml --ref main
         env:
           GH_TOKEN: ${{ github.token }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
@@ -50,4 +64,4 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - if: always()
-        run: bash scripts/commit-data.sh "bot - publish"
+        run: bash scripts/commit-data.sh "bot - publish" || true

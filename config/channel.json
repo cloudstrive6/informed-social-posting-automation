@@ -224,5 +224,11 @@
       ],
       "pubmed": "(\"Glucagon-Like Peptide-1 Receptor Agonists\"[Mesh] OR semaglutide[tiab] OR tirzepatide[tiab] OR liraglutide[tiab] OR \"GLP-1\"[tiab] OR incretin[tiab])"
     }
+  },
+  "spacing": {
+    "_comment": "Minimum hours between two pieces of the same kind on a platform. Enforced when slots are assigned and again right before posting, so late production, backlog or catch-up can never bunch posts.",
+    "long": 8,
+    "short": 4,
+    "carousel": 3
   }
 }
