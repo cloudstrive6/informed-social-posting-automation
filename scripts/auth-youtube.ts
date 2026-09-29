@@ -12,6 +12,8 @@ const SCOPES = [
   "https://www.googleapis.com/auth/youtube.upload",
   "https://www.googleapis.com/auth/youtube.readonly",
   "https://www.googleapis.com/auth/yt-analytics.readonly",
+  // edit metadata of uploaded videos + post pinned comments
+  "https://www.googleapis.com/auth/youtube.force-ssl",
 ];
 
 const clientId = await ask("OAuth client ID: ", "YOUTUBE_CLIENT_ID");
