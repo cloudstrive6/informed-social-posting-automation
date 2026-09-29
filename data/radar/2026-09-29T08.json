@@ -84,10 +84,10 @@
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13449091/"
         }
       ],
-      "safety": "caution",
+      "safety": "ok",
       "formats": [
-        "long",
         "short",
+        "long",
         "carousel"
       ]
     },
@@ -130,9 +130,9 @@
       ],
       "safety": "ok",
       "formats": [
-        "short",
+        "long",
         "carousel",
-        "long"
+        "short"
       ]
     },
     {
@@ -355,153 +355,6 @@
       "safety": "ok",
       "formats": [
         "long",
-        "carousel"
-      ]
-    },
-    {
-      "topic": "Oral GLP-1 face-off: Foundayo (orforglipron) vs oral semaglutide in type 2 diabetes, a new indirect comparison",
-      "angle": "'Which GLP-1 pill?' Explain what an indirect treatment comparison can and can't tell you: no head-to-head trial, Lilly-sponsored, T2D population. Compare how each pill is taken (no food/water rules vs empty stomach). Frame it as questions to bring to a prescriber.",
-      "keywords": [
-        "foundayo vs rybelsus",
-        "GLP-1 pill comparison",
-        "orforglipron vs oral semaglutide",
-        "best weight loss pill 2026",
-        "wegovy pill vs foundayo"
-      ],
-      "stage": "emerging",
-      "momentum": 66,
-      "predicted_peak": "3–7 days",
-      "why_now": "Lilly's PR on 29 Sept is being picked up by finance and pharma outlets. Consumer interest in GLP-1 pills is rising since the oral Wegovy (Dec 2025) and Foundayo (Apr 2026) approvals. Few neutral explainers exist.",
-      "competition": "medium",
-      "evidence": [
-        {
-          "source": "Lilly FDA approval release",
-          "signal": "Foundayo approved April 2026; no food/water restrictions",
-          "url": "https://investor.lilly.com/news-releases/news-release-details/fda-approves-lillys-foundayotm-orforglipron-only-glp-1-pill"
-        },
-        {
-          "source": "Everyday Health",
-          "signal": "Myths and facts about oral GLP-1s",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOakRvY2RBMkdZVC1fWlFMdHRnVkoxeTl2OExNU19hS3RiT0Mwc0VXanRjaU8xNThBQVNtYk9jYkVsdk1vRWRubzJJQjhSR2RmU1ZKc3ZhUFV1NXRrN2l2Tkh4YTFZajExc1VrR1E5MUczVkxNcUV3ZXhOTU8zNGxCRGxaSnMzVE15dHUxNGptelZ3QU1BQ3NYWGRB?oc=5"
-        },
-        {
-          "source": "diaTribe",
-          "signal": "Consumer explainer of Foundayo",
-          "url": "https://diatribe.org/diabetes-medications/new-oral-drug-foundayo-weight-loss"
-        }
-      ],
-      "safety": "caution",
-      "formats": [
-        "carousel",
-        "short",
-        "long"
-      ]
-    },
-    {
-      "topic": "GLP-1s and sleep apnea: they cut breathing interruptions, but CPAP remains the most effective therapy (JAMA Otolaryngology review)",
-      "angle": "'Teammates, not rivals.' Explain why weight and tongue fat matter to sleep apnea, and why anatomy is also part of it. Mention that tirzepatide is FDA-approved for moderate-to-severe OSA in adults with obesity. Never suggest dropping CPAP.",
-      "keywords": [
-        "zepbound sleep apnea",
-        "can GLP-1 replace CPAP",
-        "ozempic sleep apnea",
-        "tirzepatide OSA results"
-      ],
-      "stage": "rising",
-      "momentum": 66,
-      "predicted_peak": "5–10 days",
-      "why_now": "Nexstar syndicated The Hill story across dozens of local stations (26–28 Sept), and Yahoo Health ran 'Should you take a GLP-1 for OSA?'. It's a big overlap audience with little evidence-led video coverage.",
-      "competition": "low",
-      "evidence": [
-        {
-          "source": "The Hill",
-          "signal": "GLP-1s reduce AHI; CPAP remains best",
-          "url": "https://thehill.com/policy/healthcare/6113374-glp-1-weight-loss-drugs-cpap-sleep-apnea-study/amp/"
-        },
-        {
-          "source": "PubMed network meta-analysis",
-          "signal": "CPAP most effective for respiratory control; GLP-1 RAs improve weight/glycaemia",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/41725443/"
-        }
-      ],
-      "safety": "ok",
-      "formats": [
-        "short",
-        "carousel",
-        "long"
-      ]
-    },
-    {
-      "topic": "'Why isn't my GLP-1 working?': 10–15% of trial participants lose less than 5% of body weight",
-      "angle": "Encouraging and non-judgmental: what 'non-responder' means, trial numbers (about 1 in 7 on semaglutide and 1 in 11 on tirzepatide below 5%), why response varies, and that weight loss isn't the only benefit. End with 'bring this to your prescriber', with no switching or dose advice.",
-      "keywords": [
-        "not losing weight on ozempic",
-        "GLP-1 non responder",
-        "mounjaro not working",
-        "why am I not losing weight on wegovy"
-      ],
-      "stage": "evergreen",
-      "momentum": 66,
-      "predicted_peak": "ongoing",
-      "why_now": "DongA Science ran it on 27 Sept, and the Medscape 'Navigating GLP-1 switches' guide came out 29 Sept. Frustrated users search this constantly, and it fits our concrete-number myth-bust hypothesis.",
-      "competition": "medium",
-      "evidence": [
-        {
-          "source": "Becker's Hospital Review",
-          "signal": "Up to 15% may be non-responders",
-          "url": "https://www.beckershospitalreview.com/glp-1s/up-to-15-of-patients-on-weight-loss-drugs-non-responders/"
-        },
-        {
-          "source": "Yale Medicine",
-          "signal": "Clinician explainer on GLP-1 non-response",
-          "url": "https://www.yalemedicine.org/news/are-you-a-glp-1-nonresponder"
-        },
-        {
-          "source": "CBS News",
-          "signal": "Experts estimate up to 1 in 5 in practice",
-          "url": "https://www.cbsnews.com/news/1-in-5-people-wont-lose-weight-glp-1-drugs-experts/"
-        }
-      ],
-      "safety": "ok",
-      "formats": [
-        "short",
-        "long",
-        "carousel"
-      ]
-    },
-    {
-      "topic": "CagriSema beat tirzepatide 5 mg on weight loss in REIMAGINE 5 (adults with type 2 diabetes, 12.4% vs 9.1% at 60 weeks)",
-      "angle": "'Read the fine print': explain amylin + semaglutide simply, and point out that the comparator was the lowest tirzepatide dose (5 mg), which is key context for the 'beats Zepbound' headlines. Topline company data; HbA1c similar (1.71 vs 1.67 points). Not yet approved.",
-      "keywords": [
-        "cagrisema vs mounjaro",
-        "cagrisema results",
-        "amylin weight loss drug",
-        "REIMAGINE 5",
-        "novo beats lilly"
-      ],
-      "stage": "rising",
-      "momentum": 62,
-      "predicted_peak": "2–5 days",
-      "why_now": "Pharmacy Times, NewsNation and Yahoo Finance headlines 27–28 Sept call it 'outperforms Zepbound'. A misleading-headline correction is timely, and there's an EASD news cycle.",
-      "competition": "medium",
-      "evidence": [
-        {
-          "source": "Healio",
-          "signal": "CagriSema bests tirzepatide in adults with T2D",
-          "url": "https://www.healio.com/news/endocrinology/20260921/cagrisema-bests-tirzepatide-for-weight-loss-in-adults-with-type-2-diabetes"
-        },
-        {
-          "source": "GlobeNewswire (Novo release)",
-          "signal": "Topline REIMAGINE 5 results, 21 Sept 2026",
-          "url": "https://www.globenewswire.com/news-release/2026/09/21/3365319/0/en/novo-s-cagrisema-delivers-superior-weight-loss-versus-tirzepatide-in-reimagine-5-trial.html"
-        },
-        {
-          "source": "Pharmacy Times",
-          "signal": "12.4% vs 9.1% vs tirzepatide 5 mg",
-          "url": "https://www.pharmacytimes.com/view/cagrisema-tops-tirzepatide-5-mg-for-weight-loss-in-reimagine-5"
-        }
-      ],
-      "safety": "ok",
-      "formats": [
         "short",
         "carousel"
       ]
@@ -775,7 +628,7 @@
       ],
       "safety": "reject",
       "formats": [
-        "long"
+        "short"
       ]
     }
   ]

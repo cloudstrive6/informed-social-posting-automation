@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-29",
+  "created_at": "2026-09-29T08:06:30.754Z",
+  "rationale": "Today's slate stays inside the GLP-1 focus and uses 6 different pillars, with no more than 2 pieces on any one. Nothing repeats an angle from the last 30 days. I skipped hair loss, menopause, CagriSema, brown fat, sleep apnea, muscle and remnant cholesterol because we covered them on 26–28 Sep.\n\n- **Long-form (L1):** the strongest rising signal. 'Stopping GLP-1 linked to higher heart risk' is heavily syndicated today, it's a question our audience asks a lot, and few careful explainers exist. The radar marked it caution, so the brief sets an evidence-first frame: observational, veterans with T2D, 'linked to', and 'plan any change with your prescriber', never 'don't stop'.\n- **S1** is the spin-off of L1.\n- **S2** is a low-competition myth-bust (semaglutide and pancreatic cancer). It fits the analytics hypothesis that concrete-number myth-bust titles win: '97,464 matched pairs'.\n- **S3** is a compassionate stigma myth-bust, from an emerging story with low competition.\n- **Carousels:** a saveable 'what an indirect comparison can and can't tell you' guide on the two GLP-1 pills (news today), and an evergreen 'lower response isn't failure' framework on the steady 'Ozempic not working' search.\n\n**Mix:** 4 of 6 pieces are emerging or rising (L1, S1, S2, C1). C2 is evergreen with a timely hook. S2 and S3 are the myth-busts.\n\n**Body systems:** heart (L1, S1), pancreas (S2), mind and social (S3), blood sugar and weight (C1, C2). No system gets three pieces.\n\n**Skipped:** nothing on the radar was marked reject. I left out the caution topics retatrutide, Viking maintenance data, NAION and creatine for today.",
+  "pieces": [
+    {
+      "id": "L1",
+      "kind": "long",
+      "topic": "Stopping GLP-1 medicines linked to higher heart attack, stroke and death risk: 'metabolic whiplash' in 333,000+ US veterans with type 2 diabetes (WashU)",
+      "angle": "'What happens to your body when a GLP-1 stops?' Explain why benefits seem to depend on staying on treatment, and that the effect goes beyond weight: blood pressure, cholesterol and inflammation can drift back. Walk through the study: 333,000+ US veterans with type 2 diabetes followed about 3 years; risk up to 22% higher after about 2 years off; about 18% lower risk with continuous use vs about 12% for people who restarted. Before using these numbers, check the paper for the exact outcome, the comparator for each figure, and the analysed sample. Name the limits clearly: observational ('linked to', not 'causes'); VA population, so mostly older men with T2D, and results may not apply to people without diabetes; people stop for reasons (cost, side effects, illness) that can confound the results. Evidence-based levers for anyone planning a change, strongest first: plan it with your prescriber, keep up monitoring of blood pressure, lipids and A1C (mg/dL and mmol/mol where relevant), protein, strength training and activity habits. Link to what trials show about weight regain after stopping (STEP 1 extension), with the correct population. Never say 'don't stop' or give any switching or tapering advice. Include the exact prescriber line.",
+      "working_title": "Stopping a GLP-1: What 333,000 Veterans' Records Showed About Heart Risk",
+      "target_keyword": "what happens when you stop GLP-1",
+      "trend_stage": "rising",
+      "why": "Rising (momentum 84) with mainstream syndication on 29 Sep, it answers our audience's biggest 'what if I stop' question, and careful long explainers are scarce.",
+      "pillar": "life-on-glp1"
+    },
+    {
+      "id": "S1",
+      "kind": "short",
+      "topic": "GLP-1 continuity and heart risk: continuous users vs people who restarted (WashU veterans study)",
+      "angle": "Hook: 'The benefit isn't only on the scale.' In 333,687 US veterans with type 2 diabetes (BMJ Medicine, 2026), staying on a GLP-1 was linked to about 18% lower risk of heart attack, stroke or death compared with people on an older diabetes drug (sulfonylureas). Stopping and later restarting was linked to about 12% lower risk vs the same group. On screen, under the numbers: 'vs sulfonylurea users · observational · veterans with T2D'. Line: 'Why people stopped wasn't random: cost, side effects, illness can all play a role.' Close: 'Planning any change? Do it with your prescriber.' Then the exact prescriber line and a pointer to the full video. 35–50s. Title suggestion: 'Staying on a GLP-1: 18% vs 12% Heart-Risk Gap in 333,687 Veterans #shorts'",
+      "working_title": "Stopping a GLP-1: The Heart Number Nobody Mentions #shorts",
+      "target_keyword": "stopping ozempic heart attack",
+      "trend_stage": "rising",
+      "why": "Spin-off of L1: a concrete-number hook that drives traffic to the long video while the story peaks over the next 3–7 days. | fact-check: The angle frames the numbers wrongly. The paper reports 18% lower risk (continuous use) and 12% lower risk (stop then restart), and both are compared with veterans on sulfonylureas, not with each other or with no treatment. 'About 18% vs about 12% for people who restarted' is only accurate with that qualifier. The working title 'The Heart Number Nobody Mentions' is a false/clickbait claim: the study got wide coverage. Sample: 333,687 analysed. Journal: BMJ Medicine, March 2026.",
+      "pillar": "life-on-glp1"
+    },
+    {
+      "id": "S2",
+      "kind": "short",
+      "topic": "Semaglutide not linked to pancreatic cancer in a regulator-mandated Nordic registry study (97,464 matched pairs, EASD 2026)",
+      "angle": "Calm myth-bust with a concrete number: 97,464 matched pairs across Denmark, Sweden and Norway, and no higher pancreatic cancer risk with semaglutide. Scope: adults with type 2 diabetes. Copy the exact comparator drugs and 'and/or' wording from the source (insulin, sulfonylureas, SGLT2 inhibitors). Disclose that it was Novo-funded, regulator-mandated, presented at EASD 2026, with no full paper yet as of September 2026. Say 'not linked to', not 'proven safe'. Mention the J Pers Med global cohort only if it clearly supports the claim. Briefly mention that pancreatitis symptoms (severe belly pain) need prompt care. Add the exact prescriber line.",
+      "working_title": "Semaglutide & Pancreatic Cancer: 97,464 Matched Pairs Checked #shorts",
+      "target_keyword": "ozempic pancreatic cancer",
+      "trend_stage": "emerging",
+      "why": "Low competition, covered on 28 Sep during EASD, it answers a common fear with a large reassuring dataset, and it fits our concrete-number myth-bust hypothesis.",
+      "pillar": "myths"
+    },
+    {
+      "id": "S3",
+      "kind": "short",
+      "topic": "GLP-1 stigma: users hide treatment from friends and family, fearing the 'easy way out' label (Health Communication, 34 interviews, FSU)",
+      "angle": "Compassionate myth-bust: 'Is taking a GLP-1 cheating?' Researchers interviewed 34 adults aged 21–73 on GLP-1s, and many hid it from people close to them. This is a qualitative study, so no percentages. Counter with evidence: major medical societies recognize obesity as a chronic disease, and these medicines work on appetite biology, while habits still matter. End with one warm line on choosing who you tell, plus the exact prescriber line. No before/after imagery or body shaming.",
+      "working_title": "Is Taking a GLP-1 'Cheating'? What 34 Users Told Researchers #shorts",
+      "target_keyword": "is taking ozempic cheating",
+      "trend_stage": "emerging",
+      "why": "An emerging, shareable story with low competition (Newsweek and Yahoo on 28 Sep) that fits our compassion mission and hasn't been taken on by creators.",
+      "pillar": "myths"
+    },
+    {
+      "id": "C1",
+      "kind": "carousel",
+      "topic": "Pill vs pill: orforglipron (Foundayo) vs oral semaglutide in type 2 diabetes, a Lilly indirect comparison at EASD 2026",
+      "angle": "'Two GLP-1 pill comparisons, two different answers: how to read them.' Slide 3: 'Lilly-funded indirect comparison (ACHIEVE-3 vs PIONEER PLUS), adults with T2D, EASD 2026, conference data.' Slide 4: 'Novo-funded indirect comparison (OASIS 4 vs ATTAIN-1), adults with obesity, published 2026, favoured oral semaglutide on weight.' Both get the qualifier line 'indirect · company-funded · not head-to-head'. Slide 6: 'As of Sept 2026: US: orforglipron approved for chronic weight management; type 2 diabetes use not yet an approved indication (check FDA label); EU: under review.' Verify each claim before publishing. No 'better pill' verdict. Close with prescriber questions and the exact prescriber line.",
+      "working_title": "GLP-1 Pill vs GLP-1 Pill: How to Read the New Comparison",
+      "target_keyword": "orforglipron vs oral semaglutide",
+      "trend_stage": "emerging",
+      "why": "The Lilly release went out on 29 Sep and pill searches are growing. A framework for reading indirect comparisons stands out from finance-media headlines and gets saved. | fact-check: Confirmed the Lilly press release (EASD 2026, Milan): Foundayo 17.2 mg vs oral semaglutide 25 mg in adults with T2D, ACHIEVE-3 vs PIONEER PLUS, indirect treatment comparison. The release page timed out, so re-verify the ~1.5-point weight and ~0.3-point A1C differences and the 52-week timepoint before use. The Novo-side analysis is published: 'Oral Semaglutide 25 mg Versus Orforglipron 36 mg in Obesity: A Population-Adjusted Indirect Treatment Comparison' (PubMed 42225305; OASIS 4 vs ATTAIN-1). It favoured oral semaglutide by about 3 percentage points in weight. Label it Novo-funded, obesity population, different orforglipron dose. Regulatory caution: FDA approved Foundayo in April 2026 for chronic weight management in adults with obesity, or overweight plus a weight-related condition. Sources suggest a US type 2 diabetes indication was not approved as of the search (Lilly planned to file), and the EU is still under review. So the comparison is in a population the US label may not cover. The slides must not imply it's approved for T2D, and each regional statement must be checked against the FDA label and EMA pages. Doses may appear only as trial identifiers.",
+      "pillar": "research"
+    },
+    {
+      "id": "C2",
+      "kind": "carousel",
+      "topic": "Why some people lose less on GLP-1: response patterns in large matched cohorts, and SELECT predictors of weight loss",
+      "angle": "'Losing less than your friend? Response varies, and that's in the data.' Slide 2: trial averages with placebo-adjusted vs raw labelled. Slide 3: the five response patterns from the 10,339-pair tirzepatide/semaglutide real-world cohort (high, moderate, late, minimal, regain), definitions copied verbatim, labelled 'observational · EHR data'. Slide 4: from SELECT (Nature Medicine 2024; adults ≥45 with established cardiovascular disease and overweight/obesity, without diabetes): 'weight loss ranged from none to marked; about 1 in 4 lost ≥15%'. Add only factors the paper itself reports. Slide 5: 'benefits can show up beyond the scale': blood pressure, A1C (% and mmol/mol), heart-risk markers. SELECT's Diabetes Care analysis found glycemic benefit even with <2% weight loss. Slide 6: protein, strength training, sleep, fibre. Slide 7: prescriber questions. No switching or dosing talk, a source tag on every claim slide, and the exact prescriber line.",
+      "working_title": "Losing Less on a GLP-1? What Response Patterns Research Shows",
+      "target_keyword": "why am I not losing weight on mounjaro",
+      "trend_stage": "evergreen",
+      "why": "A persistent 'Ozempic not working' search, refreshed with the 24 Sep SELECT predictors paper and the 27 Sep coverage. It's a reassuring framework people save and share. | fact-check: The matched-cohort paper appears to be 'Weight-loss dynamics with tirzepatide versus semaglutide' (PubMed 42311474; medRxiv preprint 10.64898/2025.11.30.25341294). It had 10,339 propensity-matched pairs (tirzepatide vs semaglutide, EHR data) and defines FIVE categories, not four: high (>15% loss), moderate (5–15%), late (<5% in year 1 but >5% cumulative by year 2), minimal (<5%), and weight regain (>5% loss in year 1 then >5% regain in year 2). Check the journal and year on the published version, and show all five. I could not verify a SELECT 'predictors of weight loss' paper in Diabetes Care. The SELECT Diabetes Care paper (2024) is about glycemia regression/progression. The SELECT weight-loss heterogeneity paper is Ryan et al., Nature Medicine 2024: weight loss ranged from none to marked, about a quarter lost ≥15%, and meaningful loss was seen across sexes, races, body sizes and regions. It has been referred to for predictors, but check which factors it actually reports before listing any. SELECT population: adults ≥45 with BMI ≥27, established cardiovascular disease, and no diabetes. Observational real-world predictors (e.g., PubMed 42248359: diabetes, older age, Hispanic ethnicity linked to less loss) must be labelled as associations and handled without stigma.",
+      "pillar": "results"
+    }
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "id": "C2-why-some-people-lose-less-on-glp-1-respo",
+  "date": "2026-09-29",
+  "kind": "carousel",
+  "plan": {
+    "id": "C2",
+    "kind": "carousel",
+    "topic": "Why some people lose less on GLP-1: response patterns in large matched cohorts, and SELECT predictors of weight loss",
+    "angle": "'Losing less than your friend? Response varies, and that's in the data.' Slide 2: trial averages with placebo-adjusted vs raw labelled. Slide 3: the five response patterns from the 10,339-pair tirzepatide/semaglutide real-world cohort (high, moderate, late, minimal, regain), definitions copied verbatim, labelled 'observational · EHR data'. Slide 4: from SELECT (Nature Medicine 2024; adults ≥45 with established cardiovascular disease and overweight/obesity, without diabetes): 'weight loss ranged from none to marked; about 1 in 4 lost ≥15%'. Add only factors the paper itself reports. Slide 5: 'benefits can show up beyond the scale': blood pressure, A1C (% and mmol/mol), heart-risk markers. SELECT's Diabetes Care analysis found glycemic benefit even with <2% weight loss. Slide 6: protein, strength training, sleep, fibre. Slide 7: prescriber questions. No switching or dosing talk, a source tag on every claim slide, and the exact prescriber line.",
+    "working_title": "Losing Less on a GLP-1? What Response Patterns Research Shows",
+    "target_keyword": "why am I not losing weight on mounjaro",
+    "trend_stage": "evergreen",
+    "why": "A persistent 'Ozempic not working' search, refreshed with the 24 Sep SELECT predictors paper and the 27 Sep coverage. It's a reassuring framework people save and share. | fact-check: The matched-cohort paper appears to be 'Weight-loss dynamics with tirzepatide versus semaglutide' (PubMed 42311474; medRxiv preprint 10.64898/2025.11.30.25341294). It had 10,339 propensity-matched pairs (tirzepatide vs semaglutide, EHR data) and defines FIVE categories, not four: high (>15% loss), moderate (5–15%), late (<5% in year 1 but >5% cumulative by year 2), minimal (<5%), and weight regain (>5% loss in year 1 then >5% regain in year 2). Check the journal and year on the published version, and show all five. I could not verify a SELECT 'predictors of weight loss' paper in Diabetes Care. The SELECT Diabetes Care paper (2024) is about glycemia regression/progression. The SELECT weight-loss heterogeneity paper is Ryan et al., Nature Medicine 2024: weight loss ranged from none to marked, about a quarter lost ≥15%, and meaningful loss was seen across sexes, races, body sizes and regions. It has been referred to for predictors, but check which factors it actually reports before listing any. SELECT population: adults ≥45 with BMI ≥27, established cardiovascular disease, and no diabetes. Observational real-world predictors (e.g., PubMed 42248359: diabetes, older age, Hispanic ethnicity linked to less loss) must be labelled as associations and handled without stigma.",
+    "pillar": "results"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Losing Less on a GLP-1? What Response Patterns Research Shows",
+    "social": {
+      "facebook_caption": "Ever wonder why two people on the same GLP-1 medicine can have really different results on the scale? Turns out, response varies, and it's in the data.\n\nIn the big trials, average weight loss on the highest doses ranged from about 9.6% to 20.9% over 68–72 weeks, depending on the drug and whether people had type 2 diabetes (placebo groups lost 2.4–3.4%). Averages hide a wide spread. In an observational study of US health records (10,339 matched tirzepatide–semaglutide pairs followed for 2 years), researchers found 5 response patterns: high, moderate, late, minimal, and weight regain — some people lost little in year 1 but more by year 2. The study couldn't fully account for dose, adherence or other medicines. These patterns describe groups, not your future. The scale isn't the whole story either: in the SELECT trial (adults 45+ with established cardiovascular disease and overweight/obesity, no diabetes), more people on semaglutide reached normal blood sugar at 3 years (69.5% vs 35.8%), and weight loss explained only about a quarter of that.\n\nIf you're on a GLP-1 and feeling discouraged by your numbers, what would help you feel more confident talking to your doctor about it?\n\nIt's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you.\n\n#GLP1 #WeightLossScience #MetabolicHealth",
+      "instagram_caption": "Losing less than your friend on the same GLP-1 medicine? Response varies, and it's in the data.\n\n📊 Trial averages (drug groups, highest-dose arms): semaglutide ~14.9% at 68 weeks (STEP 1), tirzepatide ~20.9% at 72 weeks (SURMOUNT-1); placebo groups lost 2.4–3.1%. Adults with obesity or overweight plus a weight-related condition, no diabetes. Averages hide a wide spread.\n\n🕰️ An observational study of US health records (10,339 matched tirzepatide–semaglutide pairs, 2 years) found 5 response patterns: high, moderate, late, minimal, and regain. \"Late\" responders are a real thing. Patterns describe groups, not your future.\n\n💙 In SELECT (adults 45+, established cardiovascular disease, overweight/obesity, no diabetes), heart attack, stroke or CV death was 20% lower in relative terms (6.5% vs 8.0%). More people reached normal blood sugar at 3 years (69.5% vs 35.8%), and weight loss explained only about a quarter of that. The scale isn't the whole story.\n\nSave this for your next appointment 📌\n\nWhat's one question you'd want to ask your doctor about your own response? 👇\n\nIt's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you.\n\n#GLP1 #Semaglutide #Tirzepatide #WeightLossScience #MetabolicHealth #Wegovy #Zepbound",
+      "tiktok_caption": "Why does weight loss on GLP-1s vary so much? Real-world data found 5 response patterns 👀 It's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you. #GLP1 #Semaglutide #Tirzepatide #Wegovy #Zepbound",
+      "threads_caption": "Two people on the same GLP-1 can lose very different amounts. Trial averages (highest-dose drug groups, 68–72 weeks) range ~9.6–20.9% by drug and diabetes status; placebo groups lost 2.4–3.4%. Real-world data (10,339 matched pairs) found 5 patterns: high, moderate, late, minimal, and regain. In SELECT, weight loss explained only ~1/4 of the blood-sugar benefit. What's your experience?\n\nNot medical advice. It's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you.",
+      "youtube_short_title": "",
+      "youtube_short_description": ""
+    }
+  },
+  "media": {
+    "slides": [
+      "slide-01.jpg",
+      "slide-02.jpg",
+      "slide-03.jpg",
+      "slide-04.jpg",
+      "slide-05.jpg",
+      "slide-06.jpg",
+      "slide-07.jpg",
+      "slide-08.jpg",
+      "slide-09.jpg"
+    ]
+  },
+  "posts": [
+    {
+      "platform": "instagram",
+      "format": "carousel",
+      "slotKey": "carousel",
+      "slot": "2026-09-29T21:30:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "platform": "facebook",
+      "format": "post",
+      "slotKey": "carousel",
+      "slot": "2026-09-29T21:30:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "platform": "tiktok",
+      "format": "carousel",
+      "slotKey": "carousel",
+      "slot": "2026-09-29T21:30:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "platform": "threads",
+      "format": "carousel",
+      "slotKey": "carousel",
+      "slot": "2026-09-29T21:30:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-09-29T08:08:43.230Z",
+  "carousel": {
+    "title": "Losing Less on a GLP-1? What Response Patterns Research Shows",
+    "slides": [
+      {
+        "kind": "hook",
+        "headline": "Losing less than your friend on GLP-1?",
+        "body": "Response varies, and it's in the data",
+        "stat": "",
+        "icon": "balance scale",
+        "bubble": "Wait… we don't all lose the same?!",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      },
+      {
+        "kind": "comparison",
+        "headline": "Trial averages: raw vs placebo-adjusted",
+        "body": "Adults with obesity, or overweight plus a weight-related condition, no diabetes. Tirzepatide = highest-dose arm. Averages hide a wide spread. Sources: STEP 1, SURMOUNT-1 (NEJM).",
+        "stat": "",
+        "icon": "",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [
+          "Semaglutide · STEP 1",
+          "Tirzepatide · SURMOUNT-1"
+        ],
+        "column_icons": [
+          "syringe",
+          "syringe"
+        ],
+        "items": [
+          {
+            "label": "Drug group average",
+            "detail": "−14.9% (68 weeks)",
+            "icon": "",
+            "value": "−20.9% (72 weeks)"
+          },
+          {
+            "label": "Placebo group average",
+            "detail": "−2.4%",
+            "icon": "",
+            "value": "−3.1%"
+          },
+          {
+            "label": "Placebo-adjusted difference",
+            "detail": "−12.4 points",
+            "icon": "",
+            "value": "−17.8 points"
+          }
+        ]
+      },
+      {
+        "kind": "steps",
+        "headline": "5 response patterns in real-world data",
+        "body": "Observational · US health-record data · 10,339 matched tirzepatide–semaglutide pairs, with and without type 2 diabetes, followed 2 years. Couldn't fully account for dose, adherence or other medicines. Patterns describe groups, not your future. Source: Weight-loss dynamics with tirzepatide vs semaglutide, PNAS Nexus 2026.",
+        "stat": "",
+        "icon": "",
+        "bubble": "Plot twist: 'late' responders are a thing",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "High response",
+            "detail": ">15% weight loss",
+            "icon": "sparkles",
+            "value": ""
+          },
+          {
+            "label": "Moderate response",
+            "detail": "5–15% weight loss",
+            "icon": "check mark button",
+            "value": ""
+          },
+          {
+            "label": "Late response",
+            "detail": "<5% in year 1, >5% cumulative by year 2",
+            "icon": "hourglass",
+            "value": ""
+          },
+          {
+            "label": "Minimal response",
+            "detail": "<5% weight loss",
+            "icon": "balance scale",
+            "value": ""
+          },
+          {
+            "label": "Weight regain",
+            "detail": ">5% lost in year 1, ≥5% regained in year 2",
+            "icon": "calendar",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "kind": "pictogram",
+        "headline": "Lost 15% or more by 2 years in SELECT",
+        "body": "SELECT: adults 45+, BMI 27+, established cardiovascular disease, no diabetes. Semaglutide group at week 104. Weight loss varied widely from person to person, but was clinically meaningful on average across sexes, races, body sizes and regions. Nature Medicine 2024.",
+        "stat": "More than 1 in 5 (about 23%)",
+        "icon": "person",
+        "bubble": "",
+        "filled": 1,
+        "total": 5,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      },
+      {
+        "kind": "chart",
+        "headline": "Average loss with vs without type 2 diabetes",
+        "body": "Raw drug-group averages, highest-dose arms, 68–72 weeks. Separate trials, not head-to-head. Placebo groups lost 2.4–3.4%. Sources: STEP 1 & 2, SURMOUNT-1 & 2.",
+        "stat": "",
+        "icon": "",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "Semaglutide · no T2D",
+            "detail": "STEP 1",
+            "icon": "syringe",
+            "value": "14.9%"
+          },
+          {
+            "label": "Semaglutide · T2D",
+            "detail": "STEP 2",
+            "icon": "health:diabetes",
+            "value": "9.6%"
+          },
+          {
+            "label": "Tirzepatide · no T2D",
+            "detail": "SURMOUNT-1",
+            "icon": "syringe",
+            "value": "20.9%"
+          },
+          {
+            "label": "Tirzepatide · T2D",
+            "detail": "SURMOUNT-2",
+            "icon": "health:diabetes",
+            "value": "14.7%"
+          }
+        ]
+      },
+      {
+        "kind": "icon_grid",
+        "headline": "Habits that support your body on GLP-1",
+        "body": "Protein and fiber: 2025 joint nutrition advisory on GLP-1 therapy. Activity: WHO 2020. Sleep: CDC. These support health; they don't guarantee more weight loss.",
+        "stat": "",
+        "icon": "",
+        "bubble": "Muscle is the MVP here",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "Protein first",
+            "detail": "Prioritize protein to help protect muscle (kidney disease? ask your care team about your target)",
+            "icon": "egg",
+            "value": ""
+          },
+          {
+            "label": "Strength training",
+            "detail": "Muscle-strengthening 2+ days a week",
+            "icon": "person lifting weights",
+            "value": ""
+          },
+          {
+            "label": "Sleep",
+            "detail": "Most adults need 7+ hours a night (CDC)",
+            "icon": "health:sleep",
+            "value": ""
+          },
+          {
+            "label": "Fiber",
+            "detail": "Veg, beans, whole grains daily",
+            "icon": "broccoli",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "kind": "checklist",
+        "headline": "Questions to bring to your prescriber",
+        "body": "It's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you.",
+        "stat": "",
+        "icon": "",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "What's a good response for me?",
+            "detail": "Goals beyond the scale count",
+            "icon": "red question mark",
+            "value": ""
+          },
+          {
+            "label": "Which markers should we track?",
+            "detail": "Blood pressure, A1C, cholesterol",
+            "icon": "health:blood pressure",
+            "value": ""
+          },
+          {
+            "label": "Could anything be slowing progress?",
+            "detail": "Other conditions or medicines",
+            "icon": "pill",
+            "value": ""
+          },
+          {
+            "label": "How do I protect muscle?",
+            "detail": "Protein and strength ideas",
+            "icon": "person lifting weights",
+            "value": ""
+          },
+          {
+            "label": "Which side effects need a call?",
+            "detail": "Know when to check in",
+            "icon": "telephone",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "kind": "body_map",
+        "headline": "Benefits can show up beyond the scale",
+        "body": "SELECT: adults 45+ with established cardiovascular disease and overweight/obesity, no diabetes; about 3.3 years average follow-up. Sources: NEJM 2023; Diabetes Care 2024.",
+        "stat": "",
+        "icon": "person",
+        "bubble": "",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": [
+          {
+            "label": "Heart attack, stroke, CV death",
+            "detail": "20% lower relative risk (6.5% vs 8.0%)",
+            "icon": "anatomical heart",
+            "value": ""
+          },
+          {
+            "label": "Blood sugar",
+            "detail": "More reached normal blood sugar at 3 years (69.5% vs 35.8%); weight loss explained only about a quarter of this",
+            "icon": "drop of blood",
+            "value": ""
+          },
+          {
+            "label": "Blood pressure",
+            "detail": "Lower on average vs placebo",
+            "icon": "health:blood pressure",
+            "value": ""
+          },
+          {
+            "label": "Inflammation (CRP)",
+            "detail": "Lower on average vs placebo",
+            "icon": "health:blood cells",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "kind": "cta",
+        "headline": "Save this for your next appointment",
+        "body": "Response to GLP-1 varies, and the scale is just one measure of how it's working.",
+        "stat": "",
+        "icon": "",
+        "bubble": "Send this to your GLP-1 buddy!",
+        "filled": 0,
+        "total": 0,
+        "columns": [],
+        "column_icons": [],
+        "items": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity (STEP 1)",
+        "publisher": "New England Journal of Medicine",
+        "year": "2021",
+        "url": "https://doi.org/10.1056/NEJMoa2032183"
+      },
+      {
+        "id": "s2",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1)",
+        "publisher": "New England Journal of Medicine",
+        "year": "2022",
+        "url": "https://doi.org/10.1056/NEJMoa2206038"
+      },
+      {
+        "id": "s3",
+        "title": "Weight-loss dynamics with tirzepatide versus semaglutide",
+        "publisher": "PNAS Nexus",
+        "year": "2026",
+        "url": "https://academic.oup.com/pnasnexus/article/5/6/pgag171/8708114"
+      },
+      {
+        "id": "s4",
+        "title": "Long-term weight loss effects of semaglutide in obesity without diabetes in the SELECT trial",
+        "publisher": "Nature Medicine",
+        "year": "2024",
+        "url": "https://www.nature.com/articles/s41591-024-02996-7"
+      },
+      {
+        "id": "s5",
+        "title": "Semaglutide 2·4 mg once a week in adults with overweight or obesity, and type 2 diabetes (STEP 2)",
+        "publisher": "The Lancet",
+        "year": "2021",
+        "url": "https://doi.org/10.1016/S0140-6736(21)00213-0"
+      },
+      {
+        "id": "s6",
+        "title": "Tirzepatide once weekly for the treatment of obesity in people with type 2 diabetes (SURMOUNT-2)",
+        "publisher": "The Lancet",
+        "year": "2023",
+        "url": "https://doi.org/10.1016/S0140-6736(23)01200-X"
+      },
+      {
+        "id": "s7",
+        "title": "Nutritional priorities to support GLP-1 therapy for obesity: a joint Advisory from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society",
+        "publisher": "American Journal of Clinical Nutrition",
+        "year": "2025",
+        "url": "https://ajcn.nutrition.org/article/S0002-9165(25)00240-0/fulltext"
+      },
+      {
+        "id": "s8",
+        "title": "WHO guidelines on physical activity and sedentary behaviour",
+        "publisher": "World Health Organization",
+        "year": "2020",
+        "url": "https://www.who.int/publications/i/item/9789240015128"
+      },
+      {
+        "id": "s9",
+        "title": "About Sleep",
+        "publisher": "CDC",
+        "year": "2024",
+        "url": "https://www.cdc.gov/sleep/about/index.html"
+      },
+      {
+        "id": "s10",
+        "title": "Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes (SELECT)",
+        "publisher": "New England Journal of Medicine",
+        "year": "2023",
+        "url": "https://doi.org/10.1056/NEJMoa2307563"
+      },
+      {
+        "id": "s11",
+        "title": "Effect of Semaglutide on Regression and Progression of Glycemia in People With Overweight or Obesity but Without Diabetes in the SELECT Trial",
+        "publisher": "Diabetes Care",
+        "year": "2024",
+        "url": "https://diabetesjournals.org/care/article/47/8/1350/156833/Effect-of-Semaglutide-on-Regression-and"
+      }
+    ]
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "The carousel is accurate and safe. The key numbers check out against the trial results, and I confirmed seven of the eleven sources directly. STEP 1 (−14.9% vs −2.4%, a 12.4-point difference, 68 weeks), SURMOUNT-1 (−20.9% vs −3.1%, 17.8 points, highest-dose arm, 72 weeks), STEP 2 (9.6%, placebo 3.4%) and SURMOUNT-2 (14.7%, placebo 3.2%) all match. The placebo range of 2.4–3.4% is right, and the trial populations are named correctly.\n\nI confirmed the PNAS Nexus 2026 paper (published 16 June 2026): 10,339 matched pairs, US academic health-system medical records, 2-year follow-up, and the five response groups as defined on slide 3.\n\nThe Diabetes Care SELECT analysis shows 69.5% vs 35.8% reaching normal blood sugar at 156 weeks, with weight loss explaining about 24.5–27.1% of the effect, so \"about a quarter\" is fair. SELECT's population, the 20% relative risk reduction (6.5% vs 8.0%), about 3.3 years of follow-up, and lower blood pressure and CRP are right. So are the WHO advice on muscle-strengthening 2+ days a week, CDC's 7+ hours of sleep, and the 2025 joint nutrition advisory.\n\nFraming is good throughout: raw vs placebo-adjusted numbers are labeled, the observational data is flagged, \"separate trials\" is noted, and relative risk comes with absolute numbers. The prescriber line is exact.\n\nFive small wording fixes:\n1. Slide 3 should say the real-world group included people with and without type 2 diabetes. Otherwise it reads as the same no-diabetes population as slide 2.\n2. Slide 3's regain threshold should read \"≥5%\".\n3. Slide 3 should add the authors' main limitation.\n4. Slide 6 needs a protein caveat for people with kidney disease.\n5. The SELECT 22.9% figure couldn't be checked against the full text, because the pages were paywalled or blocked by a captcha. It's consistent with other reports, which put it at about 23%.\n\nI haven't listed the four sources I couldn't open: STEP 1, STEP 2, SURMOUNT-1 and SURMOUNT-2. Their figures match the published results, but their DOI links still need a manual click-check.",
+    "issues": [
+      {
+        "location": "Slide 3 (steps) body",
+        "claim": "Observational · EHR data · 10,339 propensity-matched tirzepatide–semaglutide pairs. Patterns describe groups, not your future.",
+        "problem": "It leaves out who was studied and what the authors say the study can't show. The PNAS Nexus group included people with and without type 2 diabetes, from US academic medical centers, followed for 2 years. Coming right after slide 2 (no diabetes), readers may assume it's the same population. The authors also say the design can't account for dose, adherence, other medicines, or tolerability.",
+        "severity": "minor",
+        "fix": "Observational · US health-record data · 10,339 matched tirzepatide–semaglutide pairs, with and without type 2 diabetes, followed 2 years. Couldn't fully account for dose, adherence or other medicines. Patterns describe groups, not your future. Source: Weight-loss dynamics with tirzepatide vs semaglutide, PNAS Nexus 2026."
+      },
+      {
+        "location": "Slide 3, item 'Weight regain' detail",
+        "claim": ">5% lost year 1, >5% regained year 2",
+        "problem": "The paper defines regain as ≥5% regained in year 2.",
+        "severity": "minor",
+        "fix": ">5% lost in year 1, ≥5% regained in year 2"
+      },
+      {
+        "location": "Slide 6 (icon_grid), item 'Protein first' detail",
+        "claim": "Prioritize protein to help protect muscle",
+        "problem": "This is general nutrition advice with no caveat for people with chronic kidney disease, who may be advised to limit protein.",
+        "severity": "minor",
+        "fix": "Prioritize protein to help protect muscle (kidney disease? ask your care team about your target)"
+      },
+      {
+        "location": "Slide 4 (pictogram) stat",
+        "claim": "About 1 in 4 (22.9%)",
+        "problem": "I couldn't open the full Nature Medicine text to confirm 22.9%, because of paywall and captcha blocks. Secondary reports give a figure of about 23%. The rounding to 1 in 4 is fair, and the 1-of-4 pictogram slightly overstates it.",
+        "severity": "minor",
+        "fix": "Keep the stat only after checking 22.9% against the Nature Medicine week-104 figure. Otherwise use 'More than 1 in 5 (about 23%)'."
+      },
+      {
+        "location": "Sources s9",
+        "claim": "About Sleep, CDC, 2024",
+        "problem": "The year should be the page's current last-reviewed date (source hygiene).",
+        "severity": "minor",
+        "fix": "Set the year to the page's displayed 'last reviewed' date when publishing."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "s3",
+        "title": "Weight-loss dynamics with tirzepatide versus semaglutide",
+        "publisher": "PNAS Nexus",
+        "year": "2026",
+        "url": "https://academic.oup.com/pnasnexus/article/5/6/pgag171/8708114"
+      },
+      {
+        "id": "s4",
+        "title": "Long-term weight loss effects of semaglutide in obesity without diabetes in the SELECT trial",
+        "publisher": "Nature Medicine",
+        "year": "2024",
+        "url": "https://www.nature.com/articles/s41591-024-02996-7"
+      },
+      {
+        "id": "s7",
+        "title": "Nutritional priorities to support GLP-1 therapy for obesity: a joint Advisory from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society",
+        "publisher": "American Journal of Clinical Nutrition",
+        "year": "2025",
+        "url": "https://ajcn.nutrition.org/article/S0002-9165(25)00240-0/fulltext"
+      },
+      {
+        "id": "s8",
+        "title": "WHO guidelines on physical activity and sedentary behaviour",
+        "publisher": "World Health Organization",
+        "year": "2020",
+        "url": "https://www.who.int/publications/i/item/9789240015128"
+      },
+      {
+        "id": "s9",
+        "title": "About Sleep",
+        "publisher": "CDC",
+        "year": "2024",
+        "url": "https://www.cdc.gov/sleep/about/index.html"
+      },
+      {
+        "id": "s10",
+        "title": "Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes (SELECT)",
+        "publisher": "New England Journal of Medicine",
+        "year": "2023",
+        "url": "https://doi.org/10.1056/NEJMoa2307563"
+      },
+      {
+        "id": "s11",
+        "title": "Effect of Semaglutide on Regression and Progression of Glycemia in People With Overweight or Obesity but Without Diabetes in the SELECT Trial",
+        "publisher": "Diabetes Care",
+        "year": "2024",
+        "url": "https://diabetesjournals.org/care/article/47/8/1350/156833/Effect-of-Semaglutide-on-Regression-and"
+      }
+    ]
+  },
+  "qa": {
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "instagram_caption, 📊 paragraph",
+          "claim": "Trial averages: semaglutide ~14.9% (STEP 1), tirzepatide ~20.9% (SURMOUNT-1)",
+          "problem": "Slide 2 labels these as raw drug-group averages over 68/72 weeks and shows placebo alongside. Without that, a reader could credit the whole drop to the drug.",
+          "severity": "minor",
+          "fix": "📊 Trial averages (drug groups, highest-dose arms): semaglutide ~14.9% at 68 weeks (STEP 1), tirzepatide ~20.9% at 72 weeks (SURMOUNT-1); placebo groups lost 2.4–3.1%. Adults with obesity or overweight plus a weight-related condition, no diabetes. Averages hide a wide spread."
+        },
+        {
+          "location": "instagram_caption, 🕰️ paragraph",
+          "claim": "Real-world data (10,339 matched tirzepatide–semaglutide pairs, 2 years) found 5 response patterns",
+          "problem": "Leaves out that the study is observational and has limits the slide states (dose, adherence and other medicines weren't fully accounted for), and that patterns describe groups.",
+          "severity": "minor",
+          "fix": "🕰️ An observational study of US health records (10,339 matched tirzepatide–semaglutide pairs, 2 years) found 5 response patterns: high, moderate, late, minimal, and regain. \"Late\" responders are a real thing. Patterns describe groups, not your future."
+        },
+        {
+          "location": "instagram_caption, 💙 paragraph",
+          "claim": "weight loss explained only about a quarter of the blood-sugar benefit",
+          "problem": "Refers to 'the blood-sugar benefit' without saying what it was, so the claim reads vaguer than the slide.",
+          "severity": "minor",
+          "fix": "…was 20% lower in relative terms (6.5% vs 8.0%). More people reached normal blood sugar at 3 years (69.5% vs 35.8%), and weight loss explained only about a quarter of that. The scale isn't the whole story."
+        },
+        {
+          "location": "threads_caption",
+          "claim": "Trial averages range ~9.6–20.9% by drug and diabetes status.",
+          "problem": "Drops the timeframe, the highest-dose arm and the placebo context that the chart slide carries.",
+          "severity": "minor",
+          "fix": "Trial averages (highest-dose drug groups, 68–72 weeks) range ~9.6–20.9% by drug and diabetes status; placebo groups lost 2.4–3.4%."
+        },
+        {
+          "location": "facebook_caption, paragraph 2",
+          "claim": "In an observational study of US health records (10,339 matched tirzepatide–semaglutide pairs followed for 2 years), researchers found 5 response patterns",
+          "problem": "Leaves out the limitation stated on slide 3.",
+          "severity": "minor",
+          "fix": "After \"…but more by year 2.\" add: \"The study couldn't fully account for dose, adherence or other medicines.\""
+        }
+      ]
+    }
+  },
+  "release_tag": "content-2026-09-29",
+  "archive_url": "b2://informed-lab-media/content/2026-09-29/C2-why-some-people-lose-less-on-glp-1-respo/",
+  "image_urls": [
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-29/C2-why-some-people-lose-less-on-glp-1-respo/slide-01.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-29/C2-why-some-people-lose-less-on-glp-1-respo/slide-02.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-29/C2-why-some-people-lose-less-on-glp-1-respo/slide-03.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-29/C2-why-some-people-lose-less-on-glp-1-respo/slide-04.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-29/C2-why-some-people-lose-less-on-glp-1-respo/slide-05.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-29/C2-why-some-people-lose-less-on-glp-1-respo/slide-06.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-29/C2-why-some-people-lose-less-on-glp-1-respo/slide-07.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-29/C2-why-some-people-lose-less-on-glp-1-respo/slide-08.jpg",
+    "https://raw.githubusercontent.com/cloudstrive6/informed-social-posting-automation/media/carousels/2026-09-29/C2-why-some-people-lose-less-on-glp-1-respo/slide-09.jpg"
+  ]
+}
