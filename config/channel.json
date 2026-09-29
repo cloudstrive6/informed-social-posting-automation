@@ -77,7 +77,7 @@
     "chatterboxModel": "turbo",
     "voiceRef": "assets/voice/narrator.wav",
     "exaggeration": 0.55,
-    "_comment": "provider: elevenlabs (best, paid) | chatterbox (free, expressive) | kokoro (free, fast). Falls back down that list automatically if one fails.",
+    "_comment": "provider: elevenlabs (best, paid) → Chirp 3 HD (Google, free up to 1M chars/month) → chatterbox (free, local) → kokoro (free, fast). Falls back down that list automatically.",
     "kokoroVoice": "af_heart",
     "kokoroShortVoice": "af_heart",
     "baseSpeed": 1.0,
@@ -97,6 +97,11 @@
       ],
       "_budgetComment": "monthlyCredits = your plan (Starter 40,000; Pro 600,000). useFor: which content gets ElevenLabs. A piece only uses ElevenLabs if its whole narration fits the remaining monthly budget; otherwise it falls back to Chatterbox and a Telegram alert suggests upgrading. Shorts are produced first each day, so they get the budget first. eleven_flash_v2_5 costs 0.5 credits/char (set creditsPerChar 0.5).",
       "renewDay": 26
+    },
+    "chirp": {
+      "_comment": "Google Chirp 3 HD fallback narrator (free up to 1M characters/month). Male voices close to 'Jeremy': Achird (friendly), Puck (upbeat), Umbriel (easy-going), Zubenelgenubi (casual), Charon (informative).",
+      "voice": "en-US-Chirp3-HD-Achird",
+      "monthlyFreeChars": 1000000
     }
   },
   "video": {

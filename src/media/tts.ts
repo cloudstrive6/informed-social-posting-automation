@@ -5,6 +5,7 @@ import { readJson, writeJson } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
 import { canUseEleven } from "../lib/usage.js";
 import { elevenNarrate } from "./eleven.js";
+import { chirpEnabled, chirpNarrate } from "./chirp.js";
 import { run } from "./exec.js";
 
 export interface Word { text: string; start: number; end: number }
@@ -15,7 +16,8 @@ export interface NarrationScene { id: string; text: string; speed: number; pause
  * Synthesize narration. Default: Chatterbox (expressive, human-sounding) + Whisper word timing.
  * Falls back to Kokoro (fast, lighter) if Chatterbox fails. Returns WAV path + word-level timeline.
  */
-export async function narrate(scenes: NarrationScene[], dir: string, voice = config.voice.kokoroVoice, redo: Map<string, number> = new Map(), kind = "short"): Promise<{ wav: string; timeline: Timeline; provider: string }> {
+/** `plain`: the same scenes without pronunciation respellings (Google's voices read capitalized respellings as letters). */
+export async function narrate(scenes: NarrationScene[], dir: string, voice = config.voice.kokoroVoice, redo: Map<string, number> = new Map(), kind = "short", plain?: NarrationScene[]): Promise<{ wav: string; timeline: Timeline; provider: string }> {
   const wav = join(dir, "narration.wav");
   const out = join(dir, "narration.json");
   const lines = scenes.map(s => ({ ...s, speed: +(s.speed * config.voice.baseSpeed).toFixed(3) }));
@@ -25,10 +27,10 @@ export async function narrate(scenes: NarrationScene[], dir: string, voice = con
   const choice = readJson<{ provider: string }>(choiceFile, { provider: config.voice.provider === "elevenlabs" && canUseEleven(kind, chars) ? "elevenlabs" : "local" });
   writeJson(choiceFile, choice);
   if (config.voice.provider === "elevenlabs" && choice.provider !== "elevenlabs") {
-    log.info(`ElevenLabs skipped for this ${kind} (budget/useFor); using Chatterbox`);
+    log.info(`ElevenLabs skipped for this ${kind} (budget/useFor); using the fallback voice`);
     if (config.voice.elevenlabs.useFor.includes(kind)) {
       const { notify } = await import("../notify/telegram.js");
-      await notify(`🎙️ ElevenLabs credits are running low: this ${kind} is being narrated with the backup voice (Chatterbox). Upgrade the ElevenLabs plan and set <code>voice.elevenlabs.monthlyCredits</code> to the new allowance to bring Jeremy back.`);
+      await notify(`🎙️ ElevenLabs credits are running low: this ${kind} is being narrated with the backup voice (Google Chirp HD). Upgrade the ElevenLabs plan and set <code>voice.elevenlabs.monthlyCredits</code> to the new allowance to bring Jeremy back.`);
     }
   }
   if (choice.provider === "elevenlabs") {
@@ -41,6 +43,12 @@ export async function narrate(scenes: NarrationScene[], dir: string, voice = con
         await notify(`🎙️ ElevenLabs refused the narration (${msg.slice(0, 120).replace(/[<>&]/g, "")}). This ${kind} uses the backup voice. Check the ElevenLabs plan/credits.`);
       }
     }
+  }
+  // Google Chirp 3 HD: the free, near-ElevenLabs fallback (kept inside the monthly free allowance)
+  if (config.voice.provider !== "kokoro" && chirpEnabled(chars)) {
+    const plainLines = plain ? plain.map(s => ({ ...s, speed: +(s.speed * config.voice.baseSpeed).toFixed(3) })) : lines;
+    try { return { ...(await chirpNarrate(plainLines, dir)), provider: "chirp" }; }
+    catch (e) { log.warn(`Chirp failed, falling back to Chatterbox: ${(e as Error).message.slice(0, 300)}`); }
   }
   if (config.voice.provider !== "kokoro") {
     const job = join(dir, "tts-job.json");

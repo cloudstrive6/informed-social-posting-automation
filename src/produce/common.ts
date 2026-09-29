@@ -101,7 +101,7 @@ export async function narrateChecked(spoken: { id: string; text: string; speed: 
   writeJson(join(dir, "pronunciations-used.json"), Object.fromEntries([...used].map(t => [t, lex[t]])));
 
   const redo = new Map<string, number>();
-  let res = await narrate(voiced, dir, voice, redo, kind);
+  let res = await narrate(voiced, dir, voice, redo, kind, spoken);
   let checks: SceneCheck[] = [];
   if (!config.qa.enabled) return { ...res, checks, wer: 0, spokenText: spoken.map(s => s.text).join(" "), learned };
   const eleven = res.provider === "elevenlabs";
@@ -110,8 +110,8 @@ export async function narrateChecked(spoken: { id: string; text: string; speed: 
     const bad = checks.filter(c => c.wer > config.qa.sceneWerThreshold);
     log.info(`narration QA: ${checks.length - bad.length}/${checks.length} scenes clean${bad.length ? ` — retake: ${bad.map(b => `${b.id} (${Math.round(b.wer * 100)}% ${b.diffs[0] ?? ""})`).join("; ")}` : ""}`);
     if (!bad.length || attempt === config.qa.narrationMaxRetakes) break;
-    if (eleven) { bad.forEach(b => redo.set(b.id, (redo.get(b.id) ?? 0) + 1)); res = await narrate(voiced, dir, voice, redo, kind); }
-    else if (res.provider === "chatterbox" && attempt === 0) res = await narrate(voiced, dir, voice, new Map(), kind);
+    if (eleven) { bad.forEach(b => redo.set(b.id, (redo.get(b.id) ?? 0) + 1)); res = await narrate(voiced, dir, voice, redo, kind, spoken); }
+    else if (res.provider === "chatterbox" && attempt === 0) res = await narrate(voiced, dir, voice, new Map(), kind, spoken);
     else break;
   }
   const words = spoken.reduce((a, s) => a + s.text.split(/\s+/).length, 0);
