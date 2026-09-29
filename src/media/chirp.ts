@@ -30,7 +30,7 @@ function addUsage(chars: number) {
 }
 
 async function synth(text: string, rate: number, out: string) {
-  const voice = config.voice.chirp?.voice ?? "en-US-Chirp3-HD-Achird";
+  const voice = config.voice.chirp?.voice ?? "en-US-Chirp3-HD-Algenib";
   const j = await httpJson<{ audioContent: string }>(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${env("GOOGLE_TTS_API_KEY", true)}`, {
     method: "POST", headers: { "content-type": "application/json" }, timeoutMs: 120_000,
     body: JSON.stringify({
@@ -45,7 +45,7 @@ async function synth(text: string, rate: number, out: string) {
 /** Narrate every scene (cached per scene), join with the scene pauses, and time the words with Whisper. */
 export async function chirpNarrate(lines: NarrationScene[], dir: string): Promise<{ wav: string; timeline: Timeline }> {
   const cache = ensureDir(join(dir, "tts-cache-chirp"));
-  const voice = config.voice.chirp?.voice ?? "en-US-Chirp3-HD-Achird";
+  const voice = config.voice.chirp?.voice ?? "en-US-Chirp3-HD-Algenib";
   const parts: { file: string; pause: number; id: string }[] = [];
   let billed = 0;
   for (const l of lines) {

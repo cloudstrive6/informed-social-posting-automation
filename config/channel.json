@@ -99,8 +99,8 @@
       "renewDay": 26
     },
     "chirp": {
-      "_comment": "Google Chirp 3 HD fallback narrator (free up to 1M characters/month). Male voices close to 'Jeremy': Achird (friendly), Puck (upbeat), Umbriel (easy-going), Zubenelgenubi (casual), Charon (informative).",
-      "voice": "en-US-Chirp3-HD-Achird",
+      "_comment": "Google Chirp 3 HD fallback narrator (free up to 1M characters/month). Chosen by the owner: Algenib. Other male options: Achird, Puck, Umbriel, Zubenelgenubi, Charon.",
+      "voice": "en-US-Chirp3-HD-Algenib",
       "monthlyFreeChars": 1000000
     }
   },
