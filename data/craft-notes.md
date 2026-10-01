@@ -1,46 +1,79 @@
-_Based on 28 QA records from 2026-09-26 to 2026-09-30: 8 carousels, 12 Shorts and 8 long-form videos. 8 were held. Scope errors caused 4 holds (C1 and S1 09-26, S1 09-28, L1 09-29). Narration spelling caused 2 (L2 and L3 09-27). A causal, over-long title caused 1 (S2 09-30: "Cuts Asthma Attacks Up to 40%" on observational data)._
+_Based on 34 QA records from 2026-09-26 to 2026-10-01: 10 carousels, 15 Shorts and 9 long-form videos. 10 were held:_
+- _5 for scope errors: C1 and S1 09-26, S1 09-28, L1 09-29, and S2 10-01 ("all" participants had T2D/obesity, but the source says that only about the 1,329 controls)._
+- _3 for phonetic respellings in narration or subtitles: L2 and L3 09-27, and S1 10-01 ("amilin", "Lily's Allura TZP", "Phase twob")._
+- _1 for a dropped key limitation (L1 09-27)._
+- _1 for a causal, over-long title (S2 09-30)._
 
-_09-30 had the best visual scores so far: L1 scored 7.3 with 2 weak shots, and the Shorts scored 7.0–7.4 with 0 on-hero pills and 0 narration or subtitle mismatches. Three things came back: **label/tag-on-caption overlaps in Shorts (38 findings across S1, S2 and S3 09-30, after 0 on 09-29)**, **long-form tiny text (20) and off-screen boxes (14) in L1 09-30**, and **a cut-off YouTube description (L1 09-30, the 7th of 8 long-form videos)**. Captions that drop qualifiers or safety caveats are still the most common packaging finding._
+_What 10-01 showed:_
+- _Visuals held at their best level (Shorts 6.3–7.3, L1 7.3). Shorts caption overlaps fell from 38 findings to 5._
+- _Three things came back: phonetic respellings (a hold), a relative figure without its absolute (S3 major), and a "no significant difference" result written as "no drop" (C1 major)._
+- _The YouTube description was cut off again: now 8 of 9 long-form videos._
 
 ### Motion Designer
-- **Shorts: no label, tag or chip may come within 40px of the caption band, and none may sit behind it.** Put tags in the upper half or beside the hero art. When a caption box changes, clear the previous shot's labels completely. S2 09-30 showed "ghost" labels (Sulfonylurea, Semaglutide, Dulaglutide) cut off behind new caption boxes. There were 38 overlap findings on 09-30 (S2 19, S3 12, S1 7) and 35 on 09-28.
-- **Use text of at least ~40px on a 1080 frame, or drop the label.** This covers delta tags, date chips, duration pills and "Stopped early"-type tags, not just chip labels. Items at 20–26px get flagged every time: 73 tiny-text findings in long-form, including 20 in L1 09-30 ("80 weeks", "~+6", "Milan").
-- **Keep every box and figure inside the safe frame: the bottom edge ≤92% of frame height (y ≤ 994 on 1080, y ≤ 1766 on 1920), with a 5% margin on each side and at the top.** People rows, face icons and labels count, not just pills. Wrap or shrink long pills. Long-form had 0 off-screen findings on 09-29 but 14 in L1 09-30. People or face rows were cropped at the bottom edge in S3 09-29 and S3 09-30.
-- **Never open on, or hold, a lone icon on a plain gradient, and keep the backdrop for the whole shot.** Every sampled frame needs a headline plus hero art or a scene covering at least ~25% of the frame. Don't cut from a full room to an empty gradient partway through a shot, and don't leave big areas of empty sky. There were 121 sparse findings in long-form, plus lone-icon frames in S1 09-29 and S1, S2 and S3 09-30.
-- **Stat pills and their qualifier lines never go on the hero art. Put them above or beside it.** There were 9 on-hero findings (09-28/29) and 0 on 09-30, so keep doing this.
-- **Keep text, decorations and speech bubbles off faces and off each other.** Put the headline in the top band and the mascot below it. If something can't move, put the text on a solid panel. There are about 22 notes, including a question mark on a face in S3 09-29 and a caption over a speech bubble in S1 09-30.
-- **Keep charts in their own box, below the big number, the headline and the qualifier line** (6 notes across 3 long-form videos).
-- **Short captions: 2 lines or fewer, broken at phrase boundaries, and never split inside a number.** No fragments ending in a comma, such as "ON THE TOP DOSE," or "OUT." NOW,". Show numbers the same way in the caption and the pill: "Phase 2" and "24.2%", never "PHASE TWO" or "POINT TWO PERCENT" (10 notes: S2 09-28, S3 09-29, S1 09-30).
+- **Shorts: keep every label, tag and chip at least 40px from the caption band, and never behind it.** Put tags in the upper half or beside the hero art. Fully clear the previous shot's labels when a caption box changes. Ghost labels behind new captions appeared in S2 09-30 and S1 10-01 ("Petrelintide"). Overlap findings: 35 on 09-28, 38 on 09-30, 5 on 10-01. Keep improving.
+- **Text must be at least ~40px on a 1080 frame, or drop the label.** This includes delta tags, date chips, clock pills ("72 wk: 15.7%"), arrow labels ("More stopped") and body-part labels. Anything at 20–26px gets flagged every time: 88 tiny-text findings in long-form, 15 of them in L1 10-01. Shoulder labels in S1 10-01 were also too small.
+- **Keep every box and figure inside the safe frame: bottom edge ≤92% of frame height (y ≤ 994 on 1080, y ≤ 1766 on 1920), with a 5% margin at the sides and top.** Label pills under characters count. In L1 10-01, the "Combo"/"Tirzepatide" pills reached y=1106. People rows were cropped in S3 09-29 and S3 09-30. Long-form off-screen findings: 14 on 09-30, 4 on 10-01.
+- **Never open on, or hold, a lone icon on a plain gradient, and keep the same backdrop for the whole shot.** Every sampled frame needs a headline plus hero art or a scene covering at least ~25% of the frame. There were 129 sparse findings in long-form. Lone-icon openings: S1/S2/S3 09-30, the pointing hand in L1 10-01, the test tube in S1 10-01.
+- **Keep text off faces, off the hero art and off other elements.** Put stat pills and their qualifier lines above or beside the hero. Put the headline in the top band with the mascot below it. Charts get their own box below the number and qualifier line. People icons must not cross headlines (S1 10-01 "trial"). Badges must not land on props (L1 10-01). There were about 30 notes, with on-hero findings at 0 since 09-30.
+- **Short captions: 2 lines or fewer, broken at phrase boundaries, never split inside a number, and always numerals matching the pill.** Write "11–27%", "39% vs 9%", "2026" and "Phase 2b", never "ELEVEN TO 27%", "VERSUS", "TWENTY TWENTY-SIX" or "POINT TWO PERCENT". Don't leave fragments ending in a comma. There were 13 notes, including S1 and S2 10-01.
 
 ### Scriptwriters
-- **Write narration in normal spelling, American spelling included ("Wegovy", "Mounjaro", "CagriSema", "semaglutide", "GLP-1", "FDA", "recognized"), and never use phonetic respellings.** Write stats as numerals ("34 adults", "24.2%", "Phase 2") so the captions show numerals too. Reword any bare number that could be read as a year. This caused 2 holds and 11 mismatched scenes up to 09-28, with 0 on 09-29/30, so keep doing it.
-- **Give every number its comparator, its arm and its estimand.** Show placebo next to the drug figure (4.5% vs 0.8%). Say "top dose" or "highest-dose group average". Label relative vs absolute and give the absolute figure for every relative one. When the two estimands differ, name which one you're using and show both. Show a model estimate with its range. Don't set raw drops next to placebo-adjusted differences (12 findings, including C1, C2, S1 and L1 09-30).
-- **State the conditions and limits the result depends on:** who was studied, for how long, the size of the smallest arm, and what the authors say the study can't show. Put the strongest evidence (for example a randomised head-to-head trial) first (7 findings, including C2 09-30 slide order and S2 09-30's 1,493-user arm).
-- **Never invent figures.** Don't give time estimates or other numbers no source states (S3 09-30). Don't present a running count ("49 so far in 2026") as a final number (2 findings).
-- **On-screen text can't be stronger than the narration** ("a guess", a bare "<5%", a flat "not yet published", "sharps" wording broader than the narration in S3 09-30: 4 findings).
-- **Give lab values in both mg/dL and mmol/L** (2 findings).
+- **Write narration in normal spelling only: "amylin", "Lilly", "CagriSema", "Mounjaro", "semaglutide", "Phase 2b", "FDA", American spelling. Never use phonetic respellings.** Subtitles are built from the script, so any respelling shows up on screen as a misspelled drug or company name. This caused 3 holds, the latest S1 10-01, after 0 findings on 09-29/30. Write stats as numerals, and reword any bare number that could be read as a year.
+- **Every number needs its comparator, arm and estimand, and every relative figure needs its absolute figure.**
+  - A hazard ratio alone is not enough. Give the absolute rates: "HR 0.43: 1.4% vs 3.2%" (S3 10-01 major).
+  - Put placebo next to every rate, including dropouts (S1 10-01: 16.7% on placebo stopped).
+  - Name which way of counting you use ("everyone randomised" vs "if they stayed on treatment"), and don't compare across the two (L1 10-01: 3.3% vs 3.2%).
+  - Give the trial's own estimated difference with its CI (C1 10-01).
+  - Lab values go in mg/dL and mmol/L.
+  - 17 findings in total.
+- **Report null results exactly.** "No significant difference vs placebo" is not "no drop" (C1 10-01 major: both arms improved). Not proven is not "a myth" (S2 10-01). Say whether a comparison was the primary or a secondary endpoint (L1 10-01, S2 09-28). 4 findings.
+- **State the conditions and limits the result depends on.** That means who was studied, for how long, the size of the smallest arm, and the limitations the authors or independent experts raise. Leaving out the experts' key limitation caused the hold on L1 09-27. Put the strongest evidence first. 8 findings.
+- **Never invent figures, and on-screen text can never be stronger than the narration.**
+  - Don't give time estimates no source states.
+  - Don't present a running count as a final number.
+  - Use the source's own hedge: "usually benign", not "harmless".
+  - 8 findings (S3 09-30, S1 09-26, L3 09-27, S2 10-01).
 
 ### Carousel Designer
-- **Every stat, range, chart, pictogram or bubble needs a qualifier line saying what it counts:** raw vs placebo-adjusted, the comparator, timeframe, subgroup (defined), modelled with its range, or separate cohorts. Pictograms must not round the number up. This also applies to Short stat pills and thumbnail numbers (11 findings, including C1 and C2 09-30).
-- **Put a source tag on every claim slide, and make sure that source says it.** Attribute paraphrases to whoever actually said them (Healio, not "the authors"). Don't add words the source doesn't use. The title must promise only what the slides deliver, and should state the less favourable estimand too (6 findings, including C2 09-30).
+- **Every stat, range, chart, pictogram or bubble needs a qualifier line saying what it counts.** That means raw vs placebo-adjusted, the comparator, the timeframe, a defined subgroup, modelled values with their range, or separate cohorts. Pictograms must not round up. This also applies to Short stat pills and thumbnail numbers. 12 findings, including C1 10-01.
+- **Every claim slide gets a source tag, and that source must actually say it.** Attribute paraphrases to whoever said them. Don't use a "24/7" layout for a helpline that isn't 24/7 (C1 10-01 Drinkline). The title must promise only what the slides deliver, including the less favourable estimand. 7 findings.
 
 ### Social Copywriter & packaging
-- **YouTube titles: 100 characters or fewer, "linked to" for observational data, the verified number (not the press-release "up to"), and the population and comparator named.** Examples: "Semaglutide Linked to Nearly 40% Fewer Asthma Flare-ups in Adults with T2D and Asthma" and "20.8% (highest dose) vs 4% placebo". This caused 1 hold (S2 09-30), with 13 findings across titles, thumbnails and keywords, including L1 09-30. Use generic names first, and don't lead with a brand the trial didn't test. No weight-loss hashtags and no emojis that undercut the message.
-- **YouTube description: aim for 2,500 characters and never go over 3,500, in this order:** a quick answer of 3 lines or less → the disclaimer and prescriber line → up to 5 sources (short title + URL) → up to 8 chapters. "Key numbers" or "What you'll learn" lists go after the sources, or get cut. Check that the last character ends a complete line and a complete URL. Descriptions were cut off in 7 of 8 long-form videos (major every time, most recently L1 09-30 mid-URL).
-- **Fill every field for every item:** YouTube, Instagram, TikTok, Facebook and Threads captions, plus thumbnail or cover text (7 gaps on 09-27/28/29; none on 09-30).
-- **Every caption, Threads, TikTok and the pinned comment included, carries the disclaimer and ends with exactly: "It's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you."** Keep Threads bodies to about 380 characters so both lines fit under the 500-character limit (9 findings, including C1 09-29, S3 09-29 and the L1 09-30 pinned comment).
-- **Before writing, copy the key facts from the verified summary:** sample, subgroup vs whole cohort, "and" vs "or", every drug or arm, the exact outcome and the effect size. Use them identically everywhere. A scope mismatch means REVISE or a hold (3 holds).
-- **Carry every qualifier and safety caveat from the script into every caption, word for word, and never make a claim stronger.** That includes "on average", the population, the comparator, the timeframe, placebo context, "observational", "as of Sept 2026", "(unless you've been told to limit fluids)", "promptly" and "heavy-duty plastic". The first line before the Instagram fold must carry the hedge too. Don't add "proven", "expert", "well-supported", "slightly", "never" or "help your lungs" (~33 findings, 9 on 09-30).
+- **YouTube titles: 100 characters or fewer.**
+  - Use "linked to" for observational data.
+  - Use the verified number, not the press-release "up to".
+  - Name the outcome ("weight loss"), the timeframe, the population and the comparator.
+  - Don't use "your heart" generalisations.
+  - Generic name first, and never lead with a brand the study didn't test.
+  - This caused 1 hold (S2 09-30). There were 17 findings, including S1, S2 and S3 10-01 and L1 10-01 (title lost "overweight or obesity").
+- **YouTube description: keep it under 2,000 characters.**
+  - Order: a quick answer of 3 lines or less → the disclaimer and prescriber line → up to 5 sources (short title + URL) → up to 8 chapters.
+  - Cut "Key numbers" and "What you'll learn" lists.
+  - Before submitting, check that the last line is complete and every source has a full URL.
+  - Descriptions were cut off in 8 of 9 long-form videos (major every time; L1 10-01 stopped mid-word with source #2 missing its URL). The 3,500 limit isn't being kept, so write it shorter.
+- **Fill every field and close every caption correctly.** That means YouTube, Instagram, TikTok, Facebook and Threads captions, the pinned comment, and the thumbnail or cover text. End each with the disclaimer and exactly: "It's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you." Where the slides or script carry an emergency red-flag line or helplines, include them wherever there is room. Keep Threads bodies to about 350 characters so everything fits under 500. 11 findings, including C1 10-01 TikTok and Threads.
+- **Before writing, copy the key facts from the verified summary and use them identically everywhere:** sample, subgroup vs whole cohort, who had which condition, "and" vs "or", every arm, the exact outcome and the effect size. A scope mismatch means REVISE or a hold (S1 09-28 and S2 10-01 captions repeated the script's scope error).
+- **Carry every qualifier, attribution, caveat and null result into every caption word for word, and never make a claim stronger.**
+  - Keep "on average", "commercially insured US adults with obesity", "Lilly reported", "observational", "as of [month]", "unless you've been told to limit fluids" and "heavy-duty plastic".
+  - Don't report only the positive endpoint (C1 10-01). Every caption that carries the benefit also carries the side-effect line (S3 10-01).
+  - The first line before the fold carries the hedge too.
+  - Engagement questions must not imply the wrong comparator or a behaviour the content warns against.
+  - No "proven", "expert", "slightly" or "never", and no hype emojis (🔥 👀).
+  - About 45 findings, 12 on 10-01.
 
 ### Everyone
-- **Name the exact population and the full scope.** SELECT = adults with established cardiovascular disease (prior heart attack, stroke or symptomatic PAD) plus overweight or obesity. SURMOUNT-1 = BMI 30+, or 27+ with a weight-related condition. Use the analysed sample size. List every drug the study included (Rodriguez 2025 includes tirzepatide). Scope errors caused 4 holds.
-- **General diet and fluid advice carries its caveat, and red flags keep their urgency.** Protein advice needs "unless your clinician has told you to limit protein (for example, kidney disease)". Fluid advice needs "unless you've been told to limit fluids". Severe tummy pain spreading to the back = call 999/911 or go to A&E/ER, not "promptly" (5 findings: S2 09-29, C2 09-29, C1 09-30 ×3).
-- **Say exactly what was measured** (prevalence ≠ new cases, appetite ≠ "food noise", modelled ≠ measured). Say what a "main goal" was. Don't put paraphrases in quote marks or attribute them as statements ("Lilly says 'counterfeit'", not "not its trial drug") (~19 findings).
-- **Every claim needs a cited source that actually says it.** Cite the primary source (the paper, or Lilly's investor release) rather than news write-ups that restate it. Drop sources whose numbers don't add up (HCPLive 09-30) (~15 findings).
-- **Hedge absolute and time-sensitive claims:** "no head-to-head vs 7.2 mg found as of Sept 2026", "TRIUMPH-1 to -3 have reported, others are still running", and check event dates against today (6 findings, 3 on 09-30).
-- **Pay off the title, keyword and CTA.** If the keyword is about stopping, show what happened to people who stopped (2 findings).
-- **Keep the source list clean.** Use the exact published or registry title, a URL that isn't region-blocked, the page's last-reviewed date labelled as such, the journal issue year, and a publisher that matches the URL (12 findings).
+- **Name the exact population and the full scope.**
+  - SELECT = adults with established cardiovascular disease (prior heart attack, stroke or symptomatic PAD) plus overweight or obesity.
+  - SURMOUNT-1 = BMI 30+, or 27+ with a weight-related condition.
+  - Use the analysed sample size, and list every drug studied (Rodriguez 2025 includes tirzepatide).
+  - If a source describes only one group (for example "controls had T2D and/or obesity"), don't apply it to everyone.
+  - Scope errors caused 5 holds.
+- **General diet and fluid advice carries its caveat, and red flags keep their urgency.** Protein advice needs "unless your clinician has told you to limit protein (for example, kidney disease)". Fluid advice needs "unless you've been told to limit fluids". Severe tummy pain spreading to the back = call 999/911 or go to A&E/ER. Helplines are listed with their real hours. 8 findings.
+- **Say exactly what was measured.** Prevalence ≠ new cases, appetite ≠ "food noise", modelled ≠ measured, low supply on hand (non-adherence) ≠ stopping. When a press release's wording differs from the paper's, use the paper's (C2 10-01). Don't put paraphrases in quote marks. About 22 findings.
+- **Every claim needs a cited primary source that actually says it, and the source list must be clean.** Cite the paper or the company's own release, not news write-ups. Don't tag a source on a line it doesn't support. Use the exact published title, a URL that isn't region-blocked, the last-reviewed date labelled as such, and the journal issue year. Drop sources whose numbers don't add up. About 30 findings, including L1 and S3 10-01.
+- **Hedge time-sensitive claims against today's date.** Today is October 2026, so "as of September 2026" is already stale (S2 10-01). Use "as of Oct 2026". Date-hedge pending decisions (a CagriSema US decision is expected Q4 2026) and trial programmes that are still running. 8 findings.
+- **Pay off the title, keyword and CTA.** If the keyword is about stopping, show what happened to people who stopped. 2 findings.
 
-_Updated 2026-09-30 from 28 QA records._
+_Updated 2026-10-01 from 34 QA records._
 
-_Updated 2026-09-30 from 28 QA records._
+_Updated 2026-10-01 from 34 QA records._
