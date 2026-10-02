@@ -1,5 +1,5 @@
 name: Daily production
-# Plans today's slate, produces 3 long-form videos, 3 shorts and 2 carousels in parallel,
+# Plans today's slate, produces 1 long-form video, 3 shorts and 1 carousel in parallel,
 # then uploads media, pre-schedules YouTube and queues everything else for the publisher.
 
 on:

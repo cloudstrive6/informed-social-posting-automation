@@ -12,7 +12,7 @@ _Last updated 2026-09-29._
 - **Brains:** Claude agents through the **Claude Agent SDK**, authenticated with one `CLAUDE_CODE_OAUTH_TOKEN` (`claude setup-token`, valid 1 year). Every agent has a prompt in `agents/*.md`; every answer is forced into a JSON schema (`src/lib/schemas.ts`).
 - **Config:** everything channel-specific is in `config/channel.json`: brand, audience, **niche** (brief, pillars, guardrails, radar sources), cadence, **schedule**, **spacing**, platforms, voice, video, music, QA thresholds, safety, review mode, models, **YouTube playlists**. Pronunciations: `config/pronunciations.json`.
 - **Niche (current):** GLP-1, positive and evidence-based (9 content pillars; each pillar = a YouTube playlist).
-- **Cadence (per day):** 1 long video (8–15 min), 3 Shorts (< 90 s), 2 carousels.
+- **Cadence (per day):** 1 long video (8–15 min), 3 Shorts (< 90 s), 1 carousel.
 
 ### Daily schedule (New York time; each piece drops on all its platforms at the same minute)
 | Time (NY) | Time (NZ, NZDT) | Piece | Platforms |
@@ -20,11 +20,10 @@ _Last updated 2026-09-29._
 | 08:00 | 01:00 | Short #1 | YouTube Shorts, Instagram Reels, TikTok, Facebook Reels |
 | 13:00 | 06:00 | Short #2 | same |
 | 14:00 | 07:00 | **Long video** | YouTube |
-| 14:00 | 07:00 | Carousel #1 | Instagram, Facebook, TikTok (photo), Threads |
-| 17:30 | 10:30 | Carousel #2 | same |
+| 17:30 | 10:30 | Carousel | Instagram, Facebook, TikTok (photo), Threads |
 | 20:00 | 13:00 | Short #3 | same as Shorts |
 
-Spacing rule (`config.spacing`): never two pieces of a kind on a platform closer than **long 8 h, short 4 h, carousel 3 h**, enforced when slots are assigned and again right before posting.
+Spacing rule (`config.spacing`): never two pieces of a kind on a platform closer than **long 8 h, short 4 h, carousel 16 h** (so never more than one carousel a day), enforced when slots are assigned and again right before posting.
 
 ### Workflows (`.github/workflows/`)
 | Workflow | When | Does |

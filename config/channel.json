@@ -40,7 +40,7 @@
   "cadence": {
     "longPerDay": 1,
     "shortPerDay": 3,
-    "carouselPerDay": 2,
+    "carouselPerDay": 1,
     "longTargetMinutes": [
       8,
       15
@@ -61,7 +61,6 @@
       "14:00"
     ],
     "carousel": [
-      "14:00",
       "17:30"
     ]
   },
@@ -233,7 +232,7 @@
     "_comment": "Minimum hours between two pieces of the same kind on a platform. Enforced when slots are assigned and again right before posting, so late production, backlog or catch-up can never bunch posts.",
     "long": 8,
     "short": 4,
-    "carousel": 3
+    "carousel": 16
   },
   "youtube": {
     "_comment": "Playlists: every YouTube video (long + Shorts) goes into its pillar playlist; Shorts also go into the Shorts playlist. Playlists are created on the channel automatically the first time they're needed (public). 'pillar' keys are what the Content Strategist tags each piece with.",

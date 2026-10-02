@@ -14,7 +14,7 @@ A team of AI agents that finds health topics **before they peak**, writes eviden
 | Facebook | Reels | 3 | 08:30 · 13:30 · 19:30 |
 | Facebook | Carousel / photo posts | 2 | 11:00 · 18:00 |
 
-The 3 vertical videos are produced once and published natively to Shorts, Reels, TikTok and Facebook Reels, each with its own platform-specific caption. The 2 carousels go to Instagram and Facebook.
+The 3 vertical videos are produced once and published natively to Shorts, Reels, TikTok and Facebook Reels, each with its own platform-specific caption. The daily carousel goes to Instagram, Facebook, TikTok (photo post) and Threads.
 
 ## The agent team
 
