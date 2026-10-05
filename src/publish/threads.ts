@@ -53,10 +53,28 @@ export function threadsText(raw: string) {
 export async function threadsCarousel(imageUrls: string[], text: string) {
   const urls = imageUrls.slice(0, 20);
   if (urls.length < 2) throw new Error("Threads carousels need at least 2 images");
+  const child = async (url: string) => {
+    const id = (await post("me/threads", { media_type: "IMAGE", image_url: url, is_carousel_item: "true" })).id as string;
+    await waitReady(id);
+    return id;
+  };
   const children: string[] = [];
-  for (const url of urls) children.push((await post("me/threads", { media_type: "IMAGE", image_url: url, is_carousel_item: "true" })).id);
-  for (const c of children) await waitReady(c);
-  const container = await post("me/threads", { media_type: "CAROUSEL", children: children.join(","), text: threadsText(text) });
+  for (const url of urls) children.push(await child(url));
+  const carousel = () => post("me/threads", { media_type: "CAROUSEL", children: children.join(","), text: threadsText(text) });
+  let container: { id: string };
+  try {
+    container = await carousel();
+  } catch (e) {
+    // "Invalid Carousel Children": Threads dropped one image after reporting it ready. Name the slide, rebuild it once.
+    const bad = /children with IDs (\d+)/.exec((e as Error).message)?.[1];
+    const k = bad ? children.indexOf(bad) : -1;
+    if (k < 0) throw e;
+    log.warn(`Threads rejected carousel slide ${k + 1}/${children.length} (${urls[k]}); rebuilding it once`);
+    await sleep(10_000);
+    children[k] = await child(urls[k]);
+    try { container = await carousel(); }
+    catch (e2) { throw new Error(`slide ${k + 1} (${urls[k].split("/").pop()}) rejected twice: ${(e2 as Error).message}`); }
+  }
   await waitReady(container.id);
   const { id } = await post("me/threads_publish", { creation_id: container.id });
   const p = await get(`${id}?fields=permalink`).catch(() => ({}));
