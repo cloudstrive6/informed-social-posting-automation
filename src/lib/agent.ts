@@ -1,7 +1,7 @@
 import { query } from "@anthropic-ai/claude-agent-sdk";
 import { join } from "node:path";
 import { config, DATA, ROOT } from "./config.js";
-import { readText } from "./fsx.js";
+import { readJson, readText, writeJson } from "./fsx.js";
 import { log } from "./log.js";
 
 export type AgentName =
@@ -67,6 +67,34 @@ export function usageLimitWait(message: string, now = new Date()): number | unde
   return wait <= maxWait ? wait : undefined;
 }
 
+/**
+ * Backup API key. Agents run on the Claude subscription (CLAUDE_CODE_OAUTH_TOKEN). When that can't continue
+ * (weekly cap, or a reset too far away to wait for), the rest of this process switches to the Anthropic API key,
+ * within a monthly budget. The key is passed only to the agent subprocess: if ANTHROPIC_API_KEY were in the normal
+ * environment it would take precedence over the subscription and bill every call.
+ */
+const API_USAGE = join(DATA, "usage", "anthropic-api.json");
+let onApi = process.env.AGENT_FORCE_API === "1"; // AGENT_FORCE_API=1: test the backup key end to end
+const apiMonth = () => new Date().toISOString().slice(0, 7);
+function apiSpent(): number {
+  const u = readJson<{ month: string; usd: number }>(API_USAGE, { month: apiMonth(), usd: 0 });
+  return u.month === apiMonth() ? u.usd : 0;
+}
+function addApiSpend(usd: number) {
+  writeJson(API_USAGE, { month: apiMonth(), usd: Math.round((apiSpent() + usd) * 100) / 100 });
+}
+function apiAvailable(): boolean {
+  const f = config.fallbackApi;
+  return !!process.env.ANTHROPIC_FALLBACK_API_KEY && (f?.enabled ?? true) && apiSpent() < (f?.monthlyBudgetUsd ?? 50);
+}
+async function switchToApi(agent: string, reason: string) {
+  onApi = true;
+  const f = config.fallbackApi;
+  log.warn(`agent:${agent}: subscription unavailable (${reason.slice(0, 120)}); switching this run to the backup API key`);
+  const { notify } = await import("../notify/telegram.js");
+  await notify(`🔁 Claude subscription limit hit (${reason.slice(0, 160)}). This run continues on the backup API key (spent $${apiSpent().toFixed(2)} of $${f?.monthlyBudgetUsd ?? 50} this month). Production keeps going; the next run tries the subscription first.`).catch(() => {});
+}
+
 export async function runAgent<T>(run: AgentRun<T>): Promise<T> {
   const system = `${readText(join(ROOT, "agents", `${run.agent}.md`))}\n\n---\n${sharedContext()}`;
   const prompt = typeof run.input === "string" ? run.input : "Task input (JSON):\n```json\n" + JSON.stringify(run.input, null, 2) + "\n```";
@@ -92,10 +120,12 @@ export async function runAgent<T>(run: AgentRun<T>): Promise<T> {
           ...(run.cwd ? { cwd: run.cwd } : {}),
           maxTurns: run.maxTurns ?? (run.web ? 40 : run.tools?.length ? 30 : 8),
           effort: run.effort,
+          ...(onApi ? { env: { ...process.env, ANTHROPIC_API_KEY: process.env.ANTHROPIC_FALLBACK_API_KEY, CLAUDE_CODE_OAUTH_TOKEN: undefined } } : {}),
           outputFormat: { type: "json_schema", schema: run.schema as any },
         },
       })) {
         if (msg.type === "result") {
+          if (onApi && typeof (msg as any).total_cost_usd === "number") addApiSpend((msg as any).total_cost_usd);
           if (msg.subtype === "success" && msg.structured_output) out = msg.structured_output as T;
           else failure = `${msg.subtype}${"errors" in msg && msg.errors ? `: ${JSON.stringify(msg.errors).slice(0, 400)}` : ""}`;
         }
@@ -108,7 +138,16 @@ export async function runAgent<T>(run: AgentRun<T>): Promise<T> {
     } catch (e) {
       const msg = (e as Error).message;
       log.warn(`agent:${run.agent} failed: ${msg}`);
+      const isLimit = /hit your .*limit|usage limit/i.test(msg);
       const wait = limitWaits < 4 ? usageLimitWait(msg) : undefined;
+      // a cap the subscription can't get past in this run (weekly, or a reset beyond the max wait): continue on the
+      // backup API key, if set up and in budget. Short session limits are still waited out for free.
+      if (isLimit && !onApi && wait === undefined && apiAvailable()) {
+        await switchToApi(run.agent, msg);
+        attempt--;
+        continue;
+      }
+      if (onApi && /credit balance|billing|budget/i.test(msg)) log.warn(`agent:${run.agent}: backup API key problem: ${msg.slice(0, 200)}`);
       if (wait !== undefined) {
         limitWaits++;
         log.warn(`agent:${run.agent}: Claude usage limit, waiting ${Math.round(wait / 60000)} min for the reset, then retrying`);

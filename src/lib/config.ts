@@ -47,6 +47,8 @@ export interface ChannelConfig {
     enabled: boolean; name: string; brief: string; pillars: string[]; guardrails: string[];
     radar: { match: string; subreddits: string[]; youtube: string[]; news: string[]; pubmed: string };
   };
+  /** Backup Anthropic API key (secret ANTHROPIC_API_KEY → env ANTHROPIC_FALLBACK_API_KEY), used only when the subscription is capped. */
+  fallbackApi?: { enabled: boolean; monthlyBudgetUsd: number };
   models: Record<"default" | "trendScout" | "factChecker" | "writer" | "packaging" | "analyst" | "motionShort" | "motionLong" | "critic" | "polish", string>;
 }
 

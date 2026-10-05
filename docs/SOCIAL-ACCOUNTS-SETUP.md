@@ -112,6 +112,7 @@ Why not our own TikTok app: a self-built TikTok developer app can only post **pr
 | `THREADS_ACCESS_TOKEN`, `THREADS_APP_ID`, `THREADS_APP_SECRET` | Threads use case → User Token Generator | 60 days, renewed daily into B2 |
 | `POSTFORME_API_KEY` | Post for Me project → API Keys | until deleted |
 | `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` | @BotFather / getUpdates | until revoked |
+| `ANTHROPIC_API_KEY` (optional backup) | Anthropic Console → API keys (add credits + a spend limit) | until deleted; used only when the Claude subscription hits its weekly cap |
 | `B2_KEY_ID`, `B2_APPLICATION_KEY` | Backblaze (needed for the Threads token store + archive) | until deleted |
 
 ---

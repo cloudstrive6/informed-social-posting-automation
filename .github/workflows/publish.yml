@@ -48,6 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }} # playlist curator (untagged items)
+      ANTHROPIC_FALLBACK_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }} # backup when the subscription is capped (never as ANTHROPIC_API_KEY: it would override the subscription)
     timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4

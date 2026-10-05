@@ -129,6 +129,11 @@
       "GLP-1 microdosing or self-titration protocols"
     ]
   },
+  "fallbackApi": {
+    "_comment": "Backup Anthropic API key (GitHub secret ANTHROPIC_API_KEY). Used only when the Claude subscription hits its weekly cap (or a reset beyond the max wait; shorter session limits are still waited out for free); the run switches to the API for its remaining agent calls, and the next run tries the subscription first. Spending is tracked in data/usage/anthropic-api.json; also set a hard spend limit in the Anthropic Console.",
+    "enabled": true,
+    "monthlyBudgetUsd": 50
+  },
   "models": {
     "_comment": "Claude Code model aliases or full IDs. Opus for thinking-heavy work (research, scripts, fact-checks, titles); Sonnet for high-volume visual and polish work, which uses far less of the subscription's usage limits.",
     "default": "opus",

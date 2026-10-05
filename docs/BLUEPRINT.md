@@ -140,12 +140,12 @@ Shared context every agent sees: `agents/_shared.md` + brand/audience/niche/guar
 - **Quality loop:** QA findings → `data/quality/log.jsonl` → Quality Coach → `data/craft-notes.md`.
 - **Performance loop:** metrics → Performance Analyst → `data/learnings.md`.
 - **Punctuality:** always-on Publisher + spacing rule + production the evening before.
-- **Resilience:** agents wait out Claude usage limits; Sonnet for high-volume agents; rendered videos never lost if packaging fails; voice fallback chain; backup cron starts with a duplicate guard; failure alerts on Telegram.
+- **Resilience:** agents wait out short Claude session limits; a weekly cap switches the run to a backup Anthropic API key (secret `ANTHROPIC_API_KEY`, monthly budget `config.fallbackApi`, Telegram alert); Sonnet for high-volume agents; rendered videos never lost if packaging fails; voice fallback chain; backup cron starts with a duplicate guard; failure alerts on Telegram.
 
 ---
 
 ## 8. Lessons learned (save the next build a day)
-- **Claude subscription usage limits** are the real bottleneck: stagger jobs, use Sonnet for volume work, sample the critic on long videos, wait for the reset instead of failing. 1 long video/day is far lighter than 3.
+- **Claude subscription usage limits** are the real bottleneck: stagger jobs, use Sonnet for volume work, sample the critic on long videos, wait for the reset instead of failing. 1 long video/day is far lighter than 3. The **weekly** cap stopped production on 2–4 Oct 2026 (it can't be waited out within a run, and interactive Claude Code work shares it), hence the backup API key.
 - **GitHub scheduled workflows are unreliable**: a `*/15` cron fired only every 3–8 h and daily crons were dropped → use a self-chaining always-on loop for publishing, backup crons + a duplicate guard for production.
 - **Never "post ASAP" when a slot passed** → it bunches posts; re-slot with spacing instead.
 - **Instagram Reels**: publish from a public `video_url`; the resumable binary upload fails.
