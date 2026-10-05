@@ -128,6 +128,34 @@ const commands: Record<string, () => Promise<unknown>> = {
     saveItem(item);
     await publishNow(rest[0], ["facebook"]);
   },
+  // remake <date>/<item-id>: re-voice and re-render a published Short or long video from its approved script with
+  // the current voice and visual engine. Output: out/remake/<id>/final/<same file name>, plus a QA summary.
+  remake: async () => {
+    const { itemPath } = await import("./lib/items.js");
+    const { buildVideo } = await import("./media/buildVideo.js");
+    const { directNarration, narrateChecked } = await import("./produce/common.js");
+    const { rmSync } = await import("node:fs");
+    const { basename } = await import("node:path");
+    const { ensureDir } = await import("./lib/fsx.js");
+    const [d, id] = rest[0].split("/");
+    const item = readJson<ContentItem>(itemPath(d, id));
+    if (item.kind === "carousel" || !item.script) throw new Error("remake works for Shorts and long videos only");
+    const dir = join(OUT, "remake", id);
+    rmSync(dir, { recursive: true, force: true });
+    const name = basename(item.media.video ?? `${id}.mp4`);
+    const out = join(ensureDir(join(dir, "final")), name);
+    const spoken = await directNarration(item.script.scenes);
+    const narration = await narrateChecked(spoken, dir, item.kind === "short" ? config.voice.kokoroShortVoice : undefined, item.kind);
+    const sources = (item as any).factcheck?.verified_sources?.length ? (item as any).factcheck.verified_sources : item.script.sources;
+    const { qa } = await buildVideo({
+      id, dir, out, vertical: item.kind === "short", topic: item.plan.topic, fallbackQuery: item.plan.target_keyword,
+      scenes: item.script.scenes, sources, timeline: narration.timeline, narrationWav: narration.wav,
+      spokenText: narration.spokenText, narrationWer: narration.wer, spokenScenes: spoken,
+    });
+    const summary = { file: out, voice: narration.provider, minutes: +(narration.timeline.duration / 60).toFixed(2), blocking: qa.blocking, visualScore: qa.visual.avgScore, audio: qa.audio };
+    writeJson(join(dir, "remake-summary.json"), summary);
+    log.info(`REMAKE ${JSON.stringify(summary)}`);
+  },
   // youtube-unschedule <date>/<item-id>: keep a scheduled video from going public (it stays private)
   "youtube-unschedule": async () => {
     const { itemPath } = await import("./lib/items.js");
