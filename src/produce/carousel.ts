@@ -18,8 +18,12 @@ export async function produceCarousel(date: string, pieceId: string): Promise<Co
   if (held) { item.status = "held"; item.hold_reason = holdReason; }
 
   // comic-style infographic slides built from the illustration packs (no stock photos)
-  const slides = await renderComicCarousel(carousel, final);
+  const { files: slides, misfits } = await renderComicCarousel(carousel, final);
   item.media.slides = slides;
+  if (misfits.length && item.status !== "held") {
+    item.status = "held";
+    item.hold_reason = `Quality check: slide ${misfits.join(", ")} doesn't fit the frame (text or icons run off the canvas or into the footer)`;
+  }
 
   const summary = { title: carousel.title, slides: carousel.slides, sources: factcheck.verified_sources };
   const pk = await packagingLoop(item, await socialCopy(item, summary), factcheck.verified_sources, { slides: carousel.slides },

@@ -111,7 +111,7 @@ function layout(s: Slide, x: Ctx): { bg: string; html: string; dark?: boolean } 
       return {
         bg: x.bg, html: `
         <div class="page">${headline(s.headline, 76)}
-          <div style="display:flex;align-items:center;gap:26px"><div style="font-family:Fredoka;font-weight:700;font-size:150px;color:${pop(0)};-webkit-text-stroke:4px ${INK};paint-order:stroke fill;text-shadow:7px 7px 0 ${INK}">${esc(s.stat)}</div></div>
+          <div style="display:flex;align-items:center;gap:26px"><div class="stat" style="font-family:Fredoka;font-weight:700;font-size:${s.stat.length <= 10 ? 150 : s.stat.length <= 22 ? 96 : 66}px;line-height:1.05;text-wrap:balance;color:${pop(0)};-webkit-text-stroke:4px ${INK};paint-order:stroke fill;text-shadow:7px 7px 0 ${INK}">${esc(s.stat)}</div></div>
           <div class="card" style="display:flex;flex-wrap:wrap;justify-content:center;gap:18px 26px;padding:36px">${people}</div>
           ${body(s.body)}</div>`,
       };
@@ -207,12 +207,14 @@ function layout(s: Slide, x: Ctx): { bg: string; html: string; dark?: boolean } 
 }
 
 /** Render every slide to a JPEG (Instagram carousels require JPEG). */
-export async function renderComicCarousel(carousel: Carousel, outDir: string): Promise<string[]> {
+/** Renders every slide; `misfits` lists slides (1-based) whose content still runs off the canvas after auto-fit. */
+export async function renderComicCarousel(carousel: Carousel, outDir: string): Promise<{ files: string[]; misfits: number[] }> {
   const fonts = { mont: b64(await fontFile("Montserrat")), fred: b64(await fontFile("Fredoka")), bang: b64(await fontFile("Bangers")) };
   const style = css(fonts);
   const logoDark = b64(join(ROOT, "brand", "logo-horizontal-dark.png")), logoLight = b64(join(ROOT, "brand", "logo-horizontal-white.png"));
   const browser = await chromium.launch();
   const files: string[] = [];
+  const misfits: number[] = [];
   const total = carousel.slides.length;
   const seed = hashStr(carousel.title);
   for (const [i, s] of carousel.slides.entries()) {
@@ -227,7 +229,7 @@ export async function renderComicCarousel(carousel: Carousel, outDir: string): P
     await page.evaluate(() => document.fonts.ready);
     await page.evaluate("window.__name = (f) => f"); // esbuild/tsx keepNames helper used inside evaluate()
     // auto-fit: shrink text until nothing runs into the footer or off the canvas
-    await page.evaluate(([H]) => {
+    const stillOver = await page.evaluate(([H, W]) => {
       const limit = H - 128;
       // text boxes must stay above the footer AND never overlap each other
       const boxes = () => [...document.querySelectorAll<HTMLElement>("h1, .card, .bubble, .body")].filter(e => e.offsetParent !== null);
@@ -237,19 +239,31 @@ export async function renderComicCarousel(carousel: Carousel, outDir: string): P
         return bs.some((a, i) => bs.slice(i + 1).some(b => !a.contains(b) && !b.contains(a) && hits(a.getBoundingClientRect(), b.getBoundingClientRect())));
       };
       const flowOver = () => [...document.querySelectorAll<HTMLElement>(".flowbox")].some(f => f.scrollHeight > f.clientHeight + 2);
-      const overflow = () => flowOver() || overlap() || Math.max(...[...document.querySelectorAll(".page > *, .card, .bubble")].map(e => e.getBoundingClientRect().bottom)) > limit;
+      // off the canvas at the top or sides counts too (a centred page that overflows grows both ways)
+      const offCanvas = () => [...document.querySelectorAll(".page > *, .card, .bubble")].some(e => {
+        const r = e.getBoundingClientRect();
+        return r.bottom > limit || r.top < 24 || r.left < 0 || r.right > W;
+      });
+      const overflow = () => flowOver() || overlap() || offCanvas();
       for (let k = 0; k < 12 && overflow(); k++) {
-        document.querySelectorAll<HTMLElement>("h1, .body, .det, .lbl, .card, .bubble").forEach(e => {
+        document.querySelectorAll<HTMLElement>("h1, .stat, .body, .det, .lbl, .card, .bubble").forEach(e => {
           e.style.fontSize = `${parseFloat(getComputedStyle(e).fontSize) * 0.93}px`;
+        });
+        // fixed-size stickers inside cards (pictogram people, grid icons) shrink with the text
+        document.querySelectorAll<SVGSVGElement>(".card .stk").forEach(e => {
+          const w = parseFloat(e.getAttribute("width") || "0") * 0.93;
+          e.setAttribute("width", `${w}`); e.setAttribute("height", `${w}`);
         });
         document.querySelectorAll<HTMLElement>(".page").forEach(e => { e.style.gap = `${parseFloat(getComputedStyle(e).gap || "30") * 0.85}px`; });
       }
-    }, [H] as const);
+      return overflow();
+    }, [H, W] as const);
+    if (stillOver) misfits.push(i + 1);
     const out = join(outDir, `slide-${String(i + 1).padStart(2, "0")}.jpg`);
     await page.screenshot({ path: out, type: "jpeg", quality: 93 });
     await page.close();
     files.push(out);
   }
   await browser.close();
-  return files;
+  return { files, misfits };
 }
