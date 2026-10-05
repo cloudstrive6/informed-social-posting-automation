@@ -1,0 +1,1603 @@
+{
+  "id": "L1-survodutide-glucagon-glp-1-dual-agonist",
+  "date": "2026-10-05",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Survodutide (glucagon + GLP-1 dual agonist) in adults with obesity and type 2 diabetes: SYNCHRONIZE-2 Phase 3 (NEJM, 1 Oct 2026, n=752, 76 weeks): up to 13.1% weight loss (highest-dose arm) vs 3.1% on placebo; A1C down up to 1.21 points",
+    "angle": "Working title (≤100 chars): 'Survodutide in Type 2 Diabetes: 9.8% vs 3.9% Placebo at 76 Weeks. Why Did Investors Shrug?' Alternative if 13.1% is kept: 'Survodutide's 13.1% in T2D: What It Means (and Why Shares Fell)'. Only use this version if the first 10s immediately says '13.1% is the top dose if people stayed on treatment. Counting everyone, the paper reports 9.8% vs 3.9% on placebo.' First 10s: adults with obesity/overweight AND type 2 diabetes, 76 weeks, both estimands with their own placebo figures (13.1% vs 3.1% if staying on treatment; −9.8% vs −3.9% for everyone randomised, 6.0 mg), and 'investigational, not approved as of Oct 2026'. Give A1C per arm from NEJM (−0.9 / −0.8 vs −0.2 points from 7.4%; add mmol/mol), and mention the 1.21 figure only as the release's 'if stayed on treatment' number. Disappointment: 'Zealand Pharma shares fell about 11% on 1 Oct. Analysts cited tolerability and competition.' This is an investor view, not a clinical verdict. Give tolerability per arm from NEJM: GI AEs 72.8% / 77.7% vs 38.6%, plus vomiting and stopping due to side effects for each arm vs placebo. Explain why weight loss is lower in T2D in every major trial of this class (STEP 2, SURMOUNT-2, TRIUMPH-2), with each trial's estimand, duration and dose labelled as a separate trial with no head-to-head. Liver: 'liver-fat reduction was seen in an earlier substudy; MASH outcome trials are still running.' Nothing changes for people on approved medicines. Close with: 'It's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you.'",
+    "working_title": "Survodutide Lost 13.1% (Top Dose) vs 3.1% Placebo in T2D. Why Did It 'Disappoint'?",
+    "target_keyword": "survodutide weight loss",
+    "trend_stage": "emerging",
+    "why": "A brand-new NEJM Phase 3 trial with 'disappointment' headlines, almost no creator explainers yet, and enough depth for 10+ minutes. A named-drug headline decoder is our best-performing title formula. | fact-check: The topic is real and on-pillar. SYNCHRONIZE-2 was published in NEJM (Survodutide Once Weekly in Adults with Obesity and Type 2 Diabetes, https://www.nejm.org/doi/10.1056/NEJMoa2607219) with a Boehringer release dated 1 Oct 2026. But the topic line mixes up estimands. 13.1% vs 3.1% and 'A1C down up to 1.21' are the press release's EFFICACY estimand (if people stayed on treatment). The NEJM abstract reports week-76 weight change of −8.2% (3.6 mg), −9.8% (6.0 mg) and −3.9% (placebo). A1C changed by −0.9 (3.6 mg), −0.8 (6.0 mg) and −0.2 points (placebo) from a baseline of 7.4%, so the best A1C result was NOT in the highest-dose arm. Our rule is to use the paper's number, not the press release's 'up to'. n also needs checking: the release says 755, the topic says 752. Use the NEJM randomised and analysed n. Discontinuation is inconsistent across sources: the release says 18% vs 1.2% on placebo, while news coverage (Fierce, Bloomberg) cites 26% stopping after an adverse event and 39% vomiting. Copy the AE-discontinuation and vomiting rates per arm from the NEJM tables only. GI AEs of 72.8% / 77.7% vs 38.6% are confirmed. The 'disappointment' framing is verifiable: Zealand shares fell about 11–12% on 1 Oct, and analysts pointed to tolerability and competitiveness (Bloomberg, Fierce Biotech). Attribute it to investors and analysts, and don't use the word 'markets' broadly. Sponsor: Boehringer Ingelheim (survodutide licensed from Zealand). Say 'developed by Boehringer Ingelheim with Zealand Pharma' unless NEJM lists Zealand as a funder. Comparators: TRIUMPH-2 is now peer-reviewed (Lancet, 29 Sep 2026, retatrutide −11.9/−16.8/−18.8% vs −5.1% at 80 wk), so it can be included. SURMOUNT-2 and STEP 2 are fine too. Label every figure with its estimand, duration and population, and state that there is no head-to-head comparison. Liver: SYNCHRONIZE-2 itself didn't establish a MASH benefit. Liver-fat data come from a SYNCHRONIZE-1 substudy and from Phase 2 MASH work, and Phase 3 MASH outcomes are still ongoing. Label it that way. Survodutide is investigational and not approved as of Oct 2026 (FDA Breakthrough Therapy designation is not approval).",
+    "pillar": "research"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Survodutide Weight Loss, T2D+Obesity: 9.8% vs 3.9% at 76wk (High Dose)",
+    "title_candidates": [
+      "Survodutide Weight Loss in Obesity + T2D: 9.8% vs 3.9% Placebo",
+      "Survodutide Weight Loss in Type 2 Diabetes: 9.8% vs 3.9% Placebo",
+      "Survodutide in Type 2 Diabetes: 9.8% vs 3.9%. Why Did Shares Fall?",
+      "Survodutide: 13.1% or 9.8%? Decoding the Type 2 Diabetes Trial",
+      "Survodutide Phase 3 in Type 2 Diabetes: Why Did Shares Fall?",
+      "Did Survodutide Disappoint? 76-Week Type 2 Diabetes Results",
+      "Survodutide vs Placebo in Type 2 Diabetes: The 76-Week Results",
+      "Why Weight Loss Is Lower in Type 2 Diabetes: New Survodutide Data",
+      "Glucagon + GLP-1: Survodutide's Type 2 Diabetes Trial Decoded",
+      "New Survodutide Trial: What 76 Weeks Showed in Type 2 Diabetes"
+    ],
+    "description": "Survodutide weight loss in type 2 diabetes plus overweight or obesity: on the higher trial dose, this investigational glucagon + GLP-1 dual agonist lowered body weight by 9.8% vs 3.9% on placebo at 76 weeks, counting everyone randomized.\n\nQuick answer: In Phase 3 SYNCHRONIZE-2 (NEJM, Oct 2026, n=752), the 13.1% vs 3.1% figure is the top dose counting only people who stayed on treatment. A1C (baseline 7.4%, 57 mmol/mol) fell 0.9 points (lower dose) and 0.8 (higher dose) vs 0.2 on placebo, counting everyone; Boehringer's stayed-on-treatment figure was up to 1.21 vs 0.03. Gut side effects: 72.8% and 77.7% vs 38.6% on placebo. Boehringer reported about 18% stopped because of gut side effects vs 1.2% on placebo. Zealand Pharma shares fell about 11% on Oct 1, Fierce Biotech reported. A falling share price is not a failed trial.\n\nThis content is for educational purposes only and is not medical advice. Survodutide is investigational and not approved as of Oct 2026. It's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you.\n\nSources:\n1. Boehringer Ingelheim SYNCHRONIZE-2 release: https://www.globenewswire.com/news-release/2026/10/01/3372564/0/en/boehringer-ingelheim-s-survodutide-achieves-up-to-13-1-weight-loss-in-new-phase-iii-trial-alongside-significant-improvements-in-glycemic-control-in-people-with-obesity-and-type-2-d.html\n2. Fierce Biotech, Zealand shares: https://www.fiercebiotech.com/biotech/zealand-pharma-slides-boehringer-partnered-obesity-drug-underwhelms-again-phase-3\n3. Healio, survodutide in T2D: https://www.healio.com/news/endocrinology/20261001/survodutide-induces-impressive-amount-of-weight-loss-in-type-2-diabetes-and-obesity\n4. Healio, retatrutide TRIUMPH-2: https://www.healio.com/news/endocrinology/20260930/retatrutide-confers-substantial-weight-loss-for-adults-with-obesity-type-2-diabetes",
+    "tags": [
+      "survodutide weight loss",
+      "survodutide",
+      "survodutide type 2 diabetes",
+      "survodutide synchronize-2",
+      "survodutide vs placebo",
+      "survodutide a1c",
+      "boehringer ingelheim survodutide",
+      "zealand pharma survodutide",
+      "glucagon glp-1 dual agonist",
+      "survodutide clinical trial",
+      "survodutide side effects",
+      "survodutide phase 3 results",
+      "does survodutide work for diabetes",
+      "survodutide liver",
+      "survodutide obesity trial",
+      "next generation glp-1 drugs",
+      "survodutide stock drop",
+      "survodutide approval status",
+      "glp-1 weight loss diabetes",
+      "survodutide nejm study"
+    ],
+    "pinned_comment": "On the higher dose, survodutide lowered weight 9.8% vs 3.9% on placebo over 76 weeks (counting everyone) in adults with type 2 diabetes and overweight or obesity, and A1C fell more than on placebo. But about 3 in 4 reported gut side effects (vs about 2 in 5 on placebo), and Zealand Pharma's shares fell about 11% that day. Which number would you check first in a headline: the \"up to\" figure or the count of everyone? Survodutide is investigational and not approved as of Oct 2026. Educational only, not medical advice. It's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "SURVODUTIDE: SHARES FELL?",
+      "highlight_word": "FELL",
+      "subtext": "Zealand stock, 1 Oct",
+      "layout": "reaction",
+      "psychology": "Expectation violation plus curiosity gap: the title shows a clear win over placebo, and the thumbnail adds that investors sold anyway. That gap gets paid off in 'Why investors sold' and 'The side effect problem'.",
+      "emotion": "Puzzled surprise: 'good results, so why the drop?'",
+      "hero_art": "pill",
+      "hero_face": "shocked",
+      "second_art": "",
+      "second_face": "none",
+      "prop": "arrow",
+      "accent": "highlight",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 Two numbers, one drug\n1:00 A drug with two keys\n2:08 Inside SYNCHRONIZE-2\n3:51 The blood sugar twist\n5:23 The side effect problem\n6:58 Why diabetes trials lose less\n9:29 Why investors sold\n10:22 The liver question\n11:13 What this means for you\n11:58 How to read any GLP-1 headline"
+  },
+  "media": {
+    "video": "L1-survodutide-glucagon-glp-1-dual-agonist.mp4",
+    "duration": 771.134,
+    "thumbnail": "L1-survodutide-glucagon-glp-1-dual-agonist-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-05T18:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "lNv23Zi6-M8",
+      "url": "https://youtu.be/lNv23Zi6-M8",
+      "published_at": "2026-10-05T18:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-10-05T09:11:36.763Z",
+  "script": {
+    "working_title": "Survodutide Weight Loss in Type 2 Diabetes: 9.8% vs 3.9% Placebo at 76 Weeks. Why Did Shares Fall?",
+    "target_keyword": "survodutide weight loss",
+    "hook_pattern": "Counterintuitive claim: a good trial result and a falling share price on the same day. Within 10 seconds the hook names the dose and gives both ways of counting, each with its own placebo figure. It also plants an open loop ('the one question that tells a 13.1% from a 9.8%') that pays off in the final chapter.",
+    "scenes": [
+      {
+        "id": "h1",
+        "section": "Two numbers, one drug",
+        "narration": "On its higher trial dose, survodutide helped adults with type 2 diabetes lose 9.8% of their body weight over 76 weeks, versus 3.9% on placebo. The same day, Zealand Pharma's shares fell about 11%.",
+        "on_screen_text": "Good result. Shares fell.",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−9.8% vs −3.9%",
+          "stat_label": "Top dose, 76 weeks, everyone counted",
+          "stock_query": "scale beside falling stock arrow"
+        },
+        "retention_device": "Pattern interrupt: a positive result next to a falling share price opens an instant 'why?' gap",
+        "source_ids": [
+          "S1",
+          "S3"
+        ]
+      },
+      {
+        "id": "h2",
+        "section": "Two numbers, one drug",
+        "narration": "You may also see a bigger number: 13.1%. That's the top dose, counting only people who stayed on treatment, versus 3.1% on placebo. The 9.8% counts everyone who was randomized.",
+        "on_screen_text": "13.1% = stayed on treatment",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Everyone randomized: 9.8% vs 3.9%",
+            "Stayed on treatment: 13.1% vs 3.1%"
+          ],
+          "stock_query": "two signposts pointing different ways"
+        },
+        "retention_device": "The second number arrives straight away, so viewers sense a puzzle worth solving",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "h3",
+        "section": "Two numbers, one drug",
+        "narration": "That's in about 750 adults with overweight or obesity plus type 2 diabetes. And survodutide is investigational: as of October 2026, it's not an approved medicine.",
+        "on_screen_text": "Investigational, not approved",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "lab vial with pending stamp"
+        },
+        "retention_device": "Stakes and scope set early, so the viewer knows exactly who this applies to",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "h4",
+        "section": "Two numbers, one drug",
+        "narration": "So which number is real? Both. And by the end, you'll know the one question that tells them apart in any GLP-1 headline you'll ever read.",
+        "on_screen_text": "One question changes everything",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over newspaper headline"
+        },
+        "retention_device": "Main open loop planted: the 'one question' pays off in the final chapter",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "h5",
+        "section": "Two numbers, one drug",
+        "narration": "Along the way: a blood sugar result that runs backwards, a pattern seen across major diabetes trials in this class, and what investors were worried about.",
+        "on_screen_text": "3 surprises ahead",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "A backwards blood sugar result",
+            "The diabetes trial pattern",
+            "What worried investors"
+          ],
+          "stock_query": "three wrapped mystery boxes"
+        },
+        "retention_device": "Roadmap of three open loops that carries viewers through the middle sections",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "d1",
+        "section": "A drug with two keys",
+        "narration": "First, what makes survodutide different? Most weight medicines you've heard of, like semaglutide, mimic one gut hormone: GLP-1.",
+        "on_screen_text": "One hormone, one key",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "single key glowing in gut"
+        },
+        "retention_device": "Chapter card resets attention with a simple question",
+        "source_ids": [
+          "S14"
+        ]
+      },
+      {
+        "id": "d2",
+        "section": "A drug with two keys",
+        "narration": "Your gut releases GLP-1 after you eat. It signals fullness to your brain, slows how fast your stomach empties, and helps your pancreas release insulin when blood sugar rises.",
+        "on_screen_text": "Fullness, slower stomach, insulin",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Signals fullness to the brain",
+            "Slows stomach emptying",
+            "Helps release insulin when sugar rises"
+          ],
+          "stock_query": "gut sending message to brain"
+        },
+        "retention_device": "A concrete 'you' explanation lays the groundwork for the twist that follows",
+        "source_ids": [
+          "S14"
+        ]
+      },
+      {
+        "id": "d3",
+        "section": "A drug with two keys",
+        "narration": "Survodutide mimics GLP-1 too. But it also turns on a second receptor, for a hormone called glucagon. Think of it as one key that opens two locks.",
+        "on_screen_text": "One key, two locks",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "one key opening two locks"
+        },
+        "retention_device": "A vivid analogy makes the dual mechanism easy to remember",
+        "source_ids": [
+          "S11",
+          "S10"
+        ]
+      },
+      {
+        "id": "d4",
+        "section": "A drug with two keys",
+        "narration": "And here's where it gets weird. Glucagon's best-known job is to raise blood sugar. So why put it in a drug for people with diabetes?",
+        "on_screen_text": "Glucagon raises blood sugar?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "confused character holding sugar cube"
+        },
+        "retention_device": "'Here's where it gets weird' re-hook with a paradox question",
+        "source_ids": [
+          "S14",
+          "S11"
+        ]
+      },
+      {
+        "id": "d5",
+        "section": "A drug with two keys",
+        "narration": "Because glucagon does more than that. It nudges the liver to burn stored fat, and in early studies it raised the energy the body uses. Much of that evidence comes from animal and early human research.",
+        "on_screen_text": "Liver fat burning, energy use",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon liver burning fat droplets"
+        },
+        "retention_device": "The paradox is resolved, with an honest caveat about how strong the evidence is",
+        "source_ids": [
+          "S11",
+          "S10"
+        ]
+      },
+      {
+        "id": "d6",
+        "section": "A drug with two keys",
+        "narration": "The GLP-1 half is there to keep blood sugar in check while the glucagon half works on the liver and energy use. At least, that's the design.",
+        "on_screen_text": "That's the design",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two gears turning together"
+        },
+        "retention_device": "'At least, that's the design' hints the real-world result may differ",
+        "source_ids": [
+          "S11",
+          "S10"
+        ]
+      },
+      {
+        "id": "d7",
+        "section": "A drug with two keys",
+        "narration": "It's developed by Boehringer Ingelheim, which licensed it from a Danish company called Zealand Pharma. Hold on to that second name.",
+        "on_screen_text": "Boehringer Ingelheim + Zealand Pharma",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two company buildings handshake bridge"
+        },
+        "retention_device": "Micro open loop: Zealand returns in the investor chapter",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "t1",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "The trial is called SYNCHRONIZE-2. It was published in the New England Journal of Medicine on October 1, 2026.",
+        "on_screen_text": "SYNCHRONIZE-2, NEJM",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "medical journal opening on desk"
+        },
+        "retention_device": "Chapter change signals new, concrete evidence",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "t2",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "752 adults with overweight or obesity and type 2 diabetes were randomly assigned to weekly survodutide, at a 3.6 or 6.0 milligram trial dose, or to placebo.",
+        "on_screen_text": "752 adults, 3 arms",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Survodutide 3.6 mg arm",
+            "Survodutide 6.0 mg arm",
+            "Placebo"
+          ],
+          "stock_query": "people sorted into three groups"
+        },
+        "retention_device": "Clear trial-design micro-story",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "t3",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "They were followed for 76 weeks. That's almost a year and a half.",
+        "on_screen_text": "76 weeks",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "76 weeks",
+          "stat_label": "Trial length, almost 18 months",
+          "stock_query": "calendar pages flying past"
+        },
+        "retention_device": "A short, punchy sentence varies the rhythm",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "t4",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "Their average starting A1C, the 2-to-3-month blood sugar average, was 7.4%. That's about 57 mmol/mol. Remember that number. It comes back later.",
+        "on_screen_text": "Starting A1C: 7.4% (57 mmol/mol)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "7.4%",
+          "stat_label": "Average starting A1C (about 57 mmol/mol)",
+          "stock_query": "blood sugar gauge needle"
+        },
+        "retention_device": "Explicit 'remember this' open loop, paid off in the blood sugar chapter",
+        "source_ids": [
+          "S1",
+          "S13"
+        ]
+      },
+      {
+        "id": "t5",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "Now, why two weight-loss numbers from one trial? Because trials can ask two different questions.",
+        "on_screen_text": "Two questions, two numbers",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two speech bubbles question marks"
+        },
+        "retention_device": "Returns to the hook's puzzle and starts paying it off",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "t6",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "Question one: what happened to everyone who was randomized, including people who stopped the drug? That's closer to real life, where not everyone keeps going.",
+        "on_screen_text": "Q1: Count everyone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "crowd of people all counted"
+        },
+        "retention_device": "Simple framing of the first way of counting",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "t7",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "Question two: what happened if people stayed on treatment as planned? That's usually the bigger number, and it's the one press releases tend to lead with.",
+        "on_screen_text": "Q2: Only if they stayed on",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "smaller group under spotlight"
+        },
+        "retention_device": "An insider tip the viewer can reuse, which builds trust",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "t8",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "Counting everyone, weight fell 8.2% on the lower dose and 9.8% on the higher dose, versus 3.9% on placebo.",
+        "on_screen_text": "Everyone: 8.2% / 9.8% vs 3.9%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−8.2% / −9.8%",
+          "stat_label": "vs −3.9% placebo, everyone randomized, 76 wk",
+          "stock_query": "three bars falling different heights"
+        },
+        "retention_device": "Concrete numbers with their comparator",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "t9",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "Counting only people who stayed on treatment, Boehringer reported up to 13.1% on the top dose, versus 3.1% on placebo.",
+        "on_screen_text": "Stayed on: 13.1% vs 3.1%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−13.1%",
+          "stat_label": "Top dose vs −3.1% placebo, if stayed on",
+          "stock_query": "taller bar with company badge"
+        },
+        "retention_device": "Side-by-side contrast with the previous stat",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "t10",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "Same trial, same people. The difference is who gets counted. And when the two numbers sit far apart, it's often a hint that many people stopped or missed treatment.",
+        "on_screen_text": "Who gets counted matters",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "gap between two bars highlighted"
+        },
+        "retention_device": "Plants a new loop (why did people stop?) that pays off in the side effect chapter",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "t11",
+        "section": "Inside SYNCHRONIZE-2",
+        "narration": "Which is exactly where this story is heading. But first, the result that surprised me most.",
+        "on_screen_text": "The surprise comes next",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "character peeking around corner"
+        },
+        "retention_device": "Mini-cliffhanger before the section change",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "b1",
+        "section": "The blood sugar twist",
+        "narration": "Quick question. Which dose do you think lowered blood sugar more, the higher one or the lower one? Most people would guess the higher one.",
+        "on_screen_text": "Higher or lower dose?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "two doors labeled high low"
+        },
+        "retention_device": "A direct question makes the viewer commit to a guess",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "b2",
+        "section": "The blood sugar twist",
+        "narration": "A1C fell 0.9 points on the lower dose and 0.8 points on the higher dose, versus 0.2 points on placebo.",
+        "on_screen_text": "Lower dose: −0.9 points",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−0.9 / −0.8",
+          "stat_label": "A1C points vs −0.2 placebo, 76 wk",
+          "stock_query": "blood sugar meter numbers dropping"
+        },
+        "retention_device": "Pays off the viewer's guess with a counterintuitive answer",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "b3",
+        "section": "The blood sugar twist",
+        "narration": "In mmol/mol, that's drops of roughly 10, 9 and 2. Both doses lowered A1C more than placebo, but the top dose didn't come out on top.",
+        "on_screen_text": "≈10, 9 vs 2 mmol/mol",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "podium with surprise second place"
+        },
+        "retention_device": "Units every viewer can use, plus the twist restated",
+        "source_ids": [
+          "S1",
+          "S13"
+        ]
+      },
+      {
+        "id": "b4",
+        "section": "The blood sugar twist",
+        "narration": "You might see a 1.21-point A1C drop in headlines, versus 0.03 on placebo. That's the company's figure for people who stayed on treatment, not the paper's count of everyone.",
+        "on_screen_text": "1.21 = stayed-on figure",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "A1C fell 1.21 points",
+          "fact": "That's the company's stayed-on-treatment figure (vs 0.03 on placebo). Counting everyone, the paper reports −0.9 / −0.8 vs −0.2",
+          "stock_query": "headline being corrected with pen"
+        },
+        "retention_device": "Myth-fact correction of a number viewers will see online",
+        "source_ids": [
+          "S2",
+          "S1"
+        ]
+      },
+      {
+        "id": "b5",
+        "section": "The blood sugar twist",
+        "narration": "Why would a higher dose not lower A1C more? This trial alone can't say, and a 0.1-point gap may simply be chance.",
+        "on_screen_text": "May simply be chance",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "coin flip in the air"
+        },
+        "retention_device": "Honest uncertainty builds credibility before the next clue",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "b6",
+        "section": "The blood sugar twist",
+        "narration": "But remember that starting number, 7.4%? At that level, there's less room to fall than in trials where people started higher.",
+        "on_screen_text": "Less room to fall",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "ball on low shelf near floor"
+        },
+        "retention_device": "Pays off the 'remember 7.4%' loop",
+        "source_ids": [
+          "S1",
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "id": "b7",
+        "section": "The blood sugar twist",
+        "narration": "In STEP 2, people with type 2 diabetes started around 8.1%, and semaglutide 2.4 milligrams lowered A1C by 1.6 points, versus 0.4 on placebo.",
+        "on_screen_text": "STEP 2: from 8.1%, −1.6 points",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−1.6",
+          "stat_label": "STEP 2 A1C points vs −0.4 placebo",
+          "stock_query": "blood sugar gauge higher start"
+        },
+        "retention_device": "A named-drug comparison keeps it concrete",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "b8",
+        "section": "The blood sugar twist",
+        "narration": "In SURMOUNT-2, people started around 8.0%, and tirzepatide lowered it by about 2.1 points, versus 0.5 on placebo.",
+        "on_screen_text": "SURMOUNT-2: from 8.0%, −2.1",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−2.1",
+          "stat_label": "SURMOUNT-2 A1C points vs −0.5 placebo",
+          "stock_query": "blood sugar gauge dropping further"
+        },
+        "retention_device": "A second comparator builds the pattern",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "b9",
+        "section": "The blood sugar twist",
+        "narration": "Those are separate trials with different people and lengths, and there's no head-to-head. So you can't rank the drugs. But a lower starting A1C generally leaves room for a smaller drop.",
+        "on_screen_text": "Separate trials, no head-to-head",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "three separate islands not connected"
+        },
+        "retention_device": "The caveat lands as a takeaway, then the section changes",
+        "source_ids": [
+          "S1",
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "id": "s1",
+        "section": "The side effect problem",
+        "narration": "Now the part analysts focused on: how people felt on it.",
+        "on_screen_text": "How people felt",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "stomach character looking queasy"
+        },
+        "retention_device": "Pays off the 'why did people stop?' loop and links it to the investor mystery",
+        "source_ids": [
+          "S1",
+          "S3"
+        ]
+      },
+      {
+        "id": "s2",
+        "section": "The side effect problem",
+        "narration": "Gut side effects were reported by 72.8% on the lower dose and 77.7% on the higher dose, versus 38.6% on placebo.",
+        "on_screen_text": "Gut side effects: ~3 in 4",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "72.8% / 77.7%",
+          "stat_label": "Gut side effects vs 38.6% placebo",
+          "stock_query": "stomach with warning lights"
+        },
+        "retention_device": "Big, surprising stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s3",
+        "section": "The side effect problem",
+        "narration": "That's about 3 in 4 people on survodutide, compared with about 2 in 5 on placebo. Think nausea, vomiting, diarrhea and constipation, the usual pattern for this drug class.",
+        "on_screen_text": "3 in 4 vs 2 in 5",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Nausea",
+            "Vomiting",
+            "Diarrhea",
+            "Constipation"
+          ],
+          "stock_query": "icons of tummy troubles"
+        },
+        "retention_device": "Turns percentages into people the viewer can picture",
+        "source_ids": [
+          "S1",
+          "S5"
+        ]
+      },
+      {
+        "id": "s4",
+        "section": "The side effect problem",
+        "narration": "Notice that placebo number. Nearly 4 in 10 people reported gut symptoms on a dummy injection. What matters is what the drug adds on top.",
+        "on_screen_text": "Placebo: 38.6% too",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "dummy injection pen with question mark"
+        },
+        "retention_device": "A counterintuitive detail most coverage skips",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s5",
+        "section": "The side effect problem",
+        "narration": "For context, in STEP 2, gut side effects were reported by 63.5% on semaglutide 2.4 milligrams, versus 34.3% on placebo. Again, a separate trial, not a head-to-head.",
+        "on_screen_text": "STEP 2: 63.5% vs 34.3%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "63.5%",
+          "stat_label": "STEP 2 gut side effects vs 34.3% placebo",
+          "stock_query": "two separate charts side by side"
+        },
+        "retention_device": "A named comparator gives the viewer a reference point",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s6",
+        "section": "The side effect problem",
+        "narration": "And more people stopped. Boehringer reported that about 18% of people on survodutide stopped because of gut side effects, versus 1.2% on placebo. And reports covering the investor reaction focused on how many people stopped.",
+        "on_screen_text": "Gut-related stops: ~18% vs 1.2%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~18% vs 1.2%",
+          "stat_label": "Stopped due to gut side effects, company-reported",
+          "stock_query": "people walking off a path"
+        },
+        "retention_device": "Pays off the loop about the gap between the two numbers with the dropout figure and its placebo comparator, and teases the investor chapter",
+        "source_ids": [
+          "S2",
+          "S15",
+          "S3"
+        ]
+      },
+      {
+        "id": "s7",
+        "section": "The side effect problem",
+        "narration": "One warning: reports quoted different stopping rates. Boehringer's 18% counts only gut side effects. Fierce Biotech reported 26% stopping after any side effect, without a placebo figure. Always check which one a headline means, and the per-arm tables in the paper.",
+        "on_screen_text": "Which stopping rate?",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Boehringer: ~18%, gut side effects only",
+            "Fierce Biotech: 26%, any side effect",
+            "No placebo figure given for the 26%"
+          ],
+          "stock_query": "conflicting newspaper headlines pile"
+        },
+        "retention_device": "Transparency moment that teaches viewers to check the primary source",
+        "source_ids": [
+          "S2",
+          "S3",
+          "S15",
+          "S1"
+        ]
+      },
+      {
+        "id": "s8",
+        "section": "The side effect problem",
+        "narration": "So the weight loss was real, but it came with a lot of stomach trouble. And there's a second reason the number looked smaller than people hoped.",
+        "on_screen_text": "A second reason",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "detective pinning second clue"
+        },
+        "retention_device": "New open loop before the section change",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "w1",
+        "section": "Why diabetes trials lose less",
+        "narration": "Here's a pattern that rarely makes the headlines. In major trials of this drug class, people with type 2 diabetes lose less weight than people without it.",
+        "on_screen_text": "Diabetes trials land lower",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "two scales different results"
+        },
+        "retention_device": "The promised loop about a pattern across diabetes trials starts paying off",
+        "source_ids": [
+          "S8",
+          "S5",
+          "S9",
+          "S6"
+        ]
+      },
+      {
+        "id": "w2",
+        "section": "Why diabetes trials lose less",
+        "narration": "Semaglutide first. In STEP 1, adults without diabetes who had obesity, or overweight plus a weight-related condition, lost 14.9% over 68 weeks, versus 2.4% on placebo, counting everyone.",
+        "on_screen_text": "STEP 1, no diabetes: 14.9%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−14.9%",
+          "stat_label": "STEP 1, no diabetes, vs −2.4%, 68 wk",
+          "stock_query": "bar chart tall drop"
+        },
+        "retention_device": "Concrete named-drug evidence",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "w3",
+        "section": "Why diabetes trials lose less",
+        "narration": "In STEP 2, adults with type 2 diabetes on the same 2.4 milligram dose lost 9.6%, versus 3.4% on placebo, also over 68 weeks.",
+        "on_screen_text": "STEP 2, with diabetes: 9.6%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−9.6%",
+          "stat_label": "STEP 2, type 2 diabetes, vs −3.4%, 68 wk",
+          "stock_query": "shorter bar beside taller bar"
+        },
+        "retention_device": "The contrast makes the pattern visible",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "w4",
+        "section": "Why diabetes trials lose less",
+        "narration": "Tirzepatide shows the same pattern. In SURMOUNT-1, in adults without diabetes with a BMI of 30 or more, or 27 or more with a weight-related condition, the top dose reached 20.9% at 72 weeks, versus 3.1% on placebo, counting everyone.",
+        "on_screen_text": "SURMOUNT-1, no diabetes: 20.9%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−20.9%",
+          "stat_label": "SURMOUNT-1 top dose vs −3.1%, 72 wk",
+          "stock_query": "tall bar chart second drug"
+        },
+        "retention_device": "A second drug repeats the pattern, building conviction",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "w5",
+        "section": "Why diabetes trials lose less",
+        "narration": "In SURMOUNT-2, with type 2 diabetes, it was 12.8% and 14.7% on the two doses tested, versus 3.2% on placebo, also at 72 weeks.",
+        "on_screen_text": "SURMOUNT-2: 12.8% / 14.7%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−12.8% / −14.7%",
+          "stat_label": "SURMOUNT-2, type 2 diabetes, vs −3.2%",
+          "stock_query": "shorter bars beside tall bar"
+        },
+        "retention_device": "A second named pair confirms the pattern",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "w6",
+        "section": "Why diabetes trials lose less",
+        "narration": "And in late September 2026, The Lancet published TRIUMPH-2, testing retatrutide, another investigational drug, in adults with type 2 diabetes and overweight or obesity.",
+        "on_screen_text": "TRIUMPH-2: retatrutide",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "fresh journal page with ribbon"
+        },
+        "retention_device": "A brand-new trial adds timeliness",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "w7",
+        "section": "Why diabetes trials lose less",
+        "narration": "At 80 weeks, counting everyone randomized, weight fell 11.9%, 16.8% and 18.8% across three doses, versus 5.1% on placebo.",
+        "on_screen_text": "11.9–18.8% vs 5.1%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−11.9% to −18.8%",
+          "stat_label": "TRIUMPH-2, 3 doses vs −5.1%, 80 wk",
+          "stock_query": "three bars descending staircase"
+        },
+        "retention_device": "A surprising stat from the newest trial",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "w8",
+        "section": "Why diabetes trials lose less",
+        "narration": "Every one of these is a separate trial, with its own length, doses and population. None tested these drugs head-to-head. But the direction is consistent: diabetes trials land lower.",
+        "on_screen_text": "No head-to-head, same direction",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Separate trials",
+            "Different lengths and doses",
+            "No head-to-head",
+            "Same direction"
+          ],
+          "stock_query": "separate arrows pointing same way"
+        },
+        "retention_device": "Caveat plus pattern, followed by a 'why?' question",
+        "source_ids": [
+          "S5",
+          "S6",
+          "S7",
+          "S8",
+          "S9"
+        ]
+      },
+      {
+        "id": "w9",
+        "section": "Why diabetes trials lose less",
+        "narration": "Why? Researchers have proposed a few explanations. None is fully settled.",
+        "on_screen_text": "3 possible reasons",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist with three cards"
+        },
+        "retention_device": "A short question line sets up a numbered reveal",
+        "source_ids": [
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "id": "w10",
+        "section": "Why diabetes trials lose less",
+        "narration": "One: when blood sugar runs high, some sugar, and its calories, spills into the urine. As treatment brings sugar down, the body holds on to more of those calories.",
+        "on_screen_text": "1. Fewer calories lost in urine",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sugar cubes leaving through drain"
+        },
+        "retention_device": "Counterintuitive mechanism: better blood sugar can slow weight loss",
+        "source_ids": [
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "id": "w11",
+        "section": "Why diabetes trials lose less",
+        "narration": "Two: in everyday life, many people with type 2 diabetes also take medicines like insulin or sulfonylureas, which tend to promote weight gain. That may also make weight harder to lose.",
+        "on_screen_text": "2. Other diabetes medicines",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill bottles on kitchen counter"
+        },
+        "retention_device": "The numbered list keeps momentum",
+        "source_ids": [
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "id": "w12",
+        "section": "Why diabetes trials lose less",
+        "narration": "Three: people in diabetes trials are often older, with longer-standing metabolic changes that may make weight harder to shift.",
+        "on_screen_text": "3. Older, longer-standing changes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "older adult walking upward path"
+        },
+        "retention_device": "Completes the list",
+        "source_ids": [
+          "S5",
+          "S8"
+        ]
+      },
+      {
+        "id": "w13",
+        "section": "Why diabetes trials lose less",
+        "narration": "So survodutide's 9.8% belongs next to other diabetes trials, not next to numbers from people without diabetes. But even in that company, investors had a sharper question.",
+        "on_screen_text": "Compare like with like",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "apples compared with apples"
+        },
+        "retention_device": "Payoff, then a new loop into the investor chapter",
+        "source_ids": [
+          "S1",
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "id": "i1",
+        "section": "Why investors sold",
+        "narration": "Which brings us back to that share drop.",
+        "on_screen_text": "Back to the 11%",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "stock chart arrow dipping"
+        },
+        "retention_device": "The hook's main mystery starts paying off",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "i2",
+        "section": "Why investors sold",
+        "narration": "On October 1, Zealand Pharma shares fell about 11% in morning trading, Fierce Biotech reported. Analysts pointed to two concerns: tolerability and competition.",
+        "on_screen_text": "Tolerability + competition",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "≈−11%",
+          "stat_label": "Zealand Pharma shares, morning of 1 Oct 2026",
+          "stock_query": "falling share ticker board"
+        },
+        "retention_device": "Stat with clear attribution",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "i3",
+        "section": "Why investors sold",
+        "narration": "Competition, because this space is crowded. Semaglutide and tirzepatide are already approved, and newer drugs, including pills and triple-hormone medicines like retatrutide, are moving through the pipeline.",
+        "on_screen_text": "A crowded field",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "crowded race track many runners"
+        },
+        "retention_device": "Vivid race analogy",
+        "source_ids": [
+          "S3",
+          "S7"
+        ]
+      },
+      {
+        "id": "i4",
+        "section": "Why investors sold",
+        "narration": "Tolerability, because a drug that most people feel in their gut has to offer something extra to stand out.",
+        "on_screen_text": "Has to stand out",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "runner holding stomach on track"
+        },
+        "retention_device": "Links back to the side effect chapter",
+        "source_ids": [
+          "S1",
+          "S3"
+        ]
+      },
+      {
+        "id": "i5",
+        "section": "Why investors sold",
+        "narration": "But a falling share price doesn't mean the trial failed. Weight and A1C both fell more than on placebo.",
+        "on_screen_text": "Not a failed trial",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Shares fell, so the trial failed",
+          "fact": "Weight and A1C fell more than on placebo",
+          "stock_query": "broken myth stamp on headline"
+        },
+        "retention_device": "Myth attack on the 'disappointment' framing",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "i6",
+        "section": "Why investors sold",
+        "narration": "A share price is investors' bet on future sales. It's not a clinical verdict on whether a medicine can help patients.",
+        "on_screen_text": "Investor view, not clinical verdict",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "investor and doctor different glasses"
+        },
+        "retention_device": "A reframe the viewer can repeat",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "i7",
+        "section": "Why investors sold",
+        "narration": "And it says nothing about the other reason survodutide exists. Remember that glucagon key, and the liver?",
+        "on_screen_text": "Remember the liver?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glowing key near cartoon liver"
+        },
+        "retention_device": "Callback to the early 'two keys' setup opens the liver chapter",
+        "source_ids": [
+          "S10"
+        ]
+      },
+      {
+        "id": "l1",
+        "section": "The liver question",
+        "narration": "Survodutide's glucagon half was built with the liver in mind.",
+        "on_screen_text": "Built for the liver",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon liver under spotlight"
+        },
+        "retention_device": "Chapter card for the section that saves the biggest surprise for last",
+        "source_ids": [
+          "S10"
+        ]
+      },
+      {
+        "id": "l2",
+        "section": "The liver question",
+        "narration": "In a 48-week Phase 2 trial in adults with MASH, a serious form of fatty liver disease with scarring, survodutide improved MASH on biopsy without worsening scarring more often than placebo.",
+        "on_screen_text": "Phase 2: better than placebo",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "liver turning from yellow healthy"
+        },
+        "retention_device": "Promising evidence, labelled by trial phase and length",
+        "source_ids": [
+          "S10"
+        ]
+      },
+      {
+        "id": "l3",
+        "section": "The liver question",
+        "narration": "And in an earlier Phase 3 substudy, from the SYNCHRONIZE-1 trial, Boehringer reported reductions in liver fat.",
+        "on_screen_text": "Liver fat down (substudy)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "fat droplets shrinking in liver"
+        },
+        "retention_device": "A second clue, clearly attributed",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "l4",
+        "section": "The liver question",
+        "narration": "But SYNCHRONIZE-2 itself didn't establish a liver benefit. And the Phase 3 MASH outcome trials are still running as of October 2026.",
+        "on_screen_text": "Outcome trials still running",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hourglass beside liver"
+        },
+        "retention_device": "The 'but' turn keeps it honest and opens a forward-looking loop",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "l5",
+        "section": "The liver question",
+        "narration": "Survodutide also has an FDA Breakthrough Therapy designation for MASH. That can speed up development and review. It is not an approval.",
+        "on_screen_text": "Breakthrough ≠ approval",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Breakthrough Therapy means approved",
+          "fact": "It can speed up development and review. It is not an approval",
+          "stock_query": "fast lane sign not finish"
+        },
+        "retention_device": "Myth-fact on a commonly misread label",
+        "source_ids": [
+          "S12",
+          "S2"
+        ]
+      },
+      {
+        "id": "l6",
+        "section": "The liver question",
+        "narration": "So the liver may turn out to be where a glucagon-plus-GLP-1 drug earns its place. May. We'll know when those trials report.",
+        "on_screen_text": "May. Not yet known.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "question mark over liver horizon"
+        },
+        "retention_device": "Cliffhanger that points to future coverage",
+        "source_ids": [
+          "S10",
+          "S2"
+        ]
+      },
+      {
+        "id": "m1",
+        "section": "What this means for you",
+        "narration": "So what does this mean if you live with type 2 diabetes and overweight or obesity?",
+        "on_screen_text": "What it means for you",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "person reading at kitchen table"
+        },
+        "retention_device": "Turns the science into a personal question",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "m2",
+        "section": "What this means for you",
+        "narration": "If you're on an approved medicine, nothing changes today. Survodutide is still investigational, and it hasn't been compared head-to-head with what you take.",
+        "on_screen_text": "Nothing changes today",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm person with checklist"
+        },
+        "retention_device": "Reassurance eases any anxiety the headlines may have created",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "m3",
+        "section": "What this means for you",
+        "narration": "Approved options like semaglutide and tirzepatide have Phase 3 data in people with type 2 diabetes, including the STEP 2 and SURMOUNT-2 trials we just covered.",
+        "on_screen_text": "Approved options have data",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stack of trial reports"
+        },
+        "retention_device": "Callback to earlier sections",
+        "source_ids": [
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "id": "m4",
+        "section": "What this means for you",
+        "narration": "There's no approved survodutide to buy. Anything sold online under that name is not an approved medicine, so please don't go looking for it.",
+        "on_screen_text": "No approved version to buy",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "shopping cart with stop sign"
+        },
+        "retention_device": "Safety guardrail delivered warmly",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "m5",
+        "section": "What this means for you",
+        "narration": "And if gut side effects are what worry you about this whole drug class, that's a great thing to raise with your prescriber, before and during treatment.",
+        "on_screen_text": "Ask about side effects",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient talking with friendly doctor"
+        },
+        "retention_device": "Practical action step",
+        "source_ids": [
+          "S1",
+          "S5"
+        ]
+      },
+      {
+        "id": "m6",
+        "section": "What this means for you",
+        "narration": "It's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Talk to your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient nodding together"
+        },
+        "retention_device": "Required prescriber line before the final payoff",
+        "source_ids": []
+      },
+      {
+        "id": "r1",
+        "section": "How to read any GLP-1 headline",
+        "narration": "Now, the payoff I promised: the one question that tells a 13.1% from a 9.8%.",
+        "on_screen_text": "The one question",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "envelope opening with lightbulb"
+        },
+        "retention_device": "Pays off the main open loop from the hook",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "r2",
+        "section": "How to read any GLP-1 headline",
+        "narration": "It's this: counting whom? Everyone who was randomized, or only the people who stayed on treatment?",
+        "on_screen_text": "Counting whom?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "finger counting crowd of people"
+        },
+        "retention_device": "The reveal, short and memorable",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "r3",
+        "section": "How to read any GLP-1 headline",
+        "narration": "Ask it of survodutide, and 13.1% versus 3.1% becomes 9.8% versus 3.9%. Same trial. Very different feel.",
+        "on_screen_text": "13.1% → 9.8%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "13.1% → 9.8%",
+          "stat_label": "Stayed on vs everyone counted, top dose",
+          "stock_query": "number transforming on screen"
+        },
+        "retention_device": "Closes the loop on the exact numbers from the hook",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "r4",
+        "section": "How to read any GLP-1 headline",
+        "narration": "Then add four quick follow-ups. Who was studied, with or without diabetes? For how long? Compared with placebo or another drug? And how many people stopped, and why?",
+        "on_screen_text": "Your 5-question checklist",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Counting whom?",
+            "Who was studied?",
+            "For how long?",
+            "Versus what?",
+            "How many stopped?"
+          ],
+          "stock_query": "checklist with five ticks"
+        },
+        "retention_device": "Practical takeaway checklist",
+        "source_ids": [
+          "S1",
+          "S2",
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "id": "r5",
+        "section": "How to read any GLP-1 headline",
+        "narration": "Run any headline through those five, and an 'up to' number is far less likely to catch you off guard.",
+        "on_screen_text": "Read past the 'up to'",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "shield deflecting flashy headline"
+        },
+        "retention_device": "Empowering summary before the CTA",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "r6",
+        "section": "How to read any GLP-1 headline",
+        "narration": "Next up, we're unpacking semaglutide and kidney disease in type 2 diabetes: what the FLOW trial and a new biopsy study show. Subscribe so it's waiting for you.",
+        "on_screen_text": "Next: semaglutide and kidneys",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon kidneys with subscribe bell"
+        },
+        "retention_device": "CTA tied to a specific next benefit",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Survodutide Once Weekly in Adults with Obesity and Type 2 Diabetes",
+        "publisher": "New England Journal of Medicine",
+        "year": "2026",
+        "url": "https://www.nejm.org/doi/10.1056/NEJMoa2607219"
+      },
+      {
+        "id": "S2",
+        "title": "Boehringer Ingelheim's survodutide achieves up to 13.1% weight loss in new Phase III trial, alongside significant improvements in glycemic control in people with obesity and type 2 diabetes",
+        "publisher": "Boehringer Ingelheim (via GlobeNewswire)",
+        "year": "2026",
+        "url": "https://www.globenewswire.com/news-release/2026/10/01/3372564/0/en/boehringer-ingelheim-s-survodutide-achieves-up-to-13-1-weight-loss-in-new-phase-iii-trial-alongside-significant-improvements-in-glycemic-control-in-people-with-obesity-and-type-2-d.html"
+      },
+      {
+        "id": "S3",
+        "title": "Zealand's stock slides as Boehringer-partnered obesity drug underwhelms again in phase 3",
+        "publisher": "Fierce Biotech",
+        "year": "2026",
+        "url": "https://www.fiercebiotech.com/biotech/zealand-pharma-slides-boehringer-partnered-obesity-drug-underwhelms-again-phase-3"
+      },
+      {
+        "id": "S5",
+        "title": "Semaglutide 2·4 mg once a week in adults with overweight or obesity, and type 2 diabetes (STEP 2): a randomised, double-blind, double-dummy, placebo-controlled, phase 3 trial",
+        "publisher": "The Lancet",
+        "year": "2021",
+        "url": "https://doi.org/10.1016/S0140-6736(21)00213-0"
+      },
+      {
+        "id": "S6",
+        "title": "Tirzepatide once weekly for the treatment of obesity in people with type 2 diabetes (SURMOUNT-2): a double-blind, randomised, multicentre, placebo-controlled, phase 3 trial",
+        "publisher": "The Lancet",
+        "year": "2023",
+        "url": "https://doi.org/10.1016/S0140-6736(23)01200-X"
+      },
+      {
+        "id": "S7",
+        "title": "Retatrutide in adults with obesity and type 2 diabetes (TRIUMPH-2): a double-blind, parallel-group, randomised, placebo-controlled, phase 3 trial",
+        "publisher": "The Lancet",
+        "year": "2026",
+        "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01861-1/abstract"
+      },
+      {
+        "id": "S8",
+        "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity",
+        "publisher": "New England Journal of Medicine",
+        "year": "2021",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2032183"
+      },
+      {
+        "id": "S9",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity",
+        "publisher": "New England Journal of Medicine",
+        "year": "2022",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2206038"
+      },
+      {
+        "id": "S10",
+        "title": "A Phase 2 Randomized Trial of Survodutide in MASH and Fibrosis",
+        "publisher": "New England Journal of Medicine",
+        "year": "2024",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2401755"
+      },
+      {
+        "id": "S11",
+        "title": "Glucagon and GLP-1 receptor dual agonist survodutide for obesity: a randomised, double-blind, placebo-controlled, dose-finding phase 2 trial",
+        "publisher": "The Lancet Diabetes & Endocrinology",
+        "year": "2024",
+        "url": "https://doi.org/10.1016/S2213-8587(23)00356-X"
+      },
+      {
+        "id": "S12",
+        "title": "Breakthrough Therapy",
+        "publisher": "U.S. Food and Drug Administration",
+        "year": "2018",
+        "url": "https://www.fda.gov/patients/fast-track-breakthrough-therapy-accelerated-approval-priority-review/breakthrough-therapy"
+      },
+      {
+        "id": "S13",
+        "title": "IFCC Standardization of HbA1c",
+        "publisher": "NGSP",
+        "year": "2024",
+        "url": "https://ngsp.org/ifccngsp.asp"
+      },
+      {
+        "id": "S14",
+        "title": "Mechanisms of Action and Therapeutic Application of Glucagon-like Peptide-1",
+        "publisher": "Cell Metabolism",
+        "year": "2018",
+        "url": "https://doi.org/10.1016/j.cmet.2018.03.001"
+      },
+      {
+        "id": "S15",
+        "title": "Survodutide induces 'impressive' amount of weight loss in type 2 diabetes and obesity",
+        "publisher": "Healio",
+        "year": "2026",
+        "url": "https://www.healio.com/news/endocrinology/20261001/survodutide-induces-impressive-amount-of-weight-loss-in-type-2-diabetes-and-obesity"
+      }
+    ],
+    "cta": "Next up: semaglutide and kidney disease in type 2 diabetes, and what the FLOW trial and a new biopsy study show. Subscribe to @InforMedLab so it's waiting for you. It's a prescription medicine. Talk to your doctor or prescriber about whether it's right for you."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "I checked the main numbers against Healio's EASD/NEJM report, Boehringer's press release, Fierce Biotech, and Healio's TRIUMPH-2 report. All of them match.\n\n**SYNCHRONIZE-2 (verified):**\n- 752 adults, 76 weeks, two doses (3.6 and 6 mg) and placebo.\n- Weight loss, counting everyone: 8.2% and 9.8% vs 3.9% on placebo. Counting only people who stayed on treatment: 13.1% on the 6 mg dose vs 3.1% on placebo.\n- A1C fell 0.9 and 0.8 points vs 0.2 on placebo, from a starting average of 7.4%. The company's stayed-on-treatment figure is 1.21 vs 0.03.\n- Gut side effects: 72.8% and 77.7% vs 38.6% on placebo.\n- Stopped because of gut side effects: 18% and 17.9% vs 1.2% on placebo.\n\n**Investor reaction (verified):** Fierce reported Zealand shares down 11% and a 26% rate of stopping after any side effect, with no placebo figure given.\n\n**TRIUMPH-2 (verified):** 11.9%, 16.8% and 18.8% vs 5.1% on placebo at 80 weeks, counting everyone. Published in The Lancet around 30 September 2026.\n\n**From established literature (not re-opened this run):** the STEP 1, STEP 2, SURMOUNT-1 and SURMOUNT-2 figures match the published trials. The script already explains the two ways of counting, gives a placebo figure next to every number, warns that the trials aren't head-to-head, hedges claims to October 2026, includes the prescriber line, and tells viewers not to buy survodutide online.\n\n**Not opened:** the NEJM and Lancet journal pages blocked access (403), so I confirmed those two papers through reputable secondary reports.\n\nOnly minor wording fixes are needed.",
+    "issues": [
+      {
+        "location": "i3",
+        "claim": "newer drugs, including pills and triple-hormone medicines like retatrutide, are moving through the pipeline",
+        "problem": "An oral semaglutide pill for weight (Wegovy pill) was already FDA-approved in December 2025. 'Pills ... moving through the pipeline' suggests no GLP-1 weight pill is approved yet, so it's a bit imprecise.",
+        "severity": "minor",
+        "fix": "Competition, because this space is crowded. Semaglutide and tirzepatide are already approved, and more drugs, including new pills like orforglipron and triple-hormone medicines like retatrutide, are moving through the pipeline."
+      },
+      {
+        "location": "w1",
+        "claim": "In major trials of this drug class, people with type 2 diabetes lose less weight than people without it.",
+        "problem": "This compares separate trials, not people within one trial. As written it sounds like a measured comparison inside a study.",
+        "severity": "minor",
+        "fix": "Here's a pattern that rarely makes the headlines. In major trials of this drug class, trials in people with type 2 diabetes report less weight loss than trials in people without it."
+      },
+      {
+        "location": "t2",
+        "claim": "752 adults",
+        "problem": "Boehringer's press release says 755 participants, while Healio's report of the paper says 752. Viewers may see both numbers.",
+        "severity": "minor",
+        "fix": "752 adults with overweight or obesity and type 2 diabetes were randomly assigned to weekly survodutide, at a 3.6 or 6.0 milligram trial dose, or to placebo. (Keep 752, the number in the paper's report. Optionally add the on-screen note 'Company release: 755 enrolled'.)"
+      },
+      {
+        "location": "s6",
+        "claim": "about 18% of people on survodutide stopped because of gut side effects",
+        "problem": "The per-arm figures are 18% (3.6 mg) and 17.9% (6 mg). 'About 18%' is accurate, but saying 'on either dose' makes it clear the figure covers both arms.",
+        "severity": "minor",
+        "fix": "And more people stopped. About 18% of people on either survodutide dose stopped because of gut side effects, versus 1.2% on placebo. And reports covering the investor reaction focused on how many people stopped."
+      },
+      {
+        "location": "sources S12",
+        "claim": "FDA Breakthrough Therapy page, year 2018",
+        "problem": "For a living web page, the year should be labelled as the last-reviewed date rather than shown as a publication year.",
+        "severity": "minor",
+        "fix": "Set the year to the page's 'Content current as of' date and label it 'last reviewed'."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S2",
+        "title": "Boehringer Ingelheim's survodutide achieves up to 13.1% weight loss in new Phase III trial, alongside significant improvements in glycemic control in people with obesity and type 2 diabetes",
+        "publisher": "Boehringer Ingelheim (via GlobeNewswire)",
+        "year": "2026",
+        "url": "https://www.globenewswire.com/news-release/2026/10/01/3372564/0/en/boehringer-ingelheim-s-survodutide-achieves-up-to-13-1-weight-loss-in-new-phase-iii-trial-alongside-significant-improvements-in-glycemic-control-in-people-with-obesity-and-type-2-d.html"
+      },
+      {
+        "id": "S3",
+        "title": "Zealand's stock slides as Boehringer-partnered obesity drug underwhelms again in phase 3",
+        "publisher": "Fierce Biotech",
+        "year": "2026",
+        "url": "https://www.fiercebiotech.com/biotech/zealand-pharma-slides-boehringer-partnered-obesity-drug-underwhelms-again-phase-3"
+      },
+      {
+        "id": "S15",
+        "title": "Survodutide induces 'impressive' amount of weight loss in type 2 diabetes and obesity",
+        "publisher": "Healio",
+        "year": "2026",
+        "url": "https://www.healio.com/news/endocrinology/20261001/survodutide-induces-impressive-amount-of-weight-loss-in-type-2-diabetes-and-obesity"
+      },
+      {
+        "id": "S7b",
+        "title": "Retatrutide confers 'substantial' weight loss for adults with obesity, type 2 diabetes",
+        "publisher": "Healio",
+        "year": "2026",
+        "url": "https://www.healio.com/news/endocrinology/20260930/retatrutide-confers-substantial-weight-loss-for-adults-with-obesity-type-2-diabetes"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.056,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 6.9,
+      "weakShots": 9,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "Doctor mascot standing alone on a plain clinic gradient with only a small pink label pill — composition reads empty, no scene/backdrop detail.",
+        "Charming droplet mascots and dialogue, but the automated audit flags on-screen text near this timestamp (~69.4s) rendering at ~23px, which is below the ~40px minimum and will be hard to read on a phone.",
+        "'Survodutide: 3 in 4' label renders tiny (audit flags ~23px at this timestamp) and the three green/orange cell mascots sit on a near-empty pale gradient with no supporting scene art — composition reads sparse.",
+        "Labels 'Survodutide: 3 in 4' and 'Placebo: 2 in ...' render at ~23px, under the 40px minimum, and the placebo label is cropped at the right edge of the frame.",
+        "Chip row briefly shows only 'Nausea / Vomiting' before the other two side effects appear, reading as incomplete mid-shot.",
+        "'STEP 2' / 'SYNCHRONIZE-2' pill labels under the two bar charts render around 23-26px, below the 40px minimum text size.",
+        "Second half of the shot drops to a single 'Investors' face icon alone on a plain teal gradient with no scene — classic lone-icon-on-gradient hold.",
+        "Headline 'Which stopping rate?' sits in the top third while the two newspaper icons are pushed far down, leaving a large empty middle — unbalanced, dead-space composition.",
+        "Same 'Which stopping rate?' dead-space issue persists, then cuts to a single newspaper character alone on a plain gradient with only a speech bubble for content.",
+        "Two small newspaper icons ('Boehringer', 'Fierce Biotech') float on a bare gradient with lots of unused space before the test-tube mascot frame improves things.",
+        "Automated audit confirms this is sparse (~11% artwork on a plain background) — a lone person, small hand icon, and two small tag pills floating on an unclear teal-box backdrop with a lot of dead space.",
+        "The same unexplained teal-box pattern from shot 40 recurs here, adding visual clutter without context.",
+        "Automated audit flags a 'Top dose' label pushed off-screen (box bottom at y=1100, past the 992 safe-frame limit) in this shot, so part of the on-screen text is being cropped even though the visible park scene itself looks fine.",
+        "Visible frames (pill mascots, runner, 'SURMOUNT-1 · No diabetes' pill) are appealing and readable.",
+        "215.6s frame is a near-empty dark teal gradient holding a single lone question-mark face mascot and a tiny newspaper icon — this is the 'lone icon on plain gradient' pattern the motion rules explicitly flag."
+      ],
+      "layoutKinds": {
+        "tiny": 21,
+        "offscreen": 4,
+        "sparse": 6
+      }
+    },
+    "audio": {
+      "musicGain": 0.309,
+      "sfxGain": 0.55,
+      "finalWer": 0.029,
+      "maskingDelta": 0.029,
+      "lufs": -15.1,
+      "soundNotes": "Music already sits in the right −12 to −15 dB window under voice and about right in pauses, so left at 1.0×. Trimmed a cluster of cue spikes that broke the −14 to −20 dB in-speech SFX ceiling (several swooshes/pops/blips sitting at −4 to −11 dB rel. voice around 13s, 38s, 91s, 106s, 128s, 154s, 239s, 249s, 324s, 613s, 657s, 706s) so they sit felt, not heard, while leaving the louder pause/transition hits (whip/swell/hit around −6 to −12 dB) untouched since those are correctly timed to silence. Added five bespoke story-beat SFX for key conceptual turns (dual-receptor headline, the \"stayed-on\" counting caveat, the \"second reason\" pivot, the still-running outcome trials, and the liver-mechanism transition) to add texture without crowding the narration."
+    },
+    "blocking": [],
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 8,
+          "issues": [
+            "Subtext 'Zealand stock, 1 Oct' is small but still legible at phone size",
+            "Arrow is a bit generic but reinforces direction of eye travel"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "No face/emotion on the mystery pill, lower emotional pull than #0",
+            "Question mark icon is clear but less specific curiosity hook than 'shares fell'"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 6,
+          "legibility": 6,
+          "issues": [
+            "SHARES/TRIAL badge text very small at phone size, borderline legible",
+            "Two characters plus VS plus two badges plus headline is cluttered for a single focal point",
+            "Visual (investor crying, pill smiling) could read as sensationalized/anthropomorphized confusion versus the title's straightforward trial result"
+          ]
+        }
+      ],
+      "best_index": 0,
+      "reasoning": "All three are clean, on-brand, and legible, but #0 ('WHY SHARES FELL?') has the strongest emotional pull (a single shocked-face pill character, clear directional arrow) and the sharpest curiosity gap against the title: the title already shows a strong win over placebo (9.8% vs 3.9%), so 'why did shares fall anyway?' is a genuinely surprising, specific hook that the video is confirmed to pay off (investor reaction vs side-effect profile). It also reads fastest at phone size with only two short text blocks and one focal character. #1 ('THE CATCH?') is legible and clean but more generic/abstract (no face, no specific tease) so likely lower CTR. #2 ('WHO'S RIGHT?') is the most cluttered — two characters, a VS, two small pill-shaped badges (SHARES/TRIAL) — which splits the focal point and pushes legibility of the badge text close to the phone-size threshold. #0 best balances curiosity, emotion, and single-glance clarity without overstating the video's content."
+    },
+    "packaging": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "location": "description (Sources, last line)",
+          "claim": "2. Fierce Biotech, Zealand shares: https://www.fiercebiotech.com/biotech/zealand-pharma-slides-boehringer-partnered-obes",
+          "problem": "The description is cut off in the middle of a URL, so source #2 links to nothing. This is the same recurring cut-off flagged in 8 of 9 earlier long-form videos.",
+          "severity": "major",
+          "fix": "Replace the last line with: \"2. Fierce Biotech, Zealand shares: https://www.fiercebiotech.com/biotech/zealand-pharma-slides-boehringer-partnered-obesity-drug-underwhelms-again-phase-3\". Check that this is the final complete line and that the whole description is under 2,000 characters. If you need room, shorten the Quick answer by cutting the sentence \"A falling share price is not a failed trial.\""
+        },
+        {
+          "location": "title",
+          "claim": "Survodutide Weight Loss, T2D+Obesity: 9.8% vs 3.9% at 76wk (High Dose)",
+          "problem": "The title narrows the population to \"Obesity\", but the verified script says adults with overweight or obesity plus type 2 diabetes. It also doesn't say that 3.9% is the placebo figure. The craft notes say the title must keep \"overweight or obesity\" and name the comparator.",
+          "severity": "minor",
+          "fix": "Survodutide, T2D + Overweight/Obesity: 9.8% Weight Loss vs 3.9% Placebo at 76 Wk (Higher Dose)"
+        },
+        {
+          "location": "thumbnail_headline",
+          "claim": "SURVODUTIDE: SHARES FELL?",
+          "problem": "The shares did fall, so the question mark reads oddly and could be taken as a hint that the drug failed. The script says plainly that it wasn't a failed trial. This is a wording issue only.",
+          "severity": "minor",
+          "fix": "Optional: change the headline to \"SURVODUTIDE: WHY SHARES FELL\" and keep the subtext \"Zealand stock, 1 Oct\"."
+        }
+      ]
+    }
+  },
+  "hold_reason": "Quality check: narration doesn't match script in 2 scene(s): expected \"point\" heard \"\"; expected \"survodutide\" heard \"cervagitide\"",
+  "release_tag": "content-2026-10-05",
+  "archive_url": "b2://informed-lab-media/content/2026-10-05/L1-survodutide-glucagon-glp-1-dual-agonist/",
+  "approved_by": "editor-in-chief (medium risk): The hold is a speech-to-text quirk: \"survodutide\" was heard as \"cervagitide\" and error rates are low (0.029 after the final mix), so subtitles from the script will be correct. The fact-check passed with every number verified and consistent across title, description and script. What's left is packaging: the description is cut off mid-URL in source #2, the title says \"Obesity\" instead of \"overweight or obesity\", and the thumbnail question mark reads oddly. None of th"
+}
