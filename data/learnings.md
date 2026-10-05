@@ -1,110 +1,117 @@
-# InforMed performance playbook (updated 2026-10-01)
+# InforMed performance playbook (updated 2026-10-05)
 
-## Data status: still small. Treat everything here as a hypothesis.
-- **Sample:** 19 pieces (13 about GLP-1): 9 YouTube Shorts (6 GLP-1), 5 long-form (3 GLP-1) and 5 carousels (4 GLP-1). Most were measured 0–3 days after posting.
-- **What we can measure:** YouTube views, plus Instagram reach and views. **TikTok, Facebook and Threads still return null.** We have no watch time, average view duration or retention for anything. Engagement is 1 like in total, so there is no engagement signal.
-- **Rule:** a signal isn't proven until there are at least 8 GLP-1 posts per format. The top post has about 136 views, so one post can still swing any average.
+## Data status: still small. Treat these as working hypotheses.
+- **Sample:** 21 pieces (15 about GLP-1): 11 YouTube Shorts (8 GLP-1), 7 long-form (5 GLP-1) and 10 carousels (8 GLP-1). Posts were measured 3–9 days after going live. Our metrics stop at posts from 10-01; nothing from 10-02 onward is in yet.
+- **What we can measure:** YouTube views, plus Instagram reach and views. TikTok, Facebook and Threads still return null. We have no watch time, average view duration or retention, so hook and retention claims are untested. There are 4 likes in total across everything, so engagement tells us nothing.
+- **Rule:** a signal counts as proven only with at least 8 GLP-1 posts per format. GLP-1 Shorts have just reached n=8, so the Shorts title finding below is now **provisional**, a step up from a guess. Long-form (n=5) and carousels (no usable metrics) are still below the bar.
 
-## YouTube Shorts: the only usable signal (n=9, median 15 views)
-- **Ranked:** smartwatch 136 (9.1× median), Mounjaro metabolism 102 (6.8×), CagriSema vs tirzepatide 45 (3.0×), "Lilly says online retatrutide isn't its trial drug" 28 (1.9×), semaglutide and pancreatic cancer 15 (1.0×), "Is GLP-1 'cheating'?" 5, cleaners 4, HRT 3, GLP-1 heart risk 2.
-- **GLP-1 Shorts (n=6, median about 22).**
-- **Strongest pattern so far: name a specific drug in the title.**
-  - Titles with a named drug: 102 / 45 / 28 / 15 (median about 37, n=4).
-  - Titles with only the generic "GLP-1" class: 5 and 2 (n=2).
-  - Every one of the top 4 Shorts names a specific thing the viewer already knows (Mounjaro, CagriSema, retatrutide, smartwatch). Every bottom Short has a vague subject ("Older Drug", "GLP-1", "your 'clean' smell", "the number headlines skip").
-- **Title formulas that worked:**
-  - Search-style question about a named drug: "Does Mounjaro Speed Up Metabolism?" (102).
-  - Headline decoder: "Did CagriSema Really Beat Tirzepatide?" (45).
-  - Attributed correction: "Lilly Says Online 'Retatrutide' Isn't Its Trial Drug" (28).
-- **The question format alone doesn't carry a title.** "Is GLP-1 'Cheating'?" got 5. It asks about feelings or stigma, not something people search for, and names no drug.
-- **Topic signal (n=6, weak):**
-  - Above median: next-gen and trending drugs and claims people are seeing in headlines (CagriSema, retatrutide, tirzepatide mechanism).
-  - Around median: safety myth-busts (pancreatic cancer, 15).
-  - Below median: benefits-beyond-weight framed vaguely (heart, 2) and stigma (5).
-  - Don't drop benefits topics. Repackage them with a named drug and a named comparator.
-- **Trend stage (n=6, weak):** rising-stage GLP-1 Shorts had a median of about 37 views; emerging-stage had 15 and 5. Prefer claims that are already circulating.
-- **Drug names in titles:** use the recognisable name next to the generic one, e.g. "Tirzepatide (Mounjaro)". Name the comparator ("vs sulfonylureas"), never "older drug". QA rules still apply: generic name first where QA requires it, never a brand the study didn't test, and no ad-like wording.
-- **Honesty still works.** The mouse-study Short ("only in mice") is the #2 Short. The answer can be "not proven in humans yet".
-- **Avoid:** teasing a number without stating it, and vague subjects or comparators. Those posts went 0 for 4 above median.
-- **Length:** no signal yet. Winners ran 64–89s and losers 67–82s. Still to do: test 35–50s cuts on 2–3 GLP-1 Shorts.
-- **Slot: no reliable effect, and the title explains more than the slot.**
-  - 08:00 ET: 28 and 2.
-  - 13:00–14:00 ET: 136, 45 and 15.
-  - 20:00 ET: 102 and 5.
-  - **Correction:** the HRT Short actually went out at 23:14 ET, not in the morning, so the old "mornings flop" hypothesis is withdrawn.
+## YouTube Shorts (n=11, median 30 views; GLP-1 n=8, median 36)
+- **Ranked:** smartwatch 136, Mounjaro metabolism 113 (3.8× median), CagriSema vs tirzepatide 53 (1.8×), NYC needle-sticks 45 (1.5×), Lilly/retatrutide 42 (1.4×), orforglipron ACHIEVE-4 30 (1.0×), semaglutide pancreatic cancer 23, "Is GLP-1 'cheating'?" 6, cleaners 4, HRT 3, "GLP-1 vs Older Drug" 2.
+- **Provisional rule: the title needs a concrete, recognisable subject.**
+  - With a named drug: 113 / 53 / 42 / 30 / 23 (median 42, n=5).
+  - With a concrete non-drug subject plus a stated number ("NYC Sanitation: 49 Needle-Sticks…"): 45 (n=1).
+  - With only the generic "GLP-1" class or a vague comparator: 6 and 2 (n=2). Including a number ("18% lower…") didn't rescue "GLP-1 vs Older Drug".
+  - Lead with the drug or concrete thing. Never use "GLP-1" alone or "older drug" as the subject.
+- **Title formulas, best first:**
+  1. A search-style question about a named drug: "Does Mounjaro Speed Up Metabolism?" (113).
+  2. Headline decoder, "Did [new drug] beat tirzepatide?": the CagriSema Short got 53. The EloraTZP long-form used the same formula and got 112, our best GLP-1 long-form. That makes **2 for 2 across both formats**, our most repeatable formula.
+  3. An attributed correction: "Lilly Says Online 'Retatrutide' Isn't Its Trial Drug" (42).
+  4. A concrete news number plus a practical fix (needle-sticks and pen disposal, 45). This is a new angle with n=1, so test it again.
+- **Underperformers:**
+  - Stigma or feelings questions (6).
+  - Teasing a number without stating it ("the number headlines skip", 3).
+  - A vague comparator (2).
+- **Trial codes are optional extras.** "Orforglipron (Foundayo): Heart-Safe vs Insulin? ACHIEVE-4" got 30, about the median. Put the drug and the question first; codes like "ACHIEVE-4" add length, not clicks.
+- **Trend stage (GLP-1 Shorts, weak):** rising-stage posts had a median of 47.5 (n=4) and emerging-stage a median of 26.5 (n=4). Emerging topics still work when the subject is concrete (45, 30). Prefer claims that are already circulating, but don't skip a strong emerging story.
+- **Honesty works.** "Only in mice so far" is our #1 GLP-1 Short. Not-proven answers are fine.
+- **Benefits-beyond-weight topics:** keep making them, but give them a named drug and a named comparator (e.g. "Semaglutide vs sulfonylureas"). The vague heart Short got 2.
+- **Slot: no effect.** GLP-1 Shorts by slot:
+  - 08:00 ET: 2 and 42.
+  - 13:00 ET: 53 and 23.
+  - 20:00 ET: 113, 6, 45 and 30.
+  - The title explains far more than the slot does.
+- **Length: no signal.** Every Short has run 64–94s. Winners and losers overlap (113 at 79s, 2 at 77s), and we still haven't tested a 35–50s cut.
 
-## Long-form (n=5, median 2 views): still cold-start noise
-- **Views:** orforglipron and menopause 6, GLP-1 hair loss 3, mammogram 2, BMI and heart risk 1, workout vs nap 0.
-- The top 2 are GLP-1 titles phrased like searches, and the top one names a drug ("Does Menopause Blunt GLP-1 Weight Loss? New Orforglipron Pill Data"). That fits the Shorts pattern. Keep doing it.
-- **No thumbnail signal yet** (reaction 6, before-after 3, split-reveal 2, versus 1 and 0).
-- **Before-after thumbnails never show bodies, weight or shape.**
-- Four long-forms went out on 09-28 and a fifth at 02:57 ET on 09-29. That splits early reach. Publish 1 a day.
+## Long-form (n=7, median 3; GLP-1 n=5, median 11)
+- **Views:**
+  - EloraTZP vs tirzepatide: 112.
+  - Orforglipron and menopause: 11.
+  - Retatrutide TRIUMPH-2: 11.
+  - Ozempic hair loss: 3.
+  - Mammogram: 2.
+  - BMI and heart rules: 1.
+  - Workout vs nap: 0.
+- **All 3 GLP-1 long-forms that named a next-gen drug beat every other long-form.** The headline-decoder format with the top-dose number, the comparator's number and the population in the title is the clear winner: "Did EloraTZP Beat Tirzepatide? Top Dose 23.3% vs 14.8%, T2D".
+- Newer videos beat older ones despite having less time live. Reach looks like it's picking up now that we publish 1 a day at 14:00 ET (fixed from 09-30), but n is small.
+- **No thumbnail signal.** "Versus" scored both 112 and 0/1, while reaction got 11, warning 11, before-after 3 and split-reveal 2. The title is doing the work. Before-after thumbnails never show bodies, weight or shape.
 
-## Instagram and carousels: GLP-1 content gets almost no reach
-- **The gap between non-GLP-1 and GLP-1 posts:**
-  - Non-GLP-1 Reels and carousels (n=4): 15–20 views on the Reels; the stroke carousel reached 2 accounts with 5 views.
-  - GLP-1 Reels (n=6): 0–6 views each.
-  - GLP-1 carousels (n=4): **0 reach** every time.
-  - Meanwhile the same Shorts got 15–102 views on YouTube.
-- This looks like Meta limiting recommendations for weight-loss and drug content, or delayed insights. Don't judge the content from Instagram numbers.
-- **On Instagram:**
-  - Open the caption with health or mechanism framing.
-  - No weight-loss hashtags and no before/after language.
-  - Avoid the words "weight loss", "Ozempic" and "Wegovy" in the first line before the fold. Keep the hedge and the prescriber line as usual.
-- There are still no carousel metrics for TikTok, Facebook or Threads.
+## Instagram and carousels: GLP-1 content is still suppressed on Meta
+- **GLP-1 Reels (n=8):** 0–6 views each, median about 3. The non-GLP-1 Reels got 15–20.
+- **GLP-1 carousels on Instagram (n=8):** 6 got 0 reach and 2 got a reach of 1.
+- The same Shorts got 23–113 views on YouTube. Don't judge content from Instagram numbers, and never let an Instagram result overturn a YouTube finding.
+- **Instagram caption rules:**
+  - Open with health or mechanism framing.
+  - Keep "weight loss", "Ozempic" and "Wegovy" out of the first line.
+  - No weight-loss or brand hashtags.
+  - Keep the hedge and the exact prescriber line.
+- We have no carousel metrics on TikTok, Facebook or Threads, so there's still nothing to learn about carousel formats.
 
-## Principles to carry forward (not yet proven by our data)
-- The title and the first spoken line share one concrete hook: a named drug or thing plus a "you" stake. The answer comes within the first 10s.
-- Decode a claim people are already searching for or seeing in headlines. Myth-busts target a belief or number the viewer already holds.
-- Use loop endings that lead back into the first line. Every Short already does this, so there's no comparison yet.
-- Accuracy, full population and comparator, "mice vs humans", the exact prescriber line and QA rules always come before any hook tactic.
+## Principles to carry forward (our data hasn't tested these yet)
+- Title and first spoken line share one hook: a named drug or concrete thing plus a stake for the viewer. Answer within 10–15s.
+- Decode claims people already see in headlines. Myth-busts should target a belief the viewer already holds.
+- Loop endings: every Short already uses one, so there's no comparison to learn from.
+- Accuracy, the full population and comparator, "mice vs humans", numerals, the exact prescriber line and the QA rules always beat any hook tactic. A top-performing formula never justifies dropping a caveat.
 
 ## Logging needed for the next update
-- Actual publish time per platform. Fix the duplicate Facebook carousel posts and the long-form timezone issue.
-- The title formula for every post: named-drug question / headline decoder / attributed correction / stated number / generic-class / stigma.
-- Hook type, thumbnail layout and duration for every post.
-- YouTube Analytics API data (watch time, average view duration, retention), plus TikTok, Facebook and Threads metrics and Instagram average watch time. Without these we can't learn anything about hooks.
+- Metrics for posts from 10-02 onward, re-pulled at about 7 days.
+- YouTube Analytics data (average view duration, retention, traffic source: search vs Shorts feed). This is the only way to test hooks and the "search-style" theory.
+- TikTok, Facebook and Threads metrics.
+- Tag every post with its title formula (named-drug question / decoder / attributed correction / news number + fix / generic / stigma) and its duration.
 
-_Updated 2026-10-01 from about 63 platform posts (19 content pieces; 13 of them about GLP-1)._
+_Updated 2026-10-05 from 89 platform posts (21 content pieces; 15 of them about GLP-1)._
 
 ## Topics to double down on
-- Headline decoders on trending next-gen GLP-1 drugs, naming the drug in the title (CagriSema, retatrutide, orforglipron, tirzepatide (Mounjaro)). Answer with the verified number, population and comparator, and date-hedged status as of Oct 2026
-- Search-style mechanism questions about a named drug: 'Does tirzepatide (Mounjaro) speed up metabolism / burn fat / change appetite?' Answer honestly, including 'only in mice so far'
-- Attributed corrections of circulating claims (e.g. 'Lilly says online retatrutide isn't its trial drug'). Never point viewers to any source of the drug
-- Safety myth-busts with a named drug and the exact population (semaglutide and pancreatic cancer, thyroid), with the null result stated exactly
-- Benefits beyond weight repackaged with a named drug and a named comparator (semaglutide SELECT heart outcomes, FLOW kidneys). Never 'older drug' or a generic 'GLP-1' subject
-- Searchable side effects with a named drug (Ozempic/semaglutide hair loss, nausea, constipation): how common they are, plus evidence-based habits that help
+- 'Did [next-gen drug] beat tirzepatide?' headline decoders (CagriSema, EloraTZP, retatrutide, orforglipron, amycretin, survodutide): put the verified top-dose number, the comparator's number and the population in the title, and frame comparisons across separate trials as not head-to-head. 2 for 2 so far (Short 53, long-form 112)
+- Search-style mechanism questions about a named drug: 'Does tirzepatide (Mounjaro) burn fat / change appetite / slow digestion?' Answer honestly, including 'only in mice so far'. Our #1 GLP-1 Short (113)
+- Attributed corrections of circulating claims, e.g. 'Lilly says online retatrutide isn't its trial drug' (42). Never point viewers to any source of the drug
+- Practical how-tos tied to a concrete news number (e.g. NYC needle-sticks and safe pen disposal, 45): a dated statistic plus a short fix. New angle, n=1, so repeat it to test
+- Safety questions with a named drug and the exact population (semaglutide and pancreatic cancer or thyroid, orforglipron heart safety vs insulin), stating null and non-inferiority results exactly
+- Benefits beyond weight with a named drug and a named comparator (semaglutide SELECT heart outcomes, FLOW kidneys, tirzepatide and sleep apnea). Never a generic 'GLP-1' subject or 'older drug'
+- Searchable side effects with a named drug (semaglutide nausea, constipation, hair loss): how common they are, plus evidence-based habits that help
 - Muscle vs fat share of weight lost on semaglutide or tirzepatide, with protein (and the kidney caveat) and strength training
 
 ## Schedule suggestions (for the owner — edit config/channel.json to apply)
-There still isn't enough data to change the Shorts slots. We have 9 Shorts and only 6 about GLP-1. On top of that, TikTok, Facebook and Threads still return no metrics, and there's no retention data.
+There's still no evidence for changing the slots, so keep the config as it is. The 8 GLP-1 Shorts break down like this:
+- 08:00 ET: 2 and 42 views.
+- 13:00 ET: 53 and 23.
+- 20:00 ET: 113, 6, 45 and 30.
 
-One thing to know first: I've dropped last week's "morning Shorts flop" idea. The 08:00 ET retatrutide Short got 28 views, and the HRT Short I'd counted as a morning post actually went out at 23:14 ET. All three Short slots (08:00, 13:00, 20:00 ET) have produced both hits and flops. The title explains the results better than the time of day, so keep all three slots as they are.
+Every slot has had hits and flops. The title predicts views far better than the time of day.
+
+Good news: the long-form timezone and cadence bug looks fixed. The videos on 09-30 (retatrutide) and 10-01 (EloraTZP) both went out once a day at 14:00 ET, and EloraTZP got 112 views, our best long-form by far. Keep 1 long-form a day at 14:00 America/New_York.
 
 Fixes, in priority order:
 
-1. **Long-form cadence and timezone bug (most urgent).**
-   - On 09-28 four long-forms went out in one ET day: at 10:15, 15:15, 17:00 and 17:00 ET. Another went out at 02:57 ET on 09-29.
-   - The 17:00 ET slot is 21:00 UTC, which is exactly 14:00 Pacific. The scheduler probably has the wrong timezone.
-   - Please cap long-form at 1 a day at 14:00 America/New_York and space out the backlog.
-
-2. **Facebook carousels posting twice.** C1 "Keep Your Muscle on a GLP-1" and C1 "GLP-1 Pill vs GLP-1 Pill" were each posted to Facebook a second time about a day later (09-29, around 18:30 ET). Please add a check so a post can't be published twice.
-
-3. **Cross-platform timing is now good.** On 09-29 and 09-30, Reels, TikTok and Facebook went out within about 2 minutes of each slot. One exception: Threads for C1 on 09-28 went out about 5 hours late.
-
-4. **Instagram reach for GLP-1 content is close to zero.**
-   - 4 of 4 GLP-1 carousels had 0 reach. GLP-1 Reels got 0–6 views each, compared with 15–20 for the non-GLP-1 Reels.
-   - Please check Instagram Account Status, especially whether the account is still eligible to be recommended to non-followers.
-   - Optionally, test for one week leaving drug brand names and "weight loss" out of the first caption line and hashtags.
-
-5. **Analytics.**
-   - Enable the YouTube Analytics API for watch time, average view duration and retention.
+1. **Analytics (biggest blocker).**
+   - Enable the YouTube Analytics API (watch time, average view duration, retention, traffic source).
    - Fix the null metrics for TikTok, Facebook and Threads.
-   - Add Instagram plays and average watch time.
-   - Re-pull metrics at 7 days rather than 1–2.
+   - Re-pull every post at about 7 days.
+   - The latest metrics only cover posts up to 10-01, so we can't judge anything published 10-02 to 10-05 yet.
 
-6. **Length test.** Make 2–3 GLP-1 Shorts at 35–50 seconds. Every Short so far has run 64–89 seconds.
+2. **Instagram reach for GLP-1 content is still close to zero.**
+   - Reels: 8 GLP-1 Reels got 0–6 views each, compared with 15–20 for non-GLP-1 Reels.
+   - Carousels: 6 of 8 GLP-1 carousels got 0 reach, and the other 2 reached 1 account each.
+   - Please check Instagram's Account Status page, especially whether the account can still be recommended to non-followers.
+   - If the account is restricted, consider whether 2 carousels a day on Instagram is worth the production cost until reach recovers.
 
-7. **Next review:** around 12–14 Oct, once there are at least 8 GLP-1 Shorts and long-forms published at the correct times.
+3. **Facebook duplicate posts.** The muscle carousel and the pill-vs-pill carousel were each posted to Facebook a second time on 09-29 at about 18:32 ET. Please add a check that stops the same piece being published twice on one platform.
 
-_Updated 2026-10-01 from 64 posts._
+4. **Missing Threads post.** The 10-01 alcohol carousel ("Does Semaglutide Cut Heavy Drinking?") went to Instagram, Facebook and TikTok but never to Threads.
+
+5. **Carousel config mismatch.** config/channel.json lists one carousel slot (17:30 ET), but two carousels go out daily: C1 at 14:00 ET and C2 at 17:30 ET. Please add 14:00 to the config, or confirm C1 is meant to share the long-form slot.
+
+6. **Length test (still not done).** Every Short so far has run 64–94 seconds. Please make 2–3 GLP-1 Shorts at 35–50 seconds, using a named-drug title so the only thing that differs is length.
+
+7. **Next review:** around 12–14 Oct, once posts from 10-02 onward have 7-day metrics and, ideally, retention data.
+
+_Updated 2026-10-05 from 89 posts._
