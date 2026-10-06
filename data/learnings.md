@@ -1,117 +1,129 @@
-# InforMed performance playbook (updated 2026-10-05)
+# InforMed performance playbook (updated 2026-10-06)
 
-## Data status: still small. Treat these as working hypotheses.
-- **Sample:** 21 pieces (15 about GLP-1): 11 YouTube Shorts (8 GLP-1), 7 long-form (5 GLP-1) and 10 carousels (8 GLP-1). Posts were measured 3–9 days after going live. Our metrics stop at posts from 10-01; nothing from 10-02 onward is in yet.
-- **What we can measure:** YouTube views, plus Instagram reach and views. TikTok, Facebook and Threads still return null. We have no watch time, average view duration or retention, so hook and retention claims are untested. There are 4 likes in total across everything, so engagement tells us nothing.
-- **Rule:** a signal counts as proven only with at least 8 GLP-1 posts per format. GLP-1 Shorts have just reached n=8, so the Shorts title finding below is now **provisional**, a step up from a guess. Long-form (n=5) and carousels (no usable metrics) are still below the bar.
+## Data status: still small, and none of it is about plague yet
+- **Sample:** 23 pieces (17 GLP-1). That's 13 YouTube Shorts (10 GLP-1), 7 long-form (5 GLP-1) and 10 carousels (8 GLP-1).
+- **Gaps in this pull:**
+  - Nothing logged for 10-02 to 10-04.
+  - The two 10-05 Shorts were measured about 1 day after going live, so treat their numbers as minimums.
+  - No 10-05 or 10-06 long-forms or carousels are in the pull.
+- **What we can measure:**
+  - We have YouTube views and Instagram reach and views.
+  - TikTok, Facebook and Threads still return null.
+  - We have no watch time or retention, so hook claims are untested.
+  - There are 5 likes in total, so engagement data is meaningless.
+- **Threshold:** a finding is proven at n≥8 per format. GLP-1 Shorts (n=10) are provisional. Everything else is below the bar.
+- **The channel focus has moved to plague.** None of the findings below were measured on plague content. Use them as transferable patterns (concrete subject, search-style question, decoding the headline, attributed correction), not as plague facts. Accuracy and the plague guardrails beat every tactic here.
 
-## YouTube Shorts (n=11, median 30 views; GLP-1 n=8, median 36)
-- **Ranked:** smartwatch 136, Mounjaro metabolism 113 (3.8× median), CagriSema vs tirzepatide 53 (1.8×), NYC needle-sticks 45 (1.5×), Lilly/retatrutide 42 (1.4×), orforglipron ACHIEVE-4 30 (1.0×), semaglutide pancreatic cancer 23, "Is GLP-1 'cheating'?" 6, cleaners 4, HRT 3, "GLP-1 vs Older Drug" 2.
-- **Provisional rule: the title needs a concrete, recognisable subject.**
-  - With a named drug: 113 / 53 / 42 / 30 / 23 (median 42, n=5).
-  - With a concrete non-drug subject plus a stated number ("NYC Sanitation: 49 Needle-Sticks…"): 45 (n=1).
-  - With only the generic "GLP-1" class or a vague comparator: 6 and 2 (n=2). Including a number ("18% lower…") didn't rescue "GLP-1 vs Older Drug".
-  - Lead with the drug or concrete thing. Never use "GLP-1" alone or "older drug" as the subject.
-- **Title formulas, best first:**
-  1. A search-style question about a named drug: "Does Mounjaro Speed Up Metabolism?" (113).
-  2. Headline decoder, "Did [new drug] beat tirzepatide?": the CagriSema Short got 53. The EloraTZP long-form used the same formula and got 112, our best GLP-1 long-form. That makes **2 for 2 across both formats**, our most repeatable formula.
-  3. An attributed correction: "Lilly Says Online 'Retatrutide' Isn't Its Trial Drug" (42).
-  4. A concrete news number plus a practical fix (needle-sticks and pen disposal, 45). This is a new angle with n=1, so test it again.
-- **Underperformers:**
-  - Stigma or feelings questions (6).
-  - Teasing a number without stating it ("the number headlines skip", 3).
-  - A vague comparator (2).
-- **Trial codes are optional extras.** "Orforglipron (Foundayo): Heart-Safe vs Insulin? ACHIEVE-4" got 30, about the median. Put the drug and the question first; codes like "ACHIEVE-4" add length, not clicks.
-- **Trend stage (GLP-1 Shorts, weak):** rising-stage posts had a median of 47.5 (n=4) and emerging-stage a median of 26.5 (n=4). Emerging topics still work when the subject is concrete (45, 30). Prefer claims that are already circulating, but don't skip a strong emerging story.
-- **Honesty works.** "Only in mice so far" is our #1 GLP-1 Short. Not-proven answers are fine.
-- **Benefits-beyond-weight topics:** keep making them, but give them a named drug and a named comparator (e.g. "Semaglutide vs sulfonylureas"). The vague heart Short got 2.
-- **Slot: no effect.** GLP-1 Shorts by slot:
-  - 08:00 ET: 2 and 42.
-  - 13:00 ET: 53 and 23.
-  - 20:00 ET: 113, 6, 45 and 30.
-  - The title explains far more than the slot does.
-- **Length: no signal.** Every Short has run 64–94s. Winners and losers overlap (113 at 79s, 2 at 77s), and we still haven't tested a 35–50s cut.
+## How to apply this to plague content (hypotheses carried over from our data)
+- **Put a concrete, recognisable subject first in the title.** Named-drug Shorts got a median of 44 (n=7). Generic "GLP-1"/"older drug" titles got 6 and 2.
+  - For plague, lead with "Pneumonic plague", "Bubonic plague", "Plague antibiotics", "Yersinia pestis" or "Irkutsk plague case". Never vague "this disease" or "the outbreak".
+- **Search-style questions worked best** (Mounjaro metabolism 113; tirzepatide fat vs muscle 49+).
+  - Plague versions: "Can Pneumonic Plague Spread Person to Person?", "Is Plague Treatable With Antibiotics?", "How Is Pneumonic Plague Different From COVID?"
+  - Answer within 10–15 seconds.
+- **Headline decoders are our most repeatable formula.**
+  - Results: CagriSema Short 54, survodutide Short 40+ (day 1), EloraTZP long-form 128 (our best long-form, 10× the GLP-1 long-form median). That's 3 for 3.
+  - Plague version: "Irkutsk Plague Case: What's Confirmed vs Reported (as of Oct 6)". Keep "suspected"/"reported" until officials confirm.
+- **Attributed corrections work** (Lilly/retatrutide, 44).
+  - Plague version: "WHO/CDC: What They've Actually Said About the Russia Case", or a correction of a specific circulating myth.
+  - Name the agency. Never amplify rumours, leaks or bioweapon claims.
+- **A concrete news number plus a practical fix works** (NYC needle-sticks, 46; n=1).
+  - Plague version: a dated official figure (e.g. "~200 contacts under observation, as of [date]") plus what contact tracing and preventive antibiotics do.
+  - Don't give advice on stockpiling or self-treating.
+- **Honest "not proven"/"mice only" answers did well** (113). For plague, the calm-but-true "here's what stops it" framing is the same kind of honesty. **No fear-bait:** no "new Black Death", "pandemic" or doom words in titles or thumbnails.
+- **What underperformed:**
+  - Feelings/stigma questions (6).
+  - Teasing a number without stating it ("the number headlines skip", 4).
+  - Vague comparators (2).
+  - So state the number and name the comparator: "pneumonic vs bubonic", "plague vs measles", "1300s vs 2026".
+- **Trend stage (weak signal):**
+  - Rising-stage GLP-1 Shorts had a median of 49 (n=5). Emerging ones had a median of 30 (n=5).
+  - The plague story is breaking now, so prioritise the questions people are already searching (is it contagious, symptoms, treatment, is it in the US).
+  - Run evergreen Plague 101 alongside.
+
+## YouTube Shorts (n=13, median 44; GLP-1 n=10, median 42)
+- **Ranking:**
+  1. Smartwatch 136
+  2. Mounjaro metabolism 113
+  3. CagriSema 54
+  4. Tirzepatide fat/muscle 49 (day 1)
+  5. Needle-sticks 46
+  6. Retatrutide correction 44
+  7. Survodutide 40 (day 1)
+  8. Orforglipron 30
+  9. Semaglutide/pancreatic cancer 23
+  10. "Cheating" 6
+  11. Cleaners 4
+  12. HRT 4
+  13. "Older drug" 2
+- **Trial codes and extra jargon add length, not clicks** (the ACHIEVE-4 title got 30). For plague, put the plain question first and Latin or agency names after it.
+- **Publish slot makes no difference.** Medians by slot:
+  - 08:00 ET: 40 (n=3)
+  - 13:00 ET: 49 (n=3)
+  - 20:00 ET: 38 (n=4)
+- **Length: no signal.** Every Short has run 64–97s. A 35–50s cut is still untested.
 
 ## Long-form (n=7, median 3; GLP-1 n=5, median 11)
-- **Views:**
-  - EloraTZP vs tirzepatide: 112.
-  - Orforglipron and menopause: 11.
-  - Retatrutide TRIUMPH-2: 11.
-  - Ozempic hair loss: 3.
-  - Mammogram: 2.
-  - BMI and heart rules: 1.
-  - Workout vs nap: 0.
-- **All 3 GLP-1 long-forms that named a next-gen drug beat every other long-form.** The headline-decoder format with the top-dose number, the comparator's number and the population in the title is the clear winner: "Did EloraTZP Beat Tirzepatide? Top Dose 23.3% vs 14.8%, T2D".
-- Newer videos beat older ones despite having less time live. Reach looks like it's picking up now that we publish 1 a day at 14:00 ET (fixed from 09-30), but n is small.
-- **No thumbnail signal.** "Versus" scored both 112 and 0/1, while reaction got 11, warning 11, before-after 3 and split-reveal 2. The title is doing the work. Before-after thumbnails never show bodies, weight or shape.
+- **Views:** EloraTZP decoder 128 (3 likes), retatrutide 12, orforglipron/menopause 11, hair loss 3, mammogram 2, BMI 1, workout/nap 0.
+- **What won:** a decoder title with the key number, comparator and population. For plague, a status decoder (confirmed vs suspected, dated) is the natural fit.
+- **Thumbnails: no signal.** The "versus" layout got both 128 and 0/1. The title does the work. For plague: no graphic imagery, no photos of the patient, no skulls or doom.
+- **Timing:** 1 long-form a day at 14:00 ET since 09-30, and newer videos are beating older ones.
 
-## Instagram and carousels: GLP-1 content is still suppressed on Meta
-- **GLP-1 Reels (n=8):** 0–6 views each, median about 3. The non-GLP-1 Reels got 15–20.
-- **GLP-1 carousels on Instagram (n=8):** 6 got 0 reach and 2 got a reach of 1.
-- The same Shorts got 23–113 views on YouTube. Don't judge content from Instagram numbers, and never let an Instagram result overturn a YouTube finding.
-- **Instagram caption rules:**
-  - Open with health or mechanism framing.
-  - Keep "weight loss", "Ozempic" and "Wegovy" out of the first line.
-  - No weight-loss or brand hashtags.
-  - Keep the hedge and the exact prescriber line.
-- We have no carousel metrics on TikTok, Facebook or Threads, so there's still nothing to learn about carousel formats.
+## Instagram / Meta
+- **GLP-1 content was suppressed through 10-01:**
+  - Reels got 0–6 views (n=8).
+  - Carousels got 0–1 reach (n=8).
+- **First sign of recovery on 10-05 (n=2, day 1):**
+  - The tirzepatide fat/muscle Reel got 237 views, 61 reach and 1 save. It's our best Instagram result ever and the first time Instagram beat YouTube.
+  - The survodutide Reel got 23 views.
+  - Too early to call. Keep the caption rules that may be helping:
+    - Open with health or mechanism framing.
+    - Keep "weight loss", "Ozempic" and "Wegovy" out of the first line.
+    - No weight-loss or brand hashtags.
+- **For plague on Meta:**
+  - Open with a calm, factual line naming the agency source.
+  - Skip alarm words and emojis.
+  - Expect outbreak content to get extra scrutiny.
+- **Never let an Instagram number overturn a YouTube finding.** We have no carousel metrics anywhere useful, so we have learned nothing about carousel formats.
 
-## Principles to carry forward (our data hasn't tested these yet)
-- Title and first spoken line share one hook: a named drug or concrete thing plus a stake for the viewer. Answer within 10–15s.
-- Decode claims people already see in headlines. Myth-busts should target a belief the viewer already holds.
-- Loop endings: every Short already uses one, so there's no comparison to learn from.
-- Accuracy, the full population and comparator, "mice vs humans", numerals, the exact prescriber line and the QA rules always beat any hook tactic. A top-performing formula never justifies dropping a caveat.
+## Principles (untested by our data, keep them)
+- The title and the first spoken line share one hook: a concrete subject plus a stake for the viewer, with the answer inside 15 seconds.
+- Myth-busts target a belief the viewer already holds.
+- Every Short already uses a loop ending, so we have nothing to compare it against.
+- Accuracy, dated status hedges, named-agency attribution and the "talk to a health professional" line always beat any hook tactic.
 
-## Logging needed for the next update
-- Metrics for posts from 10-02 onward, re-pulled at about 7 days.
-- YouTube Analytics data (average view duration, retention, traffic source: search vs Shorts feed). This is the only way to test hooks and the "search-style" theory.
+## Logging needed
+- Metrics for 10-02 onward, re-pulled at about 7 days.
+- YouTube Analytics: average view duration, retention, and traffic source (search vs Shorts feed).
 - TikTok, Facebook and Threads metrics.
-- Tag every post with its title formula (named-drug question / decoder / attributed correction / news number + fix / generic / stigma) and its duration.
+- Tag every post with its pillar (plague) and title formula (search question / decoder / attributed correction / number+fix / generic), plus its duration.
 
-_Updated 2026-10-05 from 89 platform posts (21 content pieces; 15 of them about GLP-1)._
+_Updated 2026-10-06 from 98 platform posts (23 pieces; 17 GLP-1; 0 plague)._
 
 ## Topics to double down on
-- 'Did [next-gen drug] beat tirzepatide?' headline decoders (CagriSema, EloraTZP, retatrutide, orforglipron, amycretin, survodutide): put the verified top-dose number, the comparator's number and the population in the title, and frame comparisons across separate trials as not head-to-head. 2 for 2 so far (Short 53, long-form 112)
-- Search-style mechanism questions about a named drug: 'Does tirzepatide (Mounjaro) burn fat / change appetite / slow digestion?' Answer honestly, including 'only in mice so far'. Our #1 GLP-1 Short (113)
-- Attributed corrections of circulating claims, e.g. 'Lilly says online retatrutide isn't its trial drug' (42). Never point viewers to any source of the drug
-- Practical how-tos tied to a concrete news number (e.g. NYC needle-sticks and safe pen disposal, 45): a dated statistic plus a short fix. New angle, n=1, so repeat it to test
-- Safety questions with a named drug and the exact population (semaglutide and pancreatic cancer or thyroid, orforglipron heart safety vs insulin), stating null and non-inferiority results exactly
-- Benefits beyond weight with a named drug and a named comparator (semaglutide SELECT heart outcomes, FLOW kidneys, tirzepatide and sleep apnea). Never a generic 'GLP-1' subject or 'older drug'
-- Searchable side effects with a named drug (semaglutide nausea, constipation, hair loss): how common they are, plus evidence-based habits that help
-- Muscle vs fat share of weight lost on semaglutide or tirzepatide, with protein (and the kidney caveat) and strength training
+- Status decoder: 'Irkutsk plague case: what's confirmed vs suspected (as of [date])', attributed to WHO, Russian health authorities and CDC. This is our most repeatable formula (decoders: 54, 40+, 128 long-form)
+- Search-style questions with a concrete subject: 'Can pneumonic plague spread person to person?', 'Is plague curable with antibiotics?', 'What are the symptoms of pneumonic plague?' Answer within 15 seconds, then the urgent-care line
+- Comparisons that name both sides: 'Pneumonic vs bubonic plague', 'Plague vs COVID/measles: how each spreads', 'Black Death vs 2026: what antibiotics changed'
+- Attributed myth corrections of claims already circulating (e.g. 'Is plague airborne like COVID?' or 'Is there no cure?'), naming the agency that corrects them. Never amplify bioweapon or cover-up rumours
+- A dated official number plus how it works: about 200 contacts under observation, and how contact tracing, preventive antibiotics and isolation stop spread (Madagascar 2017 as an example)
+- Plague today in concrete places: 'Plague in the US: about 7 cases a year (CDC)', where it happens, pets and fleas, practical prevention
+- Lab safety explained: how high-containment labs work and what happens after a lab exposure, using only reported, attributed facts
 
 ## Schedule suggestions (for the owner — edit config/channel.json to apply)
-There's still no evidence for changing the slots, so keep the config as it is. The 8 GLP-1 Shorts break down like this:
-- 08:00 ET: 2 and 42 views.
-- 13:00 ET: 53 and 23.
-- 20:00 ET: 113, 6, 45 and 30.
+Keep the slots as they are. GLP-1 Short medians by slot are 08:00 ET 40 (n=3), 13:00 ET 49 (n=3) and 20:00 ET 38 (n=4). That's not a meaningful difference, and the title still predicts views far better than the time of day. Keep 1 long-form a day at 14:00 America/New_York. The EloraTZP decoder in that slot is now at 128 views, our best long-form.
 
-Every slot has had hits and flops. The title predicts views far better than the time of day.
-
-Good news: the long-form timezone and cadence bug looks fixed. The videos on 09-30 (retatrutide) and 10-01 (EloraTZP) both went out once a day at 14:00 ET, and EloraTZP got 112 views, our best long-form by far. Keep 1 long-form a day at 14:00 America/New_York.
+Plague-specific suggestion: in a fast-moving story, freshness matters more than the slot. If WHO or Russian health authorities change the official status (for example, confirm or rule out plague, or update the contact count), consider an extra, unscheduled "status as of [date]" Short in the next available slot rather than waiting a day. Make sure every status piece is re-checked against the latest official source at publish time, not just at script time.
 
 Fixes, in priority order:
-
-1. **Analytics (biggest blocker).**
-   - Enable the YouTube Analytics API (watch time, average view duration, retention, traffic source).
+1. **Analytics.**
+   - The pull has no posts for 10-02 to 10-04, and no 10-05 or 10-06 long-forms or carousels. Please check whether those posts actually went live or are just missing from the metrics log.
+   - Enable the YouTube Analytics API (retention, average view duration, traffic source).
    - Fix the null metrics for TikTok, Facebook and Threads.
    - Re-pull every post at about 7 days.
-   - The latest metrics only cover posts up to 10-01, so we can't judge anything published 10-02 to 10-05 yet.
+2. **Instagram may be recovering.** The 10-05 tirzepatide Reel got 237 views and 61 reach, and the survodutide Reel got 23. Earlier GLP-1 Reels got 0–6. Please still check Instagram's Account Status page (recommendation eligibility). The plague content will tell us whether reach is back for health topics generally.
+3. **Facebook duplicates:** the muscle and pill-vs-pill carousels were each posted twice on 09-29. Please add a check that stops the same piece being published twice on one platform.
+4. **Missing Threads post:** the 10-01 alcohol carousel never went to Threads.
+5. **Carousel config mismatch:** two carousels go out daily (14:00 and 17:30 ET), but the config lists only 17:30. Please add 14:00 or confirm C1 is meant to share the long-form slot.
+6. **Length test:** make 2–3 plague Shorts at 35–50 seconds with search-question titles, so length is the only variable.
+7. **Next review:** around 12–14 Oct. That will be the first read on plague content.
 
-2. **Instagram reach for GLP-1 content is still close to zero.**
-   - Reels: 8 GLP-1 Reels got 0–6 views each, compared with 15–20 for non-GLP-1 Reels.
-   - Carousels: 6 of 8 GLP-1 carousels got 0 reach, and the other 2 reached 1 account each.
-   - Please check Instagram's Account Status page, especially whether the account can still be recommended to non-followers.
-   - If the account is restricted, consider whether 2 carousels a day on Instagram is worth the production cost until reach recovers.
-
-3. **Facebook duplicate posts.** The muscle carousel and the pill-vs-pill carousel were each posted to Facebook a second time on 09-29 at about 18:32 ET. Please add a check that stops the same piece being published twice on one platform.
-
-4. **Missing Threads post.** The 10-01 alcohol carousel ("Does Semaglutide Cut Heavy Drinking?") went to Instagram, Facebook and TikTok but never to Threads.
-
-5. **Carousel config mismatch.** config/channel.json lists one carousel slot (17:30 ET), but two carousels go out daily: C1 at 14:00 ET and C2 at 17:30 ET. Please add 14:00 to the config, or confirm C1 is meant to share the long-form slot.
-
-6. **Length test (still not done).** Every Short so far has run 64–94 seconds. Please make 2–3 GLP-1 Shorts at 35–50 seconds, using a named-drug title so the only thing that differs is length.
-
-7. **Next review:** around 12–14 Oct, once posts from 10-02 onward have 7-day metrics and, ideally, retention data.
-
-_Updated 2026-10-05 from 89 posts._
+_Updated 2026-10-06 from 97 posts._
