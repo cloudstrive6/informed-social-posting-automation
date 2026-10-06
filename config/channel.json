@@ -178,59 +178,55 @@
     "mode": "auto"
   },
   "niche": {
-    "_comment": "Current editorial focus. Every agent reads this; the trend radar searches these sources. Set enabled=false to go back to general health.",
+    "_comment": "Current editorial focus. Every agent reads this; the trend radar searches these sources. Set enabled=false to go back to general health. Temporary focus since 2026-10-06 (suspected pneumonic plague case in Irkutsk, Russia); the GLP-1 focus is saved in _saved_niches.glp1 to switch back.",
     "enabled": true,
-    "name": "GLP-1",
-    "brief": "The channel currently focuses on GLP-1 medicines (semaglutide: Ozempic, Wegovy, Rybelsus; tirzepatide: Mounjaro, Zepbound; liraglutide; new ones such as orforglipron and retatrutide) and the body's own GLP-1 hormone. Tone: positive and encouraging. We explain what GLP-1 is, how it works in the body, the benefits the evidence supports, who it can help and why someone might want to discuss it with their doctor, and how to get the most out of it (protein, strength training, hydration, eating habits, and making common side effects easier). Every piece stays evidence-based and passes the fact-checker.",
+    "name": "Plague (pneumonic plague in the news)",
+    "brief": "The channel is temporarily focused on plague, after a laboratory worker in Irkutsk oblast, Russia died in early October 2026 of a severe pneumonia reported as suspected pneumonic plague (about 200 contacts under observation; check the latest official status before every piece, because it changes fast). Tone: calm, clear and reassuring where the evidence supports it, never alarmist. We explain what plague is (the bacterium Yersinia pestis), its three forms (bubonic, septicemic, pneumonic) and why pneumonic is the one that can pass between people, how it spreads and how it doesn't, symptoms and when to seek urgent care, how well antibiotics work when started early, how contact tracing, preventive antibiotics and isolation stop outbreaks, where plague still occurs naturally (including a handful of US cases most years, Madagascar, DR Congo), how today compares with the Black Death, and how labs that study dangerous bacteria keep them contained. Every piece stays evidence-based and passes the fact-checker.",
     "pillars": [
-      "How GLP-1 works: the gut hormone, appetite and 'food noise', insulin and blood sugar, gastric emptying, the brain's reward system",
-      "Weight-loss results in the big trials (STEP, SURMOUNT) explained simply, and what keeps results going",
-      "Benefits beyond weight: heart attack and stroke risk (SELECT), kidneys (FLOW), fatty liver (MASH), sleep apnea, blood pressure, type 2 diabetes control, and promising early research (addiction, alcohol, inflammation, brain health)",
-      "Who it's approved for and who may benefit: questions to bring to your doctor",
-      "Getting the most from GLP-1: protein and muscle, strength training, hydration, fibre, eating slower, managing nausea and other common side effects",
-      "Life on GLP-1: habits, meal ideas, mindset, keeping results after stopping",
-      "Myths and misunderstandings, corrected with evidence (always in a positive, helpful tone)",
-      "Natural ways to support your own GLP-1: protein, fibre, eating order, movement (without claiming they replace the medicine)",
-      "New GLP-1 research and approvals: what's coming (pills, next-generation drugs)"
+      "The news, decoded: what has actually been confirmed about the Irkutsk case versus what is reported or suspected, and what health agencies (WHO, Russian authorities, CDC) have said",
+      "Plague 101: Yersinia pestis, fleas and rodents, and the bubonic, septicemic and pneumonic forms",
+      "How pneumonic plague spreads (close contact, respiratory droplets) and why it is different from airborne viruses like measles or COVID",
+      "Symptoms, timing (incubation) and when to get urgent medical care",
+      "Treatment and prevention: antibiotics, preventive antibiotics for close contacts, why early treatment matters, vaccine status",
+      "How outbreaks are stopped: contact tracing, quarantine and isolation, with real examples (Madagascar 2017, past Russian, Chinese and US cases)",
+      "Plague today: where it still occurs naturally, US cases, pets and wildlife, practical prevention in plague areas",
+      "History versus now: the Black Death and earlier pandemics, and why modern medicine changes the picture",
+      "Lab safety: how high-containment labs work and what happens after a lab exposure",
+      "Myths and misinformation about plague, corrected with evidence"
     ],
     "guardrails": [
-      "It's a prescription medicine: every script and caption carries a short 'talk to your doctor or prescriber about whether it's right for you' line.",
-      "Positive framing, never false: only benefits the evidence supports, with the right population (e.g. SELECT = adults with heart disease and overweight/obesity). Mention the common side effects briefly and helpfully when relevant.",
-      "No dosing or titration instructions, no switching or stopping advice, no 'microdosing' protocols.",
-      "Never promote compounded, gray-market, research-chemical or online no-prescription sources.",
-      "No before/after body shaming, no extreme-diet messaging; weight is one health measure among many.",
-      "Talk about the medicines generically (GLP-1 / semaglutide / tirzepatide); brand names only for recognition, never as ads."
+      "Say 'suspected' or 'reported' until health authorities officially confirm plague, and date every status update ('as of October 6, 2026'). Never present rumours, leaked documents or social-media claims as facts.",
+      "Only state risk levels that health agencies have actually stated, with who said it. No fear-bait: no 'new Black Death', 'pandemic coming' or doom framing in titles, thumbnails or hooks.",
+      "No speculation about bioweapons, deliberate release or cover-ups. Lab-accident details only as reported by named, credible sources, clearly attributed.",
+      "No self-treatment or antibiotic stockpiling advice. Anyone with possible exposure or symptoms is told to contact a doctor or local health authority urgently; every script and caption carries a short 'if you're worried, talk to a health professional' line.",
+      "Treat the person who died with respect: no photos of her, don't lead with her name, no blame.",
+      "Don't stigmatise Russia, Russians or any region. Keep the focus on the disease and public-health facts.",
+      "Prefer primary sources: WHO Disease Outbreak News, CDC, ECDC, official Russian health authority statements, peer-reviewed papers."
     ],
     "radar": {
-      "match": "glp-?1|semaglutide|tirzepatide|liraglutide|dulaglutide|orforglipron|retatrutide|survodutide|cagrilintide|incretin|ozempic|wegovy|rybelsus|mounjaro|zepbound|saxenda|anti-?obesity|weight-loss (drug|medic|jab|shot|injection)|obesity (drug|medic)",
+      "match": "plague|yersinia|pestis|bubonic|pneumonic|irkutsk|shelekhov|anti-?plague",
       "subreddits": [
-        "Semaglutide",
-        "Ozempic",
-        "Mounjaro",
-        "Zepbound",
-        "WegovyWeightLoss",
-        "GLP1_Ozempic_Wegovy",
-        "loseit",
-        "diabetes_t2"
+        "epidemiology",
+        "medicine",
+        "ID_News",
+        "Health",
+        "worldnews"
       ],
       "youtube": [
-        "GLP-1",
-        "Ozempic",
-        "semaglutide",
-        "tirzepatide",
-        "Wegovy",
-        "Mounjaro",
-        "Zepbound",
-        "GLP-1 study"
+        "pneumonic plague",
+        "plague Russia",
+        "plague Irkutsk",
+        "bubonic plague",
+        "plague explained"
       ],
       "news": [
-        "GLP-1",
-        "semaglutide",
-        "tirzepatide",
-        "Wegovy OR Zepbound",
-        "orforglipron OR retatrutide"
+        "pneumonic plague",
+        "plague Russia",
+        "plague Irkutsk",
+        "Yersinia pestis",
+        "plague WHO"
       ],
-      "pubmed": "(\"Glucagon-Like Peptide-1 Receptor Agonists\"[Mesh] OR semaglutide[tiab] OR tirzepatide[tiab] OR liraglutide[tiab] OR \"GLP-1\"[tiab] OR incretin[tiab])"
+      "pubmed": "(\"Plague\"[Mesh] OR \"Yersinia pestis\"[Mesh] OR plague[tiab] OR \"Yersinia pestis\"[tiab])"
     }
   },
   "spacing": {
@@ -296,6 +292,65 @@
     "shortsPlaylist": {
       "title": "GLP-1 in 60 Seconds",
       "description": "Quick, science-backed GLP-1 facts in under a minute."
+    }
+  },
+  "_saved_niches": {
+    "_comment": "Earlier editorial focuses. To switch back, copy one into 'niche'.",
+    "glp1": {
+      "_comment": "Current editorial focus. Every agent reads this; the trend radar searches these sources. Set enabled=false to go back to general health.",
+      "enabled": true,
+      "name": "GLP-1",
+      "brief": "The channel currently focuses on GLP-1 medicines (semaglutide: Ozempic, Wegovy, Rybelsus; tirzepatide: Mounjaro, Zepbound; liraglutide; new ones such as orforglipron and retatrutide) and the body's own GLP-1 hormone. Tone: positive and encouraging. We explain what GLP-1 is, how it works in the body, the benefits the evidence supports, who it can help and why someone might want to discuss it with their doctor, and how to get the most out of it (protein, strength training, hydration, eating habits, and making common side effects easier). Every piece stays evidence-based and passes the fact-checker.",
+      "pillars": [
+        "How GLP-1 works: the gut hormone, appetite and 'food noise', insulin and blood sugar, gastric emptying, the brain's reward system",
+        "Weight-loss results in the big trials (STEP, SURMOUNT) explained simply, and what keeps results going",
+        "Benefits beyond weight: heart attack and stroke risk (SELECT), kidneys (FLOW), fatty liver (MASH), sleep apnea, blood pressure, type 2 diabetes control, and promising early research (addiction, alcohol, inflammation, brain health)",
+        "Who it's approved for and who may benefit: questions to bring to your doctor",
+        "Getting the most from GLP-1: protein and muscle, strength training, hydration, fibre, eating slower, managing nausea and other common side effects",
+        "Life on GLP-1: habits, meal ideas, mindset, keeping results after stopping",
+        "Myths and misunderstandings, corrected with evidence (always in a positive, helpful tone)",
+        "Natural ways to support your own GLP-1: protein, fibre, eating order, movement (without claiming they replace the medicine)",
+        "New GLP-1 research and approvals: what's coming (pills, next-generation drugs)"
+      ],
+      "guardrails": [
+        "It's a prescription medicine: every script and caption carries a short 'talk to your doctor or prescriber about whether it's right for you' line.",
+        "Positive framing, never false: only benefits the evidence supports, with the right population (e.g. SELECT = adults with heart disease and overweight/obesity). Mention the common side effects briefly and helpfully when relevant.",
+        "No dosing or titration instructions, no switching or stopping advice, no 'microdosing' protocols.",
+        "Never promote compounded, gray-market, research-chemical or online no-prescription sources.",
+        "No before/after body shaming, no extreme-diet messaging; weight is one health measure among many.",
+        "Talk about the medicines generically (GLP-1 / semaglutide / tirzepatide); brand names only for recognition, never as ads."
+      ],
+      "radar": {
+        "match": "glp-?1|semaglutide|tirzepatide|liraglutide|dulaglutide|orforglipron|retatrutide|survodutide|cagrilintide|incretin|ozempic|wegovy|rybelsus|mounjaro|zepbound|saxenda|anti-?obesity|weight-loss (drug|medic|jab|shot|injection)|obesity (drug|medic)",
+        "subreddits": [
+          "Semaglutide",
+          "Ozempic",
+          "Mounjaro",
+          "Zepbound",
+          "WegovyWeightLoss",
+          "GLP1_Ozempic_Wegovy",
+          "loseit",
+          "diabetes_t2"
+        ],
+        "youtube": [
+          "GLP-1",
+          "Ozempic",
+          "semaglutide",
+          "tirzepatide",
+          "Wegovy",
+          "Mounjaro",
+          "Zepbound",
+          "GLP-1 study"
+        ],
+        "news": [
+          "GLP-1",
+          "semaglutide",
+          "tirzepatide",
+          "Wegovy OR Zepbound",
+          "orforglipron OR retatrutide"
+        ],
+        "pubmed": "(\"Glucagon-Like Peptide-1 Receptor Agonists\"[Mesh] OR semaglutide[tiab] OR tirzepatide[tiab] OR liraglutide[tiab] OR \"GLP-1\"[tiab] OR incretin[tiab])"
+      }
     }
   }
 }
