@@ -1,7 +1,8 @@
 import { createReadStream, readFileSync, statSync } from "node:fs";
 import { Readable } from "node:stream";
 import { env } from "../lib/config.js";
-import { http, httpJson } from "../lib/http.js";
+import { http, httpJson, sleep } from "../lib/http.js";
+import { log } from "../lib/log.js";
 
 let cached: { token: string; exp: number } | undefined;
 
@@ -78,27 +79,36 @@ export async function uploadVideo(v: YtUpload): Promise<string> {
       selfDeclaredMadeForKids: false, embeddable: true, license: "youtube",
     },
   };
-  const init = await http("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", {
-    method: "POST", retries: 2,
-    headers: {
-      authorization: `Bearer ${token}`, "content-type": "application/json; charset=UTF-8",
-      "x-upload-content-length": String(size), "x-upload-content-type": "video/mp4",
-    },
-    body: JSON.stringify(meta),
-  });
-  if (!init.ok) throw new Error(`YouTube init ${init.status}: ${(await init.text()).slice(0, 500)}`);
-  const location = init.headers.get("location")!;
-  const res = await fetch(location, {
-    method: "PUT",
-    headers: { authorization: `Bearer ${token}`, "content-type": "video/mp4", "content-length": String(size) },
-    body: Readable.toWeb(createReadStream(v.file)) as any,
-    // @ts-expect-error Node fetch streaming body
-    duplex: "half",
-    signal: AbortSignal.timeout(60 * 60_000),
-  });
-  const text = await res.text();
-  if (!res.ok) throw new Error(`YouTube upload ${res.status}: ${text.slice(0, 500)}`);
-  return JSON.parse(text).id;
+  // a resumable session can expire or drop mid-transfer (410 Gone / 404 / 5xx / network): start a fresh session, up to 3 tries
+  for (let tryNo = 1; ; tryNo++) {
+    const init = await http("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", {
+      method: "POST", retries: 2,
+      headers: {
+        authorization: `Bearer ${token}`, "content-type": "application/json; charset=UTF-8",
+        "x-upload-content-length": String(size), "x-upload-content-type": "video/mp4",
+      },
+      body: JSON.stringify(meta),
+    });
+    if (!init.ok) throw new Error(`YouTube init ${init.status}: ${(await init.text()).slice(0, 500)}`);
+    const location = init.headers.get("location")!;
+    let status = 0, text = "";
+    try {
+      const res = await fetch(location, {
+        method: "PUT",
+        headers: { authorization: `Bearer ${token}`, "content-type": "video/mp4", "content-length": String(size) },
+        body: Readable.toWeb(createReadStream(v.file)) as any,
+        // @ts-expect-error Node fetch streaming body
+        duplex: "half",
+        signal: AbortSignal.timeout(60 * 60_000),
+      });
+      status = res.status; text = await res.text();
+      if (res.ok) return JSON.parse(text).id;
+    } catch (e) { text = (e as Error).message; }
+    const retryable = status === 0 || status === 404 || status === 410 || status >= 500;
+    if (!retryable || tryNo >= 3) throw new Error(`YouTube upload ${status || "network error"}: ${text.slice(0, 500)}`);
+    log.warn(`YouTube upload ${status || "network error"} (try ${tryNo}/3); starting a fresh upload session`);
+    await sleep(15_000 * tryNo);
+  }
 }
 
 /** Custom thumbnail (50 units). Channel must be phone-verified for custom thumbnails. */
