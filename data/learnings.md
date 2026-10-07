@@ -1,129 +1,113 @@
-# InforMed performance playbook (updated 2026-10-06)
+# InforMed performance playbook (updated 2026-10-07)
 
-## Data status: still small, and none of it is about plague yet
-- **Sample:** 23 pieces (17 GLP-1). That's 13 YouTube Shorts (10 GLP-1), 7 long-form (5 GLP-1) and 10 carousels (8 GLP-1).
+## Data status: still small, and there is no plague data yet
+- **Sample:** 26 pieces (20 GLP-1). That's 15 YouTube Shorts, 8 long-form and 11 carousels. **0 plague posts are in the pull.** Plague went live on 10-07, so the first read is due around 10-12 to 10-14.
 - **Gaps in this pull:**
-  - Nothing logged for 10-02 to 10-04.
-  - The two 10-05 Shorts were measured about 1 day after going live, so treat their numbers as minimums.
-  - No 10-05 or 10-06 long-forms or carousels are in the pull.
-- **What we can measure:**
-  - We have YouTube views and Instagram reach and views.
-  - TikTok, Facebook and Threads still return null.
-  - We have no watch time or retention, so hook claims are untested.
-  - There are 5 likes in total, so engagement data is meaningless.
-- **Threshold:** a finding is proven at n≥8 per format. GLP-1 Shorts (n=10) are provisional. Everything else is below the bar.
-- **The channel focus has moved to plague.** None of the findings below were measured on plague content. Use them as transferable patterns (concrete subject, search-style question, decoding the headline, attributed correction), not as plague facts. Accuracy and the plague guardrails beat every tactic here.
+  - Nothing for 10-02 to 10-04.
+  - On 10-06 there is only S1. S2, S3, L1 and both carousels are missing.
+  - The 10-06 Short (trevogrumab) is a day-1 minimum.
+- **What we can measure:** YouTube views and Instagram views and reach. TikTok, Facebook and Threads return null. There is no retention or watch time, and only 6 likes in total, so engagement and hook-retention claims are untested.
+- **Proof bar:** n≥8 per format. GLP-1 Shorts (n=12) are provisional. Nothing about plague is proven.
+- **Read these as transferable patterns, not plague facts.** Accuracy, dated status hedges, named-agency attribution and the "if you're worried, talk to a health professional" line beat every tactic below.
 
-## How to apply this to plague content (hypotheses carried over from our data)
-- **Put a concrete, recognisable subject first in the title.** Named-drug Shorts got a median of 44 (n=7). Generic "GLP-1"/"older drug" titles got 6 and 2.
-  - For plague, lead with "Pneumonic plague", "Bubonic plague", "Plague antibiotics", "Yersinia pestis" or "Irkutsk plague case". Never vague "this disease" or "the outbreak".
-- **Search-style questions worked best** (Mounjaro metabolism 113; tirzepatide fat vs muscle 49+).
-  - Plague versions: "Can Pneumonic Plague Spread Person to Person?", "Is Plague Treatable With Antibiotics?", "How Is Pneumonic Plague Different From COVID?"
-  - Answer within 10–15 seconds.
-- **Headline decoders are our most repeatable formula.**
-  - Results: CagriSema Short 54, survodutide Short 40+ (day 1), EloraTZP long-form 128 (our best long-form, 10× the GLP-1 long-form median). That's 3 for 3.
-  - Plague version: "Irkutsk Plague Case: What's Confirmed vs Reported (as of Oct 6)". Keep "suspected"/"reported" until officials confirm.
-- **Attributed corrections work** (Lilly/retatrutide, 44).
-  - Plague version: "WHO/CDC: What They've Actually Said About the Russia Case", or a correction of a specific circulating myth.
-  - Name the agency. Never amplify rumours, leaks or bioweapon claims.
-- **A concrete news number plus a practical fix works** (NYC needle-sticks, 46; n=1).
-  - Plague version: a dated official figure (e.g. "~200 contacts under observation, as of [date]") plus what contact tracing and preventive antibiotics do.
-  - Don't give advice on stockpiling or self-treating.
-- **Honest "not proven"/"mice only" answers did well** (113). For plague, the calm-but-true "here's what stops it" framing is the same kind of honesty. **No fear-bait:** no "new Black Death", "pandemic" or doom words in titles or thumbnails.
-- **What underperformed:**
-  - Feelings/stigma questions (6).
-  - Teasing a number without stating it ("the number headlines skip", 4).
-  - Vague comparators (2).
-  - So state the number and name the comparator: "pneumonic vs bubonic", "plague vs measles", "1300s vs 2026".
-- **Trend stage (weak signal):**
-  - Rising-stage GLP-1 Shorts had a median of 49 (n=5). Emerging ones had a median of 30 (n=5).
-  - The plague story is breaking now, so prioritise the questions people are already searching (is it contagious, symptoms, treatment, is it in the US).
-  - Run evergreen Plague 101 alongside.
+## Title patterns (YouTube; strongest signal we have)
+- **A recognisable subject plus a plain question is our best formula.**
+  - Results: Mounjaro metabolism 113, tirzepatide fat/muscle 94 (up from 49 at day 1), CagriSema 55, EloraTZP long-form 150. That's a median of about 75 across 4.
+  - Shorts naming a drug people know had a median of 55 (n=9). Generic titles ("GLP-1 vs older drug" 2, "Is GLP-1 cheating" 6) had a median of 4.
+  - For plague, write: "Can Pneumonic Plague Spread Person to Person?", "Is Plague Curable With Antibiotics?", "Pneumonic vs Bubonic Plague: What's the Difference?" Answer within 10–15 seconds.
+- **The "Did X really…?" decoder works when X is recognisable.**
+  - CagriSema 55, survodutide 60, EloraTZP long-form 150.
+  - The trevogrumab decoder got 5 on day 1. It led with an obscure drug and a number string.
+  - For plague: "Irkutsk Plague Case: What's Confirmed vs Suspected (as of Oct 7)". Lead with "Plague" or "Pneumonic plague", not "Yersinia pestis" or agency acronyms.
+- **Stat-string titles full of abbreviations underperform (new, n=4).**
+  - "Survodutide… 9.8% vs 3.9% at 76wk (High Dose)" long-form 12, retatrutide "20.8% vs 4% at Wk 80" long-form 12, trevogrumab "4.2% vs 7.3%…" 5, "ACHIEVE-4" 30.
+  - Use one number at most in a title, in plain words. Keep the full stats in the first spoken line and on screen.
+- **A clear "you" action plus named subjects works** ("Semaglutide, Tirzepatide & Surgery: Tell Your Anesthesia Team", 57, n=1).
+  - Plague version: "Possible Plague Exposure? What Health Authorities Do Next". Always say "contact a doctor or local health authority urgently". Never suggest self-treatment.
+- **An attributed correction or a dated number plus a fix lands near the median** (Lilly/retatrutide 46, NYC needle-sticks 45).
+  - Plague version: "WHO: What It Has Said About the Russia Plague Report", or "~200 Contacts Under Observation: How Contact Tracing Works (as of [date])".
+- **What underperformed:** feelings/stigma questions (6), teasing a number without stating it (4), vague comparators (2) and obscure subject names (5, day 1). Always name both sides of a comparison: "plague vs COVID", "1300s vs 2026".
+- **Never use fear-bait** in titles, thumbnails or hooks: no "new Black Death", "pandemic" or doom words. Calm, honest framing ("here's what stops it") is the plague version of our "mice only" honesty, which got 113.
 
-## YouTube Shorts (n=13, median 44; GLP-1 n=10, median 42)
-- **Ranking:**
-  1. Smartwatch 136
-  2. Mounjaro metabolism 113
-  3. CagriSema 54
-  4. Tirzepatide fat/muscle 49 (day 1)
-  5. Needle-sticks 46
-  6. Retatrutide correction 44
-  7. Survodutide 40 (day 1)
-  8. Orforglipron 30
-  9. Semaglutide/pancreatic cancer 23
-  10. "Cheating" 6
-  11. Cleaners 4
-  12. HRT 4
-  13. "Older drug" 2
-- **Trial codes and extra jargon add length, not clicks** (the ACHIEVE-4 title got 30). For plague, put the plain question first and Latin or agency names after it.
-- **Publish slot makes no difference.** Medians by slot:
-  - 08:00 ET: 40 (n=3)
-  - 13:00 ET: 49 (n=3)
-  - 20:00 ET: 38 (n=4)
-- **Length: no signal.** Every Short has run 64–97s. A 35–50s cut is still untested.
+## Trend stage (provisional)
+- **Rising-stage Shorts beat emerging ones:** median 55 (n=7) vs 26 (n=8).
+- The plague story is at the rising/breaking stage now. Prioritise what people are already searching: is it contagious, symptoms, treatment, is it in the US, what was confirmed. Run evergreen Plague 101 alongside.
 
-## Long-form (n=7, median 3; GLP-1 n=5, median 11)
-- **Views:** EloraTZP decoder 128 (3 likes), retatrutide 12, orforglipron/menopause 11, hair loss 3, mammogram 2, BMI 1, workout/nap 0.
-- **What won:** a decoder title with the key number, comparator and population. For plague, a status decoder (confirmed vs suspected, dated) is the natural fit.
-- **Thumbnails: no signal.** The "versus" layout got both 128 and 0/1. The title does the work. For plague: no graphic imagery, no photos of the patient, no skulls or doom.
-- **Timing:** 1 long-form a day at 14:00 ET since 09-30, and newer videos are beating older ones.
+## YouTube Shorts (n=15, median 45; GLP-1 n=12, median 45.5)
+- **Top:** Smartwatch 136, Mounjaro 113, tirzepatide 94, survodutide 60, anaesthesia 57, CagriSema 55.
+- **Bottom:** "older drug" 2, cleaners 4, HRT 4, trevogrumab 5 (day 1), "cheating" 6.
+- **Shorts keep growing after day 1** (tirzepatide went from 49 to 94, survodutide from 40 to 60). Judge Shorts at day 7 or later.
+- **Publish slot makes no meaningful difference.** Medians: 08:00 ET 25 (n=4), 13:00 ET 39 (n=4), 20:00 ET 51 (n=6). The title is still the main driver.
+- **Length: no signal.** Shorts ran 64–97 s (smartwatch 64 s got 136, tirzepatide 97 s got 94). The hard limit is under 90 s. Aim for about 75 s, and test 35–50 s cuts.
+
+## Long-form (n=8, median 7; GLP-1 n=6, median 11.5)
+- **Views:** EloraTZP 150, retatrutide 12, survodutide 12, orforglipron 11, hair loss 3, mammogram 2, BMI 1, workout/nap 0.
+- **The one breakout used a question decoder title** ("Did EloraTZP Beat Tirzepatide?"). The stat-string decoders got 12 each.
+- **Plague long-form:** "Irkutsk Plague Case: What's Confirmed, What's Suspected, What Happens Next (as of [date])".
+- **Thumbnails: no signal.** Versus got 150, 1 and 0. Reaction got 11 and 12. For plague: no graphic imagery, no photo of the patient, no skulls, rats-as-horror or doom.
 
 ## Instagram / Meta
-- **GLP-1 content was suppressed through 10-01:**
-  - Reels got 0–6 views (n=8).
-  - Carousels got 0–1 reach (n=8).
-- **First sign of recovery on 10-05 (n=2, day 1):**
-  - The tirzepatide fat/muscle Reel got 237 views, 61 reach and 1 save. It's our best Instagram result ever and the first time Instagram beat YouTube.
-  - The survodutide Reel got 23 views.
-  - Too early to call. Keep the caption rules that may be helping:
-    - Open with health or mechanism framing.
-    - Keep "weight loss", "Ozempic" and "Wegovy" out of the first line.
-    - No weight-loss or brand hashtags.
-- **For plague on Meta:**
-  - Open with a calm, factual line naming the agency source.
-  - Skip alarm words and emojis.
+- **Reels are partly recovering.** 10-05/10-06 Reels got 237 (tirzepatide, 61 reach, 1 save), 23, 21 and 2. Before 10-01 they got 0–6.
+- **Carousels are still near zero** (reach 0–2, n=11), so we've learned nothing about carousel formats.
+- **Instagram and YouTube rankings disagree** (anaesthesia: 57 on YouTube, 2 on Instagram). Never let an Instagram number overturn a YouTube finding.
+- **Plague on Meta:**
+  - Open with a calm, factual first line that names the agency.
+  - No emojis, no alarm words, and no agency or brand hashtags.
   - Expect outbreak content to get extra scrutiny.
-- **Never let an Instagram number overturn a YouTube finding.** We have no carousel metrics anywhere useful, so we have learned nothing about carousel formats.
 
 ## Principles (untested by our data, keep them)
 - The title and the first spoken line share one hook: a concrete subject plus a stake for the viewer, with the answer inside 15 seconds.
 - Myth-busts target a belief the viewer already holds.
-- Every Short already uses a loop ending, so we have nothing to compare it against.
-- Accuracy, dated status hedges, named-agency attribution and the "talk to a health professional" line always beat any hook tactic.
+- Loop endings are on every Short, so we have no comparison.
+- On every status line, say "suspected"/"reported", date it, attribute it, and remember that not confirmed ≠ ruled out.
 
 ## Logging needed
-- Metrics for 10-02 onward, re-pulled at about 7 days.
-- YouTube Analytics: average view duration, retention, and traffic source (search vs Shorts feed).
+- Plague posts from 10-07, the missing 10-02 to 10-04 posts and the rest of 10-06.
+- Re-pull everything at about 7 days.
+- YouTube Analytics: retention, average view duration, and traffic source (search vs feed).
 - TikTok, Facebook and Threads metrics.
-- Tag every post with its pillar (plague) and title formula (search question / decoder / attributed correction / number+fix / generic), plus its duration.
+- Tag each post with its pillar, title formula (question / decoder / correction / number+fix / action / generic) and duration.
 
-_Updated 2026-10-06 from 98 platform posts (23 pieces; 17 GLP-1; 0 plague)._
+_Updated 2026-10-07 from about 105 platform posts (26 pieces; 20 GLP-1; 0 plague)._
 
 ## Topics to double down on
-- Status decoder: 'Irkutsk plague case: what's confirmed vs suspected (as of [date])', attributed to WHO, Russian health authorities and CDC. This is our most repeatable formula (decoders: 54, 40+, 128 long-form)
-- Search-style questions with a concrete subject: 'Can pneumonic plague spread person to person?', 'Is plague curable with antibiotics?', 'What are the symptoms of pneumonic plague?' Answer within 15 seconds, then the urgent-care line
-- Comparisons that name both sides: 'Pneumonic vs bubonic plague', 'Plague vs COVID/measles: how each spreads', 'Black Death vs 2026: what antibiotics changed'
-- Attributed myth corrections of claims already circulating (e.g. 'Is plague airborne like COVID?' or 'Is there no cure?'), naming the agency that corrects them. Never amplify bioweapon or cover-up rumours
-- A dated official number plus how it works: about 200 contacts under observation, and how contact tracing, preventive antibiotics and isolation stop spread (Madagascar 2017 as an example)
-- Plague today in concrete places: 'Plague in the US: about 7 cases a year (CDC)', where it happens, pets and fleas, practical prevention
-- Lab safety explained: how high-containment labs work and what happens after a lab exposure, using only reported, attributed facts
+- Plain search questions with 'plague' first: 'Can pneumonic plague spread person to person?', 'Is plague curable with antibiotics?', 'What are the symptoms of pneumonic plague?' Answer in 10–15 seconds, then the urgent-care line. Named-subject question titles had a median of about 75 vs 4 for generic titles.
+- Dated status decoder: 'Irkutsk plague case: what's confirmed vs suspected (as of [date])', attributed to WHO, Russian health authorities and CDC. The 'Did X really…?' decoders got 150 (long-form), 60 and 55. Use a plain question, not a string of numbers.
+- Comparisons that name both sides: 'Pneumonic vs bubonic plague', 'Plague vs COVID: how each spreads', 'Black Death vs today: what antibiotics changed'
+- Action-framed explainer: 'Possible plague exposure? What health authorities do next' (contact tracing, preventive antibiotics given by health authorities, isolation; Madagascar 2017). Format modelled on the anaesthesia 'tell your team' Short (57). Never suggest self-treatment.
+- A dated official number plus how it works: about 200 contacts under observation (as of [date]), and how monitoring stops spread
+- Attributed myth corrections of claims already circulating ('Is plague airborne like COVID?', 'Is there no cure?'), naming the agency. Never amplify bioweapon, leak or cover-up rumours.
+- Plague today in concrete places: 'Plague in the US: an average of 7 human cases a year (CDC)', with pets, fleas and practical prevention
+- Lab safety explained: how high-containment labs work and what happens after a lab exposure, using only attributed, reported facts
 
 ## Schedule suggestions (for the owner — edit config/channel.json to apply)
-Keep the slots as they are. GLP-1 Short medians by slot are 08:00 ET 40 (n=3), 13:00 ET 49 (n=3) and 20:00 ET 38 (n=4). That's not a meaningful difference, and the title still predicts views far better than the time of day. Keep 1 long-form a day at 14:00 America/New_York. The EloraTZP decoder in that slot is now at 128 views, our best long-form.
+This pull still contains no plague posts. Everything below comes from GLP-1 content, so treat it as provisional.
 
-Plague-specific suggestion: in a fast-moving story, freshness matters more than the slot. If WHO or Russian health authorities change the official status (for example, confirm or rule out plague, or update the contact count), consider an extra, unscheduled "status as of [date]" Short in the next available slot rather than waiting a day. Make sure every status piece is re-checked against the latest official source at publish time, not just at script time.
+Keep the current slots. YouTube Shorts medians by slot:
+- 08:00 ET: 25 (n=4)
+- 13:00 ET: 39 (n=4)
+- 20:00 ET: 51 (n=6)
 
-Fixes, in priority order:
-1. **Analytics.**
-   - The pull has no posts for 10-02 to 10-04, and no 10-05 or 10-06 long-forms or carousels. Please check whether those posts actually went live or are just missing from the metrics log.
+20:00 is slightly ahead, but the gap isn't meaningful at these sample sizes, and the title explains far more than the time of day. Keep 1 long-form a day at 14:00 America/New_York. The EloraTZP video in that slot is now at 150 views. Shorts keep gaining views for several days (one went from 49 to 94), so please judge posts at about 7 days, not day 1.
+
+**Plague-specific:** freshness beats slot timing in a breaking story. If WHO or the Russian authorities change the official status (for example, confirm or rule out plague, or update the contact count), consider adding an unscheduled "status as of [date]" Short in the next available slot. Re-check every status piece against the latest official source at publish time, not just when it was scripted.
+
+**Fixes, in priority order:**
+1. **Analytics gaps.**
+   - No posts are logged for 10-02 to 10-04.
+   - For 10-06, only S1 is logged. S2, S3, the long-form and both carousels are missing.
+   - No 10-07 plague posts are logged.
+   - Please confirm whether these went live or are just missing from the log.
+2. **Missing metrics.**
    - Enable the YouTube Analytics API (retention, average view duration, traffic source).
    - Fix the null metrics for TikTok, Facebook and Threads.
    - Re-pull every post at about 7 days.
-2. **Instagram may be recovering.** The 10-05 tirzepatide Reel got 237 views and 61 reach, and the survodutide Reel got 23. Earlier GLP-1 Reels got 0–6. Please still check Instagram's Account Status page (recommendation eligibility). The plague content will tell us whether reach is back for health topics generally.
-3. **Facebook duplicates:** the muscle and pill-vs-pill carousels were each posted twice on 09-29. Please add a check that stops the same piece being published twice on one platform.
-4. **Missing Threads post:** the 10-01 alcohol carousel never went to Threads.
-5. **Carousel config mismatch:** two carousels go out daily (14:00 and 17:30 ET), but the config lists only 17:30. Please add 14:00 or confirm C1 is meant to share the long-form slot.
-6. **Length test:** make 2–3 plague Shorts at 35–50 seconds with search-question titles, so length is the only variable.
-7. **Next review:** around 12–14 Oct. That will be the first read on plague content.
+3. **Instagram.** Reels are partly recovering (237, 23 and 21 views recently, against 0–6 before). Carousels are still at 0–2 reach. Please check the Account Status page for recommendation eligibility.
+4. **Carousel config mismatch.** Two carousels go out daily (14:00 and 17:30 ET), but the config lists only 17:30. Please add 14:00, or confirm that C1 is meant to share the long-form slot.
+5. **Publishing safeguards.**
+   - Keep the check that stops the same piece being posted twice on Facebook (this happened twice on 09-29).
+   - Add a check that every carousel actually reaches Threads.
+6. **Length test.** Make 2–3 plague Shorts at 35–50 seconds with plain-question titles. The hard limit is under 90 s, and one plague Short was held at 91 s.
+7. **Next review:** about 12–14 Oct. That will be the first read on plague content.
 
-_Updated 2026-10-06 from 97 posts._
+_Updated 2026-10-07 from 110 posts._
