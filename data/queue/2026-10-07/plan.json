@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-07",
+  "created_at": "2026-10-07T08:17:55.637Z",
+  "rationale": "Today's slate is all plague. The official status changed within 48 hours: as of Oct 7, 2026, Russia says no plague has been found and WHO is still asking for the pathogen. So L1 is a status decoder, our best-performing format (3 for 3). It is dated, attributed and has enough depth for 8–15 minutes because it explains why confirming a diagnosis takes time and how contact monitoring works. S1 is a spin-off of L1. It answers the biggest search question, \"can pneumonic plague spread person to person?\", and is shorter so we can test length. S2 is the 20% myth-bust slot: it corrects \"there's no cure\" with the CDC's evidence on early antibiotics. S3 gives US viewers a concrete local number (CDC: about 7 cases a year) plus practical prevention. C1 is the evergreen framework people save: the 3 forms of plague side by side. The mix is roughly 50% breaking or rising (L1, S1, S3), 30% evergreen with a news hook (C1) and 20% myth-busting (S2). Each piece uses a different focus pillar (news decoded, how it spreads, treatment, plague today, Plague 101), and lung content is limited to the decoder, its spin-off and one carousel row. We skipped the unverified 'second case' rumour as its own piece; L1 mentions it only as 'WHO has sought details', with attribution. The bioweapon and cover-up framing is left out entirely. None of the playlist pillars available are about plague (they are all GLP-1), so every piece uses `general` (Health Science Explained). Every status line must be re-checked against WHO, Rospotrebnadzor and CDC at publish time. Every piece carries the line telling worried viewers to talk to a health professional, and no title uses doom wording.",
+  "pieces": [
+    {
+      "id": "L1",
+      "kind": "long",
+      "topic": "Irkutsk suspected pneumonic plague case status decoder: what Russian authorities, WHO and CDC have actually said (as of Oct 7, 2026)",
+      "angle": "Three dated, attributed columns: confirmed, reported and still unknown. (1) Russian authorities, as reported by NBC and Reuters: the death is recorded as pneumonia of undetermined origin, and no plague was found in contacts. About 60% of roughly 200 contacts had been tested by Oct 6, finding 2 COVID and 2 rhinovirus cases. (2) WHO: the risk is rated moderate to low for Irkutsk, low for Russia and very low for Europe. WHO is still asking for pathogen details, and its Director-General said WHO has sought details about a reported second illness, which is unverified. Say it once, attributed, without amplifying it. (3) CDC: no indication of a broader US threat. Then the depth. Why 'suspected' and 'confirmed' differ: how plague is confirmed in a lab (culture, PCR, reference-lab confirmation, per CDC and WHO). Why the case was first described as a typical respiratory infection, per WHO. What pneumonic plague is, in 60 seconds, and why it is the only form that passes between people. How about 200 contacts are monitored through the incubation window, with preventive antibiotics when clinicians advise it. Madagascar 2017 as a precedent, using WHO figures only. What would change the official picture. Respectful: don't lead with the worker's name, no photos, no blame. No lab-accident speculation and no stigmatising the region. Calm close plus the line 'if you're worried, talk to a health professional'. Re-check every status line at publish time and update the 'as of' date.",
+      "working_title": "Irkutsk Plague Case: What's Confirmed vs Reported (as of Oct 7, 2026)",
+      "target_keyword": "russia plague update",
+      "trend_stage": "peaking",
+      "why": "Our top-momentum topic (95). Many viewers still think plague was confirmed, and decoders are our most repeatable formula (128-view long-form). Each official update gives us a fresh 'as of' hook.",
+      "pillar": "general"
+    },
+    {
+      "id": "S1",
+      "kind": "short",
+      "topic": "Can pneumonic plague spread person to person? Close-contact respiratory droplets vs long-range airborne spread (measles, COVID)",
+      "angle": "Answer within 10s: 'Yes, but mainly through close, face-to-face contact with someone already sick with pneumonic plague and coughing (CDC, WHO). It doesn't hang in the air of a room the way measles can (CDC: up to 2 hours).' COVID gets one line, comparing its easier indoor shared-air spread, without claiming parity with measles. Bubonic plague from flea bites rarely spreads between people. That's why tracing a defined group of contacts works, plus preventive antibiotics when clinicians and health authorities advise them. Status line: 'As of Oct 7, 2026: Russian officials told WHO no plague case has been recorded. Tests on contacts found no dangerous pathogens, and WHO says testing on the cause of death continues and rates the risk low for Russia.' Close with 'If you're worried, talk to a health professional.' Point to L1. 35–50s.",
+      "working_title": "Can Pneumonic Plague Spread Person to Person? #shorts",
+      "target_keyword": "is pneumonic plague contagious",
+      "trend_stage": "rising",
+      "why": "Spin-off of L1. Contagion is the most-asked question in every explainer, and this uses our proven search-question formula with named comparators. | fact-check: The core science is sound. CDC and WHO both say pneumonic plague spreads mainly through respiratory droplets during close contact with an ill, coughing person, and that bubonic plague rarely passes between people. Two fixes are needed. (1) The status line 'Russian authorities say no plague found' overstates what's known. Russia says no plague case was recorded and testing of contacts found no dangerous pathogens. WHO says lab testing to confirm the cause of death is still under way and rates the risk low for Russia overall. (2) The comparator framing must be accurate. Measles is the clear long-range airborne example: CDC says it can linger in the air for up to 2 hours. COVID-19 spreads by both respiratory droplets and aerosols, and mostly at close range. So don't say COVID spreads 'long-range like measles'. Present measles as the airborne contrast, and COVID as 'spreads more easily through shared indoor air'. Say 'usually' or 'mainly', not absolutes.",
+      "pillar": "general"
+    },
+    {
+      "id": "S2",
+      "kind": "short",
+      "topic": "Is plague curable? Common antibiotics work well when started early, which corrects the 'no cure' myth",
+      "angle": "Attributed myth correction. Hook: 'Is there a cure for plague? Yes. CDC says common antibiotics treat it.' Then the honest part: timing matters most for pneumonic plague. CDC and WHO say untreated pneumonic plague is very often fatal, and prompt treatment greatly improves survival. Use the agencies' wording and figures exactly, with no invented percentages. Health authorities can give close contacts preventive antibiotics. No drug names with doses, no stockpiling or self-treatment. Possible exposure plus fever or cough means contacting a doctor or local health authority urgently. Close with the line 'if you're worried, talk to a health professional'. 35–50s.",
+      "working_title": "Is Plague Curable? What CDC Says About Antibiotics #shorts",
+      "target_keyword": "is plague curable",
+      "trend_stage": "rising",
+      "why": "This is our 20% myth-bust slot. 'No cure' fear is spreading online, and a calm, named-agency answer follows our best honesty pattern (113).",
+      "pillar": "general"
+    },
+    {
+      "id": "S3",
+      "kind": "short",
+      "topic": "Plague in the US: about 7 human cases a year (CDC), mostly bubonic, mostly in the rural West",
+      "angle": "US-local number plus practical steps. CDC reports an average of 7 human cases a year (range 0–17). Most are in northern New Mexico, northern Arizona, southern Colorado, California, southern Oregon and far western Nevada, and over 80% are bubonic. Prevention from CDC: flea control on pets, don't handle sick or dead rodents, and see a doctor promptly with a fever after possible exposure in plague areas. Calm framing: rare, treatable, and monitored. Close with the line 'if you're worried, talk to a health professional'. Cite the CDC Maps and Statistics page with its last-reviewed date.",
+      "working_title": "Plague in the US: About 7 Cases a Year, Here's Where (CDC) #shorts",
+      "target_keyword": "plague in the us",
+      "trend_stage": "rising",
+      "why": "US viewers are asking 'could it happen here?'. A concrete CDC number plus practical prevention fits our number+fix formula, and competition is medium.",
+      "pillar": "general"
+    },
+    {
+      "id": "C1",
+      "kind": "carousel",
+      "topic": "Pneumonic vs bubonic vs septicemic plague: the 3 forms of Yersinia pestis infection compared",
+      "angle": "Slide 1: 'Plague has 3 forms. Only one, pneumonic, usually spreads person to person (CDC, WHO).' Slides 2–7 as planned. Keep CDC incubation figures together on slide 7 (bubonic 2–8 days, pneumonic 1–3 days), tagged CDC. Add a table note: 'Untreated bubonic or septicemic plague can spread to the lungs and become pneumonic.' Slide 8: 'All 3 forms are treatable with common antibiotics. Starting early matters most (CDC, WHO).' Slide 9: the red flags and the urgent-contact line, plus 'If you're worried, talk to a health professional.' Optional final-slide status, dated: 'As of Oct 7, 2026: Russian officials told WHO no plague case has been recorded. WHO says testing on the cause of death continues and rates the risk low for Russia, very low for Europe.' Illustrations only, no clinical photos.",
+      "working_title": "Pneumonic vs Bubonic vs Septicemic Plague: The 3 Forms, Compared",
+      "target_keyword": "pneumonic vs bubonic plague",
+      "trend_stage": "evergreen",
+      "why": "'What is pneumonic plague' searches spiked with the story. A comparison that names all 3 forms is a durable resource people save, whatever the final diagnosis turns out to be. | fact-check: The framework is sound and the 3 forms are standard (CDC, WHO). Fixes: (1) The hook line 'Russian authorities say no plague found in the Irkutsk case' is a scope error. The 'no pathogens found' result applies to the contacts tested. For the case itself, Russia says the death was 'pneumonia of undetermined origin' and that no plague case has been recorded, while WHO says lab testing on the cause of death continues. A carousel is static, so keep that line off slide 1. Put a dated status line on the final slide, or drop it. (2) Incubation figures differ by source. CDC says 2–8 days for bubonic and 1–3 days for pneumonic. WHO says 1–7 days overall, and as short as about 24 hours for pneumonic. Quote one source per slide with its tag and don't mix them. (3) Septicemic plague can start on its own or develop from untreated bubonic plague, and both can lead to secondary pneumonic plague. So slide 1 should say 'usually spreads', and the table should note that the other forms can become pneumonic. (4) Slide 8 must not name drugs or doses. (5) No graphic imagery: no images of buboes, gangrene or blackened fingers.",
+      "pillar": "general"
+    }
+  ]
+}
