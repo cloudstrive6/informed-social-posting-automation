@@ -36,6 +36,13 @@ export function cleanDescription(d: string): string {
   return kept.join("\n");
 }
 
+/** Upload/processing/privacy state of an uploaded video (1 quota unit). undefined = YouTube doesn't know the id. */
+export async function videoStatus(videoId: string): Promise<{ uploadStatus: string; privacyStatus: string; publishAt?: string; failureReason?: string; rejectionReason?: string } | undefined> {
+  const token = await youtubeToken();
+  const j = await httpJson<any>(`https://www.googleapis.com/youtube/v3/videos?part=status&id=${videoId}`, { headers: { authorization: `Bearer ${token}` } });
+  return j.items?.[0]?.status;
+}
+
 /** Make an uploaded (scheduled or private) video public right now, cancelling its scheduled time. */
 export async function makePublicNow(videoId: string) {
   const token = await youtubeToken();

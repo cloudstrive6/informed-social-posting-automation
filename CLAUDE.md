@@ -27,6 +27,11 @@ Agent prompts: `agents/*.md`. State: `data/` (queue per content date in `data/qu
 - `daily.yml` (02:00 UTC + backups with a duplicate guard): plan → produce Shorts/carousel/long in parallel → finalize
   (release upload, B2 archive, Editor-in-Chief, slots). GitHub's cron often fires hours late; that's expected.
 - `publish.yml`: always-on loop (~5.5 h per run, then restarts itself) posting whatever is due, every minute.
+- **Ops watchdog** (`src/ops/watchdog.ts`, inside the publish loop, every ~10 min): starts production at 22:05 NY if
+  GitHub's cron hasn't, re-runs failed production jobs once, gives transient publish failures a second round, re-uploads
+  YouTube videos that never processed, makes overdue scheduled videos public. Anything else → `ops.yml` (**Ops Engineer**
+  agent, `agents/ops-engineer.md`): diagnoses, unblocks, fixes code (typecheck, push to `main`), reports on Telegram.
+  Max 4 escalations/day; state in `data/ops/`. Run by hand: `gh workflow run ops.yml -f incident="..."`.
 - Agents run on the Claude subscription (`CLAUDE_CODE_OAUTH_TOKEN`). Short session limits are waited out; the **weekly
   cap** switches the run to the backup API key (secret `ANTHROPIC_API_KEY`, budget `config.fallbackApi`). Interactive
   Claude Code work uses the same subscription allowance.

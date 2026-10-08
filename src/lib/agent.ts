@@ -7,7 +7,7 @@ import { log } from "./log.js";
 export type AgentName =
   | "trend-scout" | "content-strategist" | "fact-checker" | "scriptwriter-long" | "scriptwriter-short"
   | "narration-director" | "title-writer" | "thumbnail-designer" | "seo-writer"
-  | "carousel-designer" | "social-copywriter" | "performance-analyst" | "motion-designer" | "visual-critic" | "sound-designer" | "packaging-editor" | "quality-coach" | "thumbnail-judge" | "editor-in-chief" | "pronunciation-coach" | "playlist-curator";
+  | "carousel-designer" | "social-copywriter" | "performance-analyst" | "motion-designer" | "visual-critic" | "sound-designer" | "packaging-editor" | "quality-coach" | "thumbnail-judge" | "editor-in-chief" | "pronunciation-coach" | "playlist-curator" | "ops-engineer";
 
 export interface AgentRun<T> {
   agent: AgentName;

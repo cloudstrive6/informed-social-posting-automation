@@ -4,7 +4,7 @@ name: Failure alerts
 
 on:
   workflow_run:
-    workflows: ["Daily production", "Publisher", "Analytics & learnings", "Trend radar", "Human review", "Telegram"]
+    workflows: ["Daily production", "Publisher", "Analytics & learnings", "Trend radar", "Human review", "Telegram", "Ops engineer"]
     types: [completed]
 
 jobs:

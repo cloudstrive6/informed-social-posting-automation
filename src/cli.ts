@@ -64,7 +64,16 @@ const commands: Record<string, () => Promise<unknown>> = {
   plan: () => planDay(date),
   produce: () => produce(rest[0], rest[1]),
   finalize: () => finalizeDay(date),
-  publish: () => publishDue(),
+  publish: async () => {
+    // ops watchdog (every ~10 min): keeps production and posting moving, calls in the Ops Engineer for new problems
+    try { const { watchdog } = await import("./ops/watchdog.js"); await watchdog(); }
+    catch (e) { log.warn(`watchdog failed: ${(e as Error).message.slice(0, 300)}`); }
+    await publishDue();
+  },
+  // watchdog: run the ops checks now (normally part of every publish cycle, at most every 10 min)
+  watchdog: async () => { const { watchdog } = await import("./ops/watchdog.js"); await watchdog(true); },
+  // ops-doctor: the Ops Engineer agent works on the incident in $INCIDENT (ops.yml)
+  "ops-doctor": async () => { const { opsDoctor } = await import("./ops/doctor.js"); await opsDoctor(process.env.INCIDENT ?? rest.join(" ")); },
   // publish-now <date>/<item-id> [--platforms youtube,tiktok,instagram,facebook]
   // youtube-fix-description <date>/<item-id>: strip stray social captions from a long video's description (stored + live)
   "youtube-fix-description": async () => {

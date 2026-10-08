@@ -12,6 +12,7 @@ _Last updated 2026-09-29._
 - **Brains:** Claude agents through the **Claude Agent SDK**, authenticated with one `CLAUDE_CODE_OAUTH_TOKEN` (`claude setup-token`, valid 1 year). Every agent has a prompt in `agents/*.md`; every answer is forced into a JSON schema (`src/lib/schemas.ts`).
 - **Config:** everything channel-specific is in `config/channel.json`: brand, audience, **niche** (brief, pillars, guardrails, radar sources), cadence, **schedule**, **spacing**, platforms, voice, video, music, QA thresholds, safety, review mode, models, **YouTube playlists**. Pronunciations: `config/pronunciations.json`.
 - **Niche (current):** GLP-1, positive and evidence-based (9 content pillars; each pillar = a YouTube playlist).
+- **Ops:** a watchdog in the publisher loop fixes known problems (late production start, failed jobs, transient publish errors, stuck YouTube uploads) and hands anything else to the Ops Engineer agent (`ops.yml`), which fixes and reports on Telegram.
 - **Cadence (per day):** 1 long video (8–15 min), 3 Shorts (≤ 178 s; Facebook gets the ones over 90 s as a regular Page video), 1 carousel.
 
 ### Daily schedule (New York time; each piece drops on all its platforms at the same minute)

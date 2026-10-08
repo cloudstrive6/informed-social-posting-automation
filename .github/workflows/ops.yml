@@ -1,0 +1,57 @@
+name: Ops engineer
+# Called by the ops watchdog (inside the publisher loop) when production or publishing is blocked in a way it has
+# no ready-made fix for. A Claude agent with shell access diagnoses, unblocks, fixes the cause in code if it's a
+# bug, and reports on Telegram. Can also be run by hand: describe the problem in `incident`.
+
+on:
+  workflow_dispatch:
+    inputs:
+      incident:
+        description: "What's wrong (the watchdog fills this in)"
+        required: true
+
+permissions:
+  contents: write
+  issues: write
+  actions: write # re-run jobs, start daily/publish/remake runs
+
+concurrency:
+  group: ops-engineer # one incident at a time; the next waits
+  cancel-in-progress: false
+
+jobs:
+  ops:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      ANTHROPIC_FALLBACK_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }} # backup when the subscription is capped (never as ANTHROPIC_API_KEY: it would override the subscription)
+      GH_TOKEN: ${{ github.token }}
+      INCIDENT: ${{ inputs.incident }}
+      YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+      YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+      YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+      POSTFORME_API_KEY: ${{ secrets.POSTFORME_API_KEY }}
+      THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+      B2_KEY_ID: ${{ secrets.B2_KEY_ID }}
+      B2_APPLICATION_KEY: ${{ secrets.B2_APPLICATION_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+        with: { ffmpeg: "true" }
+      - run: |
+          git config user.name "informed-ops-bot"; git config user.email "informed-bot@users.noreply.github.com"
+          npx tsx src/cli.ts ops-doctor
+      - if: always()
+        run: bash scripts/commit-data.sh "bot - ops" || true
