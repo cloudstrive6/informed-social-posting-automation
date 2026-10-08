@@ -25,7 +25,7 @@ _10 records are about plague (10-07 and 10-08), and 4 of them were held. That's 
 - **Keep captions and stat titles off faces and hero art,** and above or beside the hero. Captions sat on the lungs art in both S2 10-07 and S3 10-08. Charts get their own box. (About 45 findings.)
 
 ### Scriptwriters
-- **Shorts: write 170 words or fewer, aiming for 60–75 s, and drop a beat rather than run long.** Anything over 90 s is dropped automatically: S1 10-07 ran 91 s and S1 10-08 about 102 s. The S1 10-08 script was over the ~200-word guide, so that guide is too loose. (2 holds.)
+- **Shorts: write 170 words or fewer, aiming for 60–75 s, and drop a beat rather than run long.** The hard limit is now 178 s (raised from 90 s on 2026-10-08; YouTube counts up to 3 min as Shorts), so 91 s and 102 s would pass today, but shorter still performs better. The S1 10-08 script was over the ~200-word guide, so that guide is too loose. (2 holds.)
 - **Write narration in normal spelling and every stat as numerals ("Yersinia pestis", "1 in 802"). Never use phonetic respellings.** Subtitles are built from the script. (3 holds.)
 - **Tie every claim to the exact form, product, place and scope its source covers, and match the source's certainty:**
   - A finding about one vaccine, drug or arm never moves to another. S3 10-08 was held for applying a killed-USP-vaccine finding to the live EV vaccine.

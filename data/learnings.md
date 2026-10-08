@@ -38,7 +38,7 @@
 - **Bottom:** "older drug" 2, cleaners 4, HRT 4, trevogrumab 5 (day 1), "cheating" 6.
 - **Shorts keep growing after day 1** (tirzepatide went from 49 to 94, survodutide from 40 to 60). Judge Shorts at day 7 or later.
 - **Publish slot makes no meaningful difference.** Medians: 08:00 ET 25 (n=4), 13:00 ET 39 (n=4), 20:00 ET 51 (n=6). The title is still the main driver.
-- **Length: no signal.** Shorts ran 64–97 s (smartwatch 64 s got 136, tirzepatide 97 s got 94). The hard limit is under 90 s. Aim for about 75 s, and test 35–50 s cuts.
+- **Length: no signal.** Shorts ran 64–97 s (smartwatch 64 s got 136, tirzepatide 97 s got 94). The hard limit is 178 s (raised from 90 s on 2026-10-08). Aim for about 75 s, and test 35–50 s cuts.
 
 ## Long-form (n=8, median 7; GLP-1 n=6, median 11.5)
 - **Views:** EloraTZP 150, retatrutide 12, survodutide 12, orforglipron 11, hair loss 3, mammogram 2, BMI 1, workout/nap 0.
@@ -107,7 +107,7 @@ Keep the current slots. YouTube Shorts medians by slot:
 5. **Publishing safeguards.**
    - Keep the check that stops the same piece being posted twice on Facebook (this happened twice on 09-29).
    - Add a check that every carousel actually reaches Threads.
-6. **Length test.** Make 2–3 plague Shorts at 35–50 seconds with plain-question titles. The hard limit is under 90 s, and one plague Short was held at 91 s.
+6. **Length test.** Make 2–3 plague Shorts at 35–50 seconds with plain-question titles. The hard limit is now 178 s (it was 90 s when one plague Short was held at 91 s).
 7. **Next review:** about 12–14 Oct. That will be the first read on plague content.
 
 _Updated 2026-10-07 from 110 posts._
