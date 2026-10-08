@@ -161,8 +161,31 @@ export async function checkPackaging(item: ContentItem, packaging: object, sourc
  * Packaging ⇄ checker loop: check, let the packaging writer apply the fixes, re-check (up to 2 revisions).
  * Only a HOLD verdict or unresolved major/critical issues hold the item for a human.
  */
+/**
+ * Agents sometimes return a whole packaging object as the text of one field ("description": "{\"title\":…}"),
+ * or text with literal "\n" sequences. Unwrap the nested value and restore real line breaks.
+ */
+export function unnestPackaging<P extends object>(p: P): P {
+  const out = { ...p } as Record<string, unknown>;
+  for (const [k, v] of Object.entries(out)) {
+    if (typeof v !== "string") continue;
+    let text = v;
+    for (let depth = 0; depth < 3 && /^\s*\{/.test(text); depth++) {
+      try {
+        const inner = JSON.parse(text.trim());
+        if (inner && typeof inner === "object" && typeof inner[k] === "string") text = inner[k]; else break;
+      } catch { break; }
+    }
+    if (!text.includes("\n") && /\\n/.test(text)) text = text.replace(/\\n/g, "\n");
+    out[k] = text;
+  }
+  return out as P;
+}
+
 export async function packagingLoop<P extends object>(item: ContentItem, packaging: P, sources: Source[], verifiedContent: object,
-  revise: (current: P, fc: FactCheck) => Promise<P>, view: (p: P) => object = p => p): Promise<{ packaging: P; check: FactCheck; held: boolean; reason?: string }> {
+  reviseRaw: (current: P, fc: FactCheck) => Promise<P>, view: (p: P) => object = p => p): Promise<{ packaging: P; check: FactCheck; held: boolean; reason?: string }> {
+  const revise = async (current: P, fc: FactCheck) => unnestPackaging(await reviseRaw(current, fc));
+  packaging = unnestPackaging(packaging);
   let pc = await checkPackaging(item, view(packaging), sources, verifiedContent);
   for (let round = 0; round < 2 && pc.verdict !== "HOLD" && pc.issues.length; round++) {
     log.info(`packaging check: ${pc.verdict} with ${pc.issues.length} fixes; revising (round ${round + 1})`);

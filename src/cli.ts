@@ -94,16 +94,20 @@ const commands: Record<string, () => Promise<unknown>> = {
     saveItem(item);
     await publishNow(rest[0], ["youtube"]);
   },
-  // youtube-playlists <date>/<item-id>: add the item's uploaded YouTube video to its playlists (pillar + Shorts)
+  // youtube-playlists <date>/<item-id> [...]: put each item's uploaded YouTube video in exactly its playlists
+  // (adds where missing, removes it from our playlists it no longer belongs in, e.g. after a topic-focus change)
   "youtube-playlists": async () => {
-    const { itemPath, saveItem } = await import("./lib/items.js");
-    const { addToPlaylists } = await import("./publish/playlists.js");
-    const [d, id] = rest[0].split("/");
-    const item = readJson<ContentItem>(itemPath(d, id));
-    const yt = item.posts.find(p => p.platform === "youtube" && p.remote_id);
-    if (!yt?.remote_id) throw new Error("no uploaded YouTube video for this item");
-    if (!(await addToPlaylists(item, yt.remote_id)).length) throw new Error("not added to any playlist");
-    saveItem(item); // keeps the pillar the curator chose
+    const { loadItems, saveItem } = await import("./lib/items.js");
+    const { syncPlaylists } = await import("./publish/playlists.js");
+    for (const ref of rest.flatMap(r => r.split(/\s+/)).filter(Boolean)) {
+      const [d, id] = ref.split("/");
+      const item = loadItems([d]).find(i => i.id === id || i.id.startsWith(`${id}-`));
+      if (!item) { log.warn(`${ref}: item not found`); continue; }
+      const yt = item.posts.find(p => p.platform === "youtube" && p.remote_id);
+      if (!yt?.remote_id) { log.warn(`${ref}: no uploaded YouTube video`); continue; }
+      await syncPlaylists(item, yt.remote_id);
+      saveItem(item); // keeps the pillar the curator chose
+    }
   },
   // facebook-inspect <date>/<item-id>: print the images and caption actually on the item's Facebook post
   "facebook-inspect": async () => {

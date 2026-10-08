@@ -46,6 +46,8 @@ export interface ChannelConfig {
   niche: {
     enabled: boolean; name: string; brief: string; pillars: string[]; guardrails: string[];
     radar: { match: string; subreddits: string[]; youtube: string[]; news: string[]; pubmed: string };
+    /** Playlists for this focus: every video goes into `playlist`, Shorts also into `shortsPlaylist` (instead of the pillar lists). */
+    youtube?: { playlist: { title: string; description: string }; shortsPlaylist?: { title: string; description: string } };
   };
   /** Backup Anthropic API key (secret ANTHROPIC_API_KEY → env ANTHROPIC_FALLBACK_API_KEY), used only when the subscription is capped. */
   fallbackApi?: { enabled: boolean; monthlyBudgetUsd: number };

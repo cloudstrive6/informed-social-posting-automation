@@ -12,7 +12,7 @@ _Last updated 2026-09-29._
 - **Brains:** Claude agents through the **Claude Agent SDK**, authenticated with one `CLAUDE_CODE_OAUTH_TOKEN` (`claude setup-token`, valid 1 year). Every agent has a prompt in `agents/*.md`; every answer is forced into a JSON schema (`src/lib/schemas.ts`).
 - **Config:** everything channel-specific is in `config/channel.json`: brand, audience, **niche** (brief, pillars, guardrails, radar sources), cadence, **schedule**, **spacing**, platforms, voice, video, music, QA thresholds, safety, review mode, models, **YouTube playlists**. Pronunciations: `config/pronunciations.json`.
 - **Niche (current):** GLP-1, positive and evidence-based (9 content pillars; each pillar = a YouTube playlist).
-- **Cadence (per day):** 1 long video (8–15 min), 3 Shorts (< 90 s), 1 carousel.
+- **Cadence (per day):** 1 long video (8–15 min), 3 Shorts (≤ 178 s; Facebook gets the ones over 90 s as a regular Page video), 1 carousel.
 
 ### Daily schedule (New York time; each piece drops on all its platforms at the same minute)
 | Time (NY) | Time (NZ, NZDT) | Piece | Platforms |
@@ -71,7 +71,7 @@ Shared context every agent sees: `agents/_shared.md` + brand/audience/niche/guar
 
 1. **Plan** (`src/plan/planDay.ts`): radar → strategist (with pillars) → fact-checker screens topics. Content date = tomorrow when started in the evening.
 2. **Script ⇄ fact-check loop** (`writeWithFactCheck`): up to 2 revision rounds; minor fixes auto-applied; long scripts kept inside the 8–15 min word window.
-3. **Narration** (`narrateChecked` → `narrate`): voice chain **Chirp 3 HD "Algenib" → ElevenLabs → Chatterbox → Kokoro**; Whisper checks every scene against the script (vocabulary prompt + tolerance for long technical terms); retakes on mismatch; hard holds if a video is outside 8–15 min (long) or over 90 s (Short).
+3. **Narration** (`narrateChecked` → `narrate`): voice chain **Chirp 3 HD "Algenib" → ElevenLabs → Chatterbox → Kokoro**; Whisper checks every scene against the script (vocabulary prompt + tolerance for long technical terms); retakes on mismatch; hard holds if a video is outside 8–15 min (long) or over 178 s (Short).
 4. **Pronunciation**: `config/pronunciations.json` (curated, stressed syllable in capitals) + `data/pronunciations.json` (learned) applied to ElevenLabs/Chatterbox; Chirp reads the plain script (it spells capitalized respellings as letters).
 5. **Visuals**: Motion Designer shot plan → HyperFrames composition → layout audit + near-empty-shot check + Visual Critic → revise → render 1080p **60 fps** (long videos: critic samples the first minute + every other shot).
 6. **Frame checks** (ffmpeg): black frames, freezes, photosensitive flashing.

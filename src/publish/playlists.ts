@@ -58,6 +58,9 @@ async function classifyPillar(item: ContentItem): Promise<string | undefined> {
 
 /** The playlists a video belongs in: its pillar's playlist, plus the Shorts playlist for Shorts. */
 export function playlistsFor(item: ContentItem): { title: string; description: string }[] {
+  // a topic focus with its own playlists (e.g. plague) replaces the GLP-1 pillar lists while it's on
+  const nicheLists = config.niche?.enabled ? config.niche.youtube : undefined;
+  if (nicheLists) return [nicheLists.playlist, ...(item.kind === "short" && nicheLists.shortsPlaylist ? [nicheLists.shortsPlaylist] : [])];
   const lists = config.youtube?.playlists ?? [];
   const pillar = lists.find(l => l.pillar === item.plan.pillar) ?? lists.find(l => l.pillar === "general");
   return [...(pillar ? [pillar] : []), ...(item.kind === "short" && config.youtube?.shortsPlaylist ? [config.youtube.shortsPlaylist] : [])];
@@ -65,7 +68,7 @@ export function playlistsFor(item: ContentItem): { title: string; description: s
 
 /** Add an uploaded video to its playlists. Never throws: a playlist problem must not fail a publish. */
 export async function addToPlaylists(item: ContentItem, videoId: string): Promise<string[]> {
-  if (!item.plan.pillar) item.plan.pillar = await classifyPillar(item);
+  if (!item.plan.pillar && !(config.niche?.enabled && config.niche.youtube)) item.plan.pillar = await classifyPillar(item);
   const added: string[] = [];
   for (const pl of playlistsFor(item)) {
     try {
@@ -87,4 +90,35 @@ export async function addToPlaylists(item: ContentItem, videoId: string): Promis
   }
   if (added.length) log.info(`${item.id} → playlists: ${added.join(", ")}`);
   return added;
+}
+
+/**
+ * Maintenance: put a video in exactly the playlists it belongs in now. Removes it from any of our other
+ * playlists (pillar, Shorts, focus playlists, including saved focuses) and adds it where it's missing.
+ */
+export async function syncPlaylists(item: ContentItem, videoId: string): Promise<{ removed: string[]; added: string[] }> {
+  if (!item.plan.pillar && !(config.niche?.enabled && config.niche.youtube)) item.plan.pillar = await classifyPillar(item);
+  const want = playlistsFor(item);
+  const ours = new Set<string>([
+    ...(config.youtube?.playlists ?? []).map(p => p.title),
+    ...(config.youtube?.shortsPlaylist ? [config.youtube.shortsPlaylist.title] : []),
+    ...[config.niche, ...Object.values((config as any)._saved_niches ?? {})].flatMap((n: any) =>
+      n?.youtube ? [n.youtube.playlist?.title, n.youtube.shortsPlaylist?.title].filter(Boolean) : []),
+  ]);
+  for (const pl of want) await playlistId(pl.title, pl.description); // creates missing ones, fills the id cache
+  const ids = readJson<Record<string, string>>(CACHE, {});
+  const entries = async (title: string) =>
+    ((await yt<any>(`playlistItems?part=id&playlistId=${ids[title]}&videoId=${videoId}&maxResults=5`)).items ?? []) as { id: string }[];
+  const removed: string[] = [], added: string[] = [];
+  for (const title of ours) {
+    if (want.some(w => w.title === title) || !ids[title]) continue;
+    for (const it of await entries(title)) { await yt(`playlistItems?id=${it.id}`, { method: "DELETE" }); removed.push(title); }
+  }
+  for (const pl of want) {
+    if ((await entries(pl.title)).length) continue;
+    await yt("playlistItems?part=snippet", { method: "POST", body: { snippet: { playlistId: ids[pl.title], resourceId: { kind: "youtube#video", videoId } } } });
+    added.push(pl.title);
+  }
+  log.info(`${item.id} → playlists: ${want.map(w => w.title).join(", ")}${removed.length ? ` (removed from ${removed.join(", ")})` : ""}${added.length ? ` (added to ${added.join(", ")})` : ""}`);
+  return { removed, added };
 }

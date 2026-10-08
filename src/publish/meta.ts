@@ -94,6 +94,24 @@ export async function facebookReel(file: string, description: string) {
   return { id: start.video_id as string, url: `https://www.facebook.com/reel/${start.video_id}` };
 }
 
+/**
+ * Facebook Page video, for verticals longer than the Reels API's 90 s limit (Facebook still shows them in Reels).
+ * Facebook fetches the file from its public URL (the GitHub release asset); a direct upload is the fallback.
+ */
+export async function facebookVideo(file: string, description: string, publicUrl?: string) {
+  const host = `https://graph-video.facebook.com/${V()}/${pageId()}/videos`;
+  let id: string;
+  if (publicUrl) {
+    id = (await httpJson<any>(host, { method: "POST", body: new URLSearchParams({ file_url: publicUrl, description, access_token: token() }) })).id;
+  } else {
+    const form = new FormData();
+    form.append("access_token", token()); form.append("description", description);
+    form.append("source", new Blob([readFileSync(file)], { type: "video/mp4" }), basename(file));
+    id = (await httpJson<any>(host, { method: "POST", body: form, timeoutMs: 30 * 60_000 })).id;
+  }
+  return { id, url: `https://www.facebook.com/${pageId()}/videos/${id}` };
+}
+
 /** Facebook multi-photo post: upload photos unpublished, then attach them to one feed post. */
 export async function facebookAlbumPost(images: string[], message: string) {
   const ids: string[] = [];

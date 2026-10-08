@@ -19,7 +19,7 @@ Agent prompts: `agents/*.md`. State: `data/` (queue per content date in `data/qu
 - **Keep the repo public** (free Actions minutes; Instagram/Threads/TikTok fetch media from public release and `media`
   branch URLs). Making it private needs a migration first (see BLUEPRINT).
 - Review is fully automated (`review.mode: "auto"`, Editor-in-Chief agent); the fact-check gate must stay.
-- No hashtags on Threads. Long videos 8–15 min; Shorts under 90 s. One long video, three Shorts, one carousel per day.
+- No hashtags on Threads. Long videos 8–15 min; Shorts up to 178 s (YouTube counts up to 3 min as Shorts; Facebook gets ones over 90 s as a regular Page video). One long video, three Shorts, one carousel per day.
 - Voice: Google Chirp 3 HD `en-US-Chirp3-HD-Algenib` for everything (fallbacks: ElevenLabs → Chatterbox → Kokoro).
 - Prefer free tools; paid services only with the owner's OK. Commit with clear messages; push to `main`.
 

@@ -8,7 +8,7 @@ import { addElevenUsage } from "../lib/usage.js";
 import { addDays, localDate } from "../lib/time.js";
 import { coveredPath, CoveredTopic } from "../plan/planDay.js";
 import { openReviewIssue, reportFailure } from "../review/issues.js";
-import { facebookAlbumPost, facebookReel, instagramCarousel, instagramReel } from "./meta.js";
+import { facebookAlbumPost, facebookReel, facebookVideo, instagramCarousel, instagramReel } from "./meta.js";
 import { downloadFromRelease, publishImages, releaseAssetUrl, uploadToRelease } from "./storage.js";
 import { http } from "../lib/http.js";
 import { archiveItem } from "./b2.js";
@@ -86,7 +86,15 @@ async function publishOne(item: ContentItem, p: PostTarget) {
       const file = await media(item, item.media.video!);
       return { ...(postForMeEnabled() ? await tiktokViaPostForMe(file, s!.tiktok_caption) : await tiktokPost(file, s!.tiktok_caption)), scheduled: false };
     }
-    case "facebook:reel": return { ...(await facebookReel(await media(item, item.media.video!), s!.facebook_caption)), scheduled: false };
+    case "facebook:reel": {
+      const file = await media(item, item.media.video!);
+      // the Reels API takes 3–90 s; longer Shorts go up as a regular Page video
+      if ((item.media.duration ?? 0) > 90) {
+        const url = item.release_tag && process.env.GITHUB_REPOSITORY ? releaseAssetUrl(item.release_tag, basename(item.media.video!)) : undefined;
+        return { ...(await facebookVideo(file, s!.facebook_caption, url)), scheduled: false };
+      }
+      return { ...(await facebookReel(file, s!.facebook_caption)), scheduled: false };
+    }
     case "tiktok:carousel": return { ...(await tiktokPhotosViaPostForMe(item.image_urls!, s!.tiktok_caption, item.package.title ?? "")), scheduled: false };
     case "threads:carousel": return { ...(await threadsCarousel(item.image_urls!, threadsText(s!.threads_caption || s!.instagram_caption))), scheduled: false };
     case "facebook:post": {

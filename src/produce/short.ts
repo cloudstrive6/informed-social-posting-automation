@@ -8,6 +8,8 @@ import { Script, scriptSchema } from "../lib/schemas.js";
 import { buildVideo } from "../media/buildVideo.js";
 import { packagingLoop, directNarration, narrateChecked, qaBlockers, loadPiece, newItem, socialCopy, workDir, writeWithFactCheck } from "./common.js";
 
+export const SHORT_MAX_S = 178;
+
 export async function produceShort(date: string, pieceId: string): Promise<ContentItem> {
   const { plan, piece, index } = loadPiece(date, pieceId);
   const item = newItem(date, piece, index);
@@ -39,8 +41,9 @@ export async function produceShort(date: string, pieceId: string): Promise<Conte
   const blockers = qaBlockers(narration, built.qa);
   if (blockers.length && item.status !== "held") { item.status = "held"; item.hold_reason = `Quality check: ${blockers.join("; ")}`; }
   item.media.duration = timeline.duration;
-  // Shorts/Reels/TikTok: we keep every vertical video under 90 s
-  if (timeline.duration > 89.5 && item.status !== "held") { item.status = "held"; item.hold_reason = `Quality check: Short runs ${timeline.duration.toFixed(0)} s (limit 90 s)`; }
+  // YouTube counts vertical videos up to 3 min as Shorts; we hold a 178 s ceiling to be safe.
+  // (Facebook's Reels API stops at 90 s: longer ones go to the Page as a regular video, see publisher.)
+  if (timeline.duration > SHORT_MAX_S && item.status !== "held") { item.status = "held"; item.hold_reason = `Quality check: Short runs ${timeline.duration.toFixed(0)} s (limit ${SHORT_MAX_S} s)`; }
 
   const summary = {
     hook: script.scenes[0].on_screen_text, narration: script.scenes.map(s => s.narration).join(" "),
