@@ -70,6 +70,12 @@ jobs:
           echo "date=$D" >> "$GITHUB_OUTPUT"
           # duplicate guard for scheduled (and backup) starts: one production run per day
           if [ "${{ github.event_name }}" = "schedule" ]; then
+            # a manual run may already have produced this date (finalize commits its queue); never make a day twice
+            if [ -f "data/queue/$D/plan.json" ]; then
+              echo "Content for $D already exists (data/queue/$D); skipping."
+              { echo "long=[]"; echo "short=[]"; echo "carousel=[]"; echo "skip=true"; } >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
             SINCE=$(date -u -d "-6 hours" +%Y-%m-%dT%H:%M:%SZ)
             OTHERS=$(gh run list --workflow daily.yml --limit 20 --json databaseId,createdAt,status,conclusion \
               --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.createdAt >= \"$SINCE\") | select(.status != \"completed\" or .conclusion == \"success\")] | length")
