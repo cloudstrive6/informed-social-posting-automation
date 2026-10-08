@@ -1,0 +1,1462 @@
+{
+  "id": "L1-madagascar-2017-how-a-large-urban-pneumo",
+  "date": "2026-10-08",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Madagascar 2017: how a large urban pneumonic plague outbreak was stopped with contact tracing, preventive antibiotics given by health authorities, and treatment centres. Tied to the Irkutsk contacts now finishing monitoring.",
+    "angle": "Same structure. Hook: 'In Irkutsk, a lab worker died of pneumonia. Media reported it as suspected pneumonic plague. Russian authorities say the cause is unknown and that no dangerous pathogens were found in her 197 reported contacts. Rospotrebnadzor reported that over 90% had finished monitoring (as of Oct 7, 2026). WHO says the cause is not yet known. Not confirmed isn't ruled out.' Madagascar totals from a single dated WHO report (e.g. 2,348 cases, 202 deaths, 1 Aug–22 Nov 2017, WHO DON 27 Nov 2017), with its confirmed/probable/suspected split. Title: 'How Madagascar Brought Pneumonic Plague Under Control in 2017 (and What It Means Now)'.",
+    "working_title": "How Madagascar Stopped Pneumonic Plague in 2017 (and What It Means Now)",
+    "target_keyword": "madagascar plague 2017",
+    "trend_stage": "evergreen",
+    "why": "Evergreen depth piece with a timely hook (Irkutsk contacts finishing monitoring). Few creators cover it in depth, and it backs the calm, expert line that global spread is unlikely. | fact-check: Good evergreen case study, but the status line needs fixing. Verified: on Oct 6, 2026 WHO said Russian authorities told it that no dangerous pathogens were found in any contact, and none had symptoms (UN Geneva newsroom, WHO spokesperson Christian Lindmeier: https://www.unognewsroom.org/story/en/3289/irkutsk-suspected-plague-death-who). Rospotrebnadzor calls the death 'pneumonia of unknown aetiology'. As of Oct 8, WHO (Maria Van Kerkhove) says the cause is still not known (Al Jazeera: https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information). The '197 contacts' figure is reported by several outlets. The 'over 90% completed monitoring' figure comes from Rospotrebnadzor (it was 60% on Oct 5), so credit Rospotrebnadzor as reported by the outlet, not Euronews alone. I couldn't open a Euronews Oct 7 page that says this; re-check before publishing. Madagascar: WHO DON of 27 Nov 2017 gives 2,348 confirmed, probable and suspected cases and 202 deaths (CFR 8.6%), 1 Aug–22 Nov 2017 (https://www.who.int/emergencies/disease-outbreak-news/item/27-november-2017-plague-madagascar-en). WHO AFRO's later update gives 2,384 cases and 207 deaths to 24 Nov. Pick one dated WHO report and don't mix the two. Keep the WHO split of confirmed, probable and suspected cases, which supports section 4. Don't mention the unverified second-case media reports, which the Kremlin calls false and WHO is asking about, beyond 'WHO has asked Russia for more information'. 'Stopped' is acceptable if you cite WHO's end-of-outbreak statement. Otherwise say 'brought under control'.",
+    "pillar": "general"
+  },
+  "status": "ready",
+  "package": {
+    "title": "How Did Madagascar Control Its 2017 Pneumonic Plague Outbreak?",
+    "title_candidates": [
+      "How Did Madagascar Stop Its 2017 Pneumonic Plague Outbreak?",
+      "Madagascar Plague 2017: How Was the Outbreak Stopped?",
+      "Madagascar Plague 2017: 3 Tools That Brought It Under Control",
+      "How Madagascar Brought Pneumonic Plague Under Control in 2017",
+      "Can Antibiotics Stop a Plague Outbreak? Madagascar 2017 Shows How",
+      "Pneumonic Plague in Madagascar 2017: How Contact Tracing Worked",
+      "What Stopped Madagascar's 2017 Plague Outbreak? Lessons for Now",
+      "Madagascar Plague 2017: Why Most Cases Were Never Confirmed",
+      "Plague Contacts Under Watch: What Madagascar 2017 Teaches Us",
+      "Madagascar 2017 Plague: Contacts, Antibiotics, Treatment Centres"
+    ],
+    "description": "How did Madagascar bring its 2017 pneumonic plague outbreak under control? WHO reports describe the 3 tools in this video: contact tracing, preventive antibiotics given by health authorities, and fast care in dedicated treatment centres.\n\nQuick answer: WHO counted 2,348 confirmed, probable and suspected plague cases and 202 deaths (1 Aug–22 Nov 2017). By late November, 7,289 contacts had been identified and all had completed preventive antibiotics. Irkutsk, as of Oct 8, 2026: WHO says the cause of the reported death is still not known. On Oct 6, WHO said Russian authorities found no dangerous pathogens in any contact and none had symptoms. Not confirmed isn't ruled out.\n\nThis video is general information, not medical advice. If you think you've been exposed, contact a doctor or local health authority urgently. Don't self-treat. If you're worried, talk to a health professional.\n\nSources:\nWHO, Plague – Madagascar (Disease Outbreak News, 27 Nov 2017): https://www.who.int/emergencies/disease-outbreak-news/item/27-november-2017-plague-madagascar-en\nUN News, Testing and monitoring underway in suspected Russia plague death (2026): https://news.un.org/en/story/2026/10/1168533\nCDC, How Plague Spreads: https://www.cdc.gov/plague/causes/index.html\nRandremanana R et al., Lancet Infect Dis 2019: https://doi.org/10.1016/S1473-3099(18)30730-8",
+    "tags": [
+      "madagascar plague 2017",
+      "pneumonic plague outbreak",
+      "plague outbreak madagascar",
+      "how was the madagascar plague outbreak stopped",
+      "pneumonic plague contact tracing",
+      "plague preventive antibiotics",
+      "yersinia pestis",
+      "plague symptoms",
+      "bubonic vs pneumonic plague",
+      "irkutsk plague",
+      "russia plague case 2026",
+      "who disease outbreak news plague",
+      "plague treatment centers",
+      "is plague curable with antibiotics",
+      "is pneumonic plague contagious",
+      "plague outbreak history",
+      "black death vs plague today",
+      "cdc plague prevention",
+      "plague contacts monitoring",
+      "how is plague outbreak contained"
+    ],
+    "pinned_comment": "In Madagascar's 2017 outbreak, WHO counted 2,348 confirmed, probable and suspected cases. Of the 1,791 pneumonic cases, WHO's November report classed about 1 in 5 as lab-confirmed. A later peer-reviewed analysis using final classifications found 32 of 1,878 notified pneumonic cases (about 2%) confirmed. So for every outbreak number, including Irkutsk (cause not yet known, as of Oct 8, 2026), ask: confirmed, probable or suspected, and as of when? General information, not medical advice. Possible exposure plus fever, cough, shortness of breath or chest pain? Contact a doctor or local health authority urgently. If you're worried, talk to a health professional.",
+    "thumbnail": {
+      "headline": "3 TOOLS",
+      "highlight_word": "3",
+      "subtext": "THAT CONTROLLED IT",
+      "layout": "big-number",
+      "psychology": "Specific number: the title asks 'how', and '3 TOOLS' promises a concrete, countable answer that the video's three sections (contact tracing, preventive antibiotics, treatment centres) deliver exactly.",
+      "emotion": "Reassured curiosity: 'there's a clear method, I want to know the three steps'",
+      "hero_art": "shield",
+      "hero_face": "proud",
+      "second_art": "",
+      "second_face": "none",
+      "prop": "check",
+      "accent": "green",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 Irkutsk: status as of Oct 8\n1:37 Plague in 90 seconds\n3:04 Why 2017 was different\n4:28 Tool 1: Contact tracing\n5:47 Tool 2: Preventive antibiotics\n7:10 Tool 3: Treatment centres\n8:15 The number people misread\n9:53 What it means for Irkutsk\n10:53 Your checklist"
+  },
+  "media": {
+    "video": "L1-madagascar-2017-how-a-large-urban-pneumo.mp4",
+    "duration": 726.725,
+    "thumbnail": "L1-madagascar-2017-how-a-large-urban-pneumo-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-08T18:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "4LGmzn2n-1U",
+      "url": "https://youtu.be/4LGmzn2n-1U",
+      "published_at": "2026-10-08T18:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-10-08T02:22:55.447Z",
+  "script": {
+    "working_title": "How Madagascar Brought Pneumonic Plague Under Control in 2017 (and What It Means Now)",
+    "target_keyword": "madagascar plague 2017",
+    "hook_pattern": "Stakes + specificity (dated news decoder: Irkutsk status as of Oct 8, 2026) leading into an open loop (the easy-to-misread number inside Madagascar's 2,348 cases, paid off near the end)",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "Irkutsk: status as of Oct 8",
+        "narration": "In Irkutsk, Russia, a laboratory worker died of a severe pneumonia. Media reported it as suspected pneumonic plague.",
+        "on_screen_text": "Reported: suspected plague",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm newsroom desk with Siberia map"
+        },
+        "retention_device": "Pattern interrupt: breaking-news open with a dated, hedged status",
+        "source_ids": [
+          "S8",
+          "S9",
+          "S11"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "Irkutsk: status as of Oct 8",
+        "narration": "Russian authorities describe the death as pneumonia of unknown cause. And as of October 8, 2026, WHO says the cause is still not known.",
+        "on_screen_text": "Cause not yet known (Oct 8)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor with clipboard and question mark"
+        },
+        "retention_device": "Curiosity gap: official answer still pending",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "Irkutsk: status as of Oct 8",
+        "narration": "On October 6, WHO said Russian authorities told it that no dangerous pathogens were found in any contact, and that none had symptoms. As of October 5, media reported nearly 200 people isolated or under observation.",
+        "on_screen_text": "Oct 6: no pathogens in contacts",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~200",
+          "stat_label": "Reported contacts under observation (media, Oct 5)",
+          "stock_query": "group of people with calm health workers"
+        },
+        "retention_device": "Concrete number with dated attribution",
+        "source_ids": [
+          "S8",
+          "S11"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "Irkutsk: status as of Oct 8",
+        "narration": "So right now, plague is not confirmed. But not confirmed isn't the same as ruled out. WHO has asked Russia for more information.",
+        "on_screen_text": "Not confirmed ≠ ruled out",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Not confirmed means ruled out",
+          "fact": "Cause not yet known (WHO, Oct 8, 2026)",
+          "stock_query": "balance scale with two labels"
+        },
+        "retention_device": "Myth correction that sets up the video's reading habit",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "Irkutsk: status as of Oct 8",
+        "narration": "Which raises a bigger question. When pneumonic plague really does spread between people, in a big city, what actually brings it under control?",
+        "on_screen_text": "What brings it under control?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "busy city street from above"
+        },
+        "retention_device": "Question to the viewer that frames the whole video",
+        "source_ids": []
+      },
+      {
+        "id": "s06",
+        "section": "Irkutsk: status as of Oct 8",
+        "narration": "In 2017, Madagascar found out. WHO's November report counted 2,348 confirmed, probable and suspected plague cases, including 202 deaths, between August 1 and November 22.",
+        "on_screen_text": "Madagascar, Aug–Nov 2017",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "2,348",
+          "stat_label": "Confirmed, probable and suspected cases (WHO, 2017)",
+          "stock_query": "map of Madagascar with counter"
+        },
+        "retention_device": "Proof point: real-world scale with a dated source",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "Irkutsk: status as of Oct 8",
+        "narration": "Yet in that same report, WHO said no new confirmed pneumonic cases had been notified since November 14. No new miracle drug. Just old antibiotics used fast, and a lot of legwork.",
+        "on_screen_text": "Old tools, used fast",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "health workers walking with clipboards"
+        },
+        "retention_device": "But/therefore turn: big outbreak, ordinary solution",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "Irkutsk: status as of Oct 8",
+        "narration": "By the end of this video, you'll know the 3 tools that did it. And there's one number inside that 2,348 that's easy to misread. It changes how you read every outbreak headline, including this one.",
+        "on_screen_text": "3 tools + 1 tricky number",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Tool 1: ?",
+            "Tool 2: ?",
+            "Tool 3: ?",
+            "The easy-to-misread number"
+          ],
+          "stock_query": "locked box with question marks"
+        },
+        "retention_device": "Main open loop planted (pays off in 'The number people misread')",
+        "source_ids": []
+      },
+      {
+        "id": "s09",
+        "section": "Plague in 90 seconds",
+        "narration": "First, a quick refresher. Plague is caused by a bacterium, Yersinia pestis, which circulates in small mammals like rodents, and in their fleas.",
+        "on_screen_text": "Plague 101",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "friendly cartoon bacterium and flea"
+        },
+        "retention_device": "Chapter reset with a fast primer promise",
+        "source_ids": [
+          "S3",
+          "S4"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "Plague in 90 seconds",
+        "narration": "Most people who get plague get it from an infected flea bite. That usually causes bubonic plague, with painful, swollen lymph nodes.",
+        "on_screen_text": "Flea bite → bubonic",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon flea hopping off a rodent"
+        },
+        "retention_device": "Simple cause-effect step",
+        "source_ids": [
+          "S4",
+          "S5"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "Plague in 90 seconds",
+        "narration": "If the bacteria reach the bloodstream, that's septicemic plague. If they reach the lungs, it's pneumonic plague.",
+        "on_screen_text": "3 forms of plague",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Bubonic: lymph nodes",
+            "Septicemic: bloodstream",
+            "Pneumonic: lungs"
+          ],
+          "stock_query": "three labelled body icons"
+        },
+        "retention_device": "List visual change",
+        "source_ids": [
+          "S4",
+          "S5"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "Plague in 90 seconds",
+        "narration": "And here's the difference that matters. CDC says pneumonic plague is the only form that can spread from person to person, through respiratory droplets.",
+        "on_screen_text": "Only pneumonic spreads person-to-person",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two people talking, droplet icons"
+        },
+        "retention_device": "Key-fact emphasis: 'here's the difference that matters'",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "Plague in 90 seconds",
+        "narration": "CDC says that spread requires direct and close contact with someone who has pneumonic plague. Keep that phrase in mind, because the whole Madagascar response was built around it.",
+        "on_screen_text": "Requires direct, close contact",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two chairs close together, others far"
+        },
+        "retention_device": "Seed for later payoff (contact tracing logic)",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "Plague in 90 seconds",
+        "narration": "WHO also says pneumonic plague's incubation can be as short as 24 hours. So someone who feels fine today could be ill tomorrow.",
+        "on_screen_text": "Incubation: as short as 24 h",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar flipping one day"
+        },
+        "retention_device": "Urgency stake that explains the speed of the response",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "Plague in 90 seconds",
+        "narration": "How dangerous is it? WHO says plague is most severe in its septicemic and pneumonic forms, with a death rate of 30 to 100% if left untreated.",
+        "on_screen_text": "Untreated: severe",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "30–100%",
+          "stat_label": "Untreated death rate, septicemic and pneumonic (WHO)",
+          "stock_query": "warning sign on hospital chart"
+        },
+        "retention_device": "Shock stat, immediately balanced in next scene",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "Plague in 90 seconds",
+        "narration": "But here's the hopeful part. For pneumonic plague, WHO says recovery rates are high if it's detected and treated within 24 hours of symptoms starting.",
+        "on_screen_text": "Treated within 24 h: high recovery",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "24 h",
+          "stat_label": "Treatment window for high recovery (WHO)",
+          "stock_query": "stopwatch next to medicine bottle"
+        },
+        "retention_device": "But-turn from fear to hope",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "Plague in 90 seconds",
+        "narration": "Hold onto that 24-hour window. Madagascar's whole strategy was a race against it.",
+        "on_screen_text": "A race against the clock",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "health workers racing a giant clock"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s18",
+        "section": "Why 2017 was different",
+        "narration": "Plague wasn't new to Madagascar. In 2017, WHO said the country reports around 400 cases a year, mainly bubonic.",
+        "on_screen_text": "~400 cases a year, mainly bubonic (WHO, 2017)",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "Madagascar map with calm highland hills"
+        },
+        "retention_device": "Chapter card with context number",
+        "source_ids": [
+          "S10"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "Why 2017 was different",
+        "narration": "But 2017 broke the pattern. WHO said this outbreak started earlier than the usual plague season, and it was affecting large urban areas.",
+        "on_screen_text": "Earlier, and in cities",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar and city skyline"
+        },
+        "retention_device": "But-turn: the pattern breaks",
+        "source_ids": [
+          "S10"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Why 2017 was different",
+        "narration": "Those included the capital, Antananarivo, and the port city of Toamasina. A later peer-reviewed outbreak report called it an urban plague epidemic.",
+        "on_screen_text": "Antananarivo + Toamasina",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two city pins on Madagascar map"
+        },
+        "retention_device": "Concrete place names make it vivid",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Why 2017 was different",
+        "narration": "And this time, most cases were pneumonic. Of the 2,348 cases in WHO's November report, 1,791, about 3 in 4, were classified as pneumonic plague.",
+        "on_screen_text": "3 in 4 classed pneumonic",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "76%",
+          "stat_label": "Cases classed pneumonic (WHO, to Nov 22, 2017)",
+          "stock_query": "pie chart with lungs icon"
+        },
+        "retention_device": "Surprising stat escalates the stakes",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Why 2017 was different",
+        "narration": "Why does that matter? A bubonic case doesn't pass from person to person unless the infection reaches the lungs. A pneumonic case in a crowded city can, with close contact.",
+        "on_screen_text": "Crowds + pneumonic = risk",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "crowded market street cartoon"
+        },
+        "retention_device": "Question then answer",
+        "source_ids": [
+          "S4",
+          "S5"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Why 2017 was different",
+        "narration": "How did it reach the cities? The first identified patient was a man who fell ill while travelling by shared taxi from the central highlands toward the east coast, and died on the way.",
+        "on_screen_text": "A shared-taxi journey",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "minibus on a highland road"
+        },
+        "retention_device": "Micro-story about the first identified patient",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Why 2017 was different",
+        "narration": "From there, chains of person-to-person spread followed, which is exactly what pneumonic plague can do with close contact.",
+        "on_screen_text": "Chains of spread",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "connected dots forming a chain"
+        },
+        "retention_device": "Escalation: the problem grows",
+        "source_ids": [
+          "S7",
+          "S4"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "Why 2017 was different",
+        "narration": "So here's the puzzle. The one form of plague that can spread between people, in two big cities. Why didn't it just keep growing?",
+        "on_screen_text": "Why didn't it keep growing?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "puzzle pieces over city map"
+        },
+        "retention_device": "Re-hook: open question before the 3 tools",
+        "source_ids": []
+      },
+      {
+        "id": "s26",
+        "section": "Tool 1: Contact tracing",
+        "narration": "The first tool is the least glamorous one: contact tracing.",
+        "on_screen_text": "Tool 1: Contact tracing",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "magnifying glass over a contact list"
+        },
+        "retention_device": "Payoff begins: first of three tools revealed",
+        "source_ids": []
+      },
+      {
+        "id": "s27",
+        "section": "Tool 1: Contact tracing",
+        "narration": "The logic is simple. CDC says person-to-person spread of pneumonic plague requires direct and close contact with someone who's ill. So if you find everyone who had that contact, you can get ahead of the next case.",
+        "on_screen_text": "Find contacts, get ahead",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "health worker drawing a contact web"
+        },
+        "retention_device": "Callback to the 'close contact' phrase planted earlier",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Tool 1: Contact tracing",
+        "narration": "In Madagascar, teams identified the contacts of cases and followed them up. WHO reported 7,289 contacts identified by late November 2017, and all had completed preventive antibiotics.",
+        "on_screen_text": "7,289 contacts identified (WHO, Nov 2017)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "7,289",
+          "stat_label": "Contacts identified, all completed preventive antibiotics",
+          "stock_query": "teams knocking on colourful doors"
+        },
+        "retention_device": "Scale detail with a hard number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "Tool 1: Contact tracing",
+        "narration": "Follow-up means checking on each person and watching for fever or cough, so anyone who gets sick is found and treated fast, ideally inside that 24-hour window.",
+        "on_screen_text": "Watch for fever or cough",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "health worker checking on family"
+        },
+        "retention_device": "Callback to the 24-hour window",
+        "source_ids": [
+          "S3",
+          "S1"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Tool 1: Contact tracing",
+        "narration": "Think of it like smoke detectors in every room next to a fire. You don't wait to see flames. You watch the rooms the fire could reach.",
+        "on_screen_text": "Smoke detectors, not firefighters",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "house with smoke detectors glowing"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": []
+      },
+      {
+        "id": "s31",
+        "section": "Tool 1: Contact tracing",
+        "narration": "Every contact found early is a chain of transmission that may never get started.",
+        "on_screen_text": "Break the chain early",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "chain link being snipped"
+        },
+        "retention_device": "Punchy summary line",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Tool 1: Contact tracing",
+        "narration": "Contact monitoring is the same basic approach being used in Irkutsk. As of October 6, WHO said Russian authorities reported that none of the contacts had symptoms.",
+        "on_screen_text": "Irkutsk: contacts monitored",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm clinic waiting room"
+        },
+        "retention_device": "Link back to the news hook",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Tool 1: Contact tracing",
+        "narration": "But with a germ this fast, watching alone isn't enough. Madagascar added a second layer, and it's the one people most often get wrong.",
+        "on_screen_text": "Layer 2: often misunderstood",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "second shield sliding into place"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s34",
+        "section": "Tool 2: Preventive antibiotics",
+        "narration": "Tool two: preventive antibiotics, given by health authorities.",
+        "on_screen_text": "Tool 2: Preventive antibiotics",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "medicine box with official badge"
+        },
+        "retention_device": "Second tool revealed",
+        "source_ids": []
+      },
+      {
+        "id": "s35",
+        "section": "Tool 2: Preventive antibiotics",
+        "narration": "Because plague is bacterial, common antibiotics can treat it, especially when they're started early.",
+        "on_screen_text": "Bacterial = antibiotics work early",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "antibiotic capsules surrounding bacteria"
+        },
+        "retention_device": "Reassuring fact",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Tool 2: Preventive antibiotics",
+        "narration": "And CDC guidance says preventive antibiotics should be considered for people who had close, sustained contact with someone with pneumonic plague without adequate protective equipment. A clinician or health authority makes that call.",
+        "on_screen_text": "Close contacts: antibiotics considered",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor handing medicine to patient"
+        },
+        "retention_device": "Named-agency attribution",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Tool 2: Preventive antibiotics",
+        "narration": "On October 6, 2017, WHO said it had delivered nearly 1.2 million doses of antibiotics to Madagascar, and released 1.5 million US dollars in emergency funds.",
+        "on_screen_text": "1.2 million doses delivered",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "1.2M",
+          "stat_label": "Antibiotic doses WHO delivered (Oct 6, 2017)",
+          "stock_query": "cargo plane unloading medicine boxes"
+        },
+        "retention_device": "Big surprising number",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "Tool 2: Preventive antibiotics",
+        "narration": "WHO said those supplies could treat up to 5,000 patients and protect up to 100,000 people who might be exposed.",
+        "on_screen_text": "Treat 5,000 · protect 100,000",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Treat up to 5,000 patients",
+            "Protect up to 100,000 people",
+            "Source: WHO, Oct 6, 2017"
+          ],
+          "stock_query": "stacks of medicine boxes"
+        },
+        "retention_device": "Concrete numbers with comparator",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "Tool 2: Preventive antibiotics",
+        "narration": "Notice how this worked. Health authorities decided who needed antibiotics, based on who had been in contact. Not stockpiles at home.",
+        "on_screen_text": "Health authorities decide",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "official health team at a table"
+        },
+        "retention_device": "'Notice' pattern draws attention to the key nuance",
+        "source_ids": [
+          "S1",
+          "S2",
+          "S6"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "Tool 2: Preventive antibiotics",
+        "narration": "So if you've heard you should stockpile antibiotics just in case, that's not how outbreaks are controlled. Which drug, for whom, and for how long is a clinical decision. If you think you've been exposed, contact a doctor or local health authority urgently.",
+        "on_screen_text": "Exposed? Call a doctor urgently",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Keep antibiotics at home, just in case",
+          "fact": "Clinicians and health authorities decide who needs preventive antibiotics",
+          "stock_query": "phone call to a doctor"
+        },
+        "retention_device": "Myth attack on a belief viewers may hold",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "Tool 2: Preventive antibiotics",
+        "narration": "Contacts covered. But what about the people who were already sick? That's where the 24-hour clock comes back.",
+        "on_screen_text": "Already sick?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "clock ticking over hospital door"
+        },
+        "retention_device": "Re-hook and callback to the 24-hour loop",
+        "source_ids": []
+      },
+      {
+        "id": "s42",
+        "section": "Tool 3: Treatment centres",
+        "narration": "Tool three: fast treatment, in dedicated centres.",
+        "on_screen_text": "Tool 3: Treatment centres",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "clean field hospital tent"
+        },
+        "retention_device": "Third tool revealed",
+        "source_ids": []
+      },
+      {
+        "id": "s43",
+        "section": "Tool 3: Treatment centres",
+        "narration": "WHO reported that partners helped set up plague treatment centres in Madagascar. Centres like these let patients get care quickly, away from their households.",
+        "on_screen_text": "Fast care, away from home",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "nurses in tidy treatment ward"
+        },
+        "retention_device": "Concrete response detail",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Tool 3: Treatment centres",
+        "narration": "That does two jobs at once. The patient gets antibiotics quickly, and the droplets that could infect family members stay away from the family.",
+        "on_screen_text": "Two jobs at once",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "family waving through clinic window"
+        },
+        "retention_device": "Simple two-part explanation",
+        "source_ids": [
+          "S4",
+          "S3"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "Tool 3: Treatment centres",
+        "narration": "Testing mattered too. The Institut Pasteur de Madagascar's plague laboratory handled laboratory confirmation.",
+        "on_screen_text": "Lab confirmation",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist with microscope in lab"
+        },
+        "retention_device": "Seeds the confirmed-vs-suspected payoff",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "Tool 3: Treatment centres",
+        "narration": "Now look at the outcome. WHO's November report gave a case fatality rate of 8.6%: 202 deaths among all reported cases.",
+        "on_screen_text": "8.6% of all reported cases",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "8.6%",
+          "stat_label": "Case fatality, incl. suspected cases (WHO 2017)",
+          "stock_query": "bar chart on a whiteboard"
+        },
+        "retention_device": "Surprising stat versus the earlier 30–100%",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "Tool 3: Treatment centres",
+        "narration": "WHO judged the risk moderate within Madagascar, and low at regional and global levels. Nine countries and territories with travel and trade links were made priorities for plague preparedness.",
+        "on_screen_text": "WHO 2017: national moderate, global low",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "globe with calm green dots"
+        },
+        "retention_device": "Reassurance with named attribution",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "Tool 3: Treatment centres",
+        "narration": "Compare 8.6% with WHO's 30 to 100% for untreated severe plague. The gap is striking. But 8.6% hides a catch, and it's the number I promised you.",
+        "on_screen_text": "8.6% hides a catch",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over a percentage"
+        },
+        "retention_device": "'But here's where it gets weird' re-hook into the main payoff",
+        "source_ids": [
+          "S1",
+          "S3"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "The number people misread",
+        "narration": "Remember that total of 2,348 cases? Here's the twist.",
+        "on_screen_text": "The easy-to-misread number",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "big number cracking open"
+        },
+        "retention_device": "Main open loop payoff begins",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "The number people misread",
+        "narration": "Those weren't 2,348 lab-confirmed plague infections. WHO's count combined 3 categories: confirmed, probable and suspected.",
+        "on_screen_text": "Confirmed · Probable · Suspected",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "three labelled folders on desk"
+        },
+        "retention_device": "Reveal",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "The number people misread",
+        "narration": "Of the 1,791 pneumonic cases, WHO's November report classed 22% as confirmed, 34% as probable and 44% as suspected.",
+        "on_screen_text": "1,791 pneumonic cases, split",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "22% confirmed",
+            "34% probable",
+            "44% suspected",
+            "WHO, Aug 1–Nov 22, 2017"
+          ],
+          "stock_query": "stacked blocks in three colours"
+        },
+        "retention_device": "Hard numbers that surprise",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "The number people misread",
+        "narration": "So in WHO's November count, about 1 in 5 pneumonic cases was lab-confirmed, and more than 4 in 10 were suspected.",
+        "on_screen_text": "About 1 in 5 lab-confirmed",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "22%",
+          "stat_label": "Pneumonic cases confirmed (WHO, to Nov 22, 2017)",
+          "stock_query": "five figures, one highlighted"
+        },
+        "retention_device": "Surprising stat, with a sharper one coming next",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "The number people misread",
+        "narration": "But a later peer-reviewed analysis, using final classifications, found even fewer: 32 of 1,878 notified pneumonic cases, about 2%, were confirmed, and 386, about 21%, were probable.",
+        "on_screen_text": "Final analysis: about 2% confirmed",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "2%",
+          "stat_label": "Pneumonic cases confirmed, final analysis (2019)",
+          "stock_query": "magnifier over tiny highlighted block"
+        },
+        "retention_device": "Most surprising stat saved for last",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "The number people misread",
+        "narration": "A suspected case is someone whose symptoms and circumstances fit the case definition. During an outbreak, people with other respiratory illnesses can fit that definition too, which is why lab confirmation matters.",
+        "on_screen_text": "Suspected ≠ confirmed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "queue of people at clinic door"
+        },
+        "retention_device": "Explains the twist",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "The number people misread",
+        "narration": "That's the point of a wide net. It can catch real cases early, inside the 24-hour window. The trade-off is that the headline number looks bigger than the confirmed one.",
+        "on_screen_text": "Wide net, bigger headline",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "fishing net catching many fish"
+        },
+        "retention_device": "Callback to the 24-hour loop",
+        "source_ids": [
+          "S1",
+          "S3"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "The number people misread",
+        "narration": "It also affects the death rate. The 8.6% was calculated across all categories, so it isn't a clean measure of plague alone.",
+        "on_screen_text": "8.6% includes suspected cases",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calculator next to mixed folders"
+        },
+        "retention_device": "Pays off the 'catch' in 8.6%",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "The number people misread",
+        "narration": "So here's the habit to take away. With any outbreak number, ask: confirmed, probable or suspected, and as of when?",
+        "on_screen_text": "Confirmed? Suspected? As of when?",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Confirmed?",
+            "Probable?",
+            "Suspected?",
+            "As of what date?"
+          ],
+          "stock_query": "checklist on a phone screen"
+        },
+        "retention_device": "Main loop payoff turned into a reusable habit",
+        "source_ids": [
+          "S1",
+          "S7"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "What it means for Irkutsk",
+        "narration": "So what does Madagascar tell us about Irkutsk?",
+        "on_screen_text": "Madagascar → Irkutsk",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "two map pins joined by a line"
+        },
+        "retention_device": "New loop: apply the lesson to the news",
+        "source_ids": []
+      },
+      {
+        "id": "s59",
+        "section": "What it means for Irkutsk",
+        "narration": "First, scale. Madagascar had thousands of reported cases across crowded cities. In Irkutsk, what's been reported is one death, with the cause not yet known, and, as of October 5, nearly 200 people under observation.",
+        "on_screen_text": "Very different scale",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "big crowd versus single chair"
+        },
+        "retention_device": "Contrast that names both sides",
+        "source_ids": [
+          "S1",
+          "S9",
+          "S11"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "What it means for Irkutsk",
+        "narration": "Second, the tools are the same: tracing contacts, preventive antibiotics when health authorities judge they're needed, and fast treatment for anyone who falls ill.",
+        "on_screen_text": "Same 3 tools",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Trace contacts",
+            "Preventive antibiotics (via health authorities)",
+            "Fast treatment"
+          ],
+          "stock_query": "three tool icons on a shelf"
+        },
+        "retention_device": "Recap of the 3 tools",
+        "source_ids": [
+          "S6",
+          "S3"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "What it means for Irkutsk",
+        "narration": "Third, the signals so far. As of October 6, WHO said Russian authorities reported no dangerous pathogens in any contact, and no symptoms.",
+        "on_screen_text": "Oct 6: no pathogens in contacts",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "green checkmarks on a clipboard"
+        },
+        "retention_device": "Dated status update",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "What it means for Irkutsk",
+        "narration": "Still, the honest status is: cause not yet known, with WHO seeking more information. Not confirmed isn't ruled out, so we'll keep dating every update.",
+        "on_screen_text": "Oct 8 status: cause not yet known",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar with pinned status note"
+        },
+        "retention_device": "Callback to the opening hedge",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "What it means for Irkutsk",
+        "narration": "And if plague were ever confirmed there, Madagascar shows that a far larger pneumonic outbreak was brought under control with tools that already exist.",
+        "on_screen_text": "Tools that already exist",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "toolbox opening with soft light"
+        },
+        "retention_device": "Reassuring payoff of the opening question",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "Your checklist",
+        "narration": "Here's your practical checklist.",
+        "on_screen_text": "Your checklist",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "clipboard with blue checkmarks"
+        },
+        "retention_device": "Chapter card signals practical value",
+        "source_ids": []
+      },
+      {
+        "id": "s65",
+        "section": "Your checklist",
+        "narration": "Person-to-person spread of pneumonic plague needs direct, close contact. Antibiotics work best when started early. Preventive antibiotics for contacts are decided by clinicians or health authorities. And every number deserves the question: confirmed or suspected?",
+        "on_screen_text": "4 things to remember",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Person-to-person: close contact",
+            "Early antibiotics matter",
+            "Contacts: via health authorities",
+            "Confirmed or suspected?"
+          ],
+          "stock_query": "four sticky notes on a board"
+        },
+        "retention_device": "Takeaway list",
+        "source_ids": [
+          "S4",
+          "S3",
+          "S6",
+          "S1"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "Your checklist",
+        "narration": "If you've possibly been exposed, say close contact with someone who has suspected pneumonic plague, or time in an area where plague occurs, know the warning signs.",
+        "on_screen_text": "Possible exposure? Know the signs",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person reading a health leaflet"
+        },
+        "retention_device": "Direct 'you' address",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "Your checklist",
+        "narration": "CDC lists fever, headache and weakness, with a rapidly developing pneumonia: shortness of breath, chest pain and cough.",
+        "on_screen_text": "Fever · cough · breathless · chest pain",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fever, headache, weakness",
+            "Shortness of breath",
+            "Chest pain",
+            "Cough"
+          ],
+          "stock_query": "symptom icons on a card"
+        },
+        "retention_device": "Full CDC warning-sign list",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "Your checklist",
+        "narration": "With possible exposure and those symptoms, contact a doctor or local health authority urgently. Don't self-treat, and don't wait it out.",
+        "on_screen_text": "Contact a doctor urgently",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person calling a clinic"
+        },
+        "retention_device": "Clear action with urgency",
+        "source_ids": [
+          "S5",
+          "S3"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "Your checklist",
+        "narration": "For status updates, go to official sources like WHO and national health authorities, not screenshots or rumours.",
+        "on_screen_text": "Official sources first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "laptop showing official health website"
+        },
+        "retention_device": "Practical media-literacy tip",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "Your checklist",
+        "narration": "And if you're worried, talk to a health professional. That's exactly what they're there for.",
+        "on_screen_text": "Worried? Talk to a professional",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly doctor listening to patient"
+        },
+        "retention_device": "Warm reassurance before CTA",
+        "source_ids": []
+      },
+      {
+        "id": "s71",
+        "section": "Your checklist",
+        "narration": "Next, we're going inside high-containment labs: how they keep dangerous bacteria in, and what happens after a lab exposure. Subscribe so you catch it, with every status update dated.",
+        "on_screen_text": "Next: inside high-containment labs",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "clean lab with sealed doors"
+        },
+        "retention_device": "Forward open loop tied to the next benefit",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Plague – Madagascar (Disease Outbreak News, 27 November 2017)",
+        "publisher": "World Health Organization",
+        "year": "2017",
+        "url": "https://www.who.int/emergencies/disease-outbreak-news/item/27-november-2017-plague-madagascar-en"
+      },
+      {
+        "id": "S2",
+        "title": "WHO provides 1.2 million antibiotics to fight plague in Madagascar",
+        "publisher": "World Health Organization",
+        "year": "2017",
+        "url": "https://www.who.int/mediacentre/news/releases/2017/antibiotics-plague-madagascar/en/"
+      },
+      {
+        "id": "S3",
+        "title": "Plague (fact sheet, last updated 29 September 2026)",
+        "publisher": "World Health Organization",
+        "year": "2026",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      },
+      {
+        "id": "S4",
+        "title": "How Plague Spreads",
+        "publisher": "US Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/causes/index.html"
+      },
+      {
+        "id": "S5",
+        "title": "Symptoms of Plague",
+        "publisher": "US Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      },
+      {
+        "id": "S6",
+        "title": "Antimicrobial Treatment and Prophylaxis of Plague: Recommendations for Naturally Acquired Infections and Bioterrorism Response (Nelson CA et al., MMWR Recomm Rep 70(3))",
+        "publisher": "US Centers for Disease Control and Prevention",
+        "year": "2021",
+        "url": "https://www.cdc.gov/mmwr/volumes/70/rr/rr7003a1.htm"
+      },
+      {
+        "id": "S7",
+        "title": "Epidemiological characteristics of an urban plague epidemic in Madagascar, August–November, 2017: an outbreak report (Randremanana R et al.)",
+        "publisher": "The Lancet Infectious Diseases",
+        "year": "2019",
+        "url": "https://doi.org/10.1016/S1473-3099(18)30730-8"
+      },
+      {
+        "id": "S8",
+        "title": "Irkutsk suspected plague death: WHO briefing (spokesperson Christian Lindmeier)",
+        "publisher": "UN Geneva Newsroom",
+        "year": "2026",
+        "url": "https://www.unognewsroom.org/story/en/3289/irkutsk-suspected-plague-death-who"
+      },
+      {
+        "id": "S9",
+        "title": "Russia dismisses reports of second plague case as false information",
+        "publisher": "Al Jazeera",
+        "year": "2026",
+        "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information"
+      },
+      {
+        "id": "S10",
+        "title": "WHO scales up response to plague in Madagascar",
+        "publisher": "World Health Organization",
+        "year": "2017",
+        "url": "https://www.who.int/mediacentre/news/releases/2017/response-plague-madagascar/en/"
+      },
+      {
+        "id": "S11",
+        "title": "Plague Scare In Russia: Nearly 200 Isolated In Siberia After Laboratory Worker Dies",
+        "publisher": "Outlook India",
+        "year": "2026",
+        "url": "https://www.outlookindia.com/international/plague-scare-in-russia-nearly-200-isolated-in-siberia-after-laboratory-worker-dies"
+      }
+    ],
+    "cta": "Next, we're going inside high-containment labs: how they keep dangerous bacteria in, and what happens after a lab exposure. Subscribe to @InforMedLab so you catch it, with every status update dated. This video is general information, not medical advice. If you're worried, talk to a health professional, and if you may have been exposed and have symptoms, contact a doctor or local health authority urgently."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "I checked all 11 sources and they all exist. The Madagascar figures match WHO's 27 November 2017 outbreak report: 2,348 cases, 202 deaths, a death rate of 8.6% across all reported cases, and 1,791 pneumonic cases. Of those, 22% were confirmed, 34% probable and 44% suspected. The report also gives 7,289 contacts who all completed preventive antibiotics, no new confirmed pneumonic cases after 14 November, and a risk rating of moderate within Madagascar and low at regional and global levels, with nine priority countries and territories. WHO's 6 October 2017 release confirms about 1.2 million doses (1,190,000), US$1.5 million in emergency funds, and supplies to treat up to 5,000 patients and protect up to 100,000 people. The Lancet Infectious Diseases 2019 paper confirms 32 of 1,878 pneumonic cases confirmed (2%), 386 probable (21%), and the first patient who died travelling by bush taxi from the Central Highlands toward Toamasina.\n\nThe WHO fact sheet (updated 29 September 2026) supports incubation as short as 24 hours, a 30–100% death rate if untreated, and high recovery when treated within 24 hours of symptoms. CDC's pages match the script's wording: pneumonic is the only form that spreads between people, spread requires direct and close contact, and the symptom list is complete. CDC's guidance says preventive antibiotics \"should be considered\" for close, sustained contact without adequate protective equipment, which the script reflects.\n\nThe Irkutsk status matches the sources. On 6 October 2026, WHO via UN Geneva said Russia reported no dangerous pathogens in any contact and no symptoms, and that no cause of death has been officially confirmed. On 8 October, Russia described it as \"pneumonia of unknown aetiology\" and WHO said it doesn't know the cause and wants information (Al Jazeera). Outlook India reported nearly 200 contacts on 5 October. A tracker site claims Russia told WHO there was \"no plague in her or anyone else\" and released all contacts. I couldn't confirm that in any WHO or UN source, so the script is right to leave it out.\n\nThe script handles framing and safety well: it dates every status, says not confirmed isn't ruled out, explains that 8.6% includes suspected cases, carries the no-self-treatment and no-stockpiling message, and includes the urgent-care and talk-to-a-health-professional lines. Only minor wording fixes remain. Re-check the Irkutsk status against WHO and Russian official sources at publish time.",
+    "issues": [
+      {
+        "location": "s27",
+        "claim": "Pneumonic plague spreads only through close contact with someone who's ill.",
+        "problem": "This widens the claim beyond CDC's wording. CDC is talking about spread between people, and says it needs direct and close contact with the person or animal that has pneumonic plague. For example, people can catch it from infected cats.",
+        "severity": "minor",
+        "fix": "The logic is simple. CDC says person-to-person spread of pneumonic plague requires direct and close contact with someone who's ill. So if you find everyone who had that contact, you can get ahead of the next case."
+      },
+      {
+        "location": "s43",
+        "claim": "WHO reported that Madagascar's response included plague treatment centres, where patients could be cared for and kept apart from others.",
+        "problem": "WHO's report says IFRC, UNICEF and USAID supported case management, including setting up plague treatment centres. It doesn't explicitly say the centres were for isolation. 'Kept apart from others' is our own inference, but the sentence credits it to WHO.",
+        "severity": "minor",
+        "fix": "WHO reported that partners helped set up plague treatment centres in Madagascar. Centres like these let patients get care quickly, away from their households."
+      },
+      {
+        "location": "s54",
+        "claim": "During a frightening outbreak, people with ordinary chest infections can fit that definition too.",
+        "problem": "This is reasonable, but the sources don't say it directly. Hedge it so it reads as an explanation, not a sourced finding.",
+        "severity": "minor",
+        "fix": "A suspected case is someone whose symptoms and circumstances fit the case definition. During an outbreak, people with other respiratory illnesses can fit that definition too, which is why lab confirmation matters."
+      },
+      {
+        "location": "s01 source_ids",
+        "claim": "Media reported it as suspected pneumonic plague.",
+        "problem": "The scene cites S8 and S9. The media report is best supported by S11 (Outlook India, 5 Oct 2026), which this scene doesn't cite.",
+        "severity": "minor",
+        "fix": "Change source_ids to [\"S8\", \"S9\", \"S11\"]."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "Plague – Madagascar (Disease Outbreak News, 27 November 2017)",
+        "publisher": "World Health Organization",
+        "year": "2017",
+        "url": "https://www.who.int/emergencies/disease-outbreak-news/item/27-november-2017-plague-madagascar-en"
+      },
+      {
+        "id": "S2",
+        "title": "WHO provides 1.2 million antibiotics to fight plague in Madagascar",
+        "publisher": "World Health Organization",
+        "year": "2017",
+        "url": "https://www.who.int/mediacentre/news/releases/2017/antibiotics-plague-madagascar/en/"
+      },
+      {
+        "id": "S3",
+        "title": "Plague (fact sheet, last updated 29 September 2026)",
+        "publisher": "World Health Organization",
+        "year": "2026",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      },
+      {
+        "id": "S4",
+        "title": "How Plague Spreads",
+        "publisher": "US Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/causes/index.html"
+      },
+      {
+        "id": "S5",
+        "title": "Symptoms of Plague",
+        "publisher": "US Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      },
+      {
+        "id": "S6",
+        "title": "Antimicrobial Treatment and Prophylaxis of Plague: Recommendations for Naturally Acquired Infections and Bioterrorism Response (Nelson CA et al., MMWR Recomm Rep 70(3))",
+        "publisher": "US Centers for Disease Control and Prevention",
+        "year": "2021",
+        "url": "https://www.cdc.gov/mmwr/volumes/70/rr/rr7003a1.htm"
+      },
+      {
+        "id": "S7",
+        "title": "Epidemiological characteristics of an urban plague epidemic in Madagascar, August–November, 2017: an outbreak report (Randremanana R et al.)",
+        "publisher": "The Lancet Infectious Diseases",
+        "year": "2019",
+        "url": "https://doi.org/10.1016/S1473-3099(18)30730-8"
+      },
+      {
+        "id": "S8",
+        "title": "Irkutsk suspected plague death: WHO briefing (spokesperson Christian Lindmeier)",
+        "publisher": "UN Geneva Newsroom",
+        "year": "2026",
+        "url": "https://www.unognewsroom.org/story/en/3289/irkutsk-suspected-plague-death-who"
+      },
+      {
+        "id": "S9",
+        "title": "Russia dismisses reports of second plague case as false information",
+        "publisher": "Al Jazeera",
+        "year": "2026",
+        "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information"
+      },
+      {
+        "id": "S10",
+        "title": "WHO scales up response to plague in Madagascar",
+        "publisher": "World Health Organization",
+        "year": "2017",
+        "url": "https://www.who.int/mediacentre/news/releases/2017/response-plague-madagascar/en/"
+      },
+      {
+        "id": "S11",
+        "title": "Plague Scare In Russia: Nearly 200 Isolated In Siberia After Laboratory Worker Dies",
+        "publisher": "Outlook India",
+        "year": "2026",
+        "url": "https://www.outlookindia.com/international/plague-scare-in-russia-nearly-200-isolated-in-siberia-after-laboratory-worker-dies"
+      },
+      {
+        "id": "S12",
+        "title": "Testing and monitoring underway in suspected Russia plague death",
+        "publisher": "UN News",
+        "year": "2026",
+        "url": "https://news.un.org/en/story/2026/10/1168533"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.021,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 7.1,
+      "weakShots": 9,
+      "layoutIssues": 1,
+      "frameIssues": [],
+      "notes": [
+        "The 'Lungs' label sits right at the bottom edge of frame (flagged off-screen, box bottom y=1089 on a 1080 canvas), risking clipping on some players.",
+        "Opens on a single magnifying-glass icon centered on a plain teal gradient with the headline — violates the 'no lone icon on plain gradient' rule, leaving a mostly empty frame for ~3s.",
+        "Automated audit flags 'Confirmed'/'Ruled out' tag text at ~26px, below the 40px floor; the visible 'Fever'/'Cough' chips are also on the small side relative to headline weight elsewhere.",
+        "The 'Alarms' label under the bell icons renders at roughly 22px, hard to read at a glance.",
+        "The 'Daily checks' tag under the thermometer icon is noticeably smaller than other labels in the same scene (~26px).",
+        "'Plague bacteria' label is only ~23px, hard to read on a phone in under a second against the busy red blood-cell background.",
+        "Speech bubble 'Bacteria? My specialty.' is cute but the scene is fairly dense with ~8 bacteria which competes with the label.",
+        "'Plague bacteria' and 'Start early' tag labels are tiny (~23px) and sit on a busy red cell background, hard to read quickly.",
+        "'CDC Guidance' chip sits over a near-empty room with a single character; artwork covers well under 25% of the frame, leaving large dead space on the right.",
+        "The 'Clinician' label at the bottom is cropped by the frame edge (sits right at the safe-area boundary), making it unreadable.",
+        "Single globe icon labeled 'Madagascar' on a plain orange gradient — artwork covers roughly 10-12% of the frame, a dead, empty composition (matches the automated 'sparse' flag).",
+        "Frame holds on two chips ('Treat: up to 5,000' / 'Protect: up to 100,000') with no hero art at all on a plain orange gradient — violates the 'never hold a chips-only frame' rule.",
+        "Chips 'Which drug' / 'For whom' float over a near-empty gradient with only a tiny clinician and pill below — artwork covers well under 25% of the frame.",
+        "'Confirmed' and 'Ruled out' tag labels under the X and '?' icons are tiny (~24-26px per the layout audit) and hard to read quickly, repeating an issue flagged elsewhere in this video.",
+        "At 182.5s the frame shows a home/bed/doctor scene with a 'Home' label but no visible headline ('Race against 24 h') or any large text anchoring the idea — viewer has no caption to read in the first second of the shot."
+      ],
+      "layoutKinds": {
+        "offscreen": 12,
+        "tiny": 18,
+        "sparse": 9
+      }
+    },
+    "audio": {
+      "musicGain": 0.288,
+      "sfxGain": 0.55,
+      "finalWer": 0.008,
+      "maskingDelta": 0.008,
+      "lufs": -15.1,
+      "soundNotes": "Music is already close to target (-13.5 dB under voice, -13.2 in pauses); a small -0.7 dB trim keeps it from ever crowding the narrator while still swelling nicely in the pauses. The big fixes are a handful of cues that measured far louder than the voice during speech (a bubble at -5.1 dB, a pop at -3.9 dB, blips at -5 to -7 dB, several swooshes at -7 to -10 dB) — these have been pulled down into the -14 to -20 dB \"felt\" zone. I also thinned the dense 606-607s cluster (6 overlapping swooshes/ding in under a second) down to 3 and trimmed a redundant blip in the 517-519s burst. Added five bespoke story-moment sounds (news-alert throb on the cold open, a tense heartbeat on \"race against 24h,\" taxi-interior ambience for the shared-taxi exposure story, a quiet hospital-corridor bed for the treatment-centres section, and a calm resolving chime into the outro/teaser) to add texture the stock kit can't give without ever competing with the voice."
+    },
+    "blocking": [],
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": [
+            "mascot smile may read as slightly too cheerful for an outbreak topic, but shield/safety framing stays reassuring not trivializing"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 7,
+          "legibility": 9,
+          "issues": [
+            "'Early wins' + plague-vs-antibiotics doesn't visually tie to Madagascar or the 'how did they stop it' narrative as tightly as #0; reads as a generic treatment message more than an outbreak-response story"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "'The misread number' curiosity gap doesn't match the title's promise ('how did Madagascar stop the outbreak') and risks feeling like a bait-and-switch/clickbait tangent since title never mentions a number to misread"
+          ]
+        }
+      ],
+      "best_index": 0,
+      "reasoning": "All three are fully legible at phone size with clean, uncluttered text (≤2 lines, large bold type, no cropping). #0 ('3 TOOLS') most directly pays off the title's explicit 'How did...stop it?' question with a concrete, countable promise, which the playbook's data favors (specific, concrete hooks over vague teases). The friendly shield mascot keeps it reassuring rather than alarmist, in line with brand tone. #1 ('EARLY WINS' vs plague/antibiotics) is clear and emotionally resolves well, but it frames a general treatment-works message rather than the Madagascar outbreak-response story the title promises, making it a slightly weaker match to the curiosity gap set up by the title. #2 ('THE MISREAD NUMBER') has the strongest curiosity gap in isolation, but it doesn't connect to the title's actual question about stopping the outbreak — a viewer could feel the thumbnail oversells an unrelated angle, bordering on a mismatch between title and thumbnail promise. Given equal legibility, #0 offers the best combination of relevance, specificity and honest curiosity pull."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "pinned_comment, sentence 3",
+          "claim": "A later peer-reviewed analysis using final classifications found about 2% confirmed.",
+          "problem": "This drops the scope and denominator given in the verified script (32 of 1,878 notified pneumonic cases). Right after the 1,791 figure, a reader could take the 2% as a share of WHO's 1,791, or of all plague cases.",
+          "severity": "minor",
+          "fix": "A later peer-reviewed analysis using final classifications found 32 of 1,878 notified pneumonic cases (about 2%) confirmed."
+        },
+        {
+          "location": "description, sentence 2",
+          "claim": "WHO reports point to 3 tools: contact tracing, preventive antibiotics given by health authorities, and fast care in dedicated treatment centres.",
+          "problem": "The 3-tools framing is ours. WHO reports describe each measure, but WHO doesn't name '3 tools', so this line credits our summary to WHO.",
+          "severity": "minor",
+          "fix": "WHO reports describe the 3 tools in this video: contact tracing, preventive antibiotics given by health authorities, and fast care in dedicated treatment centres."
+        },
+        {
+          "location": "title",
+          "claim": "How Did Madagascar Stop Its 2017 Pneumonic Plague Outbreak?",
+          "problem": "'Stop' is a little stronger than the verified content, which says the outbreak was 'brought under control' and cites WHO saying no new confirmed pneumonic cases had been notified since Nov 14.",
+          "severity": "minor",
+          "fix": "How Did Madagascar Bring Its 2017 Pneumonic Plague Outbreak Under Control?"
+        }
+      ]
+    }
+  },
+  "hold_reason": "Quality check: narration doesn't match script in 1 scene(s): expected \"tool three fast treatment in dedicated centers\" heard \"\"",
+  "release_tag": "content-2026-10-08",
+  "archive_url": "b2://informed-lab-media/content/2026-10-08/L1-madagascar-2017-how-a-large-urban-pneumo/",
+  "approved_by": "editor-in-chief (low risk): The hold is one short section line that speech-to-text didn't pick up. Overall narration error is low (0.8% after the audio fix), the music doesn't cover the voice and QA found no blocking issues, so at worst it's a brief subtitle-only header. Fact and packaging checks passed with minor notes only, the Irkutsk status is dated and hedged, and the safety lines are there. Re-check the Irkutsk status against WHO and Russian sources at publish time."
+}
