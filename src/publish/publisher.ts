@@ -19,7 +19,7 @@ import { saveLearned } from "../media/pronounce.js";
 import { tiktokPost } from "./tiktok.js";
 import { postForMeEnabled, tiktokPhotosViaPostForMe, tiktokViaPostForMe } from "./postforme.js";
 import { threadsCarousel, threadsText } from "./threads.js";
-import { setThumbnail, uploadVideo } from "./youtube.js";
+import { makePublicNow, setThumbnail, uploadVideo } from "./youtube.js";
 import { addToPlaylists } from "./playlists.js";
 
 const LOG = join(DATA, "published", "log.jsonl");
@@ -222,6 +222,14 @@ export async function publishNow(ref: string, platforms: string[]) {
   for (const p of targets) {
     if (seen.has(p.platform) || p.status === "published") continue;
     seen.add(p.platform);
+    if (p.platform === "youtube" && p.status === "scheduled" && p.remote_id) {
+      // already uploaded and waiting for its slot: go public now instead of uploading a second copy
+      await makePublicNow(p.remote_id);
+      p.status = "published"; p.slot = p.published_at = new Date().toISOString();
+      log.info(`✓ ${item.id} → youtube scheduled video made public now ${p.url ?? ""}`);
+      saveItem(item);
+      continue;
+    }
     p.slot = new Date().toISOString(); p.attempts = 0;
     await attempt(item, p);
   }

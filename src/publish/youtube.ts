@@ -36,6 +36,15 @@ export function cleanDescription(d: string): string {
   return kept.join("\n");
 }
 
+/** Make an uploaded (scheduled or private) video public right now, cancelling its scheduled time. */
+export async function makePublicNow(videoId: string) {
+  const token = await youtubeToken();
+  await httpJson<any>("https://www.googleapis.com/youtube/v3/videos?part=status", {
+    method: "PUT", headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+    body: JSON.stringify({ id: videoId, status: { privacyStatus: "public", selfDeclaredMadeForKids: false, embeddable: true, license: "youtube" } }),
+  });
+}
+
 /** Take a scheduled/public video private and cancel its scheduled publish time. */
 export async function makePrivate(videoId: string) {
   const token = await youtubeToken();
