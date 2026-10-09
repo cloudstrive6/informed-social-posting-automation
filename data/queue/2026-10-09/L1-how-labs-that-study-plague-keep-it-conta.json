@@ -1,0 +1,1567 @@
+{
+  "id": "L1-how-labs-that-study-plague-keep-it-conta",
+  "date": "2026-10-09",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "How labs that study plague keep it contained: biosafety levels (BSL-3), airflow, PPE, and standard steps after a possible lab exposure",
+    "angle": "Plague Labs: How Do Scientists Keep Dangerous Bacteria Contained? A general biosafety explainer from CDC/NIH BMBL (6th ed.) and WHO's Laboratory Biosafety Manual (4th ed.). What biosafety levels mean, and how BMBL scales Y. pestis work: BSL-2 practices and facilities for most clinical-sample and culture work, BSL-3 for aerosol-generating, large-scale or some animal work. Say clearly that this is the US/WHO framework and that countries, including Russia, use their own classification systems. Cover inward airflow and HEPA exhaust, biosafety cabinets, respirators and PPE, training and incident reporting. Then the standard post-exposure steps: report straight away, medical review, monitoring through the incubation window, and preventive antibiotics only when clinicians decide they're needed (no self-treatment). Dated status box: 'As of Oct 8, 2026: plague was suspected in media reports and has not been officially confirmed. Rospotrebnadzor reported that nearly 5,000 lab tests found no dangerous pathogens, that medical monitoring was completed for over 90% of contacts, and that quarantine measures were lifted in Irkutsk oblast. WHO says it does not know what caused the Oct 2 death and has asked Russia for more information. Not confirmed isn't ruled out.' Credit any incident detail to a named outlet ('reported by Reuters/AP'). No leak, bioweapon or blame framing, and don't name or show the worker. Close with 'If you're worried, talk to a health professional.' Thumbnail: lab scene with a biosafety cabinet.",
+    "working_title": "Plague Labs: How Do Scientists Keep Dangerous Bacteria Contained?",
+    "target_keyword": "BSL-3 lab plague",
+    "trend_stage": "emerging",
+    "why": "The radar puts this at the emerging stage (momentum 70, low competition, seen in 3 snapshots). NYT, Defector and The Conversation are covering the institute, but almost no explainer covers lab safety itself. It has 8–15 minutes of guideline-backed depth and is a pillar we haven't covered yet. | fact-check: Lab safety is a good, calm pillar, but two parts of the angle are wrong. (1) Scope: in the CDC/NIH BMBL agent summary for Yersinia pestis, BSL-2 practices, containment equipment and facilities are recommended for most work with clinical materials and cultures. BSL-3 is for work with a high potential for aerosol or droplet production, large-scale production, and some infected-animal work. So 'usually done at BSL-3' overstates it. (2) Status box: 'contact observation has ended' is stronger than the source. Rospotrebnadzor said medical monitoring was completed for 'over 90%' of contacts (reported Oct 8). The test figure was reported as 'nearly 5,000', not 'about 5,000'. The claim that 'no plague was recorded' came from Russian authorities via WHO, so credit it to them. Also: BSL-1 to BSL-4 is the US/WHO framework, and Russia classifies pathogens under its own system. Don't say or imply that the Irkutsk institute uses the BMBL BSL scheme. Leave out the governor's 'patient was vaccinated' claim, or credit it to him by name as a reported statement, with no inference. 'Lab-acquired plague is rare' needs a citable source (e.g. BMBL's note on reported laboratory-acquired infections). If you can't find one, drop it. Re-check the status at publish time.",
+    "pillar": "general"
+  },
+  "status": "held",
+  "package": {
+    "title": "Plague Lab Safety: BSL-2 or BSL-3? How Bacteria Stays Contained",
+    "title_candidates": [
+      "Plague Lab Safety: How Do BSL-3 Labs Keep Bacteria Contained?",
+      "Plague Labs: How Do Scientists Keep Dangerous Bacteria Contained?",
+      "Plague in a BSL-3 Lab: How Scientists Keep It Contained",
+      "Plague Labs Aren't Like the Movies: How BSL-3 Really Works",
+      "Plague Bacteria in Labs: BSL-2 vs BSL-3, What's the Difference?",
+      "Plague Lab Exposure? What Happens Next, Step by Step",
+      "Plague Research Labs: How Containment Actually Works",
+      "Plague in the Lab: Not Like the Movies, and That's by Design",
+      "Plague Lab Safety: Airflow, HEPA Filters and Biosafety Cabinets",
+      "Plague Report in Russia: How Labs Keep Bacteria Contained (as of Oct 8)"
+    ],
+    "description": "Most plague lab work isn't done in space-suit labs. Under the US BMBL guide (CDC/NIH), BSL-2 is recommended for most work with plague clinical samples and cultures; BSL-3 for work with high droplet/aerosol potential, large-scale production or high concentrations. A lab's risk assessment can call for more. BSL-3 labs add inward airflow, non-recirculated exhaust, HEPA-filtered biosafety cabinets, protective gear and training.\n\nAs of Oct 8, 2026: plague was suspected in media reports after a lab worker's death in Irkutsk oblast, Russia. It has not been officially confirmed. Rospotrebnadzor says the cause was pneumonia of unknown etiology, and on Oct 8 said about 5,000 lab tests found no dangerous pathogens and its anti-epidemic measures were finished. WHO (Oct 6-7) has asked Russia for information. Not confirmed isn't ruled out.\n\nThis content is for educational purposes only and is not medical advice. Possible exposure (like close contact with someone who has pneumonic plague) plus fever, cough, shortness of breath or chest pain? Contact a doctor or local health authority urgently. If you're worried, talk to a health professional.\n\nSources:\n1. BMBL, 6th Ed. (CDC/NIH): https://www.cdc.gov/labs/bmbl/index.html\n2. WHO plague fact sheet: https://www.who.int/news-room/fact-sheets/detail/plague\n3. CDC MMWR 2021, plague treatment and prophylaxis: https://www.cdc.gov/mmwr/volumes/70/rr/rr7003a1.htm\n4. Kyiv Independent (Oct 8, 2026): https://kyivindependent.com/russia-lifts-quarantine-in-irkutsk-region-where-lab-worker-allegedly-died-of-plague/",
+    "tags": [
+      "BSL-3 lab plague",
+      "plague lab safety",
+      "biosafety level 3",
+      "Yersinia pestis biosafety",
+      "BSL-3 vs BSL-4",
+      "plague lab containment",
+      "WHO biosafety manual",
+      "biosafety cabinet explained",
+      "HEPA filtration lab",
+      "lab acquired infection",
+      "Chicago 2009 plague lab",
+      "select agent program",
+      "plague Russia Irkutsk",
+      "pneumonic plague news",
+      "lab exposure protocol",
+      "high containment laboratory",
+      "PPE dangerous pathogens",
+      "microbiology lab safety"
+    ],
+    "pinned_comment": "Surprising fact from today's video: under the US BMBL guide, BSL-2 is recommended for most work with plague clinical samples and cultures. BSL-3 is for aerosol-risk, large-scale or high-concentration work, and a risk assessment can call for more. Space-suit BSL-4 labs aren't the standard for plague. Did that match what you expected? This is educational content, not medical advice. If you're worried, talk to a health professional.",
+    "thumbnail": {
+      "headline": "PLAGUE LABS, NOT MOVIES",
+      "highlight_word": "REAL",
+      "subtext": "",
+      "layout": "versus",
+      "psychology": "Contrast and comparison: setting the movie image against a real biosafety cabinet bench makes viewers want to resolve the gap, and the video answers it from the CDC/NIH BMBL and the WHO manual.",
+      "emotion": "Playful curiosity",
+      "hero_art": "scientist in hazmat suit",
+      "hero_face": "none",
+      "second_art": "scientist at biosafety cabinet",
+      "second_face": "none",
+      "prop": "none",
+      "accent": "highlight",
+      "badge": "",
+      "versus_left": "MOVIES",
+      "versus_right": "REAL LAB"
+    },
+    "chapters": "0:00 Not like the movies\n1:24 What biosafety levels mean\n3:05 Where plague fits\n4:10 Inside a BSL-3 lab\n5:43 The box that protects\n7:03 Gear, training, rules\n8:14 After a possible exposure\n9:46 A lesson from 2009\n10:34 The news, decoded\n12:22 What to remember"
+  },
+  "media": {
+    "video": "L1-how-labs-that-study-plague-keep-it-conta.mp4",
+    "duration": 807.172,
+    "thumbnail": "L1-how-labs-that-study-plague-keep-it-conta-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-09T18:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-10-09T02:54:43.090Z",
+  "script": {
+    "working_title": "Plague Labs: How Do Scientists Keep Dangerous Bacteria Contained?",
+    "target_keyword": "BSL-3 lab plague",
+    "hook_pattern": "Counterintuitive claim, followed by an open loop (\"one safety step that everything else depends on isn't a machine\"), paid off in the final chapter",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "Not like the movies",
+        "narration": "Most lab work with plague bacteria doesn't happen in the space-suit labs you see in movies. That's not a loophole. It's the design.",
+        "on_screen_text": "Not the space-suit lab",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist at biosafety cabinet bright lab"
+        },
+        "retention_device": "Counterintuitive cold open that breaks the movie stereotype",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "Not like the movies",
+        "narration": "Under the main US lab safety guide, biosafety level 2 practices, equipment and facilities are recommended for most work with clinical samples and cultures of Yersinia pestis, the bacterium behind plague. The stricter level 3 is recommended for the riskiest tasks.",
+        "on_screen_text": "Precautions match the task",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "All plague lab work needs maximum security",
+          "fact": "BMBL: BSL-2 for most sample and culture work, BSL-3 for aerosol-risk tasks",
+          "stock_query": "two lab doors labeled 2 and 3"
+        },
+        "retention_device": "Proof point that backs the hook straight away",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "Not like the movies",
+        "narration": "Why? Because in a lab, the big worry isn't bacteria sitting quietly in a dish. It's what happens if they get into the air.",
+        "on_screen_text": "The risk is the air",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "petri dish with tiny droplets floating"
+        },
+        "retention_device": "Question followed by a reframe",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "Not like the movies",
+        "narration": "In the next few minutes, you'll see what those levels mean, how a lab pulls air inward so germs can't drift out, and the box that shields a scientist's lungs.",
+        "on_screen_text": "What you'll learn",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "What biosafety levels mean",
+            "Air that only flows inward",
+            "The box that protects lungs"
+          ],
+          "stock_query": "checklist beside cartoon lab"
+        },
+        "retention_device": "Promise of what the viewer gets",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "Not like the movies",
+        "narration": "And stay to the end, because one safety step that everything else depends on isn't a machine at all. It's something a person does in the first few minutes.",
+        "on_screen_text": "The step everything depends on",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stopwatch next to lab door"
+        },
+        "retention_device": "Main open loop, paid off in the final chapter",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s06",
+        "section": "Not like the movies",
+        "narration": "Why now? As of October 8, 2026, plague was suspected in media reports after a death in Irkutsk oblast, Russia, and has not been officially confirmed. Russian authorities say the cause is unknown. We'll go through what's been said later.",
+        "on_screen_text": "Suspected, not confirmed (Oct 8)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm newsroom desk with map"
+        },
+        "retention_device": "Topical stakes plus a second open loop (the status chapter)",
+        "source_ids": [
+          "ap_abc",
+          "healthbeat"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "Not like the movies",
+        "narration": "One note up front: this is a general explainer of the US and WHO framework. Other countries can use their own national rules, so this doesn't describe how any specific Russian lab works.",
+        "on_screen_text": "US and WHO framework only",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "rulebooks with different covers on shelf"
+        },
+        "retention_device": "Sets the scope clearly so viewers trust what follows",
+        "source_ids": [
+          "who_lbm4",
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "What biosafety levels mean",
+        "narration": "First, the levels. The US guide is called Biosafety in Microbiological and Biomedical Laboratories, or BMBL. It's published by CDC and the National Institutes of Health, and it's on its 6th edition.",
+        "on_screen_text": "The BMBL rulebook",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "thick lab safety manual on desk"
+        },
+        "retention_device": "Chapter reset with a named, credible source",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "What biosafety levels mean",
+        "narration": "It lays out 4 biosafety levels. Think of them like layers of rain gear: the worse the weather, the more layers you put on.",
+        "on_screen_text": "4 levels, more layers",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "BSL-1: low risk",
+            "BSL-2: moderate hazards",
+            "BSL-3: serious, inhaled",
+            "BSL-4: exotic, life-threatening"
+          ],
+          "stock_query": "person adding rain gear layers"
+        },
+        "retention_device": "Everyday analogy",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "What biosafety levels mean",
+        "narration": "Level 1 is for microbes not known to consistently cause disease in healthy adults. Level 2 covers moderate hazards, like hepatitis B or Salmonella, where the main risks are cuts, splashes and swallowing.",
+        "on_screen_text": "Levels 1 and 2",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "lab bench with gloves and goggles"
+        },
+        "retention_device": "Concrete examples",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "What biosafety levels mean",
+        "narration": "Level 3 is for germs that can cause serious or potentially lethal disease when breathed in, like the bacterium that causes tuberculosis.",
+        "on_screen_text": "Level 3: the inhaled risk",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon lungs with shield"
+        },
+        "retention_device": "Step up in stakes",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "What biosafety levels mean",
+        "narration": "Level 4 is the space-suit level, for dangerous and exotic agents like Ebola virus, with a high risk of life-threatening infection and often no vaccine or treatment.",
+        "on_screen_text": "Level 4: the space suits",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist in blue pressure suit"
+        },
+        "retention_device": "Pays off the space-suit image from the hook",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "What biosafety levels mean",
+        "narration": "But here's the twist. The World Health Organization's latest Laboratory Biosafety Manual, the 4th edition from 2020, moved away from leaning on those numbered levels.",
+        "on_screen_text": "WHO changed the approach",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "manual pages turning with arrow"
+        },
+        "retention_device": "Twist: 'but here's the twist'",
+        "source_ids": [
+          "who_lbm4"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "What biosafety levels mean",
+        "narration": "Instead, WHO says every lab should start with a risk assessment. What exactly are you doing, with which germ, and how could it get out? Then you choose controls to match.",
+        "on_screen_text": "Start with risk assessment",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist with clipboard and question marks"
+        },
+        "retention_device": "Questions put to the viewer",
+        "source_ids": [
+          "who_lbm4"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "What biosafety levels mean",
+        "narration": "WHO sorts those controls into 3 tiers: core requirements for most lab work, heightened control measures for higher risk, and maximum containment measures for the very highest.",
+        "on_screen_text": "WHO's 3 tiers",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Core requirements",
+            "Heightened control measures",
+            "Maximum containment measures"
+          ],
+          "stock_query": "three stacked shield tiers"
+        },
+        "retention_device": "Structured visual list",
+        "source_ids": [
+          "who_lbm4"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "What biosafety levels mean",
+        "narration": "So the same germ can need different precautions depending on the task. And plague is a perfect example.",
+        "on_screen_text": "Same germ, different tasks",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "one test tube two lab setups"
+        },
+        "retention_device": "Mini-cliffhanger into the next chapter",
+        "source_ids": [
+          "who_lbm4",
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "Where plague fits",
+        "narration": "BMBL includes a summary written specifically for Yersinia pestis. It recommends level 2 practices, containment equipment and facilities for most work with clinical samples and cultures.",
+        "on_screen_text": "Most work: BSL-2",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "rod-shaped bacteria under cartoon microscope"
+        },
+        "retention_device": "Chapter reset with a specific answer",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "Where plague fits",
+        "narration": "Level 3 is recommended for work with a high potential to create droplets or aerosols, and for large-scale production or high concentrations of the bacteria. And a lab's own risk assessment can call for stricter precautions.",
+        "on_screen_text": "When BSL-3 is recommended",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "High aerosol or droplet risk",
+            "Large-scale or high-concentration work",
+            "Risk assessment can require more"
+          ],
+          "stock_query": "lab tasks icons in a row"
+        },
+        "retention_device": "Clear breakdown list",
+        "source_ids": [
+          "bmbl",
+          "who_lbm4"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "Where plague fits",
+        "narration": "Why the split? Gently transferring a sample is very different from spinning, shaking or mixing a big culture, steps that can throw tiny droplets into the air.",
+        "on_screen_text": "Spinning makes droplets",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "centrifuge spinning with mist puffs"
+        },
+        "retention_device": "But/therefore contrast",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Where plague fits",
+        "narration": "And air is the route that matters. According to CDC, pneumonic plague, the lung form, is the form that can spread between people, through respiratory droplets during close contact.",
+        "on_screen_text": "Pneumonic: close-contact droplets",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two people close with droplet icons"
+        },
+        "retention_device": "Links the lab to the disease the news is about",
+        "source_ids": [
+          "cdc_plague"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Where plague fits",
+        "narration": "BMBL also notes that laboratory-acquired plague infections have been reported. So staff are told to take special care not to create aerosols.",
+        "on_screen_text": "Avoid making aerosols",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "careful hands pipetting slowly"
+        },
+        "retention_device": "Shows the stakes are real, setting up later chapters",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Where plague fits",
+        "narration": "So what does a level 3 lab actually look like inside? Let's walk up to the door.",
+        "on_screen_text": "Inside a BSL-3 lab",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hallway leading to lab door"
+        },
+        "retention_device": "Question to the viewer leading into the next chapter",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Inside a BSL-3 lab",
+        "narration": "First, you can't just wander in. Under BMBL, access to a level 3 lab is restricted, and it's separated from parts of the building with open traffic.",
+        "on_screen_text": "Restricted access",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "badge reader beside lab door"
+        },
+        "retention_device": "Chapter reset as a walk-through",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Inside a BSL-3 lab",
+        "narration": "You go through 2 self-closing doors, often with a small changing room in between. It's a buffer between the lab and the hallway.",
+        "on_screen_text": "A buffer zone",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "2",
+          "stat_label": "Self-closing doors into a BSL-3 lab",
+          "stock_query": "two doors with small anteroom"
+        },
+        "retention_device": "Big-number visual",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "Inside a BSL-3 lab",
+        "narration": "Now the clever part: the air. A level 3 lab must keep air flowing in from clean areas toward areas that might be contaminated.",
+        "on_screen_text": "Air only flows inward",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "arrows of air flowing into lab"
+        },
+        "retention_device": "Signposts the clever part",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "Inside a BSL-3 lab",
+        "narration": "Picture a gentle, steady breeze blowing from the hallway into the room. If a droplet ever escaped a container, that breeze carries it deeper into the lab, not out the door.",
+        "on_screen_text": "A one-way breeze",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "breeze pushing droplet away from door"
+        },
+        "retention_device": "Vivid 'picture this' analogy",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Inside a BSL-3 lab",
+        "narration": "Staff must be able to check that airflow, with a monitor at the entrance. And the system must be designed so that under failure conditions, the airflow will not be reversed.",
+        "on_screen_text": "Designed not to reverse",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "airflow gauge beside lab entrance"
+        },
+        "retention_device": "Reassuring detail",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Inside a BSL-3 lab",
+        "narration": "Where does the air go? Never back into the rest of the building. BMBL says lab exhaust must not recirculate. It's sent away from people and air intakes, or it's HEPA-filtered.",
+        "on_screen_text": "Exhaust never recirculates",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "rooftop exhaust stack with filter"
+        },
+        "retention_device": "Question and answer",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "Inside a BSL-3 lab",
+        "narration": "The room is built to be cleaned: sealed surfaces, sealed windows, and a hands-free sink near the exit.",
+        "on_screen_text": "Built to be cleaned",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "clean sealed lab room with sink"
+        },
+        "retention_device": "Quick concrete details",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Inside a BSL-3 lab",
+        "narration": "And waste doesn't leave untreated. BMBL says a way to decontaminate all lab waste should be on hand, ideally inside the lab, such as an autoclave, which is essentially a high-pressure steam oven.",
+        "on_screen_text": "Waste gets steamed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "autoclave steam oven cartoon"
+        },
+        "retention_device": "Memorable analogy",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "Inside a BSL-3 lab",
+        "narration": "But here's what surprises most people. The room isn't the main barrier. Under BMBL, the primary barrier at level 3 is about the size of a desk.",
+        "on_screen_text": "The real barrier?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "spotlight on cabinet in lab"
+        },
+        "retention_device": "Mini-cliffhanger before the chapter change",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "The box that protects",
+        "narration": "It's called a biological safety cabinet. At level 3, BMBL says all handling of infectious material happens inside one, or inside another physical containment device.",
+        "on_screen_text": "The biosafety cabinet",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "biological safety cabinet glowing"
+        },
+        "retention_device": "Pays off the cliffhanger",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "The box that protects",
+        "narration": "The most common kind, Class II, has an open front where the scientist's arms go in. That gap isn't sealed shut. It's guarded by air.",
+        "on_screen_text": "Guarded by air",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "arms reaching into cabinet opening"
+        },
+        "retention_device": "Surprising detail",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "The box that protects",
+        "narration": "Air is pulled in through the front, away from the worker. Filtered air flows down over the work, protecting the sample. And air leaving the cabinet is filtered too.",
+        "on_screen_text": "In, down, out, filtered",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cabinet airflow arrows diagram"
+        },
+        "retention_device": "Step-by-step reveal",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "The box that protects",
+        "narration": "One box, 3 jobs: protect the person, protect the sample, protect the room.",
+        "on_screen_text": "One box, 3 jobs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Protect the person",
+            "Protect the sample",
+            "Protect the room"
+          ],
+          "stock_query": "three shields around cabinet"
+        },
+        "retention_device": "Rule of three summary",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "The box that protects",
+        "narration": "Those filters are HEPA filters, rated to trap at least 99.97% of particles 0.3 microns across, about the size that's hardest to catch. Larger and smaller particles are trapped even more efficiently.",
+        "on_screen_text": "HEPA: 99.97% minimum",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "99.97%",
+          "stat_label": "Minimum HEPA capture at 0.3 microns",
+          "stock_query": "filter mesh catching tiny dots"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "The box that protects",
+        "narration": "For the highest-risk work there's Class III: a fully sealed box. Scientists work through heavy gloves attached to the front and never reach inside directly.",
+        "on_screen_text": "Class III: fully sealed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sealed glove box with gloves"
+        },
+        "retention_device": "Escalates to the extreme version",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "The box that protects",
+        "narration": "And the everyday rules stay strict. BMBL's wording is blunt: 'Mouth pipetting is prohibited.' No eating, drinking or applying cosmetics in the lab, and sharp items get extra care.",
+        "on_screen_text": "Simple rules, strictly kept",
+        "visual": {
+          "kind": "quote",
+          "quote": "Mouth pipetting is prohibited",
+          "attribution": "BMBL, 6th edition (CDC/NIH)",
+          "stock_query": "no food no drink lab sign"
+        },
+        "retention_device": "Real quote breaks up the pattern",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "The box that protects",
+        "narration": "Machines only get you so far, though. The next layer is the one you can see: what the scientist wears.",
+        "on_screen_text": "Next layer: the gear",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "gown and goggles on hook"
+        },
+        "retention_device": "Transition hook into the next chapter",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "Gear, training, rules",
+        "narration": "At level 3, BMBL calls for protective clothing with a solid front, like wrap-around gowns or coveralls, that stays in the lab.",
+        "on_screen_text": "Gowns stay in the lab",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "scientist in wrap-around gown"
+        },
+        "retention_device": "Chapter reset",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "Gear, training, rules",
+        "narration": "Gloves, with 2 pairs when appropriate. Eye and face protection. And respiratory protection, such as a fitted respirator, chosen based on the lab's risk assessment.",
+        "on_screen_text": "Layers of protection",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Gloves (2 pairs when appropriate)",
+            "Eye and face protection",
+            "Respirator, based on risk"
+          ],
+          "stock_query": "PPE items laid out neatly"
+        },
+        "retention_device": "Rapid-fire list rhythm",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "Gear, training, rules",
+        "narration": "A respirator only works if it seals to your face. In the US, OSHA requires workers who must wear tight-fitting respirators to be fit tested and trained.",
+        "on_screen_text": "A seal, not just a mask",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "respirator fit check cartoon"
+        },
+        "retention_device": "Practical surprise",
+        "source_ids": [
+          "osha"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Gear, training, rules",
+        "narration": "Then there's training. Before working with level 3 agents, staff must show they're proficient in the lab's practices, not just read the manual.",
+        "on_screen_text": "Show it, don't just read it",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "trainer watching scientist practice"
+        },
+        "retention_device": "Human angle",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Gear, training, rules",
+        "narration": "BMBL also calls for medical surveillance, meaning health checks linked to the work, and offering vaccines where appropriate ones exist.",
+        "on_screen_text": "Health checks linked to work",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "occupational health clinic visit"
+        },
+        "retention_device": "Sets up the post-exposure chapter",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "Gear, training, rules",
+        "narration": "In the US there's a legal layer too. Yersinia pestis is a Tier 1 select agent, the highest-security category under the Federal Select Agent Program.",
+        "on_screen_text": "Tier 1 select agent",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "Tier 1",
+          "stat_label": "US select agent category for plague bacteria",
+          "stock_query": "locked freezer with badge"
+        },
+        "retention_device": "New layer revealed",
+        "source_ids": [
+          "fsap_list"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "Gear, training, rules",
+        "narration": "Labs must register to have it, and people need a security risk assessment before they get access.",
+        "on_screen_text": "Registered and vetted",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "registration form and ID badge"
+        },
+        "retention_device": "Reassuring detail",
+        "source_ids": [
+          "fsap_list"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "Gear, training, rules",
+        "narration": "All of this aims to prevent accidents. But no system assumes it's perfect. So what happens if someone thinks they might have been exposed?",
+        "on_screen_text": "What if something goes wrong?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist pausing at bench thinking"
+        },
+        "retention_device": "Question cliffhanger before the chapter change",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "After a possible exposure",
+        "narration": "BMBL is clear. Incidents that could cause exposure must be evaluated immediately, reported to the lab supervisor, and followed by medical evaluation, with records kept.",
+        "on_screen_text": "Evaluate, report, record",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "supervisor listening to scientist"
+        },
+        "retention_device": "Chapter reset with a clear rule",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "After a possible exposure",
+        "narration": "Think of it as 4 steps: report, review, monitor, and treat only if clinicians decide it's needed.",
+        "on_screen_text": "4 standard steps",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Report straight away",
+            "Medical review",
+            "Monitor through incubation",
+            "Antibiotics only if clinicians decide"
+          ],
+          "stock_query": "four step path illustration"
+        },
+        "retention_device": "Roadmap for the chapter",
+        "source_ids": [
+          "bmbl",
+          "mmwr2021"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "After a possible exposure",
+        "narration": "Step 1 is reporting immediately. Not after the experiment. Not tomorrow. WHO's manual puts a strong safety culture, where incidents get reported, at the heart of lab biosafety.",
+        "on_screen_text": "Step 1: report now",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist raising hand to report"
+        },
+        "retention_device": "Short punchy sentences, hinting at the main payoff",
+        "source_ids": [
+          "bmbl",
+          "who_lbm4"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "After a possible exposure",
+        "narration": "Step 2 is a medical review. A clinician looks at what happened: which strain, which procedure, and whether there was a spill, a splash or a possible aerosol.",
+        "on_screen_text": "Step 2: medical review",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor reviewing notes calmly"
+        },
+        "retention_device": "Step-by-step progression",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "After a possible exposure",
+        "narration": "Step 3 is monitoring. WHO says plague's incubation period is 1 to 7 days, and for pneumonic plague it can be as short as 24 hours. So people are watched through that window.",
+        "on_screen_text": "Step 3: monitor",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "1-7 days",
+          "stat_label": "Plague incubation period, per WHO",
+          "stock_query": "calendar with days circled"
+        },
+        "retention_device": "Concrete numbers",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "After a possible exposure",
+        "narration": "Step 4 is preventive antibiotics, only when clinicians decide they're needed. CDC's 2021 guidance lists lab workers with an accidental exposure to infectious material among the people who may be offered a short preventive course.",
+        "on_screen_text": "Step 4: only if clinicians decide",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "clinician explaining to patient"
+        },
+        "retention_device": "Completes the 4-step list",
+        "source_ids": [
+          "mmwr2021"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "After a possible exposure",
+        "narration": "That's a medical decision made case by case by clinicians and health authorities. It's never self-treatment.",
+        "on_screen_text": "Never self-treatment",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Exposed? Take antibiotics on your own",
+          "fact": "Clinicians and health authorities decide case by case",
+          "stock_query": "doctor and patient talking"
+        },
+        "retention_device": "Corrects a myth",
+        "source_ids": [
+          "mmwr2021"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "After a possible exposure",
+        "narration": "Why does speed matter so much? Because plague can be treated with commonly available antibiotics, and CDC and WHO both stress that early treatment is key.",
+        "on_screen_text": "Treatable, early is key",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "clock with green checkmark"
+        },
+        "retention_device": "Why-question answered with reassurance",
+        "source_ids": [
+          "cdc_plague",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "After a possible exposure",
+        "narration": "And there's a real case that shows why that first step, speaking up, matters.",
+        "on_screen_text": "A real case",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "old case file folder"
+        },
+        "retention_device": "Teases a micro-story",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "A lesson from 2009",
+        "narration": "In 2009, a researcher in Chicago died of plague after working with a weakened lab strain of Yersinia pestis.",
+        "on_screen_text": "Chicago, 2009",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "city skyline with lab building"
+        },
+        "retention_device": "Micro-story opener",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "A lesson from 2009",
+        "narration": "CDC investigators reported that he had an undiagnosed condition called hereditary hemochromatosis, which makes iron build up in the body.",
+        "on_screen_text": "A hidden iron condition",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "iron particles in blood cartoon"
+        },
+        "retention_device": "Plot twist",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "A lesson from 2009",
+        "narration": "That turned out to matter. The weakened strain had a defect in how it gathers iron, which plague bacteria need to cause disease. Investigators suggested his extra iron may have helped it grow.",
+        "on_screen_text": "Extra iron, weakened strain",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "bacteria reaching for iron pieces"
+        },
+        "retention_device": "'Here's where it gets weird' reveal",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "A lesson from 2009",
+        "narration": "Investigators couldn't say exactly how he was exposed. But the lesson is practical: weakened doesn't automatically mean harmless, and if you work with these bacteria and get sick, tell your doctor about your work right away.",
+        "on_screen_text": "Tell your doctor your job",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient telling doctor about job"
+        },
+        "retention_device": "Practical lesson that sets up the main payoff",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "A lesson from 2009",
+        "narration": "Which brings us back to the news, and what's actually been said so far.",
+        "on_screen_text": "Back to the news",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "newspaper on calm desk"
+        },
+        "retention_device": "Pays off the status loop from the hook",
+        "source_ids": [
+          "ap_abc"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "The news, decoded",
+        "narration": "AP and other outlets reported that a laboratory worker in Irkutsk oblast, Russia, died on October 2 after a severe pneumonia, and that plague was suspected. Out of respect, we're not naming or showing her.",
+        "on_screen_text": "Reported by AP and others",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "map pin on Irkutsk oblast"
+        },
+        "retention_device": "Chapter reset with clearly attributed facts",
+        "source_ids": [
+          "ap_abc",
+          "healthbeat"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "The news, decoded",
+        "narration": "Here's the status as of October 8, 2026, the date of the latest official statements we found. Plague was suspected in media reports. Russia's health watchdog, Rospotrebnadzor, says the cause was pneumonia of unknown etiology, and that tests on her samples found no microbes linked to her work. Plague has not been officially confirmed.",
+        "on_screen_text": "As of Oct 8: not confirmed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "status board with calendar date"
+        },
+        "retention_device": "Dated status box",
+        "source_ids": [
+          "healthbeat",
+          "ap_abc"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "The news, decoded",
+        "narration": "On October 8, Rospotrebnadzor said about 5,000 lab tests found no dangerous pathogens. Earlier, it said daily testing of contacts had found only 2 cases of COVID-19 and 2 of rhinovirus.",
+        "on_screen_text": "About 5,000 tests (Oct 8)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "About 5,000",
+          "stat_label": "Lab tests, no dangerous pathogens (Rospotrebnadzor, Oct 8)",
+          "stock_query": "rows of test tubes"
+        },
+        "retention_device": "Big-number reveal",
+        "source_ids": [
+          "moscow_times",
+          "ap_abc"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "The news, decoded",
+        "narration": "On October 8, Rospotrebnadzor said it had finished its anti-epidemic measures, including medical observation of more than 90% of contacts, and said there were no epidemic risks for the population of the Irkutsk region. The Kyiv Independent reports the quarantine has been lifted.",
+        "on_screen_text": "Oct 8: measures ended (Rospotrebnadzor)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "More than 90%",
+          "stat_label": "Contacts under medical observation, per Rospotrebnadzor (Oct 8)",
+          "stock_query": "checklist with most boxes ticked"
+        },
+        "retention_device": "Second stat in a row keeps momentum",
+        "source_ids": [
+          "moscow_times",
+          "kyiv_independent"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "The news, decoded",
+        "narration": "WHO says it's still asking questions. On October 6, Director-General Tedros said WHO had asked Russia for information, and on October 7 WHO's Maria Van Kerkhove said, 'We don't understand how she was infected.'",
+        "on_screen_text": "WHO (Oct 7): still seeking information",
+        "visual": {
+          "kind": "quote",
+          "quote": "We don't understand how she was infected.",
+          "attribution": "Maria Van Kerkhove, WHO, October 7, 2026 (reported by AP)",
+          "stock_query": "globe on desk with question mark"
+        },
+        "retention_device": "Credits each statement to the person and date that made it",
+        "source_ids": [
+          "ap_abc",
+          "healthbeat"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "The news, decoded",
+        "narration": "So hold 2 ideas at once. Not confirmed isn't the same as ruled out. And this can change quickly, so check the latest official update.",
+        "on_screen_text": "Not confirmed isn't ruled out",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Not confirmed means ruled out",
+          "fact": "Not confirmed isn't ruled out. Check official updates.",
+          "stock_query": "balance scale with two cards"
+        },
+        "retention_device": "Myth correction plus an instruction to the viewer",
+        "source_ids": [
+          "healthbeat",
+          "ap_abc"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "The news, decoded",
+        "narration": "And remember, the biosafety levels in this video are the US and WHO framework. Other countries can use their own national rules, so these labels may not map neatly onto Russian labs.",
+        "on_screen_text": "Different countries, different rules",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "different rulebooks on world map"
+        },
+        "retention_device": "Repeats the scope so nobody misreads it",
+        "source_ids": [
+          "who_lbm4",
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "What to remember",
+        "narration": "So, the step everything else depends on? It isn't the cabinet or the airflow. It's a person reporting a possible exposure right away, which BMBL requires immediately.",
+        "on_screen_text": "Speak up fast",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "scientist speaking up to supervisor"
+        },
+        "retention_device": "Main open loop paid off",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "What to remember",
+        "narration": "Every other layer, the medical review, the monitoring, and preventive antibiotics when clinicians decide they're needed, can only start once someone speaks up.",
+        "on_screen_text": "Everything starts there",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "dominoes starting from one person"
+        },
+        "retention_device": "Shows why the payoff matters",
+        "source_ids": [
+          "bmbl",
+          "mmwr2021"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "What to remember",
+        "narration": "Quick recap. Precautions match the task. Under BMBL, most plague sample and culture work is level 2, and aerosol-risk or large-scale work is level 3, and a risk assessment can call for more. Air flows inward. Cabinets and HEPA filters do the heavy lifting. And fast reporting means fast care.",
+        "on_screen_text": "Your quick recap",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Most sample work: BSL-2",
+            "Aerosol-risk or large-scale: BSL-3",
+            "Risk assessment can require more",
+            "Air inward, cabinets, HEPA",
+            "Fast reporting, fast care"
+          ],
+          "stock_query": "recap checklist with lab icons"
+        },
+        "retention_device": "Takeaway checklist",
+        "source_ids": [
+          "bmbl",
+          "who_lbm4"
+        ]
+      },
+      {
+        "id": "s72",
+        "section": "What to remember",
+        "narration": "For everyone else: if you've had a possible exposure, like close contact with someone who has pneumonic plague, and you develop fever, cough, shortness of breath or chest pain, contact a doctor or local health authority urgently.",
+        "on_screen_text": "Possible exposure? Call urgently",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fever",
+            "Cough",
+            "Shortness of breath",
+            "Chest pain"
+          ],
+          "stock_query": "phone call to doctor"
+        },
+        "retention_device": "Practical action for the viewer",
+        "source_ids": [
+          "cdc_symptoms",
+          "cdc_plague"
+        ]
+      },
+      {
+        "id": "s73",
+        "section": "What to remember",
+        "narration": "If you're worried, talk to a health professional.",
+        "on_screen_text": "Talk to a health professional",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly doctor listening"
+        },
+        "retention_device": "Reassuring close",
+        "source_ids": [
+          "cdc_plague"
+        ]
+      },
+      {
+        "id": "s74",
+        "section": "What to remember",
+        "narration": "Next, we're breaking down pneumonic plague symptoms and exactly when CDC says to get urgent care. Subscribe so it's ready when you need it.",
+        "on_screen_text": "Next: symptoms and urgent care",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "subscribe button beside lungs icon"
+        },
+        "retention_device": "CTA tied to the next video's specific benefit",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "bmbl",
+        "title": "Biosafety in Microbiological and Biomedical Laboratories (BMBL), 6th Edition",
+        "publisher": "US Centers for Disease Control and Prevention and National Institutes of Health",
+        "year": "2020",
+        "url": "https://www.cdc.gov/labs/bmbl/index.html"
+      },
+      {
+        "id": "who_lbm4",
+        "title": "Laboratory biosafety manual, fourth edition",
+        "publisher": "World Health Organization",
+        "year": "2020",
+        "url": "https://www.who.int/publications/i/item/9789240011311"
+      },
+      {
+        "id": "cdc_plague",
+        "title": "Plague (CDC topic page; living page, last reviewed per site)",
+        "publisher": "US Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/index.html"
+      },
+      {
+        "id": "cdc_symptoms",
+        "title": "Signs and Symptoms of Plague (living page, last reviewed per site)",
+        "publisher": "US Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      },
+      {
+        "id": "who_fs",
+        "title": "Plague (fact sheet)",
+        "publisher": "World Health Organization",
+        "year": "2026 (updated 29 September 2026)",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      },
+      {
+        "id": "mmwr2021",
+        "title": "Antimicrobial Treatment and Prophylaxis of Plague: Recommendations for Naturally Acquired Infections and Bioterrorism Response. MMWR Recomm Rep 2021;70(No. RR-3):1-27",
+        "publisher": "US Centers for Disease Control and Prevention (MMWR)",
+        "year": "2021",
+        "url": "https://www.cdc.gov/mmwr/volumes/70/rr/rr7003a1.htm"
+      },
+      {
+        "id": "mmwr2011",
+        "title": "Fatal Laboratory-Acquired Infection with an Attenuated Yersinia pestis Strain - Chicago, Illinois, 2009. MMWR 2011;60(7):201-205",
+        "publisher": "US Centers for Disease Control and Prevention (MMWR)",
+        "year": "2011",
+        "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6007a1.htm"
+      },
+      {
+        "id": "fsap_list",
+        "title": "Select Agents and Toxins List",
+        "publisher": "Federal Select Agent Program (CDC and USDA APHIS)",
+        "year": "2024",
+        "url": "https://www.selectagents.gov/sat/list.htm"
+      },
+      {
+        "id": "osha",
+        "title": "Respiratory Protection, 29 CFR 1910.134",
+        "publisher": "US Occupational Safety and Health Administration",
+        "year": "1998",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134"
+      },
+      {
+        "id": "ap_abc",
+        "title": "UN health agency wants more details from Russia on suspected pneumonic plague case",
+        "publisher": "Associated Press (via ABC News)",
+        "year": "2026",
+        "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277"
+      },
+      {
+        "id": "moscow_times",
+        "title": "Regions Calling: In Irkutsk, Locals Ask 'What Plague?'",
+        "publisher": "The Moscow Times",
+        "year": "2026",
+        "url": "https://www.themoscowtimes.com/2026/10/08/regions-calling-in-irkutsk-locals-ask-what-plague-a93886"
+      },
+      {
+        "id": "kyiv_independent",
+        "title": "Russia lifts quarantine in Irkutsk region, where lab worker allegedly died of plague",
+        "publisher": "The Kyiv Independent",
+        "year": "2026",
+        "url": "https://kyivindependent.com/russia-lifts-quarantine-in-irkutsk-region-where-lab-worker-allegedly-died-of-plague/"
+      },
+      {
+        "id": "newsnation_who",
+        "title": "Second reported Russian plague case: WHO asks Russia for information about researcher's death",
+        "publisher": "NewsNation",
+        "year": "2026",
+        "url": "https://www.newsnationnow.com/health/who-russia-second-pneumonic-plague-lab-worker/amp/"
+      },
+      {
+        "id": "healthbeat",
+        "title": "Russia says lab worker didn't die of plague. WHO, U.S. experts want to know what killed her.",
+        "publisher": "Healthbeat",
+        "year": "2026",
+        "url": "https://www.healthbeat.org/2026/10/06/russia-plague-lab-researcher-death-raises-lab-accident-concerns/"
+      }
+    ],
+    "cta": "Subscribe for our next explainer: pneumonic plague symptoms and when CDC says to get urgent care. If you're worried, talk to a health professional."
+  },
+  "factcheck": {
+    "verdict": "REVISE",
+    "summary": "The science in this long-form script holds up well. I verified the BMBL framing (BSL-2 for most Yersinia pestis clinical sample/culture work, BSL-3 for high-aerosol-potential and large-scale/high-concentration work), the WHO 4th-edition risk-assessment approach with its three tiers, WHO's 1–7 day incubation with pneumonic onset as short as 24 hours, the HEPA 99.97% at 0.3 µm specification, Y. pestis as a Tier 1 select agent, OSHA fit-testing, the MMWR 2021 statement that post-exposure prophylaxis \"can be considered for laboratory workers accidentally exposed to infectious materials,\" and every detail of the 2011 MMWR Chicago 2009 case (attenuated pgm-negative KIM D27 strain, C282Y-homozygous hereditary hemochromatosis, iron-acquisition defect, undetermined exposure route). Safety framing is strong: no self-treatment, prophylaxis consistently gated behind clinicians, urgent-care red flags present, the disclaimer line present, the deceased treated with respect, no bioweapon or cover-up speculation, and an explicit scope caveat that this is the US/WHO framework and not a description of any Russian lab. The problems are all in the news chapter's attribution and dating, plus source-list hygiene. Scene s64 dates the \"about 5,000 lab tests\" figure to Rospotrebnadzor on October 8, but The Moscow Times carries that figure without a date and The Kyiv Independent attributes \"nearly 5,000 laboratory tests\" to Irkutsk governor Igor Kobzev — this is exactly the mis-crediting pattern that caused prior holds. s65 needs the Kyiv Independent's own verification caveat. s06 omits that Rospotrebnadzor has said no plague was detected, which the viewer only learns 57 scenes later. The BMBL source year needs a last-reviewed date (the CDC page now shows March 18, 2026), the AP/ABC URL uses a non-canonical domain, and one listed source is never cited. Fix these and it's publishable; also re-check the official status at publish time, since the script's status line is dated one day before today.",
+    "issues": [
+      {
+        "location": "s64",
+        "claim": "\"On October 8, Rospotrebnadzor said about 5,000 lab tests found no dangerous pathogens.\" On-screen stat label: \"Lab tests, no dangerous pathogens (Rospotrebnadzor, Oct 8)\".",
+        "problem": "The attribution and the date both go beyond the cited sources. The Moscow Times reports the ~5,000-test figure as a Rospotrebnadzor statement but gives no date for it; The Kyiv Independent attributes \"nearly 5,000 laboratory tests\" to Irkutsk governor Igor Kobzev, not to Rospotrebnadzor. Crediting a figure to the wrong body and stamping an unsupported date on it is the same error that has triggered previous holds.",
+        "severity": "major",
+        "fix": "Replace the narration with: \"Around the same time, Irkutsk governor Igor Kobzev said nearly 5,000 laboratory tests had found no dangerous pathogens, as reported by The Kyiv Independent. Earlier, Rospotrebnadzor said daily testing of contacts had found only 2 cases of COVID-19 and 2 of rhinovirus, as reported by AP.\" Change the stat label to \"Nearly 5,000 lab tests, no dangerous pathogens (Gov. Kobzev, per The Kyiv Independent)\" and add kyiv_independent to this scene's source_ids."
+      },
+      {
+        "location": "s65",
+        "claim": "\"The Kyiv Independent reports the quarantine has been lifted.\"",
+        "problem": "Correctly attributed, but the Kyiv Independent explicitly notes it could not independently verify some of the official claims in this story. Dropping that caveat presents contested official statements as settled.",
+        "severity": "minor",
+        "fix": "Append to the narration: \"The Kyiv Independent notes it could not independently verify all of those official claims.\""
+      },
+      {
+        "location": "s06",
+        "claim": "\"plague was suspected in media reports after a death in Irkutsk oblast, Russia, and has not been officially confirmed. Russian authorities say the cause is unknown.\"",
+        "problem": "Incomplete at the point where most viewers form their impression. Rospotrebnadzor has gone further than \"unknown\": it has said no plague was detected in the researcher or her contacts and that testing found no microorganisms associated with her work. Holding that back until s63 lets the opening read as more suggestive of plague than the record supports.",
+        "severity": "minor",
+        "fix": "Replace the last sentence with: \"Russia's health watchdog, Rospotrebnadzor, says the cause was pneumonia of unknown etiology and that no plague was detected. WHO has asked Russia for more information. We'll go through what each body has said later.\""
+      },
+      {
+        "location": "s63",
+        "claim": "\"Here's the status as of October 8, 2026, the date of the latest official statements we found.\"",
+        "problem": "The status line is already one day old relative to today (October 9, 2026), and this story has been moving daily. Nothing is wrong in the line as written, but it will be stale or wrong if the piece publishes later than scripted.",
+        "severity": "minor",
+        "fix": "Keep the dated wording but add a standing instruction in the production notes: re-check WHO, Rospotrebnadzor and CDC at publish time and update the date and the status sentence in s06, s63 and the on-screen text if anything has changed. Add after the first sentence: \"Check the latest official update before you act on anything here.\""
+      },
+      {
+        "location": "sources (bmbl)",
+        "claim": "BMBL 6th Edition listed with year \"2020\" and URL https://www.cdc.gov/labs/bmbl/index.html",
+        "problem": "The URL is a living landing page, not a dated document. The CDC page currently shows a March 18, 2026 update stamp, and the page itself does not state 2020. Our source-list rule requires a last-reviewed date on living pages.",
+        "severity": "minor",
+        "fix": "Change the source entry to: title \"Biosafety in Microbiological and Biomedical Laboratories (BMBL), 6th Edition\", year \"2020 (CDC page last updated 18 March 2026)\", and keep the same URL."
+      },
+      {
+        "location": "sources (ap_abc)",
+        "claim": "URL https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277",
+        "problem": "Non-canonical domain. ABC News wire stories live at abcnews.go.com; abcnews.com is a redirect host, which risks a dead link in the description and pinned comment.",
+        "severity": "minor",
+        "fix": "Change the URL to https://abcnews.go.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277"
+      },
+      {
+        "location": "sources (newsnation_who)",
+        "claim": "NewsNation article listed in sources.",
+        "problem": "No scene cites newsnation_who, and the URL is an AMP variant. An uncited source in the list invites the packaging agent to quote something the script never verified.",
+        "severity": "minor",
+        "fix": "Delete the newsnation_who entry from the source list."
+      },
+      {
+        "location": "s36",
+        "claim": "\"Those filters are HEPA filters, rated to trap at least 99.97% of particles 0.3 microns across... Larger and smaller particles are trapped even more efficiently.\" Source id: bmbl only.",
+        "problem": "The numbers are correct, but the 99.97%-at-0.3-µm rating and the most-penetrating-particle-size point are filter-standard facts, not something the BMBL Y. pestis or BSL-3 sections state in those terms. Single-sourcing them to BMBL repeats the \"source tag doesn't say the line\" pattern.",
+        "severity": "minor",
+        "fix": "Change the narration to: \"Those are HEPA filters. By definition, a HEPA filter traps at least 99.97% of particles 0.3 microns across, about the size that's hardest to catch, and it catches larger and smaller particles even more efficiently.\" Add the DOE/NIOSH HEPA definition as a source, or drop the final sentence and keep only \"at least 99.97% at 0.3 microns\"."
+      },
+      {
+        "location": "s53",
+        "claim": "\"CDC's 2021 guidance lists lab workers with an accidental exposure to infectious material among the people who may be offered a short preventive course.\"",
+        "problem": "Slightly stronger than the source's verb. MMWR 2021;70(RR-3) says prophylaxis \"can be considered for laboratory workers accidentally exposed to infectious materials\" — considered, not offered.",
+        "severity": "minor",
+        "fix": "Replace with: \"CDC's 2021 guidance says preventive antibiotics can be considered for laboratory workers accidentally exposed to infectious materials, as a 7-day course.\""
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "bmbl",
+        "title": "Biosafety in Microbiological and Biomedical Laboratories (BMBL), 6th Edition",
+        "publisher": "US Centers for Disease Control and Prevention and National Institutes of Health",
+        "year": "2020 (CDC page last updated 18 March 2026)",
+        "url": "https://www.cdc.gov/labs/bmbl/index.html"
+      },
+      {
+        "id": "who_fs",
+        "title": "Plague (fact sheet)",
+        "publisher": "World Health Organization",
+        "year": "2026",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      },
+      {
+        "id": "mmwr2021",
+        "title": "Antimicrobial Treatment and Prophylaxis of Plague: Recommendations for Naturally Acquired Infections and Bioterrorism Response. MMWR Recomm Rep 2021;70(RR-3):1-27",
+        "publisher": "US Centers for Disease Control and Prevention (MMWR)",
+        "year": "2021",
+        "url": "https://www.cdc.gov/mmwr/volumes/70/rr/rr7003a1.htm"
+      },
+      {
+        "id": "mmwr2011",
+        "title": "Fatal Laboratory-Acquired Infection with an Attenuated Yersinia pestis Strain - Chicago, Illinois, 2009. MMWR 2011;60(7):201-205",
+        "publisher": "US Centers for Disease Control and Prevention (MMWR)",
+        "year": "2011",
+        "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6007a1.htm"
+      },
+      {
+        "id": "fsap_list",
+        "title": "Select Agents and Toxins List",
+        "publisher": "Federal Select Agent Program (CDC and USDA APHIS)",
+        "year": "2024",
+        "url": "https://www.selectagents.gov/sat/list.htm"
+      },
+      {
+        "id": "ap_abc",
+        "title": "UN health agency wants more details from Russia on suspected pneumonic plague case",
+        "publisher": "Associated Press (via ABC News), 7 October 2026",
+        "year": "2026",
+        "url": "https://abcnews.go.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277"
+      },
+      {
+        "id": "healthbeat",
+        "title": "Russia says lab worker didn't die of plague. WHO, U.S. experts want to know what killed her.",
+        "publisher": "Healthbeat, 6 October 2026",
+        "year": "2026",
+        "url": "https://www.healthbeat.org/2026/10/06/russia-plague-lab-researcher-death-raises-lab-accident-concerns/"
+      },
+      {
+        "id": "moscow_times",
+        "title": "Regions Calling: In Irkutsk, Locals Ask 'What Plague?'",
+        "publisher": "The Moscow Times, 8 October 2026",
+        "year": "2026",
+        "url": "https://www.themoscowtimes.com/2026/10/08/regions-calling-in-irkutsk-locals-ask-what-plague-a93886"
+      },
+      {
+        "id": "kyiv_independent",
+        "title": "Russia lifts quarantine in Irkutsk region, where lab worker allegedly died of plague",
+        "publisher": "The Kyiv Independent, 8 October 2026",
+        "year": "2026",
+        "url": "https://kyivindependent.com/russia-lifts-quarantine-in-irkutsk-region-where-lab-worker-allegedly-died-of-plague/"
+      }
+    ]
+  },
+  "hold_reason": "Dropped by Editor-in-Chief: The news chapter credits the \"about 5,000 lab tests, no dangerous pathogens\" figure to Rospotrebnadzor on October 8. One source credits it to the Irkutsk governor and the other gives no date, and the description repeats the error. The description is also cut off with a broken source link, so drop it now. Resubmit once the fact-checker's fixes are applied, the description is rebuilt without the misattributed line, the title grammar and the stray \"/\" in the thumbnail are fixed, and the status has been re-checked at publish time.",
+  "qa": {
+    "narrationWer": 0.015,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 6.8,
+      "weakShots": 15,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "Automated audit flags the \"BSL-3\" tag as offscreen/cropped near the bottom edge (box 1186,1024,1349,1089 vs 994 safe line)",
+        "No headline is visible even though the beat should read \"The risk is the air\" (that text instead appears later, on the shot-13 frame) — looks like a continuity/placement mismatch",
+        "Shield, arrows and building icon are spread thinly across a mostly empty gradient",
+        "Expected \"Safety levels / Inward air / Lung shield\" chip row is not visible in frame",
+        "Building sits small and centered with large empty sky and ground around it",
+        "Trash can is small and pushed left while two tiny bug icons float almost invisibly in the top right; frame reads as mostly empty plain gradient",
+        "PPE character is small and isolated against a mostly empty purple gradient with no supporting room/lab backdrop",
+        "Lone shield icon on a plain dark gradient with no supporting scene, matches the pattern we're told to avoid",
+        "Frame at 102.6s has chip row at top and only a small mascot bottom-left; roughly half the frame (right side) is empty teal gradient with no hero art or headline.",
+        "No clear focal point besides the small mascot.",
+        "The 'Air in' label next to the arrows is tiny and low-contrast against the teal gradient.",
+        "The 'Down' label under the arrow is small (~24px) and easy to miss.",
+        "At 122.6s the shield mascot is small and isolated on a large empty teal gradient (artwork covers roughly 11% of the frame) with only a tiny 'Filter' label.",
+        "Automated audit also flagged this beat as sparse.",
+        "At 142.9s the pink shield and molecule icon sit to the right with a large empty purple gradient on the left and no headline."
+      ],
+      "layoutKinds": {
+        "offscreen": 10,
+        "tiny": 11,
+        "sparse": 17
+      }
+    },
+    "audio": {
+      "musicGain": 0.324,
+      "sfxGain": 0.55,
+      "finalWer": 0.002,
+      "maskingDelta": 0.002,
+      "lufs": -15.1,
+      "soundNotes": "Music sits at a healthy −13.5 dB under voice and −13.4 dB in pauses, right in the target window, so the overall bed gain is unchanged. Most individual SFX are well placed, but several dense chip/label reveal clusters (around 99–100.6s, 117–118.7s, 203–204.7s, 372–374.8s, 433–434.7s, 505.8–509.7s, 529.6–531.4s, 678.7–679.5s, 761.5–764s and 787.7–792.7s) stacked 5–9 pops/blips within ~1–1.5s at −12 to −14 dB, louder and busier than the −14 to −20 dB 'felt, not heard' target during speech; I zeroed the weakest duplicates and pulled the rest down a few dB so each cluster reads as 3–4 clean accents instead of a flurry. Transition whooshes/swells in true pauses were already sitting nicely in the −6 to −12 dB range and were left alone. Added a handful of bespoke, quiet mechanical/sterilization textures to underline specific visual beats (airlock seal, autoclave steam, a tense low pulse on 'Level 4', a faint newsroom rustle opening the Irkutsk status section) — all kept low and brief so they support rather than compete with the narration, consistent with keeping dramatic and serious lines sparse."
+    },
+    "blocking": [],
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "Mascot reads as a filing cabinet with a face, not clearly tied to a lab/BSL-3 concept, which muddies the curiosity gap",
+            "Subhead 'THE REAL LAB DESIGN' is tiny at phone-feed size and nearly unreadable at 168px"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": [
+            "Small 'MOVIES' vs 'REAL LAB' labels shrink a lot at 168px but still legible due to short words and strong color coding"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 5,
+          "legibility": 8,
+          "issues": [
+            "Mascot again looks like a filing cabinet, unrelated visually to airflow/HEPA concept",
+            "Headline is a mechanism fact but lacks an emotional hook or face, weaker curiosity pull than the other two",
+            "Red arrow pointing at mascot doesn't clarify the airflow concept"
+          ]
+        }
+      ],
+      "best_index": 1,
+      "reasoning": "Candidate #1 (\"WHICH IS REAL?\", versus layout) has the clearest single focal contrast — two human characters labeled Movies vs Real Lab with red X / green check — which creates an immediate, resolvable curiosity gap tied directly to the video's promise (what BSL-3 labs actually look like vs movie depictions). It also matches the only proven high-performer in our own data: the versus thumbnail layout hit 178 views, our best long-form result, while reaction layouts with lone mascot icons scored much lower (12-15) and our craft notes warn against lone-icon/sparse frames, which #0 and #2 both lean toward (a filing-cabinet-like mascot that doesn't clearly represent a lab). All three are legible at phone size, but #1's text and color-coded labels remain clearly readable even at the smallest size, and its two-character layout gives a stronger, more human focal point than the ambiguous cabinet mascot in #0 and #2. Nothing here is misleading relative to the title, which promises an explanation of real BSL-3 containment design.\"}"
+    },
+    "packaging": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "location": "description (last line, Sources item 4)",
+          "claim": "4. Kyiv Independent (Oct 8, 2026): https://kyivindependent.com/russia-lifts-quarantine-in",
+          "problem": "The description is cut off: the source URL is incomplete, so the link is broken and the last line is unfinished. The text is at or over the 1,500-character limit.",
+          "severity": "major",
+          "fix": "Replace the whole description with this text (about 1,420 characters):\n\nMost plague lab work isn't done in space-suit labs. Under the US BMBL guide (CDC/NIH), BSL-2 is recommended for most work with plague clinical samples and cultures; BSL-3 for work with high droplet/aerosol potential, large-scale production or high concentrations. A lab's risk assessment can call for more.\n\nAs of Oct 8, 2026: plague was suspected in media reports after a lab worker's death in Irkutsk oblast, Russia, and has not been officially confirmed. Rospotrebnadzor says the cause was pneumonia of unknown etiology; on Oct 8 it said about 5,000 lab tests found no dangerous pathogens and its anti-epidemic measures were finished. On Oct 6, WHO said it had asked Russia for information. Not confirmed isn't ruled out.\n\nThis content is for educational purposes only and is not medical advice. Possible exposure (like close contact with someone who has pneumonic plague) plus fever, cough, shortness of breath or chest pain? Contact a doctor or local health authority urgently. If you're worried, talk to a health professional.\n\nSources:\n1. BMBL 6th Ed. (CDC/NIH): https://www.cdc.gov/labs/bmbl/index.html\n2. WHO plague fact sheet: https://www.who.int/news-room/fact-sheets/detail/plague\n3. CDC MMWR 2021, plague prophylaxis: https://www.cdc.gov/mmwr/volumes/70/rr/rr7003a1.htm\n4. Kyiv Independent, Oct 8, 2026: https://kyivindependent.com/russia-lifts-quarantine-in-irkutsk-region-where-lab-worker-allegedly-died-of-plague/"
+        },
+        {
+          "location": "description (status paragraph)",
+          "claim": "WHO (Oct 6-7) has asked Russia for information.",
+          "problem": "The verified script dates the request to Oct 6 (Tedros). On Oct 7 Van Kerkhove only said WHO doesn't understand how she was infected. Writing 'Oct 6-7' blurs two separate statements, and 'has asked' makes it sound current rather than dated.",
+          "severity": "minor",
+          "fix": "On Oct 6, WHO said it had asked Russia for information."
+        },
+        {
+          "location": "title",
+          "claim": "Plague Lab Safety: BSL-2 or BSL-3? How Bacteria Stays Contained",
+          "problem": "'Bacteria' is plural, so 'Stays' is ungrammatical. The playbook says titles with two abbreviations tend to underperform. 'Stays Contained' also sounds absolute next to a news story about a possible lab infection, while the video says no system assumes it's perfect.",
+          "severity": "minor",
+          "fix": "Plague Lab Safety: How Labs Keep the Bacteria Contained (BSL-2 vs BSL-3)"
+        },
+        {
+          "location": "pinned_comment",
+          "claim": "Did that match what you expected?",
+          "problem": "The engagement question is harmless, but the pinned comment doesn't mention the news status. That's optional. If you want it, add one dated hedge line to keep it consistent with the video.",
+          "severity": "minor",
+          "fix": "Surprising fact from today's video: under the US BMBL guide, BSL-2 is recommended for most work with plague clinical samples and cultures. BSL-3 is for aerosol-risk, large-scale or high-concentration work, and a risk assessment can call for more. Space-suit BSL-4 labs aren't the standard for plague. On the Irkutsk case: as of Oct 8, 2026, plague was suspected in media reports and has not been officially confirmed. This is educational content, not medical advice. If you're worried, talk to a health professional."
+        }
+      ]
+    }
+  },
+  "release_tag": "content-2026-10-09",
+  "archive_url": "b2://informed-lab-media/content/2026-10-09/L1-how-labs-that-study-plague-keep-it-conta/"
+}
