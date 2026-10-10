@@ -55,6 +55,26 @@ export async function writeWithFactCheck<T>(writer: AgentName, schema: object, b
     // PASS with minor fixes: fixes are applied, no need for another round
     if (fc.verdict === "PASS") break;
   }
+  // Out of rounds with a few major fixes still open (the last round's fixes were never applied): apply them,
+  // then the fact-checker verifies once more. Nothing is accepted without that check; critical issues still hold.
+  if (fc!.verdict === "REVISE" && fc!.issues.some(i => i.severity === "major") && fc!.issues.every(i => i.severity !== "critical")
+      && fc!.issues.filter(i => i.severity === "major").length <= 3) {
+    content = await runAgent<T>({
+      agent: writer, model: config.models.writer, schema, effort: "high",
+      input: { ...brief, task: "FINAL FIX: apply every one of these fact-checker fixes exactly (they are the last open issues). Change nothing else.", draft: content, fact_check: fc },
+    });
+    fc = await runAgent<FactCheck>({
+      agent: "fact-checker", model: config.models.factChecker, web: true, maxTurns: 45, schema: factCheckSchema,
+      input: { mode: "content_check", content },
+    });
+    log.info(`fact-check final verification: ${fc.verdict} (${fc.issues.length} issues) — ${fc.summary.slice(0, 160)}`);
+    if (fc.verdict === "PASS" && fc.issues.length) {
+      content = await runAgent<T>({
+        agent: writer, model: config.models.writer, schema, effort: "high",
+        input: { ...brief, task: "Apply these final minor fact-checker fixes exactly. Change nothing else.", draft: content, fact_check: fc },
+      });
+    }
+  }
   // Out of rounds but only minor, precisely-specified fixes left: apply them and accept (majors/critical still hold)
   if (fc!.verdict === "REVISE" && fc!.issues.length && fc!.issues.every(i => i.severity === "minor")) {
     content = await runAgent<T>({
@@ -192,6 +212,17 @@ export async function packagingLoop<P extends object>(item: ContentItem, packagi
     packaging = await revise(packaging, pc);
     if (pc.verdict === "PASS") return { packaging, check: pc, held: false }; // minor polish applied
     pc = await checkPackaging(item, view(packaging), sources, verifiedContent);
+  }
+  // a few major fixes still open after the rounds: apply them and re-check once (never accepted unchecked)
+  if (pc.verdict === "REVISE" && pc.issues.some(i => i.severity === "major") && pc.issues.every(i => i.severity !== "critical")
+      && pc.issues.filter(i => i.severity === "major").length <= 3) {
+    log.info(`packaging check: ${pc.issues.length} fixes still open after the rounds (incl. major); applying and re-checking`);
+    packaging = await revise(packaging, pc);
+    pc = await checkPackaging(item, view(packaging), sources, verifiedContent);
+    if (pc.verdict === "PASS") {
+      if (pc.issues.length) packaging = await revise(packaging, pc);
+      return { packaging, check: pc, held: false };
+    }
   }
   if (pc.verdict === "REVISE" && pc.issues.length && pc.issues.every(i => i.severity === "minor")) {
     packaging = await revise(packaging, pc);
