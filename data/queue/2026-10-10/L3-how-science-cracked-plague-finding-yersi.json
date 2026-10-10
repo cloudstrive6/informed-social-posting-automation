@@ -1,0 +1,1322 @@
+{
+  "id": "L3-how-science-cracked-plague-finding-yersi",
+  "date": "2026-10-10",
+  "kind": "long",
+  "plan": {
+    "id": "L3",
+    "kind": "long",
+    "topic": "How science cracked plague: finding Yersinia pestis (Hong Kong, 1894), proving the flea route (1898–1914), and the 1910–11 pneumonic plague outbreak in Manchuria, where masks, isolation and contact tracing first showed what stops person-to-person spread",
+    "angle": "Plague History: How Scientists Found the Cause and Learned to Stop It. Open with the dated suspected-status hook (15 s or less; newest development first; includes the Oct 8 Tedros and Kremlin entries and the Oct 9 Irkutsk oblast governor update; not ending on the most reassuring line; re-checked at publish time). Body: (1) Hong Kong 1894: Alexandre Yersin isolated the bacterium, later named Yersinia pestis; Kitasato Shibasaburo also studied it there, and credit was disputed. (2) Paul-Louis Simond proposed the rat-flea route in 1898, and Bacot and Martin's 1914 'blocked flea' work explained how fleas pass it on. (3) Manchuria 1910–11, a pneumonic outbreak: Wu Lien-teh's response (gauze masks, isolation, contact tracing, travel controls) showed at scale how to stop close-contact spread; deaths given as an estimate with the source's range; quarantine itself is centuries older. (4) What modern public health took from it, in CDC's wording: droplet spread that typically 'requires direct and close contact'; 'can be cured with antibiotics, especially when started early'; spread 'has not been documented in the United States since 1924'. Close with CDC's 4 pneumonic signs (fever, cough, shortness of breath, chest pain); possible exposure means contact a doctor or local health authority urgently; 'If you're worried, talk to a health professional.'",
+    "working_title": "Plague History: How Scientists Found the Cause and Learned to Stop It",
+    "target_keyword": "plague history",
+    "trend_stage": "evergreen (refreshed with a timely news hook)",
+    "why": "Replaces dropped L1 and L2 with a well-documented history explainer that fact-checks easily, needs only one dated status hedge, and doesn't repeat the Black Death carousel, Madagascar, lab safety or today's Shorts and carousel. | fact-check: Approve the history-of-science angle. It's evergreen, built on settled sources, calm, and serves the plague focus without doom framing. Five accuracy fixes before scripting:\n(1) The topic line overclaims. Isolation and quarantine are centuries older than 1910: plague quarantine dates to 14th–15th-century Ragusa and Venice. So Manchuria didn't 'first show' them. Say Wu Lien-teh's response showed at scale, in a pneumonic outbreak, that masks, isolation, tracing and travel controls could stop person-to-person spread. Don't call his gauze mask the first mask. Say it was an early, influential use of masks against a respiratory epidemic.\n(2) 1894 discovery: Kitasato Shibasaburo also worked on the bacterium in Hong Kong in 1894, and credit was disputed. Mention him in one neutral line, saying Yersin's description is the one credited today. Yersin isolated it and the name Yersinia pestis came decades later (it was earlier called Pasteurella pestis). Keep 'later named' and don't give a renaming year unless a source states it.\n(3) Simond 1898: he proposed the rat-flea route based on observations and small experiments, and it wasn't widely accepted at first. Say 'proposed', not 'proved'. 1898–1914 is fine as the period when the flea route was worked out. Bacot and Martin's 1914 blocked-flea paper explains the mechanism.\n(4) Manchuria death toll: label it as an estimate and give the source's figure and range (often cited as about 60,000). Don't present a single figure as fact.\n(5) Black Death comparison: don't say how much of the Black Death was bubonic and how much pneumonic, because historians still debate it. Limit the 'why today is different' point to what CDC and WHO say: antibiotics and public-health measures.\nCDC wording to copy exactly: pneumonic plague is the only form that can spread person to person, through infectious respiratory droplets, and typically 'requires direct and close contact'. Plague 'can be cured with antibiotics, especially when started early'. Spread 'has not been documented in the United States since 1924'. Never write '1924 was the last spread'. The status block and its dates (Oct 8 Tedros and Kremlin, Oct 9 governor) must be re-checked at publish time and checked again in content_check. Keep the status within the 15 s hook, using 'suspected'/'reported', and never end on the most reassuring line. No drug names, doses or test terms. Title: fine as is, starts with 'Plague', no abbreviations, no fear words.",
+    "pillar": "general"
+  },
+  "status": "failed",
+  "package": {},
+  "media": {},
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-10T18:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-10-10T08:52:42.114Z",
+  "script": {
+    "working_title": "Plague History: How Scientists Found the Cause and Learned to Stop It",
+    "target_keyword": "plague history",
+    "hook_pattern": "Dated status hook, newest development first. As of Oct 10, 2026, plague is 'reported as suspected, but not confirmed'. Next come the Oct 8 governor and Rospotrebnadzor entries, then the Oct 7 Kremlin/Tedros entries. The status ends on the open WHO question, not on the most reassuring line, and all dates get re-checked against the WHO briefing transcript at publish time. Then an open loop: 'the one rule from 1911 that still decides who gets watched after a suspected case'. It pays off in 'What we still use'.",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "Where the news stands",
+        "narration": "As of Oct 10, 2026, plague has been reported as suspected, but not confirmed, in a laboratory worker in Irkutsk oblast who died. On Oct 6, WHO said authorities were looking into whether pneumonic plague caused her death. Rospotrebnadzor describes it as pneumonia of unknown origin.",
+        "on_screen_text": "Reported as suspected, NOT CONFIRMED (as of Oct 10, 2026)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm news desk with calendar"
+        },
+        "retention_device": "The newest dated status comes first, so viewers get the news answer within seconds",
+        "source_ids": [
+          "un_news_oct6",
+          "ap_ksat_oct8",
+          "aljazeera_oct8"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "Where the news stands",
+        "narration": "Newest, on Oct 8: the Irkutsk oblast governor said about 5,000 lab tests found no dangerous pathogens, that medical monitoring of all contacts had ended, and that she had community-acquired pneumonia. AP noted he did not explicitly say whether pneumonic plague had been ruled out.",
+        "on_screen_text": "Oct 8: governor: ~5,000 tests, contact monitoring ended",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~5,000",
+          "stat_label": "lab tests, per Irkutsk oblast governor (Oct 8)",
+          "stock_query": "rows of lab test tubes cartoon"
+        },
+        "retention_device": "A concrete number in the opening beat",
+        "source_ids": [
+          "ap_ksat_oct8",
+          "turkiyetoday_oct9"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "Where the news stands",
+        "narration": "Also on Oct 8, Rospotrebnadzor said it had told WHO no case of plague has been registered in the Irkutsk region, and rejected reports of a second person falling ill. A day earlier, on Oct 7, the Kremlin called most media reports false, and WHO chief Tedros asked Russia to clarify media reports of a second employee with pneumonia of undetermined cause.",
+        "on_screen_text": "Oct 7: WHO asks about a second employee",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Oct 8: Rospotrebnadzor: no plague case registered in Irkutsk region; rejects second-illness reports",
+            "Oct 7: Kremlin calls most media reports false",
+            "Oct 7: WHO's Tedros asks about a second employee with pneumonia of undetermined cause"
+          ],
+          "stock_query": "dated status board three entries"
+        },
+        "retention_device": "The status ends on the open WHO question, not on the most reassuring line",
+        "source_ids": [
+          "ap_ksat_oct8",
+          "aljazeera_oct8"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "Where the news stands",
+        "narration": "We'll keep updating that, with dates. But here's something that isn't in doubt. Health agencies have a playbook for stopping plague spreading between people, and it was written more than a century ago.",
+        "on_screen_text": "A playbook over 100 years old",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "old notebook glowing on modern desk"
+        },
+        "retention_device": "Pattern interrupt: a pivot from the news to a century-old mystery",
+        "source_ids": [
+          "mali",
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "Where the news stands",
+        "narration": "It took three breakthroughs. A scientist in a straw hut in Hong Kong. A doctor with two rats and a jar. And a 31-year-old physician with a strip of gauze.",
+        "on_screen_text": "3 breakthroughs, 3 detectives",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Hong Kong, 1894: a straw hut",
+            "Karachi, 1898: two rats and a jar",
+            "Manchuria, 1910: a strip of gauze"
+          ],
+          "stock_query": "three vintage detective portraits cartoon"
+        },
+        "retention_device": "Promises a three-part story with vivid teasers",
+        "source_ids": [
+          "butler",
+          "simond",
+          "mali"
+        ]
+      },
+      {
+        "id": "s06",
+        "section": "Where the news stands",
+        "narration": "By the end, you'll know the one rule from 1911 that still decides who gets watched after a suspected case, and why it works.",
+        "on_screen_text": "The 1911 rule still used today",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sealed envelope marked 1911"
+        },
+        "retention_device": "Main open loop, paid off in 'What we still use'",
+        "source_ids": [
+          "mali"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "Hong Kong, 1894",
+        "narration": "Spring, 1894. Plague, already spreading in southern China, reaches Hong Kong, one of the busiest ports on Earth.",
+        "on_screen_text": "Hong Kong, 1894",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "1890s Hong Kong harbor sailing ships"
+        },
+        "retention_device": "Chapter card and time jump",
+        "source_ids": [
+          "butler"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "Hong Kong, 1894",
+        "narration": "Historians count this as the start of the third plague pandemic. Ships would carry it to ports around the world.",
+        "on_screen_text": "The third plague pandemic",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "old world map ship routes"
+        },
+        "retention_device": "Raises the stakes",
+        "source_ids": [
+          "butler"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "Hong Kong, 1894",
+        "narration": "And nobody knew what caused it. Germ theory was still young, and the race to find the culprit was on.",
+        "on_screen_text": "Cause: unknown",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "question mark over Victorian microscope"
+        },
+        "retention_device": "Mystery framing",
+        "source_ids": [
+          "butler"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "Hong Kong, 1894",
+        "narration": "Two scientists arrived that June. Kitasato Shibasaburo, a Japanese bacteriologist who had trained with Robert Koch. And Alexandre Yersin, a Swiss-born doctor from France's Pasteur Institute.",
+        "on_screen_text": "Two scientists, one race",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two 1890s scientists arriving by boat"
+        },
+        "retention_device": "Sets up the rivalry",
+        "source_ids": [
+          "bibel",
+          "butler"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "Hong Kong, 1894",
+        "narration": "Kitasato's team had hospital access. Yersin, by the usual telling, set up in a makeshift straw hut.",
+        "on_screen_text": "A lab in a straw hut",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "straw hut laboratory with microscope"
+        },
+        "retention_device": "Underdog micro-story",
+        "source_ids": [
+          "bibel",
+          "butler"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "Hong Kong, 1894",
+        "narration": "He took samples from the swollen lymph nodes, called buboes, of people who had died. Under the microscope: crowds of the same short, rod-shaped bacterium.",
+        "on_screen_text": "Same rod-shaped bacterium",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon rod bacteria under microscope"
+        },
+        "retention_device": "Discovery moment",
+        "source_ids": [
+          "butler",
+          "bibel"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "Hong Kong, 1894",
+        "narration": "He found the same bacterium in dead rats from the streets. A clue, though not yet an answer.",
+        "on_screen_text": "Rats: a clue",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "detective magnifying glass over rat silhouette"
+        },
+        "retention_device": "Plants the rat-to-human question",
+        "source_ids": [
+          "butler"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "Hong Kong, 1894",
+        "narration": "One often-told detail: without a proper incubator, he grew his cultures at room temperature. And this bacterium happens to grow well below body temperature.",
+        "on_screen_text": "Room temperature helped",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "petri dish beside thermometer"
+        },
+        "retention_device": "A surprising stroke of luck",
+        "source_ids": [
+          "bibel",
+          "butler"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "Hong Kong, 1894",
+        "narration": "He gave the bacteria to lab animals, they fell ill, and the same germ turned up in them. That's the chain of evidence that ties one germ to one disease.",
+        "on_screen_text": "Germ → illness → same germ",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Find the germ in patients",
+            "Give it to lab animals",
+            "Find the same germ again"
+          ],
+          "stock_query": "chain links connecting germ icons"
+        },
+        "retention_device": "Explains the logic simply",
+        "source_ids": [
+          "butler"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "Hong Kong, 1894",
+        "narration": "Kitasato also reported a bacterium that summer, and for decades credit was disputed. Today, Yersin's description is the one credited.",
+        "on_screen_text": "Credit disputed for decades",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two names on balance scale"
+        },
+        "retention_device": "Settles the rivalry neutrally",
+        "source_ids": [
+          "bibel"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "Hong Kong, 1894",
+        "narration": "For decades the germ was known as Pasteurella pestis. It was later renamed Yersinia pestis, after him.",
+        "on_screen_text": "Pasteurella pestis → Yersinia pestis",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "name label swapped on specimen jar"
+        },
+        "retention_device": "Payoff of the name",
+        "source_ids": [
+          "butler"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "Hong Kong, 1894",
+        "narration": "But naming the killer didn't explain the crime. How was it getting from rats into people? That answer took 20 years, and it starts with an insect about the size of a sesame seed.",
+        "on_screen_text": "Rats to people: how?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "tiny flea next to sesame seed"
+        },
+        "retention_device": "Mini-cliffhanger before the chapter change",
+        "source_ids": [
+          "simond",
+          "hinnebusch"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "The flea route",
+        "narration": "Karachi, 1898. Paul-Louis Simond, a French doctor working for the Pasteur Institute, is studying plague in what was then British India.",
+        "on_screen_text": "Karachi, 1898",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "1890s field lab with notebooks"
+        },
+        "retention_device": "Chapter card and a new character",
+        "source_ids": [
+          "simond"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "The flea route",
+        "narration": "He noticed patterns. Some patients had a tiny blister on the skin, like a bite mark. And some people fell ill after handling dead rats.",
+        "on_screen_text": "A tiny blister, like a bite",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor taking notes with magnifier"
+        },
+        "retention_device": "Detective clues",
+        "source_ids": [
+          "simond"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "The flea route",
+        "narration": "His idea: fleas leave a dying rat looking for a new host. Maybe, sometimes, that host is us.",
+        "on_screen_text": "Fleas looking for a new host",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon flea jumping between hosts"
+        },
+        "retention_device": "Hypothesis framed as a question",
+        "source_ids": [
+          "simond"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "The flea route",
+        "narration": "So he built a test. A sick rat at the bottom of a jar. A healthy rat in a small cage above it, kept apart so they couldn't touch. Only fleas could make the jump.",
+        "on_screen_text": "Only fleas could cross",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glass jar two cartoon rats cage"
+        },
+        "retention_device": "Experiment micro-story builds suspense",
+        "source_ids": [
+          "simond"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "The flea route",
+        "narration": "Days later, the healthy rat had plague.",
+        "on_screen_text": "Days later: plague",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar pages flipping beside jar"
+        },
+        "retention_device": "A short punchline for rhythm",
+        "source_ids": [
+          "simond"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "The flea route",
+        "narration": "He later wrote that he felt an inexpressible emotion, believing he'd uncovered a secret that had troubled humanity since plague first appeared.",
+        "on_screen_text": "A secret as old as plague",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist moved by discovery at desk"
+        },
+        "retention_device": "Emotional beat",
+        "source_ids": [
+          "simond"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "The flea route",
+        "narration": "But here's the twist: hardly anyone believed him. His experiments were small, and others couldn't always reproduce them. He had proposed the flea route; he hadn't proved it.",
+        "on_screen_text": "Proposed, not proved",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Simond proved fleas spread plague in 1898",
+          "fact": "He proposed it; larger studies backed it later",
+          "stock_query": "skeptical scientists shaking heads"
+        },
+        "retention_device": "'But here's the twist' reversal",
+        "source_ids": [
+          "simond"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "The flea route",
+        "narration": "Over the following decade, larger experiments in India by a plague research commission backed the flea route.",
+        "on_screen_text": "Bigger studies backed it",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "team of scientists with many jars"
+        },
+        "retention_device": "Partial payoff",
+        "source_ids": [
+          "simond",
+          "butler"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "The flea route",
+        "narration": "Yet one puzzle remained. Most insect bites don't give you plague. So what made these fleas so good at spreading it?",
+        "on_screen_text": "Why these fleas?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "giant question mark over flea"
+        },
+        "retention_device": "A question to the viewer that opens a new loop",
+        "source_ids": [
+          "hinnebusch"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "The flea route",
+        "narration": "In 1914, two researchers in London, Arthur Bacot and Charles Martin, watched infected fleas up close.",
+        "on_screen_text": "London, 1914",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "1914 London lab microscope"
+        },
+        "retention_device": "Time jump to the answer",
+        "source_ids": [
+          "hinnebusch"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "The flea route",
+        "narration": "In some fleas, the bacteria grew into a sticky mass that blocked the passage into the flea's stomach.",
+        "on_screen_text": "The blocked flea",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon flea with clogged tube"
+        },
+        "retention_device": "Reveals the mechanism",
+        "source_ids": [
+          "hinnebusch"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "The flea route",
+        "narration": "So the flea starves. It bites again and again, trying to feed. And each time, blood gets pushed back out into the bite, carrying bacteria with it.",
+        "on_screen_text": "Bites again and again",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hungry cartoon flea repeating bites"
+        },
+        "retention_device": "But/therefore cause chain",
+        "source_ids": [
+          "hinnebusch"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "The flea route",
+        "narration": "Picture a clogged sink. Pour water in, and it backs up. Here, what backs up carries the germ.",
+        "on_screen_text": "Like a clogged sink",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "clogged sink water backing up"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": [
+          "hinnebusch"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "The flea route",
+        "narration": "Modern research suggests fleas can also pass plague on before they're fully blocked, and scientists still study how much each route matters.",
+        "on_screen_text": "Science still refining it",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "modern lab scientist studying flea"
+        },
+        "retention_device": "Honest nuance keeps credibility",
+        "source_ids": [
+          "hinnebusch"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "The flea route",
+        "narration": "By 1914, the classic chain was mapped. Rodents carry it. Fleas move it. A bite passes it to people.",
+        "on_screen_text": "Rodents → fleas → people",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Rodents carry it",
+            "Fleas move it",
+            "A bite passes it to people"
+          ],
+          "stock_query": "rodent flea person chain diagram"
+        },
+        "retention_device": "A mini-summary resets attention",
+        "source_ids": [
+          "hinnebusch",
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "The flea route",
+        "narration": "CDC says people most often get plague from infected flea bites, and also by handling tissue or body fluids of an infected animal.",
+        "on_screen_text": "Flea bites, or handling infected animals",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "gloved hands near wildlife sign"
+        },
+        "retention_device": "Bridges history to today",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "The flea route",
+        "narration": "But there's one form of plague that doesn't need a flea at all. And in the winter of 1910, it broke out along a railway in Manchuria.",
+        "on_screen_text": "No flea needed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "steam train in snowy landscape"
+        },
+        "retention_device": "Cliffhanger before the biggest chapter",
+        "source_ids": [
+          "cdc_signs",
+          "mali"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Manchuria, 1910–11",
+        "narration": "Late 1910. Plague appears in Manchuria, in northeast China, starting near the Russian border and spreading along the railway.",
+        "on_screen_text": "Manchuria, 1910–11",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "snowy railway town 1910"
+        },
+        "retention_device": "Chapter card",
+        "source_ids": [
+          "mali",
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Manchuria, 1910–11",
+        "narration": "Many early cases were linked to hunters of marmots, wild rodents trapped for their fur.",
+        "on_screen_text": "Linked to marmot hunters",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon marmot on steppe"
+        },
+        "retention_device": "Concrete detail about the origin",
+        "source_ids": [
+          "lynteris",
+          "mali"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "Manchuria, 1910–11",
+        "narration": "But this outbreak was different. Patients developed pneumonia and died within days. This was pneumonic plague, infection in the lungs.",
+        "on_screen_text": "Pneumonic plague: the lungs",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "simple cartoon lungs diagram"
+        },
+        "retention_device": "A 'but' turn raises the stakes",
+        "source_ids": [
+          "mali",
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "Manchuria, 1910–11",
+        "narration": "And with no antibiotics yet, nearly everyone who caught it died.",
+        "on_screen_text": "No antibiotics in 1910",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "empty 1910 pharmacy shelf"
+        },
+        "retention_device": "Stakes contrast with today",
+        "source_ids": [
+          "mali"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "Manchuria, 1910–11",
+        "narration": "The Qing government sent a young doctor to Harbin: Wu Lien-teh. Born in Penang, trained at Cambridge, and just 31 years old.",
+        "on_screen_text": "Dr Wu Lien-teh, age 31",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "young doctor arriving by train"
+        },
+        "retention_device": "Introduces the hero",
+        "source_ids": [
+          "mali"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "Manchuria, 1910–11",
+        "narration": "Wu examined the body of a patient who had died and found plague bacteria in the lungs. His conclusion: this outbreak was passing from person to person through the breath, not mainly through rats and fleas.",
+        "on_screen_text": "Person to person, not mainly fleas",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor at microscope snowy clinic"
+        },
+        "retention_device": "Pays off 'no flea needed'",
+        "source_ids": [
+          "mali",
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "Manchuria, 1910–11",
+        "narration": "Then he did something almost absurdly simple. He designed a mask: layers of gauze around a pad of cotton, tied behind the head.",
+        "on_screen_text": "Gauze + cotton mask",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "gauze and cotton mask diagram"
+        },
+        "retention_device": "A surprisingly simple solution",
+        "source_ids": [
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Manchuria, 1910–11",
+        "narration": "To be clear, it wasn't the first mask ever. But it was an early, influential use of masks against a respiratory epidemic.",
+        "on_screen_text": "Early and influential",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Wu invented the first face mask",
+          "fact": "An early, influential mask against a respiratory epidemic",
+          "stock_query": "vintage mask on museum stand"
+        },
+        "retention_device": "Myth correction",
+        "source_ids": [
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Manchuria, 1910–11",
+        "narration": "Not everyone was convinced. A senior French doctor in Harbin, Gérald Mesny, reportedly doubted Wu and went without a mask. Within days, he caught plague and died.",
+        "on_screen_text": "A doubter, without a mask",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "empty doctor's chair with mask"
+        },
+        "retention_device": "A dramatic turning point told as a micro-story",
+        "source_ids": [
+          "lynteris",
+          "mali"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "Manchuria, 1910–11",
+        "narration": "After that, masks spread fast among doctors, nurses and the public.",
+        "on_screen_text": "Masks spread fast",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "1911 crowd wearing gauze masks"
+        },
+        "retention_device": "Consequence beat",
+        "source_ids": [
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "Manchuria, 1910–11",
+        "narration": "But here's what most people miss. The mask was only one piece. The real power came from four measures working together.",
+        "on_screen_text": "4 measures, together",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "four puzzle pieces joining"
+        },
+        "retention_device": "'Here's what most people miss' re-hook",
+        "source_ids": [
+          "mali",
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "Manchuria, 1910–11",
+        "narration": "Sick people were isolated in plague hospitals. Their contacts were tracked down and quarantined, some in railway carriages turned into observation wards.",
+        "on_screen_text": "Isolate. Trace. Quarantine.",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Isolate the sick",
+            "Trace and quarantine contacts",
+            "House-to-house checks",
+            "Rail travel controls"
+          ],
+          "stock_query": "railway carriages as wards"
+        },
+        "retention_device": "Checklist visual",
+        "source_ids": [
+          "mali",
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "Manchuria, 1910–11",
+        "narration": "Inspection teams went house to house looking for new cases. And travel on the railway was restricted, so the infection couldn't ride the trains.",
+        "on_screen_text": "House checks, rail controls",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "inspectors walking snowy street"
+        },
+        "retention_device": "Completes the list",
+        "source_ids": [
+          "mali",
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "Manchuria, 1910–11",
+        "narration": "Historians credit these measures with helping end it. By the spring of 1911, the epidemic was over.",
+        "on_screen_text": "Over by spring 1911",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "snow melting spring blossoms town"
+        },
+        "retention_device": "Pays off the Manchuria story",
+        "source_ids": [
+          "mali",
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "Manchuria, 1910–11",
+        "narration": "The toll was still enormous: commonly estimated at about 60,000 deaths, though figures vary between sources.",
+        "on_screen_text": "About 60,000: an estimate",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~60,000",
+          "stat_label": "estimated deaths, 1910–11 (figures vary)",
+          "stock_query": "quiet memorial candles row"
+        },
+        "retention_device": "A sobering stat with an honest hedge",
+        "source_ids": [
+          "mali"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "Manchuria, 1910–11",
+        "narration": "That April, Wu chaired an International Plague Conference in Mukden, where scientists from many countries compared what they'd learned.",
+        "on_screen_text": "Mukden, April 1911",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientists around conference table 1911"
+        },
+        "retention_device": "Legacy beat",
+        "source_ids": [
+          "mali",
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "Manchuria, 1910–11",
+        "narration": "Now, one important caveat. Quarantine wasn't invented in Manchuria. It was first introduced in 1377 in Dubrovnik, then the port of Ragusa, on Croatia's coast.",
+        "on_screen_text": "Dubrovnik, 1377: quarantine begins",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "medieval port with waiting ships"
+        },
+        "retention_device": "A surprisingly older origin",
+        "source_ids": [
+          "tognotti"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "Manchuria, 1910–11",
+        "narration": "Isolation periods of 40 days, quaranta giorni in Italian, became the standard, and gave us the word quarantine.",
+        "on_screen_text": "Quaranta giorni = 40 days",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "word quarantine on old scroll"
+        },
+        "retention_device": "Word-origin fun fact",
+        "source_ids": [
+          "tognotti"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "Manchuria, 1910–11",
+        "narration": "So what Manchuria showed was something specific. At scale, in a pneumonic outbreak, masks, isolation, contact tracing and travel controls together could stop person-to-person spread.",
+        "on_screen_text": "Shown at scale, 1910–11",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "map with spread lines stopping"
+        },
+        "retention_device": "A precise takeaway",
+        "source_ids": [
+          "mali",
+          "lynteris"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "Manchuria, 1910–11",
+        "narration": "And that brings us back to the rule I promised you.",
+        "on_screen_text": "The 1911 rule",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sealed envelope opening"
+        },
+        "retention_device": "Signals the payoff of the main open loop",
+        "source_ids": []
+      },
+      {
+        "id": "s56",
+        "section": "What we still use",
+        "narration": "Here it is. Pneumonic plague spreads between people through close contact. So you don't screen everyone. You find the people who were close, and you watch them.",
+        "on_screen_text": "Find close contacts. Watch them.",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "health worker with contact list"
+        },
+        "retention_device": "Pays off the main loop",
+        "source_ids": [
+          "cdc_spread",
+          "mali"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "What we still use",
+        "narration": "CDC says pneumonic plague is the only form that can spread from person to person, through infectious droplets. And that requires direct and close contact.",
+        "on_screen_text": "Only pneumonic spreads person to person",
+        "visual": {
+          "kind": "quote",
+          "quote": "requires direct and close contact",
+          "attribution": "CDC, How Plague Spreads (updated May 15, 2024)",
+          "stock_query": "two people talking up close"
+        },
+        "retention_device": "The agency's own wording on screen",
+        "source_ids": [
+          "cdc_spread",
+          "cdc_signs"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "What we still use",
+        "narration": "That's the logic behind watching close contacts after a suspected case. Same idea as Wu's, just with better tools.",
+        "on_screen_text": "Wu's idea, better tools",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "1911 notebook beside modern tablet"
+        },
+        "retention_device": "Links the past to the present",
+        "source_ids": [
+          "cdc_spread",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "What we still use",
+        "narration": "The biggest new tool is one Wu never had: antibiotics. CDC says plague can be cured with antibiotics, but they must be given promptly.",
+        "on_screen_text": "Curable with antibiotics, given promptly (CDC)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor reassuring patient in clinic"
+        },
+        "retention_device": "A reassuring contrast with 1910",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "What we still use",
+        "narration": "WHO's guidance includes tracing close contacts of pneumonic plague patients and offering them preventive antibiotics. That's a decision for health authorities and clinicians, never something to do on your own.",
+        "on_screen_text": "Decided by health authorities",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "public health team planning at table"
+        },
+        "retention_device": "Practical safety framing",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "What we still use",
+        "narration": "Here's a calming fact, in CDC's own words: person-to-person spread has not been documented in the United States since 1924.",
+        "on_screen_text": "Not documented in the US since 1924",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "1924",
+          "stat_label": "person-to-person spread not documented since (US, CDC)",
+          "stock_query": "calendar 1924 with US map"
+        },
+        "retention_device": "A surprising, reassuring stat in the agency's exact wording",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "What we still use",
+        "narration": "Plague hasn't vanished, though. It still circulates in small mammals and their fleas. WHO says that from 2019 to 2025, most cases reported to it were in DR Congo and Madagascar.",
+        "on_screen_text": "Most cases 2019–2025: DR Congo, Madagascar (WHO)",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "DR Congo",
+            "Madagascar"
+          ],
+          "stock_query": "world map two highlighted countries"
+        },
+        "retention_device": "A 'but' turn keeps it honest",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "What we still use",
+        "narration": "So what really separates today from the Black Death? It isn't luck. It's antibiotics, plus public health systems that find cases and cut off spread.",
+        "on_screen_text": "Antibiotics + public health",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "medieval town versus modern clinic"
+        },
+        "retention_device": "The big-picture answer",
+        "source_ids": [
+          "cdc_about",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "What we still use",
+        "narration": "Which leaves one practical question: what should you actually watch for?",
+        "on_screen_text": "What to watch for",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person thinking with checklist"
+        },
+        "retention_device": "A question to the viewer before the final chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s65",
+        "section": "When to get help",
+        "narration": "Signs CDC lists for pneumonic plague include fever, cough, shortness of breath and chest pain.",
+        "on_screen_text": "CDC: 4 pneumonic signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fever",
+            "Cough",
+            "Shortness of breath",
+            "Chest pain"
+          ],
+          "stock_query": "four symptom icons calm style"
+        },
+        "retention_device": "Practical checklist",
+        "source_ids": [
+          "cdc_signs"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "When to get help",
+        "narration": "If you might have been exposed, for example through close contact with someone with suspected pneumonic plague, or by handling tissue or body fluids of an infected animal, contact a doctor or local health authority urgently.",
+        "on_screen_text": "Contact a doctor or local health authority urgently",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person calling doctor on phone"
+        },
+        "retention_device": "A clear action step",
+        "source_ids": [
+          "cdc_spread",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "When to get help",
+        "narration": "Tell them about the possible exposure and any travel. Don't self-treat, and don't stockpile antibiotics. Testing and treatment decisions belong with clinicians.",
+        "on_screen_text": "No self-treatment",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "clinician listening to patient"
+        },
+        "retention_device": "Safety guardrail",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "When to get help",
+        "narration": "And if you're worried, talk to a health professional.",
+        "on_screen_text": "Worried? Talk to a professional",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly nurse welcoming patient"
+        },
+        "retention_device": "A reassuring close",
+        "source_ids": []
+      },
+      {
+        "id": "s69",
+        "section": "When to get help",
+        "narration": "So, the century-long detective story in four lines. 1894: the germ is found. 1898 to 1914: the flea route is worked out. 1910 to 1911: close-contact spread is stopped at scale. Today: antibiotics plus contact tracing.",
+        "on_screen_text": "130 years in 4 lines",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "1894: germ found",
+            "1898–1914: flea route worked out",
+            "1910–11: close-contact spread stopped at scale",
+            "Today: antibiotics + contact tracing"
+          ],
+          "stock_query": "timeline with four milestones"
+        },
+        "retention_device": "Recap checklist",
+        "source_ids": [
+          "butler",
+          "simond",
+          "hinnebusch",
+          "mali",
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "When to get help",
+        "narration": "Official statements about the Irkutsk oblast case are still coming in. Subscribe to InforMed and you'll get each update dated, sourced and calm, as soon as we've checked what health agencies have said.",
+        "on_screen_text": "Dated, sourced updates",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "subscribe bell over calendar"
+        },
+        "retention_device": "CTA tied to a specific next benefit",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "aljazeera_oct8",
+        "title": "Russia dismisses reports of second plague case, WHO urges formal response",
+        "publisher": "Al Jazeera",
+        "year": "2026",
+        "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information"
+      },
+      {
+        "id": "ap_ksat_oct8",
+        "title": "Russian official seeks to turn the page on a suspected pneumonic plague case but questions remain",
+        "publisher": "Associated Press (via KSAT)",
+        "year": "2026",
+        "url": "https://www.ksat.com/news/world/2026/10/08/russias-public-health-watchdog-denies-a-second-infection-in-suspected-pneumonic-plague-case/"
+      },
+      {
+        "id": "turkiyetoday_oct9",
+        "title": "Russia declares all-clear in Siberia plague scare after 5,000 tests find nothing",
+        "publisher": "Türkiye Today",
+        "year": "2026",
+        "url": "https://www.turkiyetoday.com/lifestyle/russia-declares-all-clear-in-siberia-plague-scare-after-5000-tests-find-nothing-3229938"
+      },
+      {
+        "id": "un_news_oct6",
+        "title": "Testing and monitoring underway in suspected Russia plague death",
+        "publisher": "UN News",
+        "year": "2026",
+        "url": "https://news.un.org/en/story/2026/10/1168533"
+      },
+      {
+        "id": "cdc_about",
+        "title": "About Plague",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2026",
+        "url": "https://www.cdc.gov/plague/about/index.html"
+      },
+      {
+        "id": "cdc_spread",
+        "title": "How Plague Spreads",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/causes/index.html"
+      },
+      {
+        "id": "cdc_signs",
+        "title": "Signs and Symptoms of Plague",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      },
+      {
+        "id": "who_fs",
+        "title": "Plague (fact sheet)",
+        "publisher": "World Health Organization",
+        "year": "2026",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      },
+      {
+        "id": "butler",
+        "title": "Plague history: Yersin's discovery of the causative bacterium in 1894 enabled, in the subsequent century, scientific progress in understanding the disease and the development of treatments and vaccines",
+        "publisher": "Clinical Microbiology and Infection",
+        "year": "2014",
+        "url": "https://doi.org/10.1111/1469-0691.12540"
+      },
+      {
+        "id": "bibel",
+        "title": "Diagnosis of plaque: an analysis of the Yersin-Kitasato controversy",
+        "publisher": "Bacteriological Reviews",
+        "year": "1976",
+        "url": "https://doi.org/10.1128/br.40.3.633-651.1976"
+      },
+      {
+        "id": "simond",
+        "title": "Paul-Louis Simond and his discovery of plague transmission by rat fleas: a centenary",
+        "publisher": "Journal of the Royal Society of Medicine",
+        "year": "1998",
+        "url": "https://doi.org/10.1177/014107689809100219"
+      },
+      {
+        "id": "hinnebusch",
+        "title": "'Fleaing' the Plague: Adaptations of Yersinia pestis to Its Insect Vector That Lead to Transmission",
+        "publisher": "Annual Review of Microbiology",
+        "year": "2017",
+        "url": "https://doi.org/10.1146/annurev-micro-090816-093521"
+      },
+      {
+        "id": "lynteris",
+        "title": "Plague Masks: The Visual Emergence of Anti-Epidemic Personal Protection Equipment",
+        "publisher": "Medical Anthropology",
+        "year": "2018",
+        "url": "https://doi.org/10.1080/01459740.2017.1423072"
+      },
+      {
+        "id": "mali",
+        "title": "Dr. Wu Lien Teh, plague fighter and father of the Chinese public health system",
+        "publisher": "Protein & Cell",
+        "year": "2016",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4791421/"
+      },
+      {
+        "id": "tognotti",
+        "title": "Lessons from the History of Quarantine, from Plague to Influenza A",
+        "publisher": "Emerging Infectious Diseases",
+        "year": "2013",
+        "url": "https://doi.org/10.3201/eid1902.120312"
+      }
+    ],
+    "cta": "Subscribe to InforMed for dated, sourced plague status updates as soon as we've checked what health agencies have said. If you might have been exposed, contact a doctor or local health authority urgently. If you're worried, talk to a health professional."
+  },
+  "factcheck": {
+    "verdict": "REVISE",
+    "summary": "The history sections hold up well. Simond, Bacot and Martin, Wu, Mesny, the about 60,000 deaths, Mukden 1911 and Ragusa 1377 all match standard sources, and the Wu facts are confirmed in the Protein & Cell article. The CDC and WHO claims also match the current pages: How Plague Spreads (updated May 15, 2024), About Plague (Aug 24, 2026), Signs and Symptoms (May 15, 2024) and the WHO fact sheet (Sep 29, 2026). The safety lines are there: the urgent-contact line, no self-treatment, and \"If you're worried, talk to a health professional.\"\n\nThe status dates are correct. Al Jazeera says Peskov and Tedros spoke \"on Wednesday\" (Oct 7). AP says Kobzev and Rospotrebnadzor spoke \"Thursday\" (Oct 8).\n\nTwo attribution problems in the news beats need fixing before publish:\n- s03 credits Rospotrebnadzor with telling WHO that no plague case was registered. Neither cited source says this. In reporting, that line is Tedros relaying what \"Russian health authorities\" told WHO, and it includes the word \"recently\".\n- s01 credits \"pneumonia of unknown origin\" to Rospotrebnadzor and paraphrases WHO's Oct 6 statement more loosely than the cited UN News text.\n\nThere are also a few minor wording fixes.",
+    "issues": [
+      {
+        "location": "s03 (narration + list item 1)",
+        "claim": "Also on Oct 8, Rospotrebnadzor said it had told WHO no case of plague has been registered in the Irkutsk region",
+        "problem": "Neither cited source (AP/KSAT, Al Jazeera) says this. AP only says that 'earlier Thursday, Rospotrebnadzor rejected reports about a second person falling ill'. In other coverage, the 'no case of plague had recently been registered in Irkutsk region' line comes from WHO's Tedros, relaying what Russian health authorities told WHO. So this credits the claim to the wrong body and drops 'recently', which is the same kind of mistake that caused earlier holds.",
+        "severity": "major",
+        "fix": "Narration: \"Also on Oct 8, Rospotrebnadzor rejected reports of a second person falling ill, AP reports. A day earlier, on Oct 7, the Kremlin called most media reports false, and WHO chief Tedros asked Russia to clarify media reports of a second employee with pneumonia of undetermined cause.\" List item 1: \"Oct 8: Rospotrebnadzor rejects reports of a second person falling ill (AP)\""
+      },
+      {
+        "location": "s01 (narration)",
+        "claim": "On Oct 6, WHO said authorities were looking into whether pneumonic plague caused her death. Rospotrebnadzor describes it as pneumonia of unknown origin.",
+        "problem": "The cited UN News piece (Oct 6) quotes WHO's Christian Lindmeier: 'No cause of death has been officially confirmed to date and laboratory testing is reportedly underway.' Our narration paraphrases this more loosely. None of the cited sources credits 'pneumonia of unknown origin' to Rospotrebnadzor. Al Jazeera credits 'pneumonia of unknown aetiology' to Russia generally, and that wording came before the governor's Oct 8 'community-acquired pneumonia', so the present tense 'describes' is out of date.",
+        "severity": "major",
+        "fix": "\"As of Oct 10, 2026, plague has been reported as suspected, but not confirmed, in a laboratory worker in Irkutsk oblast who died. Russian authorities said she had pneumonia of unknown aetiology. On Oct 6, WHO said no cause of death had been officially confirmed and laboratory testing was reportedly underway.\""
+      },
+      {
+        "location": "s02 (on_screen_text)",
+        "claim": "Oct 8: governor: ~5,000 tests, contact monitoring ended",
+        "problem": "The card drops AP's caveat that he did not explicitly say whether pneumonic plague had been ruled out. On its own it reads as an all-clear. On-screen text should never be more reassuring than the narration.",
+        "severity": "minor",
+        "fix": "\"Oct 8, governor: ~5,000 tests, monitoring ended. Plague NOT RULED OUT explicitly (AP)\""
+      },
+      {
+        "location": "s59 (narration + on_screen_text)",
+        "claim": "CDC says plague can be cured with antibiotics, but they must be given promptly.",
+        "problem": "CDC's About Plague page (updated Aug 24, 2026) says 'Plague can be cured with antibiotics, but treatment must be given quickly.' Because we credit the line to CDC on screen, we should use CDC's exact words.",
+        "severity": "minor",
+        "fix": "Narration: \"CDC says plague can be cured with antibiotics, but treatment must be given quickly.\" On-screen: \"Curable with antibiotics; treatment must be given quickly (CDC)\""
+      },
+      {
+        "location": "s60 (narration)",
+        "claim": "WHO's guidance includes tracing close contacts of pneumonic plague patients and offering them preventive antibiotics.",
+        "problem": "This is accurate but less precise than the source. The WHO fact sheet (updated Sep 29, 2026) says 'Identify and monitor close contacts of pneumonic plague patients and give them a seven-day chemoprophylaxis.'",
+        "severity": "minor",
+        "fix": "\"WHO's guidance is to identify and monitor close contacts of pneumonic plague patients and give them preventive antibiotics. That's a decision for health authorities and clinicians, never something to do on your own.\""
+      },
+      {
+        "location": "s53 (narration)",
+        "claim": "Isolation periods of 40 days ... became the standard",
+        "problem": "Tognotti says the 1377 Ragusa rule set a 30-day isolation ('trentino'), which was later extended to 40 days. Without that, viewers may assume 40 days applied from 1377.",
+        "severity": "minor",
+        "fix": "\"Ragusa's first rule was 30 days. It was later extended to 40, quaranta giorni in Italian, which gave us the word quarantine.\""
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "ap_ksat_oct8",
+        "title": "Russian official seeks to turn the page on a suspected pneumonic plague case but questions remain",
+        "publisher": "Associated Press (via KSAT)",
+        "year": "2026",
+        "url": "https://www.ksat.com/news/world/2026/10/08/russias-public-health-watchdog-denies-a-second-infection-in-suspected-pneumonic-plague-case/"
+      },
+      {
+        "id": "aljazeera_oct8",
+        "title": "Russia dismisses reports of second plague case, WHO urges formal response",
+        "publisher": "Al Jazeera",
+        "year": "2026",
+        "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information"
+      },
+      {
+        "id": "turkiyetoday_oct9",
+        "title": "Russia declares all-clear in Siberia plague scare after 5,000 tests find nothing",
+        "publisher": "Türkiye Today",
+        "year": "2026",
+        "url": "https://www.turkiyetoday.com/lifestyle/russia-declares-all-clear-in-siberia-plague-scare-after-5000-tests-find-nothing-3229938"
+      },
+      {
+        "id": "un_news_oct6",
+        "title": "Testing and monitoring underway in suspected Russia plague death",
+        "publisher": "UN News",
+        "year": "2026",
+        "url": "https://news.un.org/en/story/2026/10/1168533"
+      },
+      {
+        "id": "cdc_about",
+        "title": "About Plague",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2026",
+        "url": "https://www.cdc.gov/plague/about/index.html"
+      },
+      {
+        "id": "cdc_spread",
+        "title": "How Plague Spreads",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/causes/index.html"
+      },
+      {
+        "id": "cdc_signs",
+        "title": "Signs and Symptoms of Plague",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      },
+      {
+        "id": "who_fs",
+        "title": "Plague (fact sheet)",
+        "publisher": "World Health Organization",
+        "year": "2026",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      },
+      {
+        "id": "mali",
+        "title": "Dr. Wu Lien Teh, plague fighter and father of the Chinese public health system",
+        "publisher": "Protein & Cell",
+        "year": "2016",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4791421/"
+      }
+    ]
+  },
+  "hold_reason": "Not rendered: Fact-checker verdict REVISE: The history sections hold up well. Simond, Bacot and Martin, Wu, Mesny, the about 60,000 deaths, Mukden 1911 and Ragusa 1377 all match standard sources, and the Wu facts are confirmed in the Protein & Cell article. The CDC and WHO claims also match the current pages: How Plague Spreads (updated May 15, 2024), About Plague (Aug 24, 2026), Signs and Symptoms (May 15, 2024) and the WHO fact sheet (Sep 29, 2026). The safety lines are there: the urgent-contact line, no self-treatment, and \"If you're worried, talk to a health professional.\"\n\nThe status dates are correct. Al Jazeera says Peskov and Tedros spoke \"on Wednesday\" (Oct 7). AP says Kobzev and Rospotrebnadzor spoke \"Thursday\" (Oct 8).\n\nTwo attribution problems in the news beats need fixing before publish:\n- s03 credits Rospotrebnadzor with telling WHO that no plague case was registered. Neither cited source says this. In reporting, that line is Tedros relaying what \"Russian health authorities\" told WHO, and it includes the word \"recently\".\n- s01 credits \"pneumonia of unknown origin\" to Rospotrebnadzor and paraphrases WHO's Oct 6 statement more loosely than the cited UN News text.\n\nThere are also a few minor wording fixes.",
+  "release_tag": "content-2026-10-10",
+  "archive_url": "b2://informed-lab-media/content/2026-10-10/L3-how-science-cracked-plague-finding-yersi/"
+}
