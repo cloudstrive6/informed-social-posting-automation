@@ -144,7 +144,8 @@ export async function finalizeDay(date: string) {
       if (existsSync(join(finalDir, name))) renameSync(join(finalDir, name), join(finalDir, `${id}-${name}`));
       return join(finalDir, `${id}-${name}`);
     });
-    const files = readdirSync(finalDir).map(f => join(finalDir, f));
+    // an item that failed before rendering (e.g. a long video dropped at the fact-check) has no final/ folder
+    const files = existsSync(finalDir) ? readdirSync(finalDir).map(f => join(finalDir, f)) : [];
     await uploadToRelease(tag, files);
     item.release_tag = tag;
     item.archive_url = await archiveItem(date, id, join(dayOut, id));
