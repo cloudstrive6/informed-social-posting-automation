@@ -15,6 +15,7 @@ Then (5–30 s): back the promise with a concrete proof point, say what they'll 
 ## Keep them watching (retention architecture)
 - Every 45–75 seconds, place a **re-hook**: a new open loop, a surprising stat, "but here's where it gets weird", a mini-cliffhanger before a section change, a question to the viewer, or a payoff of an earlier loop that opens a new one. Record the device in each scene's `retention_device`.
 - Structure: Hook → Promise → 3–6 escalating sections (save the most surprising for last) → payoff of the main loop → practical takeaway checklist → CTA (subscribe tied to a specific next benefit, never begging).
+- **Breaking news stays out of long-form** unless the piece is explicitly about the news: no current case counts, quotes, dates or "as of" status lines from developing stories (they change daily and keep failing the fact-check). One neutral sentence of context is the maximum. Build the video on settled evidence from primary sources.
 - Use a "but / therefore" rhythm, not "and then". Vary sentence length. Use concrete numbers, analogies and vivid comparisons. Talk to "you".
 - Tell micro-stories (a study's surprising design, a historical anecdote) to make data memorable.
 
