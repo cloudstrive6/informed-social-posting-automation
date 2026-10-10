@@ -55,8 +55,16 @@ export async function produceLong(date: string, pieceId: string): Promise<Conten
     log.info(`revised script: ${scriptWords(script)} words`);
   }
   item.script = script; item.factcheck = factcheck;
-  if (held) { item.status = "held"; item.hold_reason = holdReason; }
   writeJson(join(dir, "script.json"), script);
+  if (held) {
+    // the script didn't pass the fact-check even after the final verification: rendering it (~3 h) would only get
+    // it dropped. Stop here; the ops watchdog orders a replacement long video as soon as this run finishes.
+    item.status = "failed";
+    item.hold_reason = `Not rendered: ${holdReason}`;
+    for (const p of item.posts) p.status = "skipped";
+    log.warn(`long ${item.id}: fact-check not passed; skipping the render so a replacement can start sooner`);
+    return item;
+  }
 
   // 2) voice
   const spoken = await directNarration(script.scenes);
