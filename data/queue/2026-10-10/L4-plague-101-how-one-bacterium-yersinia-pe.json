@@ -1,0 +1,1559 @@
+{
+  "id": "L4-plague-101-how-one-bacterium-yersinia-pe",
+  "date": "2026-10-10",
+  "kind": "long",
+  "plan": {
+    "id": "L4",
+    "kind": "long",
+    "topic": "Plague 101: how one bacterium (Yersinia pestis) causes three different forms of disease (bubonic, septicemic and pneumonic), how each starts, what it does in the body, and why only pneumonic can pass between people",
+    "angle": "An evergreen explainer that rests only on CDC and WHO pages: About Plague (updated Aug 24, 2026), How Plague Spreads, Signs and Symptoms of Plague (use that exact title) and the WHO plague fact sheet, each cited by its exact title and updated date.\n\nNews context: one neutral sentence at most ('plague has been in the news this month'). Say nothing about the Irkutsk case's status, tests, quarantine or WHO/Russian statements.\n\nSegments:\n(1) The bacterium and its natural cycle: wild rodents and their fleas (CDC).\n(2) Bubonic: a flea bite or handling tissue or body fluids of an infected animal; the bacteria travel to the nearest lymph node, which swells (CDC wording).\n(3) Septicemic: infection in the bloodstream. It can be the first form, or it can follow untreated bubonic plague (CDC).\n(4) Pneumonic: infection in the lungs. It can start by breathing in infectious droplets, or follow untreated bubonic or septicemic plague. Use CDC's exact lines: 'Transmission of these droplets is the only way that plague can spread between people' and 'Typically, this requires direct and close contact with the person or animal with pneumonic plague'. Sick cats are CDC's example.\n(5) Why the form changes the public-health response: why contacts of pneumonic cases are traced, and why bubonic cases aren't. Keep this general, with no Irkutsk details.\n(6) Symptoms of each form, taken from Signs and Symptoms of Plague. List CDC's 4 pneumonic signs in full: fever, cough, shortness of breath, chest pain. Give no incubation numbers unless they're copied verbatim from the CDC page; incubation is S1's topic.\n(7) Treatment: 'can be cured with antibiotics, especially when started early' (CDC/WHO). No drug names, doses, stockpiling or self-treatment.\n(8) Calm fact in CDC's wording: 'Person-to-person spread has not been documented in the United States since 1924.'\n\nScope discipline: never widen a pneumonic-only claim to all plague. Credit a line to a source only if that page says it word for word, or as a close paraphrase without quote marks.\n\nClose: possible exposure plus fever, cough, shortness of breath or chest pain means contact a doctor or local health authority urgently. Then 'If you're worried, talk to a health professional.'\n\nVisuals: labelled diagrams of lymph nodes, blood and lungs. No clinical photos, no rats as horror, no skulls.\n\nDescription: plain text, 1,500 characters or fewer, up to 4 CDC/WHO sources with their updated dates.",
+    "working_title": "Plague: Bubonic vs Pneumonic vs Septicemic, How One Bacterium Causes 3 Diseases",
+    "target_keyword": "pneumonic vs bubonic plague",
+    "trend_stage": "evergreen",
+    "why": "Every news explainer contrasts the plague forms, and the analytics single this topic out as one that failed only because of the carousel format. It rests fully on settled CDC and WHO pages, with no case-status claims to date or attribute, so it should pass the fact-check on the first try.",
+    "pillar": "general"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Pneumonic Plague vs Bubonic Plague: Which One Spreads Between People?",
+    "title_candidates": [
+      "Pneumonic vs Bubonic Plague: Which One Spreads Between People?",
+      "Pneumonic vs Bubonic Plague: Why Only One Spreads Between People",
+      "Pneumonic vs Bubonic Plague: What CDC Says Spreads Between People",
+      "Pneumonic vs Bubonic vs Septicemic Plague: What's the Difference?",
+      "Pneumonic vs Bubonic Plague: Is Every Form Contagious?",
+      "Plague Explained: One Bacterium, Three Very Different Diseases",
+      "Plague 101: Why Only the Pneumonic Form Spreads Between People",
+      "Plague Has 3 Forms. Only Pneumonic Spreads Person to Person",
+      "Pneumonic vs Bubonic Plague: Lymph Nodes, Blood and Lungs",
+      "Pneumonic vs Bubonic Plague: Symptoms, Spread and Treatment"
+    ],
+    "description": "Quick answer: CDC says pneumonic plague (lungs) is the only form that can spread from person to person, through infectious droplets, typically with direct and close contact. Bubonic (lymph node) and septicemic (bloodstream) plague usually come from a flea bite or handling tissue or body fluids of an infected animal; WHO describes human-to-human spread of bubonic plague as rare. Plague can be cured with antibiotics, especially when started early.\n\nPlague has been in the news this month; this video covers settled CDC and WHO science, not any current case.\n\nThis content is for educational purposes only and is not medical advice. After a possible exposure, if you develop symptoms, contact a doctor or local health authority urgently. If you're worried, talk to a health professional.\n\nSources:\nCDC, About Plague (updated Aug 24, 2026): https://www.cdc.gov/plague/about/index.html\nCDC, How Plague Spreads (updated May 15, 2024): https://www.cdc.gov/plague/causes/index.html\nCDC, Signs and Symptoms of Plague (updated May 15, 2024): https://www.cdc.gov/plague/signs-symptoms/index.html\nWHO, Plague fact sheet: https://www.who.int/news-room/fact-sheets/detail/plague",
+    "tags": [
+      "pneumonic vs bubonic plague",
+      "bubonic plague",
+      "pneumonic plague",
+      "septicemic plague",
+      "Yersinia pestis",
+      "plague symptoms",
+      "is plague contagious",
+      "how does plague spread",
+      "plague transmission",
+      "plague CDC",
+      "plague WHO fact sheet",
+      "types of plague",
+      "plague treatment antibiotics",
+      "can plague spread person to person",
+      "plague 101",
+      "what is plague",
+      "plague forms explained",
+      "history of plague",
+      "rat flea plague",
+      "plague in humans",
+      "plague signs and symptoms",
+      "black death vs plague today"
+    ],
+    "pinned_comment": "Quick recap: CDC says pneumonic plague is the only form that can spread from person to person, typically through direct and close contact. Plague can be cured with antibiotics, especially when started early. Save this or share it with someone who's seen plague in the news. Educational only, not medical advice. After a possible exposure, if you develop symptoms, contact a doctor or local health authority urgently. If you're worried, talk to a health professional.",
+    "thumbnail": {
+      "headline": "ONLY ONE SPREADS PERSON-TO-PERSON",
+      "highlight_word": "ONE",
+      "subtext": "PNEUMONIC, PER CDC",
+      "layout": "versus",
+      "psychology": "Contrast plus curiosity gap: the title asks which form spreads, and the thumbnail confirms that only one does without naming which, so the viewer's eye goes straight to the two labelled organs to work it out.",
+      "emotion": "Intrigued: 'which one is it?'",
+      "hero_art": "lymph node",
+      "hero_face": "worried",
+      "second_art": "lungs",
+      "second_face": "shocked",
+      "prop": "none",
+      "accent": "highlight",
+      "badge": "",
+      "versus_left": "BUBONIC",
+      "versus_right": "PNEUMONIC"
+    },
+    "chapters": "0:00 One germ, three diseases\n0:40 Meet Yersinia pestis\n1:59 Bubonic: the lymph node\n3:02 Septicemic: the bloodstream\n3:57 Pneumonic: the lungs\n5:42 Why the form matters\n7:00 Signs and symptoms\n8:28 Treatment: time matters\n9:31 The 1924 fact\n10:29 Your checklist"
+  },
+  "media": {
+    "video": "L4-plague-101-how-one-bacterium-yersinia-pe.mp4",
+    "duration": 701.137,
+    "thumbnail": "L4-plague-101-how-one-bacterium-yersinia-pe-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-10T18:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "88tdNBxSVFk",
+      "url": "https://youtu.be/88tdNBxSVFk",
+      "published_at": "2026-10-10T18:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-10-10T10:25:20.537Z",
+  "script": {
+    "working_title": "Pneumonic vs Bubonic Plague (and Septicemic): How One Bacterium Causes 3 Diseases",
+    "target_keyword": "pneumonic vs bubonic plague",
+    "hook_pattern": "Counterintuitive claim + open loop: one bacterium causes three different diseases, CDC says only one spreads between people, and a century-old CDC date is promised in the first 30 seconds and paid off near the end",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "One germ, three diseases",
+        "narration": "One bacterium. Three very different diseases. And according to CDC, only one of them can spread from person to person.",
+        "on_screen_text": "1 germ. 3 diseases.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "one bacterium splitting into three paths"
+        },
+        "retention_device": "Pattern interrupt: counterintuitive claim in the first 5 seconds",
+        "source_ids": [
+          "cdc_symptoms",
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "One germ, three diseases",
+        "narration": "The germ is the same every time. What changes is the doorway it uses to get in, and where in your body it settles.",
+        "on_screen_text": "Same germ, different doorway",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "bacterium choosing between three doors"
+        },
+        "retention_device": "Curiosity gap: what are the three doorways?",
+        "source_ids": [
+          "cdc_symptoms",
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "One germ, three diseases",
+        "narration": "Plague has been in the news this month, so let's get the basics right, using only what CDC and the World Health Organization actually say.",
+        "on_screen_text": "Only CDC and WHO",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly narrator holding CDC WHO pages"
+        },
+        "retention_device": "Trust promise: evidence-only framing",
+        "source_ids": [
+          "cdc_about",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "One germ, three diseases",
+        "narration": "In the next few minutes, you'll learn how each form starts, what it does inside the body, and the symptoms CDC lists for each one.",
+        "on_screen_text": "How it starts. What it does.",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "How each form starts",
+            "What it does in the body",
+            "CDC's symptoms for each"
+          ],
+          "stock_query": "three labelled body diagram icons"
+        },
+        "retention_device": "Promise: clear roadmap of the payoff",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "One germ, three diseases",
+        "narration": "And stay to the end, because one sentence on a CDC page puts person-to-person spread in the United States into perspective. It's a date. And it's more than a century old.",
+        "on_screen_text": "One date. 100+ years old.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "old calendar page with question mark"
+        },
+        "retention_device": "Main open loop: the century-old CDC date, paid off in 'The 1924 fact'",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s06",
+        "section": "Meet Yersinia pestis",
+        "narration": "First, meet the germ.",
+        "on_screen_text": "Meet Yersinia pestis",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card cartoon microscope"
+        },
+        "retention_device": "Chapter reset",
+        "source_ids": []
+      },
+      {
+        "id": "s07",
+        "section": "Meet Yersinia pestis",
+        "narration": "Plague is caused by a bacterium called Yersinia pestis. CDC describes plague as a disease that affects humans and other mammals.",
+        "on_screen_text": "Yersinia pestis",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "rod-shaped bacterium cartoon labelled"
+        },
+        "retention_device": "Concrete naming of the villain",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "Meet Yersinia pestis",
+        "narration": "Its natural home isn't people. WHO says it's usually found in small mammals and their fleas, and it's passed between animals through fleas.",
+        "on_screen_text": "Home: small mammals + fleas",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cute small mammals with tiny fleas"
+        },
+        "retention_device": "Reframe: plague is mainly an animal disease",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "Meet Yersinia pestis",
+        "narration": "Picture a quiet loop running in the wild. Rodent to flea, flea to rodent, mostly out of sight.",
+        "on_screen_text": "The wild loop",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cycle diagram rodent flea arrows"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "Meet Yersinia pestis",
+        "narration": "So how do people get pulled in? CDC says humans usually get plague after being bitten by a rodent flea carrying the bacterium, or by handling an animal infected with plague.",
+        "on_screen_text": "Flea bite or infected animal",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Bite from an infected rodent flea",
+            "Handling an infected animal"
+          ],
+          "stock_query": "flea and animal icons labelled"
+        },
+        "retention_device": "Question to the viewer, answered immediately",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "Meet Yersinia pestis",
+        "narration": "And timing matters. CDC explains that during plague outbreaks among animals, many rodents die, and hungry fleas go looking for other sources of blood.",
+        "on_screen_text": "Hungry fleas move on",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon flea searching with magnifying glass"
+        },
+        "retention_device": "But/therefore turn",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "Meet Yersinia pestis",
+        "narration": "CDC says people and animals visiting places where rodents have recently died from plague are at risk. Dogs and cats can also bring infected fleas into the home.",
+        "on_screen_text": "Pets can carry fleas home",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "dog and cat walking into house"
+        },
+        "retention_device": "Personal relevance: pets",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "Meet Yersinia pestis",
+        "narration": "Plague still occurs naturally today. WHO says that during 2019 to 2025, most cases reported to WHO occurred in the Democratic Republic of the Congo and Madagascar.",
+        "on_screen_text": "Most cases 2019–2025: DRC + Madagascar (WHO)",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Democratic Republic of the Congo",
+            "Madagascar"
+          ],
+          "stock_query": "friendly world map two pins"
+        },
+        "retention_device": "Surprising fact: plague is still around",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "Meet Yersinia pestis",
+        "narration": "So why does one germ cause three different illnesses? It comes down to where it lands first. Let's start with the most common form.",
+        "on_screen_text": "Where it lands first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "bacterium parachuting onto body map"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "Bubonic: the lymph node",
+        "narration": "Bubonic plague is the form most people picture, and WHO calls it the most common form of plague.",
+        "on_screen_text": "Bubonic: most common (WHO)",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card lymph node icon"
+        },
+        "retention_device": "Chapter reset",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "Bubonic: the lymph node",
+        "narration": "It usually starts with a flea bite. But CDC says it can also follow handling tissue or body fluids of an infected animal.",
+        "on_screen_text": "Flea bite or animal fluids",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Flea bite",
+            "Handling tissue or body fluids of an infected animal"
+          ],
+          "stock_query": "flea and gloved hands icons"
+        },
+        "retention_device": "But/therefore rhythm",
+        "source_ids": [
+          "cdc_spread",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "Bubonic: the lymph node",
+        "narration": "CDC's example is a hunter skinning a rabbit or other infected animal without using proper precautions.",
+        "on_screen_text": "CDC's example: a hunter",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon hunter in forest cabin"
+        },
+        "retention_device": "Micro-story",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "Bubonic: the lymph node",
+        "narration": "Then the bacteria do something sneaky. They don't stay at the bite. WHO says they travel through the lymphatic system, part of your immune defences.",
+        "on_screen_text": "They travel",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "labelled lymphatic system diagram glowing"
+        },
+        "retention_device": "'Here's the sneaky part' re-hook",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "Bubonic: the lymph node",
+        "narration": "Their destination is a lymph node, one of the small filters along that network. CDC says the bacteria multiply in a lymph node near where they entered the body.",
+        "on_screen_text": "A lymph node nearby",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "labelled lymph node diagram arrow"
+        },
+        "retention_device": "Concrete mechanism",
+        "source_ids": [
+          "cdc_symptoms",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Bubonic: the lymph node",
+        "narration": "That node becomes swollen and painful. CDC calls these swollen nodes buboes, and that's where bubonic plague gets its name.",
+        "on_screen_text": "Bubo = swollen lymph node",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon lymph node swelling labelled bubo"
+        },
+        "retention_device": "Name reveal payoff",
+        "source_ids": [
+          "cdc_symptoms",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Bubonic: the lymph node",
+        "narration": "Here's the detail to hold onto. CDC says if the patient isn't treated with the appropriate antibiotics, the bacteria can spread to other parts of the body.",
+        "on_screen_text": "Untreated, it can spread",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "bacteria leaving lymph node diagram"
+        },
+        "retention_device": "New open loop: where does it spread next?",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Bubonic: the lymph node",
+        "narration": "Where they spread decides what happens next. And that brings us to form number two.",
+        "on_screen_text": "Form number 2",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "arrow from lymph node to blood"
+        },
+        "retention_device": "Cliffhanger into next chapter",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Septicemic: the bloodstream",
+        "narration": "Septicemic plague is infection in the bloodstream.",
+        "on_screen_text": "Septicemic: the bloodstream",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card blood vessel icon"
+        },
+        "retention_device": "Chapter reset",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Septicemic: the bloodstream",
+        "narration": "Instead of being held at one lymph node, the bacteria are multiplying in the blood itself.",
+        "on_screen_text": "Bacteria in the blood",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "labelled blood vessel diagram bacteria"
+        },
+        "retention_device": "Contrast with the previous form",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "Septicemic: the bloodstream",
+        "narration": "CDC says there are two routes here. Septicemic plague can occur as the first symptom of plague, or it can develop from untreated bubonic plague.",
+        "on_screen_text": "2 routes in",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "As the first form of plague",
+            "From untreated bubonic plague"
+          ],
+          "stock_query": "two arrows into blood vessel"
+        },
+        "retention_device": "Numbered structure",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "Septicemic: the bloodstream",
+        "narration": "And it can begin the same ways bubonic plague does. CDC's page on how plague spreads says flea bites, and handling an infected animal's tissue or fluids, can lead to either bubonic or septicemic plague.",
+        "on_screen_text": "Same starts, different form",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "flea and animal icons forking"
+        },
+        "retention_device": "Surprise: same exposure, different outcome",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Septicemic: the bloodstream",
+        "narration": "Here's the tricky part. CDC's symptom list for septicemic plague doesn't include the swollen lymph node. So one of plague's most recognisable clues may be missing.",
+        "on_screen_text": "The swollen node may be missing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "detective with missing clue card"
+        },
+        "retention_device": "'Here's the tricky part' re-hook",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Septicemic: the bloodstream",
+        "narration": "Notice what's missing so far: spread between people. According to CDC, that only enters the picture when the bacteria reach the lungs.",
+        "on_screen_text": "Next stop: the lungs",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "arrow pointing to cartoon lungs"
+        },
+        "retention_device": "Cliffhanger before the key section",
+        "source_ids": [
+          "cdc_spread",
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "Pneumonic: the lungs",
+        "narration": "Pneumonic plague is infection in the lungs. CDC calls it the most serious form of the disease.",
+        "on_screen_text": "Pneumonic: most serious (CDC)",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card labelled lungs"
+        },
+        "retention_device": "Chapter reset with stakes",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Pneumonic: the lungs",
+        "narration": "It can start in two ways. CDC says it can develop from breathing in infectious droplets, or from untreated bubonic or septicemic plague after the bacteria spread to the lungs.",
+        "on_screen_text": "2 ways it starts",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Breathing in infectious droplets",
+            "From untreated bubonic or septicemic plague"
+          ],
+          "stock_query": "labelled lungs diagram two arrows"
+        },
+        "retention_device": "Numbered structure",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "Pneumonic: the lungs",
+        "narration": "Remember that detail from bubonic plague? This is where it can lead. Left untreated, the infection can spread and reach the lungs.",
+        "on_screen_text": "The loose end, tied up",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "path from lymph node to lungs"
+        },
+        "retention_device": "Payoff of the bubonic open loop",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Pneumonic: the lungs",
+        "narration": "Once it's in the lungs, the bacteria have a new exit. CDC explains that a person with plague pneumonia may cough droplets containing the bacteria into the air.",
+        "on_screen_text": "A new exit: droplets",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon cough droplets labelled"
+        },
+        "retention_device": "Escalation: the game changes",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Pneumonic: the lungs",
+        "narration": "If another person breathes those droplets in, CDC says they can develop pneumonic plague.",
+        "on_screen_text": "Breathed in, it can spread",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two cartoon people talking closely"
+        },
+        "retention_device": "Build-up to key quote",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Pneumonic: the lungs",
+        "narration": "And here's the line that matters most. In CDC's words: Transmission of these droplets is the only way that plague can spread between people.",
+        "on_screen_text": "The only way between people",
+        "visual": {
+          "kind": "quote",
+          "quote": "Transmission of these droplets is the only way that plague can spread between people.",
+          "attribution": "CDC, How Plague Spreads",
+          "stock_query": "quote card with lungs icon"
+        },
+        "retention_device": "Key quote reveal",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "Pneumonic: the lungs",
+        "narration": "So among the three forms, CDC says pneumonic plague is the only one that can be spread from person to person.",
+        "on_screen_text": "Only pneumonic spreads person-to-person (CDC)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "three icons one highlighted lungs"
+        },
+        "retention_device": "Payoff of the opening claim",
+        "source_ids": [
+          "cdc_symptoms",
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Pneumonic: the lungs",
+        "narration": "But how close do you have to be? CDC answers that too.",
+        "on_screen_text": "How close?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "measuring tape between two people"
+        },
+        "retention_device": "Question to the viewer",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Pneumonic: the lungs",
+        "narration": "Typically, this requires direct and close contact with the person or animal with pneumonic plague.",
+        "on_screen_text": "Direct and close contact",
+        "visual": {
+          "kind": "quote",
+          "quote": "Typically, this requires direct and close contact with the person or animal with pneumonic plague.",
+          "attribution": "CDC, How Plague Spreads",
+          "stock_query": "quote card two people icon"
+        },
+        "retention_device": "Answer to the question",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "Pneumonic: the lungs",
+        "narration": "Direct and close contact. Hold onto that phrase, because it shapes how health agencies respond.",
+        "on_screen_text": "Remember this phrase",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sticky note direct and close"
+        },
+        "retention_device": "Open loop: how agencies use it",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "Pneumonic: the lungs",
+        "narration": "And did you catch the word animal? Here's where it gets surprising.",
+        "on_screen_text": "Wait: animal?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "narrator raising eyebrow surprised"
+        },
+        "retention_device": "'Here's where it gets surprising' re-hook",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "Pneumonic: the lungs",
+        "narration": "CDC's example isn't a rat. It's a sick cat.",
+        "on_screen_text": "CDC's example: a sick cat",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sleepy sick cat on blanket"
+        },
+        "retention_device": "Surprise reveal",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "Pneumonic: the lungs",
+        "narration": "CDC says sick cats can pass infectious plague droplets to their owners or to veterinarians. So the close-contact rule applies to animals with pneumonic plague too.",
+        "on_screen_text": "Owners and vets at risk",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "vet gently examining cat"
+        },
+        "retention_device": "Practical relevance for pet owners",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "Pneumonic: the lungs",
+        "narration": "Now, why does any of this matter beyond biology? Because the form decides who public-health teams need to find.",
+        "on_screen_text": "The form decides the response",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "public health team at whiteboard"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": [
+          "who_fs",
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Why the form matters",
+        "narration": "With bubonic or septicemic plague, the usual source is a flea or an infected animal, not another person. WHO describes human-to-human transmission of bubonic plague as rare.",
+        "on_screen_text": "Bubonic: person-to-person spread rare (WHO)",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card magnifying glass"
+        },
+        "retention_device": "Chapter reset",
+        "source_ids": [
+          "cdc_spread",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Why the form matters",
+        "narration": "So the usual question is where the person was exposed: the fleas, the animals, the place.",
+        "on_screen_text": "Find the source",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "investigator mapping fleas and animals"
+        },
+        "retention_device": "But/therefore logic",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "Why the form matters",
+        "narration": "That fits what CDC says: not every form of plague passes from one person to another. CDC says only pneumonic plague can, and WHO calls person-to-person spread of bubonic plague rare.",
+        "on_screen_text": "Not every form spreads person to person",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Every form of plague spreads person to person",
+          "fact": "CDC: only pneumonic plague can spread person to person. WHO: bubonic person-to-person spread is rare",
+          "stock_query": "myth fact split card"
+        },
+        "retention_device": "Myth correction",
+        "source_ids": [
+          "cdc_symptoms",
+          "cdc_spread",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "Why the form matters",
+        "narration": "With pneumonic plague, the picture changes. Now the people who were in direct and close contact with the patient matter.",
+        "on_screen_text": "Pneumonic: contacts matter",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "circle of contacts around patient icon"
+        },
+        "retention_device": "Escalation",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "Why the form matters",
+        "narration": "WHO's outbreak guidance includes isolating patients with pneumonic plague, and identifying and monitoring their close contacts.",
+        "on_screen_text": "Isolate. Identify. Monitor.",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Isolate patients with pneumonic plague",
+            "Identify close contacts",
+            "Monitor close contacts"
+          ],
+          "stock_query": "checklist clipboard public health"
+        },
+        "retention_device": "Concrete action list",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "Why the form matters",
+        "narration": "WHO says close contacts of pneumonic plague patients, and household members of bubonic plague patients, should be given preventive antibiotics. That's a decision for clinicians and public-health teams, never something to do on your own.",
+        "on_screen_text": "Given by health authorities",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor talking calmly with patient"
+        },
+        "retention_device": "Safety caveat tied to the action",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "Why the form matters",
+        "narration": "It's that CDC sentence in action. If spread typically requires direct and close contact, finding those close contacts is how you break the chain.",
+        "on_screen_text": "Find contacts, break the chain",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "chain link snapping cartoon"
+        },
+        "retention_device": "Payoff of the 'hold onto that phrase' loop",
+        "source_ids": [
+          "cdc_spread",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "Why the form matters",
+        "narration": "But tracing only works if someone recognises the illness first. So what does each form actually look like?",
+        "on_screen_text": "What does each look like?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "question mark over three body diagrams"
+        },
+        "retention_device": "Question cliffhanger before section change",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "Signs and symptoms",
+        "narration": "Signs and symptoms. Everything here comes from CDC's page, Signs and Symptoms of Plague.",
+        "on_screen_text": "Signs and symptoms (CDC)",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card thermometer icon"
+        },
+        "retention_device": "Chapter reset with source credit",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "Signs and symptoms",
+        "narration": "First, the overlap. Fever and weakness appear on CDC's list for all three forms.",
+        "on_screen_text": "Fever + weakness: all 3",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "three silhouettes with thermometer icons"
+        },
+        "retention_device": "Pattern reveal",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "Signs and symptoms",
+        "narration": "For bubonic plague, CDC lists fever, headache, chills, weakness, and one or more swollen and painful lymph nodes, called buboes.",
+        "on_screen_text": "Bubonic signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fever",
+            "Headache",
+            "Chills",
+            "Weakness",
+            "Swollen, painful lymph nodes (buboes)"
+          ],
+          "stock_query": "labelled lymph node diagram icons"
+        },
+        "retention_device": "List card: new visual every few seconds",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "Signs and symptoms",
+        "narration": "For septicemic plague: fever and chills, extreme weakness, abdominal pain, shock, and possibly bleeding into the skin and other organs.",
+        "on_screen_text": "Septicemic signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fever and chills",
+            "Extreme weakness",
+            "Abdominal pain",
+            "Shock",
+            "Possibly bleeding into skin and other organs"
+          ],
+          "stock_query": "labelled bloodstream diagram icons"
+        },
+        "retention_device": "List card",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "Signs and symptoms",
+        "narration": "CDC adds that skin and other tissues may turn black and die, especially on the fingers, toes and nose. It shows how serious a bloodstream infection can become.",
+        "on_screen_text": "A serious infection",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "blood vessel diagram warning sign"
+        },
+        "retention_device": "Stakes escalation",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "Signs and symptoms",
+        "narration": "For pneumonic plague: fever, headache, weakness, and a rapidly developing pneumonia with shortness of breath, chest pain, cough, and sometimes bloody or watery mucus.",
+        "on_screen_text": "Pneumonic signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fever",
+            "Headache",
+            "Weakness",
+            "Rapidly developing pneumonia: shortness of breath, chest pain, cough",
+            "Sometimes bloody or watery mucus"
+          ],
+          "stock_query": "labelled lungs diagram icons"
+        },
+        "retention_device": "List card",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "Signs and symptoms",
+        "narration": "If you remember just four signs for pneumonic plague, make them these: fever, cough, shortness of breath and chest pain.",
+        "on_screen_text": "4 pneumonic signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fever",
+            "Cough",
+            "Shortness of breath",
+            "Chest pain"
+          ],
+          "stock_query": "four symptom icons on lungs"
+        },
+        "retention_device": "Memorable takeaway",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "Signs and symptoms",
+        "narration": "These signs aren't unique to plague. WHO lists bubonic plague symptoms as sudden fever, chills, head and body aches, weakness, vomiting and nausea, and those can come with many other illnesses too.",
+        "on_screen_text": "Not unique to plague",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "puzzled doctor with many illness cards"
+        },
+        "retention_device": "Reassuring twist",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "Signs and symptoms",
+        "narration": "That's why context matters: where you've been, and what you or your pets may have been exposed to.",
+        "on_screen_text": "Context matters",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "map pin hiking trail and pet"
+        },
+        "retention_device": "Bridge to practical takeaway",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "Signs and symptoms",
+        "narration": "And context leads to the most hopeful part of this story.",
+        "on_screen_text": "The hopeful part",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sunrise over calm town"
+        },
+        "retention_device": "Teaser before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s61",
+        "section": "Treatment: time matters",
+        "narration": "Let's be honest about the stakes first.",
+        "on_screen_text": "Treatment: time matters",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card clock and pill bottle"
+        },
+        "retention_device": "Chapter reset",
+        "source_ids": []
+      },
+      {
+        "id": "s62",
+        "section": "Treatment: time matters",
+        "narration": "WHO breaks the risk down by form. Left untreated, bubonic plague kills 30% to 60% of people.",
+        "on_screen_text": "Untreated bubonic: 30% to 60% (WHO)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "30–60%",
+          "stat_label": "Untreated bubonic plague fatality (WHO)",
+          "stock_query": "big number card lymph node icon"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s62b",
+        "section": "Treatment: time matters",
+        "narration": "And untreated pneumonic and septicaemic plague? WHO says they are always fatal.",
+        "on_screen_text": "Untreated pneumonic, septicaemic: always fatal (WHO)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "Always fatal",
+          "stat_label": "Untreated pneumonic and septicaemic plague (WHO)",
+          "stock_query": "big text card lungs blood icons"
+        },
+        "retention_device": "Stakes escalation before the reversal",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "Treatment: time matters",
+        "narration": "Now the flip side. Plague can be cured with antibiotics, especially when started early. That's the message from both CDC and WHO.",
+        "on_screen_text": "Curable with antibiotics, especially early",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor handing prescription friendly clinic"
+        },
+        "retention_device": "But/therefore reversal",
+        "source_ids": [
+          "cdc_about",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "Treatment: time matters",
+        "narration": "For pneumonic plague specifically, WHO says recovery rates are high if it's detected and treated in time, within 24 hours of symptoms starting.",
+        "on_screen_text": "Pneumonic: within 24 hours (WHO)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "24 hours",
+          "stat_label": "Pneumonic: treated in time, recovery high (WHO)",
+          "stock_query": "clock with 24 hours label"
+        },
+        "retention_device": "Concrete number payoff",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "Treatment: time matters",
+        "narration": "Same bacterium, very different outcome. The difference is time.",
+        "on_screen_text": "The difference is time",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hourglass beside labelled lungs"
+        },
+        "retention_device": "Short punchy line for rhythm",
+        "source_ids": [
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "Treatment: time matters",
+        "narration": "So if you've heard that plague has no cure, that's not what the health agencies say.",
+        "on_screen_text": "No cure? Not per CDC, WHO",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Plague has no cure",
+          "fact": "Plague can be cured with antibiotics, especially when started early (CDC, WHO)",
+          "stock_query": "myth fact split card"
+        },
+        "retention_device": "Myth correction of a circulating belief",
+        "source_ids": [
+          "cdc_about",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "Treatment: time matters",
+        "narration": "One important line, though. Which antibiotic, and how much, is a decision for a doctor. Don't self-treat or stockpile; prompt medical care is what works.",
+        "on_screen_text": "A doctor decides. No self-treating.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient calm consultation"
+        },
+        "retention_device": "Safety caveat",
+        "source_ids": [
+          "cdc_about",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "Treatment: time matters",
+        "narration": "Which brings us back to that date I promised at the start.",
+        "on_screen_text": "That date...",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "old calendar page flipping"
+        },
+        "retention_device": "Return to the main open loop",
+        "source_ids": []
+      },
+      {
+        "id": "s69",
+        "section": "The 1924 fact",
+        "narration": "Plague's reputation is enormous. CDC notes it's infamous for killing millions of people in Europe during the Middle Ages.",
+        "on_screen_text": "Millions in the Middle Ages",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card medieval town illustration"
+        },
+        "retention_device": "Chapter reset with historical contrast",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "The 1924 fact",
+        "narration": "So you might expect person-to-person spread to be a regular event. Here's what CDC actually says.",
+        "on_screen_text": "What CDC actually says",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "narrator opening CDC document"
+        },
+        "retention_device": "Expectation set-up before reveal",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "The 1924 fact",
+        "narration": "In CDC's words: Person-to-person spread has not been documented in the United States since 1924, but there continue to be rare cases of pneumonic plague among people exposed to sick cats.",
+        "on_screen_text": "Not documented in US since 1924 (rare cases from sick cats)",
+        "visual": {
+          "kind": "quote",
+          "quote": "Person-to-person spread has not been documented in the United States since 1924, but there continue to be rare cases of pneumonic plague among people exposed to sick cats.",
+          "attribution": "CDC, How Plague Spreads",
+          "stock_query": "quote card calm blue background"
+        },
+        "retention_device": "Payoff of the main open loop",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s72",
+        "section": "The 1924 fact",
+        "narration": "1924. More than a century without documented person-to-person spread in the US, according to CDC, even though rare pneumonic cases still happen in people exposed to sick cats.",
+        "on_screen_text": "100+ years (CDC)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "1924",
+          "stat_label": "US person-to-person spread not documented since (CDC)",
+          "stock_query": "big 1924 number card"
+        },
+        "retention_device": "Big-number emphasis",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s73",
+        "section": "The 1924 fact",
+        "narration": "That calm fact fits everything we've covered. According to CDC, spread between people requires the pneumonic form, typically with direct and close contact. And plague can be cured with antibiotics, especially when started early.",
+        "on_screen_text": "Pneumonic. Close contact. Treatable.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "three puzzle pieces fitting together"
+        },
+        "retention_device": "Synthesis of all loops",
+        "source_ids": [
+          "cdc_spread",
+          "cdc_about",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s74",
+        "section": "Your checklist",
+        "narration": "Let's lock it in.",
+        "on_screen_text": "Your checklist",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card clipboard checkmarks"
+        },
+        "retention_device": "Chapter reset",
+        "source_ids": []
+      },
+      {
+        "id": "s75",
+        "section": "Your checklist",
+        "narration": "One bacterium: Yersinia pestis. Bubonic plague settles in a lymph node near where it entered. Septicemic is in the bloodstream. Pneumonic is in the lungs, and according to CDC, it's the only form that can spread from person to person.",
+        "on_screen_text": "1 germ, 3 forms",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "One bacterium: Yersinia pestis",
+            "Bubonic: a nearby lymph node",
+            "Septicemic: bloodstream",
+            "Pneumonic: lungs, the only form that spreads person to person (CDC)"
+          ],
+          "stock_query": "labelled lymph node blood lungs diagram"
+        },
+        "retention_device": "Recap checklist",
+        "source_ids": [
+          "cdc_about",
+          "cdc_symptoms",
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s76",
+        "section": "Your checklist",
+        "narration": "CDC says spread between people happens through infectious droplets, and typically requires direct and close contact with a person or animal with pneumonic plague.",
+        "on_screen_text": "Droplets + direct, close contact",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two people close droplets icon"
+        },
+        "retention_device": "Recap",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s77",
+        "section": "Your checklist",
+        "narration": "Now, the part to remember. A possible exposure could be a flea bite in an area where plague occurs, handling tissue or body fluids of an animal that may be infected, or close contact with a person or animal with pneumonic plague.",
+        "on_screen_text": "What counts as possible exposure",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Flea bite where plague occurs",
+            "Handling tissue or body fluids of a possibly infected animal",
+            "Close contact with a person or animal with pneumonic plague"
+          ],
+          "stock_query": "three exposure icons checklist"
+        },
+        "retention_device": "Practical takeaway",
+        "source_ids": [
+          "cdc_spread",
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s78",
+        "section": "Your checklist",
+        "narration": "If that's you, and you develop fever, chills, weakness, a swollen and painful lymph node, or a cough, shortness of breath or chest pain, contact a doctor or local health authority urgently.",
+        "on_screen_text": "CONTACT A DOCTOR OR LOCAL HEALTH AUTHORITY URGENTLY",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fever, chills or weakness",
+            "Swollen, painful lymph node",
+            "Cough",
+            "Shortness of breath",
+            "Chest pain"
+          ],
+          "stock_query": "phone calling friendly clinic"
+        },
+        "retention_device": "Clear call to action for safety",
+        "source_ids": [
+          "cdc_symptoms",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s79",
+        "section": "Your checklist",
+        "narration": "Don't wait to see if it passes, and don't treat yourself. Getting antibiotics from a doctor early is what makes the difference.",
+        "on_screen_text": "Don't wait. Don't self-treat.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person hurrying into clinic door"
+        },
+        "retention_device": "Safety reinforcement",
+        "source_ids": [
+          "cdc_about",
+          "who_fs"
+        ]
+      },
+      {
+        "id": "s80",
+        "section": "Your checklist",
+        "narration": "If you're worried, talk to a health professional.",
+        "on_screen_text": "If you're worried, talk to a health professional.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly nurse reassuring patient"
+        },
+        "retention_device": "Reassurance close",
+        "source_ids": []
+      },
+      {
+        "id": "s81",
+        "section": "Your checklist",
+        "narration": "Next up: plague versus COVID, how each one spreads, and why they're so different. Subscribe so it's waiting for you.",
+        "on_screen_text": "Next: plague vs COVID",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "InforMed mascot pointing to next video"
+        },
+        "retention_device": "CTA tied to a specific next benefit",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "cdc_about",
+        "title": "About Plague",
+        "publisher": "U.S. Centers for Disease Control and Prevention (CDC)",
+        "year": "2026",
+        "url": "https://www.cdc.gov/plague/about/index.html"
+      },
+      {
+        "id": "cdc_spread",
+        "title": "How Plague Spreads",
+        "publisher": "U.S. Centers for Disease Control and Prevention (CDC)",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/causes/index.html"
+      },
+      {
+        "id": "cdc_symptoms",
+        "title": "Signs and Symptoms of Plague",
+        "publisher": "U.S. Centers for Disease Control and Prevention (CDC)",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      },
+      {
+        "id": "who_fs",
+        "title": "Plague (fact sheet)",
+        "publisher": "World Health Organization (WHO)",
+        "year": "2026",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      }
+    ],
+    "cta": "Next up: plague versus COVID, how each one spreads, and why they're so different. Subscribe so it's waiting for you. If you're worried, talk to a health professional."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "I checked every factual claim against all four cited pages, fetched on 2026-10-10, and the script is accurate and safe. The verbatim CDC quotes in s34, s37 and s71 match \"How Plague Spreads\" word for word: the droplets sentence ending \"the only way that plague can spread between people\", \"Typically, this requires direct and close contact…\", and the 1924 sentence including the sick-cats clause. The symptom lists in s53, s54 and s56, the septicemic routes, the two ways pneumonic plague starts, and \"most serious form\" / \"only form… spread from person to person\" all match \"Signs and Symptoms of Plague\". The Yersinia pestis line, \"humans and other mammals\", the flea bite or infected animal routes, the Middle Ages line and \"cured with antibiotics… given promptly\" all match \"About Plague\". The WHO lines also match the WHO fact sheet: small mammals and fleas, spread between animals through fleas, the lymphatic system, bubonic as the most common form, human-to-human spread of bubonic plague as rare, the 30–60% figure, \"always fatal\" for pneumonic and septicaemic plague left untreated, high recovery within 24 hours, most 2019–2025 cases in DRC and Madagascar, isolating patients, identifying and monitoring contacts, and preventive antibiotics for contacts and for household members of bubonic patients. Source years are correct: CDC Spread and Symptoms were last updated May 15, 2024, CDC About on Aug 24, 2026, and the WHO fact sheet on Sep 29, 2026. Safety is good. The video makes no claim about the current case beyond one neutral context sentence, includes no dosing, carries clear no-self-treatment and no-stockpiling caveats, lists all 4 of CDC's pneumonic signs, uses the exact line \"contact a doctor or local health authority urgently\", and includes \"If you're worried, talk to a health professional.\" The hook pays off: the 1924 date is promised in s05 and delivered in s71–s72. There are 4 small wording issues, each with an exact fix below. None would mislead a viewer.",
+    "issues": [
+      {
+        "location": "s62",
+        "claim": "WHO breaks the risk down by form. Left untreated, bubonic plague kills 30% to 60% of people.",
+        "problem": "WHO's wording is 'a case-fatality ratio of 30% to 60% for the bubonic type', in a sentence where 'when left untreated' is attached to the pneumonic and septicaemic clause. 'Kills 30% to 60% of people' turns a case-fatality ratio into a general statement, and the 'left untreated' scope is ours rather than clearly WHO's.",
+        "severity": "minor",
+        "fix": "Narration: \"WHO breaks the risk down by form. For bubonic plague, WHO gives a case-fatality ratio of 30% to 60%.\" On-screen text: \"Bubonic: 30% to 60% case fatality (WHO)\". stat_label: \"Bubonic plague case-fatality ratio (WHO)\""
+      },
+      {
+        "location": "s32",
+        "claim": "CDC explains that a person with plague pneumonia may cough droplets containing the bacteria into the air.",
+        "problem": "CDC says 'Humans and animals with plague pneumonia can sometimes cough droplets…'. The script drops 'sometimes' and the animal half, which s39–s41 rely on.",
+        "severity": "minor",
+        "fix": "\"Once it's in the lungs, the bacteria have a new exit. CDC explains that people and animals with plague pneumonia can sometimes cough droplets containing the bacteria into the air.\""
+      },
+      {
+        "location": "s41",
+        "claim": "CDC says sick cats can pass infectious plague droplets to their owners or to veterinarians.",
+        "problem": "CDC's actual wording is 'Cats with plague pose a risk of transmitting infectious plague droplets to their owners or to veterinarians'. The script should use the source's own verb.",
+        "severity": "minor",
+        "fix": "\"CDC says cats with plague pose a risk of transmitting infectious plague droplets to their owners or to veterinarians. So the close-contact rule applies to animals with pneumonic plague too.\""
+      },
+      {
+        "location": "s62b",
+        "claim": "Untreated pneumonic, septicaemic: always fatal (WHO)",
+        "problem": "The spelling is inconsistent: 'septicaemic' here, but 'Septicemic' in the chapter card and everywhere else. Captions built from this will look mismatched.",
+        "severity": "minor",
+        "fix": "Narration: \"And untreated pneumonic and septicemic plague? WHO says they are always fatal.\" On-screen: \"Untreated pneumonic, septicemic: always fatal (WHO)\". stat_label: \"Untreated pneumonic and septicemic plague (WHO)\""
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "cdc_about",
+        "title": "About Plague",
+        "publisher": "U.S. Centers for Disease Control and Prevention (CDC)",
+        "year": "2026",
+        "url": "https://www.cdc.gov/plague/about/index.html"
+      },
+      {
+        "id": "cdc_spread",
+        "title": "How Plague Spreads",
+        "publisher": "U.S. Centers for Disease Control and Prevention (CDC)",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/causes/index.html"
+      },
+      {
+        "id": "cdc_symptoms",
+        "title": "Signs and Symptoms of Plague",
+        "publisher": "U.S. Centers for Disease Control and Prevention (CDC)",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      },
+      {
+        "id": "who_fs",
+        "title": "Plague (fact sheet)",
+        "publisher": "World Health Organization (WHO)",
+        "year": "2026",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.007,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 4.7,
+      "weakShots": 52,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "\"Lymph node\" and \"Blood\" labels render at ~22-24px, well under the ~40px minimum and hard to read at a glance.",
+        "Confirmed by the automated audit: artwork covers only ~6% of the frame — a thin body outline with a handful of bacteria dots on an otherwise empty background.",
+        "Scene is almost empty: only one small blue icon on a plain room background; the scripted mascot and second icon are missing.",
+        "No headline/caption rendered for the scripted 'Hungry fleas move on' beat",
+        "Scene shows a smiling heart mascot, a framed picture, a 'CDC page' document and a magnifying glass — none of which relate to fleas or hosts, reads as random clip-art",
+        "Composition feels unmotivated/empty despite several props",
+        "First sampled frame (outdoor infected-animal → flea scene) is fine, but the later sampled frame shows a 'Rare / Bubonic plague, person to person (WHO)' stat card that belongs to a beat roughly 250s later in the script",
+        "Jarring background switch from outdoor scene to indoor room between the two frames of the same shot, with no narrative bridge",
+        "Scripted content for this timestamp ('Pets can carry fleas home') never appears",
+        "Continues the leaked 'Rare / Bubonic plague, person to person (WHO)' card with two heads and a tiny mouse icon",
+        "Second sampled frame is a near-empty outdoor scene with only a small detective character and no caption at all — matches the automated 'sparse' flag (~5% coverage)",
+        "'Not every form spreads / person to person (CDC)' headline is rendered here, but that line belongs to a beat roughly 250s later in the script",
+        "The scripted '2019–2025 / Most cases reported to WHO: DR Congo, Madagascar' stat card for this timestamp is missing (automated audit also flags DR Congo/Madagascar text at 23px, below the ~40px minimum)",
+        "First sampled frame (Pneumonic vs Bubonic dialogue) is appealing and on-topic",
+        "Second sampled frame shows a 'Close contacts' pill and a lone 'Patient' bed icon in an almost-empty frame — this content belongs to a contact-tracing beat roughly 250s later"
+      ],
+      "layoutKinds": {
+        "tiny": 42,
+        "offscreen": 19,
+        "sparse": 9
+      }
+    },
+    "audio": {
+      "musicGain": 0.327,
+      "sfxGain": 0.55,
+      "finalWer": 0.004,
+      "maskingDelta": 0.004,
+      "lufs": -15.3,
+      "soundNotes": "Music already sits well inside the target window (-13.5 dB under voice, -13.6 dB in pauses), so gain stays at 1.0; don't push it louder. The main fix is a cluster of ~17 SFX cues (bubbles/blips/pops/swooshes) that measured 4–14 dB louder than the -14 to -20 dB speech target, which would have poked through the narration — these are pulled down or near-killed. Everything else, including the many \"swell\" cues that read as near-silent, is left alone since it's already under the voice or correctly loud only in true pauses/transitions (-6 to -12 dB). Added five bespoke story-moment SFX (paw/collar, heartbeat, clock ticks, phone chime, bell toll) at low gain to add texture at key reveals without ever competing with the narrator."
+    },
+    "blocking": [],
+    "thumbnail": {
+      "best_index": 0,
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 8,
+          "issues": [
+            "BUBONIC/PNEUMONIC labels are small at phone size but readable thanks to color-coded icons and short words",
+            "reveals the 'winner' via check/cross icons, slightly narrowing the curiosity gap, but still requires reading labels to know which form"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 5,
+          "legibility": 9,
+          "issues": [
+            "headline '3 FORMS' doesn't match the title's two-way comparison (pneumonic vs bubonic), so it may feel like a different video and reduce click-through from search on this title",
+            "happy, unworried bacterium mascot gives low emotional pull/tension for a plague topic",
+            "less direct payoff of the title's specific question"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 6,
+          "legibility": 9,
+          "issues": [
+            "'IT'S THE LUNGS' answers a related but different question than the title ('which spreads between people') causing a slight mismatch between title and thumbnail framing",
+            "single character/icon with arrow is clean but less visually rich than the versus layout, lower curiosity gap since the answer is stated outright"
+          ]
+        }
+      ],
+      "reasoning": "All three are legible at phone size with large bold sans-serif headlines and ≤3 short lines of text; no cut-off or overlapping issues. Candidate #0 best matches the exact title (\"Pneumonic vs Bubonic... Which One Spreads\") with a direct versus layout, two labelled characters, and color-coded X/check icons that create a quick visual puzzle (which one spreads?) without fully spelling out the mechanism — strong contrast (magenta vs blue on purple) and a clear single focal point (the VS). Candidate #1 (\"3 FORMS\") is a plague-101 generic thumbnail that doesn't pay off this specific title's two-way comparison and has a cheerful, non-tense bacterium mascot, weakening emotional pull for this topic. Candidate #2 (\"IT'S THE LUNGS\") is clean and legible but answers a slightly different question than the title promises and gives away the payoff immediately with less compositional tension. None are misleading or sensational beyond the title. #0 is the strongest CTR pick while maintaining legibility ≥7."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "title",
+          "claim": "Pneumonic vs Bubonic Plague: Which One Spreads Between People?",
+          "problem": "Our title rule says titles start with \"Plague\" or \"Pneumonic plague\". This one starts with \"Pneumonic vs\", which splits the search phrase. It's a wording issue only; the content is accurate.",
+          "severity": "minor",
+          "fix": "Pneumonic Plague vs Bubonic Plague: Which One Spreads Between People?"
+        },
+        {
+          "location": "description (quick answer)",
+          "claim": "Bubonic plague (lymph node) and septicemic plague (bloodstream) usually start with a flea bite or handling tissue or body fluids of an infected animal",
+          "problem": "The quick answer is longer than 3 lines. For septicemic plague it also leaves out the script's second route: CDC says it can develop from untreated bubonic plague.",
+          "severity": "minor",
+          "fix": "Quick answer: CDC says pneumonic plague (lungs) is the only form that can spread from person to person, through infectious droplets, typically with direct and close contact. Bubonic (lymph node) and septicemic (bloodstream) plague usually come from a flea bite or handling tissue or body fluids of an infected animal; WHO describes human-to-human spread of bubonic plague as rare. Plague can be cured with antibiotics, especially when started early."
+        },
+        {
+          "location": "description (sources)",
+          "claim": "CDC, How Plague Spreads: https://www.cdc.gov/plague/causes/index.html\nCDC, Signs and Symptoms of Plague: https://www.cdc.gov/plague/signs-symptoms/index.html",
+          "problem": "These two sources don't show their current updated dates. Our source rule asks for one on every page, and both pages say May 15, 2024.",
+          "severity": "minor",
+          "fix": "CDC, How Plague Spreads (updated May 15, 2024): https://www.cdc.gov/plague/causes/index.html\nCDC, Signs and Symptoms of Plague (updated May 15, 2024): https://www.cdc.gov/plague/signs-symptoms/index.html"
+        },
+        {
+          "location": "thumbnail_subtext",
+          "claim": "PER CDC",
+          "problem": "This is accurate. Since the title compares two named forms, the subtext could name the answer so the thumbnail doesn't read as a tease. Optional polish.",
+          "severity": "minor",
+          "fix": "PNEUMONIC, PER CDC"
+        }
+      ]
+    }
+  },
+  "release_tag": "content-2026-10-10",
+  "archive_url": "b2://informed-lab-media/content/2026-10-10/L4-plague-101-how-one-bacterium-yersinia-pe/"
+}
