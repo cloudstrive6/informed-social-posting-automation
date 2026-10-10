@@ -1,4 +1,6 @@
 name: Daily production
+# replacement runs are named so the duplicate guard and the ops watchdog can tell them from a day's production
+run-name: "${{ inputs.replace_long && format('Replacement long video {0}', inputs.date) || 'Daily production' }}"
 # Plans today's slate, produces 1 long-form video, 3 shorts and 1 carousel in parallel,
 # then uploads media, pre-schedules YouTube and queues everything else for the publisher.
 
@@ -16,6 +18,10 @@ on:
         required: false
       test_run:
         description: "Test run: produce + archive everything, but hold every item for review (nothing is scheduled or published)"
+        type: boolean
+        default: false
+      replace_long:
+        description: "Plan and produce ONE replacement long video for `date` (the day's long video was dropped); leaves the rest of the day alone"
         type: boolean
         default: false
       only:
@@ -77,14 +83,18 @@ jobs:
               exit 0
             fi
             SINCE=$(date -u -d "-6 hours" +%Y-%m-%dT%H:%M:%SZ)
-            OTHERS=$(gh run list --workflow daily.yml --limit 20 --json databaseId,createdAt,status,conclusion \
-              --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.createdAt >= \"$SINCE\") | select(.status != \"completed\" or .conclusion == \"success\")] | length")
+            OTHERS=$(gh run list --workflow daily.yml --limit 20 --json databaseId,createdAt,status,conclusion,displayTitle \
+              --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.displayTitle | startswith(\"Replacement\") | not) | select(.createdAt >= \"$SINCE\") | select(.status != \"completed\" or .conclusion == \"success\")] | length")
             # only skip on a positive answer; if the check itself fails, produce anyway
             if [ -n "$OTHERS" ] && [ "$OTHERS" -gt 0 ] 2>/dev/null; then
               echo "Today's production already started in another run; skipping."
               { echo "long=[]"; echo "short=[]"; echo "carousel=[]"; echo "skip=true"; } >> "$GITHUB_OUTPUT"
               exit 0
             fi
+          fi
+          if [ "${{ inputs.replace_long }}" = "true" ]; then
+            npx tsx src/cli.ts plan --date "$D" --replace-long
+            exit 0
           fi
           npx tsx src/cli.ts plan --date "$D"
           # manual re-runs: blank out the kinds that weren't asked for

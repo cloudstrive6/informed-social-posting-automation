@@ -77,6 +77,7 @@ export async function watchdog(force = false) {
     ["production", () => checkProduction(once, escalate, notify)],
     ["posts", () => checkPosts(once, escalate, notify)],
     ["youtube", () => checkYouTube(once, escalate, notify)],
+    ["long", () => checkLongVideo(once, escalate, notify)],
   ];
   for (const [name, fn] of checks) {
     try { await fn(); } catch (e) { log.warn(`watchdog ${name} check failed: ${(e as Error).message.slice(0, 300)}`); }
@@ -107,11 +108,12 @@ async function checkProduction(once: Once, escalate: Escalate, notify: Notify) {
   const recent = runs.filter(r => Date.now() - Date.parse(r.createdAt) < 12 * H);
   // scheduled starts that only hit the duplicate guard succeed in well under a minute: ignore them
   const real = recent.filter(r => !(r.conclusion === "success" && Date.parse(r.updatedAt) - Date.parse(r.createdAt) < 3 * 60_000));
-  const active = real.find(r => r.status !== "completed");
+  const isReplacement = (r: Run) => r.displayTitle.startsWith("Replacement");
+  const active = real.find(r => r.status !== "completed" && !isReplacement(r));
 
   // 1) kick off: from 22:05 until 10:00 audience time, if nothing has started for D
   const inWindow = hour >= 22 || hour < 10;
-  if (inWindow && !produced && !active && !real.some(r => r.conclusion === "success")) {
+  if (inWindow && !produced && !active && !real.some(r => r.conclusion === "success" && !isReplacement(r))) {
     const minute = Number(new Intl.DateTimeFormat("en-US", { timeZone: config.audience.timezone, minute: "numeric" }).format(now()));
     if ((hour > 22 || hour < 10 || minute >= 5) && once(`kickoff:${D}`, 3)) {
       gh(["workflow", "run", "daily.yml", "--ref", "main", "-f", `date=${D}`]);
@@ -229,5 +231,35 @@ async function checkYouTube(once: Once, escalate: Escalate, notify: Notify) {
     p.status = "pending"; p.remote_id = undefined; p.url = undefined; p.attempts = 0;
     p.slot = new Date().toISOString();
     saveItem(item);
+  }
+}
+
+/**
+ * No day without a long video: when a day's long video was dropped by review (or its production failed), plan and
+ * produce a replacement (daily.yml replace_long), up to 2 tries per day. Applies to today and the date being produced.
+ */
+async function checkLongVideo(once: Once, escalate: Escalate, notify: Notify) {
+  const today = localDate(config.audience.timezone, now());
+  const runs = ghJson<Run[]>(["run", "list", "--workflow", "daily.yml", "--limit", "20", "--json", "databaseId,status,conclusion,createdAt,updatedAt,event,attempt,displayTitle"]) ?? [];
+  const busy = runs.some(r => r.status !== "completed");
+  for (const D of [...new Set([today, contentDate()])]) {
+    if (!existsSync(join(DATA, "queue", D, "plan.json"))) continue;
+    const longs = loadItems([D]).filter(i => i.kind === "long");
+    const good = longs.some(i => i.status === "ready" || i.posts.some(p => p.status === "published" || p.status === "scheduled"));
+    if (good) continue;
+    // production (or a replacement) still running for this date: its long video may still arrive
+    if (busy && (runs.some(r => r.status !== "completed" && r.displayTitle.includes(D)) || runs.some(r => r.status !== "completed" && !r.displayTitle.startsWith("Replacement")))) continue;
+    if (!longs.length) continue; // nothing produced yet: the production checks handle that
+    const tries = runs.filter(r => r.displayTitle === `Replacement long video ${D}`).length;
+    const why = longs.map(i => `${i.id}: ${(i.hold_reason ?? i.status).slice(0, 300)}`).join("\n");
+    if (tries >= 2) {
+      await escalate(`long-missing:${D}`, `No long video for ${D}: original and ${tries} replacement(s) were all dropped or failed`, why);
+      continue;
+    }
+    if (once(`replace-long:${D}:${tries + 1}`, 12)) {
+      gh(["workflow", "run", "daily.yml", "--ref", "main", "-f", `date=${D}`, "-f", "replace_long=true"]);
+      log.info(`watchdog: replacement long video ${tries + 1} for ${D}`);
+      await notify(`🔁 <b>Making a replacement long video</b> for ${D} (try ${tries + 1} of 2). The original was dropped:\n${esc(why.slice(0, 600))}\n\nIt posts as soon as it's ready and approved (about 3–4 h).`);
+    }
   }
 }

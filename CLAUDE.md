@@ -29,7 +29,8 @@ Agent prompts: `agents/*.md`. State: `data/` (queue per content date in `data/qu
 - `publish.yml`: always-on loop (~5.5 h per run, then restarts itself) posting whatever is due, every minute.
 - **Ops watchdog** (`src/ops/watchdog.ts`, inside the publish loop, every ~10 min): starts production at 22:05 NY if
   GitHub's cron hasn't, re-runs failed production jobs once, gives transient publish failures a second round, re-uploads
-  YouTube videos that never processed, makes overdue scheduled videos public. Anything else → `ops.yml` (**Ops Engineer**
+  YouTube videos that never processed, makes overdue scheduled videos public, and **orders a replacement long video**
+  (`daily.yml replace_long=true`, up to 2 per day) when the day's long video is dropped, so no day goes without one. Anything else → `ops.yml` (**Ops Engineer**
   agent, `agents/ops-engineer.md`): diagnoses, unblocks, fixes code (typecheck, push to `main`), reports on Telegram.
   Max 4 escalations/day; state in `data/ops/`. Run by hand: `gh workflow run ops.yml -f incident="..."`.
 - Agents run on the Claude subscription (`CLAUDE_CODE_OAUTH_TOKEN`). Short session limits are waited out; the **weekly
@@ -43,7 +44,8 @@ Agent prompts: `agents/*.md`. State: `data/` (queue per content date in `data/qu
   `playlist_youtube` · `fix_description` · `inspect_facebook` (space-separated refs) · `repost_facebook`
 - `remake.yml`: `item=<date>/<id>` re-voices/re-renders a Short or long video → candidate + contact sheet on Telegram;
   `replace_youtube=true` also swaps the YouTube upload if QA passes.
-- `daily.yml`: `test_run=true` (produce, hold everything), `only=long|short|carousel`, `date=`.
+- `daily.yml`: `test_run=true` (produce, hold everything), `only=long|short|carousel` (re-plans the day!), `date=`,
+  `replace_long=true` + `date=` (plan and produce ONE extra long video for that day; the rest of the day is untouched).
 - Status: `gh run list --workflow daily.yml`, `gh run view <id> --log-failed`, and the item JSONs in `data/queue/`
   (post `status`, `slot`, `published_at`, `error`). Schedule is in New York time; NZ (owner) = NY + 17 h (NZDT).
 

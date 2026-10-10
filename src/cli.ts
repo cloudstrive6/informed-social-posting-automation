@@ -6,7 +6,7 @@ import { readJson, writeJson } from "./lib/fsx.js";
 import { log } from "./lib/log.js";
 import { localDate } from "./lib/time.js";
 import { run } from "./media/exec.js";
-import { planDay } from "./plan/planDay.js";
+import { planDay, planReplacementLong } from "./plan/planDay.js";
 import { produceCarousel } from "./produce/carousel.js";
 import { produceLong } from "./produce/long.js";
 import { produceShort } from "./produce/short.js";
@@ -61,7 +61,7 @@ async function doctor() {
 
 const commands: Record<string, () => Promise<unknown>> = {
   radar: () => runRadar(),
-  plan: () => planDay(date),
+  plan: () => (rest.includes("--replace-long") ? planReplacementLong(date) : planDay(date)),
   produce: () => produce(rest[0], rest[1]),
   finalize: () => finalizeDay(date),
   publish: async () => {

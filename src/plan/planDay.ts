@@ -69,3 +69,52 @@ function emitMatrix(plan: DayPlan) {
   const lines = `long=${ids("long")}\nshort=${ids("short")}\ncarousel=${ids("carousel")}\n`;
   if (out) appendFileSync(out, lines); else log.info(lines.trim());
 }
+
+/**
+ * Replacement long video: the day's long video was dropped (or failed), so plan ONE new long piece, add it to the
+ * day's plan under the next free id (L2, L3…) and expose only that id to the production matrix. The rest of the
+ * day's plan and items are left untouched.
+ */
+export async function planReplacementLong(date: string): Promise<DayPlan> {
+  log.step(`Planning a replacement long video for ${date}`);
+  const planFile = join(queueDir(date), "plan.json");
+  const existing = readJson<DayPlan & { date: string; created_at: string }>(planFile, { date, created_at: new Date().toISOString(), pieces: [] } as any);
+  const { loadItems } = await import("../lib/items.js");
+  const dropped = loadItems([date]).filter(i => i.kind === "long" && i.status !== "ready")
+    .map(i => ({ id: i.id, title: i.package.title ?? i.plan.working_title, topic: i.plan.topic, why_dropped: i.hold_reason ?? i.status }));
+  const radar = readJson<Radar & { at?: string }>(join(DATA, "radar", "latest.json"), { summary: "No radar yet", candidates: [] });
+  const covered = readJson<CoveredTopic[]>(coveredPath, []).filter(c => Date.parse(c.date) > Date.now() - 45 * 86400_000);
+  const used = new Set(existing.pieces.map(p => p.id));
+  let n = 2; while (used.has(`L${n}`)) n++;
+  const id = `L${n}`;
+
+  let piece: DayPlan["pieces"][number] | undefined;
+  for (let round = 0; round < 2 && !piece; round++) {
+    const r = await runAgent<DayPlan>({
+      agent: "content-strategist", schema: planSchema,
+      input: {
+        date, task: `REPLACEMENT: today's long-form video was dropped by the fact-check/editorial review (see dropped). Plan exactly ONE new long-form piece with id "${id}". It must be within the current channel focus, NOT repeat the dropped topic or today's other pieces, and be easy to verify from strong primary sources (evergreen explainer > fast-moving news) so it passes the fact-checker first time. Avoid attributing claims to sources unless the source clearly says it.`,
+        dropped, todays_other_pieces: existing.pieces.filter(p => p.kind !== "long").map(p => ({ id: p.id, kind: p.kind, working_title: p.working_title })),
+        pillars: (config.youtube?.playlists ?? []).map(p => ({ pillar: p.pillar, playlist: p.title })),
+        radar: radar.candidates.filter(c => c.safety === "ok"), recently_covered: covered,
+      },
+    });
+    const cand = r.pieces.find(p => p.kind === "long") ?? r.pieces[0];
+    if (!cand) continue;
+    cand.id = id; cand.kind = "long";
+    const screen = await runAgent<TopicScreen>({
+      agent: "fact-checker", model: config.models.factChecker, web: true, maxTurns: 25, schema: topicScreenSchema,
+      input: { mode: "topic_screen", topics: [{ id: cand.id, kind: cand.kind, topic: cand.topic, angle: cand.angle, working_title: cand.working_title }] },
+    });
+    const d = screen.decisions.find(x => x.id === id);
+    if (d?.verdict === "reject") { log.warn(`replacement topic rejected: ${cand.topic} (${d.notes})`); dropped.push({ id, title: cand.working_title, topic: cand.topic, why_dropped: `topic screen: ${d.notes}` }); continue; }
+    if (d?.verdict === "modify" && d.safer_angle) { cand.angle = d.safer_angle; cand.why += ` | fact-check: ${d.notes}`; }
+    piece = cand;
+  }
+  if (!piece) throw new Error("no replacement long topic passed the topic screen");
+  const plan = { ...existing, pieces: [...existing.pieces, piece] };
+  writeJson(planFile, plan);
+  log.info(`Replacement long: ${id}: ${piece.working_title}`);
+  emitMatrix({ ...plan, pieces: [piece] });
+  return plan;
+}
