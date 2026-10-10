@@ -236,7 +236,7 @@ async function checkYouTube(once: Once, escalate: Escalate, notify: Notify) {
 
 /**
  * No day without a long video: when a day's long video was dropped by review (or its production failed), plan and
- * produce a replacement (daily.yml replace_long), up to 2 tries per day. Applies to today and the date being produced.
+ * produce a replacement (daily.yml replace_long), up to 3 tries per day. Applies to today and the date being produced.
  */
 async function checkLongVideo(once: Once, escalate: Escalate, notify: Notify) {
   const today = localDate(config.audience.timezone, now());
@@ -252,14 +252,14 @@ async function checkLongVideo(once: Once, escalate: Escalate, notify: Notify) {
     if (!longs.length) continue; // nothing produced yet: the production checks handle that
     const tries = runs.filter(r => r.displayTitle === `Replacement long video ${D}`).length;
     const why = longs.map(i => `${i.id}: ${(i.hold_reason ?? i.status).slice(0, 300)}`).join("\n");
-    if (tries >= 2) {
+    if (tries >= 3) {
       await escalate(`long-missing:${D}`, `No long video for ${D}: original and ${tries} replacement(s) were all dropped or failed`, why);
       continue;
     }
     if (once(`replace-long:${D}:${tries + 1}`, 12)) {
       gh(["workflow", "run", "daily.yml", "--ref", "main", "-f", `date=${D}`, "-f", "replace_long=true"]);
       log.info(`watchdog: replacement long video ${tries + 1} for ${D}`);
-      await notify(`🔁 <b>Making a replacement long video</b> for ${D} (try ${tries + 1} of 2). The original was dropped:\n${esc(why.slice(0, 600))}\n\nIt posts as soon as it's ready and approved (about 3–4 h).`);
+      await notify(`🔁 <b>Making a replacement long video</b> for ${D} (try ${tries + 1} of 3). The original was dropped:\n${esc(why.slice(0, 600))}\n\nIt posts as soon as it's ready and approved (about 3–4 h).`);
     }
   }
 }

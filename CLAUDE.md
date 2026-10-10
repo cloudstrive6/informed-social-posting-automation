@@ -30,7 +30,7 @@ Agent prompts: `agents/*.md`. State: `data/` (queue per content date in `data/qu
 - **Ops watchdog** (`src/ops/watchdog.ts`, inside the publish loop, every ~10 min): starts production at 22:05 NY if
   GitHub's cron hasn't, re-runs failed production jobs once, gives transient publish failures a second round, re-uploads
   YouTube videos that never processed, makes overdue scheduled videos public, and **orders a replacement long video**
-  (`daily.yml replace_long=true`, up to 2 per day) when the day's long video is dropped, so no day goes without one. Anything else → `ops.yml` (**Ops Engineer**
+  (`daily.yml replace_long=true`, up to 3 per day) when the day's long video is dropped, so no day goes without one. Anything else → `ops.yml` (**Ops Engineer**
   agent, `agents/ops-engineer.md`): diagnoses, unblocks, fixes code (typecheck, push to `main`), reports on Telegram.
   Max 4 escalations/day; state in `data/ops/`. Run by hand: `gh workflow run ops.yml -f incident="..."`.
 - Agents run on the Claude subscription (`CLAUDE_CODE_OAUTH_TOKEN`). Short session limits are waited out; the **weekly
