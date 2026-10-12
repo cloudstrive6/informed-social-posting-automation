@@ -28,19 +28,16 @@ jobs:
   trailer:
     runs-on: ubuntu-latest
     timeout-minutes: 240
-    strategy:
-      fail-fast: false
-      matrix:
-        name: ${{ fromJson(format('["{0}"]', replace(inputs.names, ' ', '","'))) }}
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
         with: { media: "true" }
-      - run: npx tsx src/cli.ts trailer "${{ matrix.name }}"
+      - env: { NAMES: "${{ inputs.names }}" }
+        run: npx tsx src/cli.ts trailer $NAMES
       - if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: trailer-${{ matrix.name }}
-          path: out/trailers/${{ matrix.name }}/final/
+          name: trailers
+          path: out/trailers/*/final/
           if-no-files-found: ignore
           retention-days: 14
