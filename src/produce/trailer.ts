@@ -75,6 +75,13 @@ export async function publishTrailers() {
     writeJson(stateFile, state);
     log.info(`trailer ${name} uploaded: https://youtu.be/${id}`);
   }
+  // custom thumbnails (config/trailers/<name>-thumb.jpg), set on every run
+  const { setThumbnail } = await import("../publish/youtube.js");
+  const { existsSync } = await import("node:fs");
+  for (const name of Object.keys(TRAILER_META)) {
+    const jpg = join(ROOT, "config", "trailers", `${name}-thumb.jpg`);
+    if (state[name]?.id && existsSync(jpg)) { await setThumbnail(state[name].id, jpg); log.info(`thumbnail set for ${name} (${state[name].id})`); }
+  }
   // channel trailer for non-subscribers: brandingSettings.channel.unsubscribedTrailer (read-modify-write, the
   // update replaces the whole brandingSettings object)
   const token = await youtubeToken();
