@@ -1,0 +1,1349 @@
+{
+  "id": "L2-plague-today-where-yersinia-pestis-still",
+  "date": "2026-10-12",
+  "kind": "long",
+  "plan": {
+    "id": "L2",
+    "kind": "long",
+    "topic": "Plague today: where Yersinia pestis still circulates naturally in wild rodents and their fleas (Africa, Asia, the Americas including the US West), why these 'natural foci' persist, how seasonal patterns like Madagascar's work, and the practical prevention steps health agencies recommend",
+    "angle": "Keep the 8-segment 'map + why + what to do' structure with these source fixes.\n\n(a) Worldwide: use only WHO's \"During 2019–2025, most cases reported to WHO occurred in the Democratic Republic of the Congo and Madagascar\", plus WHO's natural-foci definition (bacteria + animal reservoir + vector). Don't mention Peru and add no rankings.\n\n(b) Madagascar: WHO fact sheet: \"cases of bubonic plague are recorded nearly every year, during the epidemic season (between September and April).\"\n\n(c) US: CDC Maps and Statistics (Oct 7, 2026), verbatim, re-checked at publish: five per year average, range 0–17, the 2 named region groups, 'Over 80%… bubonic'. Human cases only.\n\n(d) Routes: CDC How Plague Spreads' 3 routes. Pneumonic: 'Typically, this requires direct and close contact with the person or animal with pneumonic plague.' 1924 line credited to How Plague Spreads.\n\n(e) Prevention: add CDC 'Preventing Plague' (updated Mar 5, 2025) as a cited source and present its full tip list (rodent habitat, gloves, repellent, pet flea control, free-roaming pets off beds). Add 'follow the label; some dog flea products (e.g. permethrin) are toxic to cats' credited to PetMD (Apr 8, 2025), not CDC. Only tag 'avoid sick or dead animals' to CDC if a CDC page is found that says it.\n\n(f) Treatment: About Plague's cure sentence, copied verbatim. No drug names or doses.\n\n(g) Close: possible exposure plus fever, cough, shortness of breath or chest pain → 'contact a doctor or local health authority urgently' (our voice, no agency tag), then 'If you're worried, talk to a health professional.'\n\nSource list (5): WHO Plague fact sheet (Sep 29, 2026), https://www.who.int/news-room/fact-sheets/detail/plague; CDC Plague Maps and Statistics (Oct 7, 2026), https://www.cdc.gov/plague/maps-statistics/index.html; CDC How Plague Spreads (May 15, 2024), https://www.cdc.gov/plague/causes/index.html; CDC About Plague (Aug 24, 2026), https://www.cdc.gov/plague/about/index.html; CDC Preventing Plague (Mar 5, 2025), https://www.cdc.gov/plague/prevention/index.html. Add the PetMD page only if the cat caveat is credited to it, and keep the YouTube description to 4 sources as the packaging rules require.",
+    "working_title": "Plague Today: Where It Still Occurs and How to Stay Safe (WHO, CDC)",
+    "target_keyword": "where is plague still found",
+    "trend_stage": "evergreen",
+    "why": "This is an evergreen deep-dive that WHO and CDC pages cover fully, so it should pass the fact-check first time. It follows our best plague format (place + agency number + prevention), Madagascar's season is open now, and it doesn't repeat today's pieces or any long-form from the last 30 days. | fact-check: This is a sound, evergreen, low-risk topic, and almost every anchor in it checks out against live primary pages (checked 2026-10-12). Six corrections are needed before scripting.\n\n(1) Segment 2: WHO's fact sheet (updated 29 Sep 2026) does NOT name Peru. Its exact line is \"During 2019–2025, most cases reported to WHO occurred in the Democratic Republic of the Congo and Madagascar.\" Use only these 2 countries, with the 2019–2025 timeframe and the 'reported to WHO' scope. WHO's natural-focus wording: \"There is a risk of human plague wherever the presence of plague natural foci (the bacteria, an animal reservoir and a vector) and human population co-exist.\"\n\n(2) Segment 3: the Madagascar season is already on the WHO fact sheet: \"In Madagascar cases of bubonic plague are recorded nearly every year, during the epidemic season (between September and April).\" Credit it to the WHO fact sheet and keep 'bubonic'. The separate WHO AFRO page isn't needed; if you use it anyway, the next stage must confirm it exists and gives its date.\n\n(3) Segment 4: CDC Plague Maps and Statistics (updated Oct 7, 2026) is confirmed word for word: \"An average of five human plague cases have been reported each year (range: 0–17 cases per year)\". The regions are \"Northern New Mexico, northern Arizona, and southern Colorado\" and \"California, southern Oregon, and far western Nevada\". The bubonic share is \"Over 80% of United States plague cases have been the bubonic form\". Re-check the page at publish time.\n\n(4) Segment 6: none of the 4 listed sources contains these prevention tips. They are on a different page, CDC 'Preventing Plague' (updated Mar 5, 2025, https://www.cdc.gov/plague/prevention/index.html), which must be added and cited. Its list: reduce rodent habitat; wear gloves when handling or skinning potentially infected animals; use repellent for flea exposure (camping, hiking, working outdoors); keep fleas off pets with flea control products; \"Do not allow dogs or cats that roam free in endemic areas to sleep on your bed.\" If the tip list is framed as CDC's list, include all of it (don't drop rodent habitat or gloves). The permethrin/cats caveat is NOT on any CDC page: credit it to PetMD (Apr 8, 2025) or say it in our own voice without a CDC tag. The 'avoid sick or dead animals' tip did not appear in the Preventing Plague tip list fetched today. Before the script credits it to CDC, find the CDC page that says it. Otherwise phrase it from About Plague's warning sign (sudden illness or death among wild rodents like squirrels and prairie dogs).\n\n(5) Segments 5 and 8: CDC 'How Plague Spreads' (May 15, 2024) is confirmed. It names 3 routes: \"Flea bites\", \"Contact with contaminated fluid or tissue\" and \"Infectious droplets\". The pneumonic line is \"Typically, this requires direct and close contact with the person or animal with pneumonic plague\"; keep 'Typically' and 'or animal'. The 1924 sentence is confirmed on this page, not on Maps and Statistics. Credit it accordingly.\n\n(6) Segment 7: About Plague (Aug 24, 2026) has the cure line. Copy the full sentence word for word from the live page at script time. The page also says \"A plague vaccine is no longer available in the United States\", which is optional and must be credited to Preventing Plague.\n\nThe working title is compliant: it starts with 'Plague', is calm, under 100 characters and has no fear-bait. Keep the news context to one neutral sentence with no Irkutsk status claims.",
+    "pillar": "general"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Plague Today: Where Is It Still Found? CDC's Prevention Tips",
+    "title_candidates": [
+      "Plague Today: Where Is It Still Found? CDC's Prevention Tips",
+      "Plague Today: Where Is It Still Found? (CDC)",
+      "Plague Today: Where It Still Occurs and How to Stay Safe",
+      "Plague Still Lives in Wild Rodents and Fleas. Here's Where",
+      "Plague Today: Where Is It Still Found, and Why Does It Persist?",
+      "Plague Never Left: Where It's Still Found in the Wild Today",
+      "Plague Season? How Madagascar's September–April Pattern Works",
+      "Plague Is Still Out There: Where It's Found and How It's Cured",
+      "Plague in the Wild: Where Is It Found, From Africa to the West",
+      "Plague Today: The Map, the Fleas and What CDC Says to Do"
+    ],
+    "description": "Plague today: Yersinia pestis still circulates, usually in small mammals and their fleas. WHO: during 2019-2025, most cases reported to WHO occurred in DR Congo and Madagascar. CDC (updated Oct 7, 2026): an average of 5 human plague cases have been reported each year in the US (range 0-17), and over 80% of US plague cases have been the bubonic form.\n\nIf you've had a possible exposure and develop symptoms such as fever, a swollen, painful lymph node, cough, shortness of breath or chest pain, contact a doctor or local health authority urgently. Don't self-treat.\n\nThis content is for educational purposes only and is not medical advice. Always talk to a qualified healthcare professional about your own situation. If you're worried, talk to a health professional.\n\nSources:\n1. WHO - Plague fact sheet (updated Sep 29, 2026): https://www.who.int/news-room/fact-sheets/detail/plague\n2. CDC - Plague Maps and Statistics (updated Oct 7, 2026): https://www.cdc.gov/plague/maps-statistics/index.html\n3. CDC - How Plague Spreads (updated May 15, 2024): https://www.cdc.gov/plague/causes/index.html\n4. CDC - Preventing Plague (updated Mar 5, 2025): https://www.cdc.gov/plague/prevention/index.html\n\nChapters:\n0:00 Plague never left\n0:50 The world map\n2:07 Why it hangs on\n3:07 Madagascar's season\n4:08 Plague in the US\n5:13 How it reaches people\n6:51 CDC's prevention list\n9:00 Treatment, when to act, recap",
+    "tags": [
+      "where is plague still found",
+      "plague today",
+      "is plague still around",
+      "where does plague still exist",
+      "plague natural foci",
+      "Yersinia pestis today",
+      "plague in the US",
+      "plague CDC statistics",
+      "plague prevention tips",
+      "plague Madagascar",
+      "plague DR Congo",
+      "pneumonic plague",
+      "bubonic plague",
+      "plague symptoms",
+      "how plague spreads",
+      "plague fleas rodents",
+      "is plague curable",
+      "plague outbreak 2026",
+      "CDC plague prevention",
+      "WHO plague fact sheet"
+    ],
+    "pinned_comment": "Plague never fully went away. CDC (updated Oct 7, 2026) says an average of 5 human plague cases have been reported each year in the US (range 0-17), and WHO says that during 2019-2025, most cases reported to WHO occurred in DR Congo and Madagascar. If you have had a possible exposure and get symptoms like fever, cough, shortness of breath or chest pain, contact a doctor or local health authority urgently. Save this before your next hike or camping trip, or share it with someone who spends time outdoors out West. This is educational, not medical advice. If you're worried, talk to a health professional.",
+    "thumbnail": {
+      "headline": "5 A YEAR",
+      "highlight_word": "5",
+      "subtext": "AVG US HUMAN CASES",
+      "layout": "big-number",
+      "psychology": "Specific number: the title asks where plague is still found, and one concrete number answers 'even the US' without fear words. It copies CDC's live 'average of five' wording, counts human cases only and says 'AVG' to keep the hedge.",
+      "emotion": "surprise followed by calm curiosity ('really, here? what do I do?')",
+      "hero_art": "mascot",
+      "hero_face": "shocked",
+      "second_art": "",
+      "second_face": "none",
+      "prop": "magnifier",
+      "accent": "highlight",
+      "badge": "CDC",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 Plague never left\n0:50 The world map\n2:07 Why it hangs on\n3:07 Madagascar's season\n4:08 Plague in the US\n5:13 How it reaches people\n6:51 CDC's prevention list\n9:00 Treatment, when to act, recap"
+  },
+  "media": {
+    "video": "L2-plague-today-where-yersinia-pestis-still.mp4",
+    "duration": 673.404,
+    "thumbnail": "L2-plague-today-where-yersinia-pestis-still-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-12T18:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "WxlRJhECukc",
+      "url": "https://youtu.be/WxlRJhECukc",
+      "published_at": "2026-10-12T18:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-10-12T03:39:19.060Z",
+  "script": {
+    "working_title": "Plague Today: Where It Still Occurs and How to Stay Safe (WHO, CDC)",
+    "target_keyword": "where is plague still found",
+    "hook_pattern": "Counterintuitive claim (\"plague never left\"), answered within 15 seconds with a specific agency number (CDC: an average of 5 US human plague cases are reported each year), plus an open loop about one pet rule from CDC's prevention list that pays off in the prevention chapter",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "Plague never left",
+        "narration": "Plague sounds like a history lesson. But the bacterium that causes it, Yersinia pestis, is still out there right now, usually in small mammals and their fleas.",
+        "on_screen_text": "Plague never left",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "history book opening onto prairie"
+        },
+        "retention_device": "Counterintuitive hook: the 'history lesson' is still happening",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "Plague never left",
+        "narration": "And it isn't only far away. CDC says that in the US, an average of 5 human plague cases are reported each year, with a range of 0 to 17 cases per year.",
+        "on_screen_text": "Yes, in the US too",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "5",
+          "stat_label": "Average US human plague cases per year",
+          "stock_query": "US map with small counter"
+        },
+        "retention_device": "Specific number answers the hook within 15 seconds",
+        "source_ids": [
+          "cdc_maps"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "Plague never left",
+        "narration": "Plague has been in the news this month. This video isn't about that story. It's about the settled science of where plague lives, and why it hangs on.",
+        "on_screen_text": "Settled science, not headlines",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm narrator with open notebook"
+        },
+        "retention_device": "Sets expectations and frames the promise",
+        "source_ids": []
+      },
+      {
+        "id": "s04",
+        "section": "Plague never left",
+        "narration": "In the next few minutes, you'll get the world picture according to WHO, the US regions CDC names, how plague actually reaches people, and the prevention steps health agencies recommend.",
+        "on_screen_text": "Map, why, what to do",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "The world picture (WHO)",
+            "The US regions (CDC)",
+            "How it reaches people",
+            "What to do"
+          ],
+          "stock_query": "checklist on cartoon clipboard"
+        },
+        "retention_device": "Promise: clear roadmap of payoffs",
+        "source_ids": []
+      },
+      {
+        "id": "s05",
+        "section": "Plague never left",
+        "narration": "And stay for one pet rule near the end. It sounds small, it's on CDC's own list, and it's about where your pet sleeps.",
+        "on_screen_text": "One pet rule. Stay tuned",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious dog peeking from blanket"
+        },
+        "retention_device": "Open loop: the pet rule, paid off in the prevention chapter",
+        "source_ids": [
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s06",
+        "section": "The world map",
+        "narration": "First, the big picture. Where does plague still show up in people?",
+        "on_screen_text": "The world picture",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "spinning cartoon globe"
+        },
+        "retention_device": "Chapter card with a direct question",
+        "source_ids": []
+      },
+      {
+        "id": "s07",
+        "section": "The world map",
+        "narration": "WHO's answer is short. In its words: during 2019 to 2025, most cases reported to WHO occurred in the Democratic Republic of the Congo and Madagascar.",
+        "on_screen_text": "DR Congo and Madagascar",
+        "visual": {
+          "kind": "quote",
+          "quote": "During 2019–2025, most cases reported to WHO occurred in the Democratic Republic of the Congo and Madagascar.",
+          "attribution": "WHO plague fact sheet (updated Sep 29, 2026)",
+          "stock_query": "globe highlighting central Africa, Madagascar"
+        },
+        "retention_device": "Direct answer to the chapter question",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "The world map",
+        "narration": "Notice the careful wording. These are cases reported to WHO, over a specific 7-year window. It isn't a ranking of every country, and it doesn't mean plague is absent everywhere else.",
+        "on_screen_text": "Reported to WHO, 2019–2025",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over fine print"
+        },
+        "retention_device": "Precision moment that builds trust",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "The world map",
+        "narration": "So why those places, and why anywhere at all? WHO's fact sheet gives a 3-part answer, and it's the key to this whole video.",
+        "on_screen_text": "The 3-part key",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glowing key with three teeth"
+        },
+        "retention_device": "Question to the viewer plus new open loop",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "The world map",
+        "narration": "WHO says there's a risk of human plague wherever plague natural foci and human population co-exist. A natural focus means 3 things together: the bacteria, an animal reservoir, and a vector.",
+        "on_screen_text": "Natural focus = 3 parts",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "The bacteria",
+            "An animal reservoir",
+            "A vector"
+          ],
+          "stock_query": "three puzzle pieces clicking together"
+        },
+        "retention_device": "Payoff of the 3-part loop",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "The world map",
+        "narration": "Think of it as a 3-legged stool. The bacterium is one leg. The animals that carry it, usually small mammals such as rodents, are the second. The fleas that move it around are the third.",
+        "on_screen_text": "A 3-legged stool",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stool legs: microbe, prairie dog, flea"
+        },
+        "retention_device": "Memorable analogy reused later",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "The world map",
+        "narration": "Where all 3 legs stand together, and people live nearby, WHO says there's a risk of human plague. In our own words: weaken a leg near where you live, and your risk goes down.",
+        "on_screen_text": "All 3 legs plus people",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stool beside village, one leg wobbling"
+        },
+        "retention_device": "But/therefore turn that sets up the next chapter",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "Why it hangs on",
+        "narration": "But here's the part that surprises people. With modern medicine, why hasn't plague simply disappeared?",
+        "on_screen_text": "Why hasn't it vanished?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "puzzled cartoon scientist with question mark"
+        },
+        "retention_device": "Chapter cliffhanger question",
+        "source_ids": []
+      },
+      {
+        "id": "s14",
+        "section": "Why it hangs on",
+        "narration": "Because plague isn't mainly a human disease. WHO describes Yersinia pestis as a zoonotic bacterium, usually found in small mammals and their fleas.",
+        "on_screen_text": "An animal disease first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly bacterium riding a squirrel"
+        },
+        "retention_device": "Reframe that answers the question",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "Why it hangs on",
+        "narration": "That changes everything. As CDC puts it, plague can be cured with antibiotics, but treatment must be given quickly. But antibiotics don't reach the rodents in a burrow or the fleas in a nest.",
+        "on_screen_text": "Medicine can't reach burrows",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill bottle outside rodent burrow"
+        },
+        "retention_device": "But/therefore contrast",
+        "source_ids": [
+          "cdc_about",
+          "who"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "Why it hangs on",
+        "narration": "So the idea that plague simply died out long ago is a myth. Treating people works, but the cycle in wildlife can keep going on its own.",
+        "on_screen_text": "It never died out",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Plague died out long ago",
+          "fact": "It persists in wild animals and their fleas (WHO)",
+          "stock_query": "myth stamp versus fact stamp"
+        },
+        "retention_device": "Myth bust",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "Why it hangs on",
+        "narration": "WHO says it's transmitted between animals through fleas. Picture a quiet loop running in the background. People usually enter the picture only when they cross paths with that loop.",
+        "on_screen_text": "A loop in the wild",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "circular arrow: flea to rodent"
+        },
+        "retention_device": "Visual loop concept that sets up the routes chapter",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "Why it hangs on",
+        "narration": "And crossing paths isn't always random. In some places, it follows the calendar. Which brings us to an island where plague has a season.",
+        "on_screen_text": "Plague with a season?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar pages over tropical island"
+        },
+        "retention_device": "Mini-cliffhanger before chapter change",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "Madagascar's season",
+        "narration": "Madagascar is the clearest example of plague keeping a schedule.",
+        "on_screen_text": "Madagascar's season",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "Madagascar island with calendar"
+        },
+        "retention_device": "Chapter card",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Madagascar's season",
+        "narration": "According to WHO's fact sheet, in Madagascar, cases of bubonic plague are recorded nearly every year, during the epidemic season, between September and April.",
+        "on_screen_text": "Nearly every year",
+        "visual": {
+          "kind": "quote",
+          "quote": "In Madagascar cases of bubonic plague are recorded nearly every year, during the epidemic season (between September and April).",
+          "attribution": "WHO plague fact sheet (updated Sep 29, 2026)",
+          "stock_query": "calendar highlighting September to April"
+        },
+        "retention_device": "Exact agency quote as proof point",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Madagascar's season",
+        "narration": "That's an 8-month window. And if you're watching this in October, that window is open right now.",
+        "on_screen_text": "Season open now",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "Sep–Apr",
+          "stat_label": "Madagascar's bubonic plague season (WHO)",
+          "stock_query": "calendar with October circled"
+        },
+        "retention_device": "Timeliness jolt without alarm",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Madagascar's season",
+        "narration": "Notice the word bubonic. WHO's line is about bubonic plague, the form caused by the bite of an infected flea, where a nearby lymph node becomes swollen and painful.",
+        "on_screen_text": "The key word: bubonic",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "word bubonic under magnifying glass"
+        },
+        "retention_device": "Precision detail that pays off later",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Madagascar's season",
+        "narration": "A known season is useful information. It's a reminder that risk in a natural focus isn't the same every month, so the timing of prevention matters.",
+        "on_screen_text": "Timing matters",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "clock beside insect repellent bottle"
+        },
+        "retention_device": "So-what moment for the viewer",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Madagascar's season",
+        "narration": "We'll stick to what WHO's fact sheet states: the type of plague, the months, and the word nearly, as in nearly every year.",
+        "on_screen_text": "Bubonic, Sep–Apr, nearly yearly",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Type: bubonic",
+            "Months: September to April",
+            "Frequency: nearly every year"
+          ],
+          "stock_query": "three highlighted note cards"
+        },
+        "retention_device": "Recap that resets attention",
+        "source_ids": [
+          "who"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "Madagascar's season",
+        "narration": "Now let's come much closer to home for many of you. Because the US has its own plague map, and it's surprisingly specific.",
+        "on_screen_text": "The US map is next",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "plane flying toward US map"
+        },
+        "retention_device": "Re-hook: open loop into the US chapter",
+        "source_ids": [
+          "cdc_maps"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "Plague in the US",
+        "narration": "So where in the US does plague show up in people?",
+        "on_screen_text": "Plague in the US",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "western US map, sunny desert"
+        },
+        "retention_device": "Chapter card with direct question",
+        "source_ids": []
+      },
+      {
+        "id": "s27",
+        "section": "Plague in the US",
+        "narration": "CDC's Plague Maps and Statistics page names 2 regions. One: northern New Mexico, northern Arizona, and southern Colorado. Two: California, southern Oregon, and far western Nevada.",
+        "on_screen_text": "2 regions, both western",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Northern New Mexico, northern Arizona, and southern Colorado",
+            "California, southern Oregon, and far western Nevada"
+          ],
+          "stock_query": "two highlighted zones western US"
+        },
+        "retention_device": "Concrete answer with named places",
+        "source_ids": [
+          "cdc_maps"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Plague in the US",
+        "narration": "Those are big, beautiful outdoor regions, full of hikers, campers, and people who live and work outside. That doesn't mean danger around every corner. It means knowing the basics.",
+        "on_screen_text": "Awareness, not alarm",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "happy hikers on desert mesa"
+        },
+        "retention_device": "Reassurance beat that keeps tone calm",
+        "source_ids": []
+      },
+      {
+        "id": "s29",
+        "section": "Plague in the US",
+        "narration": "And the numbers are small. Again, CDC says an average of 5 human plague cases are reported each year in the US, with a range of 0 to 17 cases per year.",
+        "on_screen_text": "Small, but not zero",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "0–17",
+          "stat_label": "Range of US human cases per year",
+          "stock_query": "small bar chart with range"
+        },
+        "retention_device": "Big-number card with comparator",
+        "source_ids": [
+          "cdc_maps"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Plague in the US",
+        "narration": "Those are human cases only. Plague in animals is a separate question, and the two shouldn't be mixed up.",
+        "on_screen_text": "Human cases only",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two separate tally boards"
+        },
+        "retention_device": "Clarity beat",
+        "source_ids": [
+          "cdc_maps"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "Plague in the US",
+        "narration": "Here's another useful number. In CDC's words, over 80% of United States plague cases have been the bubonic form.",
+        "on_screen_text": "Mostly bubonic",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "Over 80%",
+          "stat_label": "US plague cases that were bubonic",
+          "stock_query": "pie chart mostly one color"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "cdc_maps"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Plague in the US",
+        "narration": "So if most US cases are bubonic, how are people actually catching plague? And can one person give it to another? CDC lists exactly 3 routes.",
+        "on_screen_text": "How do people catch it?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "three paths on a trail sign"
+        },
+        "retention_device": "Re-hook: viewer question and new open loop",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "How it reaches people",
+        "narration": "CDC's How Plague Spreads page lists 3 routes. Let's take them one at a time.",
+        "on_screen_text": "3 routes",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "three road signs crossroads"
+        },
+        "retention_device": "Chapter card",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "How it reaches people",
+        "narration": "Flea bites. Contact with contaminated fluid or tissue. And infectious droplets.",
+        "on_screen_text": "Fleas, contact, droplets",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Flea bites",
+            "Contact with contaminated fluid or tissue",
+            "Infectious droplets"
+          ],
+          "stock_query": "three icons flea glove droplet"
+        },
+        "retention_device": "Rapid-fire list to change pace",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "How it reaches people",
+        "narration": "Route 1: flea bites. A flea carrying the bacteria, often picked up from an infected rodent, can pass it to a person when it bites.",
+        "on_screen_text": "Route 1: flea bites",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon flea leaving prairie dog"
+        },
+        "retention_device": "Callback to the 3-legged stool",
+        "source_ids": [
+          "cdc_spread",
+          "who"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "How it reaches people",
+        "narration": "Route 2 is contact. CDC describes people getting infected when handling tissue or body fluids of an infected animal. Think of a hunter skinning an animal, or anyone handling a sick or dead one.",
+        "on_screen_text": "Route 2: handling animals",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "gloved hands near field animal"
+        },
+        "retention_device": "Concrete everyday example",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "How it reaches people",
+        "narration": "Route 3 is infectious droplets. This is pneumonic plague, the lung form. CDC says people and animals with plague pneumonia can sometimes cough droplets, and it's the route on CDC's list by which plague can spread from one person to another.",
+        "on_screen_text": "Route 3: droplets",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon lungs with soft droplets"
+        },
+        "retention_device": "Sets up the contagion question",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "How it reaches people",
+        "narration": "So is plague contagious like a cold? Here's what CDC actually says.",
+        "on_screen_text": "Contagious like a cold?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person sneezing, question bubble"
+        },
+        "retention_device": "Question to the viewer",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "How it reaches people",
+        "narration": "Quote: typically, this requires direct and close contact with the person or animal with pneumonic plague.",
+        "on_screen_text": "Direct and close contact",
+        "visual": {
+          "kind": "quote",
+          "quote": "Typically, this requires direct and close contact with the person or animal with pneumonic plague.",
+          "attribution": "CDC, How Plague Spreads (updated May 15, 2024)",
+          "stock_query": "two people close at table"
+        },
+        "retention_device": "Payoff with exact agency quote",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "How it reaches people",
+        "narration": "Two words in there matter. Typically means CDC isn't promising a rule with zero exceptions. And or animal is a reminder that a sick animal can be part of the picture too.",
+        "on_screen_text": "Typically… or animal",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two words circled in red"
+        },
+        "retention_device": "Close-reading moment that rewards attention",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "How it reaches people",
+        "narration": "And for the US, the same CDC page says person-to-person spread hasn't been documented since 1924, but there continue to be rare cases of pneumonic plague among people exposed to sick cats.",
+        "on_screen_text": "Not documented in the US since 1924",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "1924",
+          "stat_label": "US person-to-person spread not documented since",
+          "stock_query": "old calendar page beside resting cat"
+        },
+        "retention_device": "Surprising historical stat with a twist",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "How it reaches people",
+        "narration": "Which leads to the practical question. If plague lives in the wild, what do you actually do about it? CDC has a prevention list, and it's more specific than you'd think.",
+        "on_screen_text": "So what do you do?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person looking at checklist outdoors"
+        },
+        "retention_device": "Re-hook into the prevention chapter",
+        "source_ids": [
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "CDC's prevention list",
+        "narration": "CDC's Preventing Plague page boils it down to a handful of habits. We'll go through every one.",
+        "on_screen_text": "CDC's full list",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "shield over cozy house"
+        },
+        "retention_device": "Chapter card with completeness promise",
+        "source_ids": [
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "CDC's prevention list",
+        "narration": "Here's the full list: reduce rodent habitat, wear gloves when handling animals, use repellent, keep fleas off your pets, and keep free-roaming pets off your bed.",
+        "on_screen_text": "5 habits",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Reduce rodent habitat",
+            "Gloves when handling animals",
+            "Repellent outdoors",
+            "Flea control for pets",
+            "Roaming pets off your bed"
+          ],
+          "stock_query": "five icons on checklist"
+        },
+        "retention_device": "Overview list",
+        "source_ids": [
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "CDC's prevention list",
+        "narration": "Habit 1: reduce rodent habitat around your home, workplace, and recreation areas. That means removing things like brush, rock piles, junk, cluttered firewood, and possible rodent food, like pet and wild animal food.",
+        "on_screen_text": "Clear the clutter",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "tidy yard, firewood neatly stacked"
+        },
+        "retention_device": "Concrete actionable detail",
+        "source_ids": [
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "CDC's prevention list",
+        "narration": "The logic goes straight back to the stool. Fewer rodents near you means fewer of their fleas near you.",
+        "on_screen_text": "Fewer rodents, fewer fleas",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stool wobbling, rodent walking away"
+        },
+        "retention_device": "Callback to earlier analogy",
+        "source_ids": [
+          "who",
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "CDC's prevention list",
+        "narration": "Habit 2: wear gloves when handling or skinning potentially infected animals. If you hunt or trap in a plague area, this one's for you.",
+        "on_screen_text": "Gloves on",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hunter putting on gloves"
+        },
+        "retention_device": "Direct 'you' address",
+        "source_ids": [
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "CDC's prevention list",
+        "narration": "Habit 3: use repellent if you think you could be exposed to fleas during activities such as camping, hiking, or working outdoors. And follow the product label.",
+        "on_screen_text": "Repellent outdoors",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "camper applying bug spray at tent"
+        },
+        "retention_device": "Relatable scenario",
+        "source_ids": [
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "CDC's prevention list",
+        "narration": "Habit 4: keep fleas off your pets by using flea control products. CDC explains that animals that roam freely are more likely to come in contact with plague-infected animals or fleas, and could bring them into homes.",
+        "on_screen_text": "Flea control for pets",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "happy dog getting flea treatment"
+        },
+        "retention_device": "Pet angle that builds toward the promised rule",
+        "source_ids": [
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "CDC's prevention list",
+        "narration": "One safety note, in our own words: follow the label. Some dog flea products, for example ones containing permethrin, are toxic to cats. Ask your vet if you're unsure.",
+        "on_screen_text": "Follow the label",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Any flea product is fine for any pet",
+          "fact": "Follow the label: some dog flea products (e.g. permethrin) are toxic to cats",
+          "stock_query": "cat next to dog flea bottle"
+        },
+        "retention_device": "Myth/fact safety twist",
+        "source_ids": []
+      },
+      {
+        "id": "s51",
+        "section": "CDC's prevention list",
+        "narration": "And here's the pet rule we promised at the start. CDC says: do not allow dogs or cats that roam free in endemic areas to sleep on your bed.",
+        "on_screen_text": "Roaming pets off the bed",
+        "visual": {
+          "kind": "quote",
+          "quote": "Do not allow dogs or cats that roam free in endemic areas to sleep on your bed.",
+          "attribution": "CDC, Preventing Plague (updated Mar 5, 2025)",
+          "stock_query": "cat on pet bed by bed"
+        },
+        "retention_device": "Payoff of the opening open loop",
+        "source_ids": [
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "CDC's prevention list",
+        "narration": "It sounds small. In our own words: your bed is where you spend hours close to your pet, so it's an easy way for a roaming pet's fleas to reach you.",
+        "on_screen_text": "Small rule, real logic",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "dog curled on its own cushion"
+        },
+        "retention_device": "Explains the why behind the payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s53",
+        "section": "CDC's prevention list",
+        "narration": "One more habit, built from a warning sign on CDC's About Plague page: sudden illness or death among wild rodents, like squirrels and prairie dogs.",
+        "on_screen_text": "Watch for sick rodents",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "empty prairie dog town, sign"
+        },
+        "retention_device": "Bonus tip beyond the list",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "CDC's prevention list",
+        "narration": "In our own words: if you see sick or dead rodents, don't handle them, keep children and pets away, and consider letting local health officials know.",
+        "on_screen_text": "Look, don't touch",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "family walking around trail marker"
+        },
+        "retention_device": "Practical action step",
+        "source_ids": []
+      },
+      {
+        "id": "s55",
+        "section": "CDC's prevention list",
+        "narration": "Prevention lowers risk. It doesn't make it zero. So what happens if someone does get plague? This is where the news is genuinely good.",
+        "on_screen_text": "The good news",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sunrise over clinic building"
+        },
+        "retention_device": "Re-hook: promise of good news before final chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s56",
+        "section": "Treatment, when to act, recap",
+        "narration": "Let's start with the single most important sentence on CDC's About Plague page.",
+        "on_screen_text": "The key sentence",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "spotlight on open page"
+        },
+        "retention_device": "Chapter card with anticipation",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "Treatment, when to act, recap",
+        "narration": "Plague can be cured with antibiotics, but treatment must be given quickly.",
+        "on_screen_text": "Curable, if treated quickly",
+        "visual": {
+          "kind": "quote",
+          "quote": "Plague can be cured with antibiotics, but treatment must be given quickly.",
+          "attribution": "CDC, About Plague (updated Aug 24, 2026)",
+          "stock_query": "doctor holding clipboard, smiling"
+        },
+        "retention_device": "Main payoff: plague is curable",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "Treatment, when to act, recap",
+        "narration": "Both halves matter. Can be cured is the reassuring part. Must be given quickly is the part that depends on people not waiting.",
+        "on_screen_text": "Both halves matter",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two halves of a key"
+        },
+        "retention_device": "Close reading of the quote",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "Treatment, when to act, recap",
+        "narration": "That's why speed matters so much. We won't name drugs or doses here; those decisions belong to clinicians. Your part is simply not to delay getting checked.",
+        "on_screen_text": "Don't delay",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stopwatch beside clinic door"
+        },
+        "retention_device": "Clear role for the viewer",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "Treatment, when to act, recap",
+        "narration": "So when should you act? If you've had a possible exposure, like a flea bite in a plague area, handling a sick or dead animal, or close contact with someone who has pneumonic plague…",
+        "on_screen_text": "Possible exposure?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person thinking with thought bubbles"
+        },
+        "retention_device": "Mini-cliffhanger sentence split across scenes",
+        "source_ids": [
+          "cdc_spread"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "Treatment, when to act, recap",
+        "narration": "…and you develop symptoms like fever, chills, headache and weakness, a swollen, painful lymph node, or cough, shortness of breath or chest pain, contact a doctor or local health authority urgently.",
+        "on_screen_text": "Symptoms? Act urgently",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fever, chills, headache, weakness",
+            "Swollen, painful lymph node",
+            "Cough, shortness of breath, chest pain"
+          ],
+          "stock_query": "phone calling doctor's office"
+        },
+        "retention_device": "Payoff with the key action line",
+        "source_ids": [
+          "cdc_symptoms"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "Treatment, when to act, recap",
+        "narration": "Tell them where you've been and what you were in contact with. That context helps them think of plague early.",
+        "on_screen_text": "Share where you've been",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient talking with friendly nurse"
+        },
+        "retention_device": "Practical tip",
+        "source_ids": []
+      },
+      {
+        "id": "s63",
+        "section": "Treatment, when to act, recap",
+        "narration": "And please don't self-treat or take leftover antibiotics. Health authorities and clinicians decide on testing, treatment, and any preventive antibiotics for close contacts.",
+        "on_screen_text": "No self-treatment",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "medicine cabinet closed, phone ringing"
+        },
+        "retention_device": "Safety guardrail",
+        "source_ids": []
+      },
+      {
+        "id": "s64",
+        "section": "Treatment, when to act, recap",
+        "narration": "Quick recap. Plague lives in natural foci: the bacteria, an animal reservoir, and a vector. During 2019 to 2025, most cases reported to WHO occurred in DR Congo and Madagascar. And CDC says an average of 5 human cases are reported each year in the US.",
+        "on_screen_text": "The map in 3 lines",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Natural focus: bacteria, animal reservoir, vector (WHO)",
+            "2019–2025: most cases reported to WHO in DR Congo and Madagascar",
+            "US: average of 5 human cases reported per year (CDC)"
+          ],
+          "stock_query": "globe with three pinned notes"
+        },
+        "retention_device": "Recap of every loop",
+        "source_ids": [
+          "who",
+          "cdc_maps"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "Treatment, when to act, recap",
+        "narration": "And your checklist: reduce rodent habitat, wear gloves with animals, use repellent outdoors, use pet flea control and follow the label, keep roaming pets off the bed, and act fast on symptoms.",
+        "on_screen_text": "Your plague checklist",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Reduce rodent habitat",
+            "Gloves with animals",
+            "Repellent outdoors",
+            "Pet flea control, follow label",
+            "Roaming pets off the bed"
+          ],
+          "stock_query": "checklist with green ticks"
+        },
+        "retention_device": "Practical takeaway checklist",
+        "source_ids": [
+          "cdc_prevent"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "Treatment, when to act, recap",
+        "narration": "So, plague hasn't vanished. But it's mapped, its risk can be lowered, and as CDC puts it, plague can be cured with antibiotics, but treatment must be given quickly.",
+        "on_screen_text": "Mapped, preventable risk, curable",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm sunset over western mesa"
+        },
+        "retention_device": "Payoff of the main hook",
+        "source_ids": [
+          "cdc_about",
+          "cdc_maps"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "Treatment, when to act, recap",
+        "narration": "Next, we're unpacking what CDC learned from a 2009 Chicago lab case. Subscribe so you catch it, and share this with someone who hikes, camps, or hunts out West.",
+        "on_screen_text": "Next: the 2009 lab case",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "subscribe button beside lab flask"
+        },
+        "retention_device": "CTA tied to a specific next benefit",
+        "source_ids": []
+      },
+      {
+        "id": "s68",
+        "section": "Treatment, when to act, recap",
+        "narration": "If you're worried, talk to a health professional.",
+        "on_screen_text": "Worried? Talk to a professional",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly doctor waving goodbye"
+        },
+        "retention_device": "Reassuring close",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "who",
+        "title": "Plague (fact sheet)",
+        "publisher": "World Health Organization",
+        "year": "2026 (updated Sep 29, 2026)",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      },
+      {
+        "id": "cdc_maps",
+        "title": "Plague Maps and Statistics",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2026 (updated Oct 7, 2026)",
+        "url": "https://www.cdc.gov/plague/maps-statistics/index.html"
+      },
+      {
+        "id": "cdc_spread",
+        "title": "How Plague Spreads",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024 (updated May 15, 2024)",
+        "url": "https://www.cdc.gov/plague/causes/index.html"
+      },
+      {
+        "id": "cdc_about",
+        "title": "About Plague",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2026 (updated Aug 24, 2026)",
+        "url": "https://www.cdc.gov/plague/about/index.html"
+      },
+      {
+        "id": "cdc_prevent",
+        "title": "Preventing Plague",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2025 (updated Mar 5, 2025)",
+        "url": "https://www.cdc.gov/plague/prevention/index.html"
+      },
+      {
+        "id": "cdc_symptoms",
+        "title": "Signs and Symptoms of Plague",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024 (updated May 15, 2024)",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      }
+    ],
+    "cta": "Subscribe for our next plague explainer: what CDC learned from a 2009 Chicago lab case. Share this with someone who hikes, camps or hunts out West. If you've had a possible exposure and develop fever, chills, a swollen painful lymph node, cough, shortness of breath or chest pain, contact a doctor or local health authority urgently. This video is for education, not medical advice. If you're worried, talk to a health professional."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "The script passes. I checked every agency claim against the live source pages, and they match.\n- **WHO plague fact sheet:** the quotes are verbatim. These are the 2019–2025 DR Congo/Madagascar line, the Madagascar Sep–Apr \"nearly every year\" line, the natural-foci definition with \"co-exist\", \"zoonotic bacteria usually found in small mammals and their fleas\", \"transmitted between animals through fleas\" and the bubonic description.\n- **CDC Plague Maps and Statistics (updated Oct 7, 2026):** the live wording matches. It reads \"an average of five human plague cases are reported each year\", with a range of 0–17 and over 80% bubonic, and it names the same 2 regions as the script.\n- **CDC How Plague Spreads:** the 3 routes, \"can sometimes cough droplets\", the \"direct and close contact\" quote and \"not documented in the United States since 1924\" all match.\n- **CDC Preventing Plague (updated Mar 5, 2025):** it has exactly the 5 items the script lists, and the bed quote is verbatim.\n- **CDC About Plague (updated Aug 24, 2026):** the \"can be cured… must be given quickly\" sentence and the wild-rodent warning sign match.\n- **CDC Signs and Symptoms:** it supports the symptom list.\n\n**Safety and guardrails:** the script has the urgent-contact line, a no-self-treatment line, no dosing, the permethrin/cat caveat, the closing \"If you're worried…\" line and the disclaimer in the CTA. Its only mention of the current case is one neutral line (\"Plague has been in the news this month\").\n\n**Minor fixes (all wording):**\n- **Scene s15:** use CDC's exact sentence.\n- **Scene s48:** say \"fleas\", not \"rodent fleas\".\n- **Scene s49:** use CDC's own reason for flea control.\n- **Scene s61:** drop \"sudden\", which isn't on CDC's symptoms page.\n- **Scene s37:** soften \"the one route… that can pass from another person\".\n- **Scene s12:** hedge the stool analogy.\n- **Scene s41:** optionally add CDC's sick-cats clause.\n- **Sources:** the CDC symptoms page's real title is \"Signs and Symptoms of Plague\".",
+    "issues": [
+      {
+        "location": "s15",
+        "claim": "Antibiotics can cure a person, when treatment is given quickly.",
+        "problem": "This scene credits CDC (cdc_about) but paraphrases CDC's sentence and softens 'must be given quickly'. House rule: use CDC's exact wording whenever CDC is credited.",
+        "severity": "minor",
+        "fix": "Replace the narration with: \"That changes everything. As CDC puts it, plague can be cured with antibiotics, but treatment must be given quickly. But antibiotics don't reach the rodents in a burrow or the fleas in a nest.\""
+      },
+      {
+        "location": "s48",
+        "claim": "use repellent if you think you could be exposed to rodent fleas",
+        "problem": "CDC says \"exposed to fleas\", not \"rodent fleas\". The script narrows the source's wording.",
+        "severity": "minor",
+        "fix": "Replace the narration with: \"Habit 3: use repellent if you think you could be exposed to fleas during activities such as camping, hiking, or working outdoors. And follow the product label.\""
+      },
+      {
+        "location": "s49",
+        "claim": "Pets that roam outdoors can come into contact with rodents and their fleas.",
+        "problem": "CDC's reason reads: \"Animals that roam freely are more likely to come in contact with plague infected animals or fleas and could bring them into homes.\" The script's paraphrase changes what the pets contact and drops the 'into homes' point, which sets up the bed rule.",
+        "severity": "minor",
+        "fix": "Replace the second sentence with: \"CDC explains that animals that roam freely are more likely to come in contact with plague-infected animals or fleas, and could bring them into homes.\""
+      },
+      {
+        "location": "s61",
+        "claim": "symptoms like sudden fever, chills, headache and weakness...",
+        "problem": "This scene cites CDC's Signs and Symptoms page, which says \"fever\", not \"sudden fever\".",
+        "severity": "minor",
+        "fix": "Change \"sudden fever\" to \"fever\". The rest of the scene can stay as written."
+      },
+      {
+        "location": "s37",
+        "claim": "it's the one route on CDC's list that can pass from another person",
+        "problem": "The claim is too absolute. WHO says person-to-person spread of bubonic plague is \"uncommon\", not impossible. CDC frames droplets as the route that typically needs close contact with a person or animal that has pneumonic plague.",
+        "severity": "minor",
+        "fix": "Replace the last clause with: \"...and it's the route on CDC's list by which plague can spread from one person to another.\""
+      },
+      {
+        "location": "s12",
+        "claim": "Take away a leg, and that focus can't hold up.",
+        "problem": "This is our own analogy, but it is tagged to WHO. WHO doesn't say that removing one element eliminates a focus.",
+        "severity": "minor",
+        "fix": "Replace the narration with: \"Where all 3 legs stand together, and people live nearby, WHO says there's a risk of human plague. In our own words: weaken a leg near where you live, and your risk goes down.\""
+      },
+      {
+        "location": "s41",
+        "claim": "plague spreading from person to person hasn't been documented since 1924",
+        "problem": "The claim is accurate. But the same CDC sentence goes on: \"but there continue to be rare cases of pneumonic plague among people exposed to sick cats.\" Adding that clause supports the \"or animal\" point in s40 and keeps the line from sounding more reassuring than the source.",
+        "severity": "minor",
+        "fix": "Replace the narration with: \"And for the US, the same CDC page says person-to-person spread hasn't been documented since 1924, but there continue to be rare cases of pneumonic plague among people exposed to sick cats.\""
+      },
+      {
+        "location": "sources: cdc_symptoms",
+        "claim": "Title: Plague Signs and Symptoms",
+        "problem": "The page's published title is \"Signs and Symptoms of Plague\".",
+        "severity": "minor",
+        "fix": "Change the title to \"Signs and Symptoms of Plague\". Keep the updated date as May 15, 2024."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "who",
+        "title": "Plague (fact sheet)",
+        "publisher": "World Health Organization",
+        "year": "2026 (updated Sep 29, 2026)",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      },
+      {
+        "id": "cdc_maps",
+        "title": "Plague Maps and Statistics",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2026 (updated Oct 7, 2026)",
+        "url": "https://www.cdc.gov/plague/maps-statistics/index.html"
+      },
+      {
+        "id": "cdc_spread",
+        "title": "How Plague Spreads",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024 (updated May 15, 2024)",
+        "url": "https://www.cdc.gov/plague/causes/index.html"
+      },
+      {
+        "id": "cdc_about",
+        "title": "About Plague",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2026 (updated Aug 24, 2026)",
+        "url": "https://www.cdc.gov/plague/about/index.html"
+      },
+      {
+        "id": "cdc_prevent",
+        "title": "Preventing Plague",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2025 (updated Mar 5, 2025)",
+        "url": "https://www.cdc.gov/plague/prevention/index.html"
+      },
+      {
+        "id": "cdc_symptoms",
+        "title": "Signs and Symptoms of Plague",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024 (updated May 15, 2024)",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.007,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 6.7,
+      "weakShots": 27,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "At 2.8s the park scene is empty of any subject for several seconds (no bacteria/icons yet) — reads as dead time.",
+        "At 7.1s the 'Rodent' label under the squirrel is cropped by the bottom frame edge, only the tops of the letters are visible.",
+        "At 49.6s only two chips sit at the top and one small bacteria icon sits bottom-left; the rest of the frame is empty gradient, which reads as sparse/unbalanced.",
+        "At 53.7s the 'Rodent' label is clipped by the bottom frame edge again — only partial letters are visible, same issue as the 7.1s frame.",
+        "At 65.2s the only element is a single small glove floating on a mostly empty gradient background — this is a sparse, dead-space frame.",
+        "At 67.8s the 'Body fluids' tag renders very small and is hard to read at a glance.",
+        "At 72.0s the 'Hunter' label is clipped at the bottom frame edge, only partially visible.",
+        "At 74.8s both the 'Hunter' and 'Sick animal' tags are cropped by the bottom frame edge in the same shot.",
+        "At 77.9s/80.4s the 'Lungs' tag sits very close to the bottom edge and risks the same crop.",
+        "At 86.3s the 'Droplets' tag near the sneezing character renders tiny and is hard to read quickly.",
+        "Chip labels 'Typically' and 'or animal' are sentence fragments that don't read as complete phrases on their own — confusing without the missing words ('a person or animal').",
+        "Same fragment chips 'Typically' / 'or animal' carried over, still unreadable as standalone labels.",
+        "'Sick animal' tag on the squirrel is cropped at the bottom frame edge (matches audit offscreen finding).",
+        "Woman shown only as a disembodied floating head with no neck/shoulders in an otherwise empty room — reads as odd/slightly creepy rather than cute.",
+        "Large dead space to the right and left of the face."
+      ],
+      "layoutKinds": {
+        "offscreen": 10,
+        "tiny": 7,
+        "sparse": 6
+      }
+    },
+    "audio": {
+      "musicGain": 0.325,
+      "sfxGain": 0.55,
+      "finalWer": 0.002,
+      "maskingDelta": 0.002,
+      "lufs": -15.2,
+      "soundNotes": "Music already sits in the target window (-13.6 dB under voice, -13.7 in pauses), so only a small +0.5 dB nudge (x1.05) to make it feel a touch more present without crossing the ceiling. Trimmed a dozen cue spikes that were sitting far louder than the voice during speech (several blips/pops at -3 to -10 dB, which would read as competing with narration), while giving the key numeric-reveal \"ding\" cues (5, Sep-Apr, 5 a year, 1924) a small lift so they still land as satisfying accents. Added 5 bespoke, subtle SFX for story beats the stock kit can't cover well: burrow rumble, flea-bite zing, glove snap, a hopeful chime on \"curable,\" and a single calm heartbeat pulse on \"act urgently\" - all kept under speech-level gain so they stay felt, not heard."
+    },
+    "blocking": [],
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": [
+            "Small 'AVG US HUMAN CASES' sub-line is slightly small but still legible at phone size"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "Boot icon doesn't clearly connect to 'wild fleas' or plague at a glance — unclear focal point",
+            "Arrow points to empty sky/corner rather than at the boot or a flea, weakening the visual logic"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 5,
+          "legibility": 8,
+          "issues": [
+            "Generic smiley-face icon doesn't read as a 'pet' at all — visual mismatch with headline, undercuts the loss-aversion hook",
+            "Green circle behind the face adds clutter without adding meaning"
+          ]
+        }
+      ],
+      "best_index": 0,
+      "reasoning": "All three are legible at phone size with clean 2-line/3-line text blocks and no cut-off or overlapping words. #0 ('5 A YEAR' + CDC tag + mascot) directly replicates the studio's proven top-performing thumbnail pattern — a plain number plus a named agency — which the playbook explicitly flags as the best plague format and ties to the channel's best-performing post (69 YouTube views, 107 IG reach). It has a single, clear focal point (the surprised heart mascot with magnifying glass) and strong color contrast (purple/blue/yellow). #1's 'STILL OUT THERE' has good curiosity/expectation-violation pull, but the hero image (a boot) and the arrow pointing to empty space don't visually reinforce 'wild fleas,' muddying the focal point. #2's 'PROTECT YOUR PET' has a good loss-aversion hook but the icon is a generic smiley face, not a pet — a confusing mismatch that could feel slightly off-promise and weakens trust. Given the proven title/thumbnail pattern and clearest visual logic, #0 is the strongest choice."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "Description, paragraph 1, and pinned comment, sentence 2",
+          "claim": "an average of 5 human plague cases are reported each year in the US (range 0–17)",
+          "problem": "CDC's live page (updated Oct 7, 2026) says \"An average of five human plague cases have been reported each year (range: 0–17 cases per year).\" The house rule is to copy CDC's verb word for word, and C1 10-12 was flagged for changing it. The meaning is unchanged, so this is wording polish only.",
+          "severity": "minor",
+          "fix": "Description: replace \"an average of 5 human plague cases are reported each year in the US (range 0–17)\" with \"an average of 5 human plague cases have been reported each year in the US (range 0–17)\". Pinned comment: replace \"says an average of 5 human plague cases are reported each year in the US (range 0–17)\" with \"says an average of 5 human plague cases have been reported each year in the US (range 0–17)\"."
+        },
+        {
+          "location": "Description, paragraph 2",
+          "claim": "develop symptoms such as fever, cough, shortness of breath or chest pain",
+          "problem": "The video stresses that most US cases are bubonic. The script's urgent-care beat includes \"a swollen, painful lymph node\", but the description lists only pneumonic signs. \"Such as\" keeps this from being false; it is a completeness polish.",
+          "severity": "minor",
+          "fix": "Replace with: \"If you've had a possible exposure and develop symptoms such as fever, a swollen, painful lymph node, cough, shortness of breath or chest pain, contact a doctor or local health authority urgently. Don't self-treat.\""
+        }
+      ]
+    }
+  },
+  "release_tag": "content-2026-10-12",
+  "archive_url": "b2://informed-lab-media/content/2026-10-12/L2-plague-today-where-yersinia-pestis-still/"
+}
