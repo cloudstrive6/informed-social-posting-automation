@@ -100,7 +100,11 @@
     "chirp": {
       "_comment": "Google Chirp 3 HD fallback narrator (free up to 1M characters/month). Chosen by the owner: Algenib. Other male options: Achird, Puck, Umbriel, Zubenelgenubi, Charon.",
       "voice": "en-US-Chirp3-HD-Algenib",
-      "monthlyFreeChars": 1000000
+      "monthlyFreeChars": 1000000,
+      "pronunciations": {
+        "_comment": "Exact IPA pronunciations sent to Google TTS (customPronunciations) for case-sensitive brand words. InforMed is stressed on the first syllable: IN-fer-med.",
+        "InforMed": "ˈɪnfɚˌmɛd"
+      }
     }
   },
   "video": {

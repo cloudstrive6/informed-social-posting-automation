@@ -122,3 +122,31 @@ export async function syncPlaylists(item: ContentItem, videoId: string): Promise
   log.info(`${item.id} → playlists: ${want.map(w => w.title).join(", ")}${removed.length ? ` (removed from ${removed.join(", ")})` : ""}${added.length ? ` (added to ${added.join(", ")})` : ""}`);
   return { removed, added };
 }
+
+/**
+ * Curated playlist from config/playlists/<name>.json (title, description, ordered video ids): created if missing,
+ * then made to contain exactly those videos in that order.
+ */
+export async function syncCuratedPlaylist(name: string) {
+  const { ROOT } = await import("../lib/config.js");
+  const spec = readJson<{ title: string; description: string; videos: string[] }>(join(ROOT, "config", "playlists", `${name}.json`), undefined as any);
+  if (!spec?.videos?.length) throw new Error(`config/playlists/${name}.json missing or empty`);
+  const id = await playlistId(spec.title, spec.description);
+  await yt("playlists?part=snippet", { method: "PUT", body: { id, snippet: { title: spec.title, description: spec.description, defaultLanguage: "en" } } });
+  const items: { id: string; videoId: string; position: number }[] = [];
+  let page: string | undefined;
+  do {
+    const j = await yt<any>(`playlistItems?part=snippet&playlistId=${id}&maxResults=50${page ? `&pageToken=${page}` : ""}`);
+    for (const it of j.items ?? []) items.push({ id: it.id, videoId: it.snippet.resourceId.videoId, position: it.snippet.position });
+    page = j.nextPageToken;
+  } while (page);
+  for (const it of items.filter(i => !spec.videos.includes(i.videoId))) await yt(`playlistItems?id=${it.id}`, { method: "DELETE" });
+  for (const [position, videoId] of spec.videos.entries()) {
+    const existing = items.find(i => i.videoId === videoId);
+    const snippet = { playlistId: id, resourceId: { kind: "youtube#video", videoId }, position };
+    if (existing) await yt("playlistItems?part=snippet", { method: "PUT", body: { id: existing.id, snippet } });
+    else await yt("playlistItems?part=snippet", { method: "POST", body: { snippet } });
+  }
+  log.info(`playlist "${spec.title}" synced: ${spec.videos.length} videos — https://www.youtube.com/playlist?list=${id}`);
+  return id;
+}

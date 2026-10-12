@@ -55,7 +55,7 @@
       "on_screen_text": "1 study = a clue, not a conclusion",
       "visual": {
         "kind": "myth_fact",
-        "stock_query": "one study card turns into a single puzzle piece among many forming a bigger picture",
+        "stock_query": "Medi the heart-shaped mascot holds one study card that turns into a single puzzle piece, which clicks into many other pieces forming a bigger picture. No people, no doctors, no scientists, no lab coats: only Medi and the puzzle pieces",
         "myth": "One study proves it",
         "fact": "One study is a clue, not a conclusion"
       },
@@ -90,10 +90,10 @@
       "id": "t7",
       "section": "Ask",
       "narration": "If you like knowing the why behind your health, subscribe, and start with our Start Here playlist.",
-      "on_screen_text": "Subscribe for science you can trust · Educational content, not medical advice",
+      "on_screen_text": "Subscribe · Start Here playlist · Educational content, not medical advice",
       "visual": {
         "kind": "broll",
-        "stock_query": "Medi the heart-shaped mascot points warmly at a big subscribe button next to a Start Here playlist card"
+        "stock_query": "Medi the heart-shaped mascot points warmly at a big subscribe button next to a Start Here playlist card; the end card's small footer line reads exactly: Educational content, not medical advice"
       },
       "retention_device": "One clear ask plus a small next step",
       "source_ids": []

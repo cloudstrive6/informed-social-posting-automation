@@ -70,6 +70,12 @@ const commands: Record<string, () => Promise<unknown>> = {
     catch (e) { log.warn(`watchdog failed: ${(e as Error).message.slice(0, 300)}`); }
     await publishDue();
   },
+  // playlist-sync <name>: make the curated playlist config/playlists/<name>.json exist on YouTube with exactly those videos
+  "playlist-sync": async () => {
+    const { syncCuratedPlaylist } = await import("./publish/playlists.js");
+    const id = await syncCuratedPlaylist(rest[0]);
+    await notify(`📃 Playlist synced: https://www.youtube.com/playlist?list=${id}`);
+  },
   // trailer <name>: render config/trailers/<name>.json as a channel trailer (trailers release + Telegram preview)
   trailer: async () => { const { produceTrailer } = await import("./produce/trailer.js"); for (const n of rest.filter(r => !r.startsWith("--"))) await produceTrailer(n); },
   // watchdog: run the ops checks now (normally part of every publish cycle, at most every 10 min)

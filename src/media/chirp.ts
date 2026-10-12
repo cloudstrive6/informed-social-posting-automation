@@ -29,16 +29,32 @@ function addUsage(chars: number) {
   writeJson(USAGE, { month: month(), chars: (u.month === month() ? u.chars : 0) + chars });
 }
 
+/** Brand words with a fixed pronunciation (IPA), e.g. InforMed = IN-fer-med; only for words the text really contains (case-sensitive). */
+function customPronunciations(text: string) {
+  const all = Object.entries((config.voice.chirp as any)?.pronunciations ?? {}).filter(([k]) => !k.startsWith("_")) as [string, string][];
+  const used = all.filter(([phrase]) => text.includes(phrase));
+  return used.length ? { pronunciations: used.map(([phrase, ipa]) => ({ phrase, phoneticEncoding: "PHONETIC_ENCODING_IPA", pronunciation: ipa })) } : undefined;
+}
+
 async function synth(text: string, rate: number, out: string) {
   const voice = config.voice.chirp?.voice ?? "en-US-Chirp3-HD-Algenib";
-  const j = await httpJson<{ audioContent: string }>(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${env("GOOGLE_TTS_API_KEY", true)}`, {
+  const call = (custom: object | undefined) => httpJson<{ audioContent: string }>(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${env("GOOGLE_TTS_API_KEY", true)}`, {
     method: "POST", headers: { "content-type": "application/json" }, timeoutMs: 120_000,
     body: JSON.stringify({
-      input: { text },
+      input: { text, ...(custom ? { customPronunciations: custom } : {}) },
       voice: { languageCode: voice.slice(0, 5), name: voice },
       audioConfig: { audioEncoding: "LINEAR16", sampleRateHertz: 24000, speakingRate: Math.min(1.25, Math.max(0.8, rate)) },
     }),
   });
+  const custom = customPronunciations(text);
+  let j: { audioContent: string };
+  try { j = await call(custom); }
+  catch (e) {
+    if (!custom || !/HTTP 400/.test((e as Error).message)) throw e;
+    // never lose the narration over a pronunciation hint: say it the default way and flag it
+    log.warn(`Chirp rejected the custom pronunciation (${(e as Error).message.slice(0, 200)}); narrating without it`);
+    j = await call(undefined);
+  }
   writeFileSync(out, Buffer.from(j.audioContent, "base64"));
 }
 
@@ -49,7 +65,7 @@ export async function chirpNarrate(lines: NarrationScene[], dir: string): Promis
   const parts: { file: string; pause: number; id: string }[] = [];
   let billed = 0;
   for (const l of lines) {
-    const key = createHash("sha1").update(`${voice}|${l.speed}|${l.text}`).digest("hex").slice(0, 16);
+    const key = createHash("sha1").update(`${voice}|${l.speed}|${l.text}|${JSON.stringify(customPronunciations(l.text) ?? "")}`).digest("hex").slice(0, 16);
     const f = join(cache, `${l.id}-${key}.wav`);
     if (!existsSync(f)) { await synth(l.text, l.speed, f); billed += l.text.length; }
     parts.push({ file: f, pause: l.pause_after_ms ?? 300, id: l.id });

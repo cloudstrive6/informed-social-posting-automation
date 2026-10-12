@@ -29,6 +29,9 @@ on:
       repost_facebook:
         description: "Maintenance: delete this item's Facebook post and post it again with its own slides/video (<date>/<item-id>)."
         required: false
+      sync_playlist:
+        description: "Maintenance: create/sync a curated playlist from config/playlists/<name>.json (e.g. start-here)."
+        required: false
       fix_description:
         description: "Maintenance: strip stray social captions from this long video's YouTube description (<date>/<item-id>)."
         required: false
@@ -40,7 +43,7 @@ permissions:
 
 concurrency:
   # manual runs (post one item now / repairs) get their own lane so they don't wait behind the always-on loop
-  group: ${{ (inputs.item != '' || inputs.fix_description != '' || inputs.replace_youtube != '' || inputs.unschedule_youtube != '' || inputs.playlist_youtube != '' || inputs.inspect_facebook != '' || inputs.repost_facebook != '') && format('publisher-manual-{0}', github.run_id) || 'publisher' }}
+  group: ${{ (inputs.item != '' || inputs.fix_description != '' || inputs.replace_youtube != '' || inputs.unschedule_youtube != '' || inputs.playlist_youtube != '' || inputs.inspect_facebook != '' || inputs.repost_facebook != '' || inputs.sync_playlist != '') && format('publisher-manual-{0}', github.run_id) || 'publisher' }}
   cancel-in-progress: false
 
 jobs:
@@ -65,6 +68,10 @@ jobs:
           fi
           if [ -n "${{ inputs.playlist_youtube }}" ]; then
             npx tsx src/cli.ts youtube-playlists "${{ inputs.playlist_youtube }}"
+            exit 0
+          fi
+          if [ -n "${{ inputs.sync_playlist }}" ]; then
+            npx tsx src/cli.ts playlist-sync "${{ inputs.sync_playlist }}"
             exit 0
           fi
           if [ -n "${{ inputs.inspect_facebook }}" ]; then
