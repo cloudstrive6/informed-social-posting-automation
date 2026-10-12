@@ -127,25 +127,36 @@ export async function syncPlaylists(item: ContentItem, videoId: string): Promise
  * Curated playlist from config/playlists/<name>.json (title, description, ordered video ids): created if missing,
  * then made to contain exactly those videos in that order.
  */
+/** YouTube answers 409/5xx for a few seconds after a playlist is created or edited: retry with backoff. */
+async function again<T>(fn: () => Promise<T>): Promise<T> {
+  for (let attempt = 1; ; attempt++) {
+    try { return await fn(); }
+    catch (e) {
+      if (attempt >= 6 || !/HTTP (409|5\d\d)/.test((e as Error).message)) throw e;
+      await new Promise(r => setTimeout(r, attempt * 5000));
+    }
+  }
+}
+
 export async function syncCuratedPlaylist(name: string) {
   const { ROOT } = await import("../lib/config.js");
   const spec = readJson<{ title: string; description: string; videos: string[] }>(join(ROOT, "config", "playlists", `${name}.json`), undefined as any);
   if (!spec?.videos?.length) throw new Error(`config/playlists/${name}.json missing or empty`);
   const id = await playlistId(spec.title, spec.description);
-  await yt("playlists?part=snippet", { method: "PUT", body: { id, snippet: { title: spec.title, description: spec.description, defaultLanguage: "en" } } });
+  await again(() => yt("playlists?part=snippet", { method: "PUT", body: { id, snippet: { title: spec.title, description: spec.description, defaultLanguage: "en" } } }));
   const items: { id: string; videoId: string; position: number }[] = [];
   let page: string | undefined;
   do {
-    const j = await yt<any>(`playlistItems?part=snippet&playlistId=${id}&maxResults=50${page ? `&pageToken=${page}` : ""}`);
+    const j = await again(() => yt<any>(`playlistItems?part=snippet&playlistId=${id}&maxResults=50${page ? `&pageToken=${page}` : ""}`));
     for (const it of j.items ?? []) items.push({ id: it.id, videoId: it.snippet.resourceId.videoId, position: it.snippet.position });
     page = j.nextPageToken;
   } while (page);
-  for (const it of items.filter(i => !spec.videos.includes(i.videoId))) await yt(`playlistItems?id=${it.id}`, { method: "DELETE" });
+  for (const it of items.filter(i => !spec.videos.includes(i.videoId))) await again(() => yt(`playlistItems?id=${it.id}`, { method: "DELETE" }));
   for (const [position, videoId] of spec.videos.entries()) {
     const existing = items.find(i => i.videoId === videoId);
     const snippet = { playlistId: id, resourceId: { kind: "youtube#video", videoId }, position };
-    if (existing) await yt("playlistItems?part=snippet", { method: "PUT", body: { id: existing.id, snippet } });
-    else await yt("playlistItems?part=snippet", { method: "POST", body: { snippet } });
+    if (existing) await again(() => yt("playlistItems?part=snippet", { method: "PUT", body: { id: existing.id, snippet } }));
+    else await again(() => yt("playlistItems?part=snippet", { method: "POST", body: { snippet } }));
   }
   log.info(`playlist "${spec.title}" synced: ${spec.videos.length} videos — https://www.youtube.com/playlist?list=${id}`);
   return id;
