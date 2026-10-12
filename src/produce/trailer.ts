@@ -41,3 +41,62 @@ export async function produceTrailer(name: string) {
     await notify(`Download: ${releaseAssetUrl("trailers", basename(out))}${qa.blocking.length ? `\n⚠️ QA notes: ${qa.blocking.join("; ").slice(0, 500)}` : ""}`);
   }
 }
+
+const TRAILER_META: Record<string, { title: string; description: string }> = {
+  visitors: {
+    title: "InforMed: Health Headlines Shout. The Research Whispers.",
+    description: "InforMed turns real medical studies into clear, animated explainers: science-backed health, explained like a friend would. A new deep dive every day plus quick Shorts, every script fact-checked against the published research, with sources named.\n\nNew here? Start with our best explainers: https://www.youtube.com/playlist?list=PLVku1MnNeY2w\n\nEducational content, not medical advice. Talk to a health professional about your own health.",
+  },
+  subscribers: {
+    title: "Welcome Back to InforMed: Get More Out of Every Video",
+    description: "Welcome back! How to get the most out of InforMed: chapters in every deep dive, the sources we name, topic playlists, Shorts for the key finding, and daily carousels on Instagram, TikTok, Facebook and Threads (@informedlab).\n\nEducational content, not medical advice.",
+  },
+};
+
+/**
+ * Upload the rendered trailers (from the `trailers` release) to YouTube as public videos, once each (ids kept in
+ * data/trailers.json), and set the visitors one as the channel trailer for non-subscribers. The returning-subscriber
+ * "featured video" slot can't be set through the API: the owner picks it in Studio.
+ */
+export async function publishTrailers() {
+  const { DATA } = await import("../lib/config.js");
+  const { downloadFromRelease } = await import("../publish/storage.js");
+  const { uploadVideo, youtubeToken } = await import("../publish/youtube.js");
+  const { httpJson } = await import("../lib/http.js");
+  const { notify } = await import("../notify/telegram.js");
+  const stateFile = join(DATA, "trailers.json");
+  const state = readJson<Record<string, { id: string; uploaded_at: string; file: string }>>(stateFile, {});
+  for (const name of Object.keys(TRAILER_META)) {
+    const file = await downloadFromRelease("trailers", `informed-trailer-${name}.mp4`);
+    if (state[name]?.id) { log.info(`trailer ${name} already on YouTube: ${state[name].id}`); continue; }
+    const m = TRAILER_META[name];
+    const id = await uploadVideo({ file, title: m.title, description: m.description, tags: ["InforMed", "health explained", "evidence-based health", "science explained"] });
+    state[name] = { id, uploaded_at: new Date().toISOString(), file: basename(file) };
+    writeJson(stateFile, state);
+    log.info(`trailer ${name} uploaded: https://youtu.be/${id}`);
+  }
+  // channel trailer for non-subscribers: brandingSettings.channel.unsubscribedTrailer (read-modify-write, the
+  // update replaces the whole brandingSettings object)
+  const token = await youtubeToken();
+  const ch = await httpJson<any>("https://www.googleapis.com/youtube/v3/channels?part=brandingSettings&mine=true", { headers: { authorization: `Bearer ${token}` } });
+  const channel = ch.items?.[0];
+  if (!channel) throw new Error("no channel found for this YouTube login");
+  // send back only writable fields, with their current values, so nothing else on the channel changes
+  const cur = channel.brandingSettings ?? {};
+  const keep = (o: any, keys: string[]) => Object.fromEntries(keys.filter(k => o?.[k] !== undefined).map(k => [k, o[k]]));
+  const branding: any = { channel: { ...keep(cur.channel, ["description", "keywords", "defaultLanguage", "country", "trackingAnalyticsAccountId"]), unsubscribedTrailer: state.visitors.id } };
+  if (cur.image?.bannerExternalUrl) branding.image = { bannerExternalUrl: cur.image.bannerExternalUrl };
+  log.info(`branding before: ${JSON.stringify(cur).slice(0, 800)}`);
+  await httpJson<any>("https://www.googleapis.com/youtube/v3/channels?part=brandingSettings", {
+    method: "PUT", headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+    body: JSON.stringify({ id: channel.id, brandingSettings: branding }),
+  });
+  log.info(`channel trailer set to ${state.visitors.id}`);
+  await notify([
+    "🎬 <b>Channel trailers are on YouTube</b>",
+    `Visitors (set as channel trailer): https://youtu.be/${state.visitors.id}`,
+    `Subscribers: https://youtu.be/${state.subscribers.id}`,
+    "",
+    "One step for you: YouTube Studio → Customization → Layout → Video spotlight → Featured video for returning subscribers → Add → pick \"Welcome Back to InforMed\" → Publish. (YouTube's API can't set that slot.)",
+  ].join("\n"));
+}

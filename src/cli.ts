@@ -76,6 +76,8 @@ const commands: Record<string, () => Promise<unknown>> = {
     const id = await syncCuratedPlaylist(rest[0]);
     await notify(`📃 Playlist synced: https://www.youtube.com/playlist?list=${id}`);
   },
+  // trailer-publish: upload the rendered trailers to YouTube and set the channel trailer for non-subscribers
+  "trailer-publish": async () => { const { publishTrailers } = await import("./produce/trailer.js"); await publishTrailers(); },
   // trailer <name>: render config/trailers/<name>.json as a channel trailer (trailers release + Telegram preview)
   trailer: async () => { const { produceTrailer } = await import("./produce/trailer.js"); for (const n of rest.filter(r => !r.startsWith("--"))) await produceTrailer(n); },
   // watchdog: run the ops checks now (normally part of every publish cycle, at most every 10 min)

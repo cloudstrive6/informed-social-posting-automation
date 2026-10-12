@@ -8,6 +8,10 @@ on:
       names:
         description: "Trailer names (space-separated files in config/trailers/, without .json)"
         default: "visitors subscribers"
+      publish:
+        description: "Don't render: upload the rendered trailers to YouTube and set the channel trailer"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -26,6 +30,7 @@ env:
 
 jobs:
   trailer:
+    if: ${{ !inputs.publish }}
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
@@ -41,3 +46,18 @@ jobs:
           path: out/trailers/*/final/
           if-no-files-found: ignore
           retention-days: 14
+
+  publish:
+    if: ${{ inputs.publish }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+      YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+      YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - run: npx tsx src/cli.ts trailer-publish
+      - if: always()
+        run: bash scripts/commit-data.sh "bot - trailers" || true
