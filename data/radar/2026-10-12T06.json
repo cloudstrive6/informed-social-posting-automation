@@ -1,0 +1,534 @@
+{
+  "at": "2026-10-12T06:04:38.974Z",
+  "summary": "Radar for 2026-10-12 (signals collected 06:01 UTC). The biggest status change is WHO's Disease Outbreak News of 10 Oct 2026 (\"Pneumonia of undetermined etiology – the Russian Federation\", DON620). WHO reports that \"the authorities further reported that the fatality was not due to plague infection\", that all contacts stayed asymptomatic through 7 days of observation and tested negative for high-threat pathogens, and that WHO \"has not identified evidence of ongoing transmission\" and \"does not advise any restrictions on travel or trade\". WHO still names the \"absence of a confirmed diagnosis\" as the key uncertainty and says a laboratory-associated exposure \"cannot be fully excluded at this stage\". Most news from 10–12 Oct (Reuters, ABC, AP, NYT, Independent, Kyiv Post) frames it as \"WHO unsure what caused the pneumonia\". That makes a dated, attributed status decoder the top opportunity, and our previous Oct 7 decoders are now out of date. Lower volume: a CDC director TV interview (Fox, Oct 11, \"We are protected\"; still needs verification), China's Hulunbuir border alert (Global Times, Oct 12; not confirmed in other sources), and Central Asian and Thai health checks. Coverage is turning into explainers (\"plague never went away\" from PBS/AP, the FT's \"Don't panic about the plague\", Axios on where plague strikes), which suits our evergreen pillars. Plague 101 (spread, symptoms, curable, US cases) is still the main search demand, but momentum is slowly falling across snapshots. One fresh science hook: the Nature ancient-DNA study (June 2026), now being shared again, found plague in hunter-gatherers near Lake Baikal 5,500 years ago, in the same region as the news. Vaccine news is mostly preclinical (UTMB, Sci Transl Med; Israeli mRNA vaccine in mice), so the angle has to be \"no FDA-approved vaccine; animal data only\". I rejected: bioweapon and \"manipulated\" framings (Newsweek, Euronews, Fox), the mother's claims about the official version, permafrost fear commentary, and \"we still aren't ready for lab leaks\" doom angles. YouTube competition is mostly news-network clips (ABC, Euronews). Calm creator explainers are still thin, especially ones updated after Oct 10. Per the playbook, every title starts with \"Plague\" or \"Pneumonic plague\", names one agency and carries a dated hedge.",
+  "candidates": [
+    {
+      "topic": "Plague case in Russia: what's confirmed vs suspected (as of Oct 10, 2026). WHO's Disease Outbreak News: Russian authorities reported the death was 'not due to plague infection', with no confirmed diagnosis",
+      "angle": "A dated decoder that credits each line to whoever said it, newest first. Oct 10, WHO DON620: Russian authorities reported via WHO that 'the fatality was not due to plague infection'. WHO calls it 'pneumonia of undetermined etiology', says the 'absence of a confirmed diagnosis' is the key uncertainty, found no evidence of ongoing transmission, and advises no travel or trade restrictions. Then Oct 9: the governor's roughly 5,000 tests and the end of contact monitoring. Oct 8: WHO's question about a second employee and Rospotrebnadzor's denial. Oct 6: WHO's first 'no cause of death officially confirmed'. Don't end on the most reassuring line: close on WHO saying a lab-associated exposure 'cannot be fully excluded at this stage', then the urgent-contact line.",
+      "keywords": [
+        "plague Russia update",
+        "was it plague Russia",
+        "Irkutsk plague confirmed",
+        "WHO plague Russia",
+        "pneumonic plague Russia latest",
+        "Russian lab worker death cause"
+      ],
+      "stage": "peaking",
+      "momentum": 93,
+      "predicted_peak": "0–3 days (news cycle tapering after the WHO DON)",
+      "why_now": "WHO's Oct 10 Disease Outbreak News is the first formal WHO write-up, and Reuters, ABC, AP, the NYT and the Independent ran 'WHO unsure what caused pneumonia' stories on Oct 10–11. Search intent has moved to 'so was it plague?'. Our earlier decoders stop at Oct 7–9 and are now incomplete, which is a QA hold risk. The playbook names this decoder format as the next long-form test and the breaking-news Short.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "WHO Disease Outbreak News DON620 (10 Oct 2026)",
+          "signal": "Primary source: 'the fatality was not due to plague infection' (credited to the authorities); 'pneumonia of undetermined etiology'; contacts asymptomatic over 7 days; no evidence of ongoing transmission; no travel or trade restrictions advised; lab exposure 'cannot be fully excluded'",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON620"
+        },
+        {
+          "source": "Reuters via Google News (Oct 10)",
+          "signal": "'WHO unsure what caused pneumonia that killed plague-lab worker in Russia'",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUTJRMHRZQzJnSlNVc3hSQTlWYW1MbWxuZ3ZnUkh2bEpuQXVTZ1pqdDMzWUxVY1lkMFFFS2N2NkdaZUxfdmZYS0VNclJVSXZnVlNlY085SjlRajhQNmdYbWg3amZOUTBtM19aTXd6dkhhWkNPdkNRb1R0amZqdXZ4TTFXd1NyMTE0X0hTdEwyZWVZMkFxVkUyZkxaVlhRRU5xcGExbmJHVWp1LWd3MXVNZ3FPSGlsMGFWRlpLbGxBbGtRQS05MUF1NjQ0TXdyT1Vwc05iZWg2VTQ?oc=5"
+        },
+        {
+          "source": "Kyiv Independent",
+          "signal": "Governor Kobzev said on Oct 9 that quarantine measures were completed and about 5,000 tests found no pathogens",
+          "url": "https://kyivindependent.com/russia-lifts-quarantine-in-irkutsk-region-where-lab-worker-allegedly-died-of-plague/"
+        },
+        {
+          "source": "Al Jazeera (Oct 8)",
+          "signal": "Russia called reports of a second case 'false information'; WHO asked for a formal response",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Plague and travel: WHO 'does not advise any restrictions on travel or trade' (Oct 10), CDC calls the US risk 'extremely low' and is monitoring arrivals from the Irkutsk region",
+      "angle": "An agency-action explainer that starts with 'Plague'. Quote what each body actually said, dated: WHO DON Oct 10 (no travel or trade restrictions advised, no evidence of ongoing transmission), CDC (risk to the US 'extremely low', monitoring travelers from the area with partner agencies), and what traveler monitoring means in practice. No 'near you' framing. Close with the urgent-contact line for anyone with possible exposure and symptoms.",
+      "keywords": [
+        "plague travel Russia",
+        "is it safe to travel to Russia plague",
+        "CDC plague travelers",
+        "plague risk US",
+        "WHO travel restrictions plague"
+      ],
+      "stage": "rising",
+      "momentum": 82,
+      "predicted_peak": "2–5 days",
+      "why_now": "WHO's new no-restrictions line (Oct 10) and Medical Daily's Oct 11 story on CDC monitoring the few travelers from Irkutsk give us a fresh, dated, two-agency hook. Thailand, Japan and Central Asian states have also issued health-check statements. Our earlier CDC-travelers Short skipped 'Plague' in the title. Fix that this time.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "WHO DON620",
+          "signal": "'WHO does not advise any restrictions on travel or trade'",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON620"
+        },
+        {
+          "source": "Axios (Oct 6)",
+          "signal": "CDC is monitoring, calls itself 'prepared', and says US risk is extremely low",
+          "url": "https://axios.com/2026/10/06/cdc-russia-pneumonic-plague-outbreak-threat-us-risk"
+        },
+        {
+          "source": "Medical Daily via Google News (Oct 11)",
+          "signal": "'U.S. Plague Threat Called Extremely Low as CDC Monitors the Few Travelers Arriving From Siberia's Irkutsk Region'",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYnRPZVF6VnFiaGFzTVVLejlGMzRuWkNfNkJRa09XVHowNmpDd3ZWNFVDaDhVYXg0dGlPckVnM1U4TTJ5NWxoeEZtempWMUlLamszS3BSdXRXYTNDNzJxRXZmTGN3TUVTWGF3bDdQODZxV2g3RkFiVnFkM05jbEUyUUh0a3hWYVU?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Pneumonic plague: can it spread person to person? CDC/WHO: through respiratory droplets during direct, close contact, not measles-style airborne spread",
+      "angle": "Answer in the first 10 s using the sources' wording ('requires direct and close contact', 'can sometimes cough droplets'). Then compare pneumonic plague with measles and COVID, naming both sides. Add WHO's point that bubonic person-to-person spread is 'uncommon'. Finish with CDC's 4 pneumonic signs and the urgent-contact line.",
+      "keywords": [
+        "is pneumonic plague contagious",
+        "can plague spread person to person",
+        "is plague airborne",
+        "plague vs covid spread",
+        "how does pneumonic plague spread"
+      ],
+      "stage": "rising",
+      "momentum": 84,
+      "predicted_peak": "ongoing; 3–7 days",
+      "why_now": "This is the top question in every explainer (Naked Scientists, NBC, Pharmacy Times, CNN 'by the numbers') and has led our radar for 7+ snapshots. Momentum is easing slowly (92→84), but search demand is steady and it works well as a Reel.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "NBC News",
+          "signal": "Explainer: what to know about pneumonic plague, including spread",
+          "url": "https://www.nbcnews.com/health/health-news/plague-suspected-russia-lab-pneumonic-siberia-symptoms-treatment-rcna601589"
+        },
+        {
+          "source": "CNN (Oct 8)",
+          "signal": "'Pneumonic plague, by the numbers'",
+          "url": "https://www.cnn.com/2026/10/08/health/pneumonic-plague-russia"
+        },
+        {
+          "source": "Pharmacy Times (Oct 8)",
+          "signal": "Pneumonic plague spreads through close contact by respiratory droplets",
+          "url": "https://www.pharmacytimes.com/view/pneumonic-plague-symptoms-antibiotics-and-current-us-risk"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Plague in the US: CDC reports an average of five human cases a year (range 0–17), mostly in the rural West, plus pets, fleas and prevention",
+      "angle": "Copy our best-performing format: place + agency number + practical prevention. Copy CDC's live wording at publish time. Cover flea control for pets ('follow the label; some dog flea products, e.g. permethrin, are toxic to cats'), avoiding sick or dead animals, and both sets of warning signs (a swollen, painful lymph node, plus the 4 pneumonic signs). The PBS/AP 'plague never went away' piece shows the mainstream appetite.",
+      "keywords": [
+        "plague in the US",
+        "how many plague cases in US",
+        "plague cases per year",
+        "plague in Colorado New Mexico",
+        "plague cats dogs fleas"
+      ],
+      "stage": "evergreen",
+      "momentum": 80,
+      "predicted_peak": "steady; refreshed now through the end of the news cycle",
+      "why_now": "PBS and AP's 'Cases are reported in parts of Africa and the U.S. nearly every year' (Oct 9–10) and Axios's 'Here's where plague strikes most' are bringing US readers to this question. It's our best plague post so far (69 YouTube views, 107 Instagram reach, 2 shares). A rerun or follow-up with a new angle (pets, hiking) fits.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "PBS via Google News (Oct 9)",
+          "signal": "'The plague never went away. Cases are reported in parts of Africa and the U.S. nearly every year'",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeWY2Nm12bTdUcnMxX1pYUEVhMFdmVW1xRHhaenlEb3dFNlg2ekpmVHBNUEF2dXBJT1h4Wi1NMWNBQlB4bXNKYVcySkU0Umk2Y3hBX3pHaGhnYVJoZUZvM1dpTUgxdTk1RktVcG9vNF9vay1Bb0wwM1hyTkRGb2RZcXJGalpONWY0cHRLUVJ6anNQajd4Y3FaUXdocWpjaFlnSnpwRzRtY2RFV0JtaGFwTTA1UUZlblBGb0JrX1d2bEFrUmpSNlk5cDZB?oc=5"
+        },
+        {
+          "source": "Axios via Google News (Oct 9)",
+          "signal": "'Here's where plague strikes most as Russia rejects outbreak scare'",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSHQ5d0g3dUdlTGFVSDNoeUtfQ0lKZi1Cc1QwbzVoZzBDMUVKUk83SEEwYjBLNkZSSUF1TUhWZ1MtaEJqQ0Nkd1ZIdy15QnBHaV9md00zR1I4MnlXWVNpdkxjWG85T3huUjF5c19oR1k4ZUJQcjRRMGg2cEdRV3Itag?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Plague in a 5,500-year-old Lake Baikal cemetery: ancient DNA (Nature, 2026) shows the oldest known plague outbreaks were in Siberian hunter-gatherers",
+      "angle": "A fresh history-and-science Short and long-form segment: the oldest known human plague outbreaks were found near Lake Baikal, in the same region as this month's news. The researchers suggest spread from marmots through butchering, and possibly between people. The point: plague is ancient and lives in wild rodents, which is why Russia, China and Mongolia run anti-plague institutes. Keep the study's hedges ('likely', 'suggest'). The news gets one neutral context sentence and nothing more.",
+      "keywords": [
+        "oldest plague ancient DNA",
+        "plague 5500 years ago",
+        "Lake Baikal plague",
+        "where did plague come from",
+        "plague origin Siberia"
+      ],
+      "stage": "emerging",
+      "momentum": 72,
+      "predicted_peak": "5–10 days",
+      "why_now": "Kompas reran the story on Oct 12, and the place link to Irkutsk and Lake Baikal makes it newly relevant. Creators haven't covered it in the context of the current news. It's a curiosity hook with no fear-bait and peer-reviewed backing (Nature).",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "WTOP / AP (June 2026)",
+          "signal": "'Ancient teeth from Siberia rewrite the plague's timeline, dating back to over 5,500 years ago'",
+          "url": "https://wtop.com/europe/2026/06/ancient-teeth-from-siberia-rewrite-the-plagues-timeline-dating-back-to-over-5500-years-ago/"
+        },
+        {
+          "source": "Gavi VaccinesWork",
+          "signal": "'Oldest known plague outbreaks identified in Siberian hunter-gatherers'",
+          "url": "https://www.gavi.org/vaccineswork/oldest-known-plague-outbreaks-identified-siberian-hunter-gatherers"
+        },
+        {
+          "source": "Kompas.id via Google News (Oct 12)",
+          "signal": "'Ancient DNA Reveals Origins of Plague Outbreak 5,500 Years Ago'",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWkZGc0l4anlFN1NSX0NiTzI3VFJuNjd5NGczT2swYi1WTXdUWFJBSmp0SWMyQXFJME81ZlFEQ3B3anJQRUdDcFRiOERvd1JZZUZLbW9ORnNFeTJJUEJDTkNkR3VTM25GRHZ5d1k1RmZ0SkNsTHFXbGxjUVNpVWo1MFVMRWd5SnJEdWVHSXZya0VUZy1MbmFBZzFidGFJSFFLMjd3QnhBbWM1Q0hlTE9zckMzN1k?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Plague vaccine: is there one? No FDA-approved plague vaccine in the US; new experimental vaccines protected mice against pneumonic plague (UTMB, 2026)",
+      "angle": "Separate hype from evidence. There's no FDA-approved plague vaccine. Russia uses a live vaccine for at-risk workers (state it only as sourced). New candidates have protected mice and rats, which is not a human result. That's why antibiotics, given by health authorities, are the tool for exposed contacts. Explicitly reframe the 'mRNA vaccine 100% in mice' headlines.",
+      "keywords": [
+        "plague vaccine",
+        "is there a vaccine for plague",
+        "pneumonic plague vaccine",
+        "plague vaccine mRNA",
+        "plague vaccine 2026"
+      ],
+      "stage": "emerging",
+      "momentum": 70,
+      "predicted_peak": "3–7 days",
+      "why_now": "The European Medical Journal (Oct 10) and IBTimes ('100% protective mRNA plague vaccine in mice') are circulating overhyped headlines. This is a myth-correction chance with peer-reviewed sources, and few creators have covered it.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "UTMB news (Jul 28, 2026)",
+          "signal": "Experimental plague vaccines protected mice against deadly pneumonic infection (Science Translational Medicine)",
+          "url": "https://www.utmb.edu/news/article/utmb-news/2026/07/28/utmb-experimental-plague-vaccines-protect-against-deadly-infection-in-preclinical-study"
+        },
+        {
+          "source": "IBTimes UK",
+          "signal": "Hype framing: 'Israel Had a 100% Protective mRNA Plague Vaccine in Mice'",
+          "url": "https://www.ibtimes.co.uk/experimental-mrna-vaccine-protects-mice-pneumonic-plague-1823818"
+        },
+        {
+          "source": "European Medical Journal via Google News (Oct 10)",
+          "signal": "'Pneumonic Plague Vaccine Shows Promise Amidst Russian Outbreak'",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZENkR1VKNWpqVExtWGRQSU1qUFhFRkpYLXplemUwUEhSZndNY0IzR1Z4LWNPSUpONDVRM2JJNW9GakYwRG12eTZ2dGRZYmtJbE9CRUFEZ2RLWGVld1JhQTFsNjF1R0t0SkwwMTU1NjhwNXVUVVE3bXlmcGVNbVZHWlExVERfdzB3RWdpQ0oxaWJ2ZE9DdklzQTdaVldMZUlCTm54NXZsTGdNbGxiaC1xUnQ1Q1VhOGswNndyOUlxNE45ajNsZmln?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Plague symptoms and timing: CDC's pneumonic signs (fever, cough, shortness of breath, chest pain), the swollen, painful lymph node of bubonic plague, and when to get urgent care",
+      "angle": "A plain search-question Short: both sets of signs in full, CDC's incubation wording, and 'contact a doctor or local health authority urgently' tied to possible exposure. Clinicians treat as soon as plague is suspected, but that's what doctors do, not advice to viewers.",
+      "keywords": [
+        "plague symptoms",
+        "pneumonic plague symptoms",
+        "bubonic plague symptoms",
+        "plague incubation period",
+        "how do you know if you have plague"
+      ],
+      "stage": "rising",
+      "momentum": 78,
+      "predicted_peak": "steady 3–7 days",
+      "why_now": "A high-intent question that has sat in 8 snapshots. Momentum is dipping (86→80→78) but still strong, and it's a ready evergreen filler for held slots.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Pharmacy Times (Oct 8)",
+          "signal": "Fever and difficulty breathing within 1–3 days of inhalation; outcomes are good with early treatment",
+          "url": "https://www.pharmacytimes.com/view/pneumonic-plague-symptoms-antibiotics-and-current-us-risk"
+        },
+        {
+          "source": "ContagionLive (Oct 5)",
+          "signal": "Plague FAQ",
+          "url": "https://www.contagionlive.com/view/faq-plague"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Plague contacts: what happens after a possible exposure. Monitoring, testing and preventive antibiotics given by health authorities (Irkutsk: 7 days of observation, all contacts asymptomatic, per WHO Oct 10)",
+      "angle": "'Possible plague exposure? What health authorities do next.' Use WHO's DON description of a real public-health response (7-day medical observation, testing, contacts staying asymptomatic) and explain why the window is about a week (the incubation timing). Add the Madagascar 2017 example of preventive antibiotics for contacts. No self-treatment or stockpiling; the urgent-contact line goes up front.",
+      "keywords": [
+        "plague exposure what to do",
+        "plague contact tracing",
+        "plague quarantine how long",
+        "preventive antibiotics plague",
+        "plague close contacts"
+      ],
+      "stage": "rising",
+      "momentum": 76,
+      "predicted_peak": "3–6 days",
+      "why_now": "The Oct 10 DON gives a concrete, citable outcome for contact monitoring (7 days, all asymptomatic). The 'lifts quarantine' news (Kyiv Post, SCMP, Oct 9) prompts the question 'why was it safe to end?'.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "WHO DON620",
+          "signal": "Contacts under medical observation for 7 days, tested for high-threat pathogens with negative results, all asymptomatic",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON620"
+        },
+        {
+          "source": "Liga.net",
+          "signal": "Russia lifted quarantine after the suspected case",
+          "url": "https://news.liga.net/en/world/news/russia-has-lifted-its-quarantine-following-a-suspected-case-of-the-plague"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Plague is curable: CDC says 'Plague can be cured with antibiotics, but treatment must be given quickly'",
+      "angle": "A myth correction for the 'no cure' belief. Quote CDC word for word, explain why speed matters most for pneumonic plague, and contrast it with the Black Death era. No drug names with doses.",
+      "keywords": [
+        "is plague curable",
+        "plague treatment",
+        "plague antibiotics",
+        "can you survive plague",
+        "pneumonic plague survival"
+      ],
+      "stage": "rising",
+      "momentum": 76,
+      "predicted_peak": "steady 3–7 days",
+      "why_now": "The FT's 'Don't panic about the plague' and SCMP's 'where it still exists, how it spreads and a cure' show reassurance-seeking intent. This reached 102 on Instagram, our second-best plague Reel, so a refreshed version for YouTube with a sharper title is worth testing.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "SCMP via Google News (Oct 10)",
+          "signal": "'The plague isn't history. Where it still exists, how it spreads and a cure'",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbUIzN1lrYWlkN2FWbWtfNGVkU0hBWk03UHBqV1BVMU8wQmFXTkt4RFBYWWxLdURVUWVoS1ZOLXpMaGJYSlJqNS1kbWxtbzNOZmdEdXlrU2pMSmlNMjZOTjh1OXVGcnBCelUzR1JSY0hhWElfLVhELWlGT3lUVGxnSTRlQk9mWWhaUTJ6NkZDYzRBOVRUMGQtck1MblBsX0NocjctbUxTMnhwTW9QNVdramV1SnpCc2I4NkVMWEVmdmhiX0FrMEZn0gHHAUFVX3lxTFBYSHNKM2JaOC1FS3JRNkpPWGQ3SjBQbWdOMm1hZEVpV05LSFdQYURjY1J4UEd5RkFMaGFENzhNN0FYdWZvejZXc285MFNrUzZMbkVjRVJsNlVwOW5Zc2ZJTHJiRmJadENUdkJiWkpuRXRaOXJRanh4bm5GMWlSR2dsU1FEZHhxWXI1NG5tWGF5YmI4Sm1DTGtQSGFMbmRfenJHRkN6VGFLQ2d2dzRmOS1JY0FzNU5vTEo3R0hwcjhzT21ZWkh4T1k?oc=5"
+        },
+        {
+          "source": "Financial Times via Google News (Oct 10)",
+          "signal": "'Don't panic about the plague'",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9HTS1lNGU2eUktY01ISVl3am1kTXNsRnctb3Y3cGNCNWc5T2hDekNLeTdDcFlLT1N2LXRON202X1BOaXllUGRkTG9OdjcxNlRlY0drQUpudmgyMUpNcW5NQnhQdXZKQnhsY2JqMHlhdWI?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Plague in natural foci: why Russia, China and Mongolia monitor wild rodents (marmots, ground squirrels), and why border regions such as China's Hulunbuir issue seasonal risk alerts",
+      "angle": "Explain natural plague foci and routine surveillance as normal public-health practice in Central Asia, the Western US and Madagascar, without stigmatising any region. Mention the reported Hulunbuir alert only if it can be verified at publish time and credited to the issuing authority. Prevention: don't handle or eat wild rodents such as marmots, and avoid sick animals.",
+      "keywords": [
+        "plague marmots",
+        "plague Mongolia China",
+        "where is plague found",
+        "plague natural reservoir",
+        "Hulunbuir plague alert"
+      ],
+      "stage": "emerging",
+      "momentum": 64,
+      "predicted_peak": "4–8 days",
+      "why_now": "Global Times reported a Hulunbuir risk alert on Oct 12, and Central Asian health checks were reported on Oct 9. It links to the ancient-DNA marmot story. Few English creators cover it. Caution: our search couldn't independently confirm the Oct 2026 alert.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Global Times via Google News (Oct 12)",
+          "signal": "'Chinese border city Hulunbuir issues risk alert after suspected pneumonic plague death in Russia'",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1KUVFjS3BlNVl4ODNqZFUxLUdqS1hvX09Jb1BLYW4wdkFoeFJvMEhzMFVhd1J2Y3NKaGwyczZzcUltWEVDRFIwSjlpVURxU2pBMkVDMjRnQ3lhdGFpbFJVc3VR?oc=5"
+        },
+        {
+          "source": "Times of Central Asia via Google News (Oct 9)",
+          "signal": "'Reports of Suspected Plague in Russia Prompt Central Asian Health Checks'",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOREdGXzZtb0xVNDZ2c1pka0Z6SDBvWUNCeFFhcXZZdXJtQ3JUNVhEc0xFeHNYU0ExMC1oR1QzV0h6dnhFcGdQMUxmX294bHJRdXpiWkhNZmNlWGR4MHlzNjFKZ3RoaVRtQlRXSVNDNnZPVzIxZ3dkYjBWWXNGQVlKYkJTOHlMYkt2cVB3OXRGeWJORmx0QV9DTA?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Plague lab safety: how high-containment labs that study plague protect workers, and what WHO recommended on Oct 10 ('robust biosafety, biosecurity, and infection prevention and control practices')",
+      "angle": "An evergreen lab-safety explainer (biosafety levels, protective equipment, exposure reporting, medical follow-up) using BMBL and WHO's Oct 10 recommendation. The MDLinx and Forbes 'are labs safe enough' interest gives a calm hook. No speculation about what happened in Irkutsk, and no lab-leak or bioweapon framing. The 2009 Chicago case only in the MMWR's exact wording ('attenuated').",
+      "keywords": [
+        "plague lab safety",
+        "BSL-3 lab",
+        "how do labs handle plague",
+        "lab acquired plague",
+        "biosafety levels explained"
+      ],
+      "stage": "emerging",
+      "momentum": 66,
+      "predicted_peak": "5–10 days",
+      "why_now": "MDLinx, Forbes and WHO's DON recommendation have moved the conversation toward lab safety. Previous snapshots show steady interest (64–74). It needs careful sourcing, because long-forms have been held for wrong attribution.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "WHO DON620",
+          "signal": "Stresses 'robust biosafety, biosecurity, and infection prevention and control practices in laboratories'",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON620"
+        },
+        {
+          "source": "MDLinx via Google News (Oct 9)",
+          "signal": "'A plague scare is raising a bigger question: Are labs safe enough?'",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQjhrVUpJb1h3YXVoUVFSdmV6dTBpUFBqVjhhMkExMlVnZ0Fwd3RuN1VRUlFQckFhZWxIYWR3dl9Ma3VZMW83ZEQtU1Fka3R5Q2dDVml5MjZPWWNpZW04SjlkaVYxeXJ2MHB0R3lsemQ1Z05IZTZsRWdIc21MNTU2RFphRGtwRGVURFpEYV9rbFNuSUk1ODMtVl9XS2FRZUR0cmluZmZibjZOaEJXQV9ibmhoRUotMHNFaXc?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Pneumonic plague vs bubonic plague: three forms of Yersinia pestis, and why pneumonic is the one that can pass between people",
+      "angle": "Rebuild the dead carousel as a Short, naming both sides: how each form is caught, its warning signs, and person-to-person spread (pneumonic: close contact; bubonic: 'uncommon', per WHO).",
+      "keywords": [
+        "pneumonic vs bubonic plague",
+        "types of plague",
+        "septicemic plague",
+        "bubonic plague contagious",
+        "what is pneumonic plague"
+      ],
+      "stage": "evergreen",
+      "momentum": 72,
+      "predicted_peak": "steady",
+      "why_now": "The playbook's top fix is turning carousel topics into Shorts. The 'pneumonia or pneumonic plague?' framing in coverage (1News.az) keeps this question alive.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Naked Scientists via Google News (Oct 9)",
+          "signal": "'What is pneumonic plague, and how is it transmitted?'",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORlg1bXpzQ242U1hzWWtkU2owSEhEeGJNNkhzVEQzc044aXNMbjNvVXJ5SWZLYTg4bG5raUxTSWFfWDQzWm1tc1BySktCcG8tMnRONUc1QVpXVGViWm85ZTlPNjVaNmRPQUlmTDBjZEhUc1pqMXBqRlUwb1poSF9fZGN6bzcyYUpNV3dGb09vQ1JCU2FLNWxENmpxZzdXM2d4?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Plague vs pneumonia: why 'severe pneumonia' and 'pneumonic plague' aren't the same thing, and how doctors test for plague (CDC case definition: presumptive vs confirmed)",
+      "angle": "Explain the vocabulary in the headlines: pneumonia is a lung infection with many causes, and pneumonic plague is one rare cause. Use CDC's 2020 case definition: PCR, antigen and F1 tests are 'presumptive'; 'confirmed' means culture isolation or a fourfold antibody change in paired serum. This explains why an agency can say 'undetermined etiology'. Settled science, with at most one neutral context sentence.",
+      "keywords": [
+        "pneumonia vs pneumonic plague",
+        "how is plague diagnosed",
+        "plague test",
+        "undetermined etiology meaning",
+        "what does pneumonia of unknown cause mean"
+      ],
+      "stage": "emerging",
+      "momentum": 68,
+      "predicted_peak": "3–7 days",
+      "why_now": "'Pneumonia of undetermined etiology' is now WHO's official framing, and 1News.az ran 'pneumonic plague or pneumonia?' on Oct 11. Confusion about the terms is high and creators haven't explained it.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "WHO DON620",
+          "signal": "Titled 'Pneumonia of undetermined etiology – the Russian Federation'",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON620"
+        },
+        {
+          "source": "1News.az via Google News (Oct 11)",
+          "signal": "'Death of a lab technician in Siberia: pneumonic plague or pneumonia?'",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOT3hpSk5xaGRsdGZwTi1LZTVKWWIwSGpOUzVNb3dlWmlmLUZNZFJKS20yUHpIejdGTEpiQ3o3VzZmQnZ0MVZQaTRPb0t6V0liTnV1MHVSZ2FKaGoyYkNlb1lnRjBFeVJNNTJWbExNRE9GQzJ0NEViTmpTTVA1NVB2ZWxUdlZ3NlFaSFRKb3pSZGF1cDBid2tvN095R3l6dGFHSmV1dUptcTRlbVRITEE?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Pneumonic plague in Madagascar 2017: how contact tracing and preventive antibiotics stopped a large outbreak",
+      "angle": "Outbreak history with 'Pneumonic plague' first in the title. Connect it to WHO's contact-monitoring model and give real numbers from WHO reports only.",
+      "keywords": [
+        "Madagascar plague 2017",
+        "plague outbreak how stopped",
+        "pneumonic plague outbreak history"
+      ],
+      "stage": "evergreen",
+      "momentum": 56,
+      "predicted_peak": "steady, declining",
+      "why_now": "Long-form is live with 9 views, at the median. Momentum is falling across 8 snapshots, so treat it as a filler or a segment inside the contacts piece.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "WHO DON620 (contact-monitoring model referenced)",
+          "signal": "Shows current WHO contact-management practice for comparison",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON620"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Black Death vs plague today: same bacterium, but antibiotics, diagnostics and public health change the picture",
+      "angle": "Calm history-to-now framing, without 'new Black Death' language. Pair it with the ancient-DNA timeline for freshness.",
+      "keywords": [
+        "black death vs today",
+        "could black death happen again",
+        "plague history",
+        "Yersinia pestis history"
+      ],
+      "stage": "evergreen",
+      "momentum": 62,
+      "predicted_peak": "steady",
+      "why_now": "The 'Black Death bacterium still exists' framing is everywhere (Health and Me, Emirati outlets). Momentum is slowly declining, so use it as an evergreen slot.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Health and Me via Google News (Oct 9)",
+          "signal": "'The Black Death Bacterium Still Exists: From Medieval Europe To Modern-Day Outbreaks'",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOeGRXSWZXeUJsQzczeHdxOHNwY3lQU0ptZTYzRHFWdkk4dEpmd0F1YmhvaXk5S1F2MmNrTFVyZWJEaVJqQWpMVi15ZHZJQkJZNlpJRGdKYTU0dS1VX21fSFpBVDN2OUNxTHNRVUdCUzl4bGo1RnhURjhISWwxeGtqcmtLc3hYLUFsZ0pvZkJRY3BGVHg0cjMyZXB6RjRvek9OZnUwNnRubGkwRW9YSERTaG5uZERmZVFQOERwQjEybDNYelU4QWlZTVNOYTJ2Qi02NmJuNzd1WGNnR2QzM2c?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "'Russian plague bioweapon', 'manipulated strain' and cover-up claims (ex-CDC director comments, Euronews/Fox bioweapon pieces, the mother's claims)",
+      "angle": "Do not cover. This is speculation about deliberate release or a cover-up, and comments about a private grieving family. It's outside the guardrails.",
+      "keywords": [
+        "russia plague bioweapon",
+        "plague manipulated",
+        "plague cover up"
+      ],
+      "stage": "peaking",
+      "momentum": 55,
+      "predicted_peak": "now",
+      "why_now": "High-volume opinion coverage (Newsweek, NewsNation, Euronews, Fox, BroBible), but it's speculative and banned by our niche guardrails.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Newsweek",
+          "signal": "'Former CDC director warns Russian plague may have been manipulated'",
+          "url": "https://www.newsweek.com/former-cdc-director-warns-russian-plague-may-have-been-manipulated-12540115"
+        }
+      ],
+      "safety": "reject",
+      "formats": [
+        "short"
+      ]
+    }
+  ]
+}
