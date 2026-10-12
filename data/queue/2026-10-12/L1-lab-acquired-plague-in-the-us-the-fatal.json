@@ -1,0 +1,1614 @@
+{
+  "id": "L1-lab-acquired-plague-in-the-us-the-fatal",
+  "date": "2026-10-12",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Lab-acquired plague in the US: the fatal 2009 Chicago case of a researcher infected with a weakened (attenuated) Yersinia pestis strain who had undiagnosed hereditary hemochromatosis (CDC MMWR, Feb 25, 2011)",
+    "angle": "A calm, well-documented case study built only on the CDC MMWR report (and the CDC Stacks record). At most one neutral line of news context ('plague has been in the news this month'), with no claims about the Irkutsk case. Don't lead with the researcher's name. Segments: (1) What an attenuated strain is and why this one was considered lower-risk (it lacks the pigmentation locus, so it depends on iron). (2) The timeline and clinical course in MMWR's wording. (3) How the investigation found hereditary hemochromatosis (iron overload) and why it's thought to have let the weakened strain cause severe infection. Use MMWR's hedged verbs such as 'might have' or 'likely'. (4) CDC's conclusion: likely an unrecognized occupational exposure, with no clear route identified. Keep MMWR's exact scope. (5) Contact follow-up and preventive antibiotics as MMWR reports them; no secondary cases. (6) What MMWR recommended for labs: awareness, reporting exposures and illness, and medical follow-up. Mention BMBL practices (updated Mar 18, 2026) only in that source's own words. (7) What it means for the public: plague 'can be cured with antibiotics, especially when started early' (CDC). Close: possible exposure plus fever, cough, shortness of breath or chest pain means contact a doctor or local health authority urgently. Then 'If you're worried, talk to a health professional.' Visuals: lab scene, iron-in-blood diagram, timeline cards. No patient imagery, skulls or rats.",
+    "working_title": "Plague in a US Lab: What CDC Learned From a 2009 Chicago Case",
+    "target_keyword": "lab acquired plague",
+    "trend_stage": "emerging",
+    "why": "A deep primary source (CDC MMWR) that can be checked line by line. Interest is new (Céline Gounder's Oct 10 comparison), competition is low, and the body doesn't depend on unresolved news, which is what keeps holding plague long videos.",
+    "pillar": "general"
+  },
+  "status": "failed",
+  "package": {},
+  "media": {},
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-12T18:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-10-12T02:53:31.625Z",
+  "script": {
+    "working_title": "Plague in a Chicago Lab: What CDC Learned From a 2009 Case",
+    "target_keyword": "lab acquired plague",
+    "hook_pattern": "Counterintuitive claim",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "Hook",
+        "narration": "In 2009, a researcher in Chicago died from a plague strain that had been weakened on purpose, and that wasn't known to have caused any lab infection before.",
+        "on_screen_text": "A weakened strain",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon lab bench glowing flask",
+          "fact": "Attenuated strain, fatal infection"
+        },
+        "retention_device": "Counterintuitive opening claim",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "Hook",
+        "narration": "CDC investigated and published the whole thing in its Morbidity and Mortality Weekly Report on Feb 25, 2011. And the explanation wasn't only in the bacterium.",
+        "on_screen_text": "CDC published the file",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon report document magnifying glass",
+          "fact": "CDC MMWR, Feb 25, 2011"
+        },
+        "retention_device": "Credible-source promise plus a swerve",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "Hook",
+        "narration": "Part of it sat in an inherited condition that investigators found no evidence he knew about. It's often silent for years, and it was only identified after his death.",
+        "on_screen_text": "An undiagnosed condition",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon dna strand hidden shadow",
+          "fact": "Identified only after death"
+        },
+        "retention_device": "Open loop: the hidden condition",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "Hook",
+        "narration": "By the end of this you'll know what the word attenuated actually means, what CDC thinks may have undone it, and why no additional infections were found in anyone else.",
+        "on_screen_text": "Three answers, one case",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon three numbered question cards",
+          "items": [
+            "What \"attenuated\" means",
+            "What may have undone it",
+            "Why no one else got sick"
+          ]
+        },
+        "retention_device": "Explicit payoff promise",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "Hook",
+        "narration": "Plague has been in the news this month. This video isn't about that. Every fact here comes from CDC, WHO and NIH sources.",
+        "on_screen_text": "Settled evidence only",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon calm bookshelf official documents",
+          "fact": "No claims about any current case"
+        },
+        "retention_device": "Trust-setting boundary",
+        "source_ids": [
+          "mmwr2011",
+          "cdc_about",
+          "who_plague"
+        ]
+      },
+      {
+        "id": "s06",
+        "section": "A strain that can't get iron",
+        "narration": "Start with the strain. Because the safety in this story was supposed to come partly from the bacterium itself.",
+        "on_screen_text": "Start with the strain",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon chapter card petri dish"
+        },
+        "retention_device": "Chapter reset",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "A strain that can't get iron",
+        "narration": "Plague is caused by a bacterium called Yersinia pestis. It still circulates in rodents and their fleas on several continents, and it causes three forms of illness: bubonic, septicemic and pneumonic.",
+        "on_screen_text": "Yersinia pestis: 3 forms",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon three labeled illness cards",
+          "items": [
+            "Bubonic",
+            "Septicemic",
+            "Pneumonic"
+          ]
+        },
+        "retention_device": "Foundational framing",
+        "source_ids": [
+          "who_plague",
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "A strain that can't get iron",
+        "narration": "Laboratories study it for a reason. You cannot build better vaccines, faster tests or better treatments for a bacterium you refuse to grow.",
+        "on_screen_text": "Why labs grow it",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon scientist microscope friendly lab",
+          "fact": "Research enables tests and treatments"
+        },
+        "retention_device": "Reframes lab work as purposeful",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "A strain that can't get iron",
+        "narration": "To make that work safer, researchers use attenuated strains. Weakened versions of the bacterium, widely used in research, and this one wasn't known to have caused lab infections or human deaths.",
+        "on_screen_text": "Attenuated = weakened on purpose",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "cartoon bacterium wearing deflated cape",
+          "myth": "Lab strains are the same as wild plague",
+          "fact": "CDC: attenuated, widely used, not known to have caused lab infections"
+        },
+        "retention_device": "Myth-versus-fact card",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "A strain that can't get iron",
+        "narration": "The strain in this story was missing a stretch of DNA that microbiologists call the pigmentation locus.",
+        "on_screen_text": "One missing stretch of DNA",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon dna ribbon with gap",
+          "fact": "Pigmentation locus deleted"
+        },
+        "retention_device": "Concrete mechanism detail",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "A strain that can't get iron",
+        "narration": "Inside that stretch sit genes the bacterium uses to pull iron out of its host. Lose them, and it loses its grocery run.",
+        "on_screen_text": "The iron-stealing toolkit",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon bacterium dropping toolbox",
+          "fact": "Lost genes for acquiring iron"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "A strain that can't get iron",
+        "narration": "Because iron, strange as it sounds, is at the center of this story.",
+        "on_screen_text": "It keeps coming back to iron",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon glowing iron atom spotlight",
+          "fact": "Iron is central to this story"
+        },
+        "retention_device": "Short punch line setting up the key idea",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "A strain that can't get iron",
+        "narration": "In your body, iron isn't lying around loose. It's locked up inside proteins, which means bacteria that need it have to fight for every atom.",
+        "on_screen_text": "Iron is kept locked away",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon iron atoms inside safe vault",
+          "fact": "Iron is tightly bound in the body"
+        },
+        "retention_device": "Mental image of a vault",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "A strain that can't get iron",
+        "narration": "Wild plague comes equipped for that fight. This strain did not. In CDC's mouse tests, both the patient's strain and its parent strain killed fewer than 3% of mice, even at doses as high as 100 million bacteria.",
+        "on_screen_text": "Under 3% of mice died",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "cartoon vault door staying shut",
+          "stat_value": "<3%",
+          "stat_label": "CDC mouse tests, up to 100 million bacteria"
+        },
+        "retention_device": "Hard number instead of an absolute",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "A strain that can't get iron",
+        "narration": "With one exception. CDC's report notes that in animal studies, injecting iron at the same time can make these strains more virulent.",
+        "on_screen_text": "Unless iron is added",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "cartoon iron poured into vault",
+          "stat_value": "+ iron",
+          "stat_label": "Boosts virulence in animal studies"
+        },
+        "retention_device": "The hinge of the whole video",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "A strain that can't get iron",
+        "narration": "Hold on to that word. Iron. It comes back, and it changes everything.",
+        "on_screen_text": "Remember: iron",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon bookmark on glowing page",
+          "fact": "Keep this detail"
+        },
+        "retention_device": "Explicit open loop marker",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "A strain that can't get iron",
+        "narration": "That's precisely why strains like this get chosen in the first place. Lower risk to the people doing the work.",
+        "on_screen_text": "Chosen to lower risk",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon scientist choosing safer flask",
+          "fact": "Attenuated strains reduce worker risk"
+        },
+        "retention_device": "Resolves why anyone would use it",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "September 2009",
+        "narration": "Now the timeline, in the terms the report uses.",
+        "on_screen_text": "The timeline",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon chapter card calendar pages"
+        },
+        "retention_device": "Chapter break",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "September 2009",
+        "narration": "In September 2009, the researcher developed fever, body aches and a cough.",
+        "on_screen_text": "Fever, aches, cough",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon thermometer tissue box table",
+          "fact": "September 2009: illness begins"
+        },
+        "retention_device": "Ordinary detail that becomes ominous",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "September 2009",
+        "narration": "Nothing about that points to plague. It points to a respiratory virus. In fact, the clinic he first visited suspected influenza or another acute respiratory infection, according to CDC's report.",
+        "on_screen_text": "Clinic suspected a respiratory infection",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "cartoon two speech bubbles comparing",
+          "myth": "Plague announces itself",
+          "fact": "CDC: the clinic suspected flu or another respiratory infection"
+        },
+        "retention_device": "Relatable misdirection, now sourced",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "September 2009",
+        "narration": "Several days later he was taken to a hospital, severely ill. He died soon after.",
+        "on_screen_text": "Days later, critically ill",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon hospital building night exterior",
+          "fact": "Rapid deterioration"
+        },
+        "retention_device": "Stakes land without graphic imagery",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "September 2009",
+        "narration": "Blood samples had been taken at the hospital. After his death, those cultures grew a bacterium.",
+        "on_screen_text": "Then the cultures grew",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon culture plate colonies growing",
+          "fact": "Blood cultures turned positive"
+        },
+        "retention_device": "Mini-cliffhanger on the result",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "September 2009",
+        "narration": "Further testing identified it as Yersinia pestis, and matched it to the attenuated strain used in his own laboratory.",
+        "on_screen_text": "Matched to his own lab strain",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon two matching puzzle pieces",
+          "fact": "Isolate matched the laboratory strain"
+        },
+        "retention_device": "Payoff with a bigger question attached",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "September 2009",
+        "narration": "Sit with that for a second. A strain that kills fewer than 3% of mice in the lab had been multiplying in a person's bloodstream.",
+        "on_screen_text": "The strain shouldn't do this",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon surprised bacteria in bloodstream",
+          "fact": "Attenuated strain, severe infection"
+        },
+        "retention_device": "Direct address plus contradiction",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "September 2009",
+        "narration": "And plague was only identified after he died. CDC's report describes the cause as likely an unrecognized occupational exposure. That's the first lesson of this case.",
+        "on_screen_text": "Unrecognized occupational exposure",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon clock hands moving late",
+          "fact": "CDC: likely an unrecognized occupational exposure"
+        },
+        "retention_device": "Names the lesson to come",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "September 2009",
+        "narration": "So the investigation had two questions. How did it get into him? And why did it do this?",
+        "on_screen_text": "Two questions",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon detective board two questions",
+          "items": [
+            "How did he get it?",
+            "Why was it this severe?"
+          ]
+        },
+        "retention_device": "Structured open loop",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "The thing nobody knew",
+        "narration": "Investigators pulled on every thread they could find.",
+        "on_screen_text": "The investigation",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon chapter card magnifier clues"
+        },
+        "retention_device": "Chapter break",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "The thing nobody knew",
+        "narration": "They reviewed his laboratory work, his equipment and his procedures. They reviewed his medical history. And there was an autopsy.",
+        "on_screen_text": "Everything got reviewed",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon checklist clipboard lab icons",
+          "items": [
+            "Lab procedures",
+            "Equipment",
+            "Medical history",
+            "Autopsy"
+          ]
+        },
+        "retention_device": "Builds anticipation for the finding",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "The thing nobody knew",
+        "narration": "The autopsy findings were consistent with septicemic plague, infection in the blood, and inconsistent with pneumonic plague. It found no signs of pneumonia, bowel perforation or endocarditis. But it did find something else.",
+        "on_screen_text": "Septicemic, not pneumonic",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon spotlight on single clue",
+          "fact": "CDC: consistent with septicemic plague"
+        },
+        "retention_device": "Cliffhanger before the reveal",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "The thing nobody knew",
+        "narration": "His tissues showed iron overload.",
+        "on_screen_text": "Iron overload",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "cartoon liver glowing with iron dots",
+          "stat_value": "Iron",
+          "stat_label": "Overload found in his tissues"
+        },
+        "retention_device": "Payoff of the iron loop",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "The thing nobody knew",
+        "narration": "Genetic testing found he was homozygous for the C282Y variant in a gene called HFE. That variant is the one most often behind hereditary hemochromatosis.",
+        "on_screen_text": "Hereditary hemochromatosis",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon gene pair highlighted blue",
+          "fact": "Homozygous for HFE C282Y"
+        },
+        "retention_device": "Names the hidden condition",
+        "source_ids": [
+          "mmwr2011",
+          "niddk_hh_facts"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "The thing nobody knew",
+        "narration": "The diagnosis was made only after his death. Investigators found no evidence he knew he had it.",
+        "on_screen_text": "Diagnosed after death",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon blank medical chart question",
+          "fact": "Condition was undiagnosed in life"
+        },
+        "retention_device": "Emotional beat, no blame",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "The thing nobody knew",
+        "narration": "Hereditary hemochromatosis is an inherited condition in which the body absorbs too much iron from food and stores the excess in organs such as the liver and heart.",
+        "on_screen_text": "The body stores too much iron",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon body outline iron organs",
+          "fact": "NIH: excess iron builds up in organs"
+        },
+        "retention_device": "Teaches the condition plainly",
+        "source_ids": [
+          "niddk_hh",
+          "niddk_hh_facts"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "The thing nobody knew",
+        "narration": "NIH says about 1 in 15 people of Northern European ancestry carry at least one copy of that variant. It's much less common in people of Asian or African ancestry. And many people have no symptoms for years.",
+        "on_screen_text": "1 in 15 (Northern European ancestry)",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "cartoon fifteen people one highlighted",
+          "stat_value": "1 in 15",
+          "stat_label": "NIH: Northern European ancestry, at least one C282Y copy"
+        },
+        "retention_device": "Surprising prevalence angle",
+        "source_ids": [
+          "niddk_hh_facts"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "The thing nobody knew",
+        "narration": "It's also treatable. NIH describes removing blood on a schedule as the main treatment, because taking out blood takes iron with it.",
+        "on_screen_text": "Treatable condition",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon donation bag calm clinic",
+          "fact": "NIH: blood removal is the main treatment"
+        },
+        "retention_device": "Reassurance keeps the tone calm",
+        "source_ids": [
+          "niddk_hh"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "The thing nobody knew",
+        "narration": "Now put the two halves of this story side by side.",
+        "on_screen_text": "Two halves, one idea",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon two puzzle halves joining",
+          "fact": "Strain plus host"
+        },
+        "retention_device": "Transition promising the synthesis",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Why iron mattered",
+        "narration": "The strain was weakened for one specific reason. It struggled to get iron.",
+        "on_screen_text": "Weak because of iron",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon chapter card iron magnet"
+        },
+        "retention_device": "Chapter break restating the mechanism",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "Why iron mattered",
+        "narration": "And the person it ended up in had iron overload. Postmortem tests found his serum iron was more than three times the top of the reference range.",
+        "on_screen_text": "Serum iron: 3x+ the top of normal (postmortem)",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "cartoon overflowing iron storage jars",
+          "stat_value": "3x+",
+          "stat_label": "Postmortem serum iron vs top of reference range"
+        },
+        "retention_device": "Collision of the two facts",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s38b",
+        "section": "Why iron mattered",
+        "narration": "The report also notes he had insulin-dependent diabetes. CDC points out that diabetes is a known risk factor for more severe bacterial infections. It doesn't say diabetes explains this case. If you live with diabetes and have questions about infection risk, talk to your clinician.",
+        "on_screen_text": "Also noted: diabetes (CDC)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon glucose meter calm table",
+          "fact": "CDC: diabetes is a known risk factor for more severe bacterial infections"
+        },
+        "retention_device": "Completes the host picture for an audience that often lives with diabetes",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "Why iron mattered",
+        "narration": "CDC's report is careful here, so I will be too. It calls this one possible explanation: that his iron overload might have given the strain enough iron to overcome its defect and become virulent.",
+        "on_screen_text": "CDC: \"might have\"",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "cartoon careful wording card",
+          "myth": "The iron condition caused his death",
+          "fact": "CDC: one possible explanation, \"might have\""
+        },
+        "retention_device": "Models honest evidence handling",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "Why iron mattered",
+        "narration": "Might have. Not proved. One case, one report, with the hedges left in on purpose.",
+        "on_screen_text": "Not proof. One case.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon balance scale evidence",
+          "fact": "Single case report"
+        },
+        "retention_device": "Calibrates confidence",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "Why iron mattered",
+        "narration": "But the idea is hard to shake. Because this strain's weakness was never a property of the bacterium alone.",
+        "on_screen_text": "Weakness wasn't absolute",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon bacterium and host together",
+          "fact": "Attenuation depends on context"
+        },
+        "retention_device": "The video's core insight",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "Why iron mattered",
+        "narration": "Think of a lock that only works because the room is dark. The lock is real. Turn the lights on, and it stops mattering.",
+        "on_screen_text": "A lock that needs the dark",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon padlock dark room lightbulb",
+          "fact": "Conditional safety"
+        },
+        "retention_device": "Memorable analogy",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Why iron mattered",
+        "narration": "On CDC's reading, the attenuation was a dependency. It leaned on the host keeping iron scarce. In a body with iron to spare, that dependency may loosen.",
+        "on_screen_text": "Attenuation is conditional",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon vault ajar iron spilling",
+          "fact": "Scarce iron was the safety condition"
+        },
+        "retention_device": "Mechanistic payoff",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Why iron mattered",
+        "narration": "One thing this does not say. It doesn't tell us how wild plague behaves in people with hemochromatosis. That isn't what this report studied. If you have hemochromatosis or questions about your iron levels, that's a conversation for your clinician.",
+        "on_screen_text": "Keep the scope tight",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon frame narrowing single case",
+          "fact": "Scope: one attenuated strain, one case"
+        },
+        "retention_device": "Scope discipline that builds trust",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "Why iron mattered",
+        "narration": "And here's where the report gets blunt. CDC's investigation found gaps in biosafety practice, including inconsistent use of gloves, which it says could have allowed the bacteria in through the skin. It doesn't say that's definitely what happened.",
+        "on_screen_text": "CDC: biosafety gaps found",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "cartoon gloves on lab bench",
+          "myth": "Nothing about the practices was off",
+          "fact": "CDC: inconsistent glove use could have allowed skin exposure"
+        },
+        "retention_device": "Corrects the expected narrative",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "Why iron mattered",
+        "narration": "The report also notes poor attendance at required biosafety training. Which brings us to the part that still unsettles people who read it.",
+        "on_screen_text": "Training attendance was poor",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon empty training room chairs",
+          "fact": "CDC noted poor biosafety training attendance"
+        },
+        "retention_device": "New open loop before chapter change",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "No clear route",
+        "narration": "How did the bacterium get into him?",
+        "on_screen_text": "How did it get in?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon chapter card question arrow"
+        },
+        "retention_device": "Chapter break as a question",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "No clear route",
+        "narration": "CDC's conclusion was that the cause of death likely was an unrecognized occupational exposure. The strain came from his own laboratory, so the source itself was never in doubt.",
+        "on_screen_text": "Likely occupational exposure",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon lab coat badge arrow",
+          "fact": "CDC: likely an unrecognized occupational exposure"
+        },
+        "retention_device": "Answers half the question",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "No clear route",
+        "narration": "The route was never pinned down. CDC lists it as unknown. But the autopsy found septicemic plague, infection in the blood, and no evidence of pneumonic plague. CDC says that points to entry through the skin or a mucous membrane, not the lungs.",
+        "on_screen_text": "Route unknown. Septicemic, not pneumonic.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon dotted path question mark",
+          "fact": "CDC: suggests a transdermal or mucosal route"
+        },
+        "retention_device": "Surprising non-answer with a real clue",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "No clear route",
+        "narration": "That's unsatisfying. It's also the honest finding, and CDC published it that way rather than tidying it up.",
+        "on_screen_text": "Published without tidying",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon honest report stamp",
+          "fact": "Unresolved detail reported openly"
+        },
+        "retention_device": "Admiration beat for transparency",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "No clear route",
+        "narration": "And it carries the practical lesson of the whole case. If an exposure can go unnoticed, safety can't depend on people noticing.",
+        "on_screen_text": "Don't rely on noticing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon invisible path through lab",
+          "fact": "Unnoticed exposures are possible"
+        },
+        "retention_device": "Turns the gap into a takeaway",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "No clear route",
+        "narration": "It has to depend on the routine. Protective equipment used every time, and illness reported early.",
+        "on_screen_text": "Routine beats vigilance",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon worker gloves and report form",
+          "items": [
+            "Use protective equipment",
+            "Report unexpected illness",
+            "Tell clinicians your work"
+          ]
+        },
+        "retention_device": "Actionable pivot",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "No clear route",
+        "narration": "Which raises the question people asked immediately in 2009. Was anyone else in danger?",
+        "on_screen_text": "Was anyone else at risk?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon group worried thought bubble",
+          "fact": "Next: the contact investigation"
+        },
+        "retention_device": "Cliffhanger into the reassuring chapter",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "Why no one else got sick",
+        "narration": "Here's the part that should reassure you.",
+        "on_screen_text": "The reassuring part",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon chapter card shield calm"
+        },
+        "retention_device": "Chapter break with a promise",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "Why no one else got sick",
+        "narration": "Investigators identified 30 co-workers, one household contact, and 64 other close contacts, including medical, laboratory and pathology staff.",
+        "on_screen_text": "Contacts were identified",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon contact tracing network diagram",
+          "items": [
+            "30 co-workers",
+            "1 household contact",
+            "64 other close contacts"
+          ]
+        },
+        "retention_device": "Concrete process detail",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "Why no one else got sick",
+        "narration": "Contacts were offered preventive antibiotics. All 30 co-workers were prescribed them, and 61 of the 65 household and other close contacts, 94%, accepted a 7-day course.",
+        "on_screen_text": "Preventive antibiotics offered",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "cartoon clipboard checkmarks calm",
+          "stat_value": "61 of 65",
+          "stat_label": "Household and other close contacts who accepted prophylaxis"
+        },
+        "retention_device": "Shows the system working",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "Why no one else got sick",
+        "narration": "And CDC's words: no additional Yersinia pestis infections have been identified.",
+        "on_screen_text": "No additional infections",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "cartoon zero sign green shield",
+          "stat_value": "0",
+          "stat_label": "Additional infections identified"
+        },
+        "retention_device": "Clean, memorable number",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "Why no one else got sick",
+        "narration": "That isn't just luck. His infection was septicemic, not pneumonic. And it's the pneumonic form, in the lungs, that can pass from person to person.",
+        "on_screen_text": "Lungs: the form that spreads",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "cartoon lungs icon and blood drop",
+          "myth": "Every plague case spreads between people",
+          "fact": "His infection was septicemic, not the pneumonic form that spreads between people"
+        },
+        "retention_device": "Corrects a circulating belief",
+        "source_ids": [
+          "mmwr2011",
+          "who_plague"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "Why no one else got sick",
+        "narration": "WHO's fact sheet is specific. Human-to-human transmission of bubonic plague is rare. The pneumonic form is different: any person with pneumonic plague may transmit the disease via respiratory particles to other humans.",
+        "on_screen_text": "WHO: bubonic rarely spreads person to person",
+        "visual": {
+          "kind": "quote",
+          "stock_query": "cartoon quote card fact sheet",
+          "quote": "Human-to-human transmission of bubonic plague is rare.",
+          "attribution": "WHO plague fact sheet, updated Sep 29, 2026"
+        },
+        "retention_device": "Named-agency evidence",
+        "source_ids": [
+          "who_plague"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "Why no one else got sick",
+        "narration": "And the response you just heard, tracing contacts and offering preventive antibiotics, is the same playbook that stops plague outbreaks elsewhere.",
+        "on_screen_text": "The outbreak playbook",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon two step response diagram",
+          "items": [
+            "Trace contacts",
+            "Preventive antibiotics"
+          ]
+        },
+        "retention_device": "Connects the case to broader practice",
+        "source_ids": [
+          "mmwr2011",
+          "who_plague"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "Why no one else got sick",
+        "narration": "WHO describes seven-day chemoprophylaxis, meaning preventive antibiotics, for people who have had close contact. That's a decision health authorities make, with a prescription. Never something to arrange yourself.",
+        "on_screen_text": "Authorities arrange it",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon health official prescription pad",
+          "fact": "WHO: seven-day chemoprophylaxis for contacts"
+        },
+        "retention_device": "Safety guardrail stated plainly",
+        "source_ids": [
+          "who_plague"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "Why no one else got sick",
+        "narration": "So what did CDC actually recommend?",
+        "on_screen_text": "What CDC recommended",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon recommendation scroll unrolling",
+          "fact": "Next: recommendations for labs"
+        },
+        "retention_device": "Forward-looking question",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "What CDC told labs",
+        "narration": "The recommendations are short, and none of them is exotic.",
+        "on_screen_text": "Short and practical",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon chapter card lightbulb lab"
+        },
+        "retention_device": "Chapter break with a twist",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "What CDC told labs",
+        "narration": "Researchers working with attenuated Yersinia pestis and other potentially infectious material should always use at least Biosafety Level 2 practices. And researchers should always follow recommended use of protective equipment.",
+        "on_screen_text": "Even attenuated strains",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon scientist gloves safety poster",
+          "fact": "CDC: at least BSL-2 practices, plus recommended PPE"
+        },
+        "retention_device": "States the central recommendation",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "What CDC told labs",
+        "narration": "Unexpected illness in a laboratory worker should be reported to the institution. And clinicians should routinely ask patients about their work exposures.",
+        "on_screen_text": "Report it. Clinicians ask.",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon reporting form and doctor",
+          "items": [
+            "Follow biosafety practices",
+            "Report unexpected illness",
+            "Clinicians ask about work"
+          ]
+        },
+        "retention_device": "Three-item practical list",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "What CDC told labs",
+        "narration": "And institutional safety committees should implement and maintain effective surveillance programs to identify and monitor acute illness among laboratory workers.",
+        "on_screen_text": "Monitor illness in lab workers",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon dashboard monitoring screen lab",
+          "fact": "CDC: surveillance programs to identify and monitor acute illness"
+        },
+        "retention_device": "Completes the recommendation set",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "What CDC told labs",
+        "narration": "The containment side has its own reference book: Biosafety in Microbiological and Biomedical Laboratories, known as BMBL, updated Mar 18, 2026.",
+        "on_screen_text": "BMBL, updated Mar 18, 2026",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon thick manual on desk",
+          "fact": "BMBL: the biosafety reference manual"
+        },
+        "retention_device": "Introduces a second authority",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "What CDC told labs",
+        "narration": "BMBL recommends Biosafety Level 2 practices, equipment and facilities for handling potentially infectious clinical materials and cultures of Yersinia pestis.",
+        "on_screen_text": "BSL-2 for cultures",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon lab door level sign",
+          "fact": "BMBL: BSL-2 for potentially infectious materials and cultures"
+        },
+        "retention_device": "Precise, sourced detail",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "What CDC told labs",
+        "narration": "And it recommends Biosafety Level 3 practices and containment equipment for activities with a high potential for droplet or aerosol production.",
+        "on_screen_text": "BSL-3 for aerosol risk",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon sealed cabinet airflow arrows",
+          "fact": "BMBL: BSL-3 where aerosol potential is high"
+        },
+        "retention_device": "Escalation pattern on screen",
+        "source_ids": [
+          "bmbl"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "What CDC told labs",
+        "narration": "Those tiers exist because risk is never the bacterium alone. It's the bacterium, plus the procedure, plus the person.",
+        "on_screen_text": "Bacterium + procedure + person",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon three gears turning together",
+          "items": [
+            "The bacterium",
+            "The procedure",
+            "The person"
+          ]
+        },
+        "retention_device": "Unifying framework",
+        "source_ids": [
+          "bmbl",
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "What CDC told labs",
+        "narration": "And that's the human thing about this case. Two things lined up: everyday gaps in protective practice, and host factors, including a condition nobody had diagnosed.",
+        "on_screen_text": "Practice gaps + host factors",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon safety net two gaps",
+          "items": [
+            "Gaps in protective practice",
+            "Host factors, incl. an undiagnosed condition"
+          ]
+        },
+        "retention_device": "Emotional resonance before the practical turn",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s72",
+        "section": "What it means for you",
+        "narration": "If you don't work in a plague laboratory, here's how to hold this story.",
+        "on_screen_text": "What it means for you",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon chapter card person thinking"
+        },
+        "retention_device": "Chapter break addressed to the viewer",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s73",
+        "section": "What it means for you",
+        "narration": "This was an occupational exposure in a research laboratory. It is not how people ordinarily encounter plague.",
+        "on_screen_text": "Not an everyday exposure",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "cartoon lab versus outdoor scene",
+          "myth": "This is how people usually catch plague",
+          "fact": "It was a laboratory exposure"
+        },
+        "retention_device": "Prevents overgeneralizing",
+        "source_ids": [
+          "mmwr2011",
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s74",
+        "section": "What it means for you",
+        "narration": "Naturally occurring plague does still happen. CDC says an average of five human plague cases are reported each year in the United States, with a range of 0 to 17.",
+        "on_screen_text": "CDC: average of 5 a year",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "cartoon us map five markers",
+          "stat_value": "~5",
+          "stat_label": "CDC: average US human cases reported yearly"
+        },
+        "retention_device": "Grounding number with its source",
+        "source_ids": [
+          "cdc_stats"
+        ]
+      },
+      {
+        "id": "s75",
+        "section": "What it means for you",
+        "narration": "The part that matters most is the part CDC states flatly. Plague can be cured with antibiotics, but treatment must be given quickly.",
+        "on_screen_text": "Curable: treat quickly",
+        "visual": {
+          "kind": "quote",
+          "stock_query": "cartoon quote card antibiotics calm",
+          "quote": "Plague can be cured with antibiotics, but treatment must be given quickly.",
+          "attribution": "CDC, About Plague (updated Aug 24, 2026)"
+        },
+        "retention_device": "Payoff: the hopeful core fact",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s76",
+        "section": "What it means for you",
+        "narration": "Quickly is the operative word. Which is why the symptoms are worth knowing before you ever need them.",
+        "on_screen_text": "\"Quickly\" is the key word",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon stopwatch beside pill bottle",
+          "fact": "Speed changes outcomes"
+        },
+        "retention_device": "Sets up the symptom list",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s77",
+        "section": "What it means for you",
+        "narration": "For pneumonic plague, CDC lists fever, headache and weakness, with a fast-developing pneumonia: shortness of breath, chest pain and cough.",
+        "on_screen_text": "Pneumonic plague signs (CDC)",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon four symptom icons row",
+          "items": [
+            "Fever",
+            "Headache",
+            "Weakness",
+            "Fast-developing pneumonia: shortness of breath, chest pain, cough"
+          ]
+        },
+        "retention_device": "Clean, complete agency list",
+        "source_ids": [
+          "cdc_signs"
+        ]
+      },
+      {
+        "id": "s78",
+        "section": "What it means for you",
+        "narration": "More broadly, CDC describes bubonic plague as fever, headache, chills and weakness, with one or more swollen, painful lymph nodes.",
+        "on_screen_text": "Bubonic: fever, chills, weakness",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon symptom cards gentle style",
+          "items": [
+            "Fever",
+            "Headache",
+            "Chills",
+            "Weakness",
+            "Swollen, painful lymph nodes"
+          ]
+        },
+        "retention_device": "Fills out the clinical picture",
+        "source_ids": [
+          "cdc_signs"
+        ]
+      },
+      {
+        "id": "s79",
+        "section": "What it means for you",
+        "narration": "If you have a possible exposure plus any of those symptoms, including fever, cough, shortness of breath, chest pain or swollen, painful lymph nodes, contact a doctor or local health authority urgently.",
+        "on_screen_text": "CONTACT A DOCTOR OR LOCAL HEALTH AUTHORITY URGENTLY",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon phone call to clinic",
+          "fact": "Possible exposure plus symptoms: act urgently"
+        },
+        "retention_device": "The single most important instruction",
+        "source_ids": [
+          "cdc_signs",
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s80",
+        "section": "What it means for you",
+        "narration": "And say the thing this 2009 case turned on. Tell them about the possible exposure. CDC's own recommendation is that clinicians ask about work exposures, so the list of possible diagnoses can be widened to include infections picked up at work.",
+        "on_screen_text": "Mention the exposure",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon patient speaking doctor listening",
+          "fact": "CDC: clinicians should ask about work exposures"
+        },
+        "retention_device": "Loops the case back to the viewer",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s81",
+        "section": "What it means for you",
+        "narration": "What this is not is a reason to stash antibiotics in a drawer. Preventive antibiotics for contacts are arranged by health authorities, for people they've assessed.",
+        "on_screen_text": "No stockpiling",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "cartoon drawer crossed out pills",
+          "myth": "Keep antibiotics just in case",
+          "fact": "Health authorities arrange preventive antibiotics"
+        },
+        "retention_device": "Guardrail against misuse",
+        "source_ids": [
+          "who_plague"
+        ]
+      },
+      {
+        "id": "s82",
+        "section": "Your checklist",
+        "narration": "So here's the whole case, compressed into things you can actually carry.",
+        "on_screen_text": "The takeaways",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon chapter card checklist pencil"
+        },
+        "retention_device": "Chapter break signaling payoff",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s83",
+        "section": "Your checklist",
+        "narration": "Attenuated doesn't mean zero risk. Host factors may change the math. Protective practices matter even with weakened strains. Occupational exposure belongs in the conversation with your clinician. And plague can be cured with antibiotics, especially when treatment starts quickly.",
+        "on_screen_text": "5 things to remember",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon five takeaway cards stacked",
+          "items": [
+            "Attenuated is not zero risk",
+            "Host factors may matter",
+            "Use PPE even with weak strains",
+            "Tell clinicians your exposure",
+            "Curable: early treatment matters"
+          ]
+        },
+        "retention_device": "Dense, screenshot-able summary",
+        "source_ids": [
+          "mmwr2011",
+          "cdc_about",
+          "niddk_hh"
+        ]
+      },
+      {
+        "id": "s84",
+        "section": "Your checklist",
+        "narration": "One case, from 2009, documented in detail. And it's still one of the clearest lessons in how lab risk works.",
+        "on_screen_text": "One case, lasting lessons",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon single report glowing shelf",
+          "fact": "CDC MMWR, Feb 25, 2011"
+        },
+        "retention_device": "Elevates the stakes of the lesson",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s85",
+        "section": "Your checklist",
+        "narration": "So here's where the opening puzzle lands. One possible explanation CDC raises is that the weakened strain needed one condition to stay weak, scarce iron, and in this one person that condition may not have been there. Might. Not proved.",
+        "on_screen_text": "One possible explanation, not proof",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon lock and lightbulb together",
+          "fact": "CDC: 'conceivably… might have'"
+        },
+        "retention_device": "Main open loop paid off, honestly",
+        "source_ids": [
+          "mmwr2011"
+        ]
+      },
+      {
+        "id": "s86",
+        "section": "Your checklist",
+        "narration": "If you want the rest of this explained just as calmly, how pneumonic plague actually spreads, what lab tests can and can't confirm, and the myths worth dropping, subscribe. That's what we're publishing next.",
+        "on_screen_text": "More, explained calmly",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon subscribe card blue green",
+          "fact": "Next: spread, tests, myths"
+        },
+        "retention_device": "CTA tied to a specific next benefit",
+        "source_ids": [
+          "cdc_about"
+        ]
+      },
+      {
+        "id": "s87",
+        "section": "Your checklist",
+        "narration": "And if you're worried, talk to a health professional.",
+        "on_screen_text": "Talk to a health professional",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon friendly clinician open door",
+          "fact": "General information, not medical advice"
+        },
+        "retention_device": "Closing safety line",
+        "source_ids": [
+          "cdc_about"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "mmwr2011",
+        "title": "Fatal Laboratory-Acquired Infection with an Attenuated Yersinia pestis Strain — Chicago, Illinois, 2009",
+        "publisher": "CDC, MMWR 60(07):201-205 (Feb 25, 2011)",
+        "year": "2011",
+        "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6007a1.htm"
+      },
+      {
+        "id": "cdc_about",
+        "title": "About Plague",
+        "publisher": "CDC (updated Aug 24, 2026)",
+        "year": "2026",
+        "url": "https://www.cdc.gov/plague/about/index.html"
+      },
+      {
+        "id": "cdc_stats",
+        "title": "Plague Maps and Statistics",
+        "publisher": "CDC (updated Oct 7, 2026)",
+        "year": "2026",
+        "url": "https://www.cdc.gov/plague/maps-statistics/index.html"
+      },
+      {
+        "id": "cdc_signs",
+        "title": "Signs and Symptoms of Plague",
+        "publisher": "CDC (updated May 15, 2024)",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      },
+      {
+        "id": "who_plague",
+        "title": "Plague (fact sheet)",
+        "publisher": "World Health Organization (updated Sep 29, 2026)",
+        "year": "2026",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      },
+      {
+        "id": "bmbl",
+        "title": "Biosafety in Microbiological and Biomedical Laboratories (BMBL), 6th Edition",
+        "publisher": "CDC/NIH (updated Mar 18, 2026)",
+        "year": "2026",
+        "url": "https://www.cdc.gov/labs/BMBL.html"
+      },
+      {
+        "id": "niddk_hh",
+        "title": "Hemochromatosis",
+        "publisher": "NIDDK, NIH (last reviewed Jan 2020)",
+        "year": "2020",
+        "url": "https://www.niddk.nih.gov/health-information/liver-disease/hemochromatosis"
+      },
+      {
+        "id": "niddk_hh_facts",
+        "title": "Definition & Facts for Hemochromatosis",
+        "publisher": "NIDDK, NIH (last reviewed Jan 2020)",
+        "year": "2020",
+        "url": "https://www.niddk.nih.gov/health-information/liver-disease/hemochromatosis/definition-facts"
+      }
+    ],
+    "cta": "If you want the rest of this explained calmly, how pneumonic plague actually spreads, what lab tests can and can't confirm, and the myths worth dropping, subscribe. That's exactly what we're publishing next. And if you're worried, talk to a health professional."
+  },
+  "factcheck": {
+    "verdict": "REVISE",
+    "summary": "I checked the script against the CDC report (MMWR 60(07):201-205, Feb 25, 2011) and against each cited CDC, WHO, NIDDK and BMBL page. Almost everything holds up. Confirmed in the report: the clinic visit for fever, body aches and cough, where influenza or another acute respiratory infection was suspected; the trip to hospital by ambulance on Sept 13 and death the same day; blood cultures turning positive on Sept 14; plague identified after death; autopsy findings consistent with septicemic and inconsistent with pneumonic plague; homozygous HFE C282Y; postmortem serum iron of 541 mcg/dL against a reference range of 40-160 (3.4 times the upper limit); fewer than 3% of mice dying at doses up to 10^8; the 'conceivably… might have' explanation; inconsistent glove use that 'could have resulted in inadvertent transdermal exposure'; 30 co-workers, plus 1 household contact and 64 other close contacts, of whom 61 (94%) accepted prophylaxis; and 'No additional Y. pestis infections have been identified'. The recommendations to use at least BSL-2 practices, follow PPE guidance and run surveillance programs are also confirmed.\nAlso confirmed: CDC says 'an average of five', range 0-17 (page updated Oct 7, 2026); CDC's exact cure sentence (About Plague, updated Aug 24, 2026); CDC's symptom lists (updated May 15, 2024); WHO's transmission quotes and seven-day prophylaxis (updated Sep 29, 2026); and NIDDK's 1 in 15 figure and its treatment by regularly drawing blood (phlebotomy).\nFour issues need fixing. (1) The hook and scene s09 say the strain was 'weakened on purpose'. The report only says the strain is 'attenuated as a result of defects in its ability to acquire iron'. It doesn't say the weakening was deliberate, and the pgm deletion is normally spontaneous. (2) Scene s30 says 'tissues' showed iron overload, but the report found iron deposits in the liver only, not in the pancreas or heart. (3) Scenes s65 and s80 slightly merge two separate CDC recommendations. (4) A few small wording mismatches. The safety and urgency lines and the diabetes and hemochromatosis caveats are all good.",
+    "issues": [
+      {
+        "location": "s01 (narration)",
+        "claim": "a plague strain that had been weakened on purpose",
+        "problem": "MMWR describes KIM D27 as 'attenuated as a result of defects in its ability to acquire iron' and 'widely used by laboratory researchers'. It never says the weakening was done deliberately. pgm-negative strains usually come from a spontaneous deletion that was then selected for, not engineered. The hook makes an unsourced claim.",
+        "severity": "major",
+        "fix": "In 2009, a researcher in Chicago died from a weakened, or attenuated, plague strain that wasn't known to have caused any lab infection before."
+      },
+      {
+        "location": "s09 (on_screen_text and narration)",
+        "claim": "Attenuated = weakened on purpose",
+        "problem": "Same unsourced 'on purpose' claim, here on screen.",
+        "severity": "major",
+        "fix": "on_screen_text: \"Attenuated = weakened\". Narration: \"To make that work safer, researchers often use attenuated strains: weakened versions of the bacterium. This one was widely used in research and wasn't known to have caused lab infections or human deaths.\""
+      },
+      {
+        "location": "s30 (narration, stat_label); s43 visual",
+        "claim": "His tissues showed iron overload. / Overload found in his tissues",
+        "problem": "MMWR: 'Histologic staining revealed abnormal iron deposits in the liver, but not in pancreatic or cardiac tissues.' 'Tissues' overgeneralizes. Scene s33's NIH description (liver and heart) could also make viewers think his heart was affected.",
+        "severity": "minor",
+        "fix": "Narration: \"His liver showed abnormal iron deposits.\" stat_label: \"Abnormal iron deposits in his liver (autopsy)\""
+      },
+      {
+        "location": "s80 (narration)",
+        "claim": "CDC's own recommendation is that clinicians ask about work exposures, so the list of possible diagnoses can be widened to include infections picked up at work.",
+        "problem": "MMWR has two separate statements: 'Unexpected acute illness in a laboratory worker should be reported to the institution and health-care providers so that the differential diagnosis can be expanded…' and 'health-care providers should routinely inquire about occupational exposures'. The script attaches the purpose clause to the wrong recommendation.",
+        "severity": "minor",
+        "fix": "And say the thing this 2009 case turned on. Tell them about the possible exposure. CDC's report says health-care providers should routinely ask about work exposures, and that unexpected illness in a lab worker should be reported so the list of possible diagnoses can include infections picked up at work."
+      },
+      {
+        "location": "s65 (narration)",
+        "claim": "Unexpected illness in a laboratory worker should be reported to the institution.",
+        "problem": "The report says 'to the institution and health-care providers'. Half of the recommendation is dropped.",
+        "severity": "minor",
+        "fix": "Unexpected illness in a laboratory worker should be reported to the institution and to health-care providers. And health-care providers should routinely ask patients about their work exposures."
+      },
+      {
+        "location": "s52 (visual items)",
+        "claim": "List shows 3 items including 'Tell clinicians your work'",
+        "problem": "The narration names only 2 items, so the on-screen list doesn't match it.",
+        "severity": "minor",
+        "fix": "Narration: \"It has to depend on the routine. Protective equipment used every time, illness reported early, and clinicians told about your work.\""
+      },
+      {
+        "location": "s34 (source_ids)",
+        "claim": "And many people have no symptoms for years.",
+        "problem": "The cited NIDDK Definition & Facts page supports 1 in 15 and lower prevalence in people of Asian or African ancestry. It says symptoms usually appear after age 40 but doesn't state 'no symptoms for years' outright.",
+        "severity": "minor",
+        "fix": "Replace with: \"And symptoms usually don't appear until after age 40, according to NIH.\""
+      },
+      {
+        "location": "s68-s69 (source url)",
+        "claim": "BMBL recommends BSL-2 for clinical materials and cultures of Y. pestis; BSL-3 for high droplet/aerosol potential",
+        "problem": "The wording matches the BMBL Y. pestis agent summary, but the cited URL is the BMBL landing page, which doesn't contain that text.",
+        "severity": "minor",
+        "fix": "Keep the landing page in the source list but mention 'Agent Summary Statement: Yersinia pestis (BMBL 6th ed., Section VIII-A)' in the description, or link the full BMBL PDF."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "mmwr2011",
+        "title": "Fatal Laboratory-Acquired Infection with an Attenuated Yersinia pestis Strain — Chicago, Illinois, 2009",
+        "publisher": "CDC, MMWR 60(07):201-205 (Feb 25, 2011)",
+        "year": "2011",
+        "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6007a1.htm"
+      },
+      {
+        "id": "cdc_about",
+        "title": "About Plague",
+        "publisher": "CDC (updated Aug 24, 2026)",
+        "year": "2026",
+        "url": "https://www.cdc.gov/plague/about/index.html"
+      },
+      {
+        "id": "cdc_stats",
+        "title": "Plague Maps and Statistics",
+        "publisher": "CDC (updated Oct 7, 2026)",
+        "year": "2026",
+        "url": "https://www.cdc.gov/plague/maps-statistics/index.html"
+      },
+      {
+        "id": "cdc_signs",
+        "title": "Signs and Symptoms of Plague",
+        "publisher": "CDC (updated May 15, 2024)",
+        "year": "2024",
+        "url": "https://www.cdc.gov/plague/signs-symptoms/index.html"
+      },
+      {
+        "id": "who_plague",
+        "title": "Plague (fact sheet)",
+        "publisher": "World Health Organization (updated Sep 29, 2026)",
+        "year": "2026",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+      },
+      {
+        "id": "bmbl",
+        "title": "Biosafety in Microbiological and Biomedical Laboratories (BMBL) 6th Edition",
+        "publisher": "CDC/NIH (updated Mar 18, 2026)",
+        "year": "2026",
+        "url": "https://www.cdc.gov/labs/BMBL.html"
+      },
+      {
+        "id": "niddk_hh",
+        "title": "Hemochromatosis",
+        "publisher": "NIDDK, NIH (last reviewed Jan 2020)",
+        "year": "2020",
+        "url": "https://www.niddk.nih.gov/health-information/liver-disease/hemochromatosis"
+      },
+      {
+        "id": "niddk_hh_facts",
+        "title": "Definition & Facts for Hemochromatosis",
+        "publisher": "NIDDK, NIH (last reviewed Jan 2020)",
+        "year": "2020",
+        "url": "https://www.niddk.nih.gov/health-information/liver-disease/hemochromatosis/definition-facts"
+      }
+    ]
+  },
+  "hold_reason": "Not rendered: Fact-checker verdict REVISE: I checked the script against the CDC report (MMWR 60(07):201-205, Feb 25, 2011) and against each cited CDC, WHO, NIDDK and BMBL page. Almost everything holds up. Confirmed in the report: the clinic visit for fever, body aches and cough, where influenza or another acute respiratory infection was suspected; the trip to hospital by ambulance on Sept 13 and death the same day; blood cultures turning positive on Sept 14; plague identified after death; autopsy findings consistent with septicemic and inconsistent with pneumonic plague; homozygous HFE C282Y; postmortem serum iron of 541 mcg/dL against a reference range of 40-160 (3.4 times the upper limit); fewer than 3% of mice dying at doses up to 10^8; the 'conceivably… might have' explanation; inconsistent glove use that 'could have resulted in inadvertent transdermal exposure'; 30 co-workers, plus 1 household contact and 64 other close contacts, of whom 61 (94%) accepted prophylaxis; and 'No additional Y. pestis infections have been identified'. The recommendations to use at least BSL-2 practices, follow PPE guidance and run surveillance programs are also confirmed.\nAlso confirmed: CDC says 'an average of five', range 0-17 (page updated Oct 7, 2026); CDC's exact cure sentence (About Plague, updated Aug 24, 2026); CDC's symptom lists (updated May 15, 2024); WHO's transmission quotes and seven-day prophylaxis (updated Sep 29, 2026); and NIDDK's 1 in 15 figure and its treatment by regularly drawing blood (phlebotomy).\nFour issues need fixing. (1) The hook and scene s09 say the strain was 'weakened on purpose'. The report only says the strain is 'attenuated as a result of defects in its ability to acquire iron'. It doesn't say the weakening was deliberate, and the pgm deletion is normally spontaneous. (2) Scene s30 says 'tissues' showed iron overload, but the report found iron deposits in the liver only, not in the pancreas or heart. (3) Scenes s65 and s80 slightly merge two separate CDC recommendations. (4) A few small wording mismatches. The safety and urgency lines and the diabetes and hemochromatosis caveats are all good.",
+  "release_tag": "content-2026-10-12",
+  "archive_url": "b2://informed-lab-media/content/2026-10-12/L1-lab-acquired-plague-in-the-us-the-fatal/"
+}
