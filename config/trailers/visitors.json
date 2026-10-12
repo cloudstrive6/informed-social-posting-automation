@@ -1,0 +1,102 @@
+{
+  "working_title": "InforMed: health headlines shout, the research whispers",
+  "target_keyword": "evidence-based health explained",
+  "hook_pattern": "Contrast hook from something every visitor knows (loud health headlines), closed with a usable rule before the single subscribe ask.",
+  "audience": "For people who haven't subscribed (YouTube Studio > Customization > Layout > Channel trailer).",
+  "vertical": false,
+  "cta": "Subscribe, and start with the Start Here playlist.",
+  "sources": [],
+  "scenes": [
+    {
+      "id": "t1",
+      "section": "Hook",
+      "narration": "Health headlines shout. The research usually whispers. We read the research.",
+      "on_screen_text": "Headlines shout. Research whispers.",
+      "visual": {
+        "kind": "broll",
+        "stock_query": "a stack of loud cartoon newspaper headline bubbles with exclamation marks; Medi the heart-shaped mascot pops one and a calm study page appears underneath"
+      },
+      "retention_device": "Contrast hook: names a frustration every visitor already has",
+      "source_ids": []
+    },
+    {
+      "id": "t2",
+      "section": "Promise",
+      "narration": "InforMed turns real medical studies into clear, animated explainers. Science-backed health, explained like a friend would.",
+      "on_screen_text": "Real studies, clear answers",
+      "visual": {
+        "kind": "broll",
+        "stock_query": "a research paper unfolds into a bright animated explainer world with cells, organs and friendly icons; InforMed logo forms"
+      },
+      "retention_device": "Value proposition in one sentence",
+      "source_ids": []
+    },
+    {
+      "id": "t3",
+      "section": "Show",
+      "narration": "How a new medicine actually works inside your body. What an outbreak headline really means for you. And which everyday habits the evidence backs, and which ones it doesn't.",
+      "on_screen_text": "How it works · What it means · What actually helps",
+      "visual": {
+        "kind": "list",
+        "stock_query": "three quick animated vignettes: a pill working inside the body, a newspaper headline being decoded, everyday habits sorted into backed and not backed",
+        "items": [
+          "How a medicine works in your body",
+          "What an outbreak headline really means",
+          "Which habits the evidence backs"
+        ]
+      },
+      "retention_device": "Rapid sizzle of the three kinds of videos, topic-agnostic",
+      "source_ids": []
+    },
+    {
+      "id": "t4",
+      "section": "Takeaway",
+      "narration": "Here's one rule we live by. A single study is a clue, not a conclusion.",
+      "on_screen_text": "1 study = a clue, not a conclusion",
+      "visual": {
+        "kind": "myth_fact",
+        "stock_query": "one study card turns into a single puzzle piece among many forming a bigger picture",
+        "myth": "One study proves it",
+        "fact": "One study is a clue, not a conclusion"
+      },
+      "retention_device": "Reciprocity: a genuinely useful thinking tool before the ask",
+      "source_ids": []
+    },
+    {
+      "id": "t5",
+      "section": "Credibility",
+      "narration": "That's why every script is fact-checked against the published research, and we always name our sources.",
+      "on_screen_text": "Fact-checked · Sources named",
+      "visual": {
+        "kind": "broll",
+        "stock_query": "a citation card with journal name and year gets a big green check mark; magnifying glass over a research paper"
+      },
+      "retention_device": "Credibility by showing the method, not claiming authority",
+      "source_ids": []
+    },
+    {
+      "id": "t6",
+      "section": "Cadence",
+      "narration": "A new deep dive every day, plus quick Shorts.",
+      "on_screen_text": "New deep dive daily · Shorts every day",
+      "visual": {
+        "kind": "broll",
+        "stock_query": "a calendar strip filling up day by day with colorful video thumbnails"
+      },
+      "retention_device": "Sets expectations: what subscribing gets you",
+      "source_ids": []
+    },
+    {
+      "id": "t7",
+      "section": "Ask",
+      "narration": "If you like knowing the why behind your health, subscribe, and start with our Start Here playlist.",
+      "on_screen_text": "Subscribe for science you can trust · Educational content, not medical advice",
+      "visual": {
+        "kind": "broll",
+        "stock_query": "Medi the heart-shaped mascot points warmly at a big subscribe button next to a Start Here playlist card"
+      },
+      "retention_device": "One clear ask plus a small next step",
+      "source_ids": []
+    }
+  ]
+}

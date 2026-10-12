@@ -1,0 +1,75 @@
+{
+  "working_title": "Welcome back to InforMed: get more out of every video",
+  "target_keyword": "InforMed health explainers",
+  "hook_pattern": "Warm welcome, then deliver practical value (how to use the channel) instead of re-pitching.",
+  "audience": "For returning subscribers (YouTube Studio > Customization > Layout > Featured video). YouTube shows it until a subscriber has watched it once.",
+  "vertical": false,
+  "cta": "Watch the latest videos.",
+  "sources": [],
+  "scenes": [
+    {
+      "id": "t1",
+      "section": "Welcome",
+      "narration": "Welcome back. Here's how to get even more out of InforMed.",
+      "on_screen_text": "Welcome back",
+      "visual": {
+        "kind": "broll",
+        "stock_query": "Medi the heart-shaped mascot waves hello in front of the InforMed channel page"
+      },
+      "retention_device": "Warm recognition of a returning viewer",
+      "source_ids": []
+    },
+    {
+      "id": "t2",
+      "section": "Deep dives",
+      "narration": "Every day there's a new deep dive. Use the chapters to jump straight to what you need, and look for the sources we name, so you can check them yourself.",
+      "on_screen_text": "Chapters · Sources named",
+      "visual": {
+        "kind": "broll",
+        "stock_query": "a long video timeline with chapter markers lighting up; a list of named sources slides open below"
+      },
+      "retention_device": "Practical value: how to use long videos",
+      "source_ids": []
+    },
+    {
+      "id": "t3",
+      "section": "Topics",
+      "narration": "Playlists group videos by topic, so you can follow one subject from start to finish. Short on time? The Shorts give you the key finding fast.",
+      "on_screen_text": "Binge a topic · Shorts for the key finding",
+      "visual": {
+        "kind": "list",
+        "stock_query": "playlist shelves fan out by topic and a vertical Short slides in from the side",
+        "items": [
+          "Playlists: one topic, start to finish",
+          "Shorts: the key finding, fast"
+        ]
+      },
+      "retention_device": "Practical value: playlists and Shorts",
+      "source_ids": []
+    },
+    {
+      "id": "t4",
+      "section": "Carousels",
+      "narration": "Prefer to swipe? Every day there's a carousel on Instagram, TikTok, Facebook and Threads that sums it up in a few slides. Find us at informed lab.",
+      "on_screen_text": "Daily carousels · @informedlab",
+      "visual": {
+        "kind": "broll",
+        "stock_query": "a phone showing a swipeable carousel of colorful explainer slides, with Instagram, TikTok, Facebook and Threads style icons around it"
+      },
+      "retention_device": "Practical value: other places to follow",
+      "source_ids": []
+    },
+    {
+      "id": "t5",
+      "section": "Next",
+      "narration": "Ready? The latest research is waiting.",
+      "on_screen_text": "Latest videos · Educational content, not medical advice",
+      "visual": {
+        "kind": "broll",
+        "stock_query": "Medi points to a shelf of the newest video thumbnails glowing"
+      },
+      "retention_device": "Hand-off to the newest content",
+      "source_ids": []
+    }
+  ]
+}

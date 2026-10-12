@@ -28,7 +28,7 @@ export async function produceTrailer(name: string) {
   const { qa } = await buildVideo({
     id: `trailer-${name}`, dir, out, vertical: !!script.vertical, topic: script.working_title, fallbackQuery: script.target_keyword,
     scenes: script.scenes, sources: script.sources ?? [], timeline: narration.timeline, narrationWav: narration.wav,
-    spokenText: narration.spokenText, narrationWer: narration.wer, spokenScenes: spoken,
+    spokenText: narration.spokenText, narrationWer: narration.wer, spokenScenes: spoken, burnCaptions: true,
   });
   const summary = { name, file: basename(out), seconds: +narration.timeline.duration.toFixed(1), voice: narration.provider, wer: narration.wer, visualScore: qa.visual.avgScore, blocking: qa.blocking };
   writeJson(join(dir, "summary.json"), summary);

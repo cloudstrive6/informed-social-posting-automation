@@ -22,6 +22,8 @@ export interface BuildVideoInput {
   spokenScenes: { id: string; text: string }[];
   /** Reuse an already-reviewed shot plan (e.g. re-voicing a video): skips motion design and the visual critic loop. */
   presetShots?: Shot[];
+  /** Burn subtitles into a horizontal video too (trailers may autoplay muted). */
+  burnCaptions?: boolean;
 }
 
 export interface VideoQa {
@@ -42,7 +44,7 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
 
   const W = v.vertical ? 1080 : 1920, H = v.vertical ? 1920 : 1080;
   const spokenById = new Map(v.spokenScenes.map(s => [s.id, s.text]));
-  const captionScenes = v.vertical || config.video.burnCaptionsLong ? scenes.map(s => ({ id: s.id, narration: s.narration, spoken: spokenById.get(s.id) })) : undefined;
+  const captionScenes = v.vertical || v.burnCaptions || config.video.burnCaptionsLong ? scenes.map(s => ({ id: s.id, narration: s.narration, spoken: spokenById.get(s.id) })) : undefined;
   let shots: Shot[] = v.presetShots ?? await planShots(scenes, tl, v.vertical, v.topic);
   let timed: TimedShot[] = [];
   let project = "", cues: Awaited<ReturnType<typeof composeAnimated>>["cues"] = [];
