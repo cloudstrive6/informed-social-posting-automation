@@ -55,6 +55,7 @@ export async function watchdog(force = false) {
     return true;
   };
   const escalate = async (key: string, title: string, details: string) => {
+    if (claudeDown) return; // already reported to the owner; the Ops Engineer can't run without Claude either
     if (!once(`escalate:${key}`, 12)) return;
     const day = new Date().toISOString().slice(0, 10);
     s.escalations[day] = (s.escalations[day] ?? 0) + 1;
@@ -86,6 +87,8 @@ export async function watchdog(force = false) {
 }
 
 type Once = (key: string, cooldownH?: number) => boolean;
+/** set when this pass found that Claude can't run at all; escalating to the (Claude-based) Ops Engineer is pointless then */
+let claudeDown = false;
 type Escalate = (key: string, title: string, details: string) => Promise<void>;
 type Notify = (html: string, opts?: { silent?: boolean }) => Promise<void>;
 const esc = (t: string) => t.replace(/[<>&]/g, c => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;" }[c]!));
@@ -111,8 +114,9 @@ async function checkProduction(once: Once, escalate: Escalate, notify: Notify) {
   const isReplacement = (r: Run) => r.displayTitle.startsWith("Replacement");
   const active = real.find(r => r.status !== "completed" && !isReplacement(r));
 
-  // 1) kick off: from 22:05 until 10:00 audience time, if nothing has started for D
-  const inWindow = hour >= 22 || hour < 10;
+  // 1) kick off: from 22:05 until 16:00 audience time, if nothing has started for D
+  // until 16:00 audience time: a late start (e.g. after a usage-limit reset) still gets the day's content out
+  const inWindow = hour >= 22 || hour < 16;
   if (inWindow && !produced && !active && !real.some(r => r.conclusion === "success" && !isReplacement(r))) {
     const minute = Number(new Intl.DateTimeFormat("en-US", { timeZone: config.audience.timezone, minute: "numeric" }).format(now()));
     if ((hour > 22 || hour < 10 || minute >= 5) && once(`kickoff:${D}`, 3)) {
@@ -125,6 +129,19 @@ async function checkProduction(once: Once, escalate: Escalate, notify: Notify) {
   // 2) a run that failed: re-run its failed jobs once, then escalate
   for (const r of real.filter(r => r.status === "completed" && ["failure", "timed_out", "startup_failure"].includes(r.conclusion))) {
     if (produced && real.some(o => o.conclusion === "success" && Date.parse(o.createdAt) > Date.parse(r.createdAt))) continue;
+    // Claude completely unavailable (subscription weekly cap AND backup API key out of credit): retrying and
+    // calling the Ops Engineer (also Claude) can't help. Tell the owner once, exactly what to do; the kickoff
+    // above restarts production by itself once the limit resets.
+    let failText = "";
+    try { failText = gh(["run", "view", String(r.databaseId), "--log-failed"]).split("\n").slice(-200).join("\n"); } catch { /* logs may not be ready */ }
+    if (/hit your weekly limit/i.test(failText) && /credit balance is too low|insufficient.*credit|billing/i.test(failText)) {
+      claudeDown = true;
+      const reset = /resets ([^)\n]+\))/i.exec(failText)?.[1] ?? "later this week";
+      if (once(`claude-down:${D}`, 12)) {
+        await notify(`🚨 <b>Production is stopped: no Claude available</b>\nThe Claude subscription hit its weekly limit (resets ${esc(reset)}) and the backup API key has no credit left ("Credit balance is too low").\n\n<b>You need to:</b> add credit at console.anthropic.com → Settings → Billing (the pipeline caps itself at $${config.fallbackApi?.monthlyBudgetUsd ?? 50}/month). Production restarts automatically as soon as either the credit is there or the limit resets.`);
+      }
+      continue;
+    }
     if (r.attempt < 2 && once(`rerun:${r.databaseId}`)) {
       gh(["run", "rerun", String(r.databaseId), "--failed"]);
       log.info(`watchdog: re-running failed jobs of daily run ${r.databaseId}`);
