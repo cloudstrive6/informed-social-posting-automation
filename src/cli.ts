@@ -70,6 +70,8 @@ const commands: Record<string, () => Promise<unknown>> = {
     catch (e) { log.warn(`watchdog failed: ${(e as Error).message.slice(0, 300)}`); }
     await publishDue();
   },
+  // trailer <name>: render config/trailers/<name>.json as a channel trailer (trailers release + Telegram preview)
+  trailer: async () => { const { produceTrailer } = await import("./produce/trailer.js"); for (const n of rest.filter(r => !r.startsWith("--"))) await produceTrailer(n); },
   // watchdog: run the ops checks now (normally part of every publish cycle, at most every 10 min)
   watchdog: async () => { const { watchdog } = await import("./ops/watchdog.js"); await watchdog(true); },
   // ops-doctor: the Ops Engineer agent works on the incident in $INCIDENT (ops.yml)

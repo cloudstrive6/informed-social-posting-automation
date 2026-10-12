@@ -42,7 +42,7 @@ export async function notify(html: string, opts: { silent?: boolean; buttons?: B
 }
 
 /** Preview media for a review: the video itself (Telegram bots can upload up to 50 MB) or the carousel slides. */
-async function sendPreview(item: ContentItem, files: { video?: string; slides?: string[]; thumbnail?: string }, caption: string) {
+export async function sendPreview(item: ContentItem, files: { video?: string; slides?: string[]; thumbnail?: string }, caption: string) {
   try {
     if (files.slides?.length) {
       const fd = new FormData();
