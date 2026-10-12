@@ -1,0 +1,504 @@
+{
+  "at": "2026-10-12T13:14:34.106Z",
+  "summary": "Channel focus is GLP-1, so all candidates are GLP-1 topics. The plague topics carried over from earlier snapshots are left out on purpose: they're outside the current focus. The best openings right now are fresh, checked research that creators haven't picked up yet. 1) GLP-1 and nail detachment (EADV 2026: 39% of users vs 9% of non-users). ScienceDaily covered it today and we found almost no creator video coverage. 2) The pilot RCT on weight regain after stopping a GLP-1: about 10.75% regain with usual care vs about 3.6% with an app or medically tailored meals. 3) The retatrutide TRIUMPH-2 decoder (20.8% weight loss in people with type 2 diabetes; Lilly plans to file in Q1 2027). Search interest is high because of 'What is RETA?' questions, but it needs a strict warning about gray-market sellers. Other emerging items with solid sources: no link found between semaglutide and pancreatic cancer in the Nordic registries (HR 0.91), the Lancet trial on semaglutide and heavy drinking, the STEP UP liver-fat sub-analysis, and the tirzepatide + ixekizumab psoriasis trial. For news hooks on access and safety, cover Novo's list-price cuts from Jan 2027 and the NPR report on GLP-1 lawsuits, both framed calmly. Microdosing is rejected under brand rules. Playbook fit: named-drug and named-study titles with one plain number have been our strongest. Keep 'talk to your doctor or prescriber' in every piece. Never promote compounded, gray-market or telehealth price-shopping sources.",
+  "candidates": [
+    {
+      "topic": "GLP-1 medicines and nail problems: first controlled study finds nail detachment reported by 39% of users vs 9% of non-users (EADV 2026)",
+      "angle": "'Ozempic nails' explained calmly. What the study found (575 users vs 1,329 non-users, self-reported, cross-sectional, not yet peer reviewed). Why it shows a link, not cause. Possible explanations researchers raise, such as rapid weight loss and nutrition, framed as hypotheses. Practical: eat enough protein and see your prescriber or a dermatologist if your nails change. Pair with the earlier hair-loss findings.",
+      "keywords": [
+        "ozempic nails",
+        "glp-1 nail detachment",
+        "mounjaro nails falling off",
+        "wegovy nail problems",
+        "glp-1 side effects nails",
+        "ozempic hair and nails"
+      ],
+      "stage": "emerging",
+      "momentum": 88,
+      "predicted_peak": "3–10 days",
+      "why_now": "Presented at EADV (Sep 30–Oct 3). It moved from medical outlets (HCPLive, Medical Economics, Advisory Board) to ScienceDaily and Gizmodo today, Oct 12. It's a classic pattern of going from press release to science news to creators, and our searches found almost no creator videos yet.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "HCPLive (Oct 1, 2026)",
+          "signal": "Nail detachment 39% vs 9%; discoloration 46% vs 17%; 575 users vs 1,329 controls",
+          "url": "https://hcplive.com/view/nail-detachment-4-times-more-common-with-glp-1-use"
+        },
+        {
+          "source": "Medical Economics",
+          "signal": "GLP-1 users report more nail detachment and hair loss than nonusers",
+          "url": "https://www.medicaleconomics.com/view/glp-1-users-report-more-nail-detachment-hair-loss-than-nonusers-study-finds"
+        },
+        {
+          "source": "Advisory Board Daily Briefing (Oct 6)",
+          "signal": "Mainstream healthcare-industry pickup",
+          "url": "https://www.advisory.com/daily-briefing/2026/10/06/glp1-nails"
+        },
+        {
+          "source": "Gizmodo",
+          "signal": "Consumer tech/science pickup ('hair loss was just the start')",
+          "url": "https://gizmodo.com/hair-loss-was-just-the-start-ozempic-users-are-also-reporting-nail-trouble-2000820821"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Stopping a GLP-1: pilot RCT finds structured support (wellness app or medically tailored meals) cut 4-month regain from about 10.75% to about 3.6%",
+      "angle": "Plan for the off-ramp, positively. Regain after stopping is well documented (e.g. STEP 1 extension). This small pilot (n=39) hints that structured support may slow it. Habits that support you on or off the medicine: protein, strength training, meal structure. Make clear that any decision to stop belongs with your prescriber. No stopping advice.",
+      "keywords": [
+        "weight regain after stopping ozempic",
+        "what happens when you stop glp-1",
+        "how to keep weight off after wegovy",
+        "stopping mounjaro weight gain",
+        "glp-1 off ramp"
+      ],
+      "stage": "rising",
+      "momentum": 85,
+      "predicted_peak": "5–14 days",
+      "why_now": "Published in Obesity Science & Practice Oct 7, with coverage from News-Medical (Oct 12), Newsweek, MedicineNet and Epocrates. 'What happens when you stop' is one of the most-searched GLP-1 questions, and this gives it a new hook.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "PubMed (Obes Sci Pract)",
+          "signal": "Pilot RCT, Preventing Weight Regain After GLP-1 Discontinuation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42846130/"
+        },
+        {
+          "source": "News-Medical",
+          "signal": "Control +10.75% vs app +3.60% vs meals +3.58% over 4 months; n=39",
+          "url": "https://www.news-medical.net/news/20261007/Structured-support-may-slow-weight-regain-after-stopping-GLP-1-drugs.aspx"
+        },
+        {
+          "source": "Newsweek",
+          "signal": "Mainstream pickup",
+          "url": "https://www.newsweek.com/how-keep-weight-off-stopping-glp1s-study-12528476"
+        },
+        {
+          "source": "ClinicalTrials.gov NCT06273163",
+          "signal": "Trial registration",
+          "url": "https://clinicaltrials.gov/study/NCT06273163"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Retatrutide TRIUMPH-2: up to 20.8% weight loss at 80 weeks in adults with type 2 diabetes. What 'RETA' is and why it isn't approved yet",
+      "angle": "Named-drug decoder with a question title, e.g. 'Retatrutide: What Did TRIUMPH-2 Actually Find?' Explain the triple agonist (GIP, GLP-1, glucagon) and the results by dose without giving dosing advice: 12.7%, 19.1% and 20.8%, with A1C down up to 1.6%. Lilly plans to file with FDA in Q1 2027. Explain plainly that it's investigational and not available by prescription. Lilly is suing gray-market 'research' sellers, and those products are not medicine.",
+      "keywords": [
+        "retatrutide",
+        "what is reta",
+        "retatrutide results",
+        "retatrutide fda approval",
+        "retatrutide vs tirzepatide",
+        "triumph-2"
+      ],
+      "stage": "rising",
+      "momentum": 90,
+      "predicted_peak": "now–7 days",
+      "why_now": "Lilly's TRIUMPH-2 topline came Sep 30. TCTMD, Drug Topics and Women's Health covered it (Oct 9–11), WCNC ran a 'VERIFY: What is RETA?' piece (Oct 12), and Lilly's lawsuits against copycats are in WaPo and STAT. Named-drug trial decoders are our best long-form format (EloraTZP 216 views).",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Lilly press release (via Placera)",
+          "signal": "TRIUMPH-2: 20.8% at 80 weeks on 12 mg; BLA planned Q1 2027",
+          "url": "https://www.placera.se/pressmeddelanden/lilly-s-triple-agonist-retatrutide-delivered-substantial-weight-loss-and-a1c-reduction-underscoring-its-potential-promise-for-people-with-obesity-and-type-2-diabetes-20260930"
+        },
+        {
+          "source": "Indian Pharma Post",
+          "signal": "Dose results 12.7%/19.1%/20.8%",
+          "url": "https://www.indianpharmapost.com/news/lillys-retatrutide-delivers-208-weight-loss-in-phase-3-diabetes-trial-22031"
+        },
+        {
+          "source": "STAT Pharmalittle (Oct 9)",
+          "signal": "Lilly suits over copycat versions",
+          "url": "https://www.statnews.com/pharmalot/2026/10/09/pharmalittle-were-reading-about-a-setback-for-argenx-lilly-suits-over-copycat-versions-of-an-obesity-drug-and-more/?utm_campaign=rss"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Does semaglutide raise pancreatic cancer risk? Nordic registry study of 97,464 users found no link (HR 0.91)",
+      "angle": "A myth correction that reassures with evidence. A regulator-mandated study across Denmark, Sweden and Norway: 131 cases among semaglutide users vs 123 in the comparison group, and no dose or duration effect. Be honest about the limits: it's observational, funded by Novo and limited to type 2 diabetes. Say 'no link found', not 'ruled out'.",
+      "keywords": [
+        "ozempic pancreatic cancer",
+        "semaglutide cancer risk",
+        "does ozempic cause cancer",
+        "glp-1 pancreatic cancer study"
+      ],
+      "stage": "emerging",
+      "momentum": 74,
+      "predicted_peak": "7–14 days",
+      "why_now": "Presented at EASD (Sep 28–Oct 2), and headlines picked it up again on Oct 12 (Bioengineer). Cancer fear is a constant search driver, and lawsuit coverage (NPR) keeps safety questions in view.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "News-Medical",
+          "signal": "97,464 semaglutide users; HR 0.91 (95% CI 0.71–1.16); no dose/duration effect",
+          "url": "https://www.news-medical.net/news/20260929/New-registry-data-shows-semaglutide-does-not-cause-pancreatic-cancer.aspx"
+        },
+        {
+          "source": "ClinicalTrials.gov NCT04572165",
+          "signal": "Study design: active-comparator new-user cohort, 2018–2023",
+          "url": "https://clinicaltrials.gov/study/NCT04572165"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Semaglutide and heavy drinking: Lancet RCT in people with alcohol use disorder and obesity found heavy-drinking days fell 13.7 percentage points more than with placebo",
+      "angle": "A benefit beyond weight, kept to its evidence. The trial had 108 adults over 26 weeks; cravings and liver markers also improved. It isn't approved for alcohol use disorder. Explain the brain-reward mechanism in plain words. Anyone struggling with alcohol should talk to a clinician.",
+      "keywords": [
+        "ozempic alcohol cravings",
+        "semaglutide alcohol use disorder",
+        "glp-1 drinking less",
+        "wegovy alcohol study"
+      ],
+      "stage": "rising",
+      "momentum": 76,
+      "predicted_peak": "5–14 days",
+      "why_now": "Medical Economics flagged it Oct 11, and EMJ and PsyPost have also covered it. Mad In America's skeptical take on marketing GLP-1s for addiction (Oct 10) shows debate is building, which leaves room for a balanced explainer.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "EMJ",
+          "signal": "RCT: heavy drinking days −13.7 pp vs placebo; n=108; published in The Lancet",
+          "url": "https://www.emjreviews.com/diabetes/news/semaglutide-cuts-heavy-drinking-in-alcohol-use-disorder-trial/"
+        },
+        {
+          "source": "PsyPost",
+          "signal": "Consumer science pickup",
+          "url": "https://www.psypost.org/weight-loss-drug-semaglutide-reduces-heavy-alcohol-drinking-in-new-clinical-trial/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Ozempic and Wegovy US list prices drop up to 50% from Jan 1, 2027 (about $675/month), plus the Medicare GLP-1 Bridge $50 copay. What it means for you",
+      "angle": "A calm decoder of access news. Explain list price vs what you actually pay: insurance, Medicare and the manufacturers' official self-pay programs. Bring questions to your prescriber or insurer. Never point people to compounded or no-prescription providers (e.g. the '$99/month' headlines).",
+      "keywords": [
+        "ozempic price cut 2027",
+        "wegovy price drop",
+        "how much does wegovy cost",
+        "medicare glp-1 bridge",
+        "glp-1 cost"
+      ],
+      "stage": "rising",
+      "momentum": 78,
+      "predicted_peak": "3–10 days",
+      "why_now": "Medical Economics (Oct 11) and Stocktwits/BofA are discussing the cuts, ABC7 is covering the Medicare GLP-1 Bridge, and the Boston Globe ran an op-ed on insurer limits. Cost is the top question our audience has.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "HealthDay",
+          "signal": "List prices cut up to 50% from Jan 1, 2027; ~$675/month; self-pay unaffected",
+          "url": "https://www.healthday.com/health-news/weight-loss/novo-nordisk-cuts-prices-of-ozempic-and-wegovy-starting-january-2027"
+        },
+        {
+          "source": "Fox Business",
+          "signal": "Price cut also applies to Wegovy pill and Rybelsus",
+          "url": "https://foxbusiness.com/markets/novo-nordisk-slash-list-prices-ozempic-wegovy-up-50"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "GLP-1 lawsuits and serious side effects: what's alleged (gastroparesis, bowel obstruction, sudden vision loss) and why NPR says we don't know how often",
+      "angle": "Honest and steady. Lawsuits are allegations, not measured rates: about 4,400 plaintiffs vs about 31 million US adults using GLP-1s (KFF). Name the warning signs that mean you should call your doctor (severe or persistent vomiting, severe abdominal pain, sudden vision changes) and explain why reporting side effects matters. No fear-bait, and no advice to stop the medicine.",
+      "keywords": [
+        "ozempic lawsuit",
+        "glp-1 serious side effects",
+        "ozempic gastroparesis",
+        "ozempic vision loss",
+        "mounjaro side effects"
+      ],
+      "stage": "rising",
+      "momentum": 74,
+      "predicted_peak": "now–7 days",
+      "why_now": "NPR's piece ran on many public-radio sites Oct 7–10. Vision-loss lawsuit stories (Sep 22), AFRO's 'hidden risk' piece and the J Intern Med review on serious adverse events (Oct 9) all add to it.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "NPR via WUSF",
+          "signal": "Serious side effects alleged; unclear how often",
+          "url": "https://www.wusf.org/2026-10-07/some-who-take-glp-1s-are-suffering-serious-side-effects-but-its-unclear-how-often"
+        },
+        {
+          "source": "PubMed (J Intern Med)",
+          "signal": "Review: GLP-1 RAs and serious adverse events: evidence, uncertainty",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42851139/"
+        },
+        {
+          "source": "ConsumerAffairs",
+          "signal": "Thousands of plaintiffs in consolidated litigation",
+          "url": "https://www.consumeraffairs.com/news/nearly-3000-plaintiffs-sue-over-glp-1-drug-side-effects-122325.html"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Semaglutide and fatty liver: STEP UP sub-analysis found 23 of 26 adults with excess liver fat reached normal levels (<5%) by week 72",
+      "angle": "Benefits beyond the scale: liver fat. Mean liver fat fell from 8.8% to 3.1% in a 55-person MRI sub-analysis. Be clear about the limits: post hoc, small, no placebo comparison shown. Link it to the broader MASH evidence and to habits that help the liver.",
+      "keywords": [
+        "ozempic fatty liver",
+        "semaglutide liver fat",
+        "wegovy MASH",
+        "glp-1 fatty liver disease"
+      ],
+      "stage": "emerging",
+      "momentum": 66,
+      "predicted_peak": "7–14 days",
+      "why_now": "EASD data, with Pharmacy Times (Oct 10) and Patient Worthy coverage. Fatty liver is a high-search, underserved metabolic topic.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Pharmacy Times",
+          "signal": "Semaglutide normalized liver fat in most adults with obesity",
+          "url": "https://www.pharmacytimes.com/view/semaglutide-normalized-liver-fat-in-most-adults-with-obesity"
+        },
+        {
+          "source": "Patient Worthy",
+          "signal": "8.8% to 3.1%; 88.5% (23/26) <5%; limitations",
+          "url": "https://patientworthy.com/2026/10/06/wegovy-linked-to-normal-liver-fat-levels-in-small-analysis-of-adults-with-obesity/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Tirzepatide plus ixekizumab for psoriasis with obesity: TOGETHER-PsO found 40.6% reached completely clear skin vs 29.0% with ixekizumab alone",
+      "angle": "Psoriasis and weight are connected. Explain the 'immunometabolic' link simply, and that treating obesity alongside a psoriasis biologic did better in this Lilly-funded phase 3b trial. Questions to ask a dermatologist. Not an ad: refer to the medicines generically.",
+      "keywords": [
+        "zepbound psoriasis",
+        "tirzepatide psoriasis",
+        "glp-1 psoriasis",
+        "weight loss and psoriasis"
+      ],
+      "stage": "emerging",
+      "momentum": 62,
+      "predicted_peak": "7–21 days",
+      "why_now": "New biomarker data came Oct 9 (Fall Clinical Derm), with coverage from HCPLive, Dermatology Times, pharmaphorum, Clinical Trials Arena and NewsNation. Psoriasis communities are a niche our competitors don't serve.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Lilly investor release",
+          "signal": "PASI 100 40.6% vs 29.0% at 36 weeks; durable at week 52",
+          "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-taltz-ixekizumab-and-zepbound-tirzepatide-used-together-0"
+        },
+        {
+          "source": "Barchart (Lilly release)",
+          "signal": "Phase 3b superiority on PASI 100 + ≥10% weight loss",
+          "url": "https://www.barchart.com/story/news/275599/lilly-s-taltz-ixekizumab-and-zepbound-tirzepatide-used-together-delivered-superior-efficacy-in-first-of-its-kind-phase-3b-trial-for-adults-with-psoriasis-and-obesity-or-overweight"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Feeling awful on a GLP-1? Under-eating, dehydration or a passing bug may be part of it, plus how to make common side effects easier",
+      "angle": "A friendly 'getting the most from GLP-1' explainer. Low energy can come from eating too little and drinking too little. Practical, evidence-based tips: protein-first small meals, fluids, eating slowly, and stopping when full. When to call your prescriber. No dose-adjustment advice.",
+      "keywords": [
+        "ozempic fatigue",
+        "tired on mounjaro",
+        "glp-1 nausea tips",
+        "why do i feel sick on wegovy",
+        "glp-1 dehydration"
+      ],
+      "stage": "evergreen",
+      "momentum": 64,
+      "predicted_peak": "ongoing; refreshed this week",
+      "why_now": "Yahoo Creators ran 'Feeling awful on your GLP-1?' on Oct 11. As cold and flu season starts, more people will be asking whether it's the medicine or a bug.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Ubie Doctor's Note",
+          "signal": "Illness vs side effects; under-eating and dehydration as causes",
+          "url": "https://ubiehealth.com/doctors-note/sick-glp-1-gut-slowing-approved-medical-actions-4723e2"
+        },
+        {
+          "source": "Inside Medicine (Substack)",
+          "signal": "Clinician field notes on mild but common GLP-1 effects",
+          "url": "https://insidemedicine.substack.com/p/field-notes-a-mild-and-yet-potentially"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Wegovy pill vs Wegovy shot: how oral semaglutide compares, and early US uptake (JAMA Netw Open)",
+      "angle": "A plain comparison naming both sides: how each is taken (daily pill vs weekly shot, in general terms), what the trials show, and questions to bring to a doctor. No switching advice.",
+      "keywords": [
+        "wegovy pill",
+        "wegovy pill vs shot",
+        "oral semaglutide weight loss",
+        "how effective is the wegovy pill"
+      ],
+      "stage": "rising",
+      "momentum": 70,
+      "predicted_peak": "5–14 days",
+      "why_now": "A JAMA Netw Open study on early uptake (Oct 1), Physician's Weekly coverage (Oct 9) and a Yahoo doctor explainer (Oct 10). People are searching 'how effective is the wegovy pill'.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "PubMed (JAMA Netw Open)",
+          "signal": "Early adoption and diffusion of oral semaglutide in US adults with obesity",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42842253/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "GLP-1 medicines and sleep apnea: new meta-analysis of RCTs, plus tirzepatide's SURMOUNT-OSA results",
+      "angle": "A benefit beyond weight for a very common condition. Across RCT meta-analyses, the AHI (pauses in breathing per hour) fell. In SURMOUNT-OSA, tirzepatide cut AHI by about 20–24 events/hour vs placebo. Treatment is used alongside CPAP rather than replacing it; discuss with a sleep doctor.",
+      "keywords": [
+        "zepbound sleep apnea",
+        "glp-1 sleep apnea",
+        "can ozempic help sleep apnea",
+        "tirzepatide OSA"
+      ],
+      "stage": "evergreen",
+      "momentum": 58,
+      "predicted_peak": "ongoing",
+      "why_now": "A new Sleep and Breathing meta-analysis (Oct 6) refreshes an evergreen pillar. Sleep searches pick up around the daylight-saving change (Nov 1 US).",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "PubMed (Sleep Breath)",
+          "signal": "GLP-1 RAs for OSA: meta-analysis of RCTs",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42837024/"
+        },
+        {
+          "source": "Epocrates",
+          "signal": "Where GLP-1 drugs fit in sleep apnea care",
+          "url": "https://www.epocrates.com/online/article/where-do-glp-1-drugs-fit-in-sleep-apnea-care"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Orforglipron, the oral non-peptide GLP-1 pill: what the trials show for weight, diabetes and blood pressure (ATTAIN-HYPERTENSION design)",
+      "angle": "'The GLP-1 pill you don't take on an empty stomach': explain how a small-molecule GLP-1 differs from injectable peptides, summarize results from the Cureus systematic review, and note the trial now testing it for high blood pressure. Re-check its exact FDA status at publish time.",
+      "keywords": [
+        "orforglipron",
+        "orforglipron results",
+        "glp-1 pill",
+        "orforglipron approval",
+        "new weight loss pill"
+      ],
+      "stage": "rising",
+      "momentum": 66,
+      "predicted_peak": "7–14 days",
+      "why_now": "A Cureus systematic review (Oct 11), Medical Dialogues coverage (Oct 12) and the ATTAIN-HYPERTENSION design paper. A Nature Medicine phase 3 trial of a rival oral small molecule (safiglipron) adds 'pill race' context. Our earlier orforglipron long-form was at the median (14), so use a question-decoder title.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "PubMed (Am J Prev Cardiol)",
+          "signal": "ATTAIN-HYPERTENSION phase 3 design",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42830762/"
+        },
+        {
+          "source": "PubMed (Nat Med)",
+          "signal": "Oral small-molecule safiglipron phase 3 vs dapagliflozin",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42834229/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "GLP-1 and heart failure: tiny CardioMEMS study shows lower lung-artery pressure as weight fell",
+      "angle": "Use only as one beat in a 'heart benefits' piece next to SELECT and the HFpEF trials (STEP-HFpEF, SUMMIT). This study had only 9 patients, so present it as an early signal, never as a headline.",
+      "keywords": [
+        "ozempic heart failure",
+        "glp-1 heart failure",
+        "semaglutide hfpef",
+        "tirzepatide heart failure"
+      ],
+      "stage": "emerging",
+      "momentum": 44,
+      "predicted_peak": "14+ days",
+      "why_now": "HCPLive covered it Oct 11. Weak on its own, but it gives a fresh hook to the evergreen 'heart benefits' pillar.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Rethink summary of Jiang 2025",
+          "signal": "n=9; mean PA pressure 27.3→24.3 mmHg over 6 months",
+          "url": "https://rethinkpeptides.com/research/jiang-2025-pulmonary-artery-pressure-trajectories"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "GLP-1 'microdosing' trend (Firstpost doctor explainer)",
+      "angle": "Rejected under brand rules (no microdosing or self-titration content), even framed as 'why to avoid'. If needed, fold one generic line into side-effects pieces: 'dose decisions belong with your prescriber.'",
+      "keywords": [
+        "glp-1 microdosing",
+        "microdosing ozempic"
+      ],
+      "stage": "peaking",
+      "momentum": 55,
+      "predicted_peak": "n/a",
+      "why_now": "Firstpost (Oct 12) and recurring social trend, but off-limits for InforMed.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Google News: Firstpost",
+          "signal": "Why you should avoid microdosing weight-loss drugs",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNcnRWRVMyU3puM1BkbkR1RkZiMkpyTHNDNFIyOXMwLUttdDk4WFdGZnBpWmZNSFd3d1NSdFRraklKM2VfT3hVLVFtdWFrT1BfX2VhOTI4bElDdUhGNFNGY1ZNVTlrblZLLXlaXzg3a1JjQk1OVC1RZWRwQVZDcWJXR0VYSVF3akJtZlgzTnV5dHlvUjZaWEZHSnZRZFlKSWRjZi1lTkZxdDVyczhWQlNIUDkzd1lxQktGYjByeXNIWlpmdTdtQlBsM1BaSjY3Vjg3dHhrVjdBc9IB3AFBVV95cUxQVXMtbjJGV182N3ZBeExGVWVvNlpLeE5SZWJxUkdxbDVYUjNBU2hqN1J2S2l0NHVkUHVIZHpXLUQzaTVnM2ZtUkF3dHplbno1elhoUlZTNXZmZWlPU29ZTmg5WnNtcXJDVFZDMlNacEd1SGp6Ti1BREFwZ2JkcTVfTWZBMUVxSFktWkVsUEtlWGdNdHdfMUs4VmRtUGVmZGd0bTMzaERRNGg2Q045NmNQUUxDVmJDMmI2YlBkM05UWlE0YXNzc005RDY2SlJ5X1NqYndzQllQY3pRb0Z4?oc=5"
+        }
+      ],
+      "safety": "reject",
+      "formats": [
+        "short"
+      ]
+    }
+  ]
+}
