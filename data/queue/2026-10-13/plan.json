@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-13",
+  "created_at": "2026-10-13T02:14:48.288Z",
+  "rationale": "Every piece stays inside the GLP-1 focus. Five different pillars are used: results, how-it-works, get-the-most, life-on-glp1 and myths. The topics also cover different ground: a medicine's route into the body, muscle, keeping results, and the biology of ageing.\n\n**Mix:** 3 pieces ride rising trends (L1, S1, S3), 1 is evergreen with a fresh hook (S2), and 1 is a myth-bust (C1).\n\n**Long-form (L1):** The pill-vs-shot explainer for semaglutide uses the \"X vs Y: which one?\" format that held up for us before. Wegovy is a name people already search for, and it's in the news (Medscape, Oct 12: oral prescriptions passed 100K a month). The body rests on settled, peer-reviewed trials (OASIS 4 and STEP 1 in NEJM), not on breaking news. Today's other headline stories are kept out of the long slot:\n- The eloralintide combo was covered as a long video on 10-01.\n- The STEP UP and tirzepatide comparison was a carousel on 09-30.\n- Nails (10-01), online retatrutide (09-30) and alcohol (10-01) were all covered within the last 30 days.\n\n**Shorts:**\n- **S1** is a spin-off of L1. It answers one surprising \"what does it do in my body\" question: how a protein medicine survives the stomach.\n- **S2** follows the playbook's top cross-platform winner (muscle). It uses a new practical angle, \"how to protect it,\" instead of the 10-05 angle, \"is it fat or muscle.\"\n- **S3** uses the fresh Tufts pilot RCT for the \"keeping results\" pillar. The radar marked it caution, so it keeps the pilot-scale hedge and gives no stopping advice. It differs from the 09-29 veterans heart-risk angle.\n\n**Carousel (C1):** It corrects the overstated \"GLP-1s slow aging\" headlines with a saveable \"what the study can and can't tell you\" list. The radar marked this topic caution, so the plan takes the evidence-first angle it asks for. Carousels are underperforming, but the quota calls for one, so this is a low-risk, high-save format.\n\nNothing used was marked reject. No piece includes dosing, switching or sourcing advice, and every piece carries the prescriber line.",
+  "pieces": [
+    {
+      "id": "L1",
+      "kind": "long",
+      "topic": "Semaglutide pill vs semaglutide shot (Wegovy): same molecule, two routes. What the OASIS 4 and STEP 1 trials show about weight loss, side effects and who each form may suit",
+      "angle": "Title: 'Semaglutide Pill vs Shot (Wegovy): What the Trials Show'. Hook: 'Oral semaglutide for obesity passed 100,000 new prescriptions a month within 2 months of launch (Medscape, Oct 2026).' Keep the 7 segments as planned. Show 'separate trials, not head-to-head' on screen in the results and side-effects segments. State the US approval date (FDA, Dec 2025). Credit the '>80% new to GLP-1' figure to Novo Nordisk. Close with the prescriber line.",
+      "working_title": "Semaglutide Pill vs Shot (Wegovy): Which One Works Better?",
+      "target_keyword": "Wegovy pill vs shot",
+      "trend_stage": "rising",
+      "why": "High-search brand question with a fresh hook, in our 'X vs Y' title format. The body rests on settled NEJM trials, so it should pass the fact-check. | fact-check: I checked the hook facts. The Medscape headline is 'Oral Semaglutide Obesity Rx Tops 100K Monthly in 2 Months'. That counts monthly NEW prescriptions, reached within 2 months of launch: https://www.medscape.com/viewarticle/oral-semaglutide-obesity-rx-tops-100k-monthly-2-months-2026a100124c. The JAMA Netw Open study is 'Early Adoption and Diffusion of Oral Semaglutide in US Adults With Obesity', published Oct 7, 2026: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2854937. It reports that people starting the pill were older, more often female, had a lower BMI and were more often on Medicare. The '>80% new to GLP-1 therapy' figure is Novo Nordisk's own press-release number (3 million prescriptions, ADA 2026). Credit it to the company, not to JAMA. FDA approved the pill on Dec 22, 2025, and it launched in the US in Jan 2026. Limit the approval status to the US unless other countries are re-checked when the script is written. Problem: the title 'Which One Works Better?' promises a verdict that two separate trials can't give, so the content can't pay it off. Use only OASIS 4, the trial of the approved pill. Don't use OASIS 1, which tested a higher oral dose that isn't the approved product. Give each trial its own population, length (64 vs 68 weeks) and placebo figure. Describe SNAC only as the label or papers do: it buffers the stomach locally, protects the drug from enzymes and helps absorption through the stomach lining, and only a small share is absorbed. Give no mg strengths and no fasting or water instructions.",
+      "pillar": "results"
+    },
+    {
+      "id": "S1",
+      "kind": "short",
+      "topic": "How can semaglutide work as a pill? The absorption enhancer that helps a protein medicine survive the stomach",
+      "angle": "Title: 'Semaglutide Pill (Wegovy): How Does It Survive Your Stomach?' Answer within 10 s using the buffering, enzyme-protection and absorption wording. Show 'separate trials · not head-to-head' on screen. Add 'Follow your label and prescriber' with no timing details. Close with the prescriber line.",
+      "working_title": "How Does the Wegovy Pill Survive Your Stomach? #shorts",
+      "target_keyword": "Wegovy pill",
+      "trend_stage": "rising",
+      "why": "Spin-off of L1. It answers a 'what does it do in my body' question about a recognizable named drug, which is our proven Shorts pattern. | fact-check: The topic is sound. Replace 'briefly shields it' with the mechanism the sources actually describe: SNAC buffers stomach acid locally, protects the drug from enzyme breakdown and helps a small share get absorbed through the stomach lining. Get the 'small share' line from the label or a primary pharmacology source, not a news article. Compare OASIS 4 and STEP 1 as separate trials, each with its own placebo figure and its own length (64 vs 68 weeks). Say 'similar range', never 'the same'. Lead the title with the generic name.",
+      "pillar": "how-it-works"
+    },
+    {
+      "id": "S2",
+      "kind": "short",
+      "topic": "Tirzepatide (Mounjaro): how to protect muscle while losing weight, and why protein quality matters as well as quantity",
+      "angle": "Title: 'Tirzepatide (Mounjaro): 3 Ways to Protect Your Muscle'. 1) A protein food at each meal, from a variety of sources (fish, eggs, dairy, legumes, poultry), 'unless your clinician has told you to limit protein'. 2) Muscle-strengthening at least 2 days a week, per activity guidelines. 3) Eat enough overall, with no extreme restriction. Cite the SURMOUNT-1 DXA paper and the 2025 joint advisory instead of Yahoo. Close with the prescriber line.",
+      "working_title": "Tirzepatide (Mounjaro): 3 Ways to Protect Your Muscle #shorts",
+      "target_keyword": "Mounjaro muscle loss",
+      "trend_stage": "evergreen",
+      "why": "Muscle is our best cross-platform GLP-1 topic (98 YT views, 61 IG reach, 238 IG views). The playbook asks to rebuild the muscle carousel as a Short, and this how-to angle is new. | fact-check: This is our strongest pillar (muscle). The SURMOUNT-1 DXA substudy (Look et al., 2025, Diabetes Obes Metab) reports roughly 3:1 fat-to-lean loss on tirzepatide. Use the paper's exact percentages and its substudy population (adults with obesity, or overweight plus a related condition, without type 2 diabetes). The 'protein quality, not just quantity' hook comes from a Yahoo Health lifestyle piece. The evidence that protein type preserves muscle on GLP-1s is thin, so don't make it a claim. Base the habits on the 2025 joint nutrition advisory for GLP-1 users (ACLM/ASN/OMA/TOS), which covers adequate protein and resistance training. For strength training, use the guideline wording: 'at least 2 days a week' (US Physical Activity Guidelines / NHS). Keep the kidney caveat. In habit 3, add an eating-disorder-safe line: no extreme restriction.",
+      "pillar": "get-the-most"
+    },
+    {
+      "id": "S3",
+      "kind": "short",
+      "topic": "After stopping a GLP-1: a small pilot RCT found structured support (an app or medically tailored meals) slowed weight regain over 4 months",
+      "angle": "Title: 'Stopping a GLP-1: Less Weight Regain With Support in a Small Trial'. On screen: 'pilot study · 39 adults · 4 months · weight was an exploratory outcome · needs larger trials'. Use 'linked to less regain', not 'prevented'. Takeaway: 'Any change to your medicine is a conversation with your prescriber, including what support you'd have.' Close with the prescriber line.",
+      "working_title": "Stopping a GLP-1: What Slowed Weight Regain in a New Trial #shorts",
+      "target_keyword": "stopping Ozempic weight regain",
+      "trend_stage": "rising",
+      "why": "A permanent high-search question with a fresh Oct 7 RCT hook. The radar marked it caution, so the angle stays trial-data-only. | fact-check: I confirmed the pilot: Hollis-Hansen et al., 'Preventing Weight Regain After GLP-1 Therapy Discontinuation: A Pilot Randomized Controlled Trial', Obesity Science & Practice 2026 (https://onlinelibrary.wiley.com/doi/10.1002/osp4.70194). It randomized 39 adults: 14 to usual care, 12 to the app and 13 to medically tailored meals. Estimated 4-month regain was 10.75% with usual care, 3.60% with the app and 3.58% with the meals. Weight was an EXPLORATORY outcome. The primary outcome was adherence and satisfaction, so 'slowed' must be hedged. For the opening, STEP 1's extension (Wilding et al., 2022, Diabetes Obes Metab) found that a subset of STEP 1 adults regained about two-thirds of the weight they had lost within 1 year of stopping. Keep it to that population. Avoid any framing that suggests stopping is a safe plan.",
+      "pillar": "life-on-glp1"
+    },
+    {
+      "id": "C1",
+      "kind": "carousel",
+      "topic": "Do GLP-1s slow aging? What the semaglutide 'epigenetic clock' study can and can't tell you",
+      "angle": "Rebuild this as a Short: 'Does Semaglutide Slow Aging? What One Study Can and Can't Say'. Keep the beats: what a clock measures, the post hoc design with 84 adults with HIV over 32 weeks, markers only, unknown lifespan effect and unknown relevance to people without HIV. Then cover proven benefits with their populations (SELECT, FLOW), habits and the prescriber line. Cite Nature Communications 2026.",
+      "working_title": "Do GLP-1s Slow Aging? 5 Things the New Study Can and Can't Tell You",
+      "target_keyword": "Ozempic aging",
+      "trend_stage": "rising",
+      "why": "Headlines from Oct 12 (NewsNation, Nautilus) overstate a post hoc marker study. A myth-bust with a list framework fits the carousel quota and the 20% myth slot. | fact-check: The study is real and now peer-reviewed: Corley et al., 'Semaglutide slows epigenetic aging in a randomized trial of HIV-associated lipohypertrophy', Nature Communications, June 2, 2026. It was a post hoc analysis of a 32-week phase 2b RCT (45 semaglutide, 39 placebo) using 17 DNA-methylation clocks. Cite the Nature Communications version, not the 2025 medRxiv preprint. Don't call it 'new'. The results are model estimates adjusted for covariates, so present clock changes as 'estimated' and avoid 'reversed age'. The playbook shows carousels are dead (reach 0–3, n=15) and says to rebuild good carousel topics as Shorts.",
+      "pillar": "myths"
+    }
+  ]
+}

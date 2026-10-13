@@ -1,129 +1,144 @@
-_Based on 57 QA records from 2026-09-29 to 2026-10-12: 13 carousels, 30 Shorts and 14 long-form videos. 14 were held and 2 failed before render (L3 10-10 and L1 10-12). 29 records are about plague (10-07 to 10-12), and 11 of them were held or failed. 6 of the 9 plague long-forms were held or failed. Only L1 10-08, L4 10-10 and **L2 10-12 (new, passed, visuals 6.7)** went through. L4 10-10 and S3 10-12 scored just 4.7 on visuals._
+_Based on 56 QA records from 2026-09-30 to 2026-10-13: 12 carousels, 30 Shorts and 14 long-form videos. 13 were held and 2 failed before render (L3 10-10 and L1 10-12). 29 records are plague (10-07 to 10-12) and 27 are GLP-1 (09-30 to 10-06, plus 10-13). **The focus is back on GLP-1.** All 5 pieces on 10-13 passed, with visual scores of 6.2–7.4. Their repeat problems: captions that stop mid-phrase or split a number, leftover tags overlapping captions, empty placeholder chips, dropped population qualifiers and Threads posts that run long._
 
 _Why items were held (in this window):_
-- _**5 for crediting a claim to the wrong body or date:** L1 10-07, S1 10-08, L1 10-09, L1 10-10 and L3 10-10 (failed)._
-- _**5 for scope errors or unsourced claims:** L1 09-29, S2 10-01, L1 10-06 and S3 10-08 moved a finding to the wrong drug, group, dose or vaccine. L1 10-12 failed for "weakened on purpose", which MMWR never says._
-- _**3 for a status that was incomplete or too reassuring:** S1 10-09, L2 10-10 and S3 10-12. S3 10-12 left out WHO's Oct 10 report._
-- _Also: 2 broken YouTube descriptions (L1 10-07, L1 10-09), 1 for phonetic spellings in subtitles (S1 10-01) and 1 for a causal title (S2 09-30)._
+- _**5 for crediting a claim to the wrong body, page or date:** L1 10-07, S1 10-08, L1 10-09, L1 10-10 and L3 10-10 (failed)._
+- _**4 for scope errors or unsourced claims:**_
+  - _S2 10-01 said "all" participants had T2D or obesity._
+  - _L1 10-06 credited the 200/400 mg result to the 25/75 mg arms._
+  - _S3 10-08 credited one vaccine's result to another._
+  - _L1 10-12 failed for "weakened on purpose", which MMWR never says._
+- _**3 for a status that was incomplete or too reassuring:** S1 10-09, L2 10-10 and S3 10-12._
+- _**Also:** 2 broken YouTube descriptions (L1 10-07, L1 10-09), 1 for phonetic spellings in subtitles (S1 10-01) and 1 for a causal title (S2 09-30, semaglutide "Cuts Asthma Attacks")._
 - _S1 10-07 was held under the old 90 s limit and would pass today, so there is no note for it._
+- _The plague-only rules are now folded into one bullet under Everyone. Use it only if the owner keeps a plague lane._
 
 ### Motion Designer
-- **Every caption, chip and label is a complete phrase of 2 lines or fewer. Never end one on NOT, NO, a dangling word (THE, A, BE, OFFICIALLY), a comma or a dash.**
-  - Status phrases stay on one screen: "NOT CONFIRMED", "NOT RULED OUT", "NO EVIDENCE PNEUMONIC PLAGUE PLAYED A PART".
-  - "CONTACT A DOCTOR OR LOCAL HEALTH AUTHORITY URGENTLY" also stays on one screen. It has been split as "OR LOCAL HEALTH" 4 times, most recently in S2 10-12.
-  - Never split a label like "BSL-2". Chips can't be fragments either: L2 10-12 had "Typically" / "or animal".
-  - Before rendering, check every caption that contains "confirmed", "ruled out", "evidence", "found" or "no".
-  - (Dropped or stranded negations in S1 10-08, S1 and S2 10-09, S1 10-10 and S3 10-12. Trailing commas, dashes or dangling words in every Short on 10-10 and 10-12.)
-- **Shorts: put tags only in the top 60% of the frame (y ≤ 1150 on 1920). Fade each tag out before the next caption appears. If a tag can't be cleared in time, leave it out.** The repeat offenders are "Lungs", "Antibiotic(s)", "Pneumonia", "Y. pestis", "Stomach", "iron" and "Culture". A half-hidden "No…" tag (S2 10-12) can read as a dropped negation. (About 145 overlap findings across 23 Shorts.)
-- **Put stat titles and source sub-lines above or beside the hero art, never on heads or bodies.** (On-hero findings in S1 and S2 09-29, S3 10-05, S2 and S3 10-06 and S2 10-10.)
-- **Make all text at least ~40px on a 1080 frame, or drop the label.** This applies to Shorts and long-form. (About 220 tiny-text findings in long-form. L4 10-10 alone had 42. More in L2 10-12, "Body fluids" and "Droplets", and S2 10-12, "Excess iron" at 23px.)
+- **Every caption is a complete phrase of 2 lines or fewer.**
+  - Never end a caption on THE, A, BE, NO, NOT, ABOUT, PEOPLE, a comma or a dash.
+  - Never break a fixed phrase across screens: "NOT CONFIRMED", "OR LOCAL HEALTH AUTHORITY", "BSL-2", "HAVE A PROTEIN SHAKE".
+  - Chips are never fragments either ("Typically" / "or animal").
+  - (Found in about 20 Shorts, including every Short on 10-10, 10-12 and 10-13. S2 and S3 10-13 ended captions on "THE", "ABOUT", "PEOPLE" and "THEN,". Dropped or stranded negations contributed to the S1 10-09 hold.)
+- **Caption numbers are numerals that match the stat pill exactly, and one number never splits across two caption cards.**
+  - Write "33.9%", not "THIRTY-THREE" / "POINT NINE PERCENT".
+  - Write "1 in 802", not "ONE IN EIGHT".
+  - Write "119 hospitals", not "AND NINETEEN".
+  - Write "Oct 10, 2026", not "OCTOBER TENTH".
+  - If the caption source spells a number out, convert it before rendering.
+  - (Spelled-out numbers in 11 Shorts and split numbers in 5, including S2 and S3 10-13. In S3 10-05 the mistake changed the stat itself.)
+- **Shorts: put tags only in the top 60% of the frame (y ≤ 1150 on 1920). Fade each tag out before the next caption appears; if it can't be cleared in time, leave it out.**
+  - The GLP-1 repeat offenders are "Stomach", "Stomach lining", "Gut", "Fat cell", "Lean mass", "Muscle", "GLP-1 pen", "SNAC", "Weekly shot", "72 weeks" and drug-name labels (Semaglutide, Tirzepatide, Survodutide).
+  - (About 160 overlap findings across 26 Shorts. S1 10-13 had 10 and S2 10-13 had 7.)
+- **Put stat titles and source sub-lines above or beside the hero art, never on faces, heads or bodies.** (On-hero findings in S3 10-05, S2 and S3 10-06, S2 10-10 and S3 10-13.)
+- **Make all text at least ~40px on a 1080 frame, or drop the label.** This applies to Shorts and long-form, including pill tags like "80 weeks", "Placebo: 2 in…" and "GLP-1". (About 220 tiny-text findings across all 12 long-forms. L4 10-10 alone had 42.)
 - **Keep everything inside the safe frame: y ≤ 994 on 1080 and y ≤ 1766 on 1920, with 5% margins.**
-  - Labels under characters standing on the floor are the main risk. Lift the character or put the label above it. L2 10-12 cropped "Rodent", "Hunter", "Sick animal" and "Lungs" at the bottom edge.
-  - Long words like "ROSPOTREBNADZOR" shrink or wrap.
-  - Never crop a head, mascot or icon (S3 10-12, S3 10-10, S2 10-09).
+  - Labels under characters standing on the floor are the main risk. Lift the character or put the label above it.
+  - Never crop a head, mascot, pill or icon at the frame edge (S3 10-13, S1 10-13, S3 10-12, S3 10-10).
   - (About 110 off-screen findings.)
-- **Never open on, hold or end on a lone icon or a chips-only frame on a plain gradient.** Every frame needs a headline plus hero art or a scene covering at least ~25% of the frame. Use full scenes for lab, clinic and outro beats, and don't leave a scene empty while waiting for icons to arrive (L2 10-12 at 2.8 s). (About 80 sparse findings in long-form. L1 10-09 alone had 17.)
-- **Long-form: every scripted headline, status card and stat card renders in its own shot, and nothing from another shot appears in it.** Compare each shot with its scripted title, starting with the compliance cards: "NOT CONFIRMED / WHO, [date]", the dated update cards and the governor's 5,000-tests card. (L2 10-10 dropped them all and showed a title about 230 s early. L4 10-10 showed cards about 250 s early and never rendered 2 beats. L1 10-10 and L1 10-09 had content leak in from other shots.)
+- **Every frame needs a headline plus hero art or a scene covering at least ~25% of the frame.**
+  - Never open on, hold or end on a lone icon or a chips-only frame on a plain gradient.
+  - Never render empty placeholder chips, cells or seat-backs (a bare "–"). If there's no content, delete the element.
+  - (About 80 sparse findings in long-form. Placeholders in S1 10-06, L1 10-13, S2 10-13 and S3 10-13.)
+- **Long-form: every scripted headline, stat card and status card renders in its own shot, and nothing from another shot appears in it.**
+  - Never stitch two unrelated beats into one shot, as L1 10-13 did when it jump-cut to a park "Not head-to-head" card.
+  - Compare each shot with its scripted title before render.
+  - (L2 10-10 and L4 10-10 showed cards about 230–250 s early. L1 10-09, L1 10-10 and L1 10-13 had leaks or mismatches.)
 
 ### Scriptwriters
-- **Shorts: 170 words or fewer, including the dated status line. Cut a beat rather than run long.** (8 of the last 9 plague Shorts went over. S3 10-12 had about 228 words.)
-- **Write normal American spelling, with every stat and date in numerals** ("Oct 10, 2026", "1 in 802", "septicemic"). Never use phonetic respellings. Captions are built from the script, which is how "OCTOBER TENTH" (S3 10-12), "OCTOBER EIGHTH" (S1 10-10) and "ONE IN EIGHT" (S3 10-05) got on screen. (1 hold, plus about 10 findings.)
-- **Use the lab-test wording from CDC's 2020 case definition.**
-  - PCR, antigen, F1 and rapid tests are "presumptive".
-  - "Confirmed" means culture isolation, or a fourfold antibody change in **paired serum**.
-  - An "epidemiologic link" covers only CDC's 3 narrow meanings.
-  - CDC's "Clinical Testing and Diagnosis" page doesn't cover PCR, antigen tests or culture time.
-  - "Treat as soon as suspected" describes what clinicians do. It is never advice to viewers.
-  - (2 holds: L1 10-07 and L1 10-10, plus findings in S3 10-12.)
-- **Never add a mechanism, motive, intent or analogy the source doesn't state. Keep every claim at its source's exact scope and verb.**
-  - MMWR says "attenuated", not "on purpose" (L1 10-12 failed).
-  - "Conceivably… might have" never becomes a "Why…" answer (S2 10-12).
-  - Keep both halves of a recommendation: "the institution and health-care providers".
-  - A finding never moves to another drug, dose, vaccine or group (4 holds).
-  - Use the sources' wording:
-    - "requires direct and close contact"
-    - "can be considered"
-    - "handling tissue or body fluids of an infected animal"
-    - "can sometimes cough droplets"
-    - WHO: bubonic person-to-person spread is "uncommon", not impossible (L2 10-12)
-    - CDC: "exposed to fleas", not "rodent fleas"
-    - Whenever CDC is credited: "Plague can be cured with antibiotics, but treatment must be given quickly". Otherwise write "especially when started early". (Softened in L3 10-10 and L2 10-12.)
-    - WHO's 30–60% is "a case-fatality ratio for the bubonic type".
-  - Never widen pneumonic-only facts to all plague.
-  - (5 holds or fails.)
-- **Every number gets its comparator, timeframe and denominator. On-screen text is never stronger, narrower or more reassuring than the narration.**
-  - Not confirmed ≠ ruled out ≠ "myth".
-  - Credit "not ruled out" to a body that says it, never to our own voice.
-  - Cards keep the source's caveats.
-  - (About 75 findings.)
+- **Shorts: 170 words or fewer, including the status line and the prescriber line. Cut a beat rather than run long.** (7 plague Shorts went over: S2 10-10 had ~235 words and S3 10-12 ~228.)
+- **Spell drug, company and trial names normally: Lilly, amylin, survodutide, Phase 2b, septicemic. Never use phonetic respellings, because captions are built from the script.** (1 hold, S1 10-01, for "amilin" and "Lily's Allura TZP". Mispronunciations were caught in L1 10-01 and L1 10-05.)
+- **Every number carries all of the following:**
+  - what it measures ("% of body weight", not just "13.6%");
+  - which arm or dose ("top dose, 12 mg");
+  - the comparator ("vs 2.4% on placebo"), including placebo dropout rates;
+  - the timeframe ("72 weeks");
+  - the estimand ("if everyone stayed on treatment" vs everyone randomized);
+  - an absolute rate next to any relative figure ("HR 0.43 = 1.4% vs 3.2%").
+  - Never put two units side by side unexplained: S3 10-13 had "two-thirds of lost weight" next to "10.75% of body weight".
+  - Label group averages and substudy size ("160-person body-scan substudy").
+  - (About 15 GLP-1 findings, including a major in S3 10-01.)
+- **Keep every finding at its source's exact scope and verb. It never moves to another drug, dose, arm, group or vaccine.**
+  - Controls' conditions aren't the users' conditions (S2 10-01).
+  - Interim 200/400 mg results aren't the 25/75 mg arms (L1 10-06).
+  - Observational data is "linked to", never "cuts" or "causes".
+  - Never add a mechanism, motive or "why" the source doesn't state ("on purpose", L1 10-12).
+  - Habits from guidelines are "recommended", not "shown to protect muscle on tirzepatide" (S2 10-13).
+  - (4 holds or fails.)
+- **Not proven ≠ disproven ≠ "myth". On-screen text is never stronger, narrower or more reassuring than the narration, and keeps the population and the hedge.** (S2 10-01 "myth", S2 10-06 "not proven", S3 10-06 headline missing T2D, S1 10-05 missing "overweight or obesity", plus plague cards.)
 
 ### Carousel Designer
-- **Every stat or table cell needs a qualifier saying what it counts. Keep the source's hedge ("Can, with close contact", not "Yes") and its exact verb.** Only printed words go inside quote marks: C1 10-12 quoted CDC with a changed verb. Never present our own label as the agency's ("Early signs" C1 10-10, "in recent decades" C1 10-09). (About 20 findings.)
-- **If the title promises a source's list, reproduce the whole list from that one page.** C1 10-10 dropped CDC's "reduce rodent habitat". Helplines show their real hours (C1 10-01).
+- **Every stat or table cell says what it counts, for whom, and against what. Keep the source's hedge and exact verb.**
+  - Give the placebo figure (C1 09-30).
+  - Give the CI or CrI with the model estimate (C2 09-30, C1 10-05).
+  - Write "several of 17 clocks", not "the clocks" (C1 10-13).
+  - Write "no significant difference vs placebo", not "no drop" (C1 10-01 major).
+  - Only printed words go inside quote marks (C1 10-12).
+  - Never present our own label as the source's.
+  - If the title promises a source's list, reproduce the whole list. Helplines show their real hours (C1 10-01, Drinkline).
+  - (About 25 findings.)
 
 ### Social Copywriter & packaging
 - **YouTube description: plain text, 1,500 characters or fewer measured after assembly, with a complete last line.**
   - No JSON, no literal "\n" and no cut-off URL. If it runs long, cut chapters first, then the last source.
-  - Order: (1) a quick answer of **3 lines or fewer** with the dated hedge; (2) the disclaimer plus "If you're worried, talk to a health professional."; (3) up to 4 sources; (4) chapters.
-  - The quick answer is still too long in S1 and S3 10-12, S1 10-10 and L4 10-10.
-  - (2 holds; 6 long-form descriptions cut off or broken.)
-- **Titles: 100 characters or fewer, starting with "Plague" or "Pneumonic plague", with at most 1 abbreviation and no causal or "why" claim the content can't back.**
-  - Status titles keep "suspected" or "reported" plus "as of [date]".
-  - Thumbnails say "NOT CONFIRMED" and "not documented in the US since 1924".
-  - (1 hold, S2 09-30. About 40 findings.)
-- **Every field ends with the disclaimer plus the exact line "If you're worried, talk to a health professional." Nothing comes after it, not even a save prompt (Facebook, C1 10-12).**
-  - Keep Threads bodies to about 350 characters. They ran 410–490 in 5 recent pieces.
-  - Every caption keeps "contact a doctor or local health authority urgently" and CDC's 4 pneumonic signs: fever, cough, shortness of breath, chest pain.
-  - (About 40 findings.)
-- **Copy facts, verbs and attributions word for word from the verified script.**
-  - "Not pneumonic" never becomes "more than pneumonic".
-  - "Remains unclear" never becomes "never confirmed".
-  - "Prescribed" never becomes "given".
-  - One kit stays one kit.
-  - Never use "always", "at all", "proven", "exposed" or "the moment".
-  - Keep "follow label", "played a part in", "Russian authorities", "Reuters reports" and "pneumonia of undetermined etiology".
-  - (Contributed to 5 holds; about 95 findings.)
-- **Put the hedge and the newest dated status in the first line of every caption, before the fold.** (S1 and S2 10-10; about 15 findings.)
-- **Engagement lines ask people to save or share only.** No questions about beliefs, sightings or what people have heard. No emojis on Meta plague captions, no #CDC, #WHO or #outbreak, and no "near you" framing. (S2 10-07, S3 10-09, S1 10-10, S3 10-10.)
+  - Order:
+    1. a quick answer of **3 lines or fewer**, with the hedge;
+    2. the disclaimer plus the prescriber line;
+    3. up to 4 sources (Shorts too: S1 10-10 and S2 10-13 had none);
+    4. chapters.
+  - (2 holds. Cut-off descriptions in L1 09-30, L1 10-01, L1 10-05, L1 10-07 and L1 10-09. The quick answer ran too long in 5 pieces.)
+- **Titles: 100 characters or fewer, with at most 1 abbreviation. Name the outcome, the arm and the comparator, e.g. "20.8% weight loss on top dose vs 4% placebo". Observational results say "linked to", and a "why" title needs a source that explains why.** Lead with the generic name and put the brand in brackets. (1 hold, S2 09-30. About 15 GLP-1 title findings: L1 09-30, S1 10-01, L1 10-05, S1 10-05, L1 10-06, S1 10-06, S3 10-05, S3 10-06 and S2 10-12.)
+- **Every field, including the pinned comment, ends with the disclaimer plus "talk to your doctor or prescriber about whether it's right for you". Nothing comes after it, not even a save prompt. Keep Threads bodies to about 350 characters; cut a clause rather than the prescriber line.** (Threads ran 370–490 characters in 11 pieces, including C1, S1 and S2 10-13. The prescriber line was missing or inexact in L1 09-30, S1 10-05 and Threads posts.)
+- **Copy facts, qualifiers and attributions word for word from the verified script into every caption.**
+  - Keep the full population ("overweight plus a related condition", "no diabetes", "commercially insured US adults").
+  - Keep "estimated", "medically tailored meals", "not only muscle", "Novo Nordisk-funded" and "Lilly reported".
+  - Report negative results too (C1 10-01).
+  - "Regained" never becomes "led to". One kit stays one kit.
+  - Never add "never", "always", "at all", "proven", "the moment" or "expert".
+  - (About 100 findings. Population or qualifiers were dropped in C1, S2 and S3 10-13.)
+- **Put the hedge in the first line of every caption, before the fold. No unhedged absolutes there**, e.g. "They've never been tested" (C2 09-30). (C2 09-30, S3 10-06, C1 10-08, S1 and S2 10-10; about 15 findings.)
+- **Engagement lines ask people to save or share only.**
+  - No open questions about dosing habits, beliefs or experiences (C2 10-01, S2 10-13, plus 4 plague pieces).
+  - No emoji teasers on safety results.
+  - No hashtags that imply an unproven use (#antiaging, C1 10-13) and no #WeightLoss (S1 10-05).
+  - No brand-name, agency or #outbreak hashtags.
 
 ### Everyone
-- **The status must be complete, current, dated to the day each body spoke, and up front. Re-check every named body at publish time, include every dated development, and never end on the most reassuring line.** Current entries:
-  - Oct 6: WHO (Lindmeier), word for word: "No cause of death has been officially confirmed to date and laboratory testing is reportedly underway."
-  - Oct 7: Van Kerkhove said WHO doesn't know the cause (published by AP on Oct 8).
-  - Oct 8: Tedros asked about "a second employee with pneumonia of undetermined cause". The Kremlin called most reports false. Rospotrebnadzor "rejected reports about a second person falling ill" (AP).
-  - Oct 9: governor Kobzev said about 5,000 lab tests found no dangerous pathogens and contact monitoring was completed.
-  - Oct 10: WHO reported "the authorities further reported that the fatality was not due to plague infection." Credit this to the Russian authorities via WHO, and keep WHO's "pneumonia of undetermined etiology" and "key uncertainty" framing.
-
-  Never merge two days, and quote each statement at its exact scope. (3 holds, including S3 10-12; date errors were part of 2 more.)
-- **Every source tag must actually say the line it's attached to, credited to the body that said it.**
-  - Our own lines and analogies get no agency tag (S1 10-12 urgent-contact line; L2 10-12 "remove one element" analogy tagged to WHO).
-  - The 5,000-tests line belongs to the governor (CGTN, Kyiv Independent) and keeps AP's caveat that he didn't say whether pneumonic plague was ruled out. Only UNN credits "Rospotrebnadzor specialists".
+- **State the trial population exactly, everywhere:**
+  - SURMOUNT-1 = obesity, or overweight (BMI 27+) with a weight-related condition, without diabetes.
+  - SELECT = adults with heart disease and overweight/obesity, without diabetes.
+  - The STEP 1 extension was a subset of adults without diabetes.
+  - Name T2D trials as such.
+  - (About 10 findings: C2 09-30, S1 10-05, S2 10-05, L1 10-05, S2 10-13, C1 10-13 and S3 10-13.)
+- **Credit company-reported and top-line numbers to the company, in its own words**: "Lilly reported", "Regeneron's release", Lilly's word "counterfeit".
+  - Say when a figure comes from a press release and not a paper.
+  - Carry the funder into every caption.
+  - Date every regulatory status to the current month: "investigational as of Oct 2026". The Wegovy pill was approved Dec 22, 2025. CagriSema has been filed, with a decision expected Q4 2026.
+  - (About 8 findings: S1 09-30, L1 09-30, S1 10-01, S1 10-05, C1 10-05, S1 10-06, L1 10-05 and S2 10-01's out-of-date "as of September".)
+- **Every source tag must actually say the line it's attached to.**
+  - Our own advice, analogies and figures get no source tag. Never invent a figure (S3 09-30's time estimate).
+  - Advice must match the tagged guideline: S2 10-06 "eat slowly" wasn't in Wharton 2022.
   - No quote marks around a paraphrase. Keep caveats such as "could not independently verify".
   - (5 holds; about 70 findings.)
-- **Keep the source list clean.** Use direct canonical URLs that contain the cited text: no landing, profile, search or AMP pages (BMBL landing page, L1 10-12). List only cited sources, use exact published titles, and give the current "updated" date. "Signs and Symptoms of Plague" was mis-titled in L2 10-10 and L2 10-12. (About 65 findings.)
+- **Every benefit comes with its common side effects, and every tip keeps its safety caveat, in the script and in every caption.**
+  - Fluids: "unless you've been told to limit fluids".
+  - Protein: check first if you have kidney disease.
+  - Exercise: start gently and check in if you're new to it.
+  - Red flags keep their urgency.
+  - Decision-style long-forms note that these medicines aren't right for everyone (label contraindications).
+  - (Major in S1 10-06 TikTok. Also C1 09-30, C1 10-01, S3 10-01, S2 10-05, L1 10-06, C1 10-06, S2 10-13 and L1 10-13.)
+- **Keep the source list clean.**
+  - Use direct canonical URLs that contain the cited text: no search, landing, profile or AMP pages (S3 10-05 PubMed search, L1 10-12 BMBL landing).
+  - List only sources a scene actually cites.
+  - Use exact published titles (L1 10-01, S3 10-01, L1 10-10, L2 10-12).
+  - Give the "last reviewed" date on living pages (L1 09-30, L1 10-05, C1 10-06 NHS 15 May 2026).
+  - (About 65 findings.)
+- **Plague pieces only, if the owner keeps that lane.**
+  - Re-check every named body at publish time. Include every dated development, never merge two days, and never end on the most reassuring line. The newest entry (Oct 10) is WHO: "the authorities further reported that the fatality was not due to plague infection". Credit it to Russian authorities via WHO, and keep "pneumonia of undetermined etiology" (3 holds).
+  - Under CDC's 2020 case definition, PCR, antigen and F1 results are "presumptive". "Confirmed" means culture or a fourfold change in paired serum.
+  - Whenever CDC is credited, use: "Plague can be cured with antibiotics, but treatment must be given quickly".
+  - Keep "contact a doctor or local health authority urgently", tied to possible exposure, plus CDC's 4 pneumonic signs.
+  - The 5,000-tests line belongs to governor Kobzev.
+  - For US case counts, copy CDC's live verb.
 
-  | Page (exact title where flagged) | Updated |
-  |---|---|
-  | CDC Plague Maps and Statistics | Oct 7, 2026 |
-  | CDC Clinical Testing and Diagnosis | Oct 7, 2026 |
-  | CDC About Plague | Aug 24, 2026 |
-  | CDC How Plague Spreads | May 15, 2024 |
-  | CDC "Signs and Symptoms of Plague" | re-check |
-  | WHO plague fact sheet | Sep 29, 2026 |
-  | BMBL | Mar 18, 2026 |
-  | CDC COVID symptoms | Mar 10, 2025 |
-  | PetMD cats/flea | Apr 8, 2025 |
-- **Urgency and safety caveats always go with the advice.**
-  - "Contact a doctor or local health authority urgently" is tied to possible exposure.
-  - List the warning signs for every form the piece covers: CDC's 4 pneumonic signs in full, plus "a swollen, painful lymph node" whenever bubonic or US cases are discussed. (Only one set was given in S3 10-07 and in the L2 10-12 description.)
-  - Flea advice adds "follow the label; some dog flea products (e.g. permethrin) are toxic to cats".
-  - (About 27 findings.)
-- **Say exactly what was measured and who it was about.**
-  - Human cases ≠ animal cases, and a person under observation ≠ a case.
-  - For the US count, copy CDC's live verb at publish time. The 10-12 fact-checker quoted the Oct 7 page: "An average of five human plague cases have been reported each year (range: 0–17 cases per year)". The verb was changed in C1 10-12 and the L2 10-12 description.
-  - Introduce "a laboratory worker in Irkutsk oblast who died" before any pronoun, and never lead with her name.
-  - (About 32 findings.)
+_Updated 2026-10-13 from 56 QA records (27 GLP-1, 29 plague)._
 
-_Updated 2026-10-12 from 57 QA records (29 on plague)._
-
-_Updated 2026-10-12 from 57 QA records._
+_Updated 2026-10-13 from 56 QA records._
