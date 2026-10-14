@@ -1,0 +1,1528 @@
+{
+  "id": "L1-tirzepatide-and-semaglutide-in-heart-fai",
+  "date": "2026-10-14",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Tirzepatide and semaglutide in heart failure with preserved ejection fraction (HFpEF) and obesity: an evergreen deep-dive on the randomized trials (SUMMIT for tirzepatide; STEP-HFpEF and STEP-HFpEF DM for semaglutide), with the Cedars-Sinai release (Oct 13) and the new JCEM tirzepatide meta-analysis as the hook",
+    "angle": "Evergreen SUMMIT decoder, hooked on SUMMIT itself (not news). Title: 'Did Tirzepatide (Zepbound) Help Heart Failure With Obesity (HFpEF)? What SUMMIT Found'. Segments 1–4 as planned, with every SUMMIT number (absolute event rates per arm, HR with CI, KCCQ change, analysed n, median follow-up) copied from the NEJM 2024 paper. STEP-HFpEF and STEP-HFpEF DM each get their own population and timeframe, labelled 'separate trials, not head to head'. Segment 5: 'What's next': (a) a confirmed 2026 meta-analysis with its real journal (e.g. Diabetes Research and Clinical Practice 2026, PubMed 42442557), described as pooled trial data; and (b) optionally the Cedars-Sinai European Heart Journal study (Oct 13, 2026), described ONLY as 'an early animal study in rats and minipigs, not a human result'. Do not mention its low doses and do not imply any human dosing. Segment 6: GI side effects with placebo rates. Segment 7: 'As of Oct 2026, tirzepatide is not FDA-approved to treat heart failure. Lilly withdrew its heart-failure application in 2025 after FDA asked for more data. It is approved for chronic weight management and obstructive sleep apnea.' Segment 8: cardiologist/prescriber questions, label contraindications. No dosing, switching or stopping advice. Close with 'talk to your doctor or prescriber about whether it's right for you'.",
+    "working_title": "Does Tirzepatide (Zepbound) Help Heart Failure? What the SUMMIT Trial Found",
+    "target_keyword": "tirzepatide heart failure",
+    "trend_stage": "evergreen",
+    "why": "Named-drug trial decoders are our proven long-form winner. The topic rests on well-documented NEJM randomized trials, so it can pass the fact-check in depth, and it has a fresh Oct 13 hook. | fact-check: The core topic is sound and evergreen. SUMMIT (NEJM 2024, NCT04847557) is real and fits a long-form trial decoder. Three problems with the hook need fixing first.\n(1) The CEDARS-SINAI OCT 13 WORK IS AN ANIMAL STUDY, NOT OBSERVATIONAL. The Newswise release dated Oct 13, 2026 (European Heart Journal) tested LOW-DOSE semaglutide in rats and minipigs with an HFpEF-like condition. It reports less heart stiffness, enlargement and scarring without much weight loss. Calling it 'observational work … linked to' is wrong. Its 'low doses' framing could also read as a microdosing nudge, which is a banned topic. It may appear only as preclinical animal research, with no low-dose emphasis and no human implication.\n(2) THE 'NEW JCEM TIRZEPATIDE META-ANALYSIS' COULD NOT BE VERIFIED. The October 2026 JCEM issue shows no such paper. The 2026 tirzepatide meta-analyses I found are in Diabetes Research and Clinical Practice (PubMed 42442557, Sept 2026: MACE OR 0.87; all-cause mortality OR 0.84) and Endocrine Practice ('Tirzepatide Beyond Diabetes and Obesity', 17 RCTs, which reports HFpEF HR 0.62, i.e. SUMMIT). Neither is JCEM. Either name a confirmed paper with its real journal or drop it.\n(3) STATUS: tirzepatide has NO heart-failure indication. Lilly withdrew its HFpEF application in May 2025 after FDA asked for another trial. The label (revised Aug 2026, per secondary sources) covers chronic weight management and obstructive sleep apnea. Say this plainly. Prescribing for HFpEF is off-label.\nThe title should name HFpEF + obesity, not 'heart failure' in general. SUMMIT says nothing about reduced-EF heart failure. Keep STEP-HFpEF and STEP-HFpEF DM separate and not head to head. Keep the population for each segment exact: SUMMIT included people with and without T2D.",
+    "pillar": "beyond-weight"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Did Tirzepatide (Zepbound) Help Heart Failure (HFpEF) With Obesity?",
+    "title_candidates": [
+      "Did Tirzepatide (Zepbound) Help Heart Failure With Obesity?",
+      "Tirzepatide (Zepbound) for Heart Failure? What SUMMIT Found",
+      "Tirzepatide and Heart Failure: What the SUMMIT Trial Found",
+      "Heart Failure and Obesity: Did Tirzepatide (Zepbound) Help?",
+      "Can Tirzepatide Help Heart Failure? The SUMMIT Trial Decoded",
+      "Tirzepatide vs Placebo in Heart Failure With Obesity",
+      "Tirzepatide Heart Failure Trial Explained: SUMMIT Results",
+      "Did Tirzepatide Lower Heart Failure Events? 9.9% vs 15.3%",
+      "What Tirzepatide Did to Heart Failure With Obesity (SUMMIT)",
+      "Zepbound and Heart Failure: Is It Approved? What Trials Show"
+    ],
+    "description": "Did tirzepatide (Zepbound) help heart failure with obesity? In SUMMIT, yes on both main measures, mostly through fewer heart-failure events. Not FDA-approved for heart failure as of Oct 2026.\n\nSUMMIT (NEJM, Lilly-funded, 731 adults with HFpEF and obesity, median about 2 years): CV death or worsening heart-failure event 9.9% on tirzepatide vs 15.3% on placebo (HR 0.62). Symptom scores 6.9 points better than placebo at 52 weeks. CV deaths 2.2% vs 1.4%, too few to call. 6.3% stopped for side effects, mainly gut-related, vs 1.4% on placebo.\n\nEducation only, not medical advice. Talk to your doctor or prescriber about whether it's right for you.\n\nSources:\n1. Packer M, et al. NEJM 2025 (online Nov 2024). https://www.nejm.org/doi/full/10.1056/NEJMoa2410027\n2. Kosiborod M, et al. Lancet 2024 (pooled HF trials). https://doi.org/10.1016/S0140-6736(24)01643-X\n3. Lilly withdrew tirzepatide's HF application, 2025. https://conscienhealth.org/2025/05/03/lilly-withdraws-tirzepatide-application-to-fda-for-heart-failure/\n\n0:00 The SUMMIT question\n0:54 What HFpEF is\n1:58 Inside SUMMIT\n3:10 Result 1: fewer events\n4:13 Result 2: feeling better\n5:26 Why it might help\n6:08 The semaglutide trials\n7:48 What's next\n8:48 Side effects\n10:15 The number that went the other way\n11:14 Where it stands\n12:29 Questions for your cardiologist\n13:24 Recap\n\n#Tirzepatide #HFpEF #GLP1\n\nEducation only, not medical advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "tags": [
+      "tirzepatide heart failure",
+      "Zepbound heart failure",
+      "Mounjaro heart failure",
+      "SUMMIT trial",
+      "tirzepatide HFpEF",
+      "semaglutide heart failure",
+      "STEP-HFpEF",
+      "GLP-1 heart failure",
+      "tirzepatide SUMMIT results",
+      "HFpEF obesity",
+      "GLP-1 HFpEF",
+      "tirzepatide FDA approval",
+      "KCCQ score",
+      "tirzepatide cardiovascular",
+      "GLP-1 cardiovascular trials",
+      "preserved ejection fraction"
+    ],
+    "pinned_comment": "In SUMMIT (731 adults with HFpEF and obesity, about 2 years), worsening heart-failure events happened to 8.0% on tirzepatide vs 14.2% on placebo, but cardiovascular deaths went the other way: 2.2% vs 1.4%. With only 13 deaths in total (HR 1.58, 95% CI 0.52 to 4.83), the trial was too small to call it either way. Tirzepatide is not FDA-approved for heart failure as of Oct 2026. Save this for your next cardiology visit. This content is for educational purposes only and is not medical advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "FEWER HEART-FAILURE EVENTS?",
+      "highlight_word": "FEWER",
+      "subtext": "SUMMIT: HFpEF+obesity vs placebo",
+      "layout": "versus",
+      "psychology": "Contrast and comparison: the title asks whether tirzepatide helped, and a placebo-vs-tirzepatide face-off hints that the answer is a measurable difference without giving the numbers. It also matches our only long-form breakout (versus, 'did X beat Y').",
+      "emotion": "Curious, quietly hopeful",
+      "hero_art": "heart",
+      "hero_face": "worried",
+      "second_art": "heart",
+      "second_face": "proud",
+      "prop": "none",
+      "accent": "blue",
+      "badge": "",
+      "versus_left": "PLACEBO",
+      "versus_right": "TIRZEPATIDE"
+    },
+    "chapters": "0:00 The SUMMIT question\n0:54 What HFpEF is\n1:58 Inside SUMMIT\n3:10 Result 1: fewer events\n4:13 Result 2: feeling better\n5:26 Why it might help\n6:08 The semaglutide trials\n7:48 What's next\n8:48 Side effects\n10:15 The number that went the other way\n11:14 Where it stands\n12:29 Questions for your cardiologist\n13:24 Recap"
+  },
+  "media": {
+    "video": "L1-tirzepatide-and-semaglutide-in-heart-fai.mp4",
+    "duration": 842.894,
+    "thumbnail": "L1-tirzepatide-and-semaglutide-in-heart-fai-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-14T18:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "OuVyNR712RI",
+      "url": "https://youtu.be/OuVyNR712RI",
+      "published_at": "2026-10-14T18:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-10-14T02:47:44.454Z",
+  "script": {
+    "working_title": "Did Tirzepatide (Zepbound) Help Heart Failure With Obesity (HFpEF)? What SUMMIT Found",
+    "target_keyword": "tirzepatide heart failure",
+    "hook_pattern": "Open loop plus stakes and specificity. The first line asks the title question, and absolute event rates answer it within about 15 seconds. Then the video opens a loop, \"one number went the other way\", which pays off in the cardiovascular-death section near the end.",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "The SUMMIT question",
+        "narration": "Did tirzepatide, sold as Zepbound and Mounjaro, help people with heart failure and obesity? In a trial called SUMMIT, the short answer is yes, on both of its main measures.",
+        "on_screen_text": "Tirzepatide + heart failure?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon heart climbing mountain summit"
+        },
+        "retention_device": "Title question asked in the first line and answered within 10 seconds",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "The SUMMIT question",
+        "narration": "Over a median of about two years, 9.9% of people on tirzepatide had a worsening heart-failure event or died of cardiovascular causes, versus 15.3% on placebo.",
+        "on_screen_text": "9.9% vs 15.3%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "9.9% vs 15.3%",
+          "stat_label": "HF event or CV death, ~2 years",
+          "stock_query": "two bar charts heart icons"
+        },
+        "retention_device": "Concrete proof point with both arms",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "The SUMMIT question",
+        "narration": "But one number in that same paper went the other way. By the end of this video, you'll know exactly what it is, and why the trial was too small to call it either way.",
+        "on_screen_text": "One number went the other way",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over research paper"
+        },
+        "retention_device": "Main open loop planted (paid off in 'The number that went the other way')",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "The SUMMIT question",
+        "narration": "Here's the plan: what this type of heart failure is, what SUMMIT tested, the results in real numbers, how two semaglutide trials compare, the side effects, and the questions to bring to your cardiologist.",
+        "on_screen_text": "What you'll get",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "What HFpEF is",
+            "SUMMIT's real numbers",
+            "Semaglutide trials",
+            "Side effects",
+            "Cardiologist questions"
+          ],
+          "stock_query": "checklist clipboard with heart"
+        },
+        "retention_device": "Promise roadmap",
+        "source_ids": []
+      },
+      {
+        "id": "s05",
+        "section": "The SUMMIT question",
+        "narration": "One thing up front: as of October 2026, tirzepatide is not FDA-approved to treat heart failure. We'll get to why.",
+        "on_screen_text": "Not approved for heart failure (Oct 2026)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "official document with question mark"
+        },
+        "retention_device": "Second open loop (why it isn't approved)",
+        "source_ids": [
+          "zepbound_pi"
+        ]
+      },
+      {
+        "id": "s06",
+        "section": "What HFpEF is",
+        "narration": "Heart failure is a scary name, but it doesn't mean your heart has stopped. It means your heart can't keep up with what your body needs.",
+        "on_screen_text": "Heart failure ≠ heart stopped",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "tired cartoon heart jogging"
+        },
+        "retention_device": "Myth-correcting reframe",
+        "source_ids": [
+          "aha_hf_2022"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "What HFpEF is",
+        "narration": "Doctors sort it by ejection fraction: the share of blood your main pumping chamber pushes out with each beat.",
+        "on_screen_text": "Ejection fraction = pump share",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "heart chamber squeezing water out"
+        },
+        "retention_device": "Plain-language definition",
+        "source_ids": [
+          "aha_hf_2022"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "What HFpEF is",
+        "narration": "In heart failure with preserved ejection fraction, or HFpEF, that number is 50% or higher. The squeeze looks normal. The trouble is filling.",
+        "on_screen_text": "HFpEF: EF 50% or more",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "50%+",
+          "stat_label": "Ejection fraction in HFpEF",
+          "stock_query": "heart gauge showing normal pump"
+        },
+        "retention_device": "Counterintuitive twist (normal pump, still heart failure)",
+        "source_ids": [
+          "aha_hf_2022"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "What HFpEF is",
+        "narration": "Picture a balloon made of thick, stiff rubber. The heart muscle doesn't relax and fill easily, so pressure can back up toward the lungs.",
+        "on_screen_text": "Stiff heart, poor filling",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stiff rubber balloon hard to inflate"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": [
+          "aha_hf_2022"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "What HFpEF is",
+        "narration": "That's why people with HFpEF often feel breathless, tired, and swollen in the ankles or legs, especially when they move.",
+        "on_screen_text": "Common symptoms",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Breathlessness",
+            "Tiredness",
+            "Swollen ankles or legs"
+          ],
+          "stock_query": "person pausing on stairs breathless"
+        },
+        "retention_device": "Viewer self-recognition",
+        "source_ids": [
+          "aha_hf_2022"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "What HFpEF is",
+        "narration": "Here's why this matters for GLP-1 medicines: many people with HFpEF also live with obesity, and researchers describe an obesity-related form where extra body fat and inflammation seem to add strain.",
+        "on_screen_text": "Obesity-related HFpEF",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "heart carrying heavy weights"
+        },
+        "retention_device": "Connects the topic to the GLP-1 viewer",
+        "source_ids": [
+          "summit",
+          "step_hfpef"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "What HFpEF is",
+        "narration": "So researchers asked a bold question. If extra body fat is part of the problem, could a medicine that targets it ease the heart failure too?",
+        "on_screen_text": "Treat the weight, help the heart?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist thinking lightbulb heart"
+        },
+        "retention_device": "Question that sets up the next section",
+        "source_ids": []
+      },
+      {
+        "id": "s13",
+        "section": "Inside SUMMIT",
+        "narration": "SUMMIT was a randomized, placebo-controlled trial funded by Eli Lilly, which makes tirzepatide. It was published in the New England Journal of Medicine.",
+        "on_screen_text": "Randomized, Lilly-funded",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "medical journal on desk"
+        },
+        "retention_device": "Chapter reset with credibility cue",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "Inside SUMMIT",
+        "narration": "731 adults were randomized: 364 to weekly tirzepatide injections and 367 to placebo injections.",
+        "on_screen_text": "731 adults randomized",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "731",
+          "stat_label": "Randomized: 364 tirzepatide, 367 placebo",
+          "stock_query": "crowd split into two groups"
+        },
+        "retention_device": "Big number",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "Inside SUMMIT",
+        "narration": "To join, people needed heart failure with an ejection fraction of 50% or more, a BMI of 30 or more, symptoms that limited their daily activity, and other signs of heart strain set by the trial.",
+        "on_screen_text": "Who could join",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Heart failure, EF 50% or more",
+            "BMI 30 or more",
+            "Symptoms limiting daily life",
+            "Plus other heart-strain criteria"
+          ],
+          "stock_query": "entry checklist with heart icon"
+        },
+        "retention_device": "Exact population (so viewers can see if it applies to them)",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "Inside SUMMIT",
+        "narration": "SUMMIT included people with and without type 2 diabetes. Remember that, because the semaglutide trials split those groups apart.",
+        "on_screen_text": "With and without type 2 diabetes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two groups under one umbrella"
+        },
+        "retention_device": "Mini open loop (pays off in the semaglutide section)",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "Inside SUMMIT",
+        "narration": "It was double-blind: neither participants nor their doctors knew who got the real drug. Median follow-up was 104 weeks, about two years.",
+        "on_screen_text": "104 weeks, double-blind",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "blindfolded doctor holding two pens"
+        },
+        "retention_device": "Study-design micro-story",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "Inside SUMMIT",
+        "narration": "There were two main questions. One: did fewer people die of cardiovascular causes or have a worsening heart-failure event? Two: did people feel better at one year?",
+        "on_screen_text": "Two main questions",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "CV death or worsening HF event",
+            "Symptoms at 52 weeks"
+          ],
+          "stock_query": "two question marks over heart"
+        },
+        "retention_device": "Sets up two payoffs",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "Inside SUMMIT",
+        "narration": "A worsening heart-failure event meant a hospital stay, an urgent visit needing IV treatment, or stepping up oral diuretic pills for worsening heart failure.",
+        "on_screen_text": "What counted as an event",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Hospital stay",
+            "Urgent visit needing IV treatment",
+            "More oral diuretic"
+          ],
+          "stock_query": "hospital building with ambulance cartoon"
+        },
+        "retention_device": "Concrete definition",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Inside SUMMIT",
+        "narration": "So, did it work? Let's take the hard outcome first.",
+        "on_screen_text": "Did it work?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "drumroll envelope opening"
+        },
+        "retention_device": "Mini-cliffhanger before the results",
+        "source_ids": []
+      },
+      {
+        "id": "s21",
+        "section": "Result 1: fewer events",
+        "narration": "The combined outcome, cardiovascular death or a worsening heart-failure event, happened to 36 people on tirzepatide, 9.9%. On placebo, it was 56 people, 15.3%.",
+        "on_screen_text": "36 vs 56 people",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "two piles of heart tokens"
+        },
+        "retention_device": "Payoff of the first main question",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Result 1: fewer events",
+        "narration": "That's a hazard ratio of 0.62, roughly a 38% lower risk over time. The 95% confidence interval ran from 0.41 to 0.95, so the result was statistically significant.",
+        "on_screen_text": "HR 0.62 (9.9% vs 15.3%)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "HR 0.62",
+          "stat_label": "9.9% vs 15.3%; 95% CI 0.41–0.95",
+          "stock_query": "downward arrow on risk chart"
+        },
+        "retention_device": "Relative figure paired with the absolute rates",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Result 1: fewer events",
+        "narration": "In plain terms: across about two years, roughly 5 fewer people out of every 100 had one of these events.",
+        "on_screen_text": "About 5 fewer per 100",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "grid of 100 little people icons"
+        },
+        "retention_device": "Absolute translation",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Result 1: fewer events",
+        "narration": "Most of that came from heart-failure events. They happened to 29 people on tirzepatide, 8.0%, versus 52 on placebo, 14.2%. Hazard ratio 0.54.",
+        "on_screen_text": "HF events: 8.0% vs 14.2%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "8.0% vs 14.2%",
+          "stat_label": "Worsening HF events, HR 0.54",
+          "stock_query": "fewer hospital beds illustration"
+        },
+        "retention_device": "Surprising breakdown",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "Result 1: fewer events",
+        "narration": "And the death part of that combined outcome? Hold that thought. That's the number that went the other way, and we'll open it up near the end.",
+        "on_screen_text": "Hold that thought",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "locked box with question mark"
+        },
+        "retention_device": "Re-opens the main loop",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "Result 2: feeling better",
+        "narration": "The second main question was about daily life, measured with the KCCQ, short for Kansas City Cardiomyopathy Questionnaire.",
+        "on_screen_text": "Measuring daily life",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "questionnaire with heart checkbox"
+        },
+        "retention_device": "Chapter reset",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Result 2: feeling better",
+        "narration": "Its summary score rates symptoms and physical limits from 0 to 100, and higher is better. Basically: how much is heart failure getting in your way?",
+        "on_screen_text": "0–100, higher is better",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "score dial from 0 to 100"
+        },
+        "retention_device": "Direct question to the viewer",
+        "source_ids": [
+          "summit",
+          "step_hfpef"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Result 2: feeling better",
+        "narration": "At 52 weeks, scores rose by an average of 19.5 points on tirzepatide, versus 12.7 points on placebo.",
+        "on_screen_text": "+19.5 vs +12.7",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "+19.5 vs +12.7",
+          "stat_label": "KCCQ score change at 52 weeks",
+          "stock_query": "two rising bars chart"
+        },
+        "retention_device": "Payoff of the second main question",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "Result 2: feeling better",
+        "narration": "That's a difference of 6.9 points in favor of tirzepatide, with a 95% confidence interval of 3.3 to 10.6.",
+        "on_screen_text": "6.9 points better",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "6.9",
+          "stat_label": "Points vs placebo; 95% CI 3.3–10.6",
+          "stock_query": "gap between two bars highlighted"
+        },
+        "retention_device": "Precise number",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Result 2: feeling better",
+        "narration": "Wait, why did the placebo group improve by almost 13 points? Possible reasons: closer check-ups and extra attention in a trial, expectations that shape how people rate symptoms, and people often enrolling when they feel at their worst. That's why the fair comparison is against placebo, not against zero.",
+        "on_screen_text": "Why placebo improved too",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "nurse checking in smiling patient"
+        },
+        "retention_device": "'But here's where it gets weird' question",
+        "source_ids": []
+      },
+      {
+        "id": "s31",
+        "section": "Result 2: feeling better",
+        "narration": "Other measures moved the same way. Six-minute walk distance, body weight, and a blood marker of inflammation called C-reactive protein all improved more on tirzepatide.",
+        "on_screen_text": "Other measures improved",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "6-minute walk distance",
+            "Body weight",
+            "C-reactive protein"
+          ],
+          "stock_query": "person walking with stopwatch"
+        },
+        "retention_device": "Rapid list beat",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Result 2: feeling better",
+        "narration": "So on paper, SUMMIT hit both targets. But why would a medicine known for weight loss change how a stiff heart behaves?",
+        "on_screen_text": "Why would it help?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two targets hit by arrows"
+        },
+        "retention_device": "But/therefore pivot into a new question",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Why it might help",
+        "narration": "Tirzepatide activates receptors for two gut hormones, GLP-1 and GIP, which help regulate appetite and blood sugar.",
+        "on_screen_text": "Two gut hormones: GLP-1 + GIP",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "two keys unlocking gut hormone locks"
+        },
+        "retention_device": "Chapter reset with mechanism",
+        "source_ids": [
+          "zepbound_pi"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Why it might help",
+        "narration": "The SUMMIT investigators' idea was that less body fat and less inflammation could ease the strain on a stiff heart. But the trial wasn't built to prove which piece mattered most.",
+        "on_screen_text": "Less fat, less inflammation?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "heart relieved of weight and fire"
+        },
+        "retention_device": "Honest uncertainty",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "Why it might help",
+        "narration": "A smaller heart-MRI substudy of SUMMIT offered a clue. Compared with placebo, tirzepatide reduced the mass of the heart's main pumping chamber and the fat tissue around the heart.",
+        "on_screen_text": "Heart MRI: a clue",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly heart scan on screen"
+        },
+        "retention_device": "Micro-story about a substudy",
+        "source_ids": [
+          "summit_cmr"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Why it might help",
+        "narration": "But tirzepatide isn't the only GLP-1 medicine tested here. Semaglutide, sold as Wegovy and Ozempic, had two trials of its own, and the fine print matters.",
+        "on_screen_text": "Semaglutide's turn",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two cartoon pens side by side"
+        },
+        "retention_device": "Section cliffhanger",
+        "source_ids": [
+          "step_hfpef",
+          "step_hfpef_dm"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "The semaglutide trials",
+        "narration": "Quick warning before any numbers: these are separate trials, with different people and different main questions. They were never compared head to head, so you can't rank the drugs from them.",
+        "on_screen_text": "Separate trials, not head to head",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "SUMMIT vs STEP ranks the drugs",
+          "fact": "Separate trials, not head to head",
+          "stock_query": "two separate race tracks"
+        },
+        "retention_device": "Myth-fact pattern interrupt",
+        "source_ids": [
+          "summit",
+          "step_hfpef",
+          "step_hfpef_dm"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "The semaglutide trials",
+        "narration": "STEP-HFpEF, published in 2023 and funded by Novo Nordisk, enrolled 529 adults with an ejection fraction of 45% or more, a BMI of 30 or more, and no diabetes.",
+        "on_screen_text": "STEP-HFpEF: no diabetes",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "529 adults",
+            "EF 45% or more",
+            "BMI 30 or more",
+            "No diabetes"
+          ],
+          "stock_query": "group of adults with clipboard"
+        },
+        "retention_device": "Payoff of the 'groups split apart' loop",
+        "source_ids": [
+          "step_hfpef"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "The semaglutide trials",
+        "narration": "Over 52 weeks, KCCQ scores rose 16.6 points on semaglutide versus 8.7 on placebo, a difference of 7.8 points.",
+        "on_screen_text": "+16.6 vs +8.7",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "+16.6 vs +8.7",
+          "stat_label": "KCCQ change, 52 weeks, STEP-HFpEF",
+          "stock_query": "rising score bars"
+        },
+        "retention_device": "Number comparison",
+        "source_ids": [
+          "step_hfpef"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "The semaglutide trials",
+        "narration": "Body weight fell 13.3% on semaglutide versus 2.6% on placebo, and six-minute walk distance rose 21.5 meters versus 1.2 meters.",
+        "on_screen_text": "−13.3% vs −2.6% weight",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−13.3% vs −2.6%",
+          "stat_label": "Body weight change, 52 weeks",
+          "stock_query": "scale and walking path"
+        },
+        "retention_device": "Two concrete numbers",
+        "source_ids": [
+          "step_hfpef"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "The semaglutide trials",
+        "narration": "STEP-HFpEF DM, published in 2024 and also funded by Novo Nordisk, tested the same idea in 616 adults with type 2 diabetes, using the same ejection fraction and BMI cut-offs.",
+        "on_screen_text": "STEP-HFpEF DM: type 2 diabetes",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "616 adults randomized",
+            "Type 2 diabetes",
+            "EF 45% or more",
+            "BMI 30 or more"
+          ],
+          "stock_query": "glucose meter beside heart"
+        },
+        "retention_device": "Contrast with the previous trial",
+        "source_ids": [
+          "step_hfpef_dm"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "The semaglutide trials",
+        "narration": "After 52 weeks, KCCQ scores rose 13.7 points versus 6.4 on placebo, a difference of 7.3. Body weight fell 9.8% versus 3.4%.",
+        "on_screen_text": "+13.7 vs +6.4",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "+13.7 vs +6.4",
+          "stat_label": "KCCQ change, 52 weeks, STEP-HFpEF DM",
+          "stock_query": "bar chart with smaller gap"
+        },
+        "retention_device": "Number comparison",
+        "source_ids": [
+          "step_hfpef_dm"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "The semaglutide trials",
+        "narration": "Here's the key difference. Both STEP trials lasted one year and focused on symptoms, physical function and weight. They weren't designed to show whether hospital stays or deaths went down. SUMMIT was designed with that combined outcome as a main goal.",
+        "on_screen_text": "Symptoms vs hard outcomes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two different finish lines"
+        },
+        "retention_device": "Reveal that reframes the comparison",
+        "source_ids": [
+          "step_hfpef",
+          "step_hfpef_dm",
+          "summit"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "The semaglutide trials",
+        "narration": "So what happens when you pool several trials together? That's where the evidence is heading next.",
+        "on_screen_text": "Pooling the trials",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "puzzle pieces joining together"
+        },
+        "retention_device": "New open loop",
+        "source_ids": []
+      },
+      {
+        "id": "s45",
+        "section": "What's next",
+        "narration": "In 2024, The Lancet published a pooled analysis of four semaglutide trials: SELECT, FLOW, STEP-HFpEF and STEP-HFpEF DM. It looked at participants who had heart failure with mildly reduced or preserved ejection fraction.",
+        "on_screen_text": "4 trials pooled (Lancet 2024)",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "four folders merging into one"
+        },
+        "retention_device": "Chapter reset with new evidence",
+        "source_ids": [
+          "lancet_pooled"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "What's next",
+        "narration": "Across those combined trials, fewer people on semaglutide had cardiovascular death or a worsening heart-failure event than on placebo, about 31% lower risk. That again came mainly from fewer heart-failure events; the effect on cardiovascular death alone wasn't statistically significant.",
+        "on_screen_text": "Mainly fewer HF events",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "shrinking stack of event cards"
+        },
+        "retention_device": "Payoff of the pooling loop, echoing the 'which outcome?' theme",
+        "source_ids": [
+          "lancet_pooled"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "What's next",
+        "narration": "Pooling helps when single trials are small, but it has limits. These trials enrolled different people for different main questions, so it's supportive evidence, not the final word.",
+        "on_screen_text": "Supportive, not final",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scale weighing puzzle pieces"
+        },
+        "retention_device": "But/therefore caution",
+        "source_ids": [
+          "lancet_pooled"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "What's next",
+        "narration": "For tirzepatide, the honest summary is one positive randomized trial, SUMMIT, plus supporting heart-MRI data. Before any of that matters to you, though, there are trade-offs.",
+        "on_screen_text": "1 trial + MRI data",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "single trophy beside heart scan"
+        },
+        "retention_device": "Bridge to side effects",
+        "source_ids": [
+          "summit",
+          "summit_cmr"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "Side effects",
+        "narration": "In SUMMIT, the side effects that led people to stop were mainly in the gut. The label's most common ones are familiar for this class: nausea, diarrhea, vomiting and constipation.",
+        "on_screen_text": "Mostly gut side effects",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon stomach feeling queasy"
+        },
+        "retention_device": "Chapter reset",
+        "source_ids": [
+          "summit",
+          "zepbound_pi"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "Side effects",
+        "narration": "Adverse events, mainly gastrointestinal, led 6.3% of people to stop tirzepatide, compared with 1.4% who stopped placebo.",
+        "on_screen_text": "Stopped: 6.3% vs 1.4%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "6.3% vs 1.4%",
+          "stat_label": "Stopped due to adverse events",
+          "stock_query": "two small groups leaving door"
+        },
+        "retention_device": "Placebo-paired number",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "Side effects",
+        "narration": "According to the label, gut side effects are reported more often while the dose is being increased. Your prescriber manages that process, not the internet.",
+        "on_screen_text": "Your prescriber leads",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient talking calmly"
+        },
+        "retention_device": "Practical 'you' framing",
+        "source_ids": [
+          "zepbound_pi"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "Side effects",
+        "narration": "With heart failure there's an extra wrinkle. The label warns that dehydration from vomiting or diarrhea can lead to kidney injury, and many people with heart failure take water pills.",
+        "on_screen_text": "Dehydration and kidneys",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon kidneys with water drop"
+        },
+        "retention_device": "'Extra wrinkle' re-hook",
+        "source_ids": [
+          "zepbound_pi",
+          "aha_hf_2022"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "Side effects",
+        "narration": "So don't guess with fluids. If you've been told to limit fluids, stick to that plan, and call your care team early if you can't keep food or drinks down.",
+        "on_screen_text": "Can't keep fluids down? Call",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "phone call to care team"
+        },
+        "retention_device": "Actionable safety tip",
+        "source_ids": [
+          "zepbound_pi"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "Side effects",
+        "narration": "In the semaglutide trials, serious adverse events were actually less common on the drug: 13.3% versus 26.7% on placebo in STEP-HFpEF, and 17.7% versus 28.8% in STEP-HFpEF DM.",
+        "on_screen_text": "Serious events: 13.3% vs 26.7%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "13.3% vs 26.7%",
+          "stat_label": "Serious adverse events, STEP-HFpEF",
+          "stock_query": "smaller warning sign vs larger"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "step_hfpef",
+          "step_hfpef_dm"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "Side effects",
+        "narration": "The label also warns about gallbladder problems, pancreatitis, and low blood sugar when used with insulin or a sulfonylurea. Ask which warning signs mean call right away.",
+        "on_screen_text": "Know the warning signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Gallbladder problems",
+            "Pancreatitis",
+            "Low blood sugar with insulin or sulfonylurea"
+          ],
+          "stock_query": "warning signs on road"
+        },
+        "retention_device": "List beat",
+        "source_ids": [
+          "zepbound_pi"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "Side effects",
+        "narration": "Okay. Time to open the loop from the very start: the number that went the other way.",
+        "on_screen_text": "The number, revealed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curtain opening on spotlight"
+        },
+        "retention_device": "Signals the main loop payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s57",
+        "section": "The number that went the other way",
+        "narration": "Cardiovascular deaths in SUMMIT: 8 people on tirzepatide, 2.2%, versus 5 people on placebo, 1.4%.",
+        "on_screen_text": "CV deaths: 2.2% vs 1.4%",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "two small number tokens"
+        },
+        "retention_device": "Main loop payoff",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "The number that went the other way",
+        "narration": "That's a hazard ratio of 1.58, which looks worse for tirzepatide. But the 95% confidence interval runs from 0.52 all the way to 4.83.",
+        "on_screen_text": "HR 1.58 (2.2% vs 1.4%)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "HR 1.58",
+          "stat_label": "2.2% vs 1.4%; 95% CI 0.52–4.83",
+          "stock_query": "very wide ruler range"
+        },
+        "retention_device": "Tension then 'but'",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "The number that went the other way",
+        "narration": "That range is enormous. It covers a big benefit, no difference, and a big harm. With just 13 deaths in total, the trial can't tell those apart.",
+        "on_screen_text": "Only 13 deaths in total",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "blurry target too few darts"
+        },
+        "retention_device": "Vivid explanation",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "The number that went the other way",
+        "narration": "So this result doesn't show that tirzepatide raised cardiovascular deaths, and it doesn't show that it lowered them. SUMMIT was too small to answer that question.",
+        "on_screen_text": "Too few deaths to call",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "SUMMIT showed more heart deaths",
+          "fact": "Too few deaths to tell either way",
+          "stock_query": "balance scale perfectly level"
+        },
+        "retention_device": "Myth-fact clarity",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "The number that went the other way",
+        "narration": "Here's the bigger lesson. The headline result, 9.9% versus 15.3%, came mostly from fewer heart-failure events, not fewer deaths. Whenever you hear 'heart benefit', ask: which outcome?",
+        "on_screen_text": "Always ask: which outcome?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person reading headline with magnifier"
+        },
+        "retention_device": "Takeaway skill for the viewer",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "The number that went the other way",
+        "narration": "And that's exactly the kind of question regulators weigh.",
+        "on_screen_text": "What regulators weigh",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "official scale with documents"
+        },
+        "retention_device": "Pays off the 'why not approved' loop next",
+        "source_ids": []
+      },
+      {
+        "id": "s63",
+        "section": "Where it stands",
+        "narration": "As of October 2026, tirzepatide is not FDA-approved to treat heart failure. In May 2025, Lilly said it had withdrawn its heart-failure application after the FDA indicated another confirmatory trial would be needed.",
+        "on_screen_text": "Not approved for HF (Oct 2026)",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "application folder returned stamp"
+        },
+        "retention_device": "Payoff of the second open loop",
+        "source_ids": [
+          "zepbound_pi",
+          "lilly_hf_withdrawal"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "Where it stands",
+        "narration": "In the US, as of October 2026, tirzepatide as Zepbound is approved for chronic weight management, and for moderate to severe obstructive sleep apnea in adults with obesity. As Mounjaro, it's approved for type 2 diabetes, and since August 2026 to lower the risk of heart attack, stroke and cardiovascular death in adults with type 2 diabetes at high risk. None of these is a heart-failure approval.",
+        "on_screen_text": "Approved uses (Oct 2026)",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Chronic weight management (Zepbound)",
+            "Moderate to severe sleep apnea with obesity (Zepbound)",
+            "Type 2 diabetes (Mounjaro)",
+            "Lower heart attack/stroke risk in T2D at high risk (Mounjaro, Aug 2026)"
+          ],
+          "stock_query": "four approval checkmarks"
+        },
+        "retention_device": "Clear status list",
+        "source_ids": [
+          "zepbound_pi",
+          "mounjaro_pi",
+          "mounjaro_cv_approval"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "Where it stands",
+        "narration": "So if a doctor prescribes it to someone with HFpEF, it's for one of those approved uses, or it's off-label. Either way, that's a decision for you and your clinician.",
+        "on_screen_text": "A decision with your clinician",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient and cardiologist at desk"
+        },
+        "retention_device": "Practical framing",
+        "source_ids": [
+          "zepbound_pi"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "Where it stands",
+        "narration": "These medicines also aren't right for everyone. The label says not to use tirzepatide if you or your family have a history of medullary thyroid cancer or MEN 2, or if you've had a serious allergic reaction to it.",
+        "on_screen_text": "Not right for everyone",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Personal or family history of medullary thyroid cancer",
+            "MEN 2",
+            "Serious allergy to tirzepatide"
+          ],
+          "stock_query": "stop hand with label"
+        },
+        "retention_device": "Safety beat before the checklist",
+        "source_ids": [
+          "zepbound_pi"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "Where it stands",
+        "narration": "So what do you actually do with all of this? Here's a checklist for your next appointment.",
+        "on_screen_text": "Your appointment checklist",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "notebook with checklist and pen"
+        },
+        "retention_device": "Promise of a practical payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s68",
+        "section": "Questions for your cardiologist",
+        "narration": "Question one: what type of heart failure do I have, and what's my ejection fraction? SUMMIT only studied people at 50% or above, with a BMI of 30 or more, plus other signs of heart strain.",
+        "on_screen_text": "Q1: My type and EF?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "patient asking doctor question"
+        },
+        "retention_device": "Numbered checklist begins",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "Questions for your cardiologist",
+        "narration": "Question two: how would a GLP-1 medicine fit with my diuretics and other heart medicines, and who will keep an eye on my fluids and kidneys?",
+        "on_screen_text": "Q2: Fit with my heart meds?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill organizer and heart"
+        },
+        "retention_device": "Checklist momentum",
+        "source_ids": []
+      },
+      {
+        "id": "s70",
+        "section": "Questions for your cardiologist",
+        "narration": "Question three: do I have an approved reason to take it, such as weight management, sleep apnea, or type 2 diabetes, and will my insurance cover it?",
+        "on_screen_text": "Q3: Approved use? Coverage?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "insurance card and checklist"
+        },
+        "retention_device": "Checklist momentum",
+        "source_ids": [
+          "zepbound_pi",
+          "mounjaro_pi"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "Questions for your cardiologist",
+        "narration": "Question four: which side effects mean I should call you, and which can wait until my next visit?",
+        "on_screen_text": "Q4: When do I call?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "phone with heart notification"
+        },
+        "retention_device": "Checklist momentum",
+        "source_ids": []
+      },
+      {
+        "id": "s72",
+        "section": "Questions for your cardiologist",
+        "narration": "Question five: how do I protect my muscle while losing weight? Ask about protein, checking first if you have kidney disease, and about cardiac rehab or strength training. Start gently, and check in if exercise is new to you.",
+        "on_screen_text": "Q5: Protect my muscle",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Protein (check first if kidney disease)",
+            "Cardiac rehab",
+            "Gentle strength training"
+          ],
+          "stock_query": "person lifting light dumbbell"
+        },
+        "retention_device": "Links to the channel's muscle theme",
+        "source_ids": []
+      },
+      {
+        "id": "s73",
+        "section": "Recap",
+        "narration": "Quick recap. SUMMIT: 731 adults with HFpEF and obesity, about two years. Combined events, 9.9% versus 15.3%. Symptom scores, 6.9 points better. Deaths: too few to call.",
+        "on_screen_text": "SUMMIT in 4 lines",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "731 adults, ~2 years",
+            "Events: 9.9% vs 15.3%",
+            "Symptoms: +6.9 points",
+            "Deaths: too few to call"
+          ],
+          "stock_query": "summary board with icons"
+        },
+        "retention_device": "Payoff checklist",
+        "source_ids": [
+          "summit"
+        ]
+      },
+      {
+        "id": "s74",
+        "section": "Recap",
+        "narration": "Semaglutide's STEP trials: better symptom scores and more weight loss at one year, in separate trials, not head to head with tirzepatide.",
+        "on_screen_text": "STEP: separate trials",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two separate trophies on shelves"
+        },
+        "retention_device": "Recap closes the comparison",
+        "source_ids": [
+          "step_hfpef",
+          "step_hfpef_dm"
+        ]
+      },
+      {
+        "id": "s75",
+        "section": "Recap",
+        "narration": "If you want more trial decoders that give you the real numbers, including the placebo side, subscribe to InforMed so the next one finds you.",
+        "on_screen_text": "Subscribe for trial decoders",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly bell notification icon"
+        },
+        "retention_device": "CTA tied to a specific benefit",
+        "source_ids": []
+      },
+      {
+        "id": "s76",
+        "section": "Recap",
+        "narration": "This video is education, not medical advice. Talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Ask your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient handshake"
+        },
+        "retention_device": "Closing prescriber line",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "summit",
+        "title": "Tirzepatide for Heart Failure with Preserved Ejection Fraction and Obesity",
+        "publisher": "New England Journal of Medicine (Packer M, et al.; SUMMIT trial, NCT04847557)",
+        "year": "2025 (online Nov 2024)",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2410027"
+      },
+      {
+        "id": "step_hfpef",
+        "title": "Semaglutide in Patients with Heart Failure with Preserved Ejection Fraction and Obesity",
+        "publisher": "New England Journal of Medicine (Kosiborod MN, et al.; STEP-HFpEF)",
+        "year": "2023",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2306963"
+      },
+      {
+        "id": "step_hfpef_dm",
+        "title": "Semaglutide in Patients with Obesity-Related Heart Failure and Type 2 Diabetes",
+        "publisher": "New England Journal of Medicine (Kosiborod MN, et al.; STEP-HFpEF DM)",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38587233/"
+      },
+      {
+        "id": "summit_cmr",
+        "title": "Tirzepatide Reduces LV Mass and Paracardiac Adipose Tissue in Obesity-Related Heart Failure: SUMMIT CMR Substudy",
+        "publisher": "Journal of the American College of Cardiology (Kramer CM, et al.)",
+        "year": "2025",
+        "url": "https://doi.org/10.1016/j.jacc.2024.11.001"
+      },
+      {
+        "id": "lancet_pooled",
+        "title": "Semaglutide versus placebo in patients with heart failure and mildly reduced or preserved ejection fraction: a pooled analysis of the SELECT, FLOW, STEP-HFpEF, and STEP-HFpEF DM randomised trials",
+        "publisher": "The Lancet (Kosiborod MN, et al.)",
+        "year": "2024",
+        "url": "https://doi.org/10.1016/S0140-6736(24)01643-X"
+      },
+      {
+        "id": "aha_hf_2022",
+        "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+        "publisher": "Circulation (American Heart Association / American College of Cardiology / Heart Failure Society of America)",
+        "year": "2022",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063"
+      },
+      {
+        "id": "zepbound_pi",
+        "title": "ZEPBOUND (tirzepatide) injection: Prescribing Information",
+        "publisher": "Eli Lilly and Company (US label, current revision accessed Oct 2026)",
+        "year": "2026",
+        "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+      },
+      {
+        "id": "mounjaro_pi",
+        "title": "MOUNJARO (tirzepatide) injection: Prescribing Information",
+        "publisher": "Eli Lilly and Company (US label, current revision Aug 2026 or later, accessed Oct 2026)",
+        "year": "2026",
+        "url": "https://pi.lilly.com/us/mounjaro-uspi.pdf"
+      },
+      {
+        "id": "mounjaro_cv_approval",
+        "title": "FDA approves tirzepatide to cut CV risk in type 2 diabetes",
+        "publisher": "Pharmacy Times",
+        "year": "2026",
+        "url": "https://www.pharmacytimes.com/view/fda-approves-tirzepatide-to-cut-cv-risk-in-type-2-diabetes"
+      },
+      {
+        "id": "lilly_hf_withdrawal",
+        "title": "Lilly Withdraws Tirzepatide Application to FDA for Heart Failure",
+        "publisher": "ConscienHealth (reporting Lilly's Q1 2025 earnings-call statement)",
+        "year": "2025",
+        "url": "https://conscienhealth.org/2025/05/03/lilly-withdraws-tirzepatide-application-to-fda-for-heart-failure/"
+      }
+    ],
+    "cta": "Subscribe to InforMed for more GLP-1 trial decoders with the real numbers, placebo side included. This video is education, not medical advice. Talk to your doctor or prescriber about whether it's right for you."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "This script is accurate and safe to publish. I checked the key numbers against independent sources, and the rest matched the published results I know well.\n\n**SUMMIT (the tirzepatide trial):**\n- I confirmed against ACC's trial summary: 364 vs 367 people randomized, about 2 years of follow-up, 36 vs 56 primary events, and HR 0.62 (95% CI 0.41–0.95).\n- The other SUMMIT figures match the published NEJM results as I know them, but I couldn't open the paper itself. They are: 9.9% vs 15.3% for the primary outcome; heart-failure events 8.0% vs 14.2% (HR 0.54); cardiovascular death 2.2% vs 1.4% (HR 1.58, 95% CI 0.52–4.83); KCCQ score change +19.5 vs +12.7 (difference 6.9, 95% CI 3.3–10.6); and 6.3% vs 1.4% stopping because of side effects.\n\n**Semaglutide trials:**\n- I confirmed the 2024 Lancet pooled analysis: 3,743 people, HR 0.69 for the combined outcome, heart-failure events HR 0.59, and cardiovascular death alone not significant (HR 0.82).\n- STEP-HFpEF and STEP-HFpEF DM: I didn't open these papers. Their figures (529 and 616 people; KCCQ 16.6 vs 8.7 and 13.7 vs 6.4; weight loss 13.3% vs 2.6% and 9.8% vs 3.4%; serious adverse events 13.3% vs 26.7% and 17.7% vs 28.8%) match the published results as I know them.\n\n**Other checks:**\n- The heart-MRI substudy is real (JACC 2025; Kramer and colleagues; 175 people scanned). It found tirzepatide reduced the main pumping chamber's mass and the fat around the heart.\n- The Mounjaro cardiovascular approval was dated August 28, 2026, for adults with type 2 diabetes at high risk of major cardiovascular events.\n- Lilly withdrew its heart-failure application in May 2025 after FDA said another confirmatory trial would be needed.\n\n**Framing and safety:**\n- The script handles the cardiovascular-death number well: it gives the wide confidence interval, says it is too uncertain to call either way, and asks \"which outcome?\".\n- Relative figures are paired with absolute rates. Novo Nordisk and Lilly are named as funders. The script says the semaglutide and tirzepatide trials were never compared head to head. Regulatory status is dated \"as of October 2026\".\n- The fluid caveat, kidney caveat on protein, start-gently note on exercise, label contraindications and the prescriber line are all present.\n\nThere are a few small wording fixes below.",
+    "issues": [
+      {
+        "location": "s01",
+        "claim": "Did tirzepatide... help people with heart failure and obesity?",
+        "problem": "SUMMIT only studied one type of heart failure: HFpEF, with an ejection fraction of 50% or more. The first line makes it sound like it covers heart failure in general.",
+        "severity": "minor",
+        "fix": "Did tirzepatide, sold as Zepbound and Mounjaro, help people with obesity and a common type of heart failure called HFpEF? In a trial called SUMMIT, the short answer is yes, on both of its main measures."
+      },
+      {
+        "location": "s46",
+        "claim": "about 31% lower risk",
+        "problem": "This gives only a relative figure, with no hazard ratio and no absolute rates. Our rules say every relative figure sits next to an absolute rate.",
+        "severity": "minor",
+        "fix": "Across those combined trials, about 3,700 people with this kind of heart failure, fewer people on semaglutide had cardiovascular death or a worsening heart-failure event than on placebo: a hazard ratio of 0.69, about 31% lower relative risk. That again came mainly from fewer heart-failure events; the effect on cardiovascular death alone wasn't statistically significant."
+      },
+      {
+        "location": "s54",
+        "claim": "serious adverse events were actually less common on the drug",
+        "problem": "This is accurate, but it could read as if the drug protects against serious events in general. It was a safety finding from two one-year trials, not something the trials were designed to test.",
+        "severity": "minor",
+        "fix": "In the one-year semaglutide trials, serious adverse events were actually less common on the drug than on placebo: 13.3% versus 26.7% in STEP-HFpEF, and 17.7% versus 28.8% in STEP-HFpEF DM. That's a safety readout, not a main goal of those trials."
+      },
+      {
+        "location": "sources: lilly_hf_withdrawal",
+        "claim": "ConscienHealth URL as source for Lilly's withdrawal",
+        "problem": "This is a secondary blog, and the page returned a 403 error when I tried to open it. The search snippet does support the claim. Lilly's own statement would be a better primary source.",
+        "severity": "minor",
+        "fix": "Keep the ConscienHealth URL, or swap in Lilly's Q1 2025 earnings release from investor.lilly.com if the pipeline can resolve a direct URL. Keep the wording 'Lilly said'."
+      },
+      {
+        "location": "s30",
+        "claim": "Possible reasons placebo improved",
+        "problem": "These are our own explanations, and no source is tagged, which is correct. They are hedged as 'possible', so they're acceptable. Just make sure no source tag gets added to this scene.",
+        "severity": "minor",
+        "fix": "No change needed. Keep source_ids empty and keep the word 'Possible'."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "summit",
+        "title": "Tirzepatide for Heart Failure with Preserved Ejection Fraction and Obesity",
+        "publisher": "New England Journal of Medicine (Packer M, et al.)",
+        "year": "2025 (online Nov 2024)",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2410027"
+      },
+      {
+        "id": "summit_acc",
+        "title": "SUMMIT: Tirzepatide Improves Outcomes and Quality of Life For Patients With HFpEF and Obesity",
+        "publisher": "American College of Cardiology",
+        "year": "2024",
+        "url": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/11/13/21/17/sat-959am-summit-aha-2024"
+      },
+      {
+        "id": "summit_cmr",
+        "title": "Tirzepatide Reduces LV Mass and Paracardiac Adipose Tissue in Obesity-Related Heart Failure: SUMMIT CMR Substudy",
+        "publisher": "Journal of the American College of Cardiology (Kramer CM, et al.)",
+        "year": "2025",
+        "url": "https://doi.org/10.1016/j.jacc.2024.11.001"
+      },
+      {
+        "id": "lancet_pooled",
+        "title": "Semaglutide versus placebo in patients with heart failure and mildly reduced or preserved ejection fraction: a pooled analysis of the SELECT, FLOW, STEP-HFpEF, and STEP-HFpEF DM randomised trials",
+        "publisher": "The Lancet (Kosiborod MN, et al.)",
+        "year": "2024",
+        "url": "https://doi.org/10.1016/S0140-6736(24)01643-X"
+      },
+      {
+        "id": "mounjaro_cv_approval",
+        "title": "FDA approves tirzepatide to cut CV risk in type 2 diabetes",
+        "publisher": "Pharmacy Times",
+        "year": "2026",
+        "url": "https://www.pharmacytimes.com/view/fda-approves-tirzepatide-to-cut-cv-risk-in-type-2-diabetes"
+      },
+      {
+        "id": "lilly_hf_withdrawal",
+        "title": "Lilly Withdraws Tirzepatide Application to FDA for Heart Failure",
+        "publisher": "ConscienHealth",
+        "year": "2025",
+        "url": "https://conscienhealth.org/2025/05/03/lilly-withdraws-tirzepatide-application-to-fda-for-heart-failure/"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.051,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 7.2,
+      "weakShots": 6,
+      "layoutIssues": 1,
+      "frameIssues": [],
+      "notes": [
+        "First frame (18.5s) has no character at all — just a bookshelf, bar chart and framed picture on an empty living-room set, no focal point",
+        "Second frame (22.5s) only adds a tiny heart in the corner; the room props (chart, photo frame, plant) don't connect to the heart-failure narrative",
+        "Large dead space across the whole frame",
+        "Same empty office set continues; heart mascot and magnifying glass float small and disconnected in the lower-left with no clear relationship to each other",
+        "Dead space fills most of the frame",
+        "First frame (34.2s): only a small clipboard icon sits on a huge empty teal gradient under two chips — no hero art, fails the 25% coverage rule",
+        "Second frame (40.8s) is strong: good color, clear C-reactive protein label, expressive molecule mascot",
+        "Small 'Fat' label near the bottom edge reads very small against the busy cell/flame background",
+        "The 'Heart fat' tag overlaps and partially covers the 'Main pumping chamber' label, making both hard to read at a glance",
+        "Floating gold dot icons around the heart add visual clutter without a clear single focal point",
+        "Second frame (99.0s) shows only a title chip ('Semaglutide: Wegovy, Ozempic') floating on a bare gradient with zero hero art — violates the no lone-chip-on-gradient rule",
+        "The 'SUMMIT' and 'STEP-HFpEF' name tags under the runners sit right at the very bottom of the frame and are partially clipped by the edge",
+        "Frame is nearly empty: a small trophy, a picture frame and a plant on a huge blank wall — no clear focal subject for this beat",
+        "Speech bubble 'No ranking here!' is small and placed low-right next to a busy icon cluster; reads a beat late",
+        "Only a small paper icon on a huge empty teal gradient; nothing else in frame"
+      ],
+      "layoutKinds": {
+        "tiny": 14,
+        "offscreen": 7,
+        "sparse": 9
+      }
+    },
+    "audio": {
+      "musicGain": 0.316,
+      "sfxGain": 0.55,
+      "finalWer": 0.006,
+      "maskingDelta": 0.006,
+      "lufs": -15.2,
+      "soundNotes": "Music already sits well inside target (−13.5 dB under voice, −13.6 dB in pauses) so gain stays at 1.0. Found and pulled down a handful of SFX that were landing too hot during narration (several pops/blips/swooshes measuring −4 to −11 dB relative to voice instead of the −14 to −20 dB target, mostly isolated accents like i=25/26 at the first chip reveal, i=134/153/163/217/466/481/571/646/681 scattered through the body) — all cut by roughly 3–11 dB so they're felt, not heard. Trimmed two pause-SFX that were slightly louder than the −6 to −12 dB window (i=21, i=363) by about 1–1.5 dB. Left the subdued, quiet cues around the two serious one-liners (\"Hold that thought,\" \"Too few deaths to call\") and the night-mood mortality-signal section untouched since thinning SFX there is intentional. Added five bespoke atmosphere hits for story beats the stock kit can't cover: an opening cardiac-monitor heartbeat for the hook, a tension drone on \"Hold that thought,\" an ominous swell on \"The number, revealed,\" a somber held note on \"Only 13 deaths in total,\" and an urgent alert tone on the \"Can't keep fluids down? Call\" red-flag line."
+    },
+    "blocking": [],
+    "thumbnail": {
+      "best_index": 0,
+      "reasoning": "All three use the same clean heart-mascot style and brand colors, so legibility is generally good, but they differ in focal clarity and fit to our proven patterns.\n\n#0 \"FEWER HEART EVENTS?\" (versus): Two expressive heart faces (anxious/sweating vs. happy) with clear PLACEBO/TIRZEPATIDE labels give an instant, honest contrast that mirrors the title's question. This is the exact 'versus' shape that produced our only long-form breakout (EloraTZP, 275 views) and is a trial-outcome framing, not sensationalized — the question mark keeps it hedged. At phone size the two faces and VS are still crisp and the labels, while small, are short single words and readable. Single clear focal point (the contrasting faces) with strong emotional pull.\n\n#1 \"THE CATCH?\" (mystery): The black silhouette heart with a giant question mark is a strong curiosity hook, but the sub-headline \"Not FDA-approved for HF\" is small, dense text that becomes nearly unreadable at phone/small size (a known QA pattern — text under ~40px). It also risks feeling like it's withholding/teasing rather than answering, which is a softer match to the title (which asks about heart failure benefit, not approval status) — slight curiosity-gap mismatch that could read as clickbait-adjacent on a sensitive medical topic.\n\n#2 \"FELT BETTER?\" (before-after): Clear, legible, nice emotional arc (tired/sleepy heart to lively heart), but it answers a different question (quality of life/KCCQ) than the title asks (heart events), creating a mild mismatch between title and thumbnail promise — viewers searching for the heart-failure-events answer may feel the image doesn't match. Still legible and pleasant, but less targeted than #0.\n\nGiven legibility ≥7 for all, #0 offers the strongest combination of emotional contrast, a direct match to the title's actual question (events, not symptoms or approval status), adherence to our proven 'versus' format, and full legibility even at small sizes.",
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": [
+            "PLACEBO/TIRZEPATIDE labels are small at smallest thumbnail size but still legible",
+            "drug name only, no brand in bracket, though acceptable for thumbnail space"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 6,
+          "legibility": 6,
+          "issues": [
+            "'Not FDA-approved for HF' subtext is very small and hard to read at phone/small size",
+            "abbreviation 'HF' may not be instantly understood by casual viewers",
+            "thumbnail promise (a 'catch'/approval status) doesn't fully match title's focus on heart events"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 6,
+          "legibility": 9,
+          "issues": [
+            "thumbnail emphasizes symptom/quality-of-life angle while title asks about heart events, a mild mismatch",
+            "less dramatic contrast than the versus layout"
+          ]
+        }
+      ]
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "title",
+          "claim": "Did Tirzepatide (Zepbound) Help Heart Failure With Obesity?",
+          "problem": "SUMMIT only enrolled people with heart failure with preserved ejection fraction (EF 50% or more). 'Heart failure' on its own is wider than the trial population. The description fixes this, but the title is where the population should be exact. Adding one abbreviation stays within the rule of at most one.",
+          "severity": "minor",
+          "fix": "Did Tirzepatide (Zepbound) Help Heart Failure (HFpEF) With Obesity?"
+        },
+        {
+          "location": "thumbnail_subtext",
+          "claim": "SUMMIT trial vs placebo",
+          "problem": "The thumbnail headline 'FEWER HEART-FAILURE EVENTS?' doesn't say which heart-failure population. The subtext has room to add it.",
+          "severity": "minor",
+          "fix": "SUMMIT: HFpEF + obesity vs placebo"
+        },
+        {
+          "location": "pinned_comment",
+          "claim": "In SUMMIT, worsening heart-failure events fell (8.0% on tirzepatide vs 14.2% on placebo)",
+          "problem": "The trial population is missing, which breaks the 'state the trial population exactly, everywhere' rule. Also, 'fell' suggests a drop over time when this is a between-group comparison. The script says 'happened to'.",
+          "severity": "minor",
+          "fix": "In SUMMIT (731 adults with HFpEF and obesity, about 2 years), worsening heart-failure events happened to 8.0% on tirzepatide vs 14.2% on placebo, but cardiovascular deaths went the other way: 2.2% vs 1.4%. With only 13 deaths in total (HR 1.58, 95% CI 0.52 to 4.83), the trial was too small to call it either way. Tirzepatide is not FDA-approved for heart failure as of Oct 2026. Save this for your next cardiology visit. This content is for educational purposes only and is not medical advice. Talk to your doctor or prescriber about whether it's right for you."
+        },
+        {
+          "location": "description (length and order)",
+          "claim": "The description has a second paragraph of detail between the quick answer and the disclaimer, and runs about 1,480–1,500 characters once assembled.",
+          "problem": "It is at or near the 1,500-character limit, so it could get cut off once assembled. The house order is: quick answer (3 lines or fewer), then disclaimer plus prescriber line, then sources, then chapters. Here an extra detail paragraph sits before the disclaimer.",
+          "severity": "minor",
+          "fix": "Delete the line 'Subscribe to InforMed for more GLP-1 trial decoders.' and shorten the detail paragraph to: 'SUMMIT (NEJM, Lilly-funded, 731 adults with HFpEF and obesity, median about 2 years): CV death or worsening heart-failure event 9.9% on tirzepatide vs 15.3% on placebo (HR 0.62). Symptom scores 6.9 points better than placebo at 52 weeks. CV deaths 2.2% vs 1.4%, too few to call. 6.3% stopped for side effects, mainly gut-related, vs 1.4% on placebo.' Then measure the length again after assembly and confirm it is 1,500 characters or fewer."
+        },
+        {
+          "location": "description (ending)",
+          "claim": "The description ends with '#Tirzepatide #HFpEF #GLP1' after the chapters.",
+          "problem": "House rule: every field ends with the disclaimer plus the prescriber line, with nothing after it.",
+          "severity": "minor",
+          "fix": "Put the hashtags directly after the chapters, then end the description with: 'Education only, not medical advice. Talk to your doctor or prescriber about whether it's right for you.'"
+        }
+      ]
+    }
+  },
+  "release_tag": "content-2026-10-14",
+  "archive_url": "b2://informed-lab-media/content/2026-10-14/L1-tirzepatide-and-semaglutide-in-heart-fai/"
+}
