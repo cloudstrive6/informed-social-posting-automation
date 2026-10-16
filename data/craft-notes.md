@@ -1,139 +1,105 @@
-_Based on 54 QA records from 2026-10-05 to 2026-10-15: 10 carousels, 30 Shorts and 14 long-form videos. 25 are GLP-1 (10-05, 10-06, 10-13, 10-14, 10-15) and 29 are plague (10-07 to 10-12). 11 were held and 2 failed before render (L3 10-10 and L1 10-12). The 10-01 records have left the window. Their examples are gone, and evidence counts are re-based on this window._
+_Based on 59 QA records from 2026-10-05 to 2026-10-16: 11 carousels, 33 Shorts and 15 long-form videos. 30 are GLP-1 (10-05, 10-06, 10-13 to 10-16) and 29 are plague (10-07 to 10-12). 12 were held and 2 failed before render (L3 10-10 and L1 10-12)._
 
-_10-15 was all GLP-1: 5 pieces, none held. The same visual problems came back. Every Short had caption cards that stop mid-phrase, S1 had spelled-out and split numbers ("POINT TWO PERCENT") and 9 tag overlaps, and S1 scored only 5.3. In packaging, all 4 videos had Threads bodies over 350 characters, and side-effect lines were missing from L1's description and pinned comment._
+_New on 10-16 (5 GLP-1 pieces): we had **our first audio hold**. S3 was dropped automatically because music and sound effects masked the voice (+0.07 WER), and its subtitles also failed on a merged script word ("achievthree"). The usual visual problems all came back. Every Short had caption cards that stop mid-phrase. S2 and S3 had spelled-out or split numbers, and in S3 two caption cards overlapped and merged into gibberish ("TWVERSUSNT"). S1 still had the empty "–" placeholder chips. L1 had stitched set-ups in 3 shots. All 3 Shorts had Threads bodies over 350 characters, and 3 sources were redirect or 403 URLs._
 
 _Why items were held (in this window):_
 - _**6 for crediting a claim to the wrong body, person, page or date:** L1 10-07, S1 10-08, L1 10-09, L1 10-10, L3 10-10 (failed) and S3 10-14._
-- _**3 for scope errors or unsourced claims:** L1 10-06 (200/400 mg result credited to the 25/75 mg arms), S3 10-08 (one vaccine's result credited to another) and L1 10-12 (failed, "on purpose")._
+- _**3 for scope errors or unsourced claims:** L1 10-06, S3 10-08 and L1 10-12 (failed)._
 - _**3 for a status that was incomplete or too reassuring:** S1 10-09, L2 10-10 and S3 10-12._
-- _**Others:** 2 broken YouTube descriptions (L1 10-07, L1 10-09) and 1 misspelling ("c meglutide", S3 10-14). S1 10-07 and S1 10-08 also went over the old 90 s limit. That limit is out of date, so there is no note for it._
+- _**Others:** 2 broken YouTube descriptions (L1 10-07, L1 10-09), 1 misspelling (S3 10-14) and **1 voice masked by music (S3 10-16, new)**. The old 90 s holds no longer apply._
 
 ### Motion Designer
-- **Every caption card must end where a clause or a full noun phrase ends, and fit in 2 lines or fewer.**
-  - Never end a card on a comma, a dash, an article, an auxiliary, a negation or a question word. Examples: THE, A, BE, NO, NOT, WHO, WHAT, STILL, PROVE, DOESN'T, YOU'VE, TOO, DR., THEN, or an adjective like APPROVED. If a card ends on one of these, merge it with the next card.
-  - Never split a fixed phrase across cards: "NOT CONFIRMED", "OR LOCAL HEALTH AUTHORITY", "BSL-2", "HAVE A PROTEIN SHAKE", "TOO EARLY TO TELL", "FOR A PHASE 1 TRIAL".
-  - Chips follow the same rule. A chip like "Typically" or "or animal" on its own is a fragment.
-  - (Fragments in about 26 of 30 Shorts, including every Short on 10-12, 10-14 and 10-15. A stranded "NOT" flipped the meaning in S1 10-08, S1 10-09 and S2 10-09.)
-- **Build caption text from the script's on-screen numerals, not from the spoken transcript. Every number must match its stat pill exactly and stay on one card.**
-  - Write "15.3%" and "20.2%", not "FIFTEEN POINT" / "POINT TWO PERCENT".
-  - Write "~2–3 yrs", "1 in 802", "119" and "Oct 10, 2026", not "AROUND 2", "ONE IN EIGHT", "NINETEEN" or "OCTOBER 2025".
-  - (About 12 Shorts had spelled-out numbers and 7 had split numbers, including S1 and S3 10-15. In S3 10-05, S2 10-14 and S3 10-13 the garbled caption showed the wrong number.)
+- **Audio: the voice always wins.** Duck music and sound effects well under the narration. Never place a sound effect under a spoken number or drug name. Check that masking is ≤0.03 before render. (Hold in S3 10-16 at 0.07. S2 10-16 was at 0.05 and S2 10-05 at 0.046.)
+- **Every caption card must end where a clause or a full noun phrase ends, and fit in 2 lines or fewer. Only one card is on screen at a time.**
+  - Never end a card on a comma, a dash, an article, an auxiliary, a negation, a question word or a bare verb or adjective. Examples: THE, A, BE, NO, NOT, WHO, WHAT, WERE, SAYS, VERIFY, MAJOR, APPROVED. If a card ends on one of these, merge it with the next card.
+  - Never split a fixed phrase across cards: "NOT CONFIRMED", "MAJOR MUSCLE GROUPS", "TOO EARLY TO TELL", "FOR A PHASE 1 TRIAL".
+  - Chips follow the same rule.
+  - (Fragments in about 29 of 33 Shorts, including every Short on 10-12 and 10-14 to 10-16. A stranded "NOT" flipped the meaning 3 times. Overlapping cards merged into gibberish in S3 10-16 and S3 10-05.)
+- **Build caption text from the script's on-screen numerals, not from the spoken transcript. Every number and date must match its stat pill exactly and stay on one card.**
+  - Write "17.1%", "~1,700", "49,000" and "Oct 14, 2026", not "SEVENTEEN POINT", "SEVENTEEN HUNDRED" or "TWENTY TWENTY-SIX".
+  - (About 15 Shorts had spelled-out numbers and 9 had split numbers, including S2 and S3 10-16. The wrong number showed on screen in 3 Shorts.)
 - **Shorts: put tags, name labels and speech bubbles only in the top 60% of the frame (y ≤ 1150 on 1920). Fade each one out before the next caption appears. If a tag can't be cleared in time, cut it.**
-  - Repeat offenders: drug-name tags ("Tirzepatide"/"Semaglutide"), "Stomach", "Gut", "Fat cell", "Lean mass", "Muscle", "Lungs", "Antibiotic", "FDA", "Blood sugar", "SNAC", "Weekly shot", "12 months" and "72 weeks".
-  - (About 143 overlap findings across 26 Shorts. S2 10-06 had 12, S1 10-13 had 10 and S1 10-15 had 9.)
-- **Make all text at least ~40px on a 1080 frame, or drop the label.** This includes pill, arm and trial-name tags like "SUMMIT", "Placebo: 2 in…", "GLP-1", "−1 in 6" and "Fat". (About 210 tiny-text findings across all 12 rendered long-forms. L4 10-10 had 42.)
+  - Repeat offenders: drug-name tags under pill or syringe faces, "Stomach", "Gut", "Fat cell", "Lean mass", "Blood sugar", "FDA", "12 months" and "72 weeks".
+  - (About 155 overlap findings across 28 Shorts. S3 10-16 had 7 and S1 10-16 had 5.)
+- **Make all text at least ~40px on a 1080 frame, or drop the label.** (About 215 tiny-text findings across all 13 rendered long-forms.)
 - **Keep everything inside the safe frame (y ≤ 994 on 1080, y ≤ 1766 on 1920, with 5% margins) and off the hero art.**
-  - Labels under characters standing on the floor are the main risk. Put those labels above the character instead (L1 10-14 "SUMMIT", L2 10-12 "Hunter").
-  - Never crop a head, mascot, eye, pill or syringe at the frame edge (S2 10-15, L1 10-15, S1 and S3 10-13, S1 and S3 10-14).
-  - Stat titles and source sub-lines sit above or beside faces and bodies, never on them (S3 10-05, S2 and S3 10-06, S2 10-10, S3 10-13).
-  - (About 105 off-screen findings.)
-- **Every frame needs a headline plus a hero character or scene covering at least ~25% of the frame, from the first frame of the shot.**
-  - Never open on, hold on or end on bare stat text, a lone icon, a lone chip or a chips-only frame on a gradient. Don't let the art arrive seconds after the text (L1 10-15).
-  - A room set with props but no character doesn't count as a scene (L1 10-14, L1 10-15).
-  - Never render empty placeholder chips, cells or seat-backs (a bare "–") or leftover template UI. If an element has no content, delete it (L1, S2 and S3 10-13; S1 10-06).
-  - (About 90 sparse findings in long-form.)
-- **Long-form: one shot = one scripted beat.** Every headline, stat card and status card renders in its own shot. Never stitch two set-ups into one shot or pull in a card from another beat. Compare each shot with its scripted title before render. (Cards showed about 230–250 s early in L2 and L4 10-10. Leaks or stitched set-ups in L1 10-09, L1 10-10, L1 10-13 and L1 10-15.)
+  - Put labels above characters standing on the floor, not under them.
+  - Never crop a head, mascot, icon, pill or syringe at the frame edge. This happened in about 10 pieces, including S2 and S3 10-16.
+  - Stat titles never sit on faces or busy art (S1 10-16 put its fat-cell headline on the art).
+  - (About 110 off-screen findings.)
+- **Every frame needs a headline plus a labelled hero character or scene covering at least ~25% of the frame, from the first frame of the shot.**
+  - Never open on, hold on or end on bare stat text, a lone icon, chips only, or a room with props but no character.
+  - Every large shape needs a label (L1 10-16 had an unlabelled red cell).
+  - **Delete empty placeholder chips (a bare "–") and leftover template UI.** (Seen 4 times: S1 10-06, S2 and S3 10-13, S1 10-16.)
+  - (About 95 sparse findings in long-form.)
+- **Long-form: one shot = one scripted beat.** Never stitch two set-ups or scenes under one shot label, and never pull in a card from another beat. Compare each shot with its scripted title before render. (Seen in 6 long-forms: L1 10-09, L2 and L4 10-10, L1 10-13, L1 10-15, and 3 shots in L1 10-16.)
 
 ### Scriptwriters
-- **Spell every drug, company and trial name correctly, with no phonetic respellings. Subtitles and captions are built from the script.** Check names against this list: semaglutide, tirzepatide, retatrutide, survodutide, amylin, Lilly, Phase 2b. (Hold in S3 10-14 for "c meglutide". Also "RETRATRUDE" in the S1 10-14 caption, and "survodutide" heard as "cervagitide" in L1 10-05.)
-- **Shorts: 170 words or fewer, counting the status line and the prescriber line. Cut a beat rather than run long.** (8 plague Shorts went over, from S1 10-08 at ~200 words to S2 10-10 at ~235.)
-- **Every number carries all of the following:**
+- **The narration text must be exactly what is spoken.** Every spoken line, including the hook, goes into the narration field. Use no merged or phonetic words, and spell every drug, company and trial name correctly: semaglutide, tirzepatide, retatrutide, survodutide, orforglipron, Lilly. (Subtitle and narration mismatches in L1, S2 and S3 10-05, L1 10-08 and S3 10-16 ("achievthree"). Misspelling hold in S3 10-14.)
+- **Shorts: 170 words or fewer, counting the status line and the prescriber line. Cut a beat rather than run long.** (About 12 Shorts went over, most recently S3 10-16 at ~178 words.)
+- **Every number carries all of the following, in the narration and not only on screen:**
   - what it measures ("% of body weight");
-  - the arm or dose;
-  - the comparator and group sizes, which are labelled per group and never a combined N shown as one group (S2 10-05 had 124 vs 36; S2 10-15 had 173,846 = both groups);
-  - the timeframe and the estimand;
-  - an absolute rate next to any relative figure (L1 10-14 s46);
-  - numbers instead of "many more" (L1 10-06).
-  - Never put two units side by side without explaining them (S3 10-13). (About 12 GLP-1 findings.)
-- **Keep every finding at its source's exact scope and verb. It never moves to another drug, dose, arm, group or vaccine.**
-  - Observational or label language stays "linked to" / "has been associated with", not "can worsen" (S2 10-15).
-  - Never add a mechanism, motive or "why" that the source doesn't state.
-  - Guideline habits are "recommended", not "shown to protect muscle on tirzepatide" (S2 10-13).
-  - (3 holds or fails: L1 10-06, S3 10-08, L1 10-12.)
-- **Not proven ≠ disproven ≠ "myth". "Not yet peer-reviewed" ≠ "not peer-reviewed". On-screen text is never stronger, broader or more reassuring than the narration, and it keeps the population and the hedge.** (S1 10-05, S2 and S3 10-06, S1 10-08, S1 10-09 hold, S3 10-09, S3 10-14.)
-- **Only point to a video in the CTA if it is already published. Otherwise say "follow for more".** (S1 10-13 and S3 10-15 promised a video that may not exist.)
+  - the arm or dose, and the exact comparator product (Rybelsus 14 mg is not "the semaglutide pill" or Wegovy);
+  - group sizes for each group, never a combined N (SURMOUNT-1 body-scan substudy = 124 on tirzepatide vs 36 on placebo);
+  - the timeframe;
+  - an absolute rate next to any relative figure.
+  - (About 18 findings. Group sizes were missing again in L1 and S1 10-16.)
+- **Keep every finding at its source's exact scope and verb.**
+  - Observational or label language stays "linked to" / "has been associated with".
+  - Guideline habits are "recommended".
+  - Never state our own assumption as fact ("most people reach for cardio", L1 10-16).
+  - Never add a mechanism or "why" the source doesn't give.
+  - (3 holds or fails.)
+- **On-screen text is never stronger, broader or more reassuring than the narration, and it keeps the population and the hedge.** Not proven ≠ disproven. "Not yet peer-reviewed" ≠ "not peer-reviewed". (7 findings, including 1 hold.)
+- **The hook pays off exactly.** If the title promises "3 ways to strength", all 3 beats deliver it, in the order promised (S1 10-16, S1 10-15). Only point to a video in the CTA if it's already published; otherwise say "follow for more" (S1 10-13, S3 10-15).
 
 ### Carousel Designer
 - **Every stat or cell says what it counts, for whom and against what, and keeps the source's hedge, exact verb and scope.**
-  - Give the placebo figure and the CI with the model estimate (C1 10-05).
-  - Write "several of 17 clocks" (C1 10-13) and "despite reported fasting" (C1 10-14).
-  - Never add a timeframe the source doesn't give.
-  - Keep a label line's scope. Wegovy's 2-month window applies to weight or CV use only (C1 10-15).
-  - Only exact printed words go inside quote marks (C1 10-12, C1 10-15).
-  - If the title promises a source's list, reproduce all of it (C1 10-10).
-  - The last slide carries the disclaimer as well as the prescriber line (C1 10-15).
-  - (About 20 findings.)
+  - Date any data year ("2025 KFF data, largest plan").
+  - Don't let a definition promise more than the source says: preauthorization ≠ guaranteed coverage (C1 10-16).
+  - Keep each label line's scope and every approved use.
+  - Only exact printed words go inside quote marks.
+  - The last slide carries the disclaimer as well as the prescriber line.
+  - (About 26 findings.)
 
 ### Social Copywriter & packaging
 - **YouTube description: plain text. Aim for 1,400 characters or fewer measured after assembly (hard limit 1,500), and end on a complete line.**
-  - No JSON, no literal "\n" and no cut-off URL. If it runs long, cut chapters first, then the last source.
-  - Strict order:
-    1. a quick answer of **3 lines or fewer**;
-    2. the disclaimer plus the prescriber line;
-    3. up to 4 sources (Shorts too);
-    4. chapters.
-  - Nothing else goes before the disclaimer: no extra paragraph and no hashtag line (L1 10-14, S1 10-15).
-  - (2 holds: L1 10-07, L1 10-09. Cut off in L1 10-05. At the limit in L1 and S2 10-14 and L1 10-15. The quick answer ran long in about 6 pieces. No sources in S1 10-10 and S2 10-13.)
+  - No JSON and no literal "\n". Strict order: a quick answer of 3 lines or fewer, then the disclaimer plus the prescriber line, then up to 4 sources, then chapters. Nothing else goes before the disclaimer.
+  - If it runs long, cut chapters first, then the last source.
+  - (2 holds. 5 pieces were at the limit, including S3 10-16 at ~1,450. The quick answer ran long in about 7 pieces.)
 - **Titles and thumbnails: 100 characters or fewer, at most 1 abbreviation, and the exact population, outcome, arm and comparator.**
-  - Write "in adults with obesity, without diabetes", not just "No Diabetes" (L1 10-15).
-  - Write "in HFpEF", not "heart failure" (L1 10-14).
-  - Don't use clipped forms like "WT" or "72WK" (L1 10-15 thumbnail).
-  - Name the outcome of any number (S1 10-05). Lead with the generic name and put the brand in brackets.
-  - A "why" title needs a source that explains why.
-  - (About 15 findings.)
-- **Every field ends with the disclaimer plus the full, exact line "talk to your doctor or prescriber about whether it's right for you". Nothing comes after it, including hashtags and save prompts.**
+  - No clipped forms like "WT" or "72WK".
+  - A self-reported symptom is "most-reported", not the product's "top symptom" (S2 10-16).
+  - (About 17 findings.)
+- **Every field ends with the disclaimer plus the full line "talk to your doctor or prescriber about whether it's right for you". Nothing comes after it, including hashtags.**
   - Draft Threads bodies to about 320 characters. Cut a clause, never a safety line.
-  - (Threads ran 370–490 characters in about 14 pieces, including S1, S2 and S3 10-15. The prescriber line was cut short in S3 10-15 TikTok. Content came after the line in C1 10-12, L1 10-14 and S1 10-15.)
-- **Copy facts, qualifiers and attributions word for word from the verified script.**
-  - Keep the full population, "estimated", "medically tailored meals", "not only muscle", the funder, "Lilly reported" and "reported to the FDA".
-  - Never swap in stronger words: "regained" never becomes "led to", "better" never becomes "safer", and don't use "stronger" or "new" for a 9-month-old study.
-  - Never add "never", "always", "at all", "proven" or "the moment".
-  - (About 90 findings, in every GLP-1 batch.)
-- **Put the hedge in the first line of every caption, before the fold, with no unhedged absolutes there.** (S3 10-06, C1 10-08, S2 10-09, S1 and S2 10-10; about 12 findings.)
-- **Engagement lines ask people to save or share only.**
-  - No open questions about dosing, pregnancy, beliefs or experiences (C1 10-15, S2 10-13, plus 4 plague pieces).
-  - No emoji in the hook of any safety, side-effect or death-report post (👀 in C1 10-14 and S1 10-14).
-  - No hashtags that imply an unproven use or a benefit without its population (#antiaging in C1 10-13; heart/kidney tags in S3 10-14). No #WeightLoss, and no brand-name, agency or #outbreak hashtags.
+  - (Threads were over 350 characters in about 17 pieces, including all 3 Shorts on 10-16. Hashtags came after the line in S1 10-15 and S2 10-16.)
+- **Copy facts, qualifiers and attributions word for word from the verified script, and add nothing that isn't in it.**
+  - Keep "estimated", "increased appetite", "compounded", "reported to the FDA" and the full population.
+  - Never add stronger words ("new", "stronger", "never") or outside news claims (Walmart in C1 10-16).
+  - (About 95 findings, in every GLP-1 batch.)
+- **Put the hedge and the population in the first line of every caption, before the fold.** (About 14 findings, including S1 10-16.)
+- **Engagement lines ask people to save or share only.** No emoji on safety, warning or gray-market posts (👀 in C1 and S1 10-14; 💉 in S2 10-16). No hashtags implying an unproven use or a benefit without its population. No #WeightLoss.
 
 ### Everyone
-- **State the trial population and the exact drug everywhere, including titles, pinned comments and Threads.**
-  - SURMOUNT-1 and SURMOUNT-5 = obesity, or overweight (BMI 27+) with a weight-related condition, without diabetes.
-  - SELECT = adults with heart disease and overweight/obesity, without diabetes.
+- **State the trial population and the exact drug everywhere.**
+  - SURMOUNT-1, SURMOUNT-5 and retatrutide Phase 2 = obesity, or overweight with a weight-related condition, without diabetes.
+  - SELECT = heart disease plus overweight/obesity, without diabetes.
   - SUMMIT = HFpEF (EF ≥ 50%) with obesity.
   - Tirzepatide for sleep apnea = moderate-to-severe OSA in adults with obesity.
-  - A semaglutide or tirzepatide label line is never "GLP-1s" or "GLP-1 medicine" in general (C1 10-15, S3 10-14).
-  - Only semaglutide has tablets; tirzepatide is injection only.
-  - (About 14 findings, including 4 on 10-15.)
-- **Credit every line to whoever actually said it, in their own words, and date it.**
-  - A reporter's description is not the company's statement.
-  - Credit company figures as "Lilly reported" / "press-release analysis" and name the doses compared (L1 10-15).
-  - Carry the funder into every caption.
-  - Date every regulatory status ("investigational as of Oct 2026"). The Wegovy pill was approved Dec 22, 2025. CagriSema has been filed, with a decision expected Q4 2026.
-  - (6 holds in this window.)
-- **Every source tag must actually say the line it's attached to.**
-  - Our own advice, analogies and conclusions get no tag. An FDA page that never mentions patches can't back a patch line (S3 10-15).
-  - Trial-data cards cite the trial paper, not the news story (S1 10-14).
-  - No quote marks around a paraphrase.
-  - (About 60 findings.)
-- **Every benefit comes with its common side effects, and every tip keeps its safety caveat, in the script, the description, the pinned comment and every caption.**
+  - A semaglutide or tirzepatide label line is never "GLP-1s" in general. Only semaglutide has tablets.
+  - (About 17 findings.)
+- **Credit every line to whoever actually said it, and date it.** A reporter's description is not the company's statement. Write "Lilly reported" and name the doses. Date every status: the Wegovy pill was approved Dec 22, 2025; retatrutide is investigational as of Oct 2026; give Medicare coverage as of its date. (6 holds.)
+- **Every source tag must actually say the line it's attached to.** Our own tips ("protein at each meal"), analogies and conclusions get no tag. (About 65 findings, including L1 and S1 10-16.)
+- **Every benefit comes with its common side effects, and every tip keeps its safety caveat, in every field.**
   - Fluids: "unless you've been told to limit fluids".
   - Protein: check first if you have kidney disease.
   - Exercise: start gently.
-  - When the audience already has a condition, add "don't stop or change your current medicines on your own".
-  - Decision-style long-forms say these medicines aren't right for everyone.
-  - (Major in S1 10-06. Also L1 10-06, S2 10-05, S2 10-14, C1 10-14, and L1 and S2 10-15.)
-- **Keep the source list clean.**
-  - Use direct, working, canonical primary URLs: no search, landing, AMP, 404 or 403 pages and no secondary blogs.
-  - List only sources a scene actually cites.
-  - Use the exact published title.
-  - Give the "last reviewed" or revision date on living pages and labels.
-  - (About 60 findings, including S1 and S3 10-15.)
-- **Plague (only if the owner keeps an evergreen slot):**
-  - PCR, antigen and F1 results are "presumptive" per CDC's case definition.
-  - Use CDC's exact line: "Plague can be cured with antibiotics, but treatment must be given quickly".
-  - Keep "contact a doctor or local health authority urgently" plus CDC's 4 pneumonic signs.
-  - Any mention of the Irkutsk case includes every dated development up to WHO Oct 10, and never ends on the most reassuring line (3 status holds).
+  - Add "don't stop or change your current medicines on your own" when relevant.
+  - (About 10 findings.)
+- **Keep the source list clean.** Use the final, canonical primary URL: no redirect (301/302), node, search, AMP, 403 or 404 pages, and no secondary reposts. Use the exact published title with its date, and give the last-reviewed date on living pages. List only sources a scene actually cites. (About 65 findings, including 3 on 10-16.)
+- **Plague (only if an evergreen slot returns):** PCR and antigen results are "presumptive". Use CDC's exact cure line. Keep "contact a doctor or local health authority urgently". Status lines include every dated development (3 status holds).
 
-_Updated 2026-10-15 from 54 QA records (25 GLP-1, 29 plague)._
+_Updated 2026-10-16 from 59 QA records (30 GLP-1, 29 plague)._
 
-_Updated 2026-10-15 from 54 QA records._
+_Updated 2026-10-16 from 59 QA records._
