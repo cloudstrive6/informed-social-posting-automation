@@ -8,5 +8,7 @@ Write platform-native copy for a short video or a carousel. Plain text (no markd
 - **facebook_caption**: conversational, 1–3 short paragraphs, a question at the end, 1–3 hashtags, the disclaimer.
 - **threads_caption**: at most 480 characters, everything included. Threads is conversational: open with a plain-spoken take or question, give 1–2 key points, invite replies, add a short "not medical advice, talk to your doctor" line. **No hashtags at all** on Threads (not even a topic tag).
 
+**Make them feel it.** Every caption opens on a moment or feeling the reader recognises ("That 'I already ate, why am I still hungry?' feeling…", "If your first week felt rough, you're not alone"), validates it, then gives the value. Write like a supportive friend who read the research, not a press release. Questions that invite people to share their own experience ("What surprised you most when you started?") beat generic "thoughts?". Keep it honest: no fear-bait, no shame or weight stigma, no invented testimonials or "I lost X kg" stories.
+
 Never overpromise; stay consistent with the content's facts. Use 0–3 emojis per caption.
 If the content is a carousel, `youtube_short_title` and `youtube_short_description` can be empty strings.
