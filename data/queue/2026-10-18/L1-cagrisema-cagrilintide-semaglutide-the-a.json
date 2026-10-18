@@ -1,0 +1,1474 @@
+{
+  "id": "L1-cagrisema-cagrilintide-semaglutide-the-a",
+  "date": "2026-10-18",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "CagriSema (cagrilintide + semaglutide), the amylin + GLP-1 combination: how it works and what the REDEFINE trial program showed, including the REDEFINE 4 head-to-head against tirzepatide",
+    "angle": "Hook (15 s or less): 'Did CagriSema beat tirzepatide? In the obesity head-to-head, no. In type 2 diabetes, the results were mixed.'\n\nThen give REDEFINE 4 first: Novo Nordisk reported it as open-label, 809 adults with obesity, 84 weeks. Give both estimands, with each drug named next to its number: CagriSema 20.2% vs tirzepatide 15 mg 23.6% counting everyone, and 23.0% vs 25.5% if everyone stayed on treatment. Say it missed non-inferiority.\n\nAdd a short beat on the diabetes head-to-heads, credited to Novo Nordisk and dated:\n- REIMAGINE 5 (Sep 2026): CagriSema 1.0/1.0 mg 12.4% vs tirzepatide 5 mg 9.1% at 60 weeks. Lower doses on both sides.\n- REIMAGINE 4: non-inferior on weight vs tirzepatide 15 mg, but missed on HbA1c.\n\nKeep the planned beats on amylin, REDEFINE 1 and 2, non-inferiority, open-label design and side effects.\n\nStatus line, re-checked on publish day: 'As of [date], CagriSema is investigational. Novo Nordisk filed with the FDA in December 2025 and expects a decision in late 2026. A filing isn't approval.'\n\nClose with: 'Don't switch or stop on your own; talk to your doctor or prescriber about whether it's right for you.'\n\nTitle: 'Did CagriSema Beat Tirzepatide (Zepbound)? What the Head-to-Head Trials Found'.",
+    "working_title": "Did CagriSema Beat Tirzepatide (Zepbound)? What the REDEFINE Trials Found",
+    "target_keyword": "cagrisema vs tirzepatide",
+    "trend_stage": "evergreen (next-gen decoder, timely status hook)",
+    "why": "Next-gen decoders are the only long-form format that travels for us (EloraTZP 373), and peer-reviewed NEJM trials make it verifiable in depth. The 09-28 Short only decoded a headline; this is the full deep-dive into the trial program. | fact-check: Good fit for the next-gen decoder lane, but the hook isn't accurate any more. 'In the only head-to-head obesity trial, no' leaves out two newer CagriSema vs tirzepatide trials in type 2 diabetes. In REIMAGINE 5 (Novo Nordisk press release, Sep 21, 2026), CagriSema 1.0/1.0 mg gave 12.4% weight loss vs 9.1% on tirzepatide 5 mg at week 60, which Novo calls superior. In REIMAGINE 4, as reported in secondary coverage, CagriSema 2.4/2.4 mg was non-inferior to tirzepatide 15 mg on weight but missed non-inferiority on HbA1c. Saying 'no' with no qualifier would mislead.\n\nREDEFINE 4 as reported by Novo Nordisk: open-label, 809 adults with obesity, 84 weeks. If everyone stayed on treatment, CagriSema 2.4/2.4 mg gave 23.0% vs 25.5% on tirzepatide 15 mg. Counting everyone regardless of adherence, it was 20.2% vs 23.6%. It missed the 3.2-point non-inferiority margin. Under our craft rules, the narration and the screen must show the count-everyone figure next to the on-treatment one. Label these numbers 'Novo Nordisk reported' unless a peer-reviewed paper exists at script time.\n\nStatus: Novo Nordisk filed with the FDA in December 2025 and expects a decision in Q4 2026. Secondary sources say it's still unapproved as of about Oct 12, 2026. A decision could land near the publish date, so re-check the FDA and Novo Nordisk on the day.\n\nREDEFINE 1 and REDEFINE 2 (NEJM 2025) are fine as planned. Copy the per-arm group sizes and the estimand from the papers.\n\nSources checked: Novo Nordisk REDEFINE 4 announcement via Investegate (https://www.investegate.co.uk/announcement/gnw/novo-nordisk-a-s-class-b--0qiu/novo-nordisk-a-s-cagrisema-demonstrated-23-/9442264); Drug Topics (https://www.drugtopics.com/view/cagrisema-did-not-meet-primary-end-point-of-noninferiority-to-tirzepatide); REIMAGINE 5 press release (https://www.globenewswire.com/news-release/2026/09/21/3365319/0/en/novo-s-cagrisema-delivers-superior-weight-loss-versus-tirzepatide-in-reimagine-5-trial.html, which returned 403, so I confirmed it through search results only); REIMAGINE 4 listing (https://clinicaltrials.gov/study/NCT06221969).",
+    "pillar": "research"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Did CagriSema Beat Tirzepatide (Zepbound)? The 84-Week Obesity Answer",
+    "title_candidates": [
+      "Did CagriSema Beat Tirzepatide (Zepbound)? The 84-Week Answer",
+      "Did CagriSema Beat Tirzepatide (Zepbound)? What the Trials Found",
+      "Did CagriSema Beat Tirzepatide? The 84-Week Head-to-Head",
+      "CagriSema vs Tirzepatide (Zepbound): Who Lost More Weight?",
+      "Did CagriSema Beat Tirzepatide? Obesity and Diabetes Trials",
+      "CagriSema vs Tirzepatide: Did the Amylin Combo Win?",
+      "Did CagriSema Beat Tirzepatide (Zepbound)? 809 Adults Tested",
+      "CagriSema vs Tirzepatide: The Head-to-Head Nobody Expected",
+      "Can CagriSema Beat Tirzepatide (Zepbound)? REDEFINE 4 Decoded",
+      "CagriSema 20.2% vs Tirzepatide 23.6%: What Happened?"
+    ],
+    "description": "Did CagriSema beat tirzepatide? In obesity, no. In REDEFINE 4 (Novo Nordisk reported; 809 adults with obesity and a weight-related condition, 84 weeks), counting everyone: CagriSema 2.4 mg/2.4 mg 20.2% vs tirzepatide 15 mg 23.6% weight loss. In type 2 diabetes, results were mixed. Common side effects: gut-related, like nausea. As of Oct 18, 2026, CagriSema is investigational; FDA decision pending.\n\nThis content is for educational purposes only and is not medical advice. Always talk to a qualified healthcare professional about your own situation. Don't switch or stop on your own; talk to your doctor or prescriber about whether it's right for you.\n\nSources:\n1. Novo Nordisk, Feb 23, 2026: https://www.investegate.co.uk/announcement/gnw/novo-nordisk-a-s-class-b--0qiu/novo-nordisk-a-s-cagrisema-demonstrated-23-/9442264\n2. Pharmacy Times, Sep 28, 2026: https://www.pharmacytimes.com/view/cagrisema-tops-tirzepatide-5-mg-for-weight-loss-in-reimagine-5\n3. Novo Nordisk 6-K via SEC, Aug 4, 2026: https://www.sec.gov/Archives/edgar/data/0000353278/000035327826000023/caq22026.htm\n4. ACC journal scan, Jul 2, 2025: https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2025/07/02/14/43/REDEFINE-1-and-REDEFINE-2\n\n0:00 The verdict\n0:49 Meet amylin\n2:09 REDEFINE 1 and 2\n4:50 The head-to-head\n6:07 Reading the fine print\n7:29 The diabetes rematch\n10:15 Where it stands\n10:56 Your takeaway",
+    "tags": [
+      "cagrisema vs tirzepatide",
+      "cagrisema",
+      "tirzepatide",
+      "Zepbound",
+      "Novo Nordisk",
+      "REDEFINE 4",
+      "cagrilintide semaglutide",
+      "amylin GLP-1",
+      "cagrisema weight loss",
+      "tirzepatide weight loss",
+      "cagrisema trial results",
+      "cagrisema FDA approval",
+      "GLP-1 head to head",
+      "REIMAGINE 5",
+      "REIMAGINE 4",
+      "cagrisema type 2 diabetes",
+      "cagrisema side effects",
+      "is cagrisema approved",
+      "cagrisema vs zepbound",
+      "next generation GLP-1",
+      "obesity drug trials 2026",
+      "semaglutide cagrilintide combination"
+    ],
+    "pinned_comment": "Save this: CagriSema is investigational, not approved (as of Oct 18, 2026). In obesity (REDEFINE 4), it trailed tirzepatide 15 mg. In type 2 diabetes at lower doses (REIMAGINE 5, 60 weeks), Novo Nordisk reported CagriSema 1.0 mg/1.0 mg 12.4% vs tirzepatide 5 mg 9.1% weight loss if everyone stayed on treatment; at top doses (REIMAGINE 4) results were mixed. Common side effects were gut-related, like nausea. Share it with a friend who follows GLP-1 research. Educational only, not medical advice. Don't switch or stop on your own; talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "IT TRAILED",
+      "highlight_word": "MISSED",
+      "subtext": "Obesity head-to-head",
+      "layout": "reaction",
+      "psychology": "Expectation violation: viewers expect a newer two-hormone combo to win, so a shocked CagriSema 'missing' breaks that belief. It's accurate, because REDEFINE 4 missed non-inferiority.",
+      "emotion": "Surprise",
+      "hero_art": "syringe",
+      "hero_face": "shocked",
+      "second_art": "",
+      "second_face": "none",
+      "prop": "arrow",
+      "accent": "alert",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 The verdict\n0:49 Meet amylin\n2:09 REDEFINE 1 and 2\n4:50 The head-to-head\n6:07 Reading the fine print\n7:29 The diabetes rematch\n9:16 Side effects\n10:15 Where it stands\n10:56 Your takeaway"
+  },
+  "media": {
+    "video": "L1-cagrisema-cagrilintide-semaglutide-the-a.mp4",
+    "duration": 728.991,
+    "thumbnail": "L1-cagrisema-cagrilintide-semaglutide-the-a-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-18T18:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "xJIzArEd9sk",
+      "url": "https://youtu.be/xJIzArEd9sk",
+      "published_at": "2026-10-18T18:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-10-18T02:46:49.189Z",
+  "script": {
+    "working_title": "Did CagriSema Beat Tirzepatide (Zepbound)? What the Head-to-Head Trials Found",
+    "target_keyword": "cagrisema vs tirzepatide",
+    "hook_pattern": "Open loop via a direct question, answered within 10 seconds (\"Did CagriSema beat tirzepatide? In the obesity head-to-head, no. In type 2 diabetes, the results were mixed.\"), followed by a 'both are true' paradox loop that pays off in the diabetes chapter",
+    "scenes": [
+      {
+        "id": "sc01",
+        "section": "The verdict",
+        "narration": "Did CagriSema beat tirzepatide? In the obesity head-to-head, no. In type 2 diabetes, the results were mixed.",
+        "on_screen_text": "Did CagriSema beat tirzepatide?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two medicine pen mascots in boxing ring"
+        },
+        "retention_device": "Direct question answered within 10 seconds; 'mixed' teases a twist",
+        "source_ids": [
+          "s5",
+          "s7b",
+          "s8"
+        ]
+      },
+      {
+        "id": "sc02",
+        "section": "The verdict",
+        "narration": "CagriSema is Novo Nordisk's two-in-one weekly shot: semaglutide, the medicine in Wegovy, plus an investigational amylin drug called cagrilintide.",
+        "on_screen_text": "Semaglutide + cagrilintide",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two cartoon molecules shaking hands"
+        },
+        "retention_device": "Concrete identity of the challenger",
+        "source_ids": [
+          "s1",
+          "s10"
+        ]
+      },
+      {
+        "id": "sc03",
+        "section": "The verdict",
+        "narration": "Tirzepatide, from Lilly, sold as Zepbound for weight management, is the drug it had to catch.",
+        "on_screen_text": "The champion: tirzepatide (Zepbound)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "champion pen mascot holding trophy"
+        },
+        "retention_device": "Underdog framing sets stakes",
+        "source_ids": [
+          "s9"
+        ]
+      },
+      {
+        "id": "sc04",
+        "section": "The verdict",
+        "narration": "In the next few minutes, you'll get the results from the key CagriSema trials, including every head-to-head with tirzepatide, with each drug named right next to its number.",
+        "on_screen_text": "The key trials, every number",
+        "visual": {
+          "kind": "list",
+          "stock_query": "clipboard with trial checklist",
+          "items": [
+            "REDEFINE 1",
+            "REDEFINE 2",
+            "REDEFINE 4",
+            "REIMAGINE 4 and 5"
+          ]
+        },
+        "retention_device": "Promise of a complete roadmap",
+        "source_ids": [
+          "s1",
+          "s2",
+          "s5",
+          "s7b",
+          "s8"
+        ]
+      },
+      {
+        "id": "sc05",
+        "section": "The verdict",
+        "narration": "And stay to the end, because one trial says CagriSema lost to tirzepatide and another says it won. Both are true. You'll see exactly why.",
+        "on_screen_text": "Lost AND won?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scoreboard showing win and loss"
+        },
+        "retention_device": "Main open loop: paradox paid off in 'The diabetes rematch'",
+        "source_ids": [
+          "s5",
+          "s7b"
+        ]
+      },
+      {
+        "id": "sc06",
+        "section": "The verdict",
+        "narration": "But first, you need to meet the hormone that makes CagriSema different.",
+        "on_screen_text": "Meet the secret ingredient",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "mystery hormone character behind curtain"
+        },
+        "retention_device": "Mini-cliffhanger before chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "sc07",
+        "section": "Meet amylin",
+        "narration": "Every time you eat, your pancreas releases insulin. But at the same time, it quietly releases a partner hormone called amylin.",
+        "on_screen_text": "Amylin: insulin's partner",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "friendly pancreas releasing two hormone buddies"
+        },
+        "retention_device": "Chapter card plus 'hidden partner' reveal",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      {
+        "id": "sc08",
+        "section": "Meet amylin",
+        "narration": "Amylin works like a brake on a meal. It slows how fast your stomach empties, helps hold back glucagon, a hormone that raises blood sugar, after eating, and signals fullness to your brain.",
+        "on_screen_text": "A brake on every meal",
+        "visual": {
+          "kind": "list",
+          "stock_query": "cartoon car brake on dinner plate",
+          "items": [
+            "Slower stomach emptying",
+            "Less glucagon after meals",
+            "Fullness signals to the brain"
+          ]
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      {
+        "id": "sc09",
+        "section": "Meet amylin",
+        "narration": "Researchers have linked those fullness signals to a small area of the brainstem called the area postrema.",
+        "on_screen_text": "A fullness hotspot in the brain",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glowing spot on cartoon brainstem"
+        },
+        "retention_device": "Surprising specific detail",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      {
+        "id": "sc10",
+        "section": "Meet amylin",
+        "narration": "That's a different pathway from GLP-1, the gut hormone semaglutide mimics. So the idea behind CagriSema is simple: pull two fullness levers at once.",
+        "on_screen_text": "Two fullness levers",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two levers labelled amylin and GLP-1"
+        },
+        "retention_device": "Simple core concept",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc11",
+        "section": "Meet amylin",
+        "narration": "Amylin drugs aren't brand new. A short-acting version, pramlintide, was approved in the US back in 2005 for diabetes, and it had to be injected at mealtimes.",
+        "on_screen_text": "First amylin drug: 2005",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "vintage calendar 2005 with medicine vial"
+        },
+        "retention_device": "Historical micro-story",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      {
+        "id": "sc12",
+        "section": "Meet amylin",
+        "narration": "Cagrilintide is a long-acting amylin drug, given once a week. In CagriSema, it's paired with semaglutide in the same weekly treatment.",
+        "on_screen_text": "Once a week, two hormones",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "weekly calendar with one star"
+        },
+        "retention_device": "Contrast: mealtime shots vs weekly",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc13",
+        "section": "Meet amylin",
+        "narration": "Tirzepatide takes a different route. It acts on two gut hormone receptors, GIP and GLP-1. So this is really a battle of two combinations.",
+        "on_screen_text": "A battle of two combos",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two tag teams of hormone characters"
+        },
+        "retention_device": "Reframes the matchup",
+        "source_ids": [
+          "s4"
+        ]
+      },
+      {
+        "id": "sc14",
+        "section": "Meet amylin",
+        "narration": "Amylin plus GLP-1, versus GIP plus GLP-1. Does stacking amylin on semaglutide actually add up? The first big trial gave a surprisingly clean answer.",
+        "on_screen_text": "Amylin + GLP-1 vs GIP + GLP-1",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "versus split screen two teams",
+          "myth": "CagriSema: amylin + GLP-1",
+          "fact": "Tirzepatide: GIP + GLP-1"
+        },
+        "retention_device": "Question to viewer before chapter change",
+        "source_ids": [
+          "s1",
+          "s4"
+        ]
+      },
+      {
+        "id": "sc15",
+        "section": "REDEFINE 1 and 2",
+        "narration": "REDEFINE 1 enrolled 3,417 adults with obesity, or overweight plus a weight-related condition, without diabetes. It ran 68 weeks and was published in the New England Journal of Medicine in 2025.",
+        "on_screen_text": "REDEFINE 1: 3,417 adults, 68 weeks",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "crowd of diverse cartoon adults"
+        },
+        "retention_device": "Chapter card with concrete scale",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc16",
+        "section": "REDEFINE 1 and 2",
+        "narration": "Here's the clever part of the design. It didn't just test CagriSema against placebo. It also tested each ingredient on its own.",
+        "on_screen_text": "Each ingredient tested alone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist separating two ingredients"
+        },
+        "retention_device": "Surprising study design micro-story",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc17",
+        "section": "REDEFINE 1 and 2",
+        "narration": "2,108 people got CagriSema. 302 got semaglutide alone. 302 got cagrilintide alone. And 705 got placebo.",
+        "on_screen_text": "Four groups",
+        "visual": {
+          "kind": "list",
+          "stock_query": "four groups of cartoon people",
+          "items": [
+            "CagriSema: 2,108",
+            "Semaglutide alone: 302",
+            "Cagrilintide alone: 302",
+            "Placebo: 705"
+          ]
+        },
+        "retention_device": "Rapid-fire numbers",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc18",
+        "section": "REDEFINE 1 and 2",
+        "narration": "Counting everyone, whether or not they stayed on treatment, CagriSema led to an average loss of 20.4% of body weight at 68 weeks. Placebo: 3.0%.",
+        "on_screen_text": "CagriSema 20.4% vs placebo 3.0%",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "big number on bright gradient",
+          "stat_value": "20.4% vs 3.0%",
+          "stat_label": "CagriSema vs placebo, counting everyone, 68 weeks"
+        },
+        "retention_device": "Big stat payoff",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc19",
+        "section": "REDEFINE 1 and 2",
+        "narration": "Semaglutide alone averaged 14.9%. Cagrilintide alone averaged 11.5%. Together, the average loss was bigger than with either drug on its own.",
+        "on_screen_text": "Together > either alone",
+        "visual": {
+          "kind": "list",
+          "stock_query": "three bar chart with mascots",
+          "items": [
+            "CagriSema: 20.4%",
+            "Semaglutide alone: 14.9%",
+            "Cagrilintide alone: 11.5%",
+            "Placebo: 3.0%"
+          ]
+        },
+        "retention_device": "Answers the 'does it add up' loop",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc20",
+        "section": "REDEFINE 1 and 2",
+        "narration": "And here's an easy-to-miss detail. The trial let people stay on lower doses if they needed to. By the end, only about 57% of the CagriSema group were on the top dose.",
+        "on_screen_text": "Only ~57% on the top dose",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "dial turned partly up",
+          "stat_value": "~57%",
+          "stat_label": "CagriSema group on top dose at end"
+        },
+        "retention_device": "'Easy-to-miss detail' surprise",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc21",
+        "section": "REDEFINE 1 and 2",
+        "narration": "Even so, the whole CagriSema group averaged over 20% counting everyone.",
+        "on_screen_text": "Still over 20% on average",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "mascot climbing mountain peak"
+        },
+        "retention_device": "Twist resolves quickly",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc22",
+        "section": "REDEFINE 1 and 2",
+        "narration": "For context, tirzepatide's own placebo trial, SURMOUNT-1, in adults with obesity or overweight without diabetes, gave 20.9% weight loss on the 15 milligram dose at 72 weeks counting everyone, versus 3.1% on placebo. That was 630 people on that dose and 643 on placebo.",
+        "on_screen_text": "SURMOUNT-1: tirzepatide 15 mg 20.9% vs placebo 3.1%",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "second scoreboard in different arena",
+          "stat_value": "20.9% vs 3.1%",
+          "stat_label": "Tirzepatide 15 mg vs placebo, 72 weeks"
+        },
+        "retention_device": "Tempting comparison set up to be challenged",
+        "source_ids": [
+          "s4"
+        ]
+      },
+      {
+        "id": "sc23",
+        "section": "REDEFINE 1 and 2",
+        "narration": "But you can't line up 20.4% from one trial against 20.9% from another. Different people, different lengths, different rules. That's exactly why head-to-head trials matter.",
+        "on_screen_text": "Different trials, can't compare",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "apples and oranges on scale",
+          "myth": "20.4% vs 20.9% settles it",
+          "fact": "Different trials can't be compared directly"
+        },
+        "retention_device": "But/therefore pivot toward the head-to-head",
+        "source_ids": [
+          "s1",
+          "s4"
+        ]
+      },
+      {
+        "id": "sc24",
+        "section": "REDEFINE 1 and 2",
+        "narration": "REDEFINE 2 asked a harder question. It enrolled 1,206 adults with overweight or obesity and type 2 diabetes, a group that has typically lost less weight in earlier trials of these medicines.",
+        "on_screen_text": "REDEFINE 2: type 2 diabetes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glucose meter character with scale"
+        },
+        "retention_device": "Escalation: harder test",
+        "source_ids": [
+          "s2"
+        ]
+      },
+      {
+        "id": "sc25",
+        "section": "REDEFINE 1 and 2",
+        "narration": "904 got CagriSema and 302 got placebo, for 68 weeks. Counting everyone, weight fell 13.7% on CagriSema, versus 3.4% on placebo.",
+        "on_screen_text": "CagriSema 13.7% vs placebo 3.4%",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "big number on blue gradient",
+          "stat_value": "13.7% vs 3.4%",
+          "stat_label": "CagriSema (904) vs placebo (302), 68 weeks"
+        },
+        "retention_device": "New stat",
+        "source_ids": [
+          "s2"
+        ]
+      },
+      {
+        "id": "sc26",
+        "section": "REDEFINE 1 and 2",
+        "narration": "Blood sugar improved too. 73.5% of the CagriSema group reached an HbA1c of 6.5% or lower, compared with 15.9% on placebo.",
+        "on_screen_text": "HbA1c 6.5% or lower: 73.5% vs 15.9%",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "happy blood drop with checkmark",
+          "stat_value": "73.5% vs 15.9%",
+          "stat_label": "Reached HbA1c 6.5% or lower"
+        },
+        "retention_device": "Bonus benefit stat",
+        "source_ids": [
+          "s2"
+        ]
+      },
+      {
+        "id": "sc27",
+        "section": "REDEFINE 1 and 2",
+        "narration": "Impressive. But placebo is an easy opponent. The real test was always going to be tirzepatide.",
+        "on_screen_text": "Now the real opponent",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "challenger walking into arena spotlight"
+        },
+        "retention_device": "Mini-cliffhanger before chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "sc28",
+        "section": "The head-to-head",
+        "narration": "That test was REDEFINE 4, which put CagriSema in the ring with tirzepatide 15 milligrams, the top dose of Zepbound.",
+        "on_screen_text": "REDEFINE 4: vs tirzepatide 15 mg",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "two pen mascots face off in ring"
+        },
+        "retention_device": "Chapter card, peak conflict",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "id": "sc29",
+        "section": "The head-to-head",
+        "narration": "Novo Nordisk reported it as an open-label trial in 809 adults with obesity and at least one weight-related condition, lasting 84 weeks. Open-label means everyone knew which drug they were getting. Hold on to that.",
+        "on_screen_text": "809 adults, 84 weeks, open-label",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "people holding labelled medicine boxes"
+        },
+        "retention_device": "Planted loop: open-label design, paid off in 'Reading the fine print'",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      {
+        "id": "sc30",
+        "section": "The head-to-head",
+        "narration": "CagriSema was given at its top dose, 2.4 milligrams of each drug. And Novo Nordisk reported two sets of numbers. You need both.",
+        "on_screen_text": "Two numbers, you need both",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two envelopes being opened"
+        },
+        "retention_device": "Suspense before the reveal",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      {
+        "id": "sc31",
+        "section": "The head-to-head",
+        "narration": "Counting everyone, whether or not they stayed on treatment: CagriSema 20.2%, tirzepatide 23.6% average weight loss.",
+        "on_screen_text": "CagriSema 20.2% vs tirzepatide 23.6%",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "scoreboard big numbers plain sky",
+          "stat_value": "20.2% vs 23.6%",
+          "stat_label": "CagriSema vs tirzepatide, counting everyone"
+        },
+        "retention_device": "Main reveal",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "id": "sc32",
+        "section": "The head-to-head",
+        "narration": "If everyone had stayed on treatment: CagriSema 23.0%, tirzepatide 25.5%.",
+        "on_screen_text": "Both estimates: tirzepatide ahead",
+        "visual": {
+          "kind": "list",
+          "stock_query": "two scoreboards side by side",
+          "items": [
+            "Counting everyone: CagriSema 20.2% vs tirzepatide 23.6%",
+            "If all stayed on treatment: CagriSema 23.0% vs tirzepatide 25.5%"
+          ]
+        },
+        "retention_device": "Second number completes the picture",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "id": "sc33",
+        "section": "The head-to-head",
+        "narration": "Either way, tirzepatide's average was higher. And CagriSema missed the trial's main goal: showing it was non-inferior to tirzepatide.",
+        "on_screen_text": "Missed non-inferiority",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "runner just missing finish ribbon"
+        },
+        "retention_device": "Verdict stated plainly",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "id": "sc34",
+        "section": "The head-to-head",
+        "narration": "These figures come from Novo Nordisk's own announcement, so the full trial details will add context.",
+        "on_screen_text": "Novo Nordisk reported",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "press release paper with magnifying glass"
+        },
+        "retention_device": "Transparency beat builds trust",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      {
+        "id": "sc35",
+        "section": "The head-to-head",
+        "narration": "Now, 'missed non-inferiority' sounds like jargon. But it might be the most misunderstood phrase in this whole story.",
+        "on_screen_text": "The most misunderstood phrase",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "confused mascot with question marks"
+        },
+        "retention_device": "Re-hook into explainer chapter",
+        "source_ids": []
+      },
+      {
+        "id": "sc36",
+        "section": "Reading the fine print",
+        "narration": "Non-inferiority doesn't mean 'better'. It means 'not meaningfully worse'.",
+        "on_screen_text": "Not 'better'. 'Not much worse.'",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "dictionary page with highlighted word"
+        },
+        "retention_device": "Chapter card with crisp definition",
+        "source_ids": []
+      },
+      {
+        "id": "sc37",
+        "section": "Reading the fine print",
+        "narration": "Before a trial like this starts, researchers set a margin: how far behind the new drug can fall and still count as roughly as good.",
+        "on_screen_text": "A pre-set margin",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "race track with dotted margin line"
+        },
+        "retention_device": "Simple explainer",
+        "source_ids": []
+      },
+      {
+        "id": "sc38",
+        "section": "Reading the fine print",
+        "narration": "Think of a race where the new runner only has to finish within a set distance of the champion. CagriSema finished further back than that.",
+        "on_screen_text": "Outside the margin",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two runners, one past dotted line"
+        },
+        "retention_device": "Analogy",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      {
+        "id": "sc39",
+        "section": "Reading the fine print",
+        "narration": "So the trial couldn't show CagriSema was roughly as good as tirzepatide 15 milligrams for weight loss.",
+        "on_screen_text": "Not shown 'as good' as tirzepatide 15 mg",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "judge holding result card"
+        },
+        "retention_device": "Precise conclusion",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "id": "sc40",
+        "section": "Reading the fine print",
+        "narration": "But here's the trap. Missing that goal doesn't mean CagriSema doesn't work. Counting everyone, it still averaged 20.2% weight loss in this trial. It just trailed tirzepatide.",
+        "on_screen_text": "Trailed, but still worked",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "myth versus fact cards",
+          "myth": "Missed non-inferiority = CagriSema doesn't work",
+          "fact": "It averaged 20.2% (counting everyone) but trailed tirzepatide's 23.6%"
+        },
+        "retention_device": "Myth attack mid-video",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      {
+        "id": "sc41",
+        "section": "Reading the fine print",
+        "narration": "Now, back to that open-label design. When people know which drug they're on, expectations can shape behavior: who sticks with it, who drops out, even how they eat.",
+        "on_screen_text": "Knowing your drug can matter",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person thinking with thought bubble pens"
+        },
+        "retention_device": "Pays off the open-label loop",
+        "source_ids": []
+      },
+      {
+        "id": "sc42",
+        "section": "Reading the fine print",
+        "narration": "Could that have nudged the gap? Possibly, in either direction. Nobody can say by how much, and it doesn't erase the result. It's a reason to read it carefully.",
+        "on_screen_text": "Read carefully, don't dismiss",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "balance scale wobbling gently"
+        },
+        "retention_device": "Honest uncertainty, question to viewer",
+        "source_ids": []
+      },
+      {
+        "id": "sc43",
+        "section": "Reading the fine print",
+        "narration": "Then there are the two numbers. 'Counting everyone' includes people who stopped or skipped the drug. 'If everyone stayed on treatment' estimates the effect when it's taken as planned.",
+        "on_screen_text": "Two ways to count",
+        "visual": {
+          "kind": "list",
+          "stock_query": "two measuring tapes labelled",
+          "items": [
+            "Counting everyone: closer to real life",
+            "If all stayed on treatment: closer to full potential"
+          ]
+        },
+        "retention_device": "Decoder moment",
+        "source_ids": []
+      },
+      {
+        "id": "sc44",
+        "section": "Reading the fine print",
+        "narration": "Neither one is the fake number. The first is closer to real life. The second is closer to the drug's full potential. In REDEFINE 4, tirzepatide led on both.",
+        "on_screen_text": "Tirzepatide led on both",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two podiums same winner"
+        },
+        "retention_device": "Ties concept back to verdict",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      {
+        "id": "sc45",
+        "section": "Reading the fine print",
+        "narration": "So that's obesity. But remember, I promised you a trial where CagriSema won. Here it is.",
+        "on_screen_text": "Now: the win",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curtain opening on trophy"
+        },
+        "retention_device": "Callback to main open loop",
+        "source_ids": []
+      },
+      {
+        "id": "sc46",
+        "section": "The diabetes rematch",
+        "narration": "Novo Nordisk has also tested CagriSema head-to-head against tirzepatide in adults with type 2 diabetes, in a trial program called REIMAGINE.",
+        "on_screen_text": "REIMAGINE: type 2 diabetes",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "rematch poster two pen mascots"
+        },
+        "retention_device": "Chapter card, new arena",
+        "source_ids": [
+          "s7b",
+          "s8"
+        ]
+      },
+      {
+        "id": "sc47",
+        "section": "The diabetes rematch",
+        "narration": "In September 2026, Novo Nordisk reported REIMAGINE 5, in adults with type 2 diabetes. If everyone had stayed on treatment, at 60 weeks CagriSema at 1.0 milligram of each drug gave 12.4% weight loss, and tirzepatide 5 milligrams gave 9.1%.",
+        "on_screen_text": "On treatment: CagriSema 12.4% vs tirzepatide 9.1%",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "scoreboard with numbers plain gradient",
+          "stat_value": "12.4% vs 9.1%",
+          "stat_label": "CagriSema 1.0/1.0 mg vs tirzepatide 5 mg, if all stayed on treatment, 60 weeks"
+        },
+        "retention_device": "Surprise reversal stat",
+        "source_ids": [
+          "s7b"
+        ]
+      },
+      {
+        "id": "sc48",
+        "section": "The diabetes rematch",
+        "narration": "Novo Nordisk called that superior. That's the win.",
+        "on_screen_text": "Novo Nordisk: 'superior'",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "CagriSema mascot raising arms"
+        },
+        "retention_device": "Partial loop payoff",
+        "source_ids": [
+          "s7b"
+        ]
+      },
+      {
+        "id": "sc49",
+        "section": "The diabetes rematch",
+        "narration": "But look closely at the doses. These were lower doses on both sides, not the top doses used in REDEFINE 4.",
+        "on_screen_text": "Lower doses on both sides",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over dose dials"
+        },
+        "retention_device": "'But' twist",
+        "source_ids": [
+          "s7b",
+          "s5"
+        ]
+      },
+      {
+        "id": "sc50",
+        "section": "The diabetes rematch",
+        "narration": "Then there's REIMAGINE 4, which used top doses in adults with type 2 diabetes: CagriSema at 2.4 milligrams of each drug, versus tirzepatide 15 milligrams.",
+        "on_screen_text": "REIMAGINE 4: top doses",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two dials turned to maximum"
+        },
+        "retention_device": "Escalation: third matchup",
+        "source_ids": [
+          "s8"
+        ]
+      },
+      {
+        "id": "sc51",
+        "section": "The diabetes rematch",
+        "narration": "In August 2026, Novo Nordisk reported that in this 68-week open-label trial, CagriSema was non-inferior to tirzepatide on weight loss, 15.2% versus 15.8% if everyone stayed on treatment, but missed non-inferiority on HbA1c, the measure of average blood sugar over roughly three months.",
+        "on_screen_text": "Weight: non-inferior. HbA1c: missed.",
+        "visual": {
+          "kind": "list",
+          "stock_query": "report card with two grades",
+          "items": [
+            "Weight: non-inferior (CagriSema 15.2% vs tirzepatide 15.8%)",
+            "HbA1c: missed non-inferiority"
+          ]
+        },
+        "retention_device": "Split verdict",
+        "source_ids": [
+          "s8"
+        ]
+      },
+      {
+        "id": "sc52",
+        "section": "The diabetes rematch",
+        "narration": "So here's the payoff. 'CagriSema lost' and 'CagriSema won' are both true. It depends on who was studied, which doses, and which outcome you measure.",
+        "on_screen_text": "Both true: it depends",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "puzzle pieces clicking together"
+        },
+        "retention_device": "Main open loop paid off",
+        "source_ids": [
+          "s5",
+          "s7b",
+          "s8"
+        ]
+      },
+      {
+        "id": "sc53",
+        "section": "The diabetes rematch",
+        "narration": "At top doses in obesity, tirzepatide led. At lower doses in diabetes, CagriSema led on weight. At top doses in diabetes, the result was mixed.",
+        "on_screen_text": "Three trials, three answers",
+        "visual": {
+          "kind": "list",
+          "stock_query": "three trophy shelves",
+          "items": [
+            "Obesity, top doses: tirzepatide led",
+            "Diabetes, lower doses: CagriSema led on weight",
+            "Diabetes, top doses: non-inferior on weight, missed on HbA1c"
+          ]
+        },
+        "retention_device": "Summary that opens next question",
+        "source_ids": [
+          "s5",
+          "s7b",
+          "s8"
+        ]
+      },
+      {
+        "id": "sc54",
+        "section": "The diabetes rematch",
+        "narration": "And whichever drug wins on paper, there's another question that decides whether a medicine works for you: can you stay on it comfortably?",
+        "on_screen_text": "Can you stay on it?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person on comfy couch thinking"
+        },
+        "retention_device": "New open loop into side effects",
+        "source_ids": []
+      },
+      {
+        "id": "sc55",
+        "section": "Side effects",
+        "narration": "Like other GLP-1 medicines, CagriSema's most common side effects were in the gut.",
+        "on_screen_text": "Mostly gut side effects",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon tummy with small clouds"
+        },
+        "retention_device": "Chapter card",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "id": "sc56",
+        "section": "Side effects",
+        "narration": "In REDEFINE 1, gastrointestinal side effects were reported by 79.6% of people on CagriSema, versus 39.9% on placebo.",
+        "on_screen_text": "CagriSema 79.6% vs placebo 39.9%",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "stat on plain gradient",
+          "stat_value": "79.6% vs 39.9%",
+          "stat_label": "Gut side effects, REDEFINE 1"
+        },
+        "retention_device": "Big stat",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc57",
+        "section": "Side effects",
+        "narration": "In REDEFINE 2, in people with type 2 diabetes, it was 72.5% versus 34.7%.",
+        "on_screen_text": "CagriSema 72.5% vs placebo 34.7%",
+        "visual": {
+          "kind": "stat",
+          "stock_query": "stat on blue gradient",
+          "stat_value": "72.5% vs 34.7%",
+          "stat_label": "Gut side effects, REDEFINE 2"
+        },
+        "retention_device": "Second stat",
+        "source_ids": [
+          "s2"
+        ]
+      },
+      {
+        "id": "sc58",
+        "section": "Side effects",
+        "narration": "Most often that meant nausea, vomiting, diarrhea or constipation. In REDEFINE 1, these were mainly mild to moderate and tended to pass.",
+        "on_screen_text": "Mostly mild to moderate, temporary",
+        "visual": {
+          "kind": "list",
+          "stock_query": "weather icons clearing to sun",
+          "items": [
+            "Nausea",
+            "Vomiting",
+            "Diarrhea",
+            "Constipation"
+          ]
+        },
+        "retention_device": "Reassuring, accurate context",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc59",
+        "section": "Side effects",
+        "narration": "And notice that placebo figure. Nearly 4 in 10 people on placebo reported gut side effects too.",
+        "on_screen_text": "Nearly 4 in 10 on placebo",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "group with empty pill box"
+        },
+        "retention_device": "'Here's where it gets weird' surprise",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc60",
+        "section": "Side effects",
+        "narration": "If you're ever on a GLP-1 medicine, your prescriber can suggest practical ways to ease nausea, like smaller meals, eating slowly, and stopping when you feel full.",
+        "on_screen_text": "Smaller meals, eat slowly",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "small plate eaten slowly"
+        },
+        "retention_device": "Practical value",
+        "source_ids": []
+      },
+      {
+        "id": "sc61",
+        "section": "Side effects",
+        "narration": "So, can you actually get CagriSema today? Here's exactly where things stand.",
+        "on_screen_text": "Can you get it today?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "question mark over pharmacy door"
+        },
+        "retention_device": "Question to viewer before chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "sc62",
+        "section": "Where it stands",
+        "narration": "As of October 18, 2026, CagriSema is investigational. It is not approved.",
+        "on_screen_text": "Oct 18, 2026: investigational",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "calendar page with status stamp"
+        },
+        "retention_device": "Chapter card with dated status",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "id": "sc63",
+        "section": "Where it stands",
+        "narration": "Novo Nordisk filed with the FDA in December 2025 and expects a decision in late 2026. A filing isn't approval.",
+        "on_screen_text": "Filed Dec 2025. Not approved.",
+        "visual": {
+          "kind": "myth_fact",
+          "stock_query": "folder submitted at office desk",
+          "myth": "Filed with the FDA = approved",
+          "fact": "A filing isn't approval; decision expected late 2026"
+        },
+        "retention_device": "Myth correction",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "id": "sc64",
+        "section": "Where it stands",
+        "narration": "A decision could come soon, so check the FDA or ask your prescriber for the latest. Until then, anything sold online under that name is not an approved medicine.",
+        "on_screen_text": "Not an approved medicine yet",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "shield in front of laptop"
+        },
+        "retention_device": "Protective warning, points to prescriber",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "id": "sc65",
+        "section": "Where it stands",
+        "narration": "Meanwhile, tirzepatide as Zepbound and semaglutide as Wegovy are already FDA-approved for chronic weight management in eligible adults. Both commonly cause gut side effects too.",
+        "on_screen_text": "Approved options already exist",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two pen mascots with approval badges"
+        },
+        "retention_device": "Positive, useful context",
+        "source_ids": [
+          "s9",
+          "s10"
+        ]
+      },
+      {
+        "id": "sc66",
+        "section": "Your takeaway",
+        "narration": "Here's your cheat sheet.",
+        "on_screen_text": "Your cheat sheet",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "notebook cheat sheet with checkmarks"
+        },
+        "retention_device": "Chapter card signals payoff",
+        "source_ids": []
+      },
+      {
+        "id": "sc67",
+        "section": "Your takeaway",
+        "narration": "One: in the obesity head-to-head, REDEFINE 4, tirzepatide 15 milligrams led CagriSema on both numbers Novo Nordisk reported.",
+        "on_screen_text": "1. Obesity: tirzepatide led",
+        "visual": {
+          "kind": "list",
+          "stock_query": "checklist item one highlighted",
+          "items": [
+            "Counting everyone: CagriSema 20.2% vs tirzepatide 23.6%",
+            "On treatment: CagriSema 23.0% vs tirzepatide 25.5%"
+          ]
+        },
+        "retention_device": "Numbered checklist",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      {
+        "id": "sc68",
+        "section": "Your takeaway",
+        "narration": "Two: in type 2 diabetes, results were mixed. CagriSema beat tirzepatide 5 milligrams on weight in REIMAGINE 5. At top doses in REIMAGINE 4, it was non-inferior on weight but missed on HbA1c.",
+        "on_screen_text": "2. Diabetes: mixed",
+        "visual": {
+          "kind": "list",
+          "stock_query": "checklist item two highlighted",
+          "items": [
+            "REIMAGINE 5 (if all stayed on treatment): CagriSema 12.4% vs tirzepatide 5 mg 9.1%",
+            "REIMAGINE 4: non-inferior on weight, missed on HbA1c"
+          ]
+        },
+        "retention_device": "Numbered checklist",
+        "source_ids": [
+          "s7b",
+          "s8"
+        ]
+      },
+      {
+        "id": "sc69",
+        "section": "Your takeaway",
+        "narration": "Three: against placebo, CagriSema still produced large weight loss, 20.4% counting everyone in REDEFINE 1.",
+        "on_screen_text": "3. vs placebo: 20.4%",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "checklist item three highlighted"
+        },
+        "retention_device": "Numbered checklist",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "id": "sc70",
+        "section": "Your takeaway",
+        "narration": "Four: whenever you see a headline, ask which dose, which people, and which number. Most headlines skip all three.",
+        "on_screen_text": "4. Which dose, people, number?",
+        "visual": {
+          "kind": "list",
+          "stock_query": "three question cards fanned out",
+          "items": [
+            "Which dose?",
+            "Which people?",
+            "Which number?"
+          ]
+        },
+        "retention_device": "Reusable rule of thumb",
+        "source_ids": []
+      },
+      {
+        "id": "sc71",
+        "section": "Your takeaway",
+        "narration": "If you're curious about any of these medicines, bring questions to your appointment. Which option fits my health goals? What side effects should I expect? How will we handle them?",
+        "on_screen_text": "Questions for your doctor",
+        "visual": {
+          "kind": "list",
+          "stock_query": "friendly doctor and patient chatting",
+          "items": [
+            "Which option fits my goals?",
+            "What side effects to expect?",
+            "How will we handle them?"
+          ]
+        },
+        "retention_device": "Actionable next step",
+        "source_ids": []
+      },
+      {
+        "id": "sc72",
+        "section": "Your takeaway",
+        "narration": "And whatever you're taking now, don't switch or stop on your own; talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Don't switch or stop alone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient reviewing chart"
+        },
+        "retention_device": "Safety close",
+        "source_ids": []
+      },
+      {
+        "id": "sc73",
+        "section": "Your takeaway",
+        "narration": "New GLP-1 drugs are arriving fast. Subscribe to InforMed, and you'll get every big trial decoded like this: each number next to its drug, every claim sourced.",
+        "on_screen_text": "Subscribe @InforMedLab",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "InforMed mascot waving subscribe bell"
+        },
+        "retention_device": "CTA tied to a specific next benefit",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Coadministered Cagrilintide and Semaglutide in Adults with Overweight or Obesity (REDEFINE 1), N Engl J Med 2025;393(7):635-647 (published online June 22, 2025; print Aug 14, 2025)",
+        "publisher": "New England Journal of Medicine",
+        "year": "2025",
+        "url": "https://doi.org/10.1056/NEJMoa2502081"
+      },
+      {
+        "id": "s2",
+        "title": "Cagrilintide–Semaglutide in Adults with Overweight or Obesity and Type 2 Diabetes (REDEFINE 2), N Engl J Med 2025;393(7):648-659 (published online June 22, 2025; print Aug 14, 2025)",
+        "publisher": "New England Journal of Medicine",
+        "year": "2025",
+        "url": "https://doi.org/10.1056/NEJMoa2502082"
+      },
+      {
+        "id": "s3",
+        "title": "Amylin: Pharmacology, Physiology, and Clinical Potential",
+        "publisher": "Pharmacological Reviews",
+        "year": "2015",
+        "url": "https://doi.org/10.1124/pr.115.010629"
+      },
+      {
+        "id": "s4",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1)",
+        "publisher": "New England Journal of Medicine",
+        "year": "2022",
+        "url": "https://doi.org/10.1056/NEJMoa2206038"
+      },
+      {
+        "id": "s5",
+        "title": "Novo Nordisk A/S: CagriSema demonstrated 23% weight loss in an open-label head-to-head REDEFINE 4 trial in people with obesity; the primary endpoint was not achieved (Feb 23, 2026)",
+        "publisher": "Novo Nordisk via Investegate",
+        "year": "2026",
+        "url": "https://www.investegate.co.uk/announcement/gnw/novo-nordisk-a-s-class-b--0qiu/novo-nordisk-a-s-cagrisema-demonstrated-23-/9442264"
+      },
+      {
+        "id": "s6",
+        "title": "CagriSema Did Not Meet Primary End Point of Noninferiority to Tirzepatide (Feb 24, 2026)",
+        "publisher": "Drug Topics",
+        "year": "2026",
+        "url": "https://www.drugtopics.com/view/cagrisema-did-not-meet-primary-end-point-of-noninferiority-to-tirzepatide"
+      },
+      {
+        "id": "s7b",
+        "title": "CagriSema Tops Tirzepatide 5 mg for Weight Loss in REIMAGINE 5",
+        "publisher": "Pharmacy Times",
+        "year": "2026",
+        "url": "https://www.pharmacytimes.com/view/cagrisema-tops-tirzepatide-5-mg-for-weight-loss-in-reimagine-5"
+      },
+      {
+        "id": "s8",
+        "title": "Novo Nordisk A/S Form 6-K (financial report, Aug 4, 2026), REIMAGINE 4 results",
+        "publisher": "Novo Nordisk via U.S. SEC EDGAR",
+        "year": "2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000353278/000035327826000023/caq22026.htm"
+      },
+      {
+        "id": "s9",
+        "title": "FDA Approves New Medication for Chronic Weight Management (Zepbound, Nov 8, 2023)",
+        "publisher": "U.S. Food and Drug Administration",
+        "year": "2023",
+        "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-new-medication-chronic-weight-management"
+      },
+      {
+        "id": "s10",
+        "title": "FDA Approves New Drug Treatment for Chronic Weight Management, First Since 2014 (Wegovy, Jun 4, 2021)",
+        "publisher": "U.S. Food and Drug Administration",
+        "year": "2021",
+        "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-new-drug-treatment-chronic-weight-management-first-2014"
+      }
+    ],
+    "cta": "New GLP-1 drugs are arriving fast. Subscribe to InforMed (@InforMedLab) to get every big trial decoded like this, with each number next to its drug and every claim sourced. Don't switch or stop on your own; talk to your doctor or prescriber about whether it's right for you."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "The script passes, with four small wording and source fixes. I checked the main numbers against their sources and found nothing that would mislead a viewer.\n\n- **REDEFINE 4 (obesity):** confirmed in the Novo Nordisk announcement of Feb 23, 2026 and in Drug Topics. It was open-label, with 809 adults over 84 weeks. CagriSema 2.4/2.4 mg was tested against tirzepatide 15 mg. Counting everyone: CagriSema 20.2% vs tirzepatide 23.6%. If everyone stayed on treatment: 23.0% vs 25.5%. Non-inferiority was not shown. Novo filed with the FDA in December 2025 and expects a decision in late 2026.\n- **REIMAGINE 5 (diabetes, lower doses):** confirmed in Pharmacy Times and the press release headlines. CagriSema 1.0/1.0 mg gave 12.4% vs 9.1% on tirzepatide 5 mg at 60 weeks, if everyone stayed on treatment. Novo called it \"superior\". It was announced Sep 21, 2026.\n- **REIMAGINE 4 (diabetes, top doses):** confirmed in Novo's SEC filing (Form 6-K) of Aug 4, 2026. It was a 68-week, open-label trial. Weight loss was non-inferior: 15.2% vs 15.8%, if everyone stayed on treatment. HbA1c missed non-inferiority.\n- **REDEFINE 1 and 2:** group sizes, the 20.4% vs 3.0% result, 13.7% vs 3.4%, and 73.5% vs 15.9% are confirmed by the ACC journal scan of the NEJM papers. The gut side-effect rates (79.6% vs 39.9%) match ACC's rounded 80% vs 40%. The single-drug arms (14.9% and 11.5%), the ~57% on the top dose, and 72.5% vs 34.7% match the NEJM paper as I recall it; I didn't re-open it.\n- **SURMOUNT-1:** 20.9% vs 3.1%, with 630 on 15 mg and 643 on placebo. I didn't re-open this source either; the figures match the published trial.\n- **Status and background:** an extended search on Oct 18, 2026 found no FDA decision yet, so \"investigational\" is correct. Pramlintide's 2005 approval and the amylin biology are standard and correct.\n\n**Framing and safety:** framing is good. Each estimand is labelled, doses are named next to the numbers, the open-label point is honest, Novo's claims are credited to Novo, and the cross-trial comparison is correctly ruled out. Safety lines are present: the prescriber line, \"don't switch or stop\", and the warning about products sold online.\n\n**Remaining fixes:** the GlobeNewswire link for s7 returned a 403 error, so I couldn't open it. There are also small wording and source-title issues, listed below.",
+    "issues": [
+      {
+        "location": "sources s7 (cited in sc01, sc05, sc47, sc48, sc52, sc53, sc68)",
+        "claim": "GlobeNewswire release, Sep 21, 2026",
+        "problem": "The URL returned HTTP 403 when fetched. A link that won't load breaks the rule against listing 403 pages. Its claims are confirmed by s7b (Pharmacy Times) and by press release headlines, so nothing in the script changes.",
+        "severity": "minor",
+        "fix": "Remove s7 from the source list and from every source_ids array, leaving s7b. For example, sc47 source_ids becomes [\"s7b\"] and sc01 becomes [\"s5\",\"s7b\",\"s8\"]."
+      },
+      {
+        "location": "sc59 narration",
+        "claim": "Nearly 4 in 10 people reported stomach symptoms even without the active drug.",
+        "problem": "The source measured gastrointestinal adverse events. That covers the whole gut (for example diarrhea and constipation), not just 'stomach symptoms'. The wording narrows what was measured.",
+        "severity": "minor",
+        "fix": "Narration: \"And notice that placebo figure. Nearly 4 in 10 people on placebo reported gut side effects too.\""
+      },
+      {
+        "location": "sc43 visual items",
+        "claim": "Counting everyone: real-world view / Everyone on treatment: full-potential view",
+        "problem": "On screen, 'real-world view' is stronger than the narration, which says 'closer to real life'. Trial data aren't real-world data.",
+        "severity": "minor",
+        "fix": "Items: [\"Counting everyone: closer to real life\", \"If all stayed on treatment: closer to full potential\"]"
+      },
+      {
+        "location": "sources s1, s2",
+        "claim": "N Engl J Med 2025;393(7), Aug 14, 2025",
+        "problem": "Both papers were published online first in June 2025, before the Aug 14 print issue. The source rules require labelling online-first and print dates.",
+        "severity": "minor",
+        "fix": "Append to each title: \"(published online June 22, 2025; print Aug 14, 2025)\""
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "s5",
+        "title": "Novo Nordisk A/S: CagriSema demonstrated 23% weight loss in an open-label head-to-head REDEFINE 4 trial in people with obesity; the primary endpoint was not achieved (Feb 23, 2026)",
+        "publisher": "Novo Nordisk via Investegate",
+        "year": "2026",
+        "url": "https://www.investegate.co.uk/announcement/gnw/novo-nordisk-a-s-class-b--0qiu/novo-nordisk-a-s-cagrisema-demonstrated-23-/9442264"
+      },
+      {
+        "id": "s6",
+        "title": "CagriSema Did Not Meet Primary End Point of Noninferiority to Tirzepatide (Feb 24, 2026)",
+        "publisher": "Drug Topics",
+        "year": "2026",
+        "url": "https://www.drugtopics.com/view/cagrisema-did-not-meet-primary-end-point-of-noninferiority-to-tirzepatide"
+      },
+      {
+        "id": "s7b",
+        "title": "CagriSema Tops Tirzepatide 5 mg for Weight Loss in REIMAGINE 5",
+        "publisher": "Pharmacy Times",
+        "year": "2026",
+        "url": "https://www.pharmacytimes.com/view/cagrisema-tops-tirzepatide-5-mg-for-weight-loss-in-reimagine-5"
+      },
+      {
+        "id": "s8",
+        "title": "Novo Nordisk A/S Form 6-K (financial report, Aug 4, 2026), REIMAGINE 4 results",
+        "publisher": "Novo Nordisk via U.S. SEC EDGAR",
+        "year": "2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000353278/000035327826000023/caq22026.htm"
+      },
+      {
+        "id": "acc",
+        "title": "REDEFINE 1 and REDEFINE 2: Greater Weight Loss With Combined Cagrilintide-Semaglutide vs. Either Drug Alone or Placebo (journal scan, Jul 2, 2025)",
+        "publisher": "American College of Cardiology",
+        "year": "2025",
+        "url": "https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2025/07/02/14/43/REDEFINE-1-and-REDEFINE-2"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.037,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 5.4,
+      "weakShots": 52,
+      "layoutIssues": 1,
+      "frameIssues": [],
+      "notes": [
+        "The floating question-mark icon's caption 'Type 2: mixed' renders at ~26px, too small to read instantly on a phone.",
+        "'Semaglutide' and 'Cagrilintide' labels sit at 22-25px, well under the 40px floor and hard to read at a glance, especially once both molecules share the frame.",
+        "The 'Now the real opponent' headline frame holds on a single small syringe covering only ~12% of a bare gradient background — reads as an empty placeholder screen before the REDEFINE 4 content loads in.",
+        "Minor: a second variant of this shot only has the single 'REDEFINE 4' chip with no second comparator yet, which also looks sparse.",
+        "Opening frame of this shot is just the headline over one small envelope icon ('Number 1') covering under 10% of the frame on a plain gradient — no real scene or second hero yet, so it reads empty.",
+        "The 'Tirzepatide' name tag sits right at the bottom safe-margin boundary and reads as clipped/cramped against the frame edge, while 'CagriSema' is comfortably placed above it — inconsistent vertical placement.",
+        "In the final running-scene frame, the 'CagriSema' and 'Tirzepatide' name tags sit at the very bottom edge under the characters' feet and are visibly cropped by the frame boundary.",
+        "Key-trials chip scene (82.0s) is clean, but the racetrack frame at 84.9s crops the 'CagriSema'/'Tirzepatide' name tags under the runners' feet at the very bottom edge of frame.",
+        "Opens (95.1s) on a prop-only room — window, newspaper icon, picture frame, plant — with no labelled hero character, reading as dead/empty until the heart mascot and speech bubble appear a beat later.",
+        "The 'Most misunderstood phrase' headline frame (104.2s) is a single magnifying-glass icon floating on a large empty teal gradient with no character or supporting element.",
+        "108.7s shows one small book icon centered on a large empty gradient background with just a chip label — reads as clip-art floating in space.",
+        "The 'Champion' runner name tag is cut off by the bottom frame edge under the runner's feet (115.7s and 119.8s).",
+        "Both the 'Margin' arrow chip and the 'Champion' name tag are clipped by the bottom frame edge, making them partly unreadable.",
+        "At 126.4s the 'Tirzepatide' finish-line tag is cropped by the bottom edge; the following frame (128.4s) fixes this and reads cleanly.",
+        "Opens (130.5s) on a lone clipboard icon with 'Not shown as good' label on a large empty gradient; the tirzepatide mascot only joins at 136.3s."
+      ],
+      "layoutKinds": {
+        "tiny": 17,
+        "overlap": 1,
+        "offscreen": 23,
+        "sparse": 9
+      }
+    },
+    "audio": {
+      "musicGain": 0.302,
+      "sfxGain": 0.55,
+      "finalWer": 0.006,
+      "maskingDelta": 0.006,
+      "lufs": -15.1,
+      "soundNotes": "Music sits close to target already (-13.5 dB under voice, -14.6 in pauses), so gain stays at 1.0; it should not be pushed louder per the brief. The main fixes are: (1) thin the opening transition pile-up at ~7.7s and the chip/bubble clusters at ~24.7s, ~52.7-52.8s and the finale at ~720s where 3+ overlapping stock effects fire within a fraction of a second; (2) pull down a handful of stock cues that read louder than the voice during active narration (notably the -3.8 dB swell/whoosh pair at 139.5s right after a pause, the loud bubble/blip stack at 52.7-52.9s, the swoosh/blip cluster around 667.5-667.7s, and isolated loud pops at 363.9s, 377.7s, 418s, 446.9s, 640s and 688s) so SFX stays felt rather than heard over words. Everything already sitting in the -14 to -20 dB speech range or -6 to -12 dB pause/transition range is left untouched. Five bespoke cues cover story beats the stock kit can't: the gut-hormone 'secret ingredient' reveal, the 'real opponent' trial pivot, the honest non-inferiority caveat, the 'can you get it today?' status question, and a bright CTA stinger for the subscribe card."
+    },
+    "blocking": [],
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 5,
+          "legibility": 5,
+          "issues": [
+            "\"CAGRISEMA 20\" number looks truncated/incomplete (missing % or unit), confusing and inaccurate-looking on screen",
+            "stat text very small and hard to read at phone/small size",
+            "two-character versus layout plus number strip is cluttered, splits focal attention across 3 elements",
+            "gives away the full numeric verdict in the thumbnail, weakening the curiosity gap promised by the title"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 6,
+          "legibility": 9,
+          "issues": [
+            "headline 'THEN DIABETES?' doesn't clearly connect to the title's obesity head-to-head framing, so it may read as off-topic or confusing in-feed",
+            "mystery silhouette + question mark is a lower-emotion focal point than a reacting character",
+            "subhead 'the results were mixed' is a bit flat/low-energy for a hook"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": [
+            "headline 'IT MISSED' partially answers the title's question, slightly narrowing (but not eliminating) the curiosity gap since the video still needs to explain why/by how much"
+          ]
+        }
+      ],
+      "best_index": 2,
+      "reasoning": "Candidate #2 ('IT MISSED') pairs a single, strong emotional focal point (a shocked syringe character with a directional red arrow) with high color contrast (red background pops in a feed dominated by blue/white UI) and a short, fully legible headline plus a clear context subhead ('Obesity head-to-head'). It creates an expectation-violation hook (a newer combo drug 'missing') that is accurate to the REDEFINE 4 result and still requires a click to learn the actual numbers/why, preserving curiosity. Candidate #1 is clean and legible but emotionally flatter and its 'THEN DIABETES?' headline doesn't obviously map to the title's obesity comparison, risking confusion in-feed. Candidate #0 is the weakest: the stat text is small, '20' reads as a truncated/incomplete number (should show a unit), and splitting attention across two characters, a VS lockup, and a number strip makes it cluttered at thumbnail size, also fully spoiling the comparison's numeric outcome. All three pass the legibility bar, but #2 offers the best combination of contrast, single focal point, and calibrated curiosity."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "description, quick answer",
+          "claim": "counting everyone: CagriSema 20.2% vs tirzepatide 15 mg 23.6% weight loss",
+          "problem": "Tirzepatide's dose is given but CagriSema's isn't. The script says CagriSema was at its top dose, 2.4 milligrams of each drug. Our rules say every head-to-head names both arms.",
+          "severity": "minor",
+          "fix": "counting everyone: CagriSema 2.4 mg/2.4 mg 20.2% vs tirzepatide 15 mg 23.6% weight loss"
+        },
+        {
+          "location": "pinned comment",
+          "claim": "Novo Nordisk reported CagriSema 1.0 mg 12.4% vs tirzepatide 5 mg 9.1% weight loss",
+          "problem": "\"CagriSema 1.0 mg\" could be read as one 1.0 mg drug. The script says 1.0 milligram of each drug, and the source writes 1.0 mg/1.0 mg. The pinned comment also leaves out the top-dose diabetes result (mixed), which makes the diabetes picture sound a little better than the script does.",
+          "severity": "minor",
+          "fix": "In type 2 diabetes at lower doses (REIMAGINE 5, 60 weeks), Novo Nordisk reported CagriSema 1.0 mg/1.0 mg 12.4% vs tirzepatide 5 mg 9.1% weight loss if everyone stayed on treatment; at top doses (REIMAGINE 4) results were mixed."
+        },
+        {
+          "location": "description, Sources line 2",
+          "claim": "2. Pharmacy Times, 2026:",
+          "problem": "The source has no exact date. Our rules want the published date. I confirmed the article is dated Sep 28, 2026.",
+          "severity": "minor",
+          "fix": "2. Pharmacy Times, Sep 28, 2026: https://www.pharmacytimes.com/view/cagrisema-tops-tirzepatide-5-mg-for-weight-loss-in-reimagine-5"
+        },
+        {
+          "location": "title",
+          "claim": "Did CagriSema Beat Tirzepatide (Zepbound)? The 84-Week Answer",
+          "problem": "\"The 84-Week Answer\" only covers the obesity trial (REDEFINE 4). The video also gives mixed results in type 2 diabetes. The thumbnail subtext already says which trial is meant, so this is only wording polish.",
+          "severity": "minor",
+          "fix": "Did CagriSema Beat Tirzepatide (Zepbound)? The 84-Week Obesity Answer"
+        },
+        {
+          "location": "description, overall length",
+          "claim": "Assembled description",
+          "problem": "I estimate it at about 1,390 characters, and the fixes above add about 15. That is still under the 1,500 hard limit but may pass the 1,400 target.",
+          "severity": "minor",
+          "fix": "Measure the description after assembly. If it's over 1,400 characters, delete the chapter line \"9:16 Side effects\" first (cut chapters before sources). Never cut the disclaimer or the prescriber line."
+        }
+      ]
+    }
+  },
+  "hold_reason": "Quality check: narration doesn't match script in 1 scene(s): expected \"redefine for\" heard \"redefinedfor\"",
+  "release_tag": "content-2026-10-18",
+  "archive_url": "b2://informed-lab-media/content/2026-10-18/L1-cagrisema-cagrilintide-semaglutide-the-a/",
+  "approved_by": "editor-in-chief (low risk): The hold is a speech-to-text quirk: \"REDEFINE 4\" was transcribed as \"redefinedfor\", and the final narration error rate is 0.006. The fact and packaging checks both passed with only minor issues, the key numbers, dated status and safety lines are confirmed, and audio and length (12.1 minutes) are within limits."
+}
