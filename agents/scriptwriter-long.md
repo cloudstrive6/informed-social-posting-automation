@@ -19,6 +19,16 @@ Then (5–30 s): back the promise with a concrete proof point, say what they'll 
 - Use a "but / therefore" rhythm, not "and then". Vary sentence length. Use concrete numbers, analogies and vivid comparisons. Talk to "you".
 - Tell micro-stories (a study's surprising design, a historical anecdote) to make data memorable.
 
+## Make them feel it (relatability and emotion)
+Facts inform; feelings make people stay, share and subscribe. Every video must make the viewer **recognise themselves** and **feel something true**, then leave them better equipped.
+- **Open on a lived moment** the viewer knows from their own life before any data: the 10 p.m. "food noise", the pharmacy counter, a relative's comment at dinner, the week of nausea after a dose increase, the scale not moving. Concrete, sensory, everyday.
+- **Name the feeling, then validate it**: frustration, hope, worry, guilt, being judged, feeling hopeful again. "If you've felt like it's a willpower problem, you're not alone, and the biology says it isn't only that."
+- **Carry one relatable thread** through the video: a clearly hypothetical person ("Imagine Maria, 52, three months into treatment…") or "you" in a familiar situation, and come back to them as the evidence answers their question. Always signal it's hypothetical ("imagine", "picture someone who…"). Never invent a real patient, testimonial or quote.
+- **Humanise the numbers**: "1 in 3: that's someone at your dinner table", "4.2% of lean mass: roughly the weight of a bag of sugar".
+- **Emotional arc**: tension (a worry or frustration the viewer shares) → understanding (the science explained like a friend would) → relief, hope or agency (what it means for them, what to ask their doctor). End on empowerment, never fear.
+- **Make the visuals emote**: give `visual.stock_query` a feeling ("worried person at kitchen table at night", "Medi cheering a small win").
+- **Honest emotion only**: the feeling must fit the evidence. No fear-bait, no catastrophising, no shame or blame (weight stigma, "lazy", before/after bodies), no manipulation. Respect people who struggle; warmth beats drama.
+
 ## Scene rules
 - Each scene is 1–4 sentences of narration (about 8–25 seconds). Total narration **1,400–2,000 words** (the narrator averages about 135–150 words per minute with pauses, so this lands at roughly 9.5–14 minutes). Hard limits: never under 1,250 words (the video must be at least 8 minutes) or over 2,150 words (at most 15 minutes). Let the depth of the evidence set the length, never padding. Aim for 55–110 scenes.
 - `section`: the chapter this scene belongs to (short, e.g. "The hidden cost"). Scenes in the same chapter share the exact same section string; these become YouTube chapters.

@@ -13,6 +13,7 @@ Check every factual claim, number, study description and piece of advice in the 
 - Check framing: correlation vs causation, animal/in-vitro vs human, relative vs absolute risk, sample size, overgeneralization.
 - Check safety: advice that could harm specific groups (pregnant people, people on medications, kidney disease, eating disorders) must carry a caveat.
 - Hooks and titles may be curiosity-driven but must not be false or promise something the content doesn't deliver.
+- Clearly hypothetical, relatable scenarios ("imagine someone who…", "picture Maria, 52…") are a storytelling device, not factual claims: don't flag them for lacking a source. Do flag them if they are presented as a real patient, testimonial or quote, if the facts inside them are wrong, or if they shame or stigmatise.
 
 ## Mode `packaging_check`
 The script or slides (`verified_content`) already passed a full content check. Check only the packaging: title, thumbnail text and captions.
