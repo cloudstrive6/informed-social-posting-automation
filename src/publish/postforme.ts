@@ -2,6 +2,8 @@
  * TikTok via Post for Me (https://postforme.dev), project "InforMed". Post for Me's approved TikTok app
  * lets videos go public right away (a self-built TikTok app stays private-only until TikTok's audit).
  * Safety: we only ever post to the TikTok account whose external id / username is @informedlab.
+ * TikTok settings go in per-account `account_configurations`: since 2026-10-19 any `platform_configurations`
+ * block makes POST /social-posts return HTTP 500.
  */
 import { readFileSync } from "node:fs";
 import { env } from "../lib/config.js";
@@ -40,7 +42,7 @@ export async function tiktokPhotosViaPostForMe(imageUrls: string[], caption: str
   const post = await postJson<{ id: string; status: string }>("/social-posts", {
     caption: caption.slice(0, 2200), social_accounts: [account],
     media: imageUrls.slice(0, 35).map(url => ({ url })),
-    platform_configurations: { tiktok: { title: title.slice(0, 90), privacy_status: env("TIKTOK_PRIVACY") ?? "public", allow_comment: true, auto_add_music: true } },
+    account_configurations: [{ social_account_id: account, configuration: { title: title.slice(0, 90), privacy_status: env("TIKTOK_PRIVACY") ?? "public", allow_comment: true, auto_add_music: true } }],
   });
   return waitResult(post.id);
 }
@@ -64,14 +66,15 @@ export async function tiktokViaPostForMe(file: string, caption: string) {
     caption: caption.slice(0, 2200),
     social_accounts: [account],
     media: [{ url, thumbnail_timestamp_ms: 1000 }],
-    platform_configurations: {
-      tiktok: {
+    account_configurations: [{
+      social_account_id: account,
+      configuration: {
         privacy_status: env("TIKTOK_PRIVACY") ?? "public",
         allow_comment: true, allow_duet: true, allow_stitch: true,
         // narration is an AI voice: TikTok asks creators to label realistic AI-generated content
         is_ai_generated: true,
       },
-    },
+    }],
   });
   log.info(`Post for Me post ${post.id} ${post.status}`);
   // poll the per-account result (TikTok processing usually takes 1–3 minutes)
