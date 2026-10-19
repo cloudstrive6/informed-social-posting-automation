@@ -60,10 +60,12 @@
       "platform": "tiktok",
       "format": "short",
       "slotKey": "short",
-      "slot": "2026-10-19T00:24:26.813Z",
-      "status": "failed",
+      "slot": "2026-10-19T00:26:49.179Z",
+      "status": "published",
       "attempts": 1,
-      "error": "HTTP 500 for https://api.postforme.dev/v1/social-posts: {\"statusCode\":500,\"message\":\"Internal server error\"}"
+      "remote_id": "v_pub_file~v2-1.7698168700762966036",
+      "url": "https://www.tiktok.com/@informedlab",
+      "published_at": "2026-10-19T00:28:55.959Z"
     },
     {
       "platform": "facebook",
