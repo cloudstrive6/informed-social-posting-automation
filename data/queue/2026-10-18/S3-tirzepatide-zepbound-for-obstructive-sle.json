@@ -61,8 +61,8 @@
       "format": "short",
       "slotKey": "short",
       "slot": "2026-10-19T00:00:00.000Z",
-      "status": "pending",
-      "attempts": 2,
+      "status": "failed",
+      "attempts": 3,
       "error": "HTTP 500 for https://api.postforme.dev/v1/social-posts: {\"statusCode\":500,\"message\":\"Internal server error\"}"
     },
     {
