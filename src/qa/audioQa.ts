@@ -51,6 +51,8 @@ export function normWords(s: string): string[] {
   const words = s.toLowerCase()
     .replace(/(\d)\s?[,.]?\s?(\d{3})\b/g, "$1$2") // "80,000" / "80 000" / Whisper's split "80 ,000"
     .replace(/(\d+(?:\.\d+)?)\s*%/g, "$1 percent")
+    // decimals the way people say them: "18.8" = "eighteen point eight", "2.25" = "two point two five"
+    .replace(/(\d+)\.(\d+)/g, (_m, a: string, b: string) => `${a} point ${b.split("").join(" ")}`)
     .replace(/\d+/g, m => (m.length <= 6 ? numWords(Number(m)) : m))
     .replace(/[-–—/]/g, " ")
     .replace(/[^a-z' ]/g, " ")

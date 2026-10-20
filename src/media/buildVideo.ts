@@ -146,15 +146,19 @@ export async function buildAudio(v: Pick<BuildVideoInput, "id" | "dir" | "out" |
   }
   let final = await mixStems(silent, voice, music, sfx, musicGain, sfxGain, v.out);
   if (config.qa.enabled) {
-    for (let round = 0; round < 3; round++) {
+    // the voice must be clear: keep turning music/SFX down until masking is under the threshold (rounds 1-3 gently,
+    // then harder); only if even a near-silent bed can't fix it is the video blocked
+    const ROUNDS = 6;
+    for (let round = 0; round < ROUNDS; round++) {
       const m = await checkMix(final, v.spokenText, v.narrationWer, dir);
       qa.audio = { musicGain: +musicGain.toFixed(3), sfxGain: +sfxGain.toFixed(3), finalWer: m.finalWer, maskingDelta: m.maskingDelta, lufs: m.lufs, soundNotes: notes };
       log.info(`mix QA: WER ${m.finalWer} (narration ${v.narrationWer}), masking Δ ${m.maskingDelta}, ${m.lufs} LUFS`);
-      if (m.maskingDelta <= config.qa.maskingWerDelta || round === 2) {
-        if (m.maskingDelta > config.qa.maskingWerDelta * 2) qa.blocking.push(`voice masked by music/SFX (WER +${m.maskingDelta})`);
+      if (m.maskingDelta <= config.qa.maskingWerDelta || round === ROUNDS - 1) {
+        if (m.maskingDelta > config.qa.maskingWerDelta) qa.blocking.push(`voice masked by music/SFX (WER +${m.maskingDelta})`);
         break;
       }
-      musicGain *= 0.7; sfxGain *= 0.7; // −3 dB each and remix
+      const cut = round < 2 ? 0.7 : 0.45; // −3 dB, then about −7 dB per round
+      musicGain *= cut; sfxGain *= cut;
       final = await mixStems(silent, voice, music, sfx, musicGain, sfxGain, v.out);
     }
   }
