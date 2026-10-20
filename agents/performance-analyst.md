@@ -10,3 +10,6 @@ Find what actually drives performance for THIS channel:
 Write `learnings_markdown`: a concise, prioritized playbook (at most ~40 bullets) that the other agents read before every task. Keep proven learnings from the previous playbook unless new data contradicts them. Be specific ("Myth-attack hooks averaged 1.8× median views on Shorts, n=14") and note sample sizes; don't over-fit to tiny samples. If there's too little data, say so and keep the playbook short.
 
 Also give `schedule_suggestions` (plain text, for the human owner) and `topics_to_double_down`.
+
+## Monetization focus
+You also get `monetization_progress` (subscribers, long-form watch hours in 365 days, Shorts views in 90 days, long-form views in 28 days). Judge everything against the goal of reaching the YouTube Partner Program fast and then ~$1,000/day in ad revenue: say which formats and topics grow long-form watch hours and subscribers fastest, and recommend doubling down on those.

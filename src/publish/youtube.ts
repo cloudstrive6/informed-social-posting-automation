@@ -168,3 +168,27 @@ export async function videoAnalytics(ids: string[], startDate: string, endDate: 
   }
   return out;
 }
+
+/**
+ * YouTube Partner Program progress: subscribers, public long-form watch hours (last 365 days) and Shorts views
+ * (last 90 days). YPP opens at 1,000 subscribers plus 4,000 watch hours OR 10M Shorts views.
+ */
+export async function partnerProgress(): Promise<{ subscribers: number; watchHours365: number; shortsViews90: number; longViews28: number; at: string }> {
+  const token = await youtubeToken();
+  const auth = { headers: { authorization: `Bearer ${token}` } };
+  const ch = await httpJson<any>("https://www.googleapis.com/youtube/v3/channels?part=statistics&mine=true", auth);
+  const subscribers = Number(ch.items?.[0]?.statistics?.subscriberCount ?? 0);
+  const day = (n: number) => new Date(Date.now() - n * 86400_000).toISOString().slice(0, 10);
+  const byType = async (from: string) => {
+    const j = await httpJson<any>(`https://youtubeanalytics.googleapis.com/v2/reports?ids=channel==MINE&startDate=${from}&endDate=${day(0)}&metrics=views,estimatedMinutesWatched&dimensions=creatorContentType`, auth);
+    const out: Record<string, { views: number; minutes: number }> = {};
+    for (const [type, views, minutes] of j.rows ?? []) out[type] = { views: Number(views), minutes: Number(minutes) };
+    return out;
+  };
+  const y = await byType(day(365)), q = await byType(day(90)), m = await byType(day(28));
+  const longMinutes = Object.entries(y).filter(([t]) => t !== "SHORTS" && t !== "STORY").reduce((a, [, v]) => a + v.minutes, 0);
+  return {
+    subscribers, watchHours365: Math.round(longMinutes / 60), shortsViews90: q.SHORTS?.views ?? 0,
+    longViews28: Object.entries(m).filter(([t]) => t !== "SHORTS" && t !== "STORY").reduce((a, [, v]) => a + v.views, 0), at: new Date().toISOString(),
+  };
+}

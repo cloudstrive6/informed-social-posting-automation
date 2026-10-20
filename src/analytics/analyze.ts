@@ -6,7 +6,7 @@ import { readText, writeJson, writeText } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
 import { Learnings, learningsSchema } from "../lib/schemas.js";
 import { igInsights } from "../publish/meta.js";
-import { videoAnalytics, videoStats } from "../publish/youtube.js";
+import { partnerProgress, videoAnalytics, videoStats } from "../publish/youtube.js";
 
 interface LogRow { at: string; date: string; id: string; kind: string; platform: string; format: string; slot: string; slotKey: string; status: string; remote_id?: string; title?: string; topic?: string; hook?: string; thumb_layout?: string; trend_stage?: string }
 
@@ -46,9 +46,25 @@ export async function runAnalytics() {
   const today = new Date().toISOString().slice(0, 10);
   writeJson(join(DATA, "analytics", `${today}.json`), dataset);
 
+  // monetization progress (YouTube Partner Program): tracked daily, sent to the owner, given to the analyst
+  let ypp: Awaited<ReturnType<typeof partnerProgress>> | undefined;
+  try {
+    ypp = await partnerProgress();
+    writeJson(join(DATA, "usage", "ypp.json"), ypp);
+    const pct = (a: number, b: number) => `${Math.min(100, Math.round((a / b) * 100))}%`;
+    const { notify } = await import("../notify/telegram.js");
+    await notify([
+      "📈 <b>Monetization progress (YouTube Partner Program)</b>",
+      `Subscribers: ${ypp.subscribers.toLocaleString()} / 1,000 (${pct(ypp.subscribers, 1000)})`,
+      `Long-form watch hours (365 d): ${ypp.watchHours365.toLocaleString()} / 4,000 (${pct(ypp.watchHours365, 4000)})`,
+      `or Shorts views (90 d): ${ypp.shortsViews90.toLocaleString()} / 10,000,000 (${pct(ypp.shortsViews90, 10_000_000)})`,
+      `Long-form views, last 28 days: ${ypp.longViews28.toLocaleString()}`,
+    ].join("\n"), { silent: true });
+  } catch (e) { log.warn(`partner progress: ${(e as Error).message.slice(0, 200)}`); }
+
   const out = await runAgent<Learnings>({
     agent: "performance-analyst", model: config.models.analyst, schema: learningsSchema,
-    input: { current_playbook: readText(join(DATA, "learnings.md")), schedule: config.schedule, timezone: config.audience.timezone, posts: dataset },
+    input: { current_playbook: readText(join(DATA, "learnings.md")), schedule: config.schedule, timezone: config.audience.timezone, posts: dataset, monetization_progress: ypp },
   });
   writeText(join(DATA, "learnings.md"),
     `${out.learnings_markdown.trim()}\n\n## Topics to double down on\n${out.topics_to_double_down.map(t => `- ${t}`).join("\n")}\n\n## Schedule suggestions (for the owner — edit config/channel.json to apply)\n${out.schedule_suggestions}\n\n_Updated ${today} from ${dataset.length} posts._\n`);

@@ -8,6 +8,15 @@ Read first: [docs/BLUEPRINT.md](docs/BLUEPRINT.md) (whole system), [docs/SOCIAL-
 (platform connections, secrets), [docs/SETUP.md](docs/SETUP.md), [docs/STYLE.md](docs/STYLE.md). Config: `config/channel.json`.
 Agent prompts: `agents/*.md`. State: `data/` (queue per content date in `data/queue/<date>/<id>.json`, usage counters, learnings).
 
+## The goal (owner, 2026-10-20)
+Get into the YouTube Partner Program as fast as possible (1,000 subscribers + 4,000 public long-form watch hours in
+365 days, or 10M Shorts views in 90 days), then reach **$1,000/day in AdSense**. Ad revenue comes almost entirely from
+long-form watch time (Shorts earn a small fraction per view), so long-form retention, watch hours and subscriber growth
+are the priorities; Shorts grow the audience and send people to long videos. Pursue it aggressively, but only by means
+that keep the channel monetizable: no medical misinformation, misleading clickbait, fake engagement, bought views or
+templated/repetitive "inauthentic" content (YouTube's policy), and the fact-check gate stays. Progress is tracked daily
+in `data/usage/ypp.json` (Telegram report from `analytics.yml`).
+
 ## Owner's standing rules (always apply)
 - **Never handle credentials in forms or chat.** The owner creates keys/apps, accepts terms, approves OAuth and payments.
   Secrets live only in GitHub Actions secrets (and the owner's local `.env`, which is never committed). The repo is public:
