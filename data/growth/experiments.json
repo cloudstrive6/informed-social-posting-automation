@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Exp A: Search-question long-forms",
+    "hypothesis": "Long-forms whose title starts with a phrase people type every day (Mounjaro side effects, how long tirzepatide takes to work, stopping GLP-1, Ozempic vs Wegovy vs Mounjaro) will beat our approved-drug deep dives. Those have a median of 6 (n=6). Search-question videos should also keep gaining views over time.",
+    "change": "3 long-forms a week in lane A: searched phrase first, 60 characters or fewer, at most 1 number, no abbreviations. Slot, length and retention rules stay the same.",
+    "metric": "Views at day 7 and day 28, compared with the approved-drug long-form median of 6 and the GLP-1 long-form median of 11. Once the API is on, also average view duration and watch hours per video. Success: day-7 median of 25 or more, still growing at day 28.",
+    "min_sample": "n=4 for a signal (by about 10-27), n=8 to call it (about 11-03). Judge each video at day 7 and again at day 28.",
+    "status": "running",
+    "result": "Started 2026-10-20. Baseline: approved-drug long-form median 6 (n=6), all GLP-1 long-forms 11 (n=12)."
+  },
+  {
+    "name": "Exp B: Gray-market 'what's actually confirmed' long-forms",
+    "hypothesis": "Our strongest Short lane (retatrutide, compounded and counterfeit Shorts: 183, 116, 91, 68; median 103.5, about 1.9× typical, n=4) will also work as long-form. This audience is actively searching 'retatrutide' and 'counterfeit Ozempic'.",
+    "change": "2 long-forms a week in lane B, e.g. 'Retatrutide Online: What the FDA and Lilly Have Confirmed (Oct 2026)' and 'Counterfeit Semaglutide and Tirzepatide Pens: What the FDA Says to Check'. Every line is credited and dated, no sellers are named, and viewers are pointed to a prescriber about approved options or trials. Slot, length and retention rules stay the same.",
+    "metric": "Views at day 7 compared with the GLP-1 long-form median of 11. Success: day-7 median of 33 or more (3× the median).",
+    "min_sample": "n=4 (two weeks) for a signal. Treat n≤3 as an anecdote only.",
+    "status": "running",
+    "result": "Started 2026-10-20. The lane has never been tested as long-form. Note: 10-19 L1 (retatrutide Phase 2 vs tirzepatide) is a trial explainer, not lane B, so it doesn't count."
+  },
+  {
+    "name": "Exp C: First explainer within 48 h of a newly named drug or result",
+    "hypothesis": "EloraTZP got 416 views because it was the first clear explainer of a brand-new term with almost no search competition. Being first matters more than the 'Did X beat tirzepatide?' frame, which got 4 views for CagriSema, an older and well-covered topic.",
+    "change": "When the radar finds a named GLP-1-space drug, trial or result first reported within the last 48 h, that day's long-form explains it with the new name first in the title. 'Did X beat Y?' is allowed only if a randomized head-to-head exists. If nothing qualifies, the slot goes to lane A.",
+    "metric": "Views at day 7 compared with the GLP-1 long-form median of 11, and compared with next-gen decoders that were not first (median 22, n=6). Success: day-7 median of 50 or more.",
+    "min_sample": "n=4 qualifying videos (probably 2–4 weeks, depending on news).",
+    "status": "running",
+    "result": "Started 2026-10-20. Prior evidence is one anecdote (EloraTZP 416); the one counter-example (CagriSema 4) was not news within 48 h."
+  }
+]
