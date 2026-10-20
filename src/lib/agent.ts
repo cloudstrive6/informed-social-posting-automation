@@ -7,7 +7,7 @@ import { log } from "./log.js";
 export type AgentName =
   | "trend-scout" | "content-strategist" | "fact-checker" | "scriptwriter-long" | "scriptwriter-short"
   | "narration-director" | "title-writer" | "thumbnail-designer" | "seo-writer"
-  | "carousel-designer" | "social-copywriter" | "performance-analyst" | "motion-designer" | "visual-critic" | "sound-designer" | "packaging-editor" | "quality-coach" | "thumbnail-judge" | "editor-in-chief" | "pronunciation-coach" | "playlist-curator" | "ops-engineer";
+  | "carousel-designer" | "social-copywriter" | "performance-analyst" | "motion-designer" | "visual-critic" | "sound-designer" | "packaging-editor" | "quality-coach" | "thumbnail-judge" | "editor-in-chief" | "pronunciation-coach" | "playlist-curator" | "ops-engineer" | "growth-strategist";
 
 export interface AgentRun<T> {
   agent: AgentName;
@@ -40,6 +40,7 @@ function sharedContext(): string {
       `\nContent pillars (rotate through them):\n${config.niche.pillars.map(p => `- ${p}`).join("\n")}`,
       `\nGuardrails for this niche:\n${config.niche.guardrails.map(g => `- ${g}`).join("\n")}`,
     ] : []),
+    `\n## This week's growth playbook (Growth Strategist; follow it, it serves the monetization goal)\n${readText(join(DATA, "growth-playbook.md"), "_No growth playbook yet._")}`,
     `\n## What we've learned from our own analytics (apply it)\n${readText(join(DATA, "learnings.md"), "_No learnings yet — first weeks of the channel._")}`,
     `\n## Craft notes from our own quality checks (recurring mistakes to avoid; apply them)\n${readText(join(DATA, "craft-notes.md"), "_No craft notes yet._")}`,
   ].join("\n");

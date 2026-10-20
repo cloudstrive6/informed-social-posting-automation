@@ -76,6 +76,8 @@ const commands: Record<string, () => Promise<unknown>> = {
     const id = await syncCuratedPlaylist(rest[0]);
     await notify(`📃 Playlist synced: https://www.youtube.com/playlist?list=${id}`);
   },
+  // growth: weekly Growth Strategist review (growth.yml)
+  growth: async () => { const { runGrowthReview } = await import("./analytics/growth.js"); await runGrowthReview(); },
   // trailer-publish: upload the rendered trailers to YouTube and set the channel trailer for non-subscribers
   "trailer-publish": async () => { const { publishTrailers } = await import("./produce/trailer.js"); await publishTrailers(); },
   // trailer <name>: render config/trailers/<name>.json as a channel trailer (trailers release + Telegram preview)

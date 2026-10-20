@@ -51,6 +51,8 @@ export async function runAnalytics() {
   try {
     ypp = await partnerProgress();
     writeJson(join(DATA, "usage", "ypp.json"), ypp);
+    const { appendFileSync } = await import("node:fs");
+    appendFileSync(join(DATA, "usage", "ypp-history.jsonl"), JSON.stringify(ypp) + "\n");
     const pct = (a: number, b: number) => `${Math.min(100, Math.round((a / b) * 100))}%`;
     const { notify } = await import("../notify/telegram.js");
     await notify([
