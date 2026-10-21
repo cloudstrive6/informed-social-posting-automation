@@ -1,43 +1,43 @@
 {
-  "at": "2026-10-21T04:54:48.875Z",
-  "summary": "Radar for 2026-10-21, GLP-1 focus only. Three stories are breaking fastest.\n\n1. Compounded tirzepatide recall: a wave of mainstream coverage (USA Today, LA Times, Fox Business, NY Post, MassLive) on Oct 20 about a Class II FDA recall of 22 compounded tirzepatide vials. Several headlines wrongly suggest Mounjaro and Zepbound themselves are affected. Coverage of FDA inspections at Chinese ingredient plants (black mold, insects) adds to it. This fits Lane B: a calm \"what the FDA has actually confirmed\" piece that clears up the brand confusion.\n2. CagriSema in women: Novo reported a 25.0% average weight loss in women vs 3.0% on placebo at week 68. It is a post hoc analysis of REDEFINE 1, presented at The Menopause Society meeting on Oct 20. It qualifies for Lane C (first explainer) only if it ships within 48 hours. The title must say \"in women\" and \"post hoc\", and that the drug is not approved.\n3. Retatrutide: Lilly's CEO statements, the Penn Reddit side-effect study, Dutch reports of illegal use and Lilly's Q3 results on Oct 29 keep it hot. Best used as the planned Lane B long-form (\"Retatrutide Online: what the FDA and Lilly have confirmed\"). Correction to the input feed: Lilly's six lawsuits date from August 2026, so they are background, not news.\n\nGood Lane A (search-question) refreshers: GLP-1 and menopause (STEP UP life-stage analysis plus a cohort linking hormone therapy to more weight loss), \"what to eat on GLP-1\" (The Conversation, Oct 20), GLP-1 supplements vs the real medicine (Reuters, Oct 20), and why people stop semaglutide early (Diabetes Obes Metab, Oct 19). Lower priority: orforglipron's ACHIEVE-4 heart data, semaglutide and muscle strength (handgrip meta-analysis), kidney safety from FLOW, generic semaglutide in Canada and 2027 prices, schizophrenia and alcohol research, and sleep apnea.\n\nRejected: an NY Post piece pushing a telehealth \"GLP-1 in 48 hours for under $100\" offer, and a 'technical guide' to reconstituting retatrutide 'reference vials'. Both send people toward buying unapproved or gray-market products.\n\nVerified: the recall (Apothecary Pharma, Class II, 18 mg/mL vials, lots AP-202622 to AP-202644), the CagriSema numbers, ACHIEVE-4, the Lancet Psychiatry cohort and the menopause data. The KwikPen 'approval' in the feed is old (Jan 2026), so it isn't news.",
+  "at": "2026-10-21T13:53:57.989Z",
+  "summary": "Radar for 2026-10-21, GLP-1 focus. The best openings, in order:\n(1) The compounded tirzepatide recall. Some headlines (MassLive, Yahoo) say \"Mounjaro, Zepbound ingredient\", which makes people think the branded pens are recalled. They aren't. The recall covers only Apothecary Pharma's compounded vials: Class II, started Sep 24, classified Oct 10. There's also LA Times FOIA reporting on the Chinese ingredient plants. This fits Lane B, but because we already ran a recall Short this week, any long-form has to be the wider \"what to check\" piece.\n(2) Novo's CagriSema analysis in women (REDEFINE 1, about 2,300 women: 25% vs 3% at 68 weeks; by menopause stage 26.7%, 24.8% and 23.1%). It was presented at the Menopause Society on Oct 20, so the 48-hour Lane C window closes Oct 22.\n(3) A search-led \"semaglutide/tirzepatide and menopause\" Lane A long-form. It ties together the Menopause Society news, the Mayo HRT cohort (16% vs 12%, observational) and MedPage/Everyday Health coverage.\n(4) Retatrutide gray-market \"what's confirmed\" ahead of Lilly's Oct 29 earnings. Medscape's plateau piece and MedPage's Reddit side-effects piece keep it rising.\nStrong Lane A evergreens that fresh news has revived: GLP-1 supplements (NOW launch and Medical Daily), Ozempic and alcohol (Medscape Oct 21), Ozempic face (Reuters), weight-loss plateaus, the Wegovy pill vs the shot, stopping tirzepatide, and generic semaglutide in Canada.\nRejected: low-dose or \"simplified\" tirzepatide pieces (they read as a microdosing protocol) and the retatrutide \"reconstitution guide\" (gray-market how-to).\nNot verified: I couldn't get the effect size for the semaglutide handgrip meta-analysis, so scriptwriters need the abstract first. Weekly YouTube counts weren't checked directly; competition ratings come from how heavily the mainstream outlets have covered each topic.",
   "candidates": [
     {
-      "topic": "Compounded tirzepatide recall (Oct 2026): 22 lots of compounded vials recalled over sterility, Class II per FDA. Branded Mounjaro/Zepbound pens are not part of it",
-      "angle": "Lane B long-form plus the 13:00 lead Short, in the 'What's Actually Confirmed?' series. Several headlines ('Mounjaro, Zepbound ingredient risk raised') imply the brand-name pens are affected. Calmly explain what the FDA notice actually covers: compounded tirzepatide 18 mg/mL multi-dose vials; voluntary recall started Sept 24; FDA classed it Class II on Oct 8. Explain what Class II means and why sterility matters for injectables. Add the FDA's inspection findings at Chinese ingredient plants (mould, insects; firms put on import alert). End by telling viewers to ask their pharmacist or prescriber whether their product is affected and about approved options. Say 'a compounding pharmacy' rather than promoting any company. No buying guidance. Title idea: 'Tirzepatide Recall: What the FDA Has Confirmed (Oct 2026)'",
+      "topic": "Is Mounjaro or Zepbound recalled? Only compounded tirzepatide vials from Apothecary Pharma are (Class II, started Sep 24, classified Oct 10, 2026), plus FDA inspection findings at Chinese plants supplying compounding ingredients",
+      "angle": "Lane B, 'What's Actually Confirmed?' series: a calm, dated walk-through of what the FDA recall notice says (company, product, 'lack of assurance of sterility', Class II meaning), why headlines saying 'Mounjaro, Zepbound ingredient' confused people, what the FDA-cited inspection reports describe (as reported by the LA Times, Oct 19), and how FDA-approved pens differ from compounded vials. Never name a seller. Point viewers to a prescriber about approved options. A recall Short already ran this week, so the long-form must be the wider 'Compounded vs Branded Tirzepatide: What the FDA Has Confirmed' and must add the inspection and import-alert facts.",
       "keywords": [
-        "tirzepatide recall",
-        "GLP-1 recall",
-        "is Mounjaro being recalled",
-        "Zepbound recall October 2026",
-        "compounded tirzepatide recall lots",
-        "GLP-1 injections recalled nationwide"
+        "is mounjaro recalled",
+        "zepbound recall",
+        "compounded tirzepatide recall",
+        "tirzepatide recall october 2026",
+        "is my glp-1 safe",
+        "compounded vs brand tirzepatide"
       ],
       "stage": "rising",
       "momentum": 90,
       "predicted_peak": "1–4 days",
-      "why_now": "National outlets covered it within the last 24 h (USA Today, LA Times, Fox Business, NY Post, MassLive, Tennessean), and headline confusion is driving 'is my Mounjaro recalled' searches. It matches our strongest Short lane (gray-market 'what's confirmed', median 108) and Lane B long-form. The FDA's inspection findings on Chinese ingredient makers (LA Times, Oct 19) make it a stronger story.",
-      "competition": "medium",
+      "why_now": "Recall coverage exploded Oct 20–21 (USA Today, Fox Business, NY Post, LA Times, ConsumerAffairs, Times of India). The misleading 'Mounjaro, Zepbound ingredient' headlines are sending branded-pen users to search. This is our strongest proven lane (gray-market 'what's confirmed' Shorts: median 108).",
+      "competition": "high",
       "evidence": [
         {
-          "source": "Becker's Hospital Review",
-          "signal": "Recall of 22 vials, Oct 8 FDA notice, Class II, voluntary recall from Sept 24, Dec 2025 FDA warning letter",
-          "url": "https://www.beckershospitalreview.com/glp-1s/compounded-glp-1-injections-recalled-nationwide-4-notes/"
+          "source": "MoneyTalksNews (recall summary)",
+          "signal": "Apothecary Pharma compounded tirzepatide 18 mg/mL vials, 22 lots, Class II, initiated Sep 24, classified Oct 10; not branded Lilly products",
+          "url": "https://www.moneytalksnews.com/glp-injections-recalled-nationwide-see-affected-products/"
         },
         {
-          "source": "Quartz",
-          "signal": "Lots AP-202622 to AP-202644, 18 mg/mL 4 mL multi-dose vials, beyond-use dates Oct 7 to Nov 26",
-          "url": "https://qz.com/apothecary-pharma-recall-tirzepatide-injections-sterility-102026"
+          "source": "MedShadow FDA recalls roundup",
+          "signal": "Recalls for compounded semaglutide and tirzepatide, plus facility warning letters",
+          "url": "https://medshadow.org/drug-updates-recalls/fda-recalls-and-warnings/fda-drug-recalls-and-warnings-recalls-for-compounded-semaglutide-and-tirzepatide-wegovy-facility-warning-letters/"
         },
         {
-          "source": "Yahoo/USA Today network",
-          "signal": "'Mounjaro, Zepbound ingredient risk raised to second-highest level' headline shows the brand confusion",
-          "url": "https://www.yahoo.com/news/science/articles/glp-1-recall-mounjaro-zepbound-162717555.html"
+          "source": "LA Times via dnyuz (Oct 19)",
+          "signal": "FOIA'd FDA inspection reports: mold and insects at Chinese plants making semaglutide/tirzepatide for compounders; both firms on import alert",
+          "url": "https://dnyuz.com/2026/10/19/black-mold-bugs-found-at-chinese-plants-making-glp-1-compounding-agents/"
         },
         {
-          "source": "NewsBytes summary of FDA inspection findings",
-          "signal": "Black mold, insects at Chinese semaglutide/tirzepatide ingredient plants; firms put on import alert",
-          "url": "https://www.newsbytesapp.com/news/world/fda-finds-problems-at-chinese-semaglutide-and-tirzepatide-ingredient-factories/tldr"
+          "source": "Google News: MassLive",
+          "signal": "Headline 'Mounjaro, Zepbound ingredient risk raised' is the confusion we can correct",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ05UaVlISk9QZ29HNDRUbGFOVWFWUE1tMXFJelVpRGRiV3pKQ2xKQU41WG56TzBCb0VESzhBNnBPdjRyaTZqVlN0QUJNNlREX01hdUFZMzBhUGJwaGlPYVdNaXFIUUtPNkx4M1N0MHdINmtONEpvVkVjcWppQzY4YzBmQnBFQmlYQkktMXRvU2VqVWh5cHpFb2IwSHBEUVA3M01uYjFpTWxHeDFzeGNMbmdWNkREQU5VeUM4T9IB0AFBVV95cUxPZkJSVHBwRU8tNDJqclFrSnNBQlJSeHFhc2MxcVp2RS1wNHZjcXI4MzNsTldGLW9ldWNPVEV4U1pMNzNGTGJ4Nm1aLVlyR3JENDMtZ3VJN1RSeVU4ZXRLY0ZjS3NLWWFneWtoaEo4Y0xCTW5IM1ZBODRvc1pIRnBBM01Ra0dWcEFsOC1vX2stSGdtdll2MXFkOWxuOVVDRENlUzZHRmwzOE5LYk93aVgzQnJrTlNvQ3dzbUNuUVFucUlWeTR4RFcyWTNwXy1Xanln?oc=5"
         }
       ],
       "safety": "caution",
@@ -47,40 +47,35 @@
       ]
     },
     {
-      "topic": "CagriSema in women: 25.0% average weight loss vs 3.0% on placebo at week 68 (REDEFINE 1 post hoc analysis, Menopause Society meeting, Oct 20, 2026)",
-      "angle": "Lane C 'New GLP-1 Drug Decoded' long-form, only if it ships by Oct 22. Title starts with the new name: 'CagriSema in Women: What the New 25% Result Means'. Explain what CagriSema is (cagrilintide plus semaglutide). Cover the post hoc result in women and the split by menopause stage: 26.7% premenopausal, 24.8% perimenopausal, 23.1% postmenopausal (1,902 women). Note that the full trial averaged 22.7%. Explain what 'post hoc' means. Status: not approved; Novo expects a US decision in Q4 2026; side effects mainly gastrointestinal. Do not call it head-to-head with tirzepatide. Funnel Short at 20:00 the next day.",
+      "topic": "CagriSema in women: Novo's post hoc analysis of REDEFINE 1 (about 2,300 women with obesity or overweight) showed 25% average weight loss vs 3% on placebo at 68 weeks; by menopause stage 26.7% / 24.8% / 23.1% if everyone stayed on treatment (Menopause Society, Oct 20, 2026)",
+      "angle": "Lane C first explainer, new hook first: 'CagriSema for Women: What the New Analysis Shows'. Explain cagrilintide plus semaglutide (amylin plus GLP-1), why this is a post hoc subgroup and not a new trial, the 'if everyone stayed on treatment' estimand vs the overall trial result (22.7% vs 2.3%), the common digestive side effects, and the status: not approved, US decision expected. Don't use the 'Did X beat Y' or 'approved yet?' frames.",
       "keywords": [
-        "CagriSema women",
-        "CagriSema 25% weight loss",
-        "CagriSema menopause",
-        "CagriSema results 2026",
-        "new Novo weight loss drug"
+        "cagrisema women",
+        "cagrisema menopause",
+        "cagrisema weight loss results",
+        "cagrisema 25%",
+        "new weight loss drug for women"
       ],
       "stage": "emerging",
-      "momentum": 82,
-      "predicted_peak": "2–6 days",
-      "why_now": "First reported Oct 20 by Reuters, CNBC and Quartz. Few health creators have explained it yet, and Lane C rewards being first within 48 h (EloraTZP: 442). The menopause angle reaches our 40–65 female audience.",
-      "competition": "low",
+      "momentum": 80,
+      "predicted_peak": "2–5 days",
+      "why_now": "CNBC, BioSpace, Quartz and Invezz covered it Oct 20–21. Health creators haven't covered it yet. The 48-hour first-explainer window closes Oct 22. It overlaps with heavy menopause search interest.",
+      "competition": "medium",
       "evidence": [
         {
-          "source": "CNBC",
-          "signal": "Novo's next-generation obesity drug shows 25% weight loss in women in late-stage analysis (Oct 20, 2026)",
+          "source": "CNBC (Oct 20, 2026)",
+          "signal": "25% average weight loss in women at 68 weeks vs 3% placebo, post hoc analysis",
           "url": "https://www.cnbc.com/2026/10/20/novo-cagrisema-women-weight-loss-analysis.html"
         },
         {
-          "source": "Quartz",
-          "signal": "25.0% vs 3.0% placebo at week 68; menopause-stage split; waist −20.5 cm vs −4.7 cm",
-          "url": "https://qz.com/novo-nordisk-cagrisema-women-weight-loss-analysis-102026"
+          "source": "BioSpace press release",
+          "signal": "Post hoc REDEFINE 1 analysis presented at The Menopause Society Annual Meeting",
+          "url": "https://www.biospace.com/press-releases/novos-cagrisema-was-associated-with-25-weight-loss-on-average-for-women-in-a-post-hoc-analysis-of-redefine-1-presented-at-the-menopause-society-annual-meeting"
         },
         {
-          "source": "Euronext/Reuters",
-          "signal": "Reuters copy: post hoc REDEFINE 1, Menopause Society 2026 Annual Meeting",
-          "url": "https://live.euronext.com/en/financial-news/novos-cagrisema-helped-women-lose-25-weight-average-analysis-shows"
-        },
-        {
-          "source": "PubMed, Front Endocrinol (Oct 2)",
-          "signal": "New meta-analysis: CagriSema vs semaglutide 2.4 mg",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/42890523/"
+          "source": "inkl",
+          "signal": "Most users had digestive side effects (balance line)",
+          "url": "https://www.inkl.com/news/women-lost-25-of-body-weight-on-cagrisema-in-trial-analysis-but-most-users-had-digestive-side-effects"
         }
       ],
       "safety": "ok",
@@ -90,35 +85,73 @@
       ]
     },
     {
-      "topic": "Retatrutide online: what the FDA and Lilly have confirmed (Oct 2026), ahead of Lilly's Q3 results on Oct 29",
-      "angle": "The planned Lane B long-form ('Retatrutide Online: What the FDA and Lilly Have Confirmed'). Credit and date every line: not FDA-approved as of Oct 2026. Lilly's CMO said black-market product 'is not a medicine' (lawsuits filed Aug 2026). Penn's Reddit AI study (preprint): users self-reported increased appetite, fatigue and insomnia more often than the trials did. Netherlands authorities report rising illegal use. Trial results so far. Never name sellers; point to a prescriber about approved options or clinical trials.",
+      "topic": "Semaglutide and tirzepatide in menopause: what studies show (Mayo Clinic cohort: semaglutide plus hormone therapy 16% vs 12% without at 12 months, observational; STEP UP/SELECT menopause-stage data; new CagriSema analysis by menopause stage)",
+      "angle": "Lane A, search phrase first: 'Ozempic and Menopause: What the Studies Actually Show'. Cover why weight shifts around menopause, what GLP-1 trials show by menopause stage, the hormone-therapy cohort labelled 'linked to' and 'not randomized', and protein and strength training for bone and muscle. End with questions to bring to your doctor, and 'don't start or change hormone therapy on your own'.",
+      "keywords": [
+        "ozempic menopause",
+        "semaglutide menopause weight gain",
+        "mounjaro menopause",
+        "glp-1 hormone therapy",
+        "hrt and ozempic"
+      ],
+      "stage": "rising",
+      "momentum": 78,
+      "predicted_peak": "1–3 weeks (evergreen afterwards)",
+      "why_now": "Menopause Society meeting news (CagriSema), Everyday Health (Oct 20) and MedPage 'GLP-1 in Menopause' (Oct 20) all landed at once. Women 45–65 are a core high-ad-rate audience, and the search demand lasts.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Everyday Health via Google News (Oct 20)",
+          "signal": "Combining hormone therapy with GLP-1s may boost weight loss for menopausal women",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNFRHUlRxaHFya3BIbDFmMWtOZmRycElfSUlDR1ZUcmpZbklwTG5XbjZZR0FmOThfekEtRzdoYXZWelpjMkRyTXZIRkhSejZvend5S0FvRjFBSHhFeEJSWXU3UXlzeldYQ0tOWFhsaHdwQ3RWck1saThVdEV5ZTBLMlJzYXpDVVB1Q3pLQWNsWGt6LWMzaGNwNFFwZWZ0alhzRzFDLTN5SGcyZkM0?oc=5"
+        },
+        {
+          "source": "Novo Nordisk ECO 2026 release",
+          "signal": "Wegovy weight loss consistent across menopause stages (STEP UP, SELECT)",
+          "url": "https://novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=916546"
+        },
+        {
+          "source": "Second Nature guide",
+          "signal": "Summary of the Mayo semaglutide plus HRT cohort (16% vs 12%), non-randomized",
+          "url": "https://www.secondnature.io/guides/lifestyle/glp1s/ozempic-wegovy-menopause-weight-gain"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Retatrutide online: what the FDA and Lilly have confirmed before Lilly's Oct 29 results (not approved anywhere; filing planned; unverified FDA death reports linked to products sold as retatrutide; Lilly lawsuits; Reddit side-effect reports)",
+      "angle": "Lane B long-form 'Retatrutide Online: What the FDA and Lilly Have Confirmed (Oct 2026)'. Every line is attributed and dated. Contrast the trial drug with 'research use only' vials, explain what the Penn AI Reddit study can and can't tell us, and point viewers to a prescriber about approved options or trials. Never name a seller and never explain buying or mixing.",
       "keywords": [
         "retatrutide online",
         "is retatrutide safe",
         "retatrutide side effects reddit",
-        "retatrutide approval date",
-        "reta peptide"
+        "retatrutide research peptide",
+        "retatrutide approval date"
       ],
       "stage": "rising",
-      "momentum": 86,
-      "predicted_peak": "5–10 days (Lilly earnings Oct 29)",
-      "why_now": "Several sources in the last 48 h: the Penn study (SciTechDaily, MedPage), NL Times on illegal use, Lilly CEO comments on retatrutide as its next growth driver, and Medscape on whether retatrutide could break a GLP-1 plateau. Earnings on Oct 29 will bring another spike. Retatrutide in a 'what's confirmed' frame is our best Short topic (184, 116).",
+      "momentum": 88,
+      "predicted_peak": "3–10 days (spike around Oct 29 earnings)",
+      "why_now": "MedPage (Oct 20) on retatrutide side effects on Reddit, Medscape (Oct 20) on plateaus, SciTechDaily on the AI Reddit study, NL Times on illegal retatrutide, a flood of search-bait pages, and Lilly's CEO pitching it ahead of Q3 results. Our proven best Short lane.",
       "competition": "medium",
       "evidence": [
         {
-          "source": "Healio (Aug 14, 2026)",
-          "signal": "Lilly filed six lawsuits against companies allegedly selling retatrutide (date it as Aug 2026, not new)",
-          "url": "https://www.healio.com/news/endocrinology/20260814/eli-lilly-files-lawsuits-against-six-companies-for-allegedly-selling-retatrutide"
+          "source": "MedPage Today via Google News (Oct 20)",
+          "signal": "Retatrutide side effects on Reddit",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1uSTZYcjZTRzhaSGFtaEdlUlkyV1FqNVZaMUVBVzVmTktNNmNkenJhVVd1bGx6TU0ycVo3cFJBMnRvaEx1V0JfUkVjbm1sT1kyLUxRUWFFXzVwVG9zQ2pqbDl3d2hxUW4waXJCaWJpSHU4enp5MTJpaU53?oc=5"
         },
         {
-          "source": "Outlook Business",
-          "signal": "CMO Hyman: black-market product 'is not a medicine'",
-          "url": "https://www.outlookbusiness.com/corporate/eli-lilly-sues-6-us-sellers-over-black-market-retatrutide-calls-products-unverified"
+          "source": "SciTechDaily (Oct 19)",
+          "signal": "Reddit users experimenting with unapproved drug; AI analysis",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVTd3UkJrVHJqaHRYTnNaNEdzeHlIbF95VUhrNHZlelU2ZDVCcVV2TUhQdHFSVVBSWkFCVzQ5aDVBRmpsQ1RwOE9FbEZCdDNkdW9Eak4yRDVuOTJDV2l1dG9neVBpWXR5WDJXRUx2T1RHNWdOZ3Y0aFB6VkR3OWMzTXdWMFBqXzdma1FCV01falJIYjdWcnQ3OWpPMC11dUd6ZDhwZms4NF9qYWVuV2NmU2lrcDFKLXpBNS0wWWhXOA?oc=5"
         },
         {
-          "source": "Drugs.com",
-          "signal": "Retatrutide FDA approval status page (check it on the day of publishing)",
-          "url": "https://www.drugs.com/history/retatrutide"
+          "source": "NL Times (Oct 19)",
+          "signal": "Illegal retatrutide on the rise in the Netherlands",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYlNSX252cm9Tc1VJX0NwcWpjd1F3R21uNmtfbW00N0VBc04tQ25ZN0g0UUo0YThsazV4YThPaGZGbXJCOTdYcHE3X2NkWk1vZUVRYjE4di0tbnQ5eTVSSHNYOWZHX1h5bXB3eWJCYi01QnJhUTg3dWZwam5HTXhyc015UU1Od2h2VmVJ?oc=5"
         }
       ],
       "safety": "caution",
@@ -128,106 +161,73 @@
       ]
     },
     {
-      "topic": "GLP-1 and menopause: does weight loss differ before, during and after menopause? (STEP UP life-stage analysis, plus a cohort linking hormone therapy to more semaglutide weight loss)",
-      "angle": "Lane A long-form, 'GLP-1 and Menopause: What the Research Shows'. STEP UP post hoc (semaglutide 7.2 mg, adults with obesity without diabetes, 72 weeks): about 22.6% premenopausal vs about 19.7–19.8% peri- and postmenopausal. Observational cohort: women on semaglutide plus hormone therapy lost 16% vs 12% without it at 12 months ('linked to', not 'causes'). Tie in the new CagriSema women's data as a re-hook. Never suggest starting hormone therapy for weight loss; talk to your doctor. Not a repeat of a recent Short.",
+      "topic": "Do 'GLP-1 supplements' work like semaglutide? New NOW 'GLP-1 Metabolic Support' launch, a report that about half of GLP-1 users start new supplements (none need FDA approval), and what fibre, protein and eating order really do to your own GLP-1",
+      "angle": "Lane A: 'GLP-1 Supplements: Do They Work Like Ozempic?'. Explain natural GLP-1 (minutes) vs semaglutide (a week), what the evidence on fibre and protein preloads shows (modest), how supplement regulation works (DSHEA: no pre-market approval), and the supplements that may matter on treatment (protein adequacy), each with a 'talk to your prescriber' line. Never name a product as an endorsement.",
       "keywords": [
-        "Ozempic menopause",
-        "GLP-1 menopause weight gain",
-        "semaglutide and HRT",
-        "Wegovy perimenopause",
-        "Mounjaro menopause"
-      ],
-      "stage": "rising",
-      "momentum": 76,
-      "predicted_peak": "1–3 weeks, then evergreen",
-      "why_now": "Everyday Health and Bioengineer covered the HRT and semaglutide cohort on Oct 20, MedPage ran 'GLP-1 in Menopause', and the Menopause Society meeting is underway. Real search demand from women 40–60 in high-CPM markets.",
-      "competition": "medium",
-      "evidence": [
-        {
-          "source": "Indian Pharma Post (ECO 2026)",
-          "signal": "STEP UP post hoc: 22.6% premenopausal, 19.7% perimenopausal, 19.8% postmenopausal; HRT 16% vs 12%",
-          "url": "https://www.indianpharmapost.com/news/lite/wegovy-delivers-consistent-weight-loss-heart-benefits-for-women-across-menopause-novo-nordisk-study-20198"
-        },
-        {
-          "source": "Healio",
-          "signal": "Earlier finding: hormone therapy may boost weight loss for postmenopausal women on semaglutide",
-          "url": "https://healio.com/news/womens-health-ob-gyn/20240318/hormone-therapy-may-boost-weight-loss-for-postmenopausal-women-on-semaglutide"
-        },
-        {
-          "source": "Qz (CagriSema women)",
-          "signal": "CagriSema results by menopause stage, a fresh hook",
-          "url": "https://qz.com/novo-nordisk-cagrisema-women-weight-loss-analysis-102026"
-        }
-      ],
-      "safety": "ok",
-      "formats": [
-        "long",
-        "short"
-      ]
-    },
-    {
-      "topic": "Is my GLP-1 real? Branded vs compounded vs counterfeit: what the FDA and MHRA say to check (Oct 2026)",
-      "angle": "Lane B evergreen companion to the recall video: 'Counterfeit Semaglutide and Tirzepatide Pens: What the FDA Says to Check'. Cover FDA crackdown statements, the MHRA's seizure of 12,000+ counterfeit pens (Oct 14), the photo-review study (26% on compounded products, 65% of those thought they were branded), and the Brazil black market (Bloomberg). Packaging checks from regulator pages only; ask your pharmacist. Never name sellers.",
-      "keywords": [
-        "fake Ozempic pen how to tell",
-        "counterfeit Mounjaro",
-        "is my GLP-1 compounded",
-        "FDA copycat GLP-1 crackdown",
-        "fake Wegovy"
-      ],
-      "stage": "rising",
-      "momentum": 78,
-      "predicted_peak": "1–2 weeks",
-      "why_now": "McClatchy ran 'Is my GLP-1 safe? What to know about FDA's crackdown on copycat drugs' on Oct 20. The recall wave, Bloomberg's Brazil piece and last week's MHRA raid all point the same way. Lane B is our strongest lane.",
-      "competition": "medium",
-      "evidence": [
-        {
-          "source": "Yahoo/McClatchy",
-          "signal": "'Is my GLP-1 safe? What to know about FDA's crackdown on copycat drugs' (Oct 20)",
-          "url": "https://www.yahoo.com/news/us/articles/glp-1-safe-know-fdas-220744507.html"
-        },
-        {
-          "source": "WebMD",
-          "signal": "Background on compounded GLP-1 production",
-          "url": "https://www.webmd.com/obesity/features/obesity-compounding-wegovy-tirzepatide"
-        },
-        {
-          "source": "FDA Import Alert 66-80",
-          "signal": "Regulatory basis for blocked ingredient imports",
-          "url": "https://www.accessdata.fda.gov/CMS_IA/importalert_1186.html"
-        }
-      ],
-      "safety": "caution",
-      "formats": [
-        "long",
-        "short"
-      ]
-    },
-    {
-      "topic": "GLP-1 'supplements' vs the real medicine: doctors and regulators raise flags (Reuters, Oct 20)",
-      "angle": "Lane A: 'GLP-1 Supplements: Do They Work Like Ozempic?' Explain the difference between a prescription GLP-1 drug and products marketed as 'GLP-1 support'. FDA warnings about tainted weight-loss supplements. Then the positive part: protein, fibre and eating vegetables and protein first can modestly raise your own GLP-1, without claiming they replace the medicine. Mention that 'companion products' are a growing market (Nutrition Insight).",
-      "keywords": [
-        "GLP-1 supplement",
-        "natural Ozempic",
-        "berberine vs Ozempic",
-        "do GLP-1 supplements work",
-        "GLP-1 booster"
+        "glp-1 supplements",
+        "do glp-1 supplements work",
+        "natural ozempic",
+        "berberine vs ozempic",
+        "supplements on ozempic"
       ],
       "stage": "rising",
       "momentum": 72,
       "predicted_peak": "1–3 weeks",
-      "why_now": "Reuters story on Oct 20, plus Nutrition Insight on companion products. The topic was in our previous snapshot at 64 and is accelerating. High search volume, and it supports the 'natural ways to support your GLP-1' pillar.",
+      "why_now": "A new branded GLP-1 supplement launched Oct 21 (Nutrition Insight) and Medical Daily reported Oct 21 on supplement use among GLP-1 users. It built on Bon Appétit's 'still hungry' test seen in our last snapshot. Big, steady search volume.",
       "competition": "high",
       "evidence": [
         {
-          "source": "Reuters via Google News",
-          "signal": "'As weight-loss drug users turn to dietary supplements, doctors and regulators raise flags' (Oct 20)",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdmVEQzU5MERjQjV6REw2M3MzbUNZZVlmWmpQdkx6RWh5cm5TbVZiSEpXT1ZuNHhKTzBjZW5QYkJ4SWp0M2xJU1pyU1NxZktrSHJUT01GUmo4TmF1VVhJREtQY0tkYWF3UGZOT2dnOC1qNmxQX29ZYjFEN1g3cV9vc2lwdXZCVjdicGtaeWZYeGxNZ0VfdmM3UWJ5SXJLLThfaTdZM0luN2lmSXVxV2tMSWxPVVVUa204RG1jbGU0RG5ERjJXdDB2b1VrUQ?oc=5"
+          "source": "Medical Daily via Google News (Oct 21)",
+          "signal": "About half of GLP-1 users start new supplements; none need FDA approval",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBxNXByMTAzREFoRkU4RTkzTWVXM3JFc0t3UVhud01RM0d3bXIzLVpnZzhoMTc4MVI0d1FJRW0zRnM1OTFNbXZKaTBrQmhxOGt1R2piMU5tVl9ZMUNDTFJySW5uUFBybE1GdnJVdWduRXRFZXQxNmh4T3lkTFNyUQ?oc=5"
         },
         {
-          "source": "NBC News",
-          "signal": "Background: 'natural' diet pills found tainted with sibutramine",
-          "url": "https://www.nbcnews.com/health/health-news/natural-diet-pills-tainted-banned-prescription-drug-flna1c6436883"
+          "source": "Nutrition Insight via Google News (Oct 21)",
+          "signal": "NOW GLP-1 Metabolic Support launch",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDEtTjRKUWNWUHF2WnNWbzF6VFBRV2xycGhFWHhGeXFhWWprNlh5NEVmUUZLREFUYmMxVkRvNDRDT1Y3Um4zZmx6a1lJZ1E0MDJheWhiTFp3bGNueEhqWTM5M3pNOXVGeHQ5UDducG9tbThjZ2lRYkxnbF9BRDlOQjZlSmRqcXZKZ1VxTVVzZU5ESlpn?oc=5"
+        },
+        {
+          "source": "PwC GLP-1 consumer report",
+          "signal": "GLP-1 users increase supplement spend; strong interest in muscle-protecting supplements",
+          "url": "https://www.pwc.co.uk/industries/retail-consumer/appetite-for-disruption-glp-1-vitamins-minerals-supplements.pdf"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Ozempic and alcohol: what studies show about GLP-1 medicines and drinking (Medscape Oct 21; semaglutide placebo-controlled trial in adults with alcohol use disorder and obesity; Virginia Tech blood-alcohol study; BMJ on a US semaglutide trial on criminal reoffending)",
+      "angle": "Lane A: 'Ozempic and Alcohol: What the Research Shows'. Separate the RCT (fewer heavy-drinking days) from observational and lab findings, explain the reward-system mechanism simply, note that it's not approved for alcohol use disorder, and give practical safety points (slower absorption, hypoglycemia risk in diabetes, nausea), with a doctor line.",
+      "keywords": [
+        "ozempic alcohol",
+        "can you drink on ozempic",
+        "semaglutide alcohol cravings",
+        "glp-1 alcohol use disorder",
+        "mounjaro and alcohol"
+      ],
+      "stage": "rising",
+      "momentum": 70,
+      "predicted_peak": "1–2 weeks",
+      "why_now": "Medscape (Oct 21), Medical Economics (Oct 20, semaglutide cuts heavy drinking) and a BMJ news piece (Oct 20) all landed. 'Can you drink on Ozempic' is a perennial high-volume search question, and the holiday season is approaching.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Medscape via Google News (Oct 21)",
+          "signal": "GLP-1 drugs linked to reduced alcohol consumption",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ3htWGhCSHpCQU9zR3Q5YmI3dDVCZElWYTJsa0doMkY2d1IxOHZsTjRLQkNGQTJkRGFDTDJKd29oTVZxODhpUmh4Y191VUxxcmtJdS00WUZ2blhqV1BhMnh2UGhwUm53V21KRUZLd1BfTTl5dFNlaXZBZm9YNW9fdE16UWl0anVSZFFwLTFLNmNZVWQ4dUMzOVlQRmplaWFNNG5ENHRPODJ2WC1GamdF?oc=5"
+        },
+        {
+          "source": "PubMed: Addict Behav review (Oct 10)",
+          "signal": "Semaglutide for alcohol use disorder: efficacy and mechanisms",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42880142/"
+        },
+        {
+          "source": "PubMed: BMJ news (Oct 20)",
+          "signal": "US trial will test whether semaglutide can fight crime",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42901618/"
         }
       ],
       "safety": "ok",
@@ -237,187 +237,193 @@
       ]
     },
     {
-      "topic": "What to eat on tirzepatide or semaglutide: protein, fibre and easier meals (The Conversation, Oct 20, plus a new rapid review on protein and resistance training)",
-      "angle": "Lane A 'Life on GLP-1' long-form: 'What to Eat on Tirzepatide: Protein, Fibre and Easier Meals'. Protein at each meal (check first if you have kidney disease), fibre, fluids (unless told to limit them), smaller meals, eating slower, foods that make nausea easier. Muscle outcome: about how much of the weight lost is lean mass in the SURMOUNT-1 body-scan substudy. Use 'recommended' wording for guideline habits.",
+      "topic": "Weight-loss plateau on tirzepatide or semaglutide: why it happens and what the trials show (Medscape's Oct 20 retatrutide plateau piece as the hook)",
+      "angle": "Lane A: 'Weight Loss Plateau on Tirzepatide: Why It Happens'. Use the trial weight curves (the flattening around weeks 60–72 in SURMOUNT-1 and STEP 1), metabolic adaptation, and the habits that help (protein, strength training, sleep). Mention retatrutide research only as dated pipeline context. Tell viewers not to change doses or switch on their own, and to talk to their prescriber.",
       "keywords": [
-        "what to eat on Mounjaro",
-        "what to eat on Ozempic",
-        "GLP-1 diet plan",
-        "protein on tirzepatide",
-        "foods to avoid on Ozempic"
+        "weight loss plateau on tirzepatide",
+        "mounjaro plateau",
+        "ozempic stopped working",
+        "why did i stop losing weight on zepbound",
+        "semaglutide plateau"
       ],
       "stage": "evergreen",
       "momentum": 70,
       "predicted_peak": "evergreen; refreshed now",
-      "why_now": "The Conversation explainer published Oct 20. The Nutrients rapid review (Oct 2) gives fresh evidence. Steady high-volume search phrase that fits the playbook's Lane A examples exactly.",
+      "why_now": "Medscape's Oct 20 piece reframes plateaus around next-gen drugs. 'Mounjaro stopped working' is a huge recurring query from our exact audience, and it fits the long-watch-time explainer lane.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Medscape via Google News (Oct 20)",
+          "signal": "Could retatrutide break a GLP-1 weight-loss plateau?",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaVJ5eW90QXM2ZWJsM2tCd1hJbkFaZzRGdGpXc0Q3enpNS0ZPU25veVozOGJCMndUSUJfQ2hZcHhkbFB5bUNxVmhjUUVtdmJCRUVGSXJzR1Ryd2RCTURPVVhZbzBaRmlDNWlBRWVUQS1UZzhWbzdISlpYYXg3YmZhbHM1UUNQSEhzOWp1RVJVZnFoSXBHT1I5Ynh0WjVrN2dx?oc=5"
+        },
+        {
+          "source": "Detroit News via Google News (Oct 20)",
+          "signal": "Why one-size-fits-all doesn't work for every GLP-1 patient (variable response)",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdUxZUkMwb3FfMkRwN1RDTHNiNlBwQkF1MkxYS0N5bG5iWXZPdEJoZS1HYVBGdnJjcTZhM1NnbjExaHIyZk01T0EzSlVfQ0NkcDJpc3c2bFFaYmJCVHpnWUx3MHFkV3FHOG9jNTE5QkN2bmh4SjBPdjdlNkdxNTJPT2lfdDZPbUN0cXlzUEl0Uk9RR0cwMDFKQU9GZzg2NFN5OUs4M3U2THVWaDhhYm44cnNzd3lMa0dUTVZtQllwQk90RktwWEdmeEFhNkt1WHZZRjRuTnVlams3WHpTeWhycFM2b2c?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Ozempic face: what it is, why it happens with fast weight loss, and what the science says (Reuters, Oct 21: beauty companies target the GLP-1 market)",
+      "angle": "Lane A: 'Ozempic Face: What It Is and What Actually Helps'. Explain that facial volume loss comes from weight loss in general, not from a drug toxin, what's known about speed of loss, and how protein, hydration and strength training help, with a skeptical look at product claims. Strictly no before/after shaming and no product promotion.",
+      "keywords": [
+        "ozempic face",
+        "what is ozempic face",
+        "mounjaro face",
+        "how to prevent ozempic face",
+        "ozempic skin sagging"
+      ],
+      "stage": "peaking",
+      "momentum": 66,
+      "predicted_peak": "evergreen search; news bump 3–7 days",
+      "why_now": "The Reuters beauty-market story (Oct 21) re-ups one of the highest-volume GLP-1 side-effect searches. A differentiated science angle can win the long-tail clicks.",
       "competition": "high",
       "evidence": [
         {
-          "source": "The Conversation via Google News",
-          "signal": "'Started a GLP-1 drug like Ozempic or Mounjaro? Here's what you need to know about nutrition' (Oct 20)",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYkdYb2xKODVRZldKOXVyS2NxMXBGV3BObjdEOFdOeXdLdXFra2pXOVc5QW92QjdfNS1EOWhDS0EzZkFycklvUUctREtBWE54XzZUNjloQ0U3UENoVzR3QkJLN2JPeWt0cFNzaTRPWTVKT3hOeEY5NXpWZjctLW9UTGljLWhsY1NXZ29sX0NKYjEyejBVTUtiTU5UZXFwcVNvSWJrQ25CU1pNQ01WLWNNWG11RWRFQUY0Wjd0WjNZbUtFdw?oc=5"
+          "source": "Reuters via Google News (Oct 21)",
+          "signal": "Beauty giants target 'Ozempic face' as obesity drug boom opens new market",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzBscFc1bVNobHJsZmJJNHE4dmlON3Viekp4ZDd1R2QwdlZaZkZJc1QyTW9aQmhnOGxmUW14NnFWbFlkSWVDbkJiRjdzdjhLODlSMmd1T2hETGxfbXRnaFo2NFE5UG5vbVNWZ21Zd0tWTDM2NExxaVI4bU5zNTlrbHM2dmhiT1ZOVkwzWVItdHlYeTFESEFSMVRla0hPUzFueUdGVl80NS1IbHJlQWhsakRqN0lsbjF3cF9TODFrMA?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Does semaglutide make you weaker? New systematic review and meta-analysis of handgrip strength on semaglutide (Diabetes Obes Metab, Oct 19, 2026), alongside the SEMALEAN cohort (grip strength rose about 4.5 kg at 12 months)",
+      "angle": "Muscle outcome question for the Shorts lane ('Semaglutide: Does It Weaken Your Grip?'), then a Lane A long-form, 'Do You Lose Muscle on Semaglutide or Tirzepatide?'. Explain lean mass vs strength, then protein and resistance training (Nutrients rapid review). Scriptwriters must pull the meta-analysis's pooled effect from the abstract before scripting; it wasn't verified here.",
+      "keywords": [
+        "does ozempic cause muscle loss",
+        "semaglutide muscle strength",
+        "muscle loss on mounjaro",
+        "grip strength glp-1",
+        "how much weight lost is muscle"
+      ],
+      "stage": "emerging",
+      "momentum": 66,
+      "predicted_peak": "1–2 weeks",
+      "why_now": "A fresh meta-analysis (Oct 19) on a proven topic for us (muscle Shorts: 100 and 131 views). Few creators have covered it yet.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "PubMed: Diabetes Obes Metab (Oct 19)",
+          "signal": "Changes in muscle strength after semaglutide: systematic review and meta-analysis of handgrip strength",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42897109/"
         },
         {
-          "source": "PubMed, Nutrients",
-          "signal": "Protein intake and resistance training across clinical populations: rapid review",
+          "source": "PMC: SEMALEAN study",
+          "signal": "Handgrip +4.5 kg at 12 months; sarcopenic obesity 49% to 33% (n=106, uncontrolled)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12673431/"
+        },
+        {
+          "source": "PubMed: Nutrients rapid review (Oct 2)",
+          "signal": "Protein intake and resistance training across clinical populations",
           "url": "https://pubmed.ncbi.nlm.nih.gov/42884710/"
         }
       ],
       "safety": "ok",
       "formats": [
-        "long",
-        "short"
-      ]
-    },
-    {
-      "topic": "Does semaglutide make you weaker? New meta-analysis of handgrip strength on semaglutide (Diabetes Obes Metab, Oct 19)",
-      "angle": "Muscle outcome Short ('Semaglutide and muscle: weaker or not?'), then a Lane A long-form, 'Does Semaglutide Cause Muscle Loss? Mass vs Strength'. Separate lean mass from muscle function. Use the new meta-analysis only after reading its abstract for the direction and size of the effect. SEMALEAN (handgrip +4.5 kg at 12 months, observational) is background. Strength training (start gently) and protein help.",
-      "keywords": [
-        "semaglutide muscle loss",
-        "Ozempic muscle loss",
-        "does Wegovy make you weak",
-        "GLP-1 grip strength",
-        "muscle loss on GLP-1"
-      ],
-      "stage": "emerging",
-      "momentum": 70,
-      "predicted_peak": "1–2 weeks",
-      "why_now": "Meta-analysis published Oct 19 with no news coverage yet. Muscle question Shorts are proven (100, 131 views). Creators haven't picked it up.",
-      "competition": "low",
-      "evidence": [
-        {
-          "source": "PubMed, Diabetes Obes Metab",
-          "signal": "Changes in muscle strength following semaglutide: systematic review and meta-analysis of handgrip strength (Oct 19)",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/42897109/"
-        },
-        {
-          "source": "PMC, SEMALEAN study",
-          "signal": "Handgrip +4.5 kg at 12 months; sarcopenic obesity 49% to 33%",
-          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12673431/"
-        }
-      ],
-      "safety": "ok",
-      "formats": [
         "short",
         "long"
       ]
     },
     {
-      "topic": "Why do so many people stop semaglutide early? Real-world US data on how starting habits relate to stopping early and staying on for 1 year (Diabetes Obes Metab, Oct 19)",
-      "angle": "Lane A: 'Why Do People Stop Ozempic or Wegovy? What the Data Shows'. Report the findings on early stopping and persistence, then what helps: tackling side effects early, protein, eating slowly, talking to the prescriber. Never advise stopping or titration. Re-hook: what happens after stopping (SURMOUNT-4 / STEP 4), linking to the 'stopping' series.",
+      "topic": "Wegovy pill vs Wegovy shot: what's different (daily vs weekly, the fasting rule, trial results, common side effects), as the pill launches in France without reimbursement and US uptake grows",
+      "angle": "Lane A: 'Wegovy Pill vs Wegovy Shot: What's the Difference?'. Compare how each is taken, what the trials showed for each in their own populations (indirect comparison, labelled), and side effects. Every piece carries 'don't switch, stop or change on your own; talk to your prescriber'.",
       "keywords": [
-        "why people stop Ozempic",
-        "Wegovy discontinuation",
-        "how long do people stay on Ozempic",
-        "stopping semaglutide reasons"
+        "wegovy pill vs shot",
+        "oral wegovy",
+        "wegovy pill side effects",
+        "is the wegovy pill as good as the injection",
+        "semaglutide pill"
       ],
-      "stage": "emerging",
-      "momentum": 62,
-      "predicted_peak": "evergreen",
-      "why_now": "New paper published Oct 19, plus AJMC (Oct 20) on patients being open to lower-cost maintenance. Pairs with our recurring 'after stopping' snapshot topic (seen 6×, around 66).",
+      "stage": "rising",
+      "momentum": 64,
+      "predicted_peak": "2–4 weeks",
+      "why_now": "Men's Journal (Oct 20) on switching results, a Yahoo Creators doctor explainer (Oct 20) and MedWatch on the France launch (Oct 21). This is the third snapshot in a row showing it, so it's accelerating.",
       "competition": "medium",
       "evidence": [
         {
-          "source": "PubMed, Diabetes Obes Metab",
-          "signal": "Real-world semaglutide initiation behaviours: impact on early discontinuation and 1-year persistence",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/42897121/"
+          "source": "Men's Journal via Google News (Oct 20)",
+          "signal": "Wegovy users switched to a daily pill with surprising results",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOVhFRG9IN3paazRiVUVlRERHSFloYmk0NlJLYXZyQTJnM21GQlE1T1JkeHlTeU9fNnFreXNmRlU2aW1idFRzWVFQN1ZtNjVnSDhOYkpfWlRtTjdWQkhaTEFKMGVaa01XOU5LTVE5Q1RMYzV0Nno4RERudXhPQUNxRU4yMFR0TjhGbU5zdHhmMTc1d25qSWpnSkpQQzRMemlCalZMYUYxN3h1dXpa?oc=5"
         },
         {
-          "source": "AJMC via Google News",
-          "signal": "Patients open to lower-cost weight maintenance (Oct 20)",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONW9raFBFMjcwT0s0ejJGSTZNbG1LTVdGTHgzNXdOb2lLN20yckJIcVA5eFd1eHJ4SnJWR3RVMGxUeVNWWkhtRHllS1kwdUU4Y2dTNlhXRTYzWlh2c2wwRXFjMFBsYlJ4UzJoclRMal9vOFpnT29TR1RqWFd2TG1jeFFXNVdnR09NX1JtNVZXWlFfengyT1FPcUR1WQ?oc=5"
+          "source": "MedWatch via Google News (Oct 21)",
+          "signal": "Novo to launch Wegovy pill in France without reimbursement",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBnazhnRlp0YzQtcFpQOTdMMlNDSURLUlZyYjhKYWpiSi10ZlJCdmVva1RmcjNPTHRITFBmRkpBbXN5VXd2SVR3TWFGeEhySjg1dkY3dHhvampWMy0zVFZtcHNZdTZxYzdOd29LeDNpOA?oc=5"
         }
       ],
-      "safety": "ok",
+      "safety": "caution",
       "formats": [
         "long",
         "short"
       ]
     },
     {
-      "topic": "UK Mounjaro price rise: what happened to more than 1 million self-paying UK adults' treatment patterns and weight (Diabetes Obes Metab, Oct 14)",
-      "angle": "Single-drug Short and a UK-focused Lane A long-form: 'Mounjaro Price Rise UK: What Happened Next'. Describe the observed patterns (switching, gaps, weight outcomes) strictly as reported. Never advise switching, stopping or dose-stretching. Talk to your prescriber about options.",
+      "topic": "What happens when you stop tirzepatide or semaglutide? SURMOUNT-4 and STEP 1 extension regain data, plus AJMC (Oct 20): patients are open to lower-cost maintenance approaches",
+      "angle": "Lane A: 'What Happens When You Stop Semaglutide or Tirzepatide?'. Cover the trial regain curves, what partially protected results (habits, strength), and why decisions about maintenance belong with a prescriber. No tapering or dose instructions.",
       "keywords": [
-        "Mounjaro price increase UK",
-        "Mounjaro price UK",
-        "tirzepatide UK private prescription",
-        "Mounjaro price rise weight regain"
+        "what happens when you stop mounjaro",
+        "stopping ozempic weight regain",
+        "coming off tirzepatide",
+        "do you gain weight after stopping wegovy"
       ],
-      "stage": "emerging",
-      "momentum": 60,
-      "predicted_peak": "1–3 weeks",
-      "why_now": "A very large real-world UK dataset that UK news hasn't picked up yet. UK is a high-CPM audience, and the title names 'tirzepatide/Mounjaro' (our biggest Short lever).",
-      "competition": "low",
+      "stage": "evergreen",
+      "momentum": 66,
+      "predicted_peak": "evergreen",
+      "why_now": "It's been in 6 snapshots with steady momentum. Coverage and price stories (Pennsylvania Medicaid, Belgium reimbursement refusal, UK tirzepatide price rise study) keep pushing people to search about stopping.",
+      "competition": "high",
       "evidence": [
         {
-          "source": "PubMed, Diabetes Obes Metab",
-          "signal": "Treatment patterns and weight outcomes before and after a tirzepatide price increase in >1M self-paying UK adults",
+          "source": "AJMC via Google News (Oct 20)",
+          "signal": "Patients open to lower-cost weight maintenance to expand GLP-1 access",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONW9raFBFMjcwT0s0ejJGSTZNbG1LTVdGTHgzNXdOb2lLN20yckJIcVA5eFd1eHJ4SnJWR3RVMGxUeVNWWkhtRHllS1kwdUU4Y2dTNlhXRTYzWlh2c2wwRXFjMFBsYlJ4UzJoclRMal9vOFpnT29TR1RqWFd2TG1jeFFXNVdnR09NX1JtNVZXWlFfengyT1FPcUR1WQ?oc=5"
+        },
+        {
+          "source": "PubMed: Diabetes Obes Metab (Oct 14)",
+          "signal": "Treatment patterns and weight outcomes before and after a tirzepatide price increase in over 1 million UK self-payers",
           "url": "https://pubmed.ncbi.nlm.nih.gov/42875827/"
         }
       ],
       "safety": "caution",
       "formats": [
-        "short",
         "long"
       ]
     },
     {
-      "topic": "Orforglipron (Foundayo) and the heart: ACHIEVE-4 non-inferior to insulin glargine for major heart events in type 2 diabetes; CHMP backed it in the EU (Oct 16)",
-      "angle": "Lane A long-form, 'Orforglipron (Foundayo) Pill: Heart Safety and What's Confirmed'. Primary result: MACE-4 non-inferior vs insulin glargine (16% lower, relative). The cardiovascular-death and all-cause-death figures were pre-planned secondary analyses and must be labelled as such. Population: type 2 diabetes with heart risk, more than 2,700 people. EU: CHMP recommended, Commission decision pending. Orforglipron-only Shorts underperform, so keep this long-form only.",
+      "topic": "Generic semaglutide in Canada: what's changed (IQVIA analysis, Oct 20) and what it means for Canadian patients, alongside Novo's announced US price cuts for 2027 and Pennsylvania Medicaid's 2026 coverage cut",
+      "angle": "Lane A, 'What's Actually Confirmed?' style: 'Generic Semaglutide in Canada: What's Confirmed'. Cover Health Canada-approved products only, how generics are reviewed, and that costs and coverage vary. Never name pharmacies or online sources. Mention the US price cuts with dates. Talk to your prescriber or pharmacist.",
       "keywords": [
-        "orforglipron heart",
-        "Foundayo cardiovascular",
-        "orforglipron vs insulin",
-        "Foundayo Europe approval",
-        "orforglipron side effects"
-      ],
-      "stage": "rising",
-      "momentum": 58,
-      "predicted_peak": "1–2 weeks (EC decision)",
-      "why_now": "Clinical Trial Vanguard analysis on Oct 19, the CHMP opinion on Oct 16 (snapshot momentum 82–84), and the qualitative orforglipron study in Patient (Oct 16). An EU decision could arrive soon and would qualify as Lane C.",
-      "competition": "medium",
-      "evidence": [
-        {
-          "source": "Lilly press release",
-          "signal": "ACHIEVE-4: MACE-4 non-inferior vs insulin glargine; Lancet publication; EASD 2026",
-          "url": "https://investor.lilly.com/news-releases/news-release-details/achieve-4-longest-phase-3-study-lillys-foundayo-orforglipron"
-        },
-        {
-          "source": "ConsultantLive",
-          "signal": "Independent coverage of ACHIEVE-4",
-          "url": "https://www.consultantlive.com/view/achieve-4-orforglipron-non-inferior-to-insulin-glargine-for-cardiovascular-protection-in-t2d"
-        }
-      ],
-      "safety": "ok",
-      "formats": [
-        "long"
-      ]
-    },
-    {
-      "topic": "Will Ozempic get cheaper? Generic semaglutide in Canada, plus Novo's US list-price cuts from January 2027",
-      "angle": "Lane A: 'Will Ozempic Get Cheaper? Generics and 2027 Prices Explained'. Health Canada's review of generic semaglutide applications (IQVIA analysis, Oct 20; check the current approval and launch status on the day) and Novo's announced US list-price cuts. Date everything. Say 'don't switch or stop your current medicines on your own', and generics are not the same as compounded products.",
-      "keywords": [
-        "generic Ozempic",
-        "generic semaglutide Canada",
-        "Ozempic price 2027",
-        "Wegovy price cut",
-        "when will Ozempic be cheaper"
+        "generic semaglutide canada",
+        "generic ozempic",
+        "ozempic price 2027",
+        "is there a generic ozempic",
+        "wegovy cost cut"
       ],
       "stage": "rising",
       "momentum": 60,
       "predicted_peak": "2–6 weeks",
-      "why_now": "IQVIA report on Oct 20, Novo's Wegovy price cut in China, and recurring snapshot topics (seen 4×, around 60). Strong search demand from Canada and the US.",
-      "competition": "medium",
+      "why_now": "IQVIA's genericization report (Oct 20), the price-cut story seen in 6 snapshots, and Pennsylvania's coverage news (PennLive, Oct 21). Canada is a high-ad-rate core market.",
+      "competition": "low",
       "evidence": [
         {
-          "source": "Benefits and Pensions Monitor",
-          "signal": "Generic semaglutide shift and Canadian price relief",
-          "url": "https://www.benefitsandpensionsmonitor.com/benefits/pharma/generic-semaglutide-shift-tests-benefit-plans-as-canada-awaits-price-relief/392924"
+          "source": "IQVIA via Google News (Oct 20)",
+          "signal": "The genericization of semaglutide in Canada",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTlJfMHRFNUdXZGYwQ2lFZ2Y1amd1eXhHRi0wRjdBWHY5NFBkQ1VRUHFOeE5leGpDUDBsVGxndFV6VGcwdHlVTjYtdVdOOG9JNDhjcklwYUgzdUlXYjVkYUVUSW84dl9nTlZoeURFaFBGbVk3eE5ha2gxY1EzdlhoV1NlZ1k4Zm5weW0yWTg5Ym03ZDlxRVV4QkpuTWM?oc=5"
         },
         {
-          "source": "IQVIA via Google News",
-          "signal": "'The Genericization of Semaglutide in Canada' (Oct 20)",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTlJfMHRFNUdXZGYwQ2lFZ2Y1amd1eXhHRi0wRjdBWHY5NFBkQ1VRUHFOeE5leGpDUDBsVGxndFV6VGcwdHlVTjYtdVdOOG9JNDhjcklwYUgzdUlXYjVkYUVUSW84dl9nTlZoeURFaFBGbVk3eE5ha2gxY1EzdlhoV1NlZ1k4Zm5weW0yWTg5Ym03ZDlxRVV4QkpuTWM?oc=5"
+          "source": "PHLP",
+          "signal": "Pennsylvania Medicaid ended adult GLP-1 coverage for weight loss from Jan 1, 2026; diabetes still covered",
+          "url": "https://phlp.org/en/news/pa-medicaid-ends-adult-coverage-of-glp-1s-for-weight-loss"
         }
       ],
       "safety": "caution",
@@ -427,152 +433,143 @@
       ]
     },
     {
-      "topic": "Is semaglutide safe for your kidneys at every CKD stage? FLOW safety outcomes by kidney-disease severity (Kidney Int, Oct 20), plus real-world tirzepatide in CKD",
-      "angle": "Lane A, 'Semaglutide and Kidneys: Is It Safe With Kidney Disease?'. FLOW population: type 2 diabetes with chronic kidney disease. Report safety by CKD stage exactly as published. Add the Diabetic Medicine real-world tirzepatide CKD study (observational). Tell viewers with kidney disease to check protein and fluid targets with their care team.",
+      "topic": "Orforglipron (Foundayo) and the heart: ACHIEVE-4 showed non-inferior heart-event risk vs insulin glargine in adults with type 2 diabetes at high cardiovascular risk (4.2% vs 5.0%), with the CHMP recommendation from Oct 16 and the European Commission decision pending",
+      "angle": "Short-form, two-drug body-effect head-to-head naming both sides: 'Orforglipron vs insulin glargine: heart events in type 2 diabetes'. Use the 'non-inferior' wording, flag that the death findings weren't multiplicity-controlled, and list GI side effects. Possible Lane A long-form later: 'Orforglipron (Foundayo): What It Is and Who It's For'.",
       "keywords": [
-        "Ozempic kidney disease",
-        "semaglutide CKD safety",
-        "Mounjaro kidneys",
-        "GLP-1 kidney benefits"
+        "orforglipron",
+        "foundayo",
+        "glp-1 pill heart",
+        "orforglipron side effects",
+        "foundayo approval europe"
+      ],
+      "stage": "rising",
+      "momentum": 56,
+      "predicted_peak": "1–3 weeks (EU decision)",
+      "why_now": "Clinical Trial Vanguard (Oct 19), an OMICS comparison (Oct 20) and the pending EU decision. Orforglipron Shorts have underperformed (35–36), so only use it in the named head-to-head format.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Pharmacy Times (Oct 5, 2026)",
+          "signal": "ACHIEVE-4: MACE 4.2% vs 5.0%, HR 0.84, non-inferior; superiority not shown",
+          "url": "https://www.pharmacytimes.com/view/orforglipron-shows-cv-safety-vs-insulin-glargine-in-achieve-4"
+        },
+        {
+          "source": "Healio (Oct 1, 2026)",
+          "signal": "Foundayo noninferior to insulin glargine for CV outcomes in diabetes",
+          "url": "https://www.healio.com/news/endocrinology/20261001/foundayo-noninferior-to-insulin-glargine-for-cv-outcomes-in-patients-with-diabetes"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Semaglutide and kidneys: new FLOW trial safety analysis by chronic kidney disease severity (Kidney Int, Oct 20), plus real-world tirzepatide kidney outcomes in CKD with type 2 diabetes (Diabet Med, Oct 19)",
+      "angle": "Single-drug body-effect Short: 'Semaglutide: Is It Safe With Kidney Disease?'. Use the FLOW population (type 2 diabetes plus CKD). Can feed a later Lane A long-form, 'Ozempic and Kidneys: What the FLOW Trial Showed'.",
+      "keywords": [
+        "ozempic kidney disease",
+        "semaglutide kidney",
+        "flow trial",
+        "mounjaro kidneys",
+        "glp-1 ckd"
       ],
       "stage": "emerging",
-      "momentum": 56,
-      "predicted_peak": "evergreen",
-      "why_now": "Kidney International paper published Oct 20 and a Diabetic Medicine paper Oct 19. DocWire coverage of tirzepatide kidney biomarkers. Fits the 'benefits beyond weight' pillar, and almost no creator coverage.",
+      "momentum": 52,
+      "predicted_peak": "2–4 weeks",
+      "why_now": "Two fresh papers in 48 h on a pillar topic. Kidney searches are evergreen and creator coverage is thin.",
       "competition": "low",
       "evidence": [
         {
-          "source": "PubMed, Kidney Int",
-          "signal": "Safety outcomes of semaglutide by CKD severity in FLOW (Oct 20)",
+          "source": "PubMed: Kidney Int (Oct 20)",
+          "signal": "Safety outcomes of semaglutide by CKD severity in FLOW",
           "url": "https://pubmed.ncbi.nlm.nih.gov/42901325/"
         },
         {
-          "source": "PubMed, Diabet Med",
-          "signal": "Real-world tirzepatide in CKD plus type 2 diabetes with obesity",
+          "source": "PubMed: Diabet Med (Oct 19)",
+          "signal": "Real-world kidney outcomes on tirzepatide in CKD with type 2 diabetes and obesity",
           "url": "https://pubmed.ncbi.nlm.nih.gov/42897718/"
         }
       ],
       "safety": "ok",
       "formats": [
-        "long",
-        "short"
+        "short",
+        "long"
       ]
     },
     {
-      "topic": "GLP-1 medicines and mental health: Lancet Psychiatry cohort links them to 24% fewer psychiatric hospital admissions in adults with schizophrenia and type 2 diabetes",
-      "angle": "Long-form segment or Short on the 'promising early research' pillar. More than 70,000 US patients, observational: 'linked to', preliminary. Relative figures need absolute context. Add the JAHA study on heart events in serious mental illness. Explicitly: never change psychiatric medicines; it's not a treatment for schizophrenia.",
+      "topic": "GLP-1 medicines and serious mental illness: new JAHA cohort on heart events and death, and a Lancet Psychiatry cohort on psychiatric hospitalisation in schizophrenia with type 2 diabetes",
+      "angle": "A compassionate, careful explainer: 'Semaglutide and Mental Health: What New Studies Show'. Use observational wording ('linked to'), cover the populations exactly, add 'don't change psychiatric medicines on your own', and include support resources.",
       "keywords": [
-        "Ozempic schizophrenia",
-        "GLP-1 mental health",
-        "semaglutide psychiatric",
-        "GLP-1 depression"
+        "ozempic mental health",
+        "semaglutide depression",
+        "glp-1 schizophrenia",
+        "ozempic anxiety"
       ],
       "stage": "emerging",
-      "momentum": 50,
-      "predicted_peak": "1–2 weeks",
-      "why_now": "Published Oct 14; Medscape covered it Oct 20. Mainstream coverage is still thin.",
+      "momentum": 48,
+      "predicted_peak": "2–4 weeks",
+      "why_now": "Two major-journal cohorts in 1 week and the earlier News-Medical explainer. Accelerating slowly (46 to 50 to 48).",
       "competition": "low",
       "evidence": [
         {
-          "source": "pharmaphorum",
-          "signal": "GLP-1 drugs linked to reduced acute schizophrenia episodes",
-          "url": "https://pharmaphorum.com/news/glp-1-drugs-linked-reduced-acute-schizophrenia-episodes"
-        },
-        {
-          "source": "PubMed, Lancet Psychiatry",
-          "signal": "Observational EHR cohort, Nov 2026 issue",
+          "source": "PubMed: Lancet Psychiatry (Nov 2026)",
+          "signal": "GLP-1 initiation and psychiatric hospitalisation/ED in schizophrenia with type 2 diabetes",
           "url": "https://pubmed.ncbi.nlm.nih.gov/42874603/"
         },
         {
-          "source": "PubMed, J Am Heart Assoc",
-          "signal": "GLP-1 RAs and cardiovascular events in serious mental illness, type 2 diabetes and obesity",
+          "source": "PubMed: J Am Heart Assoc (Oct 16)",
+          "signal": "GLP-1 RAs and cardiovascular events and death in serious mental illness, type 2 diabetes and obesity",
           "url": "https://pubmed.ncbi.nlm.nih.gov/42885796/"
         }
       ],
       "safety": "caution",
       "formats": [
-        "short",
-        "long"
+        "short"
       ]
     },
     {
-      "topic": "Semaglutide and alcohol: RCT showed fewer heavy-drinking days; new Addictive Behaviors review; BMJ reports a US trial testing semaglutide and crime",
-      "angle": "Short or long-form segment, 'Can Semaglutide Reduce Drinking?'. Cite the RCT (small, early). Not approved for alcohol use disorder; treatment exists, talk to a clinician. Leave out the crime angle except as a one-line 'trial being planned' mention.",
+      "topic": "The GLP-1 gender gap: why men are less likely to be prescribed GLP-1 medicines (Medscape, Oct 21)",
+      "angle": "A 'Life on GLP-1' Short: 'Semaglutide and Tirzepatide: Why Fewer Men Take Them'. Cover the prescribing data, how men responded in trials (subgroup averages), and questions to bring to a doctor.",
       "keywords": [
-        "Ozempic alcohol cravings",
-        "semaglutide alcohol use disorder",
-        "GLP-1 drinking less"
+        "ozempic for men",
+        "mounjaro men results",
+        "glp-1 men vs women"
       ],
       "stage": "emerging",
-      "momentum": 54,
-      "predicted_peak": "2–4 weeks",
-      "why_now": "Medical Economics roundup (Oct 20), the Addict Behav review (Oct 10) and the BMJ news piece (Oct 20) keep the topic warm. Seen once before at 58.",
-      "competition": "medium",
+      "momentum": 44,
+      "predicted_peak": "1–2 weeks",
+      "why_now": "Medscape (Oct 21) feature. It pairs naturally with the women/menopause story as a counterpoint.",
+      "competition": "low",
       "evidence": [
         {
-          "source": "PubMed, Addict Behav",
-          "signal": "Semaglutide for alcohol use disorder: clinical efficacy and mechanisms review",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/42880142/"
-        },
-        {
-          "source": "PubMed, BMJ",
-          "signal": "US trial will test whether semaglutide can fight crime (news, Oct 20)",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/42901618/"
+          "source": "Medscape via Google News (Oct 21)",
+          "signal": "GLP-1 gender gap: why are men being left out?",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTk04LUxsVW5mTm8yVlpQSkRzRjAzMVZOOE5GTS1paU9VZVA5VTR0V25OU0N3b2hPbnF4OWJVYnJqS1ptUDJIOWF4bWZNcWozM2t2LTM2M3VQS0Jrc1RIeTlGWHp0M0hrbU5GRGpPVlRMc21qVjBCdmxVaHBWd0I5UzRjT2dsb1RlbzBpRDZMZWpzbXhTQ1JjRw?oc=5"
         }
       ],
-      "safety": "caution",
-      "formats": [
-        "short",
-        "long"
-      ]
-    },
-    {
-      "topic": "Tirzepatide (Zepbound) for sleep apnea: new Cardiology in Review evidence summary; can weight loss change CPAP needs?",
-      "angle": "Funnel or backup Short: 'Tirzepatide and sleep apnea: what the trials showed'. SURMOUNT-OSA population (moderate-to-severe OSA with obesity). For the CPAP 'de-escalation' review: never stop CPAP without your sleep doctor.",
-      "keywords": [
-        "Zepbound sleep apnea",
-        "Mounjaro sleep apnea",
-        "tirzepatide CPAP",
-        "GLP-1 sleep apnea"
-      ],
-      "stage": "evergreen",
-      "momentum": 52,
-      "predicted_peak": "evergreen",
-      "why_now": "Cardiol Rev review published Oct 20 and a Cureus review on de-escalation. Steady demand; Instagram single-drug body-effect format.",
-      "competition": "medium",
-      "evidence": [
-        {
-          "source": "PubMed, Cardiol Rev",
-          "signal": "Tirzepatide for OSA: trial evidence and cardiometabolic effects (Oct 20)",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/42897716/"
-        },
-        {
-          "source": "PubMed, Cureus",
-          "signal": "De-escalating OSA therapy after GLP-1 weight loss (narrative review)",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/42893160/"
-        }
-      ],
-      "safety": "caution",
+      "safety": "ok",
       "formats": [
         "short"
       ]
     },
     {
-      "topic": "REJECT: 'Get a GLP-1 within 48 hours for under $100' telehealth promotion (NY Post, Oct 20)",
-      "angle": "Do not cover. It reads as advertising for a low-cost online source, likely compounded, and breaks the rule against promoting online or compounded sources.",
+      "topic": "REJECT: 'Low-dose tirzepatide strategy' content (Endocr Pract real-world cohort in older adults with type 2 diabetes, Oct 15)",
+      "angle": "Do not cover. In consumer content it reads as a microdosing or self-titration protocol, which our guardrails ban.",
       "keywords": [
-        "cheap GLP-1 online"
+        "low dose tirzepatide",
+        "tirzepatide microdosing"
       ],
-      "stage": "rising",
-      "momentum": 10,
+      "stage": "emerging",
+      "momentum": 15,
       "predicted_peak": "n/a",
-      "why_now": "Listed only so downstream agents don't pick it up.",
-      "competition": "high",
+      "why_now": "Microdosing searches are trending, but the topic breaks the dosing and titration guardrail.",
+      "competition": "medium",
       "evidence": [
         {
-          "source": "New York Post via Google News",
-          "signal": "Promotional telehealth piece",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOa2RrUnZTOThZcHJMVy1NWml6OW5ScXFLWGxIR3VkVVM2QXhnU1FxX3UtaVpNR2UyckI5S3JNLXlOclNpeGdEWXJyTnNERF85dzB1Y0RLS3NJd1RFdkZ6LXNGNGxUUDR4WVM4QVpZQUhsXzE2NTNSMDQtQUJ6YmR6UERkbHkzV0JackdRY2Z2TThDbktBc2xnRzBpTmpZQzB1MWdZWWJJOA?oc=5"
+          "source": "PubMed: Endocr Pract (Oct 15)",
+          "signal": "Low-dose tirzepatide strategy in older adults with type 2 diabetes",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42880590/"
         }
       ],
       "safety": "reject",
@@ -581,20 +578,21 @@
       ]
     },
     {
-      "topic": "REJECT: 'Technical guide' to reconstituting retatrutide 'reference vials' (Apopka Voice, Oct 20)",
-      "angle": "Do not cover or link. It is research-chemical reconstitution and dosing content for an unapproved drug.",
+      "topic": "REJECT: Retatrutide 'reference vial' reconstitution guide (Apopka Voice, Oct 20)",
+      "angle": "Do not cover. It's gray-market how-to and research-chemical SEO bait. Only refer to it as an example inside the Lane B 'what's confirmed' piece, never describing the content.",
       "keywords": [
-        "retatrutide reconstitution"
+        "retatrutide reconstitution",
+        "retatrutide vial"
       ],
-      "stage": "emerging",
-      "momentum": 5,
+      "stage": "rising",
+      "momentum": 10,
       "predicted_peak": "n/a",
-      "why_now": "Listed so it's filtered out of the retatrutide topic cluster.",
-      "competition": "low",
+      "why_now": "Search-bait pages like this are multiplying with retatrutide interest.",
+      "competition": "high",
       "evidence": [
         {
-          "source": "Apopka Voice via Google News",
-          "signal": "Research-vial reconstitution guide",
+          "source": "Google News: Apopka Voice",
+          "signal": "Technical guide to reconstituting retatrutide 'reference vials'",
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQR21RajloZUJCdHZCZUxHWk9Belh1dEljQmsxUEVUNl9odVVSYW94aW8xVmQ0SHdYYzM0bGlJcEVVb1BNTUs4MlNUeVhUeU43RHVDQU16Yy1vaWRqeTl0X24teU5JT21RSlhvaWxFTEpPVHpoVUpaT0M3T2xnaWZQM2hNWmhhQ1dLZGsyM2JfWjF6dUN6cmhXdDh3?oc=5"
         }
       ],
