@@ -1,144 +1,107 @@
-# InforMed performance playbook (updated 2026-10-20, second pass)
+# InforMed performance playbook (updated 2026-10-21)
 
 ## Data status: read this first
-- **Sample:** 23 GLP-1 YouTube Shorts with their Instagram Reels since 10-05, 12 GLP-1 long-forms since 09-28, 3 plague long-forms, and 23 carousels.
-- **New since the last review:** the 10-19 S1 "Retatrutide approved yet?" Short got 27 YouTube views and 8 Instagram reach. Day-7 recounts mostly went up:
-  - Sleep apnea: 60 (was 42)
-  - Stomach side effects: 101 (was 90)
-  - Compounded vs counterfeit: 100 (was 91)
-  - Dulaglutide heart failure: 57
-  - CagriSema status: 18
-  - EloraTZP long-form: 442
-  - CagriSema long-form: 5
-- **Still missing:**
-  - 10-19 S2, S3, L1 ("Did Retatrutide Beat Tirzepatide?") and C1
-  - Everything from 10-20
-  - monetization_progress (not passed in again)
-  - Retention, average view duration, CTR, traffic sources and subscribers
-  - TikTok, Facebook and Threads metrics (all null)
+- **Sample:** 26 GLP-1 YouTube Shorts and their Instagram Reels since 10-05, 13 GLP-1 long-forms since 09-28, 3 plague long-forms, and about 24 carousels.
+- **New since 10-20:**
+  - 10-19 S2 surgery Short ("On a GLP-1 before surgery?"): 5 views
+  - 10-19 S3 semaglutide 7.2 mg vs tirzepatide: 88
+  - 10-19 L1 "Did Retatrutide Beat Tirzepatide?": 18
+  - 10-19 C1: 0 reach
+  - 10-20 S1 compounded tirzepatide recall: 61 (1 day old, early)
+- **Recounts went up:** Bootleg Reta 188, EloraTZP long-form 458, strength long-form 22, CagriSema status Short 35, retatrutide status Short 33.
+- **Still missing:** 10-20 S2, S3, L1 and C1; everything from 10-21; any long-form with a Lane A or Lane B label; monetization_progress; retention, average view duration, CTR, traffic sources and subscribers; TikTok, Facebook and Threads metrics.
 - **Proof bar:** proven = n≥8, signal = n 4–7, anecdote = n≤3. Posts 1–2 days old are early numbers.
-- **Accuracy beats every tactic.** Every piece carries "talk to your doctor or prescriber about whether it's right for you". No dosing, no switching or stopping advice, no compounded or online sources.
+- **Accuracy comes before every tactic.** Every piece carries "talk to your doctor or prescriber about whether it's right for you". No dosing, no switching or stopping advice, no compounded or online sources.
 
-## Monetization reality (drives every choice)
-- **Long-form is the only realistic route into the Partner Program.** The Shorts route needs 10M Shorts views in 90 days. We get about 60 views per Short, so it's out of reach.
-- **Long-form views are about 720 lifetime**, roughly 50 watch hours at an assumed 4 minutes per view (not measured). The goal is 4,000.
-- **One video produced 442 of our 595 GLP-1 long-form views (EloraTZP).** Without it, a long-form gets about 9.
-- **The highest-value fix is long-form topic and packaging, not more Shorts.** Shorts are for subscribers and for sending viewers to long videos.
+## Monetization reality
+- **Long-form is the only realistic way into the Partner Program.** About 785 lifetime long-form views, roughly 52 watch hours if we assume 4 minutes per view (watch time isn't measured). The goal is 4,000 hours, about 60,000 views at that rate. The Shorts route (10M views in 90 days) is out of reach at about 60 views per Short.
+- **One video carries the total:** EloraTZP has 458 of our 650 GLP-1 long-form views. Without it, the median long-form gets about 15 views.
+- **Long-form topic and packaging is the fix that matters most.** Shorts are for subscribers and for sending viewers to long videos.
 
 ## Medians to compare against
-- **YouTube GLP-1 Shorts: 57 views (n=23).** It was 54.5.
-- **Instagram GLP-1 Reels: 20 reach (n=23).**
-- **GLP-1 long-form: 12.5 views (n=12).**
-  - Next-gen drug decoders: 22 (n=6).
-  - Approved-drug deep dives: 7.5 (n=6). Proven weak.
+- **YouTube GLP-1 Shorts: 59 views (n=26)**, up from 57.
+- **Instagram GLP-1 Reels: 10 reach (n=26)**, down from 20. All 4 Reels from 10-19 and 10-20 reached 8 or fewer accounts. Watch for an account-level drop.
+- **GLP-1 long-form: 18 views (n=13; the recounts raised it).**
+  - Next-gen drug explainers: 23 (n=7).
+  - Approved-drug single-trial deep dives: 7.5 (n=6). Consistently weak; don't make them.
 
-## Long-form: what the data says
-- **Approved-drug deep dives on a single trial don't work.** SURMOUNT-5: 6. Pill vs shot: 9. HFpEF: 9. Strength: 16. Hair loss: 3. A hit Short topic doesn't carry over: SURMOUNT-5 got 159 as a Short and 6 as a long-form.
-- **Anecdote: "Did X beat tirzepatide?" is not a format.** EloraTZP got 442, CagriSema got 5. EloraTZP's edge was most likely being the first explainer of a brand-new name. Retatrutide TRIUMPH-2 was published while the story was peaking and crowded, and got 18.
-- **Signal carried over from plague: search-question titles held up better.** "Pneumonic vs Bubonic Plague: Which One Spreads Between People?" got 64, "How Did Madagascar Control…" 43 and "Plague Today: Where Is It Still Found?" 16. Median 43 (n=3), about 3× the GLP-1 long-form median. That supports Lane A: start the title with the exact phrase people type.
-- **Abbreviation-heavy titles with several numbers flop.** "Survodutide… T2D+Obesity: 9.8% vs 3.9% at 76wk" got 42, though only because the topic was fresh. "Retatrutide (T2D+Obesity)… Wk 80" got 18.
-- **Score every long-form by lane (A/B/C) at day 7.** Until we have retention data, compare lanes on views only.
-- **Thumbnails:** no signal.
+## Long-form
+- **Approved-drug deep dives on a single trial don't work:** Same BMI 1, hair loss 3, SURMOUNT-5 6, pill vs shot 9, HFpEF 12, strength 22. A topic that did well as a Short doesn't carry over (SURMOUNT-5: 160 as a Short, 6 as a long-form).
+- **"Did X beat tirzepatide?" is not a format that works (n=3):** EloraTZP 458, retatrutide 18, CagriSema 10. EloraTZP most likely won because it was the first explainer of a brand-new drug name. Retatrutide long-forms land at 18 whether framed around a trial or as "beat", so a well-known drug alone doesn't lift long-form.
+- **Signal from the plague videos: search-question titles get about 2.5× the GLP-1 long-form median.** "Pneumonic vs Bubonic Plague: Which One Spreads…" 70, "How Did Madagascar Control…" 46, "Plague Today: Where Is It Still Found?" 16 (median 46, n=3). This supports Lane A: start the title with the exact phrase people type.
+- **Titles packed with abbreviations and several numbers don't help.** Survodutide got 42 only because the topic was fresh.
+- **No Lane A or Lane B long-form has been scored yet.** Score each at day 3 and day 7 by lane, on views only until retention data arrives. Thumbnails: no signal yet.
 
-## YouTube Shorts: what works
-- **Proven: "tirzepatide" in the title is still our biggest lever.**
-  - Titles with it: median 83 (n=11).
-  - Titles without it, excluding retatrutide: median 32 (n=9).
-- **Signal, our strongest lane: gray-market and authenticity Shorts in a calm "what's confirmed?" frame.**
-  - Bootleg Reta 184, Reddit retatrutide 116, compounded vs counterfeit 100, "Lilly says online retatrutide isn't its trial drug" 69.
-  - Median 108, about 1.9× the median (n=4).
-  - Attribute every line to the FDA, MHRA or the manufacturer, and date every status.
-  - Never name a seller. Point to a prescriber about approved options or trials.
-- **Signal, now strong at n=3: "Is X approved yet?" status titles fail even on a hot drug.**
-  - Patch 18, CagriSema 18, retatrutide 27. Median 18.
-  - Retatrutide alone doesn't rescue the status frame. The "what's confirmed?" framing is what works.
-  - Banned as a title. Put the dated status inside a "what's confirmed" or comparison piece instead.
-- **Signal: head-to-heads that name both drugs, generic name first, answered by about 10 s.**
-  - SURMOUNT-5 159, stomach side effects 101, CagriSema 59, dulaglutide 57. Median 80 (n=4).
-  - An unnamed comparator flopped ("GLP-1 vs Older Drug": 2).
-  - Limit any one trial to 1 Short a week.
-- **Signal: muscle works as a question or outcome, not a how-to.**
-  - "Fat or muscle?" 100 and "How to protect your muscle" 131, against "3 Ways to Start Strength Training" at 27.
-- **Anecdote: single-drug "Tirzepatide (Brand): does it help [condition]?" Shorts land near the median** (HFpEF 67, sleep apnea 60, eye disease 46; median 60, n=3). Use them as backups or 20:00 fillers.
-- **Underperformers, all below median:**
-  - Orforglipron: 35 and 36
-  - Semaglutide-only titles: 32 and 56
-  - Stopping titles with no drug named: 25
-  - Scare framing of approved drugs: pancreatic cancer 25, vision loss 33
-  - Obscure drugs with crowded numbers: trevogrumab 28
+## YouTube Shorts
+- **Proven: name tirzepatide in the title.** Titles with it: median 83 (n=13). Titles without it, excluding retatrutide: median 33 (n=10). That's 2.5×.
+- **New signal: titles that say only "GLP-1" and name no drug fail.** Older drug 2, surgery 5, stigma 6, patch 18, stopping 25 (median 6, n=5). Always name the drug, generic name first.
+- **Signal, our strongest lane: gray-market and authenticity Shorts in a calm "what's confirmed?" frame.** Bootleg Reta 188, Reddit retatrutide 120, compounded vs counterfeit 102, Lilly's online retatrutide 69, compounded tirzepatide recall 61 (early). Median 102 (n=5), about 1.7× the median. Credit and date every line, never name a seller, and point to a prescriber about approved options or trials.
+- **Signal: head-to-heads that name both drugs, answered within about 10 s.** SURMOUNT-5 160, stomach side effects 101, semaglutide 7.2 mg vs tirzepatide 88, CagriSema 60, dulaglutide 57. Median 88 (n=5), 1.5×. Use any one trial in at most 1 Short a week.
+- **"Is X approved yet?" stays banned.** Patch 18, retatrutide 33, CagriSema 35 (median 33, n=3). That's about 0.55× even after recounts. Put the dated status inside a "what's confirmed" or comparison piece instead.
+- **Signal: muscle works as a question or outcome, not as a how-to.** "Fat or muscle?" 101 and "How to protect your muscle" 131, against "3 Ways to Start Strength Training" at 28.
+- **Signal: single-drug tirzepatide body-effect questions land around the median.** Fat or muscle 101, HFpEF 67, sleep apnea 63, eye disease 47 (median 65, n=4). Use them as solid fillers.
+- **Underperformers:**
+  - Orforglipron: 36 and 37
+  - Semaglutide-only titles: 32 and 57
+  - Scare framing of approved drugs: pancreatic cancer 25, vision loss 34
+  - Obscure drug with crowded numbers: trevogrumab 29
   - Stigma: 6
-- **Title rules:**
-  - Name the drug, generic first.
-  - At most 1 number and 1 abbreviation.
-  - Name both sides of every comparison.
-  - Answer the title's question within 10 s.
+- **Title rules:** generic name first, at most 1 number and 1 abbreviation, name both sides of every comparison, answer the title's question within 10 s.
 
-## Trend stage (topic is confounded)
-- **Rising beats emerging, but the gap has narrowed.**
-  - Rising: median 69.5 (n=10).
-  - Evergreen: 67 (n=5).
-  - Emerging: 40.5 (n=8).
-- **Retatrutide and gray-market topics win at any trend stage.** For long-form, "peaking" stories are crowded (TRIUMPH-2 long-form: 18). Be first: publish within 48 h.
+## Trend stage (mixed up with topic)
+- **Rising beats emerging:** rising 72 (n=12), evergreen 67 (n=5), emerging 37 (n=9). Gray-market and retatrutide topics win at any stage.
+- **For long-form, be first:** publish within 48 h of a new name or result. Crowded, peaking stories get about 18.
 
 ## Instagram Reels
-- **Proven: Instagram doesn't follow YouTube.** Gray-market Shorts got 4, 4 and 4 reach, against 100–184 YouTube views. Never let one platform overturn a finding from the other.
-- **Signal: body-effect head-to-heads that name both drugs are the only format that wins on both platforms.** Stomach side effects: 103 reach. Dulaglutide heart failure: 99.
-- **Single-drug body-effect questions do well on Instagram:** eye 53, HFpEF 52, sleep apnea 32, fat or muscle 61.
+- **Proven: Instagram doesn't follow YouTube.** Gray-market Reels got 4, 4, 6 and 0 reach (Bootleg 44 is the exception) against 61–188 on YouTube. Never let one platform overturn a finding from the other.
+- **Signal: body-effect topics win on Instagram.** Stomach side effects 103, dulaglutide heart failure 99, fat or muscle 61, eye 53, HFpEF 52, pill 52. Weight-loss or dose head-to-heads don't: SURMOUNT-5 8, semaglutide 7.2 mg 1. Correction: "head-to-head works on both platforms" is true only for body-effect head-to-heads.
 - **Status questions are unreliable on Instagram:** patch 85, CagriSema 0, retatrutide 8.
 
-## Publish slots (weak effect; topic matters far more)
-- **YouTube Shorts:**
-  - 13:00 ET: median 83.5 (n=8)
-  - 08:00 ET: median 56.5 (n=8). The two gray-market hits (184 and 159) both ran at 08:00, so a strong topic wins in any slot.
-  - 20:00 ET: median 46.5 (n=6), weakest for six reviews running.
-- **Instagram:** no clear slot pattern.
+## Publish slots (no real effect; topic decides)
+- **YouTube Shorts since 10-05:** 13:00 ET median 67 (n=9), 20:00 ET 63 (n=7), 08:00 ET 57 (n=9). The "20:00 is weakest" finding no longer holds, because 20:00 got 102, 88 and 83. Any slot works for a strong topic.
+- **Instagram:** no slot pattern.
 
 ## Length
-- **No link between length and views.** Hits ran 74–87 s, and so did the flops.
-- Aim for 60–85 s at 170 words or fewer. The hard limit is 178 s.
-- The 35–50 s test still hasn't run.
+- **No link between length and views.** Hits and flops both ran 74–99 s. Aim for 60–85 s and 170 words or fewer (hard limit 178 s). The 35–50 s test still hasn't run.
 
-## Carousels (proven, n=23)
-- **Reach is 0–3 on every topic.** Rebuild good carousel topics as Shorts or Reels.
+## Carousels (proven, n≈24)
+- **Reach is 0–3 on every topic.** Reuse verified Short text only, or replace carousels with Reels.
 
-## Funnel principles (untested; required)
-- **Every Short with a related live long-form:**
-  - Add YouTube's related-video link.
-  - The last spoken line names the exact title of the published long-form.
-  - The pinned comment carries the link.
-  - Only name videos that are already published.
-- **Every long-form ends by naming one published long-form in the same lane to watch next.** Use the series playlists.
+## Funnel (not yet tested; required)
+- **Every Short with a related live long-form:** add YouTube's related-video link, end with "Full breakdown: [exact title], on our channel", and pin the link. Name only videos that are already published.
+- **Every long-form ends by naming one published long-form in the same lane**, inside a series playlist.
 
 ## Topics to double down on
-- Lane A search-question long-forms with the exact phrase people type first (e.g. 'Tirzepatide Side Effects: Which Are Common and What Helps', 'What Happens When You Stop Semaglutide or Tirzepatide?', 'Ozempic vs Wegovy vs Mounjaro vs Zepbound: What's the Difference?'). Plague search-question long-forms averaged about 43 views (n=3), around 3× the GLP-1 long-form median.
-- Lane B gray-market 'what's confirmed?' long-forms (e.g. 'Retatrutide Online: What the FDA and Lilly Have Confirmed (Oct 2026)'), since it's our strongest Short lane (184, 116, 100, 69; median 108, n=4). Attribute and date every line, never name sellers, and point to a prescriber about approved options or trials.
-- Gray-market 'what's confirmed?' Shorts on YouTube (research peptides vs the trial drug, counterfeit pens), each ending with the title of the matching published long-form
-- Two-drug body-effect head-to-head Shorts naming tirzepatide and the other drug (median 80, n=4; the only format that wins on both YouTube and Instagram), e.g. 'Tirzepatide vs semaglutide: who stopped more often because of side effects?', using a different trial each week
-- Tirzepatide muscle outcome questions ('How much of the weight lost is muscle?'; 100 and 131 views) instead of how-to lists
-- Lane C first-explainer long-forms within 48 h of a newly named drug or result, with the new name first in the title (EloraTZP: 442), never a topic already covered as a Short
+- Lane A long-forms with search-question titles that start with the exact phrase people type, e.g. 'Tirzepatide Side Effects: Which Are Common and What Helps', 'What Happens When You Stop Semaglutide or Tirzepatide?', 'Ozempic vs Wegovy vs Mounjaro vs Zepbound: What's the Difference?'. Plague search-question long-forms had a median of 46, about 2.5× the GLP-1 long-form median.
+- Lane B gray-market 'what's confirmed?' long-forms (e.g. 'Retatrutide Online: What the FDA and Lilly Have Confirmed (Oct 2026)', 'Counterfeit Semaglutide and Tirzepatide Pens: What the FDA Says to Check'). This is our strongest Short lane (median 102, n=5). Credit and date every line, never name sellers, and point to a prescriber.
+- Gray-market 'what's confirmed?' YouTube Shorts (research peptides vs the trial drug, counterfeit pens, recalls), each ending with the exact title of a related published long-form
+- Two-drug head-to-head Shorts with tirzepatide named first (median 88, n=5). For Instagram, choose body-effect angles (stomach side effects, heart failure, muscle), since weight-loss or dose head-to-heads reached only 1–8 accounts there. Use a different trial each week.
+- Tirzepatide muscle outcome questions ('How much of the weight lost is muscle?'; 101 and 131 views), never how-to lists
+- Lane C first-explainer long-forms within 48 h of a newly named drug or result, with the new name first in the title (EloraTZP: 458), and never on a topic already covered as a Short
 
 ## Schedule suggestions (for the owner — edit config/channel.json to apply)
-Status as of 2026-10-20
+Status as of 2026-10-21
 
 The short version
-Shorts are steady: a typical GLP-1 Short now gets 57 YouTube views (it was 55), and our best lanes get 1.5–2× that. Long-form is still the problem. A typical long video gets about 12 views, and without the EloraTZP video (442) it's about 9. We have roughly 720 lifetime long-form views, which is about 50 watch hours out of the 4,000 the Partner Program needs. That figure assumes 4 minutes per view, because we still can't measure watch time. The Shorts route into the Partner Program (10M Shorts views in 90 days) is out of reach at our scale, so long-form watch hours are the only path that matters.
+Shorts are healthy. A typical GLP-1 Short now gets 59 YouTube views, and our best lanes get 1.5–1.7× that. Long-form is still the bottleneck. A typical long video gets 18 views; leaving out the EloraTZP video (458), the median is about 15. We have about 785 lifetime long-form views, which is roughly 52 watch hours if we assume 4 minutes per view. The Partner Program needs 4,000 hours, about 60,000 views at that rate. At today's pace we won't get there, so every long-form slot has to go to the formats that can grow.
 
 What's new
-- "Retatrutide approved yet?" got 27 views. That makes three "approved yet?" Shorts in a row that failed (patch 18, CagriSema 18, retatrutide 27). It's now banned as a title format.
-- The same drug does well in the calm "what's confirmed?" frame. Bootleg Reta got 184, Reddit retatrutide 116 and compounded vs counterfeit 100.
-- Our plague long-forms with search-question titles averaged about 43 views, around 3× our GLP-1 long-form median. That's an early sign that titles starting with the exact phrase people search for (Lane A) can lift long-form.
+- Titles that say only "GLP-1" and name no drug fail badly. The surgery Short got 5 views, and the five Shorts like it have a median of 6. Always name the drug.
+- "Semaglutide 7.2 mg vs Tirzepatide: Tested Head-to-Head?" got 88. Head-to-heads that name both drugs now have a median of 88 across 5 Shorts.
+- The retatrutide "Did it beat tirzepatide?" long-form got 18, the same as the earlier retatrutide trial video. A famous drug name on its own doesn't lift long-form views.
+- The 20:00 slot is no longer the weakest. Its median is 63, against 57 at 08:00 and 67 at 13:00. Slot timing barely matters; topic does.
+- Instagram reach fell. The last 4 Reels reached 8 or fewer accounts, and the median is now 10 (it was 20).
 
 Publish slots
-- 13:00 ET: the lead Short (median 84). Use a two-drug body-effect head-to-head or a gray-market "what's confirmed?" Short.
-- 08:00 ET: median 57. A strong topic works here too; our two biggest Shorts ran in this slot.
-- 20:00 ET: weakest for six reviews (median 47). Use it for funnel spin-offs of a long-form published the day before, or for the 35–50 s length test. Optional test: move it to 18:00 ET for one week.
-- Long-form at 14:00 ET: keep the growth playbook's lanes (3 search-question videos, 2 gray-market videos, and fresh-news explainers only within 48 h). Stop making single-trial deep dives on approved drugs (median about 8 views). If no lane fits on a given day, post an extra Short instead of a weak long-form.
-- 17:30 carousel: replace it with a Reel, or cut it to reused text only. All 23 carousels reached 0–3 accounts.
+- Keep Shorts at 08:00, 13:00 and 20:00 ET. Put the strongest topic (a gray-market "what's confirmed?" Short or a two-drug head-to-head) at 13:00, and use 20:00 for a spin-off of the previous day's long-form. You can drop the optional 18:00 test.
+- Long-form at 14:00 ET, following this week's lanes: 3 search-question titles (Lane A), 2 gray-market "what's confirmed?" videos (Lane B), and a first explainer only when a drug name or result is less than 48 h old. Stop making single-trial deep dives on approved drugs (median 7.5). If no lane fits on a given day, post an extra Short instead.
+- 17:30 carousel: replace it with a Reel built on a body-effect topic (these do well on Instagram), or cut it to reused text only.
 
 Fixes, in priority order
-1. Pass monetization_progress into this review and turn on the YouTube Analytics API (watch hours, retention, CTR, traffic sources, subscribers). Without these I can't tell which long-forms earn watch time, only which get views.
-2. Log the missing posts: 10-19 S2, S3, L1 (the "Retatrutide beat tirzepatide" long-form) and C1, plus everything from 10-20. Record the lane (A/B/C) on every long-form.
-3. Add related-video links from every Short to a matching long-form, and pin the link in the comments.
-4. Next review around 10-23, scoring the first Lane A and Lane B long-forms at day 3 and again at day 7.
+1. Turn on the YouTube Analytics API and pass in monetization_progress. Without watch hours, retention, CTR, traffic sources and subscribers, I can only rank long-forms by views.
+2. Log the missing posts (10-20 S2, S3, L1, C1 and all of 10-21) and tag every long-form with its lane (A, B or C).
+3. Run the funnel: give every Short a related-video link to a published long-form, plus a pinned comment with the link.
+4. Look into the Instagram reach drop: check account status and whether the Reels were cross-posted correctly.
+5. Next review around 10-24: score the first Lane A and Lane B long-forms at day 3.
 
-_Updated 2026-10-20 from 283 posts._
+_Updated 2026-10-21 from 300 posts._
