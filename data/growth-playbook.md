@@ -1,92 +1,78 @@
-# Growth playbook (Growth Strategist, 2026-10-20)
+# Growth playbook (Growth Strategist, 2026-10-25)
 
-_Verdict: off track. Bottleneck: Long-form views, and with them watch hours. We have about 684 lifetime long-form views, roughly 45 hours at an estimated 4 minutes per view, against the 4,000 hours we need. The current pace is about 27 long-form views a day; Feb 2027 needs about 460 a day. The GLP-1 long-form median is 11 (n=12) and the last 7 have a median of 8, so it's getting worse.
+_Verdict: off track. Bottleneck: Long-form views, and with them watch hours. Lifetime that's about 1,013 views ≈ 68 h against 4,000, and one video (EloraTZP, 523) is 52% of it. Four things cost the most this week:
+(1) Long-form topics went to low-demand lanes: cost/Medicare got 3, a gray-market pharmacy check got 6 and food got 11. The only lane with a signal is fresh named next-gen news (median 47, n=5, against 8 for approved-drug deep dives), and it got 1 long-form in 6 days (petrelintide 10-25).
+(2) Next-gen news, our strongest topic family (retatrutide Shorts reached 257 and 197), was routed into Shorts, and both of those Shorts were dropped for music masking (10-24 S1 at 0.038, 10-25 S1 at 0.037). 5 of 18 Shorts this week were lost to masking alone.
+(3) No working funnel. No Short has ever carried a working link to a live long-form. 10-25 L1 shipped a watch-next link to a video that doesn't exist (404), and description line 1 has missed the link 7 times.
+(4) We steer blind. Retention, CTR, traffic sources, subscribers and real watch time are all missing, and 10-21 to 10-25 is only partly logged._
 
-What drives it:
-1. **Topic choice.** Approved-drug single-trial deep dives get a median of 6 (n=6). We compete with large, established channels there, and the topic usually repeats the same day's Short (SURMOUNT-5: 157 as a Short, 6 as a long-form).
-2. **Titles nobody searches for.** Examples: "Retatrutide (T2D+Obesity): Lilly's 20.8% Weight Loss vs 4% at Wk 80" and "Survodutide… 9.8% vs 3.9% at 76wk (High Dose)". They pack in several numbers and abbreviations and don't start with any phrase people type.
-3. **No funnel.** Shorts reach about 165 YouTube views a day at about 55 each, but no Short, pinned comment or related-video link sends anyone to a long video.
-4. **Repeating failed formats.** On 10-19 we shipped "Retatrutide approved yet?" even though status titles got 14 and 18 views. The "Did Retatrutide Beat Tirzepatide?" long-form uses the "Did X beat Y?" frame that got 4 views for CagriSema, and there is no head-to-head trial behind it.
+# InforMed growth playbook: week of 2026-10-26
 
-Process: production is reliable. GLP-1 holds since 10-13 are 2 of about 35 pieces. 10-11 was a missed day and 10-19 is unlogged. Quality-check failures are still shipping: masking of 0.034 went out on 10-19, and 7 wrong numbers have appeared on screen so far. On a medical channel that is a credibility and policy risk.
+**Status:** off track. About 68 of 4,000 watch hours. This week's long-form median is 8.5 views (n=4) against the 30+ target. Long-form watch time is the only way into YPP: every slot below is ranked by how much it moves that.
 
-Carousels use one production slot a day for 0–3 reach (n=23, proven).
+## Long-form (1 a day, 14:00 ET, 8–12 min): pick in this order every day
+1. **Lane C, fresh named news (Exp C).** Use it when a named next-gen drug (retatrutide, CagriSema, survodutide, petrelintide, amycretin, MariTide, orforglipron's new indications) has a trial result or regulatory step that **first became public within 48 h**.
+   - A journal paper of an old topline counts only if it adds new data. Check the first-report date before you claim "new".
+   - New drug name first in the title. Label it `lane: C`.
+   - **News beats Shorts:** if the radar finds qualifying news, it goes to the long-form first. A Short on it is the 20:00 funnel Short.
+2. **Pipeline decoder "What Is [drug]?"** (1–2 this week, no-news days only). For an under-covered drug with published human data: amycretin, MariTide, pemvidutide, mazdutide.
+   - Generic name first, a dated status in the first 30 s, no "beat" frame. Label it `lane: P`.
+3. **Lane A, practical tirzepatide (Exp A).** Use it on the remaining days. The Strength Training model only. Examples:
+   - "Protein on Tirzepatide: How Much and Why"
+   - "What Happens When You Stop Tirzepatide?" (trial evidence, plus "don't stop or change your medicine on your own")
+   - "Tirzepatide and Hair Loss: How Common and What Helps"
+   - Label it `lane: A`. Don't repeat 10-24 Side Effects or 10-21 What to Eat.
+- **Banned in long-form:**
+  - Cost, coverage and Medicare topics.
+  - Gray-market and pharmacy topics (Lane B is closed).
+  - Single-trial deep dives on approved drugs.
+  - Timeline-only questions.
+  - "Did X beat Y?" without a randomized head-to-head trial.
+  - Repeating a Short topic from the last 14 days (unless it's the Lane C news itself).
 
-We can't see subscribers, watch hours, retention, CTR or traffic sources: partner_progress is null because the YouTube Analytics API isn't enabled._
+## Long-form packaging and retention
+- **Title:** about 60 characters or fewer, drug name first, the searched phrase or the new name up front. At most 1 number. Spell out abbreviations. It must be fully paid off in the video.
+- **Thumbnail:** 4 words or fewer, never a repeat of the title. One labelled drug or character, one honest emotion.
+- **0–15 s:** what the viewer will know by the end, plus the first concrete answer.
+  - Re-hook every 45–75 s.
+  - Name chapters after the questions people search for.
+  - One subscribe ask, after the payoff.
+- **Ending:** name one live long-form in the same series by its exact YouTube title: EloraTZP or Orforglipron for lanes C/P, Strength Training for lane A. Then the end screen.
 
-# InforMed growth playbook: week of 2026-10-20
-
-**Goal this week:** lift the long-form median from 11 to 30+ by 10-31. Long-form watch time is the only thing that gets us into YPP. Shorts exist to win subscribers and send viewers to long videos.
-
-## Long-form (1 a day): every one belongs to one test lane
-Plan the week like this:
-- **3× Lane A, search question (Exp A).** Start the title with the exact phrase people type. Examples:
-  - "Tirzepatide (Mounjaro) Side Effects: Which Are Common and What Helps"
-  - "How Long Does Tirzepatide Take to Work? Week by Week in the Trials"
-  - "What Happens When You Stop Semaglutide or Tirzepatide?"
-  - "Ozempic vs Wegovy vs Mounjaro vs Zepbound: What's the Difference?"
-  - "What to Eat on Tirzepatide: Protein, Fibre and Easier Meals"
-- **2× Lane B, gray-market "what's confirmed" (Exp B).** Examples:
-  - "Retatrutide Online: What the FDA and Lilly Have Confirmed (Oct 2026)"
-  - "Counterfeit Semaglutide and Tirzepatide Pens: What the FDA Says to Check"
-  - Credit every line to the FDA, MHRA or the manufacturer, with a date. Never name a seller or explain how to buy. Point viewers to a prescriber about approved options or trials.
-- **Up to 2× Lane C, first explainer (Exp C).** Only for a named drug, trial or result first reported within the last 48 h. Put the new name first in the title.
-  - If there's no fresh news, make another Lane A.
+## Shorts (3 a day, at most 170 words, 60–85 s)
+- **13:00, lead:** pick one:
+  - a two-drug head-to-head with tirzepatide named first and a different trial each time;
+  - a tirzepatide muscle outcome question ("How much of the weight lost is muscle?");
+  - a gray-market "what's confirmed?" question with a new dated FDA/MHRA/manufacturer fact (at most 1 a week).
+- **08:00:** a calm "honest uncertainty" body-worry Short (bone, gallbladder, pancreas, hair). Tirzepatide in the title where the evidence covers it. This is the Instagram winner.
+- **20:00, funnel Short (Exp D):** a spin-off of a live long-form. Rotate in this order:
+  1. that day's Lane C long-form, if one is live;
+  2. EloraTZP;
+  3. Strength Training on Tirzepatide.
+  - Ask a fresh single question the long-form answers; never re-cut the long-form's own script.
+  - Last spoken line: "Full breakdown: [exact live title], on our channel."
+  - Put the URL in description line 1 and the pinned comment, **after confirming it opens that exact video (oEmbed)**. If you can't verify it, say "follow for more" and don't count the Short toward Exp D.
 - **Banned:**
-  - Long-forms that repeat a topic we covered as a Short in the last 14 days.
-  - Deep dives on a single old trial of an approved drug.
-  - "Did X beat Y?" unless a randomized head-to-head trial exists. If the comparison is indirect, the title says "indirect".
-  - Standalone "Is X approved yet?".
-- **Log the lane** (A/B/C) in each long-form's metadata so the analyst can score it.
-
-## Long-form packaging (title writer, thumbnail designer)
-- **Title:**
-  - 60 characters or fewer, starting with the searched phrase. Generic name first, brand in brackets.
-  - At most 1 number. No abbreviations (T2D, wk, HF, CV, OSA).
-  - It must be fully paid off in the video.
-- **Thumbnail:**
-  - 4 words or fewer, never a repeat of the title.
-  - One labelled character or drug object, plus one honest emotion (curious, relieved, surprised).
-  - No body shaming, no fear faces on approved-drug safety topics.
-- **Description:** line 1 repeats the searched phrase as a plain sentence, then follow the existing order rules.
-
-## Long-form retention (scriptwriters)
-- **0–15 s:** say exactly what the viewer will know by the end, and give the first concrete answer.
-- **Re-hooks:** add one every 45–75 s ("the part most people miss is next…").
-- **Chapters:** named after the questions people search for.
-- **Subscribe ask:** one, after the main payoff, tied to the series ("we decode every new GLP-1 result").
-- **Ending:** name one specific, already-published long-form to watch next in the same lane, then the end screen.
-- **Series names**, to be said aloud and used in playlists: "What's Actually Confirmed?", "Head-to-Head", "New GLP-1 Drug Decoded", "Life on GLP-1".
-
-## Shorts (3 a day)
-- **13:00, lead Short:** a gray-market "what's confirmed?" Short (median 103.5, n=4), or a two-drug body-effect head-to-head with both drugs named (median 74.5, n=4; also the only format that works on Instagram).
-- **08:00:** a tirzepatide muscle outcome question ("how much is muscle?") or a second head-to-head.
-- **20:00, funnel Short:** a spin-off of a long-form that is already live. Use a single-drug body-effect question, and run it the day after its long-form.
-- **Every Short with a related live long-form:**
-  - The last spoken line is "Full breakdown: [exact long-form title], on our channel."
-  - The pinned comment and the first description line carry its link.
-  - Only name videos that are already published; otherwise say "follow for more".
-- **Banned in Shorts:**
-  - "Is X approved yet?" titles (14 and 18 views). Put the dated status inside a named comparison instead.
-  - How-to or list titles ("3 Ways…": 27).
-  - Unnamed comparators.
-  - Scare framing of approved drugs.
+  - "Is X approved yet?" titles.
+  - "3 Ways…" lists.
+  - Brand-first or semaglutide-only titles (unless that's the evidence).
+  - Cost or coverage Shorts.
+  - Observational surgery angles.
   - Titles that name no drug.
-- **Variety guard** (YouTube's inauthentic-content policy):
-  - Use any one trial (e.g. SURMOUNT-5) in at most 1 Short a week.
-  - Never post two same-template titles back to back.
-  - Every piece must add a fact we haven't published before.
+  - Scare framing.
+- **Variety guard:** any one trial in at most 1 Short a week, no back-to-back same-template titles, a new fact in every piece.
 
-## Quality gates (non-negotiable; protect monetization)
-- **Masking:** any Short or long-form with masking above 0.03 does not ship. Remix it or drop it.
-- **On-screen numbers:** search the captions for number words before render. Every number on screen must match the script's numerals exactly.
-- **Required lines:** every piece keeps "talk to your doctor or prescriber about whether it's right for you". No dosing, no switching or stopping advice, no compounded or online sources.
+## Quality gates (non-negotiable)
+- **Mix Shorts at masking 0.02 or lower first time** (copy the long-form music level). Measure last. Above 0.03 is an automatic drop: 5 Shorts were lost this week.
+- Captions come from the on-screen text: numbers match their stat pills exactly, and no split numbers or trial names.
+- Every piece carries "Not personal advice" and "talk to your doctor or prescriber about whether it's right for you". No dosing, no switching or stopping advice, no compounded or online sources. The fact-checker and the Editor-in-Chief always win.
 
 ## Carousels (until the owner decides)
-- Spend the least possible effort on them: reuse the verified text from a published Short. No new research for carousels.
+- Reuse verified Short text only. No new research. Spend the time on caption, number and link checks.
 
-## Experiments running (apply exactly)
-- **Exp A (search-question long-forms):** 3 this week, labelled lane A.
-- **Exp B (gray-market long-forms):** 2 this week, labelled lane B.
-- **Exp C (first explainer within 48 h):** only when news qualifies, labelled lane C.
-- **Hold constant across all three:** slot 14:00 ET, 8–12 min, the same retention rules.
+## Experiments (apply exactly; log `lane` in every long-form's metadata)
+- **Exp A:** lane A only on no-news, no-decoder days. Practical tirzepatide topics. Score at day 7 and day 28.
+- **Exp C:** every qualifying news day. Score at day 7 against the GLP-1 long-form median of 20.
+- **Exp D:** every 20:00 Short is a verified-link funnel Short. The analyst records the target long-form's views for the 3 days before and after each one.
+- **Lane P** is tracked, not yet an experiment. Report it separately from C.
+- **Hold constant:** 14:00 ET, 8–12 min, the same retention rules.
