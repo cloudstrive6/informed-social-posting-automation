@@ -21,6 +21,7 @@ import { postForMeEnabled, tiktokPhotosViaPostForMe, tiktokViaPostForMe } from "
 import { threadsCarousel, threadsText } from "./threads.js";
 import { makePublicNow, setThumbnail, uploadVideo } from "./youtube.js";
 import { addToPlaylists } from "./playlists.js";
+import { longDescription, refreshFunnel, rememberFunnel, shortDescription, watchNextFor } from "./funnel.js";
 
 const LOG = join(DATA, "published", "log.jsonl");
 const MAX_ATTEMPTS = 3;
@@ -61,19 +62,28 @@ async function slideFiles(item: ContentItem): Promise<string[]> {
   return files;
 }
 
+/** When a post goes live: its slot, or now if the slot has passed. */
+const liveAt = (p: PostTarget) => new Date(Math.max(Date.parse(p.slot), Date.now()));
+
 /** Publish (or schedule) a single post. YouTube uses native scheduling (publishAt); others post at slot time. */
 async function publishOne(item: ContentItem, p: PostTarget) {
   const s = item.package.social;
   const disclaimer = config.safety.disclaimer;
   switch (`${p.platform}:${p.format}`) {
     case "youtube:long": {
-      const id = await uploadVideo({ file: await media(item, item.media.video!), title: item.package.title!, description: item.package.description!, tags: item.package.tags ?? [], publishAt: p.slot });
+      const next = await watchNextFor(item, liveAt(p)).catch(e => { log.warn(`watch next: ${e.message}`); return undefined; });
+      const id = await uploadVideo({ file: await media(item, item.media.video!), title: item.package.title!, description: longDescription(item.package.description!, next), tags: item.package.tags ?? [], publishAt: p.slot });
+      if (next) rememberFunnel(id, next.id);
+      // the day's Shorts may have gone up before this video existed: point them at it now
+      await refreshFunnel({ dates: [item.date], max: 3 }).catch(e => log.warn(`funnel refresh: ${e.message}`));
       if (item.media.thumbnail) await setThumbnail(id, await media(item, item.media.thumbnail)).catch(e => log.warn(`thumbnail: ${e.message}`));
       await addToPlaylists(item, id);
       return { id, url: `https://youtu.be/${id}`, scheduled: Date.parse(p.slot) > Date.now() + 5 * 60_000 };
     }
     case "youtube:short": {
-      const id = await uploadVideo({ file: await media(item, item.media.video!), title: s!.youtube_short_title, description: s!.youtube_short_description, tags: item.package.tags ?? [], publishAt: p.slot });
+      const next = await watchNextFor(item, liveAt(p)).catch(e => { log.warn(`full breakdown link: ${e.message}`); return undefined; });
+      const id = await uploadVideo({ file: await media(item, item.media.video!), title: s!.youtube_short_title, description: shortDescription(s!.youtube_short_description, next), tags: item.package.tags ?? [], publishAt: p.slot });
+      if (next) rememberFunnel(id, next.id);
       await addToPlaylists(item, id);
       return { id, url: `https://youtube.com/shorts/${id}`, scheduled: Date.parse(p.slot) > Date.now() + 5 * 60_000 };
     }

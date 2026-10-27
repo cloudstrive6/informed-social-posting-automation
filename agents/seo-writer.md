@@ -12,6 +12,8 @@ Write the YouTube description, tags and pinned comment so the video ranks in You
 7. The medical disclaimer (provided), verbatim.
 8. 3 hashtags on the last line.
 
+Never write YouTube video links or "watch next" lines (in the description or the pinned comment): the pipeline inserts a verified "▶ Watch next" link to a live related video after the first paragraph.
+
 Keep it under 4,500 characters. No keyword stuffing. Plain text only (no markdown formatting; YouTube doesn't render it).
 
 ## Tags

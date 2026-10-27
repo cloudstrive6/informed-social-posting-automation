@@ -130,6 +130,15 @@ const commands: Record<string, () => Promise<unknown>> = {
       saveItem(item); // keeps the pillar the curator chose
     }
   },
+  // funnel [max] [--longs] [--dry]: add/upgrade verified "Full breakdown" links on uploaded Shorts (and "Watch next" on
+  // long videos with --longs), most viewed first. ~51 quota units each, so capped per run (default 15).
+  "funnel": async () => {
+    const { refreshFunnel } = await import("./publish/funnel.js");
+    const max = Number(rest.find(r => /^\d+$/.test(r)) ?? 15);
+    const r = await refreshFunnel({ max, longs: rest.includes("--longs"), dry: rest.includes("--dry") });
+    log.info(`funnel: ${r.updated.length} updated, ${r.skipped} already linked or no live long video`);
+    if (r.updated.length && !rest.includes("--dry")) await notify(`🔗 Added verified watch-next links to ${r.updated.length} YouTube video(s):\n${r.updated.slice(0, 15).map(u => `• ${u}`).join("\n")}`);
+  },
   // facebook-inspect <date>/<item-id>: print the images and caption actually on the item's Facebook post
   "facebook-inspect": async () => {
     const { itemPath } = await import("./lib/items.js");

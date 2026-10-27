@@ -50,8 +50,8 @@ _Verdict: off track. Bottleneck: Long-form views, and with them watch hours. Lif
   2. EloraTZP;
   3. Strength Training on Tirzepatide.
   - Ask a fresh single question the long-form answers; never re-cut the long-form's own script.
-  - Last spoken line: "Full breakdown: [exact live title], on our channel."
-  - Put the URL in description line 1 and the pinned comment, **after confirming it opens that exact video (oEmbed)**. If you can't verify it, say "follow for more" and don't count the Short toward Exp D.
+  - Last spoken line: "Full breakdown on our channel, link in the description." (No title: the link is chosen at upload.)
+  - **The link is automatic (since 2026-10-27):** the publisher puts a verified "▶ Full breakdown: <live title> <url>" on description line 1 of every Short (same day's long video → same pillar → most viewed), checked on YouTube to be processed and public by the Short's go-live time, and upgrades it once the day's long video is up. Long videos get a verified "▶ Watch next" link. Agents never write YouTube links.
 - **Banned:**
   - "Is X approved yet?" titles.
   - "3 Ways…" lists.

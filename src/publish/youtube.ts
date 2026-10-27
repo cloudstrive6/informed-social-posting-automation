@@ -43,6 +43,21 @@ export async function videoStatus(videoId: string): Promise<{ uploadStatus: stri
   return j.items?.[0]?.status;
 }
 
+/** Title + status of up to 50 videos (1 quota unit). Ids YouTube doesn't know are missing from the result. */
+export async function videoInfo(ids: string[]): Promise<Record<string, { title: string; privacyStatus: string; uploadStatus: string; publishAt?: string }>> {
+  if (!ids.length) return {};
+  const token = await youtubeToken();
+  const j = await httpJson<any>(`https://www.googleapis.com/youtube/v3/videos?part=snippet,status&id=${ids.slice(0, 50).join(",")}`, { headers: { authorization: `Bearer ${token}` } });
+  return Object.fromEntries((j.items ?? []).map((v: any) => [v.id, { title: v.snippet.title, privacyStatus: v.status.privacyStatus, uploadStatus: v.status.uploadStatus, publishAt: v.status.publishAt }]));
+}
+
+/** Current description of a video (1 quota unit). */
+export async function currentDescription(videoId: string): Promise<string | undefined> {
+  const token = await youtubeToken();
+  const j = await httpJson<any>(`https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}`, { headers: { authorization: `Bearer ${token}` } });
+  return j.items?.[0]?.snippet?.description;
+}
+
 /** Make an uploaded (scheduled or private) video public right now, cancelling its scheduled time. */
 export async function makePublicNow(videoId: string) {
   const token = await youtubeToken();

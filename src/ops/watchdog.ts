@@ -79,6 +79,7 @@ export async function watchdog(force = false) {
     ["posts", () => checkPosts(once, escalate, notify)],
     ["youtube", () => checkYouTube(once, escalate, notify)],
     ["long", () => checkLongVideo(once, escalate, notify)],
+    ["funnel", () => checkFunnel(once)],
   ];
   for (const [name, fn] of checks) {
     try { await fn(); } catch (e) { log.warn(`watchdog ${name} check failed: ${(e as Error).message.slice(0, 300)}`); }
@@ -87,6 +88,15 @@ export async function watchdog(force = false) {
 }
 
 type Once = (key: string, cooldownH?: number) => boolean;
+
+/** Hourly: point recent Shorts at the day's long video once it's live (it often goes public after the Shorts). */
+async function checkFunnel(once: Once) {
+  if (DRY || !once("funnel-refresh", 1)) return;
+  const { refreshFunnel } = await import("../publish/funnel.js");
+  const today = localDate(config.audience.timezone, now());
+  const r = await refreshFunnel({ dates: [addDays(today, -1), today], max: 3 });
+  if (r.updated.length) log.info(`watchdog: funnel links updated: ${r.updated.join("; ")}`);
+}
 /** set when this pass found that Claude can't run at all; escalating to the (Claude-based) Ops Engineer is pointless then */
 let claudeDown = false;
 type Escalate = (key: string, title: string, details: string) => Promise<void>;
