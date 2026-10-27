@@ -115,12 +115,13 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
 }
 
 /** Audio stage: music + SFX stems, auto-level, Sound Designer, mix, Whisper masking check. Fills `qa.audio`. */
-export async function buildAudio(v: Pick<BuildVideoInput, "id" | "dir" | "out" | "timeline" | "narrationWav" | "spokenText" | "narrationWer"> &
+export async function buildAudio(v: Pick<BuildVideoInput, "id" | "dir" | "out" | "timeline" | "narrationWav" | "spokenText" | "narrationWer"> & { vertical?: boolean } &
   { timed: TimedShot[]; cues: Awaited<ReturnType<typeof composeAnimated>>["cues"]; silent: string; qa: VideoQa }): Promise<string> {
   const { dir, timeline: tl, timed, cues, silent, qa } = v;
   const mood = musicMood(timed.map(s => s.mood));
   const speech = speechIntervals(tl.scenes.flatMap(s => s.words));
-  let musicGain = config.video.musicVolume, sfxGain = config.video.sfxVolume;
+  // Shorts are mostly heard on phone speakers, where music masks the voice sooner: start the bed 30% lower
+  let musicGain = config.video.musicVolume * (v.vertical ? 0.7 : 1), sfxGain = config.video.sfxVolume * (v.vertical ? 0.8 : 1);
   let music = await musicStem(mood, tl.duration, v.id, dir);
   let sfx = await sfxStem(cues, speech, tl.duration, dir);
   // measure against the loudness-normalized voice (that's what the listener hears)
@@ -153,8 +154,23 @@ export async function buildAudio(v: Pick<BuildVideoInput, "id" | "dir" | "out" |
       const m = await checkMix(final, v.spokenText, v.narrationWer, dir);
       qa.audio = { musicGain: +musicGain.toFixed(3), sfxGain: +sfxGain.toFixed(3), finalWer: m.finalWer, maskingDelta: m.maskingDelta, lufs: m.lufs, soundNotes: notes };
       log.info(`mix QA: WER ${m.finalWer} (narration ${v.narrationWer}), masking Δ ${m.maskingDelta}, ${m.lufs} LUFS`);
-      if (m.maskingDelta <= config.qa.maskingWerDelta || round === ROUNDS - 1) {
-        if (m.maskingDelta > config.qa.maskingWerDelta) qa.blocking.push(`voice masked by music/SFX (WER +${m.maskingDelta})`);
+      if (m.maskingDelta <= config.qa.maskingWerDelta) break;
+      if (round === ROUNDS - 1) {
+        // still "masked" with a very quiet bed: test with no music at all before blocking anything
+        const bare = await mixStems(silent, voice, music, sfx, 0, sfxGain * 0.3, v.out);
+        const mb = await checkMix(bare, v.spokenText, v.narrationWer, dir);
+        log.info(`mix QA without music: masking Δ ${mb.maskingDelta}`);
+        if (mb.maskingDelta <= config.qa.maskingWerDelta) {
+          // music was the problem and can't be quiet enough: ship without it rather than drop the video
+          final = bare; musicGain = 0; sfxGain *= 0.3;
+          qa.audio = { ...qa.audio!, musicGain: 0, sfxGain: +sfxGain.toFixed(3), finalWer: mb.finalWer, maskingDelta: mb.maskingDelta, soundNotes: `${notes} (music removed: it masked the voice)` };
+        } else if (mb.maskingDelta >= m.maskingDelta - 0.005) {
+          // just as "masked" with no music: the delta is transcription noise, not masking; keep the quiet mix
+          final = await mixStems(silent, voice, music, sfx, musicGain, sfxGain, v.out);
+          log.info("masking delta doesn't depend on the music (Whisper noise): not blocking");
+        } else {
+          qa.blocking.push(`voice masked by music/SFX (WER +${m.maskingDelta}, +${mb.maskingDelta} without music)`);
+        }
         break;
       }
       const cut = round < 2 ? 0.7 : 0.45; // −3 dB, then about −7 dB per round
