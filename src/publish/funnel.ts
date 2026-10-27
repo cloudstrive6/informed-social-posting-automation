@@ -60,23 +60,35 @@ function longCandidates(): LongCandidate[] {
   return out;
 }
 
+const STOP = new Set("the and for with what how why does did your you are its this that from into than more most over after about have has was were will can not new study trial trials data results result weight loss glp-1 glp1 people adults shorts".split(" "));
+const DRUGS = /^(semaglutide|ozempic|wegovy|rybelsus|tirzepatide|mounjaro|zepbound|liraglutide|saxenda|orforglipron|foundayo|retatrutide|reta|amylin|cagrilintide|cagrisema|petrelintide|survodutide|mazdutide|maridebart|maritide|eloralintide|eloratzp|danuglipron|dulaglutide|compounded|counterfeit)$/;
+const tokens = (i: ContentItem) => new Set(`${i.package?.title ?? ""} ${i.plan.topic} ${i.plan.target_keyword}`.toLowerCase()
+  .replace(/[^a-z0-9\s-]/g, " ").split(/\s+/).map(w => w.replace(/^-+|-+$/g, "")).filter(w => w.length >= 4 && !STOP.has(w)));
+
+/** Is this Short planned as a spin-off of its day's long video? */
+const spinOff = (i: ContentItem) => /spin-?\s?off|\bL1\b/i.test(`${i.plan.angle} ${i.plan.why}`);
+
 /**
  * Pick the long video a post should send viewers to, live by `liveBy` (the post's own publish time).
- * Order: the same day's long video (Shorts are usually its spin-offs) → same pillar, most viewed → most viewed overall.
- * Only candidates in the current niche; never the post itself.
+ * Order: the day's long video when the Short was planned as its spin-off → the most related long video (shared terms,
+ * drug names weighted, rare terms count more) → same pillar, most viewed → most viewed. In-niche only; never itself.
  */
 export async function watchNextFor(item: ContentItem, liveBy: Date, excludeVideoId?: string): Promise<WatchNext | undefined> {
-  const all = longCandidates().filter(c => c.videoId !== excludeVideoId && c.item.id !== (item.kind === "long" ? item.id : "") && nicheMatch(c.item));
+  const all = longCandidates().filter(c => c.videoId !== excludeVideoId && c.item.id + c.item.date !== item.id + item.date && nicheMatch(c.item));
+  if (!all.length) return;
   const byViews = (a: LongCandidate, b: LongCandidate) => b.views - a.views || b.item.date.localeCompare(a.item.date);
-  const sameDay = all.filter(c => c.item.date === item.date && item.kind !== "long");
-  const samePillar = all.filter(c => item.plan.pillar && c.item.plan.pillar === item.plan.pillar && !sameDay.includes(c)).sort(byViews);
-  const rest = all.filter(c => !sameDay.includes(c) && !samePillar.includes(c)).sort(byViews);
-  const ranked: [LongCandidate, string][] = [
-    ...sameDay.map(c => [c, "same-day long video"] as [LongCandidate, string]),
-    ...samePillar.slice(0, 10).map(c => [c, `same pillar (${c.views} views)`] as [LongCandidate, string]),
-    ...rest.slice(0, 10).map(c => [c, `top long video (${c.views} views)`] as [LongCandidate, string]),
-  ];
-  if (!ranked.length) return;
+  const df = new Map<string, number>();
+  const toks = new Map(all.map(c => [c, tokens(c.item)]));
+  for (const t of toks.values()) for (const w of t) df.set(w, (df.get(w) ?? 0) + 1);
+  const mine = tokens(item);
+  const score = (c: LongCandidate) => [...toks.get(c)!].filter(w => mine.has(w)).reduce((a, w) => a + Math.log((all.length + 1) / df.get(w)!) * (DRUGS.test(w) ? 2 : 1), 0);
+  const ranked: [LongCandidate, string][] = [];
+  const add = (c: LongCandidate, why: string) => { if (!ranked.some(([r]) => r === c)) ranked.push([c, why]); };
+  if (item.kind !== "long" && spinOff(item)) all.filter(c => c.item.date === item.date).forEach(c => add(c, "spin-off of the day's long video"));
+  all.map(c => [c, score(c)] as const).filter(([, s]) => s >= 1.5).sort((a, b) => b[1] - a[1] || byViews(a[0], b[0])).slice(0, 15)
+    .forEach(([c, s]) => add(c, `most related (score ${s.toFixed(1)}, ${c.views} views)`));
+  all.filter(c => item.plan.pillar && c.item.plan.pillar === item.plan.pillar).sort(byViews).slice(0, 10).forEach(c => add(c, `same pillar (${c.views} views)`));
+  [...all].sort(byViews).slice(0, 10).forEach(c => add(c, `top long video (${c.views} views)`));
   const info = await videoInfo([...new Set(ranked.map(([c]) => c.videoId))].slice(0, 50));
   for (const [c, why] of ranked) {
     const v = info[c.videoId];
@@ -133,8 +145,8 @@ export async function refreshFunnel(opts: { dates?: string[]; max?: number; dry?
     // live by the time this video is (a scheduled Short may link a long video scheduled before it)
     const w = await watchNextFor(t.item, new Date(Math.max(Date.parse(t.slot), Date.now())), t.videoId);
     if (!w) { skipped++; continue; }
-    // keep an existing link unless the same day's long video is now available (no churn as view rankings shift)
-    if (state[t.videoId] === w.id || (state[t.videoId] && !w.why.startsWith("same-day"))) { skipped++; continue; }
+    // keep an existing link unless the day's long video it was spun off from is now live (no churn as view rankings shift)
+    if (state[t.videoId] === w.id || (state[t.videoId] && !w.why.startsWith("spin-off"))) { skipped++; continue; }
     const cur = await currentDescription(t.videoId);
     if (cur === undefined) { skipped++; continue; }
     if (cur.includes(w.url)) { state[t.videoId] = w.id; skipped++; continue; }
