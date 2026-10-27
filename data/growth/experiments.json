@@ -1,12 +1,12 @@
 [
   {
-    "name": "Exp A: Search-question long-forms (practical tirzepatide)",
-    "hypothesis": "Long-forms on practical 'get the most from tirzepatide' questions people search (strength training, protein, side effects, stopping) will beat approved-drug deep dives (median 8) and keep gaining views over time. Strength Training (48, still climbing at day 9) is the model.",
-    "change": "Lane A runs on no-news, no-decoder days (2–3 this week): practical tirzepatide topics only, searched phrase first, about 60 characters or fewer, at most 1 number. Cost, coverage and timeline-only topics are excluded from now on. Slot, length and retention rules stay the same.",
-    "metric": "Views at day 7 and day 28. Success: day-7 median of 25 or more and still growing at day 28. Once the API is on, also average view duration and watch hours per video.",
-    "min_sample": "n=8 videos to call it (about 11-03 to 11-05). Judge each video at day 7 and day 28.",
+    "name": "Exp A: Practical tirzepatide long-forms (Lane A)",
+    "hypothesis": "Practical, long-tail tirzepatide questions people search (strength training, protein, side effects, stopping) beat approved-drug deep dives (median 8–17) and keep gaining views over time.",
+    "change": "Lane A runs on every day without qualifying Lane C news (Lane P is paused). Practical tirzepatide topics only, long-tail searched question first, about 60 characters or fewer, at most 1 number. Cost, coverage and timeline-only topics are excluded. Slot, length and retention rules stay the same.",
+    "metric": "Views and watch minutes at day 7 and day 28. Success: day-7 median views of 25 or more and watch-minute median of 60 or more, still growing at day 28.",
+    "min_sample": "n=8 videos (expected about 11-03). Judge each video at day 7 and day 28.",
     "status": "running",
-    "result": "Interim, below target. In-window logged: How Long 26, What to Eat 11 (day 4), Medicare 3 (day 2): median 11, n=3. Side Effects (10-24) isn't logged yet. Including Strength Training from before the experiment (48): median 18.5, n=4. Cost topics are removed from the lane after Medicare got 3 (anecdote)."
+    "result": "Interim signal, on target so far. In-window in-lane videos (n=3): How Long 37 views/122 min, What to Eat 24/39, Side Effects 23/53 (day 3). Adding Strength Training (70/129, still climbing: 48 at day 9, 70 at day 11) gives n=4: median 30.5 views and about 88 min. These earned 91% of this week's new long-form watch minutes. Medicare (7 views, 0 min) is excluded as a cost topic."
   },
   {
     "name": "Exp B: Gray-market 'what's actually confirmed' long-forms",
@@ -15,24 +15,24 @@
     "metric": "Day-7 views compared with the GLP-1 long-form median. Success: day-7 median of 33 or more.",
     "min_sample": "n=4",
     "status": "inconclusive",
-    "result": "Closed early at n=1. 'Semaglutide or Tirzepatide Online: How to Check a Pharmacy' got 6 views by day 3. That's an anecdote and doesn't prove the lane fails. We're stopping because each slot costs a probable Lane A or C video (medians 18.5 and 47), and the lane sits close to 'online sources' policy risk. Gray-market stays a Shorts-only lane (at most 1 a week). Any retest has to go through Lane C with a fresh dated FDA, MHRA or manufacturer event."
+    "result": "Closed early at n=1. The pharmacy check got 8 views and 20 min. That's an anecdote, not proof the lane fails. We closed it because of the opportunity cost against Lane A and because the lane sits close to the 'online sources' policy line. Gray-market stays Shorts-only, at most 1 a week."
   },
   {
-    "name": "Exp C: First explainer within 48 h of a newly named drug or result",
-    "hypothesis": "Being the first clear explainer of a new named result with little search competition (EloraTZP 523) drives long-form views far more than any title formula.",
-    "change": "When a named next-gen drug's result or regulatory step first becomes public within 48 h, that day's long-form explains it with the drug name first in the title. Qualifying news goes to the long-form before any Short. A journal publication of an old topline counts only if it adds new data.",
-    "metric": "Day-7 views compared with the GLP-1 long-form median (20, n=17) and approved-drug deep dives (8). Success: day-7 median of 50 or more.",
-    "min_sample": "n=4 qualifying videos made after 10-20 (probably 2–4 weeks, depending on news).",
+    "name": "Exp C: First explainer within 48 h of a new named result",
+    "hypothesis": "Being the first clear explainer of a newly public, named trial result with a headline number (ideally against tirzepatide or semaglutide) drives far more long-form views than evergreen topics (EloraTZP 575 views, 1,474 min).",
+    "change": "Tightened: the long-form slot goes to the news only when all of these hold. The result first became public within 48 h. It's a named next-gen drug. It has a headline efficacy number from a randomized trial. Filings, Phase 1, food-effect and status-only news go to Shorts. Bare 'What Is [drug]?' explainers (Lane P) are paused.",
+    "metric": "Day-7 views and watch minutes against the GLP-1 long-form median (24 views, 45 min). Success: day-7 median of 50 views or more.",
+    "min_sample": "n=4 qualifying videos made after 10-20 (2–4 weeks, depending on news).",
     "status": "running",
-    "result": "In-window n=1: petrelintide (10-25), not logged yet; score it at day 7 on 11-01. Looking back at earlier fresh-news next-gen long-forms: median 47 (n=5: 523, 56, 47, 25, 18), a signal. Missed this week: two next-gen news topics (retatrutide sleep apnea, retatrutide kidneys) went to Shorts and were both dropped for masking. Note: TRIUMPH-1 OSA results were first announced on 6 Jun 2026, so the radar must check the first-report date before calling anything 'new'."
+    "result": "In-window n=1: petrelintide (10-25) had 4 views at day 2; score it on 11-01. Elecoglipron (10-26) isn't logged and was a decoder, so it counts as Lane P, not C. Looking back at fresh next-gen results with a headline number: EloraTZP 575, Orforglipron 59, Survodutide 47, retatrutide 29 and 18, CagriSema 24. That's a signal, carried by one outlier."
   },
   {
     "name": "Exp D: Shorts-to-long-form funnel with a verified link",
-    "hypothesis": "A funnel Short that asks a fresh question its live long-form answers will lift that long-form's daily views when it ends by naming the exact title and carries a working, verified link. Shorts average about 60 YouTube views each and currently send no measurable traffic to long-form.",
-    "change": "Every 20:00 Short is a spin-off of a live long-form, rotating between that day's Lane C video, EloraTZP and Strength Training on Tirzepatide. Last spoken line: 'Full breakdown: [exact live title], on our channel.' The oEmbed-verified URL goes in description line 1 and the pinned comment. Only the presence of the working link and CTA changes; topic rules stay the same.",
-    "metric": "The target long-form's views in the 3 days after the Short against the 3 days before (from daily snapshots). Once the API is on, use 'Shorts feed' and 'related video' traffic sources. Success: average lift of 10 or more views a day, or 50% or more over the baseline.",
-    "min_sample": "n=6 funnel Shorts with a verified working link. Shorts that ship without a verified link are excluded.",
+    "hypothesis": "A 20:00 funnel Short that asks a fresh question its live long-form answers, and carries a verified working link, will lift that long-form's daily views. Shorts get about 60 YouTube views each and currently send no measurable traffic to long-form.",
+    "change": "Every 20:00 Short is a spin-off of a live long-form, rotating between that day's Lane C video, EloraTZP and Strength Training on Tirzepatide. Last spoken line: 'Full breakdown on our channel, link in the description.' No spoken title. The publisher automatically puts a verified '▶ Full breakdown' link on description line 1. Topic rules don't change.",
+    "metric": "The target long-form's viewCount in the 3 days after the Short against the 3 days before. Once traffic sources are exported, also 'Shorts feed' and 'related video' traffic. Success: average lift of 10 or more views a day, or 50% or more over baseline.",
+    "min_sample": "n=6 funnel Shorts with a verified working link. Shorts without a verified link are excluded.",
     "status": "running",
-    "result": "Started 2026-10-26. Baseline: no Short has ever shipped with a working long-form link. EloraTZP and Strength Training are each gaining roughly 1–3 views a day."
+    "result": "Started 10-27; no data yet. Baseline: EloraTZP and Strength Training gained about 1–3 views a day before the experiment. Strength Training then jumped by about 11 a day (48 to 70 between day 9 and day 11), before the experiment, so use a per-video baseline."
   }
 ]
