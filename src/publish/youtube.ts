@@ -197,7 +197,12 @@ export async function partnerProgress(): Promise<{ subscribers: number; watchHou
   const byType = async (from: string) => {
     const j = await httpJson<any>(`https://youtubeanalytics.googleapis.com/v2/reports?ids=channel==MINE&startDate=${from}&endDate=${day(0)}&metrics=views,estimatedMinutesWatched&dimensions=creatorContentType`, auth);
     const out: Record<string, { views: number; minutes: number }> = {};
-    for (const [type, views, minutes] of j.rows ?? []) out[type] = { views: Number(views), minutes: Number(minutes) };
+    // values come back camelCase ("shorts", "videoOnDemand", "liveStream", "story"): normalise to upper case
+    for (const [type, views, minutes] of j.rows ?? []) {
+      const k = String(type).replace(/([a-z])([A-Z])/g, "$1_$2").toUpperCase();
+      out[k] = { views: (out[k]?.views ?? 0) + Number(views), minutes: (out[k]?.minutes ?? 0) + Number(minutes) };
+    }
+    log.info(`YouTube Analytics content types since ${from}: ${JSON.stringify(out)}`);
     return out;
   };
   const y = await byType(day(365)), q = await byType(day(90)), m = await byType(day(28));
