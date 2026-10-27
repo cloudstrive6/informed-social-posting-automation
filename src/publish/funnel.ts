@@ -84,7 +84,7 @@ export async function watchNextFor(item: ContentItem, liveBy: Date, excludeVideo
   const score = (c: LongCandidate) => [...toks.get(c)!].filter(w => mine.has(w)).reduce((a, w) => a + Math.log((all.length + 1) / df.get(w)!) * (DRUGS.test(w) ? 2 : 1), 0);
   const ranked: [LongCandidate, string][] = [];
   const add = (c: LongCandidate, why: string) => { if (!ranked.some(([r]) => r === c)) ranked.push([c, why]); };
-  if (item.kind !== "long" && spinOff(item)) all.filter(c => c.item.date === item.date).forEach(c => add(c, "spin-off of the day's long video"));
+  if (item.kind !== "long" && spinOff(item)) all.filter(c => c.item.date === item.date && score(c) > 0).forEach(c => add(c, "spin-off of the day's long video"));
   all.map(c => [c, score(c)] as const).filter(([, s]) => s >= 1.5).sort((a, b) => b[1] - a[1] || byViews(a[0], b[0])).slice(0, 15)
     .forEach(([c, s]) => add(c, `most related (score ${s.toFixed(1)}, ${c.views} views)`));
   all.filter(c => item.plan.pillar && c.item.plan.pillar === item.plan.pillar).sort(byViews).slice(0, 10).forEach(c => add(c, `same pillar (${c.views} views)`));
