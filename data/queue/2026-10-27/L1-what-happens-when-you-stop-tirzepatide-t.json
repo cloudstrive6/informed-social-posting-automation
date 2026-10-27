@@ -1,0 +1,1482 @@
+{
+  "id": "L1-what-happens-when-you-stop-tirzepatide-t",
+  "date": "2026-10-27",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "What happens when you stop tirzepatide: the SURMOUNT-4 randomized withdrawal trial (adults with obesity, or overweight plus a weight-related condition, without diabetes), why appetite returns (biology, not willpower), how many people stop early in real-world data, and what the evidence suggests about keeping results",
+    "angle": "Keep the same structure and title. Chapter 4: cite only persistence studies you can locate and open (for example Gasoyan 2026 DOM doi 10.1111/dom.70660; Ulrich 2026 DOM doi 10.1111/dom.70535, which is GLP-1 receptor agonists in type 2 diabetes with no tirzepatide). Label each one 'observational' and name the drugs and population it covered. Drop the 'DOCC' citation unless the Scriptwriter can find and verify the actual paper. Say that cost and access drove many discontinuations. Present SURMOUNT-4 regain as group averages from weeks 36 to 88, and source the 'biology, not willpower' line to mechanism or label sources, not to SURMOUNT-4. Keep the guideline habits (strength training, protein with the kidney caveat) framed as 'recommended', not 'proven to prevent regain'.",
+    "working_title": "What Happens When You Stop Tirzepatide?",
+    "target_keyword": "stopping tirzepatide",
+    "trend_stage": "evergreen",
+    "why": "A named playbook Lane A example (Lane A median 26, Strength Training growing) with high search demand. The randomized SURMOUNT-4 evidence holds up under fact-check, and the new real-world persistence papers give it a timely hook. | fact-check: The core topic is fine for Lane A. SURMOUNT-4 (Aronne et al., JAMA 2024) is a real randomized withdrawal trial in adults with obesity, or overweight plus a weight-related condition, without diabetes: a 36-week open-label lead-in, then randomization to continued tirzepatide or placebo for weeks 36 to 88. Take every per-arm % change, n and estimand from the JAMA paper. Chapter 3 is fine if it only uses the secondary outcomes the paper reports. The problem is chapter 4. I could not find an 'Oct 2026 Diabetes Obes Metab' persistence paper or any study called 'DOCC'. The real-world discontinuation papers I could confirm are: (a) Gasoyan et al. 2026, Diabetes Obes Metab, doi 10.1111/dom.70660, the Cleveland Clinic study of weight change after stopping semaglutide or tirzepatide (observational; most people went on to other obesity treatments); (b) Ulrich et al. 2026, Diabetes Obes Metab, doi 10.1111/dom.70535, a UK cohort of GLP-1 receptor agonists in type 2 diabetes. It covers dulaglutide and semaglutide, with no tirzepatide, and found a 41.1% one-year discontinuation risk; (c) the PMC12515774 academic obesity clinic paper, where only 5% of patients were on tirzepatide. Cost and access were major reasons people stopped in the real-world data, so don't frame stopping as a personal failing. Keep 'regain' as an average result, not something that happens to everyone. Keep the appetite biology to mechanism sources, not to SURMOUNT-4, which measured weight and not hunger. The ending CTA must name 'Strength Training on Tirzepatide' by its exact live title, oEmbed-verified.",
+    "pillar": "life-on-glp1"
+  },
+  "status": "held",
+  "package": {
+    "title": "What Happens When You Stop Tirzepatide?",
+    "title_candidates": [
+      "What Happens When You Stop Tirzepatide?",
+      "Stopping Tirzepatide: What Happens to Your Weight and Hunger",
+      "Tirzepatide After You Stop: What the Trial Actually Found",
+      "Why Hunger Comes Back After Stopping Tirzepatide",
+      "Stopping Tirzepatide? What the Evidence Says About Regain",
+      "Tirzepatide: Is Any Weight Loss Kept After Stopping?",
+      "What Really Happens When You Stop Tirzepatide",
+      "Stopping Tirzepatide: It's Biology, Not Willpower",
+      "Tirzepatide and Stopping: How to Protect Your Results",
+      "Coming Off Tirzepatide: What 88 Weeks of Data Show"
+    ],
+    "description": "Quick answer: In SURMOUNT-4 (JAMA, online December 2023; adults with obesity, or overweight plus a weight-related condition, no diabetes), people switched from tirzepatide to placebo at week 36 regained 14.0% of body weight on average by week 88, but still ended 9.9% below their starting weight on average. Those who stayed on tirzepatide lost a further 5.5% (main analysis). Most common side effects on tirzepatide: nausea, diarrhea, constipation and vomiting.\n\nNot personal advice. Please don't stop or change your medicine on your own, and talk to your doctor or prescriber about whether it's right for you.\n\nSources:\nSURMOUNT-4 (JAMA): https://doi.org/10.1001/jama.2023.24945\nUS stopping study (JAMA Netw Open): https://doi.org/10.1001/jamanetworkopen.2024.57349\nUK persistence study (Diabetes Obes Metab): https://doi.org/10.1111/dom.70535\nCleveland Clinic study: https://newsroom.clevelandclinic.org/2026/03/12/what-happens-when-patients-stop-taking-glp-1-drugs-new-cleveland-clinic-study-reveals-real-world-insights\n\nChapters:\n0:00 What happens when you stop?\n0:53 What did SURMOUNT-4 test?\n2:09 How much weight comes back?\n3:59 Why does hunger come back?\n5:52 What else changes after stopping?\n6:36 How many people stop early?\n8:45 Is any weight loss kept?\n9:47 How to protect your results\n11:15 The bottom line\n\n#Tirzepatide #GLP1 #SURMOUNT4",
+    "tags": [
+      "stopping tirzepatide",
+      "what happens when you stop tirzepatide",
+      "tirzepatide weight regain",
+      "tirzepatide discontinuation",
+      "SURMOUNT-4",
+      "tirzepatide withdrawal trial",
+      "weight regain after GLP-1",
+      "tirzepatide appetite return",
+      "food noise tirzepatide",
+      "GLP-1 weight regain",
+      "tirzepatide maintenance",
+      "tirzepatide side effects",
+      "Zepbound stopping",
+      "Mounjaro stopping",
+      "tirzepatide real world data",
+      "tirzepatide hunger hormones"
+    ],
+    "pinned_comment": "In one large observational US records study of adults with overweight or obesity starting semaglutide or liraglutide, 64.8% of those without type 2 diabetes stopped within a year. People with higher incomes were less likely to stop, a pattern that points to cost and access. Save this for your next appointment. Not personal advice. Please don't stop or change your medicine on your own, and talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "ANY WEIGHT KEPT?",
+      "highlight_word": "KEPT",
+      "subtext": "",
+      "layout": "versus",
+      "psychology": "Contrast plus curiosity: the brain automatically compares the two SURMOUNT-4 arms (switched to placebo vs kept taking tirzepatide), and the question headline holds back the answer the 'Is any weight loss kept?' chapter delivers.",
+      "emotion": "Curiosity and hope",
+      "hero_art": "stomach",
+      "hero_face": "sad",
+      "second_art": "stomach",
+      "second_face": "proud",
+      "prop": "none",
+      "accent": "green",
+      "badge": "",
+      "versus_left": "STOPPED",
+      "versus_right": "CONTINUED"
+    },
+    "chapters": "0:00 What happens when you stop?\n0:53 What did SURMOUNT-4 test?\n2:09 How much weight comes back?\n3:59 Why does hunger come back?\n5:52 What else changes after stopping?\n6:36 How many people stop early?\n8:45 Is any weight loss kept?\n9:47 How to protect your results\n11:15 The bottom line"
+  },
+  "media": {
+    "video": "L1-what-happens-when-you-stop-tirzepatide-t.mp4",
+    "duration": 730.964,
+    "thumbnail": "L1-what-happens-when-you-stop-tirzepatide-t-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-27T18:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-10-27T02:49:00.741Z",
+  "script": {
+    "working_title": "What Happens When You Stop Tirzepatide?",
+    "target_keyword": "stopping tirzepatide",
+    "hook_pattern": "Visceral 'you' scenario plus an open loop: the returning 10 p.m. food noise, then a promised 'hopeful number most headlines skip' that pays off in 'Is any weight loss kept?'",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "What happens when you stop?",
+        "narration": "Picture this. A few weeks after your last tirzepatide shot, it's ten at night, the kitchen is quiet, and the food thoughts you'd almost forgotten are suddenly loud again.",
+        "on_screen_text": "When the food noise returns",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "thoughtful person kitchen table night"
+        },
+        "retention_device": "Visceral 'you' scenario hook",
+        "source_ids": []
+      },
+      {
+        "id": "s02",
+        "section": "What happens when you stop?",
+        "narration": "If you've wondered what happens when you stop tirzepatide, the best evidence gives a clear first answer. In a randomized trial, people switched to placebo regained weight on average, while people who stayed on it kept losing.",
+        "on_screen_text": "Stopped: average regain",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two paths diverging with scales"
+        },
+        "retention_device": "First concrete answer in the first 15 seconds",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "What happens when you stop?",
+        "narration": "In the next few minutes, you'll learn how much weight came back, why appetite returns, how often people stop in real life, and what experts recommend to protect your progress.",
+        "on_screen_text": "What you'll know by the end",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "How much comes back",
+            "Why hunger returns",
+            "How often people stop",
+            "What experts recommend"
+          ],
+          "stock_query": "Medi holding a checklist clipboard"
+        },
+        "retention_device": "Promise of four payoffs",
+        "source_ids": []
+      },
+      {
+        "id": "s04",
+        "section": "What happens when you stop?",
+        "narration": "And there's one number in this trial that most headlines skip. It's the most hopeful result in the whole paper, and I'll show it to you near the end.",
+        "on_screen_text": "The number headlines skip",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sealed envelope with question mark"
+        },
+        "retention_device": "Main open loop (paid off in 'Is any weight loss kept?')",
+        "source_ids": []
+      },
+      {
+        "id": "s05",
+        "section": "What happens when you stop?",
+        "narration": "One quick thing first. This is not personal advice. Please don't stop or change your medicine on your own; talk to your doctor or prescriber about what's right for you.",
+        "on_screen_text": "Not personal advice",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly doctor chatting with patient"
+        },
+        "retention_device": "Trust signal before the evidence",
+        "source_ids": []
+      },
+      {
+        "id": "s06",
+        "section": "What did SURMOUNT-4 test?",
+        "narration": "The trial is called SURMOUNT four. It was published in the journal JAMA, online in December two thousand twenty-three, and it asked one blunt question: what happens if you stop?",
+        "on_screen_text": "SURMOUNT-4, JAMA (online Dec 2023)",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "journal cover with magnifying glass"
+        },
+        "retention_device": "Chapter card framed as a searched question",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "What did SURMOUNT-4 test?",
+        "narration": "It enrolled adults with obesity, or with overweight plus a weight-related health condition, and none had diabetes. On average they were forty-eight years old, and about seven in ten were women.",
+        "on_screen_text": "Adults with obesity, no diabetes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "diverse group of adults waving"
+        },
+        "retention_device": "Viewer self-identification with population",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "What did SURMOUNT-4 test?",
+        "narration": "Stage one lasted thirty-six weeks. Everyone took tirzepatide openly, building up to the highest dose they could tolerate, either ten or fifteen milligrams once a week.",
+        "on_screen_text": "Weeks 0–36: everyone on tirzepatide",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar pages flipping, weekly pen"
+        },
+        "retention_device": "Step-by-step micro-story of the trial design",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "What did SURMOUNT-4 test?",
+        "narration": "Seven hundred eighty-three people began. The six hundred seventy who completed that stage had lost twenty point nine percent of their body weight, on average.",
+        "on_screen_text": "−20.9% in 36 weeks",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−20.9%",
+          "stat_label": "Tirzepatide, weeks 0–36, 670 completers, average",
+          "stock_query": "scale needle moving down"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "What did SURMOUNT-4 test?",
+        "narration": "Then came the clever part. Those six hundred seventy people were randomly split into two groups of three hundred thirty-five.",
+        "on_screen_text": "670 split: 335 and 335",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "crowd splitting into two equal groups"
+        },
+        "retention_device": "'Then came the clever part' twist",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "What did SURMOUNT-4 test?",
+        "narration": "One group kept getting tirzepatide. The other was switched to a placebo injection, and neither the participants nor the researchers knew who was in which group.",
+        "on_screen_text": "Tirzepatide versus placebo, double-blind",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two identical pens behind curtain"
+        },
+        "retention_device": "Design detail that builds anticipation",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "What did SURMOUNT-4 test?",
+        "narration": "Both groups kept the same diet and activity counseling. So for the next fifty-two weeks, the big difference was the medicine itself.",
+        "on_screen_text": "Same counseling, different medicine",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two people same healthy meal"
+        },
+        "retention_device": "But/therefore logic setup",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "What did SURMOUNT-4 test?",
+        "narration": "At week eighty-eight, the two groups looked very different. Before I show you, take a guess. How much of the lost weight do you think came back?",
+        "on_screen_text": "Week 88: your guess?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious viewer thinking, question bubble"
+        },
+        "retention_device": "Question to the viewer and mini-cliffhanger before chapter change",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "How much weight comes back?",
+        "narration": "Here's the answer, and it's the main result of the whole trial.",
+        "on_screen_text": "How much comes back?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "curtain opening on a chart"
+        },
+        "retention_device": "Payoff of the guess",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "How much weight comes back?",
+        "narration": "In the group switched to placebo, body weight went up by fourteen percent on average between week thirty-six and week eighty-eight.",
+        "on_screen_text": "Placebo: +14.0% on average",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "+14.0%",
+          "stat_label": "Placebo group, weeks 36–88, average weight change",
+          "stock_query": "chart line rising gently"
+        },
+        "retention_device": "Big reveal stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "How much weight comes back?",
+        "narration": "In the group that stayed on tirzepatide, weight kept falling, by another five point five percent on average over the same year.",
+        "on_screen_text": "Tirzepatide: −5.5% more",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−5.5%",
+          "stat_label": "Tirzepatide group, weeks 36–88, average weight change",
+          "stock_query": "chart line continuing down"
+        },
+        "retention_device": "Contrast stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "How much weight comes back?",
+        "narration": "That's a gap of nineteen point four percentage points. These figures come from the trial's main analysis, which counts everyone randomized, whether or not they kept taking their assigned treatment.",
+        "on_screen_text": "19.4-point gap, main analysis",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "19.4 points",
+          "stat_label": "Tirzepatide versus placebo gap, weeks 36–88",
+          "stock_query": "two bars far apart"
+        },
+        "retention_device": "Concrete number with plain-English method",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "How much weight comes back?",
+        "narration": "To make that feel real, imagine Dana, forty-seven. She's hypothetical, and she starts at two hundred twenty pounds. A twenty point nine percent drop takes her to about one hundred seventy-four.",
+        "on_screen_text": "Hypothetical Dana: 220 → 174 lb",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana, 47, smiling on a walk"
+        },
+        "retention_device": "Relatable hypothetical thread introduced",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "How much weight comes back?",
+        "narration": "If she then matched the placebo group's average regain of fourteen percent, about twenty-four pounds would come back.",
+        "on_screen_text": "Illustration: about 24 lb back",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "+24 lb",
+          "stat_label": "Hypothetical Dana, placebo-average regain, illustration",
+          "stock_query": "Dana looking at scale, calm"
+        },
+        "retention_device": "Humanised number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "How much weight comes back?",
+        "narration": "But averages hide a wide range. Some people on placebo regained more than that, and some regained much less.",
+        "on_screen_text": "Averages hide a range",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "dots scattered around average line"
+        },
+        "retention_device": "'But' turn",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "How much weight comes back?",
+        "narration": "At week eighty-eight, eighty-nine point five percent of people on tirzepatide had kept at least eighty percent of the weight they'd lost, versus sixteen point six percent on placebo.",
+        "on_screen_text": "Kept 80%+ of loss at week 88",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "89.5% vs 16.6%",
+          "stat_label": "Kept ≥80% of loss: tirzepatide vs placebo",
+          "stock_query": "two pie charts side by side"
+        },
+        "retention_device": "Second surprising stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "How much weight comes back?",
+        "narration": "So roughly one in six people on placebo still held on to most of their loss. The trial wasn't designed to explain what set them apart, but regain wasn't everyone's story.",
+        "on_screen_text": "1 in 6 on placebo kept most",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "one hopeful person among six"
+        },
+        "retention_device": "Humanised number with hope",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "How much weight comes back?",
+        "narration": "And it's not just tirzepatide. In the STEP one trial extension, adults with overweight or obesity and no diabetes who stopped semaglutide regained about two-thirds of their earlier weight loss within a year.",
+        "on_screen_text": "STEP 1 extension: semaglutide stopped",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "About 2/3",
+          "stat_label": "Semaglutide stopped: share of loss regained, 1 year",
+          "stock_query": "second chart with similar curve"
+        },
+        "retention_device": "Corroborating evidence from a second trial",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "How much weight comes back?",
+        "narration": "Separate drug, separate trial, not head-to-head. Same direction.",
+        "on_screen_text": "Separate trials, not head-to-head",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two arrows pointing same way"
+        },
+        "retention_device": "Short punchy line for rhythm",
+        "source_ids": [
+          "S1",
+          "S5"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "How much weight comes back?",
+        "narration": "So weight tends to come back after stopping. The real question is why. And if you've ever blamed yourself for that, stay with me, because the biology tells a different story.",
+        "on_screen_text": "Why does it come back?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person lifting weight off shoulders"
+        },
+        "retention_device": "Emotional open loop and cliffhanger before chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s26",
+        "section": "Why does hunger come back?",
+        "narration": "Let's start with the hormone these medicines are built around.",
+        "on_screen_text": "Why does hunger come back?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "friendly gut hormone character"
+        },
+        "retention_device": "Chapter card as searched question",
+        "source_ids": []
+      },
+      {
+        "id": "s27",
+        "section": "Why does hunger come back?",
+        "narration": "After you eat, your gut releases its own G L P one. It helps signal fullness to your brain, slows how fast your stomach empties, and helps your pancreas release insulin when blood sugar rises.",
+        "on_screen_text": "Your own GLP-1",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Signals fullness",
+            "Slows stomach emptying",
+            "Helps insulin release"
+          ],
+          "stock_query": "gut sending message to brain"
+        },
+        "retention_device": "Mechanism explained like a friend",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Why does hunger come back?",
+        "narration": "But your natural G L P one is short-lived. An enzyme called D P P four breaks it down within a couple of minutes.",
+        "on_screen_text": "Natural GLP-1: gone in minutes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "tiny stopwatch next to hormone"
+        },
+        "retention_device": "Surprising fact",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "Why does hunger come back?",
+        "narration": "Tirzepatide is engineered to last far longer. It activates two hormone receptors, G I P and G L P one, and its half-life is about five days. That's why it's a once-weekly shot.",
+        "on_screen_text": "Tirzepatide: GIP + GLP-1, about 5-day half-life",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two keys fitting two locks"
+        },
+        "retention_device": "But/therefore contrast",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Why does hunger come back?",
+        "narration": "Its prescribing information says tirzepatide lowers body weight by reducing calorie intake, likely by affecting appetite.",
+        "on_screen_text": "Less intake, likely via appetite",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "smaller plate, calm brain"
+        },
+        "retention_device": "Authoritative label fact",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "Why does hunger come back?",
+        "narration": "So when the weekly doses stop, the medicine gradually clears from the body over the following weeks, and the appetite effect it was providing fades with it.",
+        "on_screen_text": "Doses stop, effect fades",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glowing signal slowly dimming"
+        },
+        "retention_device": "Therefore step",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Why does hunger come back?",
+        "narration": "But here's where it gets weird. The appetite you return to may be stronger than the one you started with.",
+        "on_screen_text": "Stronger than before?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "surprised Medi with raised eyebrow"
+        },
+        "retention_device": "'Here's where it gets weird' re-hook",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Why does hunger come back?",
+        "narration": "In a classic New England Journal of Medicine study, researchers in Australia followed people with overweight or obesity who lost weight on a ten-week very low-calorie diet. No medicine involved.",
+        "on_screen_text": "Diet study, no medicine",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "researchers with clipboards in Australia"
+        },
+        "retention_device": "Micro-story of a study",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Why does hunger come back?",
+        "narration": "A year later, the hunger hormone ghrelin was still higher than before, fullness hormones like leptin and peptide Y Y were still lower, and people reported feeling hungrier.",
+        "on_screen_text": "A year later: hungrier",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Ghrelin (hunger): higher",
+            "Leptin (fullness): lower",
+            "Peptide YY (fullness): lower",
+            "Reported hunger: higher"
+          ],
+          "stock_query": "hormone seesaw tipping"
+        },
+        "retention_device": "Surprising finding",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "Why does hunger come back?",
+        "narration": "That was a diet study, not a tirzepatide study, so its numbers don't transfer. But it shows the body tends to defend lost weight with more hunger and less fullness.",
+        "on_screen_text": "The body pushes back",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "body gently pushing back a door"
+        },
+        "retention_device": "Honest scope check",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Why does hunger come back?",
+        "narration": "So if anyone's told you regain is simply a lack of willpower, the science says otherwise. Appetite is biology, and after weight loss, that biology pushes back.",
+        "on_screen_text": "Biology, not just willpower",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "MYTH: Regain after stopping is a willpower failure",
+          "fact": "After weight loss, appetite hormones push back",
+          "stock_query": "myth card flipping to fact"
+        },
+        "retention_device": "Myth attack and validation",
+        "source_ids": [
+          "S4",
+          "S2"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Why does hunger come back?",
+        "narration": "Back to Dana. If her food noise returns after stopping, that's not a character flaw. It's what this research would predict, and it deserves a plan, not shame.",
+        "on_screen_text": "A plan, not shame",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana relieved, supportive friend"
+        },
+        "retention_device": "Return to the relatable thread",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "Why does hunger come back?",
+        "narration": "And weight wasn't the only thing that moved in SURMOUNT four. Some of the numbers your doctor checks shifted too.",
+        "on_screen_text": "More than the scale",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor's checkup chart with arrows"
+        },
+        "retention_device": "New open loop before chapter change",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "What else changes after stopping?",
+        "narration": "During the first thirty-six weeks on tirzepatide, measures like waist size and blood pressure improved on average.",
+        "on_screen_text": "What else changes?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "tape measure and blood pressure cuff"
+        },
+        "retention_device": "Chapter card as searched question",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "What else changes after stopping?",
+        "narration": "After the switch, many of those measures drifted back toward where they started in the placebo group, while they held up better in people who stayed on tirzepatide.",
+        "on_screen_text": "Placebo: measures drifted back",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "arrows drifting back toward start"
+        },
+        "retention_device": "But/therefore turn",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "What else changes after stopping?",
+        "narration": "These were secondary results, so treat them as supporting evidence, not the trial's headline finding.",
+        "on_screen_text": "Secondary results, supporting only",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Waist size",
+            "Blood pressure",
+            "Cholesterol",
+            "Blood sugar and insulin"
+          ],
+          "stock_query": "health measures dashboard"
+        },
+        "retention_device": "Honest evidence-strength signal",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "What else changes after stopping?",
+        "narration": "What about side effects on tirzepatide in this trial? The most common were stomach-related, like nausea, diarrhea, constipation and vomiting.",
+        "on_screen_text": "Common: nausea, diarrhea, constipation, vomiting",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon stomach with mild discomfort"
+        },
+        "retention_device": "Question the viewer is already asking",
+        "source_ids": [
+          "S1",
+          "S3"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "What else changes after stopping?",
+        "narration": "They were mostly mild to moderate, and mostly happened while doses were being increased in the first stage. If they bother you, your prescriber can help.",
+        "on_screen_text": "Mostly mild to moderate",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "prescriber giving reassuring advice"
+        },
+        "retention_device": "Reassurance and agency",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "What else changes after stopping?",
+        "narration": "But here's the bigger surprise. Outside of trials, in everyday life, stopping turns out to be remarkably common.",
+        "on_screen_text": "Stopping is common",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "busy city street, many people"
+        },
+        "retention_device": "Mini-cliffhanger before chapter change",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "How many people stop early?",
+        "narration": "Clinical trials are tidy. Real life isn't. So researchers dig through health records to see what people actually do.",
+        "on_screen_text": "How many people stop early?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "stacks of health record folders"
+        },
+        "retention_device": "Chapter card as searched question",
+        "source_ids": []
+      },
+      {
+        "id": "s46",
+        "section": "How many people stop early?",
+        "narration": "Quick caution: these are observational studies. They show real-world patterns, but they can't prove cause and effect.",
+        "on_screen_text": "Observational: patterns, not proof",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over pattern"
+        },
+        "retention_device": "Trust signal",
+        "source_ids": [
+          "S6",
+          "S7",
+          "S8"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "How many people stop early?",
+        "narration": "One large US study in JAMA Network Open followed adults with overweight or obesity who started semaglutide or liraglutide, two G L P one medicines.",
+        "on_screen_text": "US records: semaglutide or liraglutide",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "map of USA with data dots"
+        },
+        "retention_device": "Setup for a surprising stat",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "How many people stop early?",
+        "narration": "Among those without type two diabetes, sixty-four point eight percent stopped within a year. Among people with type two diabetes, it was forty-six point five percent.",
+        "on_screen_text": "64.8% stopped within a year",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "64.8%",
+          "stat_label": "Stopped within 1 year, no type 2 diabetes",
+          "stock_query": "calendar with exit door"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "How many people stop early?",
+        "narration": "A UK study of adults with type two diabetes starting a G L P one medicine, mostly dulaglutide or semaglutide, with no tirzepatide in the data, estimated a forty-one point one percent risk of stopping within a year.",
+        "on_screen_text": "UK, type 2 diabetes: 41.1%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "41.1%",
+          "stat_label": "UK, type 2 diabetes, GLP-1 starters (mostly dulaglutide or semaglutide): 1-year stopping risk",
+          "stock_query": "UK map with data dots"
+        },
+        "retention_device": "Second data point, scope clearly labelled",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "How many people stop early?",
+        "narration": "And a Cleveland Clinic study looked at real-world health records of adults who stopped semaglutide or tirzepatide. In the year after stopping, about one in four switched to a different medicine, one in five restarted the same one, and others used lifestyle programs.",
+        "on_screen_text": "Many restarted or switched",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "About 1 in 4: switched medicine",
+            "About 1 in 5: restarted same one",
+            "Others: lifestyle programs"
+          ],
+          "stock_query": "path continuing past a signpost"
+        },
+        "retention_device": "Unexpected twist that partly answers the regain worry",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s50b",
+        "section": "How many people stop early?",
+        "narration": "Among people treated for obesity, who had lost about eight percent before stopping, average regain a year later was small, about half a percent, though more than half did gain some weight. The researchers think restarting and switching help explain why.",
+        "on_screen_text": "Small average regain, real context",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Obesity group: lost ~8.4%, then about +0.5% at 1 year",
+            "More than half gained some weight",
+            "Restarting and switching may explain it"
+          ],
+          "stock_query": "balanced scale with gentle arrows"
+        },
+        "retention_device": "Honest context on the real-world regain number",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "How many people stop early?",
+        "narration": "Observational, so it can't prove cause and effect. But it suggests stopping one medicine is often a step in a longer journey, not the end of the road.",
+        "on_screen_text": "A step, not the end",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "winding road toward sunrise"
+        },
+        "retention_device": "Emotional reframe with honest caveat",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "How many people stop early?",
+        "narration": "Why do so many people stop? Records can't fully say, but two patterns stand out: side effects, and signs that cost and access matter.",
+        "on_screen_text": "Side effects, and likely cost",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "worried person at pharmacy counter"
+        },
+        "retention_device": "Question then answer",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "How many people stop early?",
+        "narration": "In the JAMA Network Open study, people with higher incomes were less likely to stop. Health records can't tell us every reason, but that pattern points to affordability.",
+        "on_screen_text": "Higher income, less stopping",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "price tag on medicine box"
+        },
+        "retention_device": "Evidence behind the claim",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "How many people stop early?",
+        "narration": "So if you stopped because of a price, a coverage change or a pharmacy problem, hear this: that's not a personal failing. It's a barrier a lot of people hit.",
+        "on_screen_text": "Not a personal failing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "kind pharmacist comforting customer"
+        },
+        "retention_device": "Name the feeling and validate",
+        "source_ids": []
+      },
+      {
+        "id": "s55",
+        "section": "How many people stop early?",
+        "narration": "Which brings us to the hopeful number I promised you at the start. It's hiding in the placebo group.",
+        "on_screen_text": "The hopeful number",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "envelope about to open"
+        },
+        "retention_device": "Set up payoff of the main open loop",
+        "source_ids": []
+      },
+      {
+        "id": "s56",
+        "section": "Is any weight loss kept?",
+        "narration": "Remember, the placebo group regained fourteen percent on average. But they had lost about twenty-one percent first.",
+        "on_screen_text": "Is any weight loss kept?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "scale with hopeful sparkle"
+        },
+        "retention_device": "Chapter card as searched question",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "Is any weight loss kept?",
+        "narration": "Measured from the very start of the trial, at week eighty-eight the placebo group was still nine point nine percent below their starting weight, on average.",
+        "on_screen_text": "Placebo: still −9.9% at week 88",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−9.9%",
+          "stat_label": "Placebo group, weeks 0–88, average weight change",
+          "stock_query": "Medi cheering a small win"
+        },
+        "retention_device": "Payoff of the main open loop",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "Is any weight loss kept?",
+        "narration": "The group that stayed on tirzepatide was twenty-five point three percent below their starting weight.",
+        "on_screen_text": "Tirzepatide: −25.3% at week 88",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−25.3%",
+          "stat_label": "Tirzepatide group, weeks 0–88, average weight change",
+          "stock_query": "chart line far below start"
+        },
+        "retention_device": "Contrast stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "Is any weight loss kept?",
+        "narration": "For Dana, that placebo average would still mean about twenty-two pounds lighter than where she began, even after the regain.",
+        "on_screen_text": "Hypothetical Dana: about 22 lb lighter",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana smiling, small celebration"
+        },
+        "retention_device": "Return to thread with hope",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "Is any weight loss kept?",
+        "narration": "So stopping tended to undo much of the loss, but not all of it, on average. The trial ended at week eighty-eight, so it can't tell us what came after.",
+        "on_screen_text": "Much, not all, on average",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "timeline ending at week 88"
+        },
+        "retention_device": "Honest limit",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "Is any weight loss kept?",
+        "narration": "The researchers' conclusion: stopping tirzepatide led to substantial regain, while continuing it maintained and added to the weight loss.",
+        "on_screen_text": "Continuing maintained the loss",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "researcher presenting summary slide"
+        },
+        "retention_device": "Authoritative summary",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "Is any weight loss kept?",
+        "narration": "Whether long-term treatment is right for you is a conversation for you and your clinician.",
+        "on_screen_text": "Decide with your clinician",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient and doctor planning together"
+        },
+        "retention_device": "Agency",
+        "source_ids": []
+      },
+      {
+        "id": "s63",
+        "section": "Is any weight loss kept?",
+        "narration": "So whether you're staying on it or planning a change with your prescriber, what can actually help protect your progress?",
+        "on_screen_text": "What actually helps?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi pointing at toolbox"
+        },
+        "retention_device": "New open loop into takeaways",
+        "source_ids": []
+      },
+      {
+        "id": "s64",
+        "section": "How to protect your results",
+        "narration": "Let's be honest about the evidence. No study has proven that a specific habit prevents regain after stopping tirzepatide.",
+        "on_screen_text": "How to protect your results",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "shield with heart icon"
+        },
+        "retention_device": "Honesty beat that builds trust",
+        "source_ids": []
+      },
+      {
+        "id": "s65",
+        "section": "How to protect your results",
+        "narration": "But major expert groups do recommend some foundations, and they're worth building while you're on treatment, not just afterward.",
+        "on_screen_text": "Recommended foundations",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "building blocks forming a base"
+        },
+        "retention_device": "But turn",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "How to protect your results",
+        "narration": "First, strength training. World Health Organization guidelines recommend muscle-strengthening activities on two or more days a week for adults.",
+        "on_screen_text": "Strength train 2+ days a week",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi lifting light dumbbells"
+        },
+        "retention_device": "Concrete, actionable tip",
+        "source_ids": [
+          "S10"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "How to protect your results",
+        "narration": "A two thousand twenty-five joint advisory from four obesity and nutrition organizations recommends pairing G L P one treatment with resistance training and enough protein, to help protect muscle.",
+        "on_screen_text": "Resistance training + enough protein",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "protein plate beside resistance band"
+        },
+        "retention_device": "Expert backing",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "How to protect your results",
+        "narration": "One caveat. If you have kidney disease, your protein target should be set with your clinician or a dietitian, because more isn't automatically better.",
+        "on_screen_text": "Kidney disease? Ask first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly kidney with dietitian"
+        },
+        "retention_device": "Safety caveat",
+        "source_ids": []
+      },
+      {
+        "id": "s69",
+        "section": "How to protect your results",
+        "narration": "The advisory also recommends nutrient-dense, minimally processed foods, including fiber-rich vegetables, fruit, legumes and whole grains.",
+        "on_screen_text": "Fiber-rich whole foods",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "colorful vegetables, beans and grains"
+        },
+        "retention_device": "Concrete tip",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "How to protect your results",
+        "narration": "Notice the word: recommended. These habits support your health on or off the medicine, but they haven't been proven to prevent regain on their own.",
+        "on_screen_text": "Recommended, not proven",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "MYTH: Gym and protein guarantee no regain",
+          "fact": "Recommended for health; not proven to prevent regain",
+          "stock_query": "myth card flipping to fact"
+        },
+        "retention_device": "Myth correction for honesty",
+        "source_ids": []
+      },
+      {
+        "id": "s71",
+        "section": "How to protect your results",
+        "narration": "And if stopping is ever on the table, because of cost, side effects or a life change, plan it with your prescriber rather than alone.",
+        "on_screen_text": "Plan changes with your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two people mapping a plan together"
+        },
+        "retention_device": "Agency",
+        "source_ids": []
+      },
+      {
+        "id": "s72",
+        "section": "How to protect your results",
+        "narration": "Questions worth bringing: What should I expect if I stop? What follow-up will I have? Are there other options if cost is the problem? And which numbers should we keep tracking?",
+        "on_screen_text": "Questions for your prescriber",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "What should I expect if I stop?",
+            "What follow-up will I have?",
+            "Other options if cost is the problem?",
+            "Which numbers do we keep tracking?"
+          ],
+          "stock_query": "notebook with handwritten questions"
+        },
+        "retention_device": "Practical takeaway list",
+        "source_ids": []
+      },
+      {
+        "id": "s73",
+        "section": "How to protect your results",
+        "narration": "And remember, weight is one health measure among many. Blood pressure, blood sugar, strength, energy, sleep. Progress shows up in more than one number.",
+        "on_screen_text": "Progress is more than weight",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Blood pressure",
+            "Blood sugar",
+            "Strength",
+            "Energy and sleep"
+          ],
+          "stock_query": "Medi with several health badges"
+        },
+        "retention_device": "Empowerment reframe",
+        "source_ids": []
+      },
+      {
+        "id": "s74",
+        "section": "The bottom line",
+        "narration": "Here's your checklist. In SURMOUNT four, people switched to placebo regained fourteen percent on average over a year, yet still ended nine point nine percent below where they started.",
+        "on_screen_text": "Your checklist",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Placebo: +14.0% (weeks 36–88)",
+            "Placebo: still −9.9% at week 88",
+            "Tirzepatide: −25.3% at week 88"
+          ],
+          "stock_query": "checklist with green ticks"
+        },
+        "retention_device": "Recap of main payoffs",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s75",
+        "section": "The bottom line",
+        "narration": "Returning hunger is biology, not a character flaw. Stopping is common in real life, and cost and access seem to matter. And strength training plus enough protein are recommended foundations.",
+        "on_screen_text": "Biology, access, foundations",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Hunger returning is biology",
+            "Stopping is common; cost likely matters",
+            "Strength training + protein: recommended"
+          ],
+          "stock_query": "three friendly icons in a row"
+        },
+        "retention_device": "Takeaway checklist",
+        "source_ids": [
+          "S4",
+          "S6",
+          "S9",
+          "S10"
+        ]
+      },
+      {
+        "id": "s76",
+        "section": "The bottom line",
+        "narration": "Picture Dana a year from now. Whatever she decides with her prescriber, she isn't guessing anymore. She knows what the evidence says, and she has a plan.",
+        "on_screen_text": "Not guessing anymore",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana confident with notebook, sunrise"
+        },
+        "retention_device": "Emotional payoff of the thread",
+        "source_ids": []
+      },
+      {
+        "id": "s77",
+        "section": "The bottom line",
+        "narration": "If this helped you feel a little more in control, subscribe. Every week we turn the newest G L P one research into plain answers like these.",
+        "on_screen_text": "Subscribe for plain answers",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi pressing a subscribe bell"
+        },
+        "retention_device": "Single subscribe ask after the payoff, tied to a benefit",
+        "source_ids": []
+      },
+      {
+        "id": "s78",
+        "section": "The bottom line",
+        "narration": "Not personal advice. Please don't stop or change your medicine on your own, and talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Not personal advice. Ask your prescriber.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly doctor waving goodbye"
+        },
+        "retention_device": "Disclaimer and prescriber line",
+        "source_ids": []
+      },
+      {
+        "id": "s79",
+        "section": "The bottom line",
+        "narration": "Follow InforMed for more plain answers on G L P one research.",
+        "on_screen_text": "Follow for more",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi waving, thumbs up"
+        },
+        "retention_device": "Follow fallback (watch-next title could not be oEmbed-verified at script time)",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Continued Treatment With Tirzepatide for Maintenance of Weight Reduction in Adults With Obesity: The SURMOUNT-4 Randomized Clinical Trial (Aronne LJ et al., JAMA 2024;331(1):38-48; published online December 11, 2023)",
+        "publisher": "JAMA (American Medical Association)",
+        "year": "2024",
+        "url": "https://doi.org/10.1001/jama.2023.24945"
+      },
+      {
+        "id": "S2",
+        "title": "Mechanisms of Action and Therapeutic Application of Glucagon-like Peptide-1 (Drucker DJ, Cell Metabolism 2018;27(4):740-756)",
+        "publisher": "Cell Metabolism (Cell Press)",
+        "year": "2018",
+        "url": "https://doi.org/10.1016/j.cmet.2018.03.001"
+      },
+      {
+        "id": "S3",
+        "title": "ZEPBOUND (tirzepatide) injection, for subcutaneous use: Full Prescribing Information",
+        "publisher": "Eli Lilly and Company",
+        "year": "2025",
+        "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+      },
+      {
+        "id": "S4",
+        "title": "Long-Term Persistence of Hormonal Adaptations to Weight Loss (Sumithran P et al., N Engl J Med 2011;365:1597-1604)",
+        "publisher": "New England Journal of Medicine",
+        "year": "2011",
+        "url": "https://doi.org/10.1056/NEJMoa1105816"
+      },
+      {
+        "id": "S5",
+        "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension (Wilding JPH et al., Diabetes Obes Metab 2022;24(8):1553-1564)",
+        "publisher": "Diabetes, Obesity and Metabolism (Wiley)",
+        "year": "2022",
+        "url": "https://doi.org/10.1111/dom.14725"
+      },
+      {
+        "id": "S6",
+        "title": "Discontinuation and Reinitiation of Dual-Labeled GLP-1 Receptor Agonists Among US Adults With Overweight or Obesity (Rodriguez PJ et al., JAMA Netw Open 2025;8(1):e2457349) — observational",
+        "publisher": "JAMA Network Open",
+        "year": "2025",
+        "url": "https://doi.org/10.1001/jamanetworkopen.2024.57349"
+      },
+      {
+        "id": "S7",
+        "title": "Real-world persistence and dose titration of GLP-1 receptor agonists in type 2 diabetes: A UK population-based cohort study by obesity and cardiovascular disease status (Ulrich FS, Napoli N, Nielsen MF, Burden AM; Diabetes Obes Metab, published online 17 February 2026) — observational",
+        "publisher": "Diabetes, Obesity and Metabolism (Wiley)",
+        "year": "2026",
+        "url": "https://doi.org/10.1111/dom.70535"
+      },
+      {
+        "id": "S8",
+        "title": "Obesity Treatments and Weight Changes in Clinical Practice After Discontinuation of Semaglutide or Tirzepatide (Gasoyan H et al.; Diabetes Obes Metab, 2026) — observational",
+        "publisher": "Diabetes, Obesity and Metabolism (Wiley)",
+        "year": "2026",
+        "url": "https://doi.org/10.1111/dom.70660"
+      },
+      {
+        "id": "S9",
+        "title": "Nutritional priorities to support GLP-1 therapy for obesity: a joint Advisory from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society (Mozaffarian D et al., Am J Clin Nutr 2025;122:344–367)",
+        "publisher": "The American Journal of Clinical Nutrition",
+        "year": "2025",
+        "url": "https://doi.org/10.1016/j.ajcnut.2025.04.023"
+      },
+      {
+        "id": "S10",
+        "title": "World Health Organization 2020 guidelines on physical activity and sedentary behaviour (Bull FC et al., Br J Sports Med 2020;54:1451-1462)",
+        "publisher": "British Journal of Sports Medicine / World Health Organization",
+        "year": "2020",
+        "url": "https://doi.org/10.1136/bjsports-2020-102955"
+      }
+    ],
+    "cta": "If this helped you feel more in control, subscribe for plain-English GLP-1 research, and follow InforMed for more. Not personal advice: talk to your doctor or prescriber about whether it's right for you."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "Long-form 'What Happens When You Stop Tirzepatide?' is accurate and safe. SURMOUNT-4 figures all check out (783 started; 670 randomized 335/335; mean age 48, ~71% women; no diabetes; −20.9% weeks 0–36; +14.0% vs −5.5% weeks 36–88; 19.4-point gap; 89.5% vs 16.6% kept ≥80% of loss; −25.3% vs −9.9% weeks 0–88; GI side effects mostly mild to moderate during dose escalation). Dana is clearly hypothetical and her maths is consistent. Verified online: Cleveland Clinic study (27% switched, 20% restarted, 14% lifestyle programs, obesity group +0.5% at 1 year, restart/switch explanation is the researchers'), UK study 41.1%, and the US records study (64.8%/46.5%, higher income = less stopping, GI side effects = more stopping). STEP 1 extension, the 2011 diet study, label mechanism and half-life, GLP-1 breakdown by DPP-4, the WHO 2+ days strength advice and the 2025 joint advisory match known sources but weren't opened this session. Observational and secondary results are labelled, the separate-trials caveat is present, there's a kidney caveat on protein, disclaimer and prescriber lines open and close the video, the trial dose mention is design not dosing advice, and the CTA fallback is correct. One optional framing fix in s50 for context on the small real-world regain. Not flagged: S6's drug scope (s47 names only semaglutide and liraglutide; a news summary lists tirzepatide too). Worth checking against the abstract.",
+    "issues": [
+      {
+        "location": "s50",
+        "claim": "Among people treated for obesity, average regain was small, about half a percent, and the researchers think restarting and switching help explain why.",
+        "problem": "Missing context could make real-world stopping sound almost regain-free. This group had lost only about 8.4% before stopping, stopped within 3–12 months, and 55% did gain weight. That's not comparable to SURMOUNT-4's roughly 21% loss.",
+        "severity": "minor",
+        "fix": "Replace the last sentence with: \"Among people treated for obesity, who had lost about eight percent before stopping, average regain a year later was small, about half a percent, though more than half did gain some weight. The researchers think restarting and switching help explain why.\" On screen, change the last list item to: \"Obesity group: lost ~8.4%, then about +0.5% at 1 year\"."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "Continued Treatment With Tirzepatide for Maintenance of Weight Reduction in Adults With Obesity: The SURMOUNT-4 Randomized Clinical Trial",
+        "publisher": "JAMA",
+        "year": "2024",
+        "url": "https://doi.org/10.1001/jama.2023.24945"
+      },
+      {
+        "id": "S6",
+        "title": "Discontinuation and Reinitiation of Dual-Labeled GLP-1 Receptor Agonists Among US Adults With Overweight or Obesity",
+        "publisher": "JAMA Network Open",
+        "year": "2025",
+        "url": "https://doi.org/10.1001/jamanetworkopen.2024.57349"
+      },
+      {
+        "id": "S7",
+        "title": "Real-world persistence and dose titration of GLP-1 receptor agonists in type 2 diabetes: A UK population-based cohort study by obesity and cardiovascular disease status",
+        "publisher": "Diabetes, Obesity and Metabolism (Wiley)",
+        "year": "2026",
+        "url": "https://doi.org/10.1111/dom.70535"
+      },
+      {
+        "id": "S8",
+        "title": "Obesity Treatments and Weight Changes in Clinical Practice After Discontinuation of Semaglutide or Tirzepatide (Cleveland Clinic news release, 12 March 2026)",
+        "publisher": "Diabetes, Obesity and Metabolism / Cleveland Clinic",
+        "year": "2026",
+        "url": "https://newsroom.clevelandclinic.org/2026/03/12/what-happens-when-patients-stop-taking-glp-1-drugs-new-cleveland-clinic-study-reveals-real-world-insights"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.03,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 6.7,
+      "weakShots": 24,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "The '10 pm' clock label is only about 26px — hard to read at a glance, confirmed by the layout audit.",
+        "Cabinet/kitchen backdrop is nice but the cell icon and title pill leave a lot of plain grid background on both sides.",
+        "The scripted headline 'What you'll know by the end' never appears on screen in either sampled frame — only chip pills and a small heart mascot float on a mostly empty teal background, which the layout audit also flags as sparse (~11% coverage).",
+        "Mascot is tiny relative to the frame.",
+        "Major continuity break: the script calls for the 'Not personal advice / Talk to your doctor or prescriber' disclaimer card with a shield icon at this timestamp (43.1s), but the rendered frames instead show an unrelated 'NEJM diet study' badge with two lab-coat characters and an 'Australia' label — content that belongs to the hunger-hormone section much later in the script.",
+        "This looks like an earlier/later scene was reused at the wrong beat, the exact recurring 'one shot = one scripted beat' failure flagged in past QA.",
+        "Script calls for a 'SURMOUNT-4 / JAMA, online Dec 2023' citation card here, but the frames show a person with '10-week diet' and 'No medicine' labels under dangling lab-shelf bulbs — content from a different section entirely.",
+        "Expected a trial-question beat (icon, question, mascot) introducing SURMOUNT-4; instead shows an angry stomach character shouting 'Feed me. Now.' with a 'Ghrelin' label — biology content that belongs much later in the script.",
+        "Script wants a 'Obesity, no diabetes' population label here; instead the frames show hunger-hormone chip cards ('Ghrelin up', 'Leptin down') — clearly displaced content.",
+        "Script wants the trial's average-age/sex stat ('48', 'Average age; about 7 in 10 women'); instead this shows more hormone content (Leptin, Peptide YY) followed by an envelope graphic literally labelled 'The skipped number' — an unfinished placeholder card shipped to the final render.",
+        "Shipping a debug/placeholder label is a critical quality failure on its own, independent of the content mismatch.",
+        "Script wants 'Stage 1: Weeks 0–36' with a clock icon; instead shows simple 'Diet study' bowl and 'Tirzepatide' syringe icons with no clear link to the dosing-stage content.",
+        "Script wants a dose-escalation visual (syringe, arrow); instead shows a Brain and Stomach character dialogue ('Let's get that weight back!' / 'On it, boss!') with a 'Defends weight' shield — content from the hunger-biology chapter, not the dosing-schedule beat.",
+        "Script wants '783 started' with six person icons and the mascot celebrating trial enrollment; instead shows a 'Myth: willpower' muscle icon with the heart mascot saying 'Nope, not that simple!' — unrelated content.",
+        "Script wants the '−20.9%' average-weight-lost stat card; instead shows the headline 'Biology, not just willpower' with brain/appetite-signal particles — this is lifted from a beat roughly 240 seconds later in the script (shot 63)."
+      ],
+      "layoutKinds": {
+        "tiny": 18,
+        "offscreen": 29,
+        "sparse": 16
+      }
+    },
+    "audio": {
+      "musicGain": 0.34,
+      "sfxGain": 0.55,
+      "finalWer": 0.024,
+      "maskingDelta": 0.024,
+      "lufs": -15.2,
+      "soundNotes": "Music under voice already sits at -13.5 dB, right in the target window, so only a gentle +1 dB nudge via gain 1.1 to keep it felt without risking the ceiling. The cue mix is mostly healthy (lots of -14.7 dB speech cues, exactly on target), but about a dozen cues spike well above -14 dB during active narration (notably a bubble at -3.7 dB at 489.3s, a blip/pop pair at -6.1/-5.8 dB at 674s, and a cluster of pops/bubbles around 307s) — these were pulled down 4–10 dB each so they sit felt-not-heard under the voice. Left the big -7 to -9 dB transition swells/whooshes alone since those land in pauses/cuts where that level matches the brief. Added five bespoke story-moment SFX (food-noise stomach murmur at the open, a soft deflating tone on the +14% regain reveal, a quick vanish/poof on 'Gone in minutes', a warm reassuring chime on 'Not a personal failing', and a gentle uplifting bell on 'Continuing maintained the loss') to give the key emotional beats texture the stock kit can't supply, all kept well under voice level."
+    },
+    "blocking": [],
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 7.5,
+          "legibility": 8,
+          "issues": [
+            "Mascot shape is ambiguous (reads as a brain/flower blob, not clearly a stomach or relevant organ), which muddies the 'hunger' message",
+            "Headline + subhead is 6 words total, over the 4-word guideline",
+            "Red arrow points vaguely at the character's face rather than a specific detail"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 5.5,
+          "legibility": 6.5,
+          "issues": [
+            "Red oval circles empty space near the top right, pointing at nothing — reads as a stray/placeholder annotation and is distracting at phone size",
+            "A bare percentage without 'vs continued' context is a weaker emotional hook for a stop-the-medicine topic",
+            "Scale mascot's sweating/worried face doesn't clearly tie to the stat's meaning without reading the subhead"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 8.5,
+          "legibility": 9,
+          "issues": [
+            "'KEPT' highlighted word could be confused with the video's literal chapter title if viewers assume one-to-one match, but not a real repeat of the title"
+          ]
+        }
+      ],
+      "best_index": 2,
+      "reasoning": "All three are clean, on-brand, and readable at phone size with a single clear focal point and no cut-off text. #1 is weakest: the red oval circles blank space with nothing highlighted, which looks like a stray/placeholder annotation and will read as a bug rather than a callout — it also leans on a bare stat, which is a flatter emotional hook for an emotional 'stopping medication' topic. #0 ('IT'S NOT WILLPOWER') is strong and emotionally resonant but the mascot shape is ambiguous and the message is slightly tangential to the core 'what happens when you stop' question (it's really about hunger, one sub-point of the video). #2 ('IS ANY KEPT?') directly dramatizes the video's central question with a clean two-character contrast (sad/stopped vs happy/continued), clearly labelled chips, a short headline within the 4-word guideline, and no stray elements — the strongest honest curiosity gap tied tightly to the title's promise, with the highest legibility of the three."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "description (end: Sources block)",
+          "claim": "Sources: ... UK per",
+          "problem": "The description stops mid-word. The UK and Cleveland Clinic sources and all hashtags are missing. The text is likely already over the 1,400-character limit, which is probably what cut it off. That's a shipping defect, but it doesn't mislead anyone.",
+          "severity": "minor",
+          "fix": "Replace the whole description with this text (about 1,250 characters):\n\nQuick answer: In SURMOUNT-4 (JAMA, online December 2023; adults with obesity, or overweight plus a weight-related condition, no diabetes), people switched from tirzepatide to placebo at week 36 regained 14.0% of body weight on average by week 88, but still ended 9.9% below their starting weight on average. Those who stayed on tirzepatide lost a further 5.5% (main analysis). Most common side effects on tirzepatide: nausea, diarrhea, constipation and vomiting.\n\nNot personal advice. Please don't stop or change your medicine on your own, and talk to your doctor or prescriber about whether it's right for you.\n\nSources:\nSURMOUNT-4 (JAMA): https://doi.org/10.1001/jama.2023.24945\nUS stopping study (JAMA Netw Open): https://doi.org/10.1001/jamanetworkopen.2024.57349\nUK persistence study (Diabetes Obes Metab): https://doi.org/10.1111/dom.70535\nCleveland Clinic study: https://newsroom.clevelandclinic.org/2026/03/12/what-happens-when-patients-stop-taking-glp-1-drugs-new-cleveland-clinic-study-reveals-real-world-insights\n\nChapters:\n0:00 What happens when you stop?\n0:53 What did SURMOUNT-4 test?\n2:09 How much weight comes back?\n3:59 Why does hunger come back?\n5:52 What else changes after stopping?\n6:36 How many people stop early?\n8:45 Is any weight loss kept?\n9:47 How to protect your results\n11:15 The bottom line\n\n#Tirzepatide #GLP1 #SURMOUNT4"
+        },
+        {
+          "location": "description (Quick answer)",
+          "claim": "but still ended 9.9% below their starting weight.",
+          "problem": "The script says the placebo group ended 9.9% below its starting weight on average. Without \"on average\", it reads as if everyone kept that much off.",
+          "severity": "minor",
+          "fix": "Change it to: \"but still ended 9.9% below their starting weight on average.\" (The replacement description above already does this.)"
+        },
+        {
+          "location": "description (\"What you'll learn\" block and opening line)",
+          "claim": "What happens when you stop tirzepatide? Here's what the SURMOUNT-4 trial... / What you'll learn: ...",
+          "problem": "These lines repeat the quick answer and push the description past the 1,400-character limit, so the required sources and hashtags get cut off.",
+          "severity": "minor",
+          "fix": "Delete the opening line and the \"What you'll learn\" block, as in the replacement description above. The quick answer already opens with the searched phrase \"tirzepatide\" and the trial name."
+        }
+      ]
+    }
+  },
+  "hold_reason": "Dropped by Editor-in-Chief: The facts pass, but the audio has gaps in 3 scenes. The tolerated dose of 10 or 15 mg comes out as silence, \"783 people began\" as \"the beginning\", and the 41.1% UK stopping risk as \"tier\". Those are whole phrases carrying key numbers, which is more than a transcription quirk, so the captions won't match the voice. Masking is also 0.024, above our 0.02 target, with sound effects added under the narration. Re-render the narration with music and effects ducked, apply the full replacement description (the current one is cut off mid-sources with no hashtags), apply the s50 context fix, then resubmit.",
+  "release_tag": "content-2026-10-27",
+  "archive_url": "b2://informed-lab-media/content/2026-10-27/L1-what-happens-when-you-stop-tirzepatide-t/"
+}
