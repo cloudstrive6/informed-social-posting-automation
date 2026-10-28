@@ -37,6 +37,8 @@ function performance() {
     date: r.date, kind: r.kind, platform: r.platform, title: r.title, topic: r.topic, trend_stage: r.trend_stage, slot: r.slot,
     views: Number(r.metrics?.viewCount ?? r.metrics?.views ?? r.metrics?.reach ?? 0) || 0,
     minutes: r.metrics?.estimatedMinutesWatched ?? null, avg_view_pct: r.metrics?.averageViewPercentage ?? null, subs: r.metrics?.subscribersGained ?? null,
+    impressions: r.metrics?.impressions ?? null, ctr_pct: r.metrics?.impressions_ctr_pct ?? null,
+    traffic: r.metrics?.traffic_sources ? Object.fromEntries(Object.entries(r.metrics.traffic_sources as Record<string, { views: number }>).map(([k, v]) => [k, v.views])) : null,
   }));
   const medians: Record<string, number | null> = {};
   for (const k of ["long", "short", "carousel"]) for (const p of ["youtube", "instagram", "tiktok", "facebook", "threads"]) {

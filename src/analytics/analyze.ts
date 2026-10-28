@@ -34,6 +34,16 @@ export async function runAnalytics() {
       const a = await videoAnalytics(yt, start, end);
       for (const [id, m] of Object.entries(a)) metrics[`youtube:${id}`] = { ...metrics[`youtube:${id}`], ...m };
     } catch (e) { log.warn(`youtube metrics: ${(e as Error).message.slice(0, 200)}`); }
+    // impressions + click-through rate (Reporting API) and traffic sources (long videos)
+    try {
+      const { refreshReach, trafficSources } = await import("./reach.js");
+      const reach = await refreshReach();
+      for (const id of yt) if (reach[id]) metrics[`youtube:${id}`] = { ...metrics[`youtube:${id}`], impressions: reach[id].impressions, impressions_ctr_pct: reach[id].ctr, reach_days: reach[id].days };
+      const longs = [...new Set(rows.filter(r => r.platform === "youtube" && r.format === "long").map(r => r.remote_id!))];
+      const end = new Date().toISOString().slice(0, 10), start = new Date(cutoff).toISOString().slice(0, 10);
+      const traffic = await trafficSources(longs, start, end);
+      for (const [id, t] of Object.entries(traffic)) metrics[`youtube:${id}`] = { ...metrics[`youtube:${id}`], traffic_sources: t };
+    } catch (e) { log.warn(`youtube reach/traffic: ${(e as Error).message.slice(0, 200)}`); }
   }
   if (process.env.META_PAGE_ACCESS_TOKEN) {
     for (const r of rows.filter(r => r.platform === "instagram")) {

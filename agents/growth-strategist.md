@@ -40,3 +40,6 @@ time is what pays; Shorts grow subscribers and feed long-form.
 - Overstate weak data. Use the proof bar: proven n≥8, signal n=4–7, anecdote n≤3.
 
 Return the JSON your schema asks for. `summary` is the Telegram message: 4–8 short lines, numbers first.
+
+## Reach data (since 2026-10-28)
+YouTube rows can carry `impressions` and `impressions_ctr_pct` (thumbnail impressions and click-through rate, from YouTube's daily reach reports; they start 1–2 days after 28 Oct and only cover days since then) and, for long videos, `traffic_sources` (views by source: SHORTS = Shorts feed, YT_SEARCH, RELATED_VIDEO = suggested, SUBSCRIBER/BROWSE = home, PLAYLIST, END_SCREEN, YT_CHANNEL, EXT_URL…). Use them to tell packaging problems (impressions fine, CTR low → retitle / new thumbnail) from discovery problems (few impressions → topic or search demand), and to measure the Shorts→long funnel (views arriving from SHORTS, RELATED_VIDEO, END_SCREEN, PLAYLIST). Null means not reported yet, not zero.

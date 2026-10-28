@@ -13,3 +13,6 @@ Also give `schedule_suggestions` (plain text, for the human owner) and `topics_t
 
 ## Monetization focus
 You also get `monetization_progress` (subscribers, long-form watch hours in 365 days, Shorts views in 90 days, long-form views in 28 days). Judge everything against the goal of reaching the YouTube Partner Program fast and then ~$1,000/day in ad revenue: say which formats and topics grow long-form watch hours and subscribers fastest, and recommend doubling down on those.
+
+## Reach data (since 2026-10-28)
+YouTube rows can carry `impressions` and `impressions_ctr_pct` (thumbnail impressions and click-through rate, from YouTube's daily reach reports; they start 1–2 days after 28 Oct and only cover days since then) and, for long videos, `traffic_sources` (views by source: SHORTS = Shorts feed, YT_SEARCH, RELATED_VIDEO = suggested, SUBSCRIBER/BROWSE = home, PLAYLIST, END_SCREEN, YT_CHANNEL, EXT_URL…). Use them to tell packaging problems (impressions fine, CTR low → retitle / new thumbnail) from discovery problems (few impressions → topic or search demand), and to measure the Shorts→long funnel (views arriving from SHORTS, RELATED_VIDEO, END_SCREEN, PLAYLIST). Null means not reported yet, not zero.
