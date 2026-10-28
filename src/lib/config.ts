@@ -41,7 +41,11 @@ export interface ChannelConfig {
   qa: { enabled: boolean; narrationMaxRetakes: number; sceneWerThreshold: number; maskingWerDelta: number; visualRounds: number; minShotScore: number };
   safety: { policy: string; maxRevisionRounds: number; disclaimer: string; bannedTopics: string[] };
   review: { mode: "auto" | "human" };
-  youtube?: { playlists: { pillar: string; title: string; description: string }[]; shortsPlaylist?: { title: string; description: string } };
+  youtube?: {
+    playlists: { pillar: string; title: string; description: string }[]; shortsPlaylist?: { title: string; description: string };
+    /** Series playlists for in-niche long videos: the first whose `match` (regex on title + topic) hits; one without `match` catches the rest. */
+    series?: { title: string; description: string; match?: string }[];
+  };
   spacing: Record<"long" | "short" | "carousel", number>;
   niche: {
     enabled: boolean; name: string; brief: string; pillars: string[]; guardrails: string[];

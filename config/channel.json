@@ -41,7 +41,10 @@
     "longPerDay": 1,
     "shortPerDay": 3,
     "carouselPerDay": 1,
-    "carouselDays": ["Tue", "Fri"],
+    "carouselDays": [
+      "Tue",
+      "Fri"
+    ],
     "_carouselDays_comment": "Weekdays (of the content date) that get a carousel. Owner, 2026-10-28: cut to 2 a week (reach was 0-4 each). Remove to go back to every day.",
     "longTargetMinutes": [
       8,
@@ -278,7 +281,7 @@
       {
         "pillar": "life-on-glp1",
         "title": "Life on a GLP-1",
-        "description": "Habits, meals, mindset and keeping your results: everyday life on GLP-1 medicines."
+        "description": "Practical, evidence-based guides for life on GLP-1 medicines like tirzepatide (Mounjaro, Zepbound) and semaglutide (Ozempic, Wegovy): how long they take to work, what to eat, side effects, muscle and strength, plateaus, stopping, and what the trials show. Educational, not medical advice."
       },
       {
         "pillar": "myths",
@@ -304,7 +307,19 @@
     "shortsPlaylist": {
       "title": "GLP-1 in 60 Seconds",
       "description": "Quick, science-backed GLP-1 facts in under a minute."
-    }
+    },
+    "series": [
+      {
+        "title": "New GLP-1 Drug Decoded",
+        "description": "The next generation of weight-loss and diabetes medicines explained the moment the results land: retatrutide, CagriSema, orforglipron, survodutide, petrelintide and more. What each one is, what the trials actually showed, and what's still unknown. Fact-checked and educational, not medical advice.",
+        "match": "retatrutide|eloratzp|eloralintide|survodutide|cagrisema|cagrilintide|petrelintide|elecoglipron|orforglipron|foundayo|maridebart|maritide|amycretin|mazdutide|danuglipron|ecnoglutide|pemvidutide|bimagrumab|trevogrumab|next-gen|investigational"
+      },
+      {
+        "title": "Life on a GLP-1",
+        "description": "Practical, evidence-based guides for life on GLP-1 medicines like tirzepatide (Mounjaro, Zepbound) and semaglutide (Ozempic, Wegovy): how long they take to work, what to eat, side effects, muscle and strength, plateaus, stopping, and what the trials show. Educational, not medical advice."
+      }
+    ],
+    "_series_comment": "Every in-niche long video also goes into one series playlist: new/investigational drugs → 'New GLP-1 Drug Decoded', everything else → 'Life on a GLP-1' (owner OK 2026-10-28). Backfill: publish.yml sync_playlist=series."
   },
   "_saved_niches": {
     "_comment": "Earlier editorial focuses. To switch back, copy one into 'niche'.",

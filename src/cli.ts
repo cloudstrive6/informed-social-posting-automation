@@ -72,7 +72,13 @@ const commands: Record<string, () => Promise<unknown>> = {
   },
   // playlist-sync <name>: make the curated playlist config/playlists/<name>.json exist on YouTube with exactly those videos
   "playlist-sync": async () => {
-    const { syncCuratedPlaylist } = await import("./publish/playlists.js");
+    const { syncCuratedPlaylist, syncSeriesPlaylists } = await import("./publish/playlists.js");
+    if (rest[0] === "series") {
+      const { loadItems } = await import("./lib/items.js");
+      const added = await syncSeriesPlaylists(loadItems().sort((a, b) => a.date.localeCompare(b.date)));
+      await notify(`📃 Series playlists synced: ${Object.entries(added).map(([t, n]) => `${t} +${n}`).join(", ") || "nothing missing"}`);
+      return;
+    }
     const id = await syncCuratedPlaylist(rest[0]);
     await notify(`📃 Playlist synced: https://www.youtube.com/playlist?list=${id}`);
   },

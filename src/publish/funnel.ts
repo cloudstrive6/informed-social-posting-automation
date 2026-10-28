@@ -33,7 +33,7 @@ export function stripVideoLinks(description: string): string {
   return lines.join("\n").replace(/\n{3,}/g, "\n\n");
 }
 
-function nicheMatch(item: ContentItem): boolean {
+export function nicheMatch(item: ContentItem): boolean {
   const n = (config as any).niche;
   if (!n?.enabled || !n.match) return true;
   return new RegExp(n.match, "i").test(`${item.package?.title ?? ""} ${item.plan.topic}`);

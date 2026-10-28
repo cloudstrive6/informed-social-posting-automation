@@ -11,6 +11,7 @@ import type { ContentItem } from "../lib/items.js";
 import { log } from "../lib/log.js";
 import { runAgent } from "../lib/agent.js";
 import { youtubeToken } from "./youtube.js";
+import { nicheMatch } from "./funnel.js";
 
 const CACHE = join(DATA, "youtube-playlists.json");
 const API = "https://www.googleapis.com/youtube/v3";
@@ -63,7 +64,42 @@ export function playlistsFor(item: ContentItem): { title: string; description: s
   if (nicheLists) return [nicheLists.playlist, ...(item.kind === "short" && nicheLists.shortsPlaylist ? [nicheLists.shortsPlaylist] : [])];
   const lists = config.youtube?.playlists ?? [];
   const pillar = lists.find(l => l.pillar === item.plan.pillar) ?? lists.find(l => l.pillar === "general");
-  return [...(pillar ? [pillar] : []), ...(item.kind === "short" && config.youtube?.shortsPlaylist ? [config.youtube.shortsPlaylist] : [])];
+  const series = seriesFor(item);
+  return [...(pillar ? [pillar] : []), ...(series && series.title !== pillar?.title ? [series] : []), ...(item.kind === "short" && config.youtube?.shortsPlaylist ? [config.youtube.shortsPlaylist] : [])];
+}
+
+/** The series playlist of an in-niche long video (see config.youtube.series), if any. */
+export function seriesFor(item: ContentItem): { title: string; description: string } | undefined {
+  if (item.kind !== "long" || !nicheMatch(item)) return;
+  const text = `${item.package?.title ?? ""} ${item.plan.topic}`;
+  return (config.youtube?.series ?? []).find(s => !s.match || new RegExp(s.match, "i").test(text));
+}
+
+/** Put every uploaded in-niche long video into its series playlist (adds missing ones only). */
+export async function syncSeriesPlaylists(items: ContentItem[]): Promise<Record<string, number>> {
+  const have = new Map<string, Set<string>>(), added: Record<string, number> = {};
+  for (const item of items) {
+    const s = seriesFor(item);
+    const yt0 = item.posts.find(p => p.platform === "youtube" && p.format === "long" && p.remote_id && (p.status === "published" || p.status === "scheduled"));
+    if (!s || !yt0?.remote_id || item.status !== "ready") continue;
+    const id = await playlistId(s.title, s.description);
+    if (!have.has(id)) {
+      const set = new Set<string>();
+      let page: string | undefined;
+      do {
+        const j = await again(() => yt<any>(`playlistItems?part=snippet&playlistId=${id}&maxResults=50${page ? `&pageToken=${page}` : ""}`));
+        for (const it of j.items ?? []) set.add(it.snippet.resourceId.videoId);
+        page = j.nextPageToken;
+      } while (page);
+      have.set(id, set);
+    }
+    if (have.get(id)!.has(yt0.remote_id)) continue;
+    await again(() => yt("playlistItems?part=snippet", { method: "POST", body: { snippet: { playlistId: id, resourceId: { kind: "youtube#video", videoId: yt0.remote_id } } } }));
+    have.get(id)!.add(yt0.remote_id);
+    added[s.title] = (added[s.title] ?? 0) + 1;
+    log.info(`${item.date}/${item.id} → series "${s.title}"`);
+  }
+  return added;
 }
 
 /** Add an uploaded video to its playlists. Never throws: a playlist problem must not fail a publish. */
