@@ -94,7 +94,9 @@ export async function syncSeriesPlaylists(items: ContentItem[]): Promise<Record<
       have.set(id, set);
     }
     if (have.get(id)!.has(yt0.remote_id)) continue;
-    await again(() => yt("playlistItems?part=snippet", { method: "POST", body: { snippet: { playlistId: id, resourceId: { kind: "youtube#video", videoId: yt0.remote_id } } } }));
+    try {
+      await again(() => yt("playlistItems?part=snippet", { method: "POST", body: { snippet: { playlistId: id, resourceId: { kind: "youtube#video", videoId: yt0.remote_id } } } }));
+    } catch (e) { log.warn(`series "${s.title}" ← ${yt0.remote_id}: ${(e as Error).message.slice(0, 200)}`); continue; }
     have.get(id)!.add(yt0.remote_id);
     added[s.title] = (added[s.title] ?? 0) + 1;
     log.info(`${item.date}/${item.id} → series "${s.title}"`);
@@ -168,7 +170,9 @@ async function again<T>(fn: () => Promise<T>): Promise<T> {
   for (let attempt = 1; ; attempt++) {
     try { return await fn(); }
     catch (e) {
-      if (attempt >= 6 || !/HTTP (409|5\d\d)/.test((e as Error).message)) throw e;
+      // a just-created playlist can also read as 404 playlistNotFound for a while
+      const m = (e as Error).message;
+      if (attempt >= 6 || !(/HTTP (409|5\d\d)/.test(m) || (/HTTP 404/.test(m) && /playlistNotFound/.test(m)))) throw e;
       await new Promise(r => setTimeout(r, attempt * 5000));
     }
   }
