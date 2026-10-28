@@ -32,6 +32,9 @@
       "comments": 0,
       "shares": 1,
       "subscribersGained": 0,
+      "impressions": 121,
+      "impressions_ctr_pct": 4.13,
+      "reach_days": 21,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 1,
@@ -53,40 +56,6 @@
     }
   },
   {
-    "at": "2026-09-30T10:38:44.195Z",
-    "date": "2026-09-30",
-    "id": "S1-retatrutide-isn-t-approved-yet-why-onlin",
-    "kind": "short",
-    "platform": "youtube",
-    "format": "short",
-    "slot": "2026-09-30T12:00:00.000Z",
-    "slotKey": "short",
-    "status": "scheduled",
-    "remote_id": "5NxnSXzUD4M",
-    "url": "https://youtube.com/shorts/5NxnSXzUD4M",
-    "title": "Lilly Says Online \"Retatrutide\" Isn't Its Trial Drug #shorts",
-    "topic": "Retatrutide isn't approved yet: why online 'research peptide' retatrutide isn't the trial drug and why regulators are concerned",
-    "hook": "Opens with a \"you\" question, then an attributed correction: \"Lilly says that's not its trial drug.\" The last line repeats those words, so a replay loops straight back to the start.",
-    "trend_stage": "rising",
-    "metrics": {
-      "viewCount": "72",
-      "likeCount": "0",
-      "dislikeCount": "0",
-      "favoriteCount": "0",
-      "commentCount": "0",
-      "duration": "PT1M10S",
-      "video": "5NxnSXzUD4M",
-      "views": 71,
-      "estimatedMinutesWatched": 12,
-      "averageViewDuration": 37,
-      "averageViewPercentage": 53.12,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0,
-      "subscribersGained": 0
-    }
-  },
-  {
     "at": "2026-09-30T10:38:47.060Z",
     "date": "2026-09-30",
     "id": "S3-throwing-away-glp-1-pens-safely-nyc-sani",
@@ -103,7 +72,7 @@
     "hook": "Opens with a direct 'you' stake and a dated number: 49 needle-stick injuries among NYC sanitation workers in 2026, as of August (DSNY data). Then the scale: exactly 140 in three years, with the hedged 'may be linked' GLP-1 wording and the other injectables doctors mention. Then a 30-second, three-step fix. The loop ending comes back to '49'.",
     "trend_stage": "emerging",
     "metrics": {
-      "viewCount": "48",
+      "viewCount": "51",
       "likeCount": "1",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -117,69 +86,11 @@
       "likes": 1,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 228,
+      "impressions_ctr_pct": 0.44,
+      "reach_days": 27
     }
-  },
-  {
-    "at": "2026-09-30T11:58:17.650Z",
-    "date": "2026-09-30",
-    "id": "S1-retatrutide-isn-t-approved-yet-why-onlin",
-    "kind": "short",
-    "platform": "instagram",
-    "format": "reel",
-    "slot": "2026-09-30T12:00:00.000Z",
-    "slotKey": "short",
-    "status": "published",
-    "remote_id": "18392747191162638",
-    "url": "https://www.instagram.com/reel/Dd6R4mRgT0z/",
-    "title": "Lilly Says Online \"Retatrutide\" Isn't Its Trial Drug #shorts",
-    "topic": "Retatrutide isn't approved yet: why online 'research peptide' retatrutide isn't the trial drug and why regulators are concerned",
-    "hook": "Opens with a \"you\" question, then an attributed correction: \"Lilly says that's not its trial drug.\" The last line repeats those words, so a replay loops straight back to the start.",
-    "trend_stage": "rising",
-    "metrics": {
-      "reach": 0,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0,
-      "saved": 0,
-      "views": 0
-    }
-  },
-  {
-    "at": "2026-09-30T12:00:21.494Z",
-    "date": "2026-09-30",
-    "id": "S1-retatrutide-isn-t-approved-yet-why-onlin",
-    "kind": "short",
-    "platform": "tiktok",
-    "format": "short",
-    "slot": "2026-09-30T12:00:00.000Z",
-    "slotKey": "short",
-    "status": "published",
-    "remote_id": "v_pub_file~v2-1.7691296552598489108",
-    "url": "https://www.tiktok.com/@informedlab",
-    "title": "Lilly Says Online \"Retatrutide\" Isn't Its Trial Drug #shorts",
-    "topic": "Retatrutide isn't approved yet: why online 'research peptide' retatrutide isn't the trial drug and why regulators are concerned",
-    "hook": "Opens with a \"you\" question, then an attributed correction: \"Lilly says that's not its trial drug.\" The last line repeats those words, so a replay loops straight back to the start.",
-    "trend_stage": "rising",
-    "metrics": null
-  },
-  {
-    "at": "2026-09-30T12:00:39.846Z",
-    "date": "2026-09-30",
-    "id": "S1-retatrutide-isn-t-approved-yet-why-onlin",
-    "kind": "short",
-    "platform": "facebook",
-    "format": "reel",
-    "slot": "2026-09-30T12:00:00.000Z",
-    "slotKey": "short",
-    "status": "published",
-    "remote_id": "1088945334028888",
-    "url": "https://www.facebook.com/reel/1088945334028888",
-    "title": "Lilly Says Online \"Retatrutide\" Isn't Its Trial Drug #shorts",
-    "topic": "Retatrutide isn't approved yet: why online 'research peptide' retatrutide isn't the trial drug and why regulators are concerned",
-    "hook": "Opens with a \"you\" question, then an attributed correction: \"Lilly says that's not its trial drug.\" The last line repeats those words, so a replay loops straight back to the start.",
-    "trend_stage": "rising",
-    "metrics": null
   },
   {
     "at": "2026-09-30T17:58:28.172Z",
@@ -410,8 +321,8 @@
     "thumb_layout": "versus",
     "trend_stage": "emerging",
     "metrics": {
-      "viewCount": "629",
-      "likeCount": "7",
+      "viewCount": "697",
+      "likeCount": "8",
       "dislikeCount": "0",
       "favoriteCount": "0",
       "commentCount": "0",
@@ -425,6 +336,9 @@
       "comments": 0,
       "shares": 7,
       "subscribersGained": 7,
+      "impressions": 1940,
+      "impressions_ctr_pct": 11.24,
+      "reach_days": 26,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 20,
@@ -492,7 +406,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 182,
+      "impressions_ctr_pct": 5.49,
+      "reach_days": 26
     }
   },
   {
@@ -707,7 +624,7 @@
     "thumb_layout": "reaction",
     "trend_stage": "emerging",
     "metrics": {
-      "viewCount": "50",
+      "viewCount": "52",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -722,6 +639,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 238,
+      "impressions_ctr_pct": 7.56,
+      "reach_days": 22,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 1,
@@ -781,7 +701,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 195,
+      "impressions_ctr_pct": 0,
+      "reach_days": 21
     }
   },
   {
@@ -815,7 +738,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 693,
+      "impressions_ctr_pct": 1.44,
+      "reach_days": 22
     }
   },
   {
@@ -849,7 +775,10 @@
       "likes": 1,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 140,
+      "impressions_ctr_pct": 0.71,
+      "reach_days": 15
     }
   },
   {
@@ -1127,7 +1056,7 @@
     "hook": "Headline decoder: Regeneron's relative figure ('42% less') turned into absolute numbers for a named drug",
     "trend_stage": "emerging",
     "metrics": {
-      "viewCount": "35",
+      "viewCount": "36",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -1141,7 +1070,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 1,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 251,
+      "impressions_ctr_pct": 4.78,
+      "reach_days": 21
     }
   },
   {
@@ -1175,7 +1107,10 @@
       "likes": 1,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 147,
+      "impressions_ctr_pct": 1.36,
+      "reach_days": 18
     }
   },
   {
@@ -1209,7 +1144,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 138,
+      "impressions_ctr_pct": 1.45,
+      "reach_days": 18
     }
   },
   {
@@ -1501,7 +1439,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 107,
+      "impressions_ctr_pct": 1.87,
+      "reach_days": 18
     }
   },
   {
@@ -1671,7 +1612,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 66,
+      "impressions_ctr_pct": 1.52,
+      "reach_days": 10
     }
   },
   {
@@ -1768,6 +1712,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 410,
+      "impressions_ctr_pct": 2.2,
+      "reach_days": 20,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 1,
@@ -1819,7 +1766,10 @@
       "likes": 2,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 46,
+      "impressions_ctr_pct": 0,
+      "reach_days": 14
     }
   },
   {
@@ -1989,7 +1939,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 1,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 379,
+      "impressions_ctr_pct": 2.37,
+      "reach_days": 16
     }
   },
   {
@@ -2023,7 +1976,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 200,
+      "impressions_ctr_pct": 1,
+      "reach_days": 17
     }
   },
   {
@@ -2254,7 +2210,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 1
+      "subscribersGained": 1,
+      "impressions": 606,
+      "impressions_ctr_pct": 1.49,
+      "reach_days": 17
     }
   },
   {
@@ -2288,7 +2247,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 441,
+      "impressions_ctr_pct": 0.68,
+      "reach_days": 17
     }
   },
   {
@@ -2308,7 +2270,7 @@
     "hook": "Pattern interrupt with a myth flip. Viewers expect rats, and the first line swaps in marmots. The answer arrives within 10 s. Then come a respectful culture beat with legal context, CDC's glove advice, the antibiotic reassurance, the full set of warning signs with the urgent-contact line, and a calm close with the safety line.",
     "trend_stage": "emerging",
     "metrics": {
-      "viewCount": "98",
+      "viewCount": "101",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -2322,7 +2284,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 566,
+      "impressions_ctr_pct": 4.06,
+      "reach_days": 17
     }
   },
   {
@@ -2358,6 +2323,9 @@
       "comments": 0,
       "shares": 1,
       "subscribersGained": 0,
+      "impressions": 1046,
+      "impressions_ctr_pct": 1.82,
+      "reach_days": 17,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -2671,7 +2639,10 @@
       "likes": 1,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 413,
+      "impressions_ctr_pct": 4.6,
+      "reach_days": 16
     }
   },
   {
@@ -2705,7 +2676,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 477,
+      "impressions_ctr_pct": 2.1,
+      "reach_days": 16
     }
   },
   {
@@ -2741,6 +2715,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 192,
+      "impressions_ctr_pct": 0.52,
+      "reach_days": 14,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -2972,7 +2949,7 @@
     "thumb_layout": "reaction",
     "trend_stage": "rising",
     "metrics": {
-      "viewCount": "33",
+      "viewCount": "34",
       "likeCount": "1",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -2987,6 +2964,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 281,
+      "impressions_ctr_pct": 3.2,
+      "reach_days": 13,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 1,
@@ -3038,7 +3018,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 366,
+      "impressions_ctr_pct": 0.55,
+      "reach_days": 13
     }
   },
   {
@@ -3072,7 +3055,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 1
+      "subscribersGained": 1,
+      "impressions": 613,
+      "impressions_ctr_pct": 3.1,
+      "reach_days": 13
     }
   },
   {
@@ -3106,7 +3092,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 39,
+      "impressions_ctr_pct": 2.56,
+      "reach_days": 9
     }
   },
   {
@@ -3400,6 +3389,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 141,
+      "impressions_ctr_pct": 2.13,
+      "reach_days": 13,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 1,
@@ -3433,7 +3425,7 @@
     "hook": "News decoder: the headline fact in the first line, then a \"what's confirmed?\" question answered within 10 seconds (FDA status, then what's not proven or verified)",
     "trend_stage": "rising",
     "metrics": {
-      "viewCount": "199",
+      "viewCount": "200",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -3447,7 +3439,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 1,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 1004,
+      "impressions_ctr_pct": 4.38,
+      "reach_days": 13
     }
   },
   {
@@ -3481,7 +3476,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 398,
+      "impressions_ctr_pct": 3.02,
+      "reach_days": 13
     }
   },
   {
@@ -3714,6 +3712,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 129,
+      "impressions_ctr_pct": 2.33,
+      "reach_days": 12,
       "traffic_sources": {
         "SUBSCRIBER": {
           "views": 2,
@@ -3765,7 +3766,10 @@
       "likes": 1,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 800,
+      "impressions_ctr_pct": 2.13,
+      "reach_days": 12
     }
   },
   {
@@ -3799,7 +3803,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 289,
+      "impressions_ctr_pct": 1.73,
+      "reach_days": 12
     }
   },
   {
@@ -3833,7 +3840,10 @@
       "likes": 1,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 1
+      "subscribersGained": 1,
+      "impressions": 142,
+      "impressions_ctr_pct": 0,
+      "reach_days": 12
     }
   },
   {
@@ -4112,7 +4122,7 @@
     "thumb_layout": "reaction",
     "trend_stage": "evergreen",
     "metrics": {
-      "viewCount": "75",
+      "viewCount": "82",
       "likeCount": "2",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -4127,6 +4137,9 @@
       "comments": 0,
       "shares": 1,
       "subscribersGained": 1,
+      "impressions": 593,
+      "impressions_ctr_pct": 2.87,
+      "reach_days": 11,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -4186,7 +4199,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 277,
+      "impressions_ctr_pct": 2.17,
+      "reach_days": 11
     }
   },
   {
@@ -4220,7 +4236,10 @@
       "likes": 1,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 492,
+      "impressions_ctr_pct": 2.44,
+      "reach_days": 10
     }
   },
   {
@@ -4453,6 +4472,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 295,
+      "impressions_ctr_pct": 4.75,
+      "reach_days": 10,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -4508,7 +4530,10 @@
       "likes": 1,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 310,
+      "impressions_ctr_pct": 1.94,
+      "reach_days": 10
     }
   },
   {
@@ -4542,7 +4567,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 583,
+      "impressions_ctr_pct": 2.4,
+      "reach_days": 10
     }
   },
   {
@@ -4576,7 +4604,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 470,
+      "impressions_ctr_pct": 1.7,
+      "reach_days": 10
     }
   },
   {
@@ -4870,6 +4901,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 144,
+      "impressions_ctr_pct": 4.17,
+      "reach_days": 9,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -4903,7 +4937,7 @@
     "hook": "Head-to-head question that names both drugs (generic first), answered by about 10 s with \"early signal, not proof\"",
     "trend_stage": "emerging",
     "metrics": {
-      "viewCount": "58",
+      "viewCount": "59",
       "likeCount": "1",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -4917,7 +4951,10 @@
       "likes": 1,
       "comments": 0,
       "shares": 1,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 279,
+      "impressions_ctr_pct": 2.51,
+      "reach_days": 10
     }
   },
   {
@@ -4951,7 +4988,10 @@
       "likes": 1,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 343,
+      "impressions_ctr_pct": 2.33,
+      "reach_days": 10
     }
   },
   {
@@ -4985,7 +5025,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 458,
+      "impressions_ctr_pct": 3.06,
+      "reach_days": 10
     }
   },
   {
@@ -5279,6 +5322,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 158,
+      "impressions_ctr_pct": 6.33,
+      "reach_days": 8,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -5330,7 +5376,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 371,
+      "impressions_ctr_pct": 2.7,
+      "reach_days": 8
     }
   },
   {
@@ -5364,7 +5413,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 50,
+      "impressions_ctr_pct": 0,
+      "reach_days": 7
     }
   },
   {
@@ -5384,7 +5436,7 @@
     "hook": "A plain head-to-head question that names both drugs, answered \"No\" by about 5 s. The dose gap (\"But 7.2 wasn't in it\") is the re-hook halfway through, and the last line (\"Head to head? Not yet.\") loops back to the opening question.",
     "trend_stage": "rising",
     "metrics": {
-      "viewCount": "105",
+      "viewCount": "106",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -5398,7 +5450,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 1,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 606,
+      "impressions_ctr_pct": 2.64,
+      "reach_days": 8
     }
   },
   {
@@ -5677,7 +5732,7 @@
     "thumb_layout": "before-after",
     "trend_stage": "evergreen",
     "metrics": {
-      "viewCount": "43",
+      "viewCount": "47",
       "likeCount": "1",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -5692,6 +5747,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 1,
+      "impressions": 277,
+      "impressions_ctr_pct": 6.5,
+      "reach_days": 7,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -5755,7 +5813,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 1,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 497,
+      "impressions_ctr_pct": 2.41,
+      "reach_days": 8
     }
   },
   {
@@ -5789,7 +5850,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 262,
+      "impressions_ctr_pct": 1.53,
+      "reach_days": 8
     }
   },
   {
@@ -5809,7 +5873,7 @@
     "hook": "Named-drug curiosity gap with a direct 'you' stake. The drug and the condition are named in the first 2 seconds. The hope-plus-confusion feeling is named by about 5 seconds, and the title's weight number lands by about 15 seconds.",
     "trend_stage": "rising",
     "metrics": {
-      "viewCount": "266",
+      "viewCount": "268",
       "likeCount": "2",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -5823,7 +5887,10 @@
       "likes": 2,
       "comments": 0,
       "shares": 3,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 693,
+      "impressions_ctr_pct": 3.32,
+      "reach_days": 8
     }
   },
   {
@@ -6102,14 +6169,14 @@
     "thumb_layout": "big-number",
     "trend_stage": "evergreen",
     "metrics": {
-      "viewCount": "46",
+      "viewCount": "60",
       "likeCount": "2",
       "dislikeCount": "0",
       "favoriteCount": "0",
       "commentCount": "0",
       "duration": "PT12M36S",
       "video": "U3Y_DD3m-dQ",
-      "views": 14,
+      "views": 13,
       "estimatedMinutesWatched": 54,
       "averageViewDuration": 296,
       "averageViewPercentage": 39.17,
@@ -6117,6 +6184,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 484,
+      "impressions_ctr_pct": 2.69,
+      "reach_days": 6,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -6158,7 +6228,7 @@
     "hook": "Recognition plus correction: the viewer has seen a scary 'Mounjaro recall' headline. The Short sets it against what the FDA Enforcement Report actually lists, and gives the answer by about 10 s in a calm 'what's confirmed?' frame.",
     "trend_stage": "peaking",
     "metrics": {
-      "viewCount": "36",
+      "viewCount": "37",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -6172,7 +6242,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 205,
+      "impressions_ctr_pct": 4.39,
+      "reach_days": 6
     }
   },
   {
@@ -6344,6 +6417,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 55,
+      "impressions_ctr_pct": 5.45,
+      "reach_days": 5,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -6399,7 +6475,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 88,
+      "impressions_ctr_pct": 2.27,
+      "reach_days": 5
     }
   },
   {
@@ -6556,7 +6635,7 @@
     "thumb_layout": "reaction",
     "trend_stage": "rising",
     "metrics": {
-      "viewCount": "8",
+      "viewCount": "9",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -6571,6 +6650,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 45,
+      "impressions_ctr_pct": 6.67,
+      "reach_days": 4,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -6608,7 +6690,7 @@
     "hook": "Opens on a moment viewers will recognise (\"Seen 'retatrutide' online?\"), then gives a new, dated official count credited to the right body (NSW Health in Australia). The frame is a calm \"what's confirmed?\" with no fear-bait. A \"here's the catch\" re-hook makes clear the count covers peptide use in general, not confirmed retatrutide. The ending gives relief and a next step (a prescriber, or medical help if unwell) and loops back to the opening \"seen it online?\" question.",
     "trend_stage": "rising",
     "metrics": {
-      "viewCount": "25",
+      "viewCount": "26",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -6622,7 +6704,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 243,
+      "impressions_ctr_pct": 0,
+      "reach_days": 4
     }
   },
   {
@@ -6656,7 +6741,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 41,
+      "impressions_ctr_pct": 0,
+      "reach_days": 4
     }
   },
   {
@@ -6676,7 +6764,7 @@
     "hook": "A direct 'you' stake plus a yes/no question answered within 10 seconds. It opens on a familiar money worry ('does my $50 count?'), gives a 'no' credited to Medicare, then acknowledges the letdown before the details.",
     "trend_stage": "rising",
     "metrics": {
-      "viewCount": "37",
+      "viewCount": "38",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -6690,7 +6778,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 270,
+      "impressions_ctr_pct": 2.22,
+      "reach_days": 4
     }
   },
   {
@@ -6984,6 +7075,9 @@
       "comments": 1,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 110,
+      "impressions_ctr_pct": 7.27,
+      "reach_days": 3,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -7025,7 +7119,7 @@
     "hook": "Recognition plus validation: a direct \"you\" question about a common feeling (\"Queasy on tirzepatide?\") and reassurance (\"You're not alone\"), then the trial answer by about 8 s",
     "trend_stage": "evergreen",
     "metrics": {
-      "viewCount": "149",
+      "viewCount": "153",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -7039,7 +7133,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 534,
+      "impressions_ctr_pct": 5.24,
+      "reach_days": 3
     }
   },
   {
@@ -7196,7 +7293,7 @@
     "thumb_layout": "reaction",
     "trend_stage": "emerging",
     "metrics": {
-      "viewCount": "7",
+      "viewCount": "12",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -7211,6 +7308,9 @@
       "comments": 0,
       "shares": 0,
       "subscribersGained": 0,
+      "impressions": 19,
+      "impressions_ctr_pct": 10.53,
+      "reach_days": 2,
       "traffic_sources": {
         "NO_LINK_OTHER": {
           "views": 0,
@@ -7240,7 +7340,7 @@
     "hook": "Calm question about a common worry (\"that's me\"), answered honestly from a brand-new review. It says the evidence is very thin, and the one semaglutide trial saw lower spine bone density. Ends with what you can do: general habits and a question for your clinician.",
     "trend_stage": "emerging",
     "metrics": {
-      "viewCount": "235",
+      "viewCount": "237",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -7254,7 +7354,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 140,
+      "impressions_ctr_pct": 2.86,
+      "reach_days": 2
     }
   },
   {
@@ -7274,7 +7377,7 @@
     "hook": "Recognition plus a curiosity gap. The hook names the viewer's tiredness with the hype around every new weight shot and promises one real number. The number arrives by about 8 seconds, with both estimands and their placebo comparators, and the tolerability twist follows.",
     "trend_stage": "emerging",
     "metrics": {
-      "viewCount": "18",
+      "viewCount": "23",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
@@ -7288,7 +7391,10 @@
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "subscribersGained": 0
+      "subscribersGained": 0,
+      "impressions": 73,
+      "impressions_ctr_pct": 1.37,
+      "reach_days": 2
     }
   },
   {
@@ -7512,6 +7618,9 @@
       "favoriteCount": "0",
       "commentCount": "0",
       "duration": "PT13M2S",
+      "impressions": 26,
+      "impressions_ctr_pct": 7.69,
+      "reach_days": 1,
       "traffic_sources": {}
     }
   },
@@ -7532,12 +7641,15 @@
     "hook": "Recognition plus curiosity gap: a familiar worry (seeing 'gallbladder' on the leaflet), then a promise of the real numbers",
     "trend_stage": "evergreen",
     "metrics": {
-      "viewCount": "43",
+      "viewCount": "47",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
       "commentCount": "0",
-      "duration": "PT1M9S"
+      "duration": "PT1M9S",
+      "impressions": 67,
+      "impressions_ctr_pct": 2.99,
+      "reach_days": 1
     }
   },
   {
@@ -7557,12 +7669,15 @@
     "hook": "It opens on a question the viewer has already asked, plus a moment they'll recognise: feeling tense when the cuff tightens at a checkup. A trial number answers it, then a re-hook widens to the pooled data from many trials.",
     "trend_stage": "emerging",
     "metrics": {
-      "viewCount": "79",
+      "viewCount": "101",
       "likeCount": "0",
       "dislikeCount": "0",
       "favoriteCount": "0",
       "commentCount": "0",
-      "duration": "PT1M26S"
+      "duration": "PT1M26S",
+      "impressions": 131,
+      "impressions_ctr_pct": 4.58,
+      "reach_days": 1
     }
   },
   {
@@ -7759,6 +7874,178 @@
     "url": "https://www.threads.com/@informedlab/post/De-QNuQkqLe",
     "title": "Does Semaglutide Weaken Your Grip? What a New Review Shows",
     "topic": "Does semaglutide weaken grip strength? The Diabetes, Obesity and Metabolism handgrip meta-analysis (Oct 19, 2026), reused from the verified, published 10-23 Short",
+    "trend_stage": "evergreen",
+    "metrics": null
+  },
+  {
+    "at": "2026-10-27T05:02:04.164Z",
+    "date": "2026-10-27",
+    "id": "S1-is-semaglutide-safe-if-your-kidneys-are",
+    "kind": "short",
+    "platform": "youtube",
+    "format": "short",
+    "slot": "2026-10-27T12:00:00.000Z",
+    "slotKey": "short",
+    "status": "scheduled",
+    "remote_id": "9SUzzfBSgEM",
+    "url": "https://youtube.com/shorts/9SUzzfBSgEM",
+    "title": "Semaglutide, CKD and Type 2 Diabetes: What FLOW Found #shorts",
+    "topic": "Is semaglutide safe if your kidneys are already weaker? Safety outcomes by chronic kidney disease severity in the FLOW trial (Kidney International, Oct 20, 2026)",
+    "hook": "A direct \"you\" question with a recognisable worry. It names the exact population (type 2 diabetes and weaker kidneys) and promises what a big trial found. It never claims the drug is \"safe\".",
+    "trend_stage": "emerging",
+    "metrics": {
+      "viewCount": "24",
+      "likeCount": "0",
+      "dislikeCount": "0",
+      "favoriteCount": "0",
+      "commentCount": "0",
+      "duration": "PT1M28S"
+    }
+  },
+  {
+    "at": "2026-10-27T05:02:08.112Z",
+    "date": "2026-10-27",
+    "id": "S2-tirzepatide-vs-semaglutide-in-type-2-dia",
+    "kind": "short",
+    "platform": "youtube",
+    "format": "short",
+    "slot": "2026-10-27T17:00:00.000Z",
+    "slotKey": "short",
+    "status": "scheduled",
+    "remote_id": "B6RTKrpH_LM",
+    "url": "https://youtube.com/shorts/B6RTKrpH_LM",
+    "title": "Tirzepatide vs Semaglutide for Type 2 Diabetes #shorts",
+    "topic": "Tirzepatide vs semaglutide in type 2 diabetes: the SURPASS-2 randomized head-to-head (NEJM 2021, adults with type 2 diabetes on metformin, 40 weeks)",
+    "hook": "Opens on a question the viewer already has (\"Tirzepatide or semaglutide for type two diabetes?\") and answers it in about 5 seconds with a named randomized head-to-head trial. Then come the numbers for each arm, and a \"the catch\" re-hook covering the dose, the open-label design and the population.",
+    "trend_stage": "evergreen",
+    "metrics": {
+      "viewCount": "10",
+      "likeCount": "0",
+      "dislikeCount": "0",
+      "favoriteCount": "0",
+      "commentCount": "0",
+      "duration": "PT1M30S"
+    }
+  },
+  {
+    "at": "2026-10-27T11:58:19.037Z",
+    "date": "2026-10-27",
+    "id": "S1-is-semaglutide-safe-if-your-kidneys-are",
+    "kind": "short",
+    "platform": "instagram",
+    "format": "reel",
+    "slot": "2026-10-27T12:00:00.000Z",
+    "slotKey": "short",
+    "status": "published",
+    "remote_id": "17909024586329507",
+    "url": "https://www.instagram.com/reel/De_zVWkuDzv/",
+    "title": "Semaglutide, CKD and Type 2 Diabetes: What FLOW Found #shorts",
+    "topic": "Is semaglutide safe if your kidneys are already weaker? Safety outcomes by chronic kidney disease severity in the FLOW trial (Kidney International, Oct 20, 2026)",
+    "hook": "A direct \"you\" question with a recognisable worry. It names the exact population (type 2 diabetes and weaker kidneys) and promises what a big trial found. It never claims the drug is \"safe\".",
+    "trend_stage": "emerging",
+    "metrics": {
+      "reach": 113,
+      "likes": 2,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 124
+    }
+  },
+  {
+    "at": "2026-10-27T12:00:25.232Z",
+    "date": "2026-10-27",
+    "id": "S1-is-semaglutide-safe-if-your-kidneys-are",
+    "kind": "short",
+    "platform": "tiktok",
+    "format": "short",
+    "slot": "2026-10-27T12:00:00.000Z",
+    "slotKey": "short",
+    "status": "published",
+    "remote_id": "v_pub_file~v2-1.7701315746895480852",
+    "url": "https://www.tiktok.com/@informedlab",
+    "title": "Semaglutide, CKD and Type 2 Diabetes: What FLOW Found #shorts",
+    "topic": "Is semaglutide safe if your kidneys are already weaker? Safety outcomes by chronic kidney disease severity in the FLOW trial (Kidney International, Oct 20, 2026)",
+    "hook": "A direct \"you\" question with a recognisable worry. It names the exact population (type 2 diabetes and weaker kidneys) and promises what a big trial found. It never claims the drug is \"safe\".",
+    "trend_stage": "emerging",
+    "metrics": null
+  },
+  {
+    "at": "2026-10-27T12:00:37.949Z",
+    "date": "2026-10-27",
+    "id": "S1-is-semaglutide-safe-if-your-kidneys-are",
+    "kind": "short",
+    "platform": "facebook",
+    "format": "reel",
+    "slot": "2026-10-27T12:00:00.000Z",
+    "slotKey": "short",
+    "status": "published",
+    "remote_id": "1147652518213300",
+    "url": "https://www.facebook.com/reel/1147652518213300",
+    "title": "Semaglutide, CKD and Type 2 Diabetes: What FLOW Found #shorts",
+    "topic": "Is semaglutide safe if your kidneys are already weaker? Safety outcomes by chronic kidney disease severity in the FLOW trial (Kidney International, Oct 20, 2026)",
+    "hook": "A direct \"you\" question with a recognisable worry. It names the exact population (type 2 diabetes and weaker kidneys) and promises what a big trial found. It never claims the drug is \"safe\".",
+    "trend_stage": "emerging",
+    "metrics": null
+  },
+  {
+    "at": "2026-10-27T16:58:49.559Z",
+    "date": "2026-10-27",
+    "id": "S2-tirzepatide-vs-semaglutide-in-type-2-dia",
+    "kind": "short",
+    "platform": "instagram",
+    "format": "reel",
+    "slot": "2026-10-27T17:00:00.000Z",
+    "slotKey": "short",
+    "status": "published",
+    "remote_id": "18116915903011398",
+    "url": "https://www.instagram.com/reel/DfAVtfSN_k9/",
+    "title": "Tirzepatide vs Semaglutide for Type 2 Diabetes #shorts",
+    "topic": "Tirzepatide vs semaglutide in type 2 diabetes: the SURPASS-2 randomized head-to-head (NEJM 2021, adults with type 2 diabetes on metformin, 40 weeks)",
+    "hook": "Opens on a question the viewer already has (\"Tirzepatide or semaglutide for type two diabetes?\") and answers it in about 5 seconds with a named randomized head-to-head trial. Then come the numbers for each arm, and a \"the catch\" re-hook covering the dose, the open-label design and the population.",
+    "trend_stage": "evergreen",
+    "metrics": {
+      "reach": 63,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "views": 66
+    }
+  },
+  {
+    "at": "2026-10-27T17:01:26.368Z",
+    "date": "2026-10-27",
+    "id": "S2-tirzepatide-vs-semaglutide-in-type-2-dia",
+    "kind": "short",
+    "platform": "tiktok",
+    "format": "short",
+    "slot": "2026-10-27T17:00:00.000Z",
+    "slotKey": "short",
+    "status": "published",
+    "remote_id": "v_pub_file~v2-1.7701393607160334357",
+    "url": "https://www.tiktok.com/@informedlab",
+    "title": "Tirzepatide vs Semaglutide for Type 2 Diabetes #shorts",
+    "topic": "Tirzepatide vs semaglutide in type 2 diabetes: the SURPASS-2 randomized head-to-head (NEJM 2021, adults with type 2 diabetes on metformin, 40 weeks)",
+    "hook": "Opens on a question the viewer already has (\"Tirzepatide or semaglutide for type two diabetes?\") and answers it in about 5 seconds with a named randomized head-to-head trial. Then come the numbers for each arm, and a \"the catch\" re-hook covering the dose, the open-label design and the population.",
+    "trend_stage": "evergreen",
+    "metrics": null
+  },
+  {
+    "at": "2026-10-27T17:01:40.018Z",
+    "date": "2026-10-27",
+    "id": "S2-tirzepatide-vs-semaglutide-in-type-2-dia",
+    "kind": "short",
+    "platform": "facebook",
+    "format": "reel",
+    "slot": "2026-10-27T17:00:00.000Z",
+    "slotKey": "short",
+    "status": "published",
+    "remote_id": "2029028141146766",
+    "url": "https://www.facebook.com/reel/2029028141146766",
+    "title": "Tirzepatide vs Semaglutide for Type 2 Diabetes #shorts",
+    "topic": "Tirzepatide vs semaglutide in type 2 diabetes: the SURPASS-2 randomized head-to-head (NEJM 2021, adults with type 2 diabetes on metformin, 40 weeks)",
+    "hook": "Opens on a question the viewer already has (\"Tirzepatide or semaglutide for type two diabetes?\") and answers it in about 5 seconds with a named randomized head-to-head trial. Then come the numbers for each arm, and a \"the catch\" re-hook covering the dose, the open-label design and the population.",
     "trend_stage": "evergreen",
     "metrics": null
   }
