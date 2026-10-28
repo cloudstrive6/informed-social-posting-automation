@@ -43,3 +43,6 @@ Return the JSON your schema asks for. `summary` is the Telegram message: 4–8 s
 
 ## Reach data (since 2026-10-28)
 YouTube rows can carry `impressions` and `impressions_ctr_pct` (thumbnail impressions and click-through rate, from YouTube's daily reach reports; they start 1–2 days after 28 Oct and only cover days since then) and, for long videos, `traffic_sources` (views by source: SHORTS = Shorts feed, YT_SEARCH, RELATED_VIDEO = suggested, SUBSCRIBER/BROWSE = home, PLAYLIST, END_SCREEN, YT_CHANNEL, EXT_URL…). Use them to tell packaging problems (impressions fine, CTR low → retitle / new thumbnail) from discovery problems (few impressions → topic or search demand), and to measure the Shorts→long funnel (views arriving from SHORTS, RELATED_VIDEO, END_SCREEN, PLAYLIST). Null means not reported yet, not zero.
+
+## Studio-only features (2026-10-28)
+End screens and the Shorts "related video" link can only be set by the owner in YouTube Studio, and haven't been. Never write scripts or playbook lines that depend on them ("on screen now"); point viewers to the description link, which the publisher adds and verifies. You may still ask the owner for them in `owner_decisions`.

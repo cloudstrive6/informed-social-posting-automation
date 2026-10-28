@@ -37,7 +37,7 @@ _Verdict: off track. Bottleneck: The bottleneck is long-form reach. Watch time p
 - **Thumbnail:** 4 words or fewer, never repeating the title. One labelled character, one honest emotion.
 - **0–15 s:** open on a concrete "you" scenario and give the first answer. No trial-number openings and no setup.
 - **Body:** re-hook every 45–75 s. Name chapters after searched questions. One subscribe ask, after the payoff.
-- **Ending (new):** don't speak any video title. Say "Watch next: the video on screen now, linked at the top of the description." The publisher adds the verified "▶ Watch next" link, and the owner adds the end screen.
+- **Ending (new):** don't speak any video title. Say "There's a video I'd watch next, linked in the description." The publisher adds the verified "▶ Watch next" link. Never say "on screen": the videos have no end screens yet (Studio-only; the owner hasn't added them).
 
 ## Shorts (3 a day, at most 170 words, 60–85 s)
 - **08:00, body worry:** a calm "honest uncertainty" Short (gallbladder, pancreas, hair, bone density, muscle). Tirzepatide in the title where the evidence covers it. It wins on both YouTube and Instagram.
