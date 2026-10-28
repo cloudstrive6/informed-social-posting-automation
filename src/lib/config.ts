@@ -21,7 +21,7 @@ export interface ChannelConfig {
   audience: { description: string; timezone: string; language: string };
   accounts: Record<string, string>;
   cadence: {
-    longPerDay: number; shortPerDay: number; carouselPerDay: number;
+    longPerDay: number; shortPerDay: number; carouselPerDay: number; carouselDays?: string[];
     longTargetMinutes: [number, number]; shortTargetSeconds: [number, number];
   };
   schedule: Record<ScheduleKey, string[]>;

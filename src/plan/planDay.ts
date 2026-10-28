@@ -10,11 +10,19 @@ import { DayPlan, planSchema, Radar, TopicScreen, topicScreenSchema } from "../l
 export interface CoveredTopic { date: string; kind: string; topic: string; angle: string; title?: string }
 export const coveredPath = join(DATA, "published", "topics.json");
 
+/** Carousels only on config.cadence.carouselDays (weekday of the content date), or every day when unset. */
+export function carouselsFor(date: string): number {
+  const days = config.cadence.carouselDays;
+  if (!days?.length) return config.cadence.carouselPerDay;
+  const wd = new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" });
+  return days.includes(wd) ? config.cadence.carouselPerDay : 0;
+}
+
 export async function planDay(date: string): Promise<DayPlan> {
   log.step(`Planning ${date}`);
   const radar = readJson<Radar & { at?: string }>(join(DATA, "radar", "latest.json"), { summary: "No radar yet", candidates: [] });
   const covered = readJson<CoveredTopic[]>(coveredPath, []).filter(c => Date.parse(c.date) > Date.now() - 45 * 86400_000);
-  const quota = { long: config.cadence.longPerDay, short: config.cadence.shortPerDay, carousel: config.cadence.carouselPerDay };
+  const quota = { long: config.cadence.longPerDay, short: config.cadence.shortPerDay, carousel: carouselsFor(date) };
 
   let plan = await runAgent<DayPlan>({
     agent: "content-strategist",
@@ -54,6 +62,12 @@ export async function planDay(date: string): Promise<DayPlan> {
     });
     const repl = new Map(replacement.pieces.map(p => [p.id, p]));
     plan.pieces = plan.pieces.map(p => repl.get(p.id) ?? p);
+  }
+
+  // enforce the quota: no carousel on non-carousel days even if the strategist planned one
+  for (const k of ["long", "short", "carousel"] as const) {
+    let n = 0;
+    plan.pieces = plan.pieces.filter(p => p.kind !== k || ++n <= quota[k]);
   }
 
   writeJson(join(queueDir(date), "plan.json"), { date, created_at: new Date().toISOString(), ...plan });

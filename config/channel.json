@@ -41,6 +41,8 @@
     "longPerDay": 1,
     "shortPerDay": 3,
     "carouselPerDay": 1,
+    "carouselDays": ["Tue", "Fri"],
+    "_carouselDays_comment": "Weekdays (of the content date) that get a carousel. Owner, 2026-10-28: cut to 2 a week (reach was 0-4 each). Remove to go back to every day.",
     "longTargetMinutes": [
       8,
       15
