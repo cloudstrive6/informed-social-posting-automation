@@ -1,0 +1,556 @@
+{
+  "at": "2026-10-29T05:54:32.143Z",
+  "summary": "The big story this cycle is Lilly's TRANSCEND-T2D-2 topline result (Oct 28, 2026). It's the first Phase 3 head-to-head of retatrutide against semaglutide 2 mg, in 1,298 adults with type 2 diabetes on metformin, with or without an SGLT2 inhibitor, over 80 weeks. A1C fell 2.2% on retatrutide 9 mg and on 12 mg, versus 1.8% on semaglutide. Weight fell 19.5% (9 mg) and 20.9% (12 mg), versus 9.4%. These figures use the efficacy estimand. Side effects: diarrhea 28.3–32.7% vs 26.4%, nausea 21.2–23.8% vs 21.3%, vomiting 10.2–15.0% vs 13.2%. A skin-sensation side effect (dysesthesia) was reported in 4.8–6.5% vs 2.7%. Discontinuation for side effects was 4.8–7.9% vs 2.7%. The results are not yet peer-reviewed. The story is in mainstream news (Reuters, ABC, NY Post, STAT), so it is peaking. It qualifies for Lane C because it is a fresh randomized head-to-head first reported within 48 hours, but L1 10-29 already covered it and was held. The best move is to fix and re-render that video today rather than start a new one. The skin-sensation side effect is an early Short hook that almost nobody is covering yet.\n\nLane A has strong fresh hooks:\n- **Stopping tirzepatide:** the Wales Online NHS GP warning and the Medscape piece (both Oct 28) point to a pilot RCT. In 39 adults, 4-month regain was 10.75% with usual care, 3.60% with a coaching app and 3.58% with medically tailored meals.\n- **Hair loss:** Medscape (Oct 28) reports GLP-1 hair loss looks similar by race.\n- **Plateau:** a 12-month real-world tirzepatide paper came out in Diabetes Obes Metab (Oct 28).\n- **Bones and muscle:** the Arch Osteoporos review, a J Clin Med paper on device-estimated muscle loss, and the Omada muscle-share news.\n\nTimely Shorts and Reels:\n- **Pregnancy and breastfeeding:** ACOG's Oct 23 advisory, with WSJ pickup Oct 28. Use caution and frame it as \"talk to your clinician\".\n- **Halloween and food noise:** Psychiatric Times (Oct 28), with Halloween on Oct 31.\n- **Alcohol:** the Heineken document (Reuters Oct 27, NewsNation Oct 29). Keep the evidence wording cautious.\n- **Gallbladder and pancreas:** a new propensity-matched tirzepatide comparison.\n- **Gray market:** one \"what's confirmed?\" Short (Penn's AI analysis of Reddit posts from gray-market retatrutide users, Mashable's TikTok report).\n\nRejected: the $300-a-year telehealth GLP-1 angle (cost and sourcing) and anything about microdosing.",
+  "candidates": [
+    {
+      "topic": "Retatrutide vs semaglutide 2 mg in type 2 diabetes: TRANSCEND-T2D-2 Phase 3 head-to-head (1,298 adults on metformin ± SGLT2i, 80 weeks). A1C −2.2% (9 and 12 mg) vs −1.8%; weight −19.5%/−20.9% vs −9.4% (Lilly topline, Oct 28, 2026)",
+      "angle": "Lane C long-form (re-render the held L1 10-29 with the masking and voice fixes): 'You have type 2 diabetes and you're already on metformin. What did a triple-hormone drug add?' Answer in the first 15 s. Give A1C and weight per arm, the efficacy estimand described plainly ('if everyone stayed on treatment'), and side effects for both drugs, including the 4.8–6.5% dysesthesia. Say: investigational, not approved, topline, not yet peer-reviewed. The 13:00 retatrutide Short gets a 'what's confirmed?' loop ending.",
+      "keywords": [
+        "retatrutide vs ozempic",
+        "retatrutide type 2 diabetes results",
+        "TRANSCEND-T2D-2",
+        "retatrutide A1C",
+        "retatrutide weight loss 2026",
+        "retatrutide side effects"
+      ],
+      "stage": "peaking",
+      "momentum": 92,
+      "predicted_peak": "0–3 days (news peak Oct 28–30); search tail for weeks",
+      "why_now": "First reported Oct 28 (Lilly press release 10:45 ET). Picked up by Reuters, ABC, NY Post, STAT, Fierce, BioSpace, Everyday Health and local TV. It meets every Lane C rule: fresh within 48 h, randomized head-to-head, named next-gen drug. EloraTZP shows this type earns about 54% of our watch time.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Eli Lilly press release (PR Newswire), Oct 28 2026",
+          "signal": "N=1,298, 80 weeks, efficacy estimand, per-arm A1C and weight, AE rates, discontinuation 4.8–7.9% vs 2.7%",
+          "url": "https://www.prnewswire.com/news-releases/lillys-retatrutide-delivered-greater-a1c-reduction-and-more-than-double-the-weight-loss-of-ozempics-highest-approved-dose-in-head-to-head-trial-302921328.html"
+        },
+        {
+          "source": "ClinicalTrials.gov NCT06260722",
+          "signal": "Trial registration: population and design",
+          "url": "https://clinicaltrials.gov/study/NCT06260722"
+        },
+        {
+          "source": "ABC News, Oct 28",
+          "signal": "Mainstream consumer pickup",
+          "url": "https://abcnews.com/GMA/Wellness/new-weightloss-drug-retatrutide-double-weight-loss-ozempic/story?id=137614872"
+        },
+        {
+          "source": "STAT, Oct 28",
+          "signal": "Trade/science press coverage",
+          "url": "https://www.statnews.com/2026/10/28/retatrutide-vs-ozempic-lilly-diabetes-study/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Retatrutide's skin-sensation side effect (dysesthesia): 4.8–6.5% vs 2.7% on semaglutide 2 mg in TRANSCEND-T2D-2. What it is and what's known",
+      "angle": "Calm 08:00 'honest uncertainty' body-worry Short: what dysesthesia means (tingling or unusual skin sensations), how often it happened in each arm, that it led some people to stop treatment, and what's still unknown. Topline only, not yet peer-reviewed. Use the exact wording 'skin-sensation side effect'.",
+      "keywords": [
+        "retatrutide dysesthesia",
+        "retatrutide tingling skin",
+        "retatrutide side effects skin",
+        "what is dysesthesia"
+      ],
+      "stage": "emerging",
+      "momentum": 78,
+      "predicted_peak": "3–10 days",
+      "why_now": "Mainstream headlines lead on 'double the weight loss', so this side-effect detail is barely covered. People will start searching it as the trial details spread.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Eli Lilly press release, Oct 28 2026",
+          "signal": "Dysesthesia 4.8–6.5% vs 2.7%",
+          "url": "https://www.prnewswire.com/news-releases/lillys-retatrutide-delivered-greater-a1c-reduction-and-more-than-double-the-weight-loss-of-ozempics-highest-approved-dose-in-head-to-head-trial-302921328.html"
+        },
+        {
+          "source": "HCPLive, Oct 28",
+          "signal": "Clinical press coverage of TRANSCEND-T2D-2",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQkxvQ1FKX0RTVVV5YUdhZnJqUjhiZXhtU1Z1WDJvZHg4VTN3Sm5XYUZzekJwZU9ZZTgzWnRUMjl3YUtXYVViU3djYXktX2VPaWFmUjF0XzRDOGJ1dWF2d3NYQlZuSDVhTkxrXzlCSWRTaG9VOXNmRi1wQnF6dU4yLXd0YXd4cjNJbXRNUnZYeWlhTEF4ajc0WEdFeENncmM?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "What happens when you stop tirzepatide? SURMOUNT-4 regain, plus a new pilot RCT: 4-month regain 10.75% with usual care vs 3.60% with a coaching app and 3.58% with medically tailored meals (n=39, Obes Sci Pract, Oct 7; Medscape Oct 28)",
+      "angle": "Lane A long-form, 'What Happens When You Stop Tirzepatide?'. Open on 'You're thinking about stopping. Here's what the trials show happens next.' Cover SURMOUNT-4 (335 vs 335 randomized at week 36, +14.0% regain from week 36 to week 88). Then the hopeful part: structured support slowed early regain in a small pilot. Label it pilot, n=39, and note it was GLP-1 drugs in general. Say 'don't stop or change your medicine on your own'.",
+      "keywords": [
+        "what happens when you stop tirzepatide",
+        "stopping mounjaro weight regain",
+        "coming off zepbound",
+        "weight regain after GLP-1",
+        "how to keep weight off after stopping tirzepatide"
+      ],
+      "stage": "rising",
+      "momentum": 80,
+      "predicted_peak": "1–3 weeks (New Year and insurance changes push stopping questions)",
+      "why_now": "Fresh coverage in the last 48 h: Medscape (Oct 28), the Wales Online NHS GP warning (Oct 28), CBC (Oct 27), Grocery Dive and Food Dive on 'lapsed GLP-1 users', and CNBC on employers dropping coverage in 2027. It's third in the playbook's Lane A order and has been in our snapshots twice.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "News-Medical on the Obesity Science & Practice pilot RCT",
+          "signal": "39 adults; regain 10.75% vs 3.60% vs 3.58% over 4 months",
+          "url": "https://www.news-medical.net/news/20261007/Structured-support-may-slow-weight-regain-after-stopping-GLP-1-drugs.aspx"
+        },
+        {
+          "source": "Medscape, Oct 28",
+          "signal": "Post-GLP-1 weight regain eased by support tools",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMW1fcjQ0YlNhaFhyS21tNGtwZzJPNi10cDRFbUlNTk8waVAxQjZjMEZqaW5XQXUyM25kVTlQb2RCVWFoZXNCYzVPT0RoNDFVLXAxcjU1VEZwTEE1aTdmd24xTEkyOUhSZUtZUEd0bGptLWI5SlJUalRBdXdlT2Fob1hrcFkxRUFpRzZ0SlY1NGZNaGliSUdsQ2Z4ZHZXWk1XN1QtUQ?oc=5"
+        },
+        {
+          "source": "Metabolites systematic review, Oct 9",
+          "signal": "Weight regain after stopping GLP-1 and GIP/GLP-1 drugs",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42941232/"
+        },
+        {
+          "source": "Wales Online, Oct 28",
+          "signal": "NHS GP warning to anyone thinking of stopping Mounjaro or Wegovy",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQWZsUGNmeHBVaWh5ZWk1UlpzcWI4MGxwUEFTeFhtYWdLNFFNRjc4Y0l4RlI0SWNPbWI2YlRfQjNBRnlKX0VIcXJfSnB2TEpQWk8wTFVrZkt2aHNpd25SdUpIZnd1T01mUGJwTkYyU0tFWDd0eEZ1OFRLYlZ0NDlKc25TMTV3ZFBhVnpEb1dzWFoyaFMwY3fSAZsBQVVfeXFMUHIyM3pQWjBjekN0bVJoMF9yeG1XVHktZG1oLTAwRTBzczFXRDhMVVV4VVRMQkFZaXN2X253amt0MTdUZUg4aVRSY3JOT1F1R2NCUjYzVEs0UFE4c1JadmRaUVJ2LTVrQkxBX2NLWGRHZW1oYzdIaDNKRzdvQ3BxQkYwMVRCOFBnUHJiY1JPeEc2ZTdaTGM2U3BUNG8?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide and your bones and muscle: Arch Osteoporos systematic review of GLP-1 skeletal effects (Oct 23), J Clin Med device-estimated muscle loss (Oct 15) and SURMOUNT-1 body-scan substudy",
+      "angle": "Lane A long-form, first in the playbook order. Answer within 15 s: about 75% of the weight lost was fat and about 25% lean (SURMOUNT-1 substudy: 160 scanned, 124 on tirzepatide vs 36 on placebo, 72 weeks; Look et al. 2025). Then what the bone review found and what's still unknown. Then protein and strength training as the practical payoff. Mention the semaglutide mouse bone result only as 'mice, not people'.",
+      "keywords": [
+        "tirzepatide muscle loss",
+        "does mounjaro cause bone loss",
+        "zepbound bone density",
+        "GLP-1 muscle loss how much",
+        "tirzepatide lean mass"
+      ],
+      "stage": "evergreen",
+      "momentum": 74,
+      "predicted_peak": "steady; refreshed by news over the next 2 weeks",
+      "why_now": "In 5 snapshots (momentum steady at 70–72). The bones Short got 237 views, our best body-worry result. New Oct 28 hooks: Omada members gained muscle share, plus a semaglutide bone-building signal in male mice.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Arch Osteoporos systematic review, Oct 23 2026",
+          "signal": "Skeletal effects of GLP-1 RAs in adults with overweight/obesity",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42920024/"
+        },
+        {
+          "source": "J Clin Med, Oct 15 2026",
+          "signal": "Weight-loss size, fat mass and device-estimated muscle loss",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42941522/"
+        },
+        {
+          "source": "Longevity.Technology, Oct 28",
+          "signal": "Omada GLP-1 users gained muscle share",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZ01hVEdyQnF6UjBUaHdIelVCN2JOOUhqcGhOT3hHaGZuX1YwM05GY0RieUdTaUpmSDBONWNhV2xPQXN4QldpYktINlhuelJmQ1AxSjRib1NMcXpFS3l5SE1IQWRhNTkxeDdob0RTMnluVEFfRjJZNnlWNUkwRE15TGczRklEdlRBeXJPMg?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide hair loss: how common, and does it differ by race? Medscape (Oct 28) on GLP-1 hair loss looking similar across racial groups, plus the Med Sci (Basel) skin side-effect review (Oct 9)",
+      "angle": "Lane A long-form 'Tirzepatide Hair Loss: How Common Is It and What Helps?'. Start with the trial rates and the observational 'linked to' data, give the new finding that it looks similar by race, then explain the usual cause (shedding after rapid weight loss) and what helps: protein and talking to a clinician. The 08:00 Short covers the race-similarity fact.",
+      "keywords": [
+        "tirzepatide hair loss",
+        "mounjaro hair loss",
+        "zepbound hair thinning",
+        "does GLP-1 cause hair loss",
+        "hair loss on ozempic"
+      ],
+      "stage": "evergreen",
+      "momentum": 74,
+      "predicted_peak": "steady; Medscape hook for about 7 days",
+      "why_now": "New Medscape item (Oct 28) on top of the July cohort and the Penn/BMJ study. Seen in 2 prior snapshots and fourth in the playbook's Lane A order.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Medscape, Oct 28",
+          "signal": "Hair loss with GLP-1 RAs appears similar by race",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZlJxSmpDaHc2LXNOS2luT3ExN2l4Y3Vnb1ZUVnF3RFptREUwdmp3T3BSbjNsSHFZLS03bVFwRGZHY19vdnhFdWRzMkl2NlpvWUp3MkZnTzB6bDdmdFdZbWRkV2ZUMVowY2s0M21rNHk4c3lHdnlEdm5nUm1zSlI5Q0dpVUkzU1N2aFJoOHgyMnVQNHlNcEhXaWYxUk1qZVhTbHc?oc=5"
+        },
+        {
+          "source": "Med Sci (Basel) systematic review, Oct 9",
+          "signal": "Skin side effects with semaglutide, liraglutide and tirzepatide",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42930571/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide weight-loss plateau: 12-month real-world tirzepatide results (Diabetes Obes Metab, Oct 28) against the SURMOUNT-1 weight curves",
+      "angle": "Lane A long-form 'Tirzepatide Weight Loss Plateau: What the Trials Show'. Open with 'Your weight stopped moving. That's expected, and here's when it happened in the trials.' Compare the trial curve with the new 12-month real-world data (observational) and cover the habits that help. Say not to change your dose on your own, and talk to your prescriber.",
+      "keywords": [
+        "tirzepatide plateau",
+        "mounjaro stopped losing weight",
+        "zepbound weight loss stalled",
+        "tirzepatide 12 month results"
+      ],
+      "stage": "evergreen",
+      "momentum": 70,
+      "predicted_peak": "steady",
+      "why_now": "A real-world tirzepatide paper published Oct 28 gives a fresh hook to a topic that's been in 2 snapshots. Fifth in the Lane A order.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Diabetes Obes Metab, Oct 28 2026",
+          "signal": "Tirzepatide 12-month real-world weight results",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42951303/"
+        },
+        {
+          "source": "J Clin Med Türkiye cohort, Oct 13",
+          "signal": "Real-world semaglutide/tirzepatide weight trajectories",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42941393/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long"
+      ]
+    },
+    {
+      "topic": "Protein on tirzepatide: how much and why (muscle preservation, Omada muscle-share data and NutraIngredients' GLP-1 user data, Oct 28)",
+      "angle": "Lane A long-form 'Protein on Tirzepatide: How Much and Why'. Use guideline-based protein ranges for adults (not drug dosing), protein-first meals when appetite is low, and easy foods for nausea days. Link it to the bones and muscle video.",
+      "keywords": [
+        "protein on tirzepatide",
+        "how much protein on mounjaro",
+        "zepbound protein",
+        "GLP-1 protein intake muscle"
+      ],
+      "stage": "evergreen",
+      "momentum": 72,
+      "predicted_peak": "steady; holiday meals refresh it in November",
+      "why_now": "Second in the playbook order. Industry stories about GLP-1 users and muscle broke Oct 28, and Thanksgiving planning searches are starting.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "NutraIngredients, Oct 28",
+          "signal": "GLP-1 user data on sports and active nutrition needs",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPUGcyM05aQjBwRE1yVmVCSUx1d2c1ajVsQmFlLVd5V3Z1cEdFYkdGc3RuaW04N0hEN3FZZzhmdzAwSW56RWhSZ000VnlYRU9qekEzTVNZNVFaME5kbHdDemY4Vkltdi1EQTBsUjVGMmg0ZjVKbFVSelRKNHhKd0ZvTnNGbHNRZjVKTjhlMFpJbGhHdkwwMEtzZ3ZZbEdOSElEazNEeWdKLTRUZUVrSkNDeERqenRiTUItdGFtT0d3Yk1faFNkZVFweXY5b1I1MVZS?oc=5"
+        },
+        {
+          "source": "J Clin Med, Oct 15",
+          "signal": "Muscle loss scales with weight loss during obesity medication",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42941522/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Halloween on tirzepatide: why sweets may feel different ('food noise' and the brain's reward system), Psychiatric Times (Oct 28)",
+      "angle": "Upbeat Short and Instagram Reel for Oct 30–31: how GLP-1 acts on appetite and reward, in plain terms. Then gentle tips: eat a protein snack first, smaller portions, go slow if you're nauseous. No guilt, no restriction framing.",
+      "keywords": [
+        "food noise GLP-1",
+        "halloween candy on mounjaro",
+        "tirzepatide sugar cravings",
+        "does ozempic stop cravings"
+      ],
+      "stage": "rising",
+      "momentum": 72,
+      "predicted_peak": "1–3 days (Oct 30–31)",
+      "why_now": "Halloween is Oct 31. Psychiatric Times (Oct 28) and Nation's Restaurant News ('room for dessert') are both fresh. In 2 prior snapshots.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Psychiatric Times, Oct 28",
+          "signal": "Food noise, motivation and appetitive drive research",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMjVsUVlmRm5QQnNHbGRvcXNwLXJXb29pWkZFbzVONGh4X1lnQl9qcEFtZHVSS21TeURwUHFUb3ExV2lEeVRJTG12VTY5VWs3dlMwSlJkU1EyMlBfZDMtS3JRM0U2ZzBzdEVjYnA3NHVnREgwN2p2TmhLVnpxSVB5c0F6OTZjYTR3aDd1dHhadlg1eVV0NnRRczdnRjd1S0NLQ1pFR3BRSUR2d0l3ak5QR2Y2VlVza08yUElVQVJfRWVXZw?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "GLP-1 medicines, pregnancy and breastfeeding: ACOG advisory (Oct 23) says consider stopping 1–2 months before trying to conceive and that use while breastfeeding may be an option with monitoring (WSJ Oct 28, NewsNation Oct 27)",
+      "angle": "Calm explainer Short and Instagram Reel: what ACOG actually advised, why the data are limited, and why this is a conversation to have with your OB-GYN or prescriber before you plan a pregnancy. Credit the line to ACOG with the date. Avoid any personal stopping instruction. Include 'don't stop or change your medicines on your own'.",
+      "keywords": [
+        "ozempic pregnancy",
+        "mounjaro breastfeeding",
+        "GLP-1 before pregnancy ACOG",
+        "can you take zepbound while breastfeeding"
+      ],
+      "stage": "rising",
+      "momentum": 70,
+      "predicted_peak": "3–7 days",
+      "why_now": "The ACOG advisory came out Oct 23. Mainstream pickup is accelerating (WSJ Oct 28, Contemporary OB/GYN Oct 28, NewsNation). Few health creators have covered it yet.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Healio, Oct 23",
+          "signal": "ACOG issues long-awaited guidance on GLP-1s during pregnancy and lactation",
+          "url": "https://www.healio.com/news/womens-health-ob-gyn/20261023/acog-issues-longawaited-guidance-on-glp1s-during-pregnancy-lactation"
+        },
+        {
+          "source": "Becker's Hospital Review",
+          "signal": "GLP-1s may be an option while nursing, per ACOG",
+          "url": "https://www.beckershospitalreview.com/glp-1s/glp-1s-may-be-an-option-while-nursing-national-ob-gyn-association-says/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide and your gallbladder and pancreas: propensity-matched real-world comparison of tirzepatide, semaglutide and DPP-4 inhibitors (J Clin Med, Oct 16) plus the tirzepatide scoping review (11 participants with pancreatitis across 5 trials)",
+      "angle": "08:00 'honest uncertainty' Short with tirzepatide in the title. Say what the matched cohort found ('linked to', observational) and the scoping-review counts in the correct unit (11 cases across 5 trials). List the warning symptoms, like severe stomach pain, to seek care for right away. Calm tone.",
+      "keywords": [
+        "tirzepatide gallbladder",
+        "mounjaro pancreatitis risk",
+        "zepbound gallstones",
+        "tirzepatide vs semaglutide pancreas"
+      ],
+      "stage": "emerging",
+      "momentum": 64,
+      "predicted_peak": "steady",
+      "why_now": "Two new papers in October. The gallbladder Short was only 2 days old at last read (47 views), so give this a new angle (matched comparison), not a repeat.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "J Clin Med, Oct 16 2026",
+          "signal": "Propensity-matched biliary/pancreatic safety comparison",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42941539/"
+        },
+        {
+          "source": "Diabetes Metab Syndr Obes scoping review, Oct 23",
+          "signal": "Pancreatic and gallbladder events with tirzepatide",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42948670/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Do GLP-1 medicines change how much you want to drink? Heineken's internal document on weight-loss drugs and beer sales (Reuters exclusive Oct 27; NewsNation Oct 29), and what the research shows so far",
+      "angle": "Short: start from the news hook (a brewer is worried), then the evidence. Early, small human trials of semaglutide in alcohol use disorder and observational links count as promising early research, not proof. The drugs aren't approved for alcohol use disorder. Be curious, don't overclaim.",
+      "keywords": [
+        "ozempic alcohol cravings",
+        "mounjaro drinking less",
+        "GLP-1 alcohol research",
+        "heineken weight loss drugs"
+      ],
+      "stage": "rising",
+      "momentum": 66,
+      "predicted_peak": "2–5 days",
+      "why_now": "The Reuters exclusive spread to NewsNation over the past 48 h. The question taps a viral consumer curiosity.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Reuters exclusive, Oct 27",
+          "signal": "Heineken document on weight-loss drugs and beer sales",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQkxjUl8zRFdLRXdOR1Z3SVFsSEc1WElSMG9OZHRJYW52a3hvN3BVOEJBMHk4YnZpQkRwYnRzWF9qeXhRZjF6M0o5c09xVzZ5a0dwOG1aQ2thYlpKV1RlTFBsVWNGcHdpZ2F4Sld3UWFoY1htZDVld1UwZ0x1MnJ0bnZOdVpMZDlEZ3JmRDhQa3Fsam9UZkl0TnB2eHF3eU1CNGZTWlV4Smt4NDJLbXBzQ1ExekxtWm5uTGtCRg?oc=5"
+        },
+        {
+          "source": "NewsNation, Oct 29",
+          "signal": "Consumer pickup",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRzFmeVZqbzJ3Y1dVQm56M21uUGpYaFp3clF2UnBndGVqSll0XzJKNTNLeXNnRkFMNHp3US1WR2NQcU16YloyLU05NjFuSktfZnRnWlpaNVF3UkUwSWJLX1M1MWFaSk15S0tURzh4XzJoWTRFY2xfelFBd25NejY3NnFKOUtEUdIBiwFBVV95cUxNaFNaN2J1ZVVzYW1PNloxVFV3MnRHUmZnMnppdURtSE1jdUU5NzZZR1d5TElkX05pR2xtSTFfcV9SRFI4MUp6cG9fNVIzSHo5RWtuRmpYU3d0RmtuS05FTjhlVTdSLVlfakFjYWw2bHRGM0dZeGstazE2c1ItdUNsS09OTnhEeGNPOWdV?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Gray-market retatrutide, what's confirmed: Penn's AI analysis of Reddit posts found increased appetite was the top symptom reported by gray-market users (Medical Daily, Oct 29), and Mashable on off-market GLP-1s spreading on TikTok (Oct 28)",
+      "angle": "The week's single 13:00 gray-market 'what's confirmed?' Short. Retatrutide is not approved anywhere. Unregulated vials may not contain what the label says, and users reporting more appetite hints at that (self-reports, not a trial). Contrast with the regulated Phase 3 data. Never mention sources, sellers or how to buy.",
+      "keywords": [
+        "is retatrutide approved",
+        "retatrutide online safe",
+        "research peptide retatrutide",
+        "gray market GLP-1"
+      ],
+      "stage": "rising",
+      "momentum": 72,
+      "predicted_peak": "2–7 days (amplified by the TRANSCEND news)",
+      "why_now": "Interest in retatrutide spiked after Oct 28, and with it searches for how to get it. Two new reports in the last 24 h. Gray-market 'what's confirmed?' Shorts have a median of about 105 views.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Medical Daily, Oct 29",
+          "signal": "Penn AI analysis: increased appetite tops symptoms reported by gray-market retatrutide users",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORjNXSzFEMGRVZHp2SDlRWC04RmhhNmt3RTFHMEJLU09NWk1oaVlERUJRbTNwRW8zaXh0SjVSanVWbndwS0NldDhHOVp5emYyWlhjemxFMTV2aUF1XzZwaWVGOFRvR1NnamNjV1FzcUgybExKaURESTRBWTF3a1Y4TnBRU0tsTDNkVGtV?oc=5"
+        },
+        {
+          "source": "Mashable, Oct 28",
+          "signal": "Off-market GLP-1 drugs proliferating on TikTok",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5pWGV6a19McWVWTklmTnd3OVVSMl9QTE1INkwwMThsRVE1SHhSU1JmdUFGTVBlLUJXemgzWERCc0kzRTA2TDExMk5XZHlJZnRIanBQd2NDbVpHR1cwSGc?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "GLP-1 medicines and blood pressure: systematic review and meta-regression of Phase 3 trials in overweight/obesity (EClinicalMedicine, Oct 12). More weight lost is linked to lower systolic BP",
+      "angle": "Instagram benefit Reel and YouTube Short: how weight loss and blood-pressure lowering track together across trials, with tirzepatide named where its arms are included. 'Linked to' at the trial level, not individual results. Name the common side effects.",
+      "keywords": [
+        "tirzepatide blood pressure",
+        "does mounjaro lower blood pressure",
+        "GLP-1 blood pressure",
+        "zepbound hypertension"
+      ],
+      "stage": "evergreen",
+      "momentum": 60,
+      "predicted_peak": "steady",
+      "why_now": "Blood pressure Reels did well (172 on Instagram, 101 on YouTube at day 2). TRANSCEND-T2D-2 also reported systolic BP gains, so this ties to the news.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "EClinicalMedicine, Oct 12 2026",
+          "signal": "Meta-regression of weight loss and BP lowering in Phase 3 trials",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42903654/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Menopause and GLP-1 weight loss: hormone therapy linked to greater weight loss (MedPage Today Oct 27; Healthline Oct 26) and the CagriSema REDEFINE 1 post hoc analysis in women",
+      "angle": "Instagram Reel and Short for women 45–65: what the observational data link together, what it can't prove, and questions to bring to your clinician. Label the CagriSema analysis post hoc. Name tirzepatide only if the cited data include it.",
+      "keywords": [
+        "menopause tirzepatide",
+        "HRT and ozempic weight loss",
+        "GLP-1 menopause weight",
+        "mounjaro perimenopause"
+      ],
+      "stage": "rising",
+      "momentum": 62,
+      "predicted_peak": "5–10 days",
+      "why_now": "Menopause Society 2026 follow-up coverage keeps coming (MedPage Oct 27, Healthline Oct 26), and the audience fit is strong.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "MedPage Today, Oct 27",
+          "signal": "Menopausal hormone therapy may boost GLP-1 weight loss",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE80R1hULXhjQVRwQVNTSWlUV1A2Sm5KUXhqVlFQRVZTT2lqQW1naXpRTXhrQ21VWVR5Y3ZPM0g1RWRKRDNTZE04TkFMWEp5ZkpZRDA5eXdnaUVsUHUzODc3UGU1TWd1Zw?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Thanksgiving on tirzepatide: protein first, smaller plates, eating slowly, easing nausea at big meals",
+      "angle": "Practical Short now, with a mid-November long-form option ('What to Eat on Tirzepatide' repackaging tie-in). Encouraging, no restriction messaging.",
+      "keywords": [
+        "thanksgiving on mounjaro",
+        "holiday eating tirzepatide",
+        "ozempic thanksgiving tips"
+      ],
+      "stage": "evergreen",
+      "momentum": 66,
+      "predicted_peak": "Nov 15–27",
+      "why_now": "The seasonal cycle starts after Halloween. Seen in several snapshots.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Nation's Restaurant News, Oct 28",
+          "signal": "Restaurants are adapting menus for GLP-1 users",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOd1ZQc2FlZ0t3b003bXpZbkNTemRkNEZLbzBybzVLVDdZUFZqcU1XbUl0T05QSjRGb0h3aWpVelA4Q3E2RlUwbmhfYXVhSFN5ZjVQVUJhVVJXYk5uMFd6SHRrUnNRZ0pyOHd3Yi1VRkV3RjMzN29hNEwwNmlKeVZMdGhfc3pGdWRSNGYtZ1g3NFBKZWdwQzdHSWpYSEFtS1V5S1E?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Efpeglenatide (Eppe) now prescribable in South Korea (launch Oct 29, 2026)",
+      "angle": "Status-only news. At most one 'what's confirmed?' fact Short, no long-form (Lane P is paused). Low priority for a US/UK audience.",
+      "keywords": [
+        "efpeglenatide",
+        "Eppe Hanmi",
+        "new GLP-1 Korea"
+      ],
+      "stage": "emerging",
+      "momentum": 40,
+      "predicted_peak": "1–3 days",
+      "why_now": "Korean outlets covered the launch Oct 28–29. Status titles perform poorly for us.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "KED Global, Oct 28",
+          "signal": "Hanmi launches Eppe",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE41VlF5ME9La2FLZ09Xc0tXcmR5MGN2cEJZVWdBTEFGWHRzcXVxZjg1a2F0bnNyRU5SLUNpN0VWNzFoWFhGQjdwUnBjR1NhZG9EWi12cFZhT3NKM044YUVmVGFaRll6Q29oTnhYZGNB?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "REJECT: '$300-a-year GLP-1 telehealth option' (Medical Daily, Oct 29)",
+      "angle": "Do not cover. It's a cost and online-access topic that's banned in our lanes and risks steering people toward non-standard sourcing.",
+      "keywords": [
+        "cheap GLP-1 telehealth"
+      ],
+      "stage": "rising",
+      "momentum": 5,
+      "predicted_peak": "n/a",
+      "why_now": "Rejected on the cost and sourcing guardrails.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Medical Daily, Oct 29",
+          "signal": "Telehealth pricing piece",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxObG9OWlhRcTY1VUNOb3owR0NVbGRUZTBuV1J0U0pxaWtDbE9OTUVBWnpWRWRYaFJTaWhCNFAtS3k2NEZtQ1pXRlFRcVkxYWdOQkZGNVVTMkU1bV9fWW5rb0lyeGN4a210c3ludWREd2JpbDQzbHFfamZsWXdnNnhFZ293?oc=5"
+        }
+      ],
+      "safety": "reject",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "REJECT: 'Microdosing tirzepatide' (Vogue-referencing SEO pages, Oct 26)",
+      "angle": "Do not cover. Microdosing and self-titration protocols are on the never-cover list.",
+      "keywords": [
+        "microdosing tirzepatide"
+      ],
+      "stage": "rising",
+      "momentum": 5,
+      "predicted_peak": "n/a",
+      "why_now": "Still showing up in feeds; rejected on the guardrails.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "ΕΜΥ SEO page, Oct 26",
+          "signal": "Microdosing content",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdkd2QnBPVmFIMDlOWWhob1N3RC14TE5pMjhjbWxENkJfQ053MVBGWUh1OHZPcG43X1hsZWJWMURaSDJqUkFacURPeDhveDhrcDNFWnRocVpXRVBLLUN3VmlrendQLXV6bU1GRWlHbm5jVVFLOHBBWktSSGUtZXN0UFAzRUJOZ3o3NC1NOHAyZmdmdWZ2XzZiSldIV2VPXzBtUFFINA?oc=5"
+        }
+      ],
+      "safety": "reject",
+      "formats": [
+        "short"
+      ]
+    }
+  ]
+}
