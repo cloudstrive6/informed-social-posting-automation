@@ -1,0 +1,1239 @@
+{
+  "id": "L1-tirzepatide-and-hair-loss-how-common-she",
+  "date": "2026-10-30",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Tirzepatide and hair loss: how common shedding was in the trials, why it happens (telogen effluvium after fast weight loss), when it usually starts and grows back, what helps, and when to see a clinician or dermatologist",
+    "angle": "Same structure. Replace chapter (3) 'Med Sci (Basel) Oct 9, 2026 review' with: 'What do the 2026 reviews add?'. Use Gupta et al., Science Progress 2026 (PMC13100445): tirzepatide 5.4% vs placebo 0.9% in pooled trials, TE as the main pattern, typically reversible with improvement generally within 3–6 months after weight stabilises. Optionally add the Acta Diabetologica Oct 2026 review on trial vs real-world rates. Any observational relative risk gets 'linked to' plus absolute context, and the BMJ cohort is scoped to type 2 diabetes. Use the Med Sci (Basel) paper only if the scriptwriter can confirm it exists, with a working PubMed/MDPI URL, and quote it exactly.",
+    "working_title": "Tirzepatide Hair Loss: Does It Grow Back?",
+    "target_keyword": "tirzepatide hair loss",
+    "trend_stage": "evergreen",
+    "why": "Last open item in the Lane A queue (median about 158 watch minutes). Hair has proven demand (Instagram 142, YouTube 81 on day 1), the Oct 9 review gives a fresh hook, and it builds the suggested-video cluster with Protein and Strength. | fact-check: The topic is safe, useful and in-lane: Lane A, regrowth angle, red flags and the 'don't stop' line are all good. One problem: I couldn't confirm the 'Med Sci (Basel) systematic review, Oct 9, 2026'. Two targeted searches didn't find it. Don't build a chapter on a source that can't be confirmed. Verified alternatives:\n(a) Gupta AK et al., 'GLP-1 therapies and hair loss: a systematic review…', Science Progress, Apr 17, 2026 (PMC13100445). It reports tirzepatide 5.4% vs placebo 0.9% (pooled trial data). It says TE is 'typically reversible with improvements generally observed within 3-6 months following stabilization of weight', with shedding 1.5–3 months after starting or a dose increase. That last point is a timing statement only: no dosing talk.\n(b) Acta Diabetologica review, Oct 14, 2026 (Springer, s00592-026-02812-3). It notes that hair loss rates differ between trials and real-world settings.\n(c) BMJ cohort (bmjgroup press release). Scope it to type 2 diabetes, say 'linked to', and give the absolute risk.\nSURMOUNT-1 alopecia rates per arm vs placebo must be copied from the NEJM supplement or the Zepbound label. Mention the sex difference only if that source states it. Regrowth timing: say 'often within about 3–6 months after weight stabilises', as an average, not a promise. Kidney caveat on protein. Iron/thyroid/vitamin D only as 'ask your doctor about checking'. No supplement promises. Title is fine: 41 chars, drug first, and the first sentence answers it.",
+    "pillar": "get-the-most"
+  },
+  "status": "failed",
+  "package": {},
+  "media": {},
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-10-30T18:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-10-30T02:47:39.934Z",
+  "script": {
+    "working_title": "Tirzepatide Hair Loss: Does It Grow Back?",
+    "target_keyword": "tirzepatide hair loss",
+    "hook_pattern": "Visceral 'you' scenario (hair in the shower drain) that answers the title in the first sentence, then an open loop: a popular hair fix the FDA has flagged because of lab tests, paid off in the 'What helps' chapter",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "Does tirzepatide hair loss grow back?",
+        "narration": "If your hair is shedding on tirzepatide, here's the short answer. For most people, it's a temporary shed, and the hair grows back.",
+        "on_screen_text": "Usually temporary. Usually regrows.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "relieved woman holding hairbrush, morning light"
+        },
+        "retention_device": "Direct answer to the title in the first sentence (search payoff)",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "Does tirzepatide hair loss grow back?",
+        "narration": "Picture the moment. You step out of the shower and there's more hair in the drain than you remember. You run a hand through your hair, and a few more strands come away.",
+        "on_screen_text": "More hair than usual",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "worried woman looking at shower drain"
+        },
+        "retention_device": "Visceral 'you' scenario the viewer recognises",
+        "source_ids": []
+      },
+      {
+        "id": "s03",
+        "section": "Does tirzepatide hair loss grow back?",
+        "narration": "If your stomach drops at that, you're not alone. It's an unsettling thing to notice, and it isn't your fault.",
+        "on_screen_text": "Not your fault",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friend comforting worried person at sink"
+        },
+        "retention_device": "Name and validate the feeling",
+        "source_ids": []
+      },
+      {
+        "id": "s04",
+        "section": "Does tirzepatide hair loss grow back?",
+        "narration": "In the tirzepatide trials, hair loss was reported more often than on placebo, but only by a small minority. And with tirzepatide, the pattern reviewers link it to most often is a temporary shed called telogen effluvium.",
+        "on_screen_text": "Telogen effluvium: a temporary shed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly scientist pointing at hair diagram"
+        },
+        "retention_device": "Concrete proof point backing the promise",
+        "source_ids": [
+          "zepbound_label",
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "Does tirzepatide hair loss grow back?",
+        "narration": "By the end of this video, you'll know why it starts months after you begin, when it usually settles, what actually helps, and the signs that mean it's time to see a doctor.",
+        "on_screen_text": "What you'll know by the end",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Why it starts months later",
+            "When it usually settles",
+            "What actually helps",
+            "When to see a doctor"
+          ],
+          "stock_query": "checklist on clipboard, hopeful mood"
+        },
+        "retention_device": "Promise of what the viewer gets",
+        "source_ids": []
+      },
+      {
+        "id": "s06",
+        "section": "Does tirzepatide hair loss grow back?",
+        "narration": "Plus, one popular hair fix that the FDA has flagged. Not because of your hair, but because of what it can do to your blood tests.",
+        "on_screen_text": "A hair fix the FDA flagged",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious mascot holding mystery supplement bottle"
+        },
+        "retention_device": "Open loop paid off in the 'What helps' chapter",
+        "source_ids": [
+          "fda_biotin"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "Does tirzepatide hair loss grow back?",
+        "narration": "Quick note: this is general information, not personal advice. Talk to your doctor or prescriber about whether tirzepatide is right for you.",
+        "on_screen_text": "Not personal advice",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly doctor talking with patient"
+        },
+        "retention_device": "Trust signal and safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s08",
+        "section": "Does tirzepatide hair loss grow back?",
+        "narration": "Now, imagine Dana. She's forty-seven, a few months into tirzepatide, feeling better than she has in years. Then her ponytail starts to feel thinner. Let's answer her questions, one at a time.",
+        "on_screen_text": "Imagine Dana, 47",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman touching thinner ponytail, thoughtful"
+        },
+        "retention_device": "Hypothetical character thread introduced, returns at payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s09",
+        "section": "How common is hair loss on tirzepatide?",
+        "narration": "So first: how common is hair loss on tirzepatide?",
+        "on_screen_text": "How common is it?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, magnifying glass over hair"
+        },
+        "retention_device": "Chapter named after a searched question",
+        "source_ids": []
+      },
+      {
+        "id": "s10",
+        "section": "How common is hair loss on tirzepatide?",
+        "narration": "Start with the official prescribing information for Zepbound, which is tirzepatide for weight management. In its placebo-controlled trials, hair loss was reported by about four to five in every hundred people on tirzepatide, depending on the dose.",
+        "on_screen_text": "About 4–5 in 100 on tirzepatide",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "4–5%",
+          "stat_label": "Hair loss, tirzepatide by dose, label trials",
+          "stock_query": "big number card, calm blue"
+        },
+        "retention_device": "Concrete number",
+        "source_ids": [
+          "zepbound_label"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "How common is hair loss on tirzepatide?",
+        "narration": "On placebo, it was about one in a hundred.",
+        "on_screen_text": "About 1 in 100 on placebo",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "1%",
+          "stat_label": "Hair loss on placebo, same label trials",
+          "stock_query": "big number card, calm green"
+        },
+        "retention_device": "Comparison for context",
+        "source_ids": [
+          "zepbound_label"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "How common is hair loss on tirzepatide?",
+        "narration": "Make that human. Picture a fitness class of twenty people, all taking tirzepatide. On those numbers, about one of them might report hair loss. The other nineteen wouldn't. And on placebo, it would be closer to one in a hundred.",
+        "on_screen_text": "About 1 in a class of 20",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cheerful fitness class of twenty people"
+        },
+        "retention_device": "Humanised number",
+        "source_ids": [
+          "zepbound_label"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "How common is hair loss on tirzepatide?",
+        "narration": "But look again at that placebo number. It isn't zero. People on no medicine at all shed hair too, from stress, illness, or a hard few months.",
+        "on_screen_text": "Placebo isn't zero",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stressed person at desk, gentle tone"
+        },
+        "retention_device": "'But' pivot, surprising detail",
+        "source_ids": [
+          "zepbound_label",
+          "aad_shedding"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "How common is hair loss on tirzepatide?",
+        "narration": "So why would a weight-loss medicine affect hair at all? Here's the twist: the leading explanation isn't the drug itself. It's the speed of the weight loss.",
+        "on_screen_text": "Likely about speed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "speedometer next to curious mascot"
+        },
+        "retention_device": "Re-hook: question plus twist",
+        "source_ids": [
+          "gupta2026",
+          "zepbound_label"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "How common is hair loss on tirzepatide?",
+        "narration": "In the SURMOUNT-one trial, adults with obesity, or overweight plus a weight-related condition, and without diabetes, lost on average between fifteen and about twenty-one percent of their body weight over seventy-two weeks, depending on the dose.",
+        "on_screen_text": "SURMOUNT-1: 72 weeks, no diabetes",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "15.0–20.9%",
+          "stat_label": "Average weight loss, tirzepatide by dose, 72 weeks",
+          "stock_query": "big number card, scale icon"
+        },
+        "retention_device": "Concrete stat sets up the mechanism",
+        "source_ids": [
+          "surmount1"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "How common is hair loss on tirzepatide?",
+        "narration": "That's counting everyone who started treatment. On placebo, the average was about three percent.",
+        "on_screen_text": "Placebo: 3.1% average",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "3.1%",
+          "stat_label": "Average weight loss on placebo, 72 weeks",
+          "stock_query": "big number card, placebo pill"
+        },
+        "retention_device": "Comparison stat",
+        "source_ids": [
+          "surmount1"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "How common is hair loss on tirzepatide?",
+        "narration": "That's a lot of change, fast, for a body. And your hair follicles keep a record of it.",
+        "on_screen_text": "Follicles keep a record",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "tiny hair follicles writing in notebook"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s18",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "Why does hair shed after weight loss?",
+        "on_screen_text": "Why does it happen?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, hair cycle wheel"
+        },
+        "retention_device": "Chapter named after a searched question",
+        "source_ids": []
+      },
+      {
+        "id": "s19",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "Every hair grows from a follicle that cycles through phases. A long growing phase. A short transition. Then a resting phase, after which the old hair falls out.",
+        "on_screen_text": "Grow, transition, rest, shed",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Growing phase (long)",
+            "Transition (short)",
+            "Resting phase",
+            "Old hair sheds"
+          ],
+          "stock_query": "cartoon hair cycle wheel"
+        },
+        "retention_device": "Simple explainer, new visual",
+        "source_ids": [
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "Normally, about eighty-five percent of the hairs on your scalp are in the growing phase at any one time.",
+        "on_screen_text": "Most hairs are growing",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "About 85%",
+          "stat_label": "Scalp hairs normally in growing phase",
+          "stock_query": "big number card, sprouting hairs"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "That's why the American Academy of Dermatology says shedding about fifty to a hundred hairs a day is normal. You lose them, and you never notice.",
+        "on_screen_text": "50–100 a day is normal",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "50–100",
+          "stat_label": "Hairs shed per day: normal (AAD)",
+          "stock_query": "relaxed person brushing hair"
+        },
+        "retention_device": "Reassuring fact",
+        "source_ids": [
+          "aad_shedding"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "But a big shock to the body, like a serious illness, surgery, childbirth, or losing a lot of weight, can push many follicles into the resting phase at the same time.",
+        "on_screen_text": "A shock sends follicles to rest",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "many follicles lying down to nap"
+        },
+        "retention_device": "'But' pivot to the mechanism",
+        "source_ids": [
+          "statpearls_te",
+          "aad_shedding"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "In fact, the Academy lists losing twenty pounds or more among the common triggers of excess shedding.",
+        "on_screen_text": "Losing 20+ lb: a known trigger",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scale with friendly arrow down"
+        },
+        "retention_device": "Specific number",
+        "source_ids": [
+          "aad_shedding"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "Now here's where it gets strange. Nothing falls out right away. Those follicles rest for a few months, then let go together. So the shed seems to come out of nowhere.",
+        "on_screen_text": "The shed comes months later",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar pages flipping, surprised mascot"
+        },
+        "retention_device": "'Here's where it gets strange' re-hook, pays off 'why months later'",
+        "source_ids": [
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "And here's a reassuring clue. A hair shed this way often has a tiny pale bulb at the root. That's a resting hair, sometimes called a club hair. It's not a sign the follicle is gone.",
+        "on_screen_text": "Club hair: a resting hair",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "single hair with pale bulb, magnified"
+        },
+        "retention_device": "Surprising, relatable detail",
+        "source_ids": [
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "Telogen effluvium doesn't scar the follicle. Therefore, in most cases, the follicle simply starts a new growing phase. A new hair is already on its way.",
+        "on_screen_text": "Non-scarring: new hair coming",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "tiny new hair sprouting, happy"
+        },
+        "retention_device": "Relief beat",
+        "source_ids": [
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "So does tirzepatide attack hair follicles directly? The review found no human studies showing that. It says tirzepatide was most often linked to telogen effluvium, with rapid weight loss a likely contributor.",
+        "on_screen_text": "Tirzepatide: most often telogen effluvium",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Tirzepatide attacks hair follicles",
+          "fact": "No human studies show a direct effect; tirzepatide is most often linked to telogen effluvium",
+          "stock_query": "myth versus fact card"
+        },
+        "retention_device": "Myth correction",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "For Dana, that means the thinner ponytail may be an echo of the fast weight loss a few months back. Her doctor is the one who can confirm it.",
+        "on_screen_text": "An echo, not damage",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana talking with friendly doctor"
+        },
+        "retention_device": "Return to the character thread",
+        "source_ids": []
+      },
+      {
+        "id": "s29",
+        "section": "Why does hair shed after weight loss?",
+        "narration": "But how long does the echo last? This is where the twenty twenty-six research earns its place.",
+        "on_screen_text": "How long does it last?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hourglass beside curious mascot"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s30",
+        "section": "What do the 2026 reviews add?",
+        "narration": "What do the twenty twenty-six reviews add?",
+        "on_screen_text": "What the 2026 research adds",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, stack of journals"
+        },
+        "retention_device": "Chapter named after a question",
+        "source_ids": []
+      },
+      {
+        "id": "s31",
+        "section": "What do the 2026 reviews add?",
+        "narration": "In April twenty twenty-six, a team led by Gupta published a systematic review of hair loss with GLP-one medicines in the journal Science Progress.",
+        "on_screen_text": "Systematic review, April 2026",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "researchers sorting stack of studies"
+        },
+        "retention_device": "Micro-story about the study",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "What do the 2026 reviews add?",
+        "narration": "Across the tirzepatide weight-loss trials it reviewed, hair loss was reported in about five in every hundred people on tirzepatide, versus about one in a hundred on placebo.",
+        "on_screen_text": "About 5 in 100 vs 1 in 100",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two groups of people side by side"
+        },
+        "retention_device": "Concrete comparison",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "What do the 2026 reviews add?",
+        "narration": "Five point four percent. Versus zero point nine percent.",
+        "on_screen_text": "5.4% vs 0.9%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "5.4% vs 0.9%",
+          "stat_label": "Hair loss: tirzepatide vs placebo, weight-loss trials (review)",
+          "stock_query": "big number comparison card"
+        },
+        "retention_device": "Big stat pill",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "What do the 2026 reviews add?",
+        "narration": "That's an absolute difference of about four and a half percentage points. Real, worth knowing about, but small.",
+        "on_screen_text": "Real, but small",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "small gap between two bars, calm"
+        },
+        "retention_device": "Absolute context for the comparison",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "What do the 2026 reviews add?",
+        "narration": "Then the part that matters most. The review calls telogen effluvium typically reversible, with improvement generally seen within three to six months after weight stabilises.",
+        "on_screen_text": "Typically reversible",
+        "visual": {
+          "kind": "quote",
+          "quote": "typically reversible with improvements generally observed within 3-6 months following stabilization of weight",
+          "attribution": "Gupta et al., Science Progress, 2026",
+          "stock_query": "quote card, hopeful sunrise"
+        },
+        "retention_device": "Payoff of the main question, partial",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "What do the 2026 reviews add?",
+        "narration": "Notice where that clock starts. Not the day you begin the medicine. Not the day you spot hair in the drain. It starts when your weight levels off.",
+        "on_screen_text": "Clock starts when weight settles",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stopwatch starting as scale levels off"
+        },
+        "retention_device": "Reframe that changes how the viewer reads the wait",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "What do the 2026 reviews add?",
+        "narration": "That one detail changes how you read the wait.",
+        "on_screen_text": "It changes the wait",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person nodding with lightbulb moment"
+        },
+        "retention_device": "Short punchy beat, rhythm change",
+        "source_ids": []
+      },
+      {
+        "id": "s38",
+        "section": "What do the 2026 reviews add?",
+        "narration": "The review also notes that shedding may start about two to three months after beginning treatment.",
+        "on_screen_text": "Starts about 2–3 months in",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar with gentle markers"
+        },
+        "retention_device": "New concrete fact",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "What do the 2026 reviews add?",
+        "narration": "That's the hair cycle in action. The trigger comes first. The shed shows up months later. Which is exactly why it feels so random.",
+        "on_screen_text": "Trigger first, shed later",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "domino chain with delay, playful"
+        },
+        "retention_device": "Payoff of the 'why months later' loop",
+        "source_ids": [
+          "gupta2026",
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "When does shedding start and stop?",
+        "narration": "So when does shedding start, and when does it stop?",
+        "on_screen_text": "Start and stop",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, timeline ribbon"
+        },
+        "retention_device": "Chapter named after a searched question",
+        "source_ids": []
+      },
+      {
+        "id": "s41",
+        "section": "When does shedding start and stop?",
+        "narration": "Let's put Dana on a timeline.",
+        "on_screen_text": "Dana's timeline",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fast weight loss",
+            "About 2–3 months: shedding may start",
+            "Weight stabilises",
+            "3–6 months on: improvement, typically",
+            "6–9 months: fullness often returns"
+          ],
+          "stock_query": "timeline with Dana walking along it"
+        },
+        "retention_device": "Visual roadmap",
+        "source_ids": [
+          "gupta2026",
+          "aad_shedding"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "When does shedding start and stop?",
+        "narration": "Step one: a stretch of fast weight loss. About two to three months after starting treatment, shedding may appear.",
+        "on_screen_text": "Step 1: shedding may appear",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana noticing hair on pillow, calm"
+        },
+        "retention_device": "Stepwise story",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "When does shedding start and stop?",
+        "narration": "Step two: while weight keeps dropping quickly, shedding can carry on. Frustrating, yes, but it fits the biology.",
+        "on_screen_text": "Step 2: it can carry on",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana sighing, friend reassuring"
+        },
+        "retention_device": "Validate frustration",
+        "source_ids": [
+          "gupta2026",
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "When does shedding start and stop?",
+        "narration": "Step three: weight stabilises. Improvement is generally seen within about three to six months after that. That's a typical pattern, not a promise.",
+        "on_screen_text": "Step 3: improvement, typically",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana smiling at mirror, hopeful"
+        },
+        "retention_device": "Relief beat",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "When does shedding start and stop?",
+        "narration": "Step four: fullness. New hairs start out short, so thickness takes longer to return. The American Academy of Dermatology says most people's hair regains its normal fullness within about six to nine months, once the body readjusts.",
+        "on_screen_text": "Step 4: fullness in 6–9 months",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "short new hairs growing longer, cheerful"
+        },
+        "retention_device": "Concrete timeframe",
+        "source_ids": [
+          "aad_shedding"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "When does shedding start and stop?",
+        "narration": "Think of a lawn after a dry summer. The roots are still there. The new blades just need a season to fill in.",
+        "on_screen_text": "Roots fine, refill takes time",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "lawn turning green again, sunny"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": []
+      },
+      {
+        "id": "s47",
+        "section": "When does shedding start and stop?",
+        "narration": "So if waiting is most of the answer, is there anything you can actually do? Yes. And that popular fix I mentioned may cause a problem you'd never guess.",
+        "on_screen_text": "What can you actually do?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious mascot rolling up sleeves"
+        },
+        "retention_device": "Re-hook reviving the FDA open loop",
+        "source_ids": []
+      },
+      {
+        "id": "s48",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "What actually helps with hair loss on tirzepatide?",
+        "on_screen_text": "What helps",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, toolbox with heart"
+        },
+        "retention_device": "Chapter named after a searched question",
+        "source_ids": []
+      },
+      {
+        "id": "s49",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "First, and most important: don't stop or change your medicine on your own because of shedding. Bring it to your prescriber. They can weigh it against everything else the medicine is doing for you.",
+        "on_screen_text": "Don't stop on your own",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient and prescriber talking warmly"
+        },
+        "retention_device": "Agency plus safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s50",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "Second, eat enough. Very low calorie or very low protein eating can trigger shedding by itself. So a quieter appetite shouldn't turn into a crash diet.",
+        "on_screen_text": "Quiet appetite, not crash diet",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "balanced plate with protein, friendly"
+        },
+        "retention_device": "Practical step with a reason",
+        "source_ids": [
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "Build meals around a protein source, and add vegetables, fruit and whole grains. Our own tip: eat the protein first, while your appetite is still there.",
+        "on_screen_text": "Our tip: protein first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "salmon, beans and greens on plate"
+        },
+        "retention_device": "Concrete everyday tip",
+        "source_ids": []
+      },
+      {
+        "id": "s52",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "If you have kidney disease, ask your doctor how much protein is right for you.",
+        "on_screen_text": "Kidney disease? Ask first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly kidney mascot with doctor"
+        },
+        "retention_device": "Safety caveat",
+        "source_ids": []
+      },
+      {
+        "id": "s53",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "Third, ask your doctor whether it's worth checking your iron and thyroid. Low iron and thyroid problems can each cause shedding on their own, and both can be treated.",
+        "on_screen_text": "Ask about iron and thyroid",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Iron",
+            "Thyroid"
+          ],
+          "stock_query": "doctor holding friendly checklist"
+        },
+        "retention_device": "Question to bring to the doctor",
+        "source_ids": [
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "Fourth, be gentle while it sheds. Looser styles, a wide-tooth comb, less high heat. It won't stop a shed, but there's no reason to add strain.",
+        "on_screen_text": "Be gentle with your hair",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "wide-tooth comb and loose braid"
+        },
+        "retention_device": "Simple, kind tip",
+        "source_ids": []
+      },
+      {
+        "id": "s55",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "Now, the fix I promised to explain. Many hair, skin and nail supplements are sold with high doses of biotin.",
+        "on_screen_text": "The fix: biotin",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "gummy vitamin jar with question mark"
+        },
+        "retention_device": "Payoff of the opening open loop",
+        "source_ids": [
+          "fda_biotin"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "The FDA warns that biotin can interfere with certain lab tests and cause incorrect results.",
+        "on_screen_text": "Biotin can skew lab tests",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Hair gummies are harmless extras",
+          "fact": "FDA: biotin can cause incorrect lab results",
+          "stock_query": "lab test tube with confused arrow"
+        },
+        "retention_device": "Surprising fact",
+        "source_ids": [
+          "fda_biotin"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "One of those is troponin, a blood test that helps doctors diagnose heart attacks. The FDA has received reports of biotin causing falsely low troponin results. That's a test you'd want to be accurate.",
+        "on_screen_text": "Troponin: falsely low results reported",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm doctor reading lab report"
+        },
+        "retention_device": "Concrete stakes, calm tone",
+        "source_ids": [
+          "fda_biotin"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "The FDA notes that biotin is often found in dietary supplements, and some people don't realise they're taking it. So mention any supplements you take, including hair, skin and nail gummies, to your doctor, especially before blood tests. A two-second conversation solves it.",
+        "on_screen_text": "Tell your doctor about biotin",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient mentioning vitamins to doctor"
+        },
+        "retention_device": "Agency: easy fix",
+        "source_ids": [
+          "fda_biotin"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "And if shedding is really weighing on you, a dermatologist can confirm what kind of hair loss it is and talk you through options that fit you.",
+        "on_screen_text": "A dermatologist can help",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly dermatologist examining scalp"
+        },
+        "retention_device": "Empathy and next step",
+        "source_ids": []
+      },
+      {
+        "id": "s60",
+        "section": "What helps tirzepatide hair loss?",
+        "narration": "But sometimes, hair loss isn't the usual shed at all. Here's how to tell the difference.",
+        "on_screen_text": "Not always the usual shed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over scalp, curious"
+        },
+        "retention_device": "Re-hook before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s61",
+        "section": "When should you see a doctor?",
+        "narration": "When should you see a doctor about hair loss?",
+        "on_screen_text": "When to get checked",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, doctor's door"
+        },
+        "retention_device": "Chapter named after a searched question",
+        "source_ids": []
+      },
+      {
+        "id": "s62",
+        "section": "When should you see a doctor?",
+        "narration": "Telogen effluvium has a typical look. Thinning spread across the whole scalp, not distinct bald patches.",
+        "on_screen_text": "Diffuse thinning, not patches",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scalp diagram, even thinning"
+        },
+        "retention_device": "Clear rule of thumb",
+        "source_ids": [
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "When should you see a doctor?",
+        "narration": "So see a doctor or dermatologist if you notice round or patchy bald spots, or a scalp that's itchy, sore, red or scaly. Those can point to other causes. Or if the thinning is concentrated at your hairline, temples or crown rather than spread out. That can be pattern hair loss, which a dermatologist can assess and treat.",
+        "on_screen_text": "Patches or scalp symptoms",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Round or patchy bald spots",
+            "Itchy, sore, red or scaly scalp",
+            "Thinning at hairline, temples or crown"
+          ],
+          "stock_query": "gentle warning sign with doctor"
+        },
+        "retention_device": "Practical red flags",
+        "source_ids": [
+          "statpearls_te",
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "When should you see a doctor?",
+        "narration": "Also check in if heavy shedding lasts longer than about six months. Doctors call that chronic telogen effluvium, and it deserves a proper look for other causes.",
+        "on_screen_text": "Shedding beyond 6 months",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar with six months circled"
+        },
+        "retention_device": "New fact with a timeframe",
+        "source_ids": [
+          "statpearls_te"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "When should you see a doctor?",
+        "narration": "And if hair loss comes with other changes, like unusual tiredness or feeling generally unwell, mention those too.",
+        "on_screen_text": "Mention other changes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "tired person chatting with doctor"
+        },
+        "retention_device": "Viewer self-check",
+        "source_ids": []
+      },
+      {
+        "id": "s66",
+        "section": "When should you see a doctor?",
+        "narration": "None of these signs mean something terrible. They mean it's worth a closer look, rather than waiting it out.",
+        "on_screen_text": "Worth a closer look",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi giving thumbs up near clinic"
+        },
+        "retention_device": "Empowerment, not fear",
+        "source_ids": []
+      },
+      {
+        "id": "s67",
+        "section": "So, does the hair grow back?",
+        "narration": "So, does the hair grow back? Let's finish Dana's story.",
+        "on_screen_text": "Does it grow back?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, sprouting hair and sun"
+        },
+        "retention_device": "Main loop payoff begins",
+        "source_ids": []
+      },
+      {
+        "id": "s68",
+        "section": "So, does the hair grow back?",
+        "narration": "Back to Dana. Her shedding started a few months in, while her weight was coming down fastest. That timing fits telogen effluvium.",
+        "on_screen_text": "Timing fits the pattern",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana on timeline, thoughtful"
+        },
+        "retention_device": "Character thread returns",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "So, does the hair grow back?",
+        "narration": "So she talks to her prescriber instead of stopping. They check her iron and thyroid. She builds protein-first meals, and she checks with her doctor before trying any biotin gummy.",
+        "on_screen_text": "Dana's plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana cooking protein meal, confident"
+        },
+        "retention_device": "Story models the takeaways",
+        "source_ids": []
+      },
+      {
+        "id": "s70",
+        "section": "So, does the hair grow back?",
+        "narration": "Her weight levels off. Over the following months, the drain gets quieter, and short new hairs show up along her hairline. That's the common pattern, not a guarantee.",
+        "on_screen_text": "Quieter drain, new hairs",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana smiling at short new hairs"
+        },
+        "retention_device": "Emotional relief",
+        "source_ids": [
+          "gupta2026",
+          "aad_shedding"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "So, does the hair grow back?",
+        "narration": "So the answer to the question you came in with: for most people, tirzepatide shedding is temporary, and the hair grows back.",
+        "on_screen_text": "Temporary for most",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi cheering a small win"
+        },
+        "retention_device": "Full payoff of the main loop",
+        "source_ids": [
+          "gupta2026"
+        ]
+      },
+      {
+        "id": "s72",
+        "section": "So, does the hair grow back?",
+        "narration": "Your checklist. Don't stop on your own; talk to your prescriber. Eat enough, protein first. Ask about iron and thyroid checks. Tell your doctor about biotin. And know the red flags.",
+        "on_screen_text": "Your hair checklist",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Talk to your prescriber, don't stop alone",
+            "Eat enough, protein first",
+            "Ask about iron and thyroid",
+            "Tell your doctor about biotin",
+            "Know the red flags"
+          ],
+          "stock_query": "checklist with green ticks, hopeful"
+        },
+        "retention_device": "Practical takeaway checklist",
+        "source_ids": [
+          "statpearls_te",
+          "fda_biotin"
+        ]
+      },
+      {
+        "id": "s73",
+        "section": "So, does the hair grow back?",
+        "narration": "If this helped, subscribe. We answer one practical tirzepatide question at a time, straight from the evidence, so the next question you have is probably already on our list.",
+        "on_screen_text": "One question at a time",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly subscribe bell with mascot"
+        },
+        "retention_device": "Single subscribe ask tied to a specific benefit, after the payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s74",
+        "section": "So, does the hair grow back?",
+        "narration": "Remember, this isn't personal advice. Don't stop or change your medicine on your own, and talk to your doctor or prescriber about whether tirzepatide is right for you.",
+        "on_screen_text": "Not personal advice",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient shaking hands"
+        },
+        "retention_device": "Safety close",
+        "source_ids": []
+      },
+      {
+        "id": "s75",
+        "section": "So, does the hair grow back?",
+        "narration": "There's a video I'd watch next, linked in the description.",
+        "on_screen_text": "Watch next: in description",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi pointing down to description"
+        },
+        "retention_device": "Watch-next prompt for session time",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "gupta2026",
+        "title": "GLP-1 therapies and hair loss: A systematic review of current evidence and implications for counseling",
+        "publisher": "Science Progress (Gupta AK, Teasell EM, Economopoulos V, Mirmirani P)",
+        "year": "2026 (17 Apr 2026; 109(2):00368504261444578)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13100445/"
+      },
+      {
+        "id": "zepbound_label",
+        "title": "ZEPBOUND (tirzepatide) injection: Prescribing Information",
+        "publisher": "Eli Lilly and Company / U.S. FDA",
+        "year": "Current label (accessed 2026-10-30)",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/217806s042lbl.pdf"
+      },
+      {
+        "id": "surmount1",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1)",
+        "publisher": "New England Journal of Medicine (Jastreboff AM et al.), 387(3):205-216",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35658024/"
+      },
+      {
+        "id": "statpearls_te",
+        "title": "Telogen Effluvium",
+        "publisher": "StatPearls, NCBI Bookshelf (Hughes EC, Syed HA, Saleh D)",
+        "year": "2024 (updated 1 May 2024)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK430848/"
+      },
+      {
+        "id": "aad_shedding",
+        "title": "Do you have hair loss or hair shedding?",
+        "publisher": "American Academy of Dermatology",
+        "year": "n.d. (accessed 2026-10-30)",
+        "url": "https://www.aad.org/public/diseases/hair-loss/insider/shedding"
+      },
+      {
+        "id": "fda_biotin",
+        "title": "Biotin Interference with Troponin Lab Tests - Assays Subject to Biotin Interference",
+        "publisher": "U.S. Food and Drug Administration",
+        "year": "2022 (page dated 21 Jun 2022)",
+        "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/biotin-interference-troponin-lab-tests-assays-subject-biotin-interference"
+      }
+    ],
+    "cta": "If this helped, subscribe: we answer one practical tirzepatide question at a time, straight from the evidence. There's a video I'd watch next, linked in the description. Not personal advice. Talk to your doctor or prescriber about whether it's right for you."
+  },
+  "factcheck": {
+    "verdict": "REVISE",
+    "summary": "The science is solid, and the script is safe and well structured. I checked the key numbers against the sources and they match: Gupta 2026 (5.4% [119/2183] vs 0.9% [22/2221]; the exact \"typically reversible…3-6 months following stabilization of weight\" quote; onset about 2–3 months; \"no studies in humans\" showing a direct effect on follicles), the Zepbound label (alopecia 5%/4%/5% by dose vs 1% on placebo), SURMOUNT-1 (15.0–20.9% vs 3.1% at 72 weeks), StatPearls (about 85% of hairs in the growing phase, club hairs, non-scarring, chronic after more than 6 months) and the AAD (50–100 hairs a day, losing 20+ lb as a trigger, fullness in 6–9 months). The safety lines and the \"don't stop on your own\" line are both present. One thing needs fixing before this ships. In s58, and partly s55, the script credits the FDA troponin page with claims it doesn't make: that people may not realise they're taking biotin, and that hair, skin and nail supplements contain it. I checked the page and neither claim is on it. Crediting a source with something it didn't say has caused a hold before (S2 10-24). The other fixes are wording and scope polish.",
+    "issues": [
+      {
+        "location": "s58",
+        "claim": "The FDA notes that biotin is often found in dietary supplements, and some people don't realise they're taking it.",
+        "problem": "The cited FDA troponin page (21 Jun 2022) says biotin is 'often found in dietary supplements' but says nothing about people not realising they take it. This credits FDA with a claim its page doesn't make.",
+        "severity": "major",
+        "fix": "Replace the narration with: \"The FDA notes that biotin is often found in dietary supplements. So mention any supplements you take, including hair, skin and nail gummies, to your doctor, especially before blood tests. A two-second conversation solves it.\""
+      },
+      {
+        "location": "s55",
+        "claim": "Many hair, skin and nail supplements are sold with high doses of biotin. (source: fda_biotin)",
+        "problem": "The cited FDA troponin page never mentions hair, skin or nail supplements. Its only wording is 'often found in dietary supplements'. The source tag doesn't support the line.",
+        "severity": "major",
+        "fix": "Replace the narration with: \"Now, the fix I promised to explain. Biotin. It's a vitamin that's often found in dietary supplements, and it's a popular pick for hair.\" Keep on_screen_text as \"The fix: biotin\" and keep source_ids [\"fda_biotin\"]."
+      },
+      {
+        "location": "s27",
+        "claim": "It says tirzepatide was most often linked to telogen effluvium, with rapid weight loss a likely contributor.",
+        "problem": "The review says tirzepatide is 'particularly associated with TE'. 'Most often' is a slightly stronger, quantitative paraphrase. The myth_fact card repeats it.",
+        "severity": "minor",
+        "fix": "Change the narration to: \"It says tirzepatide was particularly linked to telogen effluvium, with rapid weight loss a likely contributor.\" Change on_screen_text to \"Tirzepatide: particularly linked to telogen effluvium\" and the myth_fact fact to \"No human studies show a direct effect; tirzepatide is particularly linked to telogen effluvium\". In s04, change \"the pattern reviewers link it to most often\" to \"the pattern reviewers link it to\"."
+      },
+      {
+        "location": "s12",
+        "claim": "Picture a fitness class of twenty people… about one of them might report hair loss… And on placebo, it would be closer to one in a hundred.",
+        "problem": "The class-of-20 frame mixes awkwardly with 'one in a hundred'. It also leaves out a label fact that matters to this audience and to Dana: hair loss was reported more often in women (7.1%) than in men (0.5%) on tirzepatide.",
+        "severity": "minor",
+        "fix": "Change the narration to: \"Make that human. Picture a fitness class of twenty people, all taking tirzepatide. On those numbers, about one of them might report hair loss. The other nineteen wouldn't. One more detail from the label: it was reported more often in women than in men.\" Add an on-screen line, \"Reported more often in women (label)\", with source_ids [\"zepbound_label\"]."
+      },
+      {
+        "location": "s14",
+        "claim": "The leading explanation isn't the drug itself. It's the speed of the weight loss.",
+        "problem": "The review says no human studies show a direct effect on follicles and names rapid weight loss as a contributor. 'Isn't the drug itself' sounds more settled than that.",
+        "severity": "minor",
+        "fix": "Change the narration to: \"So why would a weight-loss medicine affect hair at all? Here's the twist: there's no human evidence the drug acts on hair directly. The leading explanation is the speed of the weight loss.\""
+      },
+      {
+        "location": "s21",
+        "claim": "That's why the American Academy of Dermatology says shedding about fifty to a hundred hairs a day is normal.",
+        "problem": "'That's why' links the 85% growing-phase figure to the AAD's number as cause and effect. The AAD doesn't make that link.",
+        "severity": "minor",
+        "fix": "Change the narration to: \"And the American Academy of Dermatology says shedding about fifty to a hundred hairs a day is normal. You lose them, and you never notice.\""
+      },
+      {
+        "location": "s45",
+        "claim": "The American Academy of Dermatology says most people's hair regains its normal fullness within about six to nine months",
+        "problem": "The AAD says hair 'tends to' regain its normal fullness within six to nine months. 'Most people's' adds a proportion the source doesn't give.",
+        "severity": "minor",
+        "fix": "Change to: \"The American Academy of Dermatology says that once the body readjusts, hair tends to regain its normal fullness within about six to nine months.\""
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "gupta2026",
+        "title": "GLP-1 therapies and hair loss: A systematic review of current evidence and implications for counseling",
+        "publisher": "Science Progress (Gupta AK, Teasell EM, Economopoulos V, Mirmirani P), 109(2):00368504261444578",
+        "year": "2026 (17 Apr 2026)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13100445/"
+      },
+      {
+        "id": "zepbound_label",
+        "title": "ZEPBOUND (tirzepatide) injection: Prescribing Information",
+        "publisher": "Eli Lilly and Company / U.S. FDA",
+        "year": "2026 (s042 label)",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/217806s042lbl.pdf"
+      },
+      {
+        "id": "surmount1",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1)",
+        "publisher": "New England Journal of Medicine (Jastreboff AM et al.), 387(3):205-216",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35658024/"
+      },
+      {
+        "id": "statpearls_te",
+        "title": "Telogen Effluvium",
+        "publisher": "StatPearls, NCBI Bookshelf (Hughes EC, Syed HA, Saleh D)",
+        "year": "2024",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK430848/"
+      },
+      {
+        "id": "aad_shedding",
+        "title": "Do you have hair loss or hair shedding?",
+        "publisher": "American Academy of Dermatology",
+        "year": "n.d. (accessed 2026-10-30)",
+        "url": "https://www.aad.org/public/diseases/hair-loss/insider/shedding"
+      },
+      {
+        "id": "fda_biotin",
+        "title": "Biotin Interference with Troponin Lab Tests - Assays Subject to Biotin Interference",
+        "publisher": "U.S. Food and Drug Administration",
+        "year": "2022 (page dated 21 Jun 2022)",
+        "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/biotin-interference-troponin-lab-tests-assays-subject-biotin-interference"
+      }
+    ]
+  },
+  "hold_reason": "Not rendered: Fact-checker verdict REVISE: The science is solid, and the script is safe and well structured. I checked the key numbers against the sources and they match: Gupta 2026 (5.4% [119/2183] vs 0.9% [22/2221]; the exact \"typically reversible…3-6 months following stabilization of weight\" quote; onset about 2–3 months; \"no studies in humans\" showing a direct effect on follicles), the Zepbound label (alopecia 5%/4%/5% by dose vs 1% on placebo), SURMOUNT-1 (15.0–20.9% vs 3.1% at 72 weeks), StatPearls (about 85% of hairs in the growing phase, club hairs, non-scarring, chronic after more than 6 months) and the AAD (50–100 hairs a day, losing 20+ lb as a trigger, fullness in 6–9 months). The safety lines and the \"don't stop on your own\" line are both present. One thing needs fixing before this ships. In s58, and partly s55, the script credits the FDA troponin page with claims it doesn't make: that people may not realise they're taking biotin, and that hair, skin and nail supplements contain it. I checked the page and neither claim is on it. Crediting a source with something it didn't say has caused a hold before (S2 10-24). The other fixes are wording and scope polish.",
+  "release_tag": "content-2026-10-30",
+  "archive_url": "b2://informed-lab-media/content/2026-10-30/L1-tirzepatide-and-hair-loss-how-common-she/"
+}
