@@ -1,38 +1,56 @@
 [
   {
     "name": "Exp A: Practical tirzepatide long-forms (Lane A)",
-    "hypothesis": "Practical, long-tail tirzepatide questions people search (strength training, protein, side effects, stopping) beat approved-drug deep dives (median 8–17) and keep gaining views over time.",
-    "change": "Lane A runs on every day without qualifying Lane C news (Lane P is paused). Practical tirzepatide topics only, long-tail searched question first, about 60 characters or fewer, at most 1 number. Cost, coverage and timeline-only topics are excluded. Slot, length and retention rules stay the same.",
-    "metric": "Views and watch minutes at day 7 and day 28. Success: day-7 median views of 25 or more and watch-minute median of 60 or more, still growing at day 28.",
-    "min_sample": "n=8 videos (expected about 11-03). Judge each video at day 7 and day 28.",
-    "status": "running",
-    "result": "Interim signal, on target so far. In-window in-lane videos (n=3): How Long 37 views/122 min, What to Eat 24/39, Side Effects 23/53 (day 3). Adding Strength Training (70/129, still climbing: 48 at day 9, 70 at day 11) gives n=4: median 30.5 views and about 88 min. These earned 91% of this week's new long-form watch minutes. Medicare (7 views, 0 min) is excluded as a cost topic."
+    "hypothesis": "Long-tail practical tirzepatide questions that people search for beat approved-drug deep dives and keep gaining views over time.",
+    "change": "Lane A on every day without qualifying news, with the long-tail searched question first in the title.",
+    "metric": "Success: day-7 median of 25+ views and 60+ watch minutes, still growing at day 28.",
+    "min_sample": "n=8 videos",
+    "status": "won",
+    "result": "Won at n=8+ (How Long, What to Eat, Side Effects, Strength, Plateau, Bones & Muscle, Protein, Thanksgiving). The 4 mature videos got 51, 115, 126 and 141 views (median about 120) and 204, 273, 412 and 433 min (median about 340), vs about 38 min for the 11 other GLP-1 long-forms. That's about 9× more. Suggested videos bring about 68% of Lane A minutes, at 5–6 min per view. Caveat: Plateau (12 views, 87 impressions at day 5) and Bones & Muscle (10 views, 67 impressions at day 4) start slowly but hold 68–79% of the video. Protein reached 146 views by day 3. Lane A is now the default for every 14:00 long-form."
   },
   {
     "name": "Exp B: Gray-market 'what's actually confirmed' long-forms",
-    "hypothesis": "Our strongest Short lane (gray-market 'what's confirmed?', median about 105, n=7) would also work as long-form.",
-    "change": "2 long-forms a week in lane B, credited and dated, no sellers named.",
-    "metric": "Day-7 views compared with the GLP-1 long-form median. Success: day-7 median of 33 or more.",
+    "hypothesis": "Our strongest Short lane would also work as long-form.",
+    "change": "2 long-forms a week in lane B.",
+    "metric": "Day-7 median of 33+ views.",
     "min_sample": "n=4",
     "status": "inconclusive",
-    "result": "Closed early at n=1. The pharmacy check got 8 views and 20 min. That's an anecdote, not proof the lane fails. We closed it because of the opportunity cost against Lane A and because the lane sits close to the 'online sources' policy line. Gray-market stays Shorts-only, at most 1 a week."
+    "result": "Closed early at n=1: the pharmacy check got 8 views and 20 min before it closed (11 views and 31 min now). Gray-market stays Shorts-only, at most 1 a week."
   },
   {
     "name": "Exp C: First explainer within 48 h of a new named result",
-    "hypothesis": "Being the first clear explainer of a newly public, named trial result with a headline number (ideally against tirzepatide or semaglutide) drives far more long-form views than evergreen topics (EloraTZP 575 views, 1,474 min).",
-    "change": "Tightened: the long-form slot goes to the news only when all of these hold. The result first became public within 48 h. It's a named next-gen drug. It has a headline efficacy number from a randomized trial. Filings, Phase 1, food-effect and status-only news go to Shorts. Bare 'What Is [drug]?' explainers (Lane P) are paused.",
-    "metric": "Day-7 views and watch minutes against the GLP-1 long-form median (24 views, 45 min). Success: day-7 median of 50 views or more.",
-    "min_sample": "n=4 qualifying videos made after 10-20 (2–4 weeks, depending on news).",
-    "status": "running",
-    "result": "In-window n=1: petrelintide (10-25) had 4 views at day 2; score it on 11-01. Elecoglipron (10-26) isn't logged and was a decoder, so it counts as Lane P, not C. Looking back at fresh next-gen results with a headline number: EloraTZP 575, Orforglipron 59, Survodutide 47, retatrutide 29 and 18, CagriSema 24. That's a signal, carried by one outlier."
+    "hypothesis": "Being the first clear explainer of a newly public named trial result drives more long-form views than evergreen topics.",
+    "change": "The long-form slot went to qualifying fresh randomized results.",
+    "metric": "Day-7 median of 50+ views.",
+    "min_sample": "n=4 qualifying videos after 10-20",
+    "status": "inconclusive",
+    "result": "Retired without reaching its sample. Only 1 valid video in the window: petrelintide, with 30 views and 97 min, below the 50-view bar. The only qualifying news this week (retatrutide vs semaglutide, 10-29) was dropped for audio. Looking back at fresh next-gen results (n=7): median about 35 views and about 97 min. Only EloraTZP was big. Lane A median is about 340 min, so the cost of giving the slot to news is too high. News now goes to 13:00 Shorts. Only a randomized head-to-head against tirzepatide or semaglutide may get an extra L2 long-form."
   },
   {
     "name": "Exp D: Shorts-to-long-form funnel with a verified link",
-    "hypothesis": "A 20:00 funnel Short that asks a fresh question its live long-form answers, and carries a verified working link, will lift that long-form's daily views. Shorts get about 60 YouTube views each and currently send no measurable traffic to long-form.",
-    "change": "Every 20:00 Short is a spin-off of a live long-form, rotating between that day's Lane C video, EloraTZP and Strength Training on Tirzepatide. Last spoken line: 'Full breakdown on our channel, link in the description.' No spoken title. The publisher automatically puts a verified '▶ Full breakdown' link on description line 1. Topic rules don't change.",
-    "metric": "The target long-form's viewCount in the 3 days after the Short against the 3 days before. Once traffic sources are exported, also 'Shorts feed' and 'related video' traffic. Success: average lift of 10 or more views a day, or 50% or more over baseline.",
-    "min_sample": "n=6 funnel Shorts with a verified working link. Shorts without a verified link are excluded.",
+    "hypothesis": "A 20:00 Short that asks a fresh question a live long-form answers, with a verified description link, lifts that long-form's daily views.",
+    "change": "New targets: the 20:00 Short now points to live Lane A long-forms with the most minutes per view (Hair Loss once it's live, What to Eat, Side Effects, Protein) instead of EloraTZP. Last line and publisher link are unchanged.",
+    "metric": "The target long-form's viewCount in the 3 days after the Short vs the 3 days before, plus its SHORTS and RELATED_VIDEO traffic. Success: an average lift of 10+ views a day, or 50%+ over the per-video baseline.",
+    "min_sample": "n=6 funnel Shorts with a verified working link",
     "status": "running",
-    "result": "Started 10-27; no data yet. Baseline: EloraTZP and Strength Training gained about 1–3 views a day before the experiment. Strength Training then jumped by about 11 a day (48 to 70 between day 9 and day 11), before the experiment, so use a per-video baseline."
+    "result": "No valid data point is logged yet. SHORTS traffic is still 0 on all 20 long-forms with traffic data. The analyst must log the target and link status for every 20:00 Short from 11-03."
+  },
+  {
+    "name": "Exp E: State-change thumbnail on What to Eat",
+    "hypothesis": "What to Eat has a packaging problem, not a discovery problem: 1,290 impressions at 2.79% CTR. A state-change thumbnail of 4 words or fewer will lift CTR toward the 3.8–5.0% our similar thumbnails get.",
+    "change": "Only the thumbnail changes: a state-change design of 4 words or fewer, no body imagery. Use the owner's Test & Compare if available; otherwise the publisher swaps it via the API on 11-04. Title and description stay as they are for 14 days.",
+    "metric": "CTR on new impressions and views per day, vs 2.79% and the 7 days before the swap. Success: CTR of 3.5%+ with views per day not falling.",
+    "min_sample": "1,000 new impressions or 14 days, whichever comes later",
+    "status": "running",
+    "result": "Starts 11-04. Baseline: 1,290 impressions, 2.79% CTR, 115 views, 433 min. Strength (2.68% on 1,155) is next, but only after E reads out, so we change one variable at a time."
+  },
+  {
+    "name": "Exp F: A benefit-framed subscribe line in Shorts",
+    "hypothesis": "Shorts bring about 300 YouTube views a day but almost no subscribers (about 0.5 per 1,000). One honest line that names the channel's promise will at least double conversion.",
+    "change": "On 08:00 and 13:00 Shorts only, the second-to-last spoken line is: 'We answer one tirzepatide question from the research every day. Subscribe if that helps.' 20:00 Shorts get no line and act as the same-day control. Nothing else changes.",
+    "metric": "subscribersGained per 1,000 views at day 7: 08:00/13:00 Shorts vs 20:00 Shorts. Also channel subscribers per 1,000 YouTube views vs the 10-27→11-02 baseline of about 3.6 (8 subscribers on about 2,250 views). Success: 2× the control rate and 2.5+ channel subscribers a day.",
+    "min_sample": "14 days (about 28 Shorts with the line, 14 without)",
+    "status": "running",
+    "result": "Starts 11-03. Subscriber counts per Short are small, so read the 14-day totals, not single Shorts."
   }
 ]
