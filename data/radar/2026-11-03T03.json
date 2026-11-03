@@ -1,0 +1,572 @@
+{
+  "at": "2026-11-03T03:44:33.070Z",
+  "summary": "Radar for 2026-11-03, GLP-1 focus. This snapshot brought little new randomized data. Today's PubMed and news feeds mostly refresh topics we already track. The main new item: on 2 Nov 2026 at the AHA Scientific Sessions, researchers presented an observational, not yet peer-reviewed study of 256,492 adults with prediabetes and obesity. Compared with metformin, GLP-1 medicines were linked to a 31% lower risk of developing type 2 diabetes. It has early news pickup (AHA newsroom, Medical Xpress, AJMC). It suits a carefully hedged Short, not a long-form. Two other news hooks: Medscape's 2 Nov piece \"GLP-1 therapies not linked to fracture risk in three studies\" (a bones body-worry Short; one real-world cohort did flag tirzepatide, so it must stay balanced), and a 3 Nov Cureus case report of liver injury after an unregulated product sold as \"retatrutide\". The case report adds to Victoria's June 2026 alert (6 cases) and this week's Malaysian seizures, so it fits a \"what's confirmed?\" retatrutide Short as the week's single gray-market Short. Checks on other new-looking items: the FDA approval of Mounjaro for heart risk (scanx, 1 Nov) happened on 28 Aug 2026, and the US approval for children with type 2 diabetes was in Feb 2026, so neither is new. I found no fresh randomized head-to-head against tirzepatide or semaglutide in the last 48 hours, so no extra long-form (L2) is triggered. The Lane A long-form queue from the playbook still ranks highest (hair loss, stopping, fatigue, birth control, injection site, dehydration), with fresh review-level refreshes. Thanksgiving content should ship before the 18–27 Nov peak. ObesityWeek (14–17 Nov) and the rest of AHA week are the next data windows. Rejected: online and compounded tirzepatide programs, sellers of \"research\" retatrutide peptides, and coverage and cost stories.",
+  "candidates": [
+    {
+      "topic": "Tirzepatide hair loss: will it grow back? A verified long-form redo. 5.4% (119/2,183) vs 0.9% (22/2,221) (Gupta 2026); the label reports 7.1% of women vs 0.5% of men. Refreshed by the Med Sci (Basel) systematic review of skin side effects (9 Oct 2026) and the Cureus semaglutide cutaneous RCT meta-analysis (30 Sep 2026)",
+      "angle": "Answer first: hair shedding on tirzepatide is usually linked to rapid weight loss, and the shedding type known as telogen effluvium tends to be temporary. Then a 'you' scenario: noticing more hair in the brush at month 4. Cover what the label counts, why women report it more, and what supports regrowth (protein, steady intake). End with when to see a doctor or dermatologist. Use the craft-note figures and wording word for word. It's the only path from the 1,019-view Short to a long-form.",
+      "keywords": [
+        "tirzepatide hair loss",
+        "mounjaro hair loss grow back",
+        "zepbound hair loss women",
+        "does hair grow back after tirzepatide",
+        "hair shedding weight loss injection"
+      ],
+      "stage": "evergreen",
+      "momentum": 82,
+      "predicted_peak": "Steady evergreen search; immediate value from the existing Short's audience",
+      "why_now": "In 8 snapshots its momentum has risen from 74 to 78. The 11-02 long-form shipped with scenes out of order and needs a verified replacement. Two new systematic reviews of skin side effects give it fresh, citable support.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Med Sci (Basel) systematic review, 9 Oct 2026",
+          "signal": "Systematic review of skin adverse events with semaglutide, liraglutide and tirzepatide",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42930571/"
+        },
+        {
+          "source": "Cureus meta-analysis of RCTs, 30 Sep 2026",
+          "signal": "Skin adverse events with semaglutide, pooled RCTs",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42966951/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long"
+      ]
+    },
+    {
+      "topic": "What happens when you stop tirzepatide? SURMOUNT-4: 783 began the lead-in, then 335 vs 335 were randomized at week 36. Those switched to placebo regained 14.0% from week 36 to week 88. Refreshed by the 12-month real-world tirzepatide study (Diabetes Obes Metab, 28 Oct 2026)",
+      "angle": "Answer first: in SURMOUNT-4, people switched to placebo regained part of their lost weight, while people who stayed on tirzepatide kept losing. Then the honest 'you' framing: obesity behaves like a long-term condition. Cover habits that help (protein, strength training) and the questions to bring to your prescriber. Include 'don't switch, stop or change your medicines on your own'.",
+      "keywords": [
+        "what happens when you stop tirzepatide",
+        "stopping mounjaro weight regain",
+        "zepbound stop taking",
+        "SURMOUNT-4 results",
+        "do you gain weight back after tirzepatide"
+      ],
+      "stage": "evergreen",
+      "momentum": 86,
+      "predicted_peak": "Evergreen; demand rises ahead of New Year and coverage changes (Dec–Jan)",
+      "why_now": "Highest-momentum Lane A topic across 6 snapshots (84 to 87). The L1 10-27 version was lost to narration errors. Employers dropping GLP-1 coverage (24/7 Wall St, 2 Nov) is making 'what if I have to stop' searches more common, but don't mention cost on screen.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Diabetes Obes Metab, 28 Oct 2026",
+          "signal": "12-month real-world tirzepatide weight results",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42951303/"
+        },
+        {
+          "source": "Google News (24/7 Wall St), 2 Nov 2026",
+          "signal": "Coverage pullbacks are making people ask about stopping",
+          "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxNNzNMdzVtREpTN2hNUDBKWU45RXg4Z1NGN3JpeU9MWi1oUTFPYmRjTktXR2F0VnROVldoT1NTUXFQemVPbjZIUDA0TDkxdTJnSThsQ0x5aGFSZXJPOVRmaFlZVnBEaEhNaXY4S2x3TVlRdlo4QlE3UUZ3SkVJcC1NWXpWU1h1ank1cmgxdnh4YnpaSzlZZDJEMnNUS2FvSWd0Ri1jUFBWVVppdHlJSTdsT3ZHaDVLbENoSmNBZWpNR0w2NWVrZDBrUzZTbDVrb3ExTFdUMEU4QlZSM1ZrQnpVTGxTaVZ5U2xURTEyXzYzZnZRdGkyQVNXNUlMR2hYRDFTSUdraHB1R25uWjE0YXR0R3Y1Nmhoa2lPai0xdHBpeDhZV2lzWFpUTjVpVkM2VklxMVN1ZldaRjFCcjNONWsxeU1ERDhwZklvTmwyMXQ0OEo5Y0k?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long"
+      ]
+    },
+    {
+      "topic": "Why am I so tired on tirzepatide? The Zepbound label lists fatigue in 5% (5 mg), 6% (10 mg) and 7% (15 mg) vs 3% on placebo",
+      "angle": "Answer first: some tiredness is reported on tirzepatide, but in the trials most people didn't have it. Then a 'you' scenario: the 3 pm crash in month 2. Cover the likely contributors (eating much less, too little protein, fluids, sleep) and practical fixes. End with the signs that mean calling your prescriber.",
+      "keywords": [
+        "tirzepatide fatigue",
+        "why am i so tired on mounjaro",
+        "zepbound tiredness",
+        "tired on weight loss injection",
+        "tirzepatide low energy"
+      ],
+      "stage": "evergreen",
+      "momentum": 80,
+      "predicted_peak": "Evergreen; steady search",
+      "why_now": "It's in the playbook's long-form queue and appeared in 2 snapshots at 76–82. Mainstream pickup ('GLP-1s and fatigue', Yahoo, 30 Oct) shows the question is growing. No live Lane A video answers it yet.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Diabetes Obes Metab, 28 Oct 2026",
+          "signal": "Real-world tirzepatide cohort, for context on real-life use",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42951303/"
+        },
+        {
+          "source": "Prior radar snapshot (Yahoo, 30 Oct 2026)",
+          "signal": "Mainstream 'GLP-1s and fatigue' coverage",
+          "url": "https://www.pharmacytimes.com/view/fda-approves-tirzepatide-to-cut-cv-risk-in-type-2-diabetes"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide and birth control pills: what the label says about reduced oral contraceptive exposure, refreshed by the pregnancy-outcomes meta-analysis of GLP-1 and dual GLP-1/GIP exposure (Front Pharmacol, 16 Oct 2026) and the US claims study of anti-obesity medicine use around conception and pregnancy (Eur J Obstet Gynecol Reprod Biol, 15 Oct 2026)",
+      "angle": "Answer first: the label says tirzepatide can lower how much of a birth control pill reaches the blood, especially around starting and dose increases. Report the label's wording only, with no instructions. Then explain why this matters for people planning or avoiding pregnancy. Send viewers to their prescriber to talk through options.",
+      "keywords": [
+        "tirzepatide birth control",
+        "mounjaro birth control pill",
+        "zepbound contraception",
+        "ozempic babies",
+        "tirzepatide pregnancy"
+      ],
+      "stage": "evergreen",
+      "momentum": 76,
+      "predicted_peak": "Evergreen; high search demand among women 25–45",
+      "why_now": "It's in the playbook queue. Two new October papers on pregnancy exposure give it a current hook, and the claims study shows exposure around pregnancy is rising.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Front Pharmacol, 16 Oct 2026",
+          "signal": "Systematic review and meta-analysis of pregnancy outcomes after GLP-1 and GLP-1/GIP exposure, split by time window",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42964193/"
+        },
+        {
+          "source": "Eur J Obstet Gynecol Reprod Biol, 15 Oct 2026",
+          "signal": "Trends in anti-obesity medicine exposure around conception and pregnancy, 2018–2023",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42933135/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long"
+      ]
+    },
+    {
+      "topic": "Thanksgiving on tirzepatide: feeling full fast, protein first, smaller plates, eating slowly, alcohol and easing nausea at a big holiday meal",
+      "angle": "A calm, practical 'you' scenario: the plate at your aunt's house. Answer first: smaller portions and eating slowly usually help, and nobody needs to explain their plate. Feed the existing Thanksgiving long-form with 20:00 funnel Shorts that answer narrower questions (wine, pie, leftovers).",
+      "keywords": [
+        "thanksgiving on tirzepatide",
+        "mounjaro holiday eating",
+        "zepbound thanksgiving nausea",
+        "ozempic thanksgiving",
+        "eating holiday meal on glp-1"
+      ],
+      "stage": "rising",
+      "momentum": 80,
+      "predicted_peak": "18–27 Nov 2026",
+      "why_now": "Seasonal: searches should start building about 2 weeks before 26 Nov. It has appeared in 5 or more snapshots at 72–80. The long-form is already live, so the Shorts can funnel viewers to it.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Diabetes Obes Metab, 29 Oct 2026",
+          "signal": "Digital food-purchase signatures change after GLP-1 treatment, a hook for 'eating differently at holidays'",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42957440/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Will tirzepatide weaken my bones? Medscape (2 Nov 2026): 'GLP-1 therapies not linked to fracture risk in three studies'. The evidence is mixed: one real-world cohort linked tirzepatide to higher osteoporosis or fragility-fracture risk than other GLP-1 medicines (HR 1.44); others found neutral or lower risk",
+      "angle": "An 08:00 body-worry reassurance Short with a balanced answer: most studies so far don't show more fractures with GLP-1 medicines, but one cohort flagged tirzepatide. All of these are observational ('linked to'). Weight loss itself can lower bone density, which is why protein and strength training matter. Ask your doctor about bone health if you have risk factors. Funnel to the live Bones & Muscle long-form.",
+      "keywords": [
+        "tirzepatide bone loss",
+        "mounjaro osteoporosis",
+        "glp-1 fracture risk",
+        "does zepbound weaken bones",
+        "weight loss injection bone density"
+      ],
+      "stage": "emerging",
+      "momentum": 76,
+      "predicted_peak": "3–10 days",
+      "why_now": "Fresh Medscape piece on 2 Nov. The bones Short reached 242 views, our second-best body-worry Short. Creators haven't yet picked up the conflicting tirzepatide signal.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Google News: Medscape, 2 Nov 2026",
+          "signal": "'GLP-1 Therapies Not Linked to Fracture Risk in Three Studies'",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSHFCczB3Sm5pb0RxRW9ZX3lDZUEzdkZuZ0laaGNpbzdnQmdGMXlsRExNTk5oTS1uaFltbDhLQmd5Umt6eVNMOUFJYy1td01kZDFDSUdOSks1S2lET1VMVFNpVFBSMGl1dGsxbE9QYUtTd0tJbnR2TkxMbTd6dVJKMkxrc3FMdnJNSWpQdkxKRlg4TmVMVkM4andQVTE0enJoT1NCeXd4dkw2QQ?oc=5"
+        },
+        {
+          "source": "Medical Dialogues",
+          "signal": "Real-world cohort: tirzepatide linked to higher osteoporosis or fracture risk than other GLP-1 RAs (HR 1.44)",
+          "url": "https://medicaldialogues.in/orthopaedics/news/tirzepatide-linked-to-higher-risk-of-osteoporosis-and-fracture-compared-to-other-glp-1-receptor-agonists-study-158853"
+        },
+        {
+          "source": "Healio, 22 Sep 2026",
+          "signal": "GLP-1s linked to 30% lower fragility-fracture risk (AOFAS meeting)",
+          "url": "https://www.healio.com/news/orthopedics/20260922/glp1s-may-reduce-fracture-risk-in-patients-with-obesity-type-2-diabetes"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "GLP-1 medicines vs metformin in prediabetes with obesity (AHA Scientific Sessions 2026, presented 2 Nov). Observational EHR study of 256,492 adults: 31% lower risk of type 2 diabetes and 1.5 times the chance of blood sugar returning to normal. Not yet peer-reviewed",
+      "angle": "A hedged 'who may benefit' Short: 'linked to', not 'prevents'. It's an observational class study, so say 'GLP-1 medicines', not tirzepatide. Note that it isn't yet peer-reviewed and that the release gives no absolute rates. Make the point that prediabetes is worth raising with your doctor and that there are several options. Point viewers to a long-form on blood sugar.",
+      "keywords": [
+        "glp-1 prediabetes",
+        "ozempic for prediabetes",
+        "glp-1 vs metformin",
+        "can mounjaro reverse prediabetes",
+        "prediabetes weight loss injection"
+      ],
+      "stage": "emerging",
+      "momentum": 74,
+      "predicted_peak": "2–7 days (AHA news cycle)",
+      "why_now": "Presented 2 Nov and picked up by the AHA newsroom, Medical Xpress and AJMC within 24 hours. AHA Sessions are running now. Prediabetes searches are large and creators haven't covered this yet.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "AHA Newsroom, 2 Nov 2026",
+          "signal": "256,492 adults, 104 institutions; 31% lower risk of type 2 diabetes vs metformin; observational and not peer-reviewed",
+          "url": "https://newsroom.heart.org/news/glp-1-meds-linked-to-lower-diabetes-heart-risks-than-standard-diabetes-prevention-med"
+        },
+        {
+          "source": "AJMC",
+          "signal": "Trade press pickup",
+          "url": "https://www.ajmc.com/view/glp-1-use-tied-to-lower-diabetes-cv-risk-vs-metformin-in-prediabetes"
+        },
+        {
+          "source": "Medical Xpress",
+          "signal": "Science news pickup",
+          "url": "https://medicalxpress.com/news/2026-10-glp-meds-linked-diabetes-heart.html"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Retatrutide: what's confirmed vs the 'research peptide' products. Cureus case report (3 Nov 2026) of liver injury after an unregulated injectable sold as retatrutide; Victoria health alert (6 liver-toxicity cases, June 2026); Malaysian Health Ministry seizures of illegal retatrutide (2 Nov 2026)",
+      "angle": "A 13:00 'what's confirmed?' Short with a loop ending. Confirmed: retatrutide is still in trials and isn't approved anywhere. The Phase 3 results so far are trial data (TRANSCEND-T2D-2 topline, 28 Oct). Products sold online aren't the trial drug, and health authorities have linked some of them to liver injury. Calm tone, no scare framing, and send people to their prescriber for approved options. Counts as the week's single gray-market Short.",
+      "keywords": [
+        "retatrutide",
+        "is retatrutide approved",
+        "retatrutide side effects",
+        "retatrutide liver",
+        "research peptide retatrutide safe"
+      ],
+      "stage": "rising",
+      "momentum": 72,
+      "predicted_peak": "3–7 days",
+      "why_now": "A new case report, plus several Malaysian seizure stories in 24 hours, plus retatrutide search interest after the Phase 3 topline. Our retatrutide Shorts reached 207–274 views with 'what's confirmed?' angles.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Google News: Cureus, 3 Nov 2026",
+          "signal": "Suspected drug-induced liver injury after an unregulated injectable sold as retatrutide",
+          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQR2xiRkp6M3dNNk5kMWNwcW5wNWhLbEhWbFNHSVpxMk1MZnZ5V2pZcFlqYTJhbjRrZHdNWXdoNzZmSnFJUjhaS2tiZlNrMzc3SWVPd3ZNZFd5Q2lEVnAxYkhTM1dQdFJIOGdiLXJCWHR2Nkp4bmFMOVJtVGpPc0R3Qmw5T1M3UEZpY0tnaW5Xam9qUVFGai1HNUgzeGMyNzNfcXVGU3A0eW41X25SZEYwR0ZMbXlLV2M1SXBaeWE5LVJZYUZiWFYyUHZzNVdpeDI5TmZWZUFCR1E3MzBIRFUzVXRySjRqc2MyRnZmbEFKX2JJV19STU1WU1BFRWttbTFueW05bE5yN28wVTcxYnF6Z3NzNXJBajMtM2Nn?oc=5"
+        },
+        {
+          "source": "Victoria Department of Health alert, 19 Jun 2026",
+          "signal": "Six cases of acute liver toxicity linked to unapproved products labelled retatrutide",
+          "url": "https://www.health.vic.gov.au/health-alerts/toxicity-linked-to-unapproved-peptide-product-labelled-retatrutide"
+        },
+        {
+          "source": "Pharmaceutics review, 9 Oct 2026",
+          "signal": "Critical look at the emerging Phase 3 retatrutide evidence",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42942810/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide injection site reactions: what's normal (redness, itching, small lumps), what the label reports, and when to call your prescriber. Refreshed by the Med Sci (Basel) skin side-effect review (9 Oct 2026)",
+      "angle": "Answer first: mild redness or itching where you inject is usually short-lived. Then a 'you' scenario (a pink patch the next morning). Explain what the trials counted and how to tell normal from 'call your prescriber' signs: spreading redness, warmth, pus or fever. Don't attribute our own safety tips to the label.",
+      "keywords": [
+        "tirzepatide injection site reaction",
+        "mounjaro injection site redness",
+        "zepbound itchy injection site",
+        "lump after mounjaro injection",
+        "injection site bruise zepbound"
+      ],
+      "stage": "evergreen",
+      "momentum": 72,
+      "predicted_peak": "Evergreen",
+      "why_now": "In the playbook queue, with no live Lane A answer. The new skin side-effect systematic review adds a fresh citation.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Med Sci (Basel), 9 Oct 2026",
+          "signal": "Systematic review of skin adverse events, including injection site reactions, across semaglutide, liraglutide and tirzepatide",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42930571/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide and dehydration: signs and what helps. The label warns of acute kidney injury linked to dehydration from vomiting or diarrhoea. Refreshed by the Romanian urinary-stone recurrence cohort (J Clin Med, 16 Oct 2026)",
+      "angle": "Answer first: tirzepatide can make dehydration more likely mainly when nausea, vomiting or diarrhoea hit, or when you simply drink less because you eat less. Cover the signs, easy ways to fit fluids into your day, and the label's kidney warning, worded precisely. Say when to call your prescriber.",
+      "keywords": [
+        "tirzepatide dehydration",
+        "mounjaro dehydration symptoms",
+        "zepbound kidney",
+        "how much water on tirzepatide",
+        "glp-1 dehydration"
+      ],
+      "stage": "evergreen",
+      "momentum": 70,
+      "predicted_peak": "Evergreen; secondary bump around holiday travel and alcohol",
+      "why_now": "In the playbook queue and seen in 2 snapshots. Ties into Thanksgiving alcohol and travel questions.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "J Clin Med, 16 Oct 2026",
+          "signal": "Urinary-stone recurrence after starting GLP-1-based therapy, including hydration factors (retrospective cohort)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42941552/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long"
+      ]
+    },
+    {
+      "topic": "Tirzepatide and the thyroid warning: what's confirmed? Scoping review on how thyroid surveillance may inflate cancer detection with GLP-1 medicines (Diabetes Res Clin Pract, 27 Oct 2026), plus a papillary thyroid carcinoma narrative review (J Clin Med, 11 Oct 2026)",
+      "angle": "A body-worry Short. The boxed warning comes from rodent studies, and the label explains who shouldn't take it (personal or family history of MTC or MEN 2). Human data are mixed, and more testing can find more small cancers (detection bias). Hold honest uncertainty, say 'no clear human link has been confirmed', and tell viewers to report a neck lump to their doctor.",
+      "keywords": [
+        "tirzepatide thyroid cancer",
+        "mounjaro thyroid warning",
+        "zepbound MTC",
+        "glp-1 thyroid cancer risk",
+        "ozempic thyroid"
+      ],
+      "stage": "emerging",
+      "momentum": 70,
+      "predicted_peak": "Evergreen spikes; 1–2 weeks for this hook",
+      "why_now": "Fresh scoping review with a new 'detection bias' angle that other creators haven't covered. The previous thyroid Short got 72 views; the detection angle gives it a new fact.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Diabetes Res Clin Pract, 27 Oct 2026",
+          "signal": "Scoping review of thyroid surveillance and cancer detection with GLP-1 RAs",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42946058/"
+        },
+        {
+          "source": "J Clin Med, 11 Oct 2026",
+          "signal": "Narrative review of GLP-1 RAs and papillary thyroid carcinoma",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42941350/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Does tirzepatide cause pancreatitis or gallbladder problems? Scoping review: pancreatitis in 11 participants across 5 trials (Diabetes Metab Syndr Obes, 23 Oct 2026), plus a propensity-matched real-world comparison of tirzepatide, semaglutide and DPP-4 inhibitors (J Clin Med, 16 Oct 2026)",
+      "angle": "Calm body-worry Short: pancreatitis was rare in the trials, and gallbladder problems are linked to rapid weight loss. Name the warning signs that need urgent care right away (severe belly pain that spreads to the back, with or without vomiting). Funnel to the live Side Effects long-form.",
+      "keywords": [
+        "tirzepatide pancreatitis",
+        "mounjaro gallbladder",
+        "zepbound pancreatitis risk",
+        "gallstones weight loss injection",
+        "tirzepatide stomach pain back"
+      ],
+      "stage": "emerging",
+      "momentum": 64,
+      "predicted_peak": "Evergreen; 1–2 weeks for this hook",
+      "why_now": "Two fresh October papers. The previous gallbladder Short got 61 views. A new count with an accurate absolute figure adds a fresh fact.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Diabetes Metab Syndr Obes, 23 Oct 2026",
+          "signal": "Scoping review of pancreatic and gallbladder adverse events with tirzepatide in obesity",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42948670/"
+        },
+        {
+          "source": "J Clin Med, 16 Oct 2026",
+          "signal": "Propensity-matched real-world comparison of biliary and pancreatic safety",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42941539/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide before surgery or anesthesia: why your surgical team asks about it. Cureus narrative review on perioperative GLP-1 management, gastric emptying and aspiration risk (3 Nov 2026)",
+      "angle": "Answer first: GLP-1 medicines slow stomach emptying, so anesthesia teams want to know you take one. Tell them early, and follow the plan your surgical team and prescriber give you. Never self-stop. Include 'don't switch, stop or change your medicines on your own'.",
+      "keywords": [
+        "tirzepatide before surgery",
+        "mounjaro anesthesia",
+        "stop zepbound before surgery",
+        "glp-1 colonoscopy",
+        "ozempic surgery aspiration"
+      ],
+      "stage": "emerging",
+      "momentum": 62,
+      "predicted_peak": "Evergreen; steady high-intent search",
+      "why_now": "A fresh review published within the last 2 hours. 'Before surgery' and 'colonoscopy' are common real-life questions, and creators often answer them with self-stop advice, so an accurate version stands out.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Google News: Cureus, 3 Nov 2026",
+          "signal": "Narrative review of perioperative GLP-1 RA management, residual gastric contents and aspiration risk",
+          "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxOZkY4eVRxano0NEoyZ2FKR2lXVUNkZVpWejQyS2RodVVVX1dUVlE4OFpIUFlfZVNKTTc1MkVyVzlvVlRpeURRWkg1eWtsQTUxQmdOZHQ0SW4yREdFaThXYWVtelcxa18xcDBNVzFKeUVGZW5QUHNzRWdoNUFsaV9yM3pESmRnOTBydDJHLXFVQjJQVkNLRGRaUWNmSHNaMWp4Rk1kc2ZNTnRmMzJRNjlud0xGcDN6eXZ4YVhNOUFyLTBPRVI1TWdtdlJpRWE0UXJQR0ZxXy03eU10RGJkSXBkTVRYQS11T2JadHByTFZpV0xBczQ1N201dnpPLVhFSmN6emFaOG5oRlZRaDR4dXk0ZWk1WXZwZi1PdHBlYlBWeGtIVzY1Z3dxWUN4cmdWb1AwUDI4T08wb2JfZzBjYkRxYlhMUzk0Tl8yeUdYSEpXMFR3Qk0?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Can tirzepatide affect mood or anxiety? Pharmacovigilance study testing whether semaglutide panic-attack reports reflect publicity ('notoriety') bias (Pharmacoepidemiol Drug Saf, Nov 2026); neuropsychiatric review of GLP-1 RAs and tirzepatide (Oct 2026); Medicare T2D neuropsychiatric cohort (Diabetes Obes Metab, 25 Oct 2026)",
+      "angle": "A body-worry myth-correction Short: news coverage can drive side-effect reports. Large studies so far haven't confirmed a clear link with mood problems, but tell your prescriber about any mood changes. Say crisis line resources aloud and show them on screen. Keep the exact verbs from each source.",
+      "keywords": [
+        "tirzepatide anxiety",
+        "mounjaro depression",
+        "zepbound mood changes",
+        "ozempic panic attacks",
+        "glp-1 mental health"
+      ],
+      "stage": "emerging",
+      "momentum": 60,
+      "predicted_peak": "1–2 weeks",
+      "why_now": "Three fresh papers, and the 'notoriety bias' angle is new and hasn't been covered by creators. The previous mood Short got 64 views; the new angle adds a new fact.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Pharmacoepidemiol Drug Saf, Nov 2026",
+          "signal": "Semaglutide and panic attacks: active-comparator disproportionality analysis and notoriety bias",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42946127/"
+        },
+        {
+          "source": "Diabetes Obes Metab, 25 Oct 2026",
+          "signal": "Neuropsychiatric outcomes in Medicare beneficiaries with type 2 diabetes",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42928425/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "ObesityWeek 2026 (Washington DC, 14–17 Nov): watch for head-to-heads against tirzepatide, CagriSema data (FDA decision expected Q4 2026) and real-world Wegovy pill 'food noise' data",
+      "angle": "Pre-plan 13:00 Shorts only. If a randomized head-to-head against tirzepatide or semaglutide in an obesity population is made public, it qualifies for an extra L2 long-form within 48 hours. Name tirzepatide first and say 'separate trials, not head-to-head' where that applies.",
+      "keywords": [
+        "obesityweek 2026",
+        "cagrisema vs tirzepatide",
+        "wegovy pill food noise",
+        "new weight loss drug results",
+        "cagrisema fda approval"
+      ],
+      "stage": "emerging",
+      "momentum": 60,
+      "predicted_peak": "14–20 Nov 2026",
+      "why_now": "The conference starts in 11 days. Novo (26 abstracts), Ascletis and others have announced presentations, and pipeline news is building (NewsNation, 2 Nov).",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Google News: Ascletis ObesityWeek presentation, 2 Nov 2026",
+          "signal": "Companies are lining up ObesityWeek data",
+          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOeU5HR3pRYXN2WnNpR1dmUEpMUWZoZGtveHlxUXIwcjBoVHNiTXI5UThTRDdzZWhKanI4S1NRbUZLLTVZUnNEdjhfUjRzMUp5cV8zQUttemhLb0g4TUFtcklXQXpKUzRPclFnd2dZNFFyaF9CbFFTZUdxMktBaXQ3a3VaMzZBQjYxRTJFdG9xcGNlVElRczNEZEtSN2I4WkFrcW0yUFRZUDBTLTZ5djFyNl9iYTRYaThIS01oWExDUlVDdldkZG9PdmhJY1VEa2pGQTJBM20xaFloZklUS1FINm5JZ0NQWDAzVTFfZ2NFd1FEZEd1RktvV21OcDJYMGJxX3FaZW9xYnBuenpHS1k3WDNyMHFocm1EWENqbnZR?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "GLP-1 medicines and alcohol: Expert Rev Clin Pharmacol roadmap for GLP-1 RAs in substance use disorders (30 Oct 2026), a landscape of registered psychiatric incretin RCTs (J Psychiatr Res, 21 Oct 2026), and clinicians' reports of patients drinking less",
+      "angle": "'Why does wine taste different on tirzepatide?' Explain the brain reward pathway, framed as early research and not a treatment for alcohol use disorder. Add a practical holiday line (alcohol can worsen nausea and dehydration) that ties into Thanksgiving.",
+      "keywords": [
+        "tirzepatide alcohol",
+        "mounjaro alcohol cravings",
+        "glp-1 drinking less",
+        "ozempic alcohol",
+        "can you drink on zepbound"
+      ],
+      "stage": "rising",
+      "momentum": 58,
+      "predicted_peak": "Late Nov to Dec (holiday drinking season)",
+      "why_now": "Two new reviews, plus the holiday season approaching. Seen in 2 snapshots at 60.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Expert Rev Clin Pharmacol, 30 Oct 2026",
+          "signal": "Clinical pharmacology roadmap for GLP-1 RAs in substance use disorders",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42960702/"
+        },
+        {
+          "source": "J Psychiatr Res, 21 Oct 2026",
+          "signal": "Landscape of ongoing randomized incretin trials in psychiatry",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42962407/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Is it safe to start a GLP-1 medicine later in life or with frailty? SELECT frailty post hoc (semaglutide 2.4 mg; JAMA Cardiology, Sep 2026), JAMA news analysis on frailty (30 Oct 2026), and the age-group cardiovascular meta-analysis of RCTs (Diabetes Obes Metab, 27 Oct 2026)",
+      "angle": "A 'who may benefit' Short. In SELECT (adults with heart disease and overweight or obesity, without diabetes), benefits held across frailty levels. It's a post hoc analysis, so label it that way. Keep the evidence semaglutide-only and protect muscle with protein and strength training. Questions to bring to your doctor.",
+      "keywords": [
+        "ozempic over 65",
+        "glp-1 older adults safe",
+        "wegovy frailty",
+        "weight loss injection seniors",
+        "semaglutide elderly muscle"
+      ],
+      "stage": "emerging",
+      "momentum": 50,
+      "predicted_peak": "2–3 weeks; also relevant to Medicare-age audiences",
+      "why_now": "The 30 Oct JAMA analysis plus the new age-group meta-analysis. The 65+ audience has high ad value, but titles must be semaglutide-only, which have underperformed for us.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "JAMA, 30 Oct 2026",
+          "signal": "'Analysis Asks: Are GLP-1 Drugs Safe in People With Frailty?'",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42961402/"
+        },
+        {
+          "source": "Healio, 17 Sep 2026",
+          "signal": "Wegovy SELECT benefits consistent regardless of frailty level",
+          "url": "https://www.healio.com/news/cardiology/20260917/wegovy-benefits-in-select-trial-population-consistent-regardless-of-frailty-level"
+        },
+        {
+          "source": "Diabetes Obes Metab, 27 Oct 2026",
+          "signal": "Cardiovascular effects of GLP-1 RAs across age groups, meta-analysis of RCTs",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42946897/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "REJECT: 'Best online tirzepatide programs / where to buy' (Forbes, 2 Nov), 'Retatrutide Costa Rica: online access to research peptide products' (FinancialContent, 2 Nov), Protocol MD online GLP-1 and peptide therapy press release, compounding-boom pieces, and employer-coverage/Medicare cost stories",
+      "angle": "Do not cover. These promote online, compounded or research-chemical sources or are banned cost topics. The only acceptable use of the retatrutide gray-market news is the 'what's confirmed?' safety Short above.",
+      "keywords": [
+        "where to buy tirzepatide",
+        "research peptide retatrutide",
+        "compounded tirzepatide online"
+      ],
+      "stage": "rising",
+      "momentum": 5,
+      "predicted_peak": "n/a",
+      "why_now": "High news volume, but it breaks the channel's never-cover list and the playbook's long-form bans.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Google News: Forbes, 2 Nov 2026",
+          "signal": "Online tirzepatide buying guide",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBnYzlDMlhjM0MtUFJCMFppdl9WY0ZhU3I2QnNaT3hpcXhobUNMSW1RcTA4XzJLTEFGUWpZakl3RURoMlpUcUZYeHdIbmRfcmZDYzFub2NJekFZcVZPR29wYTFNQnpHYXFrNGc0REtudjF0cmRQbjlfM0tqOWN6UUk?oc=5"
+        }
+      ],
+      "safety": "reject",
+      "formats": [
+        "short"
+      ]
+    }
+  ]
+}
