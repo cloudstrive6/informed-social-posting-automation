@@ -50,24 +50,33 @@
       "format": "reel",
       "slotKey": "short",
       "slot": "2026-11-04T18:00:00.000Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "17885144757526060",
+      "url": "https://www.instagram.com/reel/DfVC4-QMleY/",
+      "published_at": "2026-11-04T17:57:59.965Z"
     },
     {
       "platform": "tiktok",
       "format": "short",
       "slotKey": "short",
       "slot": "2026-11-04T18:00:00.000Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "v_pub_file~v2-1.7704377313333200914",
+      "url": "https://www.tiktok.com/@informedlab",
+      "published_at": "2026-11-04T18:00:08.926Z"
     },
     {
       "platform": "facebook",
       "format": "reel",
       "slotKey": "short",
       "slot": "2026-11-04T18:00:00.000Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "1466859568981610",
+      "url": "https://www.facebook.com/reel/1466859568981610",
+      "published_at": "2026-11-04T18:00:20.538Z"
     }
   ],
   "created_at": "2026-11-04T03:11:35.971Z",
