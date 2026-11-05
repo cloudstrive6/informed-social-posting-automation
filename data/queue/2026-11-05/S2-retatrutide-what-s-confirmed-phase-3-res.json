@@ -50,9 +50,9 @@
       "format": "reel",
       "slotKey": "short",
       "slot": "2026-11-05T18:00:00.000Z",
-      "status": "pending",
-      "attempts": 2,
-      "error": "HTTP 400 for https://graph.facebook.com/v23.0/17841470474592489/media: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"Ak0HLGndLZBziWCi3oq-v7W\"}}"
+      "status": "failed",
+      "attempts": 3,
+      "error": "HTTP 400 for https://graph.facebook.com/v23.0/17841470474592489/media: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"AnmszlnB2jNM4Gn2lt1l8Wu\"}}"
     },
     {
       "platform": "tiktok",
@@ -70,9 +70,9 @@
       "format": "reel",
       "slotKey": "short",
       "slot": "2026-11-05T18:00:00.000Z",
-      "status": "pending",
-      "attempts": 2,
-      "error": "HTTP 400 for https://graph.facebook.com/v23.0/100670406266672/video_reels: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"AiTZoXgahMLyl9KqXi8xnSK\"}}"
+      "status": "failed",
+      "attempts": 3,
+      "error": "HTTP 400 for https://graph.facebook.com/v23.0/100670406266672/video_reels: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"AX33Dmb3G-9TmVexInNGS7T\"}}"
     }
   ],
   "created_at": "2026-11-05T03:16:02.005Z",
