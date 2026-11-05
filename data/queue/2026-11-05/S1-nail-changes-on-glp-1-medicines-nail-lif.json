@@ -51,15 +51,19 @@
       "slotKey": "short",
       "slot": "2026-11-05T13:00:00.000Z",
       "status": "pending",
-      "attempts": 0
+      "attempts": 1,
+      "error": "HTTP 400 for https://graph.facebook.com/v23.0/17841470474592489/media: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"A0UUPOyZDYexg-xBnWqzZTc\"}}"
     },
     {
       "platform": "tiktok",
       "format": "short",
       "slotKey": "short",
       "slot": "2026-11-05T13:00:00.000Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "v_pub_file~v2-1.7704670887768819713",
+      "url": "https://www.tiktok.com/@informedlab",
+      "published_at": "2026-11-05T12:59:38.968Z"
     },
     {
       "platform": "facebook",
@@ -67,7 +71,8 @@
       "slotKey": "short",
       "slot": "2026-11-05T13:00:00.000Z",
       "status": "pending",
-      "attempts": 0
+      "attempts": 1,
+      "error": "HTTP 400 for https://graph.facebook.com/v23.0/100670406266672/video_reels: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"A3-b_QnsZi7Ng7UDEBHZOAc\"}}"
     }
   ],
   "created_at": "2026-11-05T03:16:13.693Z",
