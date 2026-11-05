@@ -1,0 +1,1316 @@
+{
+  "id": "L1-tirzepatide-and-oral-birth-control-pills",
+  "date": "2026-11-05",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Tirzepatide and oral birth control pills: what the US prescribing information says about reduced oral hormonal contraceptive exposure (slower gastric emptying), why non-oral methods aren't affected in the same way, how vomiting and diarrhoea can affect any pill, and the label's pregnancy section, with ACOG's Oct 23, 2026 practice advisory for pregnancy planning",
+    "angle": "Keep the plan as written, with these changes. (a) Chapter 6: drop the 'Front Pharmacol Oct 16' meta-analysis unless its PubMed or journal abstract can be opened and confirmed. If it can't, use the confirmed Sept 2026 meta-analysis of about 2.1M pregnancies, labelled 'observational, after unplanned exposure around conception, not proof of safety'. (b) Quote the label's contraception sentence word for word, including the 4-week periods. Say 'may reduce', never 'stops working'. (c) Cite the ACOG advisory itself and use its exact wording: consider stopping 1–2 months before trying to conceive, don't use it in pregnancy, and use effective contraception if not planning a pregnancy. (d) Chapter 5: 'The semaglutide labels report no clinically relevant change in pill exposure in their study.' No ranking, and no 'so switch' implication.",
+    "working_title": "Tirzepatide and Birth Control Pills: What to Know",
+    "target_keyword": "tirzepatide birth control",
+    "trend_stage": "evergreen",
+    "why": "It's the next Lane A topic in the playbook's queue, no live Lane A video answers it, competition is low, and labels and guidelines can verify it fully. | fact-check: This is a strong Lane A topic with a sound evidence base. The US Zepbound and Mounjaro labels both say tirzepatide can reduce oral hormonal contraceptive exposure because it delays gastric emptying. Both advise switching to a non-oral method, or adding a barrier method, for 4 weeks after starting and for 4 weeks after each dose increase. Writers must copy the label text, not this paraphrase. The 4-week period is a duration, not a dose, so it may be quoted exactly as printed. Never name mg steps. The semaglutide labels (Wegovy/Ozempic) report no clinically relevant change in oral contraceptive exposure. Present that only as label text, side by side, with no ranking. I confirmed the ACOG GLP-1 pregnancy/lactation advisory exists (Healio 23 Oct 2026). It advises counselling on the lack of safety data, considering stopping 1–2 months before trying to conceive, not using the medicine in pregnancy, and discussing effective contraception because weight loss may improve fertility. Quote ACOG's own document, not the news coverage. I could NOT confirm a Frontiers in Pharmacology meta-analysis dated Oct 16, 2026. Searches turned up a Sept 2026 meta-analysis (about 2.1M pregnancies, City St George's/Leicester) and an Oct 15 scoping review (World J Diabetes). Both are observational, and their authors say the results are 'not proof of safety'. For chapter 4, CDC's US SPR (2024) covers vomiting and diarrhoea with combined pills. Credit CDC only for wording found on the CDC page. Don't say tirzepatide 'makes the pill fail'. Say the label says it 'may reduce' its effectiveness for that period. The GI line, the don't-switch line, 'Not personal advice' and the prescriber line are all required. No 'Ozempic babies'.",
+    "pillar": "life-on-glp1"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Tirzepatide: Does It Affect Birth Control Pills?",
+    "title_candidates": [
+      "Tirzepatide: Does It Affect Birth Control Pills?",
+      "Tirzepatide on the Pill? What the Label Says",
+      "Tirzepatide and Birth Control: Does the Pill Work?",
+      "Tirzepatide and the Pill: Is It Affected?",
+      "Tirzepatide and Birth Control: The 4-Week Window",
+      "Tirzepatide and the Pill: Why Your Stomach Matters",
+      "Tirzepatide and Birth Control: Pill vs IUD",
+      "Tirzepatide and Birth Control: Is the Pill Enough?",
+      "Tirzepatide and Birth Control Pills: What to Know",
+      "Tirzepatide and Pregnancy Planning: What ACOG Says"
+    ],
+    "description": "\n\nYes, tirzepatide may reduce how well birth control pills work. The US label advises switching to a non-oral method, or adding a barrier method, for 4 weeks after starting and for 4 weeks after each dose increase. Vomiting or diarrhoea, common side effects, can also affect any pill.\n\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you, and don't switch, stop or change your medicines on your own.\n\nSources:\nZepbound (tirzepatide) US Prescribing Information, rev. 08/2026: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b\nCDC, U.S. Selected Practice Recommendations for Contraceptive Use, 2024: https://www.cdc.gov/mmwr/volumes/73/rr/rr7303a1.htm\nHealio on ACOG's October 2026 GLP-1 and pregnancy guidance: https://www.healio.com/news/womens-health-ob-gyn/20261023/acog-issues-longawaited-guidance-on-glp1s-during-pregnancy-lactation\n\n#tirzepatide #birthcontrol #contraception #GLP1",
+    "tags": [
+      "tirzepatide birth control",
+      "tirzepatide and birth control pills",
+      "does tirzepatide affect birth control",
+      "tirzepatide oral contraceptives",
+      "GLP-1 and birth control pills",
+      "Zepbound birth control",
+      "Mounjaro birth control",
+      "tirzepatide contraception",
+      "semaglutide birth control",
+      "Wegovy birth control",
+      "Ozempic birth control",
+      "tirzepatide and pregnancy",
+      "ACOG GLP-1 pregnancy guidance",
+      "tirzepatide IUD",
+      "tirzepatide implant birth control",
+      "gastric emptying birth control pill",
+      "tirzepatide side effects",
+      "GLP-1 pregnancy planning",
+      "tirzepatide vomiting diarrhea pill",
+      "non-oral contraception GLP-1",
+      "tirzepatide vaginal ring"
+    ],
+    "pinned_comment": "The tirzepatide label gives two separate 4-week windows for people on oral hormonal contraceptives: one after you start, and one after each dose increase. Save this to plan both with your prescriber. Not personal advice. Talk to your doctor or prescriber about whether it's right for you, and don't switch, stop or change your medicines on your own.",
+    "thumbnail": {
+      "headline": "TWO 4-WEEK WINDOWS",
+      "highlight_word": "4-WEEK",
+      "subtext": "What the label actually says",
+      "layout": "before-after",
+      "psychology": "State change (worried → answered) is our best CTR pattern (3.9–4.6%). A worried pill pack turning calm promises a clear answer, and '4-week window' adds a specific detail the title doesn't give. It matches the label's 4 weeks after starting and after each dose increase.",
+      "emotion": "Worry turning into relief: 'there's a specific answer, and it's manageable'",
+      "hero_art": "birth control pill pack",
+      "hero_face": "worried",
+      "second_art": "birth control pill pack",
+      "second_face": "happy",
+      "prop": "arrow",
+      "accent": "blue",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 Does tirzepatide affect the pill?\n1:02 Why does stomach speed matter?\n2:26 What does the tirzepatide label say?\n4:27 Does it affect the IUD, implant or ring?\n5:30 What if I'm vomiting or have diarrhoea?\n6:33 What about semaglutide and the pill?\n7:24 What if I want to get pregnant?\n9:28 Your questions for your prescriber"
+  },
+  "media": {
+    "video": "L1-tirzepatide-and-oral-birth-control-pills.mp4",
+    "duration": 635.577,
+    "thumbnail": "L1-tirzepatide-and-oral-birth-control-pills-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-05T19:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "PTBp26xMHCY",
+      "url": "https://youtu.be/PTBp26xMHCY",
+      "published_at": "2026-11-05T19:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-11-05T03:48:55.324Z",
+  "script": {
+    "working_title": "Tirzepatide and Birth Control Pills: What to Know",
+    "target_keyword": "tirzepatide birth control",
+    "hook_pattern": "The first line answers the title directly. Then comes a 'you' scenario (reading the pharmacy leaflet) and an open loop: why doctors say contraception matters more, not less, once these medicines start working. The loop pays off in chapter 7.",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "Does tirzepatide affect the pill?",
+        "narration": "Yes, tirzepatide can affect birth control pills. The US prescribing information says it may reduce how well oral contraceptives work, during specific windows of time.",
+        "on_screen_text": "It may reduce pill effectiveness",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill pack beside medicine pen, calm"
+        },
+        "retention_device": "Direct answer to the title in the first sentence",
+        "source_ids": [
+          "src1",
+          "src2"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "Does tirzepatide affect the pill?",
+        "narration": "Picture this. You've just collected your first tirzepatide pen from the pharmacy. You take your pill every morning, same time, never miss one. Then you spot a line about contraception in the leaflet, and your stomach drops a little.",
+        "on_screen_text": "That leaflet moment",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "worried woman reading leaflet kitchen"
+        },
+        "retention_device": "Visceral 'you' scenario",
+        "source_ids": []
+      },
+      {
+        "id": "s03",
+        "section": "Does tirzepatide affect the pill?",
+        "narration": "If that's you, take a breath. This interaction is known, and the label spells out a clear plan for it.",
+        "on_screen_text": "Known, with a clear plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi mascot reassuring, calm smile"
+        },
+        "retention_device": "Validation of the feeling",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "Does tirzepatide affect the pill?",
+        "narration": "In the next few minutes you'll learn what the label says, word for word. You'll see why it happens, which methods it doesn't affect in the same way, and what a stomach bug has to do with any of it.",
+        "on_screen_text": "What you'll know by the end",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "The label, word for word",
+            "Why it happens",
+            "Non-oral methods",
+            "Stomach bugs and pills"
+          ],
+          "stock_query": "roadmap with four signposts"
+        },
+        "retention_device": "Promise and roadmap",
+        "source_ids": []
+      },
+      {
+        "id": "s05",
+        "section": "Does tirzepatide affect the pill?",
+        "narration": "Stay to the end, too. Women's health doctors have a reason for saying contraception matters more, not less, once these medicines start working, and that reason surprises a lot of people.",
+        "on_screen_text": "Why it matters MORE",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious woman, glowing question mark"
+        },
+        "retention_device": "Main open loop, paid off in chapter 7",
+        "source_ids": []
+      },
+      {
+        "id": "s06",
+        "section": "Does tirzepatide affect the pill?",
+        "narration": "A quick note before we start. This is not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Not personal advice. Ask your prescriber.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly doctor with clipboard, calm"
+        },
+        "retention_device": "Trust signal",
+        "source_ids": []
+      },
+      {
+        "id": "s07",
+        "section": "Why does stomach speed matter?",
+        "narration": "First question: why would an injection affect a pill at all?",
+        "on_screen_text": "Why stomach speed matters",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "stomach with speedometer, gentle"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s08",
+        "section": "Why does stomach speed matter?",
+        "narration": "Let's follow one person. Imagine Priya, thirty-one, who has taken a daily combined pill for years. Her doctor has just prescribed tirzepatide. Her question is simple: is my pill still working?",
+        "on_screen_text": "Imagine Priya, 31",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman holding pill pack, thoughtful"
+        },
+        "retention_device": "Hypothetical character thread starts",
+        "source_ids": []
+      },
+      {
+        "id": "s09",
+        "section": "Why does stomach speed matter?",
+        "narration": "To answer her, we have to talk about your stomach. Tirzepatide acts on two gut hormone pathways, GLP-1 and GIP. One of its effects is slowing how fast food leaves your stomach.",
+        "on_screen_text": "Tirzepatide slows the stomach",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon stomach with slow traffic"
+        },
+        "retention_device": "Plain-language mechanism",
+        "source_ids": [
+          "src1",
+          "src2"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "Why does stomach speed matter?",
+        "narration": "That's one reason people can feel full sooner. But your stomach doesn't sort food from tablets. Anything you swallow waits in the same queue.",
+        "on_screen_text": "Pills wait in the same queue",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "tiny pill waiting in food queue"
+        },
+        "retention_device": "Analogy",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "Why does stomach speed matter?",
+        "narration": "A pill works by keeping your hormone levels in a steady range. If it sits in your stomach longer, those hormones can reach your blood later, with a lower peak.",
+        "on_screen_text": "Later, lower peak",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hormone level line flattening, gentle"
+        },
+        "retention_device": "But/therefore step",
+        "source_ids": []
+      },
+      {
+        "id": "s12",
+        "section": "Why does stomach speed matter?",
+        "narration": "The label describes a study in which people took a combined oral contraceptive with a single five milligram dose of tirzepatide. The peak levels of the pill's hormones fell by more than half. Between fifty-five and sixty-six percent, depending on the hormone.",
+        "on_screen_text": "Peak levels: down by over half",
+        "visual": {
+          "kind": "stat",
+          "stat_value": ">50%",
+          "stat_label": "Peak pill hormone levels 55–66% lower after one 5 mg tirzepatide dose (label study, combined pill)",
+          "stock_query": "big number on plain gradient"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "src1",
+          "src2"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "Why does stomach speed matter?",
+        "narration": "Total hormone exposure over time fell by roughly twenty percent. The peak also came later, about two and a half to four and a half hours after usual.",
+        "on_screen_text": "Total exposure: about 20% lower",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~20%",
+          "stat_label": "Lower total pill hormone exposure, single dose",
+          "stock_query": "clock beside lowered bar chart"
+        },
+        "retention_device": "Second stat, humanised timing",
+        "source_ids": [
+          "src1",
+          "src2"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "Why does stomach speed matter?",
+        "narration": "Here's the detail most people miss, though. That slowdown isn't constant. When it's strongest tells you exactly when to be careful.",
+        "on_screen_text": "It isn't constant",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over calendar"
+        },
+        "retention_device": "Mini-cliffhanger before chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s15",
+        "section": "What does the tirzepatide label say?",
+        "narration": "So what does the label actually say? Here it is, word for word.",
+        "on_screen_text": "The label, word for word",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "open document with highlighter"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "What does the tirzepatide label say?",
+        "narration": "Quote: Use of Zepbound may reduce the efficacy of oral hormonal contraceptives due to delayed gastric emptying. This delay is largest after the first dose and diminishes over time. End quote.",
+        "on_screen_text": "\"May reduce the efficacy\"",
+        "visual": {
+          "kind": "quote",
+          "quote": "Use of ZEPBOUND may reduce the efficacy of oral hormonal contraceptives due to delayed gastric emptying. This delay is largest after the first dose and diminishes over time.",
+          "attribution": "Zepbound (tirzepatide) US Prescribing Information",
+          "stock_query": "label page with highlighted sentence"
+        },
+        "retention_device": "Payoff of the 'isn't constant' cliffhanger",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "What does the tirzepatide label say?",
+        "narration": "That answers the cliffhanger. The delay is largest after the first dose, and it eases over time.",
+        "on_screen_text": "Biggest after the first dose",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "wave shrinking over weeks calendar"
+        },
+        "retention_device": "Loop closed",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "What does the tirzepatide label say?",
+        "narration": "Notice the word may. The label doesn't say your pill stops working. It says its effectiveness may be reduced.",
+        "on_screen_text": "\"May\", not \"stops\"",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "word MAY circled on paper"
+        },
+        "retention_device": "Reframe",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "What does the tirzepatide label say?",
+        "narration": "So if you've seen posts saying tirzepatide cancels out the pill, that goes further than the label does. The real message is narrower, and it's more useful.",
+        "on_screen_text": "Narrower, and more useful",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Tirzepatide stops the pill working",
+          "fact": "The label says it may reduce oral contraceptive effectiveness",
+          "stock_query": "Medi correcting a social post, calm"
+        },
+        "retention_device": "Myth attack",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "What does the tirzepatide label say?",
+        "narration": "Then comes the practical sentence, again word for word. Quote: Advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method, or add a barrier method of contraception for four weeks after initiation with Zepbound and for four weeks after each dose escalation. End quote.",
+        "on_screen_text": "The label's plan",
+        "visual": {
+          "kind": "quote",
+          "quote": "Advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method, or add a barrier method of contraception for 4 weeks after initiation with ZEPBOUND and for 4 weeks after each dose escalation.",
+          "attribution": "Zepbound (tirzepatide) US Prescribing Information",
+          "stock_query": "label page, two highlighted phrases"
+        },
+        "retention_device": "Exact quote with a practical payoff",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "What does the tirzepatide label say?",
+        "narration": "That gives you two windows: four weeks after you start, and four weeks after every dose increase.",
+        "on_screen_text": "Two 4-week windows",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "4 weeks after starting",
+            "4 weeks after each dose increase"
+          ],
+          "stock_query": "calendar with two shaded blocks"
+        },
+        "retention_device": "Simple framework",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "What does the tirzepatide label say?",
+        "narration": "Four weeks is about the length of one pill pack. And the second window is the one people forget. The label doesn't only count the start, because each dose increase begins a new four-week window.",
+        "on_screen_text": "Each dose increase restarts it",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill pack next to calendar month"
+        },
+        "retention_device": "Humanised number and a surprising detail",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "What does the tirzepatide label say?",
+        "narration": "Mounjaro is the same medicine, prescribed for type 2 diabetes. Its label gives the same advice.",
+        "on_screen_text": "Mounjaro label: same advice",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two matching documents side by side"
+        },
+        "retention_device": "Consistency check",
+        "source_ids": [
+          "src2"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "What does the tirzepatide label say?",
+        "narration": "The label's words are oral hormonal contraceptives. They don't name one brand or one type. If you swallow your hormonal method, this section applies to it.",
+        "on_screen_text": "Any hormonal method you swallow",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "different pill packs lined up"
+        },
+        "retention_device": "Scope clarification",
+        "source_ids": [
+          "src1",
+          "src2"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "What does the tirzepatide label say?",
+        "narration": "Back to Priya. Her pill is an oral hormonal contraceptive, so both windows apply to her. She should plan them with her prescriber instead of guessing.",
+        "on_screen_text": "Priya: both windows apply",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Priya talking with prescriber, relieved"
+        },
+        "retention_device": "Return to character thread",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "What does the tirzepatide label say?",
+        "narration": "But what if Priya didn't use a pill at all? Would any of this matter? This is where it gets interesting.",
+        "on_screen_text": "No pill at all?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Priya pondering, question bubbles"
+        },
+        "retention_device": "Question to the viewer before the chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s27",
+        "section": "Does it affect the IUD, implant or ring?",
+        "narration": "Does tirzepatide affect the IUD, the implant or the ring?",
+        "on_screen_text": "IUD, implant, ring?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "contraception options on a table"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s28",
+        "section": "Does it affect the IUD, implant or ring?",
+        "narration": "Look again at the label's own advice: switch to a non-oral method. That points to the issue, which is absorption through the gut.",
+        "on_screen_text": "The issue is the gut",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "arrow pointing at cartoon stomach"
+        },
+        "retention_device": "Insight from the label",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "Does it affect the IUD, implant or ring?",
+        "narration": "Non-oral methods include intrauterine devices, hormonal or copper. They also include the arm implant, the contraceptive injection, the patch and the vaginal ring.",
+        "on_screen_text": "Non-oral options",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "IUD (hormonal or copper)",
+            "Arm implant",
+            "Contraceptive injection",
+            "Patch",
+            "Vaginal ring"
+          ],
+          "stock_query": "friendly icons of contraception methods"
+        },
+        "retention_device": "Visual list",
+        "source_ids": [
+          "src5"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Does it affect the IUD, implant or ring?",
+        "narration": "None of these go through your stomach. So the delayed gastric emptying the label describes doesn't apply to them in the same way.",
+        "on_screen_text": "They skip the stomach",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "methods bypassing stomach queue"
+        },
+        "retention_device": "But/therefore payoff",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "Does it affect the IUD, implant or ring?",
+        "narration": "The label's other option is a barrier method, like condoms. You add it to your pill during those four-week windows. It doesn't replace the pill.",
+        "on_screen_text": "Barrier: added, not instead",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "plus sign joining two shields"
+        },
+        "retention_device": "Common confusion cleared",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Does it affect the IUD, implant or ring?",
+        "narration": "The right option for you depends on your health, your preferences and your plans. That's exactly the kind of choice a prescriber or contraception clinic helps you make.",
+        "on_screen_text": "Your choice, with support",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "warm clinic conversation, nodding"
+        },
+        "retention_device": "Agency",
+        "source_ids": []
+      },
+      {
+        "id": "s33",
+        "section": "Does it affect the IUD, implant or ring?",
+        "narration": "And please, don't switch, stop or change your medicines on your own. That includes your pill and your tirzepatide.",
+        "on_screen_text": "Don't switch, stop or change alone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm Medi with stop hand"
+        },
+        "retention_device": "Safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s34",
+        "section": "Does it affect the IUD, implant or ring?",
+        "narration": "Now, a pill can also lose ground in a second way, and this one has nothing to do with stomach speed. It's a lot messier.",
+        "on_screen_text": "A second, messier way",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curtain opening on bathroom door"
+        },
+        "retention_device": "New open loop",
+        "source_ids": []
+      },
+      {
+        "id": "s35",
+        "section": "What if I'm vomiting or have diarrhoea?",
+        "narration": "What if you're vomiting or have diarrhoea?",
+        "on_screen_text": "Sick days and the pill",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "person on sofa with blanket, tea"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s36",
+        "section": "What if I'm vomiting or have diarrhoea?",
+        "narration": "Nausea, diarrhoea and vomiting are among the most common side effects listed on the tirzepatide label.",
+        "on_screen_text": "Common GI side effects",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Nausea",
+            "Diarrhoea",
+            "Vomiting"
+          ],
+          "stock_query": "queasy cartoon stomach, gentle"
+        },
+        "retention_device": "Relatable moment",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "What if I'm vomiting or have diarrhoea?",
+        "narration": "Vomiting and diarrhoea can affect any pill, for anyone. A tablet that comes back up, or rushes straight through, may not be fully absorbed.",
+        "on_screen_text": "Any pill, for anyone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill rushing down a slide"
+        },
+        "retention_device": "Reframe: this isn't only about tirzepatide",
+        "source_ids": [
+          "src5"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "What if I'm vomiting or have diarrhoea?",
+        "narration": "That's why the CDC's contraception guidance has a section on vomiting and diarrhoea for people taking combined pills.",
+        "on_screen_text": "CDC: a section on this",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "guidance booklet with bookmark"
+        },
+        "retention_device": "Authority proof point",
+        "source_ids": [
+          "src5"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "What if I'm vomiting or have diarrhoea?",
+        "narration": "What the guidance recommends depends on how long the vomiting or diarrhoea goes on, so we won't give you a rule here. If it happens, call your prescriber, pharmacist or contraception clinic and ask whether you need backup.",
+        "on_screen_text": "Ask about backup",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person calling pharmacist, relieved"
+        },
+        "retention_device": "Practical action",
+        "source_ids": [
+          "src5"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "What if I'm vomiting or have diarrhoea?",
+        "narration": "Here's the line worth remembering. A stomach bug, or a rough week of side effects, is a reason to check in about your pill, whatever medicine you're on.",
+        "on_screen_text": "Sick week? Check in.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sticky note on fridge, reminder"
+        },
+        "retention_device": "Memorable rule of thumb",
+        "source_ids": []
+      },
+      {
+        "id": "s41",
+        "section": "What if I'm vomiting or have diarrhoea?",
+        "narration": "Severe or ongoing vomiting or diarrhoea is a reason to contact your prescriber in any case. The label warns that fluid loss from these side effects has been linked to kidney problems.",
+        "on_screen_text": "Severe or ongoing? Call",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "water glass and phone, calm"
+        },
+        "retention_device": "Safety escalation",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "What if I'm vomiting or have diarrhoea?",
+        "narration": "So far it's all been tirzepatide. You're probably wondering whether other GLP-1 medicines come with the same warning.",
+        "on_screen_text": "Other GLP-1 medicines?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two medicine pens, question mark"
+        },
+        "retention_device": "Viewer question bridges to the next chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s43",
+        "section": "What about semaglutide and the pill?",
+        "narration": "What about semaglutide and the pill?",
+        "on_screen_text": "Semaglutide and the pill",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "second label on desk"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s44",
+        "section": "What about semaglutide and the pill?",
+        "narration": "Semaglutide, sold as Wegovy and Ozempic, also delays stomach emptying. Its labels include a study with an oral contraceptive too.",
+        "on_screen_text": "Semaglutide also slows the stomach",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "slow stomach queue, second pen"
+        },
+        "retention_device": "Comparison set-up",
+        "source_ids": [
+          "src3",
+          "src4"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "What about semaglutide and the pill?",
+        "narration": "The semaglutide labels report no clinically relevant change in pill exposure in their study.",
+        "on_screen_text": "Semaglutide labels: no clinically relevant change",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "label page with highlighted line"
+        },
+        "retention_device": "Contrast fact",
+        "source_ids": [
+          "src3",
+          "src4"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "What about semaglutide and the pill?",
+        "narration": "Side by side, the tirzepatide labels give the four-week advice, and the semaglutide labels report that study result. These were separate studies of different medicines. They aren't a head-to-head comparison. And the tirzepatide study looked at a single first dose, when the stomach slowdown is at its largest.",
+        "on_screen_text": "Separate studies, not head-to-head",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Tirzepatide labels: 4-week advice",
+            "Semaglutide labels: no clinically relevant change",
+            "Separate studies, not head-to-head"
+          ],
+          "stock_query": "two documents on a balanced table"
+        },
+        "retention_device": "Side-by-side clarity",
+        "source_ids": [
+          "src1",
+          "src3",
+          "src4"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "What about semaglutide and the pill?",
+        "narration": "So this isn't a reason to change medicines. It's simply what each label says, and your prescriber weighs it alongside everything else about you.",
+        "on_screen_text": "Not a reason to switch",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "prescriber weighing scales of factors"
+        },
+        "retention_device": "Guardrail with warmth",
+        "source_ids": []
+      },
+      {
+        "id": "s48",
+        "section": "What about semaglutide and the pill?",
+        "narration": "Now back to the question from the start. Why would doctors say contraception matters more once these medicines start working?",
+        "on_screen_text": "The big question",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glowing question mark returns"
+        },
+        "retention_device": "Main loop re-opened for payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s49",
+        "section": "What if I want to get pregnant?",
+        "narration": "What if you want to get pregnant, now or later?",
+        "on_screen_text": "Planning a pregnancy",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "couple planning at kitchen table"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s50",
+        "section": "What if I want to get pregnant?",
+        "narration": "Here's what surprises people. Weight loss may improve fertility, so for some people a pregnancy may become more likely than they expected.",
+        "on_screen_text": "Weight loss may improve fertility",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "surprised woman, gentle sunrise"
+        },
+        "retention_device": "Payoff of the main open loop",
+        "source_ids": [
+          "src6"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "What if I want to get pregnant?",
+        "narration": "In October twenty twenty-six, the American College of Obstetricians and Gynecologists, ACOG, published a practice advisory on GLP-1 medicines and pregnancy. It notes that weight loss on these medicines may improve fertility.",
+        "on_screen_text": "ACOG advisory, Oct 2026",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "official advisory document, calm"
+        },
+        "retention_device": "Authority",
+        "source_ids": [
+          "src6"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "What if I want to get pregnant?",
+        "narration": "In short, it advises considering stopping one to two months before trying to conceive. It says these medicines shouldn't be used during pregnancy. And it says anyone who can become pregnant should be counselled on effective contraception.",
+        "on_screen_text": "ACOG's three points",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Consider stopping 1–2 months before trying to conceive",
+            "Don't use during pregnancy",
+            "Can become pregnant? Effective contraception"
+          ],
+          "stock_query": "three-point checklist on clipboard"
+        },
+        "retention_device": "Clear takeaway list",
+        "source_ids": [
+          "src6"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "What if I want to get pregnant?",
+        "narration": "Consider stopping means planning it with your clinician. It's not a solo decision. They can fit the timing around your other health needs.",
+        "on_screen_text": "Plan it together",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient with calendar"
+        },
+        "retention_device": "Safety reframe",
+        "source_ids": []
+      },
+      {
+        "id": "s54",
+        "section": "What if I want to get pregnant?",
+        "narration": "The tirzepatide label's pregnancy section is cautious too. It says the available human data aren't enough to evaluate the risk, and that animal studies suggest there may be risks to the fetus.",
+        "on_screen_text": "Label: human data insufficient",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "label section with caution note"
+        },
+        "retention_device": "Label evidence",
+        "source_ids": [
+          "src1",
+          "src2"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "What if I want to get pregnant?",
+        "narration": "So what about people who became pregnant without planning to while taking a GLP-1 medicine? Researchers have started to look.",
+        "on_screen_text": "Unplanned exposure: what's known",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "researcher reviewing charts, thoughtful"
+        },
+        "retention_device": "Micro-story set-up",
+        "source_ids": []
+      },
+      {
+        "id": "s56",
+        "section": "What if I want to get pregnant?",
+        "narration": "A large twenty twenty-four study pooled pregnancies in people with type 2 diabetes from several countries. Taking GLP-1 medicines in early pregnancy wasn't linked to more major birth defects than taking insulin.",
+        "on_screen_text": "2024 study, type 2 diabetes: not linked vs insulin",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "world map with data points"
+        },
+        "retention_device": "Surprising reassurance, carefully framed",
+        "source_ids": [
+          "src7"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "What if I want to get pregnant?",
+        "narration": "Keep that in context, though. It was observational, it looked at exposure around conception and early pregnancy, and it didn't include tirzepatide. It isn't proof of safety.",
+        "on_screen_text": "Observational. Not proof of safety.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifier over small print, calm"
+        },
+        "retention_device": "Honest caveat",
+        "source_ids": [
+          "src7"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "What if I want to get pregnant?",
+        "narration": "So if Priya ever wants a baby, she should start that conversation well ahead of time. And anyone who thinks they might be pregnant while taking tirzepatide should contact their prescriber promptly.",
+        "on_screen_text": "Plan early. Possibly pregnant? Call.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Priya calm, phone in hand"
+        },
+        "retention_device": "Character thread payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s59",
+        "section": "What if I want to get pregnant?",
+        "narration": "That closes the loop. Weight loss on these medicines may improve fertility, and they can make pills less reliable for a while. Together, that means contraception deserves a real plan.",
+        "on_screen_text": "Contraception deserves a plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "puzzle pieces clicking together"
+        },
+        "retention_device": "Main loop payoff",
+        "source_ids": [
+          "src1",
+          "src6"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "What if I want to get pregnant?",
+        "narration": "If clear answers like this help, subscribe. We're working through the everyday questions people on tirzepatide actually search for, one at a time.",
+        "on_screen_text": "One real question at a time",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi waving, subscribe bell glow"
+        },
+        "retention_device": "Single subscribe ask after payoff, tied to the next benefit",
+        "source_ids": []
+      },
+      {
+        "id": "s61",
+        "section": "Your questions for your prescriber",
+        "narration": "Let's turn this into four questions you can take to your next appointment.",
+        "on_screen_text": "Take these to your appointment",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "notebook with four questions"
+        },
+        "retention_device": "Practical checklist promise",
+        "source_ids": []
+      },
+      {
+        "id": "s62",
+        "section": "Your questions for your prescriber",
+        "narration": "One. Is my contraception taken by mouth? If it is, the label's four-week windows are relevant to me.",
+        "on_screen_text": "1. Is it taken by mouth?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill pack with question tag"
+        },
+        "retention_device": "Numbered checklist",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "Your questions for your prescriber",
+        "narration": "Two. What will I use for the first four weeks, and after each dose increase? The label's options are a non-oral method, or adding a barrier method.",
+        "on_screen_text": "2. Plan for both windows",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar with shaded weeks"
+        },
+        "retention_device": "Numbered checklist",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "Your questions for your prescriber",
+        "narration": "Three. What should I do if I'm vomiting or have diarrhoea? Ask before it happens, so you're not guessing at midnight.",
+        "on_screen_text": "3. My sick-day plan?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "night kitchen, calm note on fridge"
+        },
+        "retention_device": "Relatable moment",
+        "source_ids": [
+          "src5"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "Your questions for your prescriber",
+        "narration": "Four. If I might want a pregnancy in the next year or two, when should we start talking about timing?",
+        "on_screen_text": "4. Pregnancy plans and timing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "couple smiling with calendar"
+        },
+        "retention_device": "Numbered checklist",
+        "source_ids": [
+          "src6"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "Your questions for your prescriber",
+        "narration": "That's your checklist: by mouth or not, both windows, a sick-day plan, and pregnancy timing.",
+        "on_screen_text": "Your four questions",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Is it taken by mouth?",
+            "Plan for both 4-week windows",
+            "Sick-day plan",
+            "Pregnancy timing"
+          ],
+          "stock_query": "checklist with four green ticks"
+        },
+        "retention_device": "Recap list",
+        "source_ids": [
+          "src1",
+          "src5",
+          "src6"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "Your questions for your prescriber",
+        "narration": "Back to Priya one last time. Her pill didn't stop working overnight. She has two windows to plan around, a sick-day question to ask, and a prescriber who can help. That's manageable.",
+        "on_screen_text": "Manageable, with a plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Priya relieved, small victory smile"
+        },
+        "retention_device": "Emotional resolution of the character thread",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "Your questions for your prescriber",
+        "narration": "Remember, this is not personal advice. Talk to your doctor or prescriber about whether it's right for you, and don't switch, stop or change your medicines on your own.",
+        "on_screen_text": "Not personal advice. Don't switch, stop or change alone.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly prescriber, open door"
+        },
+        "retention_device": "Safety close",
+        "source_ids": []
+      },
+      {
+        "id": "s69",
+        "section": "Your questions for your prescriber",
+        "narration": "There's a video I'd watch next, linked in the description.",
+        "on_screen_text": "Watch next: in the description",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi pointing down, cheerful"
+        },
+        "retention_device": "Watch-next link",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "src1",
+        "title": "ZEPBOUND (tirzepatide) injection: US Prescribing Information (rev. 28 Aug 2026)",
+        "publisher": "Eli Lilly and Company / US FDA (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "src2",
+        "title": "MOUNJARO (tirzepatide) injection: US Prescribing Information",
+        "publisher": "Eli Lilly and Company / US FDA",
+        "year": "2026",
+        "url": "https://pi.lilly.com/us/mounjaro-uspi.pdf"
+      },
+      {
+        "id": "src3",
+        "title": "WEGOVY (semaglutide) injection: US Prescribing Information",
+        "publisher": "Novo Nordisk / US FDA",
+        "year": "2026",
+        "url": "https://www.novo-pi.com/wegovy.pdf"
+      },
+      {
+        "id": "src4",
+        "title": "OZEMPIC (semaglutide) injection: US Prescribing Information",
+        "publisher": "Novo Nordisk / US FDA",
+        "year": "2025",
+        "url": "https://www.novo-pi.com/ozempic.pdf"
+      },
+      {
+        "id": "src5",
+        "title": "U.S. Selected Practice Recommendations for Contraceptive Use, 2024 (MMWR Recomm Rep 2024;73(3))",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7303a1.htm"
+      },
+      {
+        "id": "src6",
+        "title": "Practice Advisory: Use of Glucagon-Like Peptide-1 Receptor Agonists in Pregnancy and Lactation",
+        "publisher": "American College of Obstetricians and Gynecologists (ACOG)",
+        "year": "2026",
+        "url": "https://www.acog.org/clinical/guidance/practice-advisory/2026/10/use-of-glucagon-like-peptide-1-receptor-agonists-in-pregnancy-and-lactation/"
+      },
+      {
+        "id": "src7",
+        "title": "Cesta CE, Rotem R, Bateman BT, et al. Safety of GLP-1 Receptor Agonists and Other Second-Line Antidiabetics in Early Pregnancy. JAMA Intern Med. 2024;184(2):144-152",
+        "publisher": "JAMA Internal Medicine (PubMed)",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38079178/"
+      }
+    ],
+    "cta": "If clear answers like this help, subscribe. We're working through the everyday questions people on tirzepatide actually search for, one at a time. There's a video I'd watch next, linked in the description."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "I checked the script against the Zepbound label on DailyMed (revised August 2026), the Mounjaro label wording, the semaglutide label drug-interaction finding, ACOG's October 2026 GLP-1 pregnancy advisory, Cesta et al. 2024 and the CDC's 2024 contraception practice recommendations. The core claims are accurate and kept at the right scope:\n- Both quotes from section 7.2 of the label are word for word.\n- The study figures match the label (5 mg single dose of tirzepatide with a combined pill): peak levels fell 55–66%, total exposure fell 20–23%, and the peak came 2.5–4.5 hours later.\n- The pregnancy wording matches section 8.1, and the kidney wording matches section 5.3.\n- The semaglutide finding of no clinically relevant change is correct, and the script correctly says the studies are separate, not head-to-head, and notes the single first-dose design.\n- The Cesta study is described correctly: observational, type 2 diabetes, several countries, compared with insulin, and data from 2009–2021, which is before tirzepatide was approved.\n- ACOG's 1–2 month timing, its advice not to use these medicines in pregnancy, and its point that GLP-1 weight loss may increase fertility are all confirmed through Healio's coverage of the advisory.\n\nThe safety lines are all there: \"Not personal advice\", the prescriber line, the don't-switch/stop/change line, the pregnancy contact line, and escalation for severe vomiting or diarrhoea. The script gives no dosing advice. Priya is clearly hypothetical. There are three minor wording fixes: the ACOG contraception point is slightly broader than ACOG's wording, the semaglutide on-screen card lacks scope, and the opening line could keep the label's \"may\". Note: the ACOG advisory URL returned HTTP 402 to my fetch, but search results and the trade press confirm it exists. I couldn't parse the novo-pi and pi.lilly PDFs directly, but both URLs are live, and their content is confirmed through search excerpts that quote them. I didn't add the 402-blocked ACOG page to the verified source list. Keep it in the script's own source list.",
+    "issues": [
+      {
+        "location": "s52",
+        "claim": "And it says anyone who can become pregnant should be counselled on effective contraception.",
+        "problem": "ACOG frames contraception counselling for patients who don't want to become pregnant, not everyone who can become pregnant. The script's wording is slightly broader than the source.",
+        "severity": "minor",
+        "fix": "Narration: \"And it says people who don't want a pregnancy right now should be counselled on effective contraception.\" List item 3: \"Not planning pregnancy? Effective contraception\""
+      },
+      {
+        "location": "s45",
+        "claim": "On-screen: \"Semaglutide labels: no clinically relevant change\"",
+        "problem": "This fails the muted-viewer test. A viewer watching without sound can't tell what didn't change or that this was a single interaction study (done at steady-state semaglutide 1 mg). It could read as a blanket safety statement.",
+        "severity": "minor",
+        "fix": "On-screen text: \"Semaglutide labels: no clinically relevant change in pill exposure (one study)\". Make the same change to s46 list item 2: \"Semaglutide labels: no clinically relevant change in pill exposure (one study)\""
+      },
+      {
+        "location": "s01",
+        "claim": "Yes, tirzepatide can affect birth control pills.",
+        "problem": "The label's verb is \"may\". The script uses \"may\" in the next sentence, but the opening line is a little stronger than the label.",
+        "severity": "minor",
+        "fix": "Narration: \"Yes, tirzepatide may make birth control pills less effective. The US prescribing information says it may reduce how well oral contraceptives work, during specific windows of time.\""
+      },
+      {
+        "location": "s13",
+        "claim": "The peak also came later, about two and a half to four and a half hours after usual.",
+        "problem": "\"after usual\" is awkward and could be read as clock time. Also, the label reports the 2.5–4.5 hour delay only for ethinyl estradiol.",
+        "severity": "minor",
+        "fix": "Narration: \"The peak also came later. About two and a half to four and a half hours later than without tirzepatide.\""
+      },
+      {
+        "location": "sources: src6",
+        "claim": "ACOG practice advisory URL",
+        "problem": "The URL returns HTTP 402 to automated fetches, though search results confirm the page exists. The publisher's automated source-list check may reject it.",
+        "severity": "minor",
+        "fix": "Keep src6. If the description's source list needs a fetchable link, use https://www.healio.com/news/womens-health-ob-gyn/20261023/acog-issues-longawaited-guidance-on-glp1s-during-pregnancy-lactation as secondary coverage. Don't tag any line in the script itself to Healio."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "src1",
+        "title": "ZEPBOUND (tirzepatide) injection: US Prescribing Information (rev. 08/2026)",
+        "publisher": "Eli Lilly and Company / US FDA (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "src2",
+        "title": "MOUNJARO (tirzepatide) injection: US Prescribing Information",
+        "publisher": "Eli Lilly and Company / US FDA",
+        "year": "2026",
+        "url": "https://pi.lilly.com/us/mounjaro-uspi.pdf"
+      },
+      {
+        "id": "src3",
+        "title": "WEGOVY (semaglutide) injection: US Prescribing Information",
+        "publisher": "Novo Nordisk / US FDA",
+        "year": "2026",
+        "url": "https://www.novo-pi.com/wegovy.pdf"
+      },
+      {
+        "id": "src4",
+        "title": "OZEMPIC (semaglutide) injection: US Prescribing Information",
+        "publisher": "Novo Nordisk / US FDA",
+        "year": "2025",
+        "url": "https://www.novo-pi.com/ozempic.pdf"
+      },
+      {
+        "id": "src5",
+        "title": "U.S. Selected Practice Recommendations for Contraceptive Use, 2024 (MMWR Recomm Rep 2024;73(3))",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7303a1.htm"
+      },
+      {
+        "id": "src7",
+        "title": "Cesta CE, Rotem R, Bateman BT, et al. Safety of GLP-1 Receptor Agonists and Other Second-Line Antidiabetics in Early Pregnancy. JAMA Intern Med. 2024;184(2):144-152",
+        "publisher": "JAMA Internal Medicine (PubMed)",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38079178/"
+      },
+      {
+        "id": "src8",
+        "title": "ACOG issues 'long-awaited' guidance on GLP-1s during pregnancy, lactation",
+        "publisher": "Healio",
+        "year": "2026",
+        "url": "https://www.healio.com/news/womens-health-ob-gyn/20261023/acog-issues-longawaited-guidance-on-glp1s-during-pregnancy-lactation"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.013,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 4.2,
+      "weakShots": 71,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "Backdrop jumps from the warm, sunlit room in shot 3 to a dark navy/night room here even though both shots are tagged 'warm' mood — an unexplained lighting/continuity break.",
+        "The small pill character in the second frame sits pressed against the right frame edge, partly crowded by the edge.",
+        "At 29.7s the frame shows the 'They skip the stomach' headline and a bypass body/stomach graphic, which is scripted for a non-oral-methods beat around the 290s mark — not the scripted 24.8–31.3s mascot-reassurance beat ('Breathe, there's a plan').",
+        "Frames at 32.4s and 38.2s show a sleepy stomach mascot ('Slow emptying') and a patch character, not the scripted roadmap chips card ('What you'll know by the end' with 4 chips).",
+        "The automated audit flags this shot as only ~9% covered on a gradient background (looks empty) at 35.9s.",
+        "Frame at 41.6s shows a 'Barrier method' pill character instead of the scripted stomach/bacteria visual for this body-mood beat.",
+        "Frames at 44.5s and 49.6s show a pill-and-shield 'Backup' exchange instead of the scripted icon/question content for this beat.",
+        "Frame at 52.7s shows 'Health/Preferences' chips and an IUD/ring icon, not the scripted icon/shield content.",
+        "55.4s still shows the misplaced 'Health/Preferences/Plans' chip card from the wrong beat.",
+        "60.2s shows doctor-and-patient faces labelled 'Prescriber', which loosely fits the theme but the scripted headline text 'Not personal advice. Ask your doctor or prescriber.' never appears in the captured frames.",
+        "Frame at 63.3s continues the prescriber scene ('Great question to bring!') instead of the scripted 'Why stomach speed matters' stomach/syringe/pill content.",
+        "Frames show a heart-mascot checkmark card and then the 'Don't change it alone' headline — content scripted for roughly 314.6s — instead of the scripted 'Imagine Priya, 31' introduction. That's close to a 4-minute content jump.",
+        "Frame at 74.1s still shows the misplaced 'Don't change it alone' card instead of the scripted icon/icon/syringe content.",
+        "76.8s (lone pill, 'Your pill') is a reasonable match for the scripted icon/pill beat, but 78.3s shows a full-body stomach mascot that appears pulled from the later 'slows the stomach' sequence.",
+        "Scripted content is stomach + molecule x10, but the frames show a stomach-with-red-X 'Speed' icon and then an unrelated bedroom skit frame ('Wait, what's that noise?') — no molecules appear."
+      ],
+      "layoutKinds": {
+        "tiny": 7,
+        "offscreen": 1,
+        "sparse": 12
+      }
+    },
+    "audio": {
+      "musicGain": 0.275,
+      "sfxGain": 0.55,
+      "finalWer": 0.012,
+      "maskingDelta": 0.012,
+      "lufs": -15.2,
+      "soundNotes": "Music sits right at the top of the -12/-15dB window (-13.5 under voice, -13 in pauses); pulled the overall music bed down about 1dB (gain 0.9) so pauses settle nearer -14dB as targeted without losing felt presence under speech. SFX are mostly well-tucked, but a cluster of transition swooshes/whooshes runs a consistent ~-11 to -12dB during speech (slightly hot but kept since they're part of the show's recurring transition language); true outliers that poke through the voice (blips/pops at -4 to -9dB during speech, e.g. around 333.8s, 368.3s, 394.5s, 577s, 580.4s, 603.6s) were pulled down toward the -16/-18dB felt range. The dense stat-reveal stacks at ~118s ('>50%') and ~126.7s ('~20%') and the chip pop-in at ~121–122s had 5–8 overlapping cues inside one second; trimmed each down to 3–4 by dropping redundant duplicate swooshes/ticks and keeping the accent hits (ding/swell) that actually sell the reveal. Added five bespoke cues for the story's key beats (pill hook, stomach-slowing visual, the '4 weeks' calendar stat, the pregnancy-planning section, and the four-questions checklist) to give those moments a distinct, non-stock texture without competing with narration."
+    },
+    "blocking": [],
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": [
+            "Subtext inside headline ('4-WEEK') is fine but tiny © logo and arrow are a bit busy at 168px"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 6,
+          "legibility": 6,
+          "issues": [
+            "Red circle around the pill's eyebrow sweat-drop looks like a stray annotation/debug mark, not an intentional design element",
+            "Subtext 'The label's key window' shrinks to near-illegible at phone/small size",
+            "Bare number '4 WEEKS' without context is more ambiguous than the before-after version"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 6.5,
+          "legibility": 7,
+          "issues": [
+            "Subtext 'Pill vs IUD, implant, ring' promises a multi-method comparison the title (about birth control pills specifically) doesn't set up — risk of overpromising vs. video content",
+            "'Pill' in subtext partially echoes 'Pills' in the title",
+            "Mystery pill silhouette is a weaker emotional hook than the worried→answered character arc"
+          ]
+        }
+      ],
+      "best_index": 0,
+      "reasoning": "Candidate #0 uses the state-change (worried→answered) pattern that the channel's own data shows is the top-performing thumbnail style (3.9–4.6% CTR vs. weaker patterns). It has one clear focal point (the pill-pack mascot), a specific added detail ('4-week window') that doesn't repeat the title, strong contrast between the dark 'before' and bright blue 'after' halves, and all text is large and legible even at 168px. Candidate #1 is weakened by what appears to be a stray red circle/annotation mark around the mascot's eyebrow — this reads as an artifact or QA mark rather than intentional design, and its subtext shrinks to illegibility at small sizes. Candidate #2's subtext ('Pill vs IUD, implant, ring') risks setting up an expectation of a multi-method comparison that the title and likely script (label-only reporting on pills) may not fully deliver, which is a soft honesty/packaging-match risk. #0 best balances proven CTR pattern, legibility, and accurate curiosity gap."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "description (between sources and hashtags)",
+          "claim": "Description has no chapters",
+          "problem": "The house description order asks for real chapters on long-forms, named after the questions people search. Chapters help search and retention. This is minor: the timestamps have to come from the rendered video, and no placeholder timestamps may be published.",
+          "severity": "minor",
+          "fix": "After the Sources block and before the hashtags, add chapters, taking each start time from the render's section start (the first must be 0:00):\n0:00 Does tirzepatide affect the pill?\n[mm:ss] Why does stomach speed matter?\n[mm:ss] What does the tirzepatide label say?\n[mm:ss] Does it affect the IUD, implant or ring?\n[mm:ss] What if I'm vomiting or have diarrhoea?\n[mm:ss] What about semaglutide and the pill?\n[mm:ss] What if I want to get pregnant?\n[mm:ss] Your questions for your prescriber\nIf you can't confirm the real timestamps, leave the chapters out. Don't publish placeholders."
+        },
+        {
+          "location": "description, quick answer sentence 3",
+          "claim": "\"Vomiting or diarrhoea, common side effects, can also affect any pill.\"",
+          "problem": "This is accurate, but it leaves out the action the script attaches to it: ask whether you need backup, and call your prescriber if the vomiting or diarrhoea is severe or ongoing. Adding it makes the safety message complete for a muted reader. Wording polish only.",
+          "severity": "minor",
+          "fix": "Replace with: \"Vomiting or diarrhoea, common side effects, can also affect any pill, so ask your prescriber whether you need backup.\""
+        }
+      ]
+    }
+  },
+  "release_tag": "content-2026-11-05",
+  "archive_url": "b2://informed-lab-media/content/2026-11-05/L1-tirzepatide-and-oral-birth-control-pills/"
+}
