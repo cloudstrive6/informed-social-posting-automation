@@ -1,145 +1,113 @@
-# InforMed performance playbook (updated 2026-11-04)
+# InforMed performance playbook (updated 2026-11-05)
 
 ## Data status: read first
-- **Official counters (11-04 18:48 UTC):** 113 of 4,000 watch hours (2.8%), 383 of 1,000 subs, 12,761 Shorts views in 90 days, 2,506 long-form views in 28 days.
-  - **The analytics lag has cleared.** Watch hours went from 103 to 113 in 24 h. Part of that is catch-up from the frozen 11-02 data, so the real rate is about 5–10 h a day. A February YPP needs about 33 h a day.
-  - **Subscribers rose by only 1 in 24 h.** Growth is about 1 a day against the 5 a day we need, so subscribers are still the slowest gate.
-- **Proof bar:** proven means n≥8, signal n=4–7, anecdote n≤3. Treat anything 1–3 days old as early. TikTok, Facebook and Threads metrics are still null.
-- **How to judge:**
-  - Shorts: viewCount and % viewed.
-  - Long-forms: minutes per view, the traffic-source mix and impressions by day 7.
-  - Only compare CTR between videos with a similar number of impressions.
+- **Official counters (11-05 18:55 UTC):** 121 of 4,000 watch hours (3.0%), 383 of 1,000 subs, 13,058 Shorts views in 90 days, 2,652 long-form views in 28 days.
+  - Watch hours rose 8 h in 24 h (113 → 121). This is the first clean day since the lag cleared, so the real pace is about 8 h a day. A February YPP needs about 34 h a day.
+  - **Subscribers: +0 in 24 h** (+2 in 48 h). Subscribers are still the slowest gate.
+- **Proof bar:** proven means n≥8, signal n=4–7, anecdote n≤3. Anything 1–3 days old is early. Instagram, TikTok, Facebook and Threads metrics are null in this feed, so the IG notes below are carried over, not re-measured.
+- **The feed is missing the 11-03 to 11-05 long-forms** (including stopping and birth control) and the 11-05 Shorts. The publisher should confirm they're live and logged before anyone reads results.
+- **How to judge:** Shorts by viewCount and % viewed. Long-forms by minutes, minutes per view, traffic-source mix and impressions by day 7. Compare CTR only between videos with similar impressions.
 - **Accuracy comes before any tactic.** Every piece carries "Not personal advice" and the prescriber line. No dosing, switching or stopping advice, and no compounded or online sources.
 
 ## Monetization reality
-- **Lane A (practical tirzepatide) is the engine (proven, n=12 live).**
-  - The 4 mature videos now have a median of about 520 min: What to Eat 607, Strength 563, Side Effects 480, How Long 209.
-  - The 13 other mature long-forms have a median of about 45 min, so Lane A earns roughly 10× more.
-- **The big three are still compounding.** In the last 24 h, What to Eat added about 40 min, Strength about 54 and Side Effects about 88. That works out to about 1 h a day per mature Lane A video.
-  - Reaching about 33 h a day would take roughly 30 or more Lane A videos at that maturity.
-  - So more Lane A volume plus internal linking is the only route to a February YPP. Pipeline, cost and explainer long-forms can't get us there.
-- **Suggested video carries Lane A (proven).** RELATED_VIDEO gives about 70% of Lane A minutes at 4.7–6 min a view (Strength 473 of 563, What to Eat 465 of 607, Side Effects 328 of 480). Search gives 0.2–2.5 min a view.
-- **Protein's spike came from subscribers, not suggested (signal; this answers the 11-03 question).**
-  - 192 of its 203 views came from SUBSCRIBER traffic at about 0.5 min a view, with an AVD of 31%.
-  - Only 6 views came from RELATED. Its 856 impressions don't mean YouTube's suggested panel picked it up.
-  - Watch Protein's RELATED views at day 14. If they stay under 20, the topic overlaps too much with What to Eat and Strength.
-- **Newer Lane A videos have a discovery problem, not a packaging problem (signal, n=5).**
-  - Impressions by day 2–6: Plateau 200, Bones & Muscle 177, Food Noise 79, Thanksgiving 61, Constipation 42.
-  - Their CTRs are good (2.8–5.1%), and Bones holds 80% AVD (477 s, n=18).
-  - Fix it with links from the big three (end screens, the playlist and line 1 of the description), and pick questions that sit right next to What to Eat, Strength and Side Effects.
-- **Searched approved-drug explainers sit in the middle** (orforglipron 213 min, petrelintide 154). Pipeline, cost, pharmacy and deep-dive videos earn 1–71 min. Keep all of them out of the 14:00 slot.
+- **Lane A (practical tirzepatide) is the engine (proven, n=11 live).** It earns 2,406 of about 3,390 tracked long-form minutes (71%).
+  - Big three: What to Eat 634, Side Effects 590, Strength 564.
+  - The other 12 non-Lane-A long-forms have a median of about 50 min.
+- **Daily gains differ a lot (anecdote, 1 day):** Side Effects +110 min, What to Eat +27, Strength +1.
+  - If Strength stays flat for 3 more days, its suggested-video traffic has faded. Repackage it (2.10% CTR on 1,622 impressions) once Exp E reads out.
+- **Reaching ~34 h a day takes about 30 or more mature Lane A videos plus linking.** Pipeline, cost and explainer long-forms earn 1–220 min and can't close that gap.
+- **Suggested video carries Lane A (proven).** RELATED_VIDEO gives 68–84% of big-three minutes at 4.8–6 min a view (What to Eat 492/634, Strength 474/564, Side Effects 414/590). Search gives 0.2–2.2 min a view.
+- **Bones & Muscle is being picked up (signal).** Impressions went from 177 to 309 in about 2 days. RELATED now gives 18 views and 124 of its 132 min, and AVD is 74% (441 s). This is the model for adjacent questions.
+- **Plateau is slower (signal):** 256 impressions, 9 RELATED views, 50% AVD. Food Noise has the best CTR of the newer videos (6.09% on 115 impressions) but only 41 min.
+- **Protein at day 7: subscriber spike, no suggested pickup (signal).** 197 of 209 views came from SUBSCRIBER traffic at 0.5 min a view, and RELATED gave only 7 views. Recheck at day 14 (11-12). If RELATED is under 20, the topic overlaps What to Eat and Strength too much.
+- **Hair Loss long-form (41Y0kjaPBnQ) has the weakest Lane A start yet (anecdote, day 3):** 2 views, 0 min, 61 impressions, 1.64% CTR.
+  - QA flagged offset beats. Check the first 60 s today. If they're broken, re-render and re-upload before linking the 1,030-view hair Short to it.
+  - Constipation (82 impressions, 10 min) and Thanksgiving (143 impressions, 17 min) are also slow. They need links from the big three.
 
 ## Long-form craft
-- **Shorts → long funnel: still zero (proven, 24 long-forms with source data).** No video shows any SHORTS or END_SCREEN traffic. PLAYLIST has 6 views in total. Fixing this costs nothing, and it's the single biggest gap.
-- **Hair Loss long-form (41Y0kjaPBnQ) is live as of 11-02.** QA flagged offset beats in it.
-  - Check the first 60 s. If they match the script, put its link on line 1 of both hair Short descriptions now.
-  - Read its AVD at day 7. Below 30% means the defects are costing retention.
-- **Opening and structure:**
-  - The first spoken sentence answers the literal title, followed by a "you" scenario.
-  - Re-hook every 45–75 s.
-  - One subscribe ask, placed after the payoff.
-  - End with "There's a video I'd watch next, linked in the description." Never speak a title.
-- **Retention:** Lane A AVD is 38–50% (5–6.3 min). Bones holds 80%, Plateau 40% and Protein 31%.
-- **Thumbnails, among videos with 400+ impressions (signal):**
-  - State change ("worried → answered") leads: How Long 4.63%, Side Effects 3.87%, Protein 3.86%.
-  - Big-number is mixed: orforglipron 4.01%, What to Eat 2.46%, Madagascar 2.09%.
-  - Reaction is weak: pill vs shot 2.57%, Strength 2.13%.
-  - Versus is weakest: plague 1.85%.
+- **Shorts → long funnel: still zero (proven, 23 long-forms with source data).** SHORTS and END_SCREEN traffic is 0 everywhere, and PLAYLIST has 7 views in total. End screens, line-1 links and the playlist are the cheapest lever we have.
+- **Opening and structure:** the first sentence answers the literal title, then a "you" scenario. Re-hook every 45–75 s. One subscribe ask, after the payoff. End with "There's a video I'd watch next, linked in the description." Never speak a title.
+- **Retention:** Lane A AVD runs 37–50%, with Bones at 74%. Protein (31%), Thanksgiving (28%) and Constipation (23%, early) are low. Watch whether the offset-beat defects are behind it.
+- **Thumbnails: state change wins at scale (signal, now with Side Effects at 4.04% on 2,052 impressions).**
+  - State change: Side Effects 4.04%, How Long 4.67%, Protein 3.78%.
+  - Big-number: What to Eat 2.53%, orforglipron 3.81%.
+  - Reaction: Strength 2.10%, pill vs shot 2.94%.
+  - Versus: plague 1.90%.
   - Default to a state change: 4 words or fewer, one labelled character, never a body or weight before/after.
-- **Packaging fixes:**
-  - What to Eat (1,587 impressions, 2.46%) is running Exp E. Change nothing else on it for 14 days.
-  - Strength is next. At 2.13% on 1,593 impressions, it has the lowest CTR of any video with 1,000+ impressions.
-- **Banned in long-form:**
-  - cost, Medicare, pharmacy and gray-market topics
-  - "What is X?" explainers at 14:00
-  - single-trial deep dives
-  - broad head-term titles
+- **Exp E:** What to Eat CTR moved from 2.46% to 2.53% after the swap window opened. That's too early to call. Change nothing else on it until 14 days after the swap.
+- **Banned in long-form:** cost, Medicare, pharmacy and gray-market topics; "What is X?" explainers at 14:00; single-trial deep dives; broad head-term titles.
 
-## YouTube Shorts (GLP-1 median about 60 views, n≈60)
-- **Calm body-worry reassurance with tirzepatide in the title is the best format (proven, n≈16). Median about 90, roughly 1.5× the channel.**
-  - Top tail: hair grow-back 1,015, bones 242, injection site 223 (by day 2), nausea 163, muscle 136, BP 131, hair common 110, breakfast 109.
-  - Middle: constipation-fibre 89, thyroid 75, mood 74, fatigue 62, gallbladder 61.
-- **Use "Is this normal?" and "Will it…?" phrasing first.** Injection site ("Normal?") and hair grow-back ("Will It Grow Back?") are our two fastest starts.
-- **Tirzepatide-first titles (proven, n≥21):** median about 70. Semaglutide-only titles: about 41 (FLOW 41, grip 8).
-- **Retention helps (signal):** Shorts with 70% or more viewed have a median of about 110. Loop endings work: retatrutide T2D reached 278 at 106% viewed.
-- **Head-to-heads with tirzepatide named first:** obesity populations get 107–174. Diabetes-only ones get 24–60.
-- **Retatrutide peaks need new Phase 3 data or a "what's confirmed?" angle:** T2D 278, bootleg 209, Reddit 123. Knee OA got 89 and dysesthesia 56.
-- **Underperformers:**
-  - "Approved yet?" titles (48–69)
-  - drug names nobody searches for (tradipitant 35, petrelintide 29, ATTAIN-J 22)
-  - observational, surgery and grocery angles (8–15)
-  - cost and Medicare (39)
-  - "3 Ways" lists (38)
-- **Spikes don't make subscribers (proven direction).** The 1,015-view hair Short gained 1 sub. All Shorts together gained about 4 subs from about 7,000 views.
+## YouTube Shorts (GLP-1 median about 62 views, n≈55)
+- **Calm body-worry Shorts with tirzepatide in the title are the best format (proven, n≈17). Median about 90, roughly 1.5× the channel.**
+  - Top: hair grow-back 1,019, bones 242, injection site 226 (by day 3), nausea 166, muscle 136, BP 132, breakfast 111, hair common 111.
+  - Middle: constipation-fibre 92, food noise 92, thyroid 77, mood 75, hunger 63, fatigue 62, gallbladder 62.
+- **Spikes come from the feed, not from retention (new, anecdote).** The hair Short reached 1,030 views at only 22% viewed (13 s AVD) on 97 impressions. Treat it as a topic signal: hair is high-demand. It doesn't show that low retention is fine. Short-term, retention above 60% still tracks with steadier views (injection 62%, nausea 62%).
+- **Phrase titles "Is this normal?" or "Will it…?" first.** Tirzepatide-first titles have a median of about 70; semaglutide-only titles about 41.
+- **Head-to-heads with tirzepatide named first:** obesity populations get 107–176, diabetes-only ones get 25–60.
+- **Retatrutide needs new Phase 3 data or a "what's confirmed?" angle:** T2D 279, bootleg 209, Reddit 124. Knee OA got 90 and dysesthesia 56.
+- **Underperformers:** "Approved yet?" (51–69), drug names nobody searches for (tradipitant 35, petrelintide 29, ATTAIN-J 25), observational, surgery and grocery angles (8–15), cost and Medicare (40), "3 Ways" lists (38).
+- **Shorts barely convert:** about 5 subs from about 8,000 Shorts views (0.6 per 1,000). The 1,030-view hair Short gave 1 sub.
 
 ## Subscribers (the slow gate)
-- **Long-form converts about 10× better than Shorts:** about 5 subs from about 1,100 long-form views, against about 0.5 per 1,000 Shorts views. Every sub came from a Lane A or searched-drug video.
-- **Exp F (subscribe line on 08:00 and 13:00 Shorts) has no data yet.** Its first Shorts (from 11-03) reach day 7 on 11-10. Log subscribersGained per Short then.
+- **Long-form converts about 5× better:** 5 visible subs from about 1,500 long-form views (3.3 per 1,000). They came from How Long (2), Strength, Food Noise and petrelintide.
+  - Side Effects gained 0 subs from 181 views. Check that its subscribe ask lands right after the payoff.
+- **Exp F (subscribe line on 08:00 and 13:00 Shorts):** the first Shorts (11-04 onward) reach day 7 on 11-11. Log subscribersGained per Short then. Nothing is readable yet.
 
-## Instagram Reels (proven, n≈22)
-- **Calm body and life-on-drug topics win:** hunger after stopping 193, macular 178, BP 172, grip 164, breakfast 145, hair 142, constipation 138, tradipitant 138, degludec 130.
-- **Reach is all or nothing** (100+ or 0–12), and it doesn't follow YouTube.
+## Instagram Reels (proven, n≈22; no new data)
+- **Calm body and life-on-drug topics win:** hunger 193, macular 178, BP 172, grip 164, breakfast 145, hair 142, constipation 138.
+- **Reach is all or nothing** (100+ or 0–12).
 
 ## Slots and production
-- **The slot effect is negligible (proven).** Short medians are within 55–66 across 08:00, 13:00 and 20:00 ET. Keep the long-form at 14:00 ET.
-- **Carousels reach 0–4 (proven, n≈50).** They stay stopped.
-- **Quality gates protect the long-form slot:**
-  - an STT-vs-script check on every number and drug name
-  - masking at 0.02 or lower, measured last
-  - one frame checked per shot
-  - Three priority long-forms in a row (10-27, 11-02, 11-04) shipped with offset beats.
+- **The slot effect is negligible (proven).** Short medians sit within 55–66 across slots. Keep the long-form at 14:00 ET.
+- **Carousels reach 0–4 (proven, n≈50).** Keep them stopped.
+- **Offset beats on 4 priority long-forms in a row (10-27, 11-02, 11-04, 11-05) are now our biggest watch-time risk.** Hair Loss shows what it costs. Treat the beat-list frame check as a ship-blocker.
 
 ## Priority actions
-1. Check the live Hair Loss long-form's first minute, then link it on line 1 of both hair Short descriptions.
-2. Set end screens and line-1 links from What to Eat, Strength and Side Effects to Bones & Muscle, Plateau, Protein, Constipation and Hair Loss. Add every Lane A video to the "Life on Tirzepatide" playlist.
-3. Next Lane A topics: birth control (label only), fatigue, injection site reactions (its Short hit 223 by day 2), dehydration. Add a 2nd Lane A long-form on days when the quality gates have capacity.
-4. Run Exp E (What to Eat thumbnail), Exp D (funnel logs), and Exp F on 11-10.
+1. Today: check the first minute of Hair Loss and fix or re-upload it if needed. Then add its link to line 1 of both hair Shorts.
+2. Set end screens and line-1 links from Side Effects, What to Eat and Strength to Bones & Muscle, Plateau, Constipation, Hair Loss and Thanksgiving. Put all Lane A videos in "Life on Tirzepatide".
+3. Next Lane A topics: fatigue, injection site reactions (its Short hit 226 by day 3), dehydration, and a hair redo if needed.
+4. Check-ins: Exp F on 11-11, Protein RELATED on 11-12, Strength's daily minutes for 3 days.
 
-_Updated 2026-11-04 from about 400 posts, with impressions for 30 long-forms and traffic sources for 24._
+_Updated 2026-11-05 from about 400 posts, with impressions for 31 long-forms and traffic sources for 23._
 
 ## Topics to double down on
-- Lane A practical tirzepatide long-forms (about 520 mature watch minutes each vs about 45 for other long-forms, each earning about 1 h a day once suggested video picks it up). Next: birth control (label only), fatigue, injection site reactions, dehydration
-- Linking the 'Life on Tirzepatide' cluster: end screens and line-1 links from What to Eat, Strength and Side Effects to Bones & Muscle (80% AVD), Plateau, Protein, Constipation and Hair Loss, which only get 40–200 impressions
-- Linking the live Hair Loss long-form (11-02) from both hair Shorts (1,015 and 110 views) once its first minute is checked
-- A tirzepatide injection site reactions long-form (its Short reached 223 views by day 2)
-- Calm 'Is this normal?' and 'Will it…?' body-worry Shorts with tirzepatide in the title (median about 90, n≈16)
-- State-change ('worried → answered') thumbnails, and a Strength repackage after the What to Eat Exp E (2.13% CTR on 1,593 impressions)
-- Tirzepatide-first head-to-head Shorts in obesity populations (107–174 views)
+- Lane A practical tirzepatide long-forms (71% of all long-form watch minutes; the big three have 564–634 min each, while the median non-Lane-A long-form has about 50). Next: fatigue, injection site reactions, dehydration
+- Questions that sit right next to the big three, following the Bones & Muscle model (RELATED pickup by day 8, 74% AVD)
+- Fixing and linking the Hair Loss long-form so the 1,030-view hair Short feeds it (hair is our highest-demand body topic)
+- End screens, line-1 links and the 'Life on Tirzepatide' playlist from Side Effects, What to Eat and Strength to Bones, Plateau, Constipation, Hair Loss and Thanksgiving
+- A tirzepatide injection site reactions long-form (its Short reached 226 views by day 3)
+- Calm 'Is this normal?' and 'Will it…?' body-worry Shorts with tirzepatide in the title (median about 90, n≈17)
+- State-change ('worried → answered') thumbnails (Side Effects 4.04% on 2,052 impressions), with Strength next to repackage
+- Tirzepatide-first head-to-head Shorts in obesity populations (107–176 views)
 - Retatrutide Shorts on new Phase 3 data or 'what's confirmed?' facts, with loop endings
-- Instagram Reels on body and life-on-drug questions (hunger 193, BP 172, breakfast 145, constipation 138)
 - Thanksgiving-on-tirzepatide Shorts linking to the Thanksgiving long-form ahead of the Nov 18–27 peak
 
 ## Schedule suggestions (for the owner — edit config/channel.json to apply)
-InforMed status as of 2026-11-04
+InforMed status as of 2026-11-05
 
-Where we are: 113 of 4,000 watch hours (2.8%) and 383 of 1,000 subscribers.
-- YouTube's analytics delay has cleared. Watch hours jumped from 103 to 113 in a day, but part of that was catch-up from the frozen days. The real pace is about 5–10 hours a day. A February YPP needs about 33 a day.
-- Subscribers rose by 1 in the last day. We need about 5 a day, so subscribers are still the slowest gate.
+Where we are: 121 of 4,000 watch hours (3.0%) and 383 of 1,000 subscribers.
+- We earned 8 watch hours in the last day. That's our real pace now that YouTube's delay has cleared. A February YPP needs about 34 hours a day.
+- Subscribers didn't move in the last day (+2 over two days). We need about 5 a day.
 
 What's working:
-- The practical tirzepatide long videos keep growing. What to Eat has 607 minutes, Strength 563 and Side Effects 480. Together they added about 3 hours of watch time in the last day alone.
-- Everything else (pipeline drugs, Medicare, the pharmacy guide, the plague videos) has a median of about 45 minutes.
-- About 70% of the practical videos' watch time comes from YouTube's "suggested video" panel.
-- In Shorts, the calm "Is this normal?" and "Will it…?" format leads. Injection site reactions reached 223 views in 2 days, the best start since the hair Short.
+- The practical tirzepatide videos earn about 71% of all our long-form watch time. Side Effects added about 110 minutes in one day.
+- Bones & Muscle is starting to get recommended. YouTube is showing it more, and viewers watch about 74% of it. This is the pattern we want: questions that sit right next to What to Eat, Side Effects and Strength.
+- Side Effects' "worried → answered" thumbnail gets 4% click-through at 2,000+ impressions, our best at scale.
 
-What we learned this week:
-- The Protein video's big view count came almost entirely from existing subscribers, who watched about 30 seconds each on average. YouTube hasn't started recommending it yet.
-- The newer practical videos are watched well. Bones & Muscle holds viewers for 80% of the video. But YouTube shows them only 40–200 times each, so the problem is links, not the videos themselves.
-- Not one long video has received a view from a Short or an end screen yet.
-
-What to do, in priority order:
-1. The Hair Loss long video went live on 11-02, but the quality team flagged scenes appearing out of order. Watch the first minute. If it's fine, put its link at the top of the description on both hair Shorts. The 1,015-view hair Short still sends nobody anywhere.
-2. Add end screens and top-of-description "watch next" links on What to Eat, Strength and Side Effects. Point them to Bones & Muscle, Plateau, Protein, Constipation and Hair Loss. Add all of these to the "Life on Tirzepatide" playlist. This costs nothing and is the biggest lever we have.
-3. Thumbnails: leave What to Eat's new design alone for 14 days (that's the test). Strength is next, at 2.13% CTR, our weakest.
-4. Volume: each mature practical video earns about 1 hour of watch time a day, so we need many more of them. If you have the capacity, add a second practical long video at 10:00 ET on 2–3 days a week, but only if it passes the quality checks. Three priority videos in a row shipped with scenes out of order.
+What needs attention:
+1. The Hair Loss long video has 2 views and 0 minutes watched after 3 days. QA flagged scenes out of order. Please watch the first minute today. If it's broken, re-render and re-upload it, then link it at the top of both hair Shorts' descriptions. The hair Short has 1,030 views and still sends nobody anywhere.
+2. Still not a single view from a Short or an end screen. Add end screens and top-of-description "watch next" links on Side Effects, What to Eat and Strength. Point them to Bones & Muscle, Plateau, Constipation, Hair Loss and Thanksgiving, and add all of them to the "Life on Tirzepatide" playlist.
+3. Strength added only 1 minute yesterday. If it stays flat, it's next for a new thumbnail. Leave What to Eat's thumbnail test alone until its 14 days are up.
+4. The 11-03, 11-04 and 11-05 long videos (stopping, birth control) aren't in our analytics feed yet. Please confirm they're live.
+5. Four priority long videos in a row shipped with scenes out of order. One clean video is worth more than two broken ones.
 
 Publishing times (config/channel.json):
 - Keep Shorts at 08:00, 13:00 and 20:00 ET. The slots perform the same.
-- Keep the long video at 14:00 ET.
-- Delete the 17:30 carousel slot. It's still in the config, and about 50 carousels have each reached 0–4 people.
+- Keep the long video at 14:00 ET. Add a second practical long video at 10:00 ET on 2–3 days a week only when it passes the scene-order check.
+- Delete the 17:30 carousel slot. About 50 carousels have each reached 0–4 people.
 
 Keep avoiding: Medicare, cost and pharmacy videos, pipeline deep dives, "Approved yet?" Shorts, semaglutide-only titles, and drug names nobody searches for.
 
-Next review: 11-10 or 11-11. We'll look at the first day-7 subscriber counts from the subscribe-line test, the Hair Loss video's retention at day 7, whether YouTube has started recommending Protein, and the stopping video's first week.
+Next review: 11-11 or 11-12. We'll look at the first day-7 results from the subscribe-line test, Protein's suggested-video views at day 14, Hair Loss after the fix, and the stopping and birth-control videos' first week.
 
-_Updated 2026-11-04 from 353 posts._
+_Updated 2026-11-05 from 347 posts._
