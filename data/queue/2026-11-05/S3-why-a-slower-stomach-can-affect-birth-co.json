@@ -49,7 +49,7 @@
       "platform": "instagram",
       "format": "reel",
       "slotKey": "short",
-      "slot": "2026-11-06T01:00:00.000Z",
+      "slot": "2026-11-06T01:44:07.256Z",
       "status": "pending",
       "attempts": 0
     },
@@ -58,14 +58,17 @@
       "format": "short",
       "slotKey": "short",
       "slot": "2026-11-06T01:00:00.000Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "v_pub_file~v2-1.7704856575974672402",
+      "url": "https://www.tiktok.com/@informedlab",
+      "published_at": "2026-11-06T00:59:35.982Z"
     },
     {
       "platform": "facebook",
       "format": "reel",
       "slotKey": "short",
-      "slot": "2026-11-06T01:00:00.000Z",
+      "slot": "2026-11-06T01:44:07.256Z",
       "status": "pending",
       "attempts": 0
     }
