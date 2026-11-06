@@ -1,0 +1,1499 @@
+{
+  "id": "L1-fatigue-on-tirzepatide-how-often-it-was",
+  "date": "2026-11-06",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Fatigue on tirzepatide: how often it was reported (Zepbound label: 5%, 6% and 7% by dose vs 3% on placebo, pooled SURMOUNT-1 and -2), likely everyday contributors (eating much less, low fluids, too little protein, poor sleep, GI side effects), and when tiredness is a reason to call the prescriber",
+    "angle": "Lane A (log 'lane: A'; publisher adds it to the 'Life on Tirzepatide' playlist). Runs 8–12 min at 14:00 ET.\n\nThe first spoken sentence answers the title: 'Tiredness is a listed side effect of tirzepatide, but it was uncommon in the trials: about 5 to 7 in 100 people across doses, versus 3 in 100 on placebo.' Then a 'you' scenario: it's November, the days are shorter, you're eating far less, and you're dragging by 3 pm. One seasonal line in the intro at most. The body rests on the label, the NHS tiredness pages (2023) and the 2025 ACLM/ASN/OMA/TOS advisory.\n\nChapters, named as searched questions:\n(1) Is fatigue a side effect of tirzepatide? Give the label's per-dose rates vs placebo exactly as printed, with the pooled-trial population. Write the narration numbers as words and check every one in speech-to-text.\n(2) Why might you feel tired? Possible contributors, each worded 'can' and never as proven cause: eating much less, low fluids, skipped protein, poor sleep, and nausea or diarrhoea. The general causes come from NHS, tagged NHS.\n(3) Could it be dehydration? Use the label's dehydration and kidney wording exactly. Sipping fluids, unless you've been told to limit them, is our own tip with no tag.\n(4) Does protein help energy? Credit only what the advisory says (getting enough protein). The kidney caveat goes in.\n(5) What about sleep and movement? General guidance only. Strength training follows the advisory's exact wording, started gently.\n(6) Could something else be going on? Questions for your clinician, including whether blood tests (e.g. iron, thyroid) make sense. No supplement promises.\n(7) When should you call your prescriber? Dizziness or fainting, vomiting or diarrhoea with signs of dehydration, and, for people who also use insulin or a sulfonylurea, low blood sugar signs, all in label wording.\n\nFormat and safety rules:\n- Re-hook every 45–75 s.\n- One subscribe ask, after the chapter 2–4 'what helps' payoff.\n- No dosing or titration content. Never say 'adjust your dose'.\n- Include 'Don't switch, stop or change your medicines on your own', one GI line, 'Not personal advice' and the full prescriber line. Each must be both spoken and in the on-screen field.\n- Ending: 'There's a video I'd watch next, linked in the description.' No spoken titles. The publisher links Side Effects or What to Eat.\n- Thumbnail: a state change from drained to recharged, 4 words or fewer, not reusing title words (e.g. 'Running on Empty?' → answered). One labelled character, calm mood, no body imagery.",
+    "working_title": "Why Am I So Tired on Tirzepatide?",
+    "target_keyword": "tirzepatide fatigue",
+    "trend_stage": "evergreen",
+    "why": "It's the next Lane A topic on this week's ship list (radar momentum 82, a seasonal bump as winter starts), and no live long video answers it. It's built on label and NHS evidence that holds up to fact-checking, and it sits next to Side Effects for suggested-video pickup.",
+    "pillar": "get-the-most"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Tirzepatide Fatigue: Why Am I So Tired?",
+    "title_candidates": [
+      "Tirzepatide Fatigue: Why Am I So Tired?",
+      "Tirzepatide Fatigue: Is It Normal?",
+      "Tirzepatide Making You Tired? What Helps",
+      "Tirzepatide Fatigue: Is It Normal and What Helps?",
+      "Tirzepatide Tiredness: How Common Is It Really?",
+      "Tirzepatide Fatigue: When to Call Your Doctor",
+      "Tirzepatide and Low Energy: What's Going On?",
+      "Tirzepatide Fatigue: Is It the Drug or You?",
+      "Tirzepatide Tired by 3 PM? Here's What Helps",
+      "Tirzepatide Fatigue: Dehydration, Protein or Sleep?"
+    ],
+    "description": "Replaced placeholder description with the full ready-to-paste version and applied the pinned comment's precision edit (added \"across doses\" and the SURMOUNT-2 type 2 diabetes detail); title and thumbnail left unchanged as they passed the check.",
+    "tags": [
+      "tirzepatide fatigue",
+      "tirzepatide tired",
+      "why am I so tired on tirzepatide",
+      "tirzepatide side effects",
+      "zepbound fatigue",
+      "zepbound side effects",
+      "is fatigue a side effect of tirzepatide",
+      "tirzepatide dehydration",
+      "tirzepatide and sleep",
+      "GLP-1 fatigue",
+      "GLP-1 side effects",
+      "tirzepatide energy",
+      "tiredness on tirzepatide",
+      "tirzepatide protein",
+      "low energy on weight loss medicine",
+      "mounjaro fatigue",
+      "tirzepatide low blood sugar",
+      "tirzepatide nausea tired",
+      "life on tirzepatide",
+      "zepbound tired all the time",
+      "tirzepatide dizziness",
+      "GLP-1 medicine fatigue"
+    ],
+    "pinned_comment": "In the Zepbound label's pooled SURMOUNT-1 and SURMOUNT-2 trials (adults with obesity or overweight plus a weight-related condition; SURMOUNT-2 also required type 2 diabetes), about 5 to 7 in 100 people on tirzepatide reported fatigue across doses, vs 3 in 100 on placebo. Save the energy checklist for later, or share it with someone who's been feeling drained. Not personal advice. Don't switch, stop or change your medicines on your own. Talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "RUNNING ON EMPTY?",
+      "highlight_word": "EMPTY",
+      "subtext": "WHAT CAN HELP",
+      "layout": "before-after",
+      "psychology": "State change (worried → answered): a drained battery that becomes a full one shows the video's payoff, everyday things that can help your energy, without repeating 'tired' or 'fatigue' from the title.",
+      "emotion": "Recognition ('that's me at 3 pm') turning into relief",
+      "hero_art": "low battery",
+      "hero_face": "sleepy",
+      "second_art": "full battery",
+      "second_face": "happy",
+      "prop": "arrow",
+      "accent": "green",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 Quick answer\n1:02 Is fatigue a side effect of tirzepatide?\n2:26 Why might you feel tired?\n4:28 Could it be dehydration?\n5:42 Does protein help energy?\n7:02 What about sleep and movement?\n8:18 Could something else be going on?\n9:41 When should you call your prescriber?\n11:09 Your tirzepatide energy checklist"
+  },
+  "media": {
+    "video": "L1-fatigue-on-tirzepatide-how-often-it-was.mp4",
+    "duration": 742.942,
+    "thumbnail": "L1-fatigue-on-tirzepatide-how-often-it-was-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-06T19:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "4evedJtRswk",
+      "url": "https://youtu.be/4evedJtRswk",
+      "published_at": "2026-11-06T19:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-11-06T03:45:31.517Z",
+  "script": {
+    "working_title": "Tirzepatide Fatigue: Why Am I So Tired?",
+    "target_keyword": "tirzepatide fatigue",
+    "hook_pattern": "Direct answer to the title, then a visceral 'you' scenario (the 3 pm November slump), with an open loop: one question for your next appointment that has nothing to do with the medicine",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "Quick answer",
+        "narration": "Tiredness is a listed side effect of tirzepatide, but most people in the trials didn't report it: about five to seven in a hundred across doses, versus three in a hundred on placebo.",
+        "on_screen_text": "Listed, but most didn't report it",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "5–7%",
+          "stat_label": "Fatigue on tirzepatide vs 3% placebo",
+          "stock_query": "calm mascot holding label card"
+        },
+        "retention_device": "Title answered in first sentence",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "Quick answer",
+        "narration": "Now picture this. It's three in the afternoon, the light's already fading, and you're staring at your screen like it's written in another language.",
+        "on_screen_text": "The 3 pm slump",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "drained person at desk, dusk window"
+        },
+        "retention_device": "Visceral 'you' scenario",
+        "source_ids": []
+      },
+      {
+        "id": "s03",
+        "section": "Quick answer",
+        "narration": "You've barely eaten since breakfast. Not because you're trying to be good. You're just not hungry. And you're wondering if the medicine is draining you.",
+        "on_screen_text": "Is it the medicine?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person looking at small untouched lunch"
+        },
+        "retention_device": "Shared worry named",
+        "source_ids": []
+      },
+      {
+        "id": "s04",
+        "section": "Quick answer",
+        "narration": "If that's you, you're not imagining it, and you're not failing at anything. Tiredness is real, and it usually has reasons you can actually look at.",
+        "on_screen_text": "Not a willpower problem",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly mascot offering reassuring hand"
+        },
+        "retention_device": "Validation",
+        "source_ids": []
+      },
+      {
+        "id": "s05",
+        "section": "Quick answer",
+        "narration": "In the next few minutes, you'll get what the trials actually found, five everyday things that can sap your energy, and the signs that mean call your prescriber instead of waiting it out.",
+        "on_screen_text": "Your roadmap",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "What the trials found",
+            "5 everyday energy drains",
+            "What helps",
+            "When to call"
+          ],
+          "stock_query": "roadmap card with four stops"
+        },
+        "retention_device": "Promise / roadmap",
+        "source_ids": []
+      },
+      {
+        "id": "s06",
+        "section": "Quick answer",
+        "narration": "And near the end, there's one question worth bringing to your next appointment that has nothing to do with the medicine at all.",
+        "on_screen_text": "One question to ask",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sealed envelope with question mark"
+        },
+        "retention_device": "Main open loop planted (pays off in chapter 6)",
+        "source_ids": []
+      },
+      {
+        "id": "s07",
+        "section": "Quick answer",
+        "narration": "Quick note first. This is general information. Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm mascot beside disclaimer sign"
+        },
+        "retention_device": "Trust signal",
+        "source_ids": []
+      },
+      {
+        "id": "s08",
+        "section": "Is fatigue a side effect of tirzepatide?",
+        "narration": "So, first question. Is fatigue really a side effect of tirzepatide?",
+        "on_screen_text": "Is fatigue a side effect?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, tired battery icon"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s09",
+        "section": "Is fatigue a side effect of tirzepatide?",
+        "narration": "The answer is in the prescribing label for Zepbound, the version of tirzepatide approved for weight management. It pools two placebo-controlled trials, SURMOUNT one and SURMOUNT two, each lasting seventy-two weeks.",
+        "on_screen_text": "SURMOUNT-1 + SURMOUNT-2 pooled",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two trial folders merging into one"
+        },
+        "retention_device": "Micro-story: where the number comes from",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "Is fatigue a side effect of tirzepatide?",
+        "narration": "Both enrolled adults with obesity, or overweight plus a weight-related health condition. SURMOUNT two also required type two diabetes.",
+        "on_screen_text": "Adults with obesity or overweight",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "diverse group of adult cartoon characters"
+        },
+        "retention_device": "Population clarity",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "Is fatigue a side effect of tirzepatide?",
+        "narration": "Here are the fatigue numbers, exactly as printed. On the lowest dose, five percent. On the middle dose, six percent. On the highest dose, seven percent. The lowest dose was only tested in SURMOUNT one.",
+        "on_screen_text": "Fatigue by dose",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Lowest dose: 5%",
+            "Middle dose: 6%",
+            "Highest dose: 7%",
+            "Placebo: 3%"
+          ],
+          "stock_query": "four bars rising gently"
+        },
+        "retention_device": "Concrete numbers",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "Is fatigue a side effect of tirzepatide?",
+        "narration": "And on placebo, a dummy injection with no medicine in it, three percent.",
+        "on_screen_text": "Placebo: 3%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "3%",
+          "stat_label": "Fatigue on placebo, pooled SURMOUNT-1 and -2",
+          "stock_query": "empty dummy pen with label"
+        },
+        "retention_device": "Comparator",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "Is fatigue a side effect of tirzepatide?",
+        "narration": "Picture a room of a hundred people on the highest dose. About seven reported fatigue or low energy. In a matching room on placebo, about three did.",
+        "on_screen_text": "About 7 in 100 vs 3 in 100",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two rooms of 100 seated figures"
+        },
+        "retention_device": "Humanised number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "Is fatigue a side effect of tirzepatide?",
+        "narration": "So the gap over placebo is roughly two to four people in every hundred. Real, but most people on tirzepatide in these trials didn't report it.",
+        "on_screen_text": "2–4 extra per 100",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "2–4 in 100",
+          "stat_label": "Extra fatigue over placebo, by dose",
+          "stock_query": "small highlighted group of figures"
+        },
+        "retention_device": "Absolute difference reveal",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "Is fatigue a side effect of tirzepatide?",
+        "narration": "And notice something. Three in a hundred people reported fatigue on a dummy injection. Life, sleep and stress don't pause for a clinical trial.",
+        "on_screen_text": "Life doesn't pause",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "yawning person on placebo side, calm"
+        },
+        "retention_device": "Surprising observation",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "Is fatigue a side effect of tirzepatide?",
+        "narration": "That's the fact. But it doesn't tell you why some people feel drained. And here's where it gets interesting, because the likely reasons are things you can look at.",
+        "on_screen_text": "So why the drain?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over low battery"
+        },
+        "retention_device": "But/therefore re-hook into chapter 2",
+        "source_ids": []
+      },
+      {
+        "id": "s17",
+        "section": "Why might you feel tired?",
+        "narration": "So, why might you feel tired?",
+        "on_screen_text": "Why might you feel tired?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, question mark battery"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s18",
+        "section": "Why might you feel tired?",
+        "narration": "Let's bring someone in. Imagine Priya, forty-four, a teacher, four months into tirzepatide. Food feels quieter, which she likes. But by mid-afternoon she's running on fumes.",
+        "on_screen_text": "Imagine Priya, 44",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hypothetical teacher tired at classroom desk"
+        },
+        "retention_device": "Relatable hypothetical thread begins",
+        "source_ids": []
+      },
+      {
+        "id": "s19",
+        "section": "Why might you feel tired?",
+        "narration": "The NHS lists the usual everyday drivers of tiredness: not getting enough sleep, an unhealthy diet, not enough exercise, and stress.",
+        "on_screen_text": "Everyday tiredness drivers",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Not enough sleep",
+            "Unhealthy diet",
+            "Not enough exercise",
+            "Stress"
+          ],
+          "stock_query": "icons around a sleepy face"
+        },
+        "retention_device": "List change",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Why might you feel tired?",
+        "narration": "On tirzepatide, a few of these can stack up in ways that are easy to miss. Here are five.",
+        "on_screen_text": "5 possible energy drains",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Eating much less",
+            "Low fluids",
+            "Too little protein",
+            "Poor sleep",
+            "Nausea or diarrhoea"
+          ],
+          "stock_query": "five drains on a battery"
+        },
+        "retention_device": "Numbered countdown opens",
+        "source_ids": []
+      },
+      {
+        "id": "s21",
+        "section": "Why might you feel tired?",
+        "narration": "One. Eating much less. Tirzepatide reduces appetite and food intake, which is part of how it works. But less food means less fuel, and that can leave you feeling flat.",
+        "on_screen_text": "1. Less food, less fuel",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "small plate, fuel gauge near empty"
+        },
+        "retention_device": "Countdown item",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Why might you feel tired?",
+        "narration": "The NHS suggests eating regular meals and healthy snacks every three to four hours, rather than a large meal less often. With a quiet appetite, small and regular may feel easier anyway.",
+        "on_screen_text": "Small, regular meals",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "clock with small snack plates"
+        },
+        "retention_device": "Practical tip",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Why might you feel tired?",
+        "narration": "Two. Low fluids. When you eat less, you also miss the water that comes with food. And if you're not thirsty, it's easy to drink less too.",
+        "on_screen_text": "2. Low fluids",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "half-empty water glass on desk"
+        },
+        "retention_device": "Countdown item",
+        "source_ids": []
+      },
+      {
+        "id": "s24",
+        "section": "Why might you feel tired?",
+        "narration": "Three. Too little protein. When your plate shrinks, protein often shrinks with it. We'll come back to why that matters.",
+        "on_screen_text": "3. Too little protein",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "shrinking plate with tiny protein portion"
+        },
+        "retention_device": "Mini open loop (pays off chapter 4)",
+        "source_ids": []
+      },
+      {
+        "id": "s25",
+        "section": "Why might you feel tired?",
+        "narration": "Four. Poor sleep. Dark evenings, late nights, a racing mind. Sleep affects energy for everyone, medicine or not.",
+        "on_screen_text": "4. Poor sleep",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person awake in bed, phone glow"
+        },
+        "retention_device": "Countdown item",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "Why might you feel tired?",
+        "narration": "And five. Nausea or diarrhoea. If your stomach's unsettled, you may eat and drink less, and you can lose fluids too. That can add up to feeling wiped out.",
+        "on_screen_text": "5. Stomach side effects",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "queasy mascot holding tummy, calm"
+        },
+        "retention_device": "Countdown item",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Why might you feel tired?",
+        "narration": "A quick word on those stomach symptoms. Nausea, diarrhoea, vomiting and constipation are among the most common side effects on the label. If they're making it hard to eat or drink, tell your prescriber.",
+        "on_screen_text": "Stomach trouble? Tell your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person calling clinic, relieved"
+        },
+        "retention_device": "Safety GI line",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Why might you feel tired?",
+        "narration": "Notice the word 'can' in all of this. None of these is proven to be the cause of your tiredness. They're simply sensible places to look first.",
+        "on_screen_text": "Can, not proven",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "checklist with question marks"
+        },
+        "retention_device": "Honest hedge",
+        "source_ids": []
+      },
+      {
+        "id": "s29",
+        "section": "Why might you feel tired?",
+        "narration": "For Priya, it's probably a bit of several. But one of them is the easiest to miss, and it's the one we'll check first.",
+        "on_screen_text": "The easiest to miss",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "spotlight on a water drop"
+        },
+        "retention_device": "Mini-cliffhanger before chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s30",
+        "section": "Could it be dehydration?",
+        "narration": "Could it be dehydration?",
+        "on_screen_text": "Could it be dehydration?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, water droplet"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s31",
+        "section": "Could it be dehydration?",
+        "narration": "The NHS puts it plainly: sometimes you're tired simply because you're mildly dehydrated.",
+        "on_screen_text": "Mild dehydration, real tiredness",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "wilting plant beside tired person"
+        },
+        "retention_device": "Surprising simplicity",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Could it be dehydration?",
+        "narration": "On tirzepatide, fluids matter for another reason. The patient guide in the label says diarrhoea, nausea and vomiting may cause a loss of fluids, called dehydration, which may cause kidney problems.",
+        "on_screen_text": "Fluid loss may affect kidneys",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon kidneys beside water glass"
+        },
+        "retention_device": "Stakes raised",
+        "source_ids": [
+          "S1",
+          "S1-MG"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Could it be dehydration?",
+        "narration": "The label also says it's important to drink fluids to help reduce your chance of dehydration.",
+        "on_screen_text": "Fluids lower the risk",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hand filling water bottle"
+        },
+        "retention_device": "Solution follows stakes",
+        "source_ids": [
+          "S1",
+          "S1-MG"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Could it be dehydration?",
+        "narration": "So how do you know if you're running low? The NHS lists signs like feeling thirsty, dark yellow, strong-smelling pee, peeing less often, feeling dizzy or lightheaded, a dry mouth, and feeling tired.",
+        "on_screen_text": "Signs you're running low",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Thirst",
+            "Dark yellow pee",
+            "Peeing less often",
+            "Dizzy or lightheaded",
+            "Dry mouth, tiredness"
+          ],
+          "stock_query": "icons of dehydration signs"
+        },
+        "retention_device": "Viewer self-check",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "Could it be dehydration?",
+        "narration": "Here's a ten-second check you can do today. The NHS suggests drinking enough during the day that your pee is a pale colour.",
+        "on_screen_text": "The 10-second colour check",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pale to dark yellow colour chart"
+        },
+        "retention_device": "Practical payoff",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Could it be dehydration?",
+        "narration": "One simple habit: keep a bottle within reach and sip through the day, unless you've been told to limit fluids.",
+        "on_screen_text": "Sip, unless told to limit",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "water bottle on desk, smiling mascot"
+        },
+        "retention_device": "Our own tip",
+        "source_ids": []
+      },
+      {
+        "id": "s37",
+        "section": "Could it be dehydration?",
+        "narration": "Priya tries it. By the end of the week, her afternoon slump feels a little softer. Not gone. Softer. Because fluids were only part of her story.",
+        "on_screen_text": "Softer, not gone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "teacher sipping water, slightly brighter"
+        },
+        "retention_device": "Thread callback + partial payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s38",
+        "section": "Could it be dehydration?",
+        "narration": "The next part is about her plate. And it's not about eating more. It's about what she makes sure is on it.",
+        "on_screen_text": "What's on the plate?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "plate under a cloche"
+        },
+        "retention_device": "Open loop into chapter 4",
+        "source_ids": []
+      },
+      {
+        "id": "s39",
+        "section": "Does protein help energy?",
+        "narration": "Does protein help energy?",
+        "on_screen_text": "Does protein help energy?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, egg and beans"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s40",
+        "section": "Does protein help energy?",
+        "narration": "In twenty twenty-five, four groups, the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association and The Obesity Society, published a joint advisory on nutrition for people on GLP-1 medicines.",
+        "on_screen_text": "2025 joint GLP-1 nutrition advisory",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "four experts signing one document"
+        },
+        "retention_device": "Authority micro-story",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "Does protein help energy?",
+        "narration": "One of its clearest messages: get enough protein. When you're eating much less, protein helps preserve muscle while you lose weight.",
+        "on_screen_text": "Enough protein protects muscle",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "protein foods shielding a muscle"
+        },
+        "retention_device": "Pays off chapter 2 loop",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "Does protein help energy?",
+        "narration": "Now, the honest bit. The advisory doesn't claim protein cures tiredness. Its point is that when your intake drops, protein is one thing not to let slip.",
+        "on_screen_text": "Not a cure, a priority",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm mascot holding balance scale"
+        },
+        "retention_device": "Honest correction",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Does protein help energy?",
+        "narration": "The practical version: build each small meal around a protein. Eggs, yoghurt, fish, chicken, beans or tofu. Start there, then add the rest.",
+        "on_screen_text": "Protein first on the plate",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Eggs",
+            "Yoghurt",
+            "Fish or chicken",
+            "Beans or tofu"
+          ],
+          "stock_query": "empty plate becoming protein plate"
+        },
+        "retention_device": "Visual list",
+        "source_ids": []
+      },
+      {
+        "id": "s44",
+        "section": "Does protein help energy?",
+        "narration": "One caveat. If you have kidney disease, your protein needs may be different, so ask your clinician what amount suits you.",
+        "on_screen_text": "Kidney disease? Ask first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person asking clinician, kidney icon"
+        },
+        "retention_device": "Safety caveat",
+        "source_ids": []
+      },
+      {
+        "id": "s45",
+        "section": "Does protein help energy?",
+        "narration": "So that's three possible drains, and three things you can try today: small, regular meals, steady sips, and protein first on the plate.",
+        "on_screen_text": "Meals, sips, protein",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Small, regular meals",
+            "Steady sips",
+            "Protein first"
+          ],
+          "stock_query": "three ticks on a checklist"
+        },
+        "retention_device": "Payoff of 'what helps' (chapters 2–4)",
+        "source_ids": [
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "Does protein help energy?",
+        "narration": "If that was useful, we answer one tirzepatide question from the research every day. Subscribe, and the next answer comes to you.",
+        "on_screen_text": "One question, every day",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi mascot pressing subscribe bell"
+        },
+        "retention_device": "Single subscribe ask, after payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s47",
+        "section": "Does protein help energy?",
+        "narration": "But food and fluids are only half the energy story. The other half happens while you sleep, and when you move. And the movement advice may feel backwards at first.",
+        "on_screen_text": "The other half",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "moon and sneaker side by side"
+        },
+        "retention_device": "Re-hook into chapter 5",
+        "source_ids": []
+      },
+      {
+        "id": "s48",
+        "section": "What about sleep and movement?",
+        "narration": "What about sleep and movement?",
+        "on_screen_text": "Sleep and movement",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, pillow and walking shoe"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s49",
+        "section": "What about sleep and movement?",
+        "narration": "Start with sleep. The CDC says most adults need at least seven hours a night. If you're regularly getting less, that alone can leave you foggy.",
+        "on_screen_text": "Most adults: 7+ hours",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "7+ hours",
+          "stat_label": "Sleep most adults need nightly, per CDC",
+          "stock_query": "cosy bed with clock"
+        },
+        "retention_device": "Big number",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "What about sleep and movement?",
+        "narration": "The NHS tips are simple. Go to bed and get up at the same time every day, try to avoid naps in the day, and take time to relax before bed.",
+        "on_screen_text": "Same bedtime, same wake time",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Same bed and wake time",
+            "Avoid daytime naps",
+            "Wind down first"
+          ],
+          "stock_query": "calm evening wind-down routine"
+        },
+        "retention_device": "List change",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "What about sleep and movement?",
+        "narration": "Caffeine is a sneaky one. The NHS says it can disrupt your sleep and leave you tired in the day, and its effects can last up to seven hours. If you want to cut back, do it gradually, because stopping suddenly can bring on headaches and trouble sleeping.",
+        "on_screen_text": "Ease off caffeine slowly",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "coffee cups shrinking over calendar"
+        },
+        "retention_device": "Counterintuitive tip",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "What about sleep and movement?",
+        "narration": "Now, movement. When you're exhausted, moving can feel like the last thing you want. But the NHS says even a fifteen-minute walk can give you an energy boost.",
+        "on_screen_text": "15-minute walk, energy boost",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person walking outside, autumn leaves"
+        },
+        "retention_device": "Pays off 'feels backwards' loop",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "What about sleep and movement?",
+        "narration": "The GLP-1 advisory goes further. It recommends strength training at least three times a week, to help preserve muscle.",
+        "on_screen_text": "Strength train 3+ times a week",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person with light resistance band"
+        },
+        "retention_device": "Escalation",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "What about sleep and movement?",
+        "narration": "If that sounds like a lot right now, start gently. A few sit-to-stands from a chair. Wall push-ups. Light bands. Build from there, and check with your clinician if you have health conditions.",
+        "on_screen_text": "Start gently, build up",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Chair sit-to-stands",
+            "Wall push-ups",
+            "Light bands"
+          ],
+          "stock_query": "gentle chair exercise at home"
+        },
+        "retention_device": "Agency",
+        "source_ids": []
+      },
+      {
+        "id": "s55",
+        "section": "What about sleep and movement?",
+        "narration": "Back to Priya. She swaps late-night scrolling for an earlier bedtime and takes a short walk at lunch. Most days feel better. But one week, they don't. And that's when the next question matters.",
+        "on_screen_text": "Then one week, they don't",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "teacher walking at lunch, then pausing"
+        },
+        "retention_device": "Thread callback + mini-cliffhanger",
+        "source_ids": []
+      },
+      {
+        "id": "s56",
+        "section": "Could something else be going on?",
+        "narration": "Could something else be going on?",
+        "on_screen_text": "Could it be something else?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, puzzle pieces"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s57",
+        "section": "Could something else be going on?",
+        "narration": "Here's the question I promised, the one worth bringing to your next appointment: could something other than the medicine be making me tired?",
+        "on_screen_text": "Something other than the medicine?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "envelope opening to reveal question"
+        },
+        "retention_device": "Main open loop paid off",
+        "source_ids": []
+      },
+      {
+        "id": "s58",
+        "section": "Could something else be going on?",
+        "narration": "Tiredness has plenty of causes that have nothing to do with tirzepatide. The NHS lists conditions like iron deficiency anaemia, diabetes, an overactive thyroid and sleep apnoea, along with stress, low mood and life's challenges.",
+        "on_screen_text": "Many causes of tiredness",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Iron deficiency anaemia",
+            "Diabetes",
+            "Overactive thyroid",
+            "Sleep apnoea",
+            "Stress and low mood"
+          ],
+          "stock_query": "branching map of tiredness causes"
+        },
+        "retention_device": "Surprising reveal",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "Could something else be going on?",
+        "narration": "So it's reasonable to ask your clinician whether blood tests, for example for anaemia, diabetes or thyroid problems, make sense for you. That's their call to make with you, not a supplement aisle's.",
+        "on_screen_text": "Ask: are blood tests worth it?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient and clinician talking calmly"
+        },
+        "retention_device": "Question to bring",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "Could something else be going on?",
+        "narration": "And here's a twist. Sleep apnoea is a known cause of tiredness. And Zepbound is FDA-approved to treat moderate to severe obstructive sleep apnoea in adults with obesity.",
+        "on_screen_text": "Sleep apnoea: approved use",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sleeping person, calm breathing waves"
+        },
+        "retention_device": "But here's where it gets weird",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "Could something else be going on?",
+        "narration": "So if you snore loudly, wake up gasping, or never feel rested, say so. It's useful information for your clinician either way.",
+        "on_screen_text": "Snoring? Mention it",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person waking unrested, notebook nearby"
+        },
+        "retention_device": "Viewer self-recognition",
+        "source_ids": []
+      },
+      {
+        "id": "s62",
+        "section": "Could something else be going on?",
+        "narration": "Other things worth mentioning: any other medicines you take, how your mood has been, and how much you're really eating and drinking. A few days of quick notes can make that conversation much easier.",
+        "on_screen_text": "Bring a few days of notes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "simple food and fluid diary"
+        },
+        "retention_device": "Practical agency",
+        "source_ids": []
+      },
+      {
+        "id": "s63",
+        "section": "Could something else be going on?",
+        "narration": "And please, don't switch, stop or change your medicines on your own. If tiredness is bothering you, that's a conversation, not a solo decision.",
+        "on_screen_text": "Don't switch, stop or change your medicines on your own",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm mascot pointing to clinic door"
+        },
+        "retention_device": "Safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s64",
+        "section": "Could something else be going on?",
+        "narration": "So when does tiredness stop being a mention-it-next-time thing, and become a call-today thing? That's the last piece.",
+        "on_screen_text": "Next time, or today?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar versus ringing phone"
+        },
+        "retention_device": "Open loop into final chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s65",
+        "section": "When should you call your prescriber?",
+        "narration": "When should you call your prescriber?",
+        "on_screen_text": "When to call your prescriber",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, phone with checkmark"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s66",
+        "section": "When should you call your prescriber?",
+        "narration": "First, vomiting or diarrhoea with signs of dehydration. The label links that fluid loss to kidney problems, so if you can't keep fluids up, call your prescriber.",
+        "on_screen_text": "Can't keep fluids up? Call",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person on phone with water glass"
+        },
+        "retention_device": "Clear action",
+        "source_ids": [
+          "S1",
+          "S1-MG"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "When should you call your prescriber?",
+        "narration": "The NHS says to get an urgent GP appointment or call one-one-one if you feel unusually tired, feel dizzy when you stand up and it doesn't go away, have dark yellow pee or are peeing less than normal, or are breathing quickly or have a fast heart rate. And if you're dehydrated and confused, or much sleepier than normal, call nine-nine-nine or your local emergency number.",
+        "on_screen_text": "Urgent dehydration signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Unusually tired",
+            "Dizzy on standing, not settling",
+            "Dark pee or peeing less",
+            "Fast breathing or heart rate",
+            "Confused? Emergency care"
+          ],
+          "stock_query": "calm warning card with icons"
+        },
+        "retention_device": "List change",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "When should you call your prescriber?",
+        "narration": "Second, dizziness or fainting. Feeling faint, or actually passing out, is a reason to get checked promptly, not to push through.",
+        "on_screen_text": "Dizzy or fainting? Get checked",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person sitting down, calling for help"
+        },
+        "retention_device": "Clear action",
+        "source_ids": []
+      },
+      {
+        "id": "s69",
+        "section": "When should you call your prescriber?",
+        "narration": "Third, if you also use insulin or a sulfonylurea, watch for low blood sugar. The label says your risk may be higher when tirzepatide is used with those medicines.",
+        "on_screen_text": "Insulin or sulfonylurea? Watch lows",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glucose meter beside calm mascot"
+        },
+        "retention_device": "Population-specific stakes",
+        "source_ids": [
+          "S1",
+          "S1-MG"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "When should you call your prescriber?",
+        "narration": "Signs listed on the label include dizziness or light-headedness, sweating, shakiness, confusion or drowsiness, weakness, hunger, headache and a fast heartbeat.",
+        "on_screen_text": "Low blood sugar signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Dizziness, sweating",
+            "Shakiness, weakness",
+            "Confusion or drowsiness",
+            "Hunger, headache, fast heartbeat"
+          ],
+          "stock_query": "icons of low blood sugar signs"
+        },
+        "retention_device": "List change",
+        "source_ids": [
+          "S1",
+          "S1-MG"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "When should you call your prescriber?",
+        "narration": "If you notice those, follow the low blood sugar plan your care team gave you, and let your prescriber know.",
+        "on_screen_text": "Follow your plan, then call",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person reading care plan card"
+        },
+        "retention_device": "Agency",
+        "source_ids": []
+      },
+      {
+        "id": "s72",
+        "section": "When should you call your prescriber?",
+        "narration": "And the slow-burn version. If tiredness isn't improving after a few weeks, or it's getting in the way of work, family or daily life, that's worth a call too. You don't need a crisis to ask.",
+        "on_screen_text": "No crisis needed to ask",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "warm phone call at kitchen table"
+        },
+        "retention_device": "Emotional validation",
+        "source_ids": []
+      },
+      {
+        "id": "s73",
+        "section": "Your tirzepatide energy checklist",
+        "narration": "Let's pull it all together. If you're tired on tirzepatide, here's your checklist.",
+        "on_screen_text": "Your energy checklist",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, battery recharging"
+        },
+        "retention_device": "Takeaway section opens",
+        "source_ids": []
+      },
+      {
+        "id": "s74",
+        "section": "Your tirzepatide energy checklist",
+        "narration": "Small, regular meals, even when you're not hungry, with protein at each one.",
+        "on_screen_text": "Small meals, protein first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "small protein plate with tick"
+        },
+        "retention_device": "Checklist item",
+        "source_ids": [
+          "S3",
+          "S5"
+        ]
+      },
+      {
+        "id": "s75",
+        "section": "Your tirzepatide energy checklist",
+        "narration": "Sip fluids through the day, unless you've been told to limit them, and check that colour.",
+        "on_screen_text": "Sip and check the colour",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "water bottle with tick"
+        },
+        "retention_device": "Checklist item",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s76",
+        "section": "Your tirzepatide energy checklist",
+        "narration": "Protect your sleep, ease off caffeine gradually, and move a little, building toward strength work.",
+        "on_screen_text": "Sleep, caffeine, movement",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Protect sleep",
+            "Ease off caffeine",
+            "Move, build strength"
+          ],
+          "stock_query": "moon, cup and band with ticks"
+        },
+        "retention_device": "Checklist item",
+        "source_ids": [
+          "S3",
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "id": "s77",
+        "section": "Your tirzepatide energy checklist",
+        "narration": "Keep quick notes, and ask whether something else, like anaemia, diabetes, thyroid problems or sleep apnoea, could be playing a part.",
+        "on_screen_text": "Ask about other causes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "notebook and question bubble"
+        },
+        "retention_device": "Checklist item",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s78",
+        "section": "Your tirzepatide energy checklist",
+        "narration": "And know your call-today signs: dehydration that isn't settling, dizziness or fainting, and low blood sugar signs if you use insulin or a sulfonylurea.",
+        "on_screen_text": "Know your call-today signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Dehydration not settling",
+            "Dizziness or fainting",
+            "Low blood sugar signs"
+          ],
+          "stock_query": "phone icon with three signs"
+        },
+        "retention_device": "Checklist item",
+        "source_ids": [
+          "S1",
+          "S4"
+        ]
+      },
+      {
+        "id": "s79",
+        "section": "Your tirzepatide energy checklist",
+        "narration": "Remember Priya? She still has tired days. Everyone does. But now she knows what to check, what to ask, and when to call. That's the goal.",
+        "on_screen_text": "Check, ask, call",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "teacher smiling, battery recharged"
+        },
+        "retention_device": "Thread resolved",
+        "source_ids": []
+      },
+      {
+        "id": "s80",
+        "section": "Your tirzepatide energy checklist",
+        "narration": "If you've been blaming yourself for feeling drained, please don't. Tiredness is a signal, not a character flaw. And now you know how to read it.",
+        "on_screen_text": "A signal, not a flaw",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi cheering a small win"
+        },
+        "retention_device": "Empowering close",
+        "source_ids": []
+      },
+      {
+        "id": "s81",
+        "section": "Your tirzepatide energy checklist",
+        "narration": "Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm mascot beside disclaimer sign"
+        },
+        "retention_device": "Safety close",
+        "source_ids": []
+      },
+      {
+        "id": "s82",
+        "section": "Your tirzepatide energy checklist",
+        "narration": "There's a video I'd watch next, linked in the description.",
+        "on_screen_text": "Watch next: in the description",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "mascot pointing down to description"
+        },
+        "retention_device": "Watch-next handoff",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "ZEPBOUND (tirzepatide) injection: Prescribing Information and Medication Guide (revised 8/2026)",
+        "publisher": "Eli Lilly and Company / US FDA (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "S1-MG",
+        "title": "ZEPBOUND Medication Guide",
+        "publisher": "US National Library of Medicine (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/medguide.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "S2",
+        "title": "Why am I tired all the time?",
+        "publisher": "NHS",
+        "year": "2023",
+        "url": "https://www.nhs.uk/live-well/sleep-and-tiredness/why-am-i-tired-all-the-time/"
+      },
+      {
+        "id": "S3",
+        "title": "Self-help tips to fight tiredness",
+        "publisher": "NHS",
+        "year": "2023",
+        "url": "https://www.nhs.uk/live-well/sleep-and-tiredness/self-help-tips-to-fight-fatigue/"
+      },
+      {
+        "id": "S4",
+        "title": "Dehydration",
+        "publisher": "NHS",
+        "year": "2026",
+        "url": "https://www.nhs.uk/conditions/dehydration/"
+      },
+      {
+        "id": "S5",
+        "title": "Nutritional priorities to support GLP-1 therapy for obesity: a joint Advisory from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society",
+        "publisher": "The American Journal of Clinical Nutrition (PubMed)",
+        "year": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40450457/"
+      },
+      {
+        "id": "S6",
+        "title": "About Sleep",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/sleep/about/index.html"
+      }
+    ],
+    "cta": "We answer one tirzepatide question from the research every day. Subscribe, and the next answer comes to you. (Spoken once, right after the meals, sips and protein payoff.) Closing line: \"There's a video I'd watch next, linked in the description.\" The publisher links Side Effects or What to Eat. Label: lane: A. Playlist: Life on Tirzepatide. Thumbnail idea: \"Running on Empty?\" changing to recharged, with one labelled calm character and a battery going from low to full, no body imagery."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "The core claims all match their sources:\n- **Label rates:** the Zepbound label (revised 8/2026) gives fatigue at 5%, 6% and 7% on 5, 10 and 15 mg vs 3% on placebo. This is pooled from SURMOUNT-1 and -2, 72 weeks each, and 5 mg was tested only in SURMOUNT-1. The label's fatigue term includes asthenia, fatigue, lethargy and malaise.\n- **Label safety wording:** the sleep apnoea indication, the kidney/dehydration wording, the \"may be higher\" risk of low blood sugar with insulin or a sulfonylurea, and the list of low blood sugar signs all match.\n- **NHS pages:** the self-help tips (meals every 3–4 h, 15-minute walk, mild dehydration, sleep routine, caffeine up to 7 h), the tiredness causes page (iron deficiency anaemia, diabetes, overactive thyroid, sleep apnoea, blood tests) and the dehydration page (symptoms, pale-pee check, urgent/111 and 999 criteria) all match.\n- **CDC:** \"7 or more hours\" for adults 18–60.\n\nThe joint GLP-1 nutrition advisory (AJCN 2025, PMID 40450457) is confirmed via search and the Obesity Society page as recommending enough protein plus strength training to preserve lean mass. The \"3+ times a week\" figure matches the craft notes. I couldn't read the PDF text directly.\n\nFraming is good throughout: absolute rates, the placebo comparison, \"can, not proven\", and the right population for sleep apnoea. Safety lines are complete: kidney-disease protein caveat, \"unless told to limit fluids\", low-blood-sugar warning for insulin/sulfonylurea users, the don't-stop line, the disclaimer and the prescriber line. The Priya scenario is clearly hypothetical.\n\nThere are four minor attribution and wording fixes below.",
+    "issues": [
+      {
+        "location": "s59, s77",
+        "claim": "Ask whether blood tests, for example for anaemia, diabetes or thyroid problems, make sense for you / ask whether something else, like anaemia, diabetes, thyroid problems or sleep apnoea",
+        "problem": "The cited NHS page (S2) names an overactive thyroid (hyperthyroidism) specifically, both in its list of conditions and in its blood-test line. 'Thyroid problems' is broader than the source.",
+        "severity": "minor",
+        "fix": "s59 narration: \"So it's reasonable to ask your clinician whether blood tests, for example for anaemia, diabetes or an overactive thyroid, make sense for you. That's their call to make with you, not a supplement aisle's.\" s77 narration: \"Keep quick notes, and ask whether something else, like anaemia, diabetes, an overactive thyroid or sleep apnoea, could be playing a part.\""
+      },
+      {
+        "location": "s51",
+        "claim": "The NHS says... If you want to cut back, do it gradually, because stopping suddenly can bring on headaches and trouble sleeping.",
+        "problem": "On the NHS page, the advice to cut back gradually is credited to The Sleep Charity, not the NHS itself. The way the sentence is built, the NHS gets credit for it.",
+        "severity": "minor",
+        "fix": "Replace the last sentence with: \"If you want to cut back, the NHS page points to advice from The Sleep Charity: do it gradually, because stopping suddenly can bring on headaches and trouble sleeping.\""
+      },
+      {
+        "location": "s67",
+        "claim": "get an urgent GP appointment or call one-one-one",
+        "problem": "NHS 111 is UK-only, but most of the audience is in the US, Canada and Australia. US and Australian viewers have no 111 line to call.",
+        "severity": "minor",
+        "fix": "Change the start to: \"The NHS says to get an urgent appointment, in the UK that's your GP or one-one-one, elsewhere your doctor or local urgent care, if you feel unusually tired...\" Keep the rest unchanged."
+      },
+      {
+        "location": "s13",
+        "claim": "About seven reported fatigue or low energy.",
+        "problem": "'Low energy' is a fair plain-English reading of the label's grouped term, but the script calls these numbers 'exactly as printed'. The label's fatigue term covers asthenia, fatigue, lethargy and malaise.",
+        "severity": "minor",
+        "fix": "\"About seven reported fatigue, weakness or low energy.\""
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "ZEPBOUND (tirzepatide) injection: Prescribing Information (revised 8/2026)",
+        "publisher": "Eli Lilly and Company / US FDA (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "S1-MG",
+        "title": "ZEPBOUND Medication Guide",
+        "publisher": "US National Library of Medicine (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/medguide.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "S2",
+        "title": "Why am I tired all the time? (Tiredness and fatigue)",
+        "publisher": "NHS",
+        "year": "2023",
+        "url": "https://www.nhs.uk/live-well/sleep-and-tiredness/why-am-i-tired-all-the-time/"
+      },
+      {
+        "id": "S3",
+        "title": "Self-help tips to fight tiredness",
+        "publisher": "NHS",
+        "year": "2023",
+        "url": "https://www.nhs.uk/live-well/sleep-and-tiredness/self-help-tips-to-fight-fatigue/"
+      },
+      {
+        "id": "S4",
+        "title": "Dehydration",
+        "publisher": "NHS",
+        "year": "2026",
+        "url": "https://www.nhs.uk/conditions/dehydration/"
+      },
+      {
+        "id": "S5",
+        "title": "Nutritional priorities to support GLP-1 therapy for obesity: a joint Advisory from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society",
+        "publisher": "The American Journal of Clinical Nutrition (PubMed)",
+        "year": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40450457/"
+      },
+      {
+        "id": "S6",
+        "title": "About Sleep",
+        "publisher": "Centers for Disease Control and Prevention",
+        "year": "2024",
+        "url": "https://www.cdc.gov/sleep/about/index.html"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.021,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 3.5,
+      "weakShots": 102,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "Shot is scripted as 'night' mood (icon, moon, clock) but the backdrop is a bright, warm daytime room with a blue-sky window; the moon/clock icons are tiny add-ons that don't change the lighting",
+        "Backdrop is a near-black navy void, inconsistent with the brand/warm palette used around it",
+        "Battery mascot is tiny and nearly invisible against the dark background",
+        "Woman is again a floating head with no body",
+        "Mood is tagged 'brand' but the backdrop is the warm tan living room, not the teal brand gradient used in shots 0–1 — palette inconsistency between neighbouring brand shots",
+        "Floating head again (no neck/shoulders)",
+        "CRITICAL offset-beat defect: this is the 'Fluid loss may affect kidneys / Tirzepatide patient guide' content scripted for ~284s, rendering here at ~33–34s — the whole middle of the script has collapsed into the first 90 seconds",
+        "Kidney mascot's cheerful 'Ahh, much better!' line doesn't fit a kidney-risk warning tone",
+        "Same offset-beat defect: 'thirst' dehydration content (scripted ~289–295s) is appearing at ~37–41s",
+        "Priya is a floating head again",
+        "Offset-beat defect: 'Thirst / Dark yellow pee / Peeing less' chips scripted for ~297s are showing at ~44–48s",
+        "Offset-beat defect: 'Dizzy / Dry mouth / Tiredness' chips scripted for ~306s are showing at ~49–53s",
+        "Offset-beat defect: '10-second colour check' and the urine-colour drop mascot, scripted for ~312–314s, are showing at ~56–61s",
+        "Offset-beat defect continues (content meant for ~318s rendering at ~64–66s)",
+        "The battery-with-magnifying-glass icon pairing is an unclear visual metaphor on its own"
+      ],
+      "layoutKinds": {
+        "tiny": 15,
+        "offscreen": 17,
+        "sparse": 12
+      }
+    },
+    "audio": {
+      "musicGain": 0.302,
+      "sfxGain": 0.55,
+      "finalWer": 0.003,
+      "maskingDelta": 0.003,
+      "lufs": -15.3,
+      "soundNotes": "Measured music level (-13.5 dB under voice) is already inside the target window, so the music multiplier is left at 1.0 — no reason to push it up or duck it further than the automatic system already does. Nearly all SFX are correctly felt at -13 to -15 dB during speech; I pulled down a handful of outlier spikes that poked above the voice (-3 to -12 dB) during narration — two pops/swooshes right after 'Tired on tirzepatide?' (i=29/30), the trial-pooled pop at i=115, the bubble at i=253 ('Could it be something else' lead-in), the two loud pops at i=402 and i=412, and the pop at i=529 — all brought down into the -16 dB felt zone. I muted one redundant blip (i=647) inside the 'Your energy checklist' chip reveal, which was stacking five effects in about 1.3 seconds. Added five bespoke SFX for moments the stock kit can't cover: a dry/parched mouth sound at the dehydration reveal, a soft stomach gurgle on the stomach-side-effects beat, a gentle morning alarm for Priya's week montage, a low tension pulse under 'Watch for lows', and a single deep, serious heartbeat thump under the 'Confused? Emergency care' line — kept quiet and sparse so the urgent lines stay dry and unscored, per the dramatic/serious-moment rule."
+    },
+    "blocking": [],
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": [
+            "mascot faces are small at phone size but still readable",
+            "two-line headline wraps on phone/small crops"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "big-number format underperforms state-change designs per channel data (2.5-3.8% vs 4%+)",
+            "single static battery, no before/after payoff visualized, less emotional pull"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "reaction-style format historically underperforms state-change thumbnails (2.1-2.9% vs 4%+)",
+            "arrow draws eye to corner rather than the mascot's face",
+            "doesn't show the payoff/answer, lower curiosity resolution appeal"
+          ]
+        }
+      ],
+      "best_index": 0,
+      "reasoning": "All three are clean, legible designs with a single labelled battery mascot, brand colors and no text clutter. Candidate #0 uses the explicit worried→answered state-change layout (sleepy grey battery → smiling green battery) that the channel's own analytics show consistently outperforms big-number and reaction thumbnails at scale (Side Effects 4.04%, How Long 4.67%, Protein 3.78% vs. big-number 2.5-3.8% and reaction 2.1-2.9%). It has a strong emotional pull (face transformation), a clear curiosity gap (what made the change happen), and headline text (\"RUNNING ON EMPTY?\") that doesn't repeat the title's \"fatigue/tired\" wording, satisfying the packaging rule. #1 and #2 are both legible and relatable but match formats the playbook already flags as lower-CTR, and #2's answer-withholding arrow adds less emotional payoff than seeing the actual state change. #0 best fits both the honest curiosity-gap goal and the data-backed packaging guidance."
+    },
+    "packaging": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "location": "packaging.description",
+          "claim": "Replaced placeholder description with the full ready-to-paste version and applied the pinned comment's precision edit (added \"across doses\" and the SURMOUNT-2 type 2 diabetes detail); title and thumbnail left unchanged as they passed the check.",
+          "problem": "The description field holds an internal change note, not viewer copy. As is, it would publish an internal note and leave out the required quick answer, the 'Not personal advice' and prescriber lines, the don't-stop line, sources, chapters and the empty line 1 for the publisher's Watch next link.",
+          "severity": "major",
+          "fix": "Replace the whole field with the text below. Line 1 is intentionally left empty for the publisher's ▶ Watch next link. The publisher adds timestamps in front of each chapter name once the render is final; never use fake timestamps. It's about 1,200 characters; check it against the 1,250 limit.\n\n\nIs fatigue a tirzepatide side effect? In the Zepbound label's pooled SURMOUNT-1 and SURMOUNT-2 trials (adults with obesity, or overweight plus a weight-related condition; SURMOUNT-2 also required type 2 diabetes), about 5 to 7 in 100 people on tirzepatide reported fatigue across doses, vs 3 in 100 on placebo.\n\nNot personal advice. Don't switch, stop or change your medicines on your own. Talk to your doctor or prescriber about whether it's right for you.\n\nSources:\nZepbound label: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b\nNHS, tiredness: https://www.nhs.uk/live-well/sleep-and-tiredness/why-am-i-tired-all-the-time/\nNHS, dehydration: https://www.nhs.uk/conditions/dehydration/\nJoint GLP-1 nutrition advisory (2025): https://pubmed.ncbi.nlm.nih.gov/40450457/\n\nChapters:\nQuick answer\nIs fatigue a side effect of tirzepatide?\nWhy might you feel tired?\nCould it be dehydration?\nDoes protein help energy?\nWhat about sleep and movement?\nCould something else be going on?\nWhen should you call your prescriber?\nYour tirzepatide energy checklist\n\n#tirzepatide #GLP1 #fatigue\n\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you."
+        }
+      ]
+    }
+  },
+  "hold_reason": "Quality check: narration doesn't match script in 1 scene(s): expected \"\" heard \"the\"",
+  "release_tag": "content-2026-11-06",
+  "archive_url": "b2://informed-lab-media/content/2026-11-06/L1-fatigue-on-tirzepatide-how-often-it-was/",
+  "approved_by": "editor-in-chief (medium risk): The hold doesn't justify dropping this. It's one extra spoken \"the\" (final WER 0.003). The fact-check passed with only minor wording notes, masking is 0.003, length is 12.4 min and nothing is blocking. The one real problem: the description field currently holds an internal change note, so the publisher must replace it with the packaging checker's full version (disclaimer, prescriber and don't-stop lines, sources, chapter slots, empty line 1) before this goes live."
+}
