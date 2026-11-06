@@ -50,8 +50,11 @@
       "format": "reel",
       "slotKey": "short",
       "slot": "2026-11-06T01:52:01.943Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "17876132028636361",
+      "url": "https://www.instagram.com/reel/DfYduwIhIAL/",
+      "published_at": "2026-11-06T01:50:16.393Z"
     },
     {
       "platform": "tiktok",
@@ -69,8 +72,11 @@
       "format": "reel",
       "slotKey": "short",
       "slot": "2026-11-06T01:52:01.943Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "1422187520064560",
+      "url": "https://www.facebook.com/reel/1422187520064560",
+      "published_at": "2026-11-06T01:50:28.107Z"
     }
   ],
   "created_at": "2026-11-05T03:15:56.941Z",
