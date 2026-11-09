@@ -21,13 +21,13 @@
 - **Plateau is slower (signal):** 256 impressions, 9 RELATED views, 50% AVD. Food Noise has the best CTR of the newer videos (6.09% on 115 impressions) but only 41 min.
 - **Protein at day 7: subscriber spike, no suggested pickup (signal).** 197 of 209 views came from SUBSCRIBER traffic at 0.5 min a view, and RELATED gave only 7 views. Recheck at day 14 (11-12). If RELATED is under 20, the topic overlaps What to Eat and Strength too much.
 - **Hair Loss long-form (41Y0kjaPBnQ) has the weakest Lane A start yet (anecdote, day 3):** 2 views, 0 min, 61 impressions, 1.64% CTR.
-  - QA flagged offset beats. Check the first 60 s today. If they're broken, re-render and re-upload before linking the 1,030-view hair Short to it.
+  - The "offset beats" QA flag was a false alarm (2026-11-09): the Visual Critic was shown frames in the wrong order. The first 60 s were checked frame by frame against the narration and are in sync, so no re-render or re-upload is needed. Link the 1,030-view hair Short to it.
   - Constipation (82 impressions, 10 min) and Thanksgiving (143 impressions, 17 min) are also slow. They need links from the big three.
 
 ## Long-form craft
 - **Shorts → long funnel: still zero (proven, 23 long-forms with source data).** SHORTS and END_SCREEN traffic is 0 everywhere, and PLAYLIST has 7 views in total. End screens, line-1 links and the playlist are the cheapest lever we have.
 - **Opening and structure:** the first sentence answers the literal title, then a "you" scenario. Re-hook every 45–75 s. One subscribe ask, after the payoff. End with "There's a video I'd watch next, linked in the description." Never speak a title.
-- **Retention:** Lane A AVD runs 37–50%, with Bones at 74%. Protein (31%), Thanksgiving (28%) and Constipation (23%, early) are low. Watch whether the offset-beat defects are behind it.
+- **Retention:** Lane A AVD runs 37–50%, with Bones at 74%. Protein (31%), Thanksgiving (28%) and Constipation (23%, early) are low. The offset-beat flags were a QA bug, not the cause (checked 2026-11-09).
 - **Thumbnails: state change wins at scale (signal, now with Side Effects at 4.04% on 2,052 impressions).**
   - State change: Side Effects 4.04%, How Long 4.67%, Protein 3.78%.
   - Big-number: What to Eat 2.53%, orforglipron 3.81%.
@@ -60,10 +60,10 @@
 ## Slots and production
 - **The slot effect is negligible (proven).** Short medians sit within 55–66 across slots. Keep the long-form at 14:00 ET.
 - **Carousels reach 0–4 (proven, n≈50).** Keep them stopped.
-- **Offset beats on 4 priority long-forms in a row (10-27, 11-02, 11-04, 11-05) are now our biggest watch-time risk.** Hair Loss shows what it costs. Treat the beat-list frame check as a ship-blocker.
+- **The "offset beats" on long-forms from 10-20 to 11-06 were a QA bug, not a video defect (found 2026-11-09).** The Visual Critic's frames were sorted as text, so frames from 4 to 5 min in were labelled 30 to 55 s. The published videos measured in sync. An automatic beat-sync gate now checks every long-form before upload and blocks real drift.
 
 ## Priority actions
-1. Today: check the first minute of Hair Loss and fix or re-upload it if needed. Then add its link to line 1 of both hair Shorts.
+1. Today: add the Hair Loss link to line 1 of both hair Shorts (its first minute is in sync; no re-upload needed).
 2. Set end screens and line-1 links from Side Effects, What to Eat and Strength to Bones & Muscle, Plateau, Constipation, Hair Loss and Thanksgiving. Put all Lane A videos in "Life on Tirzepatide".
 3. Next Lane A topics: fatigue, injection site reactions (its Short hit 226 by day 3), dehydration, and a hair redo if needed.
 4. Check-ins: Exp F on 11-11, Protein RELATED on 11-12, Strength's daily minutes for 3 days.
@@ -73,7 +73,7 @@ _Updated 2026-11-05 from about 400 posts, with impressions for 31 long-forms and
 ## Topics to double down on
 - Lane A practical tirzepatide long-forms (71% of all long-form watch minutes; the big three have 564–634 min each, while the median non-Lane-A long-form has about 50). Next: fatigue, injection site reactions, dehydration
 - Questions that sit right next to the big three, following the Bones & Muscle model (RELATED pickup by day 8, 74% AVD)
-- Fixing and linking the Hair Loss long-form so the 1,030-view hair Short feeds it (hair is our highest-demand body topic)
+- Linking the Hair Loss long-form so the 1,030-view hair Short feeds it (hair is our highest-demand body topic)
 - End screens, line-1 links and the 'Life on Tirzepatide' playlist from Side Effects, What to Eat and Strength to Bones, Plateau, Constipation, Hair Loss and Thanksgiving
 - A tirzepatide injection site reactions long-form (its Short reached 226 views by day 3)
 - Calm 'Is this normal?' and 'Will it…?' body-worry Shorts with tirzepatide in the title (median about 90, n≈17)
@@ -95,7 +95,7 @@ What's working:
 - Side Effects' "worried → answered" thumbnail gets 4% click-through at 2,000+ impressions, our best at scale.
 
 What needs attention:
-1. The Hair Loss long video has 2 views and 0 minutes watched after 3 days. QA flagged scenes out of order. Please watch the first minute today. If it's broken, re-render and re-upload it, then link it at the top of both hair Shorts' descriptions. The hair Short has 1,030 views and still sends nobody anywhere.
+1. The Hair Loss long video has 2 views and 0 minutes watched after 3 days. The "scenes out of order" QA flag was a false alarm (the checker was shown frames in the wrong order; fixed 2026-11-09), and the video is in sync. Link it at the top of both hair Shorts' descriptions. The hair Short has 1,030 views and still sends nobody anywhere.
 2. Still not a single view from a Short or an end screen. Add end screens and top-of-description "watch next" links on Side Effects, What to Eat and Strength. Point them to Bones & Muscle, Plateau, Constipation, Hair Loss and Thanksgiving, and add all of them to the "Life on Tirzepatide" playlist.
 3. Strength added only 1 minute yesterday. If it stays flat, it's next for a new thumbnail. Leave What to Eat's thumbnail test alone until its 14 days are up.
 4. The 11-03, 11-04 and 11-05 long videos (stopping, birth control) aren't in our analytics feed yet. Please confirm they're live.

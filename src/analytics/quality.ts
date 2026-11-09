@@ -42,17 +42,31 @@ const craftSchema = {
   properties: { craft_notes_markdown: { type: "string" }, summary: { type: "string" } },
 };
 
+/**
+ * Until 2026-11-09 the Visual Critic got mislabelled frames on long videos (snapshot sort bug, fixed in
+ * src/qa/visualQa.ts), so its "offset beat" / "wrong beat" findings from those records are false: the published
+ * videos were checked and are in sync. Keep them out of the craft notes. Real drift is now caught by the
+ * beat-sync gate (src/qa/beatSync.ts), which reports in qa.beats and qa.blocking.
+ */
+const FALSE_OFFSET_NOTE = "Offset-beat / wrong-beat findings in records up to 2026-11-09 were a QA bug (the Visual Critic was shown frames in the wrong order); the published videos were measured and are in sync, and the 'Not personal advice' disclaimer was on screen. Remove those claims from the notes. Beat timing is now checked automatically by the beat-sync gate.";
+const OFFSET_CLAIM = /offset|scripted for|wrong beat|belongs to .*(beat|shot)|leaking in|minutes? early|content jump|collapsed into/i;
+function dropFalseOffsetBeats<T extends { date: string; visual_notes?: string[] }>(r: T): T {
+  if (r.date > "2026-11-09" || !r.visual_notes) return r;
+  return { ...r, visual_notes: r.visual_notes.filter(n => !OFFSET_CLAIM.test(n)) };
+}
+
 /** Rewrite the craft notes from the last ~14 days of QA records. Never throws. */
 export async function updateCraftNotes(days = 14) {
   if (!existsSync(LOG)) return;
   const since = Date.now() - days * 86400_000;
   const records = readFileSync(LOG, "utf8").split("\n").filter(Boolean).map(l => { try { return JSON.parse(l); } catch { return undefined; } })
-    .filter(r => r && Date.parse(r.date) >= since);
+    .filter(r => r && Date.parse(r.date) >= since)
+    .map(dropFalseOffsetBeats);
   if (!records.length) return;
   try {
     const out = await runAgent<{ craft_notes_markdown: string; summary: string }>({
       agent: "quality-coach", model: config.models.analyst, schema: craftSchema, effort: "medium",
-      input: { current_notes: readText(CRAFT_NOTES, ""), records },
+      input: { current_notes: readText(CRAFT_NOTES, ""), records, corrections: [FALSE_OFFSET_NOTE] },
     });
     writeText(CRAFT_NOTES, `${out.craft_notes_markdown.trim()}\n\n_Updated ${new Date().toISOString().slice(0, 10)} from ${records.length} QA records._\n`);
     log.info(`craft notes updated: ${out.summary.slice(0, 200)}`);

@@ -1,7 +1,7 @@
 _Based on 61 QA records from 2026-10-24 to 2026-11-06: 39 Shorts, 16 long-forms and 6 carousels, all GLP-1. **8 didn't ship:** 7 were held and 1 long-form (L1 10-30, hair loss) failed before render._
 
 _**New since the last pass:** 5 records from 11-06 (C1 sick-day carousel, L1 fatigue, S1 Thanksgiving, S2 tirzepatide plus ixekizumab, S3 low blood sugar). All 5 shipped. Three known problems got worse:_
-- _**The fatigue long-form shipped with offset beats, the 5th priority long-form in a row** (10-27, 11-02, 11-04, 11-05, 11-06). Beats scripted for about 284–306 s showed up at 33–53 s. Its visual score was 3.5 with 102 weak shots, the worst in the window._
+- _**Correction (2026-11-09): the "offset beats" on long-forms (10-20 to 11-06) were a QA bug, not a video defect.** The Visual Critic's snapshot frames were sorted as text, so frames from 4 to 5 min in were shown under labels for 30 to 55 s. The published videos were measured and are in sync, and the disclaimer was on screen. The low visual scores and weak-shot counts on those long-forms are unreliable for the same reason._
 - _**A 13:00 Short shipped at masking 0.037.** That's S2 11-06, the 6th 13:00 Short above 0.02. S1 10-25 was held at the same 0.037, so the gate isn't being applied the same way every time._
 - _**The L1 11-06 description was an internal change note** with no quick answer, safety lines or sources (major)._
 - _New repeat problems: the Exp F subscribe line or the closing line was missing (S2 and S3 11-06). The safety block ended on the wrong line (S3 11-06, S3 10-27). Help lines were UK-only (NHS 111 in L1 11-06)._
@@ -14,11 +14,7 @@ _Why items didn't ship in this window:_
 - _1 for a spoken call to action naming a video nobody could confirm was live: S3 10-26._
 
 ### Motion Designer
-- **Long-forms: one shot = one scripted beat. Treat offset timing as a ship-blocker.** It's our worst repeat defect: 5 priority long-forms in a row (10-27, 11-02, 11-04, 11-05, 11-06).
-  - The jump is the same every time: content from about 4–5 minutes in shows up 25–65 s in. That points to a mapping bug, not chance. Take shot start times from the final rendered narration timings, never from script estimates. Check that no beats are merged, dropped or re-indexed.
-  - Before render, export a shot → beat → start-time list and diff it against the script's beat list.
-  - After render, check one frame per beat for the first 2 minutes. Confirm the roadmap card, the section titles and the "Not personal advice" disclaimer headline each appear at their scripted times. The disclaimer was missing in 10-27, 11-02, 11-05 and 11-06.
-  - If any frame's headline belongs to a beat more than 30 s away, rebuild from the beat list. Don't ship it.
+- **Long-forms: one shot = one scripted beat.** Beat timing is checked automatically by the beat-sync gate (plan, final audio and render) and real drift blocks the upload; the earlier "offset beat" reports were a QA bug (see the correction above). Keep each shot's headline to its own beat's on-screen text.
 - **Match the backdrop and lighting to each beat's mood tag, and keep one look per scene.**
   - "Night" beats get the night room, "brand" beats get the teal gradient, "warm" beats get the warm room.
   - Mismatches: L1 11-05 (warm → night), and L1 11-06 (a night beat on the daytime room, a brand beat on the tan room, plus a black void). S2 11-05 also jumped to a starfield palette. (4 findings.)
