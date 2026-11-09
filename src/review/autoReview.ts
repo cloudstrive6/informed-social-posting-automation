@@ -15,8 +15,8 @@ const schema = {
   properties: { decision: { enum: ["publish", "drop"] }, reason: { type: "string" }, risk: { enum: ["low", "medium", "high"] } },
 };
 
-/** Media problems no editor should wave through. */
-const HARD_BLOCKS = /photosensitive|black frames|voice masked|runs .* min \(allowed|Short runs/i;
+/** Media problems no editor should wave through ("beat sync": visuals drift from the narration, src/qa/beatSync.ts). */
+const HARD_BLOCKS = /photosensitive|black frames|voice masked|runs .* min \(allowed|Short runs|beat sync/i;
 
 export async function editorDecision(item: ContentItem): Promise<EditorDecision> {
   const qa = (item.qa ?? {}) as any;

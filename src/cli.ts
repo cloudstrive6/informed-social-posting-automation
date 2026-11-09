@@ -212,6 +212,13 @@ const commands: Record<string, () => Promise<unknown>> = {
   // listen for up to N seconds (default 270), applying each decision as soon as it's tapped
   "telegram-poll": () => pollTelegram(Number(rest[0] ?? 270), () => syncReviews()),
   analytics: () => runAnalytics(),
+  // beat-sync audit of any rendered video against its script: beat-audit <video.mp4> <script.json> [--words whisper.json]
+  "beat-audit": async () => {
+    const { beatAudit } = await import("./qa/beatSync.js");
+    const r = await beatAudit(rest[0], rest[1], flag("words"));
+    console.log(r.summary);
+    for (const b of r.beats.filter(x => x.status !== "ok")) console.log(`  ${b.id} ${b.status}: heard ${b.heard ?? "?"} s, change ${b.change ?? "?"} s${b.note ? ` (${b.note})` : ""}`);
+  },
   // keep the 60-day Threads token alive (stored in B2); alert if renewal fails
   "threads-refresh": async () => { if (!(await refreshThreadsToken())) await notify("⚠️ Threads token renewal failed. Posting to Threads will stop when the token expires; generate a new one in the Meta app (Threads API → Settings → User Token Generator)."); },
   doctor,

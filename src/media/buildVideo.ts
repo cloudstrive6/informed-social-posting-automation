@@ -1,9 +1,10 @@
-import { join } from "node:path";
+import { basename, dirname, join } from "node:path";
 import { config } from "../lib/config.js";
-import { writeJson } from "../lib/fsx.js";
+import { readJson, writeJson } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
 import type { Scene, Source } from "../lib/schemas.js";
-import { checkMix, checkSubtitles, measureLevels } from "../qa/audioQa.js";
+import { checkMix, checkSubtitles, HeardWord, measureLevels } from "../qa/audioQa.js";
+import { beatBlocking, beatSyncGate } from "../qa/beatSync.js";
 import { autoLevel, designSound, speechIntervals } from "../qa/soundDesign.js";
 import { ffmpeg } from "./exec.js";
 import { critiqueShots, keyTimes, layoutAudit, LayoutIssue, ShotReview, sparseShots, technicalFrameChecks } from "../qa/visualQa.js";
@@ -34,6 +35,8 @@ export interface VideoQa {
   };
   audio: { musicGain: number; sfxGain: number; finalWer: number; maskingDelta: number; lufs: number; soundNotes: string } | null;
   subtitles?: { wer: number; diffs: string[] };
+  /** beat-sync ship gate (src/qa/beatSync.ts): every scripted beat on screen when it is said */
+  beats?: { verdict: "pass" | "fail"; summary: string; planOff?: number; audioShift?: number | null; renderHitRate?: number | null; flagged: string[] };
   blocking: string[];
 }
 
@@ -110,6 +113,28 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
   }
 
   const final = await buildAudio({ ...v, timed, cues, silent, qa });
+
+  // ---- beat-sync ship gate on the final file: blocks long videos whose beats drift from the narration
+  // (Shorts get the report only until their thresholds are measured)
+  if (config.qa.enabled) {
+    try {
+      const words = (f: string) => readJson<{ words: HeardWord[] }>(join(dir, f), { words: [] }).words;
+      const beats = await beatSyncGate({
+        scenes: scenes.map(s => ({ id: s.id, on_screen_text: s.on_screen_text, spoken: spokenById.get(s.id) ?? s.narration })),
+        video: final, workDir: dir, tl, shots: timed, heard: words("qa-final-transcript.json"), clean: words("qa-narration-transcript.json"),
+      });
+      writeJson(join(dir, "qa-beats.json"), beats);
+      writeJson(join(dirname(v.out), `${basename(v.out, ".mp4")}-beats.json`), beats); // kept with the release for audits
+      qa.beats = {
+        verdict: beats.verdict, summary: beats.summary.slice(0, 600), planOff: beats.plan?.off, audioShift: beats.audio?.medianShift, renderHitRate: beats.render?.hitRate,
+        flagged: beats.beats.filter(b => b.status !== "ok" && b.status !== "unverified").slice(0, 8).map(b => `${b.id} ${b.status}${b.note ? `: ${b.note}` : ` (${b.offset ?? "?"} s)`}`),
+      };
+      log.info(beats.summary);
+      if (!v.vertical) qa.blocking.push(...beatBlocking(beats));
+    } catch (e) {
+      log.warn(`beat sync check failed to run: ${(e as Error).message.slice(0, 300)}`);
+    }
+  }
   writeJson(join(dir, "qa-report.json"), qa);
   return { video: final, qa };
 }
