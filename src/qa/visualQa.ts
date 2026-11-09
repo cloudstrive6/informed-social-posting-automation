@@ -132,12 +132,36 @@ export function keyTimes(shots: TimedShot[]): { shot: number; t: number }[] {
   });
 }
 
-async function snapshots(projectDir: string, times: number[], outDir: string): Promise<string[]> {
+async function snapshots(projectDir: string, times: number[], outDir: string): Promise<(string | undefined)[]> {
   ensureDir(outDir);
   await run("npx", ["-y", "hyperframes@0.8.77", "snapshot", ".", "--at", times.join(","), "--no-end", "--output", resolve(outDir)], {
     cwd: projectDir, quiet: true, env: { ...process.env, HYPERFRAMES_SKIP_SKILLS: "1" },
   });
-  return readdirSync(outDir).filter(f => /^frame-\d+.*\.png$/.test(f)).sort().map(f => join(outDir, f));
+  return orderSnapshots(readdirSync(outDir), times).map(f => (f ? join(outDir, f) : undefined));
+}
+
+/**
+ * HyperFrames names snapshots `frame-<index padded to 2>-at-<time>s.png`. A plain text sort puts frame-100…109
+ * right after frame-10, so on long videos (over 100 key frames) the Visual Critic got frames from 4 to 5 min in
+ * under labels for 30 to 55 s. It reported them as "offset beats" on every long-form from 2026-10-20 to 11-06,
+ * scored the wrong shots and sent the wrong scenes back for revision. The published videos were in sync.
+ * Order by the numeric index, then pair each requested time with the file whose time label matches it.
+ */
+export function orderSnapshots(files: string[], times: number[]): (string | undefined)[] {
+  const idx = (f: string) => Number(/^frame-(\d+)/.exec(f)?.[1]);
+  const at = (f: string) => Number(/-at-([\d.]+)s?\.png$/.exec(f)?.[1] ?? NaN);
+  const sorted = files.filter(f => /^frame-\d+.*\.png$/.test(f)).sort((a, b) => idx(a) - idx(b));
+  if (sorted.length !== times.length) log.warn(`snapshot: asked for ${times.length} frames, got ${sorted.length}`);
+  // without readable time labels, the numeric index order is the best we have
+  if (sorted.some(f => Number.isNaN(at(f)))) return times.map((_, i) => sorted[i]);
+  const used = new Set<string>();
+  return times.map(t => {
+    let best: string | undefined, gap = Infinity;
+    for (const f of sorted) if (!used.has(f) && Math.abs(at(f) - t) < gap) { best = f; gap = Math.abs(at(f) - t); }
+    if (best === undefined || gap > 0.06) return undefined; // no frame for this moment: leave it out rather than mislabel it
+    used.add(best);
+    return best;
+  });
 }
 
 async function contactSheets(frames: { file: string; label: string }[], outDir: string, vertical: boolean): Promise<string[]> {
@@ -166,7 +190,7 @@ export async function critiqueShots(projectDir: string, shots: TimedShot[], vert
   const kt = keyTimes(shots).filter(k => !onlyShots || onlyShots.has(k.shot));
   if (!kt.length) return [];
   const files = await snapshots(projectDir, kt.map(k => k.t), join(dir, `snap-${Date.now()}`));
-  const frames = kt.map((k, i) => ({ file: files[i], label: `Shot ${k.shot} @ ${k.t.toFixed(1)}s` })).filter(f => f.file);
+  const frames = kt.flatMap((k, i) => (files[i] ? [{ file: files[i]!, label: `Shot ${k.shot} @ ${k.t.toFixed(1)}s` }] : []));
   const sheets = await contactSheets(frames, dir, vertical);
   const reviews: ShotReview[] = [];
   const groups: string[][] = [];
