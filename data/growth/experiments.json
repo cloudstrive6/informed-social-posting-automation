@@ -6,7 +6,7 @@
     "metric": "Success: day-7 median of 25+ views and 60+ watch minutes, still growing at day 28.",
     "min_sample": "n=8 videos",
     "status": "won",
-    "result": "Won at n=8+ (How Long, What to Eat, Side Effects, Strength, Plateau, Bones & Muscle, Protein, Thanksgiving). The 4 mature videos got 51, 115, 126 and 141 views (median about 120) and 204, 273, 412 and 433 min (median about 340), vs about 38 min for the 11 other GLP-1 long-forms. That's about 9× more. Suggested videos bring about 68% of Lane A minutes, at 5–6 min per view. Caveat: Plateau (12 views, 87 impressions at day 5) and Bones & Muscle (10 views, 67 impressions at day 4) start slowly but hold 68–79% of the video. Protein reached 146 views by day 3. Lane A is now the default for every 14:00 long-form."
+    "result": "Won at n=8+. It earns 71% of tracked long-form minutes, and the big three have 564–634 min each. Caveat from this week: the 7 Lane A videos since 10-27 have a median of only about 41 min (0–137) at 3–9 days old. The last 4 shipped with scenes out of sync, so this looks like a production failure, not proof the lane is weakening. Lane A stays the default, with the beat-sync check as a ship-blocker."
   },
   {
     "name": "Exp B: Gray-market 'what's actually confirmed' long-forms",
@@ -15,7 +15,7 @@
     "metric": "Day-7 median of 33+ views.",
     "min_sample": "n=4",
     "status": "inconclusive",
-    "result": "Closed early at n=1: the pharmacy check got 8 views and 20 min before it closed (11 views and 31 min now). Gray-market stays Shorts-only, at most 1 a week."
+    "result": "Closed early at n=1. The pharmacy check got 19 views and 61 min. Gray-market stays Shorts-only, at most 1 a week."
   },
   {
     "name": "Exp C: First explainer within 48 h of a new named result",
@@ -24,33 +24,42 @@
     "metric": "Day-7 median of 50+ views.",
     "min_sample": "n=4 qualifying videos after 10-20",
     "status": "inconclusive",
-    "result": "Retired without reaching its sample. Only 1 valid video in the window: petrelintide, with 30 views and 97 min, below the 50-view bar. The only qualifying news this week (retatrutide vs semaglutide, 10-29) was dropped for audio. Looking back at fresh next-gen results (n=7): median about 35 views and about 97 min. Only EloraTZP was big. Lane A median is about 340 min, so the cost of giving the slot to news is too high. News now goes to 13:00 Shorts. Only a randomized head-to-head against tirzepatide or semaglutide may get an extra L2 long-form."
+    "result": "Retired at n=1 (petrelintide: 37 views, 160 min). Looking back at fresh next-gen results, the median is about 35 views. News goes to 13:00 Shorts. Only a randomized head-to-head against tirzepatide or semaglutide may get an extra L2."
   },
   {
-    "name": "Exp D: Shorts-to-long-form funnel with a verified link",
+    "name": "Exp D: Shorts-to-long-form funnel with a verified description link",
     "hypothesis": "A 20:00 Short that asks a fresh question a live long-form answers, with a verified description link, lifts that long-form's daily views.",
-    "change": "New targets: the 20:00 Short now points to live Lane A long-forms with the most minutes per view (Hair Loss once it's live, What to Eat, Side Effects, Protein) instead of EloraTZP. Last line and publisher link are unchanged.",
-    "metric": "The target long-form's viewCount in the 3 days after the Short vs the 3 days before, plus its SHORTS and RELATED_VIDEO traffic. Success: an average lift of 10+ views a day, or 50%+ over the per-video baseline.",
+    "change": "The 20:00 Short pointed to a live Lane A long-form, with 'link in the description'.",
+    "metric": "The target long-form's views in the 3 days after the Short vs the 3 days before, plus its SHORTS traffic.",
     "min_sample": "n=6 funnel Shorts with a verified working link",
-    "status": "running",
-    "result": "No valid data point is logged yet. SHORTS traffic is still 0 on all 20 long-forms with traffic data. The analyst must log the target and link status for every 20:00 Short from 11-03."
+    "status": "inconclusive",
+    "result": "Closed with no valid data point. The way it was meant to work can't work: YouTube made links in Shorts descriptions and comments unclickable on 31 Aug 2023. That explains why SHORTS traffic is 0 on all 23 long-forms with traffic data. Replaced by Exp G, which uses the Studio related-video link, the only clickable link in the Shorts player."
   },
   {
-    "name": "Exp E: State-change thumbnail on What to Eat",
-    "hypothesis": "What to Eat has a packaging problem, not a discovery problem: 1,290 impressions at 2.79% CTR. A state-change thumbnail of 4 words or fewer will lift CTR toward the 3.8–5.0% our similar thumbnails get.",
-    "change": "Only the thumbnail changes: a state-change design of 4 words or fewer, no body imagery. Use the owner's Test & Compare if available; otherwise the publisher swaps it via the API on 11-04. Title and description stay as they are for 14 days.",
-    "metric": "CTR on new impressions and views per day, vs 2.79% and the 7 days before the swap. Success: CTR of 3.5%+ with views per day not falling.",
-    "min_sample": "1,000 new impressions or 14 days, whichever comes later",
+    "name": "Exp E: State-change thumbnail (What to Eat, plus Strength as a second test)",
+    "hypothesis": "Our two most-shown practical videos have a packaging problem, not a discovery problem. A state-change thumbnail of 4 words or fewer lifts CTR toward the 3.8–4.7% that Side Effects, How Long and Protein get.",
+    "change": "Only the thumbnail changes, no body imagery. What to Eat was swapped on about 11-04 (publisher must confirm the time). Strength is swapped on 11-10 as a second test of the same change. No other edits to either video for 14 days.",
+    "metric": "CTR on impressions after the swap vs CTR just before it, judged per video and with views per day not falling. Before-swap baselines: What to Eat about 1.9% on 568 impressions (11-02→11-05), 2.53% overall; Strength about 0.6% on 467 impressions, 2.10% overall. Success: new-impression CTR of 3.0%+ on both.",
+    "min_sample": "1,000 new impressions or 14 days per video, whichever comes later (What to Eat around 11-18, Strength around 11-24)",
     "status": "running",
-    "result": "Starts 11-04. Baseline: 1,290 impressions, 2.79% CTR, 115 views, 433 min. Strength (2.68% on 1,155) is next, but only after E reads out, so we change one variable at a time."
+    "result": "Not readable yet, and the analytics feed is stuck at 11-05. Watch-out: CTR naturally falls as impressions spread to more surfaces, so compare against the before-swap rate, not the overall average."
   },
   {
     "name": "Exp F: A benefit-framed subscribe line in Shorts",
-    "hypothesis": "Shorts bring about 300 YouTube views a day but almost no subscribers (about 0.5 per 1,000). One honest line that names the channel's promise will at least double conversion.",
-    "change": "On 08:00 and 13:00 Shorts only, the second-to-last spoken line is: 'We answer one tirzepatide question from the research every day. Subscribe if that helps.' 20:00 Shorts get no line and act as the same-day control. Nothing else changes.",
-    "metric": "subscribersGained per 1,000 views at day 7: 08:00/13:00 Shorts vs 20:00 Shorts. Also channel subscribers per 1,000 YouTube views vs the 10-27→11-02 baseline of about 3.6 (8 subscribers on about 2,250 views). Success: 2× the control rate and 2.5+ channel subscribers a day.",
-    "min_sample": "14 days (about 28 Shorts with the line, 14 without)",
+    "hypothesis": "One honest line that names the channel's promise will at least double Shorts subscriber conversion (about 0.5–0.6 per 1,000 views).",
+    "change": "On 08:00 and 13:00 Shorts only, the second-to-last line is 'We answer one tirzepatide question from the research every day. Subscribe if that helps.' 20:00 Shorts get no line and act as the control.",
+    "metric": "subscribersGained per 1,000 views at day 7, line vs control. Also channel subscribers per day vs the 1.3-a-day baseline. Success: 2× the control rate and 2.5+ channel subscribers a day.",
+    "min_sample": "14 days (11-03 to 11-17), about 28 Shorts with the line and 14 without",
     "status": "running",
-    "result": "Starts 11-03. Subscriber counts per Short are small, so read the 14-day totals, not single Shorts."
+    "result": "Early channel-level read is weak: +0 subscribers since 11-04 (5 days) vs a 1.3-a-day baseline. That's confounded by Shorts views falling to about 130 a day (from about 300), two missed days, and the line missing on 2 Shorts on 11-06. Per-Short day-7 data starts 11-11. If the channel is still under 1 subscriber a day at day 14, close it as lost."
+  },
+  {
+    "name": "Exp G: Studio related-video link on top Shorts",
+    "hypothesis": "The related-video link is the only clickable path from a Short. Setting it on our highest-view body-worry Shorts will create SHORTS traffic to Lane A long-forms. Those viewers watch at long-form rates and subscribe about 5× more often than Shorts viewers.",
+    "change": "The owner sets one related-video link on each of these Shorts:\n- hair grow-back (1,019 views) → the Hair long-form once it's verified clean, Side Effects until then\n- bones (242) → Bones & Muscle\n- injection site (226) → Side Effects\n- nausea (166) → Side Effects\n- muscle (136) → Strength\n- breakfast (111) → What to Eat\n- constipation fibre (92) → Constipation\n- Thanksgiving Short (11-06) → Thanksgiving\nNo other change to those Shorts.",
+    "metric": "SHORTS-source views and minutes on each target long-form in the 7 days after the link vs 0 before. Success: at least 1 long-form view per 100 new Short views across the set, plus a visible rise in channel subscribers.",
+    "min_sample": "8 linked Shorts, 7 days after the link is set",
+    "status": "running",
+    "result": "Waiting on the owner. It starts the day the links are set. It needs advanced features turned on in Studio."
   }
 ]

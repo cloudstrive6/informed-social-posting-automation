@@ -1,72 +1,90 @@
-# Growth playbook (Growth Strategist, 2026-11-02)
+# Growth playbook (Growth Strategist, 2026-11-09)
 
-_Verdict: off track. Bottleneck: Long-form reach still limits watch hours, and subscriber conversion is now the slower gate.
-(1) Subscribers: +8 in 6 days (1.3 a day). At that rate it takes about 15 months to get the 619 we still need. Per-video data shows about 3 subs per 1,000 long-form views and about 0.5 per 1,000 Shorts views. Our biggest Short ever (hair grow-back, 1,016 views) logged no subscribers we can see.
-(2) Long-form production losses: 3 of 9 long-forms from 10-27 to 11-01 didn't ship, and they were the highest-value topics. "Stop Tirzepatide" was dropped because the narration lost numbers. Retatrutide vs semaglutide was dropped because the voice said "rheumatoid" instead of retatrutide. Hair Loss failed on a fact-check REVISE even though the reviewer called the science solid. The hair one hurts most: it was meant to catch viewers from the 1,016-view Short.
-(3) No path from Shorts to long-form: SHORTS and END_SCREEN traffic is 0 on all 20 long-forms with traffic data. Suggested videos bring 68% of practical tirzepatide watch minutes, at 5–6 min per view, and playlist views run 8–12 min. End screens, playlist chains and the Shorts related-video link are still unset.
-(4) Packaging on our two most-shown videos: What to Eat (1,290 impressions, 2.79% CTR) and Strength (1,155, 2.68%) click well below our state-change thumbnails (3.8–5.0%).
-Newer practical videos also start slowly: Plateau had 87 impressions at day 5 and Bones & Muscle 67 at day 4. Their retention is high (68–79%), so judge them at day 7–28 before reading anything into it._
+_Verdict: off track. Bottleneck: Long-form watch time has stalled at about 8 h a day because the new Lane A videos aren't getting picked up, and nothing moves viewers from Shorts to long-forms.
 
-# InforMed growth playbook: week of 2026-11-03
+(1) **Broken long-forms are the biggest cost, and we're causing it.** The last 4 shipped long-forms (Hair Loss 11-02, Stopping 11-04, Birth Control 11-05, Fatigue 11-06) went out with scenes out of sync with the narration. Content from minute 4–5 shows up 25–65 s in.
+- Hair Loss: 6 views, 0 min, 0% average view, 1.64% CTR.
+- Fatigue scored 3.5 on visuals with 102 weak shots, and its description was an internal change note.
+- Across the 7 Lane A videos since 10-27, the median is 41 min each (Plateau 72, Bones 132, Protein 137, Food Noise 41, Thanksgiving 17, Constipation 10, Hair 0). The 10-16 to 10-24 cohort sits at 564–634 min. Some of that gap is age (3–9 days at the snapshot), but this cohort is below Exp A's 60-min day-7 bar.
+- Low retention on those videos (Constipation 23%, Thanksgiving 28%, Protein 31%) keeps YouTube from recommending them, and suggested videos bring 68–84% of Lane A minutes.
 
-**Status: off track, but moving.** 95 of 4,000 watch hours. We now earn about 9 h a day (2.7 last week); Feb YPP needs about 33. Subscribers: 381 of 1,000, at +1.3 a day; Feb needs about 5 a day. Lane A (practical tirzepatide) won Exp A: mature videos earn about 340 min each vs 38 for other long-forms. **Every 14:00 long-form this week is Lane A.**
+(2) **Missed days.** 11-03 and 11-07 had no content at all: 2 of 7 long-form slots lost.
 
-## Long-form (14:00 ET, 8–12 min, label `lane: A`)
-1. Ship in this order:
-   - "Tirzepatide Hair Loss: Will It Grow Back?" This redoes L1 10-30. Use the hair-loss figures and wording from the craft notes word for word.
-   - "What Happens When You Stop Tirzepatide?" This redoes L1 10-27. Use SURMOUNT-4 and include "don't switch, stop or change your medicines on your own".
-   - "Tirzepatide and Birth Control Pills: What to Know". Report what the label says only; no instructions. Send viewers to their prescriber.
-   - "Why Am I So Tired on Tirzepatide?" Use the label's fatigue rates (5–7% vs 3% on placebo). Cover hydration, protein and sleep, plus when to call the prescriber.
-   - "Tirzepatide Injection Site Reactions: What's Normal"
-   - "Tirzepatide and Dehydration: Signs and What Helps". Use the label's kidney warning.
-2. Each video answers one question that no live Lane A video already answers. Live Lane A videos: What to Eat, Side Effects, Strength, How Long, Plateau, Bones & Muscle, Protein, Thanksgiving, Food Noise, Constipation.
-3. Fresh randomized results go to a 13:00 Short. The only news that can get a long-form is a randomized head-to-head against tirzepatide or semaglutide, made public within the last 48 h. It runs as an extra L2 and never replaces Lane A.
+(3) **The funnel is broken by design.** YouTube made links in Shorts descriptions and comments unclickable on 31 Aug 2023. Our "link in the description" Shorts can't send traffic, which is why SHORTS traffic is 0 on all 23 long-forms with traffic data. The 1,019-view hair Short sent nobody anywhere. The only clickable path is the Studio-only related-video link, and it isn't set. End screens aren't set either; PLAYLIST has brought 7 views in total, at 8–12 min each.
+
+(4) **Packaging is getting worse at scale (anecdote; swap timing unconfirmed).**
+- Strength: CTR on its new impressions was about 0.6% (+3 clicks on +467 impressions between 11-02 and 11-05).
+- What to Eat: about 1.9% on its +568 new impressions.
+- Part of that is normal: CTR falls as YouTube shows a video on more surfaces.
+
+(5) **Subscribers.** +2 in 7 days, and 0 since Exp F started. Shorts views also fell to about 130 a day from about 300.
+
+(6) **Blind spot.** The analytics snapshot is stuck at 11-05, so none of the 11-04 to 11-06 long-forms can be judged yet._
+
+# InforMed growth playbook: week of 2026-11-10
+
+**Status: off track.** 147 of 4,000 watch hours, at about 8 h a day; February needs about 35. Subscribers: 383, with +2 in 7 days. Lane A is still the engine, but the last 4 long-forms shipped with scenes out of sync and earn almost nothing. **This week, one clean video beats two broken ones.**
+
+## Long-form (14:00 ET, 8–12 min, `lane: A`)
+1. **Repairs come first.** If the owner or QA finds offset beats in Hair Loss (11-02), Stopping (11-04), Birth Control (11-05) or Fatigue (11-06):
+   - Re-render from the existing verified script and beat list. No script changes, so no new fact-check is needed beyond the usual audio and frame gates.
+   - The publisher uploads the fixed version and sets the broken one to private.
+   - A repair counts as that day's long-form. Order: Hair, then Fatigue, Stopping, Birth Control.
+2. **New Lane A topics, in this order.** Each answers a question no live video answers. Use label rates with both arms, and keep the prescriber line.
+   - "Tirzepatide Injection Site Reactions: Normal?" (its Short reached 226 views by day 3)
+   - "Tirzepatide Dehydration: Signs to Watch For" (use the label's kidney warning)
+   - "Tirzepatide Diarrhea: Why It Happens"
+   - "Tirzepatide and Alcohol: What to Know". Say what the evidence and label say. Never give a "safe amount". Include the low-blood-sugar caveat for people on insulin or sulfonylureas.
+   - "Tirzepatide Burping and Heartburn: What Helps"
+3. Vary the title structure. At most 2 titles a week share an ending. Drug name first, 50 characters or fewer.
 4. Still banned in long-form:
-   - cost, coverage, Medicare, pharmacy and gray-market topics
-   - "What is [drug]?" explainers
+   - cost, Medicare, pharmacy and gray-market topics
+   - "What is X?" explainers
    - single-trial deep dives
-   - timeline-only topics
-   - broad head-term titles
+   - news. The only exception is a randomized head-to-head against tirzepatide or semaglutide, made public in the last 48 h, as an extra L2.
+
+## Ship-blockers (no deadline overrides these)
+- **Beat sync:** export the shot → beat → start-time list from the final narration timings and diff it against the script. After render, check 1 frame per beat for the first 2 minutes. If any headline sits more than 30 s from its beat, rebuild it; don't ship it.
+- **Masking 0.02 or lower, measured last, in every slot.** 0.037 shipped on 11-06; that must not happen again.
+- **Transcript vs script:** check every number, "point", unit and drug name. Regenerate any scene that fails.
+- **Description:** line 1 is empty, followed by the quick answer, the safety block, sources and chapters. Never an internal note. **Publisher: rewrite the L1 11-06 description today.**
+- Disclaimer frame, "Not personal advice" and the prescriber line go in every piece. The fact-checker and the Editor-in-Chief always win.
 
 ## Packaging
-- **Title:** the question a user would type, drug name first, 50 characters or fewer, at most 1 number, fully answered in the video. Vary the structure: at most 2 titles a week end in "What the Evidence Says" or "What the Trials Show". A run of identical title templates looks like mass-produced content.
-- **Thumbnail:** "before-after" means a change of state: worried → answered, empty plate → protein plate, shedding → regrowth. **Never a body or weight before/after.** 4 words or fewer, never repeating the title, one labelled character, and the same hedge the video uses.
-- **Publisher:** add every Lane A video to the "Life on Tirzepatide" playlist.
+- **Thumbnail:** a change of state (worried → answered), 4 words or fewer, one labelled character, never a body or weight before/after, never repeating the title.
+- **Exp E, second video:** the thumbnail designer makes a state-change thumbnail for Strength. The publisher swaps it on 11-10 and logs the time. Change nothing else on Strength or What to Eat until 11-24.
 
-## Retention and linking
-- The first spoken sentence answers the literal title. After that, open on a "you" scenario.
-- Re-hook every 45–75 s. Name chapters after the questions people search.
-- One subscribe ask, after the payoff. Keep this unchanged this week.
-- End with: "There's a video I'd watch next, linked in the description." The publisher links the most closely related Lane A video. Never speak a title, and never say "on screen".
-- **Publisher:** once the hair-loss long-form is verified live, add its link to line 1 of the description on both hair Shorts ("Will It Grow Back?" and "How Common Is It").
+## Retention and linking (long-form)
+- The first sentence answers the title, then a "you" scenario. Re-hook every 45–75 s. One subscribe ask, after the payoff.
+- End with: "There's a video I'd watch next, linked in the description." Never speak a title or say "on screen".
+- **Publisher:** line 1 of every long-form description is a ▶ Watch next link (these are clickable on long-forms). Targets:
+  - Side Effects → Injection Site
+  - What to Eat → Thanksgiving
+  - Strength → Bones & Muscle
+  - each new video → the closest big-three video
+- **Publisher:** every Lane A video goes in the "Life on Tirzepatide" playlist.
 
 ## Shorts (3 a day, 170 words or fewer, 60–85 s)
-- **08:00, body-worry reassurance:** answer a fear people search for ("Will it…?", "Is it permanent?", "Is this normal?"). Give the honest answer, one new fact, and a line on when to see a doctor. Tirzepatide goes in the title. No hair Shorts this week.
-- **13:00, lead.** Pick one:
-  - a head-to-head with tirzepatide named first, in an obesity population (not diabetes-only);
-  - new retatrutide Phase 3 data or a "what's confirmed?" fact, with a loop ending;
-  - a fresh randomized result.
-
-  Gray-market Shorts: at most 1 a week.
-- **20:00, funnel (Exp D):** a fresh question that a live Lane A long-form answers. Targets this week: Hair Loss (once it's live), What to Eat, Side Effects, Protein. Last line: "Full breakdown on our channel, link in the description."
-- **Exp F, 08:00 and 13:00 only:** the second-to-last spoken line is "We answer one tirzepatide question from the research every day. Subscribe if that helps." Then the usual last line. Don't add it to the 20:00 Short.
+- Shorts description links aren't clickable. The only working path is the owner's related-video link (Exp G). Keep the closing line unchanged until Exp F ends on 11-17.
+- **08:00, body-worry reassurance:** "Is this normal?" or "Will it…?", tirzepatide in the title, one new fact, and when to see a doctor.
+  - One hair Short is allowed this week, but only once the Hair long-form is verified clean. It needs a new angle that isn't growth or prevalence.
+- **13:00, lead:** a tirzepatide-first head-to-head in an obesity population, new retatrutide Phase 3 data or a "what's confirmed?" fact, or a fresh randomized result. At most 1 gray-market Short a week.
+- **20:00, funnel:** a fresh question answered by Thanksgiving (on 2 days ahead of the Nov 18–27 peak), Side Effects, What to Eat or Bones & Muscle. Log the target in the post notes so the owner can set the related-video link.
+- **Exp F:** on 08:00 and 13:00 only, the second-to-last line is "We answer one tirzepatide question from the research every day. Subscribe if that helps." Then "Full breakdown on our channel, link in the description." It was missing twice on 11-06, which contaminates the test. Count both lines in the 170 words.
 - **Banned:**
   - "Approved yet?" titles and "3 Ways" lists
   - brand-first titles, and semaglutide-only titles unless the evidence is semaglutide-only
-  - cost Shorts and observational surgery angles
-  - titles that name no drug, and scare framing
-- **Variety:** any one trial in at most 1 Short a week, and a new fact in every piece.
-
-## Quality gates (these protect the long-form slot)
-- Before the mix, compare the speech-to-text transcript with the script for every number, every "point" and every drug name. Regenerate any scene that fails; don't ship it. Last week 3 of 9 long-forms were lost, including hair loss and stopping.
-- Masking 0.02 or lower, measured last. Captions come from the on-screen text field.
-- Every piece carries "Not personal advice" and the prescriber line. The fact-checker and the Editor-in-Chief always win.
+  - cost, surgery, observational and grocery angles
+  - titles that name no drug, and drug names nobody searches for
+- Any one trial in at most 1 Short a week, and a new fact in every piece.
 
 ## Carousels
 - Make one only if the scheduler asks for it, and reuse verified Short text only.
 
-## Experiments
-- **Exp D (funnel):** the analyst logs the target long-form's viewCount and its SHORTS/RELATED traffic for 3 days before and 3 days after each 20:00 Short that had a verified link.
-- **Exp E (thumbnail):** only the What to Eat thumbnail changes, to a state-change design (via Test & Compare, or a publisher swap from 11-04). Make no other edits to that video for 14 days.
-- **Exp F (subscribe line):** the analyst logs subscribersGained per Short at day 7. Compare 08:00/13:00 Shorts (with the line) against 20:00 Shorts (without it), and channel subscribers per 1,000 YouTube views against the 3.6 baseline.
-- **Hold constant:** 14:00 ET long-form slot, 8–12 min, retention rules, and the long-form subscribe ask.
+## Analyst
+- Get the snapshot past 11-05 before any read. Log the 11-04 to 11-06 long-forms at day 7.
+- Log daily minutes for Strength and What to Eat, plus each Short's subscribersGained at day 7 (Exp F).
+- Log SHORTS traffic on every long-form targeted by a related-video link (Exp G).
+
+## Hold constant
+- 14:00 ET long slot, 8–12 min, the retention rules, the long-form subscribe ask, and the Shorts closing line.
