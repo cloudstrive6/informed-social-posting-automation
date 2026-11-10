@@ -64,9 +64,11 @@
       "format": "carousel",
       "slotKey": "carousel",
       "slot": "2026-11-10T22:30:00.000Z",
-      "status": "pending",
-      "attempts": 1,
-      "error": "TikTok (Post for Me) failed: \"TikTok publication could not be confirmed. Status: FAILED. Fail reason: internal\""
+      "status": "published",
+      "attempts": 2,
+      "remote_id": "p_pub_url~v2.7706674117643585556",
+      "url": "https://www.tiktok.com/@informedlab",
+      "published_at": "2026-11-10T22:32:31.235Z"
     },
     {
       "platform": "threads",
