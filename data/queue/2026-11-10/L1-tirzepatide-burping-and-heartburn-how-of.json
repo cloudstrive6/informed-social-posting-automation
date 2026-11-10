@@ -1,0 +1,1266 @@
+{
+  "id": "L1-tirzepatide-burping-and-heartburn-how-of",
+  "date": "2026-11-10",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Tirzepatide burping and heartburn: how often the label reports belching, reflux and indigestion for each dose vs placebo, why slower stomach emptying can cause them, everyday habits that may help, and the signs that mean seeing a clinician",
+    "angle": "Keep the angle as written, with these exact fixes: chapter 4 says 'NHS advises not eating within 3 or 4 hours before bed, and raising the head of the bed by around 10 to 20 cm instead of adding pillows'. The NHS trigger list is quoted exactly and framed as 'may trigger it for some people'. Chapter 6 credits to NHS only the triggers its pages actually print. Vomiting blood, black stools and chest pain are untagged urgent signs → 'your local urgent care or emergency number'. 'Sulfur burps' is called a commonly described symptom, with no explanation of the cause.",
+    "working_title": "Tirzepatide Burping and Heartburn: What Helps",
+    "target_keyword": "tirzepatide burping",
+    "trend_stage": "evergreen",
+    "why": "It's the next unanswered Lane A side-effect question next to the big three. The label rates and NHS guidance can be verified in depth, and holiday meals make it timely. | fact-check: This is a good Lane A topic. Burping (eructation), dyspepsia and GERD are all listed among the Zepbound label's most common adverse reactions (≥5%), so the per-dose vs placebo rates exist. Copy them exactly from the 28 Aug 2026 label table (pi.lilly.com/us/zepbound-uspi.pdf), keep the pooled-trial population, and don't pool the arms. Three corrections to the angle: (a) The NHS heartburn page (nhs.uk/conditions/heartburn-and-acid-reflux, last reviewed 20 Nov 2023, next review due 20 Nov 2026, so re-check the live date before citing) says 'do not eat within 3 or 4 hours before bed'. It does NOT say 'avoid lying down for 3 hours after eating'. Use the NHS wording or drop the tag. For raising the head of the bed, NHS says 'by around 10 to 20cm, so your chest and head are above your waist' and not to use extra pillows. Credit the trigger foods only as NHS lists them ('coffee, tomatoes, alcohol, chocolate and fatty or spicy foods'), and say these are things that may trigger it for some people, never 'bad' foods. (b) The NHS see-a-GP triggers are heartburn most days, pharmacy medicines not helping, food getting stuck, being sick often, and losing weight for no reason. 'Vomiting blood' and 'black stools' must be found on the NHS indigestion page before they're credited to NHS; otherwise present them as untagged warning signs that need same-day care. Don't use NHS 111 alone; use 'your local urgent care or emergency number'. (c) No source supports anything specific about 'sulfur burps', so call it a commonly described symptom and attach no mechanism. Delayed gastric emptying should be described in label wording, and 'food sitting longer' is a likely explanation, not a proven cause. All the other guardrails in the angle are correct and should stay: the pancreatitis and gallbladder label wording, chest pain → emergency number, the scoped don't-stop line, the hypoglycemia caveat for people on insulin or a sulfonylurea, the pharmacist line with no products, and the prescriber line.",
+    "pillar": "get-the-most"
+  },
+  "status": "held",
+  "package": {
+    "title": "Tirzepatide Burping and Heartburn: What Helps"
+  },
+  "media": {
+    "video": "L1-tirzepatide-burping-and-heartburn-how-of.mp4",
+    "duration": 610.297,
+    "thumbnail": "L1-tirzepatide-burping-and-heartburn-how-of-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-10T19:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-11-10T03:51:55.230Z",
+  "script": {
+    "working_title": "Tirzepatide Burping and Heartburn: What Helps",
+    "target_keyword": "tirzepatide burping",
+    "hook_pattern": "Answer-first + visceral 'you' scenario + open loop (the label line about stomach emptying over time, paid off in chapter 5)",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "The quick answer",
+        "narration": "Yes, burping and heartburn are listed side effects of tirzepatide, and a few everyday habits may make them easier to live with.",
+        "on_screen_text": "Listed side effects. Habits may help.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm person reading leaflet, relieved"
+        },
+        "retention_device": "First sentence answers the title directly",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "The quick answer",
+        "narration": "Picture it. It's nine at night, you ate maybe half of what you used to, and still there's a burn in the middle of your chest and a burp that just won't quit.",
+        "on_screen_text": "9 p.m. Half the dinner.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person on sofa at night, hand on chest"
+        },
+        "retention_device": "Visceral 'you' scenario the viewer recognises",
+        "source_ids": []
+      },
+      {
+        "id": "s03",
+        "section": "The quick answer",
+        "narration": "And the strange part? You ate less. So why does it feel like your stomach is complaining more?",
+        "on_screen_text": "Ate less. Feels worse?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "puzzled person looking at small plate"
+        },
+        "retention_device": "Question to the viewer, curiosity gap",
+        "source_ids": []
+      },
+      {
+        "id": "s04",
+        "section": "The quick answer",
+        "narration": "If you've wondered whether that means something's wrong, that worry makes sense. And there's a clear, evidence-based answer.",
+        "on_screen_text": "Your worry makes sense",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi mascot giving reassuring nod"
+        },
+        "retention_device": "Name and validate the feeling",
+        "source_ids": []
+      },
+      {
+        "id": "s05",
+        "section": "The quick answer",
+        "narration": "In the next few minutes you'll see exactly how often the label reports burping, indigestion and reflux at each dose, compared with placebo.",
+        "on_screen_text": "Every dose vs placebo",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Burping",
+            "Indigestion",
+            "Reflux"
+          ],
+          "stock_query": "three symptom icons on clipboard"
+        },
+        "retention_device": "Promise of specific payoff",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s06",
+        "section": "The quick answer",
+        "narration": "You'll learn why slower stomach emptying may be behind it, which habits the NHS suggests, and the signs that mean you should get checked.",
+        "on_screen_text": "Why, what helps, when to call",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Why it may happen",
+            "NHS habits",
+            "When to get checked"
+          ],
+          "stock_query": "friendly roadmap with three stops"
+        },
+        "retention_device": "Roadmap of the video",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "The quick answer",
+        "narration": "And there's one line in the tirzepatide label about your stomach that changes how the first weeks compare with later ones. We'll get to it near the end.",
+        "on_screen_text": "One label line. Coming up.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over glowing document line"
+        },
+        "retention_device": "Main open loop planted, paid off in chapter 5",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "What the label counts",
+        "narration": "Let's start with the numbers, straight from the U.S. prescribing information for Zepbound, which is tirzepatide for weight management.",
+        "on_screen_text": "What the label counts",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, label document, teal gradient"
+        },
+        "retention_device": "Chapter change with fresh visual",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "What the label counts",
+        "narration": "These figures come from pooled placebo-controlled trials of up to seventy-two weeks, in adults with obesity or overweight. Some of them also had type two diabetes.",
+        "on_screen_text": "Trials up to 72 weeks, adults with obesity/overweight",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "diverse adults in calm clinic waiting room"
+        },
+        "retention_device": "Concrete study design builds trust",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "What the label counts",
+        "narration": "First, a quick translation. The label uses medical words. Eructation means burping. Dyspepsia means indigestion. And gastroesophageal reflux disease means acid coming back up, which can cause heartburn.",
+        "on_screen_text": "Label words, decoded",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Eructation = burping",
+            "Dyspepsia = indigestion",
+            "GERD = reflux disease (acid coming back up)"
+          ],
+          "stock_query": "dictionary page with friendly icons"
+        },
+        "retention_device": "Jargon decoded like a friend would",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "What the label counts",
+        "narration": "Burping. On placebo, about one percent of people reported it. On tirzepatide, it was four percent at five milligrams, five percent at ten milligrams, and five percent at fifteen milligrams.",
+        "on_screen_text": "Burping: tirzepatide vs placebo",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Placebo: 1%",
+            "Tirzepatide 5 mg: 4%",
+            "Tirzepatide 10 mg: 5%",
+            "Tirzepatide 15 mg: 5%"
+          ],
+          "stock_query": "bar chart with cartoon burp bubbles"
+        },
+        "retention_device": "Concrete numbers, per dose",
+        "source_ids": [
+          "S1",
+          "S1b"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "What the label counts",
+        "narration": "Indigestion. Four percent on placebo, compared with nine percent at five milligrams, nine percent at ten milligrams, and ten percent at fifteen milligrams.",
+        "on_screen_text": "Indigestion: tirzepatide vs placebo",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Placebo: 4%",
+            "Tirzepatide 5 mg: 9%",
+            "Tirzepatide 10 mg: 9%",
+            "Tirzepatide 15 mg: 10%"
+          ],
+          "stock_query": "bar chart with cartoon stomach icons"
+        },
+        "retention_device": "Pattern of three, building rhythm",
+        "source_ids": [
+          "S1",
+          "S1b"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "What the label counts",
+        "narration": "Reflux. Two percent on placebo, compared with four percent at five milligrams, four percent at ten milligrams, and five percent at fifteen milligrams.",
+        "on_screen_text": "Reflux: tirzepatide vs placebo",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Placebo: 2%",
+            "Tirzepatide 5 mg: 4%",
+            "Tirzepatide 10 mg: 4%",
+            "Tirzepatide 15 mg: 5%"
+          ],
+          "stock_query": "bar chart with small flame icons"
+        },
+        "retention_device": "Completes the set of three",
+        "source_ids": [
+          "S1",
+          "S1b"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "What the label counts",
+        "narration": "So yes, all three were more common on tirzepatide than on placebo. That's why they're on the label's list of most common side effects.",
+        "on_screen_text": "More common than placebo",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "label list with three items highlighted"
+        },
+        "retention_device": "Clear verdict before a twist",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "What the label counts",
+        "narration": "But flip the numbers around. Even at fifteen milligrams, roughly nine in ten people didn't report indigestion, and about ninety-five in a hundred didn't report burping.",
+        "on_screen_text": "Most didn't report them",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~9 in 10",
+          "stat_label": "Didn't report indigestion, tirzepatide 15 mg, 72-week trials",
+          "stock_query": "crowd of ten, one holding stomach"
+        },
+        "retention_device": "'But' flip reframes the numbers",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "What the label counts",
+        "narration": "And notice the placebo column. Some people on placebo injections reported indigestion too. Stomachs grumble in everyday life, with or without medicine.",
+        "on_screen_text": "Placebo had it too",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two friends both rubbing tummies, smiling"
+        },
+        "retention_device": "Surprising detail most people miss",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "What the label counts",
+        "narration": "Imagine Dana, forty-seven, a few weeks into tirzepatide. Her burps aren't in her head. They're real and they're listed, and while most people in the trials didn't report them, she's far from alone.",
+        "on_screen_text": "Dana, 47 (imagined)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman in her forties at kitchen table, thoughtful"
+        },
+        "retention_device": "Introduces hypothetical relatable thread",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "What the label counts",
+        "narration": "But a number only tells you how often. It doesn't tell you why a smaller meal can feel bigger. That's where your stomach's timing comes in.",
+        "on_screen_text": "How often isn't why",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon clock inside a stomach"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s19",
+        "section": "Why your stomach feels it",
+        "narration": "The label says it plainly. Tirzepatide delays gastric emptying. In everyday words, food leaves your stomach more slowly.",
+        "on_screen_text": "Why your stomach feels it",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, friendly stomach, teal gradient"
+        },
+        "retention_device": "Chapter change with key fact up front",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Why your stomach feels it",
+        "narration": "Think of your stomach as a waiting room with a door at the bottom. Normally the door lets food through at a steady pace. On tirzepatide, that door opens more slowly.",
+        "on_screen_text": "Slower exit door",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stomach as waiting room, slow door"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Why your stomach feels it",
+        "narration": "Food sitting in your stomach for longer is a likely explanation for some of the fullness, pressure and burping people describe. Likely, not proven.",
+        "on_screen_text": "Likely explanation, not proven",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm Medi mascot with question mark"
+        },
+        "retention_device": "Honest hedge builds credibility",
+        "source_ids": []
+      },
+      {
+        "id": "s22",
+        "section": "Why your stomach feels it",
+        "narration": "The idea is that a stomach that stays fuller for longer gives air and acid more chances to travel back up. It's a reasonable explanation, but trials haven't proven it's the cause.",
+        "on_screen_text": "Fuller for longer",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon bubbles rising from full stomach"
+        },
+        "retention_device": "'Therefore' step in the logic",
+        "source_ids": []
+      },
+      {
+        "id": "s23",
+        "section": "Why your stomach feels it",
+        "narration": "So what does that mean for Dana's nine o'clock burn? If her stomach is still busy with dinner when she lies down, gravity isn't on her side.",
+        "on_screen_text": "Gravity isn't helping",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman lying flat in bed, night room"
+        },
+        "retention_device": "Returns to Dana thread",
+        "source_ids": []
+      },
+      {
+        "id": "s24",
+        "section": "Why your stomach feels it",
+        "narration": "And then there's the burp with a smell. Some people describe sulfur burps, burps that smell like rotten eggs.",
+        "on_screen_text": "'Sulfur burps': some people describe them",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person wrinkling nose, cartoon egg"
+        },
+        "retention_device": "Names the awkward thing viewers search for",
+        "source_ids": []
+      },
+      {
+        "id": "s25",
+        "section": "Why your stomach feels it",
+        "narration": "The sources we use don't explain what causes it, so we won't guess. If it's bothering you, or it comes with other symptoms, mention it to your prescriber.",
+        "on_screen_text": "No guessing. Ask your prescriber.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly chat with prescriber at desk"
+        },
+        "retention_device": "Honesty plus clear action",
+        "source_ids": []
+      },
+      {
+        "id": "s26",
+        "section": "Why your stomach feels it",
+        "narration": "One more thing slower emptying affects: medicines you take by mouth. The label says tirzepatide may affect how they're absorbed.",
+        "on_screen_text": "May affect oral medicines",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill bottles near slow stomach door"
+        },
+        "retention_device": "Surprising extra fact",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Why your stomach feels it",
+        "narration": "That matters later, when we talk about pharmacy remedies. Hold that thought.",
+        "on_screen_text": "Hold that thought",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi mascot tying string on finger"
+        },
+        "retention_device": "New open loop, paid off in s44",
+        "source_ids": []
+      },
+      {
+        "id": "s28",
+        "section": "Why your stomach feels it",
+        "narration": "If having the label explained like this helps, subscribe. You'll get a calm, label-checked answer to the next tirzepatide question too.",
+        "on_screen_text": "Subscribe for the next answer",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi mascot pointing at subscribe bell"
+        },
+        "retention_device": "Single subscribe ask, right after first payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s29",
+        "section": "Habits that may help",
+        "narration": "Now the part you can actually do something about. These are habits from the NHS guidance on heartburn and acid reflux, plus a few common-sense ones.",
+        "on_screen_text": "Habits that may help",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, toolkit, green gradient"
+        },
+        "retention_device": "Shift from tension to agency",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Habits that may help",
+        "narration": "First, the NHS suggests eating smaller, more frequent meals. If one big plate feels like too much, splitting it up may ease that full feeling.",
+        "on_screen_text": "Smaller, more frequent meals",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "three small plates instead of one big"
+        },
+        "retention_device": "Numbered list creates momentum",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "Habits that may help",
+        "narration": "Second, timing. The NHS advises not eating within three or four hours before bed.",
+        "on_screen_text": "No food 3–4 hours before bed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "clock showing early dinner, cosy kitchen"
+        },
+        "retention_device": "Concrete, specific number",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Habits that may help",
+        "narration": "For Dana, that could mean moving dinner a little earlier, so her stomach has more time before she lies down.",
+        "on_screen_text": "Dinner a little earlier",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman enjoying early evening dinner"
+        },
+        "retention_device": "Dana thread applies the advice",
+        "source_ids": []
+      },
+      {
+        "id": "s33",
+        "section": "Habits that may help",
+        "narration": "Third, your bed. The NHS suggests raising the head of the bed by around ten to twenty centimetres, so your chest and head are above your waist. That's roughly four to eight inches.",
+        "on_screen_text": "Raise bed head 10–20 cm",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "bed gently tilted, head end raised"
+        },
+        "retention_device": "Specific, doable fix",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Habits that may help",
+        "narration": "That means raising the bed itself, instead of adding pillows.",
+        "on_screen_text": "Raise the bed, not pillows",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Stack extra pillows",
+          "fact": "NHS: raise the bed itself",
+          "stock_query": "pillow pile crossed out, tilted bed"
+        },
+        "retention_device": "Corrects a common habit",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "Habits that may help",
+        "narration": "Fourth, think about triggers. The NHS lists coffee, tomatoes, alcohol, chocolate and fatty or spicy foods as things that may trigger it for some people.",
+        "on_screen_text": "May trigger it for some",
+        "visual": {
+          "kind": "quote",
+          "quote": "coffee, tomatoes, alcohol, chocolate and fatty or spicy foods",
+          "attribution": "NHS, Heartburn and acid reflux",
+          "stock_query": "coffee cup, tomato, chocolate, chilli icons"
+        },
+        "retention_device": "Exact source wording on screen",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Habits that may help",
+        "narration": "These aren't bad foods. They're just worth noticing. If chocolate sets you off and tomatoes don't, that's your answer, not anyone else's.",
+        "on_screen_text": "Notice your own triggers",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person writing in food notebook, smiling"
+        },
+        "retention_device": "Removes guilt, builds agency",
+        "source_ids": []
+      },
+      {
+        "id": "s37",
+        "section": "Habits that may help",
+        "narration": "The NHS also suggests not wearing clothes that are tight around your waist, and not smoking.",
+        "on_screen_text": "Loose waistbands, no smoking",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Clothes loose at the waist",
+            "Not smoking"
+          ],
+          "stock_query": "comfy loose trousers on hanger"
+        },
+        "retention_device": "Quick-fire practical tips",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "Habits that may help",
+        "narration": "Those are the NHS habits. But burping has its own sneaky culprit, and it isn't food at all. It's air.",
+        "on_screen_text": "The sneaky culprit: air",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon air bubbles sneaking into mouth"
+        },
+        "retention_device": "'But here's the twist' re-hook",
+        "source_ids": []
+      },
+      {
+        "id": "s39",
+        "section": "Habits that may help",
+        "narration": "Fizzy drinks, chewing gum, drinking through a straw and eating fast may all mean swallowing extra air. Cutting back on them may help some people.",
+        "on_screen_text": "Less swallowed air",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Fizzy drinks",
+            "Chewing gum",
+            "Straws",
+            "Eating fast"
+          ],
+          "stock_query": "soda, gum, straw icons with bubbles"
+        },
+        "retention_device": "Pays off the 'air' tease",
+        "source_ids": []
+      },
+      {
+        "id": "s40",
+        "section": "Habits that may help",
+        "narration": "And eating slowly may help on another front. Putting your fork down between bites gives you time to notice fullness before you're uncomfortably full.",
+        "on_screen_text": "Fork down between bites",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person resting fork, relaxed meal"
+        },
+        "retention_device": "Vivid, specific action",
+        "source_ids": []
+      },
+      {
+        "id": "s41",
+        "section": "Habits that may help",
+        "narration": "Staying upright for a while after a meal, instead of lying on the sofa, is another simple step worth trying.",
+        "on_screen_text": "Stay upright after meals",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person on gentle evening walk"
+        },
+        "retention_device": "Short, easy win",
+        "source_ids": []
+      },
+      {
+        "id": "s42",
+        "section": "Habits that may help",
+        "narration": "One important note. If you also take insulin or a sulfonylurea, changes to how much or how often you eat matter more.",
+        "on_screen_text": "On insulin or a sulfonylurea?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm Medi mascot holding caution sign"
+        },
+        "retention_device": "Pattern interrupt: important caveat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Habits that may help",
+        "narration": "The label says using tirzepatide with those medicines may increase the risk of low blood sugar, including severe low blood sugar. So talk to your prescriber before changing your meal pattern.",
+        "on_screen_text": "Ask before changing meals",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person talking with prescriber, notepad"
+        },
+        "retention_device": "Safety caveat with clear action",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Habits that may help",
+        "narration": "And remember the stomach-emptying point? If you're thinking about a heartburn remedy from the pharmacy, ask the pharmacist which one suits you alongside tirzepatide and your other medicines.",
+        "on_screen_text": "Ask the pharmacist first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly pharmacist at counter, smiling"
+        },
+        "retention_device": "Pays off the 'hold that thought' loop",
+        "source_ids": []
+      },
+      {
+        "id": "s45",
+        "section": "Habits that may help",
+        "narration": "That conversation takes a couple of minutes, and it's exactly what they're there for.",
+        "on_screen_text": "A two-minute conversation",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "customer nodding at pharmacy counter"
+        },
+        "retention_device": "Lowers the barrier to act",
+        "source_ids": []
+      },
+      {
+        "id": "s46",
+        "section": "The line that changes the picture",
+        "narration": "So, the line I promised. Here's what the tirzepatide label says about stomach emptying over time.",
+        "on_screen_text": "The line I promised",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, spotlight on document"
+        },
+        "retention_device": "Main loop payoff begins",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "The line that changes the picture",
+        "narration": "The delay is largest after the first dose, and it diminishes over time.",
+        "on_screen_text": "Largest after the first dose",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "1st dose",
+          "stat_label": "Tirzepatide stomach-emptying delay at its largest",
+          "stock_query": "descending line chart over time"
+        },
+        "retention_device": "Payoff of the main open loop",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "The line that changes the picture",
+        "narration": "Let that sink in. The slowing of your stomach is strongest at the very start, and then it diminishes.",
+        "on_screen_text": "Strongest at the start",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stomach door opening a little wider"
+        },
+        "retention_device": "Repetition to land the insight",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "The line that changes the picture",
+        "narration": "That fits a broader pattern in the label. For nausea, vomiting and diarrhea, most reports came during dose increases and decreased over time.",
+        "on_screen_text": "GI reports eased over time",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar pages turning, calm sky"
+        },
+        "retention_device": "Connects to a bigger pattern",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "The line that changes the picture",
+        "narration": "Now, careful. The label doesn't give that same timeline for burping or reflux, so we can't promise yours will fade on a schedule.",
+        "on_screen_text": "No set timeline for burping",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm neutral Medi mascot, open hands"
+        },
+        "retention_device": "Honest 'but' keeps trust",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "The line that changes the picture",
+        "narration": "But it does mean the start isn't necessarily a preview of the whole journey. Right after the first dose is when the label says the slowing is at its biggest.",
+        "on_screen_text": "The start isn't the whole story",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "winding path leading to sunrise"
+        },
+        "retention_device": "Emotional relief, reframing",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "The line that changes the picture",
+        "narration": "For Dana, that's a relief. Her burps are real, they're common enough to be listed, and the stomach-slowing effect that may be behind them is strongest at the start.",
+        "on_screen_text": "Dana feels relief",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman exhaling, relaxed at kitchen table"
+        },
+        "retention_device": "Dana thread resolves",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "The line that changes the picture",
+        "narration": "Still, some symptoms are not the kind you wait out. And this next part is the one I most want you to remember.",
+        "on_screen_text": "Don't wait these out",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi mascot raising attentive finger"
+        },
+        "retention_device": "Cliffhanger into the safety chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s54",
+        "section": "When to get checked",
+        "narration": "Let's separate everyday heartburn from the signs that need a clinician.",
+        "on_screen_text": "When to get checked",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, stethoscope, blue gradient"
+        },
+        "retention_device": "Chapter change, higher stakes",
+        "source_ids": []
+      },
+      {
+        "id": "s55",
+        "section": "When to get checked",
+        "narration": "Start with the NHS. It suggests seeing a GP, or your own doctor if you're outside the UK, if you have heartburn most days, or if lifestyle changes and pharmacy medicines aren't helping.",
+        "on_screen_text": "Most days? Not helping?",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Heartburn most days",
+            "Lifestyle changes and pharmacy medicines not helping"
+          ],
+          "stock_query": "person calling doctor's office calmly"
+        },
+        "retention_device": "Clear, checkable criteria",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "When to get checked",
+        "narration": "It also lists food getting stuck in your throat, being sick often, and losing weight for no reason.",
+        "on_screen_text": "Other NHS see-a-GP signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Food getting stuck",
+            "Being sick often",
+            "Losing weight for no reason"
+          ],
+          "stock_query": "clipboard checklist, calm clinic"
+        },
+        "retention_device": "Completes the list",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "When to get checked",
+        "narration": "On tirzepatide, some weight change is expected, so if you're unsure what counts, your prescriber can help you sort it out.",
+        "on_screen_text": "Unsure? Ask your prescriber.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "prescriber and patient reviewing notes together"
+        },
+        "retention_device": "Answers the viewer's obvious follow-up",
+        "source_ids": []
+      },
+      {
+        "id": "s58",
+        "section": "When to get checked",
+        "narration": "Now the tirzepatide label itself. It says to stop using it and call your healthcare provider right away if you have severe pain in your stomach area that won't go away, with or without vomiting.",
+        "on_screen_text": "Severe stomach pain that won't go away",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm person phoning healthcare provider"
+        },
+        "retention_device": "Raises stakes with exact label wording",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "When to get checked",
+        "narration": "That pain may spread from your abdomen to your back. The label lists it as a possible sign of pancreatitis.",
+        "on_screen_text": "Possible pancreatitis sign",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "simple body outline, arrow tummy to back"
+        },
+        "retention_device": "Specific detail people remember",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "When to get checked",
+        "narration": "The label also says to tell your healthcare provider right away about possible gallbladder problems: pain in your upper stomach, fever, yellowing of your skin or eyes, or clay-colored stools.",
+        "on_screen_text": "Possible gallbladder signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Upper stomach pain",
+            "Fever",
+            "Yellow skin or eyes",
+            "Clay-colored stools"
+          ],
+          "stock_query": "calm clinic phone call, list icons"
+        },
+        "retention_device": "Quick-scan list",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "When to get checked",
+        "narration": "And some signs need same-day care, whatever medicine you're on. Vomiting blood, or black stools, means contacting your local urgent care or emergency number.",
+        "on_screen_text": "Same-day care: urgent care or emergency number",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person calmly dialling phone, night room"
+        },
+        "retention_device": "Clear urgent action",
+        "source_ids": []
+      },
+      {
+        "id": "s62",
+        "section": "When to get checked",
+        "narration": "Chest pain is never something to write off as heartburn. If you have chest pain, call your local emergency number.",
+        "on_screen_text": "Chest pain? Call emergency number.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "phone with emergency call icon, calm"
+        },
+        "retention_device": "Memorable safety rule",
+        "source_ids": []
+      },
+      {
+        "id": "s63",
+        "section": "Your checklist",
+        "narration": "Here's your checklist for the next time a burp or a burn shows up.",
+        "on_screen_text": "Your checklist",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, clipboard, green gradient"
+        },
+        "retention_device": "Takeaway promise, save-worthy recap",
+        "source_ids": []
+      },
+      {
+        "id": "s64",
+        "section": "Your checklist",
+        "narration": "One. Know it's a listed side effect. Burping, indigestion and reflux were all more common on tirzepatide than placebo, but most people didn't report them.",
+        "on_screen_text": "1. Listed, and most didn't report",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "checkmark next to label icon"
+        },
+        "retention_device": "Numbered recap",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "Your checklist",
+        "narration": "Two. Eat smaller, more frequent meals, and don't eat within three or four hours before bed.",
+        "on_screen_text": "2. Smaller meals, earlier dinner",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "small plate and early clock"
+        },
+        "retention_device": "Numbered recap",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "Your checklist",
+        "narration": "Three. Raise the head of your bed by around ten to twenty centimetres, instead of adding pillows.",
+        "on_screen_text": "3. Raise bed head 10–20 cm",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "gently tilted bed, cosy bedroom"
+        },
+        "retention_device": "Numbered recap",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "Your checklist",
+        "narration": "Four. Notice your own triggers, slow down, and go easy on fizzy drinks if burping is your main issue.",
+        "on_screen_text": "4. Triggers, pace, fizz",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "water glass replacing soda can"
+        },
+        "retention_device": "Numbered recap",
+        "source_ids": []
+      },
+      {
+        "id": "s68",
+        "section": "Your checklist",
+        "narration": "Five. Ask a pharmacist before trying a heartburn remedy, and if you take insulin or a sulfonylurea, check with your prescriber before changing how you eat.",
+        "on_screen_text": "5. Pharmacist and prescriber first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pharmacist and prescriber icons side by side"
+        },
+        "retention_device": "Numbered recap",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "Your checklist",
+        "narration": "Six. Know the urgent signs: severe stomach pain that won't go away, vomiting blood, black stools, or chest pain.",
+        "on_screen_text": "6. Know the urgent signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Severe stomach pain that won't go away",
+            "Vomiting blood",
+            "Black stools",
+            "Chest pain"
+          ],
+          "stock_query": "calm warning card, neutral mascot"
+        },
+        "retention_device": "Numbered recap, safety reinforced",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "Your checklist",
+        "narration": "Picture Dana again, a month from now. She eats dinner a little earlier, sips water instead of soda, and her bed has a gentle tilt. She knows what's normal, what may help, and when to call.",
+        "on_screen_text": "Dana knows what to do",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman smiling at early dinner, evening light"
+        },
+        "retention_device": "Emotional resolution, empowerment",
+        "source_ids": []
+      },
+      {
+        "id": "s71",
+        "section": "Your checklist",
+        "narration": "For anything that isn't one of those emergency signs, don't stop, switch or change your medicine on your own.",
+        "on_screen_text": "For anything that isn't one of those emergency signs, don't stop, switch or change your medicine on your own.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm neutral Medi mascot, teal gradient"
+        },
+        "retention_device": "Scoped safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s72",
+        "section": "Your checklist",
+        "narration": "Not personal advice.",
+        "on_screen_text": "Not personal advice.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "disclaimer card, teal gradient"
+        },
+        "retention_device": "Disclaimer",
+        "source_ids": []
+      },
+      {
+        "id": "s73",
+        "section": "Your checklist",
+        "narration": "Talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Talk to your doctor or prescriber about whether it's right for you.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly doctor and patient talking"
+        },
+        "retention_device": "Prescriber line, last safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s74",
+        "section": "Your checklist",
+        "narration": "There's a video I'd watch next, linked in the description.",
+        "on_screen_text": "Watch next: in the description",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi mascot waving goodbye warmly"
+        },
+        "retention_device": "Watch-next handoff",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "ZEPBOUND (tirzepatide) injection: Highlights of Prescribing Information, Full Prescribing Information and Medication Guide",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/zepbound/zepbound.html"
+      },
+      {
+        "id": "S1b",
+        "title": "Label: ZEPBOUND- tirzepatide injection, solution",
+        "publisher": "U.S. National Library of Medicine (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "S2",
+        "title": "Heartburn and acid reflux",
+        "publisher": "NHS",
+        "year": "2023",
+        "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/"
+      }
+    ],
+    "cta": "If having the label explained like this helps, subscribe for a calm, label-checked answer to the next tirzepatide question. There's a video I'd watch next, linked in the description."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "I checked every number and source-attributed claim against the live Zepbound prescribing information (Lilly, revised 8/2026), the DailyMed copy (updated 28 Aug 2026) and the NHS heartburn and acid reflux page (last reviewed 20 Nov 2023). They all match.\n- **Label figures (Table 1, pooled Studies 1 and 2, adults with obesity or overweight, with or without type 2 diabetes, up to 72 weeks), placebo / 5 mg / 10 mg / 15 mg:**\n  - Eructation (burping): 1% / 4% / 5% / 5%\n  - Dyspepsia (indigestion): 4% / 9% / 9% / 10%\n  - GERD (reflux): 2% / 4% / 4% / 5%\n- **s15:** the \"9 in 10\" and \"95 in 100\" figures follow correctly from those numbers.\n- **Label wording:** these lines match the label: the gastric-emptying line (\"largest after the first dose… diminishes over time\"), the nausea, vomiting and diarrhoea pattern during dose increases, the possible effect on absorption of oral medicines, the low-blood-sugar risk with insulin or sulfonylureas, and the pancreatitis and gallbladder signs from the Medication Guide.\n- **NHS wording:** these match the page closely: smaller, more frequent meals; nothing within 3 or 4 hours before bed; raising the bed 10–20 cm and not using extra pillows; the exact trigger list; loose waistbands; not smoking; and the see-a-GP criteria.\n- **Framing:** the mechanism is clearly hedged (\"likely, not proven\"). The script doesn't guess at what causes sulfur burps, says there is no set timeline for burping, and Dana is labelled as imagined.\n- **Safety lines:** the don't-stop line is scoped to non-emergencies, and the disclaimer and prescriber lines are in order.\n\nOnly minor tagging and on-screen wording fixes remain.",
+    "issues": [
+      {
+        "location": "s44",
+        "claim": "Ask the pharmacist which heartburn remedy suits you alongside tirzepatide (tagged S1)",
+        "problem": "This pharmacist tip is our own advice. The label doesn't say it, so it shouldn't carry a source tag. The label backs only the absorption point, which s26 already cites.",
+        "severity": "minor",
+        "fix": "Change source_ids for s44 to []."
+      },
+      {
+        "location": "s15",
+        "claim": "Stat card: '~9 in 10' / 'No indigestion reported, tirzepatide 15 mg'",
+        "problem": "The muted-viewer test fails: the stat card doesn't say these are trial participants, and it gives no timeframe.",
+        "severity": "minor",
+        "fix": "Set stat_label to: \"Didn't report indigestion, tirzepatide 15 mg, 72-week trials\""
+      },
+      {
+        "location": "s09",
+        "claim": "pooled placebo-controlled trials lasting seventy-two weeks",
+        "problem": "The label describes the pooled trials as 'up to 72 weeks' of treatment. Both trials did run 72 weeks, so this is accurate, but the label's exact phrasing is safer.",
+        "severity": "minor",
+        "fix": "Narration: \"These figures come from pooled placebo-controlled trials of up to seventy-two weeks, in adults with obesity or overweight. Some of them also had type two diabetes.\""
+      },
+      {
+        "location": "s10",
+        "claim": "On-screen 'GERD = acid reflux' (tagged S2)",
+        "problem": "GERD (gastroesophageal reflux disease) is the long-term condition, not just acid reflux. The narration words it correctly, but the on-screen item is slightly looser.",
+        "severity": "minor",
+        "fix": "Change the list item to \"GERD = reflux disease (acid coming back up)\""
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "ZEPBOUND (tirzepatide) injection: Highlights of Prescribing Information, Full Prescribing Information and Medication Guide",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/zepbound/zepbound.html"
+      },
+      {
+        "id": "S1b",
+        "title": "Label: ZEPBOUND- tirzepatide injection, solution",
+        "publisher": "U.S. National Library of Medicine (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "S2",
+        "title": "Heartburn and acid reflux",
+        "publisher": "NHS",
+        "year": "2023",
+        "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.013,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 7,
+      "weakShots": 12,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "\"Heartburn\" flame tag renders at ~23px, too small to read at a glance",
+        "\"Stomach\" label tag sits at the very bottom edge and is partially clipped off-screen (box extends past y1080)",
+        "No title or caption to anchor the beat — just a sparse room with ambiguous dangling grey/orange circles and a shelf-like cabinet row top and bottom",
+        "The top/bottom green cabinet-door strip reads like the banned pantry/shelf backdrop",
+        "The '9 p.m.' time pill renders at ~22-23px, too small to read quickly",
+        "'Chest burn' tag renders at ~22-23px next to the flame mascot's face, hard to read",
+        "Orange worried character is a floating head with no neck or shoulders",
+        "Repeats the shelf/cabinet backdrop pattern from shots 1-3, close to the banned pantry look",
+        "The dark-haired person is a floating head cropped at the neck with no shoulders or body",
+        "'NHS habits' tag text is small and easy to miss",
+        "Reuses the same cabinet/shelf backdrop seen in earlier shots, which risks reading as the banned pantry look",
+        "'Weeks' clock tag renders too small to read quickly",
+        "The four population faces (blonde man, brown-haired woman, bald man, grey-haired woman) are floating heads with no necks or shoulders",
+        "Both population faces are floating heads with no necks or shoulders",
+        "'Heartburn' and 'Acid back up' tags render at 23–26px, below the ~40px floor"
+      ],
+      "layoutKinds": {
+        "offscreen": 12,
+        "tiny": 17,
+        "sparse": 19
+      }
+    },
+    "audio": {
+      "musicGain": 0.313,
+      "sfxGain": 0.55,
+      "finalWer": 0.011,
+      "maskingDelta": 0.011,
+      "lufs": -15.2,
+      "soundNotes": "Overall mix is close to target already: music sits about -13.5 dB under speech and -14.4 dB in pauses (right in the -12/-15 and ~-14 windows), and the vast majority of SFX land around -13 to -17 dB during speech and -6 to -12 dB on transitions/reveals, matching the brief. I only trimmed a handful of outlier cues that measured far louder than the -14/-20 dB speech target (a stray bubble at -4.3 dB, a blip at -8.9/-9.2/-8.8/-11 dB, swooshes at -9.1/-10.2/-10.7/-6.2 dB) so nothing pokes above the voice during narration. Left the serious stomach-pain/pancreatitis/gallbladder/chest-pain beats (489–530s) alone since their swells/ticks are already appropriately subdued (-18 to -32 dB) for a calm, non-alarming tone, and added small custom accents (a light comedic burp on the cold open, a tense heartbeat and reassuring chime around the pancreatitis/same-day-care lines, a brief clean alert on the chest-pain emergency line, and a soft night-ambience bed on the 3–4 hour night routine stat) to add felt texture the stock kit can't supply without ever competing with the voice."
+    },
+    "blocking": [
+      "beat sync: beats drift from the narration (plan 74/74 beats on time, audio shift 0.04 s, render 86% of beats cut on time. 6 beats are heard more than 0.5 s from where the shots expect them)"
+    ],
+    "beats": {
+      "verdict": "fail",
+      "summary": "beat sync FAIL: plan 74/74 beats on time, audio shift 0.04 s, render 86% of beats cut on time. 6 beats are heard more than 0.5 s from where the shots expect them",
+      "planOff": 0,
+      "audioShift": 0.04,
+      "renderHitRate": 0.86,
+      "flagged": []
+    },
+    "thumbnail": {
+      "best_index": 0,
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": [
+            "No subtext line under the headline (other two candidates have a subtext band); slightly bare but not confusing",
+            "Headline doesn't literally mention burping/heartburn, relies on color+face change to convey topic"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 6,
+          "legibility": 9,
+          "issues": [
+            "No face/emotion-driven hook, just a number + sleepy stomach; weaker emotional pull than a worried→relieved state change",
+            "'3-4 HRS' alone doesn't obviously signal burping/heartburn content without reading subtext"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 7,
+          "legibility": 8,
+          "issues": [
+            "Red circle highlight is small and may not register at phone/small size",
+            "'Mistake' framing is an expectation-violation hook, but focal point (a bed, not a face) is less emotionally engaging than a worried/relieved face",
+            "Topic link to 'burping' is less direct than to heartburn/reflux"
+          ]
+        }
+      ],
+      "reasoning": "Candidate #0 uses the state-change (worried face → calm face) layout, which is InforMed's proven top-performing thumbnail format (Side Effects hit 4.03% CTR with this exact layout) and is explicitly the default recommended by the growth playbook and performance notes. It reads instantly at both phone-feed and small sizes: bold white/yellow text with high contrast, one clear emotional before/after focal point (a distressed gray stomach turning into a smiling green one), and a simple 3-word headline. No clutter, no cut-off text, no overlapping elements.\n\nCandidate #1 (big number) is legible and clean, but a sleepy cartoon stomach with \"3-4 HRS\" is a weaker emotional hook than a visible state change — it reads more like trivia than a promise of relief, likely lower CTR despite being perfectly legible.\n\nCandidate #2 (pillow mistake) has a decent curiosity hook (\"mistake\" + red circle callout) but the focal hero is an inanimate bed with cartoon eyes rather than a relatable face, and the red circle (the \"evidence\" of the mistake) is small and could be missed at phone size. It's also a slightly more indirect connection to \"burping,\" the title's lead symptom.\n\nAll three pass the ≥7 legibility bar and none are misleading relative to the title. Among them, #0 best matches the proven-performing format and carries the strongest emotional pull (worried → relieved), so it's the pick."
+    }
+  },
+  "hold_reason": "Dropped by Editor-in-Chief: Automatic drop: beat sync: beats drift from the narration (plan 74/74 beats on time, audio shift 0.04 s, render 86% of beats cut on time. 6 beats are heard more than 0.5 s from where the shots expect them)",
+  "release_tag": "content-2026-11-10",
+  "archive_url": "b2://informed-lab-media/content/2026-11-10/L1-tirzepatide-burping-and-heartburn-how-of/"
+}
