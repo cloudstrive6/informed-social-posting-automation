@@ -42,16 +42,22 @@
       "format": "carousel",
       "slotKey": "carousel",
       "slot": "2026-11-10T22:30:00.000Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "17921771562460780",
+      "url": "https://www.instagram.com/p/Dfk-p0ZjcIj/",
+      "published_at": "2026-11-10T22:28:20.563Z"
     },
     {
       "platform": "facebook",
       "format": "post",
       "slotKey": "carousel",
       "slot": "2026-11-10T22:30:00.000Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "100670406266672_1158043217175167",
+      "url": "https://www.facebook.com/100670406266672_1158043217175167",
+      "published_at": "2026-11-10T22:28:32.383Z"
     },
     {
       "platform": "tiktok",
@@ -59,15 +65,19 @@
       "slotKey": "carousel",
       "slot": "2026-11-10T22:30:00.000Z",
       "status": "pending",
-      "attempts": 0
+      "attempts": 1,
+      "error": "TikTok (Post for Me) failed: \"TikTok publication could not be confirmed. Status: FAILED. Fail reason: internal\""
     },
     {
       "platform": "threads",
       "format": "carousel",
       "slotKey": "carousel",
       "slot": "2026-11-10T22:30:00.000Z",
-      "status": "pending",
-      "attempts": 0
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "18599322571069620",
+      "url": "https://www.threads.com/@informedlab/post/Dfk-8G3GELi",
+      "published_at": "2026-11-10T22:30:40.311Z"
     }
   ],
   "created_at": "2026-11-10T03:24:57.338Z",
