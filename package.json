@@ -21,6 +21,8 @@
     "auth:meta": "tsx scripts/auth-meta.ts",
     "typecheck": "tsc --noEmit",
     "test:beats": "tsx scripts/beat-sync-selftest.ts",
+    "test:analytics": "tsx scripts/analytics-selftest.ts",
+    "test:text": "tsx scripts/text-selftest.ts",
     "sfx:kit": "tsx scripts/audio-assets.ts sfx",
     "music:library": "tsx scripts/audio-assets.ts music"
   },

@@ -29,7 +29,7 @@ const median = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); retu
 
 function performance() {
   const dir = join(DATA, "analytics");
-  const latest = existsSync(dir) ? readdirSync(dir).filter(f => f.endsWith(".json")).sort().pop() : undefined;
+  const latest = existsSync(dir) ? readdirSync(dir).filter(f => /^[0-9]{4}-[0-9]{2}-[0-9]{2}[.]json$/.test(f)).sort().pop() : undefined;
   if (!latest) return { posts: [], medians: {} };
   const rows = JSON.parse(readFileSync(join(dir, latest), "utf8")) as any[];
   const since = addDays(localDate(config.audience.timezone), -28);

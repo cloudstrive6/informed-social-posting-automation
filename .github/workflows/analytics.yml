@@ -39,4 +39,6 @@ jobs:
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
           META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
-      - run: bash scripts/commit-data.sh "bot - analytics learnings"
+      # always: reach reports, retention curves and the snapshot are worth keeping even when the analyst agent fails (weekly cap)
+      - if: always()
+        run: bash scripts/commit-data.sh "bot - analytics learnings"

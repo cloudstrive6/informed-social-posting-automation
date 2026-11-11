@@ -4,6 +4,7 @@ import { config, DATA } from "../lib/config.js";
 import { ContentItem, loadItems } from "../lib/items.js";
 import { readJson, writeJson } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
+import { plainDashes } from "../lib/text.js";
 import { currentDescription, updateDescription, videoInfo } from "./youtube.js";
 
 /**
@@ -102,7 +103,7 @@ export async function watchNextFor(item: ContentItem, liveBy: Date, excludeVideo
 /** A Short's description with the verified funnel link on line 1 (agent-written links removed). */
 export function shortDescription(description: string, w?: WatchNext): string {
   const body = stripVideoLinks(description);
-  return w ? `▶ Full breakdown: ${w.title}\n${w.url}\n\n${body}` : body;
+  return w ? `▶ Full breakdown: ${plainDashes(w.title)}\n${w.url}\n\n${body}` : body;
 }
 
 /** A long video's description with a verified "Watch next" link after the first paragraph. */
@@ -110,7 +111,7 @@ export function longDescription(description: string, w?: WatchNext): string {
   const body = stripVideoLinks(description);
   if (!w) return body;
   const cut = body.indexOf("\n\n");
-  const line = `▶ Watch next: ${w.title}\n${w.url}`;
+  const line = `▶ Watch next: ${plainDashes(w.title)}\n${w.url}`;
   return cut < 0 ? `${body}\n\n${line}` : `${body.slice(0, cut)}\n\n${line}${body.slice(cut)}`;
 }
 

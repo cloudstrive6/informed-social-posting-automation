@@ -212,3 +212,46 @@ export async function partnerProgress(): Promise<{ subscribers: number; watchHou
     longViews28: Object.entries(m).filter(([t]) => t !== "SHORTS" && t !== "STORY").reduce((a, [, v]) => a + v.views, 0), at: new Date().toISOString(),
   };
 }
+
+/** One raw YouTube Analytics API query (separate quota from the Data API). Returns column names and rows. */
+export async function analyticsTable(params: Record<string, string>): Promise<{ cols: string[]; rows: any[][] }> {
+  const token = await youtubeToken();
+  const qs = Object.entries({ ids: "channel==MINE", ...params }).map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join("&");
+  const j = await httpJson<any>(`https://youtubeanalytics.googleapis.com/v2/reports?${qs}`, { headers: { authorization: `Bearer ${token}` } });
+  return { cols: (j.columnHeaders ?? []).map((c: any) => c.name as string), rows: j.rows ?? [] };
+}
+
+/**
+ * Audience retention curve for ONE video over a date range: one row per 1% of the video's length
+ * (elapsedVideoTimeRatio 0.01..1.00) with audienceWatchRatio (share of views still watching; can pass 1 when
+ * people re-watch) and relativeRetentionPerformance (0..1 versus YouTube videos of similar length).
+ * Falls back to audienceWatchRatio alone if the relative metric is refused. Scope: yt-analytics.readonly.
+ */
+export async function videoRetention(id: string, startDate: string, endDate: string) {
+  const base = { startDate, endDate, dimensions: "elapsedVideoTimeRatio", filters: `video==${id}` };
+  try {
+    return await analyticsTable({ ...base, metrics: "audienceWatchRatio,relativeRetentionPerformance" });
+  } catch (e) {
+    if (!/HTTP 400/.test((e as Error).message)) throw e;
+    return await analyticsTable({ ...base, metrics: "audienceWatchRatio" });
+  }
+}
+
+/** Top rows (views, minutes) for one traffic source type of one video: RELATED_VIDEO gives referring video ids, YT_SEARCH gives search terms. */
+export async function videoTrafficDetail(id: string, sourceType: string, startDate: string, endDate: string, max = 10) {
+  return analyticsTable({
+    startDate, endDate, dimensions: "insightTrafficSourceDetail", metrics: "views,estimatedMinutesWatched",
+    filters: `video==${id};insightTrafficSourceType==${sourceType}`, sort: "-views", maxResults: String(max),
+  });
+}
+
+/** Titles for video ids (Data API, 1 unit per 50). */
+export async function videoTitles(ids: string[]): Promise<Record<string, string>> {
+  const token = await youtubeToken();
+  const out: Record<string, string> = {};
+  for (let i = 0; i < ids.length; i += 50) {
+    const j = await httpJson<any>(`https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${ids.slice(i, i + 50).join(",")}`, { headers: { authorization: `Bearer ${token}` } });
+    for (const it of j.items ?? []) out[it.id] = String(it.snippet?.title ?? "");
+  }
+  return out;
+}

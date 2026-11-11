@@ -10,6 +10,7 @@ import { coveredPath, CoveredTopic } from "../plan/planDay.js";
 import { openReviewIssue, reportFailure } from "../review/issues.js";
 import { facebookAlbumPost, facebookReel, facebookVideo, instagramCarousel, instagramReel } from "./meta.js";
 import { downloadFromRelease, publishImages, releaseAssetUrl, uploadToRelease } from "./storage.js";
+import { cleanDeep } from "../lib/text.js";
 import { http } from "../lib/http.js";
 import { archiveItem } from "./b2.js";
 import { recordQuality, updateCraftNotes } from "../analytics/quality.js";
@@ -67,6 +68,7 @@ const liveAt = (p: PostTarget) => new Date(Math.max(Date.parse(p.slot), Date.now
 
 /** Publish (or schedule) a single post. YouTube uses native scheduling (publishAt); others post at slot time. */
 async function publishOne(item: ContentItem, p: PostTarget) {
+  item = { ...item, package: cleanDeep(item.package) }; // last guard: no mojibake or em/en dashes reach a platform (local copy, not saved)
   const s = item.package.social;
   const disclaimer = config.safety.disclaimer;
   switch (`${p.platform}:${p.format}`) {
