@@ -41,10 +41,11 @@ const ghJson = <T>(args: string[]): T => JSON.parse(gh(args) || "null");
 
 const TRANSIENT = /\b(410|429|5\d\d)\b|Gone|timeout|timed out|ETIMEDOUT|ECONNRESET|socket hang up|fetch failed|network|temporar|try again|is_transient":true|Invalid Carousel Children|not ready after|rate.?limit|overloaded/i;
 
-type Run = { databaseId: number; status: string; conclusion: string; createdAt: string; updatedAt: string; event: string; attempt: number; displayTitle: string };
+export type Run = { databaseId: number; status: string; conclusion: string; createdAt: string; updatedAt: string; event: string; attempt: number; displayTitle: string };
 
 export async function watchdog(force = false) {
   const s = load();
+  claudeDown = false; // decided afresh each pass, so alerts resume once Claude is back
   if (!force && s.last_run && Date.now() - Date.parse(s.last_run) < EVERY_MIN * 60_000) return;
   s.last_run = new Date().toISOString();
   const { notify } = await import("../notify/telegram.js");
@@ -112,12 +113,31 @@ function localHour(at = now()) {
   return Number(new Intl.DateTimeFormat("en-US", { timeZone: config.audience.timezone, hour: "numeric", hourCycle: "h23" }).format(at));
 }
 
+const isFailed = (r: Run) => r.status === "completed" && ["failure", "timed_out", "startup_failure"].includes(r.conclusion);
+/** Subscription weekly cap hit AND the backup API key out of credit: no Claude at all. */
+export const isClaudeDownLog = (t: string) => /hit your weekly limit/i.test(t) && /credit balance is too low|insufficient.*credit|billing/i.test(t);
+
+/**
+ * The run to re-run after a Claude stop, or undefined. Takes the day's production runs (content date D by the time
+ * each run started; replacements and quick duplicate-guard exits left out) and looks only at the newest: it counts
+ * when it finished, failed, and its log shows Claude was unavailable. A newer success or a run in progress means
+ * there is nothing to retry.
+ */
+export function claudeRetryTarget(runs: Run[], D: string, logOf: (r: Run) => string): Run | undefined {
+  const quick = (r: Run) => r.conclusion === "success" && Date.parse(r.updatedAt) - Date.parse(r.createdAt) < 3 * 60_000;
+  const newest = runs
+    .filter(r => !r.displayTitle.startsWith("Replacement") && !quick(r) && contentDate(new Date(r.createdAt)) === D)
+    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))[0];
+  if (!newest || !isFailed(newest)) return undefined;
+  return isClaudeDownLog(logOf(newest)) ? newest : undefined;
+}
+
 /** Production starts at 22:00 audience time (GitHub's cron is often hours late), finishes, and gets re-run if it fails. */
 async function checkProduction(once: Once, escalate: Escalate, notify: Notify) {
   const D = contentDate();
   const hour = localHour();
   const produced = existsSync(join(DATA, "queue", D, "plan.json"));
-  const runs = ghJson<Run[]>(["run", "list", "--workflow", "daily.yml", "--limit", "15", "--json", "databaseId,status,conclusion,createdAt,updatedAt,event,attempt,displayTitle"]) ?? [];
+  const runs = ghJson<Run[]>(["run", "list", "--workflow", "daily.yml", "--limit", "40", "--json", "databaseId,status,conclusion,createdAt,updatedAt,event,attempt,displayTitle"]) ?? [];
   const recent = runs.filter(r => Date.now() - Date.parse(r.createdAt) < 12 * H);
   // scheduled starts that only hit the duplicate guard succeed in well under a minute: ignore them
   const real = recent.filter(r => !(r.conclusion === "success" && Date.parse(r.updatedAt) - Date.parse(r.createdAt) < 3 * 60_000));
@@ -136,19 +156,30 @@ async function checkProduction(once: Once, escalate: Escalate, notify: Notify) {
     }
   }
 
+  // failed-job logs, fetched at most once per run per pass
+  const logs = new Map<number, string>();
+  const failLog = (r: Run) => {
+    if (!logs.has(r.databaseId)) {
+      let t = "";
+      try { t = gh(["run", "view", String(r.databaseId), "--log-failed"]).split("\n").slice(-200).join("\n"); } catch { /* logs may not be ready */ }
+      logs.set(r.databaseId, t);
+    }
+    return logs.get(r.databaseId)!;
+  };
+
   // 2) a run that failed: re-run its failed jobs once, then escalate
-  for (const r of real.filter(r => r.status === "completed" && ["failure", "timed_out", "startup_failure"].includes(r.conclusion))) {
+  for (const r of real.filter(isFailed)) {
     if (produced && real.some(o => o.conclusion === "success" && Date.parse(o.createdAt) > Date.parse(r.createdAt))) continue;
-    // Claude completely unavailable (subscription weekly cap AND backup API key out of credit): retrying and
-    // calling the Ops Engineer (also Claude) can't help. Tell the owner once, exactly what to do; the kickoff
-    // above restarts production by itself once the limit resets.
-    let failText = "";
-    try { failText = gh(["run", "view", String(r.databaseId), "--log-failed"]).split("\n").slice(-200).join("\n"); } catch { /* logs may not be ready */ }
-    if (/hit your weekly limit/i.test(failText) && /credit balance is too low|insufficient.*credit|billing/i.test(failText)) {
+    // Claude completely unavailable (subscription weekly cap AND backup API key out of credit): retrying now and
+    // calling the Ops Engineer (also Claude) can't help. Tell the owner once, exactly what to do. If the plan was
+    // already made, step 2b re-runs the failed jobs every hour so production resumes the same day once Claude is
+    // back; if not, the kickoff above starts the day again.
+    const failText = failLog(r);
+    if (isClaudeDownLog(failText)) {
       claudeDown = true;
       const reset = /resets ([^)\n]+\))/i.exec(failText)?.[1] ?? "later this week";
       if (once(`claude-down:${D}`, 12)) {
-        await notify(`🚨 <b>Production is stopped: no Claude available</b>\nThe Claude subscription hit its weekly limit (resets ${esc(reset)}) and the backup API key has no credit left ("Credit balance is too low").\n\n<b>You need to:</b> add credit at console.anthropic.com → Settings → Billing (the pipeline caps itself at $${config.fallbackApi?.monthlyBudgetUsd ?? 50}/month). Production restarts automatically as soon as either the credit is there or the limit resets.`);
+        await notify(`🚨 <b>Production is stopped: no Claude available</b>\nThe Claude subscription hit its weekly limit (resets ${esc(reset)}) and the backup API key has no credit left ("Credit balance is too low").\n\n<b>You need to:</b> add credit at console.anthropic.com → Settings → Billing (the pipeline caps itself at $${config.fallbackApi?.monthlyBudgetUsd ?? 50}/month). Until 16:00 New York time the watchdog tries again every hour, so production resumes by itself as soon as either the credit is there or Claude is available again.`);
       }
       continue;
     }
@@ -161,6 +192,25 @@ async function checkProduction(once: Once, escalate: Escalate, notify: Notify) {
       try { logTail = gh(["run", "view", String(r.databaseId), "--log-failed"]).split("\n").slice(-120).join("\n"); } catch { /* logs may not be ready */ }
       await escalate(`daily-failed:${r.databaseId}`, `Daily production failed twice (run ${r.databaseId}, content date ${D})`,
         `Run: https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${r.databaseId}\nThe watchdog already re-ran the failed jobs once.\n\nLast lines of the failed jobs:\n${logTail}`);
+    }
+  }
+
+  // 2b) Claude came back after a stop: re-run only the failed jobs of the day's newest run (same plan, so nothing
+  // already made or posted is made twice), at most once an hour, while the day's content can still go out.
+  // Looks at all of the day's runs, not just the last 12 h, so a stop early in the night is still retried later.
+  // Only once the plan exists: before that, the kickoff in step 1 starts the day again.
+  const downRun = produced ? claudeRetryTarget(runs, D, failLog) : undefined;
+  if (downRun) {
+    claudeDown = true;
+    if (once(`claude-down-seen:${downRun.databaseId}:${downRun.attempt}`, 24)) {
+      once(`claude-retry:${D}`, 1); // first sight of this stop: first retry an hour from now, not straight away
+    } else if (inWindow && !active && once(`claude-retry:${D}`, 1)) {
+      try {
+        gh(["run", "rerun", String(downRun.databaseId), "--failed"]);
+        log.info(`watchdog: Claude was unavailable for ${D}; re-running the failed jobs of run ${downRun.databaseId} (attempt ${downRun.attempt + 1})`);
+      } catch (e) {
+        log.warn(`watchdog: re-run after the Claude stop failed (run ${downRun.databaseId}): ${(e as Error).message.slice(0, 200)}`);
+      }
     }
   }
 
