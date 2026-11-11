@@ -20,7 +20,14 @@ runs:
     - if: inputs.ffmpeg == 'true' && inputs.media != 'true'
       name: ffmpeg
       shell: bash
-      run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      # apt mirrors (security.ubuntu.com) can fail DNS for an hour+: bound apt, then fall back to a static build
+      run: |
+        if command -v ffmpeg > /dev/null; then exit 0; fi
+        if timeout 600 bash -c 'sudo apt-get update -qq -o Acquire::Retries=3 && sudo apt-get install -y -qq -o Acquire::Retries=3 ffmpeg > /dev/null'; then exit 0; fi
+        echo "::warning::apt could not install ffmpeg; using the static build from BtbN/FFmpeg-Builds"
+        curl -fsSL --retry 3 https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz | sudo tar -xJ -C /opt
+        sudo ln -sf /opt/ffmpeg-master-latest-linux64-gpl/bin/ffmpeg /opt/ffmpeg-master-latest-linux64-gpl/bin/ffprobe /usr/local/bin/
+        ffmpeg -version | head -1
     - if: inputs.media == 'true'
       name: System packages
       shell: bash
