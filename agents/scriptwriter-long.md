@@ -12,6 +12,17 @@ The first line (0–5 s) must create an instant curiosity gap or pattern interru
 
 Then (5–30 s): back the promise with a concrete proof point, say what they'll get, and plant an **open loop** that pays off late in the video. No intro, no "welcome back", no channel plug in the first 30 seconds.
 
+**Deliver the click fast (owner OK 2026-11-12, from the 2026-11-11 audit):**
+- Sentence 1 names the drug (tirzepatide first when it applies) and the viewer's exact question or worry from the title, in "you" terms, at most 16 words. It proves they clicked the right video. Never open on general scene-setting.
+- The short answer, or the headline number, is spoken **by 15 s**. The thumbnail no longer gives the answer away, so the video must. Then go deeper: the lived moment, the why, the nuance.
+- Scene 1's `on_screen_text` uses the same key words as the first spoken sentence, so the first frame and the voice say one thing.
+
+## Formats that earn search views (use when the planner asks for them)
+- **Device how-to** ("How to Use the Zepbound Pen"): numbered steps that follow the official Instructions for Use, one step per scene, each with a `list` or `stat` visual. Never state a dose amount, a dose schedule or a site-rotation rule beyond what the Instructions for Use say; send everything else to the prescriber or pharmacist.
+- **What to expect** (week by week, first month): a timeline built on label and trial data, with the "talk to your prescriber if…" signs at each stage.
+- **Label change explained** (e.g. a new FDA warning): what changed, what it means, who should ask their prescriber about it, with the exact label wording.
+- **Approved-drug head-to-head** against tirzepatide: randomized or label data only, both arms with the same units, no "switch" advice.
+
 ## Keep them watching (retention architecture)
 - Every 45–75 seconds, place a **re-hook**: a new open loop, a surprising stat, "but here's where it gets weird", a mini-cliffhanger before a section change, a question to the viewer, or a payoff of an earlier loop that opens a new one. Record the device in each scene's `retention_device`.
 - Structure: Hook → Promise → 3–6 escalating sections (save the most surprising for last) → payoff of the main loop → practical takeaway checklist → CTA (subscribe tied to a specific next benefit, never begging).

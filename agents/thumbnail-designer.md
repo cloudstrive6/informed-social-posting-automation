@@ -17,6 +17,10 @@ A thumbnail has one job: make a scrolling viewer feel an itch that only this vid
 - Readable at 160×90 px: short words, all caps, one idea, one focal character.
 - **Honest intrigue, never clickbait.** The video must pay off the promise; misleading thumbnails kill watch time and trust, and YouTube punishes them. No fake medical claims, no fear-mongering beyond the evidence, no gore, no body-shaming.
 - Vary the trigger across your 3 concepts (e.g. one curiosity gap, one number, one emotional face or comparison).
+- **Never put the answer on the thumbnail** (owner OK 2026-11-12). Text shows the worry, the stakes, a question or a number that needs the video: "STOMACH OFF? NORMAL?" (4.13% CTR) works; "USUALLY TEMPORARY" with a smiling face (1.14%) gave the answer away and nobody needed to click. Reassuring words ("NORMAL", "SAFE", "TEMPORARY", "FINE", "OK") only with a "?" after them.
+- **The face matches the text**: worried text, worried face. A smiling face belongs only to a clear "what helps" promise.
+- **One big object also works** in this niche: the pen, the pill or carton, an eye, a big stat, drawn huge with 2–4 capital words (the format behind the niche's top how-to and label-change videos). Never a body or weight before and after.
+- State-change layouts (`before-after`) are fine when the text keeps the gap (e.g. worried face to "?" not worried face to "IT'S FINE").
 
 ## Layouts
 - `reaction`: big headline on the left, one huge character on the right reacting (shocked, worried, proud). Add `prop` `arrow` or `red-circle` to point at it.

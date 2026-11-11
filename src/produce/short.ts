@@ -10,6 +10,30 @@ import { packagingLoop, directNarration, narrateChecked, qaBlockers, loadPiece, 
 
 export const SHORT_MAX_S = 178;
 
+/** Growth experiment (owner OK 2026-11-12, readout 2026-11-26): tight 40-55 s Shorts against the usual 65-80 s.
+ *  Arms alternate by Short slot and day so each slot and weekday gets both. After the end date every Short
+ *  uses the standard arm until the Growth Strategist records a winner in data/growth-playbook.md. */
+export const SHORT_LENGTH_TEST = { start: "2026-11-12", end: "2026-11-26" };
+export const SHORT_ARMS = {
+  tight: { words: [90, 120], seconds: [40, 55] },
+  standard: { words: [135, 160], seconds: [65, 80] },
+} as const;
+
+/** Hook styles rotate by slot and day (owner OK 2026-11-12), so question openers are at most 1 in 5 and each
+ *  style collects enough Shorts to compare (proof bar n>=8 per style). */
+export const HOOK_ARCHETYPES = ["result-first", "negation", "number-first", "myth-flip", "recognition-question"] as const;
+
+export function hookArchetype(date: string, index: number): (typeof HOOK_ARCHETYPES)[number] {
+  const day = Math.round(Date.parse(`${date}T00:00:00Z`) / 86_400_000);
+  return HOOK_ARCHETYPES[(day * 3 + index) % HOOK_ARCHETYPES.length];
+}
+
+export function shortLengthArm(date: string, index: number): keyof typeof SHORT_ARMS {
+  if (date < SHORT_LENGTH_TEST.start || date > SHORT_LENGTH_TEST.end) return "standard";
+  const day = Math.round(Date.parse(`${date}T00:00:00Z`) / 86_400_000);
+  return (day + index) % 2 === 0 ? "tight" : "standard";
+}
+
 export async function produceShort(date: string, pieceId: string): Promise<ContentItem> {
   const { plan, piece, index } = loadPiece(date, pieceId);
   const item = newItem(date, piece, index);
@@ -17,8 +41,12 @@ export async function produceShort(date: string, pieceId: string): Promise<Conte
   const final = ensureDir(join(dir, "final"));
   log.step(`SHORT ${item.id}: ${piece.working_title}`);
 
+  const arm = shortLengthArm(date, index);
+  const hook = hookArchetype(date, index);
+  item.experiments = { ...item.experiments, "short-length": arm, "hook-archetype": hook };
   const { content: script, factcheck, held, holdReason } = await writeWithFactCheck<Script>("scriptwriter-short", scriptSchema, {
-    piece, target_seconds: config.cadence.shortTargetSeconds,
+    piece, target_seconds: SHORT_ARMS[arm].seconds, target_words: SHORT_ARMS[arm].words, length_arm: arm,
+    hook_archetype: hook, content_date: date,
     todays_long_videos: plan.pieces.filter(p => p.kind === "long").map(p => ({ id: p.id, title: p.working_title })),
   });
   item.script = script; item.factcheck = factcheck;

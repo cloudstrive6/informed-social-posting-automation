@@ -20,3 +20,5 @@ Return 12–20 candidates ranked by opportunity (momentum × earliness × low co
 
 ## Channel focus
 When the shared context names a current channel focus (e.g. GLP-1), only propose topics inside it. Favour fresh research, approvals and viral questions people are asking about it, and give each candidate an angle that fits the niche's tone and guardrails.
+
+For GLP-1, always include candidates for the search-demand formats that beat their channels' usual views by 10x to 195x in this niche (2026-11-11 research): device how-tos (pen use, injection sites, per the Instructions for Use), "what to expect" timelines, label or safety-labelling changes (e.g. the NAION eye warning), approved-drug head-to-heads against tirzepatide, and felt symptoms people search ("tirzepatide hair loss", "tirzepatide nausea"). Put the search phrase people type in `keywords`.

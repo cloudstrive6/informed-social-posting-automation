@@ -29,6 +29,8 @@ export interface ContentItem {
   /** Whisper + visual QA results */
   qa?: Record<string, unknown>;
   release_tag?: string;
+  /** growth experiment arms this item belongs to, e.g. { "short-length": "tight" } (read by the analyst) */
+  experiments?: Record<string, string>;
   /** permanent copy in Backblaze B2 (b2://bucket/content/<date>/<id>/) */
   archive_url?: string;
   /** Public URLs of carousel images (needed by the Instagram API). */

@@ -39,7 +39,7 @@ _Verdict: off track. Bottleneck: Long-form watch time has stalled at about 8 h a
 3. Vary the title structure. At most 2 titles a week share an ending. Drug name first, 50 characters or fewer.
 4. Still banned in long-form:
    - cost, Medicare, pharmacy and gray-market topics
-   - "What is X?" explainers
+   - "What is X?" explainers for unapproved pipeline drugs (approved drugs with search demand are fine, see below)
    - single-trial deep dives
    - news. The only exception is a randomized head-to-head against tirzepatide or semaglutide, made public in the last 48 h, as an extra L2.
 
@@ -51,11 +51,12 @@ _Verdict: off track. Bottleneck: Long-form watch time has stalled at about 8 h a
 - Disclaimer frame, "Not personal advice" and the prescriber line go in every piece. The fact-checker and the Editor-in-Chief always win.
 
 ## Packaging
-- **Thumbnail:** a change of state (worried → answered), 4 words or fewer, one labelled character, never a body or weight before/after, never repeating the title.
+- **Thumbnail (owner, 2026-11-12):** 4 words or fewer that keep the gap: the worry, a question or a number, never the answer ("USUALLY TEMPORARY" gave Hair Loss a 1.14% CTR). The face matches the text. One big object (pen, carton, eye) also works. Never a body or weight before/after, never repeating the title.
 - **Exp E, second video:** the thumbnail designer makes a state-change thumbnail for Strength. The publisher swaps it on 11-10 and logs the time. Change nothing else on Strength or What to Eat until 11-24.
 
 ## Retention and linking (long-form)
-- The first sentence answers the title, then a "you" scenario. Re-hook every 45–75 s. One subscribe ask, after the payoff.
+- Sentence 1 names the drug and the viewer's question from the title; the short answer is spoken by 15 s, then a "you" scenario. Re-hook every 45–75 s. One subscribe ask, after the payoff.
+- **Search-demand long videos (owner, 2026-11-12):** on 2–3 days a week, a device how-to (Instructions for Use only, no amounts), a what-to-expect timeline, a label change explained, or an approved-drug head-to-head against tirzepatide (EloraTZP model) instead of a Lane A topic.
 - End with: "There's a video I'd watch next, linked in the description." Never speak a title or say "on screen".
 - **Publisher:** line 1 of every long-form description is a ▶ Watch next link (these are clickable on long-forms). Targets:
   - Side Effects → Injection Site
@@ -64,13 +65,14 @@ _Verdict: off track. Bottleneck: Long-form watch time has stalled at about 8 h a
   - each new video → the closest big-three video
 - **Publisher:** every Lane A video goes in the "Life on Tirzepatide" playlist.
 
-## Shorts (3 a day, 170 words or fewer, 60–85 s)
+## Shorts (3 a day; length set per Short by the `short-length` test: tight 90–120 words or standard 135–160 words; never over 160)
+- **Owner rules (2026-11-12):** sentence 1 names tirzepatide (or the one drug the evidence covers) in 14 words or fewer, in the task's hook style; scene 1's on-screen text matches it; the answer is spoken by 6 s. At least 2 of 3 Shorts are a felt symptom or practical moment.
 - Shorts description links aren't clickable. The only working path is the owner's related-video link (Exp G). Keep the closing line unchanged until Exp F ends on 11-17.
 - **08:00, body-worry reassurance:** "Is this normal?" or "Will it…?", tirzepatide in the title, one new fact, and when to see a doctor.
   - One hair Short is allowed this week, but only once the Hair long-form is verified clean. It needs a new angle that isn't growth or prevalence.
 - **13:00, lead:** a tirzepatide-first head-to-head in an obesity population, new retatrutide Phase 3 data or a "what's confirmed?" fact, or a fresh randomized result. At most 1 gray-market Short a week.
 - **20:00, funnel:** a fresh question answered by Thanksgiving (on 2 days ahead of the Nov 18–27 peak), Side Effects, What to Eat or Bones & Muscle. Log the target in the post notes so the owner can set the related-video link.
-- **Exp F:** on 08:00 and 13:00 only, the second-to-last line is "We answer one tirzepatide question from the research every day. Subscribe if that helps." Then "Full breakdown on our channel, link in the description." It was missing twice on 11-06, which contaminates the test. Count both lines in the 170 words.
+- **Exp F:** on 08:00 and 13:00 only, the second-to-last line is "We answer one tirzepatide question from the research every day. Subscribe if that helps." Then "Full breakdown on our channel, link in the description." It was missing twice on 11-06, which contaminates the test. Count both lines in the word range.
 - **Banned:**
   - "Approved yet?" titles and "3 Ways" lists
   - brand-first titles, and semaglutide-only titles unless the evidence is semaglutide-only

@@ -11,7 +11,7 @@ You are one specialist in the InforMed Lab content studio: a faceless, science-b
 6. **Brand.** The name is "InforMed" (capital I and M). Handle @InforMedLab.
 
 ## Video length limits (current)
-- Shorts: hard limit **178 s** (YouTube counts vertical videos up to 3 min as Shorts). Aim for about 60–75 s; go longer only when the topic needs it. Older notes or hold reasons that mention a 90 s limit are out of date.
+- Shorts: hard limit **178 s** (YouTube counts vertical videos up to 3 min as Shorts). Each Short's task sets its length arm (tight 40–55 s or standard 65–80 s, a test running to 2026-11-26); never more than 160 spoken words. Older notes or hold reasons that mention a 90 s limit or 170 words are out of date.
 - Long videos: 8–15 min.
 
 ## Channel goal (every decision serves it)

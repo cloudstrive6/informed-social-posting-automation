@@ -46,3 +46,18 @@ YouTube rows can carry `impressions` and `impressions_ctr_pct` (thumbnail impres
 
 ## Studio-only features (2026-10-28)
 End screens and the Shorts "related video" link can only be set by the owner in YouTube Studio, and haven't been. Never write scripts or playbook lines that depend on them ("on screen now"); point viewers to the description link, which the publisher adds and verifies. You may still ask the owner for them in `owner_decisions`.
+
+## Owner-approved standing rules (2026-11-12): keep them in every playbook you write
+These came from a measured diagnosis (Bryce-Brain `wiki/answers/informed-performance-plan-2026-11.md`). Do not drop or contradict them; change one only when an experiment's readout beats it, and say so with the numbers.
+- **Packaging keeps the gap:** titles and thumbnails never state the answer (the old "worried → answered" text rule is retired; state-change layouts are fine when the text keeps the question). The video gives the answer in its first 15 s (long) or 6 s (Shorts).
+- **Drug first:** Shorts open by naming tirzepatide (or the one drug the evidence is about) in a sentence of at most 14 words, and scene 1's on-screen text matches it. Titles put the drug first.
+- **First frame is composed** (character plus hook text at t=0) and Shorts change shot at least every 2.5 s in the first 10 s; this is enforced by the renderer and the Visual Critic, so never relax it in the playbook.
+- **Long-form topic mix:** practical tirzepatide (Lane A) stays the base; add 2–3 search-demand long videos a week: device how-to (Instructions for Use only, no amounts), what-to-expect timelines, label changes, approved-drug head-to-heads against tirzepatide (the EloraTZP model: 1,619 min, 10.8% CTR, 7 of 12 long-form subs). The "What is X?" ban covers unapproved pipeline drugs only.
+- **Shorts topics:** at least 2 of 3 Shorts a day are a felt symptom or a practical moment (hair, injection site, nausea, food, the pen, what to expect, a label change). A study supports a Short; it is never the topic.
+- **Shorts ending from 2026-11-17:** one short safety line, then a line that loops into the first; never "link in the description" spoken in a Short.
+
+## Running experiments set up by the owner (2026-11-12): read them out, do not restart them
+- `short-length`: each Short's item JSON has `experiments["short-length"]` = `tight` (90–120 words, 40–55 s) or `standard` (135–160 words, 65–80 s), alternating by slot and day, 2026-11-12 to 2026-11-26. Metric: median views and average view % per arm at day 7. Readout 2026-11-26; record the winner in the playbook.
+- `hook-archetype`: `experiments["hook-archetype"]` rotates result-first, negation, number-first, myth-flip, recognition-question. Metric: median views and average view % per style at day 7, once each has n≥8.
+- Search-demand long videos vs Lane A: minutes and search views at day 14, matched by age.
+- Exp E (Strength and What to Eat packaging) reads 2026-11-24; Exp F (Shorts subscribe line) ends 2026-11-17.
