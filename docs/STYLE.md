@@ -26,6 +26,19 @@ Reference studied: Kurzgesagt, "This Woman Cured Her Cancer with an Insane Metho
 - A real person's story carries the science.
 - One-line dramatic beats: "Unfortunately at least one cell survived." / "Stage 3B."
 
+## Opening craft rules (owner-approved 2026-11-12)
+From the 2026-11-11 craft audit (frame 0 was an empty room on every video while the voice was already talking; the first 6 to 8 s of Shorts were one static shot with two stacked text blocks; captions ran under the Shorts button rail; long-forms held static shots with thumb-sized characters for 30 s; a "zoom" transition drew a translucent rectangle mid-cut). Enforced in `src/media/animated.ts` and checked in `src/qa/visualQa.ts`; test locally with `npx tsx scripts/opening-craft-test.ts`.
+
+| Rule | Engine | QA |
+|---|---|---|
+| Frame 0 fully composed: first shot's hero and hook text visible at t = 0 (no fade/pop; a slight 1.0 to 1.04 settle on the hero is fine) | first shot's hero, title and anything due in 0.6 s start visible; long-form without a title gets scene 1's `on_screen_text` as headline (the first spoken words, max 6, when there is none or the hero talks); a Short without an opening title has its first caption pinned to t = 0 | `frameZeroAudit`: blocks a render whose frame 0 has no fully visible hook text and no character (an engine bug) |
+| Shorts first 10 s: a visual change every 2.5 s or less, a punch-in by about 1.2 s | `pace()`: camera punch-in (x1.15 toward the hero) at ~1.2 s, more punch-ins in any longer static stretch; punch-ins stay 0.8 s or more from any cut; only cuts, big entrances (size 30+ or swarms), titles in/out and punch-ins count | `pacingReport` (report-only): at least 4 changes in 10 s, longest stretch <= 2.5 s |
+| Long-form first 60 s: at most about 5 s per shot | `pace()`: punch-ins (x1.12) fill stretches over 5 s | `pacingReport` (report-only) |
+| Long-form first 30 s: main character >= 35% of frame height | hero below size 35 is enlarged to 35 | Visual Critic check 6 |
+| Shorts: captions win, one text block at a time | only the first shot's title is drawn, for at most 2 s from t = 0 (captions wait only then); headlines, chips and labels on later shots are not drawn; big-number stats (number + label of at most 8 words) stay as art above the caption band, with captions running | `qa.visual.captionCoverage` (share of spoken words and of speech time captioned; chirp-S2: 97% / 96%); `opening-craft-test` counts title + caption overlaps |
+| Shorts safe zone: captions and key text inside x 60 to 900, y 180 to 1500 (1080x1920) | captions top 1170 px, 60 to 900 px wide, size 80/72/64 by length; titles and bubbles use the same side margins | layout audit `unsafe` finding for titles (untransformed layout box, or text overflowing its box) |
+| No translucent "zoom" rectangle | `zoom` transition is a zoom-through from 1.35x (always covers the frame) | |
+
 ## How InforMed implements it
 
 | Reference trait | Our implementation |

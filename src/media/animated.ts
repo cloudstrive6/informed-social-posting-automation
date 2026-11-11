@@ -29,6 +29,33 @@ export interface TimedShot extends Shot { start: number; end: number }
 const f3 = (n: number) => Math.max(0, n).toFixed(3);
 const TRANS_DUR = 0.55;
 
+/**
+ * Opening craft rules (owner-approved 2026-11-12, from the 2026-11-11 craft audit):
+ *  - frame 0 is fully composed: the first shot's hero art and its hook text are on screen at t = 0, with no
+ *    fade/pop entrance (the voice is already at full level at t = 0, and frame 0 is the Shorts feed preview);
+ *  - pacing: a visual change (cut, punch-in, big new element, headline/stat/chips in or out) at least every `gap` s
+ *    within `window` s,
+ *    filled with deterministic camera punch-ins where the plan leaves a longer static stretch;
+ *  - Shorts (any video with burned-in captions): captions win. Only the first shot may show a title, for at most
+ *    OPENING_TITLE s from t = 0 (the hook, which the scriptwriter makes equal to the first spoken line); captions
+ *    are hidden only in that window and later titles are not drawn, so the captions run uninterrupted (big-number
+ *    stats stay: they are art above the caption band, and the captions keep running under them);
+ *  - long-form: the main character in the first 30 s is at least 35% of the frame height.
+ */
+export const PACING = {
+  short: { window: 10, gap: 2.5, firstPunch: 1.2, scale: 1.15 },
+  long: { window: 60, gap: 5, firstPunch: 2.5, scale: 1.12 },
+};
+/** Shorts safe zone on 1080x1920 (clear of the right-hand button rail and the bottom UI). */
+export const SHORTS_SAFE = { left: 60, right: 900, top: 180, bottom: 1500 };
+const LONG_HERO_MIN = 35; // % of frame height, first 30 s of a long video
+/** With burned-in captions, the opening title (first shot only) holds this long, then the captions take over. */
+const OPENING_TITLE = 2.0;
+/** Punch-ins stay this far from any cut, so the beat-sync render check can't mistake one for an on-time cut. */
+const PUNCH_CLEAR = 0.8;
+/** Change times closer than this are one change. */
+const dedupe = (ts: number[], eps = 0.1) => [...ts].sort((a, b) => a - b).filter((t, i, a) => i === 0 || t - a[i - 1] >= eps);
+
 // ------------------------------------------------------------------ timing
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9' ]/g, " ").split(/\s+/).filter(Boolean);
 
@@ -65,7 +92,21 @@ export function timeShots(shots: Shot[], tl: Timeline): TimedShot[] {
 }
 
 // ------------------------------------------------------------------ builders
-interface Ctx { els: string[]; anims: string[]; cues: SfxCue[]; n: number; W: number; H: number; vertical: boolean; theme: Theme }
+interface ShotMeta { start: number; end: number; punchId: string }
+interface Ctx {
+  els: string[]; anims: string[]; cues: SfxCue[]; n: number; W: number; H: number; vertical: boolean; theme: Theme;
+  /** scene 1's on-screen hook text, used as the first shot's headline when it has no title and no captions carry it */
+  hook?: string;
+  /** the first spoken words (fallback hook when scene 1 has no on-screen text) */
+  firstWords?: string;
+  /** captions are burned in: titles then hold briefly and captions hide while a title is up */
+  captions: boolean;
+  /** times of clear visual changes (cuts, big entrances, titles in/out, punch-ins) for pacing */
+  changes: number[];
+  /** intervals in which a title block is on screen (captions are hidden there) */
+  textWin: [number, number][];
+  meta: ShotMeta[];
+}
 const uid = (c: Ctx, p: string) => `${p}${c.n++}`;
 
 function svgOf(type: string, p: Palette, tone: Tone, seed: number, variant: string) {
@@ -215,7 +256,7 @@ function speechBubbles(c: Ctx, shot: TimedShot, speakers: Speaker[]): string {
 
 /** Big-number size that always fits the frame width (heavy display font ≈ 0.64 em per character). */
 const statSize = (text: string, c: Ctx) => {
-  const base = c.vertical ? 230 : 210, room = c.W * (c.vertical ? 0.8 : 0.7);
+  const base = c.vertical ? 230 : 210, room = c.vertical ? (SHORTS_SAFE.right - SHORTS_SAFE.left) * 0.95 : c.W * 0.7;
   return Math.round(Math.max(96, Math.min(base, room / (Math.max(1, [...text].length) * 0.64))));
 };
 
@@ -227,22 +268,49 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
   const shotId = uid(c, "shot");
   const camId = uid(c, "cam");
   const t0 = shot.start;
+  const punchId = uid(c, "pn");
+  // the opening shot: everything that matters is already on screen at frame 0
+  const first = index === 0 && t0 < 0.05;
   let inner = background(c, shot, p, seed);
+  if (index > 0) c.changes.push(t0);
+
+  // frame 0 needs the hook text: without burned-in captions (long-form) the first shot always opens on a headline:
+  // scene 1's on-screen text, or the first spoken words when there is none or the hero talks (a bubble line is not a hook)
+  if (first && shot.title.style === "none" && !c.captions) {
+    const text = (shot.elements.some(e => e.says?.trim()) ? "" : c.hook?.trim()) || c.firstWords?.trim();
+    if (text) shot = { ...shot, title: { style: "headline", text, sub: "", items: [] } };
+  }
+  // with burned-in captions, captions win: only the first shot keeps its title (for OPENING_TITLE s); later titles are
+  // not drawn, and their shots don't reserve the title band. Big-number stats are art, not a second sentence: they
+  // stay (number + a label of at most 8 words, above the caption band) and the captions keep running under them
+  if (c.captions && !first && shot.title.style !== "none" && shot.title.style !== "stat") shot = { ...shot, title: { style: "none", text: "", sub: "", items: [] } };
+  if (c.captions && shot.title.style === "stat") shot = { ...shot, title: { ...shot.title, sub: shot.title.sub.split(/\s+/).filter(Boolean).slice(0, 8).join(" ") } };
 
   // ---- elements (swarm = count > 1)
   const depthZ = { bg: 1, mid: 2, fg: 3 };
   const depthPar = { bg: 0.4, mid: 1, fg: 1.6 };
   const speakers: Speaker[] = [];
+  // the shot's main character: the biggest single (non-swarm) foreground/mid element
+  const heroOf = (els: ShotElement[]) => els.filter(e => e.depth !== "bg").sort((a, b) => (Math.round(a.count) > 1 ? 1 : 0) - (Math.round(b.count) > 1 ? 1 : 0) || b.size - a.size)[0];
+  // long-form: tiny characters in the first 30 s read as an empty frame; the main character is >= 35% of the height
+  let planned = shot.elements;
+  const hero0 = heroOf(planned);
+  if (!c.vertical && t0 < 30 && hero0 && Math.round(hero0.count) <= 1 && hero0.size < LONG_HERO_MIN)
+    planned = planned.map(e => (e === hero0 ? { ...e, size: LONG_HERO_MIN, y: Math.min(e.y, 100 - 3 - LONG_HERO_MIN / 2) } : e));
   // Title band: when the shot has a headline or stat, keep every foreground/mid element's top below it
   const titled = shot.title.style === "headline" || shot.title.style === "stat";
   const bandBottom = c.vertical ? 34 : 44; // % of frame height the title may use
-  const elements = !titled ? shot.elements : shot.elements.map(e => {
+  const elements = !titled ? planned : planned.map(e => {
     if (e.depth === "bg") return e;
     const half = e.size / 2;
     const size = Math.min(e.size, (100 - 3 - bandBottom)); // must fit between the band and the bottom edge
     const y = Math.min(100 - 3 - size / 2, Math.max(e.y, bandBottom + size / 2 + (c.vertical ? 0 : 2)));
     return y !== e.y || size !== e.size ? { ...e, y, size, spread: Math.min(e.spread, 100 - y - half) } : e;
   });
+  const hero = heroOf(elements);
+  // punch-ins zoom toward the main character
+  const origin = hero ? `${Math.min(80, Math.max(20, hero.x)).toFixed(0)}% ${Math.min(75, Math.max(25, hero.y)).toFixed(0)}%` : "50% 50%";
+  c.meta[index] = { start: t0, end: shot.end, punchId };
   for (const el of elements) {
     const expr = el.face && el.face !== "none" ? el.face : el.says && canHaveFace(el) ? "happy" : "none";
     const maxCopies = el.type === "person" ? 6 : (["heart", "brain", "liver", "stomach", "lungs", "kidney", "gut"].includes(el.type) ? 2 : 30);
@@ -261,17 +329,28 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
       inner += `<div id="${id}" class="el" style="left:${x}%;top:${y}%;width:${sizePx.toFixed(0)}px;height:${sizePx.toFixed(0)}px;margin:-${(sizePx / 2).toFixed(0)}px;z-index:${depthZ[el.depth] ?? 2};${el.depth === "bg" ? "opacity:.55;" : ""}">` +
         // layers: #id = entrance, #idp = camera parallax, #idi = idle motion (one writer per property per layer)
         `<div class="par" id="${id}p"><div class="spin" id="${id}i"><div class="art" style="position:relative;width:100%;height:100%;${el.flip ? "transform:scaleX(-1)" : ""}">${art}</div></div></div>${label}</div>`;
-      const enterT = t0 + Math.min(dur - 0.4, el.enter_at * dur) + (copies > 1 ? k * Math.min(0.08, 1.2 / copies) : 0);
+      let enterT = t0 + Math.min(dur - 0.4, el.enter_at * dur) + (copies > 1 ? k * Math.min(0.08, 1.2 / copies) : 0);
+      // opening shot: the hero and anything due in the first 0.6 s are already there at frame 0 (no fade/pop)
+      const present = first && (el === hero || enterT - t0 < 0.6 || el.enter === "none");
+      if (present) enterT = t0;
       if (face?.blinks) {
         for (let bt = enterT + 0.8 + r() * 1.5; bt < shot.end - 0.3; bt += 2.2 + r() * 1.8)
           c.anims.push(`tl.fromTo("#${face.eyes}",{scaleY:1},{scaleY:0.1,duration:0.07,yoyo:true,repeat:1,transformOrigin:"50% 50%"},${f3(bt)});`);
       }
       if (el.says && k === 0) speakers.push({ el, face, x, y, sizePx, enterT });
-      c.anims.push(enterTween(`#${id}`, el.enter, enterT, c.W));
+      if (present) {
+        // alive from the first frame: a gentle settle that starts fully visible (scale 1 -> 1.04)
+        if (el === hero && k === 0) c.anims.push(`tl.fromTo("#${id}",{scale:1},{scale:1.04,duration:${f3(Math.min(1.6, dur))},ease:"sine.out"},${f3(t0)});`);
+      } else {
+        c.anims.push(enterTween(`#${id}`, el.enter, enterT, c.W));
+        // only entrances big enough to read as a change count for pacing (a small prop popping in barely registers:
+        // measured with ffmpeg scene scores on a test render, 2026-11-12)
+        if (el.enter !== "none" && el.depth !== "bg" && k === 0 && (el.size >= 30 || copies > 3)) c.changes.push(enterT);
+      }
       c.anims.push(motionTween(`#${id}i`, el.motion, t0, dur, r));
       // parallax drift with the camera
       if (shot.camera !== "static") c.anims.push(`tl.fromTo("#${id}p",{x:0},{x:${((r() - 0.5) * 30 * depthPar[el.depth]).toFixed(0)},duration:${f3(dur)},ease:"none"},${f3(t0)});`);
-      if (el.enter !== "none" && k < 6) c.cues.push({ t: enterT, sfx: el.enter === "pop" ? (copies > 3 ? "bubble" : "pop") : el.enter === "grow" ? "swell" : "swoosh", gain: copies > 3 ? 0.35 : 0.6 });
+      if (el.enter !== "none" && k < 6 && !present) c.cues.push({ t: enterT, sfx: el.enter === "pop" ? (copies > 3 ? "bubble" : "pop") : el.enter === "grow" ? "swell" : "swoosh", gain: copies > 3 ? 0.35 : 0.6 });
     }
   }
   const bubbles = speechBubbles(c, shot, speakers);
@@ -296,39 +375,65 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
   let overlay = bubbles;
   const tt = shot.title;
   const labelSize = c.vertical ? 46 : 40;
+  // long-form: a title appearing counts as a change (a small label pill doesn't; bubbles don't either). With burned-in
+  // captions only the first shot has a title: it holds OPENING_TITLE s, the captions are hidden only in that window
+  const hold = (kind: string, sel: string, tIn: number) => {
+    if (!first && kind !== "label") c.changes.push(tIn);
+    if (!c.captions || kind === "stat") return; // a stat is art: it stays for the shot and the captions keep running
+    const out = Math.min(shot.end, tIn + OPENING_TITLE);
+    if (out < shot.end - 0.25) {
+      c.anims.push(`tl.fromTo("${sel}",{opacity:1},{opacity:0,duration:0.18,immediateRender:false},${f3(out - 0.18)});`);
+      c.changes.push(out);
+      c.textWin.push([tIn, out]);
+    } else c.textWin.push([tIn, shot.end + TRANS_DUR]);
+  };
   if (tt.style === "label" && tt.text) {
     const lid = uid(c, "lab");
-    overlay += `<div id="${lid}" class="label" style="font-size:${labelSize}px;${c.vertical ? "left:50%;top:15%;transform:translateX(-50%)" : "left:5%;top:7%"}"><span class="ldot"></span>${esc(tt.text)}</div>`;
-    const t = t0 + Math.min(0.6, dur * 0.2);
-    c.anims.push(`tl.fromTo("#${lid}",{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.4,ease:"back.out(2)"},${f3(t)});`);
-    c.cues.push({ t, sfx: "blip", gain: 0.55 });
+    overlay += `<div id="${lid}" class="label" style="font-size:${labelSize}px;${c.vertical ? `left:${SHORTS_SAFE.left}px;right:${c.W - SHORTS_SAFE.right}px;width:fit-content;margin:0 auto;top:15%` : "left:5%;top:7%"}"><span class="ldot"></span>${esc(tt.text)}</div>`;
+    const t = first ? t0 : t0 + Math.min(0.6, dur * 0.2);
+    if (!first) {
+      c.anims.push(`tl.fromTo("#${lid}",{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.4,ease:"back.out(2)"},${f3(t)});`);
+      c.cues.push({ t, sfx: "blip", gain: 0.55 });
+    }
+    hold("label", `#${lid}`, t);
   } else if (tt.style === "headline" && tt.text) {
     const hid = uid(c, "hd");
     overlay += `<div id="${hid}" class="headline" style="font-size:${c.vertical ? 96 : 104}px;top:${c.vertical ? 14 : 11}%">${esc(tt.text)}${tt.sub ? `<div class="hsub">${esc(tt.sub)}</div>` : ""}</div>`;
-    const t = t0 + 0.25;
-    c.anims.push(`tl.fromTo("#${hid}",{opacity:0,scale:1.25},{opacity:1,scale:1,duration:0.45,ease:"power4.out"},${f3(t)});`);
-    c.cues.push({ t, sfx: "hit", gain: 0.7 });
+    const t = first ? t0 : t0 + 0.25;
+    if (!first) {
+      c.anims.push(`tl.fromTo("#${hid}",{opacity:0,scale:1.25},{opacity:1,scale:1,duration:0.45,ease:"power4.out"},${f3(t)});`);
+      c.cues.push({ t, sfx: "hit", gain: 0.7 });
+    }
+    hold("headline", `#${hid}`, t);
   } else if (tt.style === "stat" && tt.text) {
     const sid = uid(c, "st");
     overlay += `<div id="${sid}" class="stat" style="top:${c.vertical ? 13 : 11}%"><div class="sv" style="font-size:${statSize(tt.text, c)}px">${esc(tt.text)}</div><div class="sl" style="font-size:${c.vertical ? 50 : 46}px">${esc(tt.sub)}</div></div>`;
-    const t = t0 + 0.3;
-    c.anims.push(`tl.fromTo("#${sid} .sv",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.6,ease:"elastic.out(1,0.55)"},${f3(t)});`);
-    c.anims.push(`tl.fromTo("#${sid} .sl",{y:40,opacity:0},{y:0,opacity:1,duration:0.4},${f3(t + 0.35)});`);
-    c.cues.push({ t, sfx: "ding", gain: 0.6 });
+    const t = first ? t0 : t0 + 0.3;
+    if (!first) {
+      c.anims.push(`tl.fromTo("#${sid} .sv",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.6,ease:"elastic.out(1,0.55)"},${f3(t)});`);
+      c.anims.push(`tl.fromTo("#${sid} .sl",{y:40,opacity:0},{y:0,opacity:1,duration:0.4},${f3(t + 0.35)});`);
+      c.cues.push({ t, sfx: "ding", gain: 0.6 });
+    }
+    hold("stat", `#${sid}`, t);
   } else if (tt.style === "chips" && tt.items?.length) {
     const base = uid(c, "ch");
-    overlay += `<div class="chips" style="${c.vertical ? "top:11%;left:5%;right:5%;flex-wrap:wrap" : "top:8%"}">${tt.items.map((it, i) => `<span id="${base}_${i}" class="chip" style="font-size:${c.vertical ? 44 : 34}px">${esc(it)}</span>`).join("")}</div>`;
+    overlay += `<div id="${base}" class="chips" style="${c.vertical ? `top:11%;left:${SHORTS_SAFE.left}px;right:${c.W - SHORTS_SAFE.right}px;flex-wrap:wrap` : "top:8%"}">${tt.items.map((it, i) => `<span id="${base}_${i}" class="chip" style="font-size:${c.vertical ? 44 : 34}px">${esc(it)}</span>`).join("")}</div>`;
     tt.items.forEach((_, i) => {
+      if (first) return;
       const t = t0 + 0.3 + i * Math.min(0.5, (dur * 0.6) / tt.items.length);
       c.anims.push(`tl.fromTo("#${base}_${i}",{opacity:0,y:-30},{opacity:1,y:0,duration:0.35,ease:"back.out(2)"},${f3(t)});`);
       c.cues.push({ t, sfx: "blip", gain: 0.45 });
     });
+    hold("chips", `#${base}`, first ? t0 : t0 + 0.3);
   }
 
   // ---- transition in
   const tr = index === 0 ? "cut" : shot.transition;
   if (tr === "iris") c.anims.push(`tl.fromTo("#${shotId}",{clipPath:"circle(0% at 50% 50%)"},{clipPath:"circle(75% at 50% 50%)",duration:${TRANS_DUR},ease:"power2.inOut"},${f3(t0)});`);
-  if (tr === "zoom") c.anims.push(`tl.fromTo("#${shotId}",{scale:0.4,opacity:0},{scale:1,opacity:1,duration:${TRANS_DUR},ease:"power3.out"},${f3(t0)});`);
+  // zoom-through: the incoming shot starts overscaled so it always covers the frame. (It used to grow from 40%,
+  // which drew a translucent hard-edged rectangle over the previous shot mid-transition: the "overlay artifact"
+  // in the 2026-11-02 Hair Loss long video at 5 s.)
+  if (tr === "zoom") c.anims.push(`tl.fromTo("#${shotId}",{scale:1.35,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"power3.out"},${f3(t0)});`);
   if (tr === "whip") c.anims.push(`tl.fromTo("#${shotId}",{x:${c.W}},{x:0,duration:0.35,ease:"expo.out"},${f3(t0)});`);
   if (tr === "fade") c.anims.push(`tl.fromTo("#${shotId}",{opacity:0},{opacity:1,duration:${TRANS_DUR}},${f3(t0)});`);
   if (tr === "slide-up") c.anims.push(`tl.fromTo("#${shotId}",{y:${c.H}},{y:0,duration:0.5,ease:"power3.out"},${f3(t0)});`);
@@ -337,11 +442,61 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
 
   // the previous shot stays visible under this one while it transitions in
   const visibleEnd = shot.end + TRANS_DUR + 0.05;
+  // layers: #punch = pacing punch-ins (see pace()), #cam = the planned camera move
   return `<div id="${shotId}" class="clip shot${p.dark && !LIGHT_BACKDROPS.has(bg) && c.theme !== "doodle" ? "" : " light"}${LIGHT_BACKDROPS.has(bg) ? " scene" : ""}" data-start="${f3(t0)}" data-duration="${f3(visibleEnd - t0)}" style="z-index:${10 + index}">` +
-    `<div id="${camId}" class="cam">${inner}</div>${overlay}</div>`;
+    `<div id="${punchId}" class="punch" style="transform-origin:${origin}"><div id="${camId}" class="cam">${inner}</div></div>${overlay}</div>`;
+}
+
+/**
+ * Pacing: a visual change at least every `gap` s in the opening `window` s (Shorts: 2.5 s over 10 s, with a
+ * punch-in by 1.2 s; long-form: 5 s over the first minute). Where the plan leaves a longer static stretch, a quick
+ * camera punch-in (or punch-back-out on a shot already punched in) toward the main character fills it.
+ * Deterministic: no model call. Returns every change time in the window.
+ */
+function pace(c: Ctx, D: number): number[] {
+  const rule = c.vertical ? PACING.short : PACING.long;
+  const end = Math.min(rule.window, D - 0.3);
+  const punched = new Map<number, boolean>();
+  const shotAt = (t: number) => c.meta.findIndex(m => m && t >= m.start && t < m.end);
+  const punch = (t: number) => {
+    const i = shotAt(t);
+    if (i < 0) return false;
+    const m = c.meta[i];
+    if (c.meta.some(x => x && Math.abs(x.start - t) < PUNCH_CLEAR)) return false; // too close to a cut
+    const inNow = punched.get(i) ?? false;
+    const [a, b] = inNow ? [rule.scale, 1] : [1, rule.scale];
+    c.anims.push(`tl.fromTo("#${m.punchId}",{scale:${a}},{scale:${b},duration:0.16,ease:"power3.out",immediateRender:false},${f3(t)});`);
+    c.cues.push({ t, sfx: "swoosh", gain: 0.3 });
+    punched.set(i, !inNow);
+    c.changes.push(t);
+    return true;
+  };
+  const near = (t: number, w: number) => c.changes.some(x => Math.abs(x - t) < w);
+  // the opening punch-in lands by ~1.2 s on a Short (2.5 s on a long video) unless a cut already lands by then
+  if (end > rule.firstPunch + 0.5 && !c.meta.some((m, i) => i > 0 && m.start > 0.4 && m.start <= rule.firstPunch + 0.15)) {
+    for (const t of [rule.firstPunch, rule.firstPunch - 0.25, rule.firstPunch + 0.2, rule.firstPunch - 0.4, rule.firstPunch + 0.4])
+      if (!near(t, 0.2) && punch(t)) break;
+  }
+  // then fill every stretch longer than `gap`
+  const unfillable = new Set<string>();
+  for (let guard = 0; guard < 200; guard++) {
+    const ev = [0, ...c.changes.filter(x => x > 0 && x <= end).sort((a, b) => a - b), end];
+    let filled = false;
+    for (let i = 1; i < ev.length && !filled; i++) {
+      const key = ev[i - 1].toFixed(3);
+      if (ev[i] - ev[i - 1] <= rule.gap || unfillable.has(key)) continue;
+      // aim a little before the limit; step earlier if that moment sits on a shot boundary or another change
+      let t = ev[i - 1] + rule.gap * 0.85;
+      for (let k = 0; k < 8 && !filled; k++, t -= 0.2) if (t > ev[i - 1] + 0.5 && !near(t, 0.4)) filled = punch(+t.toFixed(3));
+      if (!filled) unfillable.add(key);
+    }
+    if (!filled) break;
+  }
+  return dedupe(c.changes.filter(x => x > 0 && x <= rule.window));
 }
 
 function css(W: number, H: number, fontFace: string) {
+  const safeL = SHORTS_SAFE.left, safeR = W - SHORTS_SAFE.right;
   return `${fontFace}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:${W}px;height:${H}px;overflow:hidden;background:#12072e}
@@ -349,6 +504,7 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#12072e}
 .clip{position:absolute;inset:0}
 .shot{overflow:hidden}
 .cam{position:absolute;inset:0;transform-origin:50% 50%}
+.punch{position:absolute;inset:0}
 .el{position:absolute}
 .el .par,.el .spin{width:100%;height:100%}
 .elabel{position:absolute;left:50%;top:100%;transform:translateX(-50%);margin-top:10px;white-space:nowrap;font-weight:800;color:#fff;background:rgba(20,10,45,.75);padding:6px 16px;border-radius:30px}
@@ -373,11 +529,45 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#12072e}
 .bubble .tail{position:absolute;width:40px;height:40px;margin-left:-20px;background:#fff;border-right:6px solid #1b1030;border-bottom:6px solid #1b1030}
 .bubble .tail.down{bottom:-24px;transform:rotate(45deg)}
 .bubble .tail.up{top:-24px;transform:rotate(225deg)}
+#root.vert .headline,#root.vert .stat,#root.vert .bwrap,#root.vert .cap{left:${safeL}px;right:${safeR}px}
 ${DOODLE_CSS}`;
 }
 
-function captions(c: Ctx, scenes: CaptionScene[], tl: Timeline) {
+/** Shorts caption top (px on 1920): a 3-line caption at the largest size still ends above SHORTS_SAFE.bottom. */
+const CAP_TOP_V = 1170;
+
+/** The part of [s, e] outside every title window (the longer side when a window sits inside it), or null if < 0.35 s. */
+export function outsideTitles(s: number, e: number, wins: [number, number][]): [number, number] | null {
+  for (const [a0, b0] of wins) {
+    const a = a0 - 0.05, b = b0 + 0.05;
+    if (b <= s || a >= e) continue;
+    if (a <= s && b >= e) return null;
+    if (a <= s) s = b;
+    else if (b >= e) e = a;
+    else if (a - s >= e - b) e = a;
+    else s = b;
+  }
+  return e - s >= 0.35 ? [s, e] : null;
+}
+
+export interface CaptionCoverage { words: number; captioned: number; wordShare: number; speechSeconds: number; timeShare: number }
+
+/** Union length of intervals. */
+const unionLen = (iv: [number, number][]) => {
+  let total = 0, ce = -Infinity;
+  for (const [a, b] of [...iv].sort((x, y) => x[0] - y[0])) {
+    if (b <= ce) continue;
+    total += b - Math.max(a, ce);
+    ce = b;
+  }
+  return total;
+};
+
+function captions(c: Ctx, scenes: CaptionScene[], tl: Timeline): CaptionCoverage {
   const byId = new Map(tl.scenes.map(s => [s.id, s]));
+  let firstGroup = true;
+  let nWords = 0, captioned = 0;
+  const speech: [number, number][] = [], shown: [number, number][] = [];
   for (const sc of scenes) {
     const t = byId.get(sc.id);
     if (!t) continue;
@@ -400,28 +590,55 @@ function captions(c: Ctx, scenes: CaptionScene[], tl: Timeline) {
       }
     }
     for (const g of groups) {
-      const s = g[0].start, e = Math.max(g[g.length - 1].end, s + 0.3);
+      let s = g[0].start, e = Math.max(g[g.length - 1].end, s + 0.3);
+      nWords += g.length;
+      g.forEach(w => speech.push([w.start, Math.max(w.end, w.start + 0.05)]));
+      // frame 0: when no title carries the hook, the opening caption is up from t = 0 (no pop), even if the first
+      // word starts late
+      const opening = firstGroup && !c.textWin.some(([a]) => a < 0.05);
+      firstGroup = false;
+      if (opening) s = 0;
+      // one text block at a time: no caption during the opening title
+      const span = outsideTitles(s, e, c.textWin);
+      if (!span) continue;
+      [s, e] = span;
+      captioned += g.length;
+      shown.push([s, e]);
       const base = uid(c, "cp");
-      c.els.push(`<div class="clip" data-start="${f3(s)}" data-duration="${f3(e - s)}" style="z-index:900"><div id="${base}" class="cap" style="top:64%;font-size:86px">${g.map((w, k) => `<span id="${base}_${k}">${esc(w.text)}</span>`).join(" ")}</div></div>`);
-      c.anims.push(`tl.fromTo("#${base}",{scale:0.8,opacity:0},{scale:1,opacity:1,duration:0.12,ease:"back.out(2)"},${f3(s)});`);
+      // Shorts: fixed top inside the safe zone; long lines get a smaller size so 3 lines still end above y 1500
+      const chars = g.reduce((a, w) => a + w.text.length + 1, 0);
+      const style = c.vertical ? `top:${CAP_TOP_V}px;font-size:${chars <= 26 ? 80 : chars <= 40 ? 72 : 64}px` : "top:64%;font-size:86px";
+      c.els.push(`<div class="clip" data-start="${f3(s)}" data-duration="${f3(e - s)}" style="z-index:900"><div id="${base}" class="cap" style="${style}">${g.map((w, k) => `<span id="${base}_${k}">${esc(w.text)}</span>`).join(" ")}</div></div>`);
+      if (!opening) c.anims.push(`tl.fromTo("#${base}",{scale:0.8,opacity:0},{scale:1,opacity:1,duration:0.12,ease:"back.out(2)"},${f3(s)});`);
       g.forEach((w, k) => c.anims.push(`tl.set("#${base}_${k}",{color:"${config.brand.colors.highlight}"},${f3(w.start)});tl.set("#${base}_${k}",{color:"#ffffff"},${f3(w.end + 0.02)});`));
     }
   }
+  // coverage: share of spoken words ever captioned, share of speech time with a caption on screen
+  const speechSeconds = unionLen(speech);
+  const overlap = unionLen(speech) + unionLen(shown) - unionLen([...speech, ...shown]);
+  return {
+    words: nWords, captioned, wordShare: nWords ? +(captioned / nWords).toFixed(3) : 1,
+    speechSeconds: +speechSeconds.toFixed(2), timeShare: speechSeconds ? +(overlap / speechSeconds).toFixed(3) : 1,
+  };
 }
 
 /** Build the composition. Returns the project dir and the SFX cue sheet. */
-export async function composeAnimated(dir: string, shots: TimedShot[], tl: Timeline, opts: { vertical: boolean; captionScenes?: CaptionScene[]; theme?: Theme }) {
+export async function composeAnimated(dir: string, shots: TimedShot[], tl: Timeline, opts: { vertical: boolean; captionScenes?: CaptionScene[]; theme?: Theme; hook?: string }) {
+  // fallback hook: the first spoken words, up to 6, stopping at the end of the first sentence
+  const fw: string[] = [];
+  for (const w of tl.scenes[0]?.words ?? []) { fw.push(w.text); if (fw.length >= 6 || /[.!?]$/.test(w.text)) break; }
   const W = opts.vertical ? 1080 : 1920, H = opts.vertical ? 1920 : 1080, D = tl.duration;
   ensureDir(dir);
   const fontFace = await installBrandAssets(dir);
   // bundle GSAP locally: deterministic, offline-safe, and loadable by the QA browser
   copyFileSync(join(ROOT, "node_modules", "gsap", "dist", "gsap.min.js"), join(dir, "assets", "gsap.min.js"));
   const theme: Theme = opts.theme ?? (process.env.VIDEO_THEME as Theme | undefined) ?? config.video.theme ?? "vibrant";
-  const c: Ctx = { els: [], anims: [], cues: [], n: 0, W, H, vertical: opts.vertical, theme };
+  const c: Ctx = { els: [], anims: [], cues: [], n: 0, W, H, vertical: opts.vertical, theme, hook: opts.hook, firstWords: fw.join(" ").replace(/[,;:]$/, ""), captions: !!opts.captionScenes, changes: [], textWin: [], meta: [] };
   // hand-drawn line boil: re-seed the wobble noise ~8x per second
   if (theme === "doodle") c.anims.push(`tl.fromTo("#wobt",{attr:{seed:1}},{attr:{seed:${Math.round(D * 8) + 1}},duration:${f3(D)},ease:"none"},0);`);
   shots.forEach((s, i) => c.els.push(shotHtml(c, s, i)));
-  if (opts.captionScenes) captions(c, opts.captionScenes, tl);
+  const changes = pace(c, D);
+  const captionCoverage = opts.captionScenes ? captions(c, opts.captionScenes, tl) : undefined;
   const logo = opts.vertical ? "left:410px;top:90px;width:260px" : "right:44px;top:36px;width:200px";
   c.els.push(`<div class="clip" data-start="0" data-duration="${f3(D)}" style="z-index:950"><img class="logo" src="assets/logo-horizontal-${theme === "doodle" ? "dark" : "white"}.png" style="${logo};height:auto;opacity:.85;${theme === "doodle" ? "" : "filter:drop-shadow(0 2px 8px rgba(0,0,0,.45))"}"/></div>`);
 
@@ -431,7 +648,7 @@ export async function composeAnimated(dir: string, shots: TimedShot[], tl: Timel
 <style>${css(W, H, fontFace)}</style></head>
 <body>
 ${theme === "doodle" ? DOODLE_DEFS : ""}
-<div id="root" class="${theme}" data-composition-id="main" data-start="0" data-duration="${f3(D)}" data-width="${W}" data-height="${H}" data-fps="${config.video.fps}">
+<div id="root" class="${theme}${opts.vertical ? " vert" : ""}" data-composition-id="main" data-start="0" data-duration="${f3(D)}" data-width="${W}" data-height="${H}" data-fps="${config.video.fps}">
 ${c.els.join("\n")}
 </div>
 <script>
@@ -448,5 +665,5 @@ tl.seek(0);
   writeText(join(dir, "index.html"), html);
   // de-duplicate cues that land on top of each other
   const cues = c.cues.sort((a, b) => a.t - b.t).filter((q, i, a) => i === 0 || q.t - a[i - 1].t > 0.09 || q.sfx !== a[i - 1].sfx);
-  return { dir, cues };
+  return { dir, cues, captionCoverage, pacing: { changes, textWindows: c.textWin.map(([a, b]) => [+a.toFixed(2), +b.toFixed(2)] as [number, number]) } };
 }

@@ -5,6 +5,7 @@
  *     (off-screen, text-on-text overlap, too small, text sitting on the hero artwork).
  *  3. critiqueShots: renders key frames (pre-render snapshots), lays them out as contact sheets
  *     and has the Visual Critic agent score appeal/readability per shot.
+ *  4. frameZeroAudit (blocking) and pacingReport (report-only): the opening craft rules, checked without AI.
  */
 import { readdirSync, readFileSync } from "node:fs";
 import { basename, join, resolve } from "node:path";
@@ -14,7 +15,7 @@ import { runAgent } from "../lib/agent.js";
 import { config } from "../lib/config.js";
 import { ensureDir, writeJson } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
-import type { TimedShot } from "../media/animated.js";
+import { PACING, SHORTS_SAFE, type TimedShot } from "../media/animated.js";
 import { run } from "../media/exec.js";
 
 // ------------------------------------------------------------------ 1) every frame, technically
@@ -38,7 +39,7 @@ export async function technicalFrameChecks(video: string): Promise<FrameIssue[]>
 }
 
 // ------------------------------------------------------------------ 2) layout audit of text
-export interface LayoutIssue { t: number; kind: "offscreen" | "overlap" | "tiny" | "on-hero" | "sparse"; text: string; detail: string }
+export interface LayoutIssue { t: number; kind: "offscreen" | "overlap" | "tiny" | "on-hero" | "sparse" | "unsafe"; text: string; detail: string }
 
 /**
  * Near-empty shots (a few small props on a plain background) read as unfinished. Estimated straight from the
@@ -46,9 +47,10 @@ export interface LayoutIssue { t: number; kind: "offscreen" | "overlap" | "tiny"
  */
 export function sparseShots(shots: { start: number; end: number; background: string; elements: { size: number; count: number; depth: string }[]; title: { style: string } }[], W: number, H: number): LayoutIssue[] {
   const filled = new Set(["room", "kitchen", "outdoors", "body", "cells", "bloodstream", "tissue"]);
-  return shots.flatMap(s => {
+  // with burned-in captions (Shorts) only the first shot keeps its title, plus big-number stats (src/media/animated.ts)
+  return shots.flatMap((s, i) => {
     const area = s.elements.reduce((a, e) => a + Math.min(30, Math.max(1, Math.round(e.count))) * ((e.size / 100) * H) ** 2 * (e.depth === "bg" ? 0.64 : 1), 0) / (W * H);
-    const titled = s.title.style === "stat" || s.title.style === "headline";
+    const titled = s.title.style === "stat" || (s.title.style === "headline" && (H <= W || i === 0));
     const min = filled.has(s.background) ? 0.06 : 0.12;
     return !titled && area < min ? [{
       t: (s.start + s.end) / 2, kind: "sparse" as const, text: "",
@@ -65,7 +67,7 @@ export async function layoutAudit(projectDir: string, times: number[], W: number
   await page.waitForFunction(() => !!(window as any).__timelines?.main, null, { timeout: 30_000, polling: 250 });
   const issues: LayoutIssue[] = [];
   for (const t of times) {
-    const found = await page.evaluate(([t, W, H]) => {
+    const found = await page.evaluate(([t, W, H, safe]) => {
       // emulate the renderer: only elements whose [start, start+duration) covers t are visible
       document.querySelectorAll<HTMLElement>("[data-start]").forEach(el => {
         if (el.id === "root") return;
@@ -90,6 +92,18 @@ export async function layoutAudit(projectDir: string, times: number[], W: number
       const inter = (a: DOMRect, b: DOMRect) => Math.max(0, Math.min(a.right, b.right) - Math.max(a.left, b.left)) * Math.max(0, Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top));
       texts.forEach((a, i) => {
         if (a.r.left < -2 || a.r.top < -2 || a.r.right > W + 2 || a.r.bottom > H + 2) out.push({ kind: "offscreen", text: a.text, detail: `box ${Math.round(a.r.left)},${Math.round(a.r.top)},${Math.round(a.r.right)},${Math.round(a.r.bottom)}` });
+        // Shorts: titles must stay clear of the right-hand button rail and the bottom UI (captions are placed by the
+        // engine). Measured on the untransformed layout box (entrance/settle scaling and transitions never trip it),
+        // plus text that overflows its box.
+        else if (safe && !a.el.classList.contains("cap") && !a.el.classList.contains("elabel")) {
+          const el = a.el as HTMLElement;
+          let x = 0, y = 0, e: HTMLElement | null = el;
+          while (e && e.id !== "root") { x += e.offsetLeft; y += e.offsetTop; e = e.offsetParent as HTMLElement | null; }
+          const b = { left: x, top: y, right: x + el.offsetWidth, bottom: y + el.offsetHeight };
+          const overflow = el.scrollWidth > el.clientWidth + 2;
+          if (overflow || b.left < safe.left - 2 || b.right > safe.right + 2 || b.top < safe.top - 2 || b.bottom > safe.bottom + 2)
+            out.push({ kind: "unsafe", text: a.text, detail: `${overflow ? "text overflows its box; " : ""}layout box ${Math.round(b.left)},${Math.round(b.top)},${Math.round(b.right)},${Math.round(b.bottom)} vs the Shorts safe zone x ${safe.left}-${safe.right}, y ${safe.top}-${safe.bottom}: shorten the text` });
+        }
         if (a.px < (Math.min(W, H) >= 1080 ? 26 : 20)) out.push({ kind: "tiny", text: a.text, detail: `${a.px.toFixed(0)}px` });
         texts.slice(i + 1).forEach(b => {
           const x = inter(a.r, b.r);
@@ -100,11 +114,79 @@ export async function layoutAudit(projectDir: string, times: number[], W: number
         }
       });
       return out;
-    }, [t, W, H] as const);
+    }, [t, W, H, H > W ? SHORTS_SAFE : null] as const);
     for (const f of found) issues.push({ t, ...(f as any) });
   }
   await browser.close();
   return issues;
+}
+
+// ------------------------------------------------------------------ 4) opening craft: frame 0 and pacing
+export interface FrameZero { ok: boolean; texts: string[]; heroes: number; heroHeight: number; detail: string }
+
+/**
+ * Frame 0 must be fully composed (the voice is at full level from t = 0 and frame 0 is the Shorts feed preview):
+ * the hook text or the main character must be fully visible (opacity >= 0.95) at t = 0. Measured in the composed
+ * page with the renderer's visibility rules, so it costs a page load and no model call. A frame 0 that is only
+ * background is a bug: buildVideo blocks the video.
+ */
+export async function frameZeroAudit(projectDir: string, W: number, H: number): Promise<FrameZero> {
+  const browser = await chromium.launch();
+  try {
+    const page = await browser.newPage({ viewport: { width: W, height: H } });
+    await page.addInitScript("window.__name = (f) => f");
+    await page.goto(pathToFileURL(resolve(projectDir, "index.html")).href, { waitUntil: "load" });
+    await page.waitForFunction(() => !!(window as any).__timelines?.main, null, { timeout: 30_000, polling: 250 });
+    const res = await page.evaluate(([W, H]) => {
+      document.querySelectorAll<HTMLElement>("[data-start]").forEach(el => {
+        if (el.id === "root") return;
+        const s = +el.dataset.start!, d = +(el.dataset.duration ?? 1e9);
+        el.style.visibility = 0 >= s && 0 < s + d ? "visible" : "hidden";
+      });
+      (window as any).__timelines.main.seek(0, false);
+      const vis = (el: Element) => {
+        let e: Element | null = el, op = 1;
+        while (e && e !== document.body) {
+          const cs = getComputedStyle(e);
+          if (cs.visibility === "hidden" || cs.display === "none") return 0;
+          op *= +cs.opacity; e = e.parentElement;
+        }
+        return op;
+      };
+      const onScreen = (r: DOMRect) => r.width > 4 && r.height > 4 && r.right > 0 && r.bottom > 0 && r.left < W && r.top < H;
+      const texts = [...document.querySelectorAll(".headline,.stat .sv,.label,.chip,.cap")]
+        .filter(el => vis(el) >= 0.95 && onScreen(el.getBoundingClientRect()) && (el.textContent ?? "").trim())
+        .map(el => (el.textContent ?? "").trim().slice(0, 60));
+      const heroes = [...document.querySelectorAll(".el")].filter(el => vis(el) >= 0.95)
+        .map(el => el.getBoundingClientRect()).filter(r => onScreen(r) && r.height > H * 0.12);
+      return { texts, heroes: heroes.length, heroHeight: heroes.reduce((m, r) => Math.max(m, r.height / H), 0) };
+    }, [W, H] as const);
+    const ok = res.texts.length > 0 || res.heroes > 0;
+    return {
+      ...res, ok, heroHeight: +res.heroHeight.toFixed(2),
+      detail: ok ? `frame 0: ${res.texts.length ? `text "${res.texts[0]}"` : "no text"}, ${res.heroes} character(s), tallest ${Math.round(res.heroHeight * 100)}% of the height`
+        : "frame 0 is only background: no hook text and no character fully visible at t = 0",
+    };
+  } finally {
+    await browser.close();
+  }
+}
+
+export interface PacingReport { window: number; changes: number; maxGap: number; ok: boolean; detail: string }
+
+/**
+ * Opening pacing lint (report-only for now): Shorts need >= 4 visual changes in the first 10 s and none of the
+ * stretches longer than 2.5 s; long-form at most 5 s without a change in the first minute. `changes` comes from
+ * composeAnimated (cuts, big entrances, headline/stat/chips in or out and the engine's punch-ins).
+ */
+export function pacingReport(changes: number[], vertical: boolean, duration: number): PacingReport {
+  const rule = vertical ? PACING.short : PACING.long;
+  const end = Math.min(rule.window, duration);
+  const ts = [0, ...changes.filter(t => t > 0 && t <= end).sort((a, b) => a - b).filter((t, i, a) => i === 0 || t - a[i - 1] >= 0.1), end];
+  const maxGap = +Math.max(...ts.slice(1).map((t, i) => t - ts[i])).toFixed(2);
+  const n = ts.length - 2;
+  const ok = maxGap <= rule.gap + 0.05 && (!vertical || n >= 4);
+  return { window: rule.window, changes: n, maxGap, ok, detail: `${n} visual changes in the first ${rule.window} s, longest static stretch ${maxGap} s (limit ${rule.gap} s${vertical ? ", at least 4 changes" : ""})` };
 }
 
 // ------------------------------------------------------------------ 3) key frames + critic
@@ -122,11 +204,12 @@ const reviewSchema = {
   },
 };
 
-/** Moments worth looking at for each shot: just after titles land, and mid-shot. */
+/** Moments worth looking at for each shot: just after titles land, and mid-shot; plus frame 0 (the feed preview). */
 export function keyTimes(shots: TimedShot[]): { shot: number; t: number }[] {
   return shots.flatMap((s, i) => {
     const d = s.end - s.start;
     const ts = [s.start + Math.min(1.1, d * 0.45)];
+    if (i === 0 && s.start < 0.05) ts.unshift(0);
     if (d > 3.5) ts.push(s.start + d * 0.75);
     return ts.map(t => ({ shot: i, t: +t.toFixed(2) }));
   });
@@ -200,7 +283,7 @@ export async function critiqueShots(projectDir: string, shots: TimedShot[], vert
     input: {
       format: vertical ? "vertical 9:16" : "horizontal 16:9",
       instructions: `Open and inspect each contact sheet image with the Read tool, then review every shot shown. Sheets: ${g.map(f => resolve(f)).join(" ; ")}`,
-      shots: shots.map((s, i) => ({ shot: i, start: +s.start.toFixed(1), mood: s.mood, title: s.title.style !== "none" ? s.title : undefined, elements: s.elements.map(e => e.type + (e.count > 1 ? ` x${e.count}` : "")) }))
+      shots: shots.map((s, i) => ({ shot: i, start: +s.start.toFixed(1), mood: s.mood, title: s.title.style !== "none" && (!vertical || i === 0 || s.title.style === "stat") ? s.title : undefined, elements: s.elements.map(e => e.type + (e.count > 1 ? ` x${e.count}` : "")) }))
         .filter(s => !onlyShots || onlyShots.has(s.shot)),
       automated_layout_findings: layout,
     },

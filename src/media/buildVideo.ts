@@ -7,8 +7,8 @@ import { checkMix, checkSubtitles, HeardWord, measureLevels } from "../qa/audioQ
 import { beatBlocking, beatSyncGate } from "../qa/beatSync.js";
 import { autoLevel, designSound, speechIntervals } from "../qa/soundDesign.js";
 import { ffmpeg } from "./exec.js";
-import { critiqueShots, keyTimes, layoutAudit, LayoutIssue, ShotReview, sparseShots, technicalFrameChecks } from "../qa/visualQa.js";
-import { composeAnimated, TimedShot, timeShots } from "./animated.js";
+import { critiqueShots, FrameZero, frameZeroAudit, keyTimes, layoutAudit, LayoutIssue, pacingReport, PacingReport, ShotReview, sparseShots, technicalFrameChecks } from "../qa/visualQa.js";
+import { CaptionCoverage, composeAnimated, TimedShot, timeShots } from "./animated.js";
 import { planShots, reviseShots } from "./motionPlan.js";
 import { mixStems, musicMood, musicStem, renderComposition, sfxStem } from "./render.js";
 import type { Timeline } from "./tts.js";
@@ -32,6 +32,10 @@ export interface VideoQa {
     rounds: number; avgScore: number | null; weakShots: number; layoutIssues: number; frameIssues: { kind: string; start: number; detail: string }[];
     /** what the critic and layout audit flagged on the Motion Designer's first draft: feeds the craft notes */
     notes?: string[]; layoutKinds?: Record<string, number>;
+    /** opening craft (2026-11-12): frame 0 composed (blocking) and the first-seconds pacing lint (report-only) */
+    frameZero?: FrameZero; pacing?: PacingReport;
+    /** burned-in captions: share of spoken words ever captioned and of speech time with a caption on screen */
+    captionCoverage?: CaptionCoverage;
   };
   audio: { musicGain: number; sfxGain: number; finalWer: number; maskingDelta: number; lufs: number; soundNotes: string } | null;
   subtitles?: { wer: number; diffs: string[] };
@@ -51,9 +55,11 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
   let shots: Shot[] = v.presetShots ?? await planShots(scenes, tl, v.vertical, v.topic);
   let timed: TimedShot[] = [];
   let project = "", cues: Awaited<ReturnType<typeof composeAnimated>>["cues"] = [];
+  let changes: number[] = [];
+  let coverage: CaptionCoverage | undefined;
   const compose = async () => {
     timed = timeShots(shots, tl);
-    ({ dir: project, cues } = await composeAnimated(join(dir, "hf"), timed, tl, { vertical: v.vertical, captionScenes }));
+    ({ dir: project, cues, captionCoverage: coverage, pacing: { changes } } = await composeAnimated(join(dir, "hf"), timed, tl, { vertical: v.vertical, captionScenes, hook: scenes[0]?.on_screen_text }));
     writeJson(join(dir, "shots.json"), shots);
   };
   await compose();
@@ -88,6 +94,24 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
     qa.visual.avgScore = scored.length ? +(scored.reduce((a, r) => a + r.score, 0) / scored.length).toFixed(1) : null;
     qa.visual.weakShots = scored.filter(r => r.score < config.qa.minShotScore).length;
     qa.visual.layoutIssues = layout.length;
+  }
+
+  // ---- opening craft: frame 0 must show the hook text or the main character (blocking: an empty frame 0 is a
+  // bug), and the first seconds need a visual change every 2.5 s (Shorts) / 5 s (long-form) (report-only for now)
+  if (config.qa.enabled) {
+    qa.visual.pacing = pacingReport(changes, v.vertical, tl.duration);
+    log.info(`pacing: ${qa.visual.pacing.detail}`);
+    if (coverage) {
+      qa.visual.captionCoverage = coverage;
+      log.info(`captions: ${coverage.captioned}/${coverage.words} spoken words captioned (${Math.round(coverage.wordShare * 100)}%), ${Math.round(coverage.timeShare * 100)}% of speech time`);
+    }
+    try {
+      qa.visual.frameZero = await frameZeroAudit(project, W, H);
+      log.info(qa.visual.frameZero.detail);
+      if (!qa.visual.frameZero.ok) qa.blocking.push(qa.visual.frameZero.detail);
+    } catch (e) {
+      log.warn(`frame 0 check failed to run: ${(e as Error).message.slice(0, 300)}`);
+    }
   }
 
   // ---- subtitle QA: what's on screen must be what Whisper hears the narrator say

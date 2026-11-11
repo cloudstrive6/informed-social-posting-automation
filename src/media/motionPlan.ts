@@ -11,6 +11,8 @@ const BATCH = 10;
 /** Ask the Motion Designer for shots, in parallel batches of scenes (long videos have 50–80 scenes). */
 export async function planShots(scenes: Scene[], tl: Timeline, vertical: boolean, topic: string): Promise<Shot[]> {
   const dur = new Map(tl.scenes.map((s, i) => [s.id, (tl.scenes[i + 1]?.start ?? tl.duration) - s.start]));
+  // where each scene sits in the video: the opening rules (first 10 s of a Short, first 60 s of a long video) depend on it
+  const at = new Map(tl.scenes.map(s => [s.id, s.start]));
   const batches: Scene[][] = [];
   for (let i = 0; i < scenes.length; i += BATCH) batches.push(scenes.slice(i, i + BATCH));
 
@@ -22,7 +24,7 @@ export async function planShots(scenes: Scene[], tl: Timeline, vertical: boolean
       part: `${bi + 1} of ${batches.length}`,
       previous_context: bi > 0 ? batches[bi - 1].slice(-2).map(s => s.narration) : [],
       scenes: batch.map(s => ({
-        id: s.id, section: s.section, narration: s.narration, seconds: +(dur.get(s.id) ?? 5).toFixed(1),
+        id: s.id, section: s.section, narration: s.narration, seconds: +(dur.get(s.id) ?? 5).toFixed(1), starts_at: +(at.get(s.id) ?? 0).toFixed(1),
         writer_visual_hint: s.visual, on_screen_text: s.on_screen_text,
       })),
     },
@@ -74,7 +76,7 @@ function fallbackShot(s: Scene): Shot {
   return {
     scene_id: s.id, cue: s.narration.split(" ").slice(0, 3).join(" "), mood: "brand", background: "bokeh", camera: "push-in", transition: "fade",
     elements: [
-      { type: "cell", variant: "healthy", tone: "primary", x: 50, y: 48, size: 40, count: 1, spread: 0, motion: "breathe", enter: "pop", enter_at: 0, depth: "mid", label: "", flip: false, face: "happy", says: "" },
+      { type: "cell", variant: "healthy", tone: "primary", x: 50, y: 52, size: 42, count: 1, spread: 0, motion: "breathe", enter: "pop", enter_at: 0, depth: "mid", label: "", flip: false, face: "happy", says: "" },
       { type: "molecule", variant: "", tone: "accent", x: 50, y: 50, size: 10, count: 8, spread: 40, motion: "float", enter: "pop", enter_at: 0.2, depth: "bg", label: "", flip: false, face: "none", says: "" },
     ],
     title: { style: s.on_screen_text ? "headline" : "none", text: s.on_screen_text ?? "", sub: "", items: [] },
