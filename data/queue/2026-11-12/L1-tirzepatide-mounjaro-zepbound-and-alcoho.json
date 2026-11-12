@@ -1,0 +1,1540 @@
+{
+  "id": "L1-tirzepatide-mounjaro-zepbound-and-alcoho",
+  "date": "2026-11-12",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Tirzepatide (Mounjaro/Zepbound) and alcohol: what the US label and established evidence say about drinking while on tirzepatide, including low blood sugar risk with insulin or sulfonylureas, dehydration when alcohol combines with nausea, vomiting or diarrhoea, stomach side effects, pancreatitis warning signs, and what early research on GLP-1 medicines and alcohol use can and can't tell you",
+    "angle": "Keep the plan, with these changes. Ch3: the insulin/sulfonylurea risk in label wording, plus a separately tagged diabetes-guidance source for alcohol's own effect on blood sugar. Ch1: say 'the label doesn't specifically address alcohol' if that's what the label shows. Ch5: alcohol as a pancreatitis risk factor only with an NHS or NIDDK tag. Ch6: only fetched, verified trials, each labelled by drug, population and size. Cut the VA trial unless its registry record is cited. Add a low-blood-sugar emergency line: confusion, fainting or being unable to eat or drink → your local emergency number.",
+    "working_title": "Tirzepatide (Mounjaro) and Alcohol: What to Know",
+    "target_keyword": "tirzepatide and alcohol",
+    "trend_stage": "rising",
+    "why": "Next topic on the playbook's Lane A list, and holiday-party searches rise from Nov 20. It's evergreen and rests on the label; no alcohol long video exists in the last 30 days. | fact-check: This topic is on the playbook list and has real search demand. Framed this way (no safe amount, no drink counts, prescriber conversation) it is safe under YouTube policy. Four fixes before scripting:\n(a) Hypoglycemia. The label's line about higher low-blood-sugar risk is about tirzepatide used with insulin or a sulfonylurea. As far as I know, the label says nothing about alcohol. So 'why alcohol matters there' must come from diabetes guidance (for example a CDC, NHS or Diabetes UK page on alcohol and hypoglycemia), tagged to that source, and never tagged to the label.\n(b) Chapter 1. If the Zepbound PI and Medication Guide (rev. 28 Aug 2026) print no alcohol wording, the script must say plainly that the label doesn't specifically address alcohol. It must not suggest that silence means it's fine or that it's risky.\n(c) Pancreatitis. Drop alcohol as a risk factor unless a cited NHS or NIDDK pancreatitis page is the tag. Don't tag it to the label.\n(d) Chapter 6. Name only trials you can verify: the small semaglutide RCT in adults with alcohol use disorder (Hendershot et al., JAMA Psychiatry 2025, about 48 participants, lab drinking measures) and the exenatide trial (Klausen et al., JCI Insight 2022: no effect on heavy-drinking days overall). Each gets its drug, population and size. Mention the 'VA trial' only if a ClinicalTrials.gov record is fetched and cited. Otherwise cut it. Write 'isn't approved for alcohol use disorder', with no 'yet'.\nThe thumbnail 'ONE DRINK?' is acceptable as a question, but the script must never answer it with a number.",
+    "pillar": "life-on-glp1"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Tirzepatide (Mounjaro) and Alcohol: Can You Drink?",
+    "title_candidates": [
+      "Tirzepatide (Mounjaro) and Alcohol: Can You Drink?",
+      "Tirzepatide and Alcohol: Can You Still Drink?",
+      "Tirzepatide (Mounjaro) and Alcohol: What to Know",
+      "Tirzepatide and Alcohol: What Happens on a Night Out",
+      "Tirzepatide and Alcohol: What the Label Says",
+      "Tirzepatide (Mounjaro) and Alcohol: Is It Safe?",
+      "Tirzepatide and Alcohol: Does It Change Drinking?",
+      "Mounjaro and Alcohol: Can You Drink on It?",
+      "Drinking on Tirzepatide? Watch This First",
+      "Tirzepatide and Alcohol: Why One Drink Hits Harder"
+    ],
+    "description": "\nCan you drink alcohol on tirzepatide (Mounjaro, Zepbound)? The US label doesn't specifically address alcohol. But three of its warnings matter on a night out: low blood sugar, dehydration and pancreatitis.\nIf you also use insulin or a sulfonylurea, the label says your risk of low blood sugar may be higher.\n\nLow blood sugar signs plus confusion, fainting, or can't eat or drink? Call your local emergency number.\nSevere stomach pain that won't go away, with or without vomiting? Stop using tirzepatide and call your healthcare provider right away.\nCan't keep fluids down? Call your prescriber.\n\nSources:\nZepbound label, DailyMed (revised 28 Aug 2026): https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b\nNHS, Low blood sugar (reviewed 03 Aug 2023): https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/\nNHS, Dehydration (reviewed 01 May 2026): https://www.nhs.uk/conditions/dehydration/\n\n#tirzepatide\n\nFor anything that isn't one of those emergency signs, don't stop, switch, or change your medicine on your own.\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "tags": [
+      "tag1",
+      "tag2",
+      "tag3"
+    ],
+    "pinned_comment": "The label doesn't specifically address alcohol, but three of its warnings matter: low blood sugar (risk may be higher if you also use insulin or a sulfonylurea), dehydration and pancreatitis. Low blood sugar signs plus confusion, fainting, or can't eat or drink? Call your local emergency number. Severe stomach pain that won't go away, with or without vomiting? Stop using tirzepatide and call your healthcare provider right away. For anything that isn't one of those emergency signs, don't stop, switch, or change your medicine on your own. Save this, or share it with someone on tirzepatide. Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "ONE GLASS. THEN?",
+      "highlight_word": "THEN?",
+      "subtext": "",
+      "layout": "reaction",
+      "psychology": "Curiosity gap: the title asks whether you can drink, and the thumbnail moves to the felt moment after the first drink, leaving the outcome open so the video has to answer it.",
+      "emotion": "Uneasy curiosity: 'what actually happens to me if I have one?'",
+      "hero_art": "wine glass",
+      "hero_face": "worried",
+      "second_art": "",
+      "second_face": "none",
+      "prop": "question",
+      "accent": "highlight",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 The short answer\n1:21 What the label says\n2:04 Your stomach on a night out\n3:17 The low blood sugar link\n5:24 Dehydration and your kidneys\n6:53 Pancreatitis warning signs\n7:45 Can it change drinking?\n9:38 Your checklist\n10:20 Safety and next steps"
+  },
+  "media": {
+    "video": "L1-tirzepatide-mounjaro-zepbound-and-alcoho.mp4",
+    "duration": 650.731,
+    "thumbnail": "L1-tirzepatide-mounjaro-zepbound-and-alcoho-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-12T19:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "McYa6xU7Rbw",
+      "url": "https://youtu.be/McYa6xU7Rbw",
+      "published_at": "2026-11-12T19:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-11-12T03:43:27.454Z",
+  "script": {
+    "working_title": "Tirzepatide (Mounjaro) and Alcohol: What to Know",
+    "target_keyword": "tirzepatide and alcohol",
+    "hook_pattern": "Direct question with the answer first (the label doesn't specifically address alcohol), a second concrete payoff at 15–30 s (low blood sugar risk with insulin or a sulfonylurea), a one-sentence open loop (two real trials at the end), then a visceral 'you' scenario (the birthday dinner glass)",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "The short answer",
+        "narration": "Can you drink alcohol while you're on tirzepatide, whether it's Mounjaro or Zepbound?",
+        "on_screen_text": "Drink alcohol on tirzepatide?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious person eyeing wine glass"
+        },
+        "retention_device": "Direct question from the title in sentence 1",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "The short answer",
+        "narration": "Here's the short answer. The US label doesn't specifically address alcohol. It doesn't say a drink is fine, and it doesn't forbid one.",
+        "on_screen_text": "Label: no specific alcohol section",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "The label has an alcohol rule",
+          "fact": "The US label doesn't specifically address alcohol",
+          "stock_query": "label document with question mark"
+        },
+        "retention_device": "Short answer delivered by about 13 s",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "The short answer",
+        "narration": "But three warnings in that label matter on a night out: low blood sugar, dehydration, and pancreatitis.",
+        "on_screen_text": "3 warnings that matter",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Low blood sugar",
+            "Dehydration",
+            "Pancreatitis"
+          ],
+          "stock_query": "three gentle warning signposts"
+        },
+        "retention_device": "But-pivot to a concrete list",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "The short answer",
+        "narration": "Here's the first one. If you also use insulin or a sulfonylurea, the label says your risk of low blood sugar may be higher.",
+        "on_screen_text": "Low blood sugar risk may rise",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Tirzepatide + insulin",
+            "Tirzepatide + sulfonylurea",
+            "Low blood sugar risk may be higher"
+          ],
+          "stock_query": "blood sugar meter, calm person"
+        },
+        "retention_device": "Second concrete payoff at 15–30 s",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "The short answer",
+        "narration": "And separately, diabetes guidance lists drinking a lot of alcohol, especially without food, as a cause of low blood sugar. Two risks, stacking.",
+        "on_screen_text": "Diabetes guidance: a lot of alcohol can cause lows",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two blocks stacking, pill and glass"
+        },
+        "retention_device": "Stakes made specific",
+        "source_ids": [
+          "S3",
+          "S4"
+        ]
+      },
+      {
+        "id": "s06",
+        "section": "The short answer",
+        "narration": "Stay for the last chapter, where two real trials test whether these medicines change how much people drink.",
+        "on_screen_text": "Two real trials, at the end",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two sealed trial folders, question mark"
+        },
+        "retention_device": "One-sentence open loop, paid off in chapter 'Can it change drinking?'",
+        "source_ids": [
+          "S8",
+          "S9"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "The short answer",
+        "narration": "First, picture a friend's birthday dinner. The table's loud, someone's pouring, and a glass lands in front of you.",
+        "on_screen_text": "A glass lands in front of you",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "lively birthday dinner, glass poured"
+        },
+        "retention_device": "Lived moment the viewer recognises",
+        "source_ids": []
+      },
+      {
+        "id": "s08",
+        "section": "The short answer",
+        "narration": "And you hesitate. Nobody's judging. You've just had a queasy week, and you're not sure how your body will react.",
+        "on_screen_text": "A queasy week. Then this.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person hesitating at table, gentle worry"
+        },
+        "retention_device": "Name the feeling",
+        "source_ids": []
+      },
+      {
+        "id": "s09",
+        "section": "The short answer",
+        "narration": "If you've felt that little knot of worry, you're not alone. It's a smart question, and it deserves a real answer.",
+        "on_screen_text": "A smart question",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friend's reassuring hand on shoulder"
+        },
+        "retention_device": "Validation",
+        "source_ids": []
+      },
+      {
+        "id": "s10",
+        "section": "The short answer",
+        "narration": "So let's follow someone through it. Imagine Priya, forty-nine. She uses tirzepatide, she has type two diabetes, and she also takes a sulfonylurea.",
+        "on_screen_text": "Imagine Priya, 49",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hypothetical woman at kitchen table, thoughtful"
+        },
+        "retention_device": "Introduce hypothetical relatable thread",
+        "source_ids": []
+      },
+      {
+        "id": "s11",
+        "section": "The short answer",
+        "narration": "Priya's question is probably yours too: what actually changes when alcohol meets this medicine?",
+        "on_screen_text": "What actually changes?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman looking thoughtfully at glass"
+        },
+        "retention_device": "Question to the viewer before chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s12",
+        "section": "What the label says",
+        "narration": "Let's start with the source itself, the US prescribing information. I'm reading the Zepbound label, revised in August twenty twenty-six.",
+        "on_screen_text": "The label, revised Aug 2026",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "open prescribing information document"
+        },
+        "retention_device": "Chapter card",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "What the label says",
+        "narration": "It's long. It covers warnings, side effects, and drug interactions. But there's no part that specifically addresses alcohol.",
+        "on_screen_text": "No specific alcohol section",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass scanning long document"
+        },
+        "retention_device": "But-rhythm reveal",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "What the label says",
+        "narration": "Here's what that silence means, and what it doesn't. It doesn't mean alcohol is proven safe with tirzepatide. And it doesn't mean it's proven risky.",
+        "on_screen_text": "Silence isn't safe or risky",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "No alcohol section means it's fine, or that it's dangerous",
+          "fact": "It means neither. The label doesn't specifically address it.",
+          "stock_query": "balanced scale, calm mascot"
+        },
+        "retention_device": "Myth correction",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "What the label says",
+        "narration": "It means the decision belongs in a conversation with your prescriber, who knows your other medicines and your health.",
+        "on_screen_text": "A prescriber conversation",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient and prescriber chatting warmly"
+        },
+        "retention_device": "Agency for the viewer",
+        "source_ids": []
+      },
+      {
+        "id": "s16",
+        "section": "What the label says",
+        "narration": "Think of it like a weather forecast that never mentions your picnic. It still tells you when rain is coming.",
+        "on_screen_text": "It still warns about rain",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "weather map with rain, picnic basket"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": []
+      },
+      {
+        "id": "s17",
+        "section": "What the label says",
+        "narration": "And this label does warn about three things that alcohol can pile on top of. That's where it gets useful.",
+        "on_screen_text": "3 places alcohol matters",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "three signposts on a winding road"
+        },
+        "retention_device": "Re-hook into the first warning",
+        "source_ids": [
+          "S1",
+          "S3",
+          "S5",
+          "S6"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "Your stomach on a night out",
+        "narration": "Start with your stomach, because stomach side effects are among the most common ones in the label.",
+        "on_screen_text": "Stomach side effects first",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon stomach with gentle wobble"
+        },
+        "retention_device": "Chapter card",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "Your stomach on a night out",
+        "narration": "In two placebo-controlled trials in adults with obesity or overweight, nausea affected twenty-five to twenty-nine percent of people across tirzepatide doses. On placebo, it was eight percent.",
+        "on_screen_text": "Adults with obesity or overweight",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "25–29%",
+          "stat_label": "Nausea, tirzepatide doses vs 8% placebo",
+          "stock_query": "queasy cartoon stomach, big number"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Your stomach on a night out",
+        "narration": "Diarrhea was nineteen to twenty-three percent, versus eight percent on placebo. Vomiting was eight to thirteen percent, versus two percent.",
+        "on_screen_text": "Tirzepatide doses vs placebo",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Diarrhea: 19–23% vs 8% placebo",
+            "Vomiting: 8–13% vs 2% placebo"
+          ],
+          "stock_query": "two bar charts side by side"
+        },
+        "retention_device": "Rapid-fire numbers",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Your stomach on a night out",
+        "narration": "One of those trials excluded type two diabetes. The other enrolled only people who had it.",
+        "on_screen_text": "Two placebo-controlled trials",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Study 1: excluded type 2 diabetes",
+            "Study 2: type 2 diabetes only"
+          ],
+          "stock_query": "two trial groups of cartoon adults"
+        },
+        "retention_device": "Population scope",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Your stomach on a night out",
+        "narration": "The label also notes that tirzepatide delays gastric emptying. In plain words, your stomach empties more slowly than it used to.",
+        "on_screen_text": "Stomach empties more slowly",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "slow hourglass inside cartoon stomach"
+        },
+        "retention_device": "Plain-language mechanism",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Your stomach on a night out",
+        "narration": "Then add alcohol. The NHS lists alcohol among the food and drink that can bring on heartburn and acid reflux.",
+        "on_screen_text": "NHS: alcohol can trigger heartburn",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cocktail glass beside fiery heartburn icon"
+        },
+        "retention_device": "But/therefore turn",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Your stomach on a night out",
+        "narration": "So for Priya, a rich dinner with cocktails in the week after a dose step-up isn't a moral failing. It's just a lot to ask of a stomach that's working differently.",
+        "on_screen_text": "Not a moral failing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman at dinner, rich food, queasy"
+        },
+        "retention_device": "Return to Priya, no shame",
+        "source_ids": []
+      },
+      {
+        "id": "s25",
+        "section": "Your stomach on a night out",
+        "narration": "That's not a reason to panic. It's a reason to notice how your own body responds, and to tell your prescriber if stomach side effects are hard to manage.",
+        "on_screen_text": "Notice, then tell your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person jotting symptom notes, calm"
+        },
+        "retention_device": "Agency",
+        "source_ids": []
+      },
+      {
+        "id": "s26",
+        "section": "Your stomach on a night out",
+        "narration": "But your stomach is the part you can feel. The next risk is one you might not notice until it's already happening.",
+        "on_screen_text": "The risk you might not feel",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "question mark peeking behind curtain"
+        },
+        "retention_device": "Mini-cliffhanger before chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s27",
+        "section": "The low blood sugar link",
+        "narration": "Back to Priya's sulfonylurea. If you have diabetes, this chapter matters most.",
+        "on_screen_text": "If you have diabetes",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "blood sugar meter beside calm woman"
+        },
+        "retention_device": "Chapter card with stakes",
+        "source_ids": []
+      },
+      {
+        "id": "s28",
+        "section": "The low blood sugar link",
+        "narration": "The label says using tirzepatide with insulin or a sulfonylurea may raise your risk of low blood sugar, including severe low blood sugar.",
+        "on_screen_text": "Label: risk may be higher",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Tirzepatide + insulin",
+            "Tirzepatide + sulfonylurea",
+            "May raise low blood sugar risk, including severe"
+          ],
+          "stock_query": "label page with highlighted warning"
+        },
+        "retention_device": "Label wording, exact scope",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "The low blood sugar link",
+        "narration": "If you're not sure whether one of your diabetes medicines is a sulfonylurea, your pharmacist can tell you in seconds.",
+        "on_screen_text": "Not sure? Ask your pharmacist",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly pharmacist at counter"
+        },
+        "retention_device": "Practical step",
+        "source_ids": []
+      },
+      {
+        "id": "s30",
+        "section": "The low blood sugar link",
+        "narration": "Here's a detail people miss. That label warning is about tirzepatide plus those medicines. It doesn't mention alcohol.",
+        "on_screen_text": "That warning doesn't mention alcohol",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "The label warns about alcohol and low blood sugar",
+          "fact": "Its warning is about tirzepatide plus insulin or a sulfonylurea",
+          "stock_query": "magnifier on label, calm mascot"
+        },
+        "retention_device": "Detail people miss",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "The low blood sugar link",
+        "narration": "Alcohol's own effect comes from diabetes guidance. The NHS says people with diabetes can get low blood sugar if they drink a lot of alcohol, particularly without eating.",
+        "on_screen_text": "NHS: a lot of alcohol can cause lows",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Drinking a lot of alcohol",
+            "Particularly without eating",
+            "In people with diabetes"
+          ],
+          "stock_query": "blood sugar arrow dipping, glass nearby"
+        },
+        "retention_device": "Separate source for alcohol's effect",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "The low blood sugar link",
+        "narration": "In the US, the National Institute of Diabetes and Digestive and Kidney Diseases lists drinking too much alcohol without enough food as a cause of low blood sugar. It adds that alcohol can keep you from feeling the first symptoms.",
+        "on_screen_text": "NIDDK: too much alcohol, too little food",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "health institute building, sugar arrow down"
+        },
+        "retention_device": "Second market source plus a surprising detail",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "The low blood sugar link",
+        "narration": "So for Priya, two things can stack: a medicine combination the label flags, and drinking a lot, which diabetes guidance flags on its own.",
+        "on_screen_text": "Two flags can stack",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two flags stacking on a tower"
+        },
+        "retention_device": "Synthesis back to Priya",
+        "source_ids": [
+          "S1",
+          "S3",
+          "S4"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "The low blood sugar link",
+        "narration": "But here's where it gets weird.",
+        "on_screen_text": "Here's where it gets weird",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi raising one eyebrow"
+        },
+        "retention_device": "Pattern interrupt re-hook",
+        "source_ids": []
+      },
+      {
+        "id": "s35",
+        "section": "The low blood sugar link",
+        "narration": "The label's list of low blood sugar signs includes dizziness, slurred speech, confusion, drowsiness, and shakiness.",
+        "on_screen_text": "Low blood sugar signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Dizziness",
+            "Slurred speech",
+            "Confusion",
+            "Drowsiness",
+            "Shakiness"
+          ],
+          "stock_query": "symptom icons around calm figure"
+        },
+        "retention_device": "Surprising list",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "The low blood sugar link",
+        "narration": "Read that list again with a drink in your hand. Slurred speech. Confusion. Dizziness. Some of these signs can look a lot like having had too much, so the people around you could misread them.",
+        "on_screen_text": "Easy to misread as drinking",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "party friends misreading a dizzy guest"
+        },
+        "retention_device": "Payoff of the 'weird' tease",
+        "source_ids": []
+      },
+      {
+        "id": "s37",
+        "section": "The low blood sugar link",
+        "narration": "So this combination deserves a plan. The risk isn't only the drink. It's that low blood sugar could be misread as the drink.",
+        "on_screen_text": "It deserves a plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman writing a calm plan"
+        },
+        "retention_device": "Therefore beat",
+        "source_ids": []
+      },
+      {
+        "id": "s38",
+        "section": "The low blood sugar link",
+        "narration": "So if Priya drinks, someone with her should know she has diabetes and what low blood sugar looks like. That's a calm, practical step.",
+        "on_screen_text": "Tell someone with you",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friend learning signs, warm cafe"
+        },
+        "retention_device": "Practical step for Priya",
+        "source_ids": []
+      },
+      {
+        "id": "s39",
+        "section": "The low blood sugar link",
+        "narration": "And here's an emergency line. If someone with low blood sugar signs is confused, faints, or can't eat or drink, call your local emergency number.",
+        "on_screen_text": "Low blood sugar signs plus confusion, fainting, or can't eat or drink? Call your local emergency number.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm hand dialing emergency number"
+        },
+        "retention_device": "Safety emergency line",
+        "source_ids": []
+      },
+      {
+        "id": "s40",
+        "section": "The low blood sugar link",
+        "narration": "Before drinking at all, Priya can ask her prescriber what her plan should be, with her specific diabetes medicines in mind.",
+        "on_screen_text": "Ask your prescriber first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman and prescriber reviewing medicines"
+        },
+        "retention_device": "Agency",
+        "source_ids": []
+      },
+      {
+        "id": "s41",
+        "section": "The low blood sugar link",
+        "narration": "Low blood sugar is the big risk for people on those other medicines. The next one can affect anyone on tirzepatide.",
+        "on_screen_text": "Next: anyone on tirzepatide",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "path widening to include everyone"
+        },
+        "retention_device": "Widening stakes before chapter change",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "Dehydration and your kidneys",
+        "narration": "Let's talk about water, because this is where alcohol and stomach side effects quietly team up.",
+        "on_screen_text": "Where they team up",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "water glass beside cartoon kidneys"
+        },
+        "retention_device": "Chapter card",
+        "source_ids": []
+      },
+      {
+        "id": "s43",
+        "section": "Dehydration and your kidneys",
+        "narration": "The label warns that nausea, vomiting, and diarrhea can lead to dehydration. And if dehydration is severe, it could cause acute kidney injury.",
+        "on_screen_text": "Label: dehydration, then kidneys",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Nausea, vomiting, diarrhea",
+            "Can lead to dehydration",
+            "Severe dehydration: possible kidney injury"
+          ],
+          "stock_query": "water droplets leaving cartoon kidneys"
+        },
+        "retention_device": "Label warning, exact scope",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Dehydration and your kidneys",
+        "narration": "The patient guide in that label says it's important to drink fluids to help reduce your chance of dehydration.",
+        "on_screen_text": "Label: drink fluids",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glass of water beside patient leaflet"
+        },
+        "retention_device": "Practical label point",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "Dehydration and your kidneys",
+        "narration": "Next, look at the NHS list of things that can cause dehydration. It includes being sick or having diarrhoea. It also includes drinking too much alcohol.",
+        "on_screen_text": "NHS: causes of dehydration",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Being sick or having diarrhoea",
+            "Drinking too much alcohol"
+          ],
+          "stock_query": "checklist with two highlighted items"
+        },
+        "retention_device": "Reveal the overlap",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "Dehydration and your kidneys",
+        "narration": "Notice the overlap. On a day you've been sick or had diarrhea, alcohol is one more item from that same list.",
+        "on_screen_text": "Same list, both items",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two overlapping circles, water drop center"
+        },
+        "retention_device": "Therefore beat",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "Dehydration and your kidneys",
+        "narration": "Picture a bathtub with the plug half out. Vomiting or diarrhea pulls the plug a little further. Alcohol is another drain, not a refill.",
+        "on_screen_text": "Alcohol isn't a refill",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon bathtub draining, plug half out"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "Dehydration and your kidneys",
+        "narration": "Early signs the NHS lists include feeling thirsty, dark yellow, strong-smelling pee, peeing less often, feeling dizzy or tired, and a dry mouth.",
+        "on_screen_text": "NHS: early dehydration signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Feeling thirsty",
+            "Dark yellow, strong-smelling pee",
+            "Peeing less often",
+            "Dizzy or tired",
+            "Dry mouth"
+          ],
+          "stock_query": "thirsty person reaching for water"
+        },
+        "retention_device": "Self-check list",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "Dehydration and your kidneys",
+        "narration": "The NHS says to get urgent medical help if you feel unusually tired, you're dizzy when you stand up and it doesn't go away, or you're peeing less than normal. And if someone is confused or unusually sleepy, call your local emergency number.",
+        "on_screen_text": "Unusually tired, dizziness on standing that doesn't go away, or peeing less than normal? Get urgent help. Confused or unusually sleepy? Call your local emergency number.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "concerned person at urgent care door"
+        },
+        "retention_device": "Safety line with emergency tier",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "Dehydration and your kidneys",
+        "narration": "And if you've been vomiting or had diarrhea and can't keep fluids down, call your prescriber. Fluid loss from vomiting or diarrhea is what the label's dehydration and kidney warning is about.",
+        "on_screen_text": "Can't keep fluids down? Call your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person on sofa calling prescriber"
+        },
+        "retention_device": "Payoff of the kidney warning",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "Dehydration and your kidneys",
+        "narration": "Which brings us to the warning sign that matters most, and a place where alcohol has its own history.",
+        "on_screen_text": "The sign that matters most",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glowing warning sign up ahead"
+        },
+        "retention_device": "Mini-cliffhanger before chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s52",
+        "section": "Pancreatitis warning signs",
+        "narration": "Pancreatitis means inflammation of the pancreas. The tirzepatide label includes a warning about acute pancreatitis.",
+        "on_screen_text": "Label warning: acute pancreatitis",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon pancreas with soft glow"
+        },
+        "retention_device": "Chapter card",
+        "source_ids": [
+          "S1",
+          "S6"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "Pancreatitis warning signs",
+        "narration": "Separately, the NHS says the most common causes of acute pancreatitis are gallstones and drinking a lot of alcohol.",
+        "on_screen_text": "NHS: 2 most common causes",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Gallstones",
+            "Drinking a lot of alcohol"
+          ],
+          "stock_query": "two icons, pebble and glass"
+        },
+        "retention_device": "Payoff of 'its own history'",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "Pancreatitis warning signs",
+        "narration": "To be clear, that's a general fact about pancreatitis. It isn't a finding about tirzepatide and alcohol together.",
+        "on_screen_text": "General fact, not a combo finding",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Studies show tirzepatide plus alcohol causes pancreatitis",
+          "fact": "Alcohol is a general pancreatitis cause, not a tested combination finding",
+          "stock_query": "calm mascot with clarifying sign"
+        },
+        "retention_device": "Scope correction",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "Pancreatitis warning signs",
+        "narration": "Here's the sign to know, from the label. Severe pain in your stomach area that won't go away, with or without vomiting. You may feel it spread to your back.",
+        "on_screen_text": "Severe pain that won't go away",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person holding tummy, arrow to back"
+        },
+        "retention_device": "The one sign to remember",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "Pancreatitis warning signs",
+        "narration": "If that happens, stop using tirzepatide and call your healthcare provider right away.",
+        "on_screen_text": "Severe stomach pain that won't go away? Stop using tirzepatide and call your healthcare provider right away.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm phone call to clinic"
+        },
+        "retention_device": "Emergency card",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "Pancreatitis warning signs",
+        "narration": "Severe pain that won't go away is never something to sleep off after a night out. It's a phone call.",
+        "on_screen_text": "Don't sleep it off",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person reaching for phone at night"
+        },
+        "retention_device": "Memorable rule",
+        "source_ids": []
+      },
+      {
+        "id": "s58",
+        "section": "Pancreatitis warning signs",
+        "narration": "That's the safety side, all from the label and established guidance. But you came with a second question, and I promised you two real trials.",
+        "on_screen_text": "Promised: two real trials",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two envelopes being opened"
+        },
+        "retention_device": "Return to the main open loop",
+        "source_ids": []
+      },
+      {
+        "id": "s59",
+        "section": "Can it change drinking?",
+        "narration": "Maybe you've seen headlines saying GLP-1 medicines make people lose interest in alcohol. Maybe you've wondered if it's happening to you.",
+        "on_screen_text": "Less interest in alcohol?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon newspaper headlines, curious reader"
+        },
+        "retention_device": "Chapter card with viewer question",
+        "source_ids": []
+      },
+      {
+        "id": "s60",
+        "section": "Can it change drinking?",
+        "narration": "Researchers got curious because animal studies suggested GLP-1 medicines might reduce alcohol intake. But animals aren't people, so human trials matter.",
+        "on_screen_text": "Animals aren't people",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cute lab mice, tiny bottles"
+        },
+        "retention_device": "Micro-story of why researchers looked",
+        "source_ids": [
+          "S8",
+          "S9"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "Can it change drinking?",
+        "narration": "First, exenatide, an older GLP-1 medicine. A Danish trial gave it or a placebo to one hundred twenty-seven adults with alcohol use disorder for twenty-six weeks.",
+        "on_screen_text": "Exenatide vs placebo",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "127",
+          "stat_label": "Adults with alcohol use disorder, 26 weeks",
+          "stock_query": "group of cartoon trial volunteers"
+        },
+        "retention_device": "Trial 1 setup",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "Can it change drinking?",
+        "narration": "Both groups also got talk therapy. The main result: no difference in heavy drinking days overall, compared with placebo.",
+        "on_screen_text": "Main result, overall",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "No difference",
+          "stat_label": "Heavy drinking days, exenatide vs placebo",
+          "stock_query": "two level bars side by side"
+        },
+        "retention_device": "Counterintuitive result",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "Can it change drinking?",
+        "narration": "An exploratory look hinted at an effect in participants with obesity. But exploratory means it raises a question. It doesn't answer one.",
+        "on_screen_text": "Exploratory: a question, not an answer",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "question mark sprouting from chart"
+        },
+        "retention_device": "Nuance beat",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "Can it change drinking?",
+        "narration": "Then the second trial, the one that made headlines.",
+        "on_screen_text": "The headline trial",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "spotlight on second folder"
+        },
+        "retention_device": "Mini-cliffhanger",
+        "source_ids": []
+      },
+      {
+        "id": "s65",
+        "section": "Can it change drinking?",
+        "narration": "In a trial published in JAMA Psychiatry in twenty twenty-five, forty-eight adults with alcohol use disorder, who weren't seeking treatment, were randomized to low-dose semaglutide or placebo for nine weeks.",
+        "on_screen_text": "Low-dose semaglutide vs placebo",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "48",
+          "stat_label": "Adults with alcohol use disorder, 9 weeks",
+          "stock_query": "small group of cartoon volunteers"
+        },
+        "retention_device": "Trial 2 setup",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "Can it change drinking?",
+        "narration": "At the end, in a lab drinking session, people on semaglutide drank less alcohol than people on placebo.",
+        "on_screen_text": "Semaglutide group drank less in lab",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon researchers in tidy lab session"
+        },
+        "retention_device": "Payoff of main open loop",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "Can it change drinking?",
+        "narration": "That's a genuinely interesting signal. But it's forty-eight people, nine weeks, and a lab setting. Not daily life over years.",
+        "on_screen_text": "A signal, not proof",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "48 people",
+            "9 weeks",
+            "Lab setting"
+          ],
+          "stock_query": "tiny seedling under magnifying glass"
+        },
+        "retention_device": "But-rhythm reality check",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "Can it change drinking?",
+        "narration": "And notice what's missing. Neither trial tested tirzepatide. Tirzepatide isn't approved for alcohol use disorder.",
+        "on_screen_text": "Neither trial tested tirzepatide",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Tirzepatide treats alcohol use disorder",
+          "fact": "Tirzepatide isn't approved for alcohol use disorder",
+          "stock_query": "neutral mascot holding empty folder"
+        },
+        "retention_device": "Surprising gap",
+        "source_ids": [
+          "S1",
+          "S8",
+          "S9"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "Can it change drinking?",
+        "narration": "So the honest answer to the big question: the early trials are small, mixed, and intriguing. They're a reason for bigger studies, not proof.",
+        "on_screen_text": "Small, mixed, intriguing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scale with small trials, big question"
+        },
+        "retention_device": "Final payoff before checklist",
+        "source_ids": [
+          "S8",
+          "S9"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "Can it change drinking?",
+        "narration": "If Priya notices she wants wine less, that's worth mentioning to her doctor. It's not a reason to treat tirzepatide as an alcohol treatment.",
+        "on_screen_text": "Worth mentioning to your doctor",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman chatting with doctor, relaxed"
+        },
+        "retention_device": "Return to Priya",
+        "source_ids": []
+      },
+      {
+        "id": "s71",
+        "section": "Can it change drinking?",
+        "narration": "And if drinking itself worries you, that's a real health conversation, and you deserve support. Talk to your doctor, or your local alcohol support service.",
+        "on_screen_text": "You deserve support",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "supportive hands, warm light"
+        },
+        "retention_device": "Compassion beat",
+        "source_ids": []
+      },
+      {
+        "id": "s72",
+        "section": "Your checklist",
+        "narration": "Let's bring it home for Priya, and for you. Five things to take with you.",
+        "on_screen_text": "5 things to take with you",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "Medi holding checklist clipboard"
+        },
+        "retention_device": "Checklist promise",
+        "source_ids": []
+      },
+      {
+        "id": "s73",
+        "section": "Your checklist",
+        "narration": "One. Ask your prescriber about alcohol before you drink, especially if you use insulin or a sulfonylurea.",
+        "on_screen_text": "Ask before you drink",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "1",
+          "stat_label": "Ask your prescriber before you drink",
+          "stock_query": "checklist item one ticked"
+        },
+        "retention_device": "Numbered takeaway",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s74",
+        "section": "Your checklist",
+        "narration": "Two. Know the low blood sugar signs, and make sure someone with you knows them too.",
+        "on_screen_text": "Know the signs, share them",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "2",
+          "stat_label": "Know low blood sugar signs; tell someone",
+          "stock_query": "two friends with symptom card"
+        },
+        "retention_device": "Numbered takeaway",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s75",
+        "section": "Your checklist",
+        "narration": "Three. On days with vomiting or diarrhea, focus on fluids. Alcohol is on the dehydration list for a reason.",
+        "on_screen_text": "Fluids first on rough days",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "3",
+          "stat_label": "Fluids first on vomiting or diarrhea days",
+          "stock_query": "water glass on bedside table"
+        },
+        "retention_device": "Numbered takeaway",
+        "source_ids": [
+          "S1",
+          "S5"
+        ]
+      },
+      {
+        "id": "s76",
+        "section": "Your checklist",
+        "narration": "Four. Notice what alcohol does to your stomach on this medicine, and tell your prescriber if side effects are hard to manage.",
+        "on_screen_text": "Notice, then tell",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "4",
+          "stat_label": "Notice your stomach; tell your prescriber",
+          "stock_query": "symptom diary and pen"
+        },
+        "retention_device": "Numbered takeaway",
+        "source_ids": []
+      },
+      {
+        "id": "s77",
+        "section": "Your checklist",
+        "narration": "Five. Severe stomach pain that won't go away, with or without vomiting, means stop using tirzepatide and call your healthcare provider right away.",
+        "on_screen_text": "Severe stomach pain that won't go away, with or without vomiting? Stop using tirzepatide and call your healthcare provider right away.",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "5",
+          "stat_label": "Severe stomach pain: stop, call right away",
+          "stock_query": "calm phone call checklist item"
+        },
+        "retention_device": "Numbered takeaway with emergency trigger",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s78",
+        "section": "Safety and next steps",
+        "narration": "Remember Priya at that birthday dinner? She doesn't need fear. She needs a plan, and she has one. So do you.",
+        "on_screen_text": "A plan, not fear",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman smiling at dinner, confident"
+        },
+        "retention_device": "Emotional payoff of the thread",
+        "source_ids": []
+      },
+      {
+        "id": "s79",
+        "section": "Safety and next steps",
+        "narration": "For anything that isn't one of those emergency signs, don't stop, switch, or change your medicine on your own.",
+        "on_screen_text": "For anything that isn't one of those emergency signs, don't stop, switch, or change your medicine on your own.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm Medi with gentle stop hand"
+        },
+        "retention_device": "Safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s80",
+        "section": "Safety and next steps",
+        "narration": "Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly clinic consultation room"
+        },
+        "retention_device": "Disclaimer and prescriber line",
+        "source_ids": []
+      },
+      {
+        "id": "s81",
+        "section": "Safety and next steps",
+        "narration": "We take one tirzepatide question at a time and answer it from the label and the research. Subscribe if that helps.",
+        "on_screen_text": "One question at a time",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi cheering beside subscribe button"
+        },
+        "retention_device": "Single subscribe ask tied to a benefit",
+        "source_ids": []
+      },
+      {
+        "id": "s82",
+        "section": "Safety and next steps",
+        "narration": "There's a video I'd watch next, linked in the description.",
+        "on_screen_text": "Watch next: in the description",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi pointing down toward description"
+        },
+        "retention_device": "Watch-next handoff",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Zepbound (tirzepatide) injection: US Prescribing Information",
+        "publisher": "Eli Lilly and Company / US FDA",
+        "year": "2026 (revised 28 Aug 2026)",
+        "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+      },
+      {
+        "id": "S2",
+        "title": "ZEPBOUND (tirzepatide) injection label, including Medication Guide, DailyMed",
+        "publisher": "US National Library of Medicine (DailyMed)",
+        "year": "2026 (version 28 Aug 2026)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "S3",
+        "title": "Low blood sugar (hypoglycaemia)",
+        "publisher": "NHS (UK)",
+        "year": "Page last reviewed 03 Aug 2023",
+        "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/"
+      },
+      {
+        "id": "S4",
+        "title": "Low Blood Glucose (Hypoglycemia)",
+        "publisher": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK, NIH)",
+        "year": "Last reviewed July 2021",
+        "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia"
+      },
+      {
+        "id": "S5",
+        "title": "Dehydration",
+        "publisher": "NHS (UK)",
+        "year": "Page last reviewed 01 May 2026",
+        "url": "https://www.nhs.uk/conditions/dehydration/"
+      },
+      {
+        "id": "S6",
+        "title": "Acute pancreatitis",
+        "publisher": "NHS (UK)",
+        "year": "Page last reviewed 11 Mar 2026",
+        "url": "https://www.nhs.uk/conditions/acute-pancreatitis/"
+      },
+      {
+        "id": "S7",
+        "title": "Heartburn and acid reflux",
+        "publisher": "NHS (UK)",
+        "year": "Page last reviewed 20 Nov 2023",
+        "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/"
+      },
+      {
+        "id": "S8",
+        "title": "Once-Weekly Semaglutide in Adults With Alcohol Use Disorder: A Randomized Clinical Trial (Hendershot et al.)",
+        "publisher": "JAMA Psychiatry (PubMed record)",
+        "year": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39937469/"
+      },
+      {
+        "id": "S9",
+        "title": "Exenatide once weekly for alcohol use disorder investigated in a randomized, placebo-controlled clinical trial (Klausen et al.)",
+        "publisher": "JCI Insight (PubMed record)",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36066977/"
+      }
+    ],
+    "cta": "We take one tirzepatide question at a time and answer it from the label and the research. Subscribe if that helps. There's a video I'd watch next, linked in the description."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "I checked every factual claim I could against the source behind it, and they hold up. The script passes. Two wording fixes are optional.\n\n**What the sources confirm**\n- **No alcohol in the label:** the Zepbound US label (revised 8/2026, per DailyMed) never mentions alcohol, so s02, s13, s14 and s30 are accurate.\n- **Stomach side-effect rates (s19–s20):** these match the label table for Studies 1 and 2. Nausea was 25/29/28% vs 8% on placebo, diarrhea 19/21/23% vs 8%, and vomiting 8/11/13% vs 2%.\n- **Other label wording:**\n  - The label says tirzepatide delays gastric emptying.\n  - The low blood sugar warning is about tirzepatide used with insulin or a sulfonylurea.\n  - The low blood sugar signs, the dehydration/kidney warning and the \"drink fluids\" line match the label and Medication Guide.\n  - The pancreatitis sign is quoted correctly, including \"with or without vomiting\", spreading to the back, and \"stop and call right away\".\n- **NHS low blood sugar page (s31):** it says \"drink a lot of alcohol, particularly without eating\".\n- **NIDDK page (s32):** it says \"Drinking too much alcohol without enough food\" and that alcohol \"can keep you from feeling the first symptoms\".\n- **NHS dehydration page (s45, s48, s49):** the causes list (\"been sick or have diarrhoea\", \"drunk too much alcohol\"), the symptoms, and both the urgent-help and 999 lists match.\n- **NHS acute pancreatitis page (s53):** gallstones and \"drinking a lot of alcohol\" are the most common causes.\n- **NHS heartburn page (s23):** alcohol is listed as a trigger.\n- **The two trials:**\n  - Hendershot, JAMA Psychiatry 2025 (PMID 39937469): 48 adults with alcohol use disorder who weren't seeking treatment, on low-dose semaglutide or placebo for 9 weeks. Alcohol drunk in the lab session went down.\n  - Klausen, JCI Insight 2022 (PMID 36066977): 127 adults seeking treatment, all also getting talk therapy (CBT), for 26 weeks. There was no difference in heavy drinking days overall, but an effect showed up in people with a BMI over 30. The script calls that an exploratory finding, which is appropriately cautious.\n\n**Framing and safety**\n- The script keeps the label's warnings and the general alcohol guidance clearly apart (s30, s33, s54).\n- It is clear that neither trial tested tirzepatide and that tirzepatide isn't approved for alcohol use disorder.\n- It never gives a \"safe amount\" of alcohol.\n- It includes the low blood sugar caveat for people on insulin or a sulfonylurea, emergency lines with the trigger named and \"right away\", the don't-stop line scoped to non-emergencies, the disclaimer and prescriber line in the right order, and an alcohol-support line.\n- Priya is clearly hypothetical and isn't shamed.\n\n**Source access:** the two PubMed links only showed a cookie page to my tool, so I confirmed both records through Europe PMC. Both IDs are correct.",
+    "issues": [
+      {
+        "location": "s36",
+        "claim": "Some of these signs overlap with having had too much, so the people around you could misread them.",
+        "problem": "This is a reasonable inference, but no source in the list says it. It stays acceptable because it isn't tagged to a source and it's worded cautiously (\"could\").",
+        "severity": "minor",
+        "fix": "Keep it as is with no source tag. If you want it tighter: \"Some of these signs can look a lot like having had too much, so the people around you could misread them.\""
+      },
+      {
+        "location": "s50",
+        "claim": "That's the situation the kidney warning is about.",
+        "problem": "This slightly narrows the label. Its warning is about fluid loss from nausea, vomiting or diarrhea leading to dehydration, and through that to kidney injury. \"Can't keep fluids down\" is our own way of putting it.",
+        "severity": "minor",
+        "fix": "Replace the second sentence with: \"Fluid loss from vomiting or diarrhea is what the label's dehydration and kidney warning is about.\""
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "Zepbound (tirzepatide) injection: US Prescribing Information",
+        "publisher": "Eli Lilly and Company / US FDA",
+        "year": "2026 (revised Aug 2026)",
+        "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+      },
+      {
+        "id": "S2",
+        "title": "ZEPBOUND (tirzepatide) injection label, including Medication Guide, DailyMed",
+        "publisher": "US National Library of Medicine (DailyMed)",
+        "year": "2026 (revised 8/2026)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "S3",
+        "title": "Low blood sugar (hypoglycaemia)",
+        "publisher": "NHS (UK)",
+        "year": "Page last reviewed 03 Aug 2023",
+        "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/"
+      },
+      {
+        "id": "S4",
+        "title": "Low Blood Glucose (Hypoglycemia)",
+        "publisher": "NIDDK, NIH",
+        "year": "Last reviewed July 2021",
+        "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia"
+      },
+      {
+        "id": "S5",
+        "title": "Dehydration",
+        "publisher": "NHS (UK)",
+        "year": "Page last reviewed 01 May 2026",
+        "url": "https://www.nhs.uk/conditions/dehydration/"
+      },
+      {
+        "id": "S6",
+        "title": "Acute pancreatitis",
+        "publisher": "NHS (UK)",
+        "year": "Page last reviewed 11 Mar 2026",
+        "url": "https://www.nhs.uk/conditions/acute-pancreatitis/"
+      },
+      {
+        "id": "S7",
+        "title": "Heartburn and acid reflux",
+        "publisher": "NHS (UK)",
+        "year": "Page last reviewed 20 Nov 2023",
+        "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/"
+      },
+      {
+        "id": "S8",
+        "title": "Once-Weekly Semaglutide in Adults With Alcohol Use Disorder: A Randomized Clinical Trial (Hendershot et al.)",
+        "publisher": "JAMA Psychiatry (PubMed record)",
+        "year": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39937469/"
+      },
+      {
+        "id": "S9",
+        "title": "Exenatide once weekly for alcohol use disorder investigated in a randomized, placebo-controlled clinical trial (Klausen et al.)",
+        "publisher": "JCI Insight (PubMed record)",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36066977/"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.018,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 7.1,
+      "weakShots": 9,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "At 33.6s the 'No food' label and its plate icon sit right at the bottom edge and are clipped off-screen (confirmed by the automated finding at t=33.62, box extending to y=1087).",
+        "Priya's name tag at the bottom is clipped by the frame edge (confirmed by the automated finding at t=76.49, box extending to y=1097).",
+        "Automated audit flags this shot as sparse: artwork covers only ~12% of the frame on a plain clinic background (t=92.35).",
+        "The 'Tirzepatide' stat-card label renders at only 23px, below a safely readable size (t=137.91).",
+        "The 'Gut' tag is positioned off-screen at the bottom edge (t=145.82, box to y=1088).",
+        "The 'Vomiting' tag is clipped off-screen at the bottom (t=148.08, box to y=1084).",
+        "The 'Study 1' chip label is clipped off-screen on two separate frames in this shot (t=152.7 and 155.78, boxes extending to y=1115).",
+        "'Reflux' label renders at only 23px (t=171.81).",
+        "'Dose step-up' label renders at only 22px (t=177.82).",
+        "'Glucose' label renders tiny (22–23px) on two frames in this shot (t=241.92 and 244.48).",
+        "'Dizziness' and 'Slurred speech' chip labels render at only 26px, near the small end for a list this dense (t=266.45).",
+        "'Her medicines' label renders at only 23px (t=314.71).",
+        "'Other medicines' label renders at only 23px (t=319.6).",
+        "'Kidneys' tag is clipped off-screen at the bottom edge (t=327.79, box to y=1088).",
+        "'Fluid lost' label renders at only 23px (t=332.45)."
+      ],
+      "layoutKinds": {
+        "offscreen": 15,
+        "tiny": 21,
+        "sparse": 4
+      },
+      "pacing": {
+        "window": 60,
+        "changes": 30,
+        "maxGap": 4.67,
+        "ok": true,
+        "detail": "30 visual changes in the first 60 s, longest static stretch 4.67 s (limit 5 s)"
+      },
+      "frameZero": {
+        "texts": [
+          "Drink alcohol on tirzepatide?"
+        ],
+        "heroes": 2,
+        "heroHeight": 0.5,
+        "ok": true,
+        "detail": "frame 0: text \"Drink alcohol on tirzepatide?\", 2 character(s), tallest 50% of the height"
+      }
+    },
+    "audio": {
+      "musicGain": 0.313,
+      "sfxGain": 0.55,
+      "finalWer": 0.003,
+      "maskingDelta": 0.003,
+      "lufs": -15.2,
+      "soundNotes": "Music is already sitting right in the -12/-15dB target window (measured -13.5 under voice and in pauses), so kept the multiplier at 1.0 rather than risk pushing it louder. The main fix was a cluster of SFX cues that measured far too hot against the voice (several between -3.7 and -9.8 dB, i.e. nearly as loud as the narrator) scattered through the kidney/pancreatitis and trial-data sections — pulled those down toward the -16dB felt zone. Also thinned the densest \"chip reveal\" bursts (90s, 152s, 268s, 344s, 421s, 601s) where 5–8 pops/blips were landing within ~1–2 seconds; dropped the most redundant ones so no moment has more than 3–4 effects. Left the already-good practice of ducking SFX way down under the pancreatitis/low-blood-sugar warning lines (several cues already sit at -14 to -63dB there) untouched since that matches the \"thin out on serious moments\" rule. Added five bespoke accents for the story beats the stock kit can't cover: a toast-like clink on the opening hook, a slow heartbeat under \"Confused or very sleepy?\", a low unease drone under the pancreatitis warning, an archival paper-rustle for the trials section, and a bright chime on the closing watch-next card."
+    },
+    "blocking": [],
+    "beats": {
+      "verdict": "pass",
+      "summary": "beat sync PASS: plan 82/82 beats on time, audio shift 0.02 s, render 86% of beats cut on time",
+      "planOff": 0,
+      "audioShift": 0.02,
+      "renderHitRate": 0.86,
+      "flagged": []
+    },
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 7,
+          "legibility": 9,
+          "issues": []
+        },
+        {
+          "index": 1,
+          "ctr": 6.5,
+          "legibility": 9,
+          "issues": [
+            "narrows appeal to insulin/sulfonylurea users, may feel off-topic for viewers not on insulin who expect a general alcohol answer"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "no face/emotional cue, relies purely on a generic question-mark silhouette which has historically been a weaker 'mystery' format than state-change or reaction thumbnails"
+          ]
+        }
+      ],
+      "best_index": 0,
+      "reasoning": "All three candidates are legible at phone size (short, bold 2-4 word headlines, no cutoffs), none give away the answer, none literally repeat the title's words, and faces/design match the emotional tone of their text. \\n\\nRow #0 \\\"ONE GLASS. THEN?\\\" directly mirrors the title's exact question (\\\"Can you drink?\\\") with a broad, universally relatable felt-moment hook (the worried face after one drink), keeping the curiosity gap wide open without narrowing the audience. The reaction-face layout and purple glow give strong contrast and a single clear focal point.\\n\\nRow #1 \\\"ON INSULIN TOO?\\\" is accurate to the label's low-blood-sugar caveat and uses good loss-aversion framing with a caution-tape visual, but it narrows the implied audience to insulin/sulfonylurea users, which is a subset of viewers interested in the broader alcohol question the title promises — slightly weaker broad-appeal CTR, though still legible and non-misleading.\\n\\nRow #2 \\\"WHAT CHANGES?\\\" is a pure mystery play with a bottle silhouette and giant question mark; it's clean and legible but lacks a face or felt tension, making it the least emotionally gripping of the three, and \\\"mystery\\\" silhouette layouts have less proven pull than state-change or reaction formats in our own data.\\n\\nBest pick: Row #0, for the strongest combination of broad relevance, emotional pull, and faithful match to the title's question, while keeping the curiosity gap open."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "Thumbnail headline",
+          "claim": "ONE GLASS. THEN?",
+          "problem": "This keeps the curiosity gap honestly and matches the 'a glass lands in front of you' scene. But the video never says what one glass does. The alcohol-related lows it covers come from drinking 'a lot' or 'too much' alcohol. A viewer could read the thumbnail as promising a one-drink verdict, or as hinting that a single glass is dangerous. That's slight over-promising, not a false claim.",
+          "severity": "minor",
+          "fix": "Optional: replace with \"A DRINK ON THIS?\" (with the face showing hesitation and a glass as the one big object). Or keep \"ONE GLASS. THEN?\" as it is. It's acceptable."
+        },
+        {
+          "location": "Description (after Sources, before #tirzepatide)",
+          "claim": "No chapter block",
+          "problem": "The playbook asks for chapters, one per script section, starting at 00:00 with real timestamps. Leaving them out is allowed only if the timings aren't final and the post notes say so.",
+          "severity": "minor",
+          "fix": "Once the final narration timings exist, add this block between the sources and #tirzepatide, with real times in place of the [times]: \"00:00 The short answer\\n[time] What the label says\\n[time] Your stomach on a night out\\n[time] The low blood sugar link\\n[time] Dehydration and your kidneys\\n[time] Pancreatitis warning signs\\n[time] Can it change drinking?\\n[time] Your checklist\\n[time] Safety and next steps\". If the timings aren't final, leave the block out and note \"chapters pending final timings\" in the post notes. Never ship placeholder times."
+        }
+      ]
+    }
+  },
+  "release_tag": "content-2026-11-12",
+  "archive_url": "b2://informed-lab-media/content/2026-11-12/L1-tirzepatide-mounjaro-zepbound-and-alcoho/"
+}
