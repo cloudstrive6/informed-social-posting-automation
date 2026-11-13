@@ -1,0 +1,581 @@
+{
+  "at": "2026-11-13T12:18:32.158Z",
+  "summary": "Radar for 2026-11-13, GLP-1 focus. There are three live hooks this week. (1) The FDA's class-wide NAION eye warning, issued Nov 9–10, now covers Mounjaro, Zepbound and Foundayo. News coverage is peaking (AP, Guardian, ABC, The Hill, AAO), so a calm long video explaining the label change can still ride search demand. Use the numbers: about 6.4 vs 3.8 cases per 100,000 person-years, and call right away about sudden vision change. (2) T-REx, a tirzepatide plus resistance-training RCT in Nature Medicine on Nov 9, found about 25% less lean-mass loss with lifting. It's covered only by News-Medical and UWA so far. Our lifting-RCT Short got 16 views, so fold the trial into a broad 'keep muscle' piece rather than making it a single-trial video. (3) ObesityWeek runs Nov 14–17 in DC. Watch for a full REDEFINE 4 paper (CagriSema vs tirzepatide, randomized). If one appears, it's an EloraTZP-style fast turn within 48 h; the topline is from February, so only a new publication makes it fresh. The playbook's search formats are filled with broad, evergreen tirzepatide topics: a pen how-to (IFU only), a month-by-month what-to-expect timeline, and foods that make stomach side effects worse or better (this absorbs the burping/heartburn and nausea threads). There's also tirzepatide vs semaglutide, with SURMOUNT-5 as the anchor and a refresh from the Nature GLP1R-variant paper. Thanksgiving Shorts are held to Nov 18 or later. Felt-symptom Shorts: injection site, nausea (GIPR variant hook), hair, and heart rate (new wearable cohort). The stopping-and-mood case reports (NY Post) are caution-only. Rejected: compounded price reports, dose-skipping to stretch supply, the 'GLP-1 overdose' explainer, employer coverage cuts and other cost/business stories.",
+  "candidates": [
+    {
+      "topic": "Tirzepatide (Mounjaro/Zepbound) pen: how to use it step by step, per the Instructions for Use (injection sites, rotating, what the click means, common mistakes)",
+      "angle": "Calm device how-to taken only from the IFU: where on the body (stomach, thigh, back of upper arm with help), rotating sites, what the pen does and how you know it worked, storage and travel basics heading into holiday trips. No amounts and no dosing. Chapter on 'is this redness normal?' that links to the Side Effects hub.",
+      "keywords": [
+        "how to use mounjaro pen",
+        "zepbound pen how to use",
+        "mounjaro injection sites",
+        "where to inject zepbound",
+        "tirzepatide injection how to"
+      ],
+      "stage": "evergreen",
+      "momentum": 86,
+      "predicted_peak": "steady; holiday travel bump Nov 20–Dec 31",
+      "why_now": "The owner's 11-12 research says device how-tos beat channel averages by 10–195x in this niche. Injection-site Shorts already get 160–238 views (our proven winners). Holiday travel adds storage and travel questions.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Zepbound Prescribing Information + Instructions for Use (Lilly)",
+          "signal": "The IFU is the only allowed source for the steps. It lists approved injection areas and site rotation.",
+          "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+        },
+        {
+          "source": "InforMed analytics",
+          "signal": "Injection-site Shorts 238 and 160 views (day 3); the owner flagged device how-tos as a 10–195x format",
+          "url": "https://www.youtube.com/@InforMedLab"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide (Mounjaro) and the new FDA eye warning (NAION): what changed on the label, how rare it is, what to watch for",
+      "angle": "A label change explained like a friend would: what NAION is ('a stroke in the optic nerve'), the FDA's numbers (about 6.4 vs 3.8 cases per 100,000 people per year), that it now covers tirzepatide and Foundayo too, and the one action: sudden vision loss, blind spots or tunnel vision means calling your healthcare provider right away. Then the scoped don't-stop line and the prescriber line. Reassuring, not scary, and fully absolute-risk based.",
+      "keywords": [
+        "mounjaro eye warning",
+        "tirzepatide vision loss",
+        "zepbound NAION",
+        "GLP-1 blindness warning",
+        "ozempic eye condition"
+      ],
+      "stage": "peaking",
+      "momentum": 88,
+      "predicted_peak": "0–5 days (news peak now; search tail 2–3 weeks)",
+      "why_now": "The FDA ordered class-wide labeling Nov 9–10. AP, Guardian, ABC, USA Today, Fox Business and The Hill covered it, and the AAO published a patient explainer Nov 11. Korea's regulator issued its own warning. Label changes are an owner-priority search format. Our earlier NAION Short got only 45 views, so this works as a long video with a calm 'tirzepatide' search title, not as news.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Healio (Nov 9)",
+          "signal": "FDA to require NAION risk warning for GLP-1 therapies",
+          "url": "https://www.healio.com/news/ophthalmology/20261109/fda-to-require-naion-risk-warning-for-glp1-therapies"
+        },
+        {
+          "source": "Optometry Times (Nov 9)",
+          "signal": "Class-wide warning; 6.4 vs 3.8 per 100,000 person-years; contact a professional immediately for sudden vision change",
+          "url": "https://www.optometrytimes.com/view/fda-now-requiring-naion-warning-across-glp-1-receptor-agonist-class"
+        },
+        {
+          "source": "FOX 29 explainer",
+          "signal": "Covers Mounjaro, Zepbound, Foundayo; NAION described as a 'stroke' of the optic nerve",
+          "url": "https://www.fox29.com/news/what-is-naion-ozempic-wegovy-other-glp-1s-linked-rare-eye-condition"
+        },
+        {
+          "source": "Google News: AAO, AP, Guardian, The Hill (Nov 10–12)",
+          "signal": "Mainstream saturation, so treat this as peaking",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRzBxNldBcFp2YURaZTJsbTlBV0VSaXlFc2ZHVURrbGw1Ni1Ib24wUkZaeDRRREFFVXV6REU5dDY0MnUyUW8tNmg3S25LZ3M4UUhQOXZBSEhuS2NiOUVwbWxFbWp5bmpSUkNpdEhHcGRFMnZieEFmenNuV25HTnBJelRwU1R4Wm1QTGRoQnpFUEFVajdxc0lZM0pTdWdTUGFrQUE?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide (Mounjaro) stomach side effects: foods that make nausea, burping, heartburn and diarrhea worse or better",
+      "angle": "One broad, high-search video that absorbs the narrow symptom threads (burping/sulfur burps, heartburn, nausea, diarrhea). Explain the mechanism first (slower stomach emptying), then the label's timing ('mostly during dose escalation, decreased over time'), then practical swaps: smaller meals, eating slowly, stopping when full, going easy on greasy and very rich foods, hydration. Includes when to call. Watch-next goes to Side Effects.",
+      "keywords": [
+        "mounjaro foods to avoid",
+        "tirzepatide nausea what to eat",
+        "zepbound sulfur burps",
+        "mounjaro heartburn",
+        "tirzepatide side effects food"
+      ],
+      "stage": "evergreen",
+      "momentum": 84,
+      "predicted_peak": "steady; holiday-meal lift Nov 18–Jan 2",
+      "why_now": "The 11-12 performance playbook names 'foods that make side effects worse or better' as a priority broad Lane A topic. The burping/heartburn thread has held 74–80 across 9 snapshots, and nausea 78–84. Broad topics get 580–2,870 impressions where narrow ones get under 300.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Zepbound Prescribing Information",
+          "signal": "GI adverse reactions occurred mostly during dose escalation and decreased over time",
+          "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+        },
+        {
+          "source": "CNN (Nov 10)",
+          "signal": "'Doctors explain GLP-1 side effects': mainstream interest in side-effect management",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWjVoXzVpVDFlUW9UUE9Dcm1aMWtwSFI5TldwdllOWm1EMjdMU3VKUXhTMmxBZVZqZ1FDQS1PYlozWTRkeFZaRG1iWUljeDNwcjk2MTBscC1wdThjOWFKYUhLQmw3RE9xSG56RkFiT2ZVb2RRVHlCbUo4eUtUNXBGRnZIQmJycHA1MkhXNFBRTF8yQkZQSmoyc3JYTW5YRDh2TnY2NFh4RmJRYUNjZ19N?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide (Mounjaro) results timeline: what to expect month by month in the first year (SURMOUNT-1 curve, side effects, food noise, plateaus)",
+      "angle": "A 'what to expect' timeline built from the SURMOUNT-1 weight curve (adults with obesity, or overweight plus at least one weight-related condition, without diabetes), the label's GI timing, and when weight loss typically slows. Every number is 'on average' and none is a promise. Makes sense as a sequel to the 11-13 First Month video (series and watch-next).",
+      "keywords": [
+        "mounjaro results timeline",
+        "tirzepatide month by month",
+        "how long does zepbound take to work",
+        "mounjaro 3 months results",
+        "what to expect on tirzepatide"
+      ],
+      "stage": "evergreen",
+      "momentum": 82,
+      "predicted_peak": "steady; New Year starters spike Dec 28–Jan 20",
+      "why_now": "'What to expect' timelines are an owner-priority 10–195x format. How Long earned 233 min with a 4.66% CTR. It extends the First Month video (11-13) into a series ahead of the January starter wave.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "SURMOUNT-1, NEJM 2022 (PubMed)",
+          "signal": "72-week weight trajectory by dose vs placebo in adults with obesity/overweight without diabetes",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35658024/"
+        },
+        {
+          "source": "Diabetes Metab (Nov 12) real-world tirzepatide",
+          "signal": "New real-world weight response by diabetes status, usable as a 'linked to' context line",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43020464/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Thanksgiving on tirzepatide: feeling full fast, protein first, smaller plates, eating slowly, alcohol and easing nausea at a big holiday meal",
+      "angle": "20:00 funnel Shorts from Nov 18 that answer one fresh holiday question each ('Why do I feel full after 5 bites?', 'Pie on tirzepatide?'). Log the Thanksgiving long as the related-video target. Positive, no guilt, no extreme-diet messaging.",
+      "keywords": [
+        "thanksgiving on mounjaro",
+        "tirzepatide holiday eating",
+        "zepbound thanksgiving dinner",
+        "mounjaro feeling full fast"
+      ],
+      "stage": "rising",
+      "momentum": 88,
+      "predicted_peak": "Nov 20–27",
+      "why_now": "Seen in 11 snapshots. The playbook says to hold Shorts until Nov 18 (the Nov 6 one got 20 views). The search peak is the week of Nov 26.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "InforMed playbook",
+          "signal": "Thanksgiving long 94 min; seasonal Shorts posted too early underperform; Nov 18–27 window",
+          "url": "https://www.youtube.com/@InforMedLab"
+        },
+        {
+          "source": "Zepbound Prescribing Information",
+          "signal": "Delayed gastric emptying and GI effects support the 'full fast' explanation",
+          "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Will I lose muscle on tirzepatide? T-REx randomized trial (Nature Medicine, Nov 9): resistance training linked to about 25% less lean-mass loss",
+      "angle": "Fold it into a broad felt question rather than a single-trial deep dive: 'Tirzepatide (Mounjaro) and muscle: how to keep it'. T-REx is the fresh proof point (3 sessions a week vs none, everyone got hydration, protein and fibre advice; the manufacturer supplied the drug but didn't design the study). Then protein and practical beginner-friendly lifting. Points to Strength and Bones & Muscle.",
+      "keywords": [
+        "tirzepatide muscle loss",
+        "mounjaro lose muscle",
+        "zepbound strength training",
+        "weight lifting on tirzepatide"
+      ],
+      "stage": "emerging",
+      "momentum": 72,
+      "predicted_peak": "5–14 days (lifestyle press pickup, then evergreen)",
+      "why_now": "A tirzepatide-specific RCT in Nat Med, covered by News-Medical (Nov 12) and the UWA release, with little creator coverage yet. Caveat: our 11-10 lifting-RCT Short got 16 views, so package it as a felt worry, not as news.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "PubMed / Nat Med (Nov 9)",
+          "signal": "RCT: resistance exercise to attenuate lean mass loss during tirzepatide therapy",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43003902/"
+        },
+        {
+          "source": "UWA news release",
+          "signal": "About 25% less lean tissue lost with resistance training; strength increased; 3 sessions a week",
+          "url": "https://www.uwa.edu.au/news/article/2026/november/resistance-training-key-to-maintaining-muscle-function-during-glp1-weight-loss"
+        },
+        {
+          "source": "News-Medical (Nov 12)",
+          "signal": "Muscle benefits of lifting weights while taking tirzepatide",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaHVrYnRzOEhxSGdIS3BsLTgyWVZBaU1kcm95b25oaUMxcnlxYXJXWWl1LWFXSnNOYW5lZHNYYTlpR0dUb004Q2RlUTJsQjNNTFJVYUJYMGRzVFdlNXR4NW10OUxsMThzUml3SHEzQTBHYlowdHAyNE85Qi1EVFIwaVpGMnZCUU9CNUd4Nk9rdkdpUnVMNnJaYUxtUmJtTTJyaDRLZmRUelV1cWc?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "ObesityWeek 2026 (Nov 14–17): watch for the full REDEFINE 4 publication, CagriSema vs tirzepatide in 809 adults with obesity (open-label, 84 weeks)",
+      "angle": "Make it only if a full peer-reviewed paper or new presentation drops during ObesityWeek: a fast-turn 'Did CagriSema beat tirzepatide?' (EloraTZP model) within 48 h. Topline numbers: tirzepatide −25.5% vs CagriSema −23.0% (efficacy estimand) and −23.6% vs −20.2% (treatment-regimen estimand); non-inferiority wasn't met. Focus on what's new in the full data (GI tolerability, subgroups). CagriSema isn't approved.",
+      "keywords": [
+        "cagrisema vs tirzepatide",
+        "redefine 4 results",
+        "cagrisema vs mounjaro",
+        "is cagrisema better than zepbound"
+      ],
+      "stage": "emerging",
+      "momentum": 74,
+      "predicted_peak": "1–4 days after the full data appear (Nov 14–20)",
+      "why_now": "Randomized head-to-heads against tirzepatide are our biggest earner (EloraTZP 44% of all minutes). ObesityWeek starts tomorrow, and Novo's Science Hub lists OW2026 activity. Risk: the topline came out in Feb 2026, so this is only a fast turn if something new is published. Otherwise skip, since evergreen 'Did X beat' videos flopped.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "ReachMD",
+          "signal": "REDEFINE 4: CagriSema 23% vs tirzepatide 25.5%, primary non-inferiority not met",
+          "url": "https://reachmd.com/news/redefine-4-cagrisema-23-vs-tirzepatide-255-primary-noninferiority-not-met/2485794/"
+        },
+        {
+          "source": "Patient Care (Feb 23, 2026)",
+          "signal": "809 adults, open-label, 84 weeks; treatment-regimen estimand 20.2% vs 23.6%",
+          "url": "https://www.patientcareonline.com/view/cagrisema-achieves-23-weight-loss-but-misses-noninferiority-vs-tirzepatide-in-redefine-4"
+        },
+        {
+          "source": "Novo Nordisk Science Hub",
+          "signal": "ObesityWeek 2026 congress page",
+          "url": "https://sciencehub.novonordisk.com/congresses/ow2026.html"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide vs semaglutide (Zepbound vs Wegovy): what the randomized head-to-head showed, and why some people respond differently",
+      "angle": "An approved-drug head-to-head against tirzepatide, built on the SURMOUNT-5 RCT (adults with obesity, or overweight plus a weight-related condition, without diabetes; 72 weeks). Fresh hooks: a Nature paper finding rare GLP1R variants blunted semaglutide weight loss but not tirzepatide (genetic, rare, not a test you need), and the new DOM target-trial emulation on cardiovascular outcomes (observational, 'linked to'). Ends with: questions to bring to your prescriber.",
+      "keywords": [
+        "zepbound vs wegovy",
+        "tirzepatide vs semaglutide",
+        "mounjaro vs ozempic which is better",
+        "why ozempic didn't work for me"
+      ],
+      "stage": "evergreen",
+      "momentum": 74,
+      "predicted_peak": "steady; Nature-variant press 3–10 days",
+      "why_now": "The owner asks for approved-drug head-to-heads against tirzepatide. Two new papers (Nature Nov 11; DOM Nov 10) give a fresh hook to a huge evergreen search. Caution: our SURMOUNT-5 'Did X beat' video earned 36 min, so package it around the viewer's question, not the trial name.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Nature (Nov 11) via Google News",
+          "signal": "Rare GLP1R variants attenuate weight loss with semaglutide but not tirzepatide",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92WGZHVjJ4TUtSOGc4MjFyYThoM0pBamNqSmxSRHIwUHVsNDFrMm9sRXYybFZwOHpObWVZemFSM3JxTG5rREZTQXFsd21tcGlPQjBVNzlhZUY4cWtJdkpR?oc=5"
+        },
+        {
+          "source": "PubMed / Diabetes Obes Metab (Nov 10)",
+          "signal": "Target trial emulation: CV outcomes, semaglutide vs tirzepatide users with obesity and atherosclerotic disease (observational)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43010688/"
+        },
+        {
+          "source": "SURMOUNT-5, NEJM 2025 (PubMed)",
+          "signal": "Randomized tirzepatide vs semaglutide head-to-head in obesity",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40353578/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Keeping results after stopping tirzepatide: SURMOUNT-4 plus new real-world regain data and the 'rebound' coverage (Fox News, Nov 12)",
+      "angle": "Answer the Fox News 'rebound risks' fear with numbers: SURMOUNT-4 (335 vs 335; +14.0% regain on placebo from week 36 to 88; placebo still ended 9.9% below starting weight on average) and real-world data showing regain varies widely. Then the habits linked to holding on, and planning any change with your prescriber. No stopping advice. Funnel to the Stopping long.",
+      "keywords": [
+        "stopping mounjaro weight regain",
+        "what happens when you stop zepbound",
+        "tirzepatide rebound",
+        "keep weight off after mounjaro"
+      ],
+      "stage": "evergreen",
+      "momentum": 80,
+      "predicted_peak": "steady; January lift",
+      "why_now": "Fox News 'Ozempic and Zepbound users face 6 rebound risks' (Nov 12). ObesityWeek regain abstracts are coming. Stopping is 235 min by day 8, and outside channels ('The Tirzepatide Boom Just Hit a Wall') send it traffic.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Fox News (Nov 12)",
+          "signal": "Ozempic and Zepbound users face 6 rebound risks after stopping",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTURfX3pPUmZMT2N4WDJMbWpmWlV3am9LSU0yaUc2U2lQUnZNYVlsTjNpX09BcktHREhTUjJqb3JhRkpnNkxGeG1KZEpJcVZKSEtGNm5oWUljVVFjSDJMSVE4SWllVmxta2RsQl9KWTNsNGFBS3FBaTJfWmZiQXliS2NFMWNBMjUwY2p0VXZUenZVZmZYQ3RmTmQ1dTbSAaIBQVVfeXFMTkZtZzBZQXNwc21zMG83N3piejBBTTNjNDlDaThlbmt3VkxXRkRzOXRQZTAtbnJZMmdNTUJ6c3doNTZXOERydTJMcnJxRW5fZ3hvX0RBU2lXbzFiMVh0SVY3eHVETG94Zk56bGlpUFJ6U0RmVHk4U0ZuRXdKYmtxVDY0VWFhLW9lVFhCLUJPVUppTElCTzlCTWhnaERNeVVaMEtB?oc=5"
+        },
+        {
+          "source": "SURMOUNT-4, JAMA 2024 (PubMed)",
+          "signal": "Randomized withdrawal: regain on placebo vs continued tirzepatide",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38078870/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short",
+        "long"
+      ]
+    },
+    {
+      "topic": "Tirzepatide injection site reactions: is redness, itching or a small lump normal? (label: 6–8% by dose vs about 2% on placebo)",
+      "angle": "08:00 'Is this normal?' Short with one new fact per post (rotating sites, how long redness usually lasts, when to call). Owner sets the related-video link to the Side Effects long.",
+      "keywords": [
+        "mounjaro injection site reaction",
+        "zepbound lump after injection",
+        "tirzepatide itchy injection site",
+        "mounjaro red bump"
+      ],
+      "stage": "evergreen",
+      "momentum": 86,
+      "predicted_peak": "steady",
+      "why_now": "A proven visible-body Short format (238 and 160 views). Steady across 9 snapshots. Pairs with the pen how-to long.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Zepbound Prescribing Information",
+          "signal": "Injection-site reactions 6–8% by dose vs about 2% on placebo",
+          "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide nausea: why some people get more of it. Genetics study links a GIPR variant to nausea and vomiting on tirzepatide (Nature, 23andMe Research Institute)",
+      "angle": "Felt-symptom Short: why nausea happens (slower stomach emptying), the label's timing, a curiosity fact (a GIPR gene variant was associated with nausea on tirzepatide but not on semaglutide; you don't need a gene test), then the practical tips and when to call (severe, ongoing belly pain, with or without vomiting).",
+      "keywords": [
+        "tirzepatide nausea",
+        "mounjaro nausea how long",
+        "zepbound nausea relief",
+        "why does mounjaro make me nauseous"
+      ],
+      "stage": "evergreen",
+      "momentum": 80,
+      "predicted_peak": "steady",
+      "why_now": "Nausea is a proven Short (179 views). Genetics-response stories are recirculating with the new Nature GLP1R-variant paper (Nov 11). Fox and Scientific American covered GLP-1 genetics.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Scientific American",
+          "signal": "How well GLP-1 drugs work may depend on your genetics (23andMe Nature GWAS, 27,885 users; GIPR variant and nausea on tirzepatide)",
+          "url": "https://scientificamerican.com/article/how-well-glp-1-weight-loss-drugs-work-may-depend-on-your-genetics"
+        },
+        {
+          "source": "Zepbound Prescribing Information",
+          "signal": "Nausea rates and GI timing",
+          "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Foundayo (orforglipron) what to expect: the GLP-1 pill, label only, refreshed by China's approval (Nov 12) and the ATTAIN-OSA sleep apnea data in JAMA",
+      "angle": "An approved drug with search demand ('foundayo' is our top non-EloraTZP search term). A label-only what-to-expect video: how it's taken per the label (no amounts), common side effects, the new NAION class warning, and how its trial weight loss compares with the tirzepatide trials. Present those as separate trials, not a head-to-head. Sleep apnea is 'studied', not an approved use unless the label says so.",
+      "keywords": [
+        "foundayo what to expect",
+        "orforglipron side effects",
+        "foundayo vs zepbound",
+        "glp-1 pill"
+      ],
+      "stage": "rising",
+      "momentum": 76,
+      "predicted_peak": "3–10 days",
+      "why_now": "China's approval (Reuters, Medical Xpress Nov 12–13), the ATTAIN-OSA JAMA paper (MedPage Nov 10), Lilly's Leanne Morgan campaign and Japanese obesity data are all landing at once. The Foundayo long earned 312 min, 121 of them from search.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Medical Xpress (Nov 13)",
+          "signal": "China approves first oral GLP-1 weight-loss pill",
+          "url": "https://medicalxpress.com/news/2026-11-china-oral-glp-weight-loss.html"
+        },
+        {
+          "source": "MedPage Today (Nov 10)",
+          "signal": "GLP-1 pill shows benefit in sleep apnea",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ZOXRyYkJiMEdiUFVLV2oxWFZQNDIycVdISExYOUxRRm1FTkluSWU2YWJDWVljLTR6MzBpUXJtNjMyVzZTVVA0dmlnY1E2NUhBRWptVzZrWmtueFZZNTUya0J2S2YxUQ?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Does tirzepatide raise your heart rate? New Apple HealthKit cohort of steps and heart rate after starting semaglutide or tirzepatide (Diabetes Obes Metab, Nov 10)",
+      "angle": "A felt-symptom Short for people who see their smartwatch resting heart rate go up: the label reports a small average increase in heart rate, and new wearable data (observational, 'linked to') tracked heart rate and steps after starting. Explains when to call (a racing heart at rest, palpitations, dizziness) and adds a gentle nudge to keep walking.",
+      "keywords": [
+        "mounjaro heart rate",
+        "tirzepatide high heart rate",
+        "zepbound apple watch resting heart rate",
+        "glp-1 heart racing"
+      ],
+      "stage": "emerging",
+      "momentum": 64,
+      "predicted_peak": "7–14 days",
+      "why_now": "A fresh paper (Nov 10) answers a common wearable-user question. Creator coverage is low, and it's a 'noticed it' moment that fits the 08:00 slot.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "PubMed / Diabetes Obes Metab (Nov 10)",
+          "signal": "Daily steps and heart rate after semaglutide or tirzepatide initiation: Apple HealthKit cohort in All of Us",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43010689/"
+        },
+        {
+          "source": "Zepbound Prescribing Information",
+          "signal": "Heart rate increase listed in warnings/adverse reactions",
+          "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Sick days on tirzepatide: cold, flu or a stomach bug, dehydration signs and the label's kidney warning",
+      "angle": "A cold-and-flu-season Short: vomiting or diarrhea can dehydrate you, and the label warns this may affect the kidneys. Lists dehydration signs, sipping fluids, and calling your prescriber if you can't keep fluids down. No changes to medicine on your own.",
+      "keywords": [
+        "mounjaro stomach bug",
+        "tirzepatide flu",
+        "zepbound dehydration",
+        "sick on mounjaro what to do"
+      ],
+      "stage": "evergreen",
+      "momentum": 76,
+      "predicted_peak": "Dec–Feb seasonal",
+      "why_now": "Flu and norovirus season is starting. The Dehydration long hits day 7 on 11-17 and can be a funnel target.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Zepbound Prescribing Information",
+          "signal": "Acute kidney injury warning linked to dehydration from GI adverse reactions",
+          "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide hair loss: why women report it more (label 7.1% vs 0.5% in men), and why it's usually linked to rapid weight loss",
+      "angle": "A new hair angle (not growth or prevalence): the sex difference in the label data and the telogen effluvium explanation. Only after the Hair long is verified clean. Related-video link to the Hair Loss long.",
+      "keywords": [
+        "tirzepatide hair loss",
+        "mounjaro hair loss women",
+        "zepbound hair shedding"
+      ],
+      "stage": "evergreen",
+      "momentum": 78,
+      "predicted_peak": "steady",
+      "why_now": "The hair Short is our best ever (1,024 views). One hair Short is allowed this week.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Zepbound Prescribing Information",
+          "signal": "Hair loss 5.4% vs 0.9%; women 7.1% vs men 0.5%",
+          "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Can stopping tirzepatide affect your mood? Case reports of psychiatric symptoms after stopping (NY Post, Nov 11) vs trial data on mood",
+      "angle": "Calm 'what's confirmed?' Short: these are rare case reports, not proof of cause. Pooled tirzepatide trial analyses didn't show increased depression, and the FDA found no evidence of increased suicidal thoughts (2026). The takeaway: any plan to stop goes through your prescriber, and new mood changes merit a call. Avoid the words 'withdrawal' and 'hallucinations' in the title.",
+      "keywords": [
+        "stopping mounjaro mood",
+        "tirzepatide depression",
+        "zepbound mental health side effects"
+      ],
+      "stage": "rising",
+      "momentum": 62,
+      "predicted_peak": "3–7 days",
+      "why_now": "The NY Post, Health and Me and India News Network ran this Nov 11–12. It's fear-bait and needs a calm, evidence-first correction.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "NY Post via Google News (Nov 11)",
+          "signal": "Some GLP-1 patients suffer psychotic symptoms after stopping (case reports)",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZWVyeFJ2ek5iQTBBc1dwTFNnMWFiT2tIY2lwcUZWaVJIRlVGN1RsVnBHRjk4ZXBLQ1lqU2RjcUE2Y2pja2o5Vi00ZkRzc3VoclIyVGxjLU56UGh4cVhleVU2aXh0Zk1BSk1VbWNvUGZOMWJzS3lDY0JZWW1fdW5vYzBLY1hPTVpqNmJUdEpkR2RBSDJmNmZER2NuT084YVNJb2R6Um00d0E?oc=5"
+        },
+        {
+          "source": "FDA update on suicidal thoughts evaluation",
+          "signal": "FDA review found no evidence of increased risk",
+          "url": "https://www.fda.gov/drugs/drug-safety-and-availability/update-fdas-ongoing-evaluation-reports-suicidal-thoughts-or-actions-patients-taking-certain-type"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Retatrutide and knee osteoarthritis pain: what's confirmed (TRIUMPH-4 and TRIUMPH-1-OA, NEJM, Nov 8)",
+      "angle": "13:00 Short in the 'new Phase 3 data' format: the knee-pain result, the population, and that retatrutide isn't approved. No 'yet', no approval-status title.",
+      "keywords": [
+        "retatrutide knee pain",
+        "retatrutide osteoarthritis",
+        "retatrutide results"
+      ],
+      "stage": "peaking",
+      "momentum": 60,
+      "predicted_peak": "0–5 days",
+      "why_now": "A Washington Post column (Nov 11) and Medical Republic (Nov 12) extend the coverage, but it's declining across 7 snapshots. Retatrutide Phase 3 Shorts get 82–280 views.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Washington Post (Nov 11)",
+          "signal": "Powerful new weight-loss drug may also ease knee pain",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPblRkZ2xpT3pwY2tNT2pnVXVvUktOTVdaSU43MmcxQ3JXVzFaNDFQazBmZ2Y3RkxtbzEza3QxNllvRy1zVEZHVnZDZ0tTVzctd2hELXBMeTE2TDVBN0ZlclZSV0M5dnIzYTg0ZFVjM3RIT09UUDVyZFp5dUE3UHE5QlRuMERZcU05Z2dXbkd3UFpiMFlhYVVkUElHR3ZPdUlfMWZxMkUwNVY3WnZvclVnbjJyWmN2dzR5Ym91Qk02blQ?oc=5"
+        },
+        {
+          "source": "News-Medical (Nov 10)",
+          "signal": "A weight-loss drug eased knee arthritis pain in two major trials",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZXRsbW9fTGViQWNEdU9iU25wc0dzdTQxSlNmcTc4WmtCT3YwRHdFR1JIdUhvclRtQ3FERHBQUGVRVDJfYVFmNWNYOFdfTFVoNUhLM2ZJNl9FZThJS21GLXFEVVoxYjJabXVvRkhqMFB0LW9TTXNlRWlPNTZ4ZFdmcEFQR3Buc0syaVU4SHlMNk15WkVxemlRVERaT2RGcGwwWGh5MGxiMDI4ekJlcXE3bzZn?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "REJECT: compounded tirzepatide price reports (Ozari, Join Luma), 'GLP-1 users skip doses to stretch supply' (Bloomberg), the 'what happens when you overdose on GLP-1s' explainer (BBC Science Focus), gray-market retatrutide, and employer coverage cuts (Deloitte)",
+      "angle": "Don't cover them. They promote compounded or gray-market sources, imply dose skipping or self-titration, are dosing-adjacent, or fall under the banned cost and coverage angles.",
+      "keywords": [
+        "compounded tirzepatide price",
+        "skip ozempic doses",
+        "glp-1 overdose"
+      ],
+      "stage": "peaking",
+      "momentum": 5,
+      "predicted_peak": "n/a",
+      "why_now": "These appear in today's feeds but break brand guardrails.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Bloomberg (Nov 12)",
+          "signal": "GLP-1 users skip doses, stretch supply amid cost pressures",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeXJYc0tJMWJmMjIwenB3MWg2TVNSSkVoQzk2VWUwYTlHVXdmVERsdzV5UFoyb216VWpicjZubzFnM01tUFctMWZESy1HNENBVGlHd2FpbDh4SExJbEI0R1FQQmF5akd2ZHlBcDIwTmo1SW1TOVg4RHJHeC1oUnd5ZHAxOUxaaDVNU0xONWhKRDJnd3Z6MmJJRFhUSnlXZFZHTDA3SHRJdjRwSnFk?oc=5"
+        },
+        {
+          "source": "GlobeNewswire (Nov 11)",
+          "signal": "Compounded tirzepatide 'cheapest place to buy' press release",
+          "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQbUFjazBRMk1uQVNxMmRrU0gwNGtOeU5aVTRoZ0pEVk43WjRSYVQtTFdrWTR0VHNBeVBpU0RrSnNENDVIMTFfby1jcGpkZmhMVGxPdVNJazVBZmpkS2c0RVhZRG9TanFsUGoxM3RnREo2blNjNVFCZkFNdXh0UjVjU3BaaTV2TTVnU2lBMzY2aVNfMGpOM04td2MySVN3MkdaX1RVQVpDb0h2RzYxLTA4OEJ4Z0lobHQ0S18xQVFOT2xvb19EUWI1blJid0xmZHZrMnZGNFpJQTJiaUo2RldfU3hqbGdpQVRWcVlWWkpJbGN4dUZ5cHV5ZGN0eFdWZ1NoRkdRTmpjaTZXcUU?oc=5"
+        }
+      ],
+      "safety": "reject",
+      "formats": []
+    }
+  ]
+}
