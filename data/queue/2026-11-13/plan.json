@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-13",
+  "created_at": "2026-11-13T03:11:35.517Z",
+  "rationale": "Long-form check: 2 of the last 7 long videos were search-demand formats (the pen how-to and the Foundayo what-to-expect, both 11-11). That meets the minimum, so today's long video can be Lane A. I still picked the topic the playbook ranks first, \"Tirzepatide (Mounjaro) first month: what to expect\". It is broad, it gets searched, it rests on the label and trials rather than news, and it can rank before the New Year wave of people starting the medicine. It also avoids the narrow single-symptom format that kept getting under 300 impressions.\n\nShorts: 2 of the 3 are felt symptoms or practical moments.\n- S1 is the one hair Short allowed this week, with a new angle: why women report it more (label rates by sex). The hair long video is confirmed in sync, so it qualifies.\n- S3 spins off L1: when side effects show up and ease in the first weeks.\n- S2 is the 13:00 lead. It answers whether Foundayo and tirzepatide have ever been tested head to head (they haven't). \"foundayo\" is our top search term after EloraTZP, and the pill-vs-shot question is rising.\n\nCarousel: built only from text in the verified, shipped 11-12 heart-rate Short (no new research). I left out the nausea Short so the day doesn't stack three stomach pieces.\n\nSkipped:\n- NAION: covered 11-09 and 11-10.\n- T-REx: the Short ran 11-10, and a long video would be a single-trial deep dive.\n- Retatrutide knee: repeats the 11-02 angle and momentum is fading.\n- Thanksgiving: held until 11-18.\n- Injection-site, alcohol, dehydration, burping and nausea: all covered within 30 days.\n- REDEFINE 4: only if full data go public at ObesityWeek, as an extra L2.\n\nEach pillar is used at most twice. Body systems are spread across GI, hair/skin, heart and a drug comparison.",
+  "pieces": [
+    {
+      "id": "L1",
+      "kind": "long",
+      "topic": "Tirzepatide (Mounjaro/Zepbound) first month: what to expect, week by week. Appetite and food-noise changes, when stomach side effects tend to appear (mostly during dose increases, per the label) and ease, realistic early weight change as trial averages, fluids, the label's oral-contraceptive note, and the warning signs to watch for",
+      "angle": "Tirzepatide (Mounjaro/Zepbound) first month, label-based. Give each number its source population: SURMOUNT-1 weight averages are for adults without diabetes, Zepbound pooled GI rates per dose vs placebo, Mounjaro rates only if they're labelled as type 2 diabetes trials. Give one approximate month-1 weight average with placebo alongside, or describe only the curve's shape. Organise the timeline by experience ('first days', 'first weeks', 'when your prescriber increases the dose'), never by a dosing calendar. Birth control: the label says it 'may reduce the efficacy' of birth control pills for 4 weeks after starting and after each dose increase, so ask your prescriber about backup options. Keep the rest of the plan as written.",
+      "working_title": "Tirzepatide (Mounjaro) First Month: What to Expect",
+      "target_keyword": "mounjaro first month",
+      "trend_stage": "evergreen",
+      "why": "The owner's top-priority broad search question. Broad Lane A videos earned 233–1,009 min while narrow ones earned 7–85, and New Year starters arrive in about 6 weeks. | fact-check: Good choice: it's a broad, searched Lane A question that the playbook lists as a priority, and the plan already avoids dosing. The label's gastric-emptying wording ('the delay is largest after the first dose and diminishes over time') is real. So is the oral-contraceptive note for 4 weeks after starting and after each dose increase. Four things to tighten. (a) Population scope: the title says Mounjaro, but SURMOUNT-1 weight figures apply only to adults with obesity, or overweight plus a weight-related condition, without type 2 diabetes. Mounjaro-label side-effect rates come from type 2 diabetes trials. Each number must name its label and population. Don't mix them. (b) First-month weight: in the first 4 weeks of SURMOUNT-1, every tirzepatide arm was still on the starting dose. So a per-arm month-1 figure means nothing, and saying why would reveal the schedule. Give one approximate figure off the curve: 'about', 'on average', 'averages, not predictions', with the placebo arm alongside. If the curve can't be read reliably from the NEJM figure, drop the number and describe the shape. (c) A 'week by week' timeline must not imply a dosing schedule. Don't say 'week 4 is when your dose goes up'. Use only 'your prescriber increases it gradually'. (d) Birth control chapter: quote the label's 'may reduce the efficacy' wording. Its advice to switch to a non-oral method or add a barrier method goes as 'the label advises; ask your prescriber which option fits you'. Don't make it a personal instruction. Warning-signs chapter: the pancreatitis card keeps 'right away', and the scoped don't-stop line comes after the emergency cards. For dehydration and kidney, keep to the label's wording about GI fluid loss. The low-blood-sugar line names insulin or a sulfonylurea. Gallbladder symptoms are optional, label wording only.",
+      "pillar": "life-on-glp1"
+    },
+    {
+      "id": "S1",
+      "kind": "short",
+      "topic": "Tirzepatide hair loss: why women report it more often than men (label rates by sex)",
+      "angle": "08:00 body-worry reassurance, tight arm. Sentence 1 (14 words or fewer) names tirzepatide and asks why hair shedding shows up more in women. By 6 s, the one new fact from the Zepbound label: overall 5.4% vs 0.9% on placebo; women 7.1% vs 1.3% on placebo; men 0.5% vs 0%. Copy these exactly, with the pooled-trial population named. The label also links hair loss with faster weight loss: wording as printed, no causal claim beyond it. The reason for the sex gap isn't established, so say so plainly. Shedding is often temporary (credited to AAD/DermNet). See a doctor or dermatologist if it lasts more than about 6 months, comes in patches or hurts. Add the Exp F line second to last, 'Not personal advice' and the prescriber line, then the closing line. Post note: related-video target is the Hair Loss long video.",
+      "working_title": "Tirzepatide Hair Loss: Why More in Women? #shorts",
+      "target_keyword": "mounjaro hair loss women",
+      "trend_stage": "evergreen",
+      "why": "Hair is our best Short theme (1,024 views). This is the one hair Short allowed this week, with a new angle that isn't about prevalence or regrowth.",
+      "pillar": "get-the-most"
+    },
+    {
+      "id": "S2",
+      "kind": "short",
+      "topic": "Tirzepatide vs Foundayo (orforglipron): has the weekly shot ever been tested head to head against the daily pill?",
+      "angle": "Tirzepatide vs the Foundayo (orforglipron) pill: no randomized trial has compared them head to head. Two separate 72-week trials in adults with obesity or overweight without diabetes report averages: SURMOUNT-1 for tirzepatide and ATTAIN-1 for orforglipron. Give each top-dose average vs placebo using the same estimand, with an on-screen caveat: 'separate trials, different designs, not a head-to-head'. How each is taken, from label wording: a once-weekly injection vs a once-daily tablet taken with or without food. Both list nausea, diarrhoea and vomiting as common. Close with: 'A bigger average isn't best for everyone. The right choice depends on you and your prescriber.' Then the don't-switch line, the Exp F line, 'Not personal advice', the prescriber line and the closing line.",
+      "working_title": "Tirzepatide vs Foundayo Pill: Tested Head-to-Head? #shorts",
+      "target_keyword": "foundayo vs zepbound",
+      "trend_stage": "rising",
+      "why": "'Pill vs shot' questions are rising after the China approval and US prescription records, 'foundayo' is our top non-EloraTZP search term, and tirzepatide-first comparison Shorts in obesity get 108–177 views. | fact-check: The core claim is confirmed: no randomized head-to-head of orforglipron vs tirzepatide has been reported. Orforglipron's published head-to-head was against oral semaglutide in type 2 diabetes. That makes a 'what's confirmed?' Short reasonable. Risks: (a) Cross-trial numbers invite ranking. Both figures must use the same estimand. ATTAIN-1's headline and SURMOUNT-1's 20.9% may use different estimands, so take both from the same analysis (treatment-regimen in both, or efficacy in both). If they can't be matched, use none. (b) 'No food or water rules' goes beyond the label. The label says 'with or without food'. The water claim comes from press and trial descriptions, not label wording. (c) Give the highest-dose arm of each only with 'separate trials, different designs, not head-to-head' on screen in the same card. Don't use a split-screen 'winner' visual. (d) ATTAIN-1 is orforglipron's own approved-obesity data, so the title is fine. It's tirzepatide-first, as the playbook requires.",
+      "pillar": "is-it-for-you"
+    },
+    {
+      "id": "S3",
+      "kind": "short",
+      "topic": "First weeks on tirzepatide: when stomach side effects usually show up and when they tend to ease (label timing wording)",
+      "angle": "Spin-off of L1, 20:00 funnel, standard arm. It asks one fresh question rather than re-cutting the L1 script. Sentence 1: 'Starting tirzepatide and wondering when the queasy part hits?' By 6 s: in the trials, nausea, diarrhoea and vomiting happened mostly while the dose was being increased and decreased over time. Use label wording, framed as a trial pattern, not a prediction, with numbers matching L1's verified script exactly. Untagged tips: smaller meals, eat slowly, stop at comfortably full, sip fluids unless you've been told to limit them. Emergency card: severe stomach pain that won't go away, with or without vomiting → stop and call your healthcare provider right away. Then the scoped don't-stop line, 'Not personal advice', the prescriber line and the closing line. No Exp F line, no dose numbers. Post note: related-video target is L1 once it's verified live, otherwise Side Effects.",
+      "working_title": "Tirzepatide First Weeks: When Does Nausea Ease? #shorts",
+      "target_keyword": "mounjaro first week side effects",
+      "trend_stage": "evergreen",
+      "why": "Spin-off of L1. It's a practical moment for new starters, and the nausea Short reached 179 views.",
+      "pillar": "get-the-most"
+    },
+    {
+      "id": "C1",
+      "kind": "carousel",
+      "topic": "Tirzepatide and a faster resting heart rate: what the label reports and when to call (reused from the verified, shipped 11-12 S1 Short)",
+      "angle": "Make it only if the 11-12 S1 script is confirmed PASS. Reuse its verified text word for word. Slide 4: 'Chest pain, fainting or shortness of breath: call your emergency number right away. A racing heartbeat at rest that doesn't settle: contact your prescriber or your local urgent care.' Slide 5: the scoped don't-stop line. Slide 6: the exact disclaimer and prescriber line, with nothing after it. Hashtags: #tirzepatide only. No trend tags, no dated hook, no heart imagery.",
+      "working_title": "Tirzepatide and Heart Rate: What the Label Says",
+      "target_keyword": "mounjaro heart rate",
+      "trend_stage": "evergreen",
+      "why": "The quota asks for 1 carousel. Following the playbook, it reuses verified Short text only, and it's a heart topic, so the day doesn't stack three stomach pieces. | fact-check: I can't confirm that the 11-12 S1 script passed verification. The craft notes list S1 11-12 findings (a #HeartRate trend tag, broken caption cards). Build this only if the 11-12 S1 content check shows PASS. Otherwise drop it. Carousels reach 0–4 people and the 17:30 slot is being removed. Make it only because the scheduler asked. Safety fix: for chest pain, fainting or shortness of breath, the emergency number comes first (craft notes rule), not 'urgent care or emergency number'. Keep the heart-rate figure, its unit (beats per minute, mean increase), the dose arms, placebo and the trial population exactly as verified. No #HeartRate or other trend tags, only #tirzepatide.",
+      "pillar": "life-on-glp1"
+    }
+  ]
+}
