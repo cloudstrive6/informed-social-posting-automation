@@ -4,7 +4,26 @@
   "published": "2026-09-27",
   "duration_sec": 742,
   "tries": {
-    "d7": 3
+    "d7": 3,
+    "d28": 1
   },
-  "milestones": {}
+  "milestones": {
+    "d7": {
+      "captured_at": "2026-11-13T18:41:29.701Z",
+      "window": [
+        "2026-09-27",
+        "2026-10-04"
+      ],
+      "curve_pct": [],
+      "relative_pct": [],
+      "hold_pct": {
+        "s5": null,
+        "s15": null,
+        "s30": null,
+        "s60": null
+      },
+      "biggest_drop": null,
+      "empty": true
+    }
+  }
 }
