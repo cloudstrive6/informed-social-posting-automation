@@ -24,6 +24,23 @@
       },
       "biggest_drop": null,
       "empty": true
+    },
+    "d28": {
+      "captured_at": "2026-11-15T17:56:11.662Z",
+      "window": [
+        "2026-09-27",
+        "2026-10-25"
+      ],
+      "curve_pct": [],
+      "relative_pct": [],
+      "hold_pct": {
+        "s5": null,
+        "s15": null,
+        "s30": null,
+        "s60": null
+      },
+      "biggest_drop": null,
+      "empty": true
     }
   }
 }
