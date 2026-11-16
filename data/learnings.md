@@ -1,141 +1,145 @@
-# InforMed performance playbook (updated 2026-11-14)
+# InforMed performance playbook (updated 2026-11-16)
 
 ## Data status (read first)
-- **Counters (11-14 17:17 UTC):** 178 of 4,000 watch hours, 386 of 1,000 subscribers, 13,889 Shorts views in 90 days, 3,521 long-form views in 28 days.
-  - Since the 11-13 read (about 22 h): **+4 watch hours** (+5 the day before, about +8 a day before that) and **0 new subscribers**.
-  - At 4–8 h a day, YPP is 15–25+ months away. Reaching it by the end of February needs about 36 h a day.
-- **Freshness:** about 190 new long-form minutes arrived since the last read, spread across many videos: Fatigue +36, How Long +31, EloraTZP +26, Stopping +21, Strength +15, Side Effects +12, Protein +7.
-  - **EloraTZP fell from +132 to +26.** That could be report lag or real decay. If it holds on 11-15, our biggest earner is fading, and the channel needs new long-forms and links more than ever.
-  - **Flat for a third read:** Bones (244), Food Noise (223), Plateau (102), Thanksgiving (94), Hair (28) and Birth Control (7). What to Eat moved +1. Treat these as stalled unless 11-15 shows otherwise.
-  - The Alcohol long-form (11-12) and the 11-12 and 11-13 Shorts have no analytics yet; only viewCount is available.
-- **Reach lag:** don't read CTR or impressions on anything published after 11-10 (Dehydration, Pen, Alcohol).
-- **Proof bar:** proven means n≥8, signal n=4–7, anecdote n≤3. Judge nothing under 7 days old. TikTok, Facebook and Threads metrics are null.
-- **Still true:** the 11-02 to 11-06 long-forms were in sync. Don't re-render them; their problem is discovery.
+- **Counters (11-16 21:14 UTC):** 197 of 4,000 watch hours, 386 of 1,000 subscribers, 14,456 Shorts views in 90 days, 3,798 long-form views in 28 days.
+  - That is +19 watch hours in about 52 h since 11-14, roughly 9 h a day. Getting to YPP by the end of February needs about 37 h a day.
+  - Subscribers are still at 386 on a third read. It could be a stale counter, but treat it as flat.
+- **EloraTZP is not fading.** It went from 4,598 to 4,959 lifetime minutes, about +180 a day. The +26 on 11-14 was report lag.
+- **Food Noise jumped from 223 to 448 minutes** after 3 flat reads. That is mostly a delayed catch-up, so don't call it a trend until 11-18.
+- **No analytics yet, only viewCount:** Keeping Results (11-15) and the 11-15 Shorts. How It Works (11-14) is confirmed live: 4 views, 7 minutes.
+- **Diarrhea's day-7 retention curve hasn't arrived.** Don't guess at it.
+- **Reach lag:** don't read CTR or impressions on anything published after 11-12.
+- **Proof bar:** proven n≥8, signal n=4–7, anecdote n≤3. Nothing is judged before day 7, and no long video is called dead before day 10.
 
 ## Monetization: what earns watch time
-Shares are computed from lifetime minutes across all long videos (≈10,540 min; older long videos outside the top-40 list are not counted).
-- **EloraTZP (10-01): 4,598 min (44%), 11 of our 17 long-form subscribers, 8.12% CTR on 7,809 impressions** (anecdote, n=1). Its searches were "eloralintide" (230) and "eloratzp" (88).
-  - The model is a fresh randomized result against tirzepatide, shipped within days. Evergreen "Did X beat tirzepatide?" videos flopped: CagriSema 117 min, retatrutide 71, SURMOUNT-5 36.
-  - It still links to nothing of ours. That is the cheapest watch-time fix we have.
-- **Lane A (practical tirzepatide) is the engine: about 4,180 min, 40%** (proven, n=17).
-  - Side Effects 1,076, What to Eat 790, Strength 621, Stopping 309, How Long 264, Bones 244, Food Noise 223, Protein 169, Plateau 102, Thanksgiving 94, Constipation 88, Fatigue 87, Diarrhea 49, Hair 28, Pen 17 (day 3), Dehydration 14, Birth Control 7.
-- **Breadth decides discovery (proven, n=11).**
-  - The 5 broad searched questions (side effects, what to eat, strength, how long, stopping) earned 3,060 min. Median 621 each, 441–3,179 impressions.
-  - The 6 narrow single-symptom or single-interaction topics earned 273 min. Median about 39, each with 360 impressions or fewer, even though CTR was usually 4–6%.
-  - Fatigue (87 min, 5.4% CTR, s30 86%) is the best narrow video and still sits far below the broad median.
-  - **Rule:** default long-forms to broad questions titled "Tirzepatide (Mounjaro) …". Narrow symptoms go into Shorts or chapters.
-- **Stopping keeps confirming the rule:** 309 min by day 10, 6.35% CTR on 441 impressions, rel_mid 51.9. "The Tirzepatide Boom Just Hit a Wall" sent it 10 views.
-- **Suggested videos carry Lane A (proven).** RELATED_VIDEO brings 70–80% of minutes at about 5–7 min a view.
+These shares use lifetime minutes across every long video in the data, about 11,660 minutes.
+- **EloraTZP (10-01): 4,959 minutes (43%), 11 of our 18 long-form subscribers, 7.74% CTR on 8,777 impressions** (anecdote, n=1). Searches: "eloralintide" 230, "eloratzp" 88.
+  - It is still our biggest daily earner and still links to nothing of ours.
+  - The 11-15 EloraTZP Short had 87 viewCount on day 1. Point its related-video link at the EloraTZP long video.
+- **Lane A (practical tirzepatide) is the engine: about 4,810 minutes (41%)** (proven, n=20).
+  - Side Effects 1,129, What to Eat 797, Strength 675, Food Noise 448, Stopping 370, How Long 265, Bones 254, Protein 179, Thanksgiving 129, Plateau 113, Fatigue 99, Constipation 88, Diarrhea 76, First Month 47 (day 3), Alcohol 39 (day 4), Hair 28, Dehydration 26, Pen 24, Birth Control 21.
+- **Breadth decides discovery (proven, n=11, confirmed again).**
+  - The 5 broad searched questions have a median of 675 minutes and 441–3,257 impressions each.
+  - The 6 narrow topics old enough to judge (Constipation, Fatigue, Diarrhea, Hair, Dehydration, Birth Control) have a median of about 52 minutes and 360 impressions or fewer.
+  - **Diarrhea at day 7:** 76 minutes, 249 impressions, 0 views from suggested videos. Search was its only source (14 views).
+  - **Rule:** long videos are broad questions titled "Tirzepatide (Mounjaro) …". Narrow symptoms go into Shorts or chapters.
+- **Suggested videos carry Lane A (proven).** RELATED_VIDEO brings 70–80% of minutes at about 5–7 minutes a view.
   - Top outside referrers: "The Tirzepatide Boom Just Hit a Wall" and "An Ozempic Overdose Hour by Hour".
   - Package to sit next to them: drug name + a felt problem + a plain question.
-- **Side Effects is the internal hub (signal).** It sends viewers to Bones (6), How Long (2) and Petrelintide (2).
-- **Approved drugs with search demand earn; pipeline explainers don't.** Orforglipron (Foundayo) earned 336 min ("foundayo" 19 searches). Medicare earned 30 and pharmacy 73.
-- **Pickup takes 5–10 days (signal).** Don't call a video dead before day 10.
-- **Don't make more:** plateau or general protein long-forms. Protein's audience was 198 of 219 views from subscribers.
-- **Output gap:** no long-form is logged for 11-13 or 11-14 (QA holds). Each broad Lane A video is worth about 4–18 watch hours in its first month, so every skipped day costs real hours.
+- **Approved drugs with search demand earn; pipeline explainers and policy topics don't.**
+  - Foundayo 381 minutes ("foundayo" 27 searches by day 28).
+  - Petrelintide 265, Survodutide 194, Elecoglipron 166, CagriSema 117, Retatrutide 71, SURMOUNT-5 36, pharmacy 73, Medicare 30.
+- **First Month (11-13) looks like a broad winner early:** 47 minutes by day 3 at 5.75% CTR, 34 of them from suggested videos (anecdote). Read it at day 14 on 11-27.
+- **Don't make more:** plateau, general protein, or single-symptom long videos.
 
-## Long-form retention (d7 curves, n=19, long-form only)
-- **Median hold at 30 s is about 77%.** Best: Constipation 91.7, Petrelintide 89.5, Fatigue 86.4, Plateau 83.3. Worst: Strength 41.4 (the claim didn't match the title) and Protein 51.8.
-- **The biggest drop comes at 12–35 s in 14 of 19 curves (proven),** right after the first answer, where the open loop or roadmap starts.
-  - **Fix:** at 15–30 s, give a second concrete payoff (one number or the first step). Keep the open loop to one sentence.
-  - The Pen (11-11) and Alcohol (11-12) videos are the first built this way. Read Pen on 11-18 and Alcohol on 11-19.
-- **First chapter change at 70–75 s (n=2: Stopping, Constipation).** Land a payoff before chapter 1 ends and open chapter 2 with a question.
-- **Late drop at 73–85% (n=3: How Long, Plateau, Bones),** where the recap starts. Land the last payoff first and start the end-screen ask at about 85%.
-- **"You" scenario openers hold best (signal, n≈10):** s30 of 77–92%. News or stakes openers hold 63–72%.
-- **The midpoint is weak (proven).** Median rel_mid is 43.6, and 13 of 19 curves are below 50. Re-hook every 45–75 s.
-- **Length:** aim for 9–11 min.
+## Long-form retention (d7 curves, n=19; compare long with long only)
+- **Median hold at 30 s is about 77%.** The biggest drop comes at 12–35 s in 14 of 19 curves (proven), right after the first answer.
+  - Fix: a second concrete payoff (a number or the first step) at 15–30 s, and keep the open loop to one sentence.
+  - Pen (11-18) and Alcohol (11-19) are the first tests.
+- **New (signal, n=3): trial-setup and scope lines cost viewers.**
+  - Stopping dropped at 70 s on "Let's meet the trial."
+  - Constipation dropped at 75 s on "It enrolled 2,539 adults with obesity…".
+  - Bones dropped at 434 s on "Again, a different drug, so not proof for tirzepatide."
+  - Fix: open each chapter with the result number and put the population in the same sentence. Fold caveats into the payoff line; never give a caveat its own scene.
+- **Late drop at 73–85% (n=3).**
+  - How Long dropped at 583 s on a tip line ("Try smaller meals…") and Plateau at 609 s on a numbered list ("Three: fluids").
+  - Viewers leave once the list feels like a recap. Land the last new fact before about 80% and keep lists to 3 items.
+- **"You" scenario openers hold best (signal, n≈10):** s30 of 77–92%. News or status openers hold 63–72%.
+  - Elecoglipron lost 30 points at 16 s on a dated "isn't approved" line.
+- **The midpoint is weak (proven).** Median rel_mid is 43.6. Re-hook every 45–75 s and aim for 9–11 minutes.
 
 ## Packaging
-- **Titles (signal):** use "Tirzepatide (Mounjaro) …". The top Lane A search terms are "mounjaro" and "tirzepatide"; "zepbound" brought 8 searches to Strength.
-- **Thumbnails:** no layout wins once topic is accounted for. Topic and search intent drive CTR. Use 4 words or fewer that keep the gap, never the answer.
-- **Hair Loss long video:** 0.93% CTR on 107 impressions, still the only real packaging failure. Its title duplicates the Short's, so retitle it.
-- **Exp E** (thumbnail swaps on Strength and What to Eat): read on 11-24 and change nothing before then. Strength is still earning (+15).
+- **Long-form CTR median is about 4%.** Titles that put the drug name and a plain question first do best.
+- **Packaging problems (impressions fine, CTR low):**
+  - Hair Loss: 0.85% on 118 impressions. Retitle it.
+  - Constipation: 1.69% on 472 impressions. Retitle it "Tirzepatide (Mounjaro) Constipation: Why, and What Helps?"
+- **High-impression broad videos sit at 2.4–2.8% CTR** (What to Eat, Strength, Bones). That is normal at scale, not a failure.
+- **Exp E:** read on 11-24 and change nothing on Strength or What to Eat before then.
+- **Pen how-to (anecdote):** 10 search views brought 0 minutes. Check on 11-18 whether the search intent (KwikPen or vial) matches the video.
 
 ## Shorts → long funnel
-- **Still zero (proven, 28 long-forms):** SHORTS and END_SCREEN traffic is 0, and PLAYLIST has about 9 views in total.
-- The levers that work: Studio related-video links, end screens, line-1 ▶ Watch next links in long-form descriptions, and playlists.
+- **Still zero (proven, 30 long videos):** SHORTS and END_SCREEN traffic is 0 everywhere. PLAYLIST has brought 7 views in total.
+- **Every view from Shorts depends on owner-set Studio links and end screens.** Log views from Shorts from the day each link is set.
 
-## YouTube Shorts (28-day median about 64 views)
-- **Visible-body "Is this normal?" tirzepatide Shorts win (proven, n≈18).**
-  - Hair grow-back 1,025, injection site 243, bones 244, injection sites #2 200 (viewCount), nausea 183, breakfast 134, hair common 113.
-  - The new hair-in-women Short (11-13) had 112 viewCount on day 1, the strongest start since 11-09 (anecdote).
-- **Internal or lab-type worries sit at or below the median:** fatigue 68, low blood sugar 50, birth control 37, heart rate 26 and nausea-myth 36 (both day 2).
-- **Underperformers (proven):** observational, survey and niche-trial angles; news and label items; seasonal angles posted too early (Thanksgiving 21, holiday fullness 24 on YouTube).
-- **Head-to-heads:** tirzepatide-first ones in an obesity population get 108–177 views; diabetes-only ones get 33–47.
-- **Length test:** no read until 11-26.
-- **Banned:** "3 Ways" lists, approval-status titles, cost and Medicare, surgery, grocery, and semaglutide-only titles.
+## YouTube Shorts (28-day median about 60 views)
+- **Visible body or pen "Is this normal?" tirzepatide Shorts win (proven, n≈20).**
+  - Hair grow-back 1,025, injection site 253, bones 249, injection sites #2 202, nausea 190, breakfast 134, hair in women 116, pen blood 107 (141 viewCount).
+- **Below the median:** internal or lab worries, news and label items, observational studies, and seasonal posts made too early (Thanksgiving 21, full-after-3-bites 25 on YouTube).
+- **Head-to-heads:** tirzepatide-first in an obesity population 108–177 views; diabetes-only 33–50.
+- **Day-3 Short drops (anecdote, n=2):** the diarrhea Short dropped at 22 s on a stacked safety and steps line, and the heart-rate Short at 19 s on the "feeling uneasy makes sense" beat. Keep validation to 3 words or fewer.
+- **Experiments: no read yet.** Hook archetypes are n≤3 each (no read until n≥8). The length test reads on 11-26.
 
 ## Subscribers
-- **Long-form converts about 10× better than Shorts:** about 4.4 subscribers per 1,000 lifetime views (17 subscribers, 11 of them from EloraTZP), against about 0.4 for Shorts.
-- **Exp F** (subscribe line on 08:00 and 13:00 Shorts): still 0 subscribers, and +0 channel-wide today. Close it on 11-17 as negative and drop the line.
+- **Long-form converts about 10× better than Shorts:** 18 subscribers from long videos (11 from EloraTZP), against about 5 from more than 10,000 Shorts views.
+- **Exp F is closed as negative.** The subscribe line in Shorts added 0 subscribers.
 
 ## Other platforms and slots
-- **Instagram Reels are all or nothing.** "Full after 3 bites" got 428 (best), heart rate 175 and nausea-myth 163. Don't pick YouTube topics from IG, but retry holiday fullness on Shorts from 11-18.
-- **Carousels:** reach 0–4 (proven, n≈60; 11-10 reached 0). Stop them.
-- **Slots:** negligible effect (proven). Keep Shorts at 08:00, 13:00 and 20:00 ET and the long-form at 14:00 ET.
+- **Facebook Reels: 0 plays on every reel read** (n≈57, read 11-16). That is a distribution failure, not weak content. The owner needs to check the Page.
+- **TikTok:** Shorts median about 95 views (best: blood pressure 945, pen blood 584). Photo carousels get 35–659 (median 246, n=7). Neither helps YPP.
+- **Instagram:** Reels median about 110; "Full after 3 bites" (429) is still the best. IG, FB and Threads carousels reach 0–4.
+- **Slots:** no measurable effect (proven). Keep Shorts at 08:00, 13:00 and 20:00 ET and the long video at 14:00 ET.
 
 ## Priority actions
-1. **Ship a broad Lane A long-form every day, with a QA-passed backup.** Order: first month / what to expect; keeping results after stopping (trial evidence only, no stopping advice); foods that ease side effects; Foundayo what-to-expect (label only).
-2. **End screens and line-1 ▶ Watch next links:** EloraTZP → Side Effects and Stopping (first); Strength and What to Eat → Side Effects; Side Effects → Bones and Stopping; Stopping → Side Effects.
-3. **Fast-turn "Did X beat tirzepatide?" within 48 h** of a fresh randomized head-to-head, as an extra L2.
-4. **Studio related-video links:** the hair Shorts (including women 11-13) → Hair Loss long; both injection-site Shorts → Side Effects long.
-5. **Check-ins:** 11-15 for EloraTZP's daily minutes and the flat rows; Diarrhea day 7 on 11-16; Dehydration day 7 and Exp F close on 11-17; Pen day 7 on 11-18; Alcohol day 7 on 11-19; Exp E on 11-24; the Shorts length test on 11-26.
+1. **Ship a broad long video every day, in the Growth playbook's order:** Nausea Foods, Mounjaro vs Zepbound, Weight Loss in the Trials, Foundayo, Months 2–6, Serious Risks.
+2. **End screens and line-1 links:** EloraTZP → Side Effects; Side Effects → Stopping; Stopping → Keeping Results.
+3. **Retitle Hair Loss and Constipation.**
+4. **Check-ins:** Pen d7 on 11-18, Alcohol on 11-19, Exp E on 11-24, the Shorts length test on 11-26, First Month at day 14 on 11-27.
 
-_Updated 2026-11-14 from about 480 posts and 55 older YouTube videos. Lifetime shares use `life_` minutes across all long videos in the data (≈10,540 min)._
+_Updated 2026-11-16 from about 520 posts and 40 older YouTube videos (64 older in total). Lifetime shares use `life_` minutes across all long videos in the data (≈11,660)._
 
 ## Topics to double down on
-- Broad searched tirzepatide long videos titled 'Tirzepatide (Mounjaro) …' (side effects, what to eat, strength training, how long it takes to work, stopping): the 5 broad videos earned about 3,060 lifetime minutes, median 621 each; the 6 narrow single-symptom videos earned about 273 in total
-- Stopping tirzepatide and keeping results, told only through what the trials show (Stopping: 309 minutes by day 10, 6.35% click-through rate, rel_mid 51.9)
-- Tirzepatide (Mounjaro) first month and what-to-expect timelines from the label and trials, with no dosing instructions (How Long added +31 minutes today, 264 lifetime)
-- Fast-turn 'Did X beat tirzepatide?' long videos within 48 h of a fresh randomized head-to-head (EloraTZP: 4,598 lifetime minutes, 44% of long-video watch time, 11 of 17 long-form subscribers)
-- Linking EloraTZP, Side Effects and Stopping to our other videos with end screens and line-1 Watch next links (the Shorts → long funnel is still at 0)
-- Foundayo (orforglipron) what-to-expect, label only (336 minutes; 'foundayo' was searched 19 times)
-- Calm 'Is this normal?' tirzepatide Shorts about visible body changes: hair, injection site, nausea, bones (1,025 / 243 / 183 / 244 views; hair-in-women had 112 on day 1)
-- Holiday fullness and Thanksgiving Shorts from Nov 18 onward (the 'full after 3 bites' Reel got 428 views on Instagram, our best Reel)
-- Long-video script fixes: a second concrete payoff at 15–30 s (14 of 19 curves drop at 12–35 s), a payoff before the first chapter change at about 70 s, and re-hooks every 45–75 s (median rel_mid 43.6)
+- Broad searched tirzepatide long videos titled 'Tirzepatide (Mounjaro) …' (side effects, what to eat, strength, stopping, how long): median 675 lifetime minutes each, against about 52 for single-symptom long videos (n=11)
+- Tirzepatide what-to-expect series (First Month → Months 2–6 → How Long): First Month had 47 minutes and a 5.75% click-through rate by day 3, mostly from suggested videos
+- Keeping results after stopping, told only through what the trials show (Stopping: 370 minutes, 5.78% click-through rate, rel_mid 51.9; follow-up Keeping Results is live)
+- Approved-drug search-demand long videos: Mounjaro vs Zepbound, and Foundayo what-to-expect from the label only (Foundayo: 381 minutes, 'foundayo' searched 27 times)
+- Fast-turn 'Did X beat tirzepatide?' long videos within 48 h of a fresh randomized head-to-head (EloraTZP: 4,959 minutes, 43% of all long-form watch time, still about 180 minutes a day)
+- Linking EloraTZP, Side Effects and Stopping to our other videos with end screens, line-1 Watch next links and Shorts related-video links (views from Shorts and end screens are still 0)
+- Calm 'Is this normal?' tirzepatide Shorts about visible body or pen moments: hair 1,025 / 116, injection site 253 / 202, pen blood 107
+- Holiday-table Shorts from Nov 18 (fullness, heartburn, drinks, travelling with the pen), linked to the Thanksgiving long video (129 minutes and rising)
+- Long-video script fixes: a second payoff at 15–30 s; open each chapter with the result, not the trial setup; fold caveats into the payoff line; land the last new fact before about 80%
 
 ## Schedule suggestions (for the owner — edit config/channel.json to apply)
-Here's the 11-14 update. Growth slowed again today.
+Update for 11-16.
 
 Where we are:
-- 178 of 4,000 watch hours and 386 of 1,000 subscribers.
-- In the last day we gained about 4 watch hours and no subscribers. It was +5 the day before and about +8 a day before that. Reaching the Partner Program by February needs about 36 hours a day.
-- EloraTZP, which has brought 44% of all our long-video watch time, added only about 26 minutes today (about 130 a day before). That may be a report delay. If it's still low on 11-15, our biggest earner is fading.
-- Six long videos have shown the same numbers for three reads in a row: Bones, Food Noise, Plateau, Thanksgiving, Hair Loss and Birth Control.
-- No new long video went out on 11-13 or 11-14; both were held in quality checks.
+- 197 of 4,000 watch hours and 386 of 1,000 subscribers.
+- We gained about 9 watch hours a day over the last two days (+19 since 11-14). Reaching the Partner Program by the end of February needs about 37 a day.
+- Subscribers have shown the same number for three reads.
+- Good news: EloraTZP isn't fading. It earned about 180 minutes a day over the last two days. The low number on 11-14 was a report delay.
 
-1. Quick wins in YouTube Studio (highest value first, about 15 minutes in total)
-- EloraTZP: add an end screen to Side Effects and Stopping, plus a ▶ Watch next link on line 1 of its description.
+1. Quick wins in YouTube Studio (about 15 minutes, highest value first)
+- EloraTZP: add an end screen pointing to Side Effects and Stopping, and put a "▶ Watch next" link on line 1 of its description. It is still our biggest earner and sends viewers nowhere.
 - End screens:
-  - Strength and What to Eat → Side Effects
-  - Side Effects → Bones and Stopping
-  - Stopping → Side Effects
-- Related-video links:
-  - both hair Shorts (the 1,025-view one and the new "women" one, 112 views on day 1) → the Hair Loss long video
-  - both injection-site Shorts → the Side Effects long video
-- Retitle the Hair Loss long video so it doesn't repeat the Short's title. Its click-through rate is 0.93%.
-- Add every practical tirzepatide video to the "Life on Tirzepatide" playlist.
+  - Side Effects → Stopping
+  - Stopping → Keeping Results
+- Related-video links on Shorts:
+  - the new EloraTZP Short (87 views on day 1) → the EloraTZP long video
+  - hair Shorts → Hair Loss long video
+  - injection and pen Shorts → Pen how-to
+  - stomach Shorts → Side Effects
+- Retitle two long videos:
+  - Hair Loss (0.85% click-through rate): "Tirzepatide (Mounjaro) Hair Loss: Why More in Women?"
+  - Constipation (1.69% on 472 impressions): "Tirzepatide (Mounjaro) Constipation: Why, and What Helps?"
+- Don't touch Strength or What to Eat until 11-24 (thumbnail test).
 
-2. What the data shows
-- Broad searched questions win. The 5 broad videos (side effects, what to eat, strength training, how long it takes to work, stopping) earned about 3,060 watch minutes, with a median of 621 each. The 6 single-symptom videos earned about 270 minutes between them.
-- The Stopping video is still growing: 309 minutes by day 10 and a 6.35% click-through rate.
-- Keep long videos on the big searched questions and put narrow symptoms in Shorts.
+2. Facebook needs your check
+Every Facebook Reel we read on 11-16 has 0 plays (about 57 of them). That points to a Page or upload problem, not to the content. Please check Meta Business Suite for Page restrictions, and check whether reels are going up as unpublished or hidden videos.
 
 3. Publishing times (config/channel.json)
-- Keep Shorts at 08:00, 13:00 and 20:00 ET and the long video at 14:00 ET. Time-slot differences are negligible.
-- Please remove the 17:30 carousel slot. Carousels still reach 0 to 4 people each (the one on 11-10 reached 0).
-- Never skip a long-video day. Days lost so far: 11-03, 11-07, 11-08, 11-13 and 11-14. Keep a QA-passed backup long video ready so a held video doesn't cost the day. If production allows, add a 10:00 ET long video on 2 to 3 days a week.
+- Keep Shorts at 08:00, 13:00 and 20:00 ET and the long video at 14:00 ET. Time slots make no measurable difference.
+- Carousel slot (17:30): carousels reach 0–4 people on Instagram, Facebook and Threads. TikTok photo posts get about 250 views each, but those don't count toward the Partner Program. Remove the slot, or keep it only as a free TikTok re-post of verified Short text.
+- Never skip a long-video day. Keep one quality-checked backup long video ready at all times. A broad long video is worth roughly 5–18 watch hours in its first month; a narrow one is worth about 1.
 
-4. Seasonal
-- Start the Thanksgiving and holiday-fullness Shorts on Nov 18. The "full after 3 bites" Reel got 428 views on Instagram, our best Reel, but only 24 on YouTube Shorts a week before the holiday.
+4. What the data shows
+- Broad searched questions keep winning: a median of 675 lifetime minutes each, against about 52 for single-symptom videos.
+- The Diarrhea video at day 7 had 76 minutes and was never recommended next to other videos.
+- First Month started well: 47 minutes by day 3 at a 5.75% click-through rate.
 
 Next reviews:
-- 11-15: EloraTZP's daily minutes and the flat videos
-- 11-16: the Diarrhea long video at day 7
-- 11-17: the Dehydration long video at day 7, and close the Shorts subscribe-line test (still 0 subscribers, so drop the line)
-- 11-18: the pen how-to video at day 7 (first test of the "second payoff at 15–30 s" script fix)
-- 11-19: the Alcohol long video at day 7
-- 11-24: the thumbnail test on Strength and What to Eat
+- 11-18: Pen at day 7
+- 11-19: Alcohol at day 7
+- 11-24: the thumbnail test
 - 11-26: the Shorts length test
+- 11-27: First Month at day 14
 
-_Updated 2026-11-14 from 373 posts._
+_Updated 2026-11-16 from 378 posts._
