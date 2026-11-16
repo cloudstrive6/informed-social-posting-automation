@@ -605,9 +605,10 @@ function captions(c: Ctx, scenes: CaptionScene[], tl: Timeline): CaptionCoverage
       captioned += g.length;
       shown.push([s, e]);
       const base = uid(c, "cp");
-      // Shorts: fixed top inside the safe zone; long lines get a smaller size so 3 lines still end above y 1500
+      // Shorts: fixed top inside the safe zone; long lines get a smaller size so 3 lines still end above y 1500.
+      // Sizes cut about 20% from 80/72/64 (owner, 2026-11-16: captions read too big on Reels and Shorts)
       const chars = g.reduce((a, w) => a + w.text.length + 1, 0);
-      const style = c.vertical ? `top:${CAP_TOP_V}px;font-size:${chars <= 26 ? 80 : chars <= 40 ? 72 : 64}px` : "top:64%;font-size:86px";
+      const style = c.vertical ? `top:${CAP_TOP_V}px;font-size:${chars <= 26 ? 64 : chars <= 40 ? 58 : 52}px` : "top:64%;font-size:86px";
       c.els.push(`<div class="clip" data-start="${f3(s)}" data-duration="${f3(e - s)}" style="z-index:900"><div id="${base}" class="cap" style="${style}">${g.map((w, k) => `<span id="${base}_${k}">${esc(w.text)}</span>`).join(" ")}</div></div>`);
       if (!opening) c.anims.push(`tl.fromTo("#${base}",{scale:0.8,opacity:0},{scale:1,opacity:1,duration:0.12,ease:"back.out(2)"},${f3(s)});`);
       g.forEach((w, k) => c.anims.push(`tl.set("#${base}_${k}",{color:"${config.brand.colors.highlight}"},${f3(w.start)});tl.set("#${base}_${k}",{color:"#ffffff"},${f3(w.end + 0.02)});`));
