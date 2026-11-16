@@ -1,0 +1,541 @@
+{
+  "at": "2026-11-16T03:16:29.894Z",
+  "summary": "Radar for 2026-11-16, all inside the GLP-1 focus. ObesityWeek (14–17 Nov, Washington DC) is the main event. The best fresh hook: Lilly showed full EloraTZP Phase 2 results on 15 Nov, and the trial included a tirzepatide-alone arm. That fits our proven EloraTZP model (fresh randomized data against tirzepatide, shipped within 48 h). It's our biggest earner, so we can also update and link the existing video. Lilly also showed: the SURMOUNT-1/-2 'early responder' analyses, which give the Months 2–6 and Weight Loss long videos a news hook; Zepbound teen data (SURMOUNT-ADOLESCENTS, −21.4% BMI at 72 weeks); and Foundayo real-world use data. Orforglipron (Foundayo) was also approved in China. The NAION label change is peaking, but mainstream coverage keeps coming (EMJ and Ophthalmology Times, 15 Nov), so it still works as a label-change format and inside 'Serious Risks: How Rare?'. Coverage of stopping is surging (Medscape exit strategies 15 Nov, FOX 5 'rebound risks', Bioengineer). That supports a Keeping Results long video built only from SURMOUNT-4, plus the Cleveland Clinic real-world data, with no switching advice. The Thanksgiving and holiday table is in its last 10 days before the holiday (Prevention, 15 Nov), so it drives the 20:00 Shorts. Evergreen felt-symptom Shorts still lead: injection site, pen, hair, nausea. One correction: REDEFINE 4 (CagriSema vs tirzepatide) came out in February, so it's not a fresh head-to-head. Only REDEFINE 9 (lower doses vs placebo) is new, so we skip it. Rejected: the 'half of users changed their dosing' story (self-titration bait plus cost), black-market and 'research peptide' retatrutide pieces, the CVS $350 pricing stories, and the 'stopping doubles heart attack risk' scare framing.",
+  "candidates": [
+    {
+      "topic": "EloraTZP vs tirzepatide alone: full Phase 2 results at ObesityWeek (15 Nov 2026): 23.3% average weight loss at 48 weeks in adults with obesity or overweight AND type 2 diabetes, plus the dropout numbers (10.8–27% stopped because of side effects on the combination vs 2.9% on tirzepatide alone)",
+      "angle": "Fast-turn sequel to our biggest earner: 'Tirzepatide (Mounjaro) vs EloraTZP: Full Results In'. Tell it both ways: more weight loss at the top combination dose, but far more people stopped because of side effects than on tirzepatide alone. Phase 2 and not approved, so we explain what it means for people on tirzepatide today. Update the existing EloraTZP video's pinned comment and link it as 'Watch next'. Population stays exact: overweight or obesity plus type 2 diabetes.",
+      "keywords": [
+        "eloratzp",
+        "eloratzp results",
+        "eloralintide tirzepatide",
+        "eloralintide",
+        "eloratzp vs tirzepatide",
+        "lilly obesityweek 2026"
+      ],
+      "stage": "emerging",
+      "momentum": 90,
+      "predicted_peak": "1–5 days",
+      "why_now": "Oral session on 15 Nov at ObesityWeek, with financial press (Yahoo Finance '27% dropout') picking it up. Our 10-01 EloraTZP video drew 230+88 searches for these exact terms and 44% of lifetime watch time. Fresh randomized data with a tirzepatide arm is the one news exception the playbook allows.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Lilly investor release (ObesityWeek 2026)",
+          "signal": "EloraTZP Phase 2 oral session 15 Nov; 23.3% (54.1 lb) at 48 weeks; A1C −2.9%",
+          "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-present-new-data-across-zepbound-foundayo-eloratzp-and"
+        },
+        {
+          "source": "Yahoo Finance",
+          "signal": "Dropout due to side effects 10.8–27% on the combination vs 2.9% on tirzepatide monotherapy; 27% in the top arm",
+          "url": "https://finance.yahoo.com/healthcare/articles/eli-lilly-stock-23-weight-170722936.html"
+        },
+        {
+          "source": "Investing.com",
+          "signal": "Population: obesity or overweight plus type 2 diabetes",
+          "url": "https://www.investing.com/news/company-news/lilly-presents-obesity-drug-trial-results-at-obesityweek-2026-93CH-5027426"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide (Mounjaro) months 2–6: what to expect, including the SURMOUNT-1 and -2 'early responder' analyses (≥5% loss by week 8: 23.3% vs 14.6% at week 72 in SURMOUNT-1) and Medscape's 15 Nov 'Can early weight loss predict 1-year response?'",
+      "angle": "Sequel to First Month, and the playbook's L5. Show the average trial curve month by month, explain why people respond differently, and treat 'slower early' as normal variation, not failure. Bring the question 'is this working for me?' to your prescriber. No dose, switching or stopping advice.",
+      "keywords": [
+        "tirzepatide months 2-6",
+        "mounjaro month 3 results",
+        "tirzepatide not losing weight",
+        "how much weight loss on mounjaro first 3 months",
+        "tirzepatide what to expect",
+        "is mounjaro working"
+      ],
+      "stage": "rising",
+      "momentum": 86,
+      "predicted_peak": "evergreen; news hook 3–10 days",
+      "why_now": "Medscape published on 15 Nov during ObesityWeek. How Long (264 min) and First Month are our steady earners, and 'what to expect' timelines are a 10–195x search format in this niche.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Medscape via Google News",
+          "signal": "'Can Early Weight Loss Predict 1-Year GLP-1 Response?' 15 Nov 2026",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUV96Y01uX09nVGh2TXFpLU10V21HMGd0SElWcHZKRFQwQTExZEVwXzFUX3VCdTI1TXNVTFlWSXBaaWxRY0c0MElpZTJMRGFzeFlJNVZNajFOb2tGdEVMMWhINExDdVZxaXBvVFI3VHFaWEZNc1RPLW1vaW1tUEkwMV9mVTA0REMySWdfdThMd3kzUGNHcWhLRTlTNnIzUF9HVWZN?oc=5"
+        },
+        {
+          "source": "Healio (SURMOUNT-1/-2 post hoc)",
+          "signal": "Early responders 23.3% vs 14.6% (SURMOUNT-1) and 20% vs 10.8% (SURMOUNT-2) at week 72",
+          "url": "https://www.healio.com/news/endocrinology/20241211/early-weight-loss-with-tirzepatide-predictive-of-larger-cardiometabolic-benefits-later-on"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Keeping results after stopping tirzepatide: SURMOUNT-4 (335 vs 335; +14.0% regain on placebo, still 9.9% below baseline) set against this week's stopping coverage (Medscape 'Which exit strategy keeps the weight off?', Cleveland Clinic real-world data: 0.5% average regain at 1 year, but 55% regained)",
+      "angle": "'Tirzepatide (Mounjaro) After Stopping: What the Trials Show'. Contrast trial and real-world numbers and explain why they differ: many people restarted treatment, and the trial population was different. Habits linked to holding on (protein, strength training). Decisions belong with the prescriber. No switching or surgery recommendations.",
+      "keywords": [
+        "stopping mounjaro weight regain",
+        "what happens when you stop tirzepatide",
+        "zepbound rebound",
+        "keep weight off after ozempic",
+        "surmount-4"
+      ],
+      "stage": "rising",
+      "momentum": 85,
+      "predicted_peak": "3–10 days",
+      "why_now": "New coverage piled up 13–15 Nov: Medscape, FOX 5 'six rebound risks', Bioengineer on post-stopping strategies, and Medical Daily on an unreviewed regain analysis. Our Stopping video is at 309 min and 6.35% CTR, and broad stopping is a proven topic.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Medscape via Google News",
+          "signal": "'After a GLP-1: Which Exit Strategy Keeps the Weight Off?' 15 Nov",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOeWUxNDgtRWhra09wVzdzZ25mZkFJX3lwSTFoazZhcmdSZXdfQTBWbTgwTE13SVZpVWdkTWpKZVZnMlZpWHpCS2JrcTM3QUVYU3M1X1FzTU8xdkViQVdseWdJTDg2bzJoUmQ5alIwWlBXSk5zVFY5SHVKUTVZZDh5OHp5endWVE5QQmhyR1ltR3VtVFFqN0VhNjR3?oc=5"
+        },
+        {
+          "source": "Cleveland Clinic newsroom",
+          "signal": "7,938 patients; 0.5% average regain at 1 year in the obesity group; 55% gained; 20% restarted treatment",
+          "url": "https://newsroom.clevelandclinic.org/2026/03/12/what-happens-when-patients-stop-taking-glp-1-drugs-new-cleveland-clinic-study-reveals-real-world-insights"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Mounjaro vs Zepbound: what's different? Same medicine (tirzepatide), different US-approved uses, labels and device options",
+      "angle": "Search-demand explainer from the US labels only: what each is approved for, what's the same (the molecule), and what differs (uses, the Zepbound vial option). Link to How It Works. No cost or pharmacy talk.",
+      "keywords": [
+        "mounjaro vs zepbound",
+        "is mounjaro the same as zepbound",
+        "zepbound vs mounjaro difference",
+        "tirzepatide brands"
+      ],
+      "stage": "evergreen",
+      "momentum": 82,
+      "predicted_peak": "evergreen",
+      "why_now": "Playbook L2, and approved-drug comparisons are a 10x+ search format. Lilly's ObesityWeek push for Zepbound (including teen data) refreshes interest in the brand names.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Lilly ObesityWeek release",
+          "signal": "Zepbound featured across new ObesityWeek data",
+          "url": "https://www.prnewswire.com/news-releases/lilly-to-present-new-data-across-zepbound-foundayo-eloratzp-and-retatrutide-at-obesityweek-2026-moving-obesity-care-beyond-the-scale-302938569.html"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Thanksgiving on tirzepatide: full after 3 bites, protein first, smaller plates, eating slowly, heartburn and nausea after a big meal",
+      "angle": "20:00 holiday-table Shorts series (11-18 to 11-27): one practical moment each (full fast, heartburn, party drinks, leftovers), with the Thanksgiving long video as the target. Never extreme-diet framing.",
+      "keywords": [
+        "thanksgiving on mounjaro",
+        "tirzepatide thanksgiving",
+        "full fast on zepbound",
+        "holiday eating glp-1",
+        "mounjaro heartburn after big meal"
+      ],
+      "stage": "rising",
+      "momentum": 90,
+      "predicted_peak": "5–11 days (peaks around 26 Nov)",
+      "why_now": "Prevention ran '5 Things Doctors Want GLP-1 Users to Know Ahead of the Holidays' on 15 Nov, and mainstream holiday coverage is starting. It's been in our snapshots 5 times at 88–93. The 'full after 3 bites' Reel got 428 views, our best.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Prevention via Google News",
+          "signal": "Holiday GLP-1 advice piece, 15 Nov",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQlY3dDduRGtMY2lKZWxrWTJwejJVUFE1bHN1UFhOTGNkNGI5NURVaEtkUWszeWZUdHhROUFwcWtLdERxcWtVLXpzTXlQdW1aeDE1NnlZV2tJellvUXBiZ2dmUmhsZ2IwQklvdmxmRy1UbXFiOElKM2U0ZkZ1YW4yVW5lZHA?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide (Mounjaro/Zepbound) NAION vision warning: the class-wide label change, how rare it is, and which sudden vision changes need urgent care",
+      "angle": "Use it inside L6 'Serious Risks: How Rare?' as a chapter, plus one calm 'Is this normal?' Short about sudden vision change, with a 'call right away' safety line. Quote the label wording only from the real PI section, and name both NANOS and the AAO if cited.",
+      "keywords": [
+        "mounjaro eye warning",
+        "tirzepatide naion",
+        "zepbound vision loss",
+        "ozempic blindness warning",
+        "glp-1 naion fda"
+      ],
+      "stage": "peaking",
+      "momentum": 78,
+      "predicted_peak": "0–4 days",
+      "why_now": "New explainers keep landing: EMJ and Ophthalmology Times on 15 Nov, NeurologyLive and WPTZ on 13 Nov. Label changes are a proven search format, though competition is now broad.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Ophthalmology Times via Google News",
+          "signal": "Q&A on the FDA class-wide NAION warning, 15 Nov",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNTBhUUp1YzgwdUFoNklXLUdFYldRek44LW82V05xLUNVT3dKbjI4ZVhlSXpQbEFWc0E2Zkl3MzVsTDlJZFB3RFhpT1VRUVhNWEJGcGJqS1l3RXNtR09Oc05mYllTMmUzeXRWQTRNQkdBMk15NDBMRkd5Nkk2UHg2TzVHRWVaLXhZSVJ6OHcwYlRfbXlmclhGcmtNNzU2SDNWTGYyQlJFaVlwUVJ4d1ZxZE53?oc=5"
+        },
+        {
+          "source": "EMJ via Google News",
+          "signal": "'New Safety Labeling Added to GLP-1 RAs Over NAION Risk', 15 Nov",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWlJ2VExEa0FubFVOTjhHRHhrUTdFeXlKVHhaUC01NDB5MmM5SUtieXg3OXJJbThaVUY0MGJ6enN6QzQwTnEzU3lEM2NObUlZTUVEdHRDdTVaWG1UM2xpS3RwX3N2Ylo5MkV5VkpoX09HdlFydE16c0xLbVJUTF9UNHRab2J0WnVfeDlkbHY0VEVkaHpGSVNLWjM1Rld6dFpzU0dCZFB3VW1PTGF2dDJlSw?oc=5"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide injection site reactions and rotating sites per the Instructions for Use: redness, itching, small lumps (6–8% by dose vs about 2% on placebo), and when to call",
+      "angle": "08:00 'Is this normal?' Short, a proven winner (254 and 202 views). Related-video link to the Pen how-to. IFU only, no amounts.",
+      "keywords": [
+        "mounjaro injection site reaction",
+        "zepbound injection site lump",
+        "tirzepatide injection sites",
+        "where to inject mounjaro",
+        "zepbound red bump after injection"
+      ],
+      "stage": "evergreen",
+      "momentum": 82,
+      "predicted_peak": "evergreen",
+      "why_now": "Steady top performer across 6 snapshots. Device how-tos are a 10x+ search format. New starters arrive constantly.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "CNN via Google News",
+          "signal": "'Doctors explain GLP-1 side effects', 13 Nov, keeps side-effect searches warm",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUURsVmxYdlBjNVZOd2U1eDRYNDRwS3pXSTZ6Ym52bUFPenRjZVBpOV9kbjczZks4RDBvelhuNjJmY2xJMmpwOVZ5eG5HSFJpWHlEXy1jbHF0RklQaDJraktXNWdrbE5qN2ZrYUlndHBkRDNFWWtyN2lvN3hNcjZNWWV0UlVNUENwQmgzYXZqajhOcUZybEtwTjllaG9kRWxObGlLZldoTE1kV1Y1MTVv?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide nausea: foods that may help, why it happens (slower stomach emptying) and that it happened mostly during dose escalation and decreased over time",
+      "angle": "Ship the verified 11-14 'Nausea: Foods That May Help' long video, re-rendered. Pair it with 'Is this normal?' nausea Shorts pointing to Side Effects.",
+      "keywords": [
+        "tirzepatide nausea",
+        "mounjaro nausea what helps",
+        "zepbound nausea foods",
+        "how long does mounjaro nausea last"
+      ],
+      "stage": "evergreen",
+      "momentum": 82,
+      "predicted_peak": "evergreen",
+      "why_now": "It's #1 in the long-form queue. CNN's 13 Nov side-effects explainer and the holiday big-meal season both lift nausea searches.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "CNN via Google News",
+          "signal": "GLP-1 side effects explainer, 13 Nov",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUURsVmxYdlBjNVZOd2U1eDRYNDRwS3pXSTZ6Ym52bUFPenRjZVBpOV9kbjczZks4RDBvelhuNjJmY2xJMmpwOVZ5eG5HSFJpWHlEXy1jbHF0RklQaDJraktXNWdrbE5qN2ZrYUlndHBkRDNFWWtyN2lvN3hNcjZNWWV0UlVNUENwQmgzYXZqajhOcUZybEtwTjllaG9kRWxObGlLZldoTE1kV1Y1MTVv?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide hair loss: why it's more common in women (label: 5.4% vs 0.9%; women 7.1%, men 0.5%) and whether it grows back",
+      "angle": "08:00 visible-body Short (hair Shorts got 1,025 and 119 views), linked to the retitled 'Tirzepatide (Mounjaro) Hair Loss: Why More in Women?' long video.",
+      "keywords": [
+        "tirzepatide hair loss",
+        "mounjaro hair loss women",
+        "zepbound hair shedding",
+        "does hair grow back after mounjaro"
+      ],
+      "stage": "evergreen",
+      "momentum": 80,
+      "predicted_peak": "evergreen",
+      "why_now": "A felt symptom with proven Short performance. The retitle of the long video this week needs Shorts feeding it.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "CNN via Google News",
+          "signal": "Side-effect coverage, 13 Nov",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUURsVmxYdlBjNVZOd2U1eDRYNDRwS3pXSTZ6Ym52bUFPenRjZVBpOV9kbjczZks4RDBvelhuNjJmY2xJMmpwOVZ5eG5HSFJpWHlEXy1jbHF0RklQaDJraktXNWdrbE5qN2ZrYUlndHBkRDNFWWtyN2lvN3hNcjZNWWV0UlVNUENwQmgzYXZqajhOcUZybEtwTjllaG9kRWxObGlLZldoTE1kV1Y1MTVv?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide (Mounjaro) weight loss: how much in the trials? SURMOUNT-1 averages by arm in the full trial population, why results vary, and the early-responder pattern",
+      "angle": "Playbook L3. Plain-language trial numbers (both arms, the full population: adults with obesity, or overweight plus at least one weight-related condition, without diabetes), the spread around the average, and what's linked to better results (protein, strength training). No dose advice.",
+      "keywords": [
+        "how much weight can you lose on mounjaro",
+        "tirzepatide weight loss results",
+        "zepbound average weight loss",
+        "surmount-1 results"
+      ],
+      "stage": "evergreen",
+      "momentum": 80,
+      "predicted_peak": "evergreen",
+      "why_now": "Fresh ObesityWeek coverage of Lilly's 'lose weight in trials' (Reuters/KFGO, 14 Nov) and the Medscape early-response piece give the evergreen question a news hook.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Reuters/KFGO via Google News",
+          "signal": "'Lilly says its obesity drugs helped patients lose weight in clinical trials', 14 Nov",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQXVieGxaNk9xdWlQVEtuaUlGaDhrc2E5YkxnZmFtUnEyelhfaDdSd25lcW5tcEMtSTVIeGlWN19MVUtORDVQVTdpZjRJbGNtenowT0xEbk1tb0JxUUxNeXhTTkZsWDhwQlFUZnlEM1ZHLVcxY3BkVnAyMmUxV2ZuMzl1LVJ5Q2dSQnFoMWFuY2hfQkFNalpNTEJPa0xQWFEwRjAzZ3Rwbw?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long",
+        "short"
+      ]
+    },
+    {
+      "topic": "Lifting weights on tirzepatide: T-REx randomized trial (Nature Medicine, 9 Nov). Resistance training cut lean-mass loss about 25% and raised strength with similar weight loss",
+      "angle": "Practical Short: 'On tirzepatide and worried about muscle?' A study supports the Short, it isn't the topic. Target: the Strength long video (don't touch its packaging until 11-24).",
+      "keywords": [
+        "tirzepatide muscle loss",
+        "mounjaro strength training",
+        "zepbound lose muscle",
+        "weight training on glp-1"
+      ],
+      "stage": "rising",
+      "momentum": 76,
+      "predicted_peak": "3–7 days",
+      "why_now": "Second-wave pickup on 14–15 Nov (Jerusalem Post, UA.NEWS, Maeil Business). The Lancet COURAGE muscle trial (11 Nov) keeps 'muscle on GLP-1' in the news.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "PubMed (Nat Med)",
+          "signal": "RCT of resistance exercise during tirzepatide therapy",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43003902/"
+        },
+        {
+          "source": "Jerusalem Post via Google News",
+          "signal": "'Losing weight without losing as much muscle', 15 Nov",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1nRUpwTlFlTGJRUWE4cUJ5aHRIeWl6YWc2WklaekZWbURjTDZnUGhLam5qbms1UlNjNmpxM3pLZTdYTmZmQkJrVWJzdGVZUENoTElrMDlHSzZaS1hqNHBla3BMMndENE0?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Orforglipron (Foundayo) pill: what to expect from the label, plus new ObesityWeek real-world data (96–98% found it easy to use; about 40% took it in the evening or at bedtime) and China's approval",
+      "angle": "Playbook L4 (regenerate the broken audio scene). Label-only what-to-expect, with the new real-world usability point as a fresh hook. Use the label's top-dose figures. Link to How It Works.",
+      "keywords": [
+        "foundayo",
+        "foundayo what to expect",
+        "orforglipron side effects",
+        "glp-1 pill",
+        "foundayo vs zepbound"
+      ],
+      "stage": "rising",
+      "momentum": 76,
+      "predicted_peak": "5–14 days",
+      "why_now": "China approval (13 Nov), the Fierce Pharma oral GLP-1 tracker showing prescriptions climbing, and Lilly's ObesityWeek Foundayo data. Our earlier Foundayo video earned 336 min.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "Investing.com (Lilly ObesityWeek)",
+          "signal": "Real-world: 96–98% simple to use; about 40% evening or bedtime dosing",
+          "url": "https://www.investing.com/news/company-news/lilly-presents-obesity-drug-trial-results-at-obesityweek-2026-93CH-5027426"
+        },
+        {
+          "source": "Fierce Pharma via Google News",
+          "signal": "Oral GLP-1 tracker: Foundayo prescriptions rising, 13 Nov",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVUl1anVGbWRDTnRCUVVGWkU3V1NLZkI4TVpVamVheHZEWV9DSksyZC11NHpRcGl4b2g3TG9LUjNqcUNGamJYVUxHMWVWNnJZUzJKWFpaMHdqZ01Fb0M3LTJCcHZHR2sxOElyNk0wNFgtOW45endMcjRFcmZNd2ItSUwwSVdsUEN1Tkt6SnNuNGVWeVNjMTM0WW5mYmpoTWxzaVNhdTNLT1RNQQ?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long"
+      ]
+    },
+    {
+      "topic": "Travelling with your tirzepatide pen over the holidays: what the Instructions for Use say about room temperature, heat, freezing and flying",
+      "angle": "20:00 holiday-table Short. Storage per the IFU only (open the real IFU URL). Target: the Pen how-to video.",
+      "keywords": [
+        "traveling with mounjaro pen",
+        "can zepbound be out of fridge",
+        "flying with tirzepatide",
+        "mounjaro pen storage"
+      ],
+      "stage": "emerging",
+      "momentum": 76,
+      "predicted_peak": "5–10 days (Thanksgiving travel)",
+      "why_now": "Thanksgiving travel week is about to start. Device how-tos are a 10x+ search format, and the 11-15 'Pen out of the fridge' Short was our cleanest yet.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Prevention via Google News",
+          "signal": "Holiday GLP-1 guidance, 15 Nov",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQlY3dDduRGtMY2lKZWxrWTJwejJVUFE1bHN1UFhOTGNkNGI5NURVaEtkUWszeWZUdHhROUFwcWtLdERxcWtVLXpzTXlQdW1aeDE1NnlZV2tJellvUXBiZ2dmUmhsZ2IwQklvdmxmRy1UbXFiOElKM2U0ZkZ1YW4yVW5lZHA?oc=5"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide and alcohol at holiday parties: what the label says (no 'safe amount'), with the low-blood-sugar caveat for people on insulin or sulfonylureas",
+      "angle": "20:00 holiday Short ('drinks at a party'). Practical and non-judgemental. Target: Thanksgiving long video. EloraTZP coverage mentioning 'fewer cravings for alcohol' is not a claim we make.",
+      "keywords": [
+        "can you drink on mounjaro",
+        "tirzepatide alcohol",
+        "zepbound and wine",
+        "alcohol on glp-1"
+      ],
+      "stage": "rising",
+      "momentum": 74,
+      "predicted_peak": "7–14 days (party season)",
+      "why_now": "Party season, plus a fresh retrospective cohort on GLP-1s and alcohol use disorder (Eur J Intern Med, 14 Nov) as background only.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "PubMed (Eur J Intern Med)",
+          "signal": "GLP-1 RAs in adults with obesity and alcohol use disorder, retrospective cohort, 14 Nov",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43034104/"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "Tirzepatide in teens: SURMOUNT-ADOLESCENTS Phase 3 (ObesityWeek, 15 Nov). BMI down an average of 21.4% at 72 weeks in 12–17-year-olds with obesity; more than half no longer met obesity BMI criteria",
+      "angle": "For parents in our audience: what the trial found, the trial population, that it isn't a US approval for teens yet, and the questions to bring to a paediatrician. Caring, weight-neutral tone. No body shaming.",
+      "keywords": [
+        "zepbound for teens",
+        "tirzepatide adolescents",
+        "mounjaro for teenagers",
+        "surmount-adolescents"
+      ],
+      "stage": "emerging",
+      "momentum": 66,
+      "predicted_peak": "2–7 days",
+      "why_now": "Bloomberg, MedPage and Seeking Alpha all reported it overnight (15 Nov). The Guardian ran 'hundreds of children in England prescribed jabs' (14 Nov). Audience fit is only partial, and news Shorts underperform, so it's a lower priority.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Bloomberg via Google News",
+          "signal": "'Lilly's Obesity Drug Zepbound Helped Adolescents Lose Weight', 15 Nov",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbm0zT1dYSk1mZVFMZEgweVdMUWxGaUxYTEhjci10LWRmWmN5enRqTTVhNHRtWTBUSE50TXJ0SnZrR0MzaWdxak8yQmpUaF9JODhZc19QVHlKcWRGR1RJVk9Cckc2MV84c2dOZDMyVzNaVUFYVFYyVm1lakZjSFdPanFza2g4ZURROGQ5ZjNXU1VhU0xJZG96RE00ZFJCSkpJOVhqdTdWdXdrMktBQWNaSQ?oc=5"
+        },
+        {
+          "source": "GuruFocus",
+          "signal": "21.4% BMI reduction at 72 weeks; more than half no longer met obesity criteria",
+          "url": "https://www.gurufocus.com/news/9200870/eli-lillys-zepbound-shows-promising-results-in-adolescent-obesity-boosting-llys-growth-prospects"
+        }
+      ],
+      "safety": "caution",
+      "formats": [
+        "long"
+      ]
+    },
+    {
+      "topic": "Tirzepatide beyond weight: heart failure with preserved ejection fraction (AHA 2026 biomarker data) and kidneys (Nov 13 meta-analysis of albuminuria and filtration markers)",
+      "angle": "Chapter material for a broad 'Tirzepatide benefits beyond weight' long video. Keep each result in its exact population (HFpEF with obesity; trial-level kidney data). Not a standalone narrow long video.",
+      "keywords": [
+        "tirzepatide heart failure",
+        "mounjaro kidney benefits",
+        "zepbound heart benefits",
+        "tirzepatide benefits beyond weight loss"
+      ],
+      "stage": "emerging",
+      "momentum": 60,
+      "predicted_peak": "2–6 weeks",
+      "why_now": "AHA 2026 coverage (Clinical Trials Arena, 13 Nov) and a new kidney meta-analysis (13 Nov). Low creator coverage, but narrow topics don't get shown, so we fold it into a broad title.",
+      "competition": "low",
+      "evidence": [
+        {
+          "source": "Clinical Trials Arena via Google News",
+          "signal": "'AHA 2026: Tirzepatide Improves Key Biomarkers in Obesity-Related Heart Failure', 13 Nov",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTFBCNnF4RTlXR1JoTXJBYWx0TVVMZmVjU2g2TnhMaVplV2draDNqdy01UmNycV9ZNzFzY003N0gwcmI5LWdhbW1IQ05jX1ZlVVRrdVVlTWZJYzNJRGRqeXZVVWw3WHItc3pUVjRpMjhmcGpOUDhqVFdiY1MwYWJpNUhERDhJSE1LR0FrVTc1REZ4RzdxNlZza0xBS29CVTB6Zi01dDVmRHM5Y2RMRlhwYWpLRTVYSm9nV29UMVo3eGY1UVpDOEdMWnNR?oc=5"
+        },
+        {
+          "source": "PubMed (Diabetes Res Clin Pract)",
+          "signal": "Tirzepatide kidney effects meta-analysis, 13 Nov",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43025465/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "long"
+      ]
+    },
+    {
+      "topic": "Tirzepatide vs CagriSema: REDEFINE 4 (23% vs 25.5%, non-inferiority not met) and the new REDEFINE 9 lower-dose data. Not a fresh head-to-head",
+      "angle": "Skip as a long video: REDEFINE 4 came out in February, and REDEFINE 9 is against placebo only. At most, one line inside the EloraTZP video for context.",
+      "keywords": [
+        "cagrisema vs tirzepatide",
+        "redefine 4",
+        "cagrisema results"
+      ],
+      "stage": "peaking",
+      "momentum": 30,
+      "predicted_peak": "passed",
+      "why_now": "Medscape covered REDEFINE 9 on 15 Nov, but our CagriSema video earned only 117 min, and evergreen 'did X beat tirzepatide' videos flop.",
+      "competition": "medium",
+      "evidence": [
+        {
+          "source": "HCPLive",
+          "signal": "REDEFINE 4 missed non-inferiority vs tirzepatide (results from February)",
+          "url": "https://www.hcplive.com/view/cagrisema-demonstrates-weight-loss-fails-to-achieve-primary-endpoint-compared-to-tirzepatide"
+        },
+        {
+          "source": "PubMed (Lancet Diabetes Endocrinol)",
+          "signal": "REDEFINE 9, placebo-controlled lower doses, 14 Nov",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43033821/"
+        }
+      ],
+      "safety": "ok",
+      "formats": [
+        "short"
+      ]
+    },
+    {
+      "topic": "REJECT: 'Nearly half of GLP-1 users changed their dosing' (self-titration and cost bait), black-market jabs and 'retatrutide research peptide/OEM' pieces, CVS $350 pricing stories, and 'Stopping GLP-1s doubles heart attack risk' scare framing",
+      "angle": "Do not cover. These invite dosing changes, gray-market sourcing, banned cost topics, or fear-led stopping messages built on observational data.",
+      "keywords": [
+        "glp-1 dosing changes",
+        "retatrutide peptide",
+        "cvs glp-1 $350"
+      ],
+      "stage": "peaking",
+      "momentum": 5,
+      "predicted_peak": "n/a",
+      "why_now": "High news volume 13–16 Nov, but every item breaks our guardrails.",
+      "competition": "high",
+      "evidence": [
+        {
+          "source": "Medical Daily via Google News",
+          "signal": "'Nearly half of GLP-1 users changed their dosing', 15 Nov",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0SU8zMzhLMFFtcFNGcHJmWGR4WGlkbWMxT3NLWkc1R2NFSHFpQlFlMVZuZ0ZERW13ZDEyc2xaYkhRVFFhS0UyVEYxOS1lQ2FJbkYxN3hZUEM2RGxERlhsbzFabDlXTjFOLVRfNlYtd3FkN3J3cUQ4OXhMN3R6d28?oc=5"
+        },
+        {
+          "source": "National Law Review via Google News",
+          "signal": "Retatrutide OEM manufacturing listicle, 16 Nov",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMVRSaFZsemFtN3VHMlktQ1BUR0NrTEZUM3JLM0QzYVo4bjNOTFgzNnVJMzczUkdMWTgybV80S05ER1RVZGJ2SjE3UlgtWGZTS1QxN281a0xlNi1wOWhjS3R2bDdEYVM4RFhLTTF1TEFCanpnT3VXbmhqY1NqclNzMm9VNmZfUmZWYjRWZnJ3TF9Gd1VQbnFYOTV4ZnoxVklpMmZQaXduZU9hUUNPVEE?oc=5"
+        }
+      ],
+      "safety": "reject",
+      "formats": []
+    }
+  ]
+}
