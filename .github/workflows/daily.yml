@@ -1,6 +1,6 @@
 name: Daily production
 # replacement runs are named so the duplicate guard and the ops watchdog can tell them from a day's production
-run-name: "${{ inputs.replace_long && format('Replacement long video {0}', inputs.date) || 'Daily production' }}"
+run-name: "${{ inputs.replace_long && format('Replacement long video {0}', inputs.date) || inputs.replace_short && format('Replacement short {0}', inputs.date) || 'Daily production' }}"
 # Plans today's slate, produces 1 long-form video, 3 shorts and 1 carousel in parallel,
 # then uploads media, pre-schedules YouTube and queues everything else for the publisher.
 
@@ -22,6 +22,10 @@ on:
         default: false
       replace_long:
         description: "Plan and produce ONE replacement long video for `date` (the day's long video was dropped); leaves the rest of the day alone"
+        type: boolean
+        default: false
+      replace_short:
+        description: "Plan and produce ONE replacement Short for `date` (a Short was held or dropped); leaves the rest of the day alone"
         type: boolean
         default: false
       only:
@@ -94,6 +98,10 @@ jobs:
           fi
           if [ "${{ inputs.replace_long }}" = "true" ]; then
             npx tsx src/cli.ts plan --date "$D" --replace-long
+            exit 0
+          fi
+          if [ "${{ inputs.replace_short }}" = "true" ]; then
+            npx tsx src/cli.ts plan --date "$D" --replace-short
             exit 0
           fi
           npx tsx src/cli.ts plan --date "$D"
@@ -210,8 +218,23 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
         with: { ffmpeg: "true" } # Telegram preview copies of large videos
+      # The plan artifact is a snapshot of data/ from plan time. Never lay it over the checkout: finalize commits data/,
+      # and that would roll back posts the publisher made during the run. Copy only what finalize needs.
       - uses: actions/download-artifact@v4
-        with: { name: plan, path: data/ }
+        with: { name: plan, path: _plan/ }
+      - name: Take only the plan from the plan artifact
+        run: |
+          D="${{ needs.plan.outputs.date }}"
+          mkdir -p "data/queue/$D"
+          cp "_plan/queue/$D/plan.json" "data/queue/$D/plan.json"
+          if [ -d _plan/radar ]; then mkdir -p data/radar && cp -r _plan/radar/. data/radar/; fi
+          # API usage counter: keep the larger spend when both are from the same month
+          if [ -f _plan/usage/anthropic-api.json ]; then
+            mkdir -p data/usage
+            if [ -f data/usage/anthropic-api.json ] && [ "$(jq -r .month data/usage/anthropic-api.json)" = "$(jq -r .month _plan/usage/anthropic-api.json)" ]; then
+              if [ "$(jq -n --slurpfile a data/usage/anthropic-api.json --slurpfile b _plan/usage/anthropic-api.json '($b[0].usd // 0) > ($a[0].usd // 0)')" = "true" ]; then cp _plan/usage/anthropic-api.json data/usage/anthropic-api.json; fi
+            else cp _plan/usage/anthropic-api.json data/usage/anthropic-api.json; fi
+          fi
       - uses: actions/download-artifact@v4
         with:
           pattern: item-*

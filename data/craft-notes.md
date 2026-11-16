@@ -37,8 +37,8 @@ _**Correction (still applies):** ignore the Visual Critic's "offset beat", "wron
   - Never split a word, number or phrase across cards ("SEVENTY-/TWO", "GLP-/1", "TYPE / TWO DIABETES", "WEIGHT / LOSS", "SIDE / EFFECTS").
   - Never end a card on a comma, dash, colon, THE, A, ABOUT, MAY, WON'T, DOESN'T, BEEN, POINT, TYPE or a bare number.
   - Use these fixed cards word for word:
-    - Exp F line (only until 11-17, then follow the task): "WE ANSWER ONE TIRZEPATIDE QUESTION" / "FROM THE RESEARCH EVERY DAY." / "SUBSCRIBE IF THAT HELPS."
-    - Closing line: "FULL BREAKDOWN ON OUR CHANNEL." / "LINK IN THE DESCRIPTION."
+    - Content dates up to 2026-11-16 only: Exp F line "WE ANSWER ONE TIRZEPATIDE QUESTION" / "FROM THE RESEARCH EVERY DAY." / "SUBSCRIBE IF THAT HELPS." and closing line "FULL BREAKDOWN ON OUR CHANNEL." / "LINK IN THE DESCRIPTION."
+    - From content date 2026-11-17: no Exp F card and no link card in Shorts (links in Shorts descriptions cannot be clicked). The last card is the task's last line: a loop back into sentence 1, or "THE FULL VIDEO IS ON OUR CHANNEL." for a spin-off.
   - (The Exp F card broke in 5 Shorts and the closing card in 6, latest S3 11-15. Broken cards show up in nearly every Short.)
 - **Keep every tag inside the frame, off the caption, and at least ~40px.**
   - Shorts: keep tags above y 1150, show at most 2 at once, and drop any tag that repeats the caption.
@@ -58,7 +58,8 @@ _**Correction (still applies):** ignore the Visual Critic's "offset beat", "wron
 ### Scriptwriters
 - **Shorts: stay inside the task's length arm and never go over 160 spoken words. Count every safety and closing line yourself.**
   - Tight arm: 90–120 words. Standard arm: 135–160 words.
-  - Closing order: the don't-switch/stop/change line → "Not personal advice" → the prescriber line → the Exp F line (08:00 and 13:00 only, until 11-17; after that, follow the task) → "Full breakdown on our channel, link in the description."
+  - Closing order up to content date 2026-11-16: the don't-switch/stop/change line → "Not personal advice" → the prescriber line → the Exp F line (08:00 and 13:00 only) → "Full breakdown on our channel, link in the description."
+  - From content date 2026-11-17 (owner OK 2026-11-12): one short safety line ("Not personal advice, so ask your prescriber."), plus the emergency and don't-stop lines when the topic needs them, then the task's last line (a loop into sentence 1, or "The full video is on our channel." for a spin-off). Never "link in the description" in a Short.
   - Long-forms end with "There's a video I'd watch next, linked in the description."
   - (Closing lines missing or out of order in 4 Shorts.)
 - **Speak every safety line and also write it in full in the on-screen field. Copy these fixed lines exactly.**

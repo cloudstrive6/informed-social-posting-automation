@@ -45,7 +45,7 @@ Return the JSON your schema asks for. `summary` is the Telegram message: 4–8 s
 YouTube rows can carry `impressions` and `impressions_ctr_pct` (thumbnail impressions and click-through rate, from YouTube's daily reach reports; they start 1–2 days after 28 Oct and only cover days since then) and, for long videos, `traffic_sources` (views by source: SHORTS = Shorts feed, YT_SEARCH, RELATED_VIDEO = suggested, SUBSCRIBER/BROWSE = home, PLAYLIST, END_SCREEN, YT_CHANNEL, EXT_URL…). Use them to tell packaging problems (impressions fine, CTR low → retitle / new thumbnail) from discovery problems (few impressions → topic or search demand), and to measure the Shorts→long funnel (views arriving from SHORTS, RELATED_VIDEO, END_SCREEN, PLAYLIST). Null means not reported yet, not zero.
 
 ## Studio-only features (2026-10-28)
-End screens and the Shorts "related video" link can only be set by the owner in YouTube Studio, and haven't been. Never write scripts or playbook lines that depend on them ("on screen now"); point viewers to the description link, which the publisher adds and verifies. You may still ask the owner for them in `owner_decisions`.
+End screens and the Shorts "related video" link can only be set by the owner in YouTube Studio, and haven't been (status 2026-11-16: still not set; the owner needs the channel's Google account signed in to Chrome first). Never write scripts or playbook lines that depend on them ("on screen now"); point viewers to the description link, which the publisher adds and verifies. You may still ask the owner for them in `owner_decisions`.
 
 ## Owner-approved standing rules (2026-11-12): keep them in every playbook you write
 These came from a measured diagnosis (Bryce-Brain `wiki/answers/informed-performance-plan-2026-11.md`). Do not drop or contradict them; change one only when an experiment's readout beats it, and say so with the numbers.
@@ -57,7 +57,11 @@ These came from a measured diagnosis (Bryce-Brain `wiki/answers/informed-perform
 - **Shorts ending from 2026-11-17:** one short safety line, then a line that loops into the first; never "link in the description" spoken in a Short.
 
 ## Running experiments set up by the owner (2026-11-12): read them out, do not restart them
+- Read the arms from `experiment_arms` in your input (computed in code from every post since 2026-11-12: n, median views at day 3 and day 7, average view %, hold at 5 s and 15 s, duration, words per arm). Do not join item files yourself; if an arm has fewer posts than the metric needs, say so.
 - `short-length`: each Short's item JSON has `experiments["short-length"]` = `tight` (90–120 words, 40–55 s) or `standard` (135–160 words, 65–80 s), alternating by slot and day, 2026-11-12 to 2026-11-26. Metric: median views and average view % per arm at day 7. Readout 2026-11-26; record the winner in the playbook.
 - `hook-archetype`: `experiments["hook-archetype"]` rotates result-first, negation, number-first, myth-flip, recognition-question. Metric: median views and average view % per style at day 7, once each has n≥8.
 - Search-demand long videos vs Lane A: minutes and search views at day 14, matched by age.
-- Exp E (Strength and What to Eat packaging) reads 2026-11-24; Exp F (Shorts subscribe line) ends 2026-11-17.
+- Exp E (Strength and What to Eat packaging) reads 2026-11-24; Exp F (Shorts subscribe line) ended with content date 2026-11-16.
+
+## Dated rules expire (owner OK 2026-11-16)
+Every playbook rule tied to a date or a running experiment ends with "(until YYYY-MM-DD)". The code drops that line once the date has passed, so the playbook never carries stale rules. Undated rules stay until you change them. Write the date of each section you rewrite, never "this week".

@@ -5,13 +5,13 @@ import { readJson, writeJson } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
 
 /**
- * Retention curves and traffic detail, captured once per milestone (long: day 7 and day 28, Short: day 7) and stored in
+ * Retention curves and traffic detail, captured once per milestone (long: day 7 and day 28, Short: day 3 and day 7) and stored in
  * data/analytics/retention/<videoId>.json. The pure functions here (no network) are what the local test exercises;
  * the fetchers are injected so CI uses the YouTube Analytics API and the test uses fixtures.
  */
 
 export const RETENTION_DIR = join(DATA, "analytics", "retention");
-export const MILESTONES: Record<string, number[]> = { long: [7, 28], short: [7] };
+export const MILESTONES: Record<string, number[]> = { long: [7, 28], short: [3, 7] };
 /** YouTube Analytics data lags about two days: wait this many extra days after a milestone before querying it. */
 const LAG_DAYS = 2;
 const MAX_TRIES = 4;
@@ -97,7 +97,8 @@ export function dueMilestones(file: RetentionFile | undefined, format: string, p
   return (MILESTONES[format] ?? []).filter(m => age >= m + LAG_DAYS && !file?.milestones[`d${m}`] && (file?.tries[`d${m}`] ?? 0) < MAX_TRIES);
 }
 
-export interface RetentionVideo { id: string; format: string; published: string; durationSec: number }
+/** `experiment`: the item carries an experiments field (a Short in a test arm), captured before other Shorts. */
+export interface RetentionVideo { id: string; format: string; published: string; durationSec: number; experiment?: boolean }
 export interface Fetchers {
   curve(id: string, start: string, end: string): Promise<Table>;
   detail(id: string, type: string, start: string, end: string): Promise<Table>;
@@ -117,7 +118,7 @@ class EmptyCurve extends Error {}
  * Capture every due milestone (long videos first, oldest milestone first), at most `maxCaptures` per run so quota and
  * run time stay small and a backlog drains over a few days. Never throws. `write` is injectable for the test.
  */
-export async function captureRetention(videos: RetentionVideo[], f: Fetchers, today: string, opts: { maxCaptures?: number; read?: (p: string) => RetentionFile | undefined; write?: (p: string, v: unknown) => void } = {}): Promise<{ captured: string[]; failed: string[]; pending: number }> {
+export async function captureRetention(videos: RetentionVideo[], f: Fetchers, today: string, opts: { maxCaptures?: number; maxShortCaptures?: number; read?: (p: string) => RetentionFile | undefined; write?: (p: string, v: unknown) => void } = {}): Promise<{ captured: string[]; failed: string[]; pending: number }> {
   const read = opts.read ?? readRetentionFile;
   const write = opts.write ?? writeJson;
   const recs = new Map<string, RetentionFile | undefined>(); // one live record per video (a video can have two milestones due)
@@ -127,10 +128,14 @@ export async function captureRetention(videos: RetentionVideo[], f: Fetchers, to
     recs.set(v.id, file);
     for (const m of dueMilestones(file, v.format, v.published, today)) todo.push({ v, m });
   }
-  todo.sort((a, b) => (a.v.format === "long" ? 0 : 1) - (b.v.format === "long" ? 0 : 1) || a.m - b.m || a.v.published.localeCompare(b.v.published));
+  // long videos first (their own cap, unchanged), then Shorts: experiment arms first, then the earlier milestone, then the oldest
+  todo.sort((a, b) => (a.v.format === "long" ? 0 : 1) - (b.v.format === "long" ? 0 : 1) || (a.v.format === "long" ? 0 : (b.v.experiment ? 1 : 0) - (a.v.experiment ? 1 : 0)) || a.m - b.m || a.v.published.localeCompare(b.v.published));
+  const maxLong = opts.maxCaptures ?? 20, maxShort = opts.maxShortCaptures ?? 40; // quota: 1 unit per query, so Shorts add at most 40 queries
+  let nLong = 0, nShort = 0;
+  const run = todo.filter(t => t.v.format === "long" ? nLong++ < maxLong : nShort++ < maxShort);
   const captured: string[] = [], failed: string[] = [];
   let stopped = false;
-  for (const { v, m } of todo.slice(0, opts.maxCaptures ?? 20)) {
+  for (const { v, m } of run) {
     const key = `d${m}`;
     const rec: RetentionFile = recs.get(v.id) ?? { video_id: v.id, format: v.format, published: v.published, duration_sec: v.durationSec, tries: {}, milestones: {} };
     recs.set(v.id, rec);
@@ -170,7 +175,7 @@ export async function captureRetention(videos: RetentionVideo[], f: Fetchers, to
       log.warn(`retention ${v.id} ${key} (try ${rec.tries[key]}/${MAX_TRIES}): ${(e as Error).message.slice(0, 160)}`);
     }
   }
-  return { captured, failed, pending: stopped ? todo.length : Math.max(0, todo.length - (opts.maxCaptures ?? 20)) };
+  return { captured, failed, pending: stopped ? todo.length : Math.max(0, todo.length - run.length) };
 }
 
 /** Small summary of a stored retention file for the per-post analytics row (what the analyst reads). */

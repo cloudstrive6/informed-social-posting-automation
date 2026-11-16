@@ -24,6 +24,7 @@
     "test:analytics": "tsx scripts/analytics-selftest.ts",
     "test:text": "tsx scripts/text-selftest.ts",
     "test:watchdog": "tsx scripts/watchdog-selftest.ts",
+    "test:measurement": "tsx scripts/measurement-selftest.ts",
     "sfx:kit": "tsx scripts/audio-assets.ts sfx",
     "music:library": "tsx scripts/audio-assets.ts music"
   },

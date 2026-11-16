@@ -60,7 +60,7 @@ _Verdict: off track. Bottleneck: The bottleneck is getting new long videos disco
 - Land the last payoff before the recap. One subscribe ask, after the payoff. End with "There's a video I'd watch next, linked in the description." Never say "on screen".
 
 ## Linking (copywriter and publisher)
-- The copywriter leaves line 1 empty. The publisher fills it with a verified ▶ Watch next link.
+- The copywriter leaves line 1 empty. Shorts: the publisher puts a verified "▶ Full breakdown" link on line 1. Long videos: the publisher adds a verified "▶ Watch next" link after the first paragraph (`src/publish/funnel.ts`).
 - Targets:
   - each new broad video → Side Effects
   - Side Effects → Stopping
@@ -85,7 +85,7 @@ _Verdict: off track. Bottleneck: The bottleneck is getting new long videos disco
   - hair → Hair Loss
   - stomach → Side Effects
   - food or holiday → Thanksgiving
-- **Exp F has ended:** from 11-17, drop the subscribe line and "Full breakdown… link in the description".
+- **Exp F has ended:** from content date 2026-11-17, drop the subscribe line and "Full breakdown… link in the description" in Shorts. (until 2026-11-30)
 - Banned:
   - "3 Ways" lists and approval-status titles
   - cost, Medicare and pharmacy topics; surgery; grocery

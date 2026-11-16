@@ -12,7 +12,8 @@ import { config, DATA } from "../lib/config.js";
 import { readJson, writeJson } from "../lib/fsx.js";
 import { loadItems, saveItem, type ContentItem, type PostTarget } from "../lib/items.js";
 import { log } from "../lib/log.js";
-import { addDays, localDate } from "../lib/time.js";
+import { addDays, localDate, slotTime } from "../lib/time.js";
+import { MAX_SHORT_REPLACEMENTS_PER_DAY, pickShortReplacementSlot } from "./shortReplacement.js";
 
 const STATE = join(DATA, "ops", "state.json");
 const EVERY_MIN = 10;
@@ -80,6 +81,7 @@ export async function watchdog(force = false) {
     ["posts", () => checkPosts(once, escalate, notify)],
     ["youtube", () => checkYouTube(once, escalate, notify)],
     ["long", () => checkLongVideo(once, escalate, notify)],
+    ["short", () => checkShortReplacement(once, notify)],
     ["funnel", () => checkFunnel(once)],
   ];
   for (const [name, fn] of checks) {
@@ -100,6 +102,8 @@ async function checkFunnel(once: Once) {
 }
 /** set when this pass found that Claude can't run at all; escalating to the (Claude-based) Ops Engineer is pointless then */
 let claudeDown = false;
+/** when this process last ordered a replacement run (long or Short): a new run may not show in `gh run list` for a minute */
+let lastReplacementStart = 0;
 type Escalate = (key: string, title: string, details: string) => Promise<void>;
 type Notify = (html: string, opts?: { silent?: boolean }) => Promise<void>;
 const esc = (t: string) => t.replace(/[<>&]/g, c => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;" }[c]!));
@@ -321,7 +325,7 @@ async function checkLongVideo(once: Once, escalate: Escalate, notify: Notify) {
   const busy = runs.some(r => r.status !== "completed");
   for (const D of [...new Set([today, contentDate()])]) {
     if (!existsSync(join(DATA, "queue", D, "plan.json"))) continue;
-    const longs = loadItems([D]).filter(i => i.kind === "long");
+    const longs = loadItems([D]).filter(i => i.kind === "long" && !isTestHold(i));
     const good = longs.some(i => i.status === "ready" || i.posts.some(p => p.status === "published" || p.status === "scheduled"));
     if (good) continue;
     // production (or a replacement) still running for this date: its long video may still arrive
@@ -335,8 +339,45 @@ async function checkLongVideo(once: Once, escalate: Escalate, notify: Notify) {
     }
     if (once(`replace-long:${D}:${tries + 1}`, 12)) {
       gh(["workflow", "run", "daily.yml", "--ref", "main", "-f", `date=${D}`, "-f", "replace_long=true"]);
+      lastReplacementStart = Date.now();
       log.info(`watchdog: replacement long video ${tries + 1} for ${D}`);
       await notify(`🔁 <b>Making a replacement long video</b> for ${D} (try ${tries + 1} of 3). The original was dropped:\n${esc(why.slice(0, 600))}\n\nIt posts as soon as it's ready and approved (about 3–4 h).`);
+    }
+  }
+}
+
+/**
+ * Held or dropped Short: if its slot (or the day's last Short slot) is still at least 2 h away, plan and produce ONE
+ * replacement Short (daily.yml replace_short, named "Replacement short <date>" so the duplicate guard and the
+ * Claude-stop retry ignore it). At most 2 a day, never while any daily.yml run is active. Applies to today and the
+ * date being produced.
+ */
+/** test runs (daily.yml test_run) hold every item on purpose: never replace those */
+const isTestHold = (i: ContentItem) => /test run/i.test(i.hold_reason ?? "");
+
+async function checkShortReplacement(once: Once, notify: Notify) {
+  if (Date.now() - lastReplacementStart < 15 * 60_000) return; // the long check just started a run; it may not be listed yet
+  const today = localDate(config.audience.timezone, now());
+  const runs = ghJson<Run[]>(["run", "list", "--workflow", "daily.yml", "--limit", "20", "--json", "databaseId,status,conclusion,createdAt,updatedAt,event,attempt,displayTitle"]);
+  if (!runs) return; // gh failed: unknown state, do nothing
+  if (runs.some(r => r.status !== "completed")) return; // production or another replacement still running
+  const tz = config.audience.timezone;
+  for (const D of [...new Set([today, contentDate()])]) {
+    if (!existsSync(join(DATA, "queue", D, "plan.json"))) continue;
+    const shorts = loadItems([D]).filter(i => i.kind === "short" && !isTestHold(i));
+    const tries = runs.filter(r => r.displayTitle === `Replacement short ${D}`).length;
+    const slotTimes = (config.schedule.short ?? []).map(t => slotTime(D, t, tz).toISOString());
+    const slotIndex = pickShortReplacementSlot({
+      shorts: shorts.map(i => ({ slot: i.posts[0]?.slot, dropped: i.status !== "ready" })), slotTimes, now: now().getTime(), tries,
+    });
+    if (slotIndex === undefined) continue;
+    if (once(`replace-short:${D}:${tries + 1}`, 12)) {
+      gh(["workflow", "run", "daily.yml", "--ref", "main", "-f", `date=${D}`, "-f", "replace_short=true"]);
+      lastReplacementStart = Date.now();
+      const why = shorts.filter(i => i.status !== "ready").map(i => `${i.id}: ${(i.hold_reason ?? i.status).slice(0, 200)}`).join("\n");
+      log.info(`watchdog: replacement Short ${tries + 1} for ${D} (slot ${config.schedule.short?.[slotIndex]})`);
+      await notify(`🔁 <b>Making a replacement Short</b> for ${D} (try ${tries + 1} of ${MAX_SHORT_REPLACEMENTS_PER_DAY}, slot ${config.schedule.short?.[slotIndex]}). A Short was held or dropped:\n${esc(why.slice(0, 500))}`, { silent: true });
+      return; // one run at a time
     }
   }
 }

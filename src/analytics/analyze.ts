@@ -7,9 +7,11 @@ import { log } from "../lib/log.js";
 import { Learnings, learningsSchema } from "../lib/schemas.js";
 import { igInsights } from "../publish/meta.js";
 import { partnerProgress, videoAnalytics, videoRetention, videoStats, videoTitles, videoTrafficDetail } from "../publish/youtube.js";
+import { loadItems } from "../lib/items.js";
+import { buildArmTables, dropContext, enrichRows } from "./measure.js";
 import { addDaysIso, captureRetention, isoSeconds, retentionPath, retentionSummary, type RetentionFile, type RetentionVideo } from "./retention.js";
 
-interface LogRow { at: string; date: string; id: string; kind: string; platform: string; format: string; slot: string; slotKey: string; status: string; remote_id?: string; title?: string; topic?: string; hook?: string; thumb_layout?: string; trend_stage?: string }
+interface LogRow { at: string; date: string; id: string; kind: string; platform: string; format: string; slot: string; slotKey: string; status: string; remote_id?: string; title?: string; topic?: string; hook?: string; thumb_layout?: string; trend_stage?: string; experiments?: Record<string, string>; words?: number; length_s?: number; scenes?: number }
 
 /** A YouTube video stays in the per-post analytics for a year: full detail for 28 days, compact rows after that. */
 const YT_KEEP_DAYS = 365;
@@ -20,7 +22,7 @@ export function lifetimeKeys(m: Record<string, any>): Record<string, any> {
   return Object.fromEntries(Object.entries(m).filter(([k]) => k !== "video").map(([k, v]) => [`life_${k}`, v]));
 }
 
-/** Rows older than 28 days keep identity fields, a short topic and the metrics (no hook text, url or timestamp). */
+/** Rows older than 28 days keep identity fields, a short topic, the metrics and the test fields (experiments, words, length_s, scenes, kind); only hook text, url and timestamp go. */
 export function compactRow<T extends { topic?: string }>(r: T) {
   const { at, url, hook, ...rest } = r as any;
   return { ...rest, topic: r.topic ? r.topic.slice(0, 140) : r.topic };
@@ -56,7 +58,7 @@ export async function runAnalytics() {
       latest.set(`${r.platform}:${r.remote_id}`, r);
     }
   }
-  const rows = [...latest.values()];
+  const rows = enrichRows([...latest.values()], (() => { try { return loadItems(); } catch { return []; } })()) as LogRow[]; // backfill experiments, words, length_s, scenes from the queue for posts logged before 2026-11-17
   if (rows.length < 3) { log.info("not enough published posts (need ≥ 3 older than 24h) for analysis yet"); return; }
 
   const metrics: Record<string, any> = {};
@@ -95,7 +97,7 @@ export async function runAnalytics() {
       const today = new Date().toISOString().slice(0, 10);
       const vids: RetentionVideo[] = rows.filter(r => r.platform === "youtube").map(r => ({
         id: r.remote_id!, format: r.format, published: addDaysIso(r.slot.slice(0, 10), -1), // -1 day: Analytics dates are Pacific time
-        durationSec: isoSeconds(metrics[`youtube:${r.remote_id}`]?.duration),
+        durationSec: isoSeconds(metrics[`youtube:${r.remote_id}`]?.duration), experiment: !!r.experiments,
       })).filter(v => v.durationSec > 0);
       const res = await captureRetention(vids, { curve: videoRetention, detail: videoTrafficDetail, titles: videoTitles }, today);
       log.info(`retention: captured ${res.captured.length}, failed ${res.failed.length}, still waiting ${res.pending}`);
@@ -110,6 +112,17 @@ export async function runAnalytics() {
       const j = await igInsights(r.remote_id!);
       if (j?.data) metrics[`instagram:${r.remote_id}`] = Object.fromEntries(j.data.map((d: any) => [d.name, d.values?.[0]?.value ?? d.total_value?.value]));
     }
+  }
+
+  // TikTok per-video metrics (Post for Me feed). Optional: any failure leaves TikTok rows without metrics, as before.
+  if (process.env.POSTFORME_API_KEY) {
+    try {
+      const { fetchTikTokFeed, matchTikTok } = await import("./tiktok.js");
+      const tt = rows.filter(r => r.platform === "tiktok");
+      const m = matchTikTok(tt, await fetchTikTokFeed());
+      for (const [id, v] of Object.entries(m)) metrics[`tiktok:${id}`] = v;
+      log.info(`tiktok metrics: ${Object.keys(m).length}/${tt.length} rows matched`);
+    } catch (e) { log.warn(`tiktok metrics: ${(e as Error).message.slice(0, 200)}`); }
   }
 
   const dataset = rows.map(r => {
@@ -133,6 +146,8 @@ export async function runAnalytics() {
     if (reachLag !== null && reachLag > 4) log.warn(`FRESHNESS: reach reports are ${reachLag} days behind (YouTube normally delivers within 2-3 days); impressions and CTR are stale.`);
   } catch (e) { log.warn(`freshness check: ${(e as Error).message.slice(0, 160)}`); }
   writeJson(join(DATA, "analytics", `${today}.json`), dataset);
+  // arm tables per experiment key, computed in code for the growth strategist (n, views d3/d7, average view %, hold, duration, words)
+  try { writeJson(join(DATA, "growth", "experiment-arms.json"), buildArmTables()); } catch (e) { log.warn(`experiment arms: ${(e as Error).message.slice(0, 200)}`); }
 
   // monetization progress (YouTube Partner Program): tracked daily, sent to the owner, given to the analyst
   let ypp: Awaited<ReturnType<typeof partnerProgress>> | undefined;
@@ -157,9 +172,16 @@ export async function runAnalytics() {
   const olderTop = [...older].sort((a, b) => Number(b.metrics?.life_estimatedMinutesWatched ?? 0) - Number(a.metrics?.life_estimatedMinutesWatched ?? 0)).slice(0, 40);
   const olderTotals = { videos: older.length, life_views: older.reduce((n, r) => n + Number(r.metrics?.life_views ?? 0), 0), life_minutes: older.reduce((n, r) => n + Number(r.metrics?.life_estimatedMinutesWatched ?? 0), 0) };
 
+  // the analyst is told to say what the script was doing at the biggest drop: give it chapter starts and the scene there
+  const itemBy = new Map<string, any>(); try { for (const i of loadItems()) itemBy.set(`${i.date}/${i.id}`, i); } catch { /* optional */ }
+  const withDropContext = (r: any) => {
+    if (r.platform !== "youtube" || !r.remote_id) return r;
+    try { const c = dropContext(itemBy.get(`${r.date}/${r.id}`), existsSync(retentionPath(r.remote_id)) ? JSON.parse(readFileSync(retentionPath(r.remote_id), "utf8")) as RetentionFile : undefined); return c ? { ...r, drop_context: c } : r; }
+    catch { return r; }
+  };
   const out = await runAgent<Learnings>({
     agent: "performance-analyst", model: config.models.analyst, schema: learningsSchema,
-    input: { current_playbook: readText(join(DATA, "learnings.md")), schedule: config.schedule, timezone: config.audience.timezone, posts: dataset.filter(r => Date.parse(r.slot) > cutoff), older_youtube_top: olderTop, older_youtube_totals: olderTotals, monetization_progress: ypp },
+    input: { current_playbook: readText(join(DATA, "learnings.md")), schedule: config.schedule, timezone: config.audience.timezone, posts: dataset.filter(r => Date.parse(r.slot) > cutoff).map(withDropContext), older_youtube_top: olderTop, older_youtube_totals: olderTotals, monetization_progress: ypp },
   });
   writeText(join(DATA, "learnings.md"),
     `${out.learnings_markdown.trim()}\n\n## Topics to double down on\n${out.topics_to_double_down.map(t => `- ${t}`).join("\n")}\n\n## Schedule suggestions (for the owner — edit config/channel.json to apply)\n${out.schedule_suggestions}\n\n_Updated ${today} from ${dataset.length} posts._\n`);

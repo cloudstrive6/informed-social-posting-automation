@@ -14,6 +14,18 @@ export interface PostTarget {
   remote_id?: string; url?: string; error?: string; attempts: number; published_at?: string;
 }
 
+/** Per-post fields logged by the publisher and kept in analytics rows (growth strategy step 0). */
+export interface PostMeta {
+  /** growth experiment arms, e.g. { "short-length": "tight", "hook-archetype": "negation" } */
+  experiments?: Record<string, string>;
+  /** spoken words: the sum of the script's scene narration */
+  words?: number;
+  /** rendered video duration in seconds (item.media.duration) */
+  length_s?: number;
+  /** number of script scenes */
+  scenes?: number;
+}
+
 export interface ContentItem {
   id: string; date: string; kind: "long" | "short" | "carousel"; plan: PlannedPiece;
   status: "ready" | "held" | "failed";

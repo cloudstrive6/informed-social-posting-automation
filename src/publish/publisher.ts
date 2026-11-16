@@ -22,6 +22,7 @@ import { postForMeEnabled, tiktokPhotosViaPostForMe, tiktokViaPostForMe } from "
 import { threadsCarousel, threadsText } from "./threads.js";
 import { makePublicNow, setThumbnail, uploadVideo } from "./youtube.js";
 import { addToPlaylists } from "./playlists.js";
+import { postMeta } from "../analytics/measure.js";
 import { longDescription, refreshFunnel, rememberFunnel, shortDescription, watchNextFor } from "./funnel.js";
 
 const LOG = join(DATA, "published", "log.jsonl");
@@ -33,6 +34,7 @@ function logPost(item: ContentItem, p: PostTarget) {
     at: new Date().toISOString(), date: item.date, id: item.id, kind: item.kind, platform: p.platform, format: p.format,
     slot: p.slot, slotKey: p.slotKey, status: p.status, remote_id: p.remote_id, url: p.url, error: p.error,
     title: item.package.title, topic: item.plan.topic, hook: item.script?.hook_pattern, thumb_layout: item.package.thumbnail?.layout, trend_stage: item.plan.trend_stage,
+    ...postMeta(item), // experiments, words, length_s, scenes: arm tables and the readout join on these
   }) + "\n");
 }
 

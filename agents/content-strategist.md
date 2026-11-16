@@ -14,6 +14,7 @@ You receive: the latest radar candidates, topics we already covered recently (ne
 - Skip anything the radar marked `reject`. Treat `caution` topics only with a careful, evidence-first angle.
 - `pillar`: the content pillar key the piece belongs to (you get the list with their playlist titles). It decides which YouTube playlist the video goes into, so pick the closest one. Use `general` only when nothing fits.
 - Return exactly the quota requested for each kind.
+- **Replacement Short** (the task gives `todays_pieces`): return one Short whose topic and angle repeat none of `todays_pieces` and none of the recently covered topics; it fills a slot left by a Short that was held.
 
 ## What wins on InforMed (owner OK 2026-11-12; the growth playbook's weekly details still apply)
 - **Long-form:** practical tirzepatide questions (Lane A) stay the base. On 2–3 days a week the long video is a **search-demand format** instead: a device how-to (the pen, step by step, from the Instructions for Use), a "what to expect" timeline (first week, first month), a label change explained (e.g. a new FDA warning), or a head-to-head of an approved drug against tirzepatide (our best long video by minutes, CTR and subscribers was "Did EloraTZP Beat Tirzepatide?"). Look at recently covered topics and count: if fewer than 2 of the last 7 long videos were search-demand formats, make today's one of them. The "What is X?" ban applies to unapproved pipeline drugs only.

@@ -36,13 +36,17 @@ export function shortLengthArm(date: string, index: number): keyof typeof SHORT_
 
 export async function produceShort(date: string, pieceId: string): Promise<ContentItem> {
   const { plan, piece, index } = loadPiece(date, pieceId);
-  const item = newItem(date, piece, index);
+  // a replacement Short carries slot_index (set by planReplacementShort): it takes the free slot of the Short it
+  // replaces, with that slot's normal experiment arms. Ordinary pieces use their position among the day's Shorts.
+  const planned = (piece as { slot_index?: number }).slot_index;
+  const slotIndex = Number.isInteger(planned) ? planned! : index;
+  const item = newItem(date, piece, slotIndex);
   const dir = workDir(date, item.id);
   const final = ensureDir(join(dir, "final"));
   log.step(`SHORT ${item.id}: ${piece.working_title}`);
 
-  const arm = shortLengthArm(date, index);
-  const hook = hookArchetype(date, index);
+  const arm = shortLengthArm(date, slotIndex);
+  const hook = hookArchetype(date, slotIndex);
   item.experiments = { ...item.experiments, "short-length": arm, "hook-archetype": hook };
   const { content: script, factcheck, held, holdReason } = await writeWithFactCheck<Script>("scriptwriter-short", scriptSchema, {
     piece, target_seconds: SHORT_ARMS[arm].seconds, target_words: SHORT_ARMS[arm].words, length_arm: arm,

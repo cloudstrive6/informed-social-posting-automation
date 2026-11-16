@@ -10,6 +10,9 @@ import { readJson, readText, writeJson, writeText } from "../lib/fsx.js";
 import { loadItems } from "../lib/items.js";
 import { log } from "../lib/log.js";
 import { addDays, localDate } from "../lib/time.js";
+import { buildArmTables, expireRules } from "./measure.js";
+
+export { expireRules };
 
 interface Experiment { name: string; hypothesis: string; change: string; metric: string; min_sample: string; status: "running" | "won" | "lost" | "inconclusive"; result: string }
 interface GrowthReview { verdict: "on_track" | "behind" | "off_track"; summary: string; bottleneck: string; playbook_markdown: string; experiments: Experiment[]; owner_decisions: string[] }
@@ -35,6 +38,7 @@ function performance() {
   const since = addDays(localDate(config.audience.timezone), -28);
   const posts = rows.filter(r => r.date >= since).map(r => ({
     date: r.date, kind: r.kind, platform: r.platform, title: r.title, topic: r.topic, trend_stage: r.trend_stage, slot: r.slot,
+    experiments: r.experiments ?? null, words: r.words ?? null, length_s: r.length_s ?? null,
     views: Number(r.metrics?.viewCount ?? r.metrics?.views ?? r.metrics?.reach ?? 0) || 0,
     minutes: r.metrics?.estimatedMinutesWatched ?? null, avg_view_pct: r.metrics?.averageViewPercentage ?? null, subs: r.metrics?.subscribersGained ?? null,
     impressions: r.metrics?.impressions ?? null, ctr_pct: r.metrics?.impressions_ctr_pct ?? null,
@@ -67,6 +71,9 @@ export async function runGrowthReview() {
   const historyFile = join(DATA, "usage", "ypp-history.jsonl");
   const history = existsSync(historyFile) ? readFileSync(historyFile, "utf8").trim().split("\n").filter(Boolean).map(l => JSON.parse(l)).slice(-60) : [];
   const expFile = join(DATA, "growth", "experiments.json");
+  // arm tables per experiment key, computed in code (the analytics run writes the same file); the strategist reads a table, not item JSONs
+  let arms: ReturnType<typeof buildArmTables> | undefined;
+  try { arms = buildArmTables(); writeJson(join(DATA, "growth", "experiment-arms.json"), arms); } catch (e) { log.warn(`experiment arms: ${(e as Error).message.slice(0, 160)}`); }
   const out = await runAgent<GrowthReview>({
     agent: "growth-strategist", model: config.models.analyst, schema, effort: "high", web: true, maxTurns: 40,
     input: {
@@ -74,6 +81,7 @@ export async function runGrowthReview() {
       growth_plan: readText(join(ROOT, "docs", "GROWTH-PLAN.md")),
       current_playbook: readText(join(DATA, "growth-playbook.md"), "_none yet_"),
       experiments: readJson<Experiment[]>(expFile, []),
+      experiment_arms: arms ?? readJson<any>(join(DATA, "growth", "experiment-arms.json"), null),
       partner_progress: progress, partner_history: history,
       performance: performance(), analyst_learnings: readText(join(DATA, "learnings.md"), ""),
       production: production(),
@@ -81,7 +89,7 @@ export async function runGrowthReview() {
     },
   });
   const today = new Date().toISOString().slice(0, 10);
-  writeText(join(DATA, "growth-playbook.md"), `# Growth playbook (Growth Strategist, ${today})\n\n_Verdict: ${out.verdict.replace("_", " ")}. Bottleneck: ${out.bottleneck}_\n\n${out.playbook_markdown.trim()}\n`);
+  writeText(join(DATA, "growth-playbook.md"), `# Growth playbook (Growth Strategist, ${today})\n\n_Verdict: ${out.verdict.replace("_", " ")}. Bottleneck: ${out.bottleneck}_\n\n${expireRules(out.playbook_markdown, today).trim()}\n`); // rules marked (until YYYY-MM-DD) drop out once that date has passed
   writeJson(expFile, out.experiments);
   writeJson(join(DATA, "growth", `review-${today}.json`), out);
   const { notify } = await import("../notify/telegram.js");

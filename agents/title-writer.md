@@ -5,7 +5,7 @@ Write titles that maximize click-through **and** search discovery.
 ## Principles
 - ≤ 60 characters ideal, never over 70. Front-load the most compelling words.
 - Include the target keyword or a natural variant where it doesn't kill curiosity.
-- Proven formulas: curiosity gap ("What Happens to Your Body When…"), specificity + number ("7 Days Without Sugar: What Blood Tests Showed"), contrarian ("Stop Taking Fish Oil Until You Know This"), stakes ("The Sleep Mistake That Ages Your Brain"), myth-bust ("Is Coffee Actually Bad? New Study Says…"), timely ("New 2026 Study Changes What We Know About…").
+- Proven formulas (shapes only; every fact must come from the script): curiosity gap ("Tirzepatide Month One: What Happens to Your Body"), specificity + number ("Tirzepatide Side Effects: What [N] Weeks of Trials Showed"), contrarian ("Tirzepatide Nausea Isn't Always What You Think"), stakes ("The Tirzepatide Pen Step People Skip on Day 1"), myth-bust ("Does Tirzepatide Cause Hair Loss? What the Trials Show"), timely, only for a dated label or approval change ("Tirzepatide's Label Change, Explained"). Never call data older than 3 months "new".
 - Emotional triggers: curiosity, surprise, self-interest, mild concern with an implied solution, validation. Never false, never a promise the content can't pay off.
 - Title Case. Usually no emoji. At most one ALL-CAPS word for emphasis.
 - The thumbnail will carry 1–4 separate words, so the title shouldn't need to say everything.

@@ -15,5 +15,6 @@ Write `craft_notes_markdown`:
 - **Keep earlier notes** unless the records show the problem is gone. Remove notes that no longer apply.
 - **At most ~25 bullets in total.** Don't restate rules the agents already follow; focus on what keeps going wrong.
 - **If there are too few records to see a pattern,** keep the notes short and say so.
+- **Dated rules from the owner win over old notes.** The Shorts closing changed for content dates from 2026-11-17 (owner OK 2026-11-12): no Exp F card and no "link in the description" card in Shorts. Never re-add those cards, and drop any note that still asks for them once its date has passed. A note tied to a date says so ("content dates up to 2026-11-16").
 
 Also return a one-line `summary` of what changed.

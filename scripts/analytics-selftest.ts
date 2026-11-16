@@ -40,13 +40,13 @@ assert.equal(isoSeconds("PT1H2M"), 3720);
 const vids = [
   { id: "LONG0000001", format: "long", published: "2026-10-20", durationSec: 843 },  // 22 days old: day 7 due, day 28 not
   { id: "LONG0000002", format: "long", published: "2026-09-30", durationSec: 600 },  // 42 days old: both due
-  { id: "SHORT000001", format: "short", published: "2026-11-01", durationSec: 40 }, // day 7 only
+  { id: "SHORT000001", format: "short", published: "2026-11-01", durationSec: 40 }, // day 3 and day 7
   { id: "LONG0000003", format: "long", published: "2026-11-08", durationSec: 700 },  // 4 days old: nothing due
 ];
 
 const run1 = await (async () => captureRetention(vids, f, "2026-11-12", io))();
 console.log("run 1", run1);
-assert.equal(run1.captured.length, 4); // L1:d7, L2:d7, L2:d28, S:d7
+assert.equal(run1.captured.length, 5); // L1:d7, L2:d7, L2:d28, S:d3, S:d7 (Shorts have a day-3 milestone since 2026-11-16)
 const callsAfter1 = calls.length;
 const run2 = await captureRetention(vids, f, "2026-11-13", io);
 console.log("run 2 (nothing new, no API calls)", run2, "extra calls:", calls.length - callsAfter1);

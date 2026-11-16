@@ -48,6 +48,10 @@ export function musicMood(moods: string[]): string {
  * Ducking of the music under the voice. Gentle on purpose: about 4-5 dB while the narrator talks,
  * so the score stays felt and swells back in the pauses. (Level targets in soundDesign.ts assume this.)
  */
+/** End of the final mix: the old sample-peak limiter, then a 4x oversampled limiter so the encoded file peaks at or below -1 dBTP
+ *  (measured 2026-11-16: long-video mixes peaked at +0.2 dBFS; AAC adds about 0.3 dB, so the ceiling is 0.87 = -1.2 dBFS before encoding;
+ *  integrated loudness moves by 0.2 LU at most; level=disabled stops alimiter from re-normalising the signal upward). */
+export const FINAL_LIMITER = "alimiter=limit=0.95,aresample=192000,alimiter=limit=0.87:attack=5:release=60:level=disabled,aresample=48000";
 export const MUSIC_DUCK = "sidechaincompress=threshold=0.08:ratio=3:attack=40:release=600";
 /** Every music stem is brought to this loudness first, so `musicGain` means the same thing for every track. */
 export const MUSIC_REF_LUFS = -16;
@@ -115,7 +119,7 @@ export async function mixStems(video: string, narration: string, music: string |
     mixIn.push("[md]"); idx++;
   }
   if (sfx) { inputs.push("-i", sfx); graph.push(`[${idx}:a]aresample=48000,volume=${sfxGain.toFixed(3)}[fx]`); mixIn.push("[fx]"); }
-  graph.push(`${mixIn.join("")}amix=inputs=${mixIn.length}:duration=first:normalize=0,alimiter=limit=0.95[a]`);
+  graph.push(`${mixIn.join("")}amix=inputs=${mixIn.length}:duration=first:normalize=0,${FINAL_LIMITER}[a]`);
   await ffmpeg([...inputs, "-filter_complex", graph.join(";"),
     "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-shortest", "-movflags", "+faststart", out]);
   return out;
@@ -158,7 +162,7 @@ export async function muxAudio(video: string, narration: string, out: string, se
     graph.push(`[${idx}:a]aresample=48000,volume=${config.video.sfxVolume}[fx]`);
     mixIn.push("[fx]"); idx++;
   }
-  graph.push(`${mixIn.join("")}amix=inputs=${mixIn.length}:duration=first:normalize=0,alimiter=limit=0.95[a]`);
+  graph.push(`${mixIn.join("")}amix=inputs=${mixIn.length}:duration=first:normalize=0,${FINAL_LIMITER}[a]`);
   await ffmpeg([...inputs, "-filter_complex", graph.join(";"),
     "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-shortest", "-movflags", "+faststart", out]);
   return out;

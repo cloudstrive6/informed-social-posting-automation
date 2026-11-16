@@ -6,6 +6,7 @@
  */
 import assert from "node:assert/strict";
 import { claudeRetryTarget, isClaudeDownLog, type Run } from "../src/ops/watchdog.js";
+import { pickShortReplacementSlot } from "../src/ops/shortReplacement.js";
 
 const DOWN_LOG = "Error: You've hit your weekly limit (resets Nov 15, 7pm (UTC))\nAPI fallback: Credit balance is too low to access the Anthropic API";
 const OTHER_LOG = "Error: ffmpeg exited with code 1";
@@ -57,5 +58,36 @@ assert.equal(claudeRetryTarget([run(8, "2026-11-11T23:30:00Z", "2026-11-11T23:40
 calls = 0;
 claudeRetryTarget(before, D, counting);
 assert.equal(calls, 1);
+
+// a failed "Replacement short" run is not a day production run: the Claude-stop retry ignores it
+assert.equal(claudeRetryTarget([{ ...replacement, databaseId: 9, displayTitle: "Replacement short 2026-11-11" }], D, () => DOWN_LOG), undefined);
+
+// same-day replacement Short: slots 08:00, 13:00, 20:00 on 2026-11-17 (audience time, UTC+... shown as ISO here)
+const slots = ["2026-11-17T08:00:00Z", "2026-11-17T13:00:00Z", "2026-11-17T20:00:00Z"];
+const at = (iso: string) => Date.parse(iso);
+const live = (i: number) => ({ slot: slots[i], dropped: false });
+const held = (i: number) => ({ slot: slots[i], dropped: true });
+// S2 (13:00) held at 09:00: 4 h left, replace into the 13:00 slot
+assert.equal(pickShortReplacementSlot({ shorts: [live(0), held(1), live(2)], slotTimes: slots, now: at("2026-11-17T09:00:00Z"), tries: 0 }), 1);
+// exactly 2 h away still counts; 1 h 59 min does not (the last slot, 20:00, is covered)
+assert.equal(pickShortReplacementSlot({ shorts: [live(0), held(1), live(2)], slotTimes: slots, now: at("2026-11-17T11:00:00Z"), tries: 0 }), 1);
+assert.equal(pickShortReplacementSlot({ shorts: [live(0), held(1), live(2)], slotTimes: slots, now: at("2026-11-17T11:01:00Z"), tries: 0 }), undefined); // last slot already has a live Short: no stacking
+// slot gone and the last slot less than 2 h away: nothing to do
+assert.equal(pickShortReplacementSlot({ shorts: [live(0), held(1), live(2)], slotTimes: slots, now: at("2026-11-17T18:30:00Z"), tries: 0 }), undefined);
+// nothing dropped, or the day already has all its live Shorts: nothing to do
+assert.equal(pickShortReplacementSlot({ shorts: [live(0), live(1), live(2)], slotTimes: slots, now: at("2026-11-17T01:00:00Z"), tries: 0 }), undefined);
+assert.equal(pickShortReplacementSlot({ shorts: [live(0), live(1), live(2), held(1)], slotTimes: slots, now: at("2026-11-17T01:00:00Z"), tries: 0 }), undefined);
+// at most 2 replacements a day
+assert.equal(pickShortReplacementSlot({ shorts: [live(0), held(1), live(2)], slotTimes: slots, now: at("2026-11-17T01:00:00Z"), tries: 1 }), 1);
+assert.equal(pickShortReplacementSlot({ shorts: [live(0), held(1), live(2)], slotTimes: slots, now: at("2026-11-17T01:00:00Z"), tries: 2 }), undefined);
+// a replacement already fills the held slot (live Short on slot 1): not replaced again
+assert.equal(pickShortReplacementSlot({ shorts: [live(0), held(1), live(2), live(1)], slotTimes: slots, now: at("2026-11-17T01:00:00Z"), tries: 1 }), undefined);
+// last slot free (its Short was the dropped one) and 2 h+ away: it is taken
+assert.equal(pickShortReplacementSlot({ shorts: [live(0), live(1), held(2)], slotTimes: slots, now: at("2026-11-17T09:00:00Z"), tries: 0 }), 2);
+// two dropped, earliest eligible own slot first; the replacement for the later one comes after the first is live
+assert.equal(pickShortReplacementSlot({ shorts: [held(2), held(0), live(1)], slotTimes: slots, now: at("2026-11-17T01:00:00Z"), tries: 0 }), 0);
+assert.equal(pickShortReplacementSlot({ shorts: [held(2), live(0), live(1)], slotTimes: slots, now: at("2026-11-17T01:00:00Z"), tries: 1 }), 2);
+// the held Short's own slot has passed: the last slot is covered too: nothing to do
+assert.equal(pickShortReplacementSlot({ shorts: [held(0), live(1), live(2)], slotTimes: slots, now: at("2026-11-17T09:00:00Z"), tries: 0 }), undefined);
 
 console.log("watchdog self-test: all checks passed");

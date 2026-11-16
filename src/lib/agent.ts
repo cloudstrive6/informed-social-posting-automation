@@ -3,6 +3,7 @@ import { join } from "node:path";
 import { config, DATA, ROOT } from "./config.js";
 import { readJson, readText, writeJson } from "./fsx.js";
 import { log } from "./log.js";
+import { expireRules } from "../analytics/measure.js";
 
 export type AgentName =
   | "trend-scout" | "content-strategist" | "fact-checker" | "scriptwriter-long" | "scriptwriter-short"
@@ -25,25 +26,94 @@ export interface AgentRun<T> {
   effort?: "low" | "medium" | "high" | "xhigh" | "max";
 }
 
-/** Shared context every agent sees: brand, audience, safety rules and the latest performance learnings. */
-function sharedContext(): string {
+/**
+ * What each agent gets of the three growth files (growth playbook, analytics learnings, craft notes). Every agent
+ * used to get all three (about 38 KB). `craft` lists the `### ` role headings of data/craft-notes.md; the intro
+ * above the first heading and the "Everyone" section always come with it. An agent not listed here gets
+ * everything (safe default), and so does any run when a heading below no longer exists in the file.
+ */
+export interface ContextProfile { playbook: boolean; learnings: boolean; craft: string[] | "all" | "none" }
+const MOTION = "Motion Designer", SCRIPTS = "Scriptwriters", CAROUSEL = "Carousel Designer", PACKAGING = "Social Copywriter & packaging";
+const KNOWN_CRAFT = new Set([MOTION, SCRIPTS, CAROUSEL, PACKAGING, "Everyone"]);
+export const CONTEXT_PROFILES: Partial<Record<AgentName, ContextProfile>> = {
+  // strategy, topics, scripts and analysis: the full playbook and learnings
+  "growth-strategist": { playbook: true, learnings: true, craft: "all" },
+  "content-strategist": { playbook: true, learnings: true, craft: [SCRIPTS] },
+  "trend-scout": { playbook: true, learnings: true, craft: [] },
+  "performance-analyst": { playbook: true, learnings: true, craft: [] },
+  "scriptwriter-long": { playbook: true, learnings: true, craft: [SCRIPTS, MOTION] }, // writes on_screen_text: the caption-card rules live under Motion Designer
+  "scriptwriter-short": { playbook: true, learnings: true, craft: [SCRIPTS, MOTION] },
+  // checks and audio: no growth text, only the rules their own checks cover
+  "fact-checker": { playbook: false, learnings: false, craft: [SCRIPTS, PACKAGING, MOTION] }, // also runs the packaging check on titles and descriptions
+  "pronunciation-coach": { playbook: false, learnings: false, craft: [MOTION] },
+  "narration-director": { playbook: true, learnings: false, craft: [SCRIPTS, MOTION] },
+  "sound-designer": { playbook: false, learnings: false, craft: [MOTION] },
+  "visual-critic": { playbook: false, learnings: false, craft: [MOTION] },
+  "motion-designer": { playbook: true, learnings: false, craft: [MOTION] },
+  // packaging
+  "title-writer": { playbook: true, learnings: true, craft: [PACKAGING] },
+  "thumbnail-designer": { playbook: true, learnings: true, craft: [PACKAGING] },
+  "thumbnail-judge": { playbook: false, learnings: false, craft: [PACKAGING] },
+  "seo-writer": { playbook: true, learnings: false, craft: [PACKAGING] },
+  "social-copywriter": { playbook: true, learnings: true, craft: [PACKAGING] },
+  "packaging-editor": { playbook: false, learnings: false, craft: [PACKAGING] },
+  "playlist-curator": { playbook: true, learnings: false, craft: [] },
+  "carousel-designer": { playbook: true, learnings: false, craft: [CAROUSEL, PACKAGING] },
+  // the ops engineer reads files itself when it needs them
+  "ops-engineer": { playbook: false, learnings: false, craft: "none" },
+  // quality-coach and editor-in-chief judge everything: no profile, so they keep the full context
+};
+
+/** The parts of data/craft-notes.md an agent needs, or the whole file for craft "all". Exported for tests and measuring. */
+export function craftFor(notes: string, craft: ContextProfile["craft"]): string {
+  if (craft === "all") return notes;
+  if (craft === "none") return "";
+  const parts = notes.split(/^(?=### )/m);
+  const heading = (p: string) => /^### (.+)/.exec(p)?.[1].trim();
+  const named = new Set(parts.map(heading).filter(Boolean) as string[]);
+  if (craft.some(c => !named.has(c)) || !named.has("Everyone")) return notes; // file layout changed: never drop notes silently
+  return parts.filter(p => { const h = heading(p); return !h || h === "Everyone" || craft.includes(h) || !KNOWN_CRAFT.has(h); /* unknown (new) headings reach everyone */ }).join("");
+}
+
+/** Shared context every agent sees: brand, audience, safety rules and (by role) the performance learnings. */
+export function sharedContext(agent?: AgentName): string {
   const b = config.brand;
-  return [
+  const prof = agent ? CONTEXT_PROFILES[agent] : undefined;
+  const parts = [
     readText(join(ROOT, "agents", "_shared.md")),
-    `\n## Live brand config\n- Brand: ${b.name} (${b.handle}) — ${b.tagline}\n- Mission: ${b.mission}`,
+    `
+## Live brand config
+- Brand: ${b.name} (${b.handle}) — ${b.tagline}
+- Mission: ${b.mission}`,
     `- Audience: ${config.audience.description}`,
     `- Brand colors: blue ${b.colors.blue}, green ${b.colors.green}, dark ${b.colors.dark}, light ${b.colors.light}`,
     `- Never cover: ${config.safety.bannedTopics.join("; ")}`,
     `- Today's date: ${new Date().toISOString().slice(0, 10)}`,
     ...(config.niche?.enabled ? [
-      `\n## Current channel focus: ${config.niche.name} (every topic, script, visual and caption must serve it)\n${config.niche.brief}`,
-      `\nContent pillars (rotate through them):\n${config.niche.pillars.map(p => `- ${p}`).join("\n")}`,
-      `\nGuardrails for this niche:\n${config.niche.guardrails.map(g => `- ${g}`).join("\n")}`,
+      `
+## Current channel focus: ${config.niche.name} (every topic, script, visual and caption must serve it)
+${config.niche.brief}`,
+      `
+Content pillars (rotate through them):
+${config.niche.pillars.map(p => `- ${p}`).join("\n")}`,
+      `
+Guardrails for this niche:
+${config.niche.guardrails.map(g => `- ${g}`).join("\n")}`,
     ] : []),
-    `\n## This week's growth playbook (Growth Strategist; follow it, it serves the monetization goal)\n${readText(join(DATA, "growth-playbook.md"), "_No growth playbook yet._")}`,
-    `\n## What we've learned from our own analytics (apply it)\n${readText(join(DATA, "learnings.md"), "_No learnings yet — first weeks of the channel._")}`,
-    `\n## Craft notes from our own quality checks (recurring mistakes to avoid; apply them)\n${readText(join(DATA, "craft-notes.md"), "_No craft notes yet._")}`,
-  ].join("\n");
+  ];
+  if (!prof || prof.playbook) parts.push(`
+## This week's growth playbook (Growth Strategist; follow it, it serves the monetization goal)
+${expireRules(readText(join(DATA, "growth-playbook.md"), "_No growth playbook yet._"), new Date().toISOString().slice(0, 10))}`);
+  if (!prof || prof.learnings) parts.push(`
+## What we've learned from our own analytics (apply it)
+${readText(join(DATA, "learnings.md"), "_No learnings yet — first weeks of the channel._")}`);
+  if (!prof || prof.craft !== "none") {
+    const notes = readText(join(DATA, "craft-notes.md"), "_No craft notes yet._");
+    parts.push(`
+## Craft notes from our own quality checks (recurring mistakes to avoid; apply them)
+${prof ? craftFor(notes, prof.craft) : notes}`);
+  }
+  return parts.join("\n");
 }
 
 /**
@@ -97,7 +167,7 @@ async function switchToApi(agent: string, reason: string) {
 }
 
 export async function runAgent<T>(run: AgentRun<T>): Promise<T> {
-  const system = `${readText(join(ROOT, "agents", `${run.agent}.md`))}\n\n---\n${sharedContext()}`;
+  const system = `${readText(join(ROOT, "agents", `${run.agent}.md`))}\n\n---\n${sharedContext(run.agent)}`;
   const prompt = typeof run.input === "string" ? run.input : "Task input (JSON):\n```json\n" + JSON.stringify(run.input, null, 2) + "\n```";
   const tools = [...(run.web ? ["WebSearch", "WebFetch"] : []), ...(run.tools ?? [])];
 
