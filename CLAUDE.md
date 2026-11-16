@@ -43,6 +43,11 @@ in `data/usage/ypp.json` (Telegram report from `analytics.yml`). Plan: `docs/GRO
   (`daily.yml replace_long=true`, up to 3 per day) when the day's long video is dropped, so no day goes without one. Anything else → `ops.yml` (**Ops Engineer**
   agent, `agents/ops-engineer.md`): diagnoses, unblocks, fixes code (typecheck, push to `main`), reports on Telegram.
   Max 4 escalations/day; state in `data/ops/`. Run by hand: `gh workflow run ops.yml -f incident="..."`.
+- **First comment on long videos** (owner OK 2026-11-16): once a long video is public, the watchdog posts one top-level
+  comment from the channel, a non-health question inviting topic suggestions (fixed list in `src/publish/firstComment.ts`,
+  rotated daily; items dated 2026-11-17 on). Recorded in `data/ops/first-comments.json`, never twice, at most 3 tries.
+  Pinning is manual in YouTube Studio. **Kill switch:** `youtube.firstComment.enabled: false` in `config/channel.json`,
+  or the repo variable `YT_FIRST_COMMENT=off` (Settings, Variables; publish.yml reads it).
 - Agents run on the Claude subscription (`CLAUDE_CODE_OAUTH_TOKEN`). Short session limits are waited out; the **weekly
   cap** switches the run to the backup API key (secret `ANTHROPIC_API_KEY`, budget `config.fallbackApi`). Interactive
   Claude Code work uses the same subscription allowance.

@@ -31,5 +31,8 @@ Missing `retention` means the milestone is not due yet or the data has not arriv
 ## Reach by surface (since 2026-11-12)
 `reach_by_source` splits impressions and CTR per surface for each video (for example BROWSE, RELATED_VIDEO, YT_SEARCH; codes the report gave that we cannot name appear as `src_<number>`). A good video with a low CTR on one surface and a high CTR on another is a packaging match problem, not a topic problem. The split starts from the first day of the reach reports and is rebuilt from every report still available.
 
+## Facebook Reels (since 2026-11-17)
+Facebook rows can carry metrics read from Facebook's video insights (lifetime numbers, read on the date in `fetched`): `views` (total plays, replays included), `plays_initial`, `replays`, `avg_watch_s`, `view_time_s` (seconds), `hold_3s_pct` and `hold_50pct_pct` (% of viewers still watching at 3 s and at half the video, null when Facebook gave no retention graph), `followers` (follows from the video), `reactions` and `social_actions`. Zero plays are real zeros. A Facebook row without metrics means it was not read (older than 60 days or a failed read), not zero. Compare Facebook with Facebook, not with YouTube views. `data/growth/experiment-arms.json` also has the same Shorts' Facebook plays per arm (`median_fb_views_d3`, `median_fb_views_d7`).
+
 ## Data freshness
 If a row repeats the previous day's numbers, say so instead of treating it as a stable trend. The job logs `FRESHNESS` warnings and writes `data/analytics-status.json` (`youtube_rows_changed`, `reach_lag_days`); reach reports usually trail by 2 to 3 days. Do not draw conclusions from the newest 3 days of impressions or CTR.

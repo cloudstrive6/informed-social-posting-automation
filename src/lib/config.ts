@@ -45,6 +45,8 @@ export interface ChannelConfig {
     playlists: { pillar: string; title: string; description: string }[]; shortsPlaylist?: { title: string; description: string };
     /** Series playlists for in-niche long videos: the first whose `match` (regex on title + topic) hits; one without `match` catches the rest. */
     series?: { title: string; description: string; match?: string }[];
+    /** The channel's first comment on each long upload (src/publish/firstComment.ts). Off with enabled=false or env YT_FIRST_COMMENT=off. */
+    firstComment?: { enabled: boolean };
   };
   spacing: Record<"long" | "short" | "carousel", number>;
   niche: {

@@ -108,6 +108,7 @@ jobs:
           done
           gh workflow run publish.yml --ref main
         env:
+          YT_FIRST_COMMENT: ${{ vars.YT_FIRST_COMMENT }}
           GH_TOKEN: ${{ github.token }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}

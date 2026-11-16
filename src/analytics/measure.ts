@@ -106,12 +106,15 @@ export interface ArmPost {
   id: string; published: string; experiments: Record<string, string>;
   words?: number; length_s?: number; avg_view_pct?: number | null;
   views_d3: number | null; views_d7: number | null; hold: Record<"d3" | "d7", { s5: number | null; s15: number | null }>;
+  /** the same Short's Facebook Reel plays at day 3 and 7 (metrics.views of its facebook row), null when not read */
+  fb_views_d3?: number | null; fb_views_d7?: number | null;
 }
 export interface Snapshot { date: string; rows: any[] }
 export interface ArmStats {
   n: number; n_views_d3: number; n_views_d7: number; n_hold_d3: number; n_hold_d7: number;
   median_views_d3: number | null; median_views_d7: number | null; median_avg_view_pct: number | null;
   median_hold_s5_d3: number | null; median_hold_s15_d3: number | null; median_hold_s5_d7: number | null; median_hold_s15_d7: number | null; median_duration_s: number | null; median_words: number | null;
+  n_fb_views_d7: number; median_fb_views_d3: number | null; median_fb_views_d7: number | null;
 }
 export type ArmTables = Record<string, Record<string, ArmStats>>;
 
@@ -137,6 +140,9 @@ export function buildArmPosts(snaps: Snapshot[], items: ContentItem[], readRet: 
   const sorted = [...snaps].sort((a, b) => a.date.localeCompare(b.date));
   const latest = new Map<string, any>();
   for (const s of sorted) for (const r of enrichRows(s.rows.filter(r => r.platform === "youtube" && r.kind === "short" && r.remote_id), items)) latest.set(r.remote_id, r);
+  // the Facebook Reel of the same item (joined by content date and id)
+  const fbId = new Map<string, string>();
+  for (const s of sorted) for (const r of s.rows) if (r.platform === "facebook" && r.remote_id) fbId.set(`${r.date}/${r.id}`, r.remote_id);
   const out: ArmPost[] = [];
   for (const [id, r] of latest) {
     if (!r.experiments || !Object.keys(r.experiments).length) continue;
@@ -149,6 +155,7 @@ export function buildArmPosts(snaps: Snapshot[], items: ContentItem[], readRet: 
       avg_view_pct: Number.isFinite(Number(r.metrics?.averageViewPercentage)) && r.metrics?.averageViewPercentage != null ? Number(r.metrics.averageViewPercentage) : null,
       views_d3: viewsAtAge(sorted, key, published, 3), views_d7: viewsAtAge(sorted, key, published, 7),
       hold: { d3: h("d3"), d7: h("d7") },
+      ...(() => { const fb = fbId.get(`${r.date}/${r.id}`); return fb ? { fb_views_d3: viewsAtAge(sorted, `facebook:${fb}`, published, 3), fb_views_d7: viewsAtAge(sorted, `facebook:${fb}`, published, 7) } : {}; })(),
     });
   }
   return out;
@@ -172,6 +179,7 @@ export function armTables(posts: ArmPost[]): ArmTables {
         median_hold_s5_d3: median(num(ps.map(p => p.hold.d3.s5))), median_hold_s15_d3: median(num(ps.map(p => p.hold.d3.s15))),
         median_hold_s5_d7: median(num(ps.map(p => p.hold.d7.s5))), median_hold_s15_d7: median(num(ps.map(p => p.hold.d7.s15))),
         median_duration_s: median(num(ps.map(p => p.length_s))), median_words: median(num(ps.map(p => p.words))),
+        n_fb_views_d7: num(ps.map(p => p.fb_views_d7)).length, median_fb_views_d3: median(num(ps.map(p => p.fb_views_d3))), median_fb_views_d7: median(num(ps.map(p => p.fb_views_d7))),
       };
     }
   }
@@ -185,7 +193,7 @@ export function buildArmTables(): { generated: string; note: string; tables: Arm
     ? readdirSync(dir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).map(f => ({ date: f.slice(0, 10), rows: JSON.parse(readFileSync(join(dir, f), "utf8")) as any[] }))
     : [];
   const tables = armTables(buildArmPosts(snaps, loadItems()));
-  return { generated: new Date().toISOString().slice(0, 10), note: "YouTube Shorts with an experiments field. views_d3/d7 come from the daily snapshot closest to that age (within 1 day); medians skip missing values, n_* say how many were available. Hold is reported per curve age (_d3 from the day-3 curve, _d7 from the day-7 curve, never mixed) with its own n (n_hold_d3, n_hold_d7); compare arms on the same age.", tables };
+  return { generated: new Date().toISOString().slice(0, 10), note: "YouTube Shorts with an experiments field. views_d3/d7 come from the daily snapshot closest to that age (within 1 day); medians skip missing values, n_* say how many were available. Hold is reported per curve age (_d3 from the day-3 curve, _d7 from the day-7 curve, never mixed) with its own n (n_hold_d3, n_hold_d7); compare arms on the same age. fb_views are the same Shorts' Facebook Reel plays (from 2026-11-17, when Facebook insights started).", tables };
 }
 
 // ---------- playbook rule expiry ----------

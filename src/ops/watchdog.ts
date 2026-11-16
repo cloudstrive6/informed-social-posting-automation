@@ -83,6 +83,7 @@ export async function watchdog(force = false) {
     ["long", () => checkLongVideo(once, escalate, notify)],
     ["short", () => checkShortReplacement(once, notify)],
     ["funnel", () => checkFunnel(once)],
+    ["first-comment", () => checkFirstComments()],
   ];
   for (const [name, fn] of checks) {
     try { await fn(); } catch (e) { log.warn(`watchdog ${name} check failed: ${(e as Error).message.slice(0, 300)}`); }
@@ -100,6 +101,20 @@ async function checkFunnel(once: Once) {
   const r = await refreshFunnel({ dates: [addDays(today, -1), today], max: 3 });
   if (r.updated.length) log.info(`watchdog: funnel links updated: ${r.updated.join("; ")}`);
 }
+/**
+ * Every pass: the channel's first comment on each long video once it is public (src/publish/firstComment.ts).
+ * Idempotent (data/ops/first-comments.json), at most 3 attempts per video, never throws.
+ */
+async function checkFirstComments() {
+  const { firstCommentEnabled, runFirstComments } = await import("../publish/firstComment.js");
+  if (!firstCommentEnabled()) return;
+  const { findChannelComment, postTopLevelComment, videoInfo } = await import("../publish/youtube.js");
+  const today = localDate(config.audience.timezone);
+  const items = loadItems([-3, -2, -1, 0].map(d => addDays(today, d)));
+  const r = await runFirstComments({ items, api: { info: videoInfo, find: findChannelComment, post: postTopLevelComment }, dry: DRY, saveItem });
+  if (r.posted.length || r.found.length || r.failed.length) log.info(`watchdog: first comments posted ${r.posted.length}, already there ${r.found.length}, failed ${r.failed.length}, waiting ${r.waiting}`);
+}
+
 /** set when this pass found that Claude can't run at all; escalating to the (Claude-based) Ops Engineer is pointless then */
 let claudeDown = false;
 /** when this process last ordered a replacement run (long or Short): a new run may not show in `gh run list` for a minute */

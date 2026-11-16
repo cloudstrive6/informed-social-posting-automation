@@ -7,6 +7,7 @@ import { compactRow } from "../src/analytics/analyze.js";
 import { armTables, buildArmPosts, dropContext, enrichRows, expireRules, parseChapters, postMeta, sceneAtSecond, viewsAtAge } from "../src/analytics/measure.js";
 import { captureRetention, MILESTONES, type Fetchers, type RetentionFile, type RetentionVideo, type Table } from "../src/analytics/retention.js";
 import { matchTikTok } from "../src/analytics/tiktok.js";
+import { holdFromGraph, nearestReel, parseVideoInsights, recentFacebookRows, redactToken } from "../src/analytics/facebook.js";
 
 const scene = (section: string, narration: string, retention_device = "") => ({ id: "x", section, narration, on_screen_text: "", visual: { kind: "broll" as const, stock_query: "" }, retention_device, source_ids: [] });
 const words = (n: number, w = "w") => Array.from({ length: n }, (_, i) => `${w}${i}`).join(" ");
@@ -108,5 +109,51 @@ const feed = [
 ];
 const tm = matchTikTok([{ remote_id: "v_pub~a", at: "2026-11-15T18:02:32.524Z" }, { remote_id: "v_pub~b", at: "2026-11-16T01:00:54.003Z" }, { remote_id: "v_pub~c", at: "2026-11-14T10:00:00Z" }], feed);
 assert.equal(tm["v_pub~a"].views, 92); assert.equal(tm["v_pub~a"].shares, 2); assert.equal(tm["v_pub~b"].video_id, "222"); assert.equal(tm["v_pub~c"], undefined);
+
+// ---- Facebook Reel insights (fixture shaped like GET /{reel-id}/video_insights, v26.0, 2026-11-16)
+const lifetime = (name: string, value: unknown) => ({ name, period: "lifetime", values: [{ value }], title: name, description: "", id: `123/video_insights/${name}/lifetime` });
+const graph40 = Object.fromEntries(Array.from({ length: 41 }, (_, i) => [String(i), Math.round((1 - i * 0.015) * 1000) / 1000])); // 1.0 down to 0.4
+const fbFixture = { data: [
+  lifetime("blue_reels_play_count", 120), lifetime("fb_reels_total_plays", 150), lifetime("fb_reels_replay_count", 30),
+  lifetime("post_video_avg_time_watched", 12345), lifetime("post_video_view_time", 1851750),
+  lifetime("post_video_retention_graph", graph40), lifetime("post_video_followers", 2),
+  lifetime("post_video_social_actions", { SHARE: 3, COMMENT: 1 }), lifetime("post_video_likes_by_reaction_type", { REACTION_LIKE: 5, REACTION_LOVE: 2 }),
+] };
+const fbm = parseVideoInsights(fbFixture, "123", 40, "2026-11-17")!;
+assert.equal(fbm.views, 150); assert.equal(fbm.plays_initial, 120); assert.equal(fbm.replays, 30);
+assert.equal(fbm.avg_watch_s, 12.3); assert.equal(fbm.view_time_s, 1851.8);
+assert.equal(fbm.followers, 2); assert.equal(fbm.reactions, 7); assert.deepEqual(fbm.social_actions, { SHARE: 3, COMMENT: 1 });
+assert.equal(fbm.hold_3s_pct, 95.5, "3 s of 40 s = segment 3 of 40"); assert.equal(fbm.hold_50pct_pct, 70);
+assert.equal(fbm.fetched, "2026-11-17"); assert.equal(fbm.video_id, "123");
+const zero = parseVideoInsights({ data: [lifetime("blue_reels_play_count", 0), lifetime("fb_reels_total_plays", 0), lifetime("post_video_avg_time_watched", 0)] }, "9", undefined, "2026-11-17")!;
+assert.equal(zero.views, 0, "zero plays stay zero"); assert.equal(zero.avg_watch_s, 0); assert.equal(zero.hold_3s_pct, null); assert.equal(zero.followers, null);
+assert.equal(parseVideoInsights({ data: [] }, "9", 40, "2026-11-17"), undefined);
+assert.deepEqual(holdFromGraph({ 0: 100, 1: 80, 2: 60 }, 10), { s3: 88, mid: 80 }, "percent graph, keys as three even segments");
+assert.deepEqual(holdFromGraph(undefined, 10), { s3: null, mid: null });
+assert.equal(holdFromGraph(graph40, 2).s3, null, "video shorter than 3 s");
+// only reels from the last 60 days, newest first; Instagram, TikTok and Facebook album posts are left out
+const FB_NOW = Date.parse("2026-11-17T12:00:00Z");
+const fbRows = [
+  { platform: "facebook", format: "reel", remote_id: "a", at: "2026-11-16T13:00:00Z" },
+  { platform: "facebook", format: "reel", remote_id: "b", at: "2026-11-15T01:00:00Z" },
+  { platform: "facebook", format: "reel", remote_id: "old", at: "2026-09-01T13:00:00Z" },
+  { platform: "facebook", format: "post", remote_id: "album", at: "2026-11-16T13:00:00Z" },
+  { platform: "instagram", format: "reel", remote_id: "ig", at: "2026-11-16T13:00:00Z" },
+];
+assert.deepEqual(recentFacebookRows(fbRows, FB_NOW).map(r => r.remote_id), ["a", "b"]);
+// time fallback: nearest unclaimed reel within 20 minutes
+const reels = [{ id: "r1", created_time: "2026-11-16T13:05:00+0000" }, { id: "r2", created_time: "2026-11-16T14:00:00+0000" }];
+assert.equal(nearestReel({ at: "2026-11-16T13:00:00Z" }, reels, new Set())?.id, "r1");
+assert.equal(nearestReel({ at: "2026-11-16T13:00:00Z" }, reels, new Set(["r1"])), undefined, "r2 is 60 min away");
+// tokens never reach a log line
+process.env.META_PAGE_ACCESS_TOKEN = "EAAtesttokenvalue123";
+assert.equal(redactToken("HTTP 400 for https://graph.facebook.com/v26.0/1/video_insights?access_token=EAAtesttokenvalue123&x=1"), "HTTP 400 for https://graph.facebook.com/v26.0/1/video_insights?access_token=REDACTED&x=1");
+assert.equal(redactToken('{"error":"bad token EAAtesttokenvalue123"}'), '{"error":"bad token REDACTED"}');
+delete process.env.META_PAGE_ACCESS_TOKEN;
+// Facebook plays land in the arm tables beside YouTube views (joined by content date and id)
+const fbSnap = (date: string, day: 0 | 1) => { const sn = snap(date, day); return { date, rows: [...sn.rows, ...items.map(i => ({ date: i.date, id: i.id, kind: "short", platform: "facebook", format: "reel", remote_id: `fb-${i.id}`, slot: "2026-11-13T18:00:00.000Z", metrics: { views: i.id === "A" ? [0, 4][day] : [7, 9][day] } }))] }; };
+const tFb = armTables(buildArmPosts([fbSnap("2026-11-16", 0), fbSnap("2026-11-20", 1)], items, () => undefined))["short-length"];
+assert.equal(tFb.tight.median_fb_views_d3, 3.5, "A has 0 plays at day 3 (a real zero), B has 7"); assert.equal(tFb.tight.median_fb_views_d7, 6.5); assert.equal(tFb.tight.n_fb_views_d7, 2);
+assert.equal(t["short-length"].tight.n_fb_views_d7, 0, "no Facebook rows: no Facebook numbers");
 
 console.log("measurement self-test passed");

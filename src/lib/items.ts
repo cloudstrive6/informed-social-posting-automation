@@ -12,6 +12,8 @@ export interface PostTarget {
   platform: Platform; format: PostFormat; slotKey: ScheduleKey; slot: string;
   status: "pending" | "scheduled" | "published" | "failed" | "held" | "skipped";
   remote_id?: string; url?: string; error?: string; attempts: number; published_at?: string;
+  /** YouTube long video: id of the channel's own first comment (src/publish/firstComment.ts); also kept in data/ops/first-comments.json */
+  first_comment_id?: string;
 }
 
 /** Per-post fields logged by the publisher and kept in analytics rows (growth strategy step 0). */

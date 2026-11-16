@@ -125,6 +125,19 @@ export async function runAnalytics() {
     } catch (e) { log.warn(`tiktok metrics: ${(e as Error).message.slice(0, 200)}`); }
   }
 
+  // Facebook Reel metrics (Graph API video_insights, Page token with read_insights). Optional: any failure leaves
+  // Facebook rows without metrics, as before. Same place and shape as TikTok: metrics["facebook:<remote id>"].views
+  if (process.env.META_PAGE_ACCESS_TOKEN && process.env.META_PAGE_ID) {
+    try {
+      const { fetchFacebookMetrics, redactToken } = await import("./facebook.js");
+      try {
+        const fb = await fetchFacebookMetrics(rows);
+        for (const [id, v] of Object.entries(fb.metrics)) metrics[`facebook:${id}`] = v;
+        log.info(`facebook metrics: ${fb.read} reels read, ${fb.failed} failed${fb.rateLimited ? ", stopped at a rate limit" : ""}${fb.firstError ? ` (first error: ${redactToken(fb.firstError)})` : ""}`);
+      } catch (e) { log.warn(`facebook metrics: ${redactToken((e as Error).message).slice(0, 200)}`); }
+    } catch (e) { log.warn(`facebook metrics: ${(e as Error).message.slice(0, 200)}`); }
+  }
+
   const dataset = rows.map(r => {
     const row = { ...r, metrics: metrics[`${r.platform}:${r.remote_id}`] ?? null };
     return Date.parse(r.slot) > cutoff ? row : compactRow(row);

@@ -319,7 +319,11 @@
         "description": "Practical, evidence-based guides for life on GLP-1 medicines like tirzepatide (Mounjaro, Zepbound) and semaglutide (Ozempic, Wegovy): how long they take to work, what to eat, side effects, muscle and strength, plateaus, stopping, and what the trials show. Educational, not medical advice."
       }
     ],
-    "_series_comment": "Every in-niche long video also goes into one series playlist: new/investigational drugs → 'New GLP-1 Drug Decoded', everything else → 'Life on a GLP-1' (owner OK 2026-10-28). Backfill: publish.yml sync_playlist=series."
+    "_series_comment": "Every in-niche long video also goes into one series playlist: new/investigational drugs → 'New GLP-1 Drug Decoded', everything else → 'Life on a GLP-1' (owner OK 2026-10-28). Backfill: publish.yml sync_playlist=series.",
+    "firstComment": {
+      "enabled": true,
+      "_comment": "The channel posts one top-level comment on each long video once it is public: a non-health question inviting topic suggestions, from a fixed reviewed list (src/publish/firstComment.ts), rotated daily. Owner OK 2026-11-16. Pinning is manual in YouTube Studio. Kill switch: enabled=false here, or repo variable YT_FIRST_COMMENT=off (read by publish.yml)."
+    }
   },
   "_saved_niches": {
     "_comment": "Earlier editorial focuses. To switch back, copy one into 'niche'.",

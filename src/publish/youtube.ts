@@ -76,6 +76,36 @@ export async function makePrivate(videoId: string) {
   });
 }
 
+/**
+ * Post one top-level comment on a video as the channel (commentThreads.insert, 50 quota units, youtube.force-ssl scope).
+ * The API cannot pin it; pinning stays a manual step in YouTube Studio. Returns the comment thread id.
+ */
+export async function postTopLevelComment(videoId: string, text: string): Promise<string> {
+  const token = await youtubeToken();
+  const j = await httpJson<any>("https://www.googleapis.com/youtube/v3/commentThreads?part=snippet", {
+    method: "POST", headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+    body: JSON.stringify({ snippet: { videoId, topLevelComment: { snippet: { textOriginal: text } } } }),
+    retries: 0, timeoutMs: 30_000, // never resend a POST: a retry after a lost reply would post the comment twice
+  });
+  if (!j.id) throw new Error(`commentThreads.insert returned no id: ${JSON.stringify(j).slice(0, 200)}`);
+  return j.id as string;
+}
+
+/**
+ * Id of a top-level comment the channel itself already left on this video (its newest 100 threads, 1 quota unit),
+ * or one whose text is exactly `text`. Guards against a second comment if the local record was lost.
+ */
+export async function findChannelComment(videoId: string, text?: string): Promise<string | undefined> {
+  const token = await youtubeToken();
+  const j = await httpJson<any>(`https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=${videoId}&maxResults=100&order=time&textFormat=plainText`, { headers: { authorization: `Bearer ${token}` } });
+  for (const t of j.items ?? []) {
+    const c = t.snippet?.topLevelComment?.snippet ?? {};
+    const own = c.authorChannelId?.value && t.snippet?.channelId && c.authorChannelId.value === t.snippet.channelId;
+    if (own || (text && (c.textOriginal === text || c.textDisplay === text))) return t.id as string;
+  }
+  return undefined;
+}
+
 /** Delete an uploaded video (used when a remade version replaces it). */
 export async function deleteVideo(videoId: string) {
   const token = await youtubeToken();
