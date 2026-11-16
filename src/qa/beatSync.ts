@@ -7,7 +7,8 @@
  *            mapped to the wrong scene, re-indexed or merged beats, missing beats, and headlines that belong to
  *            a beat far away.
  *  2. audio  (final file): Whisper on the final mix, aligned to the script, against the timeline the shots were
- *            placed on. Catches a narration track that moved in the mix or a timeline that doesn't match the audio.
+ *            placed on. Catches a narration track that moved in the mix (offset), stretched (drift) or stepped
+ *            (a clip of the wrong length). Single beats off are Whisper noise and only reported.
  *  3. render (final file): a visual change in the rendered video at each beat's narration time. Catches a render
  *            that drifts from its composition. Coarse (it can't read content), so it judges the whole video.
  *
@@ -31,6 +32,16 @@ import { HeardWord, normWords, sameWord } from "./audioQa.js";
 export const BEAT_TOLERANCE = { LEAD: 0.75, LAG: 0.3, GROSS: 2.0, AUDIO_SHIFT: 0.3 };
 /** Beats outside tolerance before a video fails: 3, or 5% of the beats on a long video. */
 const maxOff = (beats: number) => Math.max(3, Math.ceil(beats * 0.05));
+/**
+ * Audio check shapes (2026-11-17). The narration is one continuous WAV of concatenated clips, mixed with no
+ * per-scene delay, trim or tempo change, so one beat cannot move on its own: a lone beat 0.5 to 0.9 s off is
+ * Whisper noise. Real defects are a constant offset (median rule), a stretch over time (DRIFT, fitted with a
+ * Theil-Sen slope) or a step where one clip's probed duration is wrong and every later beat moves (RUN: most of
+ * any RUN_LEN consecutive beats shifted the same way, or STREAK consecutive beats all past STREAK_MIN the same way,
+ * which also catches a step in the last few beats). STREAK_MIN: on the 2026-11-09 and 2026-11-16 long videos the
+ * worst 3 consecutive same-direction beats were all within 0.16 s, and the worst pair 0.59 s (11-16 L1 s44, s45).
+ */
+const AUDIO_SHAPE = { DRIFT: 0.3, RUN: 0.4, RUN_LEN: 8, STREAK: 3, STREAK_MIN: 0.6, NOISE: BEAT_TOLERANCE.AUDIO_SHIFT + 0.2 };
 /** Share of beats that must show a visual change at their narration time (published in-sync videos measured 0.84 to 0.94; 0.5 s late measured 0.25). */
 const MIN_RENDER_HIT = 0.5;
 /** ffmpeg scene score that counts as a visible change (99th percentile of all frames is ~0.04; median ~0.0003). */
@@ -42,12 +53,15 @@ export interface BeatRow {
   said: number | null; heard?: number | null;
   /** when the beat's first shot takes over the frame (plan), and the visual change seen in the render */
   shown?: number | null; change?: number | null;
+  /** heard in the final file minus heard in the clean narration (s), kept so later audits can re-fit drift and steps */
+  shift?: number | null;
   offset?: number | null; status: "ok" | "early" | "late" | "missing" | "wrong-content" | "unverified"; note?: string;
 }
 export interface BeatReport {
   verdict: "pass" | "fail"; summary: string; tolerance: typeof BEAT_TOLERANCE;
   plan?: { checked: number; off: number; worst: number | null; failures: string[] };
-  audio?: { anchored: number; medianShift: number | null; off: number; failures: string[] };
+  /** off and outliers: single beats past Whisper's jitter, information only (they do not fail the video) */
+  audio?: { anchored: number; medianShift: number | null; off: number; drift?: number | null; worstRun?: number | null; outliers?: string[]; failures: string[] };
   render?: { checked: number; hitRate: number | null; medianOffset: number | null; failures: string[] };
   beats: BeatRow[];
 }
@@ -79,7 +93,86 @@ export function narrationStarts(tl: Timeline, firstWord?: Map<string, number | n
   }));
 }
 
-export function planBeats(scenes: { id: string; on_screen_text?: string }[], shots: TimedShot[], tl: Timeline, firstWord?: Map<string, number | null>): { rows: BeatRow[]; failures: string[]; off: number; worst: number | null } {
+// a headline its own beat says out loud is in the right place, even if it also echoes a far-away beat's text
+const STOP = new Set(["a", "an", "the", "and", "or", "but", "of", "to", "in", "on", "at", "by", "for", "from", "with", "as", "is", "are", "was", "were",
+  "be", "been", "it", "its", "it's", "this", "that", "these", "those", "you", "your", "yours", "we", "our", "they", "their", "he", "she", "his", "her",
+  "i", "me", "my", "what", "which", "who", "how", "why", "when", "where", "do", "does", "did", "can", "could", "will", "would", "should", "may",
+  "might", "if", "so", "than", "then", "there", "here", "not", "no", "vs", "versus", "about", "into", "just", "all", "any", "some", "each", "per"]
+  .flatMap(w => normWords(w)));
+/** "same" or "different" alone is not support: most comparison headlines contain one of them. */
+const WEAK = new Set(["same", "different"].flatMap(w => normWords(w)));
+const NUMBERS = new Set(["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen",
+  "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety",
+  "hundred", "thousand", "million", "billion", "half", "quarter"]);
+/** Light stemmer so call / calls / calling / called match (applied after normWords, which already spells out digits). */
+const stem = (w: string) => {
+  let s = w.replace(/'s$/, "");
+  if (s.length > 4 && s.endsWith("ies")) s = s.slice(0, -3) + "y";
+  else if (s.length > 3 && s.endsWith("s") && !s.endsWith("ss")) s = s.slice(0, -1);
+  if (s.length > 5 && s.endsWith("ing")) s = s.slice(0, -3);
+  else if (s.length > 4 && s.endsWith("ed")) s = s.slice(0, -2);
+  if (s.length > 3 && s.endsWith("e")) s = s.slice(0, -1);
+  return s.length > 2 && s[s.length - 1] === s[s.length - 2] ? s.slice(0, -1) : s;
+};
+/**
+ * The numbers in a text as spoken groups: "6-8%" and "six to eight percent" are both "six eight%", "20.9%" is
+ * "twenty point nine%", "two or more" is "two". A range needs both ends; "%" binds the number to "percent".
+ */
+function numberGroups(words: string[]): { groups: string[]; used: Set<number> } {
+  const groups: string[] = [], used = new Set<number>();
+  for (let i = 0; i < words.length;) {
+    if (!NUMBERS.has(words[i])) { i++; continue; }
+    const g: string[] = [];
+    let j = i;
+    while (j < words.length) {
+      if (NUMBERS.has(words[j])) { g.push(words[j]); used.add(j); j++; }
+      else if (words[j] === "point" && NUMBERS.has(words[j + 1] ?? "")) { g.push("point"); used.add(j); j++; }
+      else if ((words[j] === "to" || words[j] === "or") && NUMBERS.has(words[j + 1] ?? "")) { j++; } // a range: "six to eight"
+      else break;
+    }
+    const pct = words[j] === "percent";
+    if (pct) used.add(j);
+    groups.push(g.join(" ") + (pct ? "%" : ""));
+    i = pct ? j + 1 : j;
+  }
+  return { groups, used };
+}
+
+/** Word stems said in more than 25% of a video's beats ("weight", "percent" in a weight-loss video): too common to place a title. */
+export function commonStems(spoken: string[]): Set<string> {
+  const out = new Set<string>();
+  if (spoken.length < 8) return out;
+  const df = new Map<string, number>();
+  for (const s of spoken) for (const w of new Set(normWords(s).map(stem))) df.set(w, (df.get(w) ?? 0) + 1);
+  for (const [w, n] of df) if (n / spoken.length > 0.25) out.add(w);
+  return out;
+}
+
+/**
+ * Is a shot's title spoken in its own beat? Every number in the title is said in the beat (a range with both ends,
+ * a percentage as a percentage), and at least 60% of the title's other content words are said there too. A word
+ * common across the video only counts when the beat says it in the title's own phrase ("same arm" in "people on the
+ * same arm"). A title without numbers also needs 2 matched words, not just "same" / "different"; a number word
+ * alone ("two", "one") never counts as word support.
+ */
+export function titleSpoken(title: string, narration: string, common: Set<string> = new Set()): boolean {
+  if (!narration) return false;
+  const tw = normWords(title), nw = normWords(narration);
+  const tn = numberGroups(tw), nn = numberGroups(nw);
+  if (!tn.groups.every(g => nn.groups.includes(g))) return false;
+  const seq = tw.filter((w, i) => !tn.used.has(i) && !STOP.has(w));
+  if (!seq.length) return tn.groups.length > 0;
+  const said = new Set(nw.map(stem));
+  const ns = nw.filter(w => !STOP.has(w)).map(stem);
+  const pairs = new Set(ns.slice(1).map((w, i) => `${ns[i]} ${w}`));
+  const inPhrase = (i: number) => (i > 0 && pairs.has(`${stem(seq[i - 1])} ${stem(seq[i])}`)) || (i + 1 < seq.length && pairs.has(`${stem(seq[i])} ${stem(seq[i + 1])}`));
+  const content = [...new Set(seq)];
+  const hit = content.filter(w => said.has(stem(w)) && (!common.has(stem(w)) || seq.some((x, i) => x === w && inPhrase(i))));
+  if (hit.length / content.length < 0.6) return false;
+  return tn.groups.length > 0 || (hit.length >= 2 && hit.some(w => !WEAK.has(w)));
+}
+
+export function planBeats(scenes: { id: string; on_screen_text?: string; spoken?: string }[], shots: TimedShot[], tl: Timeline, firstWord?: Map<string, number | null>): { rows: BeatRow[]; failures: string[]; off: number; worst: number | null } {
   const said = narrationStarts(tl, firstWord);
   const titles = shots.map(s => tokens([s.title?.text, s.title?.sub].filter(Boolean).join(" ")));
   const sceneText = scenes.map(s => tokens(s.on_screen_text ?? ""));
@@ -115,6 +208,7 @@ export function planBeats(scenes: { id: string; on_screen_text?: string }[], sho
   });
   // headline check: a shot whose title is clearly another beat's on-screen text, from far away in the video
   const idx = new Map(scenes.map((s, i) => [s.id, i]));
+  const common = commonStems(scenes.map(s => s.spoken ?? "").filter(Boolean));
   shots.forEach((s, i) => {
     const own = idx.get(s.scene_id);
     if (own === undefined || !titles[i].size) return;
@@ -122,7 +216,8 @@ export function planBeats(scenes: { id: string; on_screen_text?: string }[], sho
     sceneText.forEach((st, k) => { const j = jaccard(titles[i], st); if (j > sim) { sim = j; best = k; } });
     const ownSim = jaccard(titles[i], sceneText[own]);
     const far = Math.abs((said.get(scenes[best]?.id) ?? 0) - (said.get(s.scene_id) ?? 0));
-    if (best >= 0 && best !== own && sim >= 0.6 && ownSim < 0.34 && far > 30) {
+    const spokenHere = titleSpoken([s.title?.text, s.title?.sub].filter(Boolean).join(" "), scenes[own].spoken ?? "", common);
+    if (best >= 0 && best !== own && sim >= 0.6 && ownSim < 0.34 && far > 30 && !spokenHere) {
       const row = rows[own];
       row.status = "wrong-content";
       row.note = `shot at ${fmt(s.start)} shows "${s.title.text}", which is ${scenes[best].id}'s text (said at ${fmt(said.get(scenes[best].id) ?? 0)})`;
@@ -184,22 +279,82 @@ export function anchorScenes(scenes: { id: string; text: string }[], heard: Hear
  * one on the clean narration and one on the final mix, so Whisper's habits cancel out and only real moves show.
  */
 export function audioBeats(rows: BeatRow[], heardAt: Map<string, number | null>, expectedAt: Map<string, number | null>) {
-  const shifts: number[] = [];
-  let off = 0;
+  const pts: { id: string; t: number; s: number }[] = [];
   for (const r of rows) {
     const h = heardAt.get(r.id), e = expectedAt.get(r.id);
     r.heard = h == null ? null : r2(h);
+    r.shift = h == null || e == null ? null : +(h - e).toFixed(3);
     if (h == null || e == null) continue;
-    const s = h - e;
-    shifts.push(s);
-    if (Math.abs(s) > BEAT_TOLERANCE.AUDIO_SHIFT + 0.2) off++; // per beat: allow Whisper's own jitter
+    pts.push({ id: r.id, t: e, s: h - e });
   }
+  const shifts = pts.map(p => p.s);
   const med = median(shifts);
+  const shape = audioShape(pts);
+  // single beats past Whisper's jitter: reported, never failed on (one beat cannot move inside one WAV)
+  const outliers = pts.filter(p => Math.abs(p.s) > AUDIO_SHAPE.NOISE).map(p => `${p.id} ${p.s > 0 ? "+" : ""}${p.s.toFixed(2)} s`);
   const failures: string[] = [];
+  const sign = (n: number) => `${n > 0 ? "+" : ""}${n.toFixed(2)}`;
   if (shifts.length < rows.length * 0.6) failures.push(`only ${shifts.length} of ${rows.length} beats could be found in the final audio`);
-  else if (med !== null && Math.abs(med) > BEAT_TOLERANCE.AUDIO_SHIFT) failures.push(`the narration in the final file sits ${med > 0 ? "+" : ""}${med.toFixed(2)} s from the timeline the shots were placed on`);
-  else if (off >= maxOff(rows.length)) failures.push(`${off} beats are heard more than ${BEAT_TOLERANCE.AUDIO_SHIFT + 0.2} s from where the shots expect them`);
-  return { anchored: shifts.length, medianShift: med, off, failures };
+  else if (med !== null && Math.abs(med) > BEAT_TOLERANCE.AUDIO_SHIFT) failures.push(`the narration in the final file sits ${sign(med)} s from the timeline the shots were placed on`);
+  else {
+    // a step also tilts the fitted line, so when a step rule fires the summary names the step, not a drift
+    const steps: string[] = [];
+    if (shape.run && Math.abs(shape.run.value) > AUDIO_SHAPE.RUN) steps.push(`the narration steps ${sign(shape.run.value)} s from the timeline from ${shape.run.from} to ${shape.run.to} (a clip's length is wrong)`);
+    if (shape.streak) {
+      const { from, to, value, tail } = shape.streak;
+      steps.push(`the narration steps ${sign(value)} s from the timeline from ${from} to ${to}${tail ? ", the last beats of the video" : ""} (a clip's length is wrong)`);
+    }
+    if (steps.length) failures.push(...steps);
+    else if (shape.drift !== null && Math.abs(shape.drift) > AUDIO_SHAPE.DRIFT) failures.push(`the narration in the final file drifts ${sign(shape.drift)} s from the timeline over the video`);
+  }
+  return { anchored: shifts.length, medianShift: med, off: outliers.length, drift: shape.drift, worstRun: shape.run ? +shape.run.value.toFixed(3) : null, outliers, failures };
+}
+
+/**
+ * Drift: Theil-Sen slope of shift against time (median of all pairwise slopes, unmoved by a few wild beats) times the
+ * span of the video. Run: over every RUN_LEN consecutive anchored beats, the middle value nearer zero, so a window only
+ * counts as shifted when most of its beats agree (5 of 8 past the threshold, the same way). A step leaves every later
+ * window fully shifted; Whisper scatter, even a cluster of 4 bad beats with good ones between, does not.
+ * Streak: STREAK or more consecutive anchored beats all past STREAK_MIN the same way. Catches a step too close to the
+ * end for a full window (a wrong clip length 40 s before the end); flagged as the tail when it reaches the last beat.
+ */
+export function audioShape(pts: { id: string; t: number; s: number }[]): {
+  drift: number | null; run: { from: string; to: string; value: number } | null;
+  streak: { from: string; to: string; value: number; length: number; tail: boolean } | null;
+} {
+  let drift: number | null = null;
+  if (pts.length >= 6) {
+    const slopes: number[] = [];
+    for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
+      const dt = pts[j].t - pts[i].t;
+      if (Math.abs(dt) > 1) slopes.push((pts[j].s - pts[i].s) / dt);
+    }
+    const ts = pts.map(p => p.t);
+    const m = median(slopes.map(x => x * 1e3)); // median() rounds to 3 places; scale so slow slopes survive
+    drift = m === null ? null : +((m / 1e3) * (Math.max(...ts) - Math.min(...ts))).toFixed(3);
+  }
+  let run: { from: string; to: string; value: number } | null = null;
+  const n = AUDIO_SHAPE.RUN_LEN;
+  for (let i = 0; i + n <= pts.length; i++) {
+    const w = pts.slice(i, i + n).map(p => p.s).sort((a, b) => a - b);
+    const lo = w[(n - 1) >> 1], hi = w[n >> 1];
+    const value = lo > 0 ? lo : hi < 0 ? hi : 0; // the middle value nearer zero (0 when the middle straddles it)
+    if (!run || Math.abs(value) > Math.abs(run.value)) run = { from: pts[i].id, to: pts[i + n - 1].id, value };
+  }
+  // streaks of consecutive beats past STREAK_MIN the same way; keep the longest (the one at the end on a tie)
+  let streak: { from: string; to: string; value: number; length: number; tail: boolean } | null = null;
+  for (let i = 0; i < pts.length;) {
+    const dir = Math.sign(pts[i].s);
+    let j = i;
+    while (j < pts.length && Math.abs(pts[j].s) > AUDIO_SHAPE.STREAK_MIN && Math.sign(pts[j].s) === dir) j++;
+    const len = j - i;
+    if (len >= AUDIO_SHAPE.STREAK && (!streak || len >= streak.length)) {
+      const vals = pts.slice(i, j).map(p => p.s);
+      streak = { from: pts[i].id, to: pts[j - 1].id, value: +(median(vals) ?? 0).toFixed(3), length: len, tail: j === pts.length };
+    }
+    i = Math.max(j, i + 1);
+  }
+  return { drift, run, streak };
 }
 
 // ------------------------------------------------------------------ 3) render: visual changes in the final file
@@ -225,9 +380,16 @@ export function renderBeats(rows: BeatRow[], scores: { t: number; s: number }[])
     const T = at(r);
     if (T == null || T < 0.5) continue; // the opening shot has no cut to find
     checked++;
-    // first visible change inside the tolerance band
-    const inBand = scores.find(x => x.t >= T - BEAT_TOLERANCE.LEAD && x.t <= T + BEAT_TOLERANCE.LAG && x.s >= CHANGE);
-    if (inBand) { hits++; r.change = r2(inBand.t); offsets.push(inBand.t - T); continue; }
+    // first visible change inside the tolerance band; when Whisper's heard time and the timeline disagree by more
+    // than 0.5 s, the band around the timeline time counts too (the picture follows the timeline, and a lone beat
+    // that far off is Whisper noise, see audioBeats)
+    const refs = r.heard != null && r.said != null && Math.abs(r.heard - r.said) > 0.5 ? [T, r.said] : [T];
+    let inBand: { t: number; s: number } | undefined, ref = T;
+    for (const R of refs) {
+      inBand = scores.find(x => x.t >= R - BEAT_TOLERANCE.LEAD && x.t <= R + BEAT_TOLERANCE.LAG && x.s >= CHANGE);
+      if (inBand) { ref = R; break; }
+    }
+    if (inBand) { hits++; r.change = r2(inBand.t); offsets.push(inBand.t - ref); continue; }
     // otherwise the nearest strong change within 3 s, for the report
     const near = scores.filter(x => Math.abs(x.t - T) <= 3 && x.s >= CHANGE * 2).sort((a, b) => Math.abs(a.t - T) - Math.abs(b.t - T))[0];
     r.change = near ? r2(near.t) : null;
