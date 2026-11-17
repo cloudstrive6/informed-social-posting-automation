@@ -31,7 +31,9 @@ export interface YtUpload {
 export function cleanDescription(d: string): string {
   const lines = d.split("\n");
   const cut = lines.findIndex(l => /^\s*(INSTAGRAM|TIKTOK|FACEBOOK|THREADS)\s*(CAPTION)?\s*:/i.test(l));
-  const kept = cut >= 0 ? lines.slice(0, cut) : lines;
+  // leaked tool/XML markup lines (e.g. "</description>") are dropped; YouTube rejects any "<" or ">" (invalidDescription)
+  const kept = (cut >= 0 ? lines.slice(0, cut) : lines).filter(l => !/^\s*(<\/?[A-Za-z_][\w:-]*[^<>]*>\s*)+$/.test(l))
+    .map(l => l.replace(/</g, "‹").replace(/>/g, "›"));
   while (kept.length && /^\s*(-{3,}|—+)?\s*$/.test(kept[kept.length - 1])) kept.pop(); // trailing separators
   return kept.join("\n");
 }
@@ -121,7 +123,7 @@ export async function updateDescription(videoId: string, description: string) {
   if (!snippet) throw new Error(`video ${videoId} not found`);
   await httpJson<any>("https://www.googleapis.com/youtube/v3/videos?part=snippet", {
     method: "PUT", headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
-    body: JSON.stringify({ id: videoId, snippet: { title: snippet.title, categoryId: snippet.categoryId, tags: snippet.tags, defaultLanguage: snippet.defaultLanguage, defaultAudioLanguage: snippet.defaultAudioLanguage, description: description.slice(0, 4900) } }),
+    body: JSON.stringify({ id: videoId, snippet: { title: snippet.title, categoryId: snippet.categoryId, tags: snippet.tags, defaultLanguage: snippet.defaultLanguage, defaultAudioLanguage: snippet.defaultAudioLanguage, description: cleanDescription(description).slice(0, 4900) } }),
   });
 }
 
