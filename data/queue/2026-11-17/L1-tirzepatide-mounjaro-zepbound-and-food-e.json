@@ -1,0 +1,1319 @@
+{
+  "id": "L1-tirzepatide-mounjaro-zepbound-and-food-e",
+  "date": "2026-11-17",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Tirzepatide (Mounjaro/Zepbound) and food: eating habits and food choices that may ease the common stomach side effects (nausea, diarrhoea, constipation, heartburn and burping), why meal size, fat and pace matter when the stomach empties more slowly, and when symptoms mean calling a prescriber",
+    "angle": "RE-RENDER ONLY of the verified 11-14 L1 script (playbook queue #1), with no script changes. Rebuild every cut from the final word timestamps. The ship-blockers are measured on the render: every cut within 0.5 s of its beat, masking 0.02 or lower, transcript matching the script word for word, and a description that ends '…whether it's right for you.' Keep the verified content locked. Sentence 1 names tirzepatide and the question, with the short answer by 15 s: smaller meals, eating slowly, stopping at comfortably full, easier on greasy food. Second payoff at 15–30 s: the label's pooled nausea rates per dose vs placebo, plus 'mostly during dose escalation and decreased over time'. The advisory's 'first few days' fatty/high-fibre line stays at its exact scope. NHS reflux and dehydration lines are tagged NHS. Include the kidney caveat on protein and the insulin/sulfonylurea low-blood-sugar caveat. Emergency card, then the scoped don't-stop line, 'Not personal advice' and the full prescriber line. Ending: 'There's a video I'd watch next, linked in the description.' Publisher: put a ▶ Watch next link to Side Effects after the first paragraph, and add the video to 'Life on Tirzepatide'. Thumbnail: 'Which Foods Help?'. If the render is held again, ship the next ready queued long video the same day.",
+    "working_title": "Tirzepatide (Mounjaro) Nausea: Foods That May Help",
+    "target_keyword": "mounjaro nausea",
+    "trend_stage": "evergreen",
+    "why": "It's #1 in the playbook queue and already fact-checked. It answers a broad searched felt-symptom question, the kind that earns a median of about 675 minutes, against about 52 for narrow topics, and nausea searches rise around big holiday meals.",
+    "pillar": "get-the-most"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Tirzepatide (Mounjaro) Nausea: What Foods May Help?",
+    "title_candidates": [
+      "Tirzepatide (Mounjaro) Nausea: What Foods May Help?",
+      "Tirzepatide (Mounjaro) Nausea: Foods That May Help",
+      "Tirzepatide (Mounjaro) Nausea: What Eating Habits Help?",
+      "Tirzepatide (Mounjaro) Upset Stomach: What Foods Help?",
+      "Tirzepatide (Mounjaro) Nausea: Why Meals Feel Different",
+      "Tirzepatide (Mounjaro) Nausea: What to Eat and Avoid?",
+      "Tirzepatide (Mounjaro) Nausea: Does Greasy Food Matter?",
+      "Tirzepatide (Mounjaro) Nausea: When to Call a Doctor?",
+      "Tirzepatide (Mounjaro) Nausea: How Fast Do You Eat?",
+      "Tirzepatide (Mounjaro) Nausea, Heartburn: What Helps?"
+    ],
+    "description": "\nSmaller, slower meals that stop at comfortably full, and easier on greasy food, may ease tirzepatide (Mounjaro) nausea. On the label, stomach effects came mostly during dose escalation and decreased over time.\n\nGet medical help right away for severe stomach pain that won't go away (it may spread to your back), with or without vomiting, or signs of a serious allergic reaction: 911 US/Canada, 999 UK, 000 Australia.\nFor anything that isn't one of those emergency signs, don't stop or change your medicine on your own.\n\nWatch next: tirzepatide's common side effects and how to manage them:\n\n0:00 The short answer\n1:01 Why meals feel different\n1:40 Nausea: what may help\n3:19 Diarrhoea and fluids\n4:16 Constipation and fibre\n5:30 Heartburn and burping\n6:38 Eating less, eating well\n7:47 When to call\n8:40 Your checklist\n\nSources:\nMounjaro US PI, DailyMed (27 Aug 2026): https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0\nCUH NHS dietitians (23 Apr 2026): https://www.cuh.nhs.uk/patient-information/dietary-advice-for-people-with-type-2-diabetes-using-tirzepatide-mounjaro/\n\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.\n</description>\n</invoke>",
+    "tags": [
+      "mounjaro nausea",
+      "tirzepatide nausea",
+      "mounjaro nausea foods",
+      "foods for tirzepatide nausea",
+      "mounjaro stomach side effects",
+      "tirzepatide stomach side effects",
+      "mounjaro diet tips",
+      "tirzepatide eating habits",
+      "how to reduce mounjaro nausea",
+      "best foods for tirzepatide nausea",
+      "mounjaro nausea remedies",
+      "tirzepatide diarrhea",
+      "mounjaro constipation",
+      "tirzepatide heartburn",
+      "mounjaro burping",
+      "tirzepatide diet",
+      "eating on tirzepatide"
+    ],
+    "pinned_comment": "Save this for your next rough evening on tirzepatide (Mounjaro): smaller, slower meals that stop at comfortably full, easier on greasy food, fluids through the day, and a call to your prescriber when it won't settle. Get medical help right away for severe stomach pain that won't go away (it may spread to your back), with or without vomiting, or signs of a serious allergic reaction. For anything that isn't one of those emergency signs, don't stop or change your medicine on your own. Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "QUEASY AFTER MEALS?",
+      "highlight_word": "QUEASY",
+      "subtext": "",
+      "layout": "before-after",
+      "psychology": "State change that keeps the gap: a sick stomach on the left and a calmer one on the right. The text asks the felt-symptom question and keeps back what changed.",
+      "emotion": "Hope mixed with curiosity",
+      "hero_art": "stomach",
+      "hero_face": "sick",
+      "second_art": "stomach",
+      "second_face": "happy",
+      "prop": "arrow",
+      "accent": "green",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 The short answer\n1:01 Why meals feel different\n1:40 Nausea: what may help\n3:19 Diarrhoea and fluids\n4:16 Constipation and fibre\n5:30 Heartburn and burping\n6:38 Eating less, eating well\n7:47 When to call\n8:40 Your checklist"
+  },
+  "media": {
+    "video": "L1-tirzepatide-mounjaro-zepbound-and-food-e.mp4",
+    "duration": 565.613,
+    "thumbnail": "L1-tirzepatide-mounjaro-zepbound-and-food-e-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-17T19:00:00.000Z",
+      "status": "pending",
+      "attempts": 1,
+      "error": "YouTube init 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The request metadata specifies an invalid video description.\",\n    \"errors\": [\n      {\n        \"message\": \"The request metadata specifies an invalid video description.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"invalidDescription\",\n        \"location\": \"body.snippet.description\",\n        \"locationType\": \"other\"\n      }\n    ]\n  }\n}\n"
+    }
+  ],
+  "created_at": "2026-11-17T03:37:24.638Z",
+  "script": {
+    "working_title": "Tirzepatide (Mounjaro) Nausea: Foods That May Help",
+    "target_keyword": "mounjaro nausea",
+    "hook_pattern": "Drug-first direct question with the short answer in sentence 2 (by 15 s), a second payoff from the label's per-dose nausea rates at 15–30 s, then a one-sentence open loop (the NHS heartburn habit that isn't a food) paid off at about 66%, before the safety chapter",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "The short answer",
+        "narration": "On tirzepatide, or Mounjaro, which foods and habits may ease your nausea? Short answer: smaller meals, eating slowly, stopping at comfortably full, and going easier on greasy food.",
+        "on_screen_text": "Tirzepatide nausea: which foods help?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "queasy woman at dinner table, hopeful"
+        },
+        "retention_device": "Drug-first question answered by 15 s",
+        "source_ids": [
+          "S3",
+          "S6"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "The short answer",
+        "narration": "Here's how common it is. On the Mounjaro label, in placebo-controlled trials of adults with type 2 diabetes, nausea affected 12 percent of people on 5 milligrams, 15 percent on 10, and 18 percent on 15. On placebo, it was 4 percent.",
+        "on_screen_text": "Adults with type 2 diabetes",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "12–18%",
+          "stat_label": "Mounjaro nausea, 5–15 mg, vs 4% placebo",
+          "stock_query": "label document with nausea bar chart"
+        },
+        "retention_device": "Second concrete payoff at 15–30 s",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "The short answer",
+        "narration": "And the label adds the line people need to hear. Those stomach effects came mostly during dose escalation and decreased over time.",
+        "on_screen_text": "Mostly during dose escalation",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar pages turning, calmer stomach"
+        },
+        "retention_device": "Relief beat after the number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "The short answer",
+        "narration": "Stay with me, because the heartburn habit the NHS suggests isn't a food at all.",
+        "on_screen_text": "The habit that isn't food",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious man looking at clock"
+        },
+        "retention_device": "One-sentence open loop (paid off in s42)",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "The short answer",
+        "narration": "Picture Priya, 49. She's hypothetical, but maybe familiar. A few days after her dose goes up, the dinner she's cooked a hundred times suddenly feels like a brick.",
+        "on_screen_text": "Same dinner, new stomach",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman staring at full plate, uneasy"
+        },
+        "retention_device": "Hypothetical 'you' scenario introduced",
+        "source_ids": []
+      },
+      {
+        "id": "s06",
+        "section": "The short answer",
+        "narration": "She's hungry at six, queasy by seven, and quietly wondering if she's doing this wrong. If that's you, you're not failing. You're in the phase the label describes.",
+        "on_screen_text": "You're not failing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "worried woman in kitchen at evening"
+        },
+        "retention_device": "Name and validate the feeling",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "Why meals feel different",
+        "narration": "So why can a normal-size dinner suddenly feel like too much?",
+        "on_screen_text": "Why meals feel different",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "teal gradient chapter card, plate icon"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s08",
+        "section": "Why meals feel different",
+        "narration": "The Mounjaro label says tirzepatide delays gastric emptying. In plain English, food leaves your stomach more slowly than you're used to.",
+        "on_screen_text": "Slower stomach emptying",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon stomach emptying slowly, gentle"
+        },
+        "retention_device": "Plain-English explainer",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "Why meals feel different",
+        "narration": "Here's the hopeful part. The label also says that delay is largest after the first dose and diminishes over time.",
+        "on_screen_text": "Largest after the first dose",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "My stomach will always feel like this",
+          "fact": "Label: the delay is largest after the first dose and diminishes over time",
+          "stock_query": "stomach character relaxing over time"
+        },
+        "retention_device": "Surprising hopeful fact",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "Why meals feel different",
+        "narration": "Think of a motorway with one lane closed. The traffic still gets through. It just can't all arrive at once.",
+        "on_screen_text": "One lane closed",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "motorway with one lane closed"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": []
+      },
+      {
+        "id": "s11",
+        "section": "Why meals feel different",
+        "narration": "Nobody can promise which tip will work for your stomach. But NHS dietitians and a joint advisory from four US lifestyle, nutrition and obesity societies point in the same direction. And it starts with size.",
+        "on_screen_text": "It starts with size",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two signposts pointing same way"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": [
+          "S3",
+          "S6"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "Nausea: what may help",
+        "narration": "What can you actually do at dinner when nausea shows up?",
+        "on_screen_text": "Nausea: what may help",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "teal gradient chapter card, fork icon"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s13",
+        "section": "Nausea: what may help",
+        "narration": "First, size. An NHS dietitians' leaflet for people with type 2 diabetes on tirzepatide suggests small, frequent meals and avoiding large portions. The advisory also suggests smaller, more frequent meals.",
+        "on_screen_text": "1. Small, frequent meals",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Small, frequent meals",
+            "Skip large portions",
+            "Less spicy or fatty food"
+          ],
+          "stock_query": "small simple plate of food"
+        },
+        "retention_device": "Numbered steps begin",
+        "source_ids": [
+          "S3",
+          "S6"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "Nausea: what may help",
+        "narration": "Second, pace. Put your fork down between bites. The NHS leaflet suggests eating slowly and giving your food time to settle. Stopping when you're comfortably full might mean leaving food on the plate, and that's okay.",
+        "on_screen_text": "2. Slow down, stop at full",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "man resting fork between bites, calm"
+        },
+        "retention_device": "Step 2 with a concrete action",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "Nausea: what may help",
+        "narration": "Comfortably full may arrive earlier than it used to. Maybe at half the plate. That's not something to push through. It's a signal worth listening to.",
+        "on_screen_text": "Full may come sooner",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "half-eaten plate, relieved smile"
+        },
+        "retention_device": "Reframe the feeling",
+        "source_ids": []
+      },
+      {
+        "id": "s16",
+        "section": "Nausea: what may help",
+        "narration": "Third, fat. Go easier on greasy, fried and very rich meals. The same NHS leaflet suggests avoiding very sweet, spicy, fatty or fried foods when you feel sick.",
+        "on_screen_text": "3. Easier on greasy food",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "fried food pushed gently aside"
+        },
+        "retention_device": "Step 3",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "Nausea: what may help",
+        "narration": "The joint advisory goes a step further. It suggests avoiding fatty or high-fibre foods during the first few days of treatment.",
+        "on_screen_text": "First few days of treatment",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "First few days",
+          "stat_label": "Advisory: avoid fatty or high-fibre foods early on",
+          "stock_query": "advisory document with calendar"
+        },
+        "retention_device": "Surprising twist on fibre",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "Nausea: what may help",
+        "narration": "Notice the scope. That's the first few days of treatment, not forever. Hold on to that, because fibre comes back as a hero in a few minutes.",
+        "on_screen_text": "Not forever",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "oats bowl wearing a tiny cape"
+        },
+        "retention_device": "New open loop (paid off in constipation chapter)",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "Nausea: what may help",
+        "narration": "Fourth, fluids. Small, regular sips through the day can feel easier than gulping a big glass with your meal.",
+        "on_screen_text": "4. Sip through the day",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman sipping water at desk"
+        },
+        "retention_device": "Step 4",
+        "source_ids": []
+      },
+      {
+        "id": "s20",
+        "section": "Nausea: what may help",
+        "narration": "And when you're queasy, plain, dry foods are an easy place to start: toast, crackers or plain biscuits.",
+        "on_screen_text": "Start plain and dry",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Plain toast",
+            "Crackers",
+            "Plain biscuits"
+          ],
+          "stock_query": "plain toast and crackers on plate"
+        },
+        "retention_device": "Concrete food examples",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Nausea: what may help",
+        "narration": "Back to Priya. She swaps to a smaller plate, eats more slowly, and saves the fried dish for later in the week. Small changes, all in the direction this guidance points.",
+        "on_screen_text": "Priya's small swaps",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman choosing smaller plate, content"
+        },
+        "retention_device": "Return to the relatable thread",
+        "source_ids": []
+      },
+      {
+        "id": "s22",
+        "section": "Nausea: what may help",
+        "narration": "But nausea isn't the only stomach effect on the label. Diarrhoea sits right next to it, and it brings its own question.",
+        "on_screen_text": "Not the only one",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "label page with next line highlighted"
+        },
+        "retention_device": "But/therefore pivot into next section",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Diarrhoea and fluids",
+        "narration": "What should you drink, and when does diarrhoea need attention?",
+        "on_screen_text": "Diarrhoea and fluids",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "teal gradient chapter card, water glass"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s24",
+        "section": "Diarrhoea and fluids",
+        "narration": "On the Mounjaro label, in the same trials of adults with type 2 diabetes, diarrhoea affected 12 to 17 percent of people across the 5 to 15 milligram doses. On placebo, it was 9 percent.",
+        "on_screen_text": "Adults with type 2 diabetes",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "12–17%",
+          "stat_label": "Mounjaro diarrhoea, 5–15 mg, vs 9% placebo",
+          "stock_query": "label document with bar chart"
+        },
+        "retention_device": "Surprising stat (placebo not zero)",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "Diarrhoea and fluids",
+        "narration": "For diarrhoea, the NHS leaflet's advice is simple: stay well hydrated.",
+        "on_screen_text": "Stay well hydrated",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "water jug and glass on table"
+        },
+        "retention_device": "Simple action",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "Diarrhoea and fluids",
+        "narration": "Know the signs. The NHS lists peeing less often than usual, dark yellow, strong-smelling pee, and feeling dizzy or tired.",
+        "on_screen_text": "Signs of dehydration",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Peeing less often than usual",
+            "Dark yellow, strong-smelling pee",
+            "Feeling dizzy or tired"
+          ],
+          "stock_query": "tired man holding head, calm"
+        },
+        "retention_device": "Checklist the viewer can use",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Diarrhoea and fluids",
+        "narration": "Here's why that matters. The label carries a warning about kidney injury linked to fluid loss from vomiting, diarrhoea or dehydration. Fluids aren't a nice extra. They matter.",
+        "on_screen_text": "Fluid loss can strain kidneys",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon kidneys beside water glass"
+        },
+        "retention_device": "Stakes raised with a label warning",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Diarrhoea and fluids",
+        "narration": "And before you take any other medicine for diarrhoea, check with a pharmacist or doctor first.",
+        "on_screen_text": "Ask before other medicines",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly pharmacist at counter"
+        },
+        "retention_device": "Practical safety tip",
+        "source_ids": []
+      },
+      {
+        "id": "s29",
+        "section": "Diarrhoea and fluids",
+        "narration": "Now, remember fibre, the food the advisory said to go easy on in the first few days of treatment? Here's where it switches sides.",
+        "on_screen_text": "Fibre switches sides",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "oats bowl flipping a sign"
+        },
+        "retention_device": "Callback to earlier loop, opens next chapter",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Constipation and fibre",
+        "narration": "Can the same food be one to limit early on and a help later?",
+        "on_screen_text": "Constipation and fibre",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "teal gradient chapter card, berries"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s31",
+        "section": "Constipation and fibre",
+        "narration": "Constipation is on the Mounjaro label too. In adults with type 2 diabetes, it affected 6 to 7 percent of people across the 5 to 15 milligram doses, against 1 percent on placebo.",
+        "on_screen_text": "Adults with type 2 diabetes",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "6–7%",
+          "stat_label": "Mounjaro constipation, 5–15 mg, vs 1% placebo",
+          "stock_query": "label document with bar chart"
+        },
+        "retention_device": "New stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Constipation and fibre",
+        "narration": "For constipation, the NHS leaflet suggests more fibre, like wholegrains, beans, fruit and vegetables, at least 2 litres of fluid a day, and moving more. Unless you've been told to limit fluids. Then follow your care team's advice.",
+        "on_screen_text": "Fibre, fluids, movement",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "More fibre",
+            "At least 2 litres of fluid a day",
+            "Move more"
+          ],
+          "stock_query": "fruit bowl, water, walking shoes"
+        },
+        "retention_device": "Payoff of the 'fibre as hero' loop",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Constipation and fibre",
+        "narration": "So which is it: less fibre, or more? The advisory's line covers the first few days of treatment. The NHS leaflet's advice is for constipation. If they seem to clash for you, a dietitian or your prescriber can help you balance them.",
+        "on_screen_text": "Less fibre or more?",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Fibre is always good, or always bad, on tirzepatide",
+          "fact": "Advisory: go easy on it in the first few days of treatment. NHS leaflet: more fibre for constipation",
+          "stock_query": "balance scale with oats bowl"
+        },
+        "retention_device": "Question to the viewer, then resolution",
+        "source_ids": [
+          "S3",
+          "S6"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Constipation and fibre",
+        "narration": "A practical middle path is to add fibre gradually, not all at once, and to pair it with fluids. And if diarrhoea is your main problem right now, hold off on extra fibre until it settles.",
+        "on_screen_text": "Add fibre gradually",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "spoonful of berries added slowly"
+        },
+        "retention_device": "Practical takeaway",
+        "source_ids": []
+      },
+      {
+        "id": "s35",
+        "section": "Constipation and fibre",
+        "narration": "In Priya's week, the fried takeaway waits. But oats and berries are back at breakfast, a little at a time, with water alongside.",
+        "on_screen_text": "Priya's breakfast is back",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman enjoying oats and berries"
+        },
+        "retention_device": "Return to the relatable thread",
+        "source_ids": []
+      },
+      {
+        "id": "s36",
+        "section": "Constipation and fibre",
+        "narration": "Which brings us to the evening, and the burning feeling that makes lying down a gamble.",
+        "on_screen_text": "The evening burn",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "man hesitating beside bed at night"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s37",
+        "section": "Heartburn and burping",
+        "narration": "What helps heartburn and burping on tirzepatide?",
+        "on_screen_text": "Heartburn and burping",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "night room chapter card, moon"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s38",
+        "section": "Heartburn and burping",
+        "narration": "The Mounjaro label lists burping, reflux and bloating among the stomach effects reported more often than on placebo.",
+        "on_screen_text": "Burping, reflux, bloating",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Burping",
+            "Reflux",
+            "Bloating"
+          ],
+          "stock_query": "label page with three items"
+        },
+        "retention_device": "Recognition: name what they feel",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "Heartburn and burping",
+        "narration": "Indigestion is in the label's main table too: 5 to 8 percent across the doses, against 3 percent on placebo, in adults with type 2 diabetes.",
+        "on_screen_text": "Adults with type 2 diabetes",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "5–8%",
+          "stat_label": "Mounjaro indigestion, 5–15 mg, vs 3% placebo",
+          "stock_query": "label document with bar chart"
+        },
+        "retention_device": "New stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "Heartburn and burping",
+        "narration": "The NHS heartburn advice starts with ideas you'll recognise: eat smaller, more frequent meals, and avoid the foods and drinks that trigger your symptoms.",
+        "on_screen_text": "Smaller meals, fewer triggers",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "small plates spread through the day"
+        },
+        "retention_device": "Callback to the size step",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "Heartburn and burping",
+        "narration": "It also suggests skipping clothes that are tight around your waist. Small, but easy to try.",
+        "on_screen_text": "Loosen the waistband",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "man loosening belt, relieved"
+        },
+        "retention_device": "Unexpected practical tip",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "Heartburn and burping",
+        "narration": "And here's the habit I promised, the one that isn't a food. The NHS suggests not eating within 3 to 4 hours of going to bed.",
+        "on_screen_text": "No food 3–4 h before bed",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "3–4 hours",
+          "stat_label": "NHS heartburn advice: no eating before bed",
+          "stock_query": "clock and empty plate at night"
+        },
+        "retention_device": "Payoff of the main open loop",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Heartburn and burping",
+        "narration": "It also suggests raising the head end of your bed by 10 to 20 centimetres, so your chest and head sit above your waist.",
+        "on_screen_text": "Raise the bed 10–20 cm",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "bed head raised on blocks, night room"
+        },
+        "retention_device": "Second surprise tip",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Heartburn and burping",
+        "narration": "For Priya, that means dinner a little earlier, and the late-night snack moves to the afternoon. Not a diet rule. Just timing.",
+        "on_screen_text": "Not a rule. Just timing.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman eating early dinner, sunset window"
+        },
+        "retention_device": "Return to the relatable thread",
+        "source_ids": []
+      },
+      {
+        "id": "s45",
+        "section": "Heartburn and burping",
+        "narration": "For burping, two easy things to test: eat more slowly, and go easier on fizzy drinks.",
+        "on_screen_text": "Slower, less fizz",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "fizzy can swapped for water"
+        },
+        "retention_device": "Quick practical win",
+        "source_ids": []
+      },
+      {
+        "id": "s46",
+        "section": "Heartburn and burping",
+        "narration": "But eating less raises a different question. Are you still getting what your body needs?",
+        "on_screen_text": "Still getting enough?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "thoughtful man looking at small plate"
+        },
+        "retention_device": "Question to the viewer before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s47",
+        "section": "Eating less, eating well",
+        "narration": "When portions shrink, what deserves the first spot on your plate?",
+        "on_screen_text": "Eating less, eating well",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "teal gradient chapter card, egg icon"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s48",
+        "section": "Eating less, eating well",
+        "narration": "The joint advisory stresses getting enough protein and nutrient-dense foods while appetite is lower, partly to help protect muscle.",
+        "on_screen_text": "Protein first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "plate with protein and vegetables"
+        },
+        "retention_device": "Answer to the chapter question",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "Eating less, eating well",
+        "narration": "One simple approach is to start the meal with the protein: eggs, yoghurt, fish, beans, tofu or chicken. Then the rest of the plate, if there's room.",
+        "on_screen_text": "Start with the protein",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Eggs or yoghurt",
+            "Fish or chicken",
+            "Beans or tofu"
+          ],
+          "stock_query": "eggs, yoghurt and beans arranged"
+        },
+        "retention_device": "Concrete food examples",
+        "source_ids": []
+      },
+      {
+        "id": "s50",
+        "section": "Eating less, eating well",
+        "narration": "One important exception: if you have kidney disease, check with your prescriber or a dietitian before raising your protein. The right amount isn't the same for everyone.",
+        "on_screen_text": "Kidney disease? Ask first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "dietitian talking with patient, calm"
+        },
+        "retention_device": "Caveat folded into the payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s51",
+        "section": "Eating less, eating well",
+        "narration": "And if you have diabetes, eating much less matters in another way. The label says the risk of low blood sugar is higher when tirzepatide is used with insulin or a sulfonylurea.",
+        "on_screen_text": "Insulin or sulfonylurea?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glucose meter on kitchen table"
+        },
+        "retention_device": "Scoped safety fact",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "Eating less, eating well",
+        "narration": "If that's you, and nausea means you're eating far less than usual, tell your prescriber. Don't wait for it to sort itself out.",
+        "on_screen_text": "Tell your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman phoning clinic, reassured"
+        },
+        "retention_device": "Agency: a clear next step",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "Eating less, eating well",
+        "narration": "Now, one label warning almost nobody hears about involves your stomach and an operating room.",
+        "on_screen_text": "The warning few hear",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious mascot peeking at label"
+        },
+        "retention_device": "New open loop, paid off next scene",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "Eating less, eating well",
+        "narration": "The label warns about a risk of breathing stomach contents into the lungs during general anaesthesia or deep sedation. Before any planned surgery or procedure, tell your healthcare team you take tirzepatide.",
+        "on_screen_text": "Before a procedure, tell them",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient chatting with clinic nurse"
+        },
+        "retention_device": "Surprising safety payoff",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "When to call",
+        "narration": "So when is a rough stomach more than a rough week?",
+        "on_screen_text": "When to call",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "clinic chapter card, phone icon"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s56",
+        "section": "When to call",
+        "narration": "Call your prescriber if vomiting or diarrhoea won't settle, if you can't keep fluids down, or if you notice those signs of dehydration.",
+        "on_screen_text": "Won't settle? Call",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Vomiting or diarrhoea won't settle",
+            "Can't keep fluids down",
+            "Signs of dehydration"
+          ],
+          "stock_query": "calm woman calling prescriber"
+        },
+        "retention_device": "Clear checklist",
+        "source_ids": [
+          "S3",
+          "S5",
+          "S7"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "When to call",
+        "narration": "The label also carries a gallbladder warning. So new or unusual belly pain is worth a call too, not something to sit on.",
+        "on_screen_text": "New belly pain? Call",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "man holding phone, neutral expression"
+        },
+        "retention_device": "Short safety fact",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "When to call",
+        "narration": "Get medical help right away if you have severe stomach pain that won't go away, which may spread to your back, with or without vomiting. The same goes for signs of a serious allergic reaction, like swelling of your face, lips, tongue or throat, or trouble breathing.",
+        "on_screen_text": "Get help right away",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Severe stomach pain that won't go away",
+            "Pain spreading to your back",
+            "Swelling of face, lips, tongue, throat",
+            "Trouble breathing"
+          ],
+          "stock_query": "neutral mascot beside emergency card"
+        },
+        "retention_device": "Emergency card",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "When to call",
+        "narration": "For those, call 911 in the US or Canada, 999 in the UK, or triple zero in Australia.",
+        "on_screen_text": "911 · 999 · 000",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "US and Canada: 911",
+            "UK: 999",
+            "Australia: 000"
+          ],
+          "stock_query": "phone with emergency numbers"
+        },
+        "retention_device": "Help lines for all four markets",
+        "source_ids": []
+      },
+      {
+        "id": "s60",
+        "section": "When to call",
+        "narration": "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own.",
+        "on_screen_text": "Don't stop on your own",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm person reading pen carton"
+        },
+        "retention_device": "Scoped don't-stop line",
+        "source_ids": []
+      },
+      {
+        "id": "s61",
+        "section": "When to call",
+        "narration": "Not personal advice: talk to your doctor or prescriber about whether tirzepatide is right for you.",
+        "on_screen_text": "Ask your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient talking, friendly"
+        },
+        "retention_device": "Prescriber line",
+        "source_ids": []
+      },
+      {
+        "id": "s62",
+        "section": "Your checklist",
+        "narration": "So, what happened to Priya's dinners?",
+        "on_screen_text": "Back to Priya",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "teal gradient chapter card, checklist"
+        },
+        "retention_device": "Payoff of the character thread",
+        "source_ids": []
+      },
+      {
+        "id": "s63",
+        "section": "Your checklist",
+        "narration": "A few weeks on, in our hypothetical, the plate is smaller, dinner's earlier, and the queasy evenings come less often. That matches the label's pattern: mostly during dose escalation, decreasing over time.",
+        "on_screen_text": "Fewer queasy evenings",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Priya smiling at early dinner"
+        },
+        "retention_device": "Emotional payoff tied to the label",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "Your checklist",
+        "narration": "If you keep three things: smaller, slower meals that stop at comfortably full. Easier on greasy food, with fluids through the day. And a call to your prescriber when it won't settle.",
+        "on_screen_text": "Your 3-point checklist",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Smaller, slower, stop at full",
+            "Easier on grease, sip fluids",
+            "Won't settle? Call your prescriber"
+          ],
+          "stock_query": "Medi cheering a small win"
+        },
+        "retention_device": "Three-item takeaway checklist",
+        "source_ids": [
+          "S3",
+          "S6"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "Your checklist",
+        "narration": "And if this phase has left you frustrated or worried, that's understandable. It isn't a willpower test. It's a phase the label itself describes.",
+        "on_screen_text": "Not a willpower test",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hopeful woman by sunny window"
+        },
+        "retention_device": "Validation and empowerment",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "Your checklist",
+        "narration": "If this helped, subscribe for calm, evidence-first tirzepatide videos that answer the questions you actually search. There's a video I'd watch next, linked in the description.",
+        "on_screen_text": "Watch this next",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi waving toward next video"
+        },
+        "retention_device": "Single subscribe ask after the payoff, watch-next close (post notes: watch-next target = Side Effects video; publisher adds its verified URL, never a placeholder or channel home)",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "MOUNJARO (tirzepatide) injection: US Prescribing Information, DailyMed label (Sections 5 Warnings and Precautions, 6.1 Clinical Trials Experience, 12.2 Pharmacodynamics)",
+        "publisher": "US National Library of Medicine DailyMed / Eli Lilly and Company",
+        "year": "Revised 27 Aug 2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0"
+      },
+      {
+        "id": "S2",
+        "title": "ZEPBOUND (tirzepatide) injection: US Prescribing Information (Section 5 Warnings and Precautions, 12.2 Pharmacodynamics)",
+        "publisher": "Eli Lilly and Company / US FDA",
+        "year": "Revised 28 Aug 2026",
+        "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+      },
+      {
+        "id": "S3",
+        "title": "Dietary advice for people with type 2 diabetes using tirzepatide (Mounjaro)",
+        "publisher": "Cambridge University Hospitals NHS Foundation Trust (Nutrition and Dietetics)",
+        "year": "Approved 23 Apr 2026",
+        "url": "https://www.cuh.nhs.uk/patient-information/dietary-advice-for-people-with-type-2-diabetes-using-tirzepatide-mounjaro/"
+      },
+      {
+        "id": "S4",
+        "title": "Heartburn and acid reflux",
+        "publisher": "NHS",
+        "year": "Reviewed 20 Nov 2023",
+        "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/"
+      },
+      {
+        "id": "S5",
+        "title": "Dehydration",
+        "publisher": "NHS",
+        "year": "Reviewed 01 May 2026",
+        "url": "https://www.nhs.uk/conditions/dehydration/"
+      },
+      {
+        "id": "S6",
+        "title": "Nutritional priorities to support GLP-1 therapy for obesity: a joint Advisory from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society",
+        "publisher": "Obesity Pillars (joint advisory; also co-published elsewhere), PMC full text",
+        "year": "2025",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12264624/"
+      },
+      {
+        "id": "S7",
+        "title": "Tirzepatide (Mounjaro)",
+        "publisher": "NHS",
+        "year": "Reviewed 15 May 2026",
+        "url": "https://www.nhs.uk/medicines/tirzepatide/"
+      }
+    ],
+    "cta": "If this helped, subscribe for calm, evidence-first tirzepatide videos that answer the questions you actually search. There's a video I'd watch next, linked in the description."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "The script is accurate and safe. It passes with five small fixes. I checked every number against the live DailyMed Mounjaro label. These all match Table 1: nausea 4/12/15/18%, diarrhoea 9/12/13/17%, constipation 1/6/6/7% and indigestion 3/8/8/5%. Burping, reflux and bloating all appear in the label's list of extra stomach effects reported more often than on placebo. The script's population (adults with type 2 diabetes, placebo-controlled) is correct. Three label lines are quoted correctly: stomach effects mostly during dose escalation and decreasing over time, the slower stomach emptying being 'largest after the first dose and diminishes over time', and the kidney injury, aspiration, gallbladder and low blood sugar warnings. The low blood sugar line is correctly limited to people with diabetes on insulin or a sulfonylurea. The Cambridge NHS dietitians' leaflet (approved 23 Apr 2026) supports the advice on small frequent meals, avoiding large portions, eating slowly, plain dry foods, avoiding sweet, spicy, fatty or fried food, the constipation advice (fibre, beans and pulses, at least 2 litres of fluid, more activity) and the 'comfortably full' idea. The joint advisory's sentence matches word for word: 'Smaller, more frequent meals and avoiding fatty or high fiber foods during the first few days of treatment can help alleviate symptoms.' The NHS heartburn page (3 or 4 hours before bed, 10–20 cm, tight waistbands, smaller meals, trigger foods) and the NHS dehydration signs also match. Priya is clearly labelled as hypothetical, and nothing about her is shaming. The safety lines follow the house rules: the emergency triggers with 'right away', help lines for all four markets, the scoped don't-stop line and the prescriber line. The minor fixes: (1) a fibre caveat for people who have diarrhoea, (2) a caveat for people told to limit fluids on the 2-litre tip, (3) a source tag in s56, (4) softer on-screen wording in s27, and (5) correcting where S6 was co-published. One limit on my check: Lilly's Zepbound PDF (S2) opened but its text couldn't be read. Every line tagged S2 is also confirmed by S1.",
+    "issues": [
+      {
+        "location": "s34 (Constipation and fibre)",
+        "claim": "A practical middle path is to add fibre gradually, not all at once, and to pair it with fluids.",
+        "problem": "The video moves straight from the diarrhoea chapter into 'fibre switches sides' and 'add fibre'. A viewer who has diarrhoea could take this as a cue to eat more fibre. The leaflet's fibre advice is for constipation, and one reading of its diarrhoea section advises avoiding high-fibre foods. Two fetches of the page gave different results on this, so the fix below is our own caution, untagged, and doesn't quote the leaflet.",
+        "severity": "minor",
+        "fix": "Narration: \"A practical middle path is to add fibre gradually, not all at once, and to pair it with fluids. And if diarrhoea is your main problem right now, hold off on extra fibre until it settles.\" (No source tag.)"
+      },
+      {
+        "location": "s32 (Constipation and fibre)",
+        "claim": "at least 2 litres of fluid a day",
+        "problem": "The source is correct, but the tip has no caveat for people who have been told to limit fluids (for example, some people with heart failure or advanced kidney disease).",
+        "severity": "minor",
+        "fix": "Add to the end of the s32 narration: \"Unless you've been told to limit fluids. Then follow your care team's advice.\""
+      },
+      {
+        "location": "s56 (When to call)",
+        "claim": "Call your prescriber if vomiting or diarrhoea won't settle… — tagged S5, S7",
+        "problem": "The NHS tirzepatide page (S7) only says to speak to a pharmacist or doctor about side effects that bother you or don't go away. The more specific 'if your diarrhoea does not settle, speak to your doctor' comes from the Cambridge leaflet (S3), which isn't tagged.",
+        "severity": "minor",
+        "fix": "Change source_ids for s56 to [\"S3\", \"S5\", \"S7\"]."
+      },
+      {
+        "location": "s27 on_screen_text",
+        "claim": "Fluids protect your kidneys",
+        "problem": "This is stronger than the label. The label warns about kidney injury linked to fluid loss; it doesn't say fluids protect your kidneys. The on-screen text shouldn't be stronger than the narration.",
+        "severity": "minor",
+        "fix": "on_screen_text: \"Fluid loss can strain kidneys\""
+      },
+      {
+        "location": "sources S6",
+        "claim": "Obesity Pillars (co-published with Am J Clin Nutr), PMC full text",
+        "problem": "The publisher field is incomplete. The PMC record is the Obesity Pillars version, and the advisory was co-published in more than one journal.",
+        "severity": "minor",
+        "fix": "publisher: \"Obesity Pillars (joint advisory; also co-published elsewhere), PMC full text\". Keep the year as 2025."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "MOUNJARO (tirzepatide) injection: US Prescribing Information, DailyMed label (Sections 5, 6.1, 12.2)",
+        "publisher": "US National Library of Medicine DailyMed / Eli Lilly and Company",
+        "year": "Revised 27 Aug 2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0"
+      },
+      {
+        "id": "S2",
+        "title": "ZEPBOUND (tirzepatide) injection: US Prescribing Information (Sections 5, 12.2)",
+        "publisher": "Eli Lilly and Company / US FDA",
+        "year": "Revised 28 Aug 2026",
+        "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+      },
+      {
+        "id": "S3",
+        "title": "Dietary advice for people with type 2 diabetes using tirzepatide (Mounjaro)",
+        "publisher": "Cambridge University Hospitals NHS Foundation Trust (Nutrition and Dietetics)",
+        "year": "Approved 23 Apr 2026",
+        "url": "https://www.cuh.nhs.uk/patient-information/dietary-advice-for-people-with-type-2-diabetes-using-tirzepatide-mounjaro/"
+      },
+      {
+        "id": "S4",
+        "title": "Heartburn and acid reflux",
+        "publisher": "NHS",
+        "year": "Reviewed 20 Nov 2023",
+        "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/"
+      },
+      {
+        "id": "S5",
+        "title": "Dehydration",
+        "publisher": "NHS",
+        "year": "Reviewed 01 May 2026",
+        "url": "https://www.nhs.uk/conditions/dehydration/"
+      },
+      {
+        "id": "S6",
+        "title": "Nutritional priorities to support GLP-1 therapy for obesity: a joint Advisory from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society",
+        "publisher": "Obesity Pillars, PMC full text",
+        "year": "2025",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12264624/"
+      },
+      {
+        "id": "S7",
+        "title": "Tirzepatide (Mounjaro)",
+        "publisher": "NHS",
+        "year": "Reviewed 15 May 2026",
+        "url": "https://www.nhs.uk/medicines/tirzepatide/"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.023,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 6.2,
+      "weakShots": 34,
+      "layoutIssues": 1,
+      "frameIssues": [],
+      "notes": [
+        "Automated audit flags the 'Stomach' name tag clipped at the bottom frame edge at 1.1s and 3.96s (box extends past the safe area).",
+        "Backdrop is the banned rounded teal 'cabinet strip' used as a wall, combined with hanging grey/orange ornament circles and a starfield behind a body-beat character (the stomach) — three forbidden-backdrop rules stacked in one shot.",
+        "Same banned cabinet-strip + ornament-circle + starfield backdrop repeats from shot 1.",
+        "Frame is mostly empty gradient with only a small floating document and, later, a tiny mascot heart — classic 'document beat on plain gradient' near-empty composition.",
+        "Document plus a small stomach character leaves large dead gradient space on both sides; another sparse 'document beat'.",
+        "Headline frames (33.4s/36.0s) show only a small calendar icon on a near-empty teal gradient; artwork doesn't fill enough of the frame.",
+        "The 'Heartburn' beat uses a plain pink ring/blob with no face, neck or shoulders as the main visual — reads as a floating donut, not a character.",
+        "Priya's kitchen scene sits on the banned teal 'cabinet strip' backdrop with hanging ornament circles.",
+        "Priya's skin tone and hair color have changed from shot 9 (dark skin/black hair) to a lighter skin tone here — character continuity break.",
+        "Same banned cabinet-strip backdrop as shots 1, 2 and 9.",
+        "A small brick-wall icon floats oddly between the characters with no clear meaning.",
+        "Continues the mismatched (lighter-skinned) Priya model and the banned cabinet-strip backdrop.",
+        "Priya's skin tone and hair shift again to a third variant (medium/tan skin, brown hair) — now three different looks across shots 9, 10-11 and 12 for the same named character.",
+        "Headline/plate/stomach beat sits on a starfield backdrop behind a body-beat character (the stomach), which is a banned combination; composition is also sparse.",
+        "Automated audit flags this shot as sparse: the stomach character and sun cover only about 11% of the frame on a plain gradient."
+      ],
+      "layoutKinds": {
+        "offscreen": 15,
+        "tiny": 9,
+        "sparse": 5
+      },
+      "pacing": {
+        "window": 60,
+        "changes": 28,
+        "maxGap": 4.71,
+        "ok": true,
+        "detail": "28 visual changes in the first 60 s, longest static stretch 4.71 s (limit 5 s)"
+      },
+      "frameZero": {
+        "texts": [
+          "Nausea: which foods help?On tirzepatide (Mounjaro)"
+        ],
+        "heroes": 3,
+        "heroHeight": 0.45,
+        "ok": true,
+        "detail": "frame 0: text \"Nausea: which foods help?On tirzepatide (Mounjaro)\", 3 character(s), tallest 45% of the height"
+      }
+    },
+    "audio": {
+      "musicGain": 0.344,
+      "sfxGain": 0.55,
+      "finalWer": 0.012,
+      "maskingDelta": 0.012,
+      "lufs": -15.3,
+      "soundNotes": "Overall music sits right in the target window (-13.5 dB under voice, slightly under target in pauses), so a mild +1dB push keeps it felt without crowding the narrator; most SFX already land in the -14/-20 (speech) and -6/-12 (pause/transition) pockets. Fixed a handful of measurement outliers where small blips/bubbles/swooshes spiked to -5 to -10 dB during speech (i91, i98, i155, i200), and thinned two dense chip-reveal clusters (i166, i424) that stacked 5 cues in under 1.5s; added five bespoke, restrained accents (gurgle, pillow rustle, tension drone, muted heartbeat, closing chime) to add texture at key story/safety beats without adding clutter."
+    },
+    "blocking": [],
+    "beats": {
+      "verdict": "pass",
+      "summary": "beat sync PASS: plan 66/66 beats on time, audio shift 0.02 s, render 85% of beats cut on time",
+      "planOff": 0,
+      "audioShift": 0.02,
+      "renderHitRate": 0.85,
+      "flagged": []
+    },
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 5,
+          "legibility": 8,
+          "issues": [
+            "text repeats the title's words ('foods'/'help') — capped at 5 CTR"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 7,
+          "legibility": 7,
+          "issues": [
+            "headline splits awkwardly into 3 short lines (IT'S HOW / YOU / EAT?)",
+            "promises an answer about eating style rather than the foods the title promises, slight mismatch with title's focus"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": []
+        }
+      ],
+      "best_index": 2,
+      "reasoning": "Candidate #0 directly repeats the title's own words (\"Which Foods Help?\" mirrors \"What Foods May Help?\"), triggering the repetition cap (CTR ≤5) even though it's legible and has a decent character reaction. Candidate #1 (\"IT'S HOW YOU EAT?\") keeps a genuine curiosity gap and doesn't give away the answer, but the headline is broken into three short, choppy lines which hurts instant legibility at phone size, and it pivots away from the title's explicit promise of \"foods,\" risking a mild bait-and-switch feel. Candidate #2 (\"QUEASY AFTER MEALS?\") has the strongest single-line, large-type legibility, a clean high-contrast before/after visual with one clear focal transformation, doesn't give away the answer or repeat the title's wording, and stays squarely on-topic with the nausea/food-help premise — making it the strongest, most honest click driver with the best phone-size readability."
+    },
+    "packaging": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "location": "Description (final lines)",
+          "claim": "\"Not personal advice. Talk to your doctor or prescriber about whether it's right for you.\n</description>\n</invoke>\n\"",
+          "problem": "Leftover tool/XML markup sits after the disclaimer. It would publish as visible text, the field would hold non-viewer copy, and the description would no longer end on the required \"…whether it's right for you.\"",
+          "severity": "major",
+          "fix": "Delete everything after the disclaimer so the description ends exactly on: Not personal advice. Talk to your doctor or prescriber about whether it's right for you."
+        },
+        {
+          "location": "Description (Watch next line)",
+          "claim": "\"Watch next: tirzepatide's common side effects and how to manage them:\"",
+          "problem": "The line ends on a colon with no URL, which is effectively a placeholder. The narration promises a watch-next video \"linked in the description\", so publishing without the link breaks that promise. Per the linking list, this new broad video's target is the Side Effects video.",
+          "severity": "major",
+          "fix": "Replace with: Watch next, tirzepatide's common side effects and how to manage them: [verified URL of the InforMed Side Effects video]. Post note for the publisher: target = Side Effects long-form (playbook linking list). Never use the channel home page. If the URL can't be added at publish time, hold the description."
+        },
+        {
+          "location": "Description (chapters)",
+          "claim": "0:00 … 8:40 Your checklist",
+          "problem": "The timestamps can't be checked against the render from here. Chapters are allowed only if they are real timestamps taken from the final file.",
+          "severity": "minor",
+          "fix": "Confirm each chapter time against the final rendered file (re-timed after the final narration). If any time is off by more than about 1 s, correct it. If the times can't be confirmed, remove the chapter block and note it in the post notes."
+        }
+      ]
+    }
+  },
+  "hold_reason": "Packaging check REVISE: The title, thumbnail and pinned comment match the verified script, keep its hedges (\"may help\", \"mostly during dose escalation and decreased over time\") and carry the right safety lines. The description has two fixable problems. First, leftover markup (\"</description></invoke>\") follows the disclaimer, so the field doesn't end on \"…whether it's right for you.\" Second, the \"Watch next\" line ends on a colon with no link, even though the narration promises the video is \"linked in the description\". Line 1 is empty, the chapters run from 0:00 and include the checklist, and the length is about 1,200 characters, under the 1,250 limit. Both cited URLs load and their dates match. (alternative title: Tirzepatide (Mounjaro) Nausea: Foods That May Help)",
+  "release_tag": "content-2026-11-17",
+  "archive_url": "b2://informed-lab-media/content/2026-11-17/L1-tirzepatide-mounjaro-zepbound-and-food-e/",
+  "approved_by": "editor-in-chief (medium risk): The facts and media are clean. The fact-check passed, with every label number checked against DailyMed and the safety lines scoped correctly. The audio measured masking 0.012 and transcript error 0.012, the video runs 9.4 min, and QA found nothing blocking. The hold comes only from two description problems, which can be fixed after publishing. The publisher must delete the leftover \"</description></invoke>\" markup so the field ends on \"…whether it's right for you.\""
+}

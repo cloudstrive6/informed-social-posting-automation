@@ -1,0 +1,331 @@
+{
+  "id": "S1-looking-at-the-medicine-in-your-tirzepat",
+  "date": "2026-11-17",
+  "kind": "short",
+  "plan": {
+    "id": "S1",
+    "kind": "short",
+    "topic": "Looking at the medicine in your tirzepatide pen before the shot: what the Instructions for Use say it should look like (colour, clarity, particles), and what to do if it doesn't",
+    "angle": "Name the source: 'Zepbound single-dose pen IFU (US)'. If the Mounjaro pen IFU says the same thing at its own working URL, add it as 'Mounjaro pen: same check, see its own IFU'. By 6 s, paraphrase or quote the label: the medicine should be clear and colourless to slightly yellow, and don't use it if you see particles or discolouration. Add 'cloudy' and 'frozen' only if the IFU URL loads and prints them. Scope card: 'US single-dose pen. KwikPens and vials have their own leaflets; check the one in your box.' Untagged line: 'Not sure? Don't use it. Ask your pharmacist or call the number in your IFU.' Drop the injection-site stat card. Keep the closing as planned, with no subscribe or link line.",
+    "working_title": "Tirzepatide Pen: What Should the Medicine Look Like? #shorts",
+    "target_keyword": "mounjaro pen liquid cloudy",
+    "trend_stage": "evergreen",
+    "why": "Visible pen 'Is this normal?' Shorts are our proven 08:00 winners (pen blood 111, injection site 254 and 202). This moment hasn't been covered yet, and the evidence is low-risk and IFU-only. | fact-check: Low risk and useful. I checked the Zepbound label on uspl.lilly.com, which says the medicine is 'clear and colorless to slightly yellow' and 'Do not use ZEPBOUND if particulate matter or discoloration is seen.' 'Cloudy' and 'frozen' are allowed only if the pen IFU's own URL loads and prints them. Air bubbles go in only if that IFU mentions them. 'Tirzepatide pen' is ambiguous: Mounjaro and Zepbound have separate US single-dose pen IFUs, so the Short must name which IFU it is quoting. The optional injection-site stat card (6–8% vs about 2%) has nothing to do with what the medicine looks like, and a viewer could read it as cloudy medicine causing reactions. Drop it.",
+    "pillar": "life-on-glp1"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Tirzepatide Pen: 2 Things to Check Before Your Shot #shorts",
+    "description": "\nTwo things to check in your tirzepatide pen before every shot: color and particles, straight from the US label.\n#tirzepatide\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "social": {
+      "youtube_short_title": "Tirzepatide Pen: 2 Things to Check Before Your Shot #shorts",
+      "youtube_short_description": "\nTwo things to check in your tirzepatide pen before every shot: color and particles, straight from the US label.\n#tirzepatide\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+      "instagram_caption": "That split-second glance at your pen before a shot? Here's exactly what to look for.\n\nTwo things the US Zepbound label says to check every time:\n\n💧 Color: should be clear and colorless to slightly yellow. A faint yellow tint still fits the label.\n\n🔍 Particles: don't use it if you see particles or discoloration.\n\nYour pen or vial also comes with its own Instructions for Use, so check the one in your box.\n\nNot sure what you're seeing? Don't use it yet. Call your pharmacist or prescriber first.\n\nSave this so it's ready the next time you pick up your pen.\n\n#tirzepatide\n\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+      "tiktok_caption": "2 things to check in your tirzepatide pen before every shot 👀 color + particles, straight from the US label #tirzepatide\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+      "facebook_caption": "Quick glance at your pen before the shot: here are the 2 things to check.\n\nThe US Zepbound label says the medicine should be clear and colorless to slightly yellow. A faint yellow tint still fits the label. What's not okay is particles or discoloration — if you see either, don't use it. Your pen or vial also comes with its own Instructions for Use, so check the one in your box. If you're ever unsure, hold off and call your pharmacist or prescriber first.\n\n#tirzepatide\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+      "threads_caption": "Before your tirzepatide shot, check the liquid. The US Zepbound label says clear and colorless to slightly yellow. Particles or discoloration? Don't use it. Unsure? Ask your pharmacist first. Not personal advice. Talk to your doctor or prescriber about whether it's right for you."
+    },
+    "tags": [
+      "mounjaro pen liquid cloudy"
+    ]
+  },
+  "media": {
+    "video": "S1-looking-at-the-medicine-in-your-tirzepat.mp4",
+    "duration": 46.699
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "short",
+      "slotKey": "short",
+      "slot": "2026-11-17T20:55:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "fXSj-nHMHMk",
+      "url": "https://youtube.com/shorts/fXSj-nHMHMk",
+      "published_at": "2026-11-17T20:55:00.000Z"
+    },
+    {
+      "platform": "instagram",
+      "format": "reel",
+      "slotKey": "short",
+      "slot": "2026-11-17T20:55:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "platform": "tiktok",
+      "format": "short",
+      "slotKey": "short",
+      "slot": "2026-11-17T20:55:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "platform": "facebook",
+      "format": "reel",
+      "slotKey": "short",
+      "slot": "2026-11-17T20:55:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-11-17T03:10:16.643Z",
+  "experiments": {
+    "short-length": "tight",
+    "hook-archetype": "number-first"
+  },
+  "script": {
+    "working_title": "Tirzepatide Pen: What Should the Medicine Look Like? #shorts",
+    "target_keyword": "mounjaro pen liquid cloudy",
+    "hook_pattern": "number-first: '2 things to check in your tirzepatide pen's liquid before every shot.' (12 words; names the drug and the pen moment in sentence 1). The answer is spoken by about 6 s: the medicine should be clear and colorless to slightly yellow, and you don't use it if you see particles or discoloration. This is paraphrased from US Zepbound PI Section 2.4, without quotation marks. Mounjaro PI Section 2.2 has the same inspection wording and is now cited as src2 on s1, s2 and s4. The pen IFU URL wasn't loaded and checked, so 'cloudy', 'frozen' and air bubbles are left out. Fact-check fixes applied: added src2 (Mounjaro US PI, Section 2.2) and tagged it on s1, s2 and s4 with no narration change. The s6 help line is now 'Not sure? Don't use it yet. Ask your pharmacist or prescriber first.' with the card 'Not sure? Ask your pharmacist first'. Spoken word count: 112 (tight arm, 90–120).",
+    "scenes": [
+      {
+        "id": "s1",
+        "section": "Short",
+        "narration": "2 things to check in your tirzepatide pen's liquid before every shot.",
+        "on_screen_text": "2 things to check: tirzepatide pen",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "puzzled woman inspecting pen window"
+        },
+        "retention_device": "Number-first hook at t=0. The first frame is composed, with the character and hook text together. The open loop is which 2 things.",
+        "source_ids": [
+          "src1",
+          "src2"
+        ]
+      },
+      {
+        "id": "s2",
+        "section": "Short",
+        "narration": "First, the color. The US Zepbound label says the medicine should be clear and colorless to slightly yellow.",
+        "on_screen_text": "Zepbound label: clear, colorless to slightly yellow",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pen window showing clear liquid"
+        },
+        "retention_device": "Answer 1 lands by about 6 s, naming the source and the drug in the same sentence.",
+        "source_ids": [
+          "src1",
+          "src2"
+        ]
+      },
+      {
+        "id": "s3",
+        "section": "Short",
+        "narration": "A faint yellow tint? Easy to worry. Slightly yellow still fits the label.",
+        "on_screen_text": "Slightly yellow fits the label",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "relieved man looking at pen"
+        },
+        "retention_device": "Emotional beat in the first 10 s: the worry is named in 3 words and the label answers it.",
+        "source_ids": [
+          "src1"
+        ]
+      },
+      {
+        "id": "s4",
+        "section": "Short",
+        "narration": "Second, particles. Don't use it if you see particles or discoloration. But your leaflet matters too.",
+        "on_screen_text": "Particles or discoloration? Don't use",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Any change in the liquid is fine",
+          "fact": "Particles or discoloration: don't use it",
+          "stock_query": "calm mascot pointing at pen window"
+        },
+        "retention_device": "Payoff 2, then a re-hook at about 16 s ('your leaflet matters too') that leads into the scope point.",
+        "source_ids": [
+          "src1",
+          "src2"
+        ]
+      },
+      {
+        "id": "s5",
+        "section": "Short",
+        "narration": "That's from the US Zepbound label. Each pen and vial also comes with its own Instructions for Use, so check the one in your box.",
+        "on_screen_text": "US Zepbound label: check your box's leaflet",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "US Zepbound label",
+            "Pens: their own leaflet",
+            "Vials: their own leaflet",
+            "Check the one in your box"
+          ],
+          "stock_query": "woman reading leaflet beside box"
+        },
+        "retention_device": "The scope card pays off the re-hook and gives the viewer a practical step.",
+        "source_ids": []
+      },
+      {
+        "id": "s6",
+        "section": "Short",
+        "narration": "Not sure? Don't use it yet. Ask your pharmacist or prescriber first.",
+        "on_screen_text": "Not sure? Ask your pharmacist first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly pharmacist talking to customer"
+        },
+        "retention_device": "Ends on agency: a clear next step that brings relief, not fear.",
+        "source_ids": []
+      },
+      {
+        "id": "s7",
+        "section": "Short",
+        "narration": "Not personal advice, so ask your prescriber. Next time that pen's in your hand, run through these.",
+        "on_screen_text": "Ask your prescriber",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "calm woman holding pen smiling"
+        },
+        "retention_device": "The safety line, then a loop line that flows back into '2 things to check…' so a replay feels natural.",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "src1",
+        "title": "ZEPBOUND (tirzepatide) injection: US Prescribing Information, Section 2.4 (visual inspection: clear and colorless to slightly yellow; do not use if particulate matter or discoloration is seen)",
+        "publisher": "Eli Lilly and Company (US FDA-approved labeling)",
+        "year": "Revised 28 Aug 2026",
+        "url": "https://uspl.lilly.com/zepbound/zepbound.html#pi"
+      },
+      {
+        "id": "src2",
+        "title": "MOUNJARO (tirzepatide) injection: US Prescribing Information, Section 2.2 (visual inspection: clear and colorless to slightly yellow; do not use if particulate matter or discoloration is seen)",
+        "publisher": "Eli Lilly and Company (US FDA-approved labeling)",
+        "year": "Revised Aug 2026",
+        "url": "https://uspl.lilly.com/mounjaro/mounjaro.html#pi"
+      }
+    ],
+    "cta": "Spoken ending: 'Not personal advice, so ask your prescriber.' Then the loop line 'Next time that pen's in your hand, run through these.' It leads straight back into sentence 1. There is no subscribe line and no link line. Post note (Exp G): set this Short's related-video link to the Pen how-to long video."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "I checked every claim in the script against the US Zepbound label (revised 8/2026), and the script is accurate and safe. Section 2.4 says the medicine \"should appear clear and colorless to slightly yellow. Do not use ZEPBOUND if particulate matter or discoloration is seen.\" That backs s2, s3 and s4. The same section supports s5's point that each presentation (single-dose pen, vial, KwikPen) has its own Instructions for Use. The Mounjaro label (Section 2.2, revised 8/2026) has the same inspection wording, so calling it a \"tirzepatide pen\" in s1 is supported for the US. The hook pays off, there are no dosing or don't-stop problems, and the Short ending follows the 11-17 format. Two minor fixes: add the Mounjaro label as a source, since the target keyword names Mounjaro, and make the s6 help line rely only on what we've verified. Neither needs a full re-check.",
+    "issues": [
+      {
+        "location": "sources / s1, s2",
+        "claim": "Target keyword 'mounjaro pen liquid cloudy'; s1 says 'your tirzepatide pen' but the only source is the Zepbound label",
+        "problem": "The craft notes say that when the keyword names Mounjaro, we cite Mounjaro's own document. I opened the Mounjaro US label and Section 2.2 has the same inspection wording, but the script doesn't cite it. Without it, the generic 'tirzepatide pen' claim rests on the Zepbound label alone.",
+        "severity": "minor",
+        "fix": "Add src2: {\"id\":\"src2\",\"title\":\"MOUNJARO (tirzepatide) injection: US Prescribing Information, Section 2.2 (visual inspection: clear and colorless to slightly yellow; do not use if particulate matter or discoloration is seen)\",\"publisher\":\"Eli Lilly and Company (US FDA-approved labeling)\",\"year\":\"Revised Aug 2026\",\"url\":\"https://uspl.lilly.com/mounjaro/mounjaro.html#pi\"} and add src2 to the source_ids of s1, s2 and s4. Leave the narration unchanged."
+      },
+      {
+        "location": "s6",
+        "claim": "\"Ask your pharmacist or call the number in your Instructions for Use.\"",
+        "problem": "The writer couldn't load the Instructions for Use, so we haven't checked that it lists a phone number. The script also targets four markets, where the leaflets and numbers differ. 'Not sure? Don't use it' on its own could also sound like skipping a dose with no next step.",
+        "severity": "minor",
+        "fix": "Narration: \"Not sure? Don't use it yet. Ask your pharmacist or prescriber first.\" On-screen text: \"Not sure? Ask your pharmacist first\""
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "src1",
+        "title": "ZEPBOUND (tirzepatide) injection: US Prescribing Information, Section 2.4 (visual inspection: clear and colorless to slightly yellow; do not use if particulate matter or discoloration is seen)",
+        "publisher": "Eli Lilly and Company (US FDA-approved labeling)",
+        "year": "Revised Aug 2026",
+        "url": "https://uspl.lilly.com/zepbound/zepbound.html#pi"
+      },
+      {
+        "id": "src2",
+        "title": "MOUNJARO (tirzepatide) injection: US Prescribing Information, Section 2.2 (visual inspection: clear and colorless to slightly yellow; do not use if particulate matter or discoloration is seen)",
+        "publisher": "Eli Lilly and Company (US FDA-approved labeling)",
+        "year": "Revised Aug 2026",
+        "url": "https://uspl.lilly.com/mounjaro/mounjaro.html#pi"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 6.9,
+      "weakShots": 1,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "Automated audit confirms 'US label' tag overlaps the 'Zepbound label says' caption pill.",
+        "Mascot face is partly hidden behind the document art.",
+        "Automated audit flags an overlapping duplicate of the colorless caption text.",
+        "'US label' sub-tag sits right on top of the green circular check icon, partially overlapping it.",
+        "Automated audit confirms the 'Pen' sub-tag overlaps the 'EACH PEN AND VIAL' caption at t=29.2s.",
+        "Automated audit confirms the 'Vial' sub-tag overlaps the 'OWN INSTRUCTIONS FOR USE.' caption at t=31.4s.",
+        "Ghosted remnant of the 'Hold on a sec' speech bubble is still faintly visible behind/overlapping the new 'DON'T USE IT YET.' tag.",
+        "Speech bubble above the prescriber is completely empty — a blank bubble with no text or icon."
+      ],
+      "layoutKinds": {
+        "overlap": 5
+      },
+      "pacing": {
+        "window": 10,
+        "changes": 7,
+        "maxGap": 2.43,
+        "ok": true,
+        "detail": "7 visual changes in the first 10 s, longest static stretch 2.43 s (limit 2.5 s, at least 4 changes)"
+      },
+      "captionCoverage": {
+        "words": 115,
+        "captioned": 108,
+        "wordShare": 0.939,
+        "speechSeconds": 34.31,
+        "timeShare": 0.933
+      },
+      "frameZero": {
+        "texts": [
+          "2 things to checktirzepatide pen"
+        ],
+        "heroes": 2,
+        "heroHeight": 0.5,
+        "ok": true,
+        "detail": "frame 0: text \"2 things to checktirzepatide pen\", 2 character(s), tallest 50% of the height"
+      }
+    },
+    "audio": {
+      "musicGain": 0.741,
+      "sfxGain": 0.44,
+      "finalWer": 0,
+      "maskingDelta": 0,
+      "lufs": -15.4,
+      "soundNotes": "Music sits right at the top of the target window (-13.5 under voice, -11.3 in pauses), so trimmed overall to 0.85x to settle it mid-window and keep pauses from creeping above -12. Thinned stacked duplicate transition cues (whoosh/whip doubles), pulled down a hot pop+tick cluster at 6.3s and the final-shot pop+tick (both were -12 to -13 during speech), boosted the quiet pause-reveal pop+tick at 11.9s and nudged the 24s pause cue up slightly so reveals read clearly, and softened the 19.7s bubble cue that was poking above the voice."
+    },
+    "blocking": [],
+    "subtitles": {
+      "wer": 0,
+      "diffs": []
+    },
+    "beats": {
+      "verdict": "pass",
+      "summary": "beat sync PASS: plan 7/7 beats on time, audio shift 0.02 s, render 100% of beats cut on time",
+      "planOff": 0,
+      "audioShift": 0.02,
+      "renderHitRate": 1,
+      "flagged": []
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "youtube_short_description; tiktok_caption",
+          "claim": "\"straight from the US label\"",
+          "problem": "This doesn't say which label. The script says 'the US Zepbound label' and tells viewers to check the leaflet in their own box. Without the brand, it reads as if every tirzepatide product has one 'US label'.",
+          "severity": "minor",
+          "fix": "YouTube description line 2: \"Two things to check in your tirzepatide pen before every shot: color and particles, straight from the US Zepbound label. Your pen also comes with its own Instructions for Use, so check the one in your box.\" TikTok: \"2 things to check in your tirzepatide pen before every shot 👀 color + particles, straight from the US Zepbound label #tirzepatide\" (keep the disclaimer line after it unchanged)."
+        },
+        {
+          "location": "instagram_caption, line 1",
+          "claim": "\"Here's exactly what to look for.\"",
+          "problem": "'Exactly' promises more than the script gives. The script says to also check the Instructions for Use in your own box.",
+          "severity": "minor",
+          "fix": "\"That split-second glance at your pen before a shot? Here's what to look for.\""
+        }
+      ]
+    }
+  },
+  "release_tag": "content-2026-11-17",
+  "archive_url": "b2://informed-lab-media/content/2026-11-17/S1-looking-at-the-medicine-in-your-tirzepat/"
+}
