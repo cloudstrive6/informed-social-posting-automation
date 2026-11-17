@@ -10,7 +10,7 @@ import { readFileSync } from "node:fs";
 import { timeShots, TimedShot } from "../src/media/animated.js";
 import type { Timeline } from "../src/media/tts.js";
 import type { Shot } from "../src/media/vector/shots.js";
-import { anchorScenes, audioBeats, BeatRow, commonStems, planBeats, renderBeats, titleSpoken } from "../src/qa/beatSync.js";
+import { anchorScenes, audioBeats, BeatRow, commonStems, pictureOffset, planBeats, renderBeats, titleSpoken } from "../src/qa/beatSync.js";
 import { orderSnapshots } from "../src/qa/visualQa.js";
 
 const item = JSON.parse(readFileSync("data/queue/2026-11-06/L1-fatigue-on-tirzepatide-how-often-it-was.json", "utf8"));
@@ -177,6 +177,50 @@ audioCase("synthetic: 0.6 s step from beat 40 of 76 fails", true, i => (i >= 39 
   const rows2: BeatRow[] = tl.scenes.map((s, i) => ({ id: s.id, said: s.start + 0.2, heard: s.start + 0.2 + (i % 4 === 0 ? 0.8 : 0), status: "ok" }));
   const rb2 = renderBeats(rows2, rows2.map(r => ({ t: r.said as number, s: 0.05 })));
   expect("render: a cut at the timeline time counts when Whisper hears the beat 0.8 s later", rb2.hitRate !== null && rb2.hitRate > 0.95, `hit rate ${rb2.hitRate}`);
+}
+// render, long-form pacing engine (2026-11-17): the engine's own camera punches, pushes, hops and dives are not cuts.
+// Ignored where the picture actually sits, an in-sync video still passes and a picture 0.5 or 1.0 s late fails
+// (without the mask the engine's moves let the late ones pass)
+{
+  // the cut lands 0.1 s before its cue word (timeShots), as in the pipeline
+  const rows = (): BeatRow[] => tl.scenes.map(s => ({ id: s.id, said: s.start + 0.1, heard: s.start + 0.1, status: "ok" }));
+  const cuts = tl.scenes.slice(1).map(s => s.start);
+  // engine: a quick punch 1.0 s before every cut and 1.2 s after it, a slow push mid-scene, a dive into every 5th cut
+  const moves: [number, number][] = [], impulses: number[] = [];
+  cuts.forEach((c, i) => {
+    moves.push([c - 1.0, c - 0.82], [c + 1.2, c + 1.38], [c + 2.0, c + 2.6]);
+    impulses.push(c - 1.0, c + 1.2, c);
+    if (i % 5 === 0) moves.push([c - 0.7, c - 0.05]);
+  });
+  const engine = { moves, impulses, cuts };
+  // a 30 fps score track: idle noise, a big change at each cut, medium ones through every engine move
+  // late: a fixed offset; drift: the picture slides from 0 to `drift` s late over the video
+  const track = (late: number, drift = 0) => {
+    const out: { t: number; s: number }[] = [];
+    for (let t = 0; t < tl.duration; t += 1 / 30) {
+      const tt = t - late - (drift * t) / tl.duration;
+      const s = cuts.some(c => Math.abs(tt - c) < 0.02) ? 0.3 : moves.some(([a, b]) => tt >= a && tt <= b) ? 0.04 : 0.002 + ((Math.round(t * 30) * 7919) % 13) / 10000;
+      out.push({ t: +t.toFixed(3), s });
+    }
+    return out;
+  };
+  const inSync = renderBeats(rows(), track(0), engine);
+  expect("engine moves: an in-sync long video passes with the moves ignored", !inSync.failures.length && (inSync.hitRate ?? 0) > 0.9 && inSync.pictureOffset === 0, `hit ${inSync.hitRate}, offset ${inSync.pictureOffset}`);
+  for (const late of [0.5, 1.0]) {
+    const plain = renderBeats(rows(), track(late));
+    const masked = renderBeats(rows(), track(late), engine);
+    expect(`engine moves: a picture ${late} s late fails (unmasked it scored ${plain.hitRate})`, masked.failures.length > 0 && Math.abs((masked.pictureOffset ?? 0) - late) < 0.07, `hit ${masked.hitRate}, offset ${masked.pictureOffset}`);
+  }
+  expect("engine offset stays 0 on noise alone", pictureOffset(track(0).map(x => ({ ...x, s: x.s >= 0.3 ? 0.002 : x.s })), impulses) === 0, "noise shifted the picture");
+  // second review (2026-11-17): 0.25 s late passes by design (inside the 0.3 s lag); 2.0 s late and a 0 to 1 s drift
+  // fail on the engine impulse check (the 2 s case used to lock onto a wrong -0.53 s offset and pass)
+  const q = renderBeats(rows(), track(0.25), engine);
+  expect("engine impulses: 0.25 s late passes (inside the lag window)", !q.failures.length && (q.impulseShare ?? 0) >= 0.9, `hit ${q.hitRate}, impulses ${q.impulseShare}, ${q.failures[0] ?? ""}`);
+  for (const [name, late, drift] of [["2.0 s late", 2.0, 0], ["a 0 to 1 s drift", 0, 1.0], ["a 0 to 0.6 s drift", 0, 0.6]] as const) {
+    const g = renderBeats(rows(), track(late, drift), engine);
+    expect(`engine impulses: ${name} fails`, g.failures.some(f => /camera punches and cuts/.test(f)), `hit ${g.hitRate}, impulses ${g.impulseShare}, offset ${g.pictureOffset}`);
+  }
+  expect("engine impulses: in sync, every impulse on its frame", inSync.impulseShare === 1, `share ${inSync.impulseShare}`);
 }
 // title support: the 2026-11-09 L1 titles against their own narration
 {

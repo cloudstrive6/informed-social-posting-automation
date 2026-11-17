@@ -11,7 +11,7 @@ Reference studied: Kurzgesagt, "This Woman Cured Her Cancer with an Insane Metho
 - **Nothing is ever static.** Idle motion on every element: cells breathe, particles drift, characters bob, the camera slowly pushes in or pans.
 - **Macro ↔ micro storytelling**: a human story (simple cute characters with glasses/scarf, IV stand, chair) cuts to *inside the body* via an **iris zoom** into a circle.
 - **Labels, not paragraphs**: short pill labels with an icon ("Natural Killer Cell"), round icon badges with 1–2 word captions ("Alopecia", "Mucositis"), stage chips ("Stage 0 … Stage IV"), a few UI-style cards. Big numbers are rare and dramatic.
-- **Shot length 3–7 s** even while one sentence continues; a cut or camera move lands on key words.
+- **Shot length 2–3.5 s in long videos** (owner, 2026-11-17, after a study of The Infographics Show: a visible change about every 2 s, motion in about half of all frames, every number animated; was 3–7 s), even while one sentence continues; a cut or camera move lands on key words. The setting holds 4–8 s while the shots inside it change. Shorts keep their own rhythm: a change every 2.5 s or less in the first 10 s, then 3–7 s shots.
 - A **recurring mascot** (their bird) appears in human-scale scenes for warmth and comic relief.
 - **Personified characters** (MapWarden): objects get googly eyes and big readable expressions, and talk to each other in short comic speech bubbles that add a joke or an emotion the narration doesn't say.
 - **Doodle explainers** (whiteboard style): hand-drawn wobbly lines with marker outlines on paper; the line "boils" slightly so even still drawings feel alive.

@@ -24,7 +24,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { basename, dirname, join } from "node:path";
 import { writeJson } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
-import type { TimedShot } from "../media/animated.js";
+import type { EngineMoves, TimedShot } from "../media/animated.js";
 import { run } from "../media/exec.js";
 import type { Timeline } from "../media/tts.js";
 import { HeardWord, normWords, sameWord } from "./audioQa.js";
@@ -62,7 +62,15 @@ export interface BeatReport {
   plan?: { checked: number; off: number; worst: number | null; failures: string[] };
   /** off and outliers: single beats past Whisper's jitter, information only (they do not fail the video) */
   audio?: { anchored: number; medianShift: number | null; off: number; drift?: number | null; worstRun?: number | null; outliers?: string[]; failures: string[] };
-  render?: { checked: number; hitRate: number | null; medianOffset: number | null; failures: string[] };
+  render?: {
+    checked: number; hitRate: number | null; medianOffset: number | null; failures: string[];
+    /** long-form: an impulse share between IMPULSE.BLOCK and SHARE_MIN (logged, does not fail the video) */
+    warnings?: string[];
+    /** long-form: where the picture sits against the plan (s, from the engine's own moves), and frames ignored */
+    pictureOffset?: number; maskedFrames?: number;
+    /** long-form: share of the engine's impulses visible on their plan frame, and how many there were */
+    impulseShare?: number; impulses?: number;
+  };
   beats: BeatRow[];
 }
 
@@ -372,7 +380,78 @@ export async function changeScores(video: string, workDir: string): Promise<{ t:
   return out;
 }
 
-export function renderBeats(rows: BeatRow[], scores: { t: number; s: number }[]) {
+/** The engine's moves for the render check: what it moves itself, its sure impulses, and every cut (plan times). */
+export interface EngineTrack extends EngineMoves { cuts: number[] }
+
+/**
+ * Engine impulse check (long-form, 2026-11-17 review). The engine's sure impulses (quick camera punches, and every cut
+ * but a fade) have exact plan times. Share with a visible change in [-0.1, +0.35] s of their plan time, measured on
+ * three 120 s renders (70 to 77 impulses each): in sync 1.00, 0.25 s late 0.96 (passes by design, inside the beat
+ * band's 0.3 s lag), 0.5 s late 0.01 to 0.03, 1.0 s late 0.23 to 0.26, 2.0 s late 0.31 to 0.51, a 0 to 1 s drift
+ * 0.34 to 0.39. SHARE_MIN 0.75 sits between them with about 0.2 of margin on each side.
+ * First weeks (independent review, 2026-11-17): the in-sync sample is only two narrations and a false drop costs about
+ * 2.3 h, so a share under BLOCK (0.6) fails the video, and a share from 0.6 to SHARE_MIN fails only when a second
+ * signal agrees (pictureOffset found the picture shifted; in sync it stays 0), else it warns. Every late or drifting
+ * test copy scored 0.51 or less or found a shift, so all of them still fail. Raise BLOCK to SHARE_MIN once live in-sync
+ * videos have shown their shares (qa.beatSync.render.impulseShare in each report).
+ */
+export const IMPULSE = { MIN: 20, FROM: -0.1, TO: 0.35, SHARE_MIN: 0.75, BLOCK: 0.6, OFFSET_SHARE: 0.8, SEARCH: 3 };
+
+const strongTimes = (scores: { t: number; s: number }[]) => scores.filter(x => x.s >= CHANGE).map(x => x.t).sort((a, b) => a - b);
+const anyIn = (strong: number[], a: number, b: number) => {
+  let lo = 0, hi = strong.length;
+  while (lo < hi) { const m = (lo + hi) >> 1; if (strong[m] < a) lo = m + 1; else hi = m; }
+  return lo < strong.length && strong[lo] <= b;
+};
+
+/** Share of the engine's impulses with a visible change in [p + d + FROM, p + d + TO] (d: picture offset tried). */
+export function impulseShare(scores: { t: number; s: number }[], impulses: number[], d = 0, strong = strongTimes(scores)): number {
+  if (!impulses.length) return 1;
+  return impulses.reduce((n, p) => n + (anyIn(strong, p + d + IMPULSE.FROM, p + d + IMPULSE.TO) ? 1 : 0), 0) / impulses.length;
+}
+
+/**
+ * Where the rendered picture sits against the plan (s, positive = late), from the engine's sure impulses: the offset
+ * at which most of them line up with a visible change, searched over +-3 s in 1/30 s steps on a tight window. A
+ * non-zero offset is used only when its own impulse share (wide window) is IMPULSE.OFFSET_SHARE or more and it
+ * clearly beats 0; otherwise 0 (the review found a 2 s late picture locking onto -0.53 s on the cut rhythm).
+ */
+export function pictureOffset(scores: { t: number; s: number }[], impulses: number[]): number {
+  if (impulses.length < 6) return 0;
+  const strong = strongTimes(scores);
+  const hits = (d: number) => impulses.reduce((n, p) => n + (anyIn(strong, p + d - 0.05, p + d + 0.1) ? 1 : 0), 0);
+  const base = hits(0), K = Math.round(IMPULSE.SEARCH * 30);
+  const all = Array.from({ length: 2 * K + 1 }, (_, k) => ({ d: (k - K) / 30, h: hits((k - K) / 30) }));
+  const bestHits = Math.max(...all.map(x => x.h));
+  if (!(bestHits >= base * 1.25 && bestHits - base >= 4)) return 0;
+  // the matching window is 0.15 s wide, so the best offsets form a plateau: take the middle of the plateau nearest 0
+  const top = all.filter(x => x.h === bestHits).sort((a, b) => Math.abs(a.d) - Math.abs(b.d));
+  const run = top.filter(x => Math.abs(x.d - top[0].d) <= 0.2 && Math.sign(x.d) === Math.sign(top[0].d)).map(x => x.d).sort((a, b) => a - b);
+  const d = +((run[0] + run[run.length - 1]) / 2).toFixed(3);
+  return impulseShare(scores, impulses, d, strong) >= IMPULSE.OFFSET_SHARE ? d : 0;
+}
+
+/**
+ * Long-form videos move on their own (2026-11-17 pacing engine: camera punches and pushes, hero hops and turns,
+ * dives into the next shot). Those are not cuts: counted as "a change when the beat is said", they let a video
+ * whose picture runs 0.5 s late still pass (review model: hit rate 0.71 at +0.5 s, pass level 0.5). So frames
+ * inside an engine move (+-0.12 s), placed where the picture actually sits (pictureOffset), are ignored; frames
+ * within 0.1 s of a cut never are.
+ */
+export function maskEngineMoves(scores: { t: number; s: number }[], engine: EngineTrack): { scores: { t: number; s: number }[]; offset: number; masked: number } {
+  const offset = pictureOffset(scores, engine.impulses);
+  const cuts = engine.cuts.map(c => c + offset);
+  const keep = scores.filter(x => cuts.some(c => x.t >= c - 0.05 && x.t <= c + 0.1) || !engine.moves.some(([a, b]) => x.t >= a + offset - 0.12 && x.t <= b + offset + 0.12));
+  return { scores: keep, offset, masked: scores.length - keep.length };
+}
+
+export function renderBeats(rows: BeatRow[], allScores: { t: number; s: number }[], engine?: EngineTrack) {
+  // long-form: the engine's own impulses must land on their plan times (catches late and drifting pictures that the
+  // per-beat band can miss: 2 s late, or a slow drift)
+  const impulses = engine?.impulses.length ?? 0;
+  const share0 = engine && impulses >= IMPULSE.MIN ? +impulseShare(allScores, engine.impulses).toFixed(2) : undefined;
+  const masked = engine?.moves.length ? maskEngineMoves(allScores, engine) : undefined;
+  const scores = masked?.scores ?? allScores;
   const at = (r: BeatRow) => r.heard ?? r.said;
   const offsets: number[] = [];
   let checked = 0, hits = 0;
@@ -398,7 +477,12 @@ export function renderBeats(rows: BeatRow[], scores: { t: number; s: number }[])
   const hitRate = checked ? +(hits / checked).toFixed(2) : null;
   const failures: string[] = [];
   if (hitRate !== null && checked >= 5 && hitRate < MIN_RENDER_HIT) failures.push(`only ${Math.round(hitRate * 100)}% of beats get a visual change when they're said (published in-sync videos: 84 to 94%); the picture has drifted from the narration`);
-  return { checked, hitRate, medianOffset: median(offsets), failures };
+  const warnings: string[] = [];
+  if (share0 !== undefined && share0 < IMPULSE.SHARE_MIN) (share0 < IMPULSE.BLOCK || (masked?.offset ?? 0) !== 0 ? failures : warnings).push(`only ${Math.round(share0 * 100)}% of the engine's ${impulses} camera punches and cuts show on their planned frame (in-sync renders: about 96%); the picture runs late or drifts from the plan`);
+  return {
+    checked, hitRate, medianOffset: median(offsets), failures, ...(warnings.length ? { warnings } : {}),
+    ...(masked ? { pictureOffset: masked.offset, maskedFrames: masked.masked } : {}), ...(share0 !== undefined ? { impulseShare: share0, impulses } : {}),
+  };
 }
 
 // ------------------------------------------------------------------ the gate
@@ -411,6 +495,8 @@ export interface BeatGateInput {
   heard?: HeardWord[];
   /** Whisper words of the clean narration (from the narration check) */
   clean?: HeardWord[];
+  /** long-form: the engine's own moves (composeAnimated pacing.engine), ignored by the render check */
+  engine?: EngineMoves;
 }
 
 export async function beatSyncGate(v: BeatGateInput): Promise<BeatReport> {
@@ -434,7 +520,9 @@ export async function beatSyncGate(v: BeatGateInput): Promise<BeatReport> {
   }
   try {
     const scores = await changeScores(v.video, v.workDir);
-    report.render = renderBeats(rows, scores);
+    const engine = v.engine?.moves.length ? { ...v.engine, cuts: (v.shots ?? []).slice(1).map(s => s.start) } : undefined;
+    report.render = renderBeats(rows, scores, engine);
+    for (const w of report.render.warnings ?? []) log.warn(`beat sync (warning only): ${w}`);
     if (!v.shots) for (const r of rows) if (r.change != null && (r.heard ?? r.said) != null && r.status === "ok") r.offset = r2(r.change - (r.heard ?? r.said)!);
   } catch (e) {
     log.warn(`beat sync: render check skipped (${(e as Error).message.slice(0, 200)})`);

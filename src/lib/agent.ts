@@ -24,6 +24,9 @@ export interface AgentRun<T> {
   model?: string;
   maxTurns?: number;
   effort?: "low" | "medium" | "high" | "xhigh" | "max";
+  /** An extra prompt file in agents/ (name without .md) added after the role file, for rules that apply to one
+   *  format only (motion-designer-long: the long-video pace, kept out of Shorts, 2026-11-17). */
+  addendum?: string;
 }
 
 /**
@@ -167,7 +170,9 @@ async function switchToApi(agent: string, reason: string) {
 }
 
 export async function runAgent<T>(run: AgentRun<T>): Promise<T> {
-  const system = `${readText(join(ROOT, "agents", `${run.agent}.md`))}\n\n---\n${sharedContext(run.agent)}`;
+  const role = readText(join(ROOT, "agents", `${run.agent}.md`));
+  const extra = run.addendum ? `\n\n${readText(join(ROOT, "agents", `${run.addendum}.md`))}` : "";
+  const system = `${role}${extra}\n\n---\n${sharedContext(run.agent)}`;
   const prompt = typeof run.input === "string" ? run.input : "Task input (JSON):\n```json\n" + JSON.stringify(run.input, null, 2) + "\n```";
   const tools = [...(run.web ? ["WebSearch", "WebFetch"] : []), ...(run.tools ?? [])];
 

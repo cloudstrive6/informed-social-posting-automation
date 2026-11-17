@@ -6,9 +6,16 @@ export const ENTERS = ["pop", "fade", "slide-left", "slide-right", "rise", "grow
 export const BACKGROUNDS = ["gradient", "cells", "bokeh", "stars", "clinic", "bloodstream", "tissue", "room", "kitchen", "outdoors", "body"] as const;
 /** Expressions for personified elements (MapWarden-style characters with faces). */
 export const FACES = ["none", "happy", "worried", "shocked", "sad", "angry", "sick", "proud", "sleepy"] as const;
-export const CAMERAS = ["push-in", "pull-out", "pan-left", "pan-right", "drift", "static"] as const;
-export const TRANSITIONS = ["cut", "iris", "zoom", "whip", "fade", "slide-up"] as const;
-export const TITLE_STYLES = ["none", "label", "headline", "chips", "stat"] as const;
+/** `dive`: in the shot's last ~0.7 s the camera zooms hard into the main character, so the cut reads as diving into it. */
+export const CAMERAS = ["push-in", "pull-out", "pan-left", "pan-right", "drift", "static", "dive"] as const;
+/**
+ * Shot transitions (all 0.6 s or under). `lens`: a circle opening from the incoming hero's position; `wave`: a soft
+ * wavy edge sweeping across; `corner`: a wipe from a corner; `flash`: a white flash cut (never on a sombre beat:
+ * the engine swaps it for `fade` there).
+ */
+export const TRANSITIONS = ["cut", "iris", "zoom", "whip", "fade", "slide-up", "lens", "wave", "corner", "flash"] as const;
+/** `typed`: a headline typed out character by character with a caret (a section opener). `stat` numbers count up. */
+export const TITLE_STYLES = ["none", "label", "headline", "chips", "stat", "typed"] as const;
 
 export interface ShotElement {
   type: string; variant: string; tone: "primary" | "secondary" | "accent";

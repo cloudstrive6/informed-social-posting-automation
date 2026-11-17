@@ -1,0 +1,22 @@
+## Horizontal long videos only (owner, 2026-11-17)
+
+This part is added to the Motion Designer prompt only for horizontal 16:9 long videos. Where it differs from the rules above, it wins. Shorts never see it and keep their own rhythm.
+
+The owner wants the pace of the big infographic explainer channels: **a visible change about every 2 seconds**, something always moving, every number that matters animated.
+
+### Pace
+- **A new shot every 2–3.5 s of narration** (this replaces "1–3 shots" and "a new shot roughly every 3–7 s" above). A scene of 4–6 s gets 2 shots, 6–9 s gets 3, and longer scenes one more shot for every further 2–3.5 s (a 16 s scene gets about 5–6). Scene 1 still opens on its first shot.
+- **Keep the setting, change the shot.** The `background` and `mood` usually hold for 4–8 s (2–3 shots), while each new shot changes the framing or the cast: a new character or element enters, the hero swaps (the organ, then the cell inside it), a `stat` lands, the camera reframes (`pan-left` after `push-in`, a `pull-out` reveal). Then move to a new setting. Every shot must add **one new thing the eye can see**; never two shots in a row that look the same.
+- **Plan movement inside the shot.** Stagger entrances with `enter_at` so a second element arrives on the word that names it (0.4–0.7 of the way through the shot), and give every element a `motion`. A still frame for more than about 1 s reads as dead air.
+- **First 60 s: at most about 3 s per shot, and at least 12 visible changes in the first 30 s** (cuts, new characters entering, a stat landing, a reframe). This replaces "at most about 5 s per shot". Open mid-story with the hook's hero, add props on the words that name them, and reach at least 4 different settings by 30 s. The engine fills any longer static stretch with a camera move, but planned cuts and entrances read better.
+
+### Camera and transitions
+- Extra camera `dive`: the last ~0.7 s zooms hard into the hero, so the next shot reads as going inside it (organ → cells, document → its key line). Use it at most once every ~30 s, follow it with an inside-the-body or close-up shot, and it can replace an `iris` or `zoom` transition when diving into the body. Vary the camera from shot to shot.
+- Extra transitions, the topic-change wipes (the engine adds the sound): `lens` (a circle opens from the new hero), `wave` (a soft wave sweeps across), `corner` (a wipe from a corner), `flash` (a quick white flash for a surprising fact). Use one when the story moves to a new idea or setting, at most one every ~12 s, and mix them so at least 3 different transitions appear every few minutes. `cut` carries most shots in fast stretches.
+- **Never `flash`, `whip` or a comic wipe on serious beats** (side effects, risks, illness, death): use `fade` or `cut` with a slow `push-in` there.
+
+### Text
+- **Headlines are rare, numbers are not** (this replaces "at most one `headline`/`stat` every ~15 seconds" above). At most one `headline`/`typed` title every ~15 seconds; the animation and narration carry the story. Never put text on top of the hero.
+- `typed` title: like a headline, but typed out letter by letter, in the same top band (keep artwork at y 60–85 on `typed` and `chips` shots too). Use it to open a new section or chapter ("Part 2: the side effects", "So does it work?"), at most one every ~60 s.
+- **Every number that carries the point gets a `stat`** on the shot where it is spoken (one stat per shot): results, risks, rates, percentages, measurements and counts the sentence is about ("12.8–14.4%", "1 in 3", "72 weeks"). Not dates or calendar years ("June 2026"), durations that only set the scene ("about two years after the final period"), list counts ("two trials", "three tips"), ages in passing, condition names ("type 2"): show those with art or a `label`. Dose amounts are never a stat or a label: leave them to the narration (see Medical safety). A duration that is the result itself ("lost 13% over 72 weeks") can be a stat. A number word stays a word: "doubled" or "half" is never turned into "2×" or "50%".
+- The engine counts the number up and draws a bar under it, so the number must be copied **exactly as the narration or the scene's `on_screen_text` gives it** ("25–29%", "1 in 3", "72 weeks", "−3.1%"). Never round it, convert it, combine two figures or add a number the narration does not say. Pair it with art that shows it: a `chart`, which grows bar by bar, a swarm with the right proportion, or an `arrow`.

@@ -18,6 +18,7 @@ export async function planShots(scenes: Scene[], tl: Timeline, vertical: boolean
 
   const run = (batch: Scene[], bi: number) => runAgent<ShotPlan>({
     agent: "motion-designer", model: vertical ? config.models.motionShort : config.models.motionLong, schema: shotPlanSchema, effort: "medium",
+    addendum: vertical ? undefined : "motion-designer-long",
     input: {
       format: vertical ? "vertical 9:16 (1080x1920)" : "horizontal 16:9 (1920x1080)",
       topic,
@@ -53,10 +54,13 @@ export async function reviseShots(all: Shot[], scenes: Scene[], sceneIds: Set<st
   try {
     const plan = await runAgent<ShotPlan>({
       agent: "motion-designer", model: vertical ? config.models.motionShort : config.models.motionLong, schema: shotPlanSchema, effort: "medium",
+      addendum: vertical ? undefined : "motion-designer-long",
       input: {
         format: vertical ? "vertical 9:16 (1080x1920)" : "horizontal 16:9 (1920x1080)", topic,
         task: "Revise the shots for ONLY these scenes, applying the critic feedback.",
-        scenes: target.map(s => ({ id: s.id, narration: s.narration, seconds: +(dur.get(s.id) ?? 5).toFixed(1) })),
+        // starts_at and on_screen_text too: the opening rules depend on where a scene sits, and stat numbers are copied
+        // from the on-screen text (2026-11-17 review)
+        scenes: target.map(s => ({ id: s.id, narration: s.narration, seconds: +(dur.get(s.id) ?? 5).toFixed(1), starts_at: +(tl.scenes.find(t => t.id === s.id)?.start ?? 0).toFixed(1), on_screen_text: s.on_screen_text })),
         current_shots: all.filter(s => sceneIds.has(s.scene_id)),
         critic_feedback: feedback,
       },

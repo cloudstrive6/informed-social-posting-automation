@@ -7,8 +7,8 @@ import { checkMix, checkSubtitles, HeardWord, measureLevels } from "../qa/audioQ
 import { beatBlocking, beatSyncGate } from "../qa/beatSync.js";
 import { autoLevel, designSound, speechIntervals } from "../qa/soundDesign.js";
 import { ffmpeg } from "./exec.js";
-import { critiqueShots, FrameZero, frameZeroAudit, keyTimes, layoutAudit, LayoutIssue, pacingReport, PacingReport, ShotReview, sparseShots, technicalFrameChecks } from "../qa/visualQa.js";
-import { CaptionCoverage, composeAnimated, TimedShot, timeShots } from "./animated.js";
+import { critiqueShots, FrameZero, frameZeroAudit, keyTimes, layoutAudit, LayoutIssue, measurePace, pacingReport, PacingReport, pacingRevisions, PlanPace, planPacing, RenderPace, ShotReview, sparseShots, technicalFrameChecks } from "../qa/visualQa.js";
+import { CaptionCoverage, composeAnimated, EngineMoves, TimedShot, timeShots, verticalShot } from "./animated.js";
 import { planShots, reviseShots } from "./motionPlan.js";
 import { mixStems, musicMood, musicStem, renderComposition, sfxStem } from "./render.js";
 import type { Timeline } from "./tts.js";
@@ -36,6 +36,13 @@ export interface VideoQa {
     frameZero?: FrameZero; pacing?: PacingReport;
     /** burned-in captions: share of spoken words ever captioned and of speech time with a caption on screen */
     captionCoverage?: CaptionCoverage;
+    /**
+     * long-form plan pacing over the whole video (2026-11-17, report and revise, never blocks): `planPaceDraft` is the
+     * Motion Designer's first plan, `planPace` the plan that was rendered; `pacingRevised` = shots sent back for it
+     */
+    planPace?: PlanPace; planPaceDraft?: PlanPace; pacingRevised?: number;
+    /** post-render pace, the style-study method (10 fps scene scores): report-only, for the weekly check */
+    renderPace?: RenderPace;
   };
   audio: { musicGain: number; sfxGain: number; finalWer: number; maskingDelta: number; lufs: number; soundNotes: string } | null;
   subtitles?: { wer: number; diffs: string[] };
@@ -55,11 +62,13 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
   let shots: Shot[] = v.presetShots ?? await planShots(scenes, tl, v.vertical, v.topic);
   let timed: TimedShot[] = [];
   let project = "", cues: Awaited<ReturnType<typeof composeAnimated>>["cues"] = [];
-  let changes: number[] = [];
+  let changes: number[] = [], planChanges: number[] = [], sombre: [number, number][] = [];
+  let engine: EngineMoves = { moves: [], impulses: [] };
   let coverage: CaptionCoverage | undefined;
   const compose = async () => {
-    timed = timeShots(shots, tl);
-    ({ dir: project, cues, captionCoverage: coverage, pacing: { changes } } = await composeAnimated(join(dir, "hf"), timed, tl, { vertical: v.vertical, captionScenes, hook: scenes[0]?.on_screen_text }));
+    // Shorts: every later reader (Sound Designer, critic, beat gate) sees the shots as the Short draws them
+    timed = timeShots(shots, tl).map(s => (v.vertical ? verticalShot(s) : s));
+    ({ dir: project, cues, captionCoverage: coverage, pacing: { changes, planChanges, sombre, engine } } = await composeAnimated(join(dir, "hf"), timed, tl, { vertical: v.vertical, captionScenes, hook: scenes[0]?.on_screen_text }));
     writeJson(join(dir, "shots.json"), shots);
   };
   await compose();
@@ -72,7 +81,7 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
     let focus: Set<number> | undefined;
     for (let round = 0; round <= config.qa.visualRounds; round++) {
       qa.visual.rounds = round + 1;
-      layout = await layoutAudit(project, keyTimes(timed).map(k => k.t), W, H).catch(e => { log.warn(`layout audit failed: ${e.message}`); return [] as LayoutIssue[]; });
+      layout = await layoutAudit(project, keyTimes(timed, v.vertical).map(k => k.t), W, H).catch(e => { log.warn(`layout audit failed: ${e.message}`); return [] as LayoutIssue[]; });
       layout.push(...sparseShots(timed, W, H));
       reviews = await critiqueShots(project, timed, v.vertical, layout, dir, focus);
       if (round === 0) {
@@ -81,11 +90,15 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
       }
       const shotAt = (t: number) => timed.findIndex(s => t >= s.start && t < s.end);
       const badLayout = new Set(layout.map(l => shotAt(l.t)).filter(i => i >= 0));
-      const bad = new Set([...reviews.filter(r => r.score < config.qa.minShotScore || r.readability === "issue").map(r => r.shot), ...badLayout]);
-      log.info(`visual QA round ${round + 1}: ${reviews.length} shots reviewed, avg ${(reviews.reduce((a, r) => a + r.score, 0) / Math.max(1, reviews.length)).toFixed(1)}, ${bad.size} need work, ${layout.length} layout findings`);
+      // long-form plan pacing (whole video): slow stretches join the same capped revision loop. Never blocks.
+      const slow = v.vertical ? [] : pacingRevisions(planPacing(planChanges, changes, tl.duration, sombre), planChanges, timed, tl.duration, 8, sombre);
+      if (round === 0 && !v.vertical) qa.visual.planPaceDraft = planPacing(planChanges, changes, tl.duration, sombre);
+      if (round < config.qa.visualRounds) qa.visual.pacingRevised = (qa.visual.pacingRevised ?? 0) + slow.length;
+      const bad = new Set([...reviews.filter(r => r.score < config.qa.minShotScore || r.readability === "issue").map(r => r.shot), ...badLayout, ...slow.map(x => x.shot)]);
+      log.info(`visual QA round ${round + 1}: ${reviews.length} shots reviewed, avg ${(reviews.reduce((a, r) => a + r.score, 0) / Math.max(1, reviews.length)).toFixed(1)}, ${bad.size} need work, ${layout.length} layout findings${slow.length ? `, ${slow.length} shots too slow (plan pacing)` : ""}`);
       if (!bad.size || round === config.qa.visualRounds) break;
       const sceneIds = new Set([...bad].map(i => timed[i]?.scene_id).filter(Boolean) as string[]);
-      const feedback = [...bad].map(i => ({ shot: i, scene_id: timed[i]?.scene_id, review: reviews.find(r => r.shot === i), layout: layout.filter(l => shotAt(l.t) === i) }));
+      const feedback = [...bad].map(i => ({ shot: i, scene_id: timed[i]?.scene_id, review: reviews.find(r => r.shot === i), layout: layout.filter(l => shotAt(l.t) === i), pacing: slow.find(x => x.shot === i)?.pacing }));
       shots = await reviseShots(shots, scenes, sceneIds, feedback, tl, v.vertical, v.topic);
       await compose();
       focus = new Set(timed.map((s, i) => (sceneIds.has(s.scene_id) ? i : -1)).filter(i => i >= 0));
@@ -101,6 +114,10 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
   if (config.qa.enabled) {
     qa.visual.pacing = pacingReport(changes, v.vertical, tl.duration);
     log.info(`pacing: ${qa.visual.pacing.detail}`);
+    if (!v.vertical) {
+      qa.visual.planPace = planPacing(planChanges, changes, tl.duration, sombre);
+      log.info(qa.visual.planPace.detail);
+    }
     if (coverage) {
       qa.visual.captionCoverage = coverage;
       log.info(`captions: ${coverage.captioned}/${coverage.words} spoken words captioned (${Math.round(coverage.wordShare * 100)}%), ${Math.round(coverage.timeShare * 100)}% of speech time`);
@@ -132,6 +149,16 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
       issues = await technicalFrameChecks(silent);
     }
     qa.visual.frameIssues = issues.map(i => ({ kind: i.kind, start: i.start, detail: i.detail }));
+    // long-form: the style-study pace numbers on the rendered picture (report-only; one ffmpeg decode pass)
+    if (!v.vertical) {
+      try {
+        qa.visual.renderPace = await measurePace(silent);
+        const rp = qa.visual.renderPace;
+        log.info(`render pace: ${rp.visualChangesPerMin} visual changes/min, median gap ${rp.medianGap} s, longest ${rp.maxGap} s, motion in ${Math.round(rp.movingShare * 100)}% of frames, longest still ${rp.longestStill} s, ${rp.changesFirst30s} changes in the first 30 s`);
+      } catch (e) {
+        log.warn(`render pace measurement failed: ${(e as Error).message.slice(0, 200)}`);
+      }
+    }
     if (issues.some(i => i.kind === "flash")) qa.blocking.push("possible photosensitive flashing");
     if (issues.some(i => i.kind === "black")) qa.blocking.push("black frames in render");
   }
@@ -145,7 +172,7 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
       const words = (f: string) => readJson<{ words: HeardWord[] }>(join(dir, f), { words: [] }).words;
       const beats = await beatSyncGate({
         scenes: scenes.map(s => ({ id: s.id, on_screen_text: s.on_screen_text, spoken: spokenById.get(s.id) ?? s.narration })),
-        video: final, workDir: dir, tl, shots: timed, heard: words("qa-final-transcript.json"), clean: words("qa-narration-transcript.json"),
+        video: final, workDir: dir, tl, shots: timed, heard: words("qa-final-transcript.json"), clean: words("qa-narration-transcript.json"), engine,
       });
       writeJson(join(dir, "qa-beats.json"), beats);
       writeJson(join(dirname(v.out), `${basename(v.out, ".mp4")}-beats.json`), beats); // kept with the release for audits

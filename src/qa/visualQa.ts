@@ -15,7 +15,7 @@ import { runAgent } from "../lib/agent.js";
 import { config } from "../lib/config.js";
 import { ensureDir, writeJson } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
-import { PACING, SHORTS_SAFE, type TimedShot } from "../media/animated.js";
+import { PACING, PLAN_PACE, SHORTS_SAFE, statTiming, typedTiming, type TimedShot } from "../media/animated.js";
 import { run } from "../media/exec.js";
 
 // ------------------------------------------------------------------ 1) every frame, technically
@@ -50,7 +50,7 @@ export function sparseShots(shots: { start: number; end: number; background: str
   // with burned-in captions (Shorts) only the first shot keeps its title, plus big-number stats (src/media/animated.ts)
   return shots.flatMap((s, i) => {
     const area = s.elements.reduce((a, e) => a + Math.min(30, Math.max(1, Math.round(e.count))) * ((e.size / 100) * H) ** 2 * (e.depth === "bg" ? 0.64 : 1), 0) / (W * H);
-    const titled = s.title.style === "stat" || (s.title.style === "headline" && (H <= W || i === 0));
+    const titled = s.title.style === "stat" || ((s.title.style === "headline" || s.title.style === "typed") && (H <= W || i === 0));
     const min = filled.has(s.background) ? 0.06 : 0.12;
     return !titled && area < min ? [{
       t: (s.start + s.end) / 2, kind: "sparse" as const, text: "",
@@ -175,9 +175,10 @@ export async function frameZeroAudit(projectDir: string, W: number, H: number): 
 export interface PacingReport { window: number; changes: number; maxGap: number; ok: boolean; detail: string }
 
 /**
- * Opening pacing lint (report-only for now): Shorts need >= 4 visual changes in the first 10 s and none of the
- * stretches longer than 2.5 s; long-form at most 5 s without a change in the first minute. `changes` comes from
- * composeAnimated (cuts, big entrances, headline/stat/chips in or out and the engine's punch-ins).
+ * Pacing lint (report-only): Shorts need >= 4 visual changes in the first 10 s and none of the stretches longer
+ * than 2.5 s; long-form at most PACING.long.gap s without a change over the whole video (2026-11-17; it was 5 s
+ * over the first minute). `changes` comes from composeAnimated (cuts, big entrances, headline/stat/chips in or out
+ * and the engine's camera moves).
  */
 export function pacingReport(changes: number[], vertical: boolean, duration: number): PacingReport {
   const rule = vertical ? PACING.short : PACING.long;
@@ -186,7 +187,102 @@ export function pacingReport(changes: number[], vertical: boolean, duration: num
   const maxGap = +Math.max(...ts.slice(1).map((t, i) => t - ts[i])).toFixed(2);
   const n = ts.length - 2;
   const ok = maxGap <= rule.gap + 0.05 && (!vertical || n >= 4);
-  return { window: rule.window, changes: n, maxGap, ok, detail: `${n} visual changes in the first ${rule.window} s, longest static stretch ${maxGap} s (limit ${rule.gap} s${vertical ? ", at least 4 changes" : ""})` };
+  const span = Number.isFinite(rule.window) ? `the first ${rule.window} s` : `the whole ${Math.round(end)} s`;
+  return { window: +end.toFixed(1), changes: n, maxGap, ok, detail: `${n} visual changes in ${span}, longest static stretch ${maxGap} s (limit ${rule.gap} s${vertical ? ", at least 4 changes" : ""})` };
+}
+
+export interface PlanPace {
+  /** planned content changes (cuts, big entrances, titles in or out), before the engine adds camera moves */
+  changes: number; perMin: number; medianGap: number; maxGap: number;
+  /** stretches over PLAN_PACE.gapMax s: [start, end] */
+  longGaps: [number, number][];
+  /** the same numbers with the engine's camera moves counted */
+  withEngine: { medianGap: number; maxGap: number };
+  ok: boolean; detail: string;
+}
+const median = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? (s.length % 2 ? s[(s.length - 1) / 2] : (s[s.length / 2 - 1] + s[s.length / 2]) / 2) : 0; };
+const gapsOf = (ts: number[], D: number) => {
+  const pts = [0, ...ts.filter(t => t > 0 && t < D).sort((a, b) => a - b).filter((t, i, a) => i === 0 || t - a[i - 1] >= 0.1), D];
+  return pts.slice(1).map((t, i) => [pts[i], t] as [number, number]);
+};
+
+/** A stretch that is mostly a sombre beat (fade-in, worried, sad, sick, night) may be still on purpose. */
+const inSombre = (sombre: [number, number][]) => ([a, b]: [number, number]) =>
+  sombre.reduce((x, [s0, s1]) => x + Math.max(0, Math.min(b, s1) - Math.max(a, s0)), 0) >= (b - a) * 0.5;
+
+/**
+ * Long-form plan pacing gate (2026-11-17): REPORT AND REVISE, NEVER DROP. Measured on the planned content changes
+ * over the whole video: the engine's camera moves fill gaps, but they are filler, and only the Motion Designer can
+ * add real changes. Failing (median gap over PLAN_PACE.medianMax s, or any gap over PLAN_PACE.gapMax s) only sends
+ * those scenes to the existing critic revision loop; the numbers go to qa.visual.planPace for the weekly check.
+ */
+export function planPacing(planChanges: number[], allChanges: number[], duration: number, sombre: [number, number][] = []): PlanPace {
+  // sombre stretches are exempt
+  const exempt = inSombre(sombre);
+  const g = gapsOf(planChanges, duration).filter(w => !exempt(w)), lens = g.map(([a, b]) => b - a);
+  const ge = gapsOf(allChanges, duration).map(([a, b]) => b - a);
+  const medianGap = +median(lens).toFixed(2), maxGap = +Math.max(0, ...lens).toFixed(2);
+  const longGaps = g.filter(([a, b]) => b - a > PLAN_PACE.gapMax).map(([a, b]) => [+a.toFixed(2), +b.toFixed(2)] as [number, number]);
+  const ok = medianGap <= PLAN_PACE.medianMax && !longGaps.length;
+  const n = planChanges.filter(t => t > 0 && t < duration).length, perMin = +(n / Math.max(1e-6, duration / 60)).toFixed(1);
+  const withEngine = { medianGap: +median(ge).toFixed(2), maxGap: +Math.max(0, ...ge).toFixed(2) };
+  return {
+    changes: n, perMin, medianGap, maxGap, longGaps, withEngine, ok,
+    detail: `plan pacing ${ok ? "ok" : "slow"}: ${n} planned changes (${perMin}/min), median gap ${medianGap} s, longest ${maxGap} s, ${longGaps.length} stretch(es) over ${PLAN_PACE.gapMax} s (limits: median ${PLAN_PACE.medianMax} s, gap ${PLAN_PACE.gapMax} s); with engine camera moves: median ${withEngine.medianGap} s, longest ${withEngine.maxGap} s`,
+  };
+}
+
+/**
+ * Shots to send back to the Motion Designer for pacing: the shots covering each stretch over PLAN_PACE.gapMax s
+ * (longest first), or, when only the median is too slow, the stretches over PLAN_PACE.medianMax s. At most `cap`.
+ */
+export function pacingRevisions(p: PlanPace, planChanges: number[], shots: { start: number; end: number }[], duration: number, cap = 8, sombre: [number, number][] = []): { shot: number; pacing: string }[] {
+  const exempt = inSombre(sombre);
+  let windows = [...p.longGaps].sort((x, y) => (y[1] - y[0]) - (x[1] - x[0]));
+  if (!windows.length && p.medianGap > PLAN_PACE.medianMax) windows = gapsOf(planChanges, duration).filter(([a, b]) => b - a > PLAN_PACE.medianMax && !exempt([a, b])).sort((x, y) => (y[1] - y[0]) - (x[1] - x[0]));
+  const out: { shot: number; pacing: string }[] = [];
+  for (const [a, b] of windows) {
+    shots.forEach((s, i) => {
+      if (out.length >= cap || out.some(o => o.shot === i) || s.end <= a + 0.05 || s.start >= b - 0.05) return;
+      out.push({ shot: i, pacing: `pacing: ${a.toFixed(1)}-${b.toFixed(1)} s runs ${(b - a).toFixed(1)} s with no new visual change (a cut, a big element entering, a title). Long videos need a visible change about every 2.5 s (median gap ${PLAN_PACE.medianMax} s or less, never over ${PLAN_PACE.gapMax} s): split this scene into 2-3 shots, or give art already in the scene a second-half entrance (enter_at 0.5-0.7). Keep every cue word exact.` });
+    });
+  }
+  return out;
+}
+
+export interface RenderPace { duration: number; visualChangesPerMin: number; medianGap: number; maxGap: number; changesFirst30s: number; hardCutsPerMin: number; movingShare: number; longestStill: number }
+
+/** Parse ffmpeg's metadata print (pts_time and scene_score lines) into the pace numbers of measurePace. */
+export function paceFromScores(text: string): RenderPace {
+  const rows: [number, number][] = [];
+  let t = 0;
+  for (const line of text.split(/\r?\n/)) {
+    const a = /pts_time:([\d.]+)/.exec(line); if (a) { t = +a[1]; continue; }
+    const b = /scene_score=([\d.]+)/.exec(line); if (b) rows.push([t, +b[1]]);
+  }
+  const D = rows.length ? rows[rows.length - 1][0] : 0;
+  const events = (th: number) => { const ev: number[] = []; for (const [tt, s] of rows) if (s >= th && (!ev.length || tt - ev[ev.length - 1] >= 0.4)) ev.push(tt); return ev; };
+  const soft = events(0.08), hard = events(0.3);
+  const lens = gapsOf(soft, D + 1e-6).map(([a, b]) => b - a).filter(l => l > 0);
+  let best = 0, start: number | undefined;
+  for (const [tt, s] of rows) { if (s < 0.003) { start ??= tt; best = Math.max(best, tt - start); } else start = undefined; }
+  const perMin = (n: number) => +(n / Math.max(1e-6, D / 60)).toFixed(1);
+  return {
+    duration: +D.toFixed(1), visualChangesPerMin: perMin(soft.length), medianGap: +median(lens).toFixed(2), maxGap: +Math.max(0, ...lens).toFixed(2),
+    changesFirst30s: soft.filter(x => x <= 30).length, hardCutsPerMin: perMin(hard.length),
+    movingShare: +(rows.filter(([, s]) => s >= 0.003).length / Math.max(1, rows.length)).toFixed(3), longestStill: +best.toFixed(1),
+  };
+}
+
+/**
+ * Post-render pace measurement (report-only), the same method as the 2026-11-17 style study (measure_pace.py):
+ * ffmpeg scene score per frame at 10 fps, 320x180. Visual change >= 0.08, hard cut >= 0.30 (both 0.4 s apart),
+ * moving frame >= 0.003. One decode pass: about 20-40 s for an 11-minute video.
+ */
+export async function measurePace(video: string): Promise<RenderPace> {
+  const out = await run("ffmpeg", ["-hide_banner", "-nostats", "-i", video, "-an", "-vf",
+    "fps=10,scale=320:180,select='gte(scene,0)',metadata=print:key=lavfi.scene_score:file=-", "-f", "null", "-"], { quiet: true });
+  return paceFromScores(out);
 }
 
 // ------------------------------------------------------------------ 3) key frames + critic
@@ -204,13 +300,24 @@ const reviewSchema = {
   },
 };
 
-/** Moments worth looking at for each shot: just after titles land, and mid-shot; plus frame 0 (the feed preview). */
-export function keyTimes(shots: TimedShot[]): { shot: number; t: number }[] {
+/**
+ * Moments worth looking at for each shot: just after titles land, and mid-shot; plus frame 0 (the feed preview).
+ * Long-form (`vertical` false, 2026-11-17): a counting stat or a typed title is shown once it has finished (the
+ * critic judged half-counted numbers and half-typed lines), and only shots over 5 s get a second frame, so the image
+ * count stays about flat now that plans have about 1.8 times as many (shorter) shots. Shorts: unchanged.
+ */
+export function keyTimes(shots: TimedShot[], vertical: boolean): { shot: number; t: number }[] {
   return shots.flatMap((s, i) => {
     const d = s.end - s.start;
-    const ts = [s.start + Math.min(1.1, d * 0.45)];
+    let t1 = s.start + Math.min(1.1, d * 0.45);
+    if (!vertical && !(i === 0 && s.start < 0.05)) {
+      const settled = s.title.style === "stat" && s.title.text ? statTiming(s.start, s.end, s.title.text).settled
+        : s.title.style === "typed" && s.title.text ? typedTiming(s.start, s.end, s.title.text).settled + 0.1 : 0;
+      if (settled) t1 = Math.max(t1, Math.min(settled + 0.15, s.end - 0.1));
+    }
+    const ts = [t1];
     if (i === 0 && s.start < 0.05) ts.unshift(0);
-    if (d > 3.5) ts.push(s.start + d * 0.75);
+    if (d > (vertical ? 3.5 : 5)) ts.push(Math.max(t1 + 0.5, s.start + d * 0.75));
     return ts.map(t => ({ shot: i, t: +t.toFixed(2) }));
   });
 }
@@ -270,7 +377,7 @@ async function contactSheets(frames: { file: string; label: string }[], outDir: 
 
 export async function critiqueShots(projectDir: string, shots: TimedShot[], vertical: boolean, layout: LayoutIssue[], workDir: string, onlyShots?: Set<number>): Promise<ShotReview[]> {
   const dir = ensureDir(join(workDir, "qa-frames"));
-  const kt = keyTimes(shots).filter(k => !onlyShots || onlyShots.has(k.shot));
+  const kt = keyTimes(shots, vertical).filter(k => !onlyShots || onlyShots.has(k.shot));
   if (!kt.length) return [];
   const files = await snapshots(projectDir, kt.map(k => k.t), join(dir, `snap-${Date.now()}`));
   const frames = kt.flatMap((k, i) => (files[i] ? [{ file: files[i]!, label: `Shot ${k.shot} @ ${k.t.toFixed(1)}s` }] : []));

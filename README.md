@@ -28,7 +28,7 @@ Every agent is a Claude agent (Claude Agent SDK, running on your Claude subscrip
 | **Long-form Scriptwriter** | Hook psychology for the first 5 s and 30 s, open loops, a re-hook every 45–75 s, escalating sections, on-screen visual direction per scene. |
 | **Short-form Scriptwriter** | 1–2 s scroll-stopping hooks, fast payoffs, loopable endings. |
 | **Narration Director** | Rewrites scripts for the ear (contractions, rhythm, pauses, pacing per scene) so the voice sounds human. |
-| **Motion Designer** | Art-directs every shot of the animated flat-vector style (palette, background, characters/cells/organs, motion, camera, transitions, labels), with a new shot every 3–7 s synced to the narration. See [docs/STYLE.md](docs/STYLE.md). |
+| **Motion Designer** | Art-directs every shot of the animated flat-vector style (palette, background, characters/cells/organs, motion, camera, transitions, labels), with a new shot every 2–3.5 s in long videos (3–7 s in Shorts after the opening) synced to the narration. Long-only rules live in `agents/motion-designer-long.md`. See [docs/STYLE.md](docs/STYLE.md). |
 | **Title Writer** | 10 CTR-scored title candidates (curiosity gap, specificity, stakes), picks the best. |
 | **Thumbnail Designer** | 3 cartoon thumbnail concepts, each built on a different click trigger (curiosity gap, specific number, loss aversion, surprise, comparison) with an expressive character. |
 | **Thumbnail Judge** | Views all 3 rendered thumbnails at full and phone size and picks the likeliest click; the runners-up are saved for YouTube's Test & compare. |

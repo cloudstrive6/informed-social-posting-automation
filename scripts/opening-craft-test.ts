@@ -50,7 +50,7 @@ const { dir: project, pacing, captionCoverage } = await composeAnimated(join(out
 const f0 = await frameZeroAudit(project, W, H);
 const pace = pacingReport(pacing.changes, vertical, tl.duration);
 // the pipeline's own pre-render layout audit, at the Visual Critic's key frames
-const layout = [...await layoutAudit(project, keyTimes(timed).map(k => k.t), W, H), ...sparseShots(timed, W, H)];
+const layout = [...await layoutAudit(project, keyTimes(timed, vertical).map(k => k.t), W, H), ...sparseShots(timed, W, H)];
 
 // sample the composition every 0.1 s: title and caption on screen together? caption boxes inside the safe zone?
 // the main character's height in the first 30 s
