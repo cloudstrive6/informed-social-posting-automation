@@ -78,10 +78,12 @@
       "platform": "youtube",
       "format": "long",
       "slotKey": "long",
-      "slot": "2026-11-17T19:00:00.000Z",
-      "status": "failed",
-      "attempts": 3,
-      "error": "YouTube init 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The request metadata specifies an invalid video description.\",\n    \"errors\": [\n      {\n        \"message\": \"The request metadata specifies an invalid video description.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"invalidDescription\",\n        \"location\": \"body.snippet.description\",\n        \"locationType\": \"other\"\n      }\n    ]\n  }\n}\n"
+      "slot": "2026-11-17T19:09:43.461Z",
+      "status": "published",
+      "attempts": 1,
+      "remote_id": "6B6xlzuorpg",
+      "url": "https://youtu.be/6B6xlzuorpg",
+      "published_at": "2026-11-17T19:09:57.111Z"
     }
   ],
   "created_at": "2026-11-17T03:37:24.638Z",
