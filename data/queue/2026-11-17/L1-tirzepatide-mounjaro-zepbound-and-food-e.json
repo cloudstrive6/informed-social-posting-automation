@@ -80,7 +80,7 @@
       "slotKey": "long",
       "slot": "2026-11-17T19:00:00.000Z",
       "status": "pending",
-      "attempts": 1,
+      "attempts": 2,
       "error": "YouTube init 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The request metadata specifies an invalid video description.\",\n    \"errors\": [\n      {\n        \"message\": \"The request metadata specifies an invalid video description.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"invalidDescription\",\n        \"location\": \"body.snippet.description\",\n        \"locationType\": \"other\"\n      }\n    ]\n  }\n}\n"
     }
   ],
