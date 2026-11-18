@@ -61,9 +61,11 @@
       "format": "short",
       "slotKey": "short",
       "slot": "2026-11-18T13:00:00.000Z",
-      "status": "pending",
-      "attempts": 1,
-      "error": "TikTok (Post for Me) failed: \"Failed to post to TikTok\""
+      "status": "published",
+      "attempts": 2,
+      "remote_id": "v_pub_file~v2-1.7709496040608679957",
+      "url": "https://www.tiktok.com/@informedlab",
+      "published_at": "2026-11-18T13:02:58.676Z"
     },
     {
       "platform": "facebook",
