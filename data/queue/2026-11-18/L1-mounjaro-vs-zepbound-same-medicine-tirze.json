@@ -1,0 +1,1517 @@
+{
+  "id": "L1-mounjaro-vs-zepbound-same-medicine-tirze",
+  "date": "2026-11-18",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Mounjaro vs Zepbound: same medicine (tirzepatide), different US-approved uses, labels and device options. Fixed re-render of the verified, held 11-16 script (playbook queue #2)",
+    "angle": "Re-render and resubmit the verified 11-16 script. Fix its known faults first:\n- Rebuild every cut from the final word timestamps (the render had 76% on time; the target is every cut within 0.5 s of its beat).\n- Cut the description from about 1,340 characters to a tight plain-text one that ends '…whether it's right for you.'\n- Remove the #Type2Diabetes and #WeightManagement hashtags.\n- Every minus figure is spoken as 'loss' or 'lower'.\n\nContent stays locked:\n- Sentence 1 names tirzepatide and the title's question. By 15 s, the short answer: both US labels list the same active ingredient, tirzepatide. The difference is the approved uses.\n- Second payoff at 15–30 s: each PI's Section 1 indication, quoted word for word with its population. Mounjaro (PI rev. 27 Aug 2026): type 2 diabetes, including the paediatric indication as printed. Zepbound (PI rev. 28 Aug 2026): chronic weight management and OSA, as printed.\n- The trial programme behind each label (SURPASS, SURMOUNT, SURMOUNT-OSA), each with its full population.\n- 'Different trial populations, so the side-effect tables can't be compared head to head.'\n- Devices: only those printed in each PI's How Supplied section, each IFU at its own verified URL. No amounts.\n- One GI line: 'mostly during dose escalation and decreased over time'.\n- No cost, insurance, dosing or switching talk. No standalone 'Picture this' scene after the answer.\n- Required lines: the don't-switch/stop/change line, 'Not personal advice', the full prescriber line, and the ending 'There's a video I'd watch next, linked in the description.'\n\nPublisher: put a '▶ Watch next' link to How It Works after the first paragraph, and add the video to 'Life on Tirzepatide'.",
+    "working_title": "Tirzepatide: Mounjaro vs Zepbound, What's Different?",
+    "target_keyword": "mounjaro vs zepbound",
+    "trend_stage": "evergreen",
+    "why": "Queue #2 in the playbook. A search-demand head-to-head format (approved labels only) with steady high search, built entirely on primary labels so it can pass the fact-check today. Fewer than 2 of the last 7 long videos that shipped were search-demand formats.",
+    "pillar": "is-it-for-you"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Mounjaro vs Zepbound: Same Tirzepatide, So What's Different?",
+    "title_candidates": [
+      "Tirzepatide (Mounjaro) vs Zepbound: What's Different?",
+      "Tirzepatide: Mounjaro vs Zepbound, Same Medicine?",
+      "Tirzepatide (Mounjaro) vs Zepbound: Why Two Names?",
+      "Tirzepatide: Mounjaro vs Zepbound, What's Different?",
+      "Mounjaro vs Zepbound: What's Actually Different?",
+      "Tirzepatide (Mounjaro) vs Zepbound: Which Is for What?",
+      "Tirzepatide: Mounjaro vs Zepbound, What the Labels Say",
+      "Tirzepatide (Mounjaro) vs Zepbound: Why Two Boxes?",
+      "Tirzepatide Pens and Vials: Mounjaro vs Zepbound",
+      "Is Zepbound Just Mounjaro? Tirzepatide Explained"
+    ],
+    "description": "\nQuick answer: Mounjaro and Zepbound list the same active ingredient, tirzepatide. Mounjaro's label covers blood sugar control in type 2 diabetes, for adults and children 10 and older, and lowering heart attack and stroke risk in adults with type 2 diabetes at high risk. Zepbound's covers weight in adults with obesity, or overweight plus a weight-related condition, and moderate to severe obstructive sleep apnea in adults with obesity (US Prescribing Information, both drugs).\n\nChapters:\n0:00 The short answer\n1:06 What's identical\n2:26 Two labels, two jobs\n3:47 The trials behind each\n6:32 Side effects compared\n7:43 Pens and vials\n8:31 The line that links them\n9:17 Your checklist\n\nSources:\n1. Mounjaro Prescribing Information, Eli Lilly, rev. 27 Aug 2026\n2. Zepbound Prescribing Information, Eli Lilly, rev. 28 Aug 2026\n\n#Tirzepatide\n\nIf you get severe stomach pain that won't go away, with or without vomiting, get medical help right away. For anything that isn't one of those emergency signs, don't stop or change your medicine on your own. Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "tags": [
+      "mounjaro vs zepbound",
+      "tirzepatide",
+      "mounjaro",
+      "zepbound",
+      "mounjaro vs zepbound difference",
+      "is mounjaro the same as zepbound",
+      "tirzepatide uses",
+      "mounjaro for diabetes",
+      "zepbound for weight loss",
+      "zepbound sleep apnea",
+      "tirzepatide side effects",
+      "SURMOUNT trial",
+      "SURPASS trial",
+      "GLP-1 medication",
+      "dual GIP GLP-1",
+      "tirzepatide weight loss",
+      "type 2 diabetes medication",
+      "tirzepatide label",
+      "tirzepatide FDA approval"
+    ],
+    "pinned_comment": "Mounjaro and Zepbound list the same active ingredient, tirzepatide, with different US-approved uses. Their side-effect tables can't be compared head to head, because the trial populations were different. Save this for your next prescriber visit. Don't switch, stop or change your medicine on your own. Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "ONE KEY DIFFERENCE",
+      "highlight_word": "ONE",
+      "subtext": "",
+      "layout": "reaction",
+      "psychology": "Curiosity gap with a specific count: saying there is exactly one key difference promises a clear answer the video delivers (the approved uses) but doesn't say which one it is.",
+      "emotion": "Intrigue: 'which one is it?'",
+      "hero_art": "woman holding two medicine boxes",
+      "hero_face": "none",
+      "second_art": "",
+      "second_face": "none",
+      "prop": "red-circle",
+      "accent": "blue",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 The short answer\n1:06 What's identical\n2:26 Two labels, two jobs\n3:47 The trials behind each\n6:32 Side effects compared\n7:43 Pens and vials\n8:31 The line that links them\n9:17 Your checklist"
+  },
+  "media": {
+    "video": "L1-mounjaro-vs-zepbound-same-medicine-tirze.mp4",
+    "duration": 621.897,
+    "thumbnail": "L1-mounjaro-vs-zepbound-same-medicine-tirze-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-18T19:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "zh-cVyXBu-4",
+      "url": "https://youtu.be/zh-cVyXBu-4",
+      "published_at": "2026-11-18T19:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-11-18T04:02:21.222Z",
+  "script": {
+    "working_title": "Tirzepatide: Mounjaro vs Zepbound, What's Different?",
+    "target_keyword": "mounjaro vs zepbound",
+    "hook_pattern": "Visceral 'you' scenario folded into sentence 1 (drug first, title question), short answer by 15 s, then second concrete payoff (each label's Section 1 wording) at 15–30 s, and a one-sentence open loop paid off in the last chapter",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "The short answer",
+        "narration": "Tirzepatide: your box says Zepbound, a friend's says Mounjaro, so what's actually different?",
+        "on_screen_text": "Tirzepatide: Mounjaro vs Zepbound?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two curious friends comparing medicine boxes"
+        },
+        "retention_device": "Hook: 'you' scenario plus title question in sentence 1, drug named first",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "The short answer",
+        "narration": "Short answer: both US labels list the same active ingredient, tirzepatide. The difference is what each one is approved to treat.",
+        "on_screen_text": "Same ingredient, different approved uses",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Mounjaro: tirzepatide",
+            "Zepbound: tirzepatide",
+            "Difference: approved uses"
+          ],
+          "stock_query": "two labels side by side, relieved"
+        },
+        "retention_device": "Short answer delivered by about 14 s",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "The short answer",
+        "narration": "Mounjaro's label, in Section 1, is for use 'as an adjunct to diet and exercise to improve glycemic control.' That means blood sugar control in type 2 diabetes, for adults and for children aged 10 and older. It also lists a second use, for the heart. We'll get to it.",
+        "on_screen_text": "Mounjaro: type 2 diabetes, 2 uses",
+        "visual": {
+          "kind": "quote",
+          "quote": "as an adjunct to diet and exercise to improve glycemic control",
+          "attribution": "Mounjaro US Prescribing Information, Section 1 (rev. 27 Aug 2026)",
+          "stock_query": "label page with blood sugar meter"
+        },
+        "retention_device": "Second concrete payoff at 15–30 s: Mounjaro's Section 1 wording, plus a short loop to its heart use",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "The short answer",
+        "narration": "Zepbound's Section 1 lists two uses, both alongside a reduced-calorie diet and more physical activity. The first is 'to reduce excess body weight and maintain weight reduction long term' in adults with obesity, or overweight plus at least one weight-related condition.",
+        "on_screen_text": "Zepbound use 1: weight, long term",
+        "visual": {
+          "kind": "quote",
+          "quote": "to reduce excess body weight and maintain weight reduction long term",
+          "attribution": "Zepbound US Prescribing Information, Section 1 (rev. 28 Aug 2026)",
+          "stock_query": "hopeful adult walking at sunrise"
+        },
+        "retention_device": "Payoff continues: Zepbound's first approved use with its population",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "The short answer",
+        "narration": "The second is 'to treat moderate to severe obstructive sleep apnea' in adults with obesity.",
+        "on_screen_text": "Zepbound use 2: sleep apnea",
+        "visual": {
+          "kind": "quote",
+          "quote": "to treat moderate to severe obstructive sleep apnea",
+          "attribution": "Zepbound US Prescribing Information, Section 1 (rev. 28 Aug 2026)",
+          "stock_query": "person sleeping peacefully at night"
+        },
+        "retention_device": "Surprise element: a sleep apnea use many viewers don't know about",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s06",
+        "section": "The short answer",
+        "narration": "One molecule, two sets of approved uses. And one line on the Zepbound label spells out what that shared ingredient means for you; we'll get there near the end.",
+        "on_screen_text": "One line worth knowing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over label line"
+        },
+        "retention_device": "Open loop (one sentence), paid off in 'The line that links them'",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "What's identical",
+        "narration": "So what exactly is the same between them? More than you might expect.",
+        "on_screen_text": "What's identical?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card twin labels teal gradient"
+        },
+        "retention_device": "Chapter 2 opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s08",
+        "section": "What's identical",
+        "narration": "Both labels describe tirzepatide the same way: a GIP receptor and GLP-1 receptor agonist. Think of it as one key cut to fit two locks.",
+        "on_screen_text": "One key, two locks",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "one golden key fitting two locks"
+        },
+        "retention_device": "Analogy to make the mechanism stick",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "What's identical",
+        "narration": "GIP and GLP-1 are hormones your gut releases after you eat, and they're involved in insulin release and appetite. So it makes sense that one molecule was tested for both blood sugar and weight.",
+        "on_screen_text": "Blood sugar and appetite",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly gut sending messages to brain"
+        },
+        "retention_device": "'Therefore' beat linking mechanism to the two labels",
+        "source_ids": []
+      },
+      {
+        "id": "s10",
+        "section": "What's identical",
+        "narration": "It's the same type of product, too. Each label describes an injection given under the skin.",
+        "on_screen_text": "Both: injection under the skin",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two pens resting on kitchen table"
+        },
+        "retention_device": "Quick shared fact keeps pace",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "What's identical",
+        "narration": "Both labels carry the same boxed warning, the FDA's most prominent kind. In rats, tirzepatide caused thyroid C-cell tumors. It's unknown whether it causes them in people.",
+        "on_screen_text": "Same boxed warning on both",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm mascot reading warning box"
+        },
+        "retention_device": "Stakes: the strongest warning is shared",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "What's identical",
+        "narration": "So neither should be used if you or a family member has had medullary thyroid carcinoma, or if you have a condition called MEN 2.",
+        "on_screen_text": "MTC history or MEN 2: not for you",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "You or family: medullary thyroid carcinoma",
+            "You: MEN 2"
+          ],
+          "stock_query": "clinic checklist on clipboard"
+        },
+        "retention_device": "Practical safety beat",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "What's identical",
+        "narration": "The other warnings line up as well. Pancreatitis, gallbladder problems, kidney problems linked to dehydration and serious allergic reactions appear on both.",
+        "on_screen_text": "Warnings line up",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Pancreatitis",
+            "Gallbladder problems",
+            "Kidney problems from dehydration",
+            "Serious allergic reactions"
+          ],
+          "stock_query": "two matching warning lists"
+        },
+        "retention_device": "List visual for a change of pace",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "What's identical",
+        "narration": "And here's one that's easy to miss: both labels include the same note about birth-control pills. If you take them, that's a question worth bringing to your prescriber.",
+        "on_screen_text": "Birth-control pills? Ask",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman thinking, pill pack, question mark"
+        },
+        "retention_device": "Re-hook: surprising shared detail around 75 s",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "What's identical",
+        "narration": "If two names on one medicine has felt confusing, that's fair. On the core safety information, these two labels line up closely.",
+        "on_screen_text": "Confused? That's fair",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "relieved person nodding at kitchen table"
+        },
+        "retention_device": "Name and validate the feeling",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "Two labels, two jobs",
+        "narration": "Then why would one molecule carry two names?",
+        "on_screen_text": "Why two names?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card two name tags"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s17",
+        "section": "Two labels, two jobs",
+        "narration": "A US label's Section 1 lists the uses that product is approved for. Those uses come from the trials behind it, and we'll meet them in a moment.",
+        "on_screen_text": "Section 1 = approved uses",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "label page with section one highlighted"
+        },
+        "retention_device": "Mini open loop into the trials chapter",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "Two labels, two jobs",
+        "narration": "So the name on the box tells you which approved uses that product's label covers. The molecule inside doesn't change.",
+        "on_screen_text": "Name = which uses",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "same molecule inside two boxes"
+        },
+        "retention_device": "'Therefore' beat",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "Two labels, two jobs",
+        "narration": "Mounjaro's Section 1 doesn't list weight management. Zepbound's doesn't list blood sugar control in type 2 diabetes. Each label stays in its own lane.",
+        "on_screen_text": "Each label, its own lane",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Mounjaro and Zepbound are approved for the same uses",
+          "fact": "Mounjaro: type 2 diabetes (blood sugar, heart risk). Zepbound: weight and sleep apnea",
+          "stock_query": "two cartoon lanes, two signs"
+        },
+        "retention_device": "Myth/fact card resets attention",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Two labels, two jobs",
+        "narration": "Mounjaro's second use is about the heart: lowering the risk of heart attack, stroke and death from heart disease in adults with type 2 diabetes who are at high risk of them. That use comes from a trial called SURPASS-CVOT, which compared it with another diabetes medicine, dulaglutide, not with placebo.",
+        "on_screen_text": "Mounjaro use 2: heart risk, type 2 diabetes",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Adults with type 2 diabetes",
+            "High risk of heart attack or stroke",
+            "Trial: SURPASS-CVOT vs dulaglutide"
+          ],
+          "stock_query": "calm heart character beside label"
+        },
+        "retention_device": "Pays off the s03 heart-use loop with a detail most viewers haven't read",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Two labels, two jobs",
+        "narration": "Back to that box on your counter. Imagine your friend has type 2 diabetes, and her prescriber chose Mounjaro for blood sugar control.",
+        "on_screen_text": "Your friend: type 2 diabetes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friend smiling with glucose meter"
+        },
+        "retention_device": "Return to the relatable thread (hypothetical)",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Two labels, two jobs",
+        "narration": "Say your prescriber chose Zepbound for weight, alongside diet and activity changes. Same ingredient, but each prescription matches a different label.",
+        "on_screen_text": "Same ingredient, different label",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two friends holding different boxes, smiling"
+        },
+        "retention_device": "Thread pays off the chapter question",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Two labels, two jobs",
+        "narration": "Notice the wording on Zepbound's first use: reduce excess weight and maintain that reduction long term. Not a quick number on the scale. Long term.",
+        "on_screen_text": "Long term, not a quick number",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar pages turning, calm person"
+        },
+        "retention_device": "Emotional reframe from the label's own words",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Two labels, two jobs",
+        "narration": "But a label is only as strong as the trials behind it. And the people in those trials were very different.",
+        "on_screen_text": "Very different trial people",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two groups of people, different rooms"
+        },
+        "retention_device": "Mini-cliffhanger before the section change",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "The trials behind each",
+        "narration": "So who was actually in the studies?",
+        "on_screen_text": "Who was in the trials?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card trial clipboard"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s26",
+        "section": "The trials behind each",
+        "narration": "Mounjaro's label rests on the SURPASS trials, in people with type 2 diabetes. They tested tirzepatide on its own and alongside other diabetes medicines, including insulin.",
+        "on_screen_text": "Mounjaro: SURPASS trials",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "adults in clinic with glucose meters"
+        },
+        "retention_device": "Result-first chapter opening with population, no setup scene",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "The trials behind each",
+        "narration": "In SURPASS-1, 478 adults whose type 2 diabetes wasn't controlled by diet and exercise alone got tirzepatide or placebo for 40 weeks.",
+        "on_screen_text": "SURPASS-1: 478 adults, 40 weeks",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "478",
+          "stat_label": "Adults with type 2 diabetes, 40 weeks",
+          "stock_query": "group of adults, trial badge"
+        },
+        "retention_device": "Specific number humanises the study",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "The trials behind each",
+        "narration": "Their A1C, a two-to-three-month average of blood sugar, came down by about 2 percentage points, by dose. On placebo, it barely moved.",
+        "on_screen_text": "SURPASS-1: type 2 diabetes, 40 weeks",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~2 points lower",
+          "stat_label": "Tirzepatide A1C by dose vs placebo",
+          "stock_query": "blood sugar gauge dropping, happy"
+        },
+        "retention_device": "Big-number stat card",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "The trials behind each",
+        "narration": "The children's use on Mounjaro's label comes from a separate trial, in young people aged 10 to 17 with type 2 diabetes.",
+        "on_screen_text": "Children's use: ages 10–17 trial",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "teen and parent at clinic, calm"
+        },
+        "retention_device": "Explains the paediatric line from the opening",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "The trials behind each",
+        "narration": "Over to Zepbound. Its first weight trial started with a completely different group of people, and that will matter in a minute.",
+        "on_screen_text": "Zepbound: different people",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "door opening to new trial room"
+        },
+        "retention_device": "Re-hook: open loop toward the side-effect tables",
+        "source_ids": [
+          "S2",
+          "S3"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "The trials behind each",
+        "narration": "SURMOUNT-1 enrolled 2,539 adults with obesity, or overweight plus at least one weight-related condition, without diabetes. They took tirzepatide or placebo for 72 weeks, alongside diet and activity counselling.",
+        "on_screen_text": "SURMOUNT-1: 2,539 adults",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "2,539 adults",
+            "Obesity, or overweight plus a weight-related condition",
+            "Without diabetes",
+            "72 weeks, tirzepatide vs placebo"
+          ],
+          "stock_query": "diverse adults, trial badge"
+        },
+        "retention_device": "Full population in one beat, then straight to result",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "The trials behind each",
+        "narration": "Average weight loss was 15 to 21 percent, by dose. On placebo, it was about 3 percent.",
+        "on_screen_text": "SURMOUNT-1: tirzepatide by dose vs placebo, 72 weeks, adults with obesity or overweight + a weight-related condition, without diabetes",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "15–21% loss",
+          "stat_label": "Tirzepatide by dose vs ~3% placebo, 72 weeks",
+          "stock_query": "bar chart tall vs short"
+        },
+        "retention_device": "Headline number of the video",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "The trials behind each",
+        "narration": "For someone starting at 100 kilograms, about 220 pounds, 15 to 21 percent is 15 to 21 kilograms. Those are averages, and individual results varied.",
+        "on_screen_text": "Averages, not promises",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "suitcases on scale comparison"
+        },
+        "retention_device": "Humanise the number with a concrete comparison",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "The trials behind each",
+        "narration": "A second trial, SURMOUNT-2, enrolled adults with obesity or overweight who also had type 2 diabetes. Over 72 weeks, average weight loss was about 13 to 15 percent, by dose.",
+        "on_screen_text": "SURMOUNT-2: tirzepatide by dose vs placebo, 72 weeks, adults with obesity or overweight + type 2 diabetes",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "13–15% loss",
+          "stat_label": "Tirzepatide by dose vs ~3% placebo, 72 weeks",
+          "stock_query": "adults with glucose meters, hopeful"
+        },
+        "retention_device": "Surprise: a Zepbound trial in people with type 2 diabetes",
+        "source_ids": [
+          "S4",
+          "S2"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "The trials behind each",
+        "narration": "On placebo, it was about 3 percent. These are separate trials in different people, so don't read them as a head-to-head.",
+        "on_screen_text": "Separate trials, not head-to-head",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "SURMOUNT-1 vs SURMOUNT-2 is a head-to-head",
+          "fact": "Separate trials, different people",
+          "stock_query": "two separate race tracks"
+        },
+        "retention_device": "Caveat folded into the payoff line",
+        "source_ids": [
+          "S3",
+          "S4"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "The trials behind each",
+        "narration": "Then there's a use plenty of people don't realise Zepbound has: sleep apnea.",
+        "on_screen_text": "Then: sleep apnea",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "tired person yawning at night"
+        },
+        "retention_device": "Re-hook: escalate to the least-known use",
+        "source_ids": [
+          "S2",
+          "S5"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "The trials behind each",
+        "narration": "The SURMOUNT-OSA trials enrolled adults with obesity and moderate to severe obstructive sleep apnea. One trial was in people not using a PAP machine, the other in people who were. Both ran for 52 weeks.",
+        "on_screen_text": "SURMOUNT-OSA: two trials, 52 weeks",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Adults with obesity",
+            "Moderate to severe OSA",
+            "Trial 1: no PAP",
+            "Trial 2: on PAP"
+          ],
+          "stock_query": "sleep lab bed, calm night room"
+        },
+        "retention_device": "Study-design micro-story with two arms",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "The trials behind each",
+        "narration": "Sleep apnea severity is measured as breathing pauses and shallow-breathing events per hour of sleep.",
+        "on_screen_text": "Events per hour of sleep",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sleeping person, gentle breath waves"
+        },
+        "retention_device": "Plain-language explainer before the number",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "The trials behind each",
+        "narration": "In the trial without PAP, tirzepatide, at the highest dose each person could tolerate, lowered those events by about 25 an hour, on average. On placebo, the drop was about 5.",
+        "on_screen_text": "Obesity + moderate–severe OSA, no PAP",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~25 fewer/hour",
+          "stat_label": "Tirzepatide vs ~5 on placebo, 52 weeks",
+          "stock_query": "night sky calm bedroom, falling bars"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "The trials behind each",
+        "narration": "In the trial with PAP, the drop was about 29 an hour. On placebo, about 5 and a half.",
+        "on_screen_text": "Obesity + moderate–severe OSA, on PAP",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~29 fewer/hour",
+          "stat_label": "Tirzepatide vs ~5.5 on placebo, 52 weeks",
+          "stock_query": "person with PAP mask sleeping peacefully"
+        },
+        "retention_device": "Second stat keeps momentum",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "The trials behind each",
+        "narration": "If you've ever woken up exhausted after a full night in bed, you'll understand why that number can matter so much to someone.",
+        "on_screen_text": "Exhausted after a full night?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "groggy person with morning coffee"
+        },
+        "retention_device": "Emotional recognition beat",
+        "source_ids": []
+      },
+      {
+        "id": "s42",
+        "section": "The trials behind each",
+        "narration": "So the trial populations really were different. And that changes how you should read the side-effect tables.",
+        "on_screen_text": "Read the tables carefully",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two tables of numbers, puzzled mascot"
+        },
+        "retention_device": "Payoff of the s30 loop opens the next chapter",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Side effects compared",
+        "narration": "So does one brand cause more side effects than the other?",
+        "on_screen_text": "More side effects on one?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card balance scale"
+        },
+        "retention_device": "Chapter opens with the viewer's likely question",
+        "source_ids": []
+      },
+      {
+        "id": "s44",
+        "section": "Side effects compared",
+        "narration": "Both labels list stomach effects among the most common: nausea, diarrhea, vomiting and constipation.",
+        "on_screen_text": "Both: stomach effects common",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Nausea",
+            "Diarrhea",
+            "Vomiting",
+            "Constipation"
+          ],
+          "stock_query": "queasy cartoon stomach, sympathetic"
+        },
+        "retention_device": "List card",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "Side effects compared",
+        "narration": "In the trials on both labels, most nausea, vomiting and diarrhea came during dose escalation and decreased over time.",
+        "on_screen_text": "Nausea, vomiting, diarrhea: mostly early, then decreased",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stormy cloud clearing to sun"
+        },
+        "retention_device": "Relief beat with label wording",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "Side effects compared",
+        "narration": "Zepbound's table, from its weight trials, also lists things like hair loss and injection-site reactions.",
+        "on_screen_text": "Zepbound table: weight trials",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "label table with hairbrush icon"
+        },
+        "retention_device": "Set-up for the key caveat",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "Side effects compared",
+        "narration": "Mounjaro's table comes from diabetes trials. Different trial populations, so the side-effect tables can't be compared head to head.",
+        "on_screen_text": "Tables can't be compared head to head",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Compare the two side-effect tables directly",
+          "fact": "Different trial populations, so they can't be compared head to head",
+          "stock_query": "apples and oranges on scale"
+        },
+        "retention_device": "Payoff: the trial-population point lands",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "Side effects compared",
+        "narration": "A percentage on one label and a percentage on the other aren't a fair race. Different people, different conditions, different background medicines.",
+        "on_screen_text": "Not a fair race",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "runners on different tracks"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "Side effects compared",
+        "narration": "One shared point matters a lot. The higher risk of low blood sugar applies to people with diabetes who also take insulin or a sulfonylurea, and both labels flag it.",
+        "on_screen_text": "Low sugar: diabetes + insulin or sulfonylurea",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glucose meter and juice box, calm"
+        },
+        "retention_device": "Re-hook: practical stakes",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "Side effects compared",
+        "narration": "If you get severe stomach pain that won't go away, with or without vomiting, get medical help right away.",
+        "on_screen_text": "Severe stomach pain: get help right away",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm mascot pointing to phone"
+        },
+        "retention_device": "Safety line, calm tone",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "Side effects compared",
+        "narration": "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own. Tell your prescriber how you're feeling instead.",
+        "on_screen_text": "Don't stop on your own",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person calling prescriber, reassured"
+        },
+        "retention_device": "Agency: what to do instead",
+        "source_ids": []
+      },
+      {
+        "id": "s52",
+        "section": "Side effects compared",
+        "narration": "Next, the part you actually hold in your hand.",
+        "on_screen_text": "The part in your hand",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hand holding pen box, curious"
+        },
+        "retention_device": "Mini-cliffhanger into devices",
+        "source_ids": []
+      },
+      {
+        "id": "s53",
+        "section": "Pens and vials",
+        "narration": "Is the pen the same, too?",
+        "on_screen_text": "Is the pen the same?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card pen and vial"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s54",
+        "section": "Pens and vials",
+        "narration": "Each label has a How Supplied section listing the devices it comes in. Both list the same kinds: single-dose pens, vials, and a multi-dose KwikPen.",
+        "on_screen_text": "Both: pens, vials, KwikPen",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pens, vials and KwikPen on table"
+        },
+        "retention_device": "Concrete answer first",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "Pens and vials",
+        "narration": "Which one you get depends on your prescription, and the full list for your product is printed in its own label.",
+        "on_screen_text": "Your device: check your label",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Single-dose pen",
+            "Single-dose or multi-dose vial",
+            "KwikPen (multi-dose)"
+          ],
+          "stock_query": "pen, vial and KwikPen side by side"
+        },
+        "retention_device": "List card",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "Pens and vials",
+        "narration": "They can look similar, but each device comes with its own Instructions for Use.",
+        "on_screen_text": "Each device: its own IFU",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "leaflets unfolding from boxes"
+        },
+        "retention_device": "'But' turn",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "Pens and vials",
+        "narration": "So the leaflet to follow is the one for the exact device in your hand: pen, KwikPen or vial, Mounjaro or Zepbound.",
+        "on_screen_text": "Follow your device's leaflet",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person reading leaflet at kitchen table"
+        },
+        "retention_device": "Practical takeaway",
+        "source_ids": []
+      },
+      {
+        "id": "s58",
+        "section": "Pens and vials",
+        "narration": "If your device looks different from last time, ask your pharmacist or prescriber to walk you through it before your next injection.",
+        "on_screen_text": "Looks different? Ask first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly pharmacist explaining pen box"
+        },
+        "retention_device": "Relatable moment plus agency",
+        "source_ids": []
+      },
+      {
+        "id": "s59",
+        "section": "Pens and vials",
+        "narration": "We won't go into amounts here. Strengths and how much to take come from your prescriber and your label, not a video.",
+        "on_screen_text": "Amounts: your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient talking, calm"
+        },
+        "retention_device": "Trust beat",
+        "source_ids": []
+      },
+      {
+        "id": "s60",
+        "section": "Pens and vials",
+        "narration": "Which brings us back to that one line on the Zepbound label.",
+        "on_screen_text": "Back to that one line",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass returns to label"
+        },
+        "retention_device": "Signals the main loop payoff",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "The line that links them",
+        "narration": "What if two prescriptions ever overlapped?",
+        "on_screen_text": "What if they overlapped?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card two boxes overlapping"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s62",
+        "section": "The line that links them",
+        "narration": "The Zepbound label states plainly that it contains tirzepatide. It also says using it with other tirzepatide-containing products, or with any GLP-1 receptor agonist, is not recommended.",
+        "on_screen_text": "Not with other tirzepatide or GLP-1s",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "label line highlighted, calm mascot"
+        },
+        "retention_device": "Payoff of the main open loop from s06",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "The line that links them",
+        "narration": "That's the heart of this whole comparison. Mounjaro and Zepbound aren't two medicines to combine. They're two labels for one molecule.",
+        "on_screen_text": "Two labels, one molecule",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "one molecule, two labels attached"
+        },
+        "retention_device": "Big reframe payoff",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "The line that links them",
+        "narration": "So your friend's pen and yours hold the same medicine, approved for different reasons. Pens are never meant to be shared.",
+        "on_screen_text": "Same medicine. Never share.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two friends, each holding own box"
+        },
+        "retention_device": "Thread payoff",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "The line that links them",
+        "narration": "It's also why it's worth telling every clinician you see, including before any procedure, exactly which medicines you take.",
+        "on_screen_text": "Tell every clinician",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient handing medicine list to nurse"
+        },
+        "retention_device": "Practical agency",
+        "source_ids": []
+      },
+      {
+        "id": "s66",
+        "section": "The line that links them",
+        "narration": "And please don't switch, stop or change your medicine on your own. If you think a different label fits your situation, that's a conversation for your prescriber.",
+        "on_screen_text": "Don't switch on your own",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "warm prescriber conversation, clinic"
+        },
+        "retention_device": "Required safety line before recap",
+        "source_ids": []
+      },
+      {
+        "id": "s67",
+        "section": "Your checklist",
+        "narration": "Here's your three-point checklist. One: Mounjaro and Zepbound list the same active ingredient, tirzepatide.",
+        "on_screen_text": "1. Same ingredient: tirzepatide",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Same ingredient: tirzepatide",
+            "Different approved uses",
+            "Your device's own IFU"
+          ],
+          "stock_query": "checklist with Medi cheering"
+        },
+        "retention_device": "Recap checklist (3 items)",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "Your checklist",
+        "narration": "Two: Mounjaro's label covers blood sugar control in type 2 diabetes, for adults and children 10 and older, and lowering heart attack and stroke risk in adults with type 2 diabetes at high risk. Zepbound's covers weight in adults with obesity, or overweight plus a weight-related condition, and moderate to severe sleep apnea in adults with obesity.",
+        "on_screen_text": "2. Different approved uses",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Mounjaro: type 2 diabetes (ages 10+), plus heart risk in high-risk adults",
+            "Zepbound: weight, adults with obesity or overweight + condition",
+            "Zepbound: moderate–severe OSA, adults with obesity"
+          ],
+          "stock_query": "two labels, two clear lanes"
+        },
+        "retention_device": "Recap keeps full populations",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "Your checklist",
+        "narration": "Three: follow the Instructions for Use for the exact device you have, and ask if it ever looks different.",
+        "on_screen_text": "3. Follow your device's IFU",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person confidently reading leaflet"
+        },
+        "retention_device": "Final checklist item",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "Your checklist",
+        "narration": "If you came in worried that two names meant two different drugs, you can set that down. The difference is on the label, and your prescriber can tell you which use yours is for.",
+        "on_screen_text": "Worry, set down",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "relieved person smiling at window"
+        },
+        "retention_device": "Emotional arc lands on relief and agency",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "Your checklist",
+        "narration": "This is general information, not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Not personal advice",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient shaking hands"
+        },
+        "retention_device": "Required prescriber line",
+        "source_ids": []
+      },
+      {
+        "id": "s72",
+        "section": "Your checklist",
+        "narration": "If you want to see what those two receptors actually do inside your body, subscribe; that's where this series goes next.",
+        "on_screen_text": "Next: how it works",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi pointing at two glowing locks"
+        },
+        "retention_device": "Single subscribe ask tied to the next benefit, after the payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s73",
+        "section": "Your checklist",
+        "narration": "There's a video I'd watch next, linked in the description.",
+        "on_screen_text": "Watch next: How It Works",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi waving beside play button"
+        },
+        "retention_device": "Required ending, points to the next video",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Mounjaro (tirzepatide) injection, US Prescribing Information: Boxed Warning; Sections 1, 5, 6, 7, 8.4, 12, 14, 16",
+        "publisher": "Eli Lilly and Company",
+        "year": "Revised 27 Aug 2026",
+        "url": "https://uspl.lilly.com/mounjaro/mounjaro.html#pi"
+      },
+      {
+        "id": "S2",
+        "title": "Zepbound (tirzepatide) injection, US Prescribing Information: Boxed Warning; Sections 1, 5, 6, 7, 12, 14, 16",
+        "publisher": "Eli Lilly and Company",
+        "year": "Revised 28 Aug 2026",
+        "url": "https://uspl.lilly.com/zepbound/zepbound.html#pi"
+      },
+      {
+        "id": "S3",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1). Jastreboff AM et al. N Engl J Med 2022;387:205–216",
+        "publisher": "New England Journal of Medicine (PubMed record)",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35658024/"
+      },
+      {
+        "id": "S4",
+        "title": "Tirzepatide once weekly for the treatment of obesity in people with type 2 diabetes (SURMOUNT-2). Garvey WT et al. Lancet 2023;402:613–626",
+        "publisher": "The Lancet (PubMed record)",
+        "year": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37385275/"
+      },
+      {
+        "id": "S5",
+        "title": "Tirzepatide for the Treatment of Obstructive Sleep Apnea and Obesity (SURMOUNT-OSA). Malhotra A et al. N Engl J Med 2024;391:1193–1205",
+        "publisher": "New England Journal of Medicine (PubMed record)",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38912654/"
+      },
+      {
+        "id": "S6",
+        "title": "Efficacy and safety of a novel dual GIP and GLP-1 receptor agonist tirzepatide in patients with type 2 diabetes (SURPASS-1). Rosenstock J et al. Lancet 2021;398:143–155",
+        "publisher": "The Lancet (PubMed record)",
+        "year": "2021",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34186022/"
+      }
+    ],
+    "cta": "If you want to see what those two receptors actually do inside your body, subscribe; that's where this series goes next. There's a video I'd watch next, linked in the description."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "I checked the script against the live Mounjaro and Zepbound US Prescribing Information (both revised 8/2026) and the four trial records. It passes, with two small wording fixes.\n\n**What matches the labels**\n- **Approved uses:** Mounjaro's Section 1 quote is word for word. It covers adults and children 10 and older, and the heart use is for adults with type 2 diabetes at high risk of heart attack, stroke or death from heart disease. Zepbound's two uses also match word for word, including their populations.\n- **Heart trial:** SURPASS-CVOT compared tirzepatide with dulaglutide, not placebo. The script says this correctly.\n- **Sleep apnea results:** a drop of 25.3 vs 5.3 events an hour without a breathing machine, and 29.3 vs 5.5 with one. Both trials ran 52 weeks.\n- **Side effects:** the wording \"mostly during dose escalation and decreased over time\" is right for both labels.\n- **Low blood sugar:** the higher risk is scoped to people taking insulin or a sulfonylurea, as both labels say.\n- **Shared label content:** the birth-control pill note appears on both labels. The devices match: single-dose pens, single- and multi-dose vials, and a KwikPen. Zepbound's \"not recommended with other tirzepatide products or any GLP-1 receptor agonist\" line is in its Limitations of Use.\n\n**Trial figures:** all consistent with the published papers.\n- SURPASS-1: 478 adults, 40 weeks, A1C down about 2 points by dose vs placebo.\n- SURMOUNT-1: 2,539 adults, 72 weeks, 15–21% weight loss by dose vs about 3% on placebo.\n- SURMOUNT-2: 72 weeks, about 13–15% by dose vs about 3% on placebo.\n\n**Framing and safety:** The script names the population for every result. It warns twice that separate trials can't be compared head to head. Safety lines are present: the emergency line with \"right away\", the scoped don't-stop line, no dosing, the prescriber line, and no sharing pens. The \"your friend\" scenario is clearly hypothetical, and there's no hype.\n\n**Not checked:** the children's trial (ages 10–17) wasn't checked against the label's Section 14. The script's description matches the published children's trial (SURPASS-PEDS).",
+    "issues": [
+      {
+        "location": "s62",
+        "claim": "The Zepbound label states plainly that it contains tirzepatide.",
+        "problem": "The live Limitations of Use section shows only the 'not recommended' sentence; I couldn't find a separate 'contains tirzepatide' statement. The rest of the line is accurate.",
+        "severity": "minor",
+        "fix": "The Zepbound label says using it with other tirzepatide-containing products, or with any GLP-1 receptor agonist, is not recommended."
+      },
+      {
+        "location": "s68",
+        "claim": "lowering heart attack and stroke risk in adults with type 2 diabetes at high risk",
+        "problem": "The recap drops 'death from heart disease', which s20 and the label include. The recap should keep the same scope as the label.",
+        "severity": "minor",
+        "fix": "Two: Mounjaro's label covers blood sugar control in type 2 diabetes, for adults and children 10 and older, and lowering the risk of heart attack, stroke and death from heart disease in adults with type 2 diabetes at high risk of them. Zepbound's covers weight in adults with obesity, or overweight plus a weight-related condition, and moderate to severe sleep apnea in adults with obesity."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "Mounjaro (tirzepatide) injection, US Prescribing Information",
+        "publisher": "Eli Lilly and Company",
+        "year": "Revised 27 Aug 2026",
+        "url": "https://uspl.lilly.com/mounjaro/mounjaro.html#pi"
+      },
+      {
+        "id": "S2",
+        "title": "Zepbound (tirzepatide) injection, US Prescribing Information",
+        "publisher": "Eli Lilly and Company",
+        "year": "Revised 28 Aug 2026",
+        "url": "https://uspl.lilly.com/zepbound/zepbound.html#pi"
+      },
+      {
+        "id": "S3",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1). Jastreboff AM et al. N Engl J Med 2022;387:205–216",
+        "publisher": "New England Journal of Medicine (PubMed record)",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35658024/"
+      },
+      {
+        "id": "S4",
+        "title": "Tirzepatide once weekly for the treatment of obesity in people with type 2 diabetes (SURMOUNT-2). Garvey WT et al. Lancet 2023;402:613–626",
+        "publisher": "The Lancet (PubMed record)",
+        "year": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37385275/"
+      },
+      {
+        "id": "S5",
+        "title": "Tirzepatide for the Treatment of Obstructive Sleep Apnea and Obesity (SURMOUNT-OSA). Malhotra A et al. N Engl J Med 2024;391:1193–1205",
+        "publisher": "New England Journal of Medicine (PubMed record)",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38912654/"
+      },
+      {
+        "id": "S6",
+        "title": "Efficacy and safety of a novel dual GIP and GLP-1 receptor agonist tirzepatide in patients with type 2 diabetes (SURPASS-1). Rosenstock J et al. Lancet 2021;398:143–155",
+        "publisher": "The Lancet (PubMed record)",
+        "year": "2021",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34186022/"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.022,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 6.9,
+      "weakShots": 24,
+      "layoutIssues": 5,
+      "frameIssues": [],
+      "notes": [
+        "Background is the banned rounded teal/green cabinet-strip kitchen backdrop.",
+        "The 'Diet' label pill at the bottom is clipped by the frame edge (per layout audit, box extends past 1080).",
+        "The 'Adults' tag is pushed off the bottom edge per the layout audit and isn't visible in frame.",
+        "Background is again the banned cabinet-strip kitchen backdrop.",
+        "Only the quote headline is on screen; the chart element and 'Weight' label are tiny and sit far at the bottom edge, leaving the frame mostly empty blue gradient.",
+        "The 'Overweight' tag is clipped off the bottom edge per the layout audit.",
+        "Mood is 'night' but the backdrop is the same bright daytime striped room used in warm/day shots; only a small moon icon signals night.",
+        "Same daytime room backdrop used for a night beat; mismatched mood.",
+        "The 'Near the end' clock label renders at ~26px, too small to read at a glance per the layout audit.",
+        "Background is again the banned cabinet-strip kitchen backdrop (third occurrence).",
+        "Uses the banned rounded teal 'cabinet strip' backdrop top and bottom.",
+        "Hanging grey/orange ornament circles are also banned.",
+        "Top and bottom chip rows render as empty dashes with no text — looks like a debug placeholder.",
+        "Automated check: 'Under the skin' text renders tiny (23px) and partly below the visible frame (offscreen).",
+        "Single small clipboard icon on a mostly empty clinic gradient — low visual interest."
+      ],
+      "layoutKinds": {
+        "offscreen": 12,
+        "tiny": 6,
+        "sparse": 6
+      },
+      "planPaceDraft": {
+        "changes": 371,
+        "perMin": 35.8,
+        "medianGap": 1.49,
+        "maxGap": 5.58,
+        "longGaps": [
+          [
+            30.1,
+            34.26
+          ],
+          [
+            47,
+            51.19
+          ],
+          [
+            59.44,
+            64.66
+          ],
+          [
+            88.29,
+            92.7
+          ],
+          [
+            142.5,
+            146.75
+          ],
+          [
+            150.31,
+            154.5
+          ],
+          [
+            188.19,
+            193.77
+          ],
+          [
+            297.69,
+            301.84
+          ],
+          [
+            310.71,
+            314.76
+          ],
+          [
+            322.9,
+            327.12
+          ],
+          [
+            438.3,
+            442.94
+          ],
+          [
+            465.38,
+            469.88
+          ],
+          [
+            576.45,
+            580.64
+          ]
+        ],
+        "withEngine": {
+          "medianGap": 1.27,
+          "maxGap": 4.54
+        },
+        "ok": false,
+        "detail": "plan pacing slow: 371 planned changes (35.8/min), median gap 1.49 s, longest 5.58 s, 13 stretch(es) over 4 s (limits: median 3 s, gap 4 s); with engine camera moves: median 1.27 s, longest 4.54 s"
+      },
+      "pacingRevised": 8,
+      "pacing": {
+        "window": 621.9,
+        "changes": 533,
+        "maxGap": 3.87,
+        "ok": false,
+        "detail": "533 visual changes in the whole 622 s, longest static stretch 3.87 s (limit 2.5 s)"
+      },
+      "planPace": {
+        "changes": 460,
+        "perMin": 44.4,
+        "medianGap": 1.14,
+        "maxGap": 4.41,
+        "longGaps": [
+          [
+            18.21,
+            22.62
+          ],
+          [
+            150.31,
+            154.5
+          ]
+        ],
+        "withEngine": {
+          "medianGap": 1.05,
+          "maxGap": 3.87
+        },
+        "ok": false,
+        "detail": "plan pacing slow: 460 planned changes (44.4/min), median gap 1.14 s, longest 4.41 s, 2 stretch(es) over 4 s (limits: median 3 s, gap 4 s); with engine camera moves: median 1.05 s, longest 3.87 s"
+      },
+      "frameZero": {
+        "texts": [
+          "Mounjaro vs Zepbound?Tirzepatide"
+        ],
+        "heroes": 1,
+        "heroHeight": 0.46,
+        "ok": true,
+        "detail": "frame 0: text \"Mounjaro vs Zepbound?Tirzepatide\", 1 character(s), tallest 46% of the height"
+      },
+      "renderPace": {
+        "duration": 621.8,
+        "visualChangesPerMin": 21.8,
+        "medianGap": 2.3,
+        "maxGap": 8.4,
+        "changesFirst30s": 13,
+        "hardCutsPerMin": 8.4,
+        "movingShare": 0.602,
+        "longestStill": 1.3
+      }
+    },
+    "audio": {
+      "musicGain": 0.316,
+      "sfxGain": 0.55,
+      "finalWer": 0.02,
+      "maskingDelta": 0.02,
+      "lufs": -15.2,
+      "soundNotes": "Overall music level is already well placed (-13.5 dB under voice, -14.5 dB in pauses), so the global multiplier stays at 1.0; just let the automatic ducking do its job. The cue list is almost entirely within the -14 to -20 dB-under-speech target already, but about ten pops/blips/ticks spike to -3.7 to -11.6 dB over dialogue (notably the pop at 255.84s and the tick/blip pair at 397.4-397.8s) — those are turned down hard so they're felt, not heard over the words. A few quiet transition/pause cues (e.g. the 'Is the pen the same?' whip) were left alone since nudging them would risk crowding the next word; added three bespoke atmosphere SFX (night breathing for the OSA section, a pen-prep click/hiss for the How-Supplied beat, and two soft chime tones for 'Two receptors') to add texture the stock kit can't give, all kept low and outside the safety/disclaimer lines per the no-stinger-on-safety-lines rule."
+    },
+    "blocking": [],
+    "beats": {
+      "verdict": "pass",
+      "summary": "beat sync PASS: plan 73/73 beats on time, audio shift 0.03 s, render 89% of beats cut on time",
+      "planOff": 0,
+      "audioShift": 0.03,
+      "renderHitRate": 0.89,
+      "flagged": []
+    },
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "X mark on Mounjaro and check mark on Zepbound falsely implies one drug is 'wrong' and the other 'right', which misrepresents that they are the same medicine for different approved uses — misleading beyond what the title promises"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": [
+            "pill mascot has no face/expression so no emotional pull, but text is fully clear and leaves the answer open"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 6,
+          "legibility": 6,
+          "issues": [
+            "second line of subtext ('WHAT ACTUALLY CHANGES?') is small and may be hard to read at 168px phone size",
+            "two separate text blocks compete for attention, slightly cluttered"
+          ]
+        }
+      ],
+      "best_index": 1,
+      "reasoning": "Candidate #0 is punchy but the red X on Mounjaro and green check on Zepbound frames one brand as 'wrong' and the other as 'right', which is factually misleading since both are the same medicine (tirzepatide) approved for different indications — this risks misrepresenting the video's actual, more nuanced payoff. Candidate #2 is legible for the big '2 LABELS' line but the smaller subtext box adds clutter and may not read instantly at phone size, slightly hurting legibility. Candidate #1 ('ONE KEY DIFFERENCE') is the cleanest: single focal point, high contrast, a clear curiosity gap that doesn't give away which difference it is, and no misleading or templated imagery. It scores highest on combined CTR and legibility among non-misleading options."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "Pinned comment",
+          "claim": "Mounjaro and Zepbound list the same active ingredient, tirzepatide, with different US-approved uses. ... Save this for your next prescriber visit. Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+          "problem": "The pinned comment is accurate but leaves out the don't-switch line. That line matters on a comparison post, where some viewers may think about swapping brands. Our caption rules put the don't-stop line before the disclaimer. This is a wording polish only; nothing here misleads.",
+          "severity": "minor",
+          "fix": "Mounjaro and Zepbound list the same active ingredient, tirzepatide, with different US-approved uses. Their side-effect tables can't be compared head to head, because the trial populations were different. Save this for your next prescriber visit. Don't switch, stop or change your medicine on your own. Not personal advice. Talk to your doctor or prescriber about whether it's right for you."
+        }
+      ]
+    }
+  },
+  "release_tag": "content-2026-11-18",
+  "archive_url": "b2://informed-lab-media/content/2026-11-18/L1-mounjaro-vs-zepbound-same-medicine-tirze/"
+}
