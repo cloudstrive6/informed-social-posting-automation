@@ -1,0 +1,1439 @@
+{
+  "id": "L1-tirzepatide-mounjaro-zepbound-weight-los",
+  "date": "2026-11-19",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Tirzepatide (Mounjaro/Zepbound) weight loss in the randomized trials. SURMOUNT-1 averages for each dose arm vs placebo (adults with obesity, or overweight plus at least one weight-related condition, without diabetes; 72 weeks), how much results varied between people, why people with type 2 diabetes lost less on average (SURMOUNT-2, a separate trial), the share of loss that was lean mass, and the habits linked to getting the most from it. This is the fixed re-render of the held 11-16 script (playbook queue #3).",
+    "angle": "Keep the angle as written, with one change to the SURMOUNT-2 chapter. Phrase it as: 'In SURMOUNT-2, a separate 72-week trial in adults with obesity or overweight and type 2 diabetes, average weight loss was smaller than in SURMOUNT-1. The trials weren't head-to-head, and researchers have suggested possible reasons, but the trial wasn't designed to show why.' Don't state any cause as fact. Every number keeps one estimand, named once ('counting everyone who started'), including the share reaching 20% or more.",
+    "working_title": "Tirzepatide (Mounjaro) Weight Loss: How Much in Trials?",
+    "target_keyword": "how much weight can you lose on mounjaro",
+    "trend_stage": "evergreen",
+    "why": "Playbook queue #3 and the analyst's first priority. It's a broad, heavily searched question with momentum rising across 4 snapshots (80→84) ahead of the January surge, and it rests fully on NEJM trial data. | fact-check: This is a sound, evergreen pillar topic and the fix list for the 11-16 hold is complete. There is one framing problem. SURMOUNT-2 shows that adults with obesity or overweight AND type 2 diabetes lost less on average. It does not show why. The proposed reasons are hypotheses, for example lower starting weight, glucose-lowering medicines or differences in diabetes physiology. Stating any of them as a finding would claim a cause the trial doesn't support. Other checks for the content stage: (1) Use one estimand throughout. 'Counting everyone who started' means the treatment-regimen estimand. The ≥20% figures need to come from the same estimand, or be labelled if they come from the efficacy estimand. The NEJM abstract reports ≥20% for the 10 and 15 mg arms only; the 5 mg figure is in the tables. (2) Mounjaro label figures must be labelled as type 2 diabetes trials (SURPASS) and never set next to SURMOUNT-1 as if the two were compared directly. (3) The real-world Diabetes & Metabolism paper gets one context line at most, labelled observational, and only if its PubMed record is confirmed. (4) Protein advice keeps the kidney caveat, and the strength-training line says 'recommended', with no claim that it preserves muscle on tirzepatide unless a source shows it.",
+    "pillar": "results"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Tirzepatide (Mounjaro, Zepbound): How Much Weight Can You Lose?",
+    "title_candidates": [
+      "Tirzepatide (Mounjaro): How Much Weight Can You Lose?",
+      "Tirzepatide (Mounjaro) Weight Loss: How Much in Trials?",
+      "Tirzepatide (Mounjaro): How Much Weight Do People Lose?",
+      "Tirzepatide (Mounjaro) Weight Loss: Will You Match It?",
+      "Tirzepatide (Mounjaro) Weight Loss by Dose: How Much?",
+      "Tirzepatide (Mounjaro): How Much Weight in the Trials?",
+      "Tirzepatide (Mounjaro) Weight Loss: What 72 Weeks Showed",
+      "Tirzepatide (Mounjaro) Weight Loss: How Much Is Fat?",
+      "Tirzepatide (Mounjaro) Weight Loss: The Real Range",
+      "Tirzepatide (Mounjaro) Weight Loss With Type 2 Diabetes?"
+    ],
+    "description": "no-op field placeholder - see description field above",
+    "tags": [
+      "mounjaro weight loss",
+      "tirzepatide weight loss",
+      "how much weight can you lose on mounjaro",
+      "SURMOUNT-1 results",
+      "zepbound weight loss",
+      "tirzepatide vs placebo",
+      "mounjaro average weight loss",
+      "tirzepatide weight loss percentage",
+      "SURMOUNT-2 diabetes weight loss",
+      "tirzepatide fat vs muscle loss",
+      "mounjaro dose comparison",
+      "tirzepatide weight regain",
+      "zepbound SURMOUNT-1",
+      "tirzepatide clinical trial",
+      "GLP-1 weight loss trial",
+      "mounjaro results"
+    ],
+    "pinned_comment": "In SURMOUNT-1 (adults with obesity, or overweight plus a weight-related condition, without diabetes), 50% and 57% of people on the 10 mg and 15 mg tirzepatide arms lost 20% or more of their body weight over 72 weeks, vs 3% on placebo. Depending on dose, 9–15% on tirzepatide didn't reach a 5% loss. These are trial arms, not a dosing plan. In SURMOUNT-2, a separate trial in adults with obesity or overweight and type 2 diabetes, averages were smaller. A trial's spread doesn't tell any one person where they'll land. Save this for your next appointment. If you're ever thinking about stopping, plan it with your prescriber. Don't stop or change your medicine on your own. Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "WILL YOU MATCH AVERAGE?",
+      "highlight_word": "YOU",
+      "subtext": "",
+      "layout": "reaction",
+      "psychology": "Curiosity gap plus self-relevance: the title promises the trial average, and the thumbnail asks the question every viewer has, whether they'd hit it. The answer about how much results varied is only in the video.",
+      "emotion": "Personal curiosity, a bit of nervous hope",
+      "hero_art": "bathroom scale",
+      "hero_face": "shocked",
+      "second_art": "",
+      "second_face": "none",
+      "prop": "question",
+      "accent": "highlight",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 The short answer\n1:17 What did each dose do?\n2:58 Will you match the average?\n4:10 What about type 2 diabetes?\n5:24 Fat or muscle?\n6:44 The trade-off\n7:40 What if you stop?\n8:47 Your takeaways"
+  },
+  "media": {
+    "video": "L1-tirzepatide-mounjaro-zepbound-weight-los.mp4",
+    "duration": 601.776,
+    "thumbnail": "L1-tirzepatide-mounjaro-zepbound-weight-los-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-19T19:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "N8S7tC9vTlU",
+      "url": "https://youtu.be/N8S7tC9vTlU",
+      "published_at": "2026-11-19T19:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-11-19T03:38:04.643Z",
+  "script": {
+    "working_title": "Tirzepatide (Mounjaro) Weight Loss: How Much in Trials?",
+    "target_keyword": "how much weight can you lose on mounjaro",
+    "hook_pattern": "Open loop. Sentence 1 is a direct 'you' question that names tirzepatide. The headline average is spoken by about 10 s and a second number lands at 15–30 s. A one-sentence loop (what happened when people switched to placebo) pays off in the last chapter.",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "The short answer",
+        "narration": "If you're on tirzepatide or thinking about it, how much weight could you actually lose?",
+        "on_screen_text": "Tirzepatide: how much weight lost?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious woman eyeing scale, hopeful"
+        },
+        "retention_device": "Direct question hook: names the drug and the title's question in 'you' terms",
+        "source_ids": []
+      },
+      {
+        "id": "s02",
+        "section": "The short answer",
+        "narration": "Short answer: on the top tirzepatide dose in the SURMOUNT-1 trial, average weight loss over 72 weeks was 20.9 percent of body weight. On placebo, over the same 72 weeks, it was 3.1 percent.",
+        "on_screen_text": "Top dose 20.9% vs placebo 3.1%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "20.9% vs 3.1%",
+          "stat_label": "Tirzepatide 15 mg vs placebo, 72 weeks",
+          "stock_query": "big number reveal, cheering mascot"
+        },
+        "retention_device": "Headline answer delivered by about 10 s",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "The short answer",
+        "narration": "Those were adults with obesity, or overweight plus a weight-related condition, without diabetes. And the SURMOUNT-1 averages here count everyone who was randomly assigned, whether or not they stayed on treatment.",
+        "on_screen_text": "Without diabetes; everyone randomized",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Obesity, or overweight + a weight-related condition",
+            "Without diabetes",
+            "Counts everyone randomized"
+          ],
+          "stock_query": "diverse adults in clinic waiting room"
+        },
+        "retention_device": "Scope and estimand named once, so every later SURMOUNT-1 number can be trusted",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "The short answer",
+        "narration": "Second number. Depending on dose, 85 to 91 percent of people on tirzepatide lost at least 5 percent of their body weight. On placebo, 35 percent did.",
+        "on_screen_text": "85–91% lost 5% or more",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "85–91% vs 35%",
+          "stat_label": "Lost 5%+: tirzepatide by dose vs placebo",
+          "stock_query": "crowd of people, most highlighted green"
+        },
+        "retention_device": "Second concrete payoff at 15–30 s (Exp H)",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "The short answer",
+        "narration": "And stay with me, because later you'll see what happened to the weight when people in another trial were switched to placebo.",
+        "on_screen_text": "What happened after switching?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi peeking behind curtain, curious"
+        },
+        "retention_device": "Main open loop, one sentence, paid off in 'What if you stop?'",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s06",
+        "section": "The short answer",
+        "narration": "Quick label note first. In the US, tirzepatide is sold as Zepbound to reduce excess weight in certain people with obesity or overweight, and as Mounjaro for type 2 diabetes. In the UK and some other countries, Mounjaro is also licensed for weight management.",
+        "on_screen_text": "Same medicine, different labels",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "US Zepbound: weight reduction",
+            "US Mounjaro: type 2 diabetes",
+            "UK Mounjaro: also weight management"
+          ],
+          "stock_query": "two medicine boxes, one shared molecule"
+        },
+        "retention_device": "Clears up the brand confusion behind the search term, for US and UK viewers",
+        "source_ids": [
+          "S4",
+          "S5",
+          "S7"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "The short answer",
+        "narration": "So whichever brand name you search, the weight-loss answers come from tirzepatide's SURMOUNT trials.",
+        "on_screen_text": "The answers: SURMOUNT trials",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over trial folders"
+        },
+        "retention_device": "Bridge into the first chapter",
+        "source_ids": [
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "What did each dose do?",
+        "narration": "So what did each dose actually do in SURMOUNT-1?",
+        "on_screen_text": "What did each dose do?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, staircase of bars"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s09",
+        "section": "What did each dose do?",
+        "narration": "Here's the ladder, averaged over 72 weeks. On 5 milligrams, weight loss was 15 percent.",
+        "on_screen_text": "5 mg: 15.0% average loss",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "15.0%",
+          "stat_label": "Tirzepatide 5 mg, average loss, 72 weeks",
+          "stock_query": "first step of a ladder glowing"
+        },
+        "retention_device": "Step-by-step reveal builds anticipation",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "What did each dose do?",
+        "narration": "On 10 milligrams, 19.5 percent. On 15 milligrams, 20.9 percent. And on placebo, 3.1 percent.",
+        "on_screen_text": "Average loss by dose, 72 weeks",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "5 mg: 15.0%",
+            "10 mg: 19.5%",
+            "15 mg: 20.9%",
+            "Placebo: 3.1%"
+          ],
+          "stock_query": "bar chart ladder, placebo bar small"
+        },
+        "retention_device": "Payoff of the dose ladder",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "What did each dose do?",
+        "narration": "These are trial arms, not a dosing plan. Which dose is right for you is your prescriber's call.",
+        "on_screen_text": "Trial arms, not a dosing plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly doctor talking with patient"
+        },
+        "retention_device": "Trust beat: keeps the viewer safe",
+        "source_ids": []
+      },
+      {
+        "id": "s12",
+        "section": "What did each dose do?",
+        "narration": "The trial was big: 2,539 adults, randomly assigned to a tirzepatide dose or placebo, with a 72-week treatment period. It was published in the New England Journal of Medicine.",
+        "on_screen_text": "2,539 adults, 72-week trial",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "2,539",
+          "stat_label": "SURMOUNT-1 adults randomized, 72-week treatment",
+          "stock_query": "stadium of people, calendar pages"
+        },
+        "retention_device": "Scale stat builds credibility",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "What did each dose do?",
+        "narration": "Imagine Rosa, 50. She's hypothetical, but you might know her. A few months into tirzepatide, a friend at work seems to be losing faster, and Rosa quietly wonders if she's doing it wrong.",
+        "on_screen_text": "Am I doing it wrong?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "worried woman in office kitchen"
+        },
+        "retention_device": "Relatable thread introduced (clearly hypothetical)",
+        "source_ids": []
+      },
+      {
+        "id": "s14",
+        "section": "What did each dose do?",
+        "narration": "If you've had that thought, you're not alone. And one trial detail changes how Rosa should read that headline number.",
+        "on_screen_text": "One detail to know",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi holding a hidden detail card"
+        },
+        "retention_device": "Mini open loop plus validation",
+        "source_ids": []
+      },
+      {
+        "id": "s15",
+        "section": "What did each dose do?",
+        "narration": "Everyone in SURMOUNT-1, placebo group included, got regular lifestyle counselling. The aim was about 500 fewer calories a day and at least 150 minutes of physical activity a week.",
+        "on_screen_text": "Everyone got counselling",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "About 500 fewer calories a day",
+            "150+ minutes activity a week",
+            "Placebo group too"
+          ],
+          "stock_query": "dietitian coaching group, walking shoes"
+        },
+        "retention_device": "Payoff of the mini loop",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "What did each dose do?",
+        "narration": "So the 3.1 percent on placebo wasn't people doing nothing. It was diet and activity support, with placebo injections instead of tirzepatide.",
+        "on_screen_text": "Placebo still had support",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "The placebo group did nothing",
+          "fact": "Placebo got diet and activity counselling too",
+          "stock_query": "person walking with healthy plate"
+        },
+        "retention_device": "Assumption flip",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "What did each dose do?",
+        "narration": "That means the gap between the arms is roughly what tirzepatide added on top of that support.",
+        "on_screen_text": "The gap = what tirzepatide added",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two bars, gap highlighted"
+        },
+        "retention_device": "Reframe that makes the numbers click",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "What did each dose do?",
+        "narration": "To make it concrete, here's arithmetic, not a promise. Someone starting at 220 pounds who lost 20.9 percent would lose about 46 pounds.",
+        "on_screen_text": "Example math, not a promise",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "≈46 lb",
+          "stat_label": "20.9% of 220 lb, example math",
+          "stock_query": "calculator next to scale, friendly"
+        },
+        "retention_device": "Humanised number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "What did each dose do?",
+        "narration": "But an average is just the middle of a crowd. And in this trial, the crowd was spread out.",
+        "on_screen_text": "An average is a middle",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "crowd spread across a wide field"
+        },
+        "retention_device": "Re-hook into the next chapter",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Will you match the average?",
+        "narration": "So will your result look like the average?",
+        "on_screen_text": "Will you match the average?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, person beside bell curve"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s21",
+        "section": "Will you match the average?",
+        "narration": "Not necessarily. On the 10 and 15 milligram doses, 50 and 57 percent of people lost 20 percent or more of their body weight.",
+        "on_screen_text": "10 & 15 mg: 50% and 57%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "50% & 57%",
+          "stat_label": "Lost 20%+: tirzepatide 10 mg, 15 mg",
+          "stock_query": "half a crowd celebrating"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Will you match the average?",
+        "narration": "On placebo, 3 percent reached that mark. That's about 1 in 33.",
+        "on_screen_text": "Placebo: 3% lost 20%+",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "3%",
+          "stat_label": "Lost 20%+ on placebo, 72 weeks",
+          "stock_query": "one person highlighted in big crowd"
+        },
+        "retention_device": "Contrast number, humanised",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Will you match the average?",
+        "narration": "Flip that around, and 43 to 50 percent of people on those doses lost less than 20 percent.",
+        "on_screen_text": "43–50% lost under 20%",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "coin flipping, two sides"
+        },
+        "retention_device": "Flip the stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Will you match the average?",
+        "narration": "And at the far end, 9 to 15 percent of people on tirzepatide, depending on dose, didn't reach a 5 percent loss.",
+        "on_screen_text": "9–15% under a 5% loss",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "9–15%",
+          "stat_label": "Under 5% loss: tirzepatide by dose",
+          "stock_query": "small group at edge of chart"
+        },
+        "retention_device": "Honest surprise: not everyone responds the same",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "Will you match the average?",
+        "narration": "Here's another way to see it. On placebo, with counselling alone, 35 percent still lost at least 5 percent.",
+        "on_screen_text": "Placebo: 35% lost 5%+",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "35%",
+          "stat_label": "Lost 5%+ on placebo with counselling",
+          "stock_query": "person proud after a walk"
+        },
+        "retention_device": "Unexpected stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "Will you match the average?",
+        "narration": "Same medicine, same trial, same counselling, and results ranged from very large to small. SURMOUNT-1 reported that spread. It doesn't tell any one person where they'll land.",
+        "on_screen_text": "Same trial, wide range",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scatter of dots on a board"
+        },
+        "retention_device": "But/therefore turn",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Will you match the average?",
+        "narration": "For Rosa, that's a relief. Her friend's pace isn't her yardstick. Her own trend over months, and how she's feeling, are what's worth bringing to her prescriber.",
+        "on_screen_text": "Your trend, not their pace",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "relieved woman smiling at her notes"
+        },
+        "retention_device": "Thread payoff: relief",
+        "source_ids": []
+      },
+      {
+        "id": "s28",
+        "section": "Will you match the average?",
+        "narration": "And weight is one health measure among many. Blood pressure, energy and blood sugar count too.",
+        "on_screen_text": "Weight is one measure",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Blood pressure",
+            "Energy",
+            "Blood sugar"
+          ],
+          "stock_query": "dashboard of health gauges"
+        },
+        "retention_device": "Empowering reframe",
+        "source_ids": []
+      },
+      {
+        "id": "s29",
+        "section": "Will you match the average?",
+        "narration": "But there's one group where the average itself came out lower, and it's worth knowing if that's you.",
+        "on_screen_text": "One group lost less",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi raising a curious eyebrow"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "What about type 2 diabetes?",
+        "narration": "What if you have type 2 diabetes? Imagine Rosa's brother, who does. His answer comes from a different trial.",
+        "on_screen_text": "What about type 2 diabetes?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, brother and sister talking"
+        },
+        "retention_device": "Chapter opens with a question; thread extends",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "What about type 2 diabetes?",
+        "narration": "In SURMOUNT-2, a separate 72-week trial in adults with obesity or overweight and type 2 diabetes, average weight loss was smaller than in SURMOUNT-1.",
+        "on_screen_text": "SURMOUNT-2: smaller average",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "separate trial folder on its own desk"
+        },
+        "retention_device": "Answer stated first",
+        "source_ids": [
+          "S2",
+          "S1"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "What about type 2 diabetes?",
+        "narration": "On 10 milligrams, average loss was 12.8 percent. On 15 milligrams, 14.7 percent. On placebo, 3.2 percent.",
+        "on_screen_text": "SURMOUNT-2, type 2 diabetes, 72 weeks",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "10 mg: 12.8%",
+            "15 mg: 14.7%",
+            "Placebo: 3.2%"
+          ],
+          "stock_query": "bar chart, three bars"
+        },
+        "retention_device": "Concrete numbers",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "What about type 2 diabetes?",
+        "narration": "The trials weren't head-to-head, and SURMOUNT-2 wasn't designed to show why the averages differed.",
+        "on_screen_text": "Not head-to-head; cause unknown",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "question mark between two studies"
+        },
+        "retention_device": "Honest uncertainty",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "What about type 2 diabetes?",
+        "narration": "So if you live with diabetes and your numbers look smaller than a headline you saw, that doesn't mean you're failing. The headline came from a different trial, in different people.",
+        "on_screen_text": "Smaller isn't failing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "man with diabetes, reassured, kitchen"
+        },
+        "retention_device": "Validation",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "What about type 2 diabetes?",
+        "narration": "One safety point for this group. If you have diabetes and take insulin or a sulfonylurea, the risk of low blood sugar is higher with tirzepatide, so your prescriber may need to review those medicines.",
+        "on_screen_text": "Insulin or sulfonylurea? Low sugar risk",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pharmacist reviewing medicine list calmly"
+        },
+        "retention_device": "Practical safety value",
+        "source_ids": [
+          "S4",
+          "S5"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "What about type 2 diabetes?",
+        "narration": "And Mounjaro's own label reports results from type 2 diabetes trials that focused on blood sugar. They weren't set up to compare with SURMOUNT-1, so I'm keeping them apart.",
+        "on_screen_text": "Diabetes trials kept separate",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two binders on separate shelves"
+        },
+        "retention_device": "Trust beat",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "What about type 2 diabetes?",
+        "narration": "Next comes the question people almost whisper. How much of the weight lost was muscle?",
+        "on_screen_text": "Was it muscle?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person whispering a question, curious"
+        },
+        "retention_device": "Re-hook: open loop into next chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s38",
+        "section": "Fat or muscle?",
+        "narration": "Was it fat, or muscle?",
+        "on_screen_text": "Fat or muscle?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, scale with question"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s39",
+        "section": "Fat or muscle?",
+        "narration": "In a body-scan substudy of 160 SURMOUNT-1 participants, fat mass fell by 33.9 percent on tirzepatide, all doses combined.",
+        "on_screen_text": "Fat mass: 33.9% vs 8.2%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "33.9% vs 8.2%",
+          "stat_label": "Fat mass drop, tirzepatide all doses vs placebo, 160-person substudy",
+          "stock_query": "friendly body scan machine"
+        },
+        "retention_device": "Answer first",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "Fat or muscle?",
+        "narration": "On placebo, fat mass fell by 8.2 percent. Roughly a third, against about a twelfth.",
+        "on_screen_text": "A third vs a twelfth",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pie slices, big and small"
+        },
+        "retention_device": "Humanised comparison",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "Fat or muscle?",
+        "narration": "Of the weight lost on tirzepatide in that substudy, roughly three-quarters was fat and about one-quarter was lean mass.",
+        "on_screen_text": "≈75% fat, ≈25% lean",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "≈75% / 25%",
+          "stat_label": "Fat vs lean share, 160-person substudy",
+          "stock_query": "pie chart, three quarters fat"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "Fat or muscle?",
+        "narration": "That's 160 people, not the whole trial, so treat it as a snapshot. But it's a good reason to look after the muscle you have.",
+        "on_screen_text": "A snapshot, not the whole trial",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "camera snapshot of a small group"
+        },
+        "retention_device": "Caveat folded into the payoff",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Fat or muscle?",
+        "narration": "Here's what US guidelines recommend for adults in general: at least 150 minutes of moderate activity a week, plus muscle-strengthening activity on 2 or more days.",
+        "on_screen_text": "150 min + strength 2 days",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "150+ min moderate activity a week",
+            "Muscle-strengthening 2+ days a week"
+          ],
+          "stock_query": "person lifting light weights, smiling"
+        },
+        "retention_device": "Practical takeaway",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Fat or muscle?",
+        "narration": "To be clear, SURMOUNT-1 didn't test whether strength training protects muscle on tirzepatide. It's recommended for adults in general, and that includes people on tirzepatide.",
+        "on_screen_text": "Recommended for all adults",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "resistance band workout at home"
+        },
+        "retention_device": "Honest framing",
+        "source_ids": [
+          "S1",
+          "S6"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "Fat or muscle?",
+        "narration": "Protein matters too, but the right amount differs from person to person. If you have kidney disease, ask your prescriber or a dietitian before you eat more protein.",
+        "on_screen_text": "Kidney disease? Ask first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "dietitian with plate of eggs, beans"
+        },
+        "retention_device": "Actionable tip with safety caveat",
+        "source_ids": []
+      },
+      {
+        "id": "s46",
+        "section": "Fat or muscle?",
+        "narration": "Imagine Rosa adding two short strength sessions a week. Not to chase the scale, but to feel steady on the stairs and strong carrying the shopping.",
+        "on_screen_text": "Strong, not just smaller",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman confidently climbing stairs"
+        },
+        "retention_device": "Thread returns: agency",
+        "source_ids": []
+      },
+      {
+        "id": "s47",
+        "section": "Fat or muscle?",
+        "narration": "Before the result I promised you, there's one trade-off you deserve to hear about.",
+        "on_screen_text": "First, the trade-off",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "balance scale with two sides"
+        },
+        "retention_device": "Re-hook referencing the main loop",
+        "source_ids": []
+      },
+      {
+        "id": "s48",
+        "section": "The trade-off",
+        "narration": "What did people put up with?",
+        "on_screen_text": "What did people put up with?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, stomach character"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s49",
+        "section": "The trade-off",
+        "narration": "In SURMOUNT-1, the most common side effects on tirzepatide were stomach-related: nausea, diarrhea and constipation.",
+        "on_screen_text": "Nausea, diarrhea, constipation",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Nausea",
+            "Diarrhea",
+            "Constipation"
+          ],
+          "stock_query": "queasy cartoon stomach, calm"
+        },
+        "retention_device": "Answer first",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "The trade-off",
+        "narration": "Most were mild to moderate, and they happened mainly while the dose was being stepped up.",
+        "on_screen_text": "Mainly during dose step-ups",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stomach character calming down"
+        },
+        "retention_device": "Relief line",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "The trade-off",
+        "narration": "Side effects led some people to stop treatment. That was about 4 to 7 percent on tirzepatide, depending on dose. On placebo, 2.6 percent.",
+        "on_screen_text": "Stopped for side effects",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "4–7% vs 2.6%",
+          "stat_label": "Stopped for side effects, by dose vs placebo",
+          "stock_query": "small group stepping aside, neutral"
+        },
+        "retention_device": "Concrete number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "The trade-off",
+        "narration": "If you get severe stomach pain that won't go away, with or without vomiting, get medical help right away.",
+        "on_screen_text": "Severe stomach pain? Get help right away",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm mascot pointing to phone"
+        },
+        "retention_device": "Safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s53",
+        "section": "The trade-off",
+        "narration": "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own.",
+        "on_screen_text": "Don't stop or change it alone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient and prescriber talking calmly"
+        },
+        "retention_device": "Safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s54",
+        "section": "The trade-off",
+        "narration": "And if vomiting or diarrhea leaves you losing fluids, sip fluids unless you've been told to limit fluids, and tell your prescriber. The label warns that fluid loss from these side effects has been linked to kidney problems.",
+        "on_screen_text": "Losing fluids? Tell your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glass of water on bedside table"
+        },
+        "retention_device": "Practical value",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "The trade-off",
+        "narration": "Which brings us back to the question I left open at the start.",
+        "on_screen_text": "Back to the big question",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi opening the curtain"
+        },
+        "retention_device": "Signals payoff of the main loop",
+        "source_ids": []
+      },
+      {
+        "id": "s56",
+        "section": "What if you stop?",
+        "narration": "What happens when the medicine stops?",
+        "on_screen_text": "What if the medicine stops?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, road splitting in two"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s57",
+        "section": "What if you stop?",
+        "narration": "In SURMOUNT-4, people switched to placebo after 36 weeks on tirzepatide saw their body weight rise by 14 percent on average over the next 52 weeks.",
+        "on_screen_text": "Switched to placebo: +14.0%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "+14.0%",
+          "stat_label": "Weight change after switch to placebo, 52 weeks",
+          "stock_query": "line on chart curving upward"
+        },
+        "retention_device": "Main loop payoff",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "What if you stop?",
+        "narration": "People who stayed on tirzepatide lost a further 5.5 percent over the same 52 weeks.",
+        "on_screen_text": "Stayed on: 5.5% further loss",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "5.5%",
+          "stat_label": "Further loss staying on tirzepatide, 52 weeks",
+          "stock_query": "line on chart gently dipping"
+        },
+        "retention_device": "Contrast payoff",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "What if you stop?",
+        "narration": "That trial randomized 670 adults with obesity, or overweight plus a weight-related condition, without diabetes: 335 stayed on tirzepatide and 335 switched.",
+        "on_screen_text": "335 stayed, 335 switched",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Obesity, or overweight + a condition",
+            "Without diabetes",
+            "335 stayed on, 335 switched"
+          ],
+          "stock_query": "two equal groups of people"
+        },
+        "retention_device": "Population folded into the result",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "What if you stop?",
+        "narration": "And here's the twist people miss. Even the placebo group still ended 9.9 percent below their weight at the very start of the trial.",
+        "on_screen_text": "Placebo still 9.9% below start",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "9.9%",
+          "stat_label": "Placebo group, below starting weight, 88 weeks",
+          "stock_query": "Medi surprised, pointing at chart"
+        },
+        "retention_device": "Last surprising fact, the twist",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "What if you stop?",
+        "narration": "So in this trial, keeping the weight off was tied to staying on treatment, and some of the loss held even after switching.",
+        "on_screen_text": "Staying on mattered",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "steady path through hills"
+        },
+        "retention_device": "Meaning of the payoff",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "What if you stop?",
+        "narration": "If you're ever thinking about stopping, plan it with your prescriber. Don't stop or change your medicine on your own.",
+        "on_screen_text": "Plan it with your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient and doctor planning together"
+        },
+        "retention_device": "Agency and safety",
+        "source_ids": []
+      },
+      {
+        "id": "s63",
+        "section": "What if you stop?",
+        "narration": "For Rosa, that turns 'how fast?' into a better question: what can I keep doing, for the long run?",
+        "on_screen_text": "What can I keep doing?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman walking at sunrise, hopeful"
+        },
+        "retention_device": "Thread payoff: hope",
+        "source_ids": []
+      },
+      {
+        "id": "s64",
+        "section": "Your takeaways",
+        "narration": "Here's what to take with you.",
+        "on_screen_text": "Your 3 takeaways",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, checklist with ticks"
+        },
+        "retention_device": "Recap signpost",
+        "source_ids": []
+      },
+      {
+        "id": "s65",
+        "section": "Your takeaways",
+        "narration": "One. In SURMOUNT-1, adults with obesity, or overweight plus a weight-related condition, without diabetes, lost 15 to 20.9 percent of body weight on average by tirzepatide dose over 72 weeks. On placebo, 3.1 percent.",
+        "on_screen_text": "15.0–20.9% vs 3.1% placebo",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "15.0–20.9% vs 3.1%",
+          "stat_label": "SURMOUNT-1 by dose vs placebo, 72 weeks",
+          "stock_query": "checklist item one glowing"
+        },
+        "retention_device": "Recap with full scope",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "Your takeaways",
+        "narration": "Two. In SURMOUNT-2, a separate trial in adults with obesity or overweight and type 2 diabetes, averages were smaller. And in SURMOUNT-1, results on tirzepatide ranged from under 5 percent to over 20 percent.",
+        "on_screen_text": "Smaller with diabetes; wide range",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "checklist item two, spread of dots"
+        },
+        "retention_device": "Recap with full scope",
+        "source_ids": [
+          "S2",
+          "S1"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "Your takeaways",
+        "narration": "Three. In SURMOUNT-4, in adults with obesity, or overweight plus a weight-related condition, without diabetes, weight went back up on average after switching to placebo. So ask your prescriber about the long-term plan.",
+        "on_screen_text": "Ask about the long-term plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "checklist item three, calendar ahead"
+        },
+        "retention_device": "Recap with full scope",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "Your takeaways",
+        "narration": "And bring these questions to your next appointment: what's a realistic range for me, how do I protect my muscle, and what's our plan for the long run?",
+        "on_screen_text": "3 questions for your prescriber",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "What's a realistic range for me?",
+            "How do I protect my muscle?",
+            "What's our long-term plan?"
+          ],
+          "stock_query": "person writing questions in notebook"
+        },
+        "retention_device": "Practical checklist",
+        "source_ids": []
+      },
+      {
+        "id": "s69",
+        "section": "Your takeaways",
+        "narration": "It's a prescription medicine, so talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Ask whether it's right for you",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "warm doctor conversation, nodding"
+        },
+        "retention_device": "Required safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s70",
+        "section": "Your takeaways",
+        "narration": "If you want straight answers like this from the trials, one tirzepatide question at a time, subscribe.",
+        "on_screen_text": "One question at a time",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi waving, subscribe bell glowing"
+        },
+        "retention_device": "Single subscribe ask tied to a specific benefit, after the payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s71",
+        "section": "Your takeaways",
+        "narration": "There's a video I'd watch next, linked in the description.",
+        "on_screen_text": "Watch this next",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi pointing to next video"
+        },
+        "retention_device": "Watch-next handoff",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1), incl. DXA body-composition substudy",
+        "publisher": "New England Journal of Medicine (PubMed record)",
+        "year": "2022 (N Engl J Med 387:205–216, published 21 Jul 2022)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35658024/"
+      },
+      {
+        "id": "S2",
+        "title": "Tirzepatide once weekly for the treatment of obesity in people with type 2 diabetes (SURMOUNT-2): a double-blind, randomised, multicentre, placebo-controlled, phase 3 trial",
+        "publisher": "The Lancet (PubMed record)",
+        "year": "2023 (Lancet 402:613–626, published 19 Aug 2023)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37385275/"
+      },
+      {
+        "id": "S3",
+        "title": "Continued Treatment With Tirzepatide for Maintenance of Weight Reduction in Adults With Obesity: The SURMOUNT-4 Randomized Clinical Trial",
+        "publisher": "JAMA (PubMed record)",
+        "year": "2024 (JAMA 331:38–48, published 2 Jan 2024)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38078870/"
+      },
+      {
+        "id": "S4",
+        "title": "Zepbound (tirzepatide) Prescribing Information: Indications (1); Warnings: Acute Kidney Injury Due to Volume Depletion (5.3), Hypoglycemia (5.7)",
+        "publisher": "Eli Lilly and Company / US FDA label",
+        "year": "Revised 28 Aug 2026",
+        "url": "https://uspl.lilly.com/zepbound/zepbound.html#pi"
+      },
+      {
+        "id": "S5",
+        "title": "Mounjaro (tirzepatide) Prescribing Information: Indications (1); Warnings: Hypoglycemia with Concomitant Use of Insulin Secretagogues or Insulin (5.3); Clinical Studies (14)",
+        "publisher": "Eli Lilly and Company / US FDA label",
+        "year": "Revised 27 Aug 2026",
+        "url": "https://uspl.lilly.com/mounjaro/mounjaro.html#pi"
+      },
+      {
+        "id": "S6",
+        "title": "Physical Activity Guidelines for Americans, 2nd edition: Current Guidelines",
+        "publisher": "U.S. Department of Health and Human Services (ODPHP)",
+        "year": "2nd edition 2018; page content last updated 19 Nov 2025",
+        "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines"
+      },
+      {
+        "id": "S7",
+        "title": "MHRA authorises diabetes drug Mounjaro (tirzepatide) for weight management and weight loss",
+        "publisher": "UK Medicines and Healthcare products Regulatory Agency (GOV.UK)",
+        "year": "Published 8 Nov 2023",
+        "url": "https://www.gov.uk/government/news/mhra-authorises-diabetes-drug-mounjaro-tirzepatide-for-weight-management-and-weight-loss"
+      }
+    ],
+    "cta": "If you want straight answers like this from the trials, one tirzepatide question at a time, subscribe. There's a video I'd watch next, linked in the description."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "This script is accurate and safe. It can ship as written, and the two minor wording fixes below are optional but recommended.\n\n**What I checked against sources**\n- **SURMOUNT-1 numbers all match:**\n  - 2,539 adults randomised.\n  - Average loss at 72 weeks: 15.0%, 19.5% and 20.9% by dose vs 3.1% on placebo.\n  - Lost at least 5%: 85–91% vs 35%.\n  - Lost 20% or more: 50% and 57% vs 3%.\n  - Stopped for side effects: 4.3–7.1% vs 2.6%.\n  - Side effects were mostly mild to moderate.\n  - The derived figures are correct: 43–50% lost under 20%, 9–15% lost under 5%, and 220 lb × 20.9% ≈ 46 lb.\n- **SURMOUNT-2:** 12.8% and 14.7% vs 3.2% over 72 weeks, in adults with type 2 diabetes. Matches.\n- **SURMOUNT-4:** 670 people randomised; −5.5% for those who stayed on vs +14.0% after the switch to placebo. Matches.\n- **US labels:**\n  - Zepbound (revised 8/2026): 5.3 \"Acute Kidney Injury Due to Volume Depletion\" and 5.7 Hypoglycemia both exist.\n  - Mounjaro: indicated for blood-sugar control in type 2 diabetes. The low-blood-sugar risk with insulin or a sulfonylurea is in the label.\n- **Other sources:** the MHRA approval for weight management (8 Nov 2023) and the US physical activity guidelines page (last updated 19 Nov 2025) both check out.\n\n**Checked from memory only**\n- I couldn't load the PubMed pages, so I confirmed the three trial records through Europe PMC instead.\n- Four details aren't in the abstracts I could open. I confirmed them from my knowledge of the papers, not from a page:\n  - SURMOUNT-4: 335 per arm and the placebo group ending 9.9% below starting weight.\n  - SURMOUNT-1: the 160-person body-scan figures (fat mass down 33.9% vs 8.2%, and the roughly 3:1 fat-to-lean split).\n  - SURMOUNT-1: side effects happening \"mainly while the dose was being stepped up\".\n\n**Framing and safety**\n- Each finding keeps its trial population, comparison group and timeframe, and the recaps keep that scope.\n- The script says plainly that the trials weren't head-to-head and calls the body-scan result a snapshot.\n- All the required safety lines are there: the stomach-pain emergency line, the \"don't stop or change your medicine\" line, the fluids caveat, the low-blood-sugar caveat, the kidney-disease protein caveat and the \"talk to your doctor\" line.\n- Rosa is clearly introduced as hypothetical.\n- The subscribe and watch-next lines are allowed in a long-form video.",
+    "issues": [
+      {
+        "location": "s12",
+        "claim": "2,539 adults, randomly assigned to a tirzepatide dose or placebo, all followed for 72 weeks.",
+        "problem": "Not everyone finished: some people stopped treatment or dropped out. 'All followed for 72 weeks' overstates it slightly, and s03 already says the averages include people who didn't stay on treatment.",
+        "severity": "minor",
+        "fix": "Replace the narration with: \"The trial was big: 2,539 adults, randomly assigned to a tirzepatide dose or placebo, with a 72-week treatment period. It was published in the New England Journal of Medicine.\""
+      },
+      {
+        "location": "s33",
+        "claim": "researchers have suggested possible reasons, but the trial wasn't designed to show why",
+        "problem": "It's tagged S2, but I haven't confirmed which sentence in the SURMOUNT-2 paper says this. The rule is to tag a line only after finding the sentence that says it.",
+        "severity": "minor",
+        "fix": "Replace the narration with: \"The trials weren't head-to-head, and SURMOUNT-2 wasn't designed to show why the averages differed.\" Keep on_screen_text \"Not head-to-head; cause unknown\" and source S2."
+      },
+      {
+        "location": "Sources S4 and S5 titles",
+        "claim": "S4: 'Warnings: Acute Kidney Injury (5.3)'; S5: 'Warnings: Hypoglycemia' (no section number)",
+        "problem": "Minor title accuracy. Section 5.3 of the Zepbound label is titled 'Acute Kidney Injury Due to Volume Depletion', and the S5 title gives no section number.",
+        "severity": "minor",
+        "fix": "Change the S4 title to \"Zepbound (tirzepatide) Prescribing Information: Indications (1); Warnings: Acute Kidney Injury Due to Volume Depletion (5.3), Hypoglycemia (5.7)\". Check the hypoglycemia section number in the current Mounjaro PI and add it to the S5 title."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1)",
+        "publisher": "New England Journal of Medicine (PubMed record)",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35658024/"
+      },
+      {
+        "id": "S2",
+        "title": "Tirzepatide once weekly for the treatment of obesity in people with type 2 diabetes (SURMOUNT-2)",
+        "publisher": "The Lancet (PubMed record)",
+        "year": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37385275/"
+      },
+      {
+        "id": "S3",
+        "title": "Continued Treatment With Tirzepatide for Maintenance of Weight Reduction in Adults With Obesity: The SURMOUNT-4 Randomized Clinical Trial",
+        "publisher": "JAMA (PubMed record)",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38078870/"
+      },
+      {
+        "id": "S4",
+        "title": "Zepbound (tirzepatide) Prescribing Information: Indications (1); Warnings: Acute Kidney Injury Due to Volume Depletion (5.3), Hypoglycemia (5.7)",
+        "publisher": "Eli Lilly and Company / US FDA label",
+        "year": "Revised 28 Aug 2026",
+        "url": "https://uspl.lilly.com/zepbound/zepbound.html#pi"
+      },
+      {
+        "id": "S5",
+        "title": "Mounjaro (tirzepatide) Prescribing Information: Indications (1); Warnings: Hypoglycemia; Clinical Studies (14)",
+        "publisher": "Eli Lilly and Company / US FDA label",
+        "year": "Revised 27 Aug 2026",
+        "url": "https://uspl.lilly.com/mounjaro/mounjaro.html#pi"
+      },
+      {
+        "id": "S6",
+        "title": "Physical Activity Guidelines for Americans, 2nd edition: Current Guidelines",
+        "publisher": "U.S. Department of Health and Human Services (ODPHP)",
+        "year": "Page last updated 19 Nov 2025",
+        "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines"
+      },
+      {
+        "id": "S7",
+        "title": "MHRA authorises diabetes drug Mounjaro (tirzepatide) for weight management and weight loss",
+        "publisher": "UK Medicines and Healthcare products Regulatory Agency (GOV.UK)",
+        "year": "Published 8 Nov 2023",
+        "url": "https://www.gov.uk/government/news/mhra-authorises-diabetes-drug-mounjaro-tirzepatide-for-weight-management-and-weight-loss"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.049,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 6.6,
+      "weakShots": 38,
+      "layoutIssues": 2,
+      "frameIssues": [],
+      "notes": [
+        "Near-empty frame: only a small clipboard icon with a label floats in the centre of a plain gradient, confirmed by the automated sparse-frame check (~11% coverage).",
+        "Clock, red circle icon and tiny calendar sit isolated on a plain gradient with huge empty margins; no character.",
+        "Single 'Placebo' person floats alone with large empty space around it on a plain gradient.",
+        "Frame is sparse (~11% coverage per the automated check) and the icon — a pointing hand with a falling drop — reads ambiguously close to an injection/finger-prick gesture next to a red X, which risks being misread as dosing imagery even though no syringe is drawn.",
+        "Chips are clear, but the six tiny people are scattered with large gaps between them, reading as sparse and unbalanced.",
+        "Two small clusters of tiny figures float with a lot of empty space around the arrow; composition feels thin.",
+        "Mascot alone on a plain gradient, no text or supporting element — confirmed sparse by the automated check (~11% coverage).",
+        "A single small person stands alone in the centre of a near-blank light gradient with no label, chart or supporting element — very sparse.",
+        "Rx icon with 'Drug label' tag floats alone on a plain gradient, confirmed sparse by the automated check.",
+        "Package plus a tiny, unclear dot/pin icon on an otherwise empty gradient; the small icon's meaning (meant to read as a flag/location) is illegible at this size.",
+        "Package alone on an empty gradient held for about 3.9s with no change — both sparse and a static hold near the long-form pacing limit.",
+        "Same sparse single-package composition repeated a third time in a row.",
+        "Package plus a small unclear blue dot icon, same sparse template repeated a fourth time.",
+        "Rx icon alone labelled 'SURMOUNT trials', another near-empty single-icon gradient shot.",
+        "The automated audit flags a 'Prescriber' label clipped below the frame (y 1098–1165) and it is not visible anywhere in this frame, so the two characters are unlabeled."
+      ],
+      "layoutKinds": {
+        "offscreen": 10,
+        "sparse": 7
+      },
+      "planPaceDraft": {
+        "changes": 374,
+        "perMin": 37.3,
+        "medianGap": 1.39,
+        "maxGap": 5.63,
+        "longGaps": [
+          [
+            39.68,
+            44.44
+          ],
+          [
+            152.06,
+            157.69
+          ],
+          [
+            261.42,
+            265.76
+          ],
+          [
+            331.32,
+            336.53
+          ],
+          [
+            477.52,
+            482.34
+          ],
+          [
+            501.56,
+            506.11
+          ],
+          [
+            578.71,
+            583.22
+          ]
+        ],
+        "withEngine": {
+          "medianGap": 1.07,
+          "maxGap": 4.41
+        },
+        "ok": false,
+        "detail": "plan pacing slow: 374 planned changes (37.3/min), median gap 1.39 s, longest 5.63 s, 7 stretch(es) over 4 s (limits: median 3 s, gap 4 s); with engine camera moves: median 1.07 s, longest 4.41 s"
+      },
+      "pacingRevised": 7,
+      "pacing": {
+        "window": 601.8,
+        "changes": 529,
+        "maxGap": 3.83,
+        "ok": false,
+        "detail": "529 visual changes in the whole 602 s, longest static stretch 3.83 s (limit 2.5 s)"
+      },
+      "planPace": {
+        "changes": 434,
+        "perMin": 43.3,
+        "medianGap": 1.17,
+        "maxGap": 3.9,
+        "longGaps": [],
+        "withEngine": {
+          "medianGap": 0.98,
+          "maxGap": 3.83
+        },
+        "ok": true,
+        "detail": "plan pacing ok: 434 planned changes (43.3/min), median gap 1.17 s, longest 3.9 s, 0 stretch(es) over 4 s (limits: median 3 s, gap 4 s); with engine camera moves: median 0.98 s, longest 3.83 s"
+      },
+      "frameZero": {
+        "texts": [
+          "Tirzepatide: how much weight lost?"
+        ],
+        "heroes": 1,
+        "heroHeight": 0.46,
+        "ok": true,
+        "detail": "frame 0: text \"Tirzepatide: how much weight lost?\", 1 character(s), tallest 46% of the height"
+      },
+      "renderPace": {
+        "duration": 601.7,
+        "visualChangesPerMin": 21.6,
+        "medianGap": 2.35,
+        "maxGap": 14,
+        "changesFirst30s": 12,
+        "hardCutsPerMin": 6.6,
+        "movingShare": 0.618,
+        "longestStill": 1.9
+      }
+    },
+    "audio": {
+      "musicGain": 0.356,
+      "sfxGain": 0.55,
+      "finalWer": 0.007,
+      "maskingDelta": 0.007,
+      "lufs": -15.3,
+      "soundNotes": "Music sits right in the -12/-15 dB window under speech already; nudged +1 dB overall (gain 1.1) to help the quiet pause sections (measured -18.8 dB) without pushing speech-bed level past the target ceiling. Trimmed a handful of SFX that were riding too loud over narration (several pops/swooshes/dings sitting -5 to -11 dB under voice, e.g. i31, i243, i392, i404, i429, i437, i505, i541, i583, i685, i208, i249) down toward the -16 dB felt zone, and dropped redundant duplicate layers inside five dense multi-pop/bubble clusters (≈104.2s, 193s, 329.2s, 351.9s, 482.4s, plus a stray duplicate swoosh at 301s) so no moment exceeds 3 simultaneous effects. Left the already-correct transition/reveal accents (roughly -6 to -12 dB in pauses) untouched. Added a few bespoke, medically-safe emotional stingers for the human story beat, the \"what if it stops\" question, and the takeaways/outro — no device or medication-use sounds used anywhere."
+    },
+    "blocking": [],
+    "beats": {
+      "verdict": "pass",
+      "summary": "beat sync PASS: plan 71/71 beats on time, audio shift 0.02 s, render 86% of beats cut on time",
+      "planOff": 0,
+      "audioShift": 0.02,
+      "renderHitRate": 0.86,
+      "flagged": []
+    },
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": []
+        },
+        {
+          "index": 1,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "headline (duration) feels loosely connected to the title's weight-loss-amount question, so curiosity payoff is less direct"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 7,
+          "legibility": 8,
+          "issues": [
+            "topic shift to fat/muscle composition is a bit removed from the title's 'how much weight' framing, which may feel like a bait-and-switch"
+          ]
+        }
+      ],
+      "best_index": 0,
+      "reasoning": "All three candidates keep the actual weight-loss numbers out of the thumbnail, so none trips the 'gives the answer away' cap, and all have decent legibility at phone size with a single clear focal point. #0 ('WILL YOU MATCH IT?') pairs most directly with the title's implicit question ('how much weight can you lose') by making it personal and self-relevant — the viewer wants to know if their own result would match the trial's, which is a strong, honest curiosity gap tied tightly to the title. The worried/surprised scale-face icon reinforces tension without contradicting the text. #1 ('72 WEEKS') is clean and legible but answers a tangential question (trial duration) rather than the title's actual promise (amount of weight lost), slightly weakening the curiosity hook. #2 ('FAT OR MUSCLE?') is a clever twist but pivots the hook away from 'how much weight' toward body composition, which risks feeling like a different video's thumbnail and could mildly mislead relative to the title. On balance, #0 has the strongest, most title-aligned curiosity gap with excellent legibility, making it the best choice."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "Thumbnail headline",
+          "claim": "WILL YOU MATCH IT?",
+          "problem": "With no subtext, 'IT' has nothing to refer to for a viewer who only sees the thumbnail. It's not misleading, just vague. The video's section is 'Will you match the average?'",
+          "severity": "minor",
+          "fix": "WILL YOU MATCH THE AVERAGE?"
+        }
+      ]
+    }
+  },
+  "hold_reason": "Quality check: narration doesn't match script in 2 scene(s): expected \"ten milligrams\" heard \"tenmg\"; expected \"substudy\" heard \"sub study\"",
+  "release_tag": "content-2026-11-19",
+  "archive_url": "b2://informed-lab-media/content/2026-11-19/L1-tirzepatide-mounjaro-zepbound-weight-los/",
+  "approved_by": "editor-in-chief (low risk): The hold was only a transcription quirk (\"tenmg\" for \"ten milligrams\", \"sub study\" for \"substudy\"), with a 0.7% final mismatch and music masking at 0.007, and the fact and packaging checks both passed with only minor notes. Worth tidying the thumbnail text to \"WILL YOU MATCH THE AVERAGE?\" and confirming the description ends \"…whether it's right for you.\" before it goes live."
+}
