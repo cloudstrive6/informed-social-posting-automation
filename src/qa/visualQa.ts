@@ -17,6 +17,7 @@ import { ensureDir, writeJson } from "../lib/fsx.js";
 import { log } from "../lib/log.js";
 import { PACING, PLAN_PACE, SHORTS_SAFE, statTiming, typedTiming, type TimedShot } from "../media/animated.js";
 import { run } from "../media/exec.js";
+import { safeMedicalArt } from "../media/vector/medicalSafety.js";
 
 // ------------------------------------------------------------------ 1) every frame, technically
 export interface FrameIssue { kind: "black" | "freeze" | "flash"; start: number; end: number; detail: string }
@@ -390,7 +391,7 @@ export async function critiqueShots(projectDir: string, shots: TimedShot[], vert
     input: {
       format: vertical ? "vertical 9:16" : "horizontal 16:9",
       instructions: `Open and inspect each contact sheet image with the Read tool, then review every shot shown. Sheets: ${g.map(f => resolve(f)).join(" ; ")}`,
-      shots: shots.map((s, i) => ({ shot: i, start: +s.start.toFixed(1), mood: s.mood, title: s.title.style !== "none" && (!vertical || i === 0 || s.title.style === "stat") ? s.title : undefined, elements: s.elements.map(e => e.type + (e.count > 1 ? ` x${e.count}` : "")) }))
+      shots: shots.map((s, i) => ({ shot: i, start: +s.start.toFixed(1), mood: s.mood, title: s.title.style !== "none" && (!vertical || i === 0 || s.title.style === "stat") ? s.title : undefined, elements: s.elements.map(safeMedicalArt).map(e => (e.type === "icon" ? e.variant : e.type) + (e.count > 1 ? ` x${e.count}` : "")) }))
         .filter(s => !onlyShots || onlyShots.has(s.shot)),
       automated_layout_findings: layout,
     },

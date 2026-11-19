@@ -14,6 +14,7 @@ import { faceSvg, stripFace } from "./vector/cartoon.js";
 import { COMPONENTS } from "./vector/components.js";
 import { iconSvg, resolveIcon } from "./vector/iconPack.js";
 import { hashStr, palette, Palette } from "./vector/palettes.js";
+import { BLOCKED_ICON, DEVICE_STANDIN, safeArtQuery } from "./vector/medicalSafety.js";
 
 const W = 1280, H = 720;
 const INK = "#140b2e";
@@ -29,7 +30,8 @@ const THEMES: Record<string, { bg: [string, string]; ray: string; hi: string; mo
 const PEOPLE = /\b(man|woman|men|women|person|people|boy|girl|baby|child|kid|family|doctor|nurse|worker|runner|face|pregnant|elder|old)\b/i;
 
 /** Art for a character: a built-in component ("liver", "cell:cancer", "mascot") or any illustration ("avocado"). */
-function art(spec: string, face: string, p: Palette, seed: number, id: string): string {
+export function art(spec0: string, face: string, p: Palette, seed: number, id: string): string {
+  const spec = safeArtQuery(spec0); // medical safety: an injection device is drawn as a closed medicine box
   const [type, variant = ""] = spec.split(":");
   let inner = "";
   let faceable = true;
@@ -39,7 +41,8 @@ function art(spec: string, face: string, p: Palette, seed: number, id: string): 
   } else {
     const q = spec.replace(/^icon:/, "");
     const words = q.split(/\s+/).filter(w => w.length > 2).sort((a, b) => b.length - a.length);
-    const hit = [q, ...words].map(x => resolveIcon(x, seed)).find(Boolean);
+    let hit = [q, ...words].map(x => resolveIcon(x, seed)).find(Boolean);
+    if (hit && BLOCKED_ICON.test(hit.name)) hit = resolveIcon(DEVICE_STANDIN, seed);
     inner = hit ? iconSvg(hit, p, "primary") : COMPONENTS.mascot({ p, tone: "primary", seed });
     faceable = !PEOPLE.test(q);
   }

@@ -13,6 +13,7 @@ import { fontFile } from "./fonts.js";
 import { COMPONENTS } from "./vector/components.js";
 import { iconSvg, resolveIcon } from "./vector/iconPack.js";
 import { hashStr, palette } from "./vector/palettes.js";
+import { BLOCKED_ICON, DEVICE_STANDIN, safeArtQuery } from "./vector/medicalSafety.js";
 
 const W = 1080, H = 1350;
 const INK = "#1d1440";
@@ -23,11 +24,13 @@ const brandP = palette("brand");
 
 const b64 = (f: string) => readFileSync(f).toString("base64");
 
-function sticker(query: string, seed: number, size: number, extra = ""): string {
-  if (!query) return "";
+export function sticker(query0: string, seed: number, size: number, extra = ""): string {
+  if (!query0) return "";
+  const query = safeArtQuery(query0); // medical safety: an injection device is drawn as a closed medicine box
   // try the full request, then its individual words (longest first), before giving up
   const words = query.replace(/^health:/, "").split(/\s+/).filter(w => w.length > 2).sort((a, b) => b.length - a.length);
-  const hit = [query, ...words].map(q => resolveIcon(q, seed)).find(Boolean);
+  let hit = [query, ...words].map(q => resolveIcon(q, seed)).find(Boolean);
+  if (hit && BLOCKED_ICON.test(hit.name)) hit = resolveIcon(DEVICE_STANDIN, seed);
   if (!hit) return "";
   const inner = iconSvg(hit, brandP, "secondary");
   return `<svg class="stk" viewBox="-60 -60 120 120" width="${size}" height="${size}" style="${extra}">${inner}</svg>`;

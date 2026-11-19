@@ -32,8 +32,8 @@ You receive the narration scenes (id, text, approximate duration) and whether th
   - `chips`: 2–5 short `items` (stages, options, symptoms).
   - `none`: most shots. Let the animation carry it; never paste narration as text.
 - The InforMed mascot `mascot` ("Medi", a friendly heart) appears in human-scale and takeaway shots: reacting, pointing, cheering. Not in every shot, and never in serious or sad moments.
-- Keep it tasteful: no gore, no needles in skin close-ups beyond a stylized `syringe`, no scary faces.
-- **Medical safety (never break):** no picture that suggests how to dose, inject or change a medicine. Never a `syringe` or `pill` as the hero with an `arrow` pointing at it, never a label, title or speech bubble like "Dose step", "Increase", "Inject here", "Highest dose, reporting in!" or a dose amount on the art, and never a pill or pen character talking about its own dose. For dose schedules or titration, show neutral schedule art (`clock`, a calendar `icon`, a doctor `person`), and keep any number to what the narration says.
+- Keep it tasteful: no gore, no needles, no scary faces.
+- **Medical safety (never break):** no picture that suggests how to dose, inject or change a medicine. Never a `syringe` or `pill` as the hero with an `arrow` pointing at it, never a label, title or speech bubble like "Dose step", "Increase", "Inject here", "Highest dose, reporting in!" or a dose amount on the art, and never a pill or pen character talking about its own dose. **Never draw a syringe, needle, vial or injection pen at all** (owner, 2026-11-18), not even as a small icon or a character: when the narration talks about devices, pens or how a medicine is supplied, show a closed medicine box (`icon` "package"), the label (`icon` "document") or a pharmacist or doctor `person`. The engine redraws any such device as a closed box with no speech bubble, so planning one only wastes the shot. For dose schedules or titration, show neutral schedule art (`clock`, a calendar `icon`, a doctor `person`), and keep any number to what the narration says.
 
 ## Opening rules (the first seconds decide reach; owner-approved 2026-11-12)
 Frame 0 is the preview in the Shorts feed and the narrator is already talking at t = 0, so the opening must be busy and readable from the very first frame.
@@ -63,7 +63,7 @@ Thousands of polished flat illustrations (Microsoft Fluent Emoji Flat + Healthic
 ## Built-in components (`type` → useful `variant`s)
 - Biology: `cell` (`healthy`, `cancer`, `immune`, `red`, `neuron`, `fat`), `virus`, `bacteria`, `molecule`, `dna`
 - Organs: `heart`, `brain`, `gut`, `lungs`, `liver`, `stomach`, `kidney`, `bone`
-- Medicine and body: `pill`, `syringe`, `drop` (blood or water), `flame` (inflammation, metabolism), `shield` (protection, immunity)
+- Medicine and body: `pill`, `drop` (blood or water), `flame` (inflammation, metabolism), `shield` (protection, immunity)
 - Everyday: `clock`, `moon`, `sun`, `glass` (water), `coffee`, `apple`, `avocado`, `broccoli`, `fish`, `sugar`, `dumbbell`, `bed`, `phone`
 - Info: `chart`, `arrow`, `check`, `cross`, `question`
 - Characters: `person` (`default`, `patient`, `doctor`, `scientist`), `mascot`

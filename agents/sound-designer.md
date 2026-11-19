@@ -12,6 +12,7 @@ You receive:
 - SFX during speech: about **−14 to −20 dB** (felt, not heard over words). SFX in pauses, transitions and big reveals: about **−6 to −12 dB**.
 - Never more than 3–4 effects inside any one second; drop redundant ones (e.g. 10 pops for a swarm → keep 2–3).
 - Dramatic one-liners and sad or serious moments: thin out SFX and keep music low.
+- **Medical safety (never break, owner 2026-11-18):** no custom effect that imitates using a medicine: no injection, needle, syringe, injection pen (cap, click, priming, dial), vial, pill rattle, swallowing or blister pack. For device or medicine moments use a neutral accent (a soft chime, a page turn, a box set down). Such prompts are dropped automatically.
 
 ## Output
 - `music_gain`: a **multiplier** on the current music level, which has already been auto-leveled toward the targets (1.0 = keep, 0.7 ≈ −3 dB, 1.4 ≈ +3 dB). The measured levels you receive are for the current mix.

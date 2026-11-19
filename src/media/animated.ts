@@ -20,6 +20,7 @@ import { log } from "../lib/log.js";
 import { hashStr, palette, Palette, rng } from "./vector/palettes.js";
 import { Shot, ShotElement } from "./vector/shots.js";
 import { backdropSvg, DOODLE_CSS, DOODLE_DEFS, faceSvg, LIGHT_BACKDROPS, stripFace } from "./vector/cartoon.js";
+import { BLOCKED_ICON, DEVICE_STANDIN, safeMedicalArt } from "./vector/medicalSafety.js";
 
 export type Theme = "vibrant" | "doodle";
 
@@ -191,6 +192,8 @@ export function verticalShot<S extends Shot>(shot: S): S {
 }
 /** Medical guardrail: the engine never draws extra attention (a hop, a late entrance) to dosing or injecting art. */
 export const DOSING = (e: ShotElement) => e.type === "syringe" || e.type === "pill" || /syringe|needle|inject|\bpen\b|pill|tablet|capsule|dose|vial/i.test(e.variant);
+// medical safety (devices never drawn, no dose talk): see vector/medicalSafety.ts
+export { safeMedicalArt } from "./vector/medicalSafety.js";
 
 // ------------------------------------------------------------------ timing
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9' ]/g, " ").split(/\s+/).filter(Boolean);
@@ -258,7 +261,8 @@ const uid = (c: Ctx, p: string) => `${p}${c.n++}`;
 
 function svgOf(type: string, p: Palette, tone: Tone, seed: number, variant: string) {
   if (type === "icon") {
-    const hit = resolveIcon(variant, seed);
+    let hit = resolveIcon(variant, seed);
+    if (hit && BLOCKED_ICON.test(hit.name)) hit = resolveIcon(DEVICE_STANDIN, seed); // medical safety: see safeMedicalArt
     if (hit) return `<svg viewBox="-60 -60 120 120" width="100%" height="100%" overflow="visible">${iconSvg(hit, p, tone)}</svg>`;
     log.warn(`no illustration matches "${variant}"; using built-in art`);
   }
@@ -436,6 +440,8 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
   const long = !c.vertical;
   // Shorts keep the pre-2026-11-17 engine byte for byte: newer enums map onto the old behaviour
   if (!long) shot = verticalShot(shot);
+  // medical safety first, so the hook check, hero choice, faces and bubbles all see what is drawn
+  shot = { ...shot, elements: shot.elements.map(safeMedicalArt) };
   let inner = background(c, shot, p, seed);
   if (index > 0) c.changes.push(t0);
 
@@ -469,6 +475,17 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
   const bandBottom = c.vertical ? 34 : 44; // % of frame height the title may use
   const elements = !titled ? planned : planned.map(e => {
     if (e.depth === "bg") return e;
+    // a swarm's copies scatter `spread` up and down and are drawn up to 1.3x (people at least 14%), so the whole crowd
+    // must fit below the band, not just its centre (2026-11-18: a crowd covered the "478" stat's caption)
+    if (Math.round(e.count) > 1) {
+      const floor = c.vertical ? 78 : 97; // a Short's bottom ~22% is the caption zone: no crowd there
+      const room = floor - bandBottom - 2;
+      const size = Math.min(e.size, room / 1.3);
+      const reach = (Math.max(e.type === "person" ? 14 : 4, size) * 1.3) / 2;
+      const spread = Math.max(0, Math.min(e.spread, room / 2 - reach));
+      const y = Math.min(floor - reach - spread, Math.max(e.y, bandBottom + 2 + reach + spread));
+      return y !== e.y || size !== e.size || spread !== e.spread ? { ...e, y, size, spread } : e;
+    }
     const half = e.size / 2;
     const size = Math.min(e.size, (100 - 3 - bandBottom)); // must fit between the band and the bottom edge
     const y = Math.min(100 - 3 - size / 2, Math.max(e.y, bandBottom + size / 2 + (c.vertical ? 0 : 2)));

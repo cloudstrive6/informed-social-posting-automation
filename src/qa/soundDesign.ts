@@ -6,6 +6,7 @@ import { elevenBudgetLeft } from "../lib/usage.js";
 import { log } from "../lib/log.js";
 import type { SfxCue, TimedShot } from "../media/animated.js";
 import type { Levels } from "./audioQa.js";
+import { MEDICAL_SFX } from "../media/vector/medicalSafety.js";
 
 export interface MixCue { t: number; sfx?: string; file?: string; gain: number; accent?: boolean }
 interface SoundPlan {
@@ -21,6 +22,8 @@ const schema = {
     custom_sfx: { type: "array", maxItems: 10, items: { type: "object", additionalProperties: false, required: ["t", "prompt", "seconds", "gain"], properties: { t: { type: "number" }, prompt: { type: "string" }, seconds: { type: "number" }, gain: { type: "number" } } } },
   },
 };
+
+export { MEDICAL_SFX } from "../media/vector/medicalSafety.js";
 
 /** Sound Designer agent: sets music level, rebalances/drops SFX cues and adds bespoke effects (ElevenLabs) for key moments. */
 export async function designSound(shots: TimedShot[], cues: SfxCue[], levels: Levels, musicGain: number, workDir: string): Promise<{ cues: MixCue[]; musicGain: number; musicPrompt?: string; notes: string }> {
@@ -43,11 +46,17 @@ export async function designSound(shots: TimedShot[], cues: SfxCue[], levels: Le
   const gains = new Map(plan.cue_changes.map(c => [c.i, c.gain]));
   const mixCues: MixCue[] = cues.map((c, i) => ({ t: c.t, sfx: c.sfx, gain: gains.get(i) ?? c.gain })).filter(c => c.gain > 0.01);
 
+  // medical safety: no sound of injecting, a needle, a pen being readied or pills being taken (owner, 2026-11-18)
+  const custom = plan.custom_sfx.filter(s => {
+    if (!MEDICAL_SFX.test(s.prompt)) return true;
+    log.warn(`  custom sfx dropped (medical safety) @${s.t.toFixed(1)}s: ${s.prompt}`);
+    return false;
+  });
   // bespoke effects via ElevenLabs sound generation
-  if (plan.custom_sfx.length && process.env.ELEVENLABS_API_KEY) {
+  if (custom.length && process.env.ELEVENLABS_API_KEY) {
     const { elevenSfx } = await import("../media/eleven.js");
     const dir = ensureDir(join(workDir, "custom-sfx"));
-    for (const [k, s] of plan.custom_sfx.slice(0, config.sfx.customPerVideo).entries()) {
+    for (const [k, s] of custom.slice(0, config.sfx.customPerVideo).entries()) {
       try {
         const file = await elevenSfx(s.prompt, s.seconds, join(dir, `fx-${k}.mp3`));
         mixCues.push({ t: s.t, file, gain: Math.min(1, Math.max(0.05, s.gain)), accent: true });

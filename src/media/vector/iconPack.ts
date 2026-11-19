@@ -24,6 +24,7 @@ const BLOCK = /^(aries|taurus|gemini|cancer|leo|virgo|libra|scorpio|sagittarius|
 const STOP = new Set(["a", "an", "the", "of", "with", "and", "icon", "illustration", "emoji", "symbol"]);
 const SYN: Record<string, string> = {
   // plain-English → pack vocabulary
+  "medicine box": "package", "medicine package": "package", "medication box": "package",
   doctor: "health worker", nurse: "health worker", physician: "health worker", scientist: "scientist", researcher: "scientist",
   virus: "microbe", germ: "microbe", bacterium: "bacteria", intestine: "intestine", intestines: "intestine", gut: "intestine",
   sleep: "sleeping", bed: "bed", run: "running", runner: "running", jog: "running", walk: "walking", workout: "weight lifting",
