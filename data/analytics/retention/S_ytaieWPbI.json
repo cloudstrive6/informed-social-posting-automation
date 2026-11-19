@@ -7,5 +7,23 @@
     "d7": 1,
     "d3": 3
   },
-  "milestones": {}
+  "milestones": {
+    "d3": {
+      "captured_at": "2026-11-19T19:35:49.190Z",
+      "window": [
+        "2026-09-28",
+        "2026-10-01"
+      ],
+      "curve_pct": [],
+      "relative_pct": [],
+      "hold_pct": {
+        "s5": null,
+        "s15": null,
+        "s30": null,
+        "s60": null
+      },
+      "biggest_drop": null,
+      "empty": true
+    }
+  }
 }
