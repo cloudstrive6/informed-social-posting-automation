@@ -1,0 +1,1266 @@
+{
+  "id": "L1-starting-orforglipron-foundayo-the-once",
+  "date": "2026-11-20",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Starting orforglipron (Foundayo), the once-daily GLP-1 pill approved for chronic weight management: what to expect in the first weeks and months, from the US prescribing information and Medication Guide (playbook queue #4: fixed re-render of the verified, held 11-11 script)",
+    "angle": "Same locked script and US label scope. Packaging change: description paragraph 1 is the safety block. The regulator line, placed after it, reads: 'Health Canada (13 Nov 2026) and Australia's TGA (16 Nov 2026) have also approved Foundayo. This video explains the US label; indications and details can differ, so check your local leaflet.' Include it only after you've confirmed both dates on the regulators' own pages (Health Canada Notice of Compliance or Drug Product Database; TGA ARTG entry). Otherwise drop the line. NAION: quote the live PI if it's printed there; if not, say 'In November 2026 the FDA asked all GLP-1 medicine labels to add a warning about a rare eye condition called NAION' and credit the 9 Nov 2026 Drug Safety Communication.",
+    "working_title": "Orforglipron (Foundayo) Pill: What to Expect",
+    "target_keyword": "foundayo",
+    "trend_stage": "emerging",
+    "why": "Queue #4 and an approved-drug search-demand video. The existing Foundayo video gains about 30 minutes a day from 'foundayo' searches, and the Canadian and Australian approvals in the last 72 hours add fresh demand in high-ad-rate markets. The body rests on the label plus the Phase 3 ATTAIN-1 trial, so it's verifiable in depth. | fact-check: I'm approving the re-render of the verified 11-11 script. Narration stays locked to the US label (FDA approved 1 Apr 2026; PI at uspl.lilly.com/foundayo/foundayo.html). I checked the claims that sit outside the narration. (1) The FDA Drug Safety Communication on NAION for the whole GLP-1 class is real and dated 9 Nov 2026. It requires a new Warnings and Precautions section on every GLP-1 RA label. Check whether the live Foundayo PI already prints NAION. If it does, quote the label. If it doesn't, credit the FDA communication. Never call it 'new'. (2) Health Canada's date is wrong. Diabetes Toolbox (Canada) says Health Canada approved Foundayo on 13 Nov 2026. 18 Nov is when the news coverage ran. (3) The TGA date checks out: Foundayo went on the ARTG on 16 Nov 2026 (RACGP newsGP, mivision). The Canadian and Australian approvals cover weight management and type 2 diabetes, and Canada's product notice says 'capsules'. That makes the 'check your local leaflet' line necessary. (4) The description order breaks our rule. Safety block (scoped don't-stop line plus disclaimer) goes first, then the regulator note, then the quick answer and 2–3 sources. The publisher's Watch next line goes after the safety block, never as line 1. Line 1 stays empty. Keep it to 1,250 characters or fewer and end on '…whether it's right for you.' (5) The video has no dose steps, so the thumbnail 'FIRST MONTH?' must not suggest a week-by-week dose schedule. A pill bottle with a calm character is fine. Fix the known faults first: masking 0.02 or lower on the final file, every cut re-timed from the final word timestamps to within 0.5 s, Dana's skin and hair locked. Regenerate the broken audio scene and check its speech-to-text against the script word for word.",
+    "pillar": "research"
+  },
+  "status": "failed",
+  "package": {},
+  "media": {},
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-20T19:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-11-20T03:45:14.877Z",
+  "script": {
+    "working_title": "Orforglipron (Foundayo) Pill: What to Expect",
+    "target_keyword": "foundayo",
+    "hook_pattern": "Visceral 'you' scenario in sentence 1 (drug named first), short answer by 10 s, second concrete payoff (ATTAIN-1 top-trial-dose headline number) at 15–30 s, then a one-sentence open loop (why this pill needs no empty stomach) paid off in the last chapter",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "The short answer",
+        "narration": "You're starting orforglipron, the Foundayo pill, and wondering what the first months will feel like. Short answer: plan for stomach side effects early, and expect weight to come off gradually, over months, not weeks.",
+        "on_screen_text": "Starting Foundayo: stomach first, scale later",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan, hopeful, holding pill bottle at kitchen counter"
+        },
+        "retention_device": "Viewer's exact question in sentence 1, answer delivered within 10 s",
+        "source_ids": [
+          "pi",
+          "attain1"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "The short answer",
+        "narration": "In the main trial of adults with obesity, or overweight plus a weight-related health problem, without diabetes, the highest dose tested showed the biggest average loss. At 72 weeks, it averaged an 11.2 percent weight loss. Placebo averaged 2.1 percent.",
+        "on_screen_text": "Orforglipron top trial dose, 72 weeks: 11.2% vs 2.1% placebo (adults with obesity, or overweight plus a condition, without diabetes)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−11.2%",
+          "stat_label": "Orforglipron top trial dose, 72 weeks; placebo −2.1%",
+          "stock_query": "big friendly number card beside calm scale"
+        },
+        "retention_device": "Second concrete payoff (headline number) at 15–30 s",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "The short answer",
+        "narration": "And before the end, you'll see why this pill doesn't need an empty stomach when semaglutide pills like Rybelsus do, and it comes down to what the molecule is made of.",
+        "on_screen_text": "Why no empty stomach?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two cartoon pills side by side, one with clock and empty plate, curious mood"
+        },
+        "retention_device": "One-sentence open loop, paid off in 'The empty-stomach puzzle'",
+        "source_ids": [
+          "attain1",
+          "rybelsus"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "The short answer",
+        "narration": "Here's the plan: who it's for, your first weeks, the months after, the signs to call about, and then that pill puzzle.",
+        "on_screen_text": "Your roadmap",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Who it's for",
+            "Your first weeks",
+            "The months after",
+            "Signs to call about",
+            "The pill puzzle"
+          ],
+          "stock_query": "winding road map with five friendly signposts"
+        },
+        "retention_device": "Promise of structure; previews the late payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s05",
+        "section": "Who it's for",
+        "narration": "So who is this pill actually for, and what does it do?",
+        "on_screen_text": "Who is Foundayo for?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, pill bottle with question mark, blue and green"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s06",
+        "section": "Who it's for",
+        "narration": "The US label approves Foundayo to reduce excess body weight and keep it off long term, in adults with obesity, or with overweight plus at least one weight-related health condition.",
+        "on_screen_text": "US label: lose weight, keep it off",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Adults with obesity",
+            "Or overweight plus a weight-related condition",
+            "To lose weight and keep it off long term"
+          ],
+          "stock_query": "friendly label document held by calm doctor character"
+        },
+        "retention_device": "Fast factual payoff to the chapter question",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "Who it's for",
+        "narration": "The label pairs it with a reduced-calorie diet and increased physical activity, so it's one part of a plan, not the whole plan.",
+        "on_screen_text": "One part of the plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill, vegetable plate and walking shoes as puzzle pieces fitting together"
+        },
+        "retention_device": "Reframe that sets realistic expectations",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "Who it's for",
+        "narration": "GLP-1 is a hormone your gut releases when you eat. This pill switches on the same GLP-1 receptor, which plays a part in appetite and blood sugar.",
+        "on_screen_text": "Same GLP-1 receptor",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon key turning a glowing lock labelled GLP-1 receptor, gut and brain icons"
+        },
+        "retention_device": "Simple mechanism analogy (key and lock)",
+        "source_ids": [
+          "pi",
+          "attain1"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "Who it's for",
+        "narration": "And it's taken once a day, by mouth. No pen and no needle.",
+        "on_screen_text": "Once a day, by mouth",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan, relieved, glass of water and one pill"
+        },
+        "retention_device": "Quick relatable benefit",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "Who it's for",
+        "narration": "Imagine Dana, 48. She has overweight and high blood pressure, and she's just picked up her first bottle. Her worry is simple: will week one wreck her?",
+        "on_screen_text": "Will week one wreck me?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan, worried, at pharmacy counter with paper bag"
+        },
+        "retention_device": "Introduces the hypothetical thread and her question",
+        "source_ids": []
+      },
+      {
+        "id": "s11",
+        "section": "Who it's for",
+        "narration": "Her friend on a weekly injection had a rough start, so Dana wonders if a pill is gentler. This trial didn't compare it with a shot, so it can't answer that. But it can tell her what to plan for.",
+        "on_screen_text": "Pill vs shot? Not tested in this trial",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "A pill must be gentler than a shot",
+          "fact": "This trial didn't compare them",
+          "stock_query": "Dana and friend chatting over coffee, thoughtful mood"
+        },
+        "retention_device": "But/therefore turn; mini-cliffhanger into the side-effect chapter",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "Your first weeks",
+        "narration": "So what actually happens to your stomach in the first weeks?",
+        "on_screen_text": "Your stomach, weeks 1–4",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, cartoon stomach with calendar, gentle colours"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s13",
+        "section": "Your first weeks",
+        "narration": "In the trial, the side effects at the top of the list were stomach ones: nausea, constipation, diarrhea, vomiting and indigestion.",
+        "on_screen_text": "Top of the list: stomach",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Nausea",
+            "Constipation",
+            "Diarrhea",
+            "Vomiting",
+            "Indigestion"
+          ],
+          "stock_query": "cartoon stomach character with five small icons"
+        },
+        "retention_device": "Direct answer to the chapter question",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "Your first weeks",
+        "narration": "They were mostly mild to moderate. That's the trial's own description, not a promise for every person.",
+        "on_screen_text": "Mostly mild to moderate",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "dial gauge pointing between mild and moderate, calm mascot"
+        },
+        "retention_device": "Honest hedge that builds trust",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "Your first weeks",
+        "narration": "The label also starts at a low dose and steps it up gradually. How fast that happens is your prescriber's call, not something to adjust on your own.",
+        "on_screen_text": "Your prescriber sets the pace",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "gentle staircase with doctor character guiding Dana curly dark hair teal cardigan"
+        },
+        "retention_device": "Sets up who decides; safety framing",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "Your first weeks",
+        "narration": "But here's the number that tells you how rough it really got.",
+        "on_screen_text": "How rough did it get?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious mascot peeking behind a curtain at a number"
+        },
+        "retention_device": "Re-hook: teased stat",
+        "source_ids": []
+      },
+      {
+        "id": "s17",
+        "section": "Your first weeks",
+        "narration": "At the highest dose tested in the trial, 10.3 percent of people stopped orforglipron because of adverse events. On placebo, 2.7 percent stopped.",
+        "on_screen_text": "Orforglipron top trial dose: 10.3% vs 2.7% placebo stopped for side effects",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "10.3%",
+          "stat_label": "Orforglipron top trial dose, stopped for adverse events; placebo 2.7%",
+          "stock_query": "stat card with small group of cartoon people"
+        },
+        "retention_device": "Surprising stat payoff",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "Your first weeks",
+        "narration": "Flip that around. Close to 9 in 10 people on the highest trial dose didn't stop because of adverse events.",
+        "on_screen_text": "About 9 in 10 kept going",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "ten cartoon people, nine walking forward together, warm light"
+        },
+        "retention_device": "Humanised number reframe",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "Your first weeks",
+        "narration": "So for Dana, the honest expectation isn't 'no side effects.' It's 'stomach effects are possible, and in the trial they were mostly mild to moderate.' And that's something she can plan for.",
+        "on_screen_text": "Possible, and plannable",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan writing a plan in notebook, steady mood"
+        },
+        "retention_device": "Returns to the thread; tension to agency",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Easier early weeks",
+        "narration": "What can make those early weeks easier?",
+        "on_screen_text": "Easier early weeks",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, cup of tea and small plate, cosy kitchen"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s21",
+        "section": "Easier early weeks",
+        "narration": "The NHS advice for nausea is simple: eat smaller, more frequent meals, take regular sips of a cold drink, and avoid hot, fried or greasy food.",
+        "on_screen_text": "3 NHS nausea tips",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Smaller, more frequent meals",
+            "Regular sips of a cold drink",
+            "Avoid hot, fried or greasy food"
+          ],
+          "stock_query": "small plate, cold glass of water, greasy food crossed out gently"
+        },
+        "retention_device": "Practical payoff, 3-item list",
+        "source_ids": [
+          "nhs_nausea"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Easier early weeks",
+        "narration": "The label says this medicine lowers how much people eat, so you may notice you want less at meals. Stopping when you feel full, instead of finishing the plate, is a habit worth practising.",
+        "on_screen_text": "Stop when you're full",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan pushing half-finished plate aside, content"
+        },
+        "retention_device": "Relatable everyday moment",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Easier early weeks",
+        "narration": "If you have vomiting or diarrhea, keep sipping fluids, unless you've been told to limit fluids. Losing a lot of fluid is something the label takes seriously, and you'll hear why in a minute.",
+        "on_screen_text": "Keep sipping fluids",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "water bottle with small sip marks on a desk, calm"
+        },
+        "retention_device": "Mini open loop toward the warnings chapter",
+        "source_ids": [
+          "nhs_dv",
+          "pi"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Easier early weeks",
+        "narration": "Think of the early weeks like breaking in new shoes. A bit of adjusting is expected, but real pain is a signal, not something to tough out.",
+        "on_screen_text": "Adjusting vs real pain",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon new sneakers on a path, one with a warning light"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": []
+      },
+      {
+        "id": "s25",
+        "section": "Easier early weeks",
+        "narration": "Picture Dana's first week with that plan: a smaller breakfast, a water bottle on her desk, and no pressure to clear her plate at dinner.",
+        "on_screen_text": "Dana's week-one plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan at desk with water bottle and small breakfast, morning light"
+        },
+        "retention_device": "Returns to the hypothetical thread",
+        "source_ids": []
+      },
+      {
+        "id": "s26",
+        "section": "Easier early weeks",
+        "narration": "And if nausea makes eating hard or doesn't settle, that's a conversation for her prescriber, not something to push through alone.",
+        "on_screen_text": "Nausea won't settle? Ask",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan on phone with friendly clinician"
+        },
+        "retention_device": "Validation folded into action",
+        "source_ids": []
+      },
+      {
+        "id": "s27",
+        "section": "Easier early weeks",
+        "narration": "The stomach is the first chapter. The scale is the second, and it runs on a much slower clock.",
+        "on_screen_text": "The scale's slower clock",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "big slow clock beside a bathroom scale, curious mascot"
+        },
+        "retention_device": "Mini-cliffhanger before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s28",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "So how much weight, and how fast?",
+        "on_screen_text": "How much, how fast?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, calendar pages turning over months"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s29",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "In the trial, every dose did better than placebo at week 72. Here's how they lined up, in adults with obesity, or overweight plus a weight-related health problem, without diabetes.",
+        "on_screen_text": "Orforglipron trial, week 72",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Adults with obesity",
+            "Or overweight plus a weight-related condition",
+            "Without diabetes",
+            "3 doses vs placebo, 72 weeks"
+          ],
+          "stock_query": "trial card with diverse cartoon adults"
+        },
+        "retention_device": "Result and population in one line, no setup scene",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "The lowest of the three trial doses averaged a 7.5 percent loss.",
+        "on_screen_text": "Lowest of 3 trial doses: 7.5% loss",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−7.5%",
+          "stat_label": "Orforglipron, lowest of 3 trial doses, week 72",
+          "stock_query": "bar chart, first bar rising gently"
+        },
+        "retention_device": "One number per sentence, escalating",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "The middle dose averaged 8.4 percent.",
+        "on_screen_text": "Middle trial dose: 8.4% loss",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−8.4%",
+          "stat_label": "Orforglipron middle trial dose, week 72",
+          "stock_query": "bar chart, second bar slightly taller"
+        },
+        "retention_device": "Escalation",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "The highest trial dose averaged 11.2 percent. And placebo, alongside the same diet and activity advice, averaged 2.1 percent.",
+        "on_screen_text": "Top trial dose 11.2% vs placebo 2.1%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−11.2%",
+          "stat_label": "Orforglipron top trial dose, week 72; placebo 2.1%",
+          "stock_query": "bar chart, tallest bar beside small placebo bar"
+        },
+        "retention_device": "Payoff of the escalation",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s32b",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "But the US label lists the doses differently. Its top dose is seventeen point two milligrams.",
+        "on_screen_text": "US label lists doses differently",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan reading label leaflet beside calm doctor character"
+        },
+        "retention_device": "But-turn: bridges trial doses to label doses",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s32c",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "In that trial, the label reports an 11.1 percent average loss at that dose. Placebo averaged 2.1 percent. Your starting dose is lower, and your prescriber sets the steps.",
+        "on_screen_text": "Label top dose: 11.1% vs 2.1% placebo, 72 weeks",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−11.1%",
+          "stat_label": "Foundayo label top dose, 72 weeks; placebo −2.1%",
+          "stock_query": "label document with big number card, calm doctor character"
+        },
+        "retention_device": "Label number payoff folded into a safety framing",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "Those are averages at week 72, the end of the trial. They're not month-one numbers.",
+        "on_screen_text": "Week 72, not month one",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "That's what you'll see in month one",
+          "fact": "These are averages at week 72",
+          "stock_query": "long calendar with week 72 circled"
+        },
+        "retention_device": "Expectation reset",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "For someone starting at 220 pounds, the top trial dose's average loss of 11.2 percent would be about 25 pounds. But that's measured after nearly a year and a half, not in a quick drop.",
+        "on_screen_text": "About 25 lb from 220 lb",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "≈25 lb",
+          "stat_label": "11.2% of 220 lb, after 72 weeks",
+          "stock_query": "sack of potatoes beside a long calendar"
+        },
+        "retention_device": "Humanised number",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "If the scale stalls for a week, that isn't the trial's story. The trial measured change across 72 weeks, so one week is a single frame of a long film.",
+        "on_screen_text": "One week, one frame",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "film strip with one frame highlighted, calm mascot"
+        },
+        "retention_device": "Analogy that relieves a common frustration",
+        "source_ids": []
+      },
+      {
+        "id": "s36",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "And an average hides a range. Some people lost more, some lost less, and your result is yours.",
+        "on_screen_text": "Averages hide a range",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scatter of friendly dots around an average line"
+        },
+        "retention_device": "Nuance that builds trust",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "So in months two to six, Dana's job isn't to chase a number. It's to stay steady with her plan and keep her prescriber in the loop.",
+        "on_screen_text": "Steady beats chasing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan walking a park path, steady and calm"
+        },
+        "retention_device": "Returns to the thread",
+        "source_ids": []
+      },
+      {
+        "id": "s38",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "Weight is also one health measure among many. Her blood pressure, her energy and how she feels day to day matter too.",
+        "on_screen_text": "More than the scale",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Blood pressure",
+            "Energy",
+            "How you feel day to day"
+          ],
+          "stock_query": "dashboard with heart, battery and smile icons"
+        },
+        "retention_device": "Emotional relief; broadens success",
+        "source_ids": []
+      },
+      {
+        "id": "s39",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "Ask your care team how protein at meals and strength exercise fit into your plan, since the label pairs this pill with diet and activity.",
+        "on_screen_text": "Ask about protein and strength",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan with light dumbbells and protein-rich plate"
+        },
+        "retention_device": "Practical, empowering step",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "Months 2 to 6 and beyond",
+        "narration": "But a slower clock raises a question. What should make you pick up the phone before your next appointment?",
+        "on_screen_text": "When to pick up the phone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "phone on kitchen table with question mark, calm evening light"
+        },
+        "retention_device": "Question to the viewer before section change",
+        "source_ids": []
+      },
+      {
+        "id": "s41",
+        "section": "Signs to call about",
+        "narration": "Which signs mean call right away?",
+        "on_screen_text": "Call-right-away signs",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, calm neutral mascot holding a checklist"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s42",
+        "section": "Signs to call about",
+        "narration": "The label's warnings section covers risks that apply to GLP-1 medicines, including a boxed warning. Here are the ones tied to things you'd actually notice.",
+        "on_screen_text": "Warnings you'd notice",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm neutral mascot pointing at a label document"
+        },
+        "retention_device": "Promise of practical value",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Signs to call about",
+        "narration": "Severe stomach pain that won't go away, with or without vomiting, can be a sign of pancreatitis, an inflamed pancreas. Get medical help right away.",
+        "on_screen_text": "Severe stomach pain: call right away",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm neutral mascot with phone, stomach icon glowing softly"
+        },
+        "retention_device": "Concrete safety sign",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Signs to call about",
+        "narration": "Pain in your upper stomach, fever, yellowing of your skin or eyes, or clay-colored stools can point to a gallbladder problem. Call your prescriber right away.",
+        "on_screen_text": "Gallbladder warning signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Upper stomach pain",
+            "Fever",
+            "Yellowing skin or eyes",
+            "Clay-colored stools"
+          ],
+          "stock_query": "simple icons on a calm checklist card"
+        },
+        "retention_device": "List keeps the screen changing",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "Signs to call about",
+        "narration": "Vomiting or diarrhea that leaves you unable to keep fluids down can lead to dehydration, and the label warns that can harm the kidneys. That's why the fluid tip mattered.",
+        "on_screen_text": "Dehydration can harm kidneys",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon kidneys beside an empty water glass, calm tone"
+        },
+        "retention_device": "Pays off the earlier fluid loop",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "Signs to call about",
+        "narration": "Swelling of your face, lips, tongue or throat, trouble breathing, or a severe rash can mean a serious allergic reaction. Call your local emergency number right away.",
+        "on_screen_text": "Allergic reaction: emergency number",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm neutral mascot holding phone with emergency symbol"
+        },
+        "retention_device": "Concrete safety sign",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "Signs to call about",
+        "narration": "Low blood sugar is mainly a risk if you have diabetes and also take insulin or a sulfonylurea. If that's you, ask your prescriber how to watch for it.",
+        "on_screen_text": "Diabetes plus insulin or sulfonylurea",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glucose meter and question bubble, calm clinic"
+        },
+        "retention_device": "Scoped safety nuance",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s47b",
+        "section": "Signs to call about",
+        "narration": "The label's boxed warning is about thyroid tumors. Other GLP-1 medicines caused thyroid C-cell tumors in rodents. Orforglipron doesn't act on the rodent receptor and didn't cause tumors in rodents, but it does act on the human receptor, and whether this risk applies to people isn't known. The label says not to use it if you or a family member have had medullary thyroid cancer, or if you have a condition called MEN 2, short for multiple endocrine neoplasia type 2. So tell your prescriber about either one.",
+        "on_screen_text": "Boxed warning: thyroid tumors",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Seen with other GLP-1 medicines in rodents",
+            "Human relevance not known",
+            "Tell your prescriber about family history"
+          ],
+          "stock_query": "calm neutral mascot beside label document with thyroid icon"
+        },
+        "retention_device": "Label's top warning, folded into an action",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s47c",
+        "section": "Signs to call about",
+        "narration": "And tell them right away about a lump or swelling in your neck, trouble swallowing, hoarseness, or shortness of breath.",
+        "on_screen_text": "Neck lump, trouble swallowing: tell your prescriber",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Lump or swelling in neck",
+            "Trouble swallowing",
+            "Hoarseness",
+            "Shortness of breath"
+          ],
+          "stock_query": "calm neutral mascot with simple neck and throat icons"
+        },
+        "retention_device": "Concrete signs keep the screen changing",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "Signs to call about",
+        "narration": "And there's one more warning, about your eyes, that's easy to miss.",
+        "on_screen_text": "One eye warning",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly cartoon eye with small spotlight"
+        },
+        "retention_device": "Re-hook: mini-cliffhanger",
+        "source_ids": []
+      },
+      {
+        "id": "s49",
+        "section": "Signs to call about",
+        "narration": "The FDA has required all GLP-1 medicine labels to add a warning about a rare eye condition called NAION. That includes orforglipron.",
+        "on_screen_text": "FDA: NAION warning required on all GLP-1 labels",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm FDA document card with eye icon"
+        },
+        "retention_device": "Surprising fact payoff",
+        "source_ids": [
+          "fda_naion"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "Signs to call about",
+        "narration": "It involves reduced blood flow to the front of the optic nerve. If you notice sudden vision loss, especially painless loss in one eye, or a sudden change in your sight, get medical help right away.",
+        "on_screen_text": "Sudden vision change: right away",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "simple eye and optic nerve diagram, gentle colours"
+        },
+        "retention_device": "Concrete action",
+        "source_ids": [
+          "fda_naion"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "Signs to call about",
+        "narration": "Those are the call-right-away signs. For anything that isn't one of those emergency signs, don't stop or change your medicine on your own.",
+        "on_screen_text": "Don't stop or change on your own",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm neutral mascot with steady hand gesture"
+        },
+        "retention_device": "Fixed safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s52",
+        "section": "Signs to call about",
+        "narration": "Also tell your prescriber about every other medicine you take, including ones you buy without a prescription.",
+        "on_screen_text": "Share your full medicine list",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan handing a written list to a pharmacist"
+        },
+        "retention_device": "Practical step",
+        "source_ids": []
+      },
+      {
+        "id": "s52b",
+        "section": "Signs to call about",
+        "narration": "If you use birth control pills, the label says this medicine can make them work less well for a while. Ask your prescriber about switching to a non-oral method or adding a barrier method, like condoms, for 30 days after you start and after each dose increase. And if you're pregnant or planning to be, tell your prescriber.",
+        "on_screen_text": "On the pill? Ask about backup birth control",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Non-oral method, or add a barrier method",
+            "30 days after starting",
+            "30 days after each dose increase"
+          ],
+          "stock_query": "calm neutral mascot beside calendar and label document"
+        },
+        "retention_device": "Group-specific safety caveat folded into an action",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "Signs to call about",
+        "narration": "That's the part Dana writes on a sticky note for the fridge. Not to scare herself, but so she's never guessing.",
+        "on_screen_text": "Never guessing",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan sticking a note on fridge, calm smile"
+        },
+        "retention_device": "Returns to the thread; relief",
+        "source_ids": []
+      },
+      {
+        "id": "s54",
+        "section": "Signs to call about",
+        "narration": "Which brings us back to the puzzle from the start. Why can this pill skip the empty-stomach routine?",
+        "on_screen_text": "Back to the pill puzzle",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two cartoon pills on a puzzle board, curious mascot"
+        },
+        "retention_device": "Reopens the main loop before its payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s55",
+        "section": "The empty-stomach puzzle",
+        "narration": "Why doesn't this pill need an empty stomach?",
+        "on_screen_text": "No empty stomach needed?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, pill beside a breakfast plate"
+        },
+        "retention_device": "Chapter opens with the main open-loop question",
+        "source_ids": []
+      },
+      {
+        "id": "s56",
+        "section": "The empty-stomach puzzle",
+        "narration": "Start with an older pill. Oral semaglutide for type 2 diabetes, sold as Rybelsus and as Ozempic tablets, comes with strict rules.",
+        "on_screen_text": "An older GLP-1 pill: Rybelsus",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "older pill bottle with a rulebook beside it"
+        },
+        "retention_device": "Micro-story setup",
+        "source_ids": [
+          "rybelsus"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "The empty-stomach puzzle",
+        "narration": "Its label says to take it on an empty stomach in the morning, with up to four ounces of water, then wait at least 30 minutes before eating, drinking or taking other medicines by mouth.",
+        "on_screen_text": "30 minutes, 4 oz water",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Empty stomach, in the morning",
+            "Up to 4 oz of water",
+            "Wait 30+ minutes before food, drinks, other oral medicines"
+          ],
+          "stock_query": "morning clock, small glass of water, waiting person"
+        },
+        "retention_device": "Concrete contrast",
+        "source_ids": [
+          "rybelsus"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "The empty-stomach puzzle",
+        "narration": "Semaglutide is a peptide, a chain of amino acids, much like a tiny protein. That pill relies on an absorption enhancer, and its label says more water, or a shorter wait before eating, means less gets absorbed.",
+        "on_screen_text": "Semaglutide: a peptide",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "chain of colourful beads as a peptide, gut tunnel"
+        },
+        "retention_device": "'But here's why' explanation building to payoff",
+        "source_ids": [
+          "rybelsus"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "The empty-stomach puzzle",
+        "narration": "Orforglipron is different. It isn't a peptide at all. It's a small molecule that switches on the same GLP-1 receptor.",
+        "on_screen_text": "Orforglipron: small molecule",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "tiny compact molecule key beside long bead chain, same lock"
+        },
+        "retention_device": "Main loop payoff",
+        "source_ids": [
+          "attain1"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "The empty-stomach puzzle",
+        "narration": "In the trial, people took it with no food or water restrictions. And the US label says it can be taken with or without food.",
+        "on_screen_text": "With or without food",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill next to breakfast plate, cheerful morning kitchen"
+        },
+        "retention_device": "Payoff lands with a practical detail",
+        "source_ids": [
+          "attain1",
+          "pi"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "The empty-stomach puzzle",
+        "narration": "For Dana, that's the difference between planning her morning around a pill and simply fitting it into her routine. Your prescriber or pharmacist can tell you exactly how and when to take yours.",
+        "on_screen_text": "Fits your routine",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan relaxed at breakfast with pill bottle"
+        },
+        "retention_device": "Returns to the thread with relief",
+        "source_ids": []
+      },
+      {
+        "id": "s62",
+        "section": "The empty-stomach puzzle",
+        "narration": "One caution: a pill being easier to take doesn't make it a lighter medicine. It's still a GLP-1 medicine, with the warnings you just heard.",
+        "on_screen_text": "Easier to take, same care",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "A pill is a lighter medicine",
+          "fact": "It's still a GLP-1 medicine with label warnings",
+          "stock_query": "pill on a balance scale with a label document"
+        },
+        "retention_device": "Final twist before the recap",
+        "source_ids": [
+          "pi"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "Your checklist",
+        "narration": "So here's what to take from all this.",
+        "on_screen_text": "Your first-months checklist",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, clipboard with three ticks"
+        },
+        "retention_device": "Signals the takeaway",
+        "source_ids": []
+      },
+      {
+        "id": "s64",
+        "section": "Your checklist",
+        "narration": "One: plan for your stomach early, with smaller meals, sips of fluid, and less greasy food.",
+        "on_screen_text": "1. Plan for your stomach",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Smaller meals",
+            "Sip fluids",
+            "Less greasy food"
+          ],
+          "stock_query": "small plate and water glass with a tick"
+        },
+        "retention_device": "Recap list item",
+        "source_ids": [
+          "nhs_nausea"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "Your checklist",
+        "narration": "Two: know the call-right-away signs, and keep them somewhere you'll see them.",
+        "on_screen_text": "2. Know the urgent signs",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sticky note on fridge with a tick"
+        },
+        "retention_device": "Recap list item",
+        "source_ids": []
+      },
+      {
+        "id": "s66",
+        "section": "Your checklist",
+        "narration": "Three: judge progress over months, not days, and track more than the scale.",
+        "on_screen_text": "3. Think in months",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar months with heart and battery icons, tick"
+        },
+        "retention_device": "Recap list item",
+        "source_ids": []
+      },
+      {
+        "id": "s67",
+        "section": "Your checklist",
+        "narration": "And bring your questions to your prescriber: about side effects, your other medicines, and how this fits your health goals.",
+        "on_screen_text": "Bring your questions",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan chatting with friendly doctor"
+        },
+        "retention_device": "Agency",
+        "source_ids": []
+      },
+      {
+        "id": "s68",
+        "section": "Your checklist",
+        "narration": "Imagine Dana, three months in. Not perfect, but not guessing either. She knows what's normal, what's urgent, and what to ask.",
+        "on_screen_text": "Not guessing anymore",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dana curly dark hair teal cardigan smiling on a sunny walk, confident"
+        },
+        "retention_device": "Emotional payoff of the thread",
+        "source_ids": []
+      },
+      {
+        "id": "s69",
+        "section": "Your checklist",
+        "narration": "This video covers the US label and the main trial, and it isn't personal advice. Talk to your doctor or prescriber about whether Foundayo is right for you.",
+        "on_screen_text": "Ask if it's right for you",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm doctor character with open door, warm light"
+        },
+        "retention_device": "Safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s70",
+        "section": "Your checklist",
+        "narration": "If you want to see how GLP-1 medicines work in your gut and your brain, that's the video I'd watch next. It's linked in the description, and subscribe for more like it.",
+        "on_screen_text": "Next: how GLP-1 works",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi mascot cheering beside gut and brain icons"
+        },
+        "retention_device": "Subscribe tied to a specific next benefit, plus watch-next",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "pi",
+        "title": "FOUNDAYO (orforglipron) US Prescribing Information: Boxed Warning; Sections 1, 2, 5, 7.3, 8.1, 12.1, 12.2 and 14 (revised 7/2026)",
+        "publisher": "Eli Lilly and Company / US FDA-approved labeling",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/foundayo/foundayo.html"
+      },
+      {
+        "id": "attain1",
+        "title": "Orforglipron, an Oral Small-Molecule GLP-1 Receptor Agonist for Obesity Treatment (ATTAIN-1), N Engl J Med 2025;393(18), published online 16 Sep 2025 (PMID 40960239)",
+        "publisher": "New England Journal of Medicine (PubMed)",
+        "year": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40960239/"
+      },
+      {
+        "id": "fda_naion",
+        "title": "FDA Requires Safety Labeling Changes for Glucagon-Like Peptide-1 Receptor Agonists (GLP-1 RAs) Due to Potential Increased Risk of Rare But Serious Eye Condition (Drug Safety Communication, 9 Nov 2026)",
+        "publisher": "US Food and Drug Administration",
+        "year": "2026",
+        "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential"
+      },
+      {
+        "id": "nhs_nausea",
+        "title": "Feeling sick (nausea) (last reviewed 17 Nov 2023)",
+        "publisher": "NHS",
+        "year": "2023",
+        "url": "https://www.nhs.uk/symptoms/feeling-sick-nausea/"
+      },
+      {
+        "id": "nhs_dv",
+        "title": "Diarrhoea and vomiting (last reviewed 21 Dec 2023)",
+        "publisher": "NHS",
+        "year": "2023",
+        "url": "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/"
+      },
+      {
+        "id": "rybelsus",
+        "title": "RYBELSUS and OZEMPIC (semaglutide) tablets US Prescribing Information: Sections 1, 2, 11, 12.3 (revised 30 Jan 2026)",
+        "publisher": "Novo Nordisk / DailyMed (NLM)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27f15fac-7d98-4114-a2ec-92494a91da98"
+      }
+    ],
+    "cta": "If you want to see how GLP-1 medicines work in your gut and your brain, that's the video I'd watch next. It's linked in the description, and subscribe for more like it. Post notes only (not in the description): watch-next target: How It Works. Scenes with changed narration that need new audio and a word-for-word speech-to-text check: s03, s17, s30, s32b (new), s32c (new), s47b, s49, s52b (new), s56, s57, s58, s69, s70. Re-time every cut from the final word timestamps. Description: line 1 stays empty, the safety block goes first, and the Health Canada (13 Nov 2026) and TGA (16 Nov 2026) line goes in only after both dates are confirmed on the regulators' own pages."
+  },
+  "factcheck": {
+    "verdict": "REVISE",
+    "summary": "I checked the script against 6 sources, and the science holds up. All 5 sources I could open say what the script says: the Foundayo label (rev 7/2026), the FDA NAION safety notice (9 Nov 2026), the Rybelsus/Ozempic tablets label (30 Jan 2026) and both NHS pages (17 Nov 2023 and 21 Dec 2023). PubMed only showed a cookie banner, so I confirmed the ATTAIN-1 numbers through search results that quote the trial instead.\n\n**Confirmed:**\n- **Weight loss at week 72:** 7.5%, 8.4% and 11.2% loss by trial dose, vs 2.1% on placebo.\n- **Stopping for adverse events:** 10.3% at the top trial dose vs 2.7% on placebo.\n- **Side effects:** stomach effects were mostly mild to moderate.\n- **Label top dose:** 17.2 mg, with an 11.1% loss vs 2.1% on placebo.\n- **Approved use, food and appetite:** the label's approved-use wording matches, it can be taken with or without food, and it says the medicine lowers how much people eat.\n- **Boxed warning:** orforglipron doesn't act on the rodent receptor and didn't cause tumours in rodents, but does act on the human receptor. It's not to be used with a personal or family history of medullary thyroid cancer, or with MEN 2.\n- **Birth control pills:** switch to a non-oral method or add a barrier method for 30 days after starting and after each dose increase.\n- **Other label warnings:** pancreatitis, gallbladder, kidney harm from losing fluids, serious allergic reactions, and low blood sugar with insulin or a sulfonylurea.\n- **NAION:** the FDA requires the warning on all GLP-1 labels, including orforglipron, and NAION involves reduced blood flow to the front of the optic nerve.\n- **Rybelsus rules:** empty stomach, up to 4 oz of water, a 30-minute wait and the absorption enhancer all match the label.\n- **NHS advice:** the nausea tips and the \"small sips\" fluid advice match.\n\n**Safety checks pass:** the emergency lines, the scoped don't-stop line, the \"unless you've been told to limit fluids\" caveat, the low-blood-sugar scope, the pregnancy and birth-control caveats, and the prescriber line are all there.\n\n**One major problem:** the s18 on-screen card (\"About 9 in 10 kept going\") says more than the narration and the data do. It needs to be fixed before render.\n\nThe rest are small on-screen wording fixes so muted viewers get the full scope. I couldn't confirm that the birth-control text sits in PI section 7.3; it should be checked against the label before the source title is final.",
+    "issues": [
+      {
+        "location": "s18 on_screen_text",
+        "claim": "About 9 in 10 kept going",
+        "problem": "The narration says close to 9 in 10 on the top trial dose did not stop *because of adverse events*. The card says 9 in 10 'kept going', which implies 9 in 10 stayed on treatment. Overall dropout for any reason was higher than the 10.3% who stopped for adverse events. The card also leaves out the dose. This breaks the rule that on-screen text is never stronger than the narration.",
+        "severity": "major",
+        "fix": "Replace the on_screen_text with: \"Top trial dose: about 9 in 10 didn't stop for adverse events\""
+      },
+      {
+        "location": "s17 on_screen_text",
+        "claim": "Orforglipron top trial dose: 10.3% vs 2.7% placebo stopped for side effects",
+        "problem": "The trial and the narration say 'adverse events', which is not the same as side effects caused by the drug. The card's wording is looser than the source.",
+        "severity": "minor",
+        "fix": "Replace with: \"Orforglipron top trial dose: 10.3% vs 2.7% placebo stopped due to adverse events\""
+      },
+      {
+        "location": "s31 and s32 on_screen_text",
+        "claim": "Middle trial dose: 8.4% loss / Top trial dose 11.2% vs placebo 2.1%",
+        "problem": "Fails the muted-viewer test. The drug, the timeframe and the measure are missing from these cards. They only appear in the stat_label.",
+        "severity": "minor",
+        "fix": "s31: \"Orforglipron middle trial dose, week 72: 8.4% average loss\". s32: \"Orforglipron top trial dose, week 72: 11.2% vs 2.1% placebo (average loss)\""
+      },
+      {
+        "location": "s02 on_screen_text",
+        "claim": "(adults with obesity, or overweight plus a condition, without diabetes)",
+        "problem": "The population is cut down. 'A condition' loses 'weight-related'.",
+        "severity": "minor",
+        "fix": "Replace with: \"Orforglipron top trial dose, 72 weeks: 11.2% vs 2.1% placebo (adults with obesity, or overweight plus a weight-related condition, without diabetes)\""
+      },
+      {
+        "location": "s32c narration",
+        "claim": "In that trial, the label reports an 11.1 percent average loss at that dose.",
+        "problem": "'That trial' is ambiguous because the scene before it is about label doses. The label reports this figure from its Trial 1, in adults without diabetes.",
+        "severity": "minor",
+        "fix": "Replace the first sentence with: \"In the same trial of adults without diabetes, the label reports an 11.1 percent average loss at that dose.\""
+      },
+      {
+        "location": "s47b visual list item 3",
+        "claim": "Tell your prescriber about family history",
+        "problem": "Narrower than the narration. It drops your own history of medullary thyroid cancer and MEN 2.",
+        "severity": "minor",
+        "fix": "Replace with: \"Tell your prescriber about MTC or MEN 2, yours or your family's\""
+      },
+      {
+        "location": "sources: pi title",
+        "claim": "Sections ... 7.3 ...",
+        "problem": "I confirmed the birth-control instruction is in the label, but not which section number it sits in. Source titles must list only the sections actually cited.",
+        "severity": "minor",
+        "fix": "Open the PI and confirm the section number for the oral contraceptive text (7.x), then correct the title. If you can't confirm it, write \"Drug Interactions (Section 7)\"."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "pi",
+        "title": "FOUNDAYO (orforglipron) US Prescribing Information (revised 7/2026)",
+        "publisher": "Eli Lilly and Company / US FDA-approved labeling",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/foundayo/foundayo.html"
+      },
+      {
+        "id": "attain1",
+        "title": "Orforglipron, an Oral Small-Molecule GLP-1 Receptor Agonist for Obesity Treatment (ATTAIN-1), N Engl J Med 2025 (PMID 40960239)",
+        "publisher": "New England Journal of Medicine (PubMed)",
+        "year": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40960239/"
+      },
+      {
+        "id": "fda_naion",
+        "title": "FDA Requires Safety Labeling Changes for GLP-1 RAs Due to Potential Increased Risk of Rare But Serious Eye Condition (Drug Safety Communication, 9 Nov 2026)",
+        "publisher": "US Food and Drug Administration",
+        "year": "2026",
+        "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential"
+      },
+      {
+        "id": "nhs_nausea",
+        "title": "Feeling sick (nausea) (last reviewed 17 Nov 2023)",
+        "publisher": "NHS",
+        "year": "2023",
+        "url": "https://www.nhs.uk/symptoms/feeling-sick-nausea/"
+      },
+      {
+        "id": "nhs_dv",
+        "title": "Diarrhoea and vomiting (last reviewed 21 Dec 2023)",
+        "publisher": "NHS",
+        "year": "2023",
+        "url": "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/"
+      },
+      {
+        "id": "rybelsus",
+        "title": "RYBELSUS and OZEMPIC (semaglutide) tablets US Prescribing Information (revised 30 Jan 2026)",
+        "publisher": "Novo Nordisk / DailyMed (NLM)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27f15fac-7d98-4114-a2ec-92494a91da98"
+      }
+    ]
+  },
+  "hold_reason": "Not rendered: Fact-checker verdict REVISE: I checked the script against 6 sources, and the science holds up. All 5 sources I could open say what the script says: the Foundayo label (rev 7/2026), the FDA NAION safety notice (9 Nov 2026), the Rybelsus/Ozempic tablets label (30 Jan 2026) and both NHS pages (17 Nov 2023 and 21 Dec 2023). PubMed only showed a cookie banner, so I confirmed the ATTAIN-1 numbers through search results that quote the trial instead.\n\n**Confirmed:**\n- **Weight loss at week 72:** 7.5%, 8.4% and 11.2% loss by trial dose, vs 2.1% on placebo.\n- **Stopping for adverse events:** 10.3% at the top trial dose vs 2.7% on placebo.\n- **Side effects:** stomach effects were mostly mild to moderate.\n- **Label top dose:** 17.2 mg, with an 11.1% loss vs 2.1% on placebo.\n- **Approved use, food and appetite:** the label's approved-use wording matches, it can be taken with or without food, and it says the medicine lowers how much people eat.\n- **Boxed warning:** orforglipron doesn't act on the rodent receptor and didn't cause tumours in rodents, but does act on the human receptor. It's not to be used with a personal or family history of medullary thyroid cancer, or with MEN 2.\n- **Birth control pills:** switch to a non-oral method or add a barrier method for 30 days after starting and after each dose increase.\n- **Other label warnings:** pancreatitis, gallbladder, kidney harm from losing fluids, serious allergic reactions, and low blood sugar with insulin or a sulfonylurea.\n- **NAION:** the FDA requires the warning on all GLP-1 labels, including orforglipron, and NAION involves reduced blood flow to the front of the optic nerve.\n- **Rybelsus rules:** empty stomach, up to 4 oz of water, a 30-minute wait and the absorption enhancer all match the label.\n- **NHS advice:** the nausea tips and the \"small sips\" fluid advice match.\n\n**Safety checks pass:** the emergency lines, the scoped don't-stop line, the \"unless you've been told to limit fluids\" caveat, the low-blood-sugar scope, the pregnancy and birth-control caveats, and the prescriber line are all there.\n\n**One major problem:** the s18 on-screen card (\"About 9 in 10 kept going\") says more than the narration and the data do. It needs to be fixed before render.\n\nThe rest are small on-screen wording fixes so muted viewers get the full scope. I couldn't confirm that the birth-control text sits in PI section 7.3; it should be checked against the label before the source title is final.",
+  "release_tag": "content-2026-11-20",
+  "archive_url": "b2://informed-lab-media/content/2026-11-20/L1-starting-orforglipron-foundayo-the-once/"
+}
