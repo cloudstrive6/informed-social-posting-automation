@@ -1,4 +1,4 @@
-_Based on 66 QA records from 2026-11-09 to 2026-11-21: 40 Shorts, 22 long-form videos and 4 carousels, all about GLP-1._
+_Based on 67 QA records from 2026-11-09 to 2026-11-21: 40 Shorts, 23 long-form videos and 4 carousels, all about GLP-1._
 
 _**15 were held or failed:**_
 - _6 for beat drift. The latest is Serious Risks, L1 11-21: the render had 91% of cuts on time, and the s65 shot showed s75's text._
@@ -7,7 +7,7 @@ _**15 were held or failed:**_
 
 _4 long-form videos also got a packaging REVISE._
 
-_**New in this pass:** L2 11-21 (Foundayo resubmit). It failed fact-check again, this time for new faults: placebo stops for adverse events were given as 2.6% when the source says 2.7%, "nausea" was added to the label's pancreatitis wording, and "is requiring" will go out of date. The 11-20 fixes were not flagged again. Also, Months 2–6 was produced twice (L3 11-16 and L2 11-20)._
+_**New in this pass:** L3 11-21 (Zepbound vs Wegovy) shipped. It repeats known faults: a TTS miss ("g i p" was read as "gip"), floating heads in the hero frame, 30 off-screen tags and 15 near-empty frames. It also had several script slips: "side effects" used for "adverse events", our own subtraction presented as "the paper's main result", the obesity half of the population missing from the s04 card, and a generic name set against a brand name on the opening card._
 
 _**Ignore:**_
 - _The Visual Critic's "offset beat", "wrong content in this shot" and "disclaimer never appears" findings up to 11-09. They came from a QA bug (frames were shown in the wrong order). The published videos were in sync and showed the disclaimer. Only the automatic beat-sync gate counts._
@@ -29,9 +29,9 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
   - Re-measure after every re-render. The gate won't always stop a bad mix.
   - (9 pieces over 0.02 and 4 holds: S2 11-11 0.061, S2 11-13 0.047, S1 11-16 0.031, L1 11-11 0.022. **S2 11-20 shipped at 0.054.** Every render on 11-21 was at 0.016 or lower.)
 - **Check that every scene has voice right to the end. Then compare a speech-to-text transcript with the script word for word.**
-  - Check every "point", number, unit, drug name and how-to phrase.
+  - Check every "point", number, unit, drug name, acronym and how-to phrase.
   - Regenerate any failing scene before you mix.
-  - (3 holds: S2 11-12, S1 11-16, L1 11-11. Also "point" dropped in L1 11-13 and S2 11-15, and "tenmg" and "sub study" in L1 11-19.)
+  - (3 holds: S2 11-12, S1 11-16, L1 11-11. Also "point" dropped in L1 11-13 and S2 11-15, "tenmg" and "sub study" in L1 11-19, and "g i p" read as "gip" in L3 11-21.)
 - **Build captions and tags from the script's on-screen text field, never from the narration.**
   - Numbers are digits that match the stat pill exactly ("14.8%", "25–29%", "<6%", "16", "type 2").
   - Before render, search captions and tags for POINT, PERCENT, HUNDRED, THOUSAND, SIXTEEN, "TWO DIABETES", any other spelled-out number and pronunciation spellings ("NAY-ON", "SULFONYL UREA").
@@ -47,10 +47,10 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
   - Never render an empty bubble, ghost text, a blank or dash-placeholder tag rail, or a raw template word such as "Label".
   - (About 250 overlap findings across 32 Shorts. "Label" placeholder in S3 11-20 and S2 11-21. Blank dash rails in S2 11-20 and S1 11-21.)
 - **Long-form tags: the bottom of every tag stays at y 1000 or less, and every label is at least ~40px.**
-  - Name, group, study and dose tags ("Diet", "Adults", "Placebo group", "Study 1", "Women", "15 mg arm") keep clipping past y 1080.
+  - Name, group, study and dose tags ("Diet", "Adults", "Placebo group", "Study 1", "Women", "15 mg arm", "Semaglutide", "Tirzepatide") keep clipping past y 1080.
   - Labels keep rendering at 22–26px.
   - Spell-check tag text ("Studv 2" in L2 11-20).
-  - (About 250 off-screen and 260 tiny-text findings, latest L1 11-21.)
+  - (About 280 off-screen and 265 tiny-text findings, latest L3 11-21 with 30 off-screen.)
 - **Never use these backdrops, and match the backdrop to the beat's mood.**
   - Banned: the rounded teal or green "cabinet strip", the hanging grey or orange ornament circles (on any mood), and a starfield or bokeh on a body beat.
   - A night beat gets a dark night room, never the daytime striped room plus a moon icon.
@@ -59,14 +59,14 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
   - Never use a ring, donut, blob or outline-only figure as the hero.
   - Never merge or overlap two people, and never perch a mascot on a person.
   - Don't bring in a new look-alike character mid-Short.
-  - (Floating heads in about 23 pieces, latest L1, S1 and S3 11-21. Blob heroes in about 15. Continuity breaks in 6, latest S1 11-21. Merged people or perched mascots in 5, latest S1 11-21.)
+  - (Floating heads in about 24 pieces, latest L1, S1, S3 and L3 11-21, including L3's hero frame. Blob heroes in about 15. Continuity breaks in 6, latest S1 11-21. Merged people or perched mascots in 5, latest S1 11-21.)
 - **Fill every frame with a headline plus a labelled hero covering at least ~25% of it, starting with the opening frame.**
   - At t=0 in a Short, the headline sits clear of the character's head.
   - In a Short's first 10 s, change the shot at least every 2.5 s.
   - In a long video's first 30 s, the main character fills about a third of the frame height. It was too small in L2 11-16 and L1 11-21.
   - Document, package, Rx and doctor beats on a plain gradient need a character, with the stat on the document.
   - Never repeat the same lone prop in consecutive shots.
-  - (About 175 near-empty findings, latest L1 11-21 with 12.)
+  - (About 190 near-empty findings, latest L1 11-21 with 12 and L3 11-21 with 15.)
 
 ### Scriptwriters
 - **Shorts: stay inside the task's length arm and count every word yourself.**
@@ -77,7 +77,7 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
     3. The task's last line, which loops back to sentence 1.
   - Never write a subscribe line or "link in the description" in a Short.
 - **Copy the fixed safety lines exactly, and speak each one and show it on screen. Never add or drop a symptom.**
-  - An emergency line names its trigger and keeps "right away". Then add: "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own." Never write "Otherwise". The on-screen card keeps that scope too (S2 11-21).
+  - An emergency line names its trigger and keeps "right away". Then add: "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own." Never write "Otherwise". The on-screen card keeps that scope too (S2 11-21). Change only the opener so it fits the scene. If the scene names a single sign, say "that emergency sign" (L3 11-21).
   - Pancreatitis: severe pain in your stomach area that won't go away, "with or without vomiting". Never add "nausea" (L2 11-21).
   - Serious allergic reaction signs follow the Medication Guide in full: swelling of the face, lips, tongue or throat; trouble breathing or swallowing; severe rash or itching; fainting or feeling dizzy; very rapid heartbeat (S1 11-20, L1 11-21).
   - The gallbladder line is "Tell your healthcare provider right away" (S2 11-21).
@@ -87,7 +87,7 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
 - **Write narration exactly as it should be spoken, and keep it evergreen.**
   - No digits in narration. Give each decimal its own short sentence, with the unit spoken.
   - Say "loss" or "lower" for minus figures.
-  - Write units out in full ("ten milligrams"), and avoid compound words the voice may split.
+  - Write units out in full ("ten milligrams"). Avoid compound words the voice may split, and avoid acronyms spelled letter by letter ("g i p"). Use the full name or a form the voice reads reliably, then check it on the transcript.
   - Every spoken number names its comparator, subgroup splits included: "versus about 2 in 100 on placebo"; for hair by sex, women 7.1% vs 1.3% and men 0.5% vs 0% on placebo. (S1 11-20, L2 11-20.)
   - Never write "now", "this week", "new", dates or present-tense regulatory moves like "the FDA is requiring". Keep the FDA's "potential" (L2 11-21).
   - Help lines cover all four markets.
@@ -95,19 +95,20 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
   - Re-read every figure against the abstract or label table before you hand off. L2 11-21 failed for writing 2.6% instead of 2.7%.
   - Each number names its measure, drug and arm, comparator, population and timeframe.
   - A share of people is never an "average".
-  - "Adverse events" are never "side effects", and "didn't stop because of adverse events" is never "kept going".
+  - "Adverse events" are never "side effects" (L1 11-20, L3 11-21), and "didn't stop because of adverse events" is never "kept going".
   - Never present slower stomach emptying as the cause of an effect.
   - Don't compare different trials as if they were head-to-head.
   - Never add "most", "many", "commonly", "similar", "myth", "a few days" or a softer verb.
   - Recaps keep the label's exact terms: "MTC or MEN 2", not "thyroid cancer" (L1 11-21).
-  - Never write "the paper says" until you've found the sentence.
-  - (About 113 findings. Recaps lost scope in 5 pieces, latest L1 11-21.)
+  - Never write "the paper says" or "the paper's main result" until you've found the sentence. A difference you worked out yourself is presented as our own arithmetic, never as the paper's (L2 11-16, L3 11-21).
+  - (About 120 findings. Recaps lost scope in 5 pieces, latest L1 11-21.)
 - **Run the muted-viewer test, starting with the opening card.**
   - The opening card names the drug, the scope and the answer from sentence 1. It says nothing the narration doesn't, and it never shows a point before it is spoken (L1 11-21 showed the sleep apnea use early).
+  - Head-to-head cards compare like with like: generic against generic, or brand against brand (L3 11-21).
   - Every stat card names the measure, the drug, the dose (or "by dose"), both groups, the full population and the timeframe.
-  - Never shorten the population to "no diabetes" or drop "weight-related".
+  - Never shorten the population to "no diabetes" or "adults without diabetes", and never drop "weight-related" (L3 11-21).
   - On-screen text is never stronger or narrower than the narration.
-  - (About 92 findings, latest L2 11-20 and L1 11-21.)
+  - (About 95 findings, latest L1 and L3 11-21.)
 
 ### Carousel Designer
 - **Carousels are stopped. If the scheduler still asks for one, reuse verified Short text only.**
@@ -158,7 +159,7 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
     - Re-time it from the final word timestamps, and remove the duplicate "6.4 vs 3.8" card at s65.
     - s8: hold the sleep apnea card until s9 says it.
     - s36: say "a sulfonylurea" (the label doesn't name glipizide or glimepiride).
-    - s44: give the full allergy-sign list.
+    - s44: give the full allergy-sign list, in the description's safety block too.
     - s77: say "MTC or MEN 2".
     - s35 and s72: add that the label reports low blood sugar in adults without type 2 diabetes.
     - Use the real Medication Guide URL, and keep the weight-trial pancreatitis figure.
@@ -182,7 +183,8 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
     - NHS nausea page 17 Nov 2023
   - (2 failures: L2 11-14 and C1 11-20. Placeholder or missing dates in 4 more.)
 - **Give every result its exact scope.**
-  - **Obesity trials** (SURMOUNT-1, -4 and -5, STEP 1, ATTAIN-1): adults with obesity, or overweight plus a weight-related condition, without diabetes.
+  - **Obesity trials** (SURMOUNT-1, -4 and -5, STEP 1, ATTAIN-1): adults with obesity, or overweight plus a weight-related condition, without diabetes. SURMOUNT-5 excluded diabetes of any type, not just type 2.
+  - **SELECT:** adults with preexisting cardiovascular disease (heart disease, stroke or peripheral artery disease) and a BMI of 27 or more, without diabetes. The endpoint is cardiovascular death, nonfatal heart attack or nonfatal stroke (L3 11-21).
   - **Zepbound Study 1 vs Study 2:** Study 1 excluded type 2 diabetes; Study 2 enrolled only people with it.
   - **Zepbound's approved uses:** weight reduction and long-term maintenance, plus moderate-to-severe obstructive sleep apnea in adults with obesity. Never drop the sleep apnea use.
   - **Low blood sugar:** higher risk with diabetes plus insulin or a sulfonylurea. Say that in the spoken line too. Never imply the risk is zero without diabetes (the label reports cases).
@@ -206,6 +208,6 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
     - NHS "more at risk" is not the same as "more likely".
   - (About 77 findings, latest L1 11-21.)
 
-_Updated 2026-11-21 from 66 QA records (all GLP-1, 11-09 to 11-21)._
+_Updated 2026-11-21 from 67 QA records (all GLP-1, 11-09 to 11-21)._
 
-_Updated 2026-11-21 from 66 QA records._
+_Updated 2026-11-21 from 67 QA records._
