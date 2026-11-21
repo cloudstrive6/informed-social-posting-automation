@@ -1,0 +1,345 @@
+{
+  "id": "S1-dropped-your-tirzepatide-single-dose-pen",
+  "date": "2026-11-21",
+  "kind": "short",
+  "plan": {
+    "id": "S1",
+    "kind": "short",
+    "topic": "Dropped your tirzepatide single-dose pen, or it looks damaged: what the Instructions for Use say, and what to do if you're unsure",
+    "angle": "Sentence 1: 'Dropped your tirzepatide pen? Here's what the pen guide says.' Quote or paraphrase only the IFU's damage wording that you confirm in the loaded Zepbound and Mounjaro single-dose pen IFUs, each with its own URL and revised date. If neither IFU loads, give no sourced IFU claim. Use only the untagged line 'Not sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet.' Don't cite the PI storage section for damage. Keep the scope card 'US single-dose pen; KwikPens and vials have their own leaflets.' Close: 'Not personal advice, so ask your prescriber.', then the loop line.",
+    "working_title": "Tirzepatide Pen Dropped on the Floor: Still OK? #shorts",
+    "target_keyword": "dropped zepbound pen",
+    "trend_stage": "evergreen",
+    "why": "Visible pen moment for the 08:00 slot, matching the winning pen Shorts (pen blood 170, 888 on TikTok). A new moment not covered in the last 30 days. | fact-check: It's useful and safe as long as it doesn't over-claim. Two risks. (1) I'm not confident the US single-dose pen IFU talks about 'dropped' pens at all. Its usual wording is about not using a pen that looks damaged, frozen, or has cloudy or particle-containing medicine. Never put 'dropped' in the IFU's mouth unless the loaded IFU actually says it. (2) The planned fallback won't work. The PI's How Supplied/Storage section (Zepbound PI, 28 Aug 2026) covers storage and temperature, not damage. Citing it for a 'damaged pen' paraphrase would tag a line to a source that doesn't say it. The search keyword 'tirzepatide pen' covers both brands, so cite Mounjaro's single-dose pen IFU too. No sourcing of replacement pens and no dose or missed-dose talk.",
+    "pillar": "life-on-glp1"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Tirzepatide Pen Dropped? Here's the Label Check #shorts",
+    "description": "\nQuick check: dropped your tirzepatide pen? Here's what the label says to inspect before your next dose (US single-dose pen; KwikPens and vials have their own leaflets).\nNot sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet.\n#Tirzepatide\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "social": {
+      "youtube_short_title": "Tirzepatide Pen Dropped? Here's the Label Check #shorts",
+      "youtube_short_description": "\nQuick check: dropped your tirzepatide pen? Here's what the label says to inspect before your next dose (US single-dose pen; KwikPens and vials have their own leaflets).\nNot sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet.\n#Tirzepatide\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+      "instagram_caption": "Dropped your tirzepatide pen?\n\nHere's the check before you use it:\n→ The medicine first: the label says it should look clear and colorless to slightly yellow\n→ Particles or discoloration? The label says don't use it\n→ Then the pen itself: if it looks cracked or broken, treat that as \"not sure\"\n→ This is for the US single-dose pen. KwikPens and vials have their own leaflets\n\nSave this for your next dose day.\n\nNot sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet.\n\n#Tirzepatide\n\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+      "tiktok_caption": "Dropped your tirzepatide pen? Here's the label check before your next dose (US single-dose pen; KwikPens and vials have their own leaflets). Not sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet. #Tirzepatide Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+      "facebook_caption": "That clatter when your tirzepatide pen hits the floor feels awful, but checking it takes seconds.\n\nCheck the medicine first. The label says it should look clear and colorless to slightly yellow, and if you see particles or discoloration, don't use it. Then the pen itself: if it looks cracked or broken, treat that as not sure. This is for the US single-dose pen. KwikPens and vials have their own leaflets.\n\nNot sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet.\n\n#Tirzepatide\n\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+      "threads_caption": "Dropped your tirzepatide pen? Not sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet. For the US single-dose pen, the label says the medicine should look clear and colorless to slightly yellow. Not personal advice. Talk to your doctor or prescriber about whether it's right for you."
+    },
+    "tags": [
+      "dropped zepbound pen"
+    ]
+  },
+  "media": {
+    "video": "S1-dropped-your-tirzepatide-single-dose-pen.mp4",
+    "duration": 45.489
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "short",
+      "slotKey": "short",
+      "slot": "2026-11-21T13:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "uds6Rv3eRSk",
+      "url": "https://youtube.com/shorts/uds6Rv3eRSk",
+      "published_at": "2026-11-21T13:00:00.000Z"
+    },
+    {
+      "platform": "instagram",
+      "format": "reel",
+      "slotKey": "short",
+      "slot": "2026-11-21T13:00:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "platform": "tiktok",
+      "format": "short",
+      "slotKey": "short",
+      "slot": "2026-11-21T13:00:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    },
+    {
+      "platform": "facebook",
+      "format": "reel",
+      "slotKey": "short",
+      "slot": "2026-11-21T13:00:00.000Z",
+      "status": "pending",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-11-21T03:15:23.977Z",
+  "experiments": {
+    "short-length": "tight",
+    "hook-archetype": "recognition-question"
+  },
+  "script": {
+    "working_title": "Tirzepatide Pen Dropped on the Floor: Still OK? #shorts",
+    "target_keyword": "dropped zepbound pen",
+    "hook_pattern": "recognition-question: \"Dropped your tirzepatide pen?\" (4 words, names the drug and the moment). Sentence 2 sets up the label's check before every dose, so it doesn't suggest the label gives advice about drops. The rule (\"Not sure it's OK? Don't use it.\") comes right after, at about 6–7 s. Loop line: \"So next time it hits the floor…\" leads back into sentence 1. Post note for Exp G: target long video = Pen how-to. Writer note: neither single-dose pen IFU loaded, so the script makes no IFU claim and never says what any leaflet says about dropped or damaged pens. The only sourced line is the visual-inspection sentence in Section 2 (Dosage and Administration) of each PI, not the storage section. Spoken word count: 118 (tight arm, 90–120).",
+    "scenes": [
+      {
+        "id": "s1",
+        "section": "Short",
+        "narration": "Dropped your tirzepatide pen? Here's the check the label says to do before every dose.",
+        "on_screen_text": "Dropped your tirzepatide pen?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "worried woman picking up pen"
+        },
+        "retention_device": "Recognition question at t=0 with a composed first frame: the character kneels by the pen on bathroom tiles, and the headline sits clear of her head.",
+        "source_ids": []
+      },
+      {
+        "id": "s2",
+        "section": "Short",
+        "narration": "Not sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet.",
+        "on_screen_text": "Not sure? Don't use it.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm woman phoning pharmacist"
+        },
+        "retention_device": "The core rule lands by about 6–7 s, with a shot change at about 2.5 s.",
+        "source_ids": []
+      },
+      {
+        "id": "s3",
+        "section": "Short",
+        "narration": "That clatter feels awful, but checking takes seconds. And the first thing to check isn't the pen.",
+        "on_screen_text": "First check: not the pen",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman relieved holding pen closely"
+        },
+        "retention_device": "Emotional beat with the relief in the same sentence, then an open-loop re-hook ('isn't the pen').",
+        "source_ids": []
+      },
+      {
+        "id": "s4",
+        "section": "Short",
+        "narration": "It's the medicine inside. Before use, the label says it should look clear and colorless to slightly yellow. Particles or discoloration? The label says don't use it.",
+        "on_screen_text": "Before use: clear to slightly yellow",
+        "visual": {
+          "kind": "list",
+          "stock_query": "woman inspecting medicine in pen",
+          "items": [
+            "Tirzepatide label, before use: clear, colorless to slightly yellow",
+            "Particles or discoloration: don't use"
+          ]
+        },
+        "retention_device": "Payoff 1 closes the loop: the check is the medicine, one concrete visual cue.",
+        "source_ids": [
+          "src1",
+          "src2"
+        ]
+      },
+      {
+        "id": "s5",
+        "section": "Short",
+        "narration": "Then the pen itself. If it looks cracked or broken, treat that as not sure.",
+        "on_screen_text": "Cracked or broken? Not sure.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman checking pen for cracks"
+        },
+        "retention_device": "Payoff 2 ties back to the rule from s2, so the viewer has one simple decision.",
+        "source_ids": []
+      },
+      {
+        "id": "s6",
+        "section": "Short",
+        "narration": "This is for the US single-dose pen. KwikPens and vials have their own leaflets.",
+        "on_screen_text": "US single-dose pen; KwikPens and vials have their own leaflets.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman holding pen and leaflet"
+        },
+        "retention_device": "Scope card (as set in the task) keeps the muted viewer accurate before the close.",
+        "source_ids": []
+      },
+      {
+        "id": "s7",
+        "section": "Short",
+        "narration": "Not personal advice, so ask your prescriber.",
+        "on_screen_text": "Not personal advice, so ask your prescriber.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm neutral mascot nodding"
+        },
+        "retention_device": "Short safety line on one card, ending with relief and a clear next step.",
+        "source_ids": []
+      },
+      {
+        "id": "s8",
+        "section": "Short",
+        "narration": "So next time it hits the floor...",
+        "on_screen_text": "Next time it hits the floor…",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pen slipping from woman's hand"
+        },
+        "retention_device": "Loop line that leads straight into sentence 1 ('Dropped your tirzepatide pen?') so the replay feels seamless.",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "src1",
+        "title": "ZEPBOUND (tirzepatide) injection, Prescribing Information: Section 2, Dosage and Administration (visual inspection before use)",
+        "publisher": "Eli Lilly and Company / US FDA label",
+        "year": "2026 (revised 28 Aug 2026)",
+        "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+      },
+      {
+        "id": "src2",
+        "title": "MOUNJARO (tirzepatide) injection, Prescribing Information: Section 2, Dosage and Administration (visual inspection before use)",
+        "publisher": "Eli Lilly and Company / US FDA label",
+        "year": "2026 (revised 27 Aug 2026)",
+        "url": "https://pi.lilly.com/us/mounjaro-uspi.pdf"
+      }
+    ],
+    "cta": "Spoken close: \"Not personal advice, so ask your prescriber.\" Then the loop line \"So next time it hits the floor...\" leads back into the hook. No subscribe line and no link line. Post note for the owner's related-video link (Exp G): pen Short → Pen how-to long video."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "The script passes. It makes one sourced claim, and that claim checks out: Section 2 of both the Zepbound and Mounjaro US prescribing information says to inspect the medicine visually before use. It should look clear and colorless to slightly yellow, and you shouldn't use it if you see particles or discoloration. Both Lilly PDF links loaded, but their text couldn't be extracted. I confirmed the sentence through search results that quote the Zepbound label and index the FDA label PDFs. The Mounjaro wording matches. The revision dates (28 Aug 2026 and 27 Aug 2026) match our known dates; I couldn't read them from the PDFs.\n\nThe rest is safe. The writer correctly makes no claim about what the pen leaflet says about dropped pens. The cracked-or-broken line, the \"not sure? don't use it\" rule and the pharmacist line are our own careful tips with no source tag, which is correct. Nothing in it covers dosing, swapping or stopping medicine. The scope card names the single-dose pen and separates KwikPens and vials. The script has the required \"Not personal advice, so ask your prescriber.\" card, no subscribe or link line, no digits in the narration, and about 117 words.\n\nThere's one minor framing fix in s1. The label's check is a routine before every dose, not advice written for dropped pens, so the hook shouldn't suggest the label talks about drops.",
+    "issues": [
+      {
+        "location": "s1 narration",
+        "claim": "Dropped your tirzepatide pen? Here's what the label says to check.",
+        "problem": "The label's inspection sentence is a general check before every use. It doesn't mention dropped pens. Coming right after \"Dropped your pen?\", this line suggests the label gives advice for drops, which it doesn't. Nothing is false, but the framing claims slightly more than the source says.",
+        "severity": "minor",
+        "fix": "Dropped your tirzepatide pen? Here's the check the label says to do before every dose."
+      },
+      {
+        "location": "s4 narration",
+        "claim": "The label says it should look clear and colorless to slightly yellow.",
+        "problem": "This is accurate. Optional: say \"before use\" so it stays tied to the source and matches the s1 fix.",
+        "severity": "minor",
+        "fix": "It's the medicine inside. Before use, the label says it should look clear and colorless to slightly yellow. Particles or discoloration? The label says don't use it."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "src1",
+        "title": "ZEPBOUND (tirzepatide) injection, Prescribing Information: Section 2, Dosage and Administration (visual inspection before use)",
+        "publisher": "Eli Lilly and Company / US FDA label",
+        "year": "2026 (revised 28 Aug 2026)",
+        "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+      },
+      {
+        "id": "src2",
+        "title": "MOUNJARO (tirzepatide) injection, Prescribing Information: Section 2, Dosage and Administration (visual inspection before use)",
+        "publisher": "Eli Lilly and Company / US FDA label",
+        "year": "2026 (revised 27 Aug 2026)",
+        "url": "https://pi.lilly.com/us/mounjaro-uspi.pdf"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.033,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 5.2,
+      "weakShots": 4,
+      "layoutIssues": 0,
+      "frameIssues": [],
+      "notes": [
+        "Banned backdrop: hanging grey/orange ornament circles visible top corners.",
+        "Blank tag rail with unfilled dash placeholders visible top of frame (ghost UI, not real tags).",
+        "Woman and pharmacist render as floating heads with no neck/shoulders, overlapping into an unclear merged shape.",
+        "Woman's skin tone/hair colour here doesn't match her look in shot 0/16 — continuity break.",
+        "Same banned hanging ornament-circle backdrop as shot 3.",
+        "Same blank/dash tag-rail placeholders visible top and bottom of frame.",
+        "Purple bokeh/starfield backdrop used on a body/molecule beat, which is a banned backdrop choice for this mood.",
+        "Same starfield backdrop on a body beat as shot 8.",
+        "Same starfield backdrop on a body beat.",
+        "Banned hanging ornament-circle decorations again.",
+        "Blank dash-placeholder tag rail visible top and bottom.",
+        "Same banned ornament-circle backdrop.",
+        "Same blank dash-placeholder tag rail."
+      ],
+      "layoutKinds": {},
+      "pacingRevised": 0,
+      "pacing": {
+        "window": 10,
+        "changes": 6,
+        "maxGap": 2.13,
+        "ok": true,
+        "detail": "6 visual changes in the first 10 s, longest static stretch 2.13 s (limit 2.5 s, at least 4 changes)"
+      },
+      "captionCoverage": {
+        "words": 121,
+        "captioned": 117,
+        "wordShare": 0.967,
+        "speechSeconds": 32.26,
+        "timeShare": 0.937
+      },
+      "frameZero": {
+        "texts": [
+          "Dropped your tirzepatide pen?"
+        ],
+        "heroes": 2,
+        "heroHeight": 0.46,
+        "ok": true,
+        "detail": "frame 0: text \"Dropped your tirzepatide pen?\", 2 character(s), tallest 46% of the height"
+      }
+    },
+    "audio": {
+      "musicGain": 0.863,
+      "sfxGain": 0.44,
+      "finalWer": 0,
+      "maskingDelta": 0,
+      "lufs": -15.7,
+      "soundNotes": "Music sits right at the top of the target window under speech (-13.5 dB), so a modest +1.15x lift mainly helps the quiet pauses (-17.8 dB) without pushing speech-bed level out of range. Thinned duplicate stock cues (same sound twice at one timestamp) across nearly every transition to stay under the 3–4-effects-per-second rule, pulled down three cues that were too loud during speech (i14 swoosh/tick at -7.9 dB, i47 pop at -7.5 dB), and nudged up an under-level pause tick (i46) that had fallen to -30.5 dB; a few \"swell\" cues (i13/i27/i40) are essentially inaudible (-50 to -60 dB) and can't be rescued with gain alone, so they were left for the mix engine to re-render rather than masked. Added three neutral custom accents (pen clatter, reassurance chime, page turn) for the dropped-pen and guide-reference beats — no injection, needle, syringe or pill sounds, per the medical-safety rule."
+    },
+    "blocking": [],
+    "subtitles": {
+      "wer": 0.033,
+      "diffs": [
+        "expected \"drop to\" heard \"dropped\"",
+        "expected \"quick pens\" heard \"kwikpens\""
+      ]
+    },
+    "beats": {
+      "verdict": "pass",
+      "summary": "beat sync PASS: plan 8/8 beats on time, audio shift 0.02 s, render 88% of beats cut on time",
+      "planOff": 0,
+      "audioShift": 0.02,
+      "renderHitRate": 0.88,
+      "flagged": []
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "youtube_short_description",
+          "claim": "Here's what the label says to inspect before your next dose (US single-dose pen).",
+          "problem": "Leaves out the script's line saying KwikPens and vials have their own leaflets, so viewers with other devices don't see that the check is device-specific. This isn't misleading because the line already says 'US single-dose pen', but the scope is thinner than in the script.",
+          "severity": "minor",
+          "fix": "\nQuick check: dropped your tirzepatide pen? Here's what the label says to inspect before your next dose (US single-dose pen; KwikPens and vials have their own leaflets).\nNot sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet.\n#Tirzepatide\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you."
+        },
+        {
+          "location": "tiktok_caption",
+          "claim": "Here's the label check before your next dose (US single-dose pen).",
+          "problem": "Same scope gap as the YouTube description: the KwikPen/vial line from the script is missing.",
+          "severity": "minor",
+          "fix": "Dropped your tirzepatide pen? Here's the label check before your next dose (US single-dose pen; KwikPens and vials have their own leaflets). Not sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet. #Tirzepatide Not personal advice. Talk to your doctor or prescriber about whether it's right for you."
+        },
+        {
+          "location": "threads_caption",
+          "claim": "The label says the medicine should look clear and colorless to slightly yellow.",
+          "problem": "Doesn't say which device it covers (the script scopes everything to the US single-dose pen). Adding the full KwikPen line would push the caption past about 300 characters, so name the device in the fact instead.",
+          "severity": "minor",
+          "fix": "Dropped your tirzepatide pen? Not sure it's OK? Don't use it. Ask your pharmacist or call the number in your leaflet. For the US single-dose pen, the label says the medicine should look clear and colorless to slightly yellow. Not personal advice. Talk to your doctor or prescriber about whether it's right for you."
+        }
+      ]
+    }
+  },
+  "release_tag": "content-2026-11-21",
+  "archive_url": "b2://informed-lab-media/content/2026-11-21/S1-dropped-your-tirzepatide-single-dose-pen/"
+}

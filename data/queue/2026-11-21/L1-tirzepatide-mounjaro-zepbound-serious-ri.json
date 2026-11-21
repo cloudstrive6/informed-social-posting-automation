@@ -1,0 +1,1663 @@
+{
+  "id": "L1-tirzepatide-mounjaro-zepbound-serious-ri",
+  "date": "2026-11-21",
+  "kind": "long",
+  "plan": {
+    "id": "L1",
+    "kind": "long",
+    "topic": "Tirzepatide (Mounjaro/Zepbound) serious risks, how rare each one is, from the US labels: boxed thyroid C-cell warning (MTC/MEN 2), pancreatitis, gallbladder problems, low blood sugar with insulin or a sulfonylurea, kidney injury from fluid loss, severe allergic reactions, diabetic retinopathy (Mounjaro, type 2 diabetes), aspiration around anaesthesia, Suicidal Behavior and Ideation as the label names it, and the FDA's class-wide NAION eye warning",
+    "angle": "Run the 11-14 script with every fix listed. Tag each warning with its label: Mounjaro only (diabetic retinopathy, in type 2 diabetes), Zepbound only (Suicidal Behavior and Ideation, said calmly, with crisis lines for the US, UK, Canada and Australia), or both. For post-marketing warnings (kidney injury from fluid loss, severe allergy, aspiration around anaesthesia), say 'reported after approval; the label gives no rate'. Present NAION as a class-wide FDA estimate: 6.4 vs 3.8 per 100,000 person-years across 126 RCTs, a small number of events, not shown for tirzepatide alone. Sign: sudden, painless vision loss in one eye. Action: contact a clinician right away. Keep the scoped don't-stop line, 'Not personal advice' and the full prescriber line, spoken and on screen.",
+    "working_title": "Tirzepatide (Mounjaro) Serious Risks: How Rare?",
+    "target_keyword": "mounjaro serious side effects",
+    "trend_stage": "rising",
+    "why": "Queue #6 and a broad searched question (Ro and WaPo safety pieces, NAION coverage). Absorbs the peaking NAION news into an evergreen, label-verifiable deep-dive. | fact-check: This is a resubmission, so we can do it once the 11-14 fixes are in. I checked the NAION facts: the FDA Drug Safety Communication on 9 Nov 2026 requires a class-wide NAION warning. Its meta-analysis covered 126 RCTs (134,253 patients, 288,879 person-years) and found 15 probable events: 6.4 vs 3.8 per 100,000 person-years on GLP-1 RAs vs comparators. Tirzepatide (Mounjaro) is on the list of affected drugs. The rate is for the whole class, so it must not be given as a tirzepatide-only figure. Scope problem: the angle puts every warning under both labels, but they differ. Diabetic retinopathy is Mounjaro only, in type 2 diabetes. 'Suicidal Behavior and Ideation' is a Zepbound (weight-management) warning and isn't in Mounjaro's label, so the script must name which label each warning comes from. Low blood sugar: say the higher risk applies only with diabetes plus insulin or a sulfonylurea, in the spoken line too. Kidney injury, severe allergic reactions and aspiration come from post-marketing reports and have no trial rates, so say 'no rate' rather than making one up. This keeps the 'How rare?' title honest. Pancreatitis: give 0.23 vs 0.11 per 100 years only next to the weight-trial 0.14 vs 0.15. Use a real Medication Guide URL, with its revised date, separate from the PI. Never say 'new' about NAION.",
+    "pillar": "is-it-for-you"
+  },
+  "status": "held",
+  "package": {
+    "title": "Tirzepatide (Mounjaro, Zepbound) Serious Risks: How Rare Is Each One?",
+    "title_candidates": [
+      "Tirzepatide (Mounjaro) Serious Side Effects: How Rare?",
+      "Tirzepatide (Mounjaro) Serious Risks: How Rare?",
+      "Tirzepatide (Mounjaro) Serious Risks: The Real Odds",
+      "Tirzepatide (Mounjaro) Serious Side Effects: How Common?",
+      "Tirzepatide (Mounjaro) Label Warnings: How Rare Is Each?",
+      "Tirzepatide (Mounjaro) Serious Risks: What the Label Says",
+      "Mounjaro Serious Side Effects: What the Label Says",
+      "Tirzepatide's 10 Serious Risks: How Rare Is Each One?",
+      "Tirzepatide (Mounjaro) Serious Risks: Rarer Than You Think?",
+      "Tirzepatide (Mounjaro) Boxed Warning: Should You Worry?"
+    ],
+    "description": "\nSevere stomach pain that won't go away, face, lips, tongue or throat swelling, trouble breathing or swallowing, fainting, or sudden vision loss in one eye: get help right away. For anything that isn't one of those emergency signs, don't stop or change your medicine on your own. This content is for educational purposes only and is not medical advice.\n\nQuick answer: On tirzepatide's two US labels (Mounjaro and Zepbound), serious risks were low where the trials counted them, except low blood sugar in people with diabetes who also use insulin or a sulfonylurea. Kidney injury from fluid loss, anaphylaxis and angioedema, and aspiration around anesthesia were reported after approval, with no rate on either label. The FDA's class-wide NAION estimate across 126 randomized GLP-1 trials: 6.4 per 100,000 person-years on GLP-1 medicines vs 3.8 on comparators, not shown for tirzepatide alone.\n\nSources: 1) Zepbound Prescribing Information (DailyMed, rev. 28 Aug 2026). 2) Mounjaro Prescribing Information (DailyMed, rev. 27 Aug 2026). 3) FDA Drug Safety Communication on GLP-1 NAION risk (9 Nov 2026).\n\nIG/TikTok/FB: @InforMedLab\n\n#Tirzepatide\n\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "tags": [
+      "mounjaro serious side effects",
+      "tirzepatide serious side effects",
+      "zepbound serious side effects",
+      "mounjaro side effects list",
+      "tirzepatide boxed warning",
+      "mounjaro gallbladder problems",
+      "tirzepatide low blood sugar",
+      "mounjaro naion eye warning",
+      "tirzepatide kidney injury",
+      "mounjaro allergic reaction",
+      "zepbound suicidal behavior warning",
+      "glp-1 eye warning fda",
+      "tirzepatide thyroid cancer warning",
+      "mounjaro diabetic retinopathy",
+      "mtc warning"
+    ],
+    "pinned_comment": "Three of tirzepatide's serious warnings (kidney injury from fluid loss, anaphylaxis and angioedema, and aspiration around anesthesia) were reported after approval, so neither the Mounjaro nor the Zepbound US label gives a rate. Save this for your next prescriber visit. Severe stomach pain that won't go away, swelling or trouble breathing, or sudden vision loss in one eye: get help right away. For anything that isn't one of those emergency signs, don't stop or change your medicine on your own. Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "EACH RISK: HOW RARE?",
+      "highlight_word": "10",
+      "subtext": "TIRZEPATIDE: MOUNJARO & ZEPBOUND LABELS",
+      "layout": "big-number",
+      "psychology": "Specific number: the title asks 'how rare?', and a concrete count of label warnings promises a complete, organised list that only the video ranks.",
+      "emotion": "Curious concern: 'which of the 10 should I actually care about?'",
+      "hero_art": "medicine box",
+      "hero_face": "worried",
+      "second_art": "",
+      "second_face": "none",
+      "prop": "magnifier",
+      "accent": "highlight",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 The short answer\n0:51 How to read the label\n2:09 The boxed warning\n3:06 Pancreatitis and gallbladder\n4:51 Low blood sugar\n5:42 No rate: after approval\n7:17 Eyes and diabetes\n7:43 Stomach and mood\n8:52 The class-wide eye warning\n10:12 The whole picture\n11:14 Your checklist"
+  },
+  "media": {
+    "video": "L1-tirzepatide-mounjaro-zepbound-serious-ri.mp4",
+    "duration": 724.843,
+    "thumbnail": "L1-tirzepatide-mounjaro-zepbound-serious-ri-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-21T19:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-11-21T03:43:07.552Z",
+  "script": {
+    "working_title": "Tirzepatide (Mounjaro) Serious Risks: How Rare?",
+    "target_keyword": "mounjaro serious side effects",
+    "hook_pattern": "Visceral 'you' question, answer first (Exp H). Sentence 1 names tirzepatide and the title's question. The short answer comes by about 8 s and the first label number (acute gallbladder disease, 0.6% vs 0%) by about 15 s. The placebo comparison and a one-sentence open loop (the class-wide NAION number) follow by 30 s.",
+    "scenes": [
+      {
+        "id": "s1",
+        "section": "The short answer",
+        "narration": "If you're on tirzepatide, how rare are the serious risks on its label?",
+        "on_screen_text": "Tirzepatide serious risks: how rare?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious woman reading medicine leaflet, kitchen"
+        },
+        "retention_device": "Hook: drug plus the title's question in sentence 1, matched by the opening card",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s2",
+        "section": "The short answer",
+        "narration": "Short answer: low where the trials counted them, except low blood sugar with certain diabetes medicines. And three reports from after approval have no rate at all.",
+        "on_screen_text": "Low where counted. Three: no rate.",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Counted in trials: mostly low",
+            "Low blood sugar: depends on other medicines",
+            "Three after-approval reports: no rate"
+          ],
+          "stock_query": "friendly narrator with three label cards"
+        },
+        "retention_device": "Answer first, inside 10 seconds",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s3",
+        "section": "The short answer",
+        "narration": "Here's a first number. In Mounjaro's placebo-controlled trials in type 2 diabetes, acute gallbladder disease was reported in zero point six percent of people on tirzepatide.",
+        "on_screen_text": "Acute gallbladder disease: 0.6% vs 0% placebo",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "0.6% vs 0%",
+          "stat_label": "Acute gallbladder disease: Mounjaro vs placebo, placebo-controlled T2D trials",
+          "stock_query": "big number card, calm character pointing"
+        },
+        "retention_device": "Concrete payoff by 15 seconds",
+        "source_ids": [
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s4",
+        "section": "The short answer",
+        "narration": "On placebo, it was zero percent. Six in a thousand is low, but it isn't zero, and you'll get that kind of straight answer for every risk here.",
+        "on_screen_text": "Low, but not zero",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "reassured person nodding at small number"
+        },
+        "retention_device": "Second concrete payoff at 15–30 s, with the comparator",
+        "source_ids": [
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s5",
+        "section": "The short answer",
+        "narration": "And one eye warning covers every GLP-1 medicine, with a rate so small it's counted per hundred thousand. I'll give you that number later.",
+        "on_screen_text": "Eye warning: counted per 100,000",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon eye with question mark, intrigued"
+        },
+        "retention_device": "Open loop (one sentence), paid off in the class-wide eye warning chapter",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s6",
+        "section": "The short answer",
+        "narration": "For each risk, you'll get three things: which label it's on, the sign to know, and what to do about it.",
+        "on_screen_text": "Label. Sign. What to do.",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Which label: Mounjaro, Zepbound or both",
+            "The sign to know",
+            "What to do"
+          ],
+          "stock_query": "checklist with three friendly icons"
+        },
+        "retention_device": "Promise of a clear structure",
+        "source_ids": []
+      },
+      {
+        "id": "s7",
+        "section": "How to read the label",
+        "narration": "First, why does one medicine have two labels?",
+        "on_screen_text": "Why two labels?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "two medicine boxes side by side, puzzled"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s8",
+        "section": "How to read the label",
+        "narration": "Mounjaro is tirzepatide approved for type 2 diabetes, in adults and children ten and older, and to lower the risk of major heart events in high-risk adults with type 2 diabetes. Zepbound is tirzepatide approved for weight reduction and keeping it off long term, in adults with obesity, or overweight with a weight-related condition. Both are used alongside diet and physical activity.",
+        "on_screen_text": "Same medicine, two labels",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Mounjaro: type 2 diabetes, age 10+; heart events in high-risk T2D adults",
+            "Zepbound: weight reduction and maintenance"
+          ],
+          "stock_query": "two labelled medicine boxes, clear tags"
+        },
+        "retention_device": "Clears up a common point of confusion",
+        "source_ids": [
+          "mj-pi",
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s9",
+        "section": "How to read the label",
+        "narration": "Zepbound is also approved for moderate to severe obstructive sleep apnea in adults with obesity. Different uses meant different trials, so the trial numbers don't match exactly.",
+        "on_screen_text": "Zepbound: also sleep apnea. Different trials, different numbers",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sleeping man with calm breathing, night bedroom"
+        },
+        "retention_device": "Sets up the label tags used for every risk",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s10",
+        "section": "How to read the label",
+        "narration": "Next, the unit. Label rates are often given per hundred patient-years. One patient-year is one person on the medicine for one year.",
+        "on_screen_text": "1 patient-year = 1 person, 1 year",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "one smiling person beside a calendar"
+        },
+        "retention_device": "Plain-language explainer the viewer needs later",
+        "source_ids": [
+          "mj-pi",
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "How to read the label",
+        "narration": "So a hundred patient-years could be a hundred people for one year, or fifty people for two. It counts how long people were actually on treatment.",
+        "on_screen_text": "100 people × 1 year",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "crowd of cartoon people with calendars"
+        },
+        "retention_device": "Analogy that humanises the unit",
+        "source_ids": []
+      },
+      {
+        "id": "s12",
+        "section": "How to read the label",
+        "narration": "Some warnings come from reports after approval, in real-world use. Those reports can't reliably show how often something happens, so the label gives no rate.",
+        "on_screen_text": "No rate: frequency unknown",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Trial warnings: a rate",
+            "After-approval reports: no rate"
+          ],
+          "stock_query": "two folders, one with numbers, one blank"
+        },
+        "retention_device": "Surprise: some risks have no number at all",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "How to read the label",
+        "narration": "Imagine Priya, fifty-two, reading that leaflet at the kitchen table at ten at night. She doesn't need fear. She needs to know what's rare, what isn't, and what to watch for.",
+        "on_screen_text": "Rare? Not rare? Watch for?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman reading leaflet, dark night kitchen, thoughtful"
+        },
+        "retention_device": "Introduces a clearly hypothetical relatable thread",
+        "source_ids": []
+      },
+      {
+        "id": "s14",
+        "section": "The boxed warning",
+        "narration": "So what's in the box at the very top of both labels?",
+        "on_screen_text": "The boxed warning",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "label with bold box at top, curious"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s15",
+        "section": "The boxed warning",
+        "narration": "Both Mounjaro and Zepbound carry a boxed warning about thyroid C-cell tumors. It's based on studies in rats.",
+        "on_screen_text": "Both labels: thyroid boxed warning",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon lab rat beside label box, calm"
+        },
+        "retention_device": "Label tag: both",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "The boxed warning",
+        "narration": "In rats, tirzepatide caused these tumors. The label says it's unknown whether it causes them in humans, including a thyroid cancer called medullary thyroid carcinoma, or MTC.",
+        "on_screen_text": "Unknown in humans",
+        "visual": {
+          "kind": "quote",
+          "quote": "It is unknown whether ZEPBOUND causes thyroid C-cell tumors, including medullary thyroid carcinoma (MTC), in humans",
+          "attribution": "Zepbound US Prescribing Information, Boxed Warning",
+          "stock_query": "label page with highlighted sentence"
+        },
+        "retention_device": "Exact label wording",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "The boxed warning",
+        "narration": "So how rare is it in people? The label gives no human rate. Instead, it gives a clear rule.",
+        "on_screen_text": "No human rate. One rule.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "character raising finger, one clear rule"
+        },
+        "retention_device": "Question to the viewer, then a mini-cliffhanger",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "The boxed warning",
+        "narration": "The label says not to use tirzepatide if you or anyone in your family has had MTC, or if you have multiple endocrine neoplasia syndrome type two, called MEN two.",
+        "on_screen_text": "Label: not for MTC history or MEN 2",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "You or family: history of MTC",
+            "You: MEN 2 syndrome"
+          ],
+          "stock_query": "family tree with gentle highlight"
+        },
+        "retention_device": "Payoff of the rule",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "The boxed warning",
+        "narration": "Signs to tell your prescriber about: a lump or swelling in your neck, hoarseness, trouble swallowing, or shortness of breath.",
+        "on_screen_text": "Neck signs to report",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Lump or swelling in the neck",
+            "Hoarseness",
+            "Trouble swallowing or shortness of breath"
+          ],
+          "stock_query": "person touching neck, calm doctor nearby"
+        },
+        "retention_device": "Practical sign the viewer can act on",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "The boxed warning",
+        "narration": "That box can sound alarming. But the next warning is the one with real trial numbers, and the two labels tell slightly different stories.",
+        "on_screen_text": "Next: real trial numbers",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two label pages diverging, intrigued narrator"
+        },
+        "retention_device": "Mini-cliffhanger before the section change",
+        "source_ids": []
+      },
+      {
+        "id": "s21",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "How often did pancreatitis actually show up in the trials?",
+        "on_screen_text": "Pancreatitis: how often?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "magnifying glass over trial chart"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s22",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "Pancreatitis is inflammation of the pancreas. Both labels list it, and both give a rate for confirmed cases.",
+        "on_screen_text": "Both labels: pancreatitis",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon pancreas with gentle red glow"
+        },
+        "retention_device": "Label tag: both",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "In Mounjaro's diabetes trials, it was zero point two three people per hundred patient-years on tirzepatide.",
+        "on_screen_text": "Mounjaro T2D trials, all doses",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "0.23",
+          "stat_label": "Pancreatitis per 100 patient-years, Mounjaro, T2D trials",
+          "stock_query": "big number on trial chart"
+        },
+        "retention_device": "Surprising stat, one number per sentence",
+        "source_ids": [
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "On comparator treatments, it was zero point one one.",
+        "on_screen_text": "Mounjaro vs comparators",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "0.23 vs 0.11",
+          "stat_label": "Pancreatitis per 100 patient-years: Mounjaro vs comparator",
+          "stock_query": "two bars side by side"
+        },
+        "retention_device": "Comparator named",
+        "source_ids": [
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "In Zepbound's weight-reduction trials, it was zero point one four per hundred patient-years.",
+        "on_screen_text": "Zepbound weight trials, all doses",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "0.14",
+          "stat_label": "Pancreatitis per 100 patient-years, Zepbound weight trials",
+          "stock_query": "big number on second chart"
+        },
+        "retention_device": "Second trial pool for contrast",
+        "source_ids": [
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "On placebo, it was zero point one five.",
+        "on_screen_text": "Zepbound vs placebo",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "0.14 vs 0.15",
+          "stat_label": "Pancreatitis per 100 patient-years: Zepbound vs placebo",
+          "stock_query": "two nearly level bars"
+        },
+        "retention_device": "Surprise: the weight-trial pair sits almost level",
+        "source_ids": [
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s26b",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "In Zepbound's sleep apnea trials, a smaller pool, it was zero point eight four per hundred patient-years. On placebo, it was zero.",
+        "on_screen_text": "Zepbound sleep apnea trials: 0.84 vs 0 placebo",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "0.84 vs 0",
+          "stat_label": "Pancreatitis per 100 patient-years: Zepbound vs placebo, sleep apnea trials (Studies 5 and 6)",
+          "stock_query": "third smaller chart, calm narrator pointing"
+        },
+        "retention_device": "Full disclosure: the third, least favourable pool with its scope",
+        "source_ids": [
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "Those are three different trial pools with different people, so don't merge them. But all three sit below one case per hundred patient-years.",
+        "on_screen_text": "Three pools. Don't merge.",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Mounjaro T2D: 0.23 vs 0.11 comparator",
+            "Zepbound weight: 0.14 vs 0.15 placebo",
+            "Zepbound sleep apnea: 0.84 vs 0 placebo"
+          ],
+          "stock_query": "two separate trial folders, not stacked"
+        },
+        "retention_device": "Honest nuance that builds trust",
+        "source_ids": [
+          "mj-pi",
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "Put another way, zero point one four per hundred patient-years is roughly one case for every seven hundred patient-years of treatment.",
+        "on_screen_text": "Zepbound weight trials: ~1 per 700 patient-years",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "long row of calendars, one small dot"
+        },
+        "retention_device": "Humanised number",
+        "source_ids": [
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "The sign is severe stomach pain that won't go away, with or without vomiting, sometimes felt through to your back. If that happens, stop tirzepatide and call your healthcare provider right away.",
+        "on_screen_text": "Pancreatitis sign: act right away",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Severe stomach pain that won't go away",
+            "Stop tirzepatide, call your provider right away"
+          ],
+          "stock_query": "person holding phone calling doctor, calm"
+        },
+        "retention_device": "Warning sign and action in one line, kept inside the chapter (Alcohol-drop fix)",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s30",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own.",
+        "on_screen_text": "Don't stop or change it alone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm person with prescriber, reassuring"
+        },
+        "retention_device": "Scoped safety line, then straight on to new content",
+        "source_ids": []
+      },
+      {
+        "id": "s31",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "Now the gallbladder. Remember that zero point six percent from the start? That was Mounjaro's placebo-controlled trials, against zero percent on placebo. Zepbound's label carries the same warning.",
+        "on_screen_text": "Gallbladder: both labels",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon gallbladder with tiny pebbles"
+        },
+        "retention_device": "Payoff of the opening number",
+        "source_ids": [
+          "mj-pi",
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "Signs to tell your prescriber about include pain in your upper stomach, fever, or yellowing of your skin or eyes.",
+        "on_screen_text": "Gallbladder signs to report",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Upper stomach pain",
+            "Fever",
+            "Yellowing of skin or eyes"
+          ],
+          "stock_query": "person with hand on upper belly, doctor"
+        },
+        "retention_device": "Practical sign list (3 items)",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Pancreatitis and gallbladder",
+        "narration": "Now here's a risk that isn't really about rarity at all. It's about what else you take.",
+        "on_screen_text": "It depends on your other medicines",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill organiser with question mark, curious"
+        },
+        "retention_device": "Re-hook: 'here's where it gets different'",
+        "source_ids": []
+      },
+      {
+        "id": "s34",
+        "section": "Low blood sugar",
+        "narration": "Can tirzepatide drop your blood sugar too low?",
+        "on_screen_text": "Low blood sugar?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "blood sugar meter, curious character"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s35",
+        "section": "Low blood sugar",
+        "narration": "Both labels say tirzepatide lowers blood sugar. The higher risk they flag is for people with diabetes who also use insulin or a sulfonylurea. Zepbound's label also notes low blood sugar has been reported in adults without type 2 diabetes.",
+        "on_screen_text": "Higher risk: diabetes + insulin or sulfonylurea",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Diabetes plus insulin",
+            "Diabetes plus a sulfonylurea"
+          ],
+          "stock_query": "two medicine boxes beside sugar meter"
+        },
+        "retention_device": "Label tag: both, with the exact scope",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Low blood sugar",
+        "narration": "A sulfonylurea is a type of diabetes pill. Because the risk depends on those medicines, one number can't sum it up.",
+        "on_screen_text": "One number can't sum it up",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pill bottle labelled diabetes pill"
+        },
+        "retention_device": "Explains why 'how rare' has no single answer here",
+        "source_ids": [
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Low blood sugar",
+        "narration": "If you take one of those, your prescriber may need to lower it. That's their decision to make with you, not a change to make on your own.",
+        "on_screen_text": "Your prescriber decides",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and patient talking, warm clinic"
+        },
+        "retention_device": "Agency without advice",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "Low blood sugar",
+        "narration": "Signs of low blood sugar include feeling shaky, sweaty or confused. Ask your prescriber ahead of time what to do if they happen.",
+        "on_screen_text": "Shaky, sweaty, confused",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Shaky",
+            "Sweaty",
+            "Confused"
+          ],
+          "stock_query": "person feeling shaky, friend offering help"
+        },
+        "retention_device": "Practical sign list (3 items)",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "Low blood sugar",
+        "narration": "So far, every risk came with a trial number, a clear rule, or a clear scope. The next three don't have a rate, and that's the honest part of how rare.",
+        "on_screen_text": "Next: three with no rate",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "three blank number cards, intrigued narrator"
+        },
+        "retention_device": "Mini-cliffhanger before the section change",
+        "source_ids": []
+      },
+      {
+        "id": "s40",
+        "section": "No rate: after approval",
+        "narration": "What do you do with a risk that has no rate?",
+        "on_screen_text": "No rate: now what?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "empty number card with question mark"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s41",
+        "section": "No rate: after approval",
+        "narration": "First, kidney injury. Both labels link it to fluid loss from vomiting or diarrhea. It was reported after approval; the label gives no rate.",
+        "on_screen_text": "Kidney injury: no rate given",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon kidneys beside water glass"
+        },
+        "retention_device": "Label tag: both; after-approval scope",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "No rate: after approval",
+        "narration": "What helps: drink enough fluids, unless you've been told to limit fluids, and tell your prescriber if vomiting or diarrhea won't settle.",
+        "on_screen_text": "Fluids, unless told to limit",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person sipping water, relieved"
+        },
+        "retention_device": "Practical takeaway",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "No rate: after approval",
+        "narration": "Second, two severe allergic reactions: anaphylaxis, and a type of swelling called angioedema. Both labels list them as reports after approval, with no rate.",
+        "on_screen_text": "Anaphylaxis, angioedema: no rate given",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm narrator beside allergy warning sign"
+        },
+        "retention_device": "Label tag: both; after-approval scope",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "No rate: after approval",
+        "narration": "If your face, lips, tongue or throat swell, or you have trouble breathing or swallowing, or you feel faint or dizzy, call your emergency number right away. That's nine one one in the US and Canada, nine nine nine in the UK, or triple zero in Australia.",
+        "on_screen_text": "Swelling, trouble breathing, fainting: call right away",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "US and Canada: 911",
+            "UK: 999",
+            "Australia: 000"
+          ],
+          "stock_query": "person calling emergency number, calm"
+        },
+        "retention_device": "Emergency line naming its trigger, for all four markets",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "No rate: after approval",
+        "narration": "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own.",
+        "on_screen_text": "Don't stop or change it alone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "reassuring prescriber, open notebook"
+        },
+        "retention_device": "Scoped safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s46",
+        "section": "No rate: after approval",
+        "narration": "Third, and this one surprises people: anesthesia.",
+        "on_screen_text": "Surprise: anesthesia",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "surprised character, hospital waiting room"
+        },
+        "retention_device": "Pattern interrupt",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "No rate: after approval",
+        "narration": "Both labels say tirzepatide slows stomach emptying. Separately, food or liquid getting into the lungs during anesthesia or deep sedation has been reported after approval. The label gives no rate.",
+        "on_screen_text": "Aspiration: no rate given",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm anesthesia team, friendly clinic"
+        },
+        "retention_device": "Label tag: both; after-approval scope",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "No rate: after approval",
+        "narration": "The action is simple. Before any planned surgery or procedure, tell every healthcare provider involved that you take tirzepatide.",
+        "on_screen_text": "Procedure? Tell the team first",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient telling nurse at check-in desk"
+        },
+        "retention_device": "Practical takeaway",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "No rate: after approval",
+        "narration": "Back to Priya. She has a colonoscopy booked. One sentence to her care team covers this whole warning.",
+        "on_screen_text": "One sentence covers it",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman smiling while talking to nurse"
+        },
+        "retention_device": "Returns to the hypothetical thread",
+        "source_ids": []
+      },
+      {
+        "id": "s50",
+        "section": "No rate: after approval",
+        "narration": "Next, a warning about your eyes that's on both labels, and one about your stomach.",
+        "on_screen_text": "Next: eyes, then your stomach",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two label tags, eye icon and stomach icon"
+        },
+        "retention_device": "New open loop before the section change",
+        "source_ids": [
+          "mj-pi",
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "Eyes and diabetes",
+        "narration": "Why would a tirzepatide label warn about your eyes?",
+        "on_screen_text": "An eye warning on both labels?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon eye beside two medicine labels"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s52",
+        "section": "Eyes and diabetes",
+        "narration": "Both labels warn about diabetic retinopathy complications in people with type 2 diabetes. Diabetic retinopathy is damage to the back of the eye caused by diabetes.",
+        "on_screen_text": "Both labels: diabetic eye disease (type 2 diabetes)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly eye doctor with eye model"
+        },
+        "retention_device": "Label tag: both, scoped to type 2 diabetes",
+        "source_ids": [
+          "mj-pi",
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "Eyes and diabetes",
+        "narration": "The labels ask that people with a history of diabetic retinopathy be monitored for it getting worse. So if you have diabetic eye disease, tell your prescriber, and report any change in your vision.",
+        "on_screen_text": "Eye history? Tell your prescriber",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "History of diabetic retinopathy: get monitored",
+            "Any vision change: report it"
+          ],
+          "stock_query": "person at eye exam, relaxed"
+        },
+        "retention_device": "Practical takeaway",
+        "source_ids": [
+          "mj-pi",
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "Stomach and mood",
+        "narration": "So what about severe stomach problems?",
+        "on_screen_text": "Severe stomach problems?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon stomach with question mark, calm"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s55",
+        "section": "Stomach and mood",
+        "narration": "Both labels also warn about severe stomach and gut side effects, and say tirzepatide isn't recommended for people with severe gastroparesis, a condition where the stomach empties very slowly. If vomiting or diarrhea is severe or won't settle, call your healthcare provider. And severe stomach pain that won't go away still means stop tirzepatide and call right away.",
+        "on_screen_text": "Both: severe stomach side effects",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Both labels: severe stomach side effects",
+            "Not recommended: severe gastroparesis",
+            "Severe stomach pain that won't go away: call right away"
+          ],
+          "stock_query": "person on phone to provider, calm kitchen"
+        },
+        "retention_device": "Label tag: both; sign and action in one scene",
+        "source_ids": [
+          "mj-pi",
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "Stomach and mood",
+        "narration": "Then mood. Zepbound's label used to carry a warning called Suicidal Behavior and Ideation. The FDA asked for it to be removed, after a review of ninety-one placebo-controlled trials found no increased risk of suicidal thoughts or behavior.",
+        "on_screen_text": "FDA removed Zepbound's Suicidal Behavior and Ideation warning",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "91 trials",
+          "stat_label": "FDA review of 91 placebo-controlled trials: no increased suicidal thoughts or behavior",
+          "stock_query": "calm person by window, gentle light"
+        },
+        "retention_device": "Surprise: a warning people have heard of is gone",
+        "source_ids": [
+          "fda-sbi",
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "Stomach and mood",
+        "narration": "If your mood worries you, on any medicine, tell your prescriber. And if you ever have thoughts of harming yourself, reach out right away.",
+        "on_screen_text": "Talking about mood is normal",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person talking openly with kind doctor"
+        },
+        "retention_device": "Validation with a clear action",
+        "source_ids": []
+      },
+      {
+        "id": "s58",
+        "section": "Stomach and mood",
+        "narration": "In the US or Canada, call or text nine eight eight. In the UK, call Samaritans on one one six, one two three. In Australia, call Lifeline on thirteen eleven fourteen.",
+        "on_screen_text": "Help is one call away",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "US and Canada: call or text 988",
+            "UK: Samaritans 116 123",
+            "Australia: Lifeline 13 11 14"
+          ],
+          "stock_query": "phone with warm glow, supportive hand"
+        },
+        "retention_device": "Crisis lines for all four markets",
+        "source_ids": []
+      },
+      {
+        "id": "s59",
+        "section": "Stomach and mood",
+        "narration": "Which brings us to the eye warning I promised, the one that covers every GLP-1 medicine.",
+        "on_screen_text": "The promised eye warning",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "narrator opening an envelope, anticipation"
+        },
+        "retention_device": "Callback that sets up the opening loop's payoff",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "The class-wide eye warning",
+        "narration": "So how rare is NAION, really?",
+        "on_screen_text": "NAION: how rare?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "cartoon eye with magnifying glass"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s61",
+        "section": "The class-wide eye warning",
+        "narration": "NAION stands for non-arteritic anterior ischemic optic neuropathy. It's reduced blood flow to the optic nerve, the cable that connects your eye to your brain.",
+        "on_screen_text": "Less blood flow to the optic nerve",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon eye linked to brain by cable"
+        },
+        "retention_device": "Plain-language explainer",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "The class-wide eye warning",
+        "narration": "The FDA has required a class-wide warning about it for GLP-1 medicines, and tirzepatide is included. Depending on when your leaflet was printed, it may not include it.",
+        "on_screen_text": "FDA: class-wide warning",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "row of medicine boxes under one banner"
+        },
+        "retention_device": "Label tag: whole class, including tirzepatide",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "The class-wide eye warning",
+        "narration": "The FDA's analysis pooled a hundred and twenty-six randomized trials, with more than a hundred and thirty thousand people. Across all of them, there were fifteen probable cases: ten on GLP-1 medicines and five on comparators.",
+        "on_screen_text": "FDA analysis: 126 trials, 15 probable cases (10 vs 5)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "126",
+          "stat_label": "Randomized trials in FDA's GLP-1 NAION analysis",
+          "stock_query": "huge stack of trial folders"
+        },
+        "retention_device": "Surprising scale versus a tiny count",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "The class-wide eye warning",
+        "narration": "On GLP-1 medicines, the rate was six point four per hundred thousand person-years.",
+        "on_screen_text": "GLP-1 class, all trials",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "6.4",
+          "stat_label": "NAION per 100,000 person-years, GLP-1 class",
+          "stock_query": "big number card, calm"
+        },
+        "retention_device": "Payoff of the main open loop",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "The class-wide eye warning",
+        "narration": "On comparators, it was three point eight.",
+        "on_screen_text": "GLP-1 class vs comparators",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "6.4 vs 3.8",
+          "stat_label": "NAION per 100,000 person-years: GLP-1 vs comparators",
+          "stock_query": "two small bars side by side"
+        },
+        "retention_device": "Comparator named",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "The class-wide eye warning",
+        "narration": "Picture a packed stadium of a hundred thousand people, each taking the medicine for a year. That's about six cases in a crowd on GLP-1 medicines, versus about four in a crowd on comparators.",
+        "on_screen_text": "~6 vs ~4 per 100,000 person-years",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "huge cartoon stadium crowd, few highlighted"
+        },
+        "retention_device": "Vivid comparison that humanises the number",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "The class-wide eye warning",
+        "narration": "Two caveats matter. It's a small number of events. And it's a figure for the whole class; it wasn't shown for tirzepatide on its own.",
+        "on_screen_text": "Class-wide, not tirzepatide-only",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Small number of events",
+            "Whole GLP-1 class",
+            "Not shown for tirzepatide alone"
+          ],
+          "stock_query": "narrator holding two caution cards, calm"
+        },
+        "retention_device": "Honest scope that builds trust",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "The class-wide eye warning",
+        "narration": "The sign to know is sudden, painless vision loss in one eye. If that happens, contact a clinician right away.",
+        "on_screen_text": "Sudden vision loss, one eye: act right away",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Sudden, painless vision loss in one eye",
+            "Contact a clinician right away"
+          ],
+          "stock_query": "person covering one eye, calling doctor"
+        },
+        "retention_device": "Sign and action in one payoff scene, then straight on to the next chapter question",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "The whole picture",
+        "narration": "So what's the whole picture, label by label?",
+        "on_screen_text": "The whole picture",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "two labels side by side, organised"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s70",
+        "section": "The whole picture",
+        "narration": "On both labels: the thyroid boxed warning, with no human rate, and a clear rule about MTC and MEN two.",
+        "on_screen_text": "Both: thyroid box, no human rate",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "label box with tick mark, calm"
+        },
+        "retention_device": "Recap that keeps each label tag",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "The whole picture",
+        "narration": "Also on both: pancreatitis, below one case per hundred patient-years in each of the three trial pools, and gallbladder disease.",
+        "on_screen_text": "Both: pancreatitis (3 pools, all under 1 per 100 patient-years), gallbladder",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two trial folders with small numbers"
+        },
+        "retention_device": "Recap keeping the units",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s72",
+        "section": "The whole picture",
+        "narration": "Low blood sugar is on both, with the higher risk flagged for diabetes plus insulin or a sulfonylurea.",
+        "on_screen_text": "Both: low sugar, scoped risk",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sugar meter with calm check mark"
+        },
+        "retention_device": "Recap keeping the scope",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s73",
+        "section": "The whole picture",
+        "narration": "Kidney injury from fluid loss, anaphylaxis and angioedema, and aspiration around anesthesia were reported after approval, with no rate in either label.",
+        "on_screen_text": "Both: three with no rate",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Kidney injury from fluid loss",
+            "Anaphylaxis and angioedema",
+            "Aspiration around anesthesia"
+          ],
+          "stock_query": "three blank cards with question marks"
+        },
+        "retention_device": "Recap of the after-approval scope",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s74",
+        "section": "The whole picture",
+        "narration": "On both labels, for people with type 2 diabetes: diabetic retinopathy complications. And both say tirzepatide isn't recommended with severe gastroparesis.",
+        "on_screen_text": "Both: diabetic eye disease, severe gastroparesis",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Both: diabetic retinopathy, type 2 diabetes",
+            "Both: not recommended with severe gastroparesis"
+          ],
+          "stock_query": "two labels with matching tags"
+        },
+        "retention_device": "Recap keeping the label tags",
+        "source_ids": [
+          "mj-pi",
+          "zep-pi"
+        ]
+      },
+      {
+        "id": "s75",
+        "section": "The whole picture",
+        "narration": "And across every GLP-1 medicine, the FDA's class-wide NAION estimate. Six point four per hundred thousand person-years. Three point eight on comparators. Not shown for tirzepatide alone.",
+        "on_screen_text": "NAION class-wide: 6.4 vs 3.8 per 100,000",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "6.4 vs 3.8",
+          "stat_label": "NAION per 100,000 person-years, GLP-1 class vs comparators",
+          "stock_query": "stadium icon with small number"
+        },
+        "retention_device": "Recap keeping the class-wide scope",
+        "source_ids": [
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s76",
+        "section": "Your checklist",
+        "narration": "Back at Priya's kitchen table, the leaflet reads differently. It's not a wall of fear. It's a short list she can act on, and so can you.",
+        "on_screen_text": "A list you can act on",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "relieved woman holding short checklist, kitchen"
+        },
+        "retention_device": "Payoff of the relatable thread, ending on relief",
+        "source_ids": []
+      },
+      {
+        "id": "s77",
+        "section": "Your checklist",
+        "narration": "One: tell your prescriber your history, including MTC or MEN two in you or your family, pancreatitis, diabetic eye disease, or severe gastroparesis.",
+        "on_screen_text": "1. Share your history",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "MTC or MEN 2, you or family",
+            "Pancreatitis or diabetic eye disease",
+            "Severe gastroparesis"
+          ],
+          "stock_query": "patient chatting with prescriber, notebook"
+        },
+        "retention_device": "Practical checklist, item 1",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s78",
+        "section": "Your checklist",
+        "narration": "Two: know the right-away signs. Severe stomach pain that won't go away. Swelling or trouble breathing. Sudden vision loss in one eye.",
+        "on_screen_text": "2. Know the right-away signs",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Severe stomach pain that won't go away",
+            "Swelling or trouble breathing",
+            "Sudden vision loss in one eye"
+          ],
+          "stock_query": "three bold sign cards, calm narrator"
+        },
+        "retention_device": "Practical checklist, item 2",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi",
+          "fda-naion"
+        ]
+      },
+      {
+        "id": "s79",
+        "section": "Your checklist",
+        "narration": "Three: before any surgery or procedure, tell the team you take tirzepatide.",
+        "on_screen_text": "3. Tell the procedure team",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient talking to surgical nurse, friendly"
+        },
+        "retention_device": "Practical checklist, item 3",
+        "source_ids": [
+          "zep-pi",
+          "mj-pi"
+        ]
+      },
+      {
+        "id": "s80",
+        "section": "Your checklist",
+        "narration": "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own.",
+        "on_screen_text": "Don't stop or change it alone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm person with prescriber, nodding"
+        },
+        "retention_device": "Scoped safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s81",
+        "section": "Your checklist",
+        "narration": "Not personal advice, so talk to your doctor or prescriber about whether tirzepatide is right for you.",
+        "on_screen_text": "Not personal advice, so talk to your doctor or prescriber about whether tirzepatide is right for you.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "warm doctor and patient conversation"
+        },
+        "retention_device": "Full prescriber line, spoken and shown",
+        "source_ids": []
+      },
+      {
+        "id": "s82",
+        "section": "Your checklist",
+        "narration": "If you want every label explained this plainly, subscribe.",
+        "on_screen_text": "Every label, explained plainly",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi waving, cheerful sign-off"
+        },
+        "retention_device": "One subscribe ask, tied to a benefit, after the payoff. Post note for publisher: watch-next target is Side Effects (add the verified '▶ Watch next' link and end screen; no spoken link line).",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "zep-pi",
+        "title": "ZEPBOUND (tirzepatide) injection, US Prescribing Information (revised 28 Aug 2026): Boxed Warning; sections 1, 4, 5, 6 and 17",
+        "publisher": "Eli Lilly and Company / US FDA-approved labeling (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "mj-pi",
+        "title": "MOUNJARO (tirzepatide) injection, US Prescribing Information (revised 27 Aug 2026): Boxed Warning; sections 1, 4, 5, 6 and 17",
+        "publisher": "Eli Lilly and Company / US FDA-approved labeling (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0"
+      },
+      {
+        "id": "fda-naion",
+        "title": "FDA Requires Safety Labeling Changes for Glucagon-Like Peptide-1 Receptor Agonists (GLP-1 RAs) Due to Potential Increased Risk of Rare But Serious Eye Condition (Drug Safety Communication, 9 Nov 2026)",
+        "publisher": "US Food and Drug Administration",
+        "year": "2026",
+        "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential"
+      },
+      {
+        "id": "fda-sbi",
+        "title": "FDA Requests Removal of Suicidal Behavior and Ideation Warning from Glucagon-Like Peptide-1 Receptor Agonist (GLP-1 RA) Medications (Drug Safety Communication, 13 Jan 2026)",
+        "publisher": "US Food and Drug Administration",
+        "year": "2026",
+        "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requests-removal-suicidal-behavior-and-ideation-warning-glucagon-peptide-1-receptor-agonist-glp"
+      }
+    ],
+    "cta": "If you want every label explained this plainly, subscribe."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "I checked the script against both current US labels on DailyMed (Zepbound revised 28 Aug 2026, Mounjaro revised 27 Aug 2026) and the two FDA Drug Safety Communications. The numbers, scopes and label wording all match the sources:\n- **Gallbladder (Mounjaro):** 0.6% vs 0% on placebo.\n- **Pancreatitis:** 0.23 vs 0.11 per 100 years of exposure (Mounjaro vs comparators), 0.14 vs 0.15 (Zepbound weight trials vs placebo) and 0.84 vs 0 (Zepbound sleep apnea trials, Studies 5 and 6). The three pools are kept separate.\n- **Boxed warning:** the thyroid C-cell quote is word for word, and the MTC and MEN 2 contraindication is correct.\n- **Low blood sugar:** the higher risk is scoped to insulin or an insulin secretagogue such as a sulfonylurea.\n- **After-approval reports with no rate:** kidney injury, anaphylaxis and angioedema, and aspiration.\n- **Other warnings:** diabetic retinopathy monitoring and \"not recommended\" with severe gastroparesis are correct.\n- **Indications:** Mounjaro is for type 2 diabetes from age 10, and for lowering the risk of major heart events in adults with type 2 diabetes at high risk for them. Zepbound covers weight reduction and maintenance plus moderate to severe sleep apnea.\n- **Mood:** the Zepbound label lists Suicidal Behavior and Ideation as removed (02/2026). The FDA communication of 13 Jan 2026 describes a review of 91 placebo-controlled trials.\n- **NAION (FDA communication of 9 Nov 2026):** 126 trials, 134,253 people, 15 probable cases (10 vs 5), 6.4 vs 3.8 per 100,000 person-years. It is class-wide and tirzepatide is included.\n\nThe safety lines are present and correctly scoped: the emergency line names its trigger and gives the numbers for all four markets, and the fluid caveat, the crisis lines and the prescriber line are all there. Priya is clearly a hypothetical character. A subscribe ask is allowed in long-form. Five small wording and tagging fixes are listed below; none of them is a factual error.",
+    "issues": [
+      {
+        "location": "s8 (visual list)",
+        "claim": "List item 'Zepbound: sleep apnea in adults with obesity' shown during s8",
+        "problem": "The sleep apnea use is only spoken in s9, so this card shows on screen before the narration says it. The on-screen text gets ahead of the narration.",
+        "severity": "minor",
+        "fix": "Move the item 'Zepbound: sleep apnea in adults with obesity' from s8's list to s9 (for example as s9 on_screen_text 'Zepbound: also sleep apnea. Different trials, different numbers'). Keep only the first two items in s8."
+      },
+      {
+        "location": "s36 (source_ids)",
+        "claim": "A sulfonylurea is a type of diabetes pill, such as glipizide or glimepiride.",
+        "problem": "The Mounjaro label says 'insulin secretagogue (e.g., sulfonylurea)' but doesn't name glipizide or glimepiride, so the sentence is tagged to a source that doesn't say it.",
+        "severity": "minor",
+        "fix": "Either remove 'mj-pi' from s36 source_ids, or change the narration to: 'A sulfonylurea is a type of diabetes pill. Because the risk depends on those medicines, one number can't sum it up.'"
+      },
+      {
+        "location": "s44",
+        "claim": "If your face, lips, tongue or throat swell, or you have trouble breathing, call your emergency number right away.",
+        "problem": "The Medication Guide's serious-allergy signs also include problems swallowing, severe rash or itching, fainting or feeling dizzy, and very rapid heartbeat. Leaving out fainting and dizziness makes the trigger narrower than the label's.",
+        "severity": "minor",
+        "fix": "Narration: 'If your face, lips, tongue or throat swell, or you have trouble breathing or swallowing, or you feel faint or dizzy, call your emergency number right away. That's nine one one in the US and Canada, nine nine nine in the UK, or triple zero in Australia.' On-screen text: 'Swelling, trouble breathing, fainting: call right away'"
+      },
+      {
+        "location": "s77",
+        "claim": "tell your prescriber your history, including thyroid cancer in the family",
+        "problem": "The contraindication is specifically medullary thyroid carcinoma (MTC) or MEN 2, not thyroid cancer in general. The checklist recap should keep the label's scope.",
+        "severity": "minor",
+        "fix": "Narration: 'One: tell your prescriber your history, including MTC or MEN two in you or your family, pancreatitis, diabetic eye disease, or severe gastroparesis.' List item 1: 'MTC or MEN 2, you or family'"
+      },
+      {
+        "location": "s35 / s72",
+        "claim": "The higher risk they flag is for people with diabetes who also use insulin or a sulfonylurea.",
+        "problem": "This is accurate. But the Zepbound label also says low blood sugar has been reported in adults without type 2 diabetes. Leaving that out could make non-diabetic viewers think the risk is zero.",
+        "severity": "minor",
+        "fix": "Add to the end of s35's narration: 'Zepbound's label also notes low blood sugar has been reported in adults without type 2 diabetes.'"
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "zep-pi",
+        "title": "ZEPBOUND (tirzepatide) injection, US Prescribing Information (revised 28 Aug 2026): Boxed Warning; sections 1, 4, 5, 6 and 17",
+        "publisher": "Eli Lilly and Company / US FDA-approved labeling (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+      },
+      {
+        "id": "mj-pi",
+        "title": "MOUNJARO (tirzepatide) injection, US Prescribing Information (revised 27 Aug 2026): Boxed Warning; sections 1, 4, 5, 6 and 17",
+        "publisher": "Eli Lilly and Company / US FDA-approved labeling (DailyMed)",
+        "year": "2026",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0"
+      },
+      {
+        "id": "fda-naion",
+        "title": "FDA Requires Safety Labeling Changes for GLP-1 Receptor Agonists Due to Potential Increased Risk of Rare But Serious Eye Condition (Drug Safety Communication, 9 Nov 2026)",
+        "publisher": "US Food and Drug Administration",
+        "year": "2026",
+        "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential"
+      },
+      {
+        "id": "fda-sbi",
+        "title": "FDA Requests Removal of Suicidal Behavior and Ideation Warning from GLP-1 Receptor Agonist Medications (Drug Safety Communication, 13 Jan 2026)",
+        "publisher": "US Food and Drug Administration",
+        "year": "2026",
+        "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requests-removal-suicidal-behavior-and-ideation-warning-glucagon-peptide-1-receptor-agonist-glp"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.048,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 7.1,
+      "weakShots": 21,
+      "layoutIssues": 3,
+      "frameIssues": [],
+      "notes": [
+        "Banned 'rounded teal/green cabinet strip' backdrop (top and bottom rows of green cabinets with white shelf labels) — explicitly on the banned list",
+        "Hero person is quite small for the opening frame of a long-form video (well under the ~1/3 frame-height target)",
+        "Banned cabinet-strip backdrop repeated",
+        "Banned hanging grey/orange ornament circles also present in the same shot — two banned elements at once",
+        "No character at all, just a document + magnifier icon pair, feels like clip-art",
+        "'Trial counts' tag is tiny and low-contrast grey-on-light, hard to read",
+        "Large empty dead space on the right half of the frame",
+        "Five small people scattered unevenly with large empty space above and below — no clear focal grouping",
+        "Automated audit: artwork covers only ~12% of frame on a purple gradient — scattered small boxes and an eye icon read as empty",
+        "No clear hero or single focal point",
+        "Automated audit flags this shot as ~12% coverage: small heart mascot under the chips header leaves a large empty lower frame",
+        "Woman and boy are rendered as floating heads cropped at the counter edge with no neck or shoulders — the exact 'floating head' fault flagged repeatedly in past QA",
+        "Older man shown as a floating head only, no neck/shoulders — same recurring floating-head fault",
+        "Banned cabinet-strip backdrop and banned hanging ornament circles both present again, same as shots 0/1",
+        "Night mood rendered as the daytime striped wallpaper room with a moon icon stuck on — the exact banned pattern called out in QA notes"
+      ],
+      "layoutKinds": {
+        "offscreen": 9,
+        "tiny": 9,
+        "overlap": 1,
+        "sparse": 12
+      },
+      "planPaceDraft": {
+        "changes": 436,
+        "perMin": 36.1,
+        "medianGap": 1.56,
+        "maxGap": 6.62,
+        "longGaps": [
+          [
+            133.71,
+            138.08
+          ],
+          [
+            164.66,
+            171.28
+          ],
+          [
+            333.18,
+            338.12
+          ],
+          [
+            500.32,
+            504.93
+          ],
+          [
+            516.3,
+            521.36
+          ],
+          [
+            642.94,
+            647.84
+          ],
+          [
+            654.25,
+            658.26
+          ],
+          [
+            679.19,
+            683.35
+          ],
+          [
+            685.86,
+            689.94
+          ]
+        ],
+        "withEngine": {
+          "medianGap": 1.22,
+          "maxGap": 6.23
+        },
+        "ok": false,
+        "detail": "plan pacing slow: 436 planned changes (36.1/min), median gap 1.56 s, longest 6.62 s, 9 stretch(es) over 4 s (limits: median 3 s, gap 4 s); with engine camera moves: median 1.22 s, longest 6.23 s"
+      },
+      "pacingRevised": 8,
+      "pacing": {
+        "window": 724.8,
+        "changes": 613,
+        "maxGap": 3.94,
+        "ok": false,
+        "detail": "613 visual changes in the whole 725 s, longest static stretch 3.94 s (limit 2.5 s)"
+      },
+      "planPace": {
+        "changes": 527,
+        "perMin": 43.6,
+        "medianGap": 1.23,
+        "maxGap": 4.01,
+        "longGaps": [
+          [
+            654.25,
+            658.26
+          ]
+        ],
+        "withEngine": {
+          "medianGap": 1.1,
+          "maxGap": 3.94
+        },
+        "ok": false,
+        "detail": "plan pacing slow: 527 planned changes (43.6/min), median gap 1.23 s, longest 4.01 s, 1 stretch(es) over 4 s (limits: median 3 s, gap 4 s); with engine camera moves: median 1.1 s, longest 3.94 s"
+      },
+      "frameZero": {
+        "texts": [
+          "Tirzepatide serious risks: how rare?"
+        ],
+        "heroes": 2,
+        "heroHeight": 0.5,
+        "ok": true,
+        "detail": "frame 0: text \"Tirzepatide serious risks: how rare?\", 2 character(s), tallest 50% of the height"
+      },
+      "renderPace": {
+        "duration": 724.8,
+        "visualChangesPerMin": 24.1,
+        "medianGap": 2.3,
+        "maxGap": 6.6,
+        "changesFirst30s": 13,
+        "hardCutsPerMin": 7.2,
+        "movingShare": 0.624,
+        "longestStill": 1.5
+      }
+    },
+    "audio": {
+      "musicGain": 0.332,
+      "sfxGain": 0.55,
+      "finalWer": 0.016,
+      "maskingDelta": 0.016,
+      "lufs": -15.2,
+      "soundNotes": "Music sits at -13.5dB under voice (good, within the -12/-15 window) but drops to -18dB in pauses versus the -14dB target; nudged gain to 1.05 for a small lift since there's little headroom before the under-voice level gets too loud — flag the ducking/release behavior in pauses for a deeper fix next pass. Trimmed ~20 cues that were landing at -4 to -11dB under the voice during narration (well above the -14/-20dB felt-not-heard target), notably around t=37.7, 85, 341, 386, 534, 626.7, 693 and 698 where SFX were nearly as loud as the narrator; left the many cues already sitting at -14 to -20dB untouched. Kept the suicide-risk/helpline section (t≈492-528) SFX minimal rather than adding new sound there, per the 'thin out on serious moments' rule. Added a handful of bespoke accents (stamp thud for the boxed-warning reveal, a soft page turn for the 'no rate' document beat, a warm swell into the wrap-up, and a closing chime) — none imitate medicine use."
+    },
+    "blocking": [
+      "beat sync: beats drift from the narration (plan 82/83 beats on time, audio shift 0.02 s, render 91% of beats cut on time. 1 beat(s) badly off: s65 shot at 9:42.6 shows \"6.4 vs 3.8\", which is s75's text (said at 10:58.5))"
+    ],
+    "beats": {
+      "verdict": "fail",
+      "summary": "beat sync FAIL: plan 82/83 beats on time, audio shift 0.02 s, render 91% of beats cut on time. 1 beat(s) badly off: s65 shot at 9:42.6 shows \"6.4 vs 3.8\", which is s75's text (said at 10:58.5)",
+      "planOff": 1,
+      "audioShift": 0.02,
+      "renderHitRate": 0.91,
+      "flagged": [
+        "s65 wrong-content: shot at 9:42.6 shows \"6.4 vs 3.8\", which is s75's text (said at 10:58.5)"
+      ]
+    },
+    "thumbnail": {
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": []
+        },
+        {
+          "index": 1,
+          "ctr": 7,
+          "legibility": 9,
+          "issues": [
+            "no human/character face reduces emotional pull"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "headline is vague ('fine print') and doesn't tease the rarity angle from the title"
+          ]
+        }
+      ],
+      "best_index": 0,
+      "reasoning": "All three are legible at phone size with no cut-off text and clean layouts. #0 ('10 RISKS' / 'ON THE TIRZEPATIDE LABEL') pairs a concrete, specific number with a worried, sweating character — the emotion matches the risk topic, it names the drug, and it promises a complete organized list without giving away any of the actual risks, creating strong curiosity. #1 ('WHICH IS RAREST?') has a good curiosity gap tied to the title's 'how rare' question, but lacks a face/character for emotional pull, relying only on a question mark and silhouette, which is slightly less compelling in a crowded feed. #2 ('READ THE FINE PRINT?') is the weakest hook — it's vague, doesn't engage with the 'how rare' angle at all, and reads more like a generic disclaimer tease than a curiosity-driven click. None of the candidates give away the answer or create a face/text mismatch. #0 best balances a specific, curiosity-driving number, matching emotional expression, and full legibility."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "Description, safety block (first sentence)",
+          "claim": "Severe stomach pain that won't go away, swelling of the face, lips, tongue or throat, trouble breathing, or sudden vision loss in one eye: get help right away.",
+          "problem": "Minor wording polish. The script's allergic-reaction emergency signs also include trouble swallowing and feeling faint or dizzy, and these are dropped here. It isn't misleading, but it gives a slightly narrower list than the verified script.",
+          "severity": "minor",
+          "fix": "Severe stomach pain that won't go away, face, lips, tongue or throat swelling, trouble breathing or swallowing, fainting, or sudden vision loss in one eye: get help right away."
+        }
+      ]
+    }
+  },
+  "hold_reason": "Dropped by Editor-in-Chief: Automatic drop: beat sync: beats drift from the narration (plan 82/83 beats on time, audio shift 0.02 s, render 91% of beats cut on time. 1 beat(s) badly off: s65 shot at 9:42.6 shows \"6.4 vs 3.8\", which is s75's tex",
+  "release_tag": "content-2026-11-21",
+  "archive_url": "b2://informed-lab-media/content/2026-11-21/L1-tirzepatide-mounjaro-zepbound-serious-ri/"
+}
