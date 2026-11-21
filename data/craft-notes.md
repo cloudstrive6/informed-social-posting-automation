@@ -1,24 +1,13 @@
-_Based on 65 QA records from 2026-11-09 to 2026-11-21: 40 Shorts, 21 long-form videos and 4 carousels, all about GLP-1._
+_Based on 66 QA records from 2026-11-09 to 2026-11-21: 40 Shorts, 22 long-form videos and 4 carousels, all about GLP-1._
 
-_**14 were held or failed:**_
+_**15 were held or failed:**_
 - _6 for beat drift. The latest is Serious Risks, L1 11-21: the render had 91% of cuts on time, and the s65 shot showed s75's text._
-- _5 for audio or narration_
-- _3 for sources or fact-check: a wrong Medication Guide URL (L2 11-14), a fact-check REVISE (Foundayo L1 11-20) and a staff note left in a source date (C1 11-20)_
+- _5 for audio or narration._
+- _4 for sources or fact-check: a wrong Medication Guide URL (L2 11-14), two fact-check REVISEs on Foundayo (L1 11-20, then L2 11-21 for a wrong placebo figure) and a staff note left in a source date (C1 11-20)._
 
 _4 long-form videos also got a packaging REVISE._
 
-_**New in this pass:** 4 records from 11-21: L1 (Serious Risks, held) and S1, S2 and S3. They repeated old faults:_
-- _beat drift on the render_
-- _cabinet strips and ornament circles_
-- _floating and merged heads_
-- _blank dash tag rails_
-- _a second raw "Label" placeholder_
-- _spelled-out numbers in tags_
-- _a small hero in the long-form opening_
-- _allergy-sign lists narrower than the label_
-- _added caption openers_
-
-_Masking was clean on all 4._
+_**New in this pass:** L2 11-21 (Foundayo resubmit). It failed fact-check again, this time for new faults: placebo stops for adverse events were given as 2.6% when the source says 2.7%, "nausea" was added to the label's pancreatitis wording, and "is requiring" will go out of date. The 11-20 fixes were not flagged again. Also, Months 2–6 was produced twice (L3 11-16 and L2 11-20)._
 
 _**Ignore:**_
 - _The Visual Critic's "offset beat", "wrong content in this shot" and "disclaimer never appears" findings up to 11-09. They came from a QA bug (frames were shown in the wrong order). The published videos were in sync and showed the disclaimer. Only the automatic beat-sync gate counts._
@@ -38,7 +27,7 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
   - Duck the music under all narration.
   - No stinger or whoosh on a spoken number, drug name or safety line.
   - Re-measure after every re-render. The gate won't always stop a bad mix.
-  - (9 pieces over 0.02 and 4 holds: S2 11-11 0.061, S2 11-13 0.047, S1 11-16 0.031, L1 11-11 0.022. **S2 11-20 shipped at 0.054.** All 4 pieces on 11-21 were at 0.016 or lower.)
+  - (9 pieces over 0.02 and 4 holds: S2 11-11 0.061, S2 11-13 0.047, S1 11-16 0.031, L1 11-11 0.022. **S2 11-20 shipped at 0.054.** Every render on 11-21 was at 0.016 or lower.)
 - **Check that every scene has voice right to the end. Then compare a speech-to-text transcript with the script word for word.**
   - Check every "point", number, unit, drug name and how-to phrase.
   - Regenerate any failing scene before you mix.
@@ -65,12 +54,12 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
 - **Never use these backdrops, and match the backdrop to the beat's mood.**
   - Banned: the rounded teal or green "cabinet strip", the hanging grey or orange ornament circles (on any mood), and a starfield or bokeh on a body beat.
   - A night beat gets a dark night room, never the daytime striped room plus a moon icon.
-  - (Cabinet strips in about 21 pieces, latest L1 11-21. Ornament circles latest S1 and S2 11-21. Starfield on body beats in about 19 pieces, latest S1 11-21.)
+  - (Cabinet strips in about 21 pieces, latest L1 11-21. Ornament circles in many pieces, latest S1 and S2 11-21. Starfield on body beats in about 19 pieces, latest S1 11-21.)
 - **Draw people as whole, filled-in characters with a neck and shoulders, never cropped at the frame edge or a counter. Lock each named character's skin tone, hair and outfit for the whole video.**
   - Never use a ring, donut, blob or outline-only figure as the hero.
   - Never merge or overlap two people, and never perch a mascot on a person.
   - Don't bring in a new look-alike character mid-Short.
-  - (Floating heads in about 23 pieces, latest L1, S1 and S3 11-21. Blob heroes in about 15. Continuity breaks in 6 pieces, latest S1 11-21. Merged people or perched mascots in 5, latest S1 11-21.)
+  - (Floating heads in about 23 pieces, latest L1, S1 and S3 11-21. Blob heroes in about 15. Continuity breaks in 6, latest S1 11-21. Merged people or perched mascots in 5, latest S1 11-21.)
 - **Fill every frame with a headline plus a labelled hero covering at least ~25% of it, starting with the opening frame.**
   - At t=0 in a Short, the headline sits clear of the character's head.
   - In a Short's first 10 s, change the shot at least every 2.5 s.
@@ -87,8 +76,9 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
     2. The emergency and don't-stop lines, when the topic needs them.
     3. The task's last line, which loops back to sentence 1.
   - Never write a subscribe line or "link in the description" in a Short.
-- **Copy the fixed safety lines exactly, and speak each one and show it on screen.**
+- **Copy the fixed safety lines exactly, and speak each one and show it on screen. Never add or drop a symptom.**
   - An emergency line names its trigger and keeps "right away". Then add: "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own." Never write "Otherwise". The on-screen card keeps that scope too (S2 11-21).
+  - Pancreatitis: severe pain in your stomach area that won't go away, "with or without vomiting". Never add "nausea" (L2 11-21).
   - Serious allergic reaction signs follow the Medication Guide in full: swelling of the face, lips, tongue or throat; trouble breathing or swallowing; severe rash or itching; fainting or feeling dizzy; very rapid heartbeat (S1 11-20, L1 11-21).
   - The gallbladder line is "Tell your healthcare provider right away" (S2 11-21).
   - Any stomach, fullness or eating-less topic names severe stomach pain that won't go away as a "call right away" sign, on screen too.
@@ -99,9 +89,10 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
   - Say "loss" or "lower" for minus figures.
   - Write units out in full ("ten milligrams"), and avoid compound words the voice may split.
   - Every spoken number names its comparator, subgroup splits included: "versus about 2 in 100 on placebo"; for hair by sex, women 7.1% vs 1.3% and men 0.5% vs 0% on placebo. (S1 11-20, L2 11-20.)
-  - Never write "now", "this week", "new" or dates.
+  - Never write "now", "this week", "new", dates or present-tense regulatory moves like "the FDA is requiring". Keep the FDA's "potential" (L2 11-21).
   - Help lines cover all four markets.
-- **Keep each finding at its source's exact unit, scope, verb and hedge, including in recaps.**
+- **Keep each finding at its source's exact number, unit, scope, verb and hedge, including in recaps.**
+  - Re-read every figure against the abstract or label table before you hand off. L2 11-21 failed for writing 2.6% instead of 2.7%.
   - Each number names its measure, drug and arm, comparator, population and timeframe.
   - A share of people is never an "average".
   - "Adverse events" are never "side effects", and "didn't stop because of adverse events" is never "kept going".
@@ -110,7 +101,7 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
   - Never add "most", "many", "commonly", "similar", "myth", "a few days" or a softer verb.
   - Recaps keep the label's exact terms: "MTC or MEN 2", not "thyroid cancer" (L1 11-21).
   - Never write "the paper says" until you've found the sentence.
-  - (About 110 findings. Recaps lost scope in 5 pieces, latest L1 11-21.)
+  - (About 113 findings. Recaps lost scope in 5 pieces, latest L1 11-21.)
 - **Run the muted-viewer test, starting with the opening card.**
   - The opening card names the drug, the scope and the answer from sentence 1. It says nothing the narration doesn't, and it never shows a point before it is spoken (L1 11-21 showed the sleep apnea use early).
   - Every stat card names the measure, the drug, the dose (or "by dose"), both groups, the full population and the timeframe.
@@ -161,23 +152,22 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
   - (About 60 pieces, latest S2 11-21.)
 
 ### Everyone
-- **Fix the queued long videos' known faults before you re-render or resubmit, and re-time from the final word timestamps.**
+- **Fix the queued long videos' known faults before you re-render or resubmit, and never re-produce a video that is already live.**
+  - **Months 2–6 has been live since 11-16.** A second version was produced on 11-20 (L2). Check the live list before you start a long video, and flag any duplicate to the owner.
   - **Serious Risks (held 11-21 for beat drift):**
-    - Re-time it, and remove the duplicate "6.4 vs 3.8" card at s65.
+    - Re-time it from the final word timestamps, and remove the duplicate "6.4 vs 3.8" card at s65.
     - s8: hold the sleep apnea card until s9 says it.
     - s36: say "a sulfonylurea" (the label doesn't name glipizide or glimepiride).
     - s44: give the full allergy-sign list.
     - s77: say "MTC or MEN 2".
     - s35 and s72: add that the label reports low blood sugar in adults without type 2 diabetes.
     - Use the real Medication Guide URL, and keep the weight-trial pancreatitis figure.
-  - **Foundayo (11-20 fact-check REVISE):**
-    - s18: say "about 9 in 10 on the top trial dose didn't stop because of adverse events", never "kept going".
-    - Say "adverse events", not "side effects".
-    - Keep "weight-related" in the population.
-    - Name the drug, timeframe and measure on the s31 and s32 cards.
-    - Say "the label's Trial 1, in adults without diabetes".
-    - Add your own history of MTC and MEN 2.
-    - Fix the 11-11 render faults too: masking 0.022, the cut-off description, and Dana's skin and hair changing between shots.
+  - **Foundayo (fact-check REVISE on 11-20 and again on 11-21):**
+    - s28: the placebo figure for stopping because of adverse events is 2.7%, not 2.6%. 10.3% on 36 mg is correct.
+    - s42: use the Medication Guide's pancreatitis wording exactly, with no added "nausea".
+    - s54: drop "is requiring"; keep the FDA's "potential" increased risk.
+    - Keep the 11-20 fixes: "didn't stop because of adverse events" (never "kept going"), "adverse events", "weight-related", the drug, timeframe and measure on the s31 and s32 cards, "the label's Trial 1, in adults without diabetes", and your own history of MTC and MEN 2.
+    - On render, fix the 11-11 faults: masking 0.022, the cut-off description, and Dana's skin and hair changing between shots.
   - **Backups, Injection Site (11-09) and Burping (11-10):** both were held for beat drift. Re-time them before they ship.
 - **Every source needs its own working URL and a real, live revised date. Never ship a placeholder, a bare year or a note to staff in any field.**
   - The Medication Guide and the IFU each need their own URL, never the PI page or a PI anchor.
@@ -205,7 +195,7 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
   - **Pen storage:** the single-dose pen and vial can be unrefrigerated (up to 86°F) for 21 days in total. Name the device, since KwikPens differ.
   - **Pen checks:** the label's inspection step is a general check before every use, not drop advice (S1 11-21).
   - **Pen disposal:** the guide bans *loose* pens in household trash. "Do not recycle" refers to the sharps container.
-  - **Foundayo:** the label's top dose is 17.2 mg, with −11.1%. The 36 mg dose and −11.2% come from the trial. 10.3% stopped for adverse events, and overall dropout was higher.
+  - **Foundayo:** the label's top dose is 17.2 mg, with −11.1%. The 36 mg dose and −11.2% come from the trial. 10.3% stopped for adverse events vs 2.7% on placebo, and overall dropout was higher.
 - **Tag a line to a source only after you find the sentence that says it, and keep the source list clean.**
   - Our own tips, help lines and safety lines get no tag.
   - Source titles list only the sections actually cited.
@@ -216,6 +206,6 @@ _**Shorts closing (owner OK 2026-11-12, for content dates from 2026-11-17):** no
     - NHS "more at risk" is not the same as "more likely".
   - (About 77 findings, latest L1 11-21.)
 
-_Updated 2026-11-21 from 65 QA records (all GLP-1, 11-09 to 11-21)._
+_Updated 2026-11-21 from 66 QA records (all GLP-1, 11-09 to 11-21)._
 
-_Updated 2026-11-21 from 65 QA records._
+_Updated 2026-11-21 from 66 QA records._
