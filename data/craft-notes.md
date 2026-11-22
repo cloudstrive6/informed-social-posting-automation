@@ -1,7 +1,7 @@
-_Based on 71 QA records from 2026-11-09 to 2026-11-22: 43 Shorts, 24 long-form videos and 4 carousels, all about GLP-1. This pass adds no new records, so the rules below are the same, with corrected counts and the duplicate footer removed._
+_Based on 73 QA records from 2026-11-09 to 2026-11-22: 44 Shorts, 25 long-form videos and 4 carousels, all about GLP-1. The only new record since the last pass is S4 11-22 (bloating). It shipped, but it repeated three known faults: the safety line split across two cards, banned card endings, and a stat card with no population. The rules below stay the same. Counts are updated, and the duplicate footer is gone._
 
 _**17 were held or failed:**_
-- _6 for beat drift (11-09, 11-10, 11-14, L1 and L2 11-16, L1 11-21). In every one, the plan was 96–100% on time but the render was only 76–91%._
+- _6 for beat drift (L1 11-09, L1 11-10, L1 11-14, L1 and L2 11-16, L1 11-21). In every one, the plan was 96–100% on time but the render was only 76–91%._
 - _7 for audio or narration (L1 11-11, S2 11-11, S2 11-12, S2 11-13, S1 11-16, L1 11-22, S3 11-22). The latest two:_
   - _Foundayo L1 11-22: silent closing scene, masking 0.021._
   - _S3 11-22: spoken hook missing from the script and subtitles, masking 0.068._
@@ -24,7 +24,7 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - Duck the music under all narration.
   - No stinger or whoosh on a spoken number, drug name or safety line.
   - Re-measure after every re-render. The gate does not always stop a bad mix.
-  - (12 pieces over 0.02 and 7 holds, the latest L1 11-22 at 0.021 and S3 11-22 at 0.068. **4 shipped over the limit:** S1 11-11 at 0.028, L1 11-15 at 0.022, S2 11-20 at 0.054 and S1 11-22 at 0.024.)
+  - (12 pieces over 0.02 and 7 holds, the latest L1 11-22 at 0.021 and S3 11-22 at 0.068. **4 shipped over the limit:** S1 11-11 at 0.028, L1 11-15 at 0.022, S2 11-20 at 0.054 and S1 11-22 at 0.024. S2 11-17 and S4 11-22 sat at 0.019.)
 - **Every scene must have voice from its first word to its last, the closing scene included. Then compare a speech-to-text transcript with the script word for word.**
   - Listen to the final scene on its own: the subscribe ask and watch-next line on long-form, the loop line on Shorts.
   - Check every "point", number, unit, drug name, acronym, contraction and how-to phrase.
@@ -34,33 +34,35 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - Before render, search captions and tags for POINT, PERCENT, HUNDRED, THOUSAND, SIXTEEN, "TYPE TWO" or "TWO DIABETES", and pronunciation spellings.
   - Spell-check every card and tag ("Studv 2" in L2 11-20, "WERE WORRIED" in S1 11-22).
   - (About 24 Shorts, the latest S3 11-22.)
-- **Each caption card is one whole clause on 2 lines or fewer.**
+- **Each caption card is one whole clause on 2 lines or fewer, in full-contrast text.**
   - Never split a word, number or phrase across cards.
-  - Never end a card on a comma, dash, colon or semicolon, on a bare number, or on THE, A, AS, CAN, LET, ABOUT, HOW, MAY, WON'T, DOESN'T, HAVE, THOSE, TAKE, TYPE, UNLESS or "AND IN".
-  - "NOT PERSONAL ADVICE, SO ASK YOUR PRESCRIBER." is always one card ending in a full stop. It was split in S1 11-18, S2 11-19 and S2 11-20.
-  - (Nearly every Short, including all three 11-22 Shorts.)
+  - Never end a card on a comma, dash, colon or semicolon, or on a bare number.
+  - Never end a card on THE, A, AS, CAN, LET, ABOUT, HOW, MAY, WON'T, DOESN'T, ISN'T, HAVE, THOSE, TAKE, TYPE, UNLESS or "AND IN".
+  - "NOT PERSONAL ADVICE, SO ASK YOUR PRESCRIBER." is always one card ending in a full stop. It was split or cut at the comma in S3 11-17, S1 11-18, S2 11-19, S2 11-20 and S4 11-22.
+  - (Nearly every Short, including all four 11-22 Shorts.)
 - **Shorts tags: clear the previous card, tags and bubbles before the next card appears.**
   - Keep tags above y 1150 and inside both side edges.
   - Show at most 2 tags at a time, never behind the caption pill, and never a tag that repeats the caption.
   - Never render an empty bubble, ghost text, a blank or dash-placeholder rail, or the raw word "Label".
-  - (About 260 overlap findings across 35 Shorts, the latest ghosting in S1 and S3 11-22.)
+  - (About 265 overlap findings across 36 Shorts. The latest: ghosting in S1 and S3 11-22, and the "Study 1/Study 2" and "US label" tags in S4 11-22.)
 - **Long-form tags: the bottom of every tag stays at y 1000 or less, and every label is at least about 40px.**
   - Name, group, study and dose tags keep clipping past y 1080.
   - Labels keep rendering at 22–26px.
-  - (About 315 off-screen and 270 tiny-text findings. Latest: L2 11-22 with 25 off-screen, including the "Group A/B" and "Trial 2" tags, and L1 11-22 with 13.)
+  - (About 315 off-screen and 270 tiny-text findings. The latest: 25 off-screen in L2 11-22, including the "Group A/B" and "Trial 2" tags, and 13 in L1 11-22.)
 - **Backdrops:**
-  - Never use the rounded teal or green "cabinet strip", the hanging grey or orange ornament circles, or a starfield or bokeh behind a body beat.
+  - Never use the rounded teal or green "cabinet strip" or the hanging grey or orange ornament circles.
+  - Never put a starfield or bokeh behind a body beat.
   - Night beats get a dark night room, never the daytime striped room or a sunny bedroom.
   - (Cabinet strips in about 23 pieces, starfield or bokeh on body beats in about 21. Daytime rooms on night beats in L1 11-09, S1 11-16, L1 11-18 and L2 11-22.)
 - **Draw people as whole, filled-in characters with a neck and shoulders, standing in front of the counter or desk. Never let the counter or the frame edge crop them.**
   - Lock each named character's skin tone, hair and outfit for the whole video.
   - No ring, blob or outline-only heroes, no merged people, and no mascot perched on a person.
-  - (Floating heads in about 27 pieces. In L1 11-22, every main shot, including t=0, had the woman cropped at the counter. Also S1 and S2 11-22. Continuity breaks in 6.)
+  - (Floating heads in about 27 pieces. In L1 11-22, every main shot, including t=0, had the woman cropped at the counter. Also S1 and S2 11-22. Continuity breaks in 6 pieces.)
 - **Fill every frame with a headline plus a labelled hero covering at least about 25% of it, from the opening frame on.**
   - In a long video's first 30 s, the main character fills about a third of the frame height (too small in L2 11-16, L1 11-21 and L2 11-22).
   - At t=0 in a Short, keep the headline clear of the character's head. In the first 10 s, change the shot at least every 2.5 s.
   - Document, Rx and doctor beats need a character, with the stat shown on the document.
-  - (About 215 near-empty findings, the latest L1 11-22 with 13.)
+  - (About 215 near-empty findings, the latest 13 in L1 11-22.)
 
 ### Scriptwriters
 - **Shorts: stay inside the task's length arm and count every word yourself.**
@@ -78,25 +80,25 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
     - Foundayo/orforglipron: "with or without nausea or vomiting"
   - Allergy signs in full: swelling of the face, lips, tongue or throat; trouble breathing or swallowing; severe rash or itching; fainting or feeling dizzy; very rapid heartbeat.
   - Gallbladder: "Tell your healthcare provider right away".
-  - Stomach, fullness or eating-less topics name severe stomach pain that won't go away as a call-right-away sign.
+  - Topics about the stomach, fullness or eating less name severe stomach pain that won't go away as a call-right-away sign.
   - Fluid tips keep "unless you've been told to limit fluids".
   - For chest pain or fainting, the emergency number comes first.
 - **Write narration exactly as it should be spoken, and keep it evergreen.**
   - No digits. Give each decimal its own short sentence with the unit spoken, and say "loss" or "lower" for minus figures.
-  - Write units in full. No letter-by-letter acronyms, and spell out contractions the voice expands.
+  - Write units in full. No letter-by-letter acronyms, and spell out the contractions the voice expands.
   - Every spoken number names its comparator, including subgroup splits.
   - Never write "now", "new", dates or "the FDA is requiring". Keep the FDA's "potential".
 - **Keep each finding at its source's exact number, unit, scope, verb and hedge, recaps included.**
   - "Adverse events" are never "side effects". A share of people is never an "average".
   - Never add "most", "mostly", "many", "commonly", "similar", "myth", "a few days" or a softer verb. GI effects were "higher during dose escalation and decreased over time".
-  - Never present slower stomach emptying as the cause.
+  - Never present slower stomach emptying as the cause. Right after a symptom stat, add the label's "diminishes over time" sentence (S4 11-22).
   - Never compare separate trials as if they were head-to-head, and never call our own arithmetic "the paper's result".
-  - (About 125 findings, the latest L1 11-22.)
+  - (About 126 findings, the latest L1 and S4 11-22.)
 - **Run the muted-viewer test, starting with the opening card.**
   - The opening card names the drug and scope, shows sentence 1's answer, and never shows a point before it is spoken (L2 11-22 and S3 11-19 had no answer).
-  - Every stat card names the measure, the drug and dose, both groups, the full population and the timeframe.
+  - Every stat card names the measure, the drug and dose, both groups, the full population and the timeframe (missing in S4 11-22 s02).
   - Never write "no diabetes" for a population, and never drop "weight-related". Low blood sugar cases are "in adults without type 2 diabetes".
-  - (About 100 findings.)
+  - (About 101 findings.)
 
 ### Carousel Designer
 - **Carousels are stopped. If the scheduler still asks for one, reuse verified Short text only.**
@@ -122,11 +124,12 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
 - **Every caption field ends on exactly "Not personal advice. Talk to your doctor or prescriber about whether it's right for you."**
   - Hashtags and the don't-stop line go before it. Hashtags came after it 5 times, the latest IG S3 11-22.
   - The don't-stop line follows the named emergency signs, never a bare "emergency sign" (S2 11-22).
-  - Threads stays at about 300 characters: cut facts, never a safety line. (About 38 pieces over.)
+  - Copy the emergency line in the script's own words ("If you have severe stomach pain that will not go away…", S4 11-22).
+  - Threads stays at about 300 characters: cut facts, never a safety line. (About 39 pieces over.)
 - **Copy facts, qualifiers, devices, sources and populations word for word from the verified script, on every platform and in the pinned comment.**
   - Keep the "US label" attribution and the device scope.
   - The pinned comment keeps each trial's full population (L1 11-15, L2 11-16, L1 11-22).
-  - Never add openers the script doesn't have: no validation hooks and no questions. (6 times, the latest FB and IG S1 11-22.)
+  - Never add openers the script doesn't have: no validation hooks, no questions and no "actually". (7 times, the latest FB and IG S1 11-22 and IG S4 11-22.)
   - (About 160 findings, in every batch.)
 - **Titles, thumbnails, first lines and hashtags keep the video's hedge and scope.**
   - A stat names its measure. Never make a warning sign sound like the common effect.
@@ -177,6 +180,6 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - Reject 4xx, login and DOI redirects, newsroom and search pages. Use PubMed for paywalled journals.
   - (About 77 findings.)
 
-_Updated 2026-11-22 from 71 QA records (all GLP-1, 11-09 to 11-22)._
+_Updated 2026-11-22 from 73 QA records (all GLP-1, 11-09 to 11-22)._
 
-_Updated 2026-11-22 from 72 QA records._
+_Updated 2026-11-22 from 73 QA records._
