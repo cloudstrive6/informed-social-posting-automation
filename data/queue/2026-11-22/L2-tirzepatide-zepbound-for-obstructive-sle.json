@@ -1,0 +1,1433 @@
+{
+  "id": "L2-tirzepatide-zepbound-for-obstructive-sle",
+  "date": "2026-11-22",
+  "kind": "long",
+  "plan": {
+    "id": "L2",
+    "kind": "long",
+    "topic": "Tirzepatide (Zepbound) for obstructive sleep apnea: what the US-approved use covers, what AHI (the apnea-hypopnea index) measures, what the two SURMOUNT-OSA randomized trials showed at 52 weeks (one in people not using PAP, one in people using PAP), why weight is linked to sleep apnea, and questions to ask your doctor or sleep clinician",
+    "angle": "Same evergreen label-and-trial explainer, with these changes: (a) Thumbnail: 'SLEEP APNEA + TIRZEPATIDE' with subtext 'Fewer breathing pauses? Zepbound trials' (or 'FEWER BREATHING PAUSES?' with 'tirzepatide (Zepbound)' as subtext). One calm, fully drawn, labelled character in bed with a pen, no body imagery, and no snoring promise. (b) Title: 'Tirzepatide (Zepbound) for Sleep Apnea: What the Trials Showed'. (c) GI line, exactly as the label puts it: 'Nausea, diarrhea, vomiting and constipation are common. In the trials, the majority of nausea, vomiting and diarrhea events happened during dose escalation and decreased over time.' Don't use 'mostly'. (d) Give AHI results as events per hour per arm, with group sizes, the population and the measure, for each trial separately. Secondary outcomes only as printed in the paper, with both arms. (e) Keep everything else in the brief: the CPAP don't-stop line, the low-blood-sugar caveat for people on insulin or a sulfonylurea, the emergency card for severe pain in your stomach area that won't go away, with or without vomiting ('right away'), the scoped don't-stop line, 'Not personal advice', and the full 'Talk to your doctor or prescriber about whether it's right for you' line, all spoken and shown on screen.",
+    "working_title": "Tirzepatide (Zepbound) Sleep Apnea: What Trials Show",
+    "target_keyword": "zepbound sleep apnea",
+    "trend_stage": "evergreen",
+    "why": "A broad, approved-use question people search for, backed by settled primary sources (the US label and SURMOUNT-OSA in NEJM). It fills the beyond-weight gap and replaces the dropped Foundayo video without repeating today's Shorts. | fact-check: The topic is sound and in scope. In December 2024 the FDA approved tirzepatide (Zepbound) for moderate-to-severe obstructive sleep apnea in adults with obesity, and SURMOUNT-OSA (Malhotra et al., NEJM 2024; two 52-week randomized trials, one without PAP and one with PAP) is a strong primary source. There is real search demand for this and it stays useful for months. It fits the 'Benefits beyond weight' pillar. The safety rules in the brief (CPAP don't-stop line, low blood sugar with insulin or a sulfonylurea, tirzepatide pancreatitis wording, no dosing or switching) are correct. Three things need fixing before scripting. (1) The thumbnail 'SNORING LESS?' promises something the video can't back up. The trials' main measure was AHI (breathing pauses or shallow breaths per hour), and snoring wasn't a reported endpoint, so the title and thumbnail would oversell. (2) The GI line in the brief, 'mostly during dose escalation and decreased over time', isn't the label's wording. The Zepbound PI says 'The majority of nausea, vomiting, and/or diarrhea events occurred during dose escalation and decreased over time', and our craft rules ban adding 'mostly'. Copy the label sentence. (3) Chapter 4 secondary results must come only from the NEJM paper or PubMed record, with both arms (for example the sleep-impairment and sleep-disturbance scores, oxygen-drop measures, blood pressure), and no causal 'because of weight loss' wording unless the paper says it. Keep every AHI figure in events per hour, with each trial's population (adults with moderate-to-severe OSA and obesity, without diabetes; no PAP vs using PAP) and the right measure ('counting everyone who started' vs 'if everyone stayed on treatment'). Don't compare the two trials as if they were head-to-head. Quote Section 1 from the 28 Aug 2026 PI word for word. Open with a sentence 1 that asks the question, without a 'Short answer.' label.",
+    "pillar": "beyond-weight"
+  },
+  "status": "ready",
+  "package": {
+    "title": "Tirzepatide (Zepbound) for Sleep Apnea: Does It Work?",
+    "title_candidates": [
+      "Tirzepatide (Zepbound) for Sleep Apnea: Does It Work?",
+      "Tirzepatide (Zepbound) Sleep Apnea: What Trials Showed",
+      "Tirzepatide (Zepbound) for Sleep Apnea: What to Expect",
+      "Tirzepatide (Zepbound) for Sleep Apnea: What the Trials Showed",
+      "Tirzepatide (Zepbound) Sleep Apnea: With or Without CPAP?",
+      "Tirzepatide (Zepbound) Sleep Apnea: How Much in the Trials?",
+      "Zepbound for Sleep Apnea: What the Trials Showed",
+      "Tirzepatide (Zepbound) Sleep Apnea: Fewer Breathing Pauses?",
+      "Tirzepatide (Zepbound) and Sleep Apnea: What's Approved?",
+      "Tirzepatide (Zepbound) Sleep Apnea Trials: The AHI Result"
+    ],
+    "description": "\nSevere pain in your stomach area that won't go away, with or without vomiting? Call your healthcare provider right away. For anything that isn't that emergency sign, don't stop or change your medicine on your own. Using CPAP or another positive airway pressure device? Don't stop or change it on your own. Talk to your sleep clinician first.\n\nQuick answer: In two 52-week, double-blind randomized trials (SURMOUNT-OSA) in adults with moderate to severe obstructive sleep apnea and obesity, without diabetes, the average apnea-hypopnea index (AHI) fell more on tirzepatide (Zepbound) than on placebo.\nTrial 1, 234 adults not using PAP: −25.3 vs −5.3 events per hour.\nTrial 2, 235 adults using PAP (measured after a 7-day PAP pause): −29.3 vs −5.5 events per hour.\nThe trials enrolled different people, so they aren't head-to-head. Nausea, diarrhea, vomiting and constipation are common. Low blood sugar is more likely with insulin or a sulfonylurea, and is also reported in adults without type 2 diabetes.\n\nSources:\nMalhotra A, et al. N Engl J Med 2024: https://pubmed.ncbi.nlm.nih.gov/38912654/\nZepbound US Prescribing Information (revised 28 Aug 2026): https://pi.lilly.com/us/zepbound-uspi.pdf\n\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "tags": [
+      "zepbound sleep apnea",
+      "tirzepatide sleep apnea"
+    ],
+    "pinned_comment": "Save this for your next sleep appointment. At 52 weeks, in adults with moderate to severe obstructive sleep apnea and obesity, without diabetes: Trial 1 (234 adults not using PAP) saw −25.3 events per hour on tirzepatide vs −5.3 on placebo. Trial 2 (235 adults using PAP, measured after a 7-day PAP pause) saw −29.3 vs −5.5. They enrolled different people, so it's not a head-to-head. Using CPAP? Don't stop or change it on your own. Talk to your sleep clinician first. Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "FEWER BREATHING PAUSES?",
+      "highlight_word": "PAUSES",
+      "subtext": "Zepbound: 2 OSA trials",
+      "layout": "reaction",
+      "psychology": "Curiosity gap: the title asks 'does it work?' and the thumbnail names the felt problem (pauses in breathing at night) as an open question, so only the trial results in the video close it.",
+      "emotion": "Calm curiosity: 'that's my night, did it actually help?'",
+      "hero_art": "man asleep in bed",
+      "hero_face": "none",
+      "second_art": "",
+      "second_face": "none",
+      "prop": "question",
+      "accent": "blue",
+      "badge": "",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 The answer\n0:36 What's approved\n1:31 What AHI measures\n2:27 Why weight matters\n3:40 Trial 1: no PAP\n4:55 Trial 2: with PAP\n6:51 Side effects and safety\n7:58 Your questions\n8:44 Recap"
+  },
+  "media": {
+    "video": "L2-tirzepatide-zepbound-for-obstructive-sle.mp4",
+    "duration": 579.327,
+    "thumbnail": "L2-tirzepatide-zepbound-for-obstructive-sle-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-22T19:00:00.000Z",
+      "status": "scheduled",
+      "attempts": 1,
+      "remote_id": "uqnzQePvQok",
+      "url": "https://youtu.be/uqnzQePvQok",
+      "published_at": "2026-11-22T19:00:00.000Z"
+    }
+  ],
+  "created_at": "2026-11-22T05:59:37.098Z",
+  "script": {
+    "working_title": "Tirzepatide (Zepbound) for Sleep Apnea: What the Trials Showed",
+    "target_keyword": "zepbound sleep apnea",
+    "hook_pattern": "Answer-first question hook plus open loop. Sentence 1 names tirzepatide (Zepbound) and asks the viewer's question about breathing pauses and shallow breaths. Each arm's answer comes by 15 s and a second number by 30 s. The loop ('which group kept their CPAP, and how was their number measured?') pays off in the 'Trial 2: with PAP' chapter: the PAP group was measured with the mask off after a 7-day pause.",
+    "scenes": [
+      {
+        "id": "s01",
+        "section": "The answer",
+        "narration": "Can tirzepatide, sold as Zepbound, cut the breathing pauses and shallow breaths of sleep apnea? In two year-long randomized trials, on average, it did.",
+        "on_screen_text": "Tirzepatide (Zepbound): fewer sleep apnea events, on average, in 2 year-long trials",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm man in bed, pen on nightstand, dark night room"
+        },
+        "retention_device": "Curiosity gap answered in the first 5 seconds (drug plus question)",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s02",
+        "section": "The answer",
+        "narration": "In those trials, people started with around fifty pauses or shallow breaths every hour of sleep. That's close to one a minute.",
+        "on_screen_text": "About 50 events an hour",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "≈50/hr",
+          "stat_label": "Average starting breathing events, both trials",
+          "stock_query": "sleepy person, clock ticking at night"
+        },
+        "retention_device": "Humanised number (close to one a minute)",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s03",
+        "section": "The answer",
+        "narration": "After fifty-two weeks on tirzepatide, the average fell by about twenty-five an hour in one trial and about twenty-nine in the other. On placebo, it fell by about five.",
+        "on_screen_text": "Two trials, 52 weeks",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−25 & −29 vs −5",
+          "stat_label": "Change in events/hour at 52 weeks, tirzepatide vs placebo (Trial 1 & Trial 2, adults with OSA and obesity)",
+          "stock_query": "two trial charts side by side, hopeful"
+        },
+        "retention_device": "Second concrete payoff before 30 s",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s04",
+        "section": "The answer",
+        "narration": "One of those groups kept using their CPAP machines during the trial, and by the end you'll know which number is theirs and how it was measured.",
+        "on_screen_text": "Which group kept CPAP?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "CPAP mask on nightstand, question mark glowing"
+        },
+        "retention_device": "Main open loop (paid off in Trial 2 chapter)",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s05",
+        "section": "What's approved",
+        "narration": "So who is this actually approved for? Start with the label.",
+        "on_screen_text": "Who is it approved for?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card: what the label covers"
+        },
+        "retention_device": "Chapter opens with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s06",
+        "section": "What's approved",
+        "narration": "In the US, Section one of the Zepbound label says it's used with a reduced-calorie diet and increased physical activity to treat moderate to severe obstructive sleep apnea in adults with obesity.",
+        "on_screen_text": "The approved use, word for word",
+        "visual": {
+          "kind": "quote",
+          "quote": "in combination with a reduced-calorie diet and increased physical activity … to treat moderate to severe obstructive sleep apnea (OSA) in adults with obesity",
+          "attribution": "Zepbound Prescribing Information, Section 1 (rev. 28 Aug 2026)",
+          "stock_query": "label document held by friendly pharmacist"
+        },
+        "retention_device": "Authority moment: exact label wording",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s07",
+        "section": "What's approved",
+        "narration": "Three conditions sit in that one line. Adults. Obesity. And sleep apnea in the moderate to severe range, not mild.",
+        "on_screen_text": "Three conditions, one line",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Adults",
+            "With obesity",
+            "Moderate to severe sleep apnea"
+          ],
+          "stock_query": "three checkboxes on a clipboard"
+        },
+        "retention_device": "Simple three-item breakdown",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s08",
+        "section": "What's approved",
+        "narration": "It's a once-weekly medicine that acts on the receptors for two gut hormones, and the same label covers its weight-management uses. So it isn't a sleep pill. It was studied for breathing at night.",
+        "on_screen_text": "Not a sleep pill",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "It's a sleep pill",
+          "fact": "A once-weekly medicine acting on two gut hormone receptors",
+          "stock_query": "gut hormones as friendly messengers"
+        },
+        "retention_device": "Myth flip",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s09",
+        "section": "What's approved",
+        "narration": "Imagine someone, call him Dan, fifty-two, who just got his sleep study results. Moderate to severe. Obesity on his chart. And a CPAP mask he finds hard to sleep in.",
+        "on_screen_text": "Meet Dan (hypothetical)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "tired man reading sleep report at kitchen table"
+        },
+        "retention_device": "Relatable hypothetical thread begins",
+        "source_ids": []
+      },
+      {
+        "id": "s10",
+        "section": "What's approved",
+        "narration": "If you've fought a mask strap at two in the morning, you know that tired frustration. Dan's question is simple: would this medicine change the number his sleep clinician watches?",
+        "on_screen_text": "The number that matters",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "frustrated man adjusting CPAP strap, dark night room"
+        },
+        "retention_device": "Named feeling plus question leading into next chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s11",
+        "section": "What AHI measures",
+        "narration": "So what does that number on your sleep report actually count?",
+        "on_screen_text": "What does AHI count?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card: what AHI measures"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s12",
+        "section": "What AHI measures",
+        "narration": "It's called the apnea-hypopnea index. It counts how many times, per hour of sleep, your breathing stops or becomes very shallow.",
+        "on_screen_text": "AHI = events per hour",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "sleep report with events per hour highlighted"
+        },
+        "retention_device": "Plain-language definition",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "What AHI measures",
+        "narration": "An apnea is a pause in breathing. A hypopnea is a breath that gets much shallower than normal. Each one counts as a single event.",
+        "on_screen_text": "Pauses plus shallow breaths",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Apnea: a pause in breathing",
+            "Hypopnea: a much shallower breath",
+            "Each one = one event"
+          ],
+          "stock_query": "breath waves pausing and shrinking"
+        },
+        "retention_device": "Visual list, new on-screen element",
+        "source_ids": [
+          "S1",
+          "S4"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "What AHI measures",
+        "narration": "It's measured during an overnight sleep study, and in these trials, that study is how the main result was judged.",
+        "on_screen_text": "Measured in a sleep study",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cosy sleep lab bed with monitor, night"
+        },
+        "retention_device": "Sets up trial payoff",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "What AHI measures",
+        "narration": "Both trials only enrolled people with fifteen or more events per hour. That's the moderate to severe range.",
+        "on_screen_text": "15+ events/hour to enrol",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "15+",
+          "stat_label": "Events per hour needed to join",
+          "stock_query": "gauge pointing to moderate-severe zone"
+        },
+        "retention_device": "Concrete threshold",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "What AHI measures",
+        "narration": "And they started high: around fifty events per hour on average. Over seven hours of sleep, that's roughly three hundred and fifty a night, by my arithmetic.",
+        "on_screen_text": "≈350 events a night",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "≈350",
+          "stat_label": "Events per night (our arithmetic, 7 hours)",
+          "stock_query": "night sky counter ticking up over bed"
+        },
+        "retention_device": "Surprising humanised stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "What AHI measures",
+        "narration": "Three hundred and fifty interruptions. No wonder mornings can feel like you barely slept.",
+        "on_screen_text": "Mornings feel heavy",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "groggy person with coffee at sunrise"
+        },
+        "retention_device": "Emotional recognition",
+        "source_ids": []
+      },
+      {
+        "id": "s18",
+        "section": "What AHI measures",
+        "narration": "But why does that count climb in the first place? The answer runs through your neck, not just your lungs.",
+        "on_screen_text": "The clue is in your neck",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious cartoon detective looking at airway diagram"
+        },
+        "retention_device": "Mini-cliffhanger before chapter change (about 1:45)",
+        "source_ids": []
+      },
+      {
+        "id": "s19",
+        "section": "Why weight matters",
+        "narration": "Why is weight so closely linked to sleep apnea?",
+        "on_screen_text": "Why weight matters",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card: weight and the airway"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s20",
+        "section": "Why weight matters",
+        "narration": "When you fall asleep, the muscles around your upper airway relax. And that part of your airway is a soft tube, without bone to hold it open.",
+        "on_screen_text": "A soft, floppy airway",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "simple airway tube relaxing during sleep"
+        },
+        "retention_device": "Explaining the mechanism like a friend would",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Why weight matters",
+        "narration": "Extra fat around the neck and throat can press on that tube from the outside, making it narrower.",
+        "on_screen_text": "Pressure from outside",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "soft tube gently squeezed by cushions"
+        },
+        "retention_device": "Step-by-step reveal",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Why weight matters",
+        "narration": "Extra weight around the belly can also reduce lung volume, and researchers think that loosens the pull that helps keep the airway open.",
+        "on_screen_text": "Less lung volume, less pull",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "lungs and airway linked by a gentle rope"
+        },
+        "retention_device": "Second mechanism, hedged",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Why weight matters",
+        "narration": "Picture a soft, slightly squashed garden hose. Squeeze it a little from outside, and it pinches shut when air rushes through.",
+        "on_screen_text": "Like a squashed hose",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "garden hose pinching shut, playful"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": []
+      },
+      {
+        "id": "s24",
+        "section": "Why weight matters",
+        "narration": "So does changing weight change the count? One classic study followed about seven hundred adults in Wisconsin, checking their sleep four years apart.",
+        "on_screen_text": "700 adults, 4 years",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "group of adults with sleep monitors, calendar flipping"
+        },
+        "retention_device": "Micro-story: a classic study",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "Why weight matters",
+        "narration": "Compared with keeping weight stable, a ten percent weight gain was linked with about a thirty-two percent rise in the index.",
+        "on_screen_text": "10% gain: index up ~32%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "+32%",
+          "stat_label": "AHI with 10% weight gain vs stable",
+          "stock_query": "arrow rising on soft chart"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "Why weight matters",
+        "narration": "And a ten percent weight loss was linked with about a twenty-six percent drop.",
+        "on_screen_text": "10% loss: index down ~26%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−26%",
+          "stat_label": "AHI with 10% weight loss vs stable",
+          "stock_query": "arrow falling, relieved character"
+        },
+        "retention_device": "Mirror stat",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Why weight matters",
+        "narration": "But that's a link, not proof. Nobody in that study was randomly assigned to gain or lose weight. For proof, you need a randomized trial.",
+        "on_screen_text": "Link, not proof",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Weight change proves the cause",
+          "fact": "Observational link; randomized trials test cause",
+          "stock_query": "magnifying glass over chain link"
+        },
+        "retention_device": "But/therefore turn",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Why weight matters",
+        "narration": "And that's what Dan wants to see: people like him, randomly given tirzepatide or placebo, then checked with a sleep study a year later.",
+        "on_screen_text": "Enter the randomized trials",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dan leaning in, curious, at laptop"
+        },
+        "retention_device": "Return to thread, sets up trial chapters (about 3:20)",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "Trial 1: no PAP",
+        "narration": "So what happened to people who weren't using a breathing machine?",
+        "on_screen_text": "Trial 1: no breathing machine",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card: trial one, no PAP"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s30",
+        "section": "Trial 1: no PAP",
+        "narration": "Both trials were double-blind: neither participants nor researchers knew who was getting the medicine. That keeps expectations from tilting the result.",
+        "on_screen_text": "Double-blind, both trials",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "identical boxes with question marks, blindfolded scale"
+        },
+        "retention_device": "Study-design micro-story",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "Trial 1: no PAP",
+        "narration": "Trial one randomized two hundred and thirty-four adults with moderate to severe obstructive sleep apnea and obesity, without diabetes, who weren't using positive airway pressure therapy.",
+        "on_screen_text": "234 adults, not using PAP",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "234",
+          "stat_label": "Adults with OSA and obesity, without diabetes, not using PAP",
+          "stock_query": "group of diverse adults in pyjamas"
+        },
+        "retention_device": "Population in one line",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Trial 1: no PAP",
+        "narration": "Counting everyone who started, whether or not they stayed on treatment, the tirzepatide group's average fell by twenty-five point three events per hour.",
+        "on_screen_text": "Tirzepatide: −25.3 per hour",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−25.3",
+          "stat_label": "Trial 1 tirzepatide: events/hour change, 52 weeks",
+          "stock_query": "bar shrinking, calm sleeper"
+        },
+        "retention_device": "Payoff of the main question",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Trial 1: no PAP",
+        "narration": "The placebo group's average fell by five point three events per hour.",
+        "on_screen_text": "Placebo: −5.3 per hour",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−25.3 vs −5.3",
+          "stat_label": "Trial 1 events/hour: tirzepatide vs placebo",
+          "stock_query": "two bars side by side"
+        },
+        "retention_device": "Both-arm comparison",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Trial 1: no PAP",
+        "narration": "The difference between the groups was twenty events per hour, and the paper reports it as statistically significant.",
+        "on_screen_text": "A 20-per-hour difference",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−20.0",
+          "stat_label": "Trial 1 difference, events/hour, vs placebo",
+          "stock_query": "gap between two bars highlighted"
+        },
+        "retention_device": "Headline number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "Trial 1: no PAP",
+        "narration": "Why did placebo improve at all? Numbers can shift for lots of reasons over a year, which is exactly why a comparison group matters.",
+        "on_screen_text": "Why placebo matters",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "balance scale with two cups"
+        },
+        "retention_device": "Question to the viewer",
+        "source_ids": []
+      },
+      {
+        "id": "s36",
+        "section": "Trial 1: no PAP",
+        "narration": "Picture a starting point of fifty an hour, like the trial average. Over seven hours, a drop of twenty-five an hour would trim roughly a hundred and seventy-five events a night. That's arithmetic, not a promise for anyone.",
+        "on_screen_text": "≈175 fewer a night (maths)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "≈175",
+          "stat_label": "Fewer events a night (our arithmetic)",
+          "stock_query": "night counter ticking down, peaceful bedroom"
+        },
+        "retention_device": "Humanised number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Trial 1: no PAP",
+        "narration": "But Dan already has a CPAP mask. Would the medicine still matter for someone using one? That's the second trial, and the number I promised you.",
+        "on_screen_text": "What about CPAP users?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dan holding CPAP mask, thoughtful, dark night room"
+        },
+        "retention_device": "Re-opens the main loop before chapter change (about 4:40)",
+        "source_ids": []
+      },
+      {
+        "id": "s38",
+        "section": "Trial 2: with PAP",
+        "narration": "What if you already use CPAP?",
+        "on_screen_text": "Trial 2: using PAP",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card: trial two, with PAP"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s39",
+        "section": "Trial 2: with PAP",
+        "narration": "Trial two randomized two hundred and thirty-five adults with the same conditions, also without diabetes, who were using positive airway pressure and planned to keep using it.",
+        "on_screen_text": "235 adults, using PAP",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "235",
+          "stat_label": "Adults with OSA and obesity, without diabetes, using PAP",
+          "stock_query": "adults in bed with CPAP machines"
+        },
+        "retention_device": "Population in one line",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "Trial 2: with PAP",
+        "narration": "Counting everyone who started, the tirzepatide group's average fell by twenty-nine point three events per hour.",
+        "on_screen_text": "Tirzepatide: −29.3 per hour",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−29.3",
+          "stat_label": "Trial 2 tirzepatide: events/hour change, 52 weeks",
+          "stock_query": "bar shrinking beside CPAP machine"
+        },
+        "retention_device": "Loop payoff building",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "Trial 2: with PAP",
+        "narration": "The placebo group's average fell by five point five events per hour.",
+        "on_screen_text": "Placebo: −5.5 per hour",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−29.3 vs −5.5",
+          "stat_label": "Trial 2 events/hour: tirzepatide vs placebo",
+          "stock_query": "two bars side by side, night theme"
+        },
+        "retention_device": "Both-arm comparison",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "Trial 2: with PAP",
+        "narration": "The difference between the groups was twenty-three point eight events per hour, again reported as statistically significant.",
+        "on_screen_text": "A 23.8-per-hour difference",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−23.8",
+          "stat_label": "Trial 2 difference, events/hour, vs placebo",
+          "stock_query": "gap between bars highlighted"
+        },
+        "retention_device": "Headline number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "Trial 2: with PAP",
+        "narration": "So there's your answer: the twenty-nine came from the group that kept using positive airway pressure through the trial. One detail matters here. Before each sleep study, they paused their machine for seven days, so that number measures their breathing without the mask.",
+        "on_screen_text": "The 29 = PAP users, measured mask-off",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dan lightbulb moment, CPAP paused on nightstand"
+        },
+        "retention_device": "Payoff of the main open loop, with the measurement twist",
+        "source_ids": [
+          "S1",
+          "S1-PMC"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "Trial 2: with PAP",
+        "narration": "But here's where people trip up. These two trials enrolled different people, so you can't line them up head-to-head and say one approach beat the other.",
+        "on_screen_text": "Not a head-to-head",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Trial 2 beat Trial 1",
+          "fact": "Different people; not compared head-to-head",
+          "stock_query": "two separate race tracks, no finish line between"
+        },
+        "retention_device": "But-here's-where-it-gets-tricky twist",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "Trial 2: with PAP",
+        "narration": "And it's not a reason to put your mask away. If you use CPAP or another positive airway pressure device, don't stop or change it on your own. Talk to your sleep clinician first.",
+        "on_screen_text": "Using CPAP? Don't stop on your own.",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Using CPAP or another PAP device?",
+            "Don't stop or change it on your own.",
+            "Talk to your sleep clinician first."
+          ],
+          "stock_query": "CPAP machine with friendly clinician"
+        },
+        "retention_device": "Practical safety line inside the payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s46",
+        "section": "Trial 2: with PAP",
+        "narration": "So the count went down. What else moved? This is where the paper gets interesting.",
+        "on_screen_text": "What else changed?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious character opening a research journal"
+        },
+        "retention_device": "Re-hook with a new loop (about 6:10)",
+        "source_ids": []
+      },
+      {
+        "id": "s47",
+        "section": "Trial 2: with PAP",
+        "narration": "In both trials, compared with placebo, the paper reports significant reductions with tirzepatide in body weight and in systolic blood pressure, the top number.",
+        "on_screen_text": "Both trials: weight and blood pressure",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Both trials: body weight lower vs placebo",
+            "Both trials: systolic blood pressure lower vs placebo"
+          ],
+          "stock_query": "blood pressure cuff and scale, cheerful"
+        },
+        "retention_device": "Secondary outcomes as printed, scoped to both trials",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "Trial 2: with PAP",
+        "narration": "It also reports a lower hypoxic burden, a measure of how deeply and how long oxygen dips with breathing events, and a lower blood marker of inflammation.",
+        "on_screen_text": "Oxygen dips and inflammation",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Hypoxic burden: lower vs placebo",
+            "Inflammation marker (hsCRP): lower vs placebo"
+          ],
+          "stock_query": "oxygen wave smoothing out"
+        },
+        "retention_device": "New on-screen element",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "Trial 2: with PAP",
+        "narration": "The paper also reports improvements in sleep-related patient-reported outcomes, compared with placebo. Those are the questionnaires about how people felt they were sleeping.",
+        "on_screen_text": "How sleep felt",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person filling sleep questionnaire, morning light"
+        },
+        "retention_device": "The outcome the viewer feels",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "Trial 2: with PAP",
+        "narration": "Weight came down alongside breathing events. But a trial like this compares the medicine with placebo. On its own, it doesn't prove how much of the breathing change came from weight loss.",
+        "on_screen_text": "Together, not proven cause",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two arrows moving down together, question mark"
+        },
+        "retention_device": "Honest nuance",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "Trial 2: with PAP",
+        "narration": "Which brings us to the part you'd live with day to day.",
+        "on_screen_text": "Day-to-day reality",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar with week days, gentle tone"
+        },
+        "retention_device": "Bridge into next chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s52",
+        "section": "Side effects and safety",
+        "narration": "So what side effects come with it?",
+        "on_screen_text": "What side effects?",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card: side effects and safety"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s53",
+        "section": "Side effects and safety",
+        "narration": "Here's what the label says. Nausea, diarrhea, vomiting and constipation are common. In the trials, the majority of nausea, vomiting and diarrhea events happened during dose escalation and decreased over time.",
+        "on_screen_text": "What the label says",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Common: nausea, diarrhea, vomiting, constipation",
+            "Majority of nausea, vomiting, diarrhea events: during dose escalation",
+            "Decreased over time"
+          ],
+          "stock_query": "person with ginger tea, calm kitchen"
+        },
+        "retention_device": "Label wording builds trust",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "Side effects and safety",
+        "narration": "If you've felt that queasy wave after a dose increase, you're not alone, and your prescriber can help you find ways to make it easier.",
+        "on_screen_text": "You're not alone",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "reassuring prescriber talking with patient"
+        },
+        "retention_device": "Validation with agency in the same line",
+        "source_ids": []
+      },
+      {
+        "id": "s55",
+        "section": "Side effects and safety",
+        "narration": "Low blood sugar is more likely if you also take insulin or a sulfonylurea, and the label also reports it in adults without type two diabetes.",
+        "on_screen_text": "Low blood sugar: insulin or a sulfonylurea",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "More likely with insulin or a sulfonylurea",
+            "Also reported in adults without type 2 diabetes"
+          ],
+          "stock_query": "glucose meter and medicine box on table"
+        },
+        "retention_device": "Safety caveat, spoken and shown",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "Side effects and safety",
+        "narration": "The label also has a boxed warning about thyroid C-cell tumors seen in rats; it's unknown whether that happens in humans. It shouldn't be used by anyone with a personal or family history of medullary thyroid carcinoma, or with multiple endocrine neoplasia syndrome type two.",
+        "on_screen_text": "Thyroid warning: MTC or MEN 2",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Boxed warning: thyroid C-cell tumors in rats",
+            "Unknown in humans",
+            "Not for MTC (personal or family history) or MEN 2"
+          ],
+          "stock_query": "label page with warning box, calm reader"
+        },
+        "retention_device": "Label fact, clearly scoped",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "Side effects and safety",
+        "narration": "Call your healthcare provider right away if you have severe pain in your stomach area that won't go away, with or without vomiting.",
+        "on_screen_text": "Severe stomach pain? Call right away.",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Severe pain in your stomach area that won't go away",
+            "With or without vomiting",
+            "Call your healthcare provider right away"
+          ],
+          "stock_query": "person calling doctor on phone, calm"
+        },
+        "retention_device": "Emergency sign and action in one line",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "Side effects and safety",
+        "narration": "For anything that isn't that emergency sign, don't stop or change your medicine on your own.",
+        "on_screen_text": "Don't stop or change on your own",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly pharmacist giving thumbs up"
+        },
+        "retention_device": "Scoped don't-stop line",
+        "source_ids": []
+      },
+      {
+        "id": "s59",
+        "section": "Side effects and safety",
+        "narration": "Knowing those signs ahead of time is what lets you use a medicine like this with confidence instead of worry.",
+        "on_screen_text": "Confidence, not worry",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dan relaxed, sunlight through window"
+        },
+        "retention_device": "Chapter ends on empowerment, not a warning card (about 8:00)",
+        "source_ids": []
+      },
+      {
+        "id": "s60",
+        "section": "Your questions",
+        "narration": "So what should Dan, or you, bring to the next appointment?",
+        "on_screen_text": "Questions to bring",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card: questions for your clinician"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s61",
+        "section": "Your questions",
+        "narration": "First: does my sleep study show moderate to severe obstructive sleep apnea, and do I fit the approved use?",
+        "on_screen_text": "1. Do I fit the approved use?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient pointing at sleep report with clinician"
+        },
+        "retention_device": "Numbered practical step",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "Your questions",
+        "narration": "Second: how will we track whether my breathing is improving? Will I need another sleep study, and when?",
+        "on_screen_text": "2. How will we track it?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar with sleep study marked"
+        },
+        "retention_device": "Numbered practical step",
+        "source_ids": []
+      },
+      {
+        "id": "s63",
+        "section": "Your questions",
+        "narration": "Third: how does my CPAP fit in while I'm on this, and who decides if anything changes?",
+        "on_screen_text": "3. Where does CPAP fit?",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Do I fit the approved use?",
+            "How will we track my breathing?",
+            "Where does my CPAP fit in?"
+          ],
+          "stock_query": "checklist beside CPAP machine"
+        },
+        "retention_device": "Three-item checklist completes",
+        "source_ids": []
+      },
+      {
+        "id": "s64",
+        "section": "Your questions",
+        "narration": "And if you take insulin or a sulfonylurea, ask how your plan handles low blood sugar.",
+        "on_screen_text": "Insulin or a sulfonylurea? Ask about lows.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient asking pharmacist a question"
+        },
+        "retention_device": "Personalised add-on",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "Your questions",
+        "narration": "Bring your actual sleep report. That events-per-hour number is a shared language between you and your clinician.",
+        "on_screen_text": "Bring your sleep report",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "folder with sleep report in a bag"
+        },
+        "retention_device": "Concrete action",
+        "source_ids": []
+      },
+      {
+        "id": "s66",
+        "section": "Your questions",
+        "narration": "Picture Dan walking in with those questions instead of a vague hope. That's the real win: knowing what the evidence measured, so you can ask for what fits you.",
+        "on_screen_text": "From hope to a plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Dan confidently entering clinic, smiling"
+        },
+        "retention_device": "Payoff of the relatable thread",
+        "source_ids": []
+      },
+      {
+        "id": "s67",
+        "section": "Recap",
+        "narration": "Here's your thirty-second recap. The US label covers moderate to severe obstructive sleep apnea in adults with obesity.",
+        "on_screen_text": "Your 30-second recap",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Adults with obesity",
+            "Moderate to severe sleep apnea",
+            "With diet and physical activity"
+          ],
+          "stock_query": "Medi mascot holding recap clipboard"
+        },
+        "retention_device": "Takeaway checklist",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s68",
+        "section": "Recap",
+        "narration": "Trial one, without positive airway pressure. Twenty-five point three fewer events per hour on tirzepatide. Five point three fewer on placebo.",
+        "on_screen_text": "No PAP: −25.3 vs −5.3/hr",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−25.3 vs −5.3",
+          "stat_label": "Trial 1 (no PAP), events/hour, 52 weeks",
+          "stock_query": "two bars, recap style"
+        },
+        "retention_device": "Recap number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "Recap",
+        "narration": "Trial two, using positive airway pressure. Twenty-nine point three fewer events per hour on tirzepatide. Five point five fewer on placebo.",
+        "on_screen_text": "With PAP: −29.3 vs −5.5/hr",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−29.3 vs −5.5",
+          "stat_label": "Trial 2 (using PAP), events/hour, 52 weeks",
+          "stock_query": "two bars beside CPAP, recap style"
+        },
+        "retention_device": "Recap number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "Recap",
+        "narration": "And remember the safety basics: stomach side effects are common, low blood sugar is more likely with insulin or a sulfonylurea, and don't stop or change your CPAP on your own.",
+        "on_screen_text": "The safety basics",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Stomach side effects are common",
+            "Low blood sugar: insulin or a sulfonylurea",
+            "Don't stop or change CPAP on your own"
+          ],
+          "stock_query": "checklist with three ticks"
+        },
+        "retention_device": "Three-item takeaway",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "Recap",
+        "narration": "Not personal advice, so ask your prescriber. Talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Not personal advice",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Not personal advice, so ask your prescriber.",
+            "Talk to your doctor or prescriber about whether it's right for you."
+          ],
+          "stock_query": "warm doctor conversation in bright office"
+        },
+        "retention_device": "Trust-building safety close",
+        "source_ids": []
+      },
+      {
+        "id": "s72",
+        "section": "Recap",
+        "narration": "If this helped, subscribe for more trial results explained straight from the label, the way a friend would.",
+        "on_screen_text": "Trial results, explained simply",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi cheering a small win"
+        },
+        "retention_device": "One subscribe ask tied to a specific benefit",
+        "source_ids": []
+      },
+      {
+        "id": "s73",
+        "section": "Recap",
+        "narration": "There's a video I'd watch next, linked in the description.",
+        "on_screen_text": "Watch next",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi pointing to a glowing video card"
+        },
+        "retention_device": "Next-video handoff",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Tirzepatide for the Treatment of Obstructive Sleep Apnea and Obesity (SURMOUNT-OSA). Malhotra A, et al. N Engl J Med 2024;391(13):1193-1205",
+        "publisher": "New England Journal of Medicine (PubMed record)",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38912654/"
+      },
+      {
+        "id": "S1-PMC",
+        "title": "Tirzepatide for the Treatment of Obstructive Sleep Apnea and Obesity (full text)",
+        "publisher": "PubMed Central",
+        "year": "2024",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11598664/"
+      },
+      {
+        "id": "S2",
+        "title": "ZEPBOUND (tirzepatide) Prescribing Information: Boxed Warning, Sections 1, 5 and 6",
+        "publisher": "Eli Lilly and Company / US FDA",
+        "year": "2026 (revised 28 Aug 2026)",
+        "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+      },
+      {
+        "id": "S3",
+        "title": "Longitudinal study of moderate weight change and sleep-disordered breathing. Peppard PE, et al. JAMA 2000;284(23):3015-3021",
+        "publisher": "JAMA (PubMed record)",
+        "year": "2000",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11122588/"
+      },
+      {
+        "id": "S4",
+        "title": "Obesity and obstructive sleep apnea: pathogenic mechanisms and therapeutic approaches. Schwartz AR, et al. Proc Am Thorac Soc 2008;5(2):185-192",
+        "publisher": "Proceedings of the American Thoracic Society (PMC2645252)",
+        "year": "2008",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2645252/"
+      }
+    ],
+    "cta": "Subscribe for more trial results explained straight from the label, the way a friend would. Then the watch-next line: \"There's a video I'd watch next, linked in the description.\" The publisher links it to Tirzepatide (Mounjaro) Side Effects."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "The script passes. I found four minor on-screen wording fixes, listed below, and nothing that needs a human.\n\n**SURMOUNT-OSA (full text on PMC)**\n- Trial sizes match: 234 in Trial 1 and 235 in Trial 2.\n- Entry rules match: AHI of 15 or more events an hour, obesity, and anyone with type 1 or type 2 diabetes excluded.\n- Both trials were double-blind and ran 52 weeks.\n- The numbers count everyone who started (the \"treatment-regimen\" method).\n- Starting AHI was 51.5 in Trial 1 and 49.5 in Trial 2, so \"around fifty\" is right.\n- Trial 1: −25.3 vs −5.3 events an hour, difference −20.0, p<0.001.\n- Trial 2: −29.3 vs −5.5, difference −23.8, p<0.001.\n- The 7-day PAP pause before each sleep study in Trial 2 is quoted word for word in the paper, so the s43 loop payoff is accurate.\n- Weight, systolic blood pressure, hypoxic burden, the inflammation marker (hsCRP) and the sleep questionnaires all improved significantly in both trials.\n\n**Peppard, JAMA 2000**\n- 690 Wisconsin adults, measured 4 years apart.\n- A 10% weight gain went with about a 32% rise in AHI; a 10% loss went with about a 26% drop.\n- The script correctly calls this a link, not proof.\n\n**Schwartz, Proc Am Thorac Soc 2008**\n- It supports the neck-fat and lung-volume (\"loss of caudal traction\") explanations and the collapsible airway. The script hedges these properly.\n\n**Framing and safety**\n- The script never treats the two trials as head-to-head (s44).\n- The 175- and 350-a-night figures are labelled as our own arithmetic.\n- The \"Dan\" story is clearly hypothetical.\n- The safety lines are all there: don't stop PAP, the pancreatitis sign in tirzepatide's wording, the scoped don't-stop line, the low blood sugar caveat with \"adults without type 2 diabetes\", the boxed thyroid warning (MTC or MEN 2), and the disclaimer.\n\n**Not checked**\n- The Lilly PDF (S2) is live and downloaded, but its text wouldn't extract. That means I couldn't re-read the s06, s53, s55 or s56 wording against it. Those lines match the standing label notes and known Zepbound PI wording.\n- PubMed pages wouldn't open (cookie wall). I confirmed the PubMed record URLs another way: S3's came up in search, and S1 and S4 point to the same papers I read in PMC full text.",
+    "issues": [
+      {
+        "location": "s01 on_screen_text",
+        "claim": "Tirzepatide (Zepbound): fewer sleep apnea pauses?",
+        "problem": "The opening card asks the question but doesn't show the answer from sentence 1 ('in two year-long randomized trials, on average, it did'). A muted viewer gets no answer.",
+        "severity": "minor",
+        "fix": "Tirzepatide (Zepbound): fewer sleep apnea events, on average, in 2 year-long trials"
+      },
+      {
+        "location": "s03 visual.stat_label",
+        "claim": "Events per hour: tirzepatide vs placebo",
+        "problem": "The stat card doesn't name the timeframe or the population.",
+        "severity": "minor",
+        "fix": "stat_label: \"Change in events/hour at 52 weeks, tirzepatide vs placebo (Trial 1 & Trial 2, adults with OSA and obesity)\""
+      },
+      {
+        "location": "s31 and s39 visual.stat_label",
+        "claim": "Adults, OSA + obesity, no diabetes, no PAP / on PAP",
+        "problem": "Our wording rules say never write 'no diabetes' for a population.",
+        "severity": "minor",
+        "fix": "s31: \"Adults with OSA and obesity, without diabetes, not using PAP\"; s39: \"Adults with OSA and obesity, without diabetes, using PAP\""
+      },
+      {
+        "location": "s64 on_screen_text",
+        "claim": "On insulin? Ask about lows.",
+        "problem": "The card drops 'or a sulfonylurea', which the narration says. The on-screen text is narrower than what's spoken.",
+        "severity": "minor",
+        "fix": "Insulin or a sulfonylurea? Ask about lows."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "Tirzepatide for the Treatment of Obstructive Sleep Apnea and Obesity (SURMOUNT-OSA). Malhotra A, et al. N Engl J Med 2024;391(13):1193-1205",
+        "publisher": "New England Journal of Medicine (PubMed record)",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38912654/"
+      },
+      {
+        "id": "S1-PMC",
+        "title": "Tirzepatide for the Treatment of Obstructive Sleep Apnea and Obesity (full text)",
+        "publisher": "PubMed Central",
+        "year": "2024",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11598664/"
+      },
+      {
+        "id": "S2",
+        "title": "ZEPBOUND (tirzepatide) Prescribing Information: Boxed Warning, Sections 1, 5 and 6",
+        "publisher": "Eli Lilly and Company / US FDA",
+        "year": "2026 (revised 28 Aug 2026)",
+        "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+      },
+      {
+        "id": "S3",
+        "title": "Longitudinal study of moderate weight change and sleep-disordered breathing. Peppard PE, et al. JAMA 2000;284(23):3015-3021",
+        "publisher": "JAMA (PubMed record)",
+        "year": "2000",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11122588/"
+      },
+      {
+        "id": "S4",
+        "title": "Obesity and obstructive sleep apnea: pathogenic mechanisms and therapeutic approaches. Schwartz AR, et al. Proc Am Thorac Soc 2008;5(2):185-192",
+        "publisher": "Proceedings of the American Thoracic Society (PMC2645252)",
+        "year": "2008",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2645252/"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.025,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 7.1,
+      "weakShots": 16,
+      "layoutIssues": 2,
+      "frameIssues": [],
+      "notes": [
+        "Mood is 'night' but the room is a bright daytime bedroom (sunny picture frame, blue sky window) instead of a dark night room",
+        "The sleeping hero is tiny (bed occupies under ~15% of frame height) for the opening feed-preview frame of a long video",
+        "Night mood still shown as a bright daytime room",
+        "Sleeping hero in bed is very small relative to the big stat headline above",
+        "Automated check: the 'Trial 2' tag box extends to y≈1094, below the 1000px safe line, so it is clipped at the bottom edge",
+        "Plan calls for two people sleeping in bed, but the frame shows only a single CPAP-mask mascot",
+        "Automated check: 'Group A'/'Group B' tags exist but are clipped off-screen (boxes extend to y≈1100), so viewers never see them",
+        "Mood is 'night' but the room is a bright daytime bedroom",
+        "Plan calls for a face-with-mask character plus a question mark, but the frame repeats the same CPAP-mask mascot with no question icon",
+        "Automated check: 'Group A'/'Group B' tags clipped off-screen again",
+        "Pharmacist character is small and centered on a flat empty gradient with no supporting scenery, reading as dead space",
+        "Uses the banned rounded green 'cabinet strip' kitchen backdrop and the banned hanging grey/orange ornament circles",
+        "Automated check: shot artwork covers only ~11% of the frame, reading as empty",
+        "Chips title lists 3 items (Adults, Obesity, Moderate–severe) but only 2 are visible on screen",
+        "Automated check: the 'With obesity' tag box runs to y≈1117, clipped below the 1000px safe line"
+      ],
+      "layoutKinds": {
+        "offscreen": 25,
+        "overlap": 1,
+        "tiny": 4,
+        "sparse": 8
+      },
+      "planPaceDraft": {
+        "changes": 331,
+        "perMin": 34.3,
+        "medianGap": 1.53,
+        "maxGap": 5.76,
+        "longGaps": [
+          [
+            173.93,
+            178.2
+          ],
+          [
+            419.14,
+            424.9
+          ],
+          [
+            527.26,
+            531.8
+          ]
+        ],
+        "withEngine": {
+          "medianGap": 1.43,
+          "maxGap": 4.6
+        },
+        "ok": false,
+        "detail": "plan pacing slow: 331 planned changes (34.3/min), median gap 1.53 s, longest 5.76 s, 3 stretch(es) over 4 s (limits: median 3 s, gap 4 s); with engine camera moves: median 1.43 s, longest 4.6 s"
+      },
+      "pacingRevised": 3,
+      "pacing": {
+        "window": 579.3,
+        "changes": 453,
+        "maxGap": 4.58,
+        "ok": false,
+        "detail": "453 visual changes in the whole 579 s, longest static stretch 4.58 s (limit 2.5 s)"
+      },
+      "planPace": {
+        "changes": 385,
+        "perMin": 39.9,
+        "medianGap": 1.3,
+        "maxGap": 3.92,
+        "longGaps": [],
+        "withEngine": {
+          "medianGap": 1.14,
+          "maxGap": 4.58
+        },
+        "ok": true,
+        "detail": "plan pacing ok: 385 planned changes (39.9/min), median gap 1.3 s, longest 3.92 s, 0 stretch(es) over 4 s (limits: median 3 s, gap 4 s); with engine camera moves: median 1.14 s, longest 4.58 s"
+      },
+      "frameZero": {
+        "texts": [
+          "Zepbound for sleep apnea?Tirzepatide in 2 year-long trials"
+        ],
+        "heroes": 1,
+        "heroHeight": 0.53,
+        "ok": true,
+        "detail": "frame 0: text \"Zepbound for sleep apnea?Tirzepatide in 2 year-long trials\", 1 character(s), tallest 53% of the height"
+      },
+      "renderPace": {
+        "duration": 579.2,
+        "visualChangesPerMin": 22.9,
+        "medianGap": 2.3,
+        "maxGap": 8.3,
+        "changesFirst30s": 10,
+        "hardCutsPerMin": 6.9,
+        "movingShare": 0.599,
+        "longestStill": 1.6
+      }
+    },
+    "audio": {
+      "musicGain": 0.343,
+      "sfxGain": 0.55,
+      "finalWer": 0.005,
+      "maskingDelta": 0.005,
+      "lufs": -15.2,
+      "soundNotes": "Music sits right at the top of the -12 to -15 dB window (-13.6 under voice, -14.8 in pauses) so only a small +0.4 dB nudge was applied to firm up the pauses without pushing the under-voice level past -12. The automatic cue kit is mostly well-tamed, but roughly 30 cues (mostly swoosh/whoosh/swell/pop/tick layers landing squarely on narration, e.g. i242, i338, i447, i633, i678-679, i710, i728-729) were measured well above the -14 dB speech ceiling (several at -4 to -10 dB) and have been pulled down toward about -16 to -17 dB so they're felt, not heard over words; a few borderline -11 to -13 dB pops (i35, i244, i250, i263, i314, i324, i407, i457, i467, i494, i501, i516, i554, i606, i617, i692, i702) were trimmed more moderately for the same reason. No in-pause or transition-accent cues needed boosting — those already sit comfortably in the -6 to -12 dB target. Added five bespoke, medically-safe accents (soft breathing texture on the cold open, a clipboard/page-turn for the doctor-visit beat, a clean monitor-style pulse on the AHI explainer, a hushed low string tone on the thyroid warning, and a gentle page-flip on the \"Meet Dan\" case-story beat) — none imitate injections, pills or medicine use."
+    },
+    "blocking": [],
+    "beats": {
+      "verdict": "pass",
+      "summary": "beat sync PASS: plan 73/73 beats on time, audio shift 0.02 s, render 85% of beats cut on time",
+      "planOff": 0,
+      "audioShift": 0.02,
+      "renderHitRate": 0.85,
+      "flagged": []
+    },
+    "thumbnail": {
+      "best_index": 0,
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": []
+        },
+        {
+          "index": 1,
+          "ctr": 6,
+          "legibility": 9,
+          "issues": [
+            "less emotionally engaging, generic number hook"
+          ]
+        },
+        {
+          "index": 2,
+          "ctr": 6,
+          "legibility": 8,
+          "issues": [
+            "drug name (tirzepatide/Zepbound) not shown in thumbnail subtext, only CPAP labels"
+          ]
+        }
+      ],
+      "reasoning": "All three keep the outcome hidden (no hard-cap violations on giving the answer). #0 ('FEWER BREATHING PAUSES?') pairs a concrete, felt symptom with a visible question mark and a smiling-but-curious face that doesn't clash with the question tone; subtext clearly names tirzepatide (Zepbound), satisfying the drug-naming rule. It has the strongest single focal point (face + headline) and the clearest curiosity gap tied directly to the title's 'does it work?' promise. #1 ('2 TRIALS') is credible and legible but less emotionally gripping — a bare number is a weaker hook than a specific symptom question, and the moon-character focal point is less relatable than a human face. #2 ('SAME RESULT?') has a nice split-comparison layout but fails the house rule to name the drug in the thumbnail subtext (only CPAP status is labeled, no mention of tirzepatide/Zepbound), which is a concrete packaging defect per the craft notes. All three are legible at phone size with no cut-off text. Best pick: #0 for highest combined CTR and full compliance."
+    },
+    "packaging": {
+      "verdict": "PASS",
+      "issues": [
+        {
+          "location": "Description (length: whole field)",
+          "claim": "Description as written (~1,255 characters by hand count, including the line breaks and the Unicode minus signs)",
+          "problem": "It is at or just over the 1,250-character limit for long-form descriptions, so it risks being cut off. Being cut off has caused a hold and REVISEs before.",
+          "severity": "minor",
+          "fix": "In the Sources section, replace \"Malhotra A, et al. N Engl J Med 2024 (SURMOUNT-OSA): https://pubmed.ncbi.nlm.nih.gov/38912654/\" with \"Malhotra A, et al. N Engl J Med 2024: https://pubmed.ncbi.nlm.nih.gov/38912654/\" (SURMOUNT-OSA is already named in the quick answer). Then replace \"The trials enrolled different people, so they aren't a head-to-head comparison.\" with \"The trials enrolled different people, so they aren't head-to-head.\" Re-count to make sure the field is 1,250 characters or fewer."
+        },
+        {
+          "location": "Description (quick-answer paragraph, last sentence)",
+          "claim": "Low blood sugar is more likely with insulin or a sulfonylurea.",
+          "problem": "It drops the second half of the low blood sugar scope that the verified script gives (s-Side effects: \"the label also reports it in adults without type two diabetes\").",
+          "severity": "minor",
+          "fix": "Replace with: \"Low blood sugar is more likely with insulin or a sulfonylurea, and is also reported in adults without type 2 diabetes.\" Make the two trims above first so the field stays at 1,250 characters or fewer, and re-count."
+        }
+      ]
+    }
+  },
+  "hold_reason": "Quality check: narration doesn't match script in 1 scene(s): expected \"why's\" heard \"why is\"",
+  "release_tag": "content-2026-11-22",
+  "archive_url": "b2://informed-lab-media/content/2026-11-22/L2-tirzepatide-zepbound-for-obstructive-sle/",
+  "approved_by": "editor-in-chief (low risk): The hold is only a transcription quirk: the voice said \"why is\" where the script has \"why's\". The meaning is the same and the final WER is 0.005. The fact-check and packaging checks both passed: SURMOUNT-OSA numbers, populations and safety lines are verified, masking is 0.005 and the video runs 9.7 min. Nine minor notes stay open (four on-screen wording, two in the description, three on the sources). The ones worth a quick fix are the description, which is about 1,255"
+}
