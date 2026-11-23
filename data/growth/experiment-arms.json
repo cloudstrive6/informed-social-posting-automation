@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22",
+  "generated": "2026-11-23",
   "note": "YouTube Shorts with an experiments field. views_d3/d7 come from the daily snapshot closest to that age (within 1 day); medians skip missing values, n_* say how many were available. Hold is reported per curve age (_d3 from the day-3 curve, _d7 from the day-7 curve, never mixed) with its own n (n_hold_d3, n_hold_d7); compare arms on the same age. fb_views are the same Shorts' Facebook Reel plays (from 2026-11-17, when Facebook insights started).",
   "tables": {
     "hook-archetype": {

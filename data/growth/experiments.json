@@ -2,47 +2,56 @@
   {
     "name": "Exp E: State-change thumbnail (What to Eat, plus Strength as a second test)",
     "hypothesis": "Our two most-shown practical videos have a packaging problem, not a discovery problem. A state-change thumbnail of 4 words or fewer that keeps the question lifts CTR toward 3.8–4.7%.",
-    "change": "Only the thumbnail changes, with no body imagery. What to Eat was swapped around 11-04 and Strength on 11-10. No other edits to either video until 11-24, including description links and end screens.",
-    "metric": "CTR on impressions after the swap vs CTR just before it (What to Eat about 1.9%, Strength about 0.6%), with views per day not falling. Success: 3.0%+ on both.",
+    "change": "Only the thumbnail changes, with no body imagery. What to Eat was swapped around 11-04 and Strength on 11-10. No other edits to either video until 11-24.",
+    "metric": "CTR on impressions after the swap vs CTR just before it (What to Eat about 1.9%, Strength about 0.6%), with views per day not falling. Success: 3.0% or more on both.",
     "min_sample": "1,000 new impressions or 14 days per video, whichever comes later (read on 11-24)",
     "status": "running",
-    "result": "Not readable yet. What to Eat moved only from about 790 to 797 lifetime minutes this week. Strength is still earning a little. Read on 11-24 against the before-swap rate, not the overall average."
+    "result": "Read tomorrow (11-24). Lifetime CTR has risen to 3.24% (What to Eat) and 2.59% (Strength), from about 1.9% and 0.6% before the swaps. That points to a lift, but these figures include the weeks before the swap, so read the after-swap window only. If both pass 3.0% after the swap, keep the thumbnails and add the line-1 links. Lifetime minutes: What to Eat 1,054, Strength 735 (+31 since 11-21)."
   },
   {
     "name": "Exp F: A benefit-framed subscribe line in Shorts",
     "hypothesis": "One honest line that names the channel's promise will at least double how often Shorts viewers subscribe.",
-    "change": "The 08:00 and 13:00 Shorts ended with 'We answer one tirzepatide question from the research every day. Subscribe if that helps.' The 20:00 Shorts were the control.",
-    "metric": "Subscribers per 1,000 views at day 7, line vs control, and channel subscribers per day vs the 1.3-a-day baseline. Success: 2× the control and 2.5+ a day.",
+    "change": "The 08:00 and 13:00 Shorts ended with a subscribe line; the 20:00 Shorts were the control (11-03 to 11-17).",
+    "metric": "Subscribers per 1,000 views at day 7, line vs control; channel subscribers per day vs the 1.3-a-day baseline.",
     "min_sample": "14 days (11-03 to 11-17)",
     "status": "lost",
-    "result": "Lost. Channel subscribers went from 382 (11-03) to 386 (11-16): about 0.3 a day, against a 1.3 baseline and a 2.5 target. Every Short with per-Short data shows 0 subscribers, with or without the line. The last day can't change the result. This is confounded by Shorts views falling to about half the baseline, but nothing points to a lift. The line comes out from 11-17, when the owner's new Shorts ending takes over."
+    "result": "Lost. Subscribers went from 382 to 386 in 14 days (about 0.3 a day against a 2.5 target), and every Short with data showed 0 subscribers. The line came out on 11-17. With the line gone, subscribers rose 8 in the last 7 days, almost all from long-form."
   },
   {
     "name": "Exp G: Studio related-video link on top Shorts",
-    "hypothesis": "The related-video link is the only clickable path from a Short. Setting it on our best body and pen Shorts, aimed at the long video on the same topic, will create Shorts traffic to long videos that converts to subscribers.",
-    "change": "The owner sets one related-video link per Short, with targets matched by topic:\n- hair grow-back (1,025) and hair in women (119) → Hair Loss\n- injection site (254), injection sites (202), pen blood (111) and pen out of the fridge (11-15) → Pen how-to\n- nausea (190) → Side Effects\n- bones (249) → Bones & Muscle\n- breakfast (134) → What to Eat\n- Thanksgiving (11-06) → Thanksgiving\nNo other change to these Shorts.",
-    "metric": "Views and minutes from Shorts on each target long video in the 7 days after the link is set, vs 0 before. Success: at least 1 long-video view per 100 new Short views across the set, plus a visible rise in channel subscribers.",
+    "hypothesis": "The related-video link is the only clickable path from a Short. Setting it on our best body, pen and drug Shorts, aimed at the matching long video, will create Shorts traffic to long videos that converts to subscribers.",
+    "change": "The owner sets one related-video link per Short:\n- hair grow-back and hair in women → Hair Loss\n- injection site, injection sites, pen blood, bruise, pen dropped → Pen how-to\n- nausea and stomach pain → Side Effects\n- full the morning after → Thanksgiving\n- Foundayo nausea → Foundayo (LWyUfli67CI)\nNo other change to these Shorts.",
+    "metric": "Views and minutes from SHORTS on each target long video in the 7 days after the links are set, vs 0 before. Success: at least 1 long-video view per 100 new Short views across the set.",
     "min_sample": "8 linked Shorts, 7 days after the links are set",
     "status": "running",
-    "result": "Not started. The links still aren't set after 7 days, and views from Shorts are still 0 on every long video. The targets were updated now that the Hair Loss and Pen long videos are live; the test starts the day the owner sets the links."
+    "result": "Still not started after 14 days. The owner needs the channel's Google account signed in to Chrome. Views from SHORTS are still 0 on all ≈37 long videos. The targets now include Foundayo nausea (834 views) and full the morning after (513). The test starts the day the links are set."
   },
   {
     "name": "Exp H: Second payoff at 15–30 s in long-form scripts",
-    "hypothesis": "The biggest drop comes at 12–35 s (14 of 19 curves), right after the first answer. A second concrete payoff (a number or the first step) at 15–30 s, with an open loop of one sentence at most, lifts the 30-second hold and the midpoint hold.",
-    "change": "Every long video from the 11-11 Pen video onward uses this structure. Nothing else in the script template changes.",
-    "metric": "Day-7 median hold at 30 s and median relative hold at the midpoint, vs the n=19 baseline (30-second hold about 77%, midpoint 43.6). Success: 30-second hold of 82%+ and midpoint of 48+.",
+    "hypothesis": "The biggest drop comes at 12–35 s, right after the first answer. A second concrete payoff (a number or the first step) at 15–30 s, with an open loop of one sentence at most, lifts the 30-second hold and the midpoint hold.",
+    "change": "Every long video from 11-11 on uses this structure. Since 11-22 it also follows the analyst's rules: no \"Short answer.\" label and no standalone \"Picture this\" scene.",
+    "metric": "Day-7 median hold at 30 s and median relative hold at the midpoint, vs the baseline (30-second hold about 77%, midpoint about 44). Success: 30-second hold of 82% or more and a midpoint of 48 or more.",
     "min_sample": "6 long videos built this way, at day 7",
     "status": "running",
-    "result": "Started on 11-11. Pen is read on 11-18 and Alcohol on 11-19. Early anecdote: average view percentage of 63% for Pen and 67% for Alcohol at days 3–4, against a long-form norm of about 45%. Too few and too early to judge."
+    "result": "n=2 of 6. Alcohol held 94.5% at 30 s; First Month held 66.7%, losing 23 points at 14 s on a \"Short answer.\" opener. Curves for How It Works, Keeping Results, Months 2–6, Nausea Foods and Mounjaro vs Zepbound are due over the next few days, so the readout should be possible by about 11-28. Too early to judge."
+  },
+  {
+    "name": "Exp I: Fast-turn long video on a fresh, searched drug name",
+    "hypothesis": "New long videos stall at about 100 impressions because nothing new is being searched. A long video published within 48 h of a fresh randomized result naming a drug people search for gets at least 3× the impressions and minutes of a same-age Lane A video (the EloraTZP and Foundayo pattern).",
+    "change": "When the radar finds a fresh randomized result for a searched drug name, it takes the next long slot within 48 h, titled on the result with the drug first (no \"What is X?\" for unapproved drugs). Nothing else in the format changes.",
+    "metric": "Impressions, YT_SEARCH views and minutes at day 7 and day 14, vs the median of Lane A videos from 11-13 to 11-22 at the same age (about 100–140 impressions and about 40 minutes at days 4–8).",
+    "min_sample": "4 fast-turn long videos, or until 2026-12-14 (inconclusive if fewer than 4 qualifying results appear)",
+    "status": "running",
+    "result": "Starts 2026-11-23. Earlier anecdotes and signals: EloraTZP 5,255 minutes and 10,135 impressions; Foundayo 536; Petrelintide 320 on 472 impressions at 6.6% CTR; Survodutide 198; CagriSema 117."
   },
   {
     "name": "short-length (owner): tight vs standard Shorts",
     "hypothesis": "Tighter Shorts (90–120 words, 40–55 s) earn more views and a higher average view percentage than standard ones (135–160 words, 65–80 s).",
     "change": "Each Short's task sets `tight` or `standard`, alternating by slot and day, from 11-12 to 11-26.",
     "metric": "Median views and average view percentage per arm at day 7.",
-    "min_sample": "All Shorts from 11-12 to 11-26 (about 20 per arm), each at day 7",
+    "min_sample": "All Shorts from 11-12 to 11-26, each at day 7",
     "status": "running",
-    "result": "No read until 11-26. Record the winner in the playbook then."
+    "result": "Readout on 11-26; no winner yet. So far at day 7: standard median 44 views (n=7) vs tight 41.5 (n=6). Average view percentage 52.1% vs 42.6%. 15-second hold 68.8% (n=5) vs 70.6% (n=3). On 11-26 only Shorts posted up to about 11-19 will have day-7 data. Report the result with its n, and confirm on 12-03 if the arms are within 10%."
   },
   {
     "name": "hook-archetype (owner): opening style for Shorts",
@@ -51,15 +60,15 @@
     "metric": "Median views and average view percentage per style at day 7.",
     "min_sample": "n≥8 per style",
     "status": "running",
-    "result": "No style has n≥8 yet. Don't read it."
+    "result": "Don't read yet. Each style has n=5–7, and only 1–3 per style have day-7 views. Day-7 medians: myth-flip 112.5 (n=2), recognition 44 (n=3), result-first 42 (n=3), number-first 35 (n=3), negation 34.5 (n=2). Topic confounds every one of them."
   },
   {
     "name": "Search-demand long videos vs Lane A (owner)",
     "hypothesis": "Device how-to, what-to-expect, label-change and approved-drug head-to-head long videos bring more search views and minutes than Lane A videos of the same age.",
-    "change": "2–3 of the week's long videos are search-demand videos, starting with Pen (11-11) and First Month (11-13). This week: Mounjaro vs Zepbound, Foundayo What to Expect, Zepbound Vial vs Pen.",
+    "change": "2–3 of the week's long videos are search-demand videos. So far: Pen (11-11), First Month (11-13), Mounjaro vs Zepbound (11-18), Zepbound vs Wegovy (11-21), Sleep Apnea (11-22). Next: Foundayo, Mounjaro vs Ozempic, Vial vs Pen.",
     "metric": "Minutes and search views at day 14, matched by age.",
     "min_sample": "n≥4 per arm at day 14",
     "status": "running",
-    "result": "Too early. Anecdote: Pen had 22 min on 17 views at day 4, and 8 of its 12 non-subscriber views came from search. Search pulls in viewers, but the volume is small so far. First readouts: Pen on 11-25, First Month on 11-27."
+    "result": "Too early. First readouts: Pen on 11-25, First Month on 11-27. Anecdotes: Pen has 33 minutes and 14 of its 25 views came from search. First Month has 62 minutes at 7.3% CTR but only 124 impressions."
   }
 ]
