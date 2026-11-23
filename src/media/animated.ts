@@ -954,7 +954,7 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#12072e}
 .punch{position:absolute;inset:0}
 .el{position:absolute}
 .el .par,.el .spin{width:100%;height:100%}
-.elabel{position:absolute;left:50%;top:100%;transform:translateX(-50%);margin-top:10px;white-space:nowrap;font-weight:800;color:#fff;-webkit-text-stroke:7px rgba(20,10,45,.92);paint-order:stroke fill;text-shadow:0 3px 8px rgba(0,0,0,.35)}
+.elabel{position:absolute;left:50%;top:100%;transform:translateX(-50%);margin-top:10px;white-space:nowrap;font-weight:800;color:#fff;-webkit-text-stroke:7px rgba(20,10,45,.92);paint-order:stroke fill;text-shadow:0 4px 12px rgba(0,0,0,.6),0 2px 3px rgba(0,0,0,.45)}
 .label{position:absolute;display:flex;align-items:center;gap:16px;font-weight:800;white-space:nowrap;color:#fff;background:#e8338f;padding:12px 30px 12px 14px;border-radius:50px;box-shadow:0 8px 30px rgba(0,0,0,.35);transform-origin:left center}
 .label .ldot{width:44px;height:44px;border-radius:50%;background:${config.brand.gradient};border:4px solid #fff}
 .headline{position:absolute;left:6%;right:6%;text-align:center;font-weight:900;color:#fff;line-height:1.02;text-wrap:balance;text-shadow:0 10px 40px rgba(0,0,0,.45)}
@@ -966,7 +966,7 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#12072e}
 .stat .sl{font-weight:800;margin-top:10px;text-wrap:balance;padding:0 6%}
 .chips{position:absolute;left:0;right:0;display:flex;justify-content:center;gap:18px}
 .chip{font-weight:800;color:#fff;background:#5b2a86;border:4px solid #ff79c6;padding:12px 28px;border-radius:14px;white-space:nowrap}
-.cap{position:absolute;left:8%;right:8%;width:fit-content;margin:0 auto;text-wrap:balance;text-align:center;font-weight:900;line-height:1.12;color:#fff;text-transform:uppercase;-webkit-text-stroke:7px rgba(20,10,45,.92);paint-order:stroke fill;text-shadow:0 3px 8px rgba(0,0,0,.35);z-index:900}
+.cap{position:absolute;left:8%;right:8%;width:fit-content;margin:0 auto;text-wrap:balance;text-align:center;font-weight:900;line-height:1.12;color:#fff;text-transform:uppercase;-webkit-text-stroke:7px rgba(20,10,45,.92);paint-order:stroke fill;text-shadow:0 4px 12px rgba(0,0,0,.6),0 2px 3px rgba(0,0,0,.45);z-index:900}
 .logo{position:absolute}
 .scene .headline{padding:20px 30px 26px;background:rgba(255,253,245,.92);border:5px solid #1d1440;border-radius:36px;box-shadow:0 10px 0 rgba(29,20,64,.18)}
 .scene .stat{left:6%;right:6%;padding:18px 20px 26px;background:rgba(255,253,245,.92);border:5px solid #1d1440;border-radius:40px;box-shadow:0 10px 0 rgba(29,20,64,.18)}
