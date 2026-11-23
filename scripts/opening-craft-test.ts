@@ -15,7 +15,7 @@ import { copyFileSync, existsSync, readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { chromium } from "playwright";
-import { composeAnimated, PACING, SHORTS_SAFE, timeShots } from "../src/media/animated.js";
+import { CAP_BOTTOM_V, composeAnimated, PACING, SHORTS_SAFE, timeShots } from "../src/media/animated.js";
 import { ffmpeg } from "../src/media/exec.js";
 import { renderComposition } from "../src/media/render.js";
 import type { Timeline } from "../src/media/tts.js";
@@ -59,7 +59,8 @@ const page = await browser.newPage({ viewport: { width: W, height: H } });
 await page.addInitScript("window.__name = (f) => f");
 await page.goto(pathToFileURL(join(project, "index.html")).href, { waitUntil: "load" });
 await page.waitForFunction(() => !!(window as any).__timelines?.main, null, { timeout: 30_000 });
-const sample = await page.evaluate(([D, safe, vertical]) => {
+// captions may sit lower than titles: down to CAP_BOTTOM_V, just above the platform's title overlay (owner, 2026-11-24)
+const sample = await page.evaluate(([D, safe, vertical, capLimit]) => {
   const vis = (el: Element) => {
     let e: Element | null = el, op = 1;
     while (e && e !== document.body) { const cs = getComputedStyle(e); if (cs.visibility === "hidden" || cs.display === "none") return 0; op *= +cs.opacity; e = e.parentElement; }
@@ -79,7 +80,7 @@ const sample = await page.evaluate(([D, safe, vertical]) => {
     for (const el of [...document.querySelectorAll<HTMLElement>(".stat")].filter(el => vis(el) > 0.3)) {
       let x = 0, y = 0, e: HTMLElement | null = el;
       while (e && e.id !== "root") { x += e.offsetLeft; y += e.offsetTop; e = e.offsetParent as HTMLElement | null; }
-      if (vertical && (x < safe.left - 1 || x + el.offsetWidth > safe.right + 1 || y < safe.top - 1 || y + el.offsetHeight > 1170)) statBad.push({ t: +t.toFixed(1), box: [x, y, x + el.offsetWidth, y + el.offsetHeight] });
+      if (vertical && (x < safe.left - 1 || x + el.offsetWidth > safe.right + 1 || y < safe.top - 1 || y + el.offsetHeight > capLimit - 180)) statBad.push({ t: +t.toFixed(1), box: [x, y, x + el.offsetWidth, y + el.offsetHeight] });
     }
     const caps = [...document.querySelectorAll(".cap")].filter(el => vis(el) > 0.3);
     if (titles.length && caps.length) both.push(+t.toFixed(1));
@@ -89,7 +90,7 @@ const sample = await page.evaluate(([D, safe, vertical]) => {
       const o = el.offsetParent!.getBoundingClientRect();
       const r = { left: o.left + el.offsetLeft, top: o.top + el.offsetTop, right: o.left + el.offsetLeft + el.offsetWidth, bottom: o.top + el.offsetTop + el.offsetHeight };
       capBottom = Math.max(capBottom, r.bottom); capRight = Math.max(capRight, r.right); capLeft = Math.min(capLeft, r.left); capTop = Math.min(capTop, r.top);
-      if (vertical && (r.left < safe.left - 1 || r.right > safe.right + 1 || r.top < safe.top - 1 || r.bottom > safe.bottom + 1)) unsafe.push({ t: +t.toFixed(1), text: (el.textContent ?? "").slice(0, 30), box: [r.left, r.top, r.right, r.bottom].map(Math.round) });
+      if (vertical && (r.left < safe.left - 1 || r.right > safe.right + 1 || r.top < safe.top - 1 || r.bottom > capLimit + 1)) unsafe.push({ t: +t.toFixed(1), text: (el.textContent ?? "").slice(0, 30), box: [r.left, r.top, r.right, r.bottom].map(Math.round) });
     }
     if (t < 30) {
       const hs = [...document.querySelectorAll(".el")].filter(el => vis(el) > 0.9).map(el => el.getBoundingClientRect().height / innerHeight);
@@ -97,7 +98,7 @@ const sample = await page.evaluate(([D, safe, vertical]) => {
     }
   }
   return { both, statBad, unsafe, captionBox: [capLeft, capTop, capRight, capBottom].map(Math.round), hero };
-}, [tl.duration, SHORTS_SAFE, vertical] as const);
+}, [tl.duration, SHORTS_SAFE, vertical, CAP_BOTTOM_V] as const);
 await browser.close();
 
 // per shot starting in the first 30 s: the tallest fully visible element at its best moment (after entrances)

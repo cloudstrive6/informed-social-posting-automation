@@ -9,7 +9,7 @@ import { config, ROOT } from "../lib/config.js";
 import { ensureDir, writeText } from "../lib/fsx.js";
 import { esc } from "../lib/html.js";
 import { installBrandAssets } from "./fonts.js";
-import { subtitleWords } from "./captions.js";
+import { type AlignStats, subtitleWords } from "./captions.js";
 import { Timeline, Word } from "./tts.js";
 
 /** `narration` = written script, `spoken` = what the narrator actually said (captions follow the voice). */
@@ -478,7 +478,7 @@ function shotHtml(c: Ctx, shot: TimedShot, index: number): string {
     // a swarm's copies scatter `spread` up and down and are drawn up to 1.3x (people at least 14%), so the whole crowd
     // must fit below the band, not just its centre (2026-11-18: a crowd covered the "478" stat's caption)
     if (Math.round(e.count) > 1) {
-      const floor = c.vertical ? 78 : 97; // a Short's bottom ~22% is the caption zone: no crowd there
+      const floor = c.vertical ? 70 : 97; // a Short's captions sit from ~70% down (owner, 2026-11-24): no crowd behind them
       const room = floor - bandBottom - 2;
       const size = Math.min(e.size, room / 1.3);
       const reach = (Math.max(e.type === "person" ? 14 : 4, size) * 1.3) / 2;
@@ -954,7 +954,7 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#12072e}
 .punch{position:absolute;inset:0}
 .el{position:absolute}
 .el .par,.el .spin{width:100%;height:100%}
-.elabel{position:absolute;left:50%;top:100%;transform:translateX(-50%);margin-top:10px;white-space:nowrap;font-weight:800;color:#fff;background:rgba(20,10,45,.75);padding:6px 16px;border-radius:30px}
+.elabel{position:absolute;left:50%;top:100%;transform:translateX(-50%);margin-top:10px;white-space:nowrap;font-weight:800;color:#fff;-webkit-text-stroke:7px rgba(20,10,45,.92);paint-order:stroke fill;text-shadow:0 3px 8px rgba(0,0,0,.35)}
 .label{position:absolute;display:flex;align-items:center;gap:16px;font-weight:800;white-space:nowrap;color:#fff;background:#e8338f;padding:12px 30px 12px 14px;border-radius:50px;box-shadow:0 8px 30px rgba(0,0,0,.35);transform-origin:left center}
 .label .ldot{width:44px;height:44px;border-radius:50%;background:${config.brand.gradient};border:4px solid #fff}
 .headline{position:absolute;left:6%;right:6%;text-align:center;font-weight:900;color:#fff;line-height:1.02;text-wrap:balance;text-shadow:0 10px 40px rgba(0,0,0,.45)}
@@ -966,7 +966,7 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#12072e}
 .stat .sl{font-weight:800;margin-top:10px;text-wrap:balance;padding:0 6%}
 .chips{position:absolute;left:0;right:0;display:flex;justify-content:center;gap:18px}
 .chip{font-weight:800;color:#fff;background:#5b2a86;border:4px solid #ff79c6;padding:12px 28px;border-radius:14px;white-space:nowrap}
-.cap{position:absolute;left:8%;right:8%;width:fit-content;margin:0 auto;padding:6px 26px 10px;border-radius:22px;background:rgba(18,10,40,.88);text-wrap:balance;text-align:center;font-weight:900;color:#fff;text-transform:uppercase;-webkit-text-stroke:3px #1b1030;paint-order:stroke fill;text-shadow:0 8px 24px rgba(0,0,0,.6);z-index:900}
+.cap{position:absolute;left:8%;right:8%;width:fit-content;margin:0 auto;text-wrap:balance;text-align:center;font-weight:900;line-height:1.12;color:#fff;text-transform:uppercase;-webkit-text-stroke:7px rgba(20,10,45,.92);paint-order:stroke fill;text-shadow:0 3px 8px rgba(0,0,0,.35);z-index:900}
 .logo{position:absolute}
 .scene .headline{padding:20px 30px 26px;background:rgba(255,253,245,.92);border:5px solid #1d1440;border-radius:36px;box-shadow:0 10px 0 rgba(29,20,64,.18)}
 .scene .stat{left:6%;right:6%;padding:18px 20px 26px;background:rgba(255,253,245,.92);border:5px solid #1d1440;border-radius:40px;box-shadow:0 10px 0 rgba(29,20,64,.18)}
@@ -980,8 +980,11 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#12072e}
 ${DOODLE_CSS}${vertical ? "" : `\n${LONG_CSS}`}`;
 }
 
-/** Shorts caption top (px on 1920): a 3-line caption at the largest size still ends above SHORTS_SAFE.bottom. */
-const CAP_TOP_V = 1170;
+/** Shorts caption bottom (px on 1920). Owner, 2026-11-24: captions lower (they covered the pictures), just above
+ *  the channel name and title YouTube draws at the bottom; the caption grows upward from here (3 lines end near 1350). */
+export const CAP_BOTTOM_V = 1530;
+/** Captions show a beat before the word: text a little early reads as in sync, a little late reads as out of sync. */
+export const CAPTION_LEAD = 0.08;
 
 /** The part of [s, e] outside every title window (the longer side when a window sits inside it), or null if < 0.35 s. */
 export function outsideTitles(s: number, e: number, wins: [number, number][]): [number, number] | null {
@@ -997,7 +1000,9 @@ export function outsideTitles(s: number, e: number, wins: [number, number][]): [
   return e - s >= 0.35 ? [s, e] : null;
 }
 
-export interface CaptionCoverage { words: number; captioned: number; wordShare: number; speechSeconds: number; timeShare: number }
+export interface CaptionCoverage { words: number; captioned: number; wordShare: number; speechSeconds: number; timeShare: number;
+  /** share of caption words timed from a heard word, and the longest stretch placed by guesswork (seconds) */
+  timedShare: number; longestGuess: number }
 
 /** Union length of intervals. */
 const unionLen = (iv: [number, number][]) => {
@@ -1013,12 +1018,14 @@ const unionLen = (iv: [number, number][]) => {
 function captions(c: Ctx, scenes: CaptionScene[], tl: Timeline): CaptionCoverage {
   const byId = new Map(tl.scenes.map(s => [s.id, s]));
   let firstGroup = true;
-  let nWords = 0, captioned = 0;
+  let nWords = 0, captioned = 0, lastEnd = 0;
+  const align: AlignStats = { tokens: 0, timed: 0, guessedSeconds: 0 };
   const speech: [number, number][] = [], shown: [number, number][] = [];
+  const all: Word[][] = [];
   for (const sc of scenes) {
     const t = byId.get(sc.id);
     if (!t) continue;
-    const words = subtitleWords(sc.narration, sc.spoken ?? sc.narration, t.words);
+    const words = subtitleWords(sc.narration, sc.spoken ?? sc.narration, t.words, align);
     const groups: Word[][] = [];
     let cur: Word[] = [];
     const weak = /^(the|a|an|of|to|and|or|but|in|on|at|for|with|your|our|their|its|is|are|was|that|this|by|from|as|than)$/i;
@@ -1036,8 +1043,15 @@ function captions(c: Ctx, scenes: CaptionScene[], tl: Timeline): CaptionCoverage
         groups.splice(i--, 1);
       }
     }
-    for (const g of groups) {
-      let s = g[0].start, e = Math.max(g[g.length - 1].end, s + 0.3);
+    all.push(...groups);
+  }
+  // each caption shows a beat early (CAPTION_LEAD) and makes way for the next one, so the lead also holds when the
+  // words run on without a pause
+  all.forEach((g, gi) => {
+    {
+      const next = all[gi + 1]?.[0].start;
+      let s = Math.max(lastEnd, g[0].start - CAPTION_LEAD), e = Math.max(g[g.length - 1].end, s + 0.3);
+      if (next !== undefined && next - CAPTION_LEAD > s + 0.15) e = Math.min(e, next - CAPTION_LEAD);
       nWords += g.length;
       g.forEach(w => speech.push([w.start, Math.max(w.end, w.start + 0.05)]));
       // frame 0: when no title carries the hook, the opening caption is up from t = 0 (no pop), even if the first
@@ -1047,26 +1061,31 @@ function captions(c: Ctx, scenes: CaptionScene[], tl: Timeline): CaptionCoverage
       if (opening) s = 0;
       // one text block at a time: no caption during the opening title
       const span = outsideTitles(s, e, c.textWin);
-      if (!span) continue;
+      if (!span) return;
       [s, e] = span;
       captioned += g.length;
       shown.push([s, e]);
+      lastEnd = e;
       const base = uid(c, "cp");
-      // Shorts: fixed top inside the safe zone; long lines get a smaller size so 3 lines still end above y 1500.
-      // Sizes cut about 20% from 80/72/64 (owner, 2026-11-16: captions read too big on Reels and Shorts)
+      // Shorts: anchored at the bottom, just above the platform's title overlay; long lines get a smaller size.
+      // Sizes: 80/72/64, then 64/58/52 (owner, 2026-11-16), then 52/48/44 (owner, 2026-11-24: smaller and lower)
       const chars = g.reduce((a, w) => a + w.text.length + 1, 0);
-      const style = c.vertical ? `top:${CAP_TOP_V}px;font-size:${chars <= 26 ? 64 : chars <= 40 ? 58 : 52}px` : "top:64%;font-size:86px";
+      const style = c.vertical ? `bottom:${c.H - CAP_BOTTOM_V}px;font-size:${chars <= 26 ? 52 : chars <= 40 ? 48 : 44}px` : "top:64%;font-size:86px";
       c.els.push(`<div class="clip" data-start="${f3(s)}" data-duration="${f3(e - s)}" style="z-index:900"><div id="${base}" class="cap" style="${style}">${g.map((w, k) => `<span id="${base}_${k}">${esc(w.text)}</span>`).join(" ")}</div></div>`);
       if (!opening) c.anims.push(`tl.fromTo("#${base}",{scale:0.8,opacity:0},{scale:1,opacity:1,duration:0.12,ease:"back.out(2)"},${f3(s)});`);
-      g.forEach((w, k) => c.anims.push(`tl.set("#${base}_${k}",{color:"${config.brand.colors.highlight}"},${f3(w.start)});tl.set("#${base}_${k}",{color:"#ffffff"},${f3(w.end + 0.02)});`));
+      // one word lit at a time: each goes back to white when the next one lights
+      const lit = g.map(w => Math.max(s, w.start - CAPTION_LEAD));
+      for (let k = 1; k < lit.length; k++) lit[k] = Math.max(lit[k], lit[k - 1] + 0.05);
+      g.forEach((w, k) => c.anims.push(`tl.set("#${base}_${k}",{color:"${config.brand.colors.highlight}"},${f3(lit[k])});tl.set("#${base}_${k}",{color:"#ffffff"},${f3(Math.max(lit[k] + 0.05, Math.min(w.end + 0.02, lit[k + 1] ?? Infinity)))});`));
     }
-  }
+  });
   // coverage: share of spoken words ever captioned, share of speech time with a caption on screen
   const speechSeconds = unionLen(speech);
   const overlap = unionLen(speech) + unionLen(shown) - unionLen([...speech, ...shown]);
   return {
     words: nWords, captioned, wordShare: nWords ? +(captioned / nWords).toFixed(3) : 1,
     speechSeconds: +speechSeconds.toFixed(2), timeShare: speechSeconds ? +(overlap / speechSeconds).toFixed(3) : 1,
+    timedShare: align.tokens ? +(align.timed / align.tokens).toFixed(3) : 1, longestGuess: +align.guessedSeconds.toFixed(2),
   };
 }
 

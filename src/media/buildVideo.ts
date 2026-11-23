@@ -120,7 +120,9 @@ export async function buildVideo(v: BuildVideoInput): Promise<{ video: string; q
     }
     if (coverage) {
       qa.visual.captionCoverage = coverage;
-      log.info(`captions: ${coverage.captioned}/${coverage.words} spoken words captioned (${Math.round(coverage.wordShare * 100)}%), ${Math.round(coverage.timeShare * 100)}% of speech time`);
+      log.info(`captions: ${coverage.captioned}/${coverage.words} spoken words captioned (${Math.round(coverage.wordShare * 100)}%), ${Math.round(coverage.timeShare * 100)}% of speech time; ${Math.round(coverage.timedShare * 100)}% timed from a heard word, longest guessed stretch ${coverage.longestGuess} s`);
+      // caption sync (owner, 2026-11-24): words placed by guesswork drift from the voice
+      if (coverage.timedShare < 0.9 || coverage.longestGuess > 1.2) log.warn(`caption timing is partly guessed (${Math.round(coverage.timedShare * 100)}% timed from the voice, longest guess ${coverage.longestGuess} s): check the subtitles against the voice`);
     }
     try {
       qa.visual.frameZero = await frameZeroAudit(project, W, H);
