@@ -6,5 +6,23 @@
   "tries": {
     "d7": 3
   },
-  "milestones": {}
+  "milestones": {
+    "d7": {
+      "captured_at": "2026-11-25T20:36:18.181Z",
+      "window": [
+        "2026-11-13",
+        "2026-11-20"
+      ],
+      "curve_pct": [],
+      "relative_pct": [],
+      "hold_pct": {
+        "s5": null,
+        "s15": null,
+        "s30": null,
+        "s60": null
+      },
+      "biggest_drop": null,
+      "empty": true
+    }
+  }
 }
