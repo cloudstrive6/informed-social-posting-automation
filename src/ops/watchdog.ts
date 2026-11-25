@@ -346,17 +346,24 @@ async function checkLongVideo(once: Once, escalate: Escalate, notify: Notify) {
     // production (or a replacement) still running for this date: its long video may still arrive
     if (busy && (runs.some(r => r.status !== "completed" && r.displayTitle.includes(D)) || runs.some(r => r.status !== "completed" && !r.displayTitle.startsWith("Replacement")))) continue;
     if (!longs.length) continue; // nothing produced yet: the production checks handle that
-    const tries = runs.filter(r => r.displayTitle === `Replacement long video ${D}`).length;
+    const replacements = runs.filter(r => r.displayTitle === `Replacement long video ${D}`);
+    // a replacement that failed only because Claude was unavailable doesn't use up a try; wait an hour before the next
+    const claudeStopped = replacements.filter(r => {
+      if (!isFailed(r)) return false;
+      try { return isClaudeDownLog(gh(["run", "view", String(r.databaseId), "--log-failed"]).split("\n").slice(-200).join("\n")); } catch { return false; }
+    });
+    if (claudeStopped.some(r => Date.now() - Date.parse(r.updatedAt) < H)) { claudeDown = true; continue; }
+    const tries = replacements.length - claudeStopped.length;
     const why = longs.map(i => `${i.id}: ${(i.hold_reason ?? i.status).slice(0, 300)}`).join("\n");
     if (tries >= 3) {
       await escalate(`long-missing:${D}`, `No long video for ${D}: original and ${tries} replacement(s) were all dropped or failed`, why);
       continue;
     }
-    if (once(`replace-long:${D}:${tries + 1}`, 12)) {
+    if (once(`replace-long:${D}:${replacements.length + 1}`, 12)) {
       gh(["workflow", "run", "daily.yml", "--ref", "main", "-f", `date=${D}`, "-f", "replace_long=true"]);
       lastReplacementStart = Date.now();
       log.info(`watchdog: replacement long video ${tries + 1} for ${D}`);
-      await notify(`🔁 <b>Making a replacement long video</b> for ${D} (try ${tries + 1} of 3). The original was dropped:\n${esc(why.slice(0, 600))}\n\nIt posts as soon as it's ready and approved (about 3–4 h).`);
+      await notify(`🔁 <b>Making a replacement long video</b> for ${D} (try ${tries + 1} of 3). The original was dropped:\n${esc(why.slice(0, 600))}\n\nIt posts as soon as it's ready and approved (about 3–4 h).`, { silent: claudeStopped.length > 0 });
     }
   }
 }
