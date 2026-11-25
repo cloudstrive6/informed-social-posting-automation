@@ -1,0 +1,1653 @@
+{
+  "id": "L3-tirzepatide-mounjaro-zepbound-and-fatty",
+  "date": "2026-11-25",
+  "kind": "long",
+  "plan": {
+    "id": "L3",
+    "kind": "long",
+    "topic": "Tirzepatide (Mounjaro/Zepbound) and fatty liver: what MASLD and MASH are, how excess weight and insulin resistance are linked to liver fat, what the randomized SYNERGY-NASH Phase 2 trial found on liver biopsy, what the SURPASS-3 MRI substudy found about liver fat in type 2 diabetes, and why fatty liver isn't an approved use for tirzepatide",
+    "angle": "Keep the brief as written, with these changes. 1) Opening sentence 1: 'If you've been told you have a fatty liver and you're wondering whether tirzepatide helps: in one randomized Phase 2 trial in adults with MASH and moderate or advanced liver scarring, more people on tirzepatide than on placebo had their MASH resolve on a liver biopsy after fifty-two weeks. It isn't an approved use, so it's one to talk through with your doctor.' 2) Primary result: 10% on placebo vs 44%, 56% and 62% on the lowest, middle and highest tirzepatide doses tested. Say no mg values on screen or in narration. The per-arm n comes from the NEJM paper. Fibrosis improvement of at least one stage without worsening of MASH was a secondary outcome: 30% vs 55%, 51% and 51%. Never describe MASH resolution as 'inflammation went away'. 3) SURPASS-3 MRI: present it as a separate substudy in adults with type 2 diabetes on metformin, with or without an SGLT2 inhibitor. It measured liver fat content by MRI over 52 weeks, comparing the two higher tirzepatide arms pooled vs insulin degludec. Use the absolute percentage-point change exactly as the PubMed abstract gives it, and don't present it as resolution or fibrosis data. 4) Approval chapter: quote Section 1 of the live Mounjaro PI (including the major adverse cardiovascular events indication if it appears on the live label) and of the live Zepbound PI (including obstructive sleep apnea). Read the revised dates on DailyMed. Credit FDA in one neutral line: semaglutide (Wegovy) is approved in the US for adults with noncirrhotic MASH with moderate to advanced liver fibrosis, alongside a reduced-calorie diet and increased physical activity. No comparison, no ranking, no switching. 5) Keep all safety lines, the 'recommended, not proven on tirzepatide' framing for lifestyle habits, and the hepatologist question list. Thumbnail 'LIVER FAT?' with one calm, fully drawn, labelled character, no organ imagery and no body-shaming. Verified sources so far: https://pubmed.ncbi.nlm.nih.gov/38856224/.",
+    "working_title": "Tirzepatide (Mounjaro) and Fatty Liver: Does It Help?",
+    "target_keyword": "Mounjaro fatty liver",
+    "trend_stage": "evergreen",
+    "why": "Fills today's dropped long-video slot with a topic the channel hasn't covered. It rests on settled randomized evidence (NEJM SYNERGY-NASH, SURPASS-3 MRI) plus label Section 1, so it can pass the fact-check first time, and drug-name searches ('Mounjaro fatty liver') keep bringing in viewers over time. | fact-check: The topic is sound, fits the channel and has strong evidence behind it. I checked these points: (1) SYNERGY-NASH (Loomba et al., NEJM 2024; PubMed 38856224, https://pubmed.ncbi.nlm.nih.gov/38856224/) was a Phase 2, double-blind, placebo-controlled, dose-finding trial. It enrolled 190 adults with biopsy-confirmed noncirrhotic MASH and stage F2–F3 fibrosis, treated for 52 weeks. MASH resolution without worsening of fibrosis was 10% on placebo vs 44%, 56% and 62% across the three tirzepatide arms. Improvement of at least one fibrosis stage without worsening of MASH was a secondary endpoint: 30% vs 55%, 51% and 51%. (2) Tirzepatide still has no US approval for MASLD or MASH. Its approved uses are type 2 diabetes (Mounjaro, which also has a 2026 approval to lower major cardiovascular event risk in type 2 diabetes), chronic weight management (Zepbound) and moderate to severe obstructive sleep apnea in adults with obesity (Zepbound). (3) FDA approved semaglutide (Wegovy) in August 2025 for noncirrhotic MASH with moderate to advanced fibrosis (F2–F3). Fixes needed: (a) The sample opening says 'liver inflammation resolve'. That is inaccurate: MASH resolution on biopsy is a composite histology endpoint, not just inflammation. (b) The angle asks for per-arm results but also bans dose numbers. Keep the ban and describe the arms without milligrams. (c) In SURPASS-3 MRI (Gastaldelli et al., Lancet Diabetes Endocrinol 2022), the primary liver-fat comparison pooled two tirzepatide arms against insulin degludec. Say so, and report the result as a change in liver fat content measured by MRI-PDFF, not 'fatty liver resolved'. Confirm the exact figures on PubMed before scripting. (d) The FDA line for Wegovy must keep 'noncirrhotic' and 'moderate to advanced fibrosis' and say it is used alongside diet and exercise, as FDA prints it. (e) The SURPASS-CVOT approval may be missing from older label text. Quote Section 1 from the live Mounjaro PI and the live Zepbound PI on DailyMed and use their actual revised dates. Everything else in the angle (no 'reverses' or 'cures', guideline habits marked 'recommended', a clinician line, the pancreatitis emergency wording, the low-blood-sugar caveat) is correct; keep it. I found no misinformation or strike risk once these fixes are in.",
+    "pillar": "beyond-weight"
+  },
+  "status": "held",
+  "package": {
+    "title": "Tirzepatide (Mounjaro, Zepbound) and Fatty Liver: Does It Help?",
+    "title_candidates": [
+      "Tirzepatide (Mounjaro) and Fatty Liver: Does It Help?",
+      "Tirzepatide (Mounjaro) and MASH: What the Biopsies Showed",
+      "Tirzepatide (Mounjaro) Fatty Liver: What a Biopsy Trial Found",
+      "Tirzepatide (Mounjaro) and Liver Fat: What Trials Show",
+      "Tirzepatide (Mounjaro) Fatty Liver: The Scarring Surprise",
+      "Tirzepatide (Mounjaro) and Fatty Liver: What 52 Weeks Showed",
+      "Tirzepatide (Mounjaro) Fatty Liver: Can It Reverse MASH?",
+      "Mounjaro and Fatty Liver: Does Tirzepatide Help?",
+      "Tirzepatide (Mounjaro) and Fatty Liver: Approved or Not?",
+      "Tirzepatide (Mounjaro, Zepbound) and Fatty Liver: Does It Help?"
+    ],
+    "description": "\nStop using tirzepatide and call your healthcare provider right away if you have severe pain in your stomach area, your abdomen, that will not go away, with or without vomiting. You may feel the pain from your abdomen to your back. For anything that isn't that emergency sign, don't stop or change your medicine on your own. Fatty liver, MASLD and MASH are not an approved use for tirzepatide.\n\nQuick answer: In SYNERGY-NASH, a Phase 2 trial in 190 adults with MASH and stage 2–3 scarring, MASH resolved without scarring getting worse at 52 weeks in 10% on placebo vs 44%, 56% and 62% on the lowest, middle and highest tirzepatide doses tested. As a secondary outcome, scarring improved by at least one stage without MASH getting worse in 30% vs 55%, 51% and 51%. In an open-label SURPASS-3 MRI substudy in type 2 diabetes, liver fat fell more on tirzepatide than on insulin degludec. MRI measures fat, not MASH or scarring.\n\nSources:\n1. Loomba R et al. NEJM 2024: https://pubmed.ncbi.nlm.nih.gov/38856224/\n2. Gastaldelli A et al. 2022: https://pubmed.ncbi.nlm.nih.gov/35468325/\n3. Zepbound label, rev 8/2026: https://uspl.lilly.com/zepbound/zepbound.html#pi\n\nNot personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "tags": [
+      "Mounjaro fatty liver",
+      "tirzepatide fatty liver",
+      "Mounjaro MASH",
+      "Zepbound fatty liver",
+      "MASLD",
+      "MASH treatment",
+      "tirzepatide liver fat",
+      "SYNERGY-NASH trial",
+      "SURPASS-3 MRI",
+      "does Mounjaro help fatty liver",
+      "GLP-1 fatty liver",
+      "liver fibrosis treatment",
+      "tirzepatide MASH trial",
+      "Mounjaro Zepbound liver",
+      "nonalcoholic fatty liver disease",
+      "liver biopsy trial",
+      "insulin resistance fatty liver",
+      "semaglutide fatty liver",
+      "Wegovy MASH FDA",
+      "tirzepatide clinical trial"
+    ],
+    "pinned_comment": "The result we flagged as the surprise: in SYNERGY-NASH (adults with MASH and stage 2–3 scarring, 52 weeks), as a secondary outcome, scarring improved by at least one stage without MASH getting worse in 30% on placebo vs 55%, 51% and 51% on the lowest, middle and highest tirzepatide doses tested. Unlike MASH resolution, it didn't climb with dose. It's one Phase 2 trial: a signal to test, not a final answer. If you take tirzepatide, stop using it and call your healthcare provider right away if you have severe pain in your stomach area, your abdomen, that will not go away, with or without vomiting. You may feel the pain from your abdomen to your back. For anything that isn't that emergency sign, don't stop or change your medicine on your own. Fatty liver isn't an approved use for tirzepatide. Save this for your next appointment. Not personal advice. Talk to your doctor or prescriber about whether it's right for you.",
+    "thumbnail": {
+      "headline": "MASH RESOLVED 10%-62%",
+      "highlight_word": "62%",
+      "subtext": "PHASE 2 TRIAL, BIOPSY",
+      "layout": "big-number",
+      "psychology": "Specific numbers: the real placebo and highest-dose biopsy results from SYNERGY-NASH create a gap (62% of what?) that the video explains, along with the population and the fact that it isn't an approved use.",
+      "emotion": "Surprise and the urge to know what the number means",
+      "hero_art": "doctor with clipboard",
+      "hero_face": "none",
+      "second_art": "",
+      "second_face": "none",
+      "prop": "arrow",
+      "accent": "highlight",
+      "badge": "PHASE 2 TRIAL",
+      "versus_left": "",
+      "versus_right": ""
+    },
+    "chapters": "0:00 Does it help?\n0:59 What MASLD and MASH are\n2:32 Why liver fat builds up\n3:27 What guidelines recommend\n4:03 Liver fat on MRI\n5:03 The biopsy trial\n6:24 The scarring surprise\n7:37 What the labels say\n9:32 Your takeaway"
+  },
+  "media": {
+    "video": "L3-tirzepatide-mounjaro-zepbound-and-fatty.mp4",
+    "duration": 653.132,
+    "thumbnail": "L3-tirzepatide-mounjaro-zepbound-and-fatty-thumb.jpg"
+  },
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-25T19:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-11-25T20:50:45.985Z",
+  "script": {
+    "working_title": "Tirzepatide (Mounjaro) and Fatty Liver: Does It Help?",
+    "target_keyword": "Mounjaro fatty liver",
+    "hook_pattern": "Visceral 'you' scenario + stakes: sentence 1 echoes the searched question (fatty liver + tirzepatide), the biopsy answer (MASH resolved without scarring getting worse) lands by about 15 s, the headline numbers (10% vs 44/56/62%) land at about 21–30 s, and one open loop (the result that did not climb with dose) pays off in the scarring chapter",
+    "scenes": [
+      {
+        "id": "s1",
+        "section": "Does it help?",
+        "narration": "If you have been told you have a fatty liver and you are wondering whether tirzepatide helps:",
+        "on_screen_text": "Fatty liver: does tirzepatide help?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm woman reading lab letter kitchen"
+        },
+        "retention_device": "Searched question repeated word for word, in 'you' terms, at t=0",
+        "source_ids": []
+      },
+      {
+        "id": "s2",
+        "section": "Does it help?",
+        "narration": "in one randomized Phase Two trial in adults with MASH and moderate or advanced liver scarring, more people on tirzepatide than on placebo had their MASH resolve, without their scarring getting worse, on a liver biopsy after fifty-two weeks.",
+        "on_screen_text": "More MASH resolved, scarring not worse",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hopeful doctor showing chart to woman"
+        },
+        "retention_device": "Answer delivered by about 15 s",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s3",
+        "section": "Does it help?",
+        "narration": "It is not an approved use, so it is one to talk through with your doctor.",
+        "on_screen_text": "Not an approved use",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman and doctor talking calmly"
+        },
+        "retention_device": "Honest caveat that builds trust",
+        "source_ids": [
+          "S9",
+          "S11"
+        ]
+      },
+      {
+        "id": "s4",
+        "section": "Does it help?",
+        "narration": "Here are the numbers. MASH resolved in ten percent of people on placebo, versus forty-four, fifty-six and sixty-two percent on the lowest, middle and highest tirzepatide doses tested.",
+        "on_screen_text": "10% vs 44%, 56%, 62%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "10% vs 44–62%",
+          "stat_label": "MASH resolved, no fibrosis worsening: placebo vs tirzepatide, 52 weeks",
+          "stock_query": "big glowing numbers on board"
+        },
+        "retention_device": "Second concrete payoff: the headline number at about 21–30 s",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s5",
+        "section": "Does it help?",
+        "narration": "That is encouraging. But it is one mid-stage trial, and there is more to understand before it means anything for you.",
+        "on_screen_text": "Encouraging, but one trial",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "thoughtful woman weighing hope"
+        },
+        "retention_device": "But/therefore turn into the deeper story",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s6",
+        "section": "Does it help?",
+        "narration": "Next: what MASH actually is, why the liver stores fat at all, and what an MRI study found in type two diabetes.",
+        "on_screen_text": "What's coming up",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "What MASH is",
+            "Why liver fat builds up",
+            "What an MRI study found"
+          ],
+          "stock_query": "friendly roadmap with three stops"
+        },
+        "retention_device": "Promise of what the viewer will get",
+        "source_ids": []
+      },
+      {
+        "id": "s7",
+        "section": "Does it help?",
+        "narration": "And one result in this trial did not climb with the dose the way you might expect.",
+        "on_screen_text": "One result didn't climb",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious woman raising eyebrow at graph"
+        },
+        "retention_device": "Open loop (pays off in 'The scarring surprise')",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s8",
+        "section": "What MASLD and MASH are",
+        "narration": "First, the words on that report.",
+        "on_screen_text": "What MASLD and MASH mean",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card lab report words"
+        },
+        "retention_device": "Chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s9",
+        "section": "What MASLD and MASH are",
+        "narration": "Imagine Dana, forty-eight, who has type two diabetes. A routine scan comes back with a phrase she did not expect: fatty liver.",
+        "on_screen_text": "Imagine Dana, 48",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "surprised woman holding scan report"
+        },
+        "retention_device": "Hypothetical character thread begins",
+        "source_ids": []
+      },
+      {
+        "id": "s10",
+        "section": "What MASLD and MASH are",
+        "narration": "If that phrase made you feel judged or worried, you are not alone. And the biology behind it is more than a willpower story.",
+        "on_screen_text": "Not a willpower story",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friend comforting worried woman"
+        },
+        "retention_device": "Name and validate the feeling",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s11",
+        "section": "What MASLD and MASH are",
+        "narration": "Liver societies renamed the condition. What was called non-alcoholic fatty liver disease became MASLD: metabolic dysfunction-associated steatotic liver disease.",
+        "on_screen_text": "NAFLD → MASLD",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "name tag being swapped cheerfully"
+        },
+        "retention_device": "Clears up confusing jargon",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s12",
+        "section": "What MASLD and MASH are",
+        "narration": "The name says what it is: extra fat in the liver, plus at least one cardiometabolic risk factor, such as a larger waist, high blood sugar or high blood pressure.",
+        "on_screen_text": "Liver fat + a risk factor",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Extra fat in the liver",
+            "Plus ≥1 cardiometabolic risk factor",
+            "e.g. waist, blood sugar, blood pressure"
+          ],
+          "stock_query": "simple checklist on clipboard"
+        },
+        "retention_device": "Concrete definition",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "What MASLD and MASH are",
+        "narration": "MASH is the more active form. On a biopsy, the fat comes with signs of liver cell injury and inflammation, and that activity can drive scarring over time.",
+        "on_screen_text": "MASH: the active form",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor explaining diagram to patient"
+        },
+        "retention_device": "Raises the stakes",
+        "source_ids": [
+          "S3",
+          "S7"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "What MASLD and MASH are",
+        "narration": "How common is fatty liver? A large review put its global prevalence at about thirty-two percent, under its older name. That is roughly one adult in three.",
+        "on_screen_text": "About 1 in 3 adults",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "32%",
+          "stat_label": "Estimated global adult prevalence, fatty liver (older name)",
+          "stock_query": "three adults chatting at table"
+        },
+        "retention_device": "Humanised statistic",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "What MASLD and MASH are",
+        "narration": "Doctors grade the scarring, called fibrosis, from stage zero, meaning none, up to stage four, which is cirrhosis. The tirzepatide biopsy trial enrolled stages two and three.",
+        "on_screen_text": "Fibrosis: stage 0 to 4",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "F0: no scarring",
+            "F2–F3: in the trial",
+            "F4: cirrhosis"
+          ],
+          "stock_query": "five step staircase labelled"
+        },
+        "retention_device": "Sets up the scarring payoff",
+        "source_ids": [
+          "S8",
+          "S1"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "What MASLD and MASH are",
+        "narration": "Why does that scale matter? In a long-term study of six hundred nineteen people with fatty liver disease, fibrosis stage, and no other biopsy feature, was linked with long-term outcomes.",
+        "on_screen_text": "Scarring stage tracks outcomes",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "619",
+          "stat_label": "People followed: fibrosis stage linked to outcomes",
+          "stock_query": "researcher reviewing long timeline"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "What MASLD and MASH are",
+        "narration": "Hold on to that. Scarring is where this story takes its most surprising turn.",
+        "on_screen_text": "Remember: scarring",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman tying string on finger"
+        },
+        "retention_device": "Re-hook: mini-cliffhanger before chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s18",
+        "section": "Why liver fat builds up",
+        "narration": "So how does fat end up in the liver in the first place?",
+        "on_screen_text": "How liver fat builds up",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card curious question mark"
+        },
+        "retention_device": "Question to the viewer",
+        "source_ids": []
+      },
+      {
+        "id": "s19",
+        "section": "Why liver fat builds up",
+        "narration": "Not only from your plate. In one small study of nine people with fatty liver, researchers tagged fat with non-radioactive tracers, like dropping a different dye into three streams.",
+        "on_screen_text": "Tracing fat in 9 people",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "three colored streams into cartoon house"
+        },
+        "retention_device": "Micro-story about a clever study design",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Why liver fat builds up",
+        "narration": "About fifty-nine percent of the stored liver fat came from fatty acids already circulating in the blood, released from fat stores.",
+        "on_screen_text": "Most traced to the blood",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "59%",
+          "stat_label": "Stored liver fat from blood fatty acids",
+          "stock_query": "blue stream flowing into storage room"
+        },
+        "retention_device": "Counterintuitive number",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Why liver fat builds up",
+        "narration": "About a quarter was made fresh inside the liver, from carbohydrates. And only about fifteen percent came straight from dietary fat.",
+        "on_screen_text": "Dietary fat: about 15%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "26% · 15%",
+          "stat_label": "Made in liver · from dietary fat",
+          "stock_query": "tiny factory making boxes inside room"
+        },
+        "retention_device": "Myth-busting surprise",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Why liver fat builds up",
+        "narration": "Here is where insulin resistance comes in. When the body responds poorly to insulin, fat tissue releases more fatty acids into the blood, and high insulin levels push the liver to make more fat of its own.",
+        "on_screen_text": "Insulin resistance: two-way traffic",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two delivery doors busy traffic"
+        },
+        "retention_device": "The why, explained like a friend",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Why liver fat builds up",
+        "narration": "Think of the liver as a storage room with deliveries arriving through two doors, while the trucks heading out cannot keep up.",
+        "on_screen_text": "Deliveries outpace exits",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "overflowing storage room friendly trucks"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Why liver fat builds up",
+        "narration": "That is why fatty liver is strongly linked with excess weight around the middle and with type two diabetes.",
+        "on_screen_text": "Linked: waist and type 2 diabetes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor pointing at connected icons"
+        },
+        "retention_device": "Ties biology to the viewer's situation",
+        "source_ids": [
+          "S8",
+          "S3"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "What guidelines recommend",
+        "narration": "So what do liver guidelines recommend first?",
+        "on_screen_text": "What guidelines recommend",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card guideline book"
+        },
+        "retention_device": "Chapter change with a question",
+        "source_ids": []
+      },
+      {
+        "id": "s26",
+        "section": "What guidelines recommend",
+        "narration": "Lifestyle changes: an eating pattern that supports weight loss, regular physical activity, and an honest conversation about alcohol.",
+        "on_screen_text": "Recommended for fatty liver",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Eating pattern for weight loss",
+            "Regular physical activity",
+            "Talk honestly about alcohol"
+          ],
+          "stock_query": "woman walking happily in park"
+        },
+        "retention_device": "Practical agency",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "What guidelines recommend",
+        "narration": "In that guidance, weight loss is central, and greater weight loss is linked with greater improvement in the liver.",
+        "on_screen_text": "More loss, more liver benefit",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "rising bar chart with smiling liver icon"
+        },
+        "retention_device": "Concrete link",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "What guidelines recommend",
+        "narration": "To be clear, these habits are recommended for fatty liver in general. They are not proven as add-ons to tirzepatide for the liver.",
+        "on_screen_text": "Recommended, not proven on tirzepatide",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "These habits are proven add-ons to tirzepatide for the liver",
+          "fact": "Recommended for fatty liver in general; not tested with tirzepatide",
+          "stock_query": "friendly scale balancing two cards"
+        },
+        "retention_device": "Honest framing that earns trust",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "What guidelines recommend",
+        "narration": "Back to Dana. Her obvious question: does a medicine that lowers blood sugar and weight also change what is happening in her liver?",
+        "on_screen_text": "Dana's question",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman thinking hopefully by window"
+        },
+        "retention_device": "Return to the character thread",
+        "source_ids": []
+      },
+      {
+        "id": "s30",
+        "section": "What guidelines recommend",
+        "narration": "Two trials looked at that in very different ways. One used a scanner. The other looked at liver tissue under a microscope.",
+        "on_screen_text": "A scanner and a microscope",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "MRI scanner and microscope side by side"
+        },
+        "retention_device": "Re-hook: new open loop before chapter change",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "Liver fat on MRI",
+        "narration": "First, the scanner.",
+        "on_screen_text": "Liver fat on MRI",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card friendly MRI scanner"
+        },
+        "retention_device": "Chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s32",
+        "section": "Liver fat on MRI",
+        "narration": "In adults with type two diabetes on metformin, with or without an SGLT-two inhibitor, the two higher tirzepatide doses tested, pooled, lowered liver fat content on MRI by eight point zero nine percentage points over fifty-two weeks.",
+        "on_screen_text": "Type 2 diabetes, on metformin ± SGLT2",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−8.09 pts",
+          "stat_label": "Liver fat on MRI, pooled tirzepatide, 52 weeks",
+          "stock_query": "big number beside MRI scanner"
+        },
+        "retention_device": "Result and population in one sentence",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Liver fat on MRI",
+        "narration": "On insulin degludec, the comparison treatment, liver fat content fell by three point three eight percentage points.",
+        "on_screen_text": "Vs −8.09 on tirzepatide",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−3.38 pts",
+          "stat_label": "Liver fat on MRI, insulin degludec, 52 weeks",
+          "stock_query": "second smaller number on board"
+        },
+        "retention_device": "Head-to-head contrast",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Liver fat on MRI",
+        "narration": "Those are percentage points, because MRI reports liver fat as a share of the liver. Both arms lost liver fat, and the tirzepatide arms lost more.",
+        "on_screen_text": "Both fell; tirzepatide more",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two bars shrinking side by side"
+        },
+        "retention_device": "Plain-language translation",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "Liver fat on MRI",
+        "narration": "This was a substudy of the SURPASS-three trial, and it was open-label, so people knew which treatment they were on.",
+        "on_screen_text": "Open-label substudy",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "open envelope showing treatment card"
+        },
+        "retention_device": "Design detail that adds nuance",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Liver fat on MRI",
+        "narration": "Here is the limit. An MRI measures fat. It cannot show whether MASH resolved, or whether scarring changed.",
+        "on_screen_text": "MRI measures fat only",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Less liver fat on MRI means MASH resolved",
+          "fact": "MRI measures fat, not MASH or scarring",
+          "stock_query": "scanner screen with fat reading"
+        },
+        "retention_device": "But-turn that sets up the next chapter",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Liver fat on MRI",
+        "narration": "For that, you need a tiny sample of liver under a microscope. Which brings us to the biopsy trial.",
+        "on_screen_text": "Next: the biopsy trial",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scientist smiling at microscope"
+        },
+        "retention_device": "Re-hook: cliffhanger into the main trial",
+        "source_ids": []
+      },
+      {
+        "id": "s38",
+        "section": "The biopsy trial",
+        "narration": "Next, the trial behind the headline.",
+        "on_screen_text": "SYNERGY-NASH, on biopsy",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card microscope slide"
+        },
+        "retention_device": "Chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s39",
+        "section": "The biopsy trial",
+        "narration": "In SYNERGY-NASH, among one hundred ninety adults with biopsy-confirmed MASH and stage two or three scarring, MASH resolved without worsening of scarring in ten percent on placebo after fifty-two weeks.",
+        "on_screen_text": "Adults with MASH, F2–F3",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "10%",
+          "stat_label": "Placebo: MASH resolved, no fibrosis worsening, 52 weeks",
+          "stock_query": "small number on clipboard"
+        },
+        "retention_device": "Result and population in one sentence",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "The biopsy trial",
+        "narration": "On tirzepatide, it was forty-four, fifty-six and sixty-two percent, on the lowest, middle and highest doses tested.",
+        "on_screen_text": "Vs 10% on placebo",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "44% · 56% · 62%",
+          "stat_label": "Tirzepatide, 3 doses: MASH resolved, 52 weeks",
+          "stock_query": "three rising bars glowing"
+        },
+        "retention_device": "Payoff of the headline number in detail",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "The biopsy trial",
+        "narration": "This result did climb with the dose. It was a Phase Two, double-blind, placebo-controlled trial: a mid-sized, dose-finding step that usually comes before larger Phase Three trials.",
+        "on_screen_text": "Phase 2, double-blind",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "staircase from phase 2 to phase 3"
+        },
+        "retention_device": "Sets contrast for the open loop",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "The biopsy trial",
+        "narration": "So what does resolved mean? It means the follow-up biopsy no longer met the criteria for MASH: no ballooned, injured liver cells, and little or no inflammation, and scarring had not got worse.",
+        "on_screen_text": "What 'resolved' means",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "MASH resolved = liver is back to normal",
+          "fact": "Biopsy no longer met MASH criteria; scarring not worse",
+          "stock_query": "pathologist checking slide calmly"
+        },
+        "retention_device": "Myth correction",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "The biopsy trial",
+        "narration": "Think of a building inspection. Several features are scored together, and the liver has to pass the whole checklist, not just one line.",
+        "on_screen_text": "Pass the whole checklist",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "inspector ticking checklist cartoon building"
+        },
+        "retention_device": "Vivid analogy",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "The biopsy trial",
+        "narration": "In plain terms: about one in ten passed on placebo, versus roughly four to six in ten on tirzepatide.",
+        "on_screen_text": "1 in 10 vs 4–6 in 10",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "1 vs 4–6 in 10",
+          "stat_label": "MASH resolved, no fibrosis worsening: placebo vs tirzepatide, 52 weeks",
+          "stock_query": "ten little figures some highlighted"
+        },
+        "retention_device": "Humanised numbers",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "The biopsy trial",
+        "narration": "On tolerability, the most common adverse events on tirzepatide were gastrointestinal, and most were mild or moderate in severity.",
+        "on_screen_text": "Most common: gut-related",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman sipping water calmly"
+        },
+        "retention_device": "Balanced, honest note",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "The biopsy trial",
+        "narration": "But resolving MASH was only the main goal. The result I promised you at the start is about scarring.",
+        "on_screen_text": "Now: the scarring result",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curtain opening on stage"
+        },
+        "retention_device": "Re-hook: callback to the open loop",
+        "source_ids": []
+      },
+      {
+        "id": "s47",
+        "section": "The scarring surprise",
+        "narration": "Here is that result.",
+        "on_screen_text": "The scarring result",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card surprise reveal"
+        },
+        "retention_device": "Chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s48",
+        "section": "The scarring surprise",
+        "narration": "As a secondary outcome, the trial measured scarring improving by at least one stage without MASH getting worse.",
+        "on_screen_text": "Secondary: fibrosis ≥1 stage",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "staircase step going down gently"
+        },
+        "retention_device": "Sets up the loop payoff",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "The scarring surprise",
+        "narration": "On placebo, thirty percent improved. On tirzepatide, it was fifty-five, fifty-one and fifty-one percent, from the lowest dose tested to the highest.",
+        "on_screen_text": "Adults with MASH, 52 weeks",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "30% vs 55%, 51%, 51%",
+          "stat_label": "Fibrosis improved ≥1 stage: placebo vs tirzepatide",
+          "stock_query": "four bars, three level"
+        },
+        "retention_device": "Surprising stat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "The scarring surprise",
+        "narration": "Notice the pattern. The three doses landed close together, with the lowest dose slightly highest. Unlike the MASH result, this one did not climb with dose.",
+        "on_screen_text": "Didn't climb with dose",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman pointing at flat line surprised"
+        },
+        "retention_device": "Payoff of the opening loop",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "The scarring surprise",
+        "narration": "Why? This trial cannot say. Fifty-two weeks is a short window, and a Phase Two secondary outcome is a signal to test, not a final answer.",
+        "on_screen_text": "A signal, not a verdict",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "magnifying glass over question mark"
+        },
+        "retention_device": "New question opened",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "The scarring surprise",
+        "narration": "Notice the placebo number too. Thirty percent improved without the drug, a reminder that biopsy readings can vary and placebo groups can improve too.",
+        "on_screen_text": "30% on placebo too",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "placebo pill bottle with question mark"
+        },
+        "retention_device": "But here's where it gets interesting",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "The scarring surprise",
+        "narration": "Still, remember that long-term study: fibrosis stage was the biopsy feature linked with outcomes. So this is the signal worth watching in larger, longer trials.",
+        "on_screen_text": "Scarring: the one to watch",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "telescope pointed at horizon hopeful"
+        },
+        "retention_device": "Callback to an earlier fact",
+        "source_ids": [
+          "S5",
+          "S1"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "The scarring surprise",
+        "narration": "And one trial cannot tell us how much of the effect came from weight loss itself, and how much from anything else.",
+        "on_screen_text": "Weight loss, or more?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two puzzle pieces not yet joined"
+        },
+        "retention_device": "Open question",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "The scarring surprise",
+        "narration": "So if the evidence is promising, why is fatty liver not an approved use for tirzepatide? It comes down to the label.",
+        "on_screen_text": "Why isn't it approved?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curious woman holding medicine box"
+        },
+        "retention_device": "Re-hook: question bridging to the next chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s56",
+        "section": "What the labels say",
+        "narration": "Here is what the labels actually list.",
+        "on_screen_text": "What the labels say",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card label document"
+        },
+        "retention_device": "Chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s57",
+        "section": "What the labels say",
+        "narration": "Section one of the Mounjaro label lists two uses. First: alongside diet and exercise, to improve blood sugar control in adults and children ten years and older with type two diabetes.",
+        "on_screen_text": "Mounjaro use 1: blood sugar",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pharmacist reading label to woman"
+        },
+        "retention_device": "Exact label scope",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s58",
+        "section": "What the labels say",
+        "narration": "Second: to reduce the risk of major adverse cardiovascular events, meaning cardiovascular death, non-fatal heart attack or non-fatal stroke, in adults with type two diabetes who are at high risk for these events.",
+        "on_screen_text": "Mounjaro use 2: heart events, high-risk type 2 diabetes",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor with heart icon clipboard"
+        },
+        "retention_device": "Exact label scope",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s59",
+        "section": "What the labels say",
+        "narration": "Section one of the Zepbound label lists two uses, alongside a reduced-calorie diet and increased physical activity.",
+        "on_screen_text": "Zepbound: two uses",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman reading label at kitchen counter"
+        },
+        "retention_device": "Exact label scope",
+        "source_ids": [
+          "S11"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "What the labels say",
+        "narration": "To reduce excess body weight and keep it off long term, in adults with obesity, or with overweight and at least one weight-related condition. And to treat moderate to severe obstructive sleep apnea in adults with obesity.",
+        "on_screen_text": "Weight and sleep apnea",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Weight: adults with obesity, or overweight + weight-related condition",
+            "Moderate to severe sleep apnea, adults with obesity"
+          ],
+          "stock_query": "calm man sleeping peacefully"
+        },
+        "retention_device": "Exact label scope",
+        "source_ids": [
+          "S11"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "What the labels say",
+        "narration": "Fatty liver, MASLD and MASH are not on either list.",
+        "on_screen_text": "Not on either label",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Tirzepatide is approved for fatty liver",
+          "fact": "Not in Mounjaro or Zepbound Section 1",
+          "stock_query": "two labels side by side"
+        },
+        "retention_device": "Myth correction",
+        "source_ids": [
+          "S9",
+          "S11"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "What the labels say",
+        "narration": "For context, FDA has approved semaglutide, sold as Wegovy, under accelerated approval, for adults with noncirrhotic MASH with moderate to advanced liver fibrosis, alongside a reduced-calorie diet and increased physical activity.",
+        "on_screen_text": "Semaglutide: accelerated approval for MASH",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "neutral document with approval stamp"
+        },
+        "retention_device": "Neutral context line",
+        "source_ids": [
+          "S12"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "What the labels say",
+        "narration": "So for tirzepatide, the liver is still a research question, and a fair one to raise with your doctor.",
+        "on_screen_text": "A question for your doctor",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman writing question in notebook"
+        },
+        "retention_device": "Agency",
+        "source_ids": [
+          "S9",
+          "S11"
+        ]
+      },
+      {
+        "id": "s64",
+        "section": "What the labels say",
+        "narration": "If you take tirzepatide for an approved use, two safety points from the Medication Guide matter.",
+        "on_screen_text": "Two safety points",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "pharmacist handing leaflet kindly"
+        },
+        "retention_device": "Signposting",
+        "source_ids": [
+          "S10"
+        ]
+      },
+      {
+        "id": "s65",
+        "section": "What the labels say",
+        "narration": "Stop using it and call your healthcare provider right away if you have severe pain in your stomach area, your abdomen, that will not go away, with or without vomiting. You may feel the pain from your abdomen to your back.",
+        "on_screen_text": "Stomach-area pain: call right away",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Severe stomach-area pain that won't go away",
+            "With or without vomiting",
+            "Stop using it; call your provider right away"
+          ],
+          "stock_query": "woman calling doctor on phone"
+        },
+        "retention_device": "Safety line (Medication Guide wording)",
+        "source_ids": [
+          "S10"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "What the labels say",
+        "narration": "Your risk of low blood sugar may be higher if you use it with insulin or a sulfonylurea, and low blood sugar has also been reported in people without type two diabetes.",
+        "on_screen_text": "Low blood sugar: may be higher",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glucose meter on calm table"
+        },
+        "retention_device": "Safety line",
+        "source_ids": [
+          "S10",
+          "S11"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "What the labels say",
+        "narration": "For anything that isn't that emergency sign, don't stop or change your medicine on your own.",
+        "on_screen_text": "Don't stop or change on your own",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman talking to prescriber kindly"
+        },
+        "retention_device": "Safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s68",
+        "section": "What the labels say",
+        "narration": "And the hopeful part: there is a lot you and your doctor can do while the research catches up.",
+        "on_screen_text": "Plenty you can do",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman and doctor smiling planning"
+        },
+        "retention_device": "Chapter ends on hope, not a warning",
+        "source_ids": []
+      },
+      {
+        "id": "s69",
+        "section": "Your takeaway",
+        "narration": "Here is the whole picture.",
+        "on_screen_text": "Your takeaway",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card puzzle completed"
+        },
+        "retention_device": "Chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s70",
+        "section": "Your takeaway",
+        "narration": "On biopsy, in one Phase Two trial, MASH resolved without scarring getting worse in roughly one in ten people on placebo, versus four to six in ten on tirzepatide.",
+        "on_screen_text": "Biopsy: 1 in 10 vs 4–6 in 10",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "10% vs 44–62%",
+          "stat_label": "MASH resolved, no fibrosis worsening: placebo vs tirzepatide, 52 weeks",
+          "stock_query": "recap board with highlighted numbers"
+        },
+        "retention_device": "Payoff recap",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "Your takeaway",
+        "narration": "On MRI, in type two diabetes, liver fat fell more on tirzepatide than on insulin degludec. And as a secondary outcome, scarring improved more often than on placebo, with no clear dose pattern.",
+        "on_screen_text": "MRI and scarring, recapped",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "MRI: liver fat fell more than on degludec",
+            "Scarring: better than placebo, no dose pattern",
+            "Not an approved use"
+          ],
+          "stock_query": "tidy recap checklist on desk"
+        },
+        "retention_device": "Payoff recap",
+        "source_ids": [
+          "S2",
+          "S1"
+        ]
+      },
+      {
+        "id": "s72",
+        "section": "Your takeaway",
+        "narration": "If that phrase on your report made you feel blamed, remember the biology: fat reaches the liver from several directions, and insulin resistance is a big part of why.",
+        "on_screen_text": "Biology, not blame",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman relieved shoulders relaxing"
+        },
+        "retention_device": "Emotional relief beat",
+        "source_ids": [
+          "S6",
+          "S7"
+        ]
+      },
+      {
+        "id": "s73",
+        "section": "Your takeaway",
+        "narration": "If you are referred to a liver specialist, a hepatologist, three questions are worth asking.",
+        "on_screen_text": "3 questions for your hepatologist",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "What stage is my scarring?",
+            "How will we track my liver?",
+            "Which treatments fit me?"
+          ],
+          "stock_query": "woman holding question list at clinic"
+        },
+        "retention_device": "Practical takeaway checklist",
+        "source_ids": []
+      },
+      {
+        "id": "s74",
+        "section": "Your takeaway",
+        "narration": "One: what stage is my scarring, and how was it measured?",
+        "on_screen_text": "1. My scarring stage?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman asking doctor question"
+        },
+        "retention_device": "Checklist item",
+        "source_ids": []
+      },
+      {
+        "id": "s75",
+        "section": "Your takeaway",
+        "narration": "Two: how will we track my liver over time?",
+        "on_screen_text": "2. How will we track it?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calendar with friendly check marks"
+        },
+        "retention_device": "Checklist item",
+        "source_ids": []
+      },
+      {
+        "id": "s76",
+        "section": "Your takeaway",
+        "narration": "Three: which treatments fit my stage and my other conditions?",
+        "on_screen_text": "3. Which treatments fit me?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "doctor and woman reviewing options"
+        },
+        "retention_device": "Checklist item",
+        "source_ids": []
+      },
+      {
+        "id": "s77",
+        "section": "Your takeaway",
+        "narration": "Back to Dana. She does not leave with a promise. She leaves knowing her stage, how it will be tracked, and what to ask next.",
+        "on_screen_text": "Dana leaves with a plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "confident woman leaving clinic smiling"
+        },
+        "retention_device": "Character thread resolved with agency",
+        "source_ids": []
+      },
+      {
+        "id": "s78",
+        "section": "Your takeaway",
+        "narration": "Fatty liver is not an approved use for tirzepatide. It is a prescription medicine, so talk to your doctor or prescriber about whether it's right for you.",
+        "on_screen_text": "Ask your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "warm doctor conversation in office"
+        },
+        "retention_device": "Clinician line",
+        "source_ids": [
+          "S9",
+          "S11"
+        ]
+      },
+      {
+        "id": "s79",
+        "section": "Your takeaway",
+        "narration": "If you want every GLP-one benefit checked against the trials like this, subscribe, so the next one finds you.",
+        "on_screen_text": "Subscribe for the evidence",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly character waving subscribe bell"
+        },
+        "retention_device": "Single subscribe ask tied to a specific benefit",
+        "source_ids": []
+      },
+      {
+        "id": "s80",
+        "section": "Your takeaway",
+        "narration": "There is a video I would watch next, linked in the description.",
+        "on_screen_text": "Watch next",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "character pointing to next video"
+        },
+        "retention_device": "Watch-next bridge",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Tirzepatide for Metabolic Dysfunction-Associated Steatohepatitis with Liver Fibrosis (SYNERGY-NASH)",
+        "publisher": "New England Journal of Medicine (Loomba R et al.)",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38856224/"
+      },
+      {
+        "id": "S2",
+        "title": "Effect of tirzepatide versus insulin degludec on liver fat content and abdominal adipose tissue in people with type 2 diabetes (SURPASS-3 MRI)",
+        "publisher": "The Lancet Diabetes & Endocrinology (Gastaldelli A et al.)",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35468325/"
+      },
+      {
+        "id": "S3",
+        "title": "A multisociety Delphi consensus statement on new fatty liver disease nomenclature",
+        "publisher": "Hepatology (Rinella ME et al.)",
+        "year": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37363821/"
+      },
+      {
+        "id": "S4",
+        "title": "The prevalence and incidence of NAFLD worldwide: a systematic review and meta-analysis",
+        "publisher": "The Lancet Gastroenterology & Hepatology (Riazi K et al.)",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35798021/"
+      },
+      {
+        "id": "S5",
+        "title": "Liver Fibrosis, but No Other Histologic Features, Is Associated With Long-term Outcomes of Patients With Nonalcoholic Fatty Liver Disease",
+        "publisher": "Gastroenterology (Angulo P et al.)",
+        "year": "2015",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25935633/"
+      },
+      {
+        "id": "S6",
+        "title": "Sources of fatty acids stored in liver and secreted via lipoproteins in patients with nonalcoholic fatty liver disease",
+        "publisher": "Journal of Clinical Investigation (Donnelly KL et al.)",
+        "year": "2005",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15864352/"
+      },
+      {
+        "id": "S7",
+        "title": "Mechanisms of NAFLD development and therapeutic strategies",
+        "publisher": "Nature Medicine (Friedman SL et al.)",
+        "year": "2018",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29967350/"
+      },
+      {
+        "id": "S8",
+        "title": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+        "publisher": "Hepatology (Rinella ME et al., AASLD)",
+        "year": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36727674/"
+      },
+      {
+        "id": "S9",
+        "title": "Mounjaro (tirzepatide) Prescribing Information, Section 1 (Indications and Usage), revised 8/2026",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/mounjaro/mounjaro.html#pi"
+      },
+      {
+        "id": "S10",
+        "title": "Mounjaro (tirzepatide) Medication Guide: inflamed pancreas (pancreatitis) and low blood sugar (hypoglycemia), revised 8/2026",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://pi.lilly.com/us/mounjaro-us-mg.pdf"
+      },
+      {
+        "id": "S11",
+        "title": "Zepbound (tirzepatide) Prescribing Information, Sections 1 (Indications and Usage) and 5.7 (Hypoglycemia), revised 8/2026",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/zepbound/zepbound.html#pi"
+      },
+      {
+        "id": "S12",
+        "title": "Wegovy (semaglutide) injection Prescribing Information, Section 1 (Indications and Usage): MASH indication, revised 8/2025 (revision that added the MASH indication)",
+        "publisher": "Novo Nordisk",
+        "year": "2025",
+        "url": "https://www.novo-pi.com/wegovy.pdf"
+      }
+    ],
+    "cta": "Subscribe to InforMed if you want every GLP-1 benefit checked against the trials. Watch next: Tirzepatide (Mounjaro) Side Effects. The publisher adds the verified link in the description, and line 1 of the description is left empty. Pre-publish checks from the fact-check: (1) open the Mounjaro Medication Guide PDF (S10), confirm the revised date is 8/2026 and that s65 matches the guide sentence word for word; (2) read the live revised date on the Wegovy PI or DailyMed and update S12's title if it has been revised since 8/2025. Fatty liver is not an approved use for tirzepatide, so talk to your doctor or prescriber about whether it's right for you."
+  },
+  "factcheck": {
+    "verdict": "PASS",
+    "summary": "The script is accurate and safe, so it passes. I found no fact errors and no safety problems. There are 5 minor wording and sourcing fixes below.\n\nWhat I checked:\n- **SYNERGY-NASH (S1, NEJM 2024):** 190 adults with F2–F3 fibrosis. MASH resolved without fibrosis worsening in 10% on placebo vs 44%, 56% and 62% on tirzepatide. Fibrosis improved by at least 1 stage in 30% on placebo vs 55%, 51% and 51%. Matches the script.\n- **SURPASS-3 MRI (S2):** liver fat fell −8.09 points on pooled tirzepatide vs −3.38 on degludec. Matches.\n- **Other studies:** Riazi prevalence of 32.4% (S4), Angulo's 619 patients with fibrosis as the only histologic feature linked to outcomes (S5), and Donnelly's 9 patients split 59.0% / 26.1% / 14.9% (S6). All match.\n- **Mounjaro label (S9, revised 8/2026):** Section 1 lists glycemic control in adults and children 10 and older with type 2 diabetes, plus the MACE indication. Matches s57–s58.\n- **Zepbound label (S11, revised 8/2026):** Section 1 lists weight reduction and moderate to severe sleep apnea in adults with obesity. Section 5.7 reports low blood sugar in adults without type 2 diabetes. Matches s60 and s66.\n- **Approval status:** tirzepatide is still not approved for MASH, so the \"not an approved use\" line is correct.\n\nFraming is right throughout: the scope stays at one Phase 2 trial, fibrosis is called a secondary outcome, MRI is described as measuring fat only, and the lifestyle advice is labelled as not tested with tirzepatide. The safety lines follow the Medication Guide, and \"that emergency sign\" is correctly singular.\n\n**Not confirmed:** both PDF sources (S10 Mounjaro Medication Guide, S12 Wegovy label) loaded, but I couldn't read the text inside them. I didn't confirm S10's exact wording, and S12 has no revised date yet. Both are listed in the issues.\n\n**Verified sources list:** it holds the 10 sources I confirmed directly. S10 and S12 are left off because I couldn't read their text.",
+    "issues": [
+      {
+        "location": "s1, s3, s80",
+        "claim": "\"If you've been told…\" / \"It isn't an approved use, so it's one to talk through…\" / \"There's a video I'd watch next…\"",
+        "problem": "House rule: no contractions in narration except in the fixed safety lines.",
+        "severity": "minor",
+        "fix": "s1: \"If you have been told you have a fatty liver and you are wondering whether tirzepatide helps:\" s3: \"It is not an approved use, so it is one to talk through with your doctor.\" s80: \"There is a video I would watch next, linked in the description.\""
+      },
+      {
+        "location": "s52",
+        "claim": "\"placebo groups in liver trials often improve too\"",
+        "problem": "This is a general claim about liver trials, but its only source is the single trial S1. S1 shows the 30% placebo figure; it does not support \"often\".",
+        "severity": "minor",
+        "fix": "Change the narration to: \"Notice the placebo number too. Thirty percent improved without the drug, a reminder that biopsy readings can vary and placebo groups can improve too.\""
+      },
+      {
+        "location": "s50",
+        "claim": "\"The lowest dose had the highest number.\"",
+        "problem": "The gaps are small (55% vs 51% vs 51%) and the trial didn't compare the doses with each other. A viewer could read this as \"the lower dose works better\".",
+        "severity": "minor",
+        "fix": "Change the narration to: \"Notice the pattern. The three doses landed close together, with the lowest dose slightly highest. Unlike the MASH result, this one did not climb with dose.\""
+      },
+      {
+        "location": "sources S12",
+        "claim": "Wegovy Prescribing Information, Section 1: MASH indication (2025)",
+        "problem": "No revised date is given, which breaks the sourcing rule. The PDF loaded, but I couldn't read its text to check the date.",
+        "severity": "minor",
+        "fix": "Look up the live revised date on the Wegovy PI or DailyMed. Then change the title to: \"Wegovy (semaglutide) injection Prescribing Information, Section 1 (Indications and Usage): MASH indication, revised [live date]\"."
+      },
+      {
+        "location": "sources S10 (used in s64–s66)",
+        "claim": "Mounjaro Medication Guide wording for pancreatitis and low blood sugar, revised 8/2026",
+        "problem": "The PDF URL works, but I couldn't read its text. So I didn't confirm the 8/2026 date or the exact sentences used in s65 and s66. The wording matches the standard Mounjaro Medication Guide.",
+        "severity": "minor",
+        "fix": "Before publishing, open the PDF and check two things. First, the revised date matches 8/2026. Second, s65 matches the guide sentence word for word: \"severe pain in your stomach area (abdomen) that will not go away, with or without vomiting… You may feel the pain from your abdomen to your back\"."
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "Tirzepatide for Metabolic Dysfunction-Associated Steatohepatitis with Liver Fibrosis (SYNERGY-NASH)",
+        "publisher": "New England Journal of Medicine (Loomba R et al.)",
+        "year": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38856224/"
+      },
+      {
+        "id": "S2",
+        "title": "Effect of tirzepatide versus insulin degludec on liver fat content and abdominal adipose tissue in people with type 2 diabetes (SURPASS-3 MRI)",
+        "publisher": "The Lancet Diabetes & Endocrinology (Gastaldelli A et al.)",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35468325/"
+      },
+      {
+        "id": "S3",
+        "title": "A multisociety Delphi consensus statement on new fatty liver disease nomenclature",
+        "publisher": "Hepatology (Rinella ME et al.)",
+        "year": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37363821/"
+      },
+      {
+        "id": "S4",
+        "title": "The prevalence and incidence of NAFLD worldwide: a systematic review and meta-analysis",
+        "publisher": "The Lancet Gastroenterology & Hepatology (Riazi K et al.)",
+        "year": "2022",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35798021/"
+      },
+      {
+        "id": "S5",
+        "title": "Liver Fibrosis, but No Other Histologic Features, Is Associated With Long-term Outcomes of Patients With Nonalcoholic Fatty Liver Disease",
+        "publisher": "Gastroenterology (Angulo P et al.)",
+        "year": "2015",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25935633/"
+      },
+      {
+        "id": "S6",
+        "title": "Sources of fatty acids stored in liver and secreted via lipoproteins in patients with nonalcoholic fatty liver disease",
+        "publisher": "Journal of Clinical Investigation (Donnelly KL et al.)",
+        "year": "2005",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15864352/"
+      },
+      {
+        "id": "S7",
+        "title": "Mechanisms of NAFLD development and therapeutic strategies",
+        "publisher": "Nature Medicine (Friedman SL et al.)",
+        "year": "2018",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29967350/"
+      },
+      {
+        "id": "S8",
+        "title": "AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease",
+        "publisher": "Hepatology (Rinella ME et al., AASLD)",
+        "year": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36727674/"
+      },
+      {
+        "id": "S9",
+        "title": "Mounjaro (tirzepatide) Prescribing Information, Section 1 (Indications and Usage), revised 8/2026",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/mounjaro/mounjaro.html#pi"
+      },
+      {
+        "id": "S11",
+        "title": "Zepbound (tirzepatide) Prescribing Information, Sections 1 (Indications and Usage) and 5.7 (Hypoglycemia), revised 8/2026",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/zepbound/zepbound.html#pi"
+      }
+    ]
+  },
+  "qa": {
+    "narrationWer": 0.017,
+    "voice": "chirp",
+    "elevenCredits": 0,
+    "visual": {
+      "rounds": 2,
+      "avgScore": 7.3,
+      "weakShots": 11,
+      "layoutIssues": 1,
+      "frameIssues": [],
+      "notes": [
+        "Background uses the banned teal/green cabinet-strip look (dashed panel bar top and bottom) flagged repeatedly in past QA",
+        "The 'Liver' label sits right on the bottom edge and is reported offscreen (box 1061,1035,1180,1090)",
+        "Purple starfield/bokeh backdrop behind a body-mood beat — this exact pattern (starfield on body beats) has been flagged across many past renders",
+        "The 'Tirzepatide' arm label is truncated to 'Tirzepa' — reads as a typo on screen",
+        "Another body beat rendered on the purple starfield backdrop — recurring fault",
+        "Same purple starfield backdrop reused on this body beat",
+        "Shot list calls for 'chart, arrow, mascot' but only the bar chart is on screen — the mascot (heart) and arrow are missing, so the scene doesn't match its own script beat",
+        "Starfield backdrop again on a body-mood beat (fourth occurrence in a row)",
+        "Expected a speech balloon reading something like 'Your doctor' but no bubble is visible in frame — the layout audit shows that text pushed off the right edge (box reaches x1444)",
+        "Two generic characters with no visible dialogue reads as an empty, unclear beat",
+        "'Placebo' tag is only ~23px, too small to read at a glance",
+        "Starfield backdrop again on a body beat",
+        "The body is rendered as an outline-only silhouette (no fill/skin tone), which is an explicitly banned hero style",
+        "Starfield/purple backdrop again on a body beat",
+        "Outline-only silhouette body reused here too"
+      ],
+      "layoutKinds": {
+        "offscreen": 10,
+        "tiny": 21,
+        "overlap": 1,
+        "sparse": 3
+      },
+      "planPaceDraft": {
+        "changes": 426,
+        "perMin": 39.1,
+        "medianGap": 1.5,
+        "maxGap": 5.06,
+        "longGaps": [
+          [
+            336.59,
+            340.88
+          ],
+          [
+            451.2,
+            456.1
+          ],
+          [
+            557.94,
+            562.32
+          ],
+          [
+            629.35,
+            634.4
+          ],
+          [
+            642.6,
+            647.22
+          ]
+        ],
+        "withEngine": {
+          "medianGap": 1.17,
+          "maxGap": 4.43
+        },
+        "ok": false,
+        "detail": "plan pacing slow: 426 planned changes (39.1/min), median gap 1.5 s, longest 5.06 s, 5 stretch(es) over 4 s (limits: median 3 s, gap 4 s); with engine camera moves: median 1.17 s, longest 4.43 s"
+      },
+      "pacingRevised": 5,
+      "pacing": {
+        "window": 653.1,
+        "changes": 522,
+        "maxGap": 4.43,
+        "ok": false,
+        "detail": "522 visual changes in the whole 653 s, longest static stretch 4.43 s (limit 2.5 s)"
+      },
+      "planPace": {
+        "changes": 430,
+        "perMin": 39.5,
+        "medianGap": 1.43,
+        "maxGap": 4.8,
+        "longGaps": [
+          [
+            297.25,
+            301.28
+          ],
+          [
+            336.59,
+            340.88
+          ],
+          [
+            593.46,
+            598.26
+          ]
+        ],
+        "withEngine": {
+          "medianGap": 1.18,
+          "maxGap": 4.43
+        },
+        "ok": false,
+        "detail": "plan pacing slow: 430 planned changes (39.5/min), median gap 1.43 s, longest 4.8 s, 3 stretch(es) over 4 s (limits: median 3 s, gap 4 s); with engine camera moves: median 1.18 s, longest 4.43 s"
+      },
+      "frameZero": {
+        "texts": [
+          "Fatty liver: does tirzepatide help?"
+        ],
+        "heroes": 2,
+        "heroHeight": 0.48,
+        "ok": true,
+        "detail": "frame 0: text \"Fatty liver: does tirzepatide help?\", 2 character(s), tallest 48% of the height"
+      },
+      "renderPace": {
+        "duration": 653,
+        "visualChangesPerMin": 22.7,
+        "medianGap": 2.3,
+        "maxGap": 9.4,
+        "changesFirst30s": 11,
+        "hardCutsPerMin": 9.1,
+        "movingShare": 0.566,
+        "longestStill": 1.7
+      }
+    },
+    "audio": {
+      "musicGain": 0.316,
+      "sfxGain": 0.55,
+      "finalWer": 0.007,
+      "maskingDelta": 0.007,
+      "lufs": -15.2,
+      "soundNotes": "Music already sits in the target window (-13.5 dB under voice, -14 dB in pauses), so gain is left at 1.0 to avoid pushing it over spec. Trimmed ~22 cues (mostly swooshes, pops and blips that tested 4-11 dB over the voice during narration) down into the -14 to -20 dB felt-but-not-heard zone; left the many cues already sitting near -14 to -20 dB untouched. Added 5 bespoke, non-medical-imagery accents (liquid swell for fat buildup, muted heartbeat for the scarring section, warm chime for the compassionate 'biology, not blame' beat, a clean single bell for the 'not an approved use' caution card, and a hopeful swell for the closing takeaway) to give the big emotional beats texture without adding clutter."
+    },
+    "blocking": [],
+    "beats": {
+      "verdict": "pass",
+      "summary": "beat sync PASS: plan 80/80 beats on time, audio shift 0.02 s, render 86% of beats cut on time",
+      "planOff": 0,
+      "audioShift": 0.02,
+      "renderHitRate": 0.86,
+      "flagged": []
+    },
+    "thumbnail": {
+      "best_index": 1,
+      "reasoning": "All three are legible at phone size with short, non-overlapping text and a single focal point, and none of them give away the answer (none state whether tirzepatide helps fatty liver or is approved for it), so no hard caps apply for \"gives the answer.\"\n\n#0 (\"LIVER FAT?\"): Clean and legible, but the mascot's expression (closed eyes, soft smile) reads as calm/content rather than worried, which undercuts the tension the question \"LIVER FAT?\" is trying to create for someone newly worried about a diagnosis. It's a mild mismatch, not a full smile-on-bad-news contradiction, but it blunts the emotional pull. Curiosity gap is decent but generic phrasing is less scroll-stopping than a concrete number.\n\n#1 (\"10% VS 62%\"): Strongest curiosity gap — a specific, surprising number pairing forces a \"62% of what?\" reaction, which is exactly the kind of pattern-interrupt that beats a generic question in a crowded health feed. \"PHASE 2 TRIAL\" and \"ON A LIVER BIOPSY?\" correctly scope the claim without revealing the result, so it stays honest to the content (SYNERGY-NASH) while promising a payoff. Clipboard + arrow is a clear single focal point, text is large and uncluttered at phone size.\n\n#2 (\"APPROVED FOR LIVER?\"): Good expectation-violation hook and the worried box-face emotion matches the tension of the question well. Legible and clean. Slightly less concrete/numeric than #1, so marginally lower curiosity pull, but a strong alternative.\n\nGiven legibility ties (all ~9) and no disqualifying issues, #1 wins on CTR because concrete, surprising numbers typically outperform open-ended questions for click-through, while staying fully honest to the SYNERGY-NASH data the video will unpack.",
+      "scores": [
+        {
+          "index": 0,
+          "ctr": 6,
+          "legibility": 9,
+          "issues": [
+            "mascot's calm/content expression slightly undersells the tension of a 'liver fat' worry, weakening emotional pull"
+          ]
+        },
+        {
+          "index": 1,
+          "ctr": 8,
+          "legibility": 9,
+          "issues": []
+        },
+        {
+          "index": 2,
+          "ctr": 7,
+          "legibility": 9,
+          "issues": [
+            "'what labels say' subtext is small but still readable at phone size"
+          ]
+        }
+      ]
+    },
+    "packaging": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "location": "thumbnail_headline",
+          "claim": "MASH RESOLVED 10%-62%",
+          "problem": "It turns placebo (10%) and the highest tirzepatide dose (62%) into one range. A viewer would read it as the drug's result being 10–62%, which misstates the comparison. The verified content always presents this as 10% on placebo against 44%, 56% and 62% on tirzepatide.",
+          "severity": "major",
+          "fix": "MASH RESOLVED: 44–62% VS 10% PLACEBO"
+        },
+        {
+          "location": "thumbnail_subtext",
+          "claim": "PHASE 2 TRIAL, BIOPSY",
+          "problem": "This is accurate, but with the new headline the subtext should keep the trial's scope and the fact that the use isn't approved. That matches the script's \"one mid-stage trial\" and \"Not an approved use\".",
+          "severity": "minor",
+          "fix": "ONE PHASE 2 BIOPSY TRIAL · NOT AN APPROVED USE"
+        },
+        {
+          "location": "description, Quick answer paragraph, second sentence",
+          "claim": "scarring improved by at least one stage without MASH getting worse in 30% vs 55%, 51% and 51%.",
+          "problem": "The 30% doesn't say it's the placebo group, so the sentence doesn't name both comparison groups.",
+          "severity": "minor",
+          "fix": "Replace with: \"As a secondary outcome, scarring improved by at least one stage without MASH getting worse in 30% on placebo vs 55%, 51% and 51% on tirzepatide.\" To stay at 1,250 characters or fewer, also change \"Fatty liver, MASLD and MASH are not an approved use for tirzepatide.\" to \"Fatty liver (MASLD, MASH) isn't an approved use for tirzepatide.\" Recount after the edit."
+        },
+        {
+          "location": "description, Quick answer paragraph, third sentence",
+          "claim": "In an open-label SURPASS-3 MRI substudy in type 2 diabetes, liver fat fell more on tirzepatide than on insulin degludec.",
+          "problem": "The verified script describes this population as adults with type 2 diabetes on metformin, with or without an SGLT2 inhibitor. The shorter wording here is acceptable but doesn't fully state the population.",
+          "severity": "minor",
+          "fix": "Replace with: \"In an open-label SURPASS-3 MRI substudy in adults with type 2 diabetes on metformin, liver fat fell more on tirzepatide than on insulin degludec.\" Only make this change if the recount stays at 1,250 characters or fewer; if it doesn't, leave this sentence as it is."
+        }
+      ]
+    }
+  },
+  "hold_reason": "Dropped by Editor-in-Chief: The script, fact-check (PASS) and technical QA are all clean. But the thumbnail \"MASH RESOLVED 10%-62%\" puts placebo (10%) and the top tirzepatide dose (62%) into one range, which misstates the drug's result. That's misleading for a use that isn't approved, and nobody has fixed it. Re-render with \"MASH RESOLVED: 44–62% VS 10% PLACEBO\" / \"ONE PHASE 2 BIOPSY TRIAL · NOT AN APPROVED USE\", apply the minor description and script fixes, then ship.",
+  "release_tag": "content-2026-11-25",
+  "archive_url": "b2://informed-lab-media/content/2026-11-25/L3-tirzepatide-mounjaro-zepbound-and-fatty/"
+}
