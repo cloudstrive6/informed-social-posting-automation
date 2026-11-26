@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-26",
+  "created_at": "2026-11-26T03:08:26.380Z",
+  "rationale": "Quota: 1 long video, 3 Shorts, 0 carousels. Everything stays inside the GLP-1 focus.\n\n**Long video:** the queue can't use its first two items. Foundayo What to Expect was made on 11-24 and must never be scripted again. Mounjaro vs Ozempic has been live since 11-23. The next item is Serious Risks: How Rare?, which is held, so this is a re-time and fix of the existing script, not a new one. It is also the analytics playbook's next priority. The radar's peaking NAION story (Health Canada's 25 Nov warning on top of the FDA class label change) gives it a timely, label-based hook. The body rests on the US labels and the FDA safety notice, so it can be checked in depth. Five of the last seven long videos were search-demand formats, so a Lane A video is fine today.\n\n**Shorts:** all three are felt or practical moments. None is a study, news or label-change topic, and none repeats a recent Short.\n- **08:00 (S1):** a fresh hair angle on our best proven Short topic: why shedding seems to start months in.\n- **13:00 (S2):** a gallbladder spin-off of L1. The last gallbladder Short was 10-26, outside the 30-day window.\n- **20:00 (S3):** Thanksgiving Day felt moment, linked to the Thanksgiving video. Loose stools the morning after hasn't been used as a holiday angle yet.\n\nThe two GI Shorts cover different organs and symptoms. L1 covers several body systems, so no single system gets three pieces. I skipped the mammogram story (a news topic and a small conference study) and nothing on the radar was marked reject.",
+  "pieces": [
+    {
+      "id": "L1",
+      "kind": "long",
+      "topic": "Tirzepatide (Mounjaro/Zepbound) serious risks and how rare each one is, from the US labels. Re-time and fix the held 11-21 video; do not script it again.",
+      "angle": "Re-render the held Serious Risks video with every 11-21 fix:\n- remove the duplicate '6.4 vs 3.8' at s65\n- s8: hold the sleep apnea card until s9 says it\n- s36: say 'a sulfonylurea'\n- s44: give the full allergy list, in the description too\n- s77: say 'MTC or MEN 2'\n- s35 and s72: say low blood sugar is also reported in adults without type 2 diabetes\n- use the real Medication Guide URL\n- every cut within 0.5 s of its beat, masking 0.02 or lower\n\nNAION chapter: present it as the FDA's class-wide 'potential' risk (6.4 vs 3.8 per 100,000 person-years across 126 trials, small number of events, not shown for tirzepatide alone). The signs are sudden, often painless vision loss in one eye; the action is to contact a clinician right away. One spoken intro line at most may say Canada's regulator has also warned about semaglutide, and only if Health Canada's own page is cited. Never end a chapter on a warning card.\n\nKeep the scoped don't-stop line, 'Not personal advice' and the full prescriber line, spoken and on screen. Check the live channel list for duplicates before publishing.",
+      "working_title": "Tirzepatide (Mounjaro) Serious Risks: How Rare?",
+      "target_keyword": "mounjaro serious side effects",
+      "trend_stage": "peaking (NAION hook) / evergreen body",
+      "why": "Queue item #3 and the analytics playbook's next priority. The peaking NAION search ('ozempic vision loss', 'mounjaro eye side effects') gives a hook, and the body is all label evidence.",
+      "pillar": "is-it-for-you"
+    },
+    {
+      "id": "S1",
+      "kind": "short",
+      "topic": "Tirzepatide hair shedding that seems to start months in: why it can show up after weight loss is under way",
+      "angle": "08:00 calm 'Is this normal?' body moment.\n- Sentence 1 (14 words or fewer) names tirzepatide and carries the relief fact: shedding linked to weight loss (telogen effluvium) typically shows up a couple of months after the trigger, according to AAD/DermNet timing used as typical ranges.\n- Label stat: 5.4% vs 0.9% on placebo, Zepbound weight trials, population on the card. Don't claim the drug is the direct cause beyond the label's link to faster weight loss.\n- Untagged lines: enough protein unless your clinician limits it; see a doctor if it's patchy, painful or lasts more than about 6 months.\n- Close with the fixed don't-stop line, 'Not personal advice, so ask your prescriber.' and a loop line. 160 words or fewer.\n- Post note (Exp G): target is Hair Loss.",
+      "working_title": "Tirzepatide Hair Loss: Why Months Later? #shorts",
+      "target_keyword": "mounjaro hair loss",
+      "trend_stage": "evergreen",
+      "why": "Hair is our top proven 'Is this normal?' Short (1,035 views). The timing question is new: earlier Shorts covered how common it is, regrowth and women.",
+      "pillar": "get-the-most"
+    },
+    {
+      "id": "S2",
+      "kind": "short",
+      "topic": "Pain under the right ribs after a rich meal on tirzepatide: the gallbladder signs on the label, and why rapid weight loss is linked to gallstones",
+      "angle": "Title: 'Tirzepatide and Your Gallbladder: 4 Signs to Know #shorts'. Sentence 1: tirzepatide plus the label's gallbladder trial rates vs placebo, with the population on the card. Then the hedged rapid-weight-loss link, the exact Medication Guide sign list ending 'call your healthcare provider right away', the scoped don't-stop line, 'Not personal advice, so ask your prescriber.', and the loop line.",
+      "working_title": "Tirzepatide and Gallbladder Pain: Normal? #shorts",
+      "target_keyword": "mounjaro gallbladder",
+      "trend_stage": "evergreen",
+      "why": "Spin-off of L1: a felt symptom people search, pointing viewers to the Serious Risks video. The last gallbladder Short was 10-26, outside the 30-day window. | fact-check: The topic is sound and it's a real spin-off. The problem is the working title 'Normal?'. It implies pain under the right ribs may be normal, but that is a label warning sign that needs a call to the prescriber. Reframe as signs to know. Use the label's per-arm acute gallbladder rates vs placebo exactly as L1 verified them (cholelithiasis and cholecystitis given separately, each with its placebo figure). Name the trial population and say 'reported in trials', not 'risk is'. Say 'uncommon' only if L1's verified numbers support it. Keep the rapid-weight-loss line hedged and method-neutral ('rapid weight loss, by any method, is linked to gallstones'). Don't say the drug causes gallstones. Copy the Medication Guide wording exactly: 'pain in your upper stomach (abdomen), fever, yellowing of skin or eyes (jaundice), or clay-colored stools', then 'call your healthcare provider right away'. Don't add 'right ribs' to the quoted card. It can appear only as untagged narration context. Use no anatomy gore or scare visuals. Watch-next: L1 isn't live yet, so target Side Effects.",
+      "pillar": "myths"
+    },
+    {
+      "id": "S3",
+      "kind": "short",
+      "topic": "Loose stools the morning after Thanksgiving dinner on tirzepatide: what the label says about diarrhea, fluids and when to call",
+      "angle": "Title: 'Tirzepatide and Diarrhea After a Big Holiday Meal: When to Call #shorts'. Sentence 1 (14 words or fewer): 'On tirzepatide, diarrhea is a common side effect listed on the label.' Then the 15 mg vs placebo card with the population, and the exact PI sentence on dose escalation. Then the guilt-free fluid and pharmacist tips, the call-your-prescriber dehydration signs, the exact emergency card, the don't-stop line, 'Not personal advice, so ask your prescriber.', and the loop line.",
+      "working_title": "Tirzepatide: Diarrhea After Thanksgiving Dinner? #shorts",
+      "target_keyword": "mounjaro diarrhea after eating",
+      "trend_stage": "peaking",
+      "why": "It's Thanksgiving Day, and holiday felt-symptom Shorts are proven (full the morning after 495, stuffing 329). This symptom hasn't been used as a holiday angle yet. | fact-check: Diarrhea is a common adverse reaction in Zepbound PI Table 2 (about 23% at 15 mg vs about 7% on placebo). Confirm the exact figures in the current label (accessdata 217806 2026 revision or DailyMed) and show both groups plus the population on screen. Two fixes: (1) The angle paraphrases the label as 'mostly during dose escalation'. The source wording is 'The majority of reports/events of nausea, vomiting, and/or diarrhea occurred during dose escalation and decreased over time.' Copy the current PI sentence word for word. Don't rewrite it as 'mostly', and don't add 'so'. (2) The Thanksgiving framing must not say the meal caused the diarrhea, and must not shame the eating. Present the holiday only as the setting ('if it happens after a big holiday meal'). Fluid tip: keep 'unless you've been told to limit fluids'. Anti-diarrhea products: ask a pharmacist or prescriber first. Dehydration line: keep the label's link between fluid loss and kidney problems as 'can lead to', not 'causes'. Emergency card: use the Medication Guide wording exactly ('severe pain in your stomach area (abdomen) that will not go away, with or without vomiting', then stop using it and call your healthcare provider right away). Follow it with the full two-card don't-stop line. Tight arm: 90–120 words.",
+      "pillar": "life-on-glp1"
+    }
+  ]
+}
