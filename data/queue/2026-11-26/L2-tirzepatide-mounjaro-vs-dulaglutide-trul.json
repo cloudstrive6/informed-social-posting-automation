@@ -1,0 +1,1087 @@
+{
+  "id": "L2-tirzepatide-mounjaro-vs-dulaglutide-trul",
+  "date": "2026-11-26",
+  "kind": "long",
+  "plan": {
+    "id": "L2",
+    "kind": "long",
+    "topic": "Tirzepatide (Mounjaro) vs dulaglutide (Trulicity) in the SURPASS-CVOT randomized heart-outcomes trial (NEJM 2025): adults with type 2 diabetes and established atherosclerotic cardiovascular disease, about 13,300 people, median follow-up about 4 years. Covers the main heart and stroke result, death from any cause, A1C and weight, stomach side effects and stopping rates, what a non-inferiority trial with an active comparator can and can't tell you, and questions to ask your prescriber or cardiologist.",
+    "angle": "Keep the planned structure, with these changes. Working title: 'Mounjaro vs Trulicity for Heart Disease: What the SURPASS-CVOT Trial Found'. Thumbnail stays 'FEWER HEART EVENTS?' with subtext 'tirzepatide vs dulaglutide · type 2 diabetes'. Opening: 'about thirteen thousand adults with type 2 diabetes and heart or blood-vessel disease', the exact per-arm primary rates, HR 0.92 and CI from the NEJM paper, then 'not worse than dulaglutide; it did not prove it was better.' Second payoff: death from any cause per arm, said to be a secondary outcome that can't confirm a benefit on its own. Say per-arm A1C (-1.66 vs -0.88 points) and weight (-11.6% vs -4.8%), and say GI adverse events were more frequent on tirzepatide. Name Lilly as the funder. Quote each label's Section 1 exactly and mention a CV indication only where the live label prints it. Close with prescriber questions and 'don't switch, stop or change your medicines on your own.'",
+    "working_title": "Mounjaro vs Trulicity: Which Protected the Heart More?",
+    "target_keyword": "mounjaro vs trulicity",
+    "trend_stage": "evergreen",
+    "why": "An approved-drug head-to-head against tirzepatide (our best long format), with real brand-name search demand, built on one settled NEJM randomized trial that is easy to fact-check first time. It doesn't overlap with the dropped Serious Risks video, today's hair, gallbladder and diarrhea Shorts, or any live video. | fact-check: The trial is real and the topic fits the channel, with good evidence behind it. SURPASS-CVOT was published in NEJM on 17 Dec 2025 (PubMed 41903177). It was a double-blind, active-comparator, non-inferiority trial in adults with type 2 diabetes and atherosclerotic cardiovascular disease, median follow-up about 4 years. The primary outcome was cardiovascular death, heart attack or stroke. Rates were about 12% on tirzepatide and 13% on dulaglutide, HR 0.92: non-inferior (p=0.003) but not superior (p=0.09). Death from any cause was lower on tirzepatide, a secondary outcome. A1C fell 1.66 vs 0.88 points and weight fell 11.6% vs 4.8%. Tirzepatide had more GI adverse events, and overall adverse events were similar. Fixes needed before scripting: (1) Population size. 6,586 + 6,579 = 13,165 were randomized, so 'about 13,300' is wrong. Use 'about thirteen thousand' or the paper's exact randomized count. (2) The title 'Which Protected the Heart More?' suggests one drug won. The trial did not show superiority, so use a neutral question that doesn't hint at a winner. (3) Death from any cause must be framed as a secondary outcome that does not prove benefit. Use the paper's exact hedge and CI, and don't call it 'lower risk of dying' without that hedge. Never put it in the title or thumbnail. (4) Take the exact per-arm rates, HR and 95% CI from the NEJM paper, not from news coverage. (5) Name Eli Lilly (maker of both drugs) as the funder. (6) Section 1 of each label: Trulicity's US label carries a cardiovascular risk-reduction indication (from REWIND). Check whether the live Mounjaro PI (27 Aug 2026) has added a CV indication, quote only what it prints, and never imply an indication from this trial. (7) The trial arm labels (tirzepatide up to 15 mg vs dulaglutide 1.5 mg) are the dose limit; no other dose talk. (8) The 'Don't switch' safety line is good. Keep the no-switching framing all through: the video compares trial results, not which medicine to choose. (9) Confirm no existing SURPASS-CVOT or Trulicity long video is on the channel.",
+    "pillar": "beyond-weight"
+  },
+  "status": "failed",
+  "package": {},
+  "media": {},
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-26T19:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-11-26T06:16:16.634Z",
+  "script": {
+    "working_title": "Mounjaro vs Trulicity for Heart Disease in Type 2 Diabetes: What the SURPASS-CVOT Trial Found",
+    "target_keyword": "mounjaro vs trulicity",
+    "hook_pattern": "Counterintuitive claim, answer first. Sentence 1 names Mounjaro vs Trulicity and gives the hedged verdict (\"not worse, but not proven better\"). The per-arm primary rates come by about 16 s. Death from any cause (8.6% vs 10.2%, framed as a secondary outcome over about 4 years) comes by about 30 s. One open loop (why \"not worse\" than this rival is a tough test) pays off in the toughest-rival chapter.",
+    "scenes": [
+      {
+        "id": "s1",
+        "section": "The answer",
+        "narration": "Mounjaro versus Trulicity for your heart: tirzepatide was not worse, but not proven better.",
+        "on_screen_text": "Tirzepatide: not worse, not proven better",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "man reading heart headline, kitchen"
+        },
+        "retention_device": "Answer in sentence one; 'not proven' opens a curiosity gap",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s2",
+        "section": "The answer",
+        "narration": "In the SURPASS-CVOT trial, about thirteen thousand adults with type two diabetes and heart or blood-vessel disease were randomly assigned to one of two weekly shots.",
+        "on_screen_text": "~13,000 adults, type 2 diabetes + heart or blood-vessel disease",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "big diverse crowd of adults, hopeful"
+        },
+        "retention_device": "Scale proof point",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s3",
+        "section": "The answer",
+        "narration": "A heart attack, stroke or cardiovascular death happened to twelve point two percent on tirzepatide versus thirteen point one percent on dulaglutide, over a median of about four years.",
+        "on_screen_text": "Type 2 diabetes + heart or blood-vessel disease, ~4 years",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "12.2% vs 13.1%",
+          "stat_label": "CV death, heart attack, stroke: tirzepatide vs dulaglutide",
+          "stock_query": "two bars nearly equal height"
+        },
+        "retention_device": "Headline number by 16 s",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s4",
+        "section": "The answer",
+        "narration": "The hazard ratio was zero point nine two, with a confidence range from zero point eight three to one point zero one. In plain words: not worse than dulaglutide; it did not prove it was better.",
+        "on_screen_text": "Not worse. Not proven better.",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "HR 0.92",
+          "stat_label": "95.3% CI 0.83 to 1.01, tirzepatide vs dulaglutide",
+          "stock_query": "balance scale almost level"
+        },
+        "retention_device": "Plain-words verdict locks the answer",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s5",
+        "section": "The answer",
+        "narration": "The second number people talk about is death from any cause: eight point six percent on tirzepatide versus ten point two percent on dulaglutide.",
+        "on_screen_text": "Death, any cause (secondary outcome, ~4 years)",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "8.6% vs 10.2%",
+          "stat_label": "Death, any cause: tirzepatide vs dulaglutide",
+          "stock_query": "two calendars side by side"
+        },
+        "retention_device": "Second concrete payoff at 15–30 s",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s6",
+        "section": "The answer",
+        "narration": "But that was a secondary outcome, and on its own it cannot confirm a benefit. We will unpack exactly why in a few minutes.",
+        "on_screen_text": "Secondary outcome: not proof",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi holding magnifying glass, curious"
+        },
+        "retention_device": "Mini open loop on the death number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s7",
+        "section": "The answer",
+        "narration": "If you live with diabetes and a heart history, you have probably stared at your weekly pen and wondered whether it is doing anything for your heart. That worry is fair.",
+        "on_screen_text": "Is my shot helping my heart?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "worried woman, pen box, dark night kitchen"
+        },
+        "retention_device": "Lived moment plus validation",
+        "source_ids": []
+      },
+      {
+        "id": "s8",
+        "section": "The answer",
+        "narration": "In the next few minutes, you will get the heart result, the blood sugar and weight numbers, the stomach trade-off, and three questions for your next appointment.",
+        "on_screen_text": "Heart, sugar, weight, stomach",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "The heart result",
+            "A1C and weight",
+            "The stomach trade-off",
+            "Questions for your appointment"
+          ],
+          "stock_query": "checklist on clipboard, friendly"
+        },
+        "retention_device": "Promise of what they will get",
+        "source_ids": []
+      },
+      {
+        "id": "s9",
+        "section": "The answer",
+        "narration": "And later, I will show you why being not worse than this particular rival is a tougher test than beating a dummy shot.",
+        "on_screen_text": "Why this test is tough",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "runner facing medal-wearing rival"
+        },
+        "retention_device": "Main open loop (pays off in 'The toughest rival')",
+        "source_ids": []
+      },
+      {
+        "id": "s10",
+        "section": "The answer",
+        "narration": "Imagine Ray, sixty-one, a hypothetical man with type two diabetes and a stent. He reads one headline saying Mounjaro won, and another saying it lost. By the end, you will see why both miss the point.",
+        "on_screen_text": "Ray, 61 (hypothetical)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "older man confused by two newspapers"
+        },
+        "retention_device": "Relatable thread introduced, with a mini-loop",
+        "source_ids": []
+      },
+      {
+        "id": "s11",
+        "section": "Not worse, explained",
+        "narration": "So what does not worse actually mean? It is the phrase headlines trip over.",
+        "on_screen_text": "What 'not worse' means",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, puzzled headline"
+        },
+        "retention_device": "Chapter question",
+        "source_ids": []
+      },
+      {
+        "id": "s12",
+        "section": "Not worse, explained",
+        "narration": "SURPASS-CVOT was a non-inferiority trial. Its main question was not which drug is better, but whether tirzepatide was no worse than dulaglutide, within a margin set in advance.",
+        "on_screen_text": "Non-inferiority: no worse?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "line drawn on track, finish zone"
+        },
+        "retention_device": "Reframe of the question",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "Not worse, explained",
+        "narration": "Think of a relay team tryout. A challenger does not have to beat the team's best runner; it only has to prove it is not meaningfully slower.",
+        "on_screen_text": "Keep pace, not win",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "relay tryout, two runners side by side"
+        },
+        "retention_device": "Analogy",
+        "source_ids": []
+      },
+      {
+        "id": "s14",
+        "section": "Not worse, explained",
+        "narration": "Tirzepatide passed that test. The paper reports a p-value of zero point zero zero three for non-inferiority.",
+        "on_screen_text": "Non-inferiority: passed",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "P = 0.003",
+          "stat_label": "Non-inferiority test, tirzepatide vs dulaglutide: passed",
+          "stock_query": "green check stamp"
+        },
+        "retention_device": "Payoff of the test",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "Not worse, explained",
+        "narration": "Then came the harder question: was it actually better? That test came back with a p-value of zero point zero nine, which did not reach the bar for proving it.",
+        "on_screen_text": "Better? Not proven",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "P = 0.09",
+          "stat_label": "Superiority test, tirzepatide vs dulaglutide: not met",
+          "stock_query": "high jump bar just missed"
+        },
+        "retention_device": "But/therefore turn",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "Not worse, explained",
+        "narration": "A hazard ratio below one leans toward tirzepatide, and exactly one would mean no difference. The range here ran from zero point eight three up to one point zero one, so it still included no difference.",
+        "on_screen_text": "Range crosses 1.0",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "number line with range crossing one"
+        },
+        "retention_device": "Explainer that rewards attention",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s17",
+        "section": "Not worse, explained",
+        "narration": "In absolute terms, the gap was less than one percentage point: twelve point two versus thirteen point one percent. That could be a real difference or chance, and this trial could not settle which.",
+        "on_screen_text": "Under 1 point apart",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "<1 point",
+          "stat_label": "Gap in heart events, tirzepatide vs dulaglutide",
+          "stock_query": "tiny gap between two bars"
+        },
+        "retention_device": "Humanised number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "Not worse, explained",
+        "narration": "So the honest summary is not 'Mounjaro wins' and not 'Mounjaro loses.' Mounjaro held its own.",
+        "on_screen_text": "It held its own",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Mounjaro beat Trulicity on heart events",
+          "fact": "Not worse; superiority not proven",
+          "stock_query": "headline being corrected"
+        },
+        "retention_device": "Myth correction pays off Ray's headlines",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "Not worse, explained",
+        "narration": "One detail matters for trust: the trial was funded by Eli Lilly, which makes both tirzepatide and dulaglutide. It was also double-blind, so neither patients nor their doctors knew who got which drug.",
+        "on_screen_text": "Lilly-funded, double-blind",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two identical unlabeled boxes"
+        },
+        "retention_device": "Transparency beat",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "Not worse, explained",
+        "narration": "The trial also has edges. It studied adults with type two diabetes and established heart or blood-vessel disease, so it does not directly answer questions about people without diabetes.",
+        "on_screen_text": "Who it applies to",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "map with clear boundary line"
+        },
+        "retention_device": "Scope check",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "Not worse, explained",
+        "narration": "And because there was no placebo group, it cannot tell you directly how tirzepatide compares with no treatment at all for heart risk. Hold onto that gap; it matters later.",
+        "on_screen_text": "No placebo group",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "empty chair at a table"
+        },
+        "retention_device": "Plants a callback for the rival chapter",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s22",
+        "section": "Not worse, explained",
+        "narration": "Labels matter too. Section one of the Mounjaro label lists a use to reduce the risk of major adverse cardiovascular events in adults with type two diabetes who are at high risk for these events.",
+        "on_screen_text": "Mounjaro label, Section 1: heart-risk use",
+        "visual": {
+          "kind": "quote",
+          "quote": "to reduce the risk of major adverse cardiovascular (CV) events (CV death, non-fatal myocardial infarction (MI), or non-fatal stroke) in adults with type 2 diabetes mellitus who are at high risk for these events.",
+          "attribution": "Mounjaro (tirzepatide) Prescribing Information, Section 1",
+          "stock_query": "open leaflet with heart icon"
+        },
+        "retention_device": "Exact label wording",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "Not worse, explained",
+        "narration": "Only the FDA-approved label says what a medicine is approved for, so ask your prescriber whether either label's uses fit you.",
+        "on_screen_text": "Ask what fits you",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient and prescriber reading leaflet"
+        },
+        "retention_device": "Agency beat",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "Not worse, explained",
+        "narration": "But that confidence range was not the only number to watch. The number people love to share comes next.",
+        "on_screen_text": "The number people share",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "phone with share button glowing"
+        },
+        "retention_device": "Mini-cliffhanger before the chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s25",
+        "section": "Death from any cause",
+        "narration": "Back to death from any cause, because it is the number that gets stretched.",
+        "on_screen_text": "Death from any cause",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, stretched rubber band"
+        },
+        "retention_device": "Callback to the s6 loop",
+        "source_ids": []
+      },
+      {
+        "id": "s26",
+        "section": "Death from any cause",
+        "narration": "Death from any cause was eight point six percent on tirzepatide versus ten point two percent on dulaglutide: a hazard ratio of zero point eight four, with a confidence range from zero point seven five to zero point nine four.",
+        "on_screen_text": "Secondary outcome, ~4 years",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "HR 0.84",
+          "stat_label": "Death, any cause, tirzepatide vs dulaglutide; CI 0.75 to 0.94",
+          "stock_query": "number line, range below one"
+        },
+        "retention_device": "Exact numbers with hedge",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "Death from any cause",
+        "narration": "That whole range sits below one. So why can it not count as proof? Here is where it gets interesting.",
+        "on_screen_text": "So why not proof?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi scratching head, puzzled"
+        },
+        "retention_device": "Question to the viewer",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "Death from any cause",
+        "narration": "Death from any cause was a secondary outcome, and it was not adjusted for testing many outcomes at once. On top of that, the main test for being better was not met. So this number can point somewhere, but it cannot prove a benefit on its own.",
+        "on_screen_text": "Secondary, not adjusted: not proof",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "second place ribbon on desk"
+        },
+        "retention_device": "Payoff of the s6 loop",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "Death from any cause",
+        "narration": "Think of it as a second clue in a mystery: worth noticing, worth following up, but not enough to close the case.",
+        "on_screen_text": "A clue, not a verdict",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "detective notebook with one clue"
+        },
+        "retention_device": "Analogy",
+        "source_ids": []
+      },
+      {
+        "id": "s30",
+        "section": "Death from any cause",
+        "narration": "So a headline saying Mounjaro proved it saves more lives than Trulicity goes further than this trial can.",
+        "on_screen_text": "Headline goes too far",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Mounjaro proved it saves more lives",
+          "fact": "Secondary outcome; can't confirm a benefit alone",
+          "stock_query": "headline crossed out gently"
+        },
+        "retention_device": "Myth correction",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s31",
+        "section": "Death from any cause",
+        "narration": "For Ray, that is actually useful. It gives him a sharp question for his cardiologist, instead of a headline to panic or celebrate over.",
+        "on_screen_text": "A question, not a panic",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "older man calmly writing notes"
+        },
+        "retention_device": "Return to the relatable thread",
+        "source_ids": []
+      },
+      {
+        "id": "s32",
+        "section": "Death from any cause",
+        "narration": "But the numbers where the two drugs pulled far apart were blood sugar and weight.",
+        "on_screen_text": "Where they pulled apart",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two paths splitting apart"
+        },
+        "retention_device": "Teaser before the chapter change",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Blood sugar and weight",
+        "narration": "Start with A1C, the blood test for longer-term blood sugar control.",
+        "on_screen_text": "A1C and weight",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, lab report"
+        },
+        "retention_device": "Chapter change",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Blood sugar and weight",
+        "narration": "After thirty-six months, A1C had fallen by one point six six points on tirzepatide versus zero point eight eight points on dulaglutide.",
+        "on_screen_text": "A1C at 36 months: tirzepatide vs dulaglutide",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−1.66 vs −0.88",
+          "stat_label": "A1C change at 36 months (points): tirzepatide vs dulaglutide",
+          "stock_query": "two arrows pointing down"
+        },
+        "retention_device": "Surprising gap",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "Blood sugar and weight",
+        "narration": "Dulaglutide's drop was a solid step. By our own arithmetic, tirzepatide's drop was nearly twice that size.",
+        "on_screen_text": "Nearly twice the drop",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "one stair step versus two"
+        },
+        "retention_device": "Humanised comparison",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Blood sugar and weight",
+        "narration": "Weight moved too. By thirty-six months, body weight had fallen by eleven point six percent on tirzepatide versus four point eight percent on dulaglutide.",
+        "on_screen_text": "Weight at 36 months: tirzepatide vs dulaglutide",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "−11.6% vs −4.8%",
+          "stat_label": "Body weight change at 36 months: tirzepatide vs dulaglutide",
+          "stock_query": "two scales side by side"
+        },
+        "retention_device": "Second big number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Blood sugar and weight",
+        "narration": "For someone weighing two hundred pounds, that works out to roughly twenty-three pounds versus about ten. That is our illustration, not a result from the paper.",
+        "on_screen_text": "Our math, 200 lb person: ~23 vs ~10 lb",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "grocery bags weighed on scale"
+        },
+        "retention_device": "Humanised number",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s38",
+        "section": "Blood sugar and weight",
+        "narration": "If you have spent years feeling judged about your weight, those numbers might feel like relief. Just remember that weight is one health measure among many.",
+        "on_screen_text": "One measure among many",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman exhaling with relief, sunlight"
+        },
+        "retention_device": "Name the feeling, then validate it",
+        "source_ids": []
+      },
+      {
+        "id": "s39",
+        "section": "Blood sugar and weight",
+        "narration": "So tirzepatide moved A1C and weight further. Why did that not show up as a clearly bigger heart benefit? This trial cannot tell you why; it stays an open question.",
+        "on_screen_text": "Why no bigger heart win?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "question mark over a heart"
+        },
+        "retention_device": "Honest open question (re-hook)",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s40",
+        "section": "Blood sugar and weight",
+        "narration": "And there was a trade-off, one you might already feel in your stomach.",
+        "on_screen_text": "The trade-off",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "man holding stomach, uneasy"
+        },
+        "retention_device": "Teaser into the next chapter",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s41",
+        "section": "The stomach trade-off",
+        "narration": "Every medicine has a cost, and here the cost showed up in the gut.",
+        "on_screen_text": "The gut cost",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, cartoon stomach"
+        },
+        "retention_device": "Chapter change",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "The stomach trade-off",
+        "narration": "Gastrointestinal adverse events, the stomach and gut group, were reported by forty-two point five percent on tirzepatide versus thirty-five point nine percent on dulaglutide.",
+        "on_screen_text": "GI adverse events: 42.5% vs 35.9%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "42.5% vs 35.9%",
+          "stat_label": "GI adverse events: tirzepatide vs dulaglutide",
+          "stock_query": "queasy cartoon stomach character"
+        },
+        "retention_device": "Direct answer with concrete numbers",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "The stomach trade-off",
+        "narration": "At the same time, the paper reported the overall rate of adverse events as similar in the two groups.",
+        "on_screen_text": "Overall adverse events: similar",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "balanced seesaw, two kids"
+        },
+        "retention_device": "But/therefore nuance",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s44",
+        "section": "The stomach trade-off",
+        "narration": "And thirteen point two percent stopped tirzepatide because of adverse events, versus ten point one percent on dulaglutide.",
+        "on_screen_text": "Stopped for adverse events: 13.2% vs 10.1%",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "13.2% vs 10.1%",
+          "stat_label": "Stopped for adverse events: tirzepatide vs dulaglutide",
+          "stock_query": "person setting pen box aside"
+        },
+        "retention_device": "Fresh fact",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "The stomach trade-off",
+        "narration": "If you have had that queasy week after a dose step, sitting at dinner and pushing your plate away, this will not surprise you. You are not imagining it.",
+        "on_screen_text": "You're not imagining it",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman pushing plate away at dinner"
+        },
+        "retention_device": "Lived moment plus validation",
+        "source_ids": []
+      },
+      {
+        "id": "s46",
+        "section": "The stomach trade-off",
+        "narration": "Your prescriber can help with practical ways to make stomach symptoms easier, so bring them up instead of quietly putting up with them.",
+        "on_screen_text": "Bring it up",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient talking to friendly pharmacist"
+        },
+        "retention_device": "Agency beat",
+        "source_ids": []
+      },
+      {
+        "id": "s47",
+        "section": "The stomach trade-off",
+        "narration": "Which brings us back to the promise from the start: why is being not worse than Trulicity a bigger deal than it sounds?",
+        "on_screen_text": "Why 'not worse' matters",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi pointing at rewind arrow"
+        },
+        "retention_device": "Reopens the main loop before the payoff",
+        "source_ids": []
+      },
+      {
+        "id": "s48",
+        "section": "The toughest rival",
+        "narration": "Because Trulicity is not just any rival. It had already passed its own heart trial.",
+        "on_screen_text": "Trulicity's own heart trial",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, trophy on shelf"
+        },
+        "retention_device": "Loop payoff begins",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s49",
+        "section": "The toughest rival",
+        "narration": "In the REWIND trial, adults aged fifty or older with type two diabetes and either cardiovascular disease or cardiovascular risk factors got dulaglutide or a placebo shot.",
+        "on_screen_text": "REWIND: dulaglutide vs placebo",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two groups walking, one with dummy shot"
+        },
+        "retention_device": "Micro-story of the earlier trial",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "The toughest rival",
+        "narration": "Heart attack, stroke or cardiovascular death happened to twelve percent on dulaglutide versus thirteen point four percent on placebo, over a median of about five years, a hazard ratio of zero point eight eight.",
+        "on_screen_text": "REWIND: age 50+, type 2 diabetes + CV disease or risk factors, ~5 years",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "12.0% vs 13.4%",
+          "stat_label": "REWIND heart events: dulaglutide vs placebo",
+          "stock_query": "two bars, one lower"
+        },
+        "retention_device": "Surprising context stat",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "The toughest rival",
+        "narration": "That result backs the heart use on the Trulicity label. Section one lists a use to reduce the risk of major adverse cardiovascular events in adults with type two diabetes who have established cardiovascular disease or multiple cardiovascular risk factors.",
+        "on_screen_text": "Trulicity label, Section 1",
+        "visual": {
+          "kind": "quote",
+          "quote": "to reduce the risk of major adverse cardiovascular events (cardiovascular death, non-fatal myocardial infarction, or non-fatal stroke) in adults with type 2 diabetes mellitus who have established cardiovascular disease or multiple cardiovascular risk factors.",
+          "attribution": "Trulicity (dulaglutide) Prescribing Information, Section 1",
+          "stock_query": "open leaflet with heart icon"
+        },
+        "retention_device": "Exact label wording, the last new fact",
+        "source_ids": [
+          "S3",
+          "S2"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "The toughest rival",
+        "narration": "So tirzepatide was not racing a dummy shot. It was racing a runner who already had a medal, and it kept pace.",
+        "on_screen_text": "Racing a medal winner",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two runners neck and neck, medal"
+        },
+        "retention_device": "Payoff of the main loop (callback to s9, s13, s21)",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s53",
+        "section": "The toughest rival",
+        "narration": "That is the payoff: being not worse than a drug with a proven heart benefit is real information, although it is not a win.",
+        "on_screen_text": "Real information, not a win",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi nodding thoughtfully"
+        },
+        "retention_device": "Loop closed, meaning made clear",
+        "source_ids": [
+          "S1",
+          "S3"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "The toughest rival",
+        "narration": "So where does that leave Ray? Whichever of the two shots he takes, it has been tested in people with type two diabetes and heart risk like his, and the choice between them belongs in a conversation with his care team.",
+        "on_screen_text": "A conversation, not a coin toss",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "older man relieved with cardiologist"
+        },
+        "retention_device": "Thread payoff; chapter ends on relief",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "Questions to ask",
+        "narration": "If Ray were sitting across from you, here is what he could bring to his next appointment, and you can too.",
+        "on_screen_text": "3 questions to bring",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "chapter card, notebook and pen"
+        },
+        "retention_device": "Practical takeaway begins",
+        "source_ids": []
+      },
+      {
+        "id": "s56",
+        "section": "Questions to ask",
+        "narration": "First: how do these trial results fit my own heart history?",
+        "on_screen_text": "Fit my heart history?",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "How do these results fit my heart history?"
+          ],
+          "stock_query": "notebook question one"
+        },
+        "retention_device": "Numbered step",
+        "source_ids": []
+      },
+      {
+        "id": "s57",
+        "section": "Questions to ask",
+        "narration": "Second: are my blood sugar and weight where we want them, with what I am taking?",
+        "on_screen_text": "Am I on track?",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "How do these results fit my heart history?",
+            "Are my A1C and weight on track?"
+          ],
+          "stock_query": "notebook question two"
+        },
+        "retention_device": "Numbered step",
+        "source_ids": []
+      },
+      {
+        "id": "s58",
+        "section": "Questions to ask",
+        "narration": "Third: if stomach symptoms are getting in the way, what can we try together?",
+        "on_screen_text": "Help with stomach symptoms?",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "How do these results fit my heart history?",
+            "Are my A1C and weight on track?",
+            "What can we try for stomach symptoms?"
+          ],
+          "stock_query": "notebook question three"
+        },
+        "retention_device": "Numbered step completes the list",
+        "source_ids": []
+      },
+      {
+        "id": "s59",
+        "section": "Questions to ask",
+        "narration": "Questions like these turn a confusing headline into a plan you and your care team build together.",
+        "on_screen_text": "Headline into a plan",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient and doctor shaking hands"
+        },
+        "retention_device": "Empowering chapter end",
+        "source_ids": []
+      },
+      {
+        "id": "s60",
+        "section": "The takeaway",
+        "narration": "Here is the whole trial in three lines.",
+        "on_screen_text": "The trial in 3 lines",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Not worse; not proven better",
+            "Bigger A1C and weight drops",
+            "More GI adverse events"
+          ],
+          "stock_query": "three-line summary card"
+        },
+        "retention_device": "Recap checklist",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s61",
+        "section": "The takeaway",
+        "narration": "In adults with type two diabetes and heart or blood-vessel disease, tirzepatide was not worse than dulaglutide for heart attack, stroke or cardiovascular death, and it did not prove it was better.",
+        "on_screen_text": "Not worse, not proven better",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "balanced scale, calm colours"
+        },
+        "retention_device": "Recap of the main finding",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s62",
+        "section": "The takeaway",
+        "narration": "It lowered A1C and weight more than dulaglutide did, and gastrointestinal adverse events were more frequent on tirzepatide.",
+        "on_screen_text": "More A1C and weight drop",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two arrows down, small stomach icon"
+        },
+        "retention_device": "Recap",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s63",
+        "section": "The takeaway",
+        "narration": "Not personal advice, so ask your prescriber. And please, do not switch, stop or change your medicines on your own.",
+        "on_screen_text": "Ask your prescriber",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly prescriber at desk"
+        },
+        "retention_device": "Safety line",
+        "source_ids": []
+      },
+      {
+        "id": "s64",
+        "section": "The takeaway",
+        "narration": "These are prescription medicines, so talk to your doctor or prescriber about whether one is right for you.",
+        "on_screen_text": "Is it right for you?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "patient and doctor talking warmly"
+        },
+        "retention_device": "Prescriber line",
+        "source_ids": []
+      },
+      {
+        "id": "s65",
+        "section": "The takeaway",
+        "narration": "If you came here worried that your weekly shot is the wrong one, here is the calmer truth: both drugs were studied hard in people with type two diabetes and heart risk, and your next step is a good conversation, not a panic.",
+        "on_screen_text": "A conversation, not a panic",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "woman smiling, morning kitchen"
+        },
+        "retention_device": "Emotional payoff: relief and agency",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s66",
+        "section": "The takeaway",
+        "narration": "If you want more head-to-heads like this, with the real numbers and none of the hype, subscribe. We keep breaking down the big trials so you walk into appointments ready.",
+        "on_screen_text": "Real numbers, no hype",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi cheering with subscribe bell"
+        },
+        "retention_device": "Single subscribe ask tied to a benefit",
+        "source_ids": []
+      },
+      {
+        "id": "s67",
+        "section": "The takeaway",
+        "narration": "There is a video I would watch next, linked in the description.",
+        "on_screen_text": "Watch this next",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi waving toward next video"
+        },
+        "retention_device": "Watch-next handoff",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Cardiovascular Outcomes with Tirzepatide versus Dulaglutide in Type 2 Diabetes (Nicholls SJ et al., N Engl J Med 2025;393(24):2409-2420)",
+        "publisher": "New England Journal of Medicine",
+        "year": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41406444/"
+      },
+      {
+        "id": "S2",
+        "title": "Dulaglutide and cardiovascular outcomes in type 2 diabetes (REWIND): a double-blind, randomised placebo-controlled trial",
+        "publisher": "The Lancet",
+        "year": "2019",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31189511/"
+      },
+      {
+        "id": "S3",
+        "title": "Trulicity (dulaglutide) US Prescribing Information (Revised: 3/2026): Section 1 Indications and Usage",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/trulicity/trulicity.html#pi"
+      },
+      {
+        "id": "S4",
+        "title": "Mounjaro (tirzepatide) US Prescribing Information (Revised: 8/2026): Section 1 Indications and Usage",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/mounjaro/mounjaro.html#pi"
+      }
+    ],
+    "cta": "Subscribe for more head-to-heads with the real numbers and none of the hype, so you walk into appointments ready. There is a video I would watch next, linked in the description."
+  },
+  "factcheck": {
+    "verdict": "REVISE",
+    "summary": "I checked the script's numbers against the trial paper and the drug labels, and they hold up. The SURPASS-CVOT figures (NEJM 2025;393:2409-2420, PMID 41406444) match: 13,299 adults randomized; 12.2% vs 13.1% for heart attack, stroke or cardiovascular death; HR 0.92 (95.3% CI 0.83–1.01); P=0.003 for non-inferiority and P=0.09 for superiority. So do the median of about 4 years, double-blind design and Lilly funding. Death from any cause was 8.6% vs 10.2% (HR 0.84, 0.75–0.94), a secondary outcome not adjusted for multiplicity. At 36 months, A1C fell 1.66 vs 0.88 points and weight 11.6% vs 4.8%. GI adverse events were 42.5% vs 35.9%, overall adverse events were similar, and 13.2% vs 10.1% stopped because of adverse events. REWIND (12.0% vs 13.4%, HR 0.88, median 5.4 years, age 50+) and both labels' Section 1 heart-risk wording also match: Mounjaro revised 8/2026, Trulicity revised 3/2026. Our own arithmetic (nearly twice the A1C drop; about 23 vs about 10 lb for a 200 lb person) is right and labelled as ours. Framing, safety lines and the Ray scenario (clearly hypothetical) are fine. One major issue: s9 says \"not worse\" than an active rival is a \"tougher test\" than beating placebo. That's wrong as a general statement, and the script itself says in s21 that it can't tell us how tirzepatide compares with no treatment. Three minor fixes follow.",
+    "issues": [
+      {
+        "location": "s9",
+        "claim": "being not worse than this particular rival is a tougher test than beating a dummy shot",
+        "problem": "Statistically, a non-inferiority result against an active comparator is a weaker claim than beating placebo, not a stronger one. The trial passed against a pre-set margin and had no placebo group, which s21 itself says. Calling it a 'tougher test' overstates the evidence and contradicts s21. The payoff in s52–s53 ('kept pace with a medal winner', 'real information, not a win') can stay because it is correctly hedged.",
+        "severity": "major",
+        "fix": "s9 narration: \"And later, I will show you why being not worse than this particular rival means more than it sounds.\" s9 on-screen text: \"Why this rival matters\". s47 already matches this wording ('a bigger deal than it sounds'), so leave it as is."
+      },
+      {
+        "location": "s1 on-screen text",
+        "claim": "Tirzepatide: not worse, not proven better",
+        "problem": "The opening card doesn't name the comparator or the outcome, so muted viewers can't tell what tirzepatide was compared with.",
+        "severity": "minor",
+        "fix": "s1 on_screen_text: \"Tirzepatide vs dulaglutide, heart events: not worse, not proven better\""
+      },
+      {
+        "location": "s23 source_ids",
+        "claim": "Only the FDA-approved label says what a medicine is approved for, so ask your prescriber...",
+        "problem": "This is our own agency and safety line, not a label finding. Our own lines get no source tag.",
+        "severity": "minor",
+        "fix": "Set s23 source_ids to []."
+      },
+      {
+        "location": "s67 / post notes",
+        "claim": "There is a video I would watch next, linked in the description.",
+        "problem": "No watch-next target is named in the post notes. The publisher needs one that matches the drug and population.",
+        "severity": "minor",
+        "fix": "Keep the s67 narration. Add to the post notes: \"Watch-next target: Mounjaro vs Ozempic (SURPASS-2) long video (adults with type 2 diabetes on metformin).\""
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "Cardiovascular Outcomes with Tirzepatide versus Dulaglutide in Type 2 Diabetes (Nicholls SJ et al., N Engl J Med 2025;393(24):2409-2420)",
+        "publisher": "New England Journal of Medicine",
+        "year": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41406444/"
+      },
+      {
+        "id": "S2",
+        "title": "Dulaglutide and cardiovascular outcomes in type 2 diabetes (REWIND): a double-blind, randomised placebo-controlled trial",
+        "publisher": "The Lancet",
+        "year": "2019",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31189511/"
+      },
+      {
+        "id": "S3",
+        "title": "Trulicity (dulaglutide) US Prescribing Information (Revised: 3/2026): Section 1 Indications and Usage",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/trulicity/trulicity.html#pi"
+      },
+      {
+        "id": "S4",
+        "title": "Mounjaro (tirzepatide) US Prescribing Information (Revised: 8/2026): Section 1 Indications and Usage",
+        "publisher": "Eli Lilly and Company",
+        "year": "2026",
+        "url": "https://uspl.lilly.com/mounjaro/mounjaro.html#pi"
+      }
+    ]
+  },
+  "hold_reason": "Not rendered: Fact-checker verdict REVISE: I checked the script's numbers against the trial paper and the drug labels, and they hold up. The SURPASS-CVOT figures (NEJM 2025;393:2409-2420, PMID 41406444) match: 13,299 adults randomized; 12.2% vs 13.1% for heart attack, stroke or cardiovascular death; HR 0.92 (95.3% CI 0.83–1.01); P=0.003 for non-inferiority and P=0.09 for superiority. So do the median of about 4 years, double-blind design and Lilly funding. Death from any cause was 8.6% vs 10.2% (HR 0.84, 0.75–0.94), a secondary outcome not adjusted for multiplicity. At 36 months, A1C fell 1.66 vs 0.88 points and weight 11.6% vs 4.8%. GI adverse events were 42.5% vs 35.9%, overall adverse events were similar, and 13.2% vs 10.1% stopped because of adverse events. REWIND (12.0% vs 13.4%, HR 0.88, median 5.4 years, age 50+) and both labels' Section 1 heart-risk wording also match: Mounjaro revised 8/2026, Trulicity revised 3/2026. Our own arithmetic (nearly twice the A1C drop; about 23 vs about 10 lb for a 200 lb person) is right and labelled as ours. Framing, safety lines and the Ray scenario (clearly hypothetical) are fine. One major issue: s9 says \"not worse\" than an active rival is a \"tougher test\" than beating placebo. That's wrong as a general statement, and the script itself says in s21 that it can't tell us how tirzepatide compares with no treatment. Three minor fixes follow.",
+  "release_tag": "content-2026-11-26",
+  "archive_url": "b2://informed-lab-media/content/2026-11-26/L2-tirzepatide-mounjaro-vs-dulaglutide-trul/"
+}

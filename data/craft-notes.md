@@ -1,14 +1,15 @@
-_Based on 73 QA records from 2026-11-13 to 2026-11-26: 44 Shorts, 25 long videos and 4 carousels, all about GLP-1. Four records are new since the last pass, all from 11-26: L1 Serious Risks (held), S1 Hair Shedding (held), S2 Right-Rib Pain (fact-check REVISE) and S3 Loose Stools (ready)._
+_Based on 74 QA records from 2026-11-13 to 2026-11-26: 44 Shorts, 26 long videos and 4 carousels, all about GLP-1. One record is new since the last pass: L2 11-26, Mounjaro vs Dulaglutide (SURPASS-CVOT). It was not rendered because the fact-check returned REVISE: the script called a non-inferiority result a "tougher test", the post notes had no watch-next target, one of our own lines had a source tag, and the opening card didn't name the comparator._
 
+- _**Fact-check holds are rising again.** L2 11-26 is the 6th source or fact-check hold. This time the problem was how strong the claim sounded, not a wrong number. Match the verb to the trial design._
 - _**Masking has come back.** S1 11-26 was held at 0.056 after two clean days (11-24 and 11-25, all at 0.017 or lower). Measure every final file. Don't assume the mix is fine._
 - _**Drug-name misreads now cause holds.** "Tears appetite" was in L1 11-25 and again in L1 11-26, and "moongiaro" in L1 11-26. Both were held._
 - _**Beat sync is fixed on Serious Risks.** L1 11-26 had no beat-sync block, so re-timing from the render works._
 - _Floating heads, starfield or bokeh, and split safety cards appeared again in every 11-26 video piece that had visual notes._
 
-_**18 were held or failed in this window:**_
+_**19 were held or failed in this window:**_
 - _5 for beat drift: L1 11-14, L1 and L2 11-16, L1 11-21, L1 11-23._
 - _7 for audio or narration: S2 11-13, S1 11-16, L1 11-22, S3 11-22, L1 11-25, L1 11-26, S1 11-26._
-- _5 for sources or fact-check: L2 11-14, C1 11-20, the Foundayo REVISEs on 11-20 and 11-21, and S2 11-26 (a placeholder source date)._
+- _6 for sources or fact-check: L2 11-14, C1 11-20, the Foundayo REVISEs on 11-20 and 11-21, S2 11-26 (a placeholder source date) and L2 11-26 (claim strength)._
 - _1 for packaging: L3 11-25 (thumbnail range)._
 
 _**Ignore:**_
@@ -25,7 +26,7 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - Compare every stat or headline shot with its own scene ID. The renderer pulls a later scene's text into earlier shots that share a layout.
   - (5 gate holds. Plans were 96–100% on time; renders were 76–93%. Wrong-scene text 3 times: s31←s23 in L2 11-16, s65←s75 in L1 11-21, s18←s60 in L1 11-23. The re-timed Serious Risks render on 11-26 passed.)
 - **Before handoff, run speech-to-text on every scene and compare it with the script. Check the drug and brand names first.**
-  - The names to check are tirzepatide, semaglutide, orforglipron, Mounjaro, Zepbound and Foundayo.
+  - The names to check are tirzepatide, semaglutide, orforglipron, dulaglutide, Mounjaro, Zepbound and Foundayo.
   - If any of them is misheard, regenerate that scene with a phonetic respelling for the voice engine. Then re-time and re-check the transcript.
   - It is a ship-blocker. Never hand it off with a "quality check" note.
   - Then check every "point", number, unit, acronym and contraction.
@@ -44,7 +45,7 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - "NOT PERSONAL ADVICE, SO ASK YOUR PRESCRIBER." is one card.
   - The don't-stop line is exactly two cards: "FOR ANYTHING THAT ISN'T ONE OF THOSE EMERGENCY SIGNS" and "DON'T STOP OR CHANGE YOUR MEDICINE ON YOUR OWN." Use "THAT EMERGENCY SIGN" when only one sign is named.
   - Read the last 4 cards of every Short before handoff.
-  - (The safety line was split at the comma about 9 times and the don't-stop line was broken about 7 times, most recently in S1 11-26 (three cards) and S3 11-26 (split, and "REMEMBER:").)
+  - (The safety line was split at the comma about 9 times. The don't-stop line was broken about 7 times, most recently in S1 11-26 (three cards) and S3 11-26 (split, and "REMEMBER:").)
 - **Every other caption card is one whole clause on 2 lines or fewer.**
   - Never end a card on a comma, dash, colon, semicolon, bare number or possessive.
   - Never end a card on THE, A, AS, CAN, LET, ABOUT, HOW, HAVE, THOSE, TAKE, TYPE, YOUR, POINT, ISN'T or DOESN'T.
@@ -91,6 +92,9 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - Every spoken number names its comparator.
   - Never write "now", "new", dates or "is requiring". "Now" appeared in L1 11-26 s4, s56 and s61.
 - **Keep each finding at its source's exact number, scope, verb and hedge, recaps included.**
+  - Match the claim to the trial design.
+    - A non-inferiority result against an active drug is weaker than beating placebo, never a "tougher test".
+    - "Did not prove superior" stays exactly that (L2 11-26 s9 was REVISEd for this).
   - "Adverse events" and "adverse reactions" are never "side effects".
   - Postmarketing reports stay labelled "postmarketing" (L1 11-26 s25).
   - "May be higher" never becomes "is higher".
@@ -98,13 +102,13 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - Never present slower stomach emptying as the cause.
   - The SURMOUNT-1 comparator is "placebo plus counseling".
   - Never rank doses the trial didn't compare, never call a single trial "not a fluke", and never call our own arithmetic "the paper's result".
-  - (About 145 findings.)
+  - (About 146 findings.)
 - **Run the muted-viewer test, starting with the opening card.**
-  - The opening card names the drug and shows all of sentence 1's answer, hedge included.
+  - The opening card names the drug and, for any head-to-head, the comparator and the outcome. It shows all of sentence 1's answer, hedge included.
   - Every stat card names the measure, the drug and dose, both groups, the full population and the timeframe.
   - Never write "no diabetes" or drop "weight-related".
   - On-screen text is never narrower or stronger than the narration ("likely explanation" became a diagnosis on the S1 11-26 card).
-  - (About 115 findings; S3 11-26 s2 showed a number with no measure.)
+  - (About 116 findings; the L2 11-26 opening card left out the comparator.)
 
 ### Carousel Designer
 - **Make a carousel only when the scheduler asks, and reuse verified Short text only.**
@@ -124,11 +128,11 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - Then the safety block, the quick answer (naming both groups) and 2–3 sources, including the Medication Guide when you quote its emergency wording (L1 11-26).
   - End exactly on "…whether it's right for you." with no markup, brackets or placeholders anywhere.
   - (Cut off, leaked markup, a placeholder or a missing ending 7 times.)
-- **Name one watch-next target in the post notes and let the publisher add the link. Never write a placeholder line.**
-  - Follow the playbook's link list.
-  - The target must match the Short's drug and population.
+- **Name one watch-next target in the post notes of every long video and Short, and let the publisher add the link. Never write a placeholder line.**
+  - Follow the playbook's link list. Head-to-heads (Mounjaro vs Ozempic or vs dulaglutide) → Zepbound vs Wegovy.
+  - The target must match the piece's drug and population.
   - Never the home page, and never MQqAwUKAKSI.
-  - (Missing, wrong or a placeholder in 7 pieces.)
+  - (Missing, wrong or a placeholder in 8 pieces, most recently L2 11-26.)
 - **Every caption field ends exactly on "Not personal advice. Talk to your doctor or prescriber about whether it's right for you."**
   - Hashtags and the don't-stop line go before it.
   - Copy the emergency line in the script's own words.
@@ -158,6 +162,11 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
     - s26 and s29: remove the source tag from our own caveat and our own tip
     - S2: confirm the Medication Guide's real revised date
     - description: cite the Medication Guide for the emergency wording
+  - **Mounjaro vs Dulaglutide (SURPASS-CVOT, L2 11-26, REVISE):** don't script it again. Before render:
+    - s9: describe the result as non-inferiority against an active drug, not a "tougher test"
+    - s1 card: name dulaglutide and the outcome (heart attack, stroke or cardiovascular death)
+    - s23: remove the source tag
+    - post notes: name the watch-next target
   - **Fatty Liver / MASH (L3 11-25, held):** don't script it again. Before it publishes:
     - thumbnail: "MASH RESOLVED: 44–62% VS 10% PLACEBO", with subtext "ONE PHASE 2 BIOPSY TRIAL · NOT AN APPROVED USE"
     - description: label the 30% as placebo and give the full population
@@ -197,13 +206,14 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
     - Foundayo label: rev 7/2026
     - NHS nausea page: 17 Nov 2023
     - Zepbound: the DailyMed label was updated 16 Nov 2026 and the Medication Guide reads "Revised: 11/2026". Use these, not the older 8/2026.
-  - Our own tips and safety lines get no tag.
-  - (About 105 findings.)
+  - Our own tips and safety lines get no tag (L1 and L2 11-26).
+  - (About 106 findings.)
 - **Give every result its exact scope.**
   - Obesity trials: adults with obesity, or overweight plus a weight-related condition, without diabetes. Pooled label data cover Study 1 (no type 2 diabetes) and Study 2 (type 2 diabetes only), treated for up to 72 weeks.
   - Zepbound's uses include moderate to severe obstructive sleep apnea in adults with obesity.
   - SELECT: preexisting CV disease and a BMI of 27 or more, without diabetes.
   - SURPASS-2: adults with type 2 diabetes on metformin, 40 weeks, each arm vs semaglutide 1 mg.
+  - SURPASS-CVOT: 13,299 adults, tirzepatide vs dulaglutide, 12.2% vs 13.1% (HR 0.92). Non-inferior; not shown superior (P=0.09); no placebo group.
   - MASH: one phase 2 biopsy trial; not an approved use.
   - Low blood sugar: "may be higher" with insulin or a sulfonylurea, and also reported in adults without type 2 diabetes.
   - Pancreatitis: 0.23 vs 0.11 only alongside 0.14 vs 0.15.
@@ -215,6 +225,6 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - Pen: 21 days in total; press and hold for up to 10 seconds; the guide bans *loose* pens in household trash.
   - Foundayo: top label dose 17.2 mg, −11.1% in Trial 1; 10.3% vs 2.7% stopped for adverse events at 36 mg.
 
-_Updated 2026-11-26 from 73 QA records (all GLP-1, 11-13 to 11-26)._
+_Updated 2026-11-26 from 74 QA records (all GLP-1, 11-13 to 11-26)._
 
-_Updated 2026-11-26 from 73 QA records._
+_Updated 2026-11-26 from 74 QA records._
