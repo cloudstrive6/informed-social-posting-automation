@@ -1,15 +1,20 @@
-_Based on 74 QA records from 2026-11-13 to 2026-11-26: 44 Shorts, 26 long videos and 4 carousels, all about GLP-1. One record is new since the last pass: L2 11-26, Mounjaro vs Dulaglutide (SURPASS-CVOT). It was not rendered because the fact-check returned REVISE: the script called a non-inferiority result a "tougher test", the post notes had no watch-next target, one of our own lines had a source tag, and the opening card didn't name the comparator._
+_Based on 75 QA records from 2026-11-13 to 2026-11-26: 44 Shorts, 27 long videos and 4 carousels, all about GLP-1. One record is new since the last pass: **L3 11-26, "Nature's Ozempic: Oats and Fibre"**. It was not rendered because the fact-check returned REVISE. Two Mounjaro sources (S3 and S10, plus the stat labels in s4 and s46) carried Zepbound's revised dates instead of Mounjaro's. The script also suggested that prediabetes alone qualifies for the medicine, and s31 stretched a population._
 
-- _**Fact-check holds are rising again.** L2 11-26 is the 6th source or fact-check hold. This time the problem was how strong the claim sounded, not a wrong number. Match the verb to the trial design._
+- _**Fact-check holds keep rising.** L3 11-26 is the 7th source or fact-check hold, and the second on 11-26 (with L2). Neither one had a wrong trial number. L2 overstated a claim. L3 copied one drug's label date onto another drug, and that date came from our own "known dates" list. Known dates are per drug, not per molecule._
 - _**Masking has come back.** S1 11-26 was held at 0.056 after two clean days (11-24 and 11-25, all at 0.017 or lower). Measure every final file. Don't assume the mix is fine._
 - _**Drug-name misreads now cause holds.** "Tears appetite" was in L1 11-25 and again in L1 11-26, and "moongiaro" in L1 11-26. Both were held._
 - _**Beat sync is fixed on Serious Risks.** L1 11-26 had no beat-sync block, so re-timing from the render works._
 - _Floating heads, starfield or bokeh, and split safety cards appeared again in every 11-26 video piece that had visual notes._
 
-_**19 were held or failed in this window:**_
+_**20 were held or failed in this window:**_
 - _5 for beat drift: L1 11-14, L1 and L2 11-16, L1 11-21, L1 11-23._
 - _7 for audio or narration: S2 11-13, S1 11-16, L1 11-22, S3 11-22, L1 11-25, L1 11-26, S1 11-26._
-- _6 for sources or fact-check: L2 11-14, C1 11-20, the Foundayo REVISEs on 11-20 and 11-21, S2 11-26 (a placeholder source date) and L2 11-26 (claim strength)._
+- _7 for sources or fact-check:_
+  - _L2 11-14 and C1 11-20_
+  - _the Foundayo REVISEs on 11-20 and 11-21_
+  - _S2 11-26 (a placeholder source date)_
+  - _L2 11-26 (claim strength)_
+  - _L3 11-26 (another drug's dates, and prediabetes scope)_
 - _1 for packaging: L3 11-25 (thumbnail range)._
 
 _**Ignore:**_
@@ -43,18 +48,22 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - (Spelled-out numbers in about 15 Shorts, most recently "ONE POINT ONE", "WAS POINT" and "PERCENT" in S2 11-26. "TYPE TWO" 5 times. A raw "Label" tag 3 times.)
 - **The closing safety cards are fixed and pre-split. Never run them through the auto-splitter.**
   - "NOT PERSONAL ADVICE, SO ASK YOUR PRESCRIBER." is one card.
-  - The don't-stop line is exactly two cards: "FOR ANYTHING THAT ISN'T ONE OF THOSE EMERGENCY SIGNS" and "DON'T STOP OR CHANGE YOUR MEDICINE ON YOUR OWN." Use "THAT EMERGENCY SIGN" when only one sign is named.
+  - The don't-stop line is exactly two cards:
+    1. "FOR ANYTHING THAT ISN'T ONE OF THOSE EMERGENCY SIGNS"
+    2. "DON'T STOP OR CHANGE YOUR MEDICINE ON YOUR OWN."
+  - Use "THAT EMERGENCY SIGN" when only one sign is named.
   - Read the last 4 cards of every Short before handoff.
   - (The safety line was split at the comma about 9 times. The don't-stop line was broken about 7 times, most recently in S1 11-26 (three cards) and S3 11-26 (split, and "REMEMBER:").)
 - **Every other caption card is one whole clause on 2 lines or fewer.**
   - Never end a card on a comma, dash, colon, semicolon, bare number or possessive.
   - Never end a card on THE, A, AS, CAN, LET, ABOUT, HOW, HAVE, THOSE, TAKE, TYPE, YOUR, POINT, ISN'T or DOESN'T.
   - Never split a compound across cards ("SIDE / EFFECTS", "WEIGHT / LOSS").
-  - (Found in nearly every Short. On 11-26: "EXTRA STRANDS CAN", "TIRZEPATIDE —", "SEVERE PAIN IN YOUR", among others.)
+  - (Found in nearly every Short. On 11-26: "EXTRA STRANDS CAN", "TIRZEPATIDE —" and "SEVERE PAIN IN YOUR", among others.)
 - **Tags, Shorts and long-form:**
   - Clear the previous card, tags and bubbles before the next card appears. That includes ghosted speech bubbles (S3 11-26).
   - Shorts: keep tags above y 1150, inside both side edges, and never behind the caption pill. Show at most 2 at a time.
-  - Long-form: the bottom of every tag, name tags included, stays at y 1000 or less ("Dana, 52" was clipped in L1 11-26). Every label is at least about 40px, and no label is ever truncated.
+  - Long-form: the bottom of every tag, name tags included, stays at y 1000 or less ("Dana, 52" was clipped in L1 11-26).
+  - Every label is at least about 40px, and no label is ever truncated.
   - Never render an empty or ghosted bubble, or an empty dash-placeholder tag rail.
   - (About 300 Shorts overlap findings. About 380 long-form off-screen findings and 300 tiny-text findings. Dash rails appeared 4 times.)
 - **Backdrops:**
@@ -62,7 +71,7 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - No starfield or bokeh on any beat.
   - Night beats get a dark night room, never a bright daytime room.
   - (Cabinet strips or ornaments in about 31 pieces. Starfield or bokeh in about 30, including L1 11-26. Daytime rooms on night beats 5 times, most recently L1 11-26.)
-- **Draw people as whole characters with a neck and shoulders, standing in front of the counter, never cropped by the counter or the frame edge. Draw every element the shot list names.**
+- **Draw people as whole characters with a neck and shoulders, standing in front of the counter. The counter or the frame edge never crops them. Draw every element the shot list names.**
   - Lock each character's skin tone, hair and outfit.
   - No ring, blob, outline-only or mannequin heroes, and no mascot on a person.
   - The first frame shows the main character in full. In long-form, the main character fills about a third of the frame height in the first 30 s.
@@ -82,7 +91,10 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
 - **Copy the fixed safety lines exactly. Speak and show each one in full.**
   - The emergency line keeps the guide's "stop… and get medical help right away".
   - The don't-stop line: "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own." Say "that emergency sign" when only one is named.
-  - Pancreatitis: tirzepatide "with or without vomiting"; Foundayo "with or without nausea or vomiting". The on-screen card keeps "stomach area" and that phrase.
+  - Pancreatitis wording:
+    - tirzepatide: "with or without vomiting"
+    - Foundayo: "with or without nausea or vomiting"
+    - The on-screen card keeps "stomach area" and that phrase.
   - Give the full allergy list.
   - List the gallbladder signs in the guide's order: upper stomach pain, fever, yellowing of skin or eyes, clay-colored stools (S2 11-26).
   - Fluid tips keep "unless you've been told to limit fluids". That caveat is our own, so it gets no source tag (L1 11-26 s26).
@@ -93,18 +105,20 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - Never write "now", "new", dates or "is requiring". "Now" appeared in L1 11-26 s4, s56 and s61.
 - **Keep each finding at its source's exact number, scope, verb and hedge, recaps included.**
   - Match the claim to the trial design.
-    - A non-inferiority result against an active drug is weaker than beating placebo, never a "tougher test".
+    - A non-inferiority result against an active drug is weaker than beating placebo. Never call it a "tougher test".
     - "Did not prove superior" stays exactly that (L2 11-26 s9 was REVISEd for this).
-  - "Adverse events" and "adverse reactions" are never "side effects".
-  - Postmarketing reports stay labelled "postmarketing" (L1 11-26 s25).
-  - "May be higher" never becomes "is higher".
-  - Never add "most", "mostly", "many", "often", "similar", "even" or "a few days".
-  - Never present slower stomach emptying as the cause.
-  - The SURMOUNT-1 comparator is "placebo plus counseling".
+  - Wording rules:
+    - "Adverse events" and "adverse reactions" are never "side effects".
+    - Postmarketing reports stay labelled "postmarketing" (L1 11-26 s25).
+    - "May be higher" never becomes "is higher".
+    - Never add "most", "mostly", "many", "often", "similar", "even" or "a few days".
+    - Never present slower stomach emptying as the cause.
+    - The SURMOUNT-1 comparator is "placebo plus counseling".
   - Never rank doses the trial didn't compare, never call a single trial "not a fluke", and never call our own arithmetic "the paper's result".
-  - (About 146 findings.)
+  - Natural-GLP-1 and lifestyle videos never suggest that a risk factor alone qualifies someone for the medicine. Prediabetes alone is not an approved use (L3 11-26 s10, s52).
+  - (About 150 findings.)
 - **Run the muted-viewer test, starting with the opening card.**
-  - The opening card names the drug and, for any head-to-head, the comparator and the outcome. It shows all of sentence 1's answer, hedge included.
+  - The opening card names the drug. For any head-to-head, it also names the comparator and the outcome. It shows all of sentence 1's answer, hedge included.
   - Every stat card names the measure, the drug and dose, both groups, the full population and the timeframe.
   - Never write "no diabetes" or drop "weight-related".
   - On-screen text is never narrower or stronger than the narration ("likely explanation" became a diagnosis on the S1 11-26 card).
@@ -125,7 +139,7 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - (A merged range caused the L3 11-25 hold.)
 - **Long-form descriptions are complete viewer copy of 1,250 characters or fewer.**
   - Line 1 stays empty.
-  - Then the safety block, the quick answer (naming both groups) and 2–3 sources, including the Medication Guide when you quote its emergency wording (L1 11-26).
+  - Then come the safety block, the quick answer (naming both groups) and 2–3 sources. Include the Medication Guide when you quote its emergency wording (L1 11-26).
   - End exactly on "…whether it's right for you." with no markup, brackets or placeholders anywhere.
   - (Cut off, leaked markup, a placeholder or a missing ending 7 times.)
 - **Name one watch-next target in the post notes of every long video and Short, and let the publisher add the link. Never write a placeholder line.**
@@ -150,7 +164,7 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - No cause, timeframe or "common" claim the content doesn't make.
   - Holiday Shorts: the holiday is the setting, never the cause. Avoid titles like "Diarrhea After Thanksgiving" or "Threw Up After the Big Dinner" (S3 11-23, S3 11-26).
   - One save or share ask, never an open question.
-  - Hashtags are only the generic names of drugs whose data the post reports: no #Foundayo, #GLP1, #weightloss, #obesity, #sideeffects, symptom tags or trial tags.
+  - Hashtags are only the generic names of drugs whose data the post reports. Never use #Foundayo, #GLP1, #weightloss, #obesity, #sideeffects, symptom tags or trial tags.
   - (About 75 pieces.)
 
 ### Everyone
@@ -167,6 +181,10 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
     - s1 card: name dulaglutide and the outcome (heart attack, stroke or cardiovascular death)
     - s23: remove the source tag
     - post notes: name the watch-next target
+  - **Nature's Ozempic: Oats and Fibre (L3 11-26, REVISE):** don't script it again. Before render:
+    - S3 and S10, and the stat labels in s4 and s46: use Mounjaro's date (27 Aug 2026), not Zepbound's
+    - s10 and s52: say that weight-management use needs obesity, or overweight plus a weight-related condition, and that prediabetes alone isn't an approved use
+    - s31: "adults with type 2 diabetes on metformin", as the letter states
   - **Fatty Liver / MASH (L3 11-25, held):** don't script it again. Before it publishes:
     - thumbnail: "MASH RESOLVED: 44–62% VS 10% PLACEBO", with subtext "ONE PHASE 2 BIOPSY TRIAL · NOT AN APPROVED USE"
     - description: label the 30% as placebo and give the full population
@@ -195,36 +213,44 @@ _**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no sub
   - **Already live, never make again:** Mounjaro vs Ozempic (SURPASS-2) since 11-23, and Months 2–6 since 11-16.
   - **S3 11-22 (holiday slot, until 2026-11-27):** restore the hook, remix to 0.02 or lower, and recount to 160 words or fewer.
   - **Backups (Injection Site 11-09, Burping 11-10; until 2026-11-30):** re-time both on the render before they ship.
-- **Every source needs its own working URL and a real revised date. Never use a placeholder, a bare year or a staff note.**
+- **Every source needs its own working URL and a real revised date that belongs to that exact document. Never use a placeholder, a bare year, a staff note or another drug's date.**
+  - Mounjaro and Zepbound are the same molecule but have separate labels and separate dates. Never copy one onto the other (L3 11-26 was REVISEd for this).
   - The Medication Guide and the IFU each get their own URL.
   - Find the quoted sentence before you cite it.
   - Source titles list only the sections cited, with numbers (hypoglycemia 5.7, rotation 2.4).
   - No 4xx errors, newsroom pages or search pages.
-  - If a PDF's date can't be read, take it from DailyMed. Never leave a placeholder (S2 11-26 was REVISEd for this; C1 11-20 was held).
+  - If a PDF's date can't be read, take it from DailyMed or FDALabel for that set ID. Never leave a placeholder (S2 11-26 was REVISEd for this; C1 11-20 was held).
   - Known dates:
-    - Mounjaro PI: 27 Aug 2026
+    - Mounjaro PI and Medication Guide: 27 Aug 2026 (SPL version 40)
+    - Zepbound: the DailyMed label was updated 16 Nov 2026 and the Medication Guide reads "Revised: 11/2026". Use these, not the older 8/2026, and for Zepbound only.
+    - Ozempic: FDALabel effective 1 Jun 2026 (version 20)
     - Foundayo label: rev 7/2026
     - NHS nausea page: 17 Nov 2023
-    - Zepbound: the DailyMed label was updated 16 Nov 2026 and the Medication Guide reads "Revised: 11/2026". Use these, not the older 8/2026.
   - Our own tips and safety lines get no tag (L1 and L2 11-26).
-  - (About 106 findings.)
+  - (About 108 findings.)
 - **Give every result its exact scope.**
-  - Obesity trials: adults with obesity, or overweight plus a weight-related condition, without diabetes. Pooled label data cover Study 1 (no type 2 diabetes) and Study 2 (type 2 diabetes only), treated for up to 72 weeks.
-  - Zepbound's uses include moderate to severe obstructive sleep apnea in adults with obesity.
-  - SELECT: preexisting CV disease and a BMI of 27 or more, without diabetes.
-  - SURPASS-2: adults with type 2 diabetes on metformin, 40 weeks, each arm vs semaglutide 1 mg.
-  - SURPASS-CVOT: 13,299 adults, tirzepatide vs dulaglutide, 12.2% vs 13.1% (HR 0.92). Non-inferior; not shown superior (P=0.09); no placebo group.
-  - MASH: one phase 2 biopsy trial; not an approved use.
-  - Low blood sugar: "may be higher" with insulin or a sulfonylurea, and also reported in adults without type 2 diabetes.
-  - Pancreatitis: 0.23 vs 0.11 only alongside 0.14 vs 0.15.
-  - Gallbladder: gallstones 1.1% vs 1%; inflammation 0.7% vs 0.2%.
-  - 75/25: from the 160-person DXA substudy.
-  - SURMOUNT-4: +14.0% regain on placebo, still 9.9% below baseline.
-  - Hair loss: 5.4% vs 0.9%.
-  - Injection-site reactions: 6–8% vs about 2%.
-  - Pen: 21 days in total; press and hold for up to 10 seconds; the guide bans *loose* pens in household trash.
+  - Approved uses and trial populations:
+    - Obesity trials: adults with obesity, or overweight plus a weight-related condition, without diabetes. Prediabetes alone is not an approved use.
+    - Pooled label data cover Study 1 (no type 2 diabetes) and Study 2 (type 2 diabetes only), treated for up to 72 weeks.
+    - Zepbound's uses include moderate to severe obstructive sleep apnea in adults with obesity.
+    - SELECT: preexisting CV disease and a BMI of 27 or more, without diabetes.
+  - Head-to-heads and other trials:
+    - SURPASS-2: adults with type 2 diabetes on metformin, 40 weeks, each arm vs semaglutide 1 mg.
+    - SURPASS-CVOT: 13,299 adults, tirzepatide vs dulaglutide, 12.2% vs 13.1% (HR 0.92). Non-inferior; not shown superior (P=0.09); no placebo group.
+    - MASH: one phase 2 biopsy trial; not an approved use.
+    - SURMOUNT-4: +14.0% regain on placebo, still 9.9% below baseline.
+    - 75/25: from the 160-person DXA substudy.
+  - Safety figures:
+    - Low blood sugar: "may be higher" with insulin or a sulfonylurea, and also reported in adults without type 2 diabetes.
+    - Pancreatitis: 0.23 vs 0.11 only alongside 0.14 vs 0.15.
+    - Gallbladder: gallstones 1.1% vs 1%; inflammation 0.7% vs 0.2%.
+    - Hair loss: 5.4% vs 0.9%.
+    - Injection-site reactions: 6–8% vs about 2%.
+  - Devices:
+    - Pen: 21 days in total; press and hold for up to 10 seconds.
+    - The guide bans *loose* pens in household trash.
   - Foundayo: top label dose 17.2 mg, −11.1% in Trial 1; 10.3% vs 2.7% stopped for adverse events at 36 mg.
 
-_Updated 2026-11-26 from 74 QA records (all GLP-1, 11-13 to 11-26)._
+_Updated 2026-11-26 from 75 QA records (all GLP-1, 11-13 to 11-26)._
 
-_Updated 2026-11-26 from 74 QA records._
+_Updated 2026-11-26 from 75 QA records._

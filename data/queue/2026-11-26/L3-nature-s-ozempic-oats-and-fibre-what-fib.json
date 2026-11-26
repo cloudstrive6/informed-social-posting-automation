@@ -1,0 +1,1271 @@
+{
+  "id": "L3-nature-s-ozempic-oats-and-fibre-what-fib",
+  "date": "2026-11-26",
+  "kind": "long",
+  "plan": {
+    "id": "L3",
+    "kind": "long",
+    "topic": "'Nature's Ozempic' oats and fibre: what fibre, protein and eating order actually do to your body's own GLP-1 hormone, why that is far smaller and shorter-lived than semaglutide or tirzepatide, and how to use fibre well if you're on a GLP-1 medicine",
+    "angle": "Keep the brief's structure with these changes:\n(1) Chapter 4: Shukla 2015 (adults with type 2 diabetes on metformin) is reported for glucose and insulin only, worded as 'one small pilot study linked eating vegetables and protein first with lower glucose and insulin rises after the meal'. Add no GLP-1 claim unless the separate 16-adult paper is fetched and cited on its own. Say that no semaglutide or tirzepatide trial tested eating order.\n(2) Chapter 3: quote the FDA's 21 CFR 101.81 heart-disease model claim exactly ('may reduce the risk of heart disease', diet low in saturated fat and cholesterol, 3 g a day soluble fibre from whole oats). Make no weight-loss claim.\n(3) Chapter 6: quote the advisory sentence in full: 'Smaller, more frequent meals and avoiding fatty or high fiber foods during the first few days of treatment can help alleviate symptoms.' Then give our own uncited tip: build fibre up gradually with fluids, unless you've been told to limit fluids.\n(4) Thumbnail: 'OATS VS OZEMPIC?' or 'OATS = OZEMPIC?' with the subtext 'A SMALL NUDGE VS A MEDICINE', one calm labelled character holding a bowl, no body imagery.\n(5) Use the Guardian line only if the article is fetched and credited. Otherwise cut it.",
+    "working_title": "Ozempic vs \"Nature's Ozempic\": Can Oats Boost GLP-1?",
+    "target_keyword": "nature's ozempic",
+    "trend_stage": "rising",
+    "why": "Rising search ahead of January. The title sits next to big Ozempic videos for suggested traffic, and the body rests on settled primary sources (a physiology review, label section 12.3, FDA 21 CFR 101.81), so it should pass the fact-check first time. | fact-check: The topic is sound. It's an evidence-led myth-buster that fits the natural-GLP-1 pillar, keeps the medicine and food clearly apart, and has low misinformation risk. Most of the brief's claims check out, but there are three things to fix before scripting and two to watch.\n\nVerified while screening:\n(a) Shukla et al., Diabetes Care 2015, 'Food Order Has a Significant Impact on Postprandial Glucose and Insulin Levels', is a pilot study in adults with overweight or obesity and type 2 diabetes, all on metformin. It measured glucose and insulin at 0, 30, 60 and 120 min. It did NOT measure GLP-1, so chapter 4 must make no GLP-1 claim from this paper. The 16-adult paper that measured GLP-1 is a separate publication. Use it only with its own citation after a content-check fetch, or leave it out. Still to do: confirm n=11 against the full text.\n(b) The 2025 joint advisory exists: Mozaffarian D et al., 'Nutritional Priorities to Support GLP-1 Therapy for Obesity: A Joint Advisory From the ACLM, ASN, OMA and TOS', Am J Lifestyle Med 2025 (also in AJCN and Obesity). Its exact sentence is: 'Smaller, more frequent meals and avoiding fatty or high fiber foods during the first few days of treatment can help alleviate symptoms.' It sits in the GI side-effect / nausea section. Quote the whole sentence at that scope. Don't cut it down to only the fibre clause, and don't turn it into 'avoid fibre on GLP-1'.\n\nMust fix:\n1) Chapter 3 wording. The FDA claim under 21 CFR 101.81 is a heart-disease risk claim: soluble fibre from whole oats, as part of a diet low in saturated fat and cholesterol, 'may reduce the risk of heart disease'. Calling it a 'claim about lowering cholesterol' makes it sound stronger than it is. Quote the model claim from the eCFR text, with the 3 g a day soluble fibre condition, and mention cholesterol only as how the claim is explained.\n2) Thumbnail. Muted and on its own, 'OATS = OZEMPIC?' spreads the myth. Add labelled subtext that answers it: 'A SMALL NUDGE VS A MEDICINE'. Or use 'OATS VS OZEMPIC?'.\n3) Guardian intro line. It's unverified. Fetch the article and credit it by name and date. If it can't be found, cut the line rather than describing the trend vaguely.\n\nCarry forward:\n- Half-life figures exactly as the labels print them (semaglutide PI 12.3, about 1 week; tirzepatide PI 12.3, about 5 days) and in the Holst review's own wording (under about 2 minutes).\n- Chapter 2: no figures unless they come from a fetched paper, labelled with its population and size.\n- The SURMOUNT-1 average with its full population and 'placebo plus counseling'.\n- Never imply that fibre, oats or eating order replace or match the medicine.\n- No 'oatzempic' recipe and no other 'nature's Ozempic' products (berberine, supplements).\n- The kidney caveat on protein.\n- The constipation line in label wording.",
+    "pillar": "natural-glp1"
+  },
+  "status": "failed",
+  "package": {},
+  "media": {},
+  "posts": [
+    {
+      "platform": "youtube",
+      "format": "long",
+      "slotKey": "long",
+      "slot": "2026-11-26T19:00:00.000Z",
+      "status": "skipped",
+      "attempts": 0
+    }
+  ],
+  "created_at": "2026-11-26T06:57:31.296Z",
+  "script": {
+    "working_title": "Ozempic vs \"Nature's Ozempic\": Can Oats Boost GLP-1?",
+    "target_keyword": "nature's ozempic",
+    "hook_pattern": "Myth attack with the answer in sentence 1. The 'nature's Ozempic' claim gets answered straight away ('only briefly'). By about 13 s the half-life numbers back it up: under about two minutes for your own GLP-1, about a week for semaglutide, about five days for tirzepatide. One open-loop sentence then points to the fibre-timing sentence in the joint advisory, which pays off in the fibre chapter.",
+    "scenes": [
+      {
+        "id": "s1",
+        "section": "Oats vs Ozempic",
+        "narration": "Oats, so-called nature's Ozempic, can nudge your own GLP-one, but only briefly.",
+        "on_screen_text": "'NATURE'S OZEMPIC'? OATS CAN BRIEFLY NUDGE GLP-1",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm woman holding oat bowl, curious"
+        },
+        "retention_device": "Sentence 1 answers the searched phrase directly, and the first frame shows the same words",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s2",
+        "section": "Oats vs Ozempic",
+        "narration": "Here is why. Your own GLP-one has a half-life of under about two minutes in the blood.",
+        "on_screen_text": "YOUR GLP-1: UNDER 2 MINUTES",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "<2 min",
+          "stat_label": "Half-life of your body's own GLP-1",
+          "stock_query": "tiny stopwatch racing, surprised character"
+        },
+        "retention_device": "Headline number by about 10 s",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s3",
+        "section": "Oats vs Ozempic",
+        "narration": "Semaglutide, the medicine in Ozempic, has a half-life of about a week, according to its label.",
+        "on_screen_text": "SEMAGLUTIDE: ABOUT 1 WEEK",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~1 week",
+          "stat_label": "Semaglutide half-life, Ozempic label section 12.3",
+          "stock_query": "weekly calendar glowing calmly"
+        },
+        "retention_device": "Contrast number, the second payoff",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s4",
+        "section": "Oats vs Ozempic",
+        "narration": "Tirzepatide, the medicine in Mounjaro and Zepbound, has a half-life of about five days, according to its label.",
+        "on_screen_text": "TIRZEPATIDE: ABOUT 5 DAYS",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "~5 days",
+          "stat_label": "Tirzepatide half-life, Mounjaro label section 12.3",
+          "stock_query": "five-day calendar, friendly pharmacist"
+        },
+        "retention_device": "Third number finishes the contrast",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s5",
+        "section": "Oats vs Ozempic",
+        "narration": "Under about two minutes is shorter than a proper tooth-brushing. About a week is every breakfast, lunch and dinner from one Sunday to the next.",
+        "on_screen_text": "MINUTES VS A WHOLE WEEK",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "toothbrush timer beside weekly calendar"
+        },
+        "retention_device": "Humanised numbers with a vivid comparison",
+        "source_ids": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "s6",
+        "section": "Oats vs Ozempic",
+        "narration": "So a bowl of oats and a weekly injection are not playing the same game. One is a brief signal from food. The other is a medicine built to keep that signal going.",
+        "on_screen_text": "A SMALL NUDGE VS A MEDICINE",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Oats work like Ozempic",
+          "fact": "Food sends a brief signal. The medicine lasts for days.",
+          "stock_query": "oat bowl next to medicine pen"
+        },
+        "retention_device": "Myth flipped with a 'but / therefore' turn",
+        "source_ids": [
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      {
+        "id": "s7",
+        "section": "Oats vs Ozempic",
+        "narration": "Stay for the fibre chapter, because one sentence in a major nutrition advisory may change how you time fibre on these medicines.",
+        "on_screen_text": "THE FIBRE TIMING DETAIL",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "mystery envelope labelled fibre timing"
+        },
+        "retention_device": "Main open loop in one sentence, paid off in the fibre chapter",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s8",
+        "section": "Oats vs Ozempic",
+        "narration": "Maybe you saw it late at night, scrolling in bed, when someone held up a glass of blended oats and called it nature's Ozempic.",
+        "on_screen_text": "THE MIDNIGHT OAT CLIP",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person scrolling phone, dark night bedroom"
+        },
+        "retention_device": "A lived moment the viewer recognises",
+        "source_ids": []
+      },
+      {
+        "id": "s9",
+        "section": "Oats vs Ozempic",
+        "narration": "If part of you hoped it was true, that makes complete sense. A cheap, natural fix sitting in your kitchen sounds like relief.",
+        "on_screen_text": "HOPING IT'S TRUE MAKES SENSE",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hopeful person looking at oat jar"
+        },
+        "retention_device": "Names the feeling and validates it",
+        "source_ids": []
+      },
+      {
+        "id": "s10",
+        "section": "Oats vs Ozempic",
+        "narration": "Imagine Rosa, forty-nine, who has prediabetes. She watches that clip and wonders whether oats could do the job, so she could skip that conversation with her doctor.",
+        "on_screen_text": "ROSA, 49 (HYPOTHETICAL)",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "thoughtful Rosa at kitchen table"
+        },
+        "retention_device": "Starts the hypothetical thread the video comes back to",
+        "source_ids": []
+      },
+      {
+        "id": "s11",
+        "section": "Oats vs Ozempic",
+        "narration": "Let us answer Rosa properly: what food really does to your GLP-one, what oats are actually proven for, and where the medicine is different.",
+        "on_screen_text": "THREE HONEST ANSWERS",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "What food does to GLP-1",
+            "What oats are proven for",
+            "Where the medicine differs"
+          ],
+          "stock_query": "checklist on kitchen fridge"
+        },
+        "retention_device": "Promise and roadmap",
+        "source_ids": []
+      },
+      {
+        "id": "s12",
+        "section": "How food wakes up GLP-1",
+        "narration": "First, the hormone itself. GLP-one is not only a drug class. Your body makes its own, every time you eat.",
+        "on_screen_text": "YOUR BODY MAKES GLP-1",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "friendly cartoon gut waving hello"
+        },
+        "retention_device": "Chapter card with a reframe",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s13",
+        "section": "How food wakes up GLP-1",
+        "narration": "It comes from cells in your gut lining called L-cells, which are concentrated in the lower small intestine and the colon.",
+        "on_screen_text": "MADE BY GUT L-CELLS",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "glowing cells along cartoon intestine"
+        },
+        "retention_device": "Concrete anatomy, made easy to picture",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s14",
+        "section": "How food wakes up GLP-1",
+        "narration": "When a meal arrives, these cells sense it. Carbohydrates, fats and protein can all trigger them to release GLP-one.",
+        "on_screen_text": "FOOD FLIPS THE SWITCH",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Carbohydrates",
+            "Fats",
+            "Protein"
+          ],
+          "stock_query": "three food icons tapping a switch"
+        },
+        "retention_device": "A 3-item list to vary the visuals",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s15",
+        "section": "How food wakes up GLP-1",
+        "narration": "Then GLP-one gets to work. It helps your pancreas release insulin when blood sugar rises, slows how fast your stomach empties, and is linked to feeling full.",
+        "on_screen_text": "INSULIN, SLOWER STOMACH, FULLNESS",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "messenger hormone visiting pancreas and brain"
+        },
+        "retention_device": "Builds understanding before the twist",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s16",
+        "section": "How food wakes up GLP-1",
+        "narration": "So where does fibre come in? This is where the oat story finds its grain of truth.",
+        "on_screen_text": "THE GRAIN OF TRUTH",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "single oat grain under spotlight"
+        },
+        "retention_device": "Re-hook: a question plus a pun",
+        "source_ids": []
+      },
+      {
+        "id": "s17",
+        "section": "How food wakes up GLP-1",
+        "narration": "Some fibres are not digested by you at all. They reach your colon, where gut bacteria ferment them into short-chain fatty acids.",
+        "on_screen_text": "GUT BACTERIA FERMENT FIBRE",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "happy gut bacteria munching fibre"
+        },
+        "retention_device": "Mechanism explained like a story",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s18",
+        "section": "How food wakes up GLP-1",
+        "narration": "In mouse and lab-cell experiments, those short-chain fatty acids triggered L-cells to release GLP-one, through a sensor on the cell surface.",
+        "on_screen_text": "MOUSE AND LAB-CELL STUDIES",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "cartoon lab mouse with microscope"
+        },
+        "retention_device": "A surprising mechanism, labelled honestly",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s19",
+        "section": "How food wakes up GLP-1",
+        "narration": "That is a real mechanism. But notice the words: mouse and lab cells. A mouse is not a person, and a mechanism is not a weight result.",
+        "on_screen_text": "A MOUSE IS NOT A PERSON",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Fibre raises GLP-1, so it works like the medicine",
+          "fact": "Mouse and cell data show a mechanism, not a human result",
+          "stock_query": "lab mouse beside puzzled person"
+        },
+        "retention_device": "Turns to the evidence-strength caveat",
+        "source_ids": [
+          "S9"
+        ]
+      },
+      {
+        "id": "s20",
+        "section": "How food wakes up GLP-1",
+        "narration": "So yes, food can nudge your GLP-one. Rosa's oats, her eggs, her lentils all send signals. The real question is how long each signal lasts.",
+        "on_screen_text": "HOW LONG DOES IT LAST?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Rosa's breakfast sending little signals"
+        },
+        "retention_device": "Back to Rosa, then the key question",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s21",
+        "section": "How food wakes up GLP-1",
+        "narration": "That is the two-minute problem, and we will get to it. But first, what can oats honestly claim on a label?",
+        "on_screen_text": "WHAT CAN OATS CLAIM?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "oat box with magnifying glass"
+        },
+        "retention_device": "Mini-cliffhanger before the chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s22",
+        "section": "What oats are proven for",
+        "narration": "Oats do have an official health claim in the United States. It is just not the one the videos imply.",
+        "on_screen_text": "OATS' OFFICIAL CLAIM",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "official seal on oat box"
+        },
+        "retention_device": "Chapter card with a surprise reveal",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s23",
+        "section": "What oats are proven for",
+        "narration": "It is written into the FDA's food labeling rules.",
+        "on_screen_text": "FDA RULE: 21 CFR 101.81",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly rulebook on library desk"
+        },
+        "retention_device": "Short punchy beat to change the pace",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s24",
+        "section": "What oats are proven for",
+        "narration": "The model wording says soluble fiber from foods such as whole oats, quote, as part of a diet low in saturated fat and cholesterol, may reduce the risk of heart disease.",
+        "on_screen_text": "'MAY REDUCE THE RISK OF HEART DISEASE'",
+        "visual": {
+          "kind": "quote",
+          "quote": "…as part of a diet low in saturated fat and cholesterol, may reduce the risk of heart disease.",
+          "attribution": "FDA model health claim, soluble fiber, 21 CFR 101.81",
+          "stock_query": "heart icon beside oat bowl"
+        },
+        "retention_device": "Exact regulatory quote as a proof point",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s25",
+        "section": "What oats are proven for",
+        "narration": "The condition is three grams or more a day of beta-glucan soluble fiber from whole oat sources.",
+        "on_screen_text": "3 G A DAY, BETA-GLUCAN",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "3 g/day",
+          "stat_label": "Minimum beta-glucan soluble fiber from whole oats",
+          "stock_query": "measuring scoop with oat flakes"
+        },
+        "retention_device": "Concrete number",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s26",
+        "section": "What oats are proven for",
+        "narration": "The rule explains that benefit through blood cholesterol. And the verb is careful: may reduce the risk.",
+        "on_screen_text": "A CAREFUL 'MAY'",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "word 'may' under magnifying glass"
+        },
+        "retention_device": "Close reading of the wording",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s27",
+        "section": "What oats are proven for",
+        "narration": "Notice what is missing. Nothing in that claim mentions weight, appetite or GLP-one.",
+        "on_screen_text": "NO WEIGHT. NO GLP-1.",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Oats have an FDA weight-loss claim",
+          "fact": "The FDA claim: may reduce heart disease risk",
+          "stock_query": "empty space where weight claim isn't"
+        },
+        "retention_device": "Surprise from what is missing",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s28",
+        "section": "What oats are proven for",
+        "narration": "So for Rosa, oats can be a sensible part of a diet low in saturated fat and cholesterol. That is worth having. It just is not a medicine.",
+        "on_screen_text": "GOOD FOOD, NOT A MEDICINE",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Rosa smiling at warm oat bowl"
+        },
+        "retention_device": "Thread payoff with a warm reframe",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s29",
+        "section": "What oats are proven for",
+        "narration": "But these videos have a second kitchen trick: eating your food in a certain order. Does that one hold up?",
+        "on_screen_text": "TRICK TWO: EATING ORDER",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "plate with numbered food sections"
+        },
+        "retention_device": "Re-hook question before the chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s30",
+        "section": "Does eating order help?",
+        "narration": "The idea is simple: vegetables and protein first, starchy carbohydrates last.",
+        "on_screen_text": "VEG AND PROTEIN FIRST",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "salad and chicken lining up first"
+        },
+        "retention_device": "Chapter card that is easy to picture",
+        "source_ids": []
+      },
+      {
+        "id": "s31",
+        "section": "Does eating order help?",
+        "narration": "One small pilot study tested it in eleven adults with overweight or obesity and type two diabetes, all taking metformin.",
+        "on_screen_text": "ONE PILOT STUDY: 11 ADULTS",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "small group at clinic table"
+        },
+        "retention_device": "Population given in one sentence, no trial-setup scene",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s32",
+        "section": "Does eating order help?",
+        "narration": "Each person ate the same meal on two separate days: once with the carbohydrates first, and once with the vegetables and protein first.",
+        "on_screen_text": "SAME MEAL, TWO ORDERS",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two identical plates, different order"
+        },
+        "retention_device": "A clever study design as a micro-story",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s33",
+        "section": "Does eating order help?",
+        "narration": "So one small pilot study linked eating vegetables and protein first with lower glucose and insulin rises after the meal.",
+        "on_screen_text": "LOWER GLUCOSE AND INSULIN RISES",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "gentle wave instead of spike"
+        },
+        "retention_device": "Payoff of the chapter question",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s34",
+        "section": "Does eating order help?",
+        "narration": "That is encouraging. But it measured glucose and insulin, not GLP-one, so it cannot tell us that eating order is a GLP-one hack.",
+        "on_screen_text": "IT DIDN'T MEASURE GLP-1",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Eating order is a GLP-1 hack",
+          "fact": "This study measured glucose and insulin, not GLP-1",
+          "stock_query": "detective checking a lab report"
+        },
+        "retention_device": "Turn: what the study did not measure",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s35",
+        "section": "Does eating order help?",
+        "narration": "It was also a small group, tested over single meals, in people with type two diabetes. For Rosa, it is a hint, not a promise.",
+        "on_screen_text": "A HINT, NOT A PROMISE",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Rosa nodding thoughtfully, notebook"
+        },
+        "retention_device": "Back to the Rosa thread",
+        "source_ids": [
+          "S5"
+        ]
+      },
+      {
+        "id": "s36",
+        "section": "Does eating order help?",
+        "narration": "And the two big trials we are about to see, STEP one and SURMOUNT-one, did not test eating order. They compared the medicine with placebo, with lifestyle support in both groups.",
+        "on_screen_text": "STEP 1 AND SURMOUNT-1 DIDN'T TEST IT",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two trial folders on a desk"
+        },
+        "retention_device": "Draws a clear line between food and medicine, and teases the trial numbers to come",
+        "source_ids": [
+          "S7",
+          "S8"
+        ]
+      },
+      {
+        "id": "s37",
+        "section": "Does eating order help?",
+        "narration": "Still, vegetables and protein first is an easy, low-cost habit. If you want to try it, it can sit alongside whatever plan you and your clinician choose.",
+        "on_screen_text": "EASY, LOW-COST HABIT",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person happily eating salad first"
+        },
+        "retention_device": "Gives the viewer something to do",
+        "source_ids": []
+      },
+      {
+        "id": "s38",
+        "section": "Does eating order help?",
+        "narration": "Protein earns its place for another reason. The nutrition advisory waiting in the fibre chapter says enough protein should be a priority, to help preserve muscle and bone, especially alongside strength training.",
+        "on_screen_text": "PROTEIN: MUSCLE AND BONE",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "eggs and lentils beside dumbbells"
+        },
+        "retention_device": "Teases the advisory again, keeping the open loop alive",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s39",
+        "section": "Does eating order help?",
+        "narration": "If you have kidney disease, ask your clinician what amount of protein is right for you.",
+        "on_screen_text": "KIDNEY DISEASE? ASK FIRST",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "calm patient talking with clinician"
+        },
+        "retention_device": "A brief, caring caveat",
+        "source_ids": []
+      },
+      {
+        "id": "s40",
+        "section": "Does eating order help?",
+        "narration": "So food sends real signals. Why, then, is the gap with the medicine so big? It comes down to those two minutes.",
+        "on_screen_text": "WHY THE GAP IS SO BIG",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stopwatch beside medicine pen, curious"
+        },
+        "retention_device": "Re-hook: brings back the opening number before the chapter change",
+        "source_ids": []
+      },
+      {
+        "id": "s41",
+        "section": "The two-minute hormone",
+        "narration": "Remember that half-life of under about two minutes? Here is what happens to your own GLP-one.",
+        "on_screen_text": "THE TWO-MINUTE HORMONE",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "hormone character with tiny stopwatch"
+        },
+        "retention_device": "Chapter card that pays back an earlier loop",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s42",
+        "section": "The two-minute hormone",
+        "narration": "An enzyme in your blood called DPP-four cuts natural GLP-one apart very quickly, and your kidneys help clear it.",
+        "on_screen_text": "DPP-4 CUTS IT FAST",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "scissors enzyme snipping hormone ribbon"
+        },
+        "retention_device": "Vivid mechanism",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s43",
+        "section": "The two-minute hormone",
+        "narration": "Think of it like a text message that deletes itself moments after you read it. Useful, but gone fast.",
+        "on_screen_text": "A SELF-DELETING MESSAGE",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "phone message vanishing in sparkles"
+        },
+        "retention_device": "Everyday analogy",
+        "source_ids": []
+      },
+      {
+        "id": "s44",
+        "section": "The two-minute hormone",
+        "narration": "Here is the twist. Semaglutide is built to look like your own hormone. Its label describes ninety-four percent sequence homology with human GLP-one.",
+        "on_screen_text": "94% LIKE YOUR OWN GLP-1",
+        "visual": {
+          "kind": "stat",
+          "stat_value": "94%",
+          "stat_label": "Semaglutide's sequence homology with human GLP-1",
+          "stock_query": "two near-identical puzzle pieces"
+        },
+        "retention_device": "Surprising stat re-hook",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s45",
+        "section": "The two-minute hormone",
+        "narration": "But it was engineered to last. The label says it is stabilized against the DPP-four enzyme, and that binding to albumin, a protein in your blood, is the main reason it lasts so long.",
+        "on_screen_text": "ENGINEERED TO LAST",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "hormone riding albumin like a raft"
+        },
+        "retention_device": "A 'but / therefore' turn",
+        "source_ids": [
+          "S2"
+        ]
+      },
+      {
+        "id": "s46",
+        "section": "The two-minute hormone",
+        "narration": "Tirzepatide works a little differently. It acts on two hormone receptors, G-I-P and GLP-one, and its label gives a half-life of about five days.",
+        "on_screen_text": "TIRZEPATIDE: GIP + GLP-1",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "one key opening two locks"
+        },
+        "retention_device": "Contrast between the two drugs, without implying the dual action explains the half-life",
+        "source_ids": [
+          "S3"
+        ]
+      },
+      {
+        "id": "s47",
+        "section": "The two-minute hormone",
+        "narration": "So the difference is not only strength. It is time. A meal gives you a short pulse. These medicines keep the signal going for days.",
+        "on_screen_text": "A PULSE VS DAYS",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "The medicine is just a stronger oat",
+          "fact": "A meal gives a short pulse; the medicine lasts days",
+          "stock_query": "brief flash versus steady glow"
+        },
+        "retention_device": "Reframe that answers the chapter question",
+        "source_ids": [
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      {
+        "id": "s48",
+        "section": "The two-minute hormone",
+        "narration": "And when that signal stays on for months, here is what the big trials found.",
+        "on_screen_text": "WHAT THE TRIALS FOUND",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "curtain opening on results board"
+        },
+        "retention_device": "Re-hook before the trial numbers",
+        "source_ids": []
+      },
+      {
+        "id": "s49",
+        "section": "The two-minute hormone",
+        "narration": "In STEP one, semaglutide at the Wegovy dose lowered body weight by an average of fourteen point nine percent over sixty-eight weeks, versus two point four percent on placebo, in adults with obesity, or overweight plus a weight-related condition, without diabetes.",
+        "on_screen_text": "STEP 1: 14.9% VS 2.4% PLACEBO",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Semaglutide (Wegovy dose): −14.9% average body weight",
+            "Placebo: −2.4%; both groups had lifestyle support",
+            "68 weeks; adults with obesity, or overweight + a weight-related condition, without diabetes"
+          ],
+          "stock_query": "clean results board, calm narrator"
+        },
+        "retention_device": "Result and population in one sentence",
+        "source_ids": [
+          "S8"
+        ]
+      },
+      {
+        "id": "s50",
+        "section": "The two-minute hormone",
+        "narration": "In SURMOUNT-one, tirzepatide lowered body weight by an average of fifteen to twenty point nine percent across its dose groups over seventy-two weeks, versus three point one percent on placebo plus counseling, in adults with obesity, or overweight plus a weight-related condition, without diabetes.",
+        "on_screen_text": "SURMOUNT-1: 15–20.9% VS 3.1% PLACEBO",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Tirzepatide: −15% to −20.9% average body weight, by dose group",
+            "Placebo plus counseling: −3.1%",
+            "72 weeks; adults with obesity, or overweight + a weight-related condition, without diabetes"
+          ],
+          "stock_query": "second results board, calm narrator"
+        },
+        "retention_device": "Second result, in the same units as the first",
+        "source_ids": [
+          "S7"
+        ]
+      },
+      {
+        "id": "s51",
+        "section": "The two-minute hormone",
+        "narration": "Those are averages, and people vary. But the oat and eating-order evidence we covered was about heart-disease risk, glucose and insulin, not weight results like these.",
+        "on_screen_text": "DIFFERENT EVIDENCE, DIFFERENT TOOLS",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "two toolboxes labelled food, medicine"
+        },
+        "retention_device": "Ties the chapters together",
+        "source_ids": [
+          "S4",
+          "S5"
+        ]
+      },
+      {
+        "id": "s52",
+        "section": "The two-minute hormone",
+        "narration": "But if Rosa and her doctor decide a GLP-one medicine is right for her, fibre matters again, in a way the viral videos skip.",
+        "on_screen_text": "WHERE FIBRE MATTERS AGAIN",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Rosa at doctor's office, hopeful"
+        },
+        "retention_device": "Mini-cliffhanger into the payoff chapter",
+        "source_ids": []
+      },
+      {
+        "id": "s53",
+        "section": "Fibre on a GLP-1 medicine",
+        "narration": "Here is the payoff I promised. Four lifestyle medicine, nutrition and obesity groups wrote a joint advisory on eating with GLP-one medicines, and in its section on stomach symptoms, it says this.",
+        "on_screen_text": "THE JOINT ADVISORY",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "four experts around one document"
+        },
+        "retention_device": "The main open loop pays off",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s54",
+        "section": "Fibre on a GLP-1 medicine",
+        "narration": "Quote: smaller, more frequent meals and avoiding fatty or high fiber foods during the first few days of treatment can help alleviate symptoms.",
+        "on_screen_text": "THE FIRST DAYS OF TREATMENT",
+        "visual": {
+          "kind": "quote",
+          "quote": "Smaller, more frequent meals and avoiding fatty or high fiber foods during the first few days of treatment can help alleviate symptoms.",
+          "attribution": "Joint advisory, ACLM, ASN, OMA and TOS, 2025",
+          "stock_query": "quote card with small plates"
+        },
+        "retention_device": "Exact quote, the surprise payoff",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s55",
+        "section": "Fibre on a GLP-1 medicine",
+        "narration": "Read it carefully: it is about the start of treatment and easing symptoms, not a rule that fibre is bad on these medicines.",
+        "on_screen_text": "TIMING, NOT A FIBRE BAN",
+        "visual": {
+          "kind": "myth_fact",
+          "myth": "Avoid fibre on GLP-1 medicines",
+          "fact": "The advisory: early treatment, to ease symptoms",
+          "stock_query": "calendar circling first days, oat bowl"
+        },
+        "retention_device": "Corrects the over-reading straight away",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s56",
+        "section": "Fibre on a GLP-1 medicine",
+        "narration": "After that, fibre has a job. Both the semaglutide and tirzepatide labels list constipation among the most common adverse reactions, alongside nausea and diarrhea.",
+        "on_screen_text": "LABELS LIST CONSTIPATION",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Nausea",
+            "Diarrhea",
+            "Constipation"
+          ],
+          "stock_query": "label page with three gentle icons"
+        },
+        "retention_device": "The last new fact, with a reason to act",
+        "source_ids": [
+          "S2",
+          "S3"
+        ]
+      },
+      {
+        "id": "s57",
+        "section": "Fibre on a GLP-1 medicine",
+        "narration": "So here is our own tip: build fibre up gradually, with fluids, unless you've been told to limit fluids.",
+        "on_screen_text": "BUILD FIBRE UP GRADUALLY",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "water glass beside small oat bowl"
+        },
+        "retention_device": "A practical, empowering step",
+        "source_ids": []
+      },
+      {
+        "id": "s58",
+        "section": "Fibre on a GLP-1 medicine",
+        "narration": "Gradually means a little at a time, like a spoonful of oats or a small handful of beans, rather than a huge jump in one day.",
+        "on_screen_text": "A LITTLE AT A TIME",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "spoonful of oats, cheerful hand"
+        },
+        "retention_device": "Concrete example",
+        "source_ids": []
+      },
+      {
+        "id": "s59",
+        "section": "Fibre on a GLP-1 medicine",
+        "narration": "If you have severe pain in your stomach area that will not go away, with or without vomiting, stop using your medicine and get medical help right away. For anything that isn't that emergency sign, don't stop or change your medicine on your own. If constipation is severe or does not settle, tell your prescriber.",
+        "on_screen_text": "SEVERE STOMACH-AREA PAIN THAT WON'T GO AWAY, WITH OR WITHOUT VOMITING? / STOP YOUR MEDICINE AND GET MEDICAL HELP RIGHT AWAY. / FOR ANYTHING THAT ISN'T THAT EMERGENCY SIGN / DON'T STOP OR CHANGE YOUR MEDICINE ON YOUR OWN.",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person calmly phoning their clinic"
+        },
+        "retention_device": "Supportive safety beat: the emergency line first, then the fixed don't-stop line. The four cards are pre-split and must never be auto-split. This is not the chapter's last scene.",
+        "source_ids": [
+          "S2",
+          "S10"
+        ]
+      },
+      {
+        "id": "s60",
+        "section": "Fibre on a GLP-1 medicine",
+        "narration": "Put together, fibre and protein are not competing with your medicine. Think of them as its support crew.",
+        "on_screen_text": "FOOD AS THE SUPPORT CREW",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "oats and eggs cheering a pen"
+        },
+        "retention_device": "Chapter ends on encouragement",
+        "source_ids": []
+      },
+      {
+        "id": "s61",
+        "section": "Your takeaway",
+        "narration": "So Rosa's oats are not a weaker Ozempic. They are breakfast, and breakfast was never meant to be medicine.",
+        "on_screen_text": "BREAKFAST, NOT MEDICINE",
+        "visual": {
+          "kind": "chapter",
+          "stock_query": "Rosa relaxed with morning oats"
+        },
+        "retention_device": "The Rosa thread pays off",
+        "source_ids": []
+      },
+      {
+        "id": "s62",
+        "section": "Your takeaway",
+        "narration": "So what does Rosa do? She keeps her oats, because they fit a diet low in saturated fat and cholesterol. And she still books that appointment.",
+        "on_screen_text": "KEEP THE OATS, BOOK THE VISIT",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Rosa booking appointment on phone"
+        },
+        "retention_device": "Relief and a sense of control",
+        "source_ids": []
+      },
+      {
+        "id": "s63",
+        "section": "Your takeaway",
+        "narration": "Whether a GLP-one medicine is right for her is a conversation, not a recipe. Talk to your doctor or prescriber about whether it is right for you.",
+        "on_screen_text": "A CONVERSATION, NOT A RECIPE",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "warm doctor and patient talking"
+        },
+        "retention_device": "The required prescriber line, said warmly",
+        "source_ids": []
+      },
+      {
+        "id": "s64",
+        "section": "Your takeaway",
+        "narration": "If you are in Rosa's shoes, here are three questions worth bringing to that visit.",
+        "on_screen_text": "3 QUESTIONS FOR YOUR VISIT",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Could a GLP-1 medicine fit my goals?",
+            "What stomach symptoms might I notice early?",
+            "How should I eat for protein and fibre?"
+          ],
+          "stock_query": "notepad with three questions"
+        },
+        "retention_device": "Practical checklist",
+        "source_ids": []
+      },
+      {
+        "id": "s65",
+        "section": "Your takeaway",
+        "narration": "Could a GLP-one medicine fit my health goals? What stomach symptoms might I notice early on? And how should I eat for protein and fibre?",
+        "on_screen_text": "ASK, DON'T GUESS",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person confidently reading notes aloud"
+        },
+        "retention_device": "Gives the viewer a sense of control",
+        "source_ids": []
+      },
+      {
+        "id": "s66",
+        "section": "Your takeaway",
+        "narration": "And if you already take one of these medicines and have ever felt like you were cheating, hear this: your own GLP-one is short-lived by nature. Your medicine is pharmacology, not a moral shortcut.",
+        "on_screen_text": "NOT A MORAL SHORTCUT",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "person exhaling relief, kind light"
+        },
+        "retention_device": "Validates the feeling and removes stigma",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s67",
+        "section": "Your takeaway",
+        "narration": "Here is your takeaway in three lines.",
+        "on_screen_text": "YOUR 3-LINE TAKEAWAY",
+        "visual": {
+          "kind": "list",
+          "items": [
+            "Food nudges your own GLP-1, briefly",
+            "Oats' FDA claim: heart disease risk",
+            "On a medicine: build fibre up gradually"
+          ],
+          "stock_query": "three tidy cards on table"
+        },
+        "retention_device": "Signals the checklist",
+        "source_ids": []
+      },
+      {
+        "id": "s68",
+        "section": "Your takeaway",
+        "narration": "One: food can nudge your own GLP-one, but that hormone lasts minutes, not days.",
+        "on_screen_text": "MINUTES, NOT DAYS",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "stopwatch beside oat bowl"
+        },
+        "retention_device": "Recap of the first loop, kept at the source's scope",
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "s69",
+        "section": "Your takeaway",
+        "narration": "Two: the FDA's oat claim is about heart-disease risk, as part of a diet low in saturated fat and cholesterol, not weight loss.",
+        "on_screen_text": "A HEART CLAIM, NOT WEIGHT",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "heart icon on oat box"
+        },
+        "retention_device": "Recap",
+        "source_ids": [
+          "S4"
+        ]
+      },
+      {
+        "id": "s70",
+        "section": "Your takeaway",
+        "narration": "Three: on a GLP-one medicine, the advisory says avoiding fatty or high-fiber foods in the first few days of treatment can help ease symptoms. After that, build fibre up gradually, with fluids, unless you've been told to limit fluids.",
+        "on_screen_text": "EASE IN, THEN BUILD UP",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "gentle staircase of fibre foods"
+        },
+        "retention_device": "Recap of the payoff",
+        "source_ids": [
+          "S6"
+        ]
+      },
+      {
+        "id": "s71",
+        "section": "Your takeaway",
+        "narration": "So the next time a midnight clip promises nature's Ozempic, you will know what to ask: which signal, for how long, and measured how?",
+        "on_screen_text": "WHICH SIGNAL? HOW LONG?",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "confident person in dark night room, phone down"
+        },
+        "retention_device": "Calls back to the opening moment",
+        "source_ids": []
+      },
+      {
+        "id": "s72",
+        "section": "Your takeaway",
+        "narration": "Respect the food, respect the medicine, and know which is which.",
+        "on_screen_text": "KNOW WHICH IS WHICH",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi cheering beside oats and pen"
+        },
+        "retention_device": "An empowering closing line",
+        "source_ids": []
+      },
+      {
+        "id": "s73",
+        "section": "Your takeaway",
+        "narration": "If you want more GLP-one myths checked against the actual trials and labels, one at a time, subscribe. Not personal advice, so ask your prescriber.",
+        "on_screen_text": "MORE MYTHS, CHECKED",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "friendly subscribe bell, Medi waving"
+        },
+        "retention_device": "One subscribe ask after the payoff, tied to a specific benefit",
+        "source_ids": []
+      },
+      {
+        "id": "s74",
+        "section": "Your takeaway",
+        "narration": "There is a video I would watch next, linked in the description.",
+        "on_screen_text": "WATCH THIS NEXT",
+        "visual": {
+          "kind": "broll",
+          "stock_query": "Medi pointing to next video"
+        },
+        "retention_device": "Points to the next video; voiced from the first word to the last",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "S1",
+        "title": "The physiology of glucagon-like peptide 1 (Holst JJ), Physiol Rev 87(4):1409–1439: L-cell secretion, nutrient stimulation, actions, DPP-4 degradation, half-life",
+        "publisher": "Physiological Reviews",
+        "year": "2007",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17928588/"
+      },
+      {
+        "id": "S2",
+        "title": "Ozempic (semaglutide) injection, US Prescribing Information (FDA SPL): Highlights and 6.1 (most common adverse reactions), 12.1 (mechanism of action: 94% sequence homology, albumin binding, DPP-4 stabilization), 12.3 (half-life about 1 week); Medication Guide section of the same SPL document (pancreatitis)",
+        "publisher": "Novo Nordisk / US FDA (FDALabel)",
+        "year": "Label effective 1 Jun 2026 (Version 20)",
+        "url": "https://nctr-crs.fda.gov/fdalabel/services/spl/set-ids/adec4fd2-6858-4c99-91d4-531f5f2a2d79/spl-doc"
+      },
+      {
+        "id": "S3",
+        "title": "Mounjaro (tirzepatide) injection, US Prescribing Information: Highlights and 6.1 (most common adverse reactions), 12.1 (GIP and GLP-1 receptor agonist), 12.3 (half-life about 5 days)",
+        "publisher": "Eli Lilly and Company / US FDA-approved labeling",
+        "year": "Revised 11/2026 (DailyMed label updated 16 Nov 2026)",
+        "url": "https://pi.lilly.com/us/mounjaro-uspi.pdf"
+      },
+      {
+        "id": "S4",
+        "title": "21 CFR 101.81: Health claims: soluble fiber from certain foods and risk of coronary heart disease (CHD): model claim and 3 g/day beta-glucan soluble fiber from whole oat sources",
+        "publisher": "Electronic Code of Federal Regulations (US FDA regulation)",
+        "year": "Current eCFR text, accessed 2026-11-26",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-E/section-101.81"
+      },
+      {
+        "id": "S5",
+        "title": "Food Order Has a Significant Impact on Postprandial Glucose and Insulin Levels (Shukla AP, Iliescu RG, Thomas CE, Aronne LJ), Diabetes Care 38(7):e98–e99",
+        "publisher": "Diabetes Care (PMC full text)",
+        "year": "2015",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4876745"
+      },
+      {
+        "id": "S6",
+        "title": "Nutritional Priorities to Support GLP-1 Therapy for Obesity: A Joint Advisory From the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society (Mozaffarian D et al.; DOI 10.1177/15598276251344827): GI side effects (smaller meals; fatty or high-fiber foods in first few days); protein priority",
+        "publisher": "American Journal of Lifestyle Medicine",
+        "year": "2025",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12125019/"
+      },
+      {
+        "id": "S7",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1; Jastreboff AM et al.), NEJM 387:205–216",
+        "publisher": "New England Journal of Medicine",
+        "year": "2022",
+        "url": "https://doi.org/10.1056/NEJMoa2206038"
+      },
+      {
+        "id": "S8",
+        "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity (STEP 1; Wilding JPH et al.), NEJM 384:989–1002",
+        "publisher": "New England Journal of Medicine",
+        "year": "2021",
+        "url": "https://doi.org/10.1056/NEJMoa2032183"
+      },
+      {
+        "id": "S9",
+        "title": "Short-chain fatty acids stimulate glucagon-like peptide-1 secretion via the G-protein-coupled receptor FFAR2 (Tolhurst G et al.; mouse and cell studies), Diabetes 61(2):364–371",
+        "publisher": "Diabetes",
+        "year": "2012",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22190648/"
+      },
+      {
+        "id": "S10",
+        "title": "Mounjaro (tirzepatide) Medication Guide: pancreatitis",
+        "publisher": "Eli Lilly and Company",
+        "year": "Revised 11/2026 (DailyMed label updated 16 Nov 2026)",
+        "url": "https://pi.lilly.com/us/mounjaro-us-mg.pdf"
+      }
+    ],
+    "cta": "Spoken: \"If you want more GLP-one myths checked against the actual trials and labels, one at a time, subscribe. Not personal advice, so ask your prescriber. There is a video I would watch next, linked in the description.\" Watch-next target for the post notes (the publisher adds the verified link): Side Effects, following the rule that new broad videos link to Side Effects. Thumbnail per the brief: 'OATS VS OZEMPIC?' with the subtext 'A SMALL NUDGE VS A MEDICINE', one calm labelled character holding a bowl, no body imagery. The description's safety line uses the s59 wording, introduced as \"Safety (based on the Ozempic and Mounjaro Medication Guides):\" rather than as a direct quote, and cites the Ozempic Medication Guide (the Medication Guide section of the S2 FDA SPL) and the Mounjaro Medication Guide (S10, https://pi.lilly.com/us/mounjaro-us-mg.pdf): \"Safety (based on the Ozempic and Mounjaro Medication Guides): If you have severe pain in your stomach area that will not go away, with or without vomiting, stop using your medicine and get medical help right away. For anything that isn't that emergency sign, don't stop or change your medicine on your own.\" Pre-publish check for the publisher: before the description cites S2 and S10, find the sentence beginning \"Stop using…\" in each Medication Guide. Present the line as a direct quote only if the wording matches exactly. The description ends \"…whether it's right for you.\""
+  },
+  "factcheck": {
+    "verdict": "REVISE",
+    "summary": "The science holds up. I checked these against the sources:\n- Holst 2007: native GLP-1 has a half-life under 2 minutes, is made by L-cells, is broken down by DPP-4 and cleared by the kidneys.\n- Ozempic label: half-life about 1 week, 94% sequence homology, albumin binding and DPP-4 stabilisation. The FDALabel version is effective 1 Jun 2026 (Version 20).\n- Mounjaro label: half-life about 5 days.\n- 21 CFR 101.81: the model claim wording, 3 g a day of beta-glucan, and the benefit working through blood cholesterol.\n- Shukla 2015: 11 adults with type 2 diabetes on metformin, the same meal one week apart, measuring glucose and insulin only.\n- The joint advisory: the exact fibre-timing quote and the protein-priority sentence.\n- STEP 1 and SURMOUNT-1: the numbers, populations and comparators.\n- Tolhurst 2012: mouse and cell studies, via FFAR2.\n\nThe framing is careful: the mouse and cell evidence is labelled, the \"may\" is kept, and the advisory isn't over-read as a fibre ban. The safety lines, the kidney-disease caveat and the prescriber line are all present. The one problem that needs fixing is the dates on the Mounjaro sources. S3 and S10 carry Zepbound's dates (Revised 11/2026, DailyMed updated 16 Nov 2026). The Mounjaro label on FDALabel is effective 27 Aug 2026 (Version 40), which matches the known date, so 11/2026 is wrong for Mounjaro. Fix that, plus the minor wording points, and it can render.",
+    "issues": [
+      {
+        "location": "Sources S3 (and stat labels s4, s46)",
+        "claim": "Mounjaro PI 'Revised 11/2026 (DailyMed label updated 16 Nov 2026)'",
+        "problem": "These are Zepbound's dates (from the craft notes), not Mounjaro's. FDALabel shows the Mounjaro SPL (set ID d2d7da5d-ad07-4228-955f-cf7e355c8cc0) effective 27 Aug 2026, Version 40, which matches the known date 'Mounjaro PI: 27 Aug 2026'. A wrong revised date has caused REVISEs and holds before.",
+        "severity": "major",
+        "fix": "Set S3 year to: \"Label effective 27 Aug 2026 (FDALabel Version 40)\". Keep URL https://pi.lilly.com/us/mounjaro-uspi.pdf, or use https://nctr-crs.fda.gov/fdalabel/services/spl/set-ids/d2d7da5d-ad07-4228-955f-cf7e355c8cc0/spl-doc"
+      },
+      {
+        "location": "Sources S10 (cited in s59 and description safety line)",
+        "claim": "Mounjaro Medication Guide 'Revised 11/2026 (DailyMed label updated 16 Nov 2026)'",
+        "problem": "This is the same Zepbound date applied to the wrong drug. I couldn't read a Mounjaro Medication Guide date of 11/2026 from the PDF, and the current Mounjaro SPL is effective 27 Aug 2026.",
+        "severity": "major",
+        "fix": "Replace with the Medication Guide's printed 'Revised:' date as read from the PDF, or if it can't be read, with the date from the SPL: \"Medication Guide in Mounjaro SPL effective 27 Aug 2026 (FDALabel Version 40)\". Never use 11/2026 unless the PDF shows it."
+      },
+      {
+        "location": "s10 (and s52)",
+        "claim": "Rosa, 49, who has prediabetes ... whether a GLP-1 medicine is right for her",
+        "problem": "Prediabetes alone is not an approved use for semaglutide or tirzepatide. Weight-management use needs obesity, or overweight plus a weight-related condition. Viewers could take away that prediabetes by itself qualifies.",
+        "severity": "minor",
+        "fix": "s10 narration: \"Imagine Rosa, forty-nine, who has overweight and prediabetes. She watches that clip and wonders whether oats could do the job, so she could skip that conversation with her doctor.\""
+      },
+      {
+        "location": "s31",
+        "claim": "eleven adults with overweight or obesity and type two diabetes, all taking metformin",
+        "problem": "Mostly accurate: the mean BMI was 32.9. The letter itself describes the participants as adults with type 2 diabetes on metformin, so 'with overweight or obesity' slightly goes beyond what it states.",
+        "severity": "minor",
+        "fix": "\"One small pilot study tested it in eleven adults with type two diabetes, all taking metformin, most of them with obesity.\" Or keep the line if the full text's 'overweight/obese' wording is confirmed."
+      },
+      {
+        "location": "Source S4 URL",
+        "claim": "eCFR link",
+        "problem": "The eCFR URL sends automated fetches to a bot-check page (unblock.federalregister.gov). It probably works in a browser, but a mirror I could reach confirms the text.",
+        "severity": "minor",
+        "fix": "Keep the eCFR URL and add a backup: https://www.law.cornell.edu/cfr/text/21/101.81"
+      }
+    ],
+    "verified_sources": [
+      {
+        "id": "S1",
+        "title": "The physiology of glucagon-like peptide 1 (Holst JJ), Physiol Rev 87(4):1409–1439",
+        "publisher": "Physiological Reviews",
+        "year": "2007",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17928588/"
+      },
+      {
+        "id": "S2",
+        "title": "Ozempic (semaglutide) injection US Prescribing Information and Medication Guide (FDA SPL): 6.1, 12.1, 12.3",
+        "publisher": "Novo Nordisk / US FDA (FDALabel)",
+        "year": "Label effective 1 Jun 2026 (Version 20)",
+        "url": "https://nctr-crs.fda.gov/fdalabel/services/spl/set-ids/adec4fd2-6858-4c99-91d4-531f5f2a2d79/spl-doc"
+      },
+      {
+        "id": "S3",
+        "title": "Mounjaro (tirzepatide) injection US Prescribing Information: 6.1, 12.1, 12.3",
+        "publisher": "Eli Lilly and Company / US FDA (FDALabel)",
+        "year": "Label effective 27 Aug 2026 (Version 40)",
+        "url": "https://nctr-crs.fda.gov/fdalabel/services/spl/set-ids/d2d7da5d-ad07-4228-955f-cf7e355c8cc0/spl-doc"
+      },
+      {
+        "id": "S4",
+        "title": "21 CFR 101.81 Health claims: soluble fiber from certain foods and risk of coronary heart disease",
+        "publisher": "US FDA regulation (eCFR; Cornell LII mirror)",
+        "year": "Current text, accessed 2026-11-26",
+        "url": "https://www.law.cornell.edu/cfr/text/21/101.81"
+      },
+      {
+        "id": "S5",
+        "title": "Food Order Has a Significant Impact on Postprandial Glucose and Insulin Levels (Shukla AP et al.), Diabetes Care 38(7):e98–e99",
+        "publisher": "Diabetes Care (PMC)",
+        "year": "2015",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4876745"
+      },
+      {
+        "id": "S6",
+        "title": "Nutritional Priorities to Support GLP-1 Therapy for Obesity: A Joint Advisory (ACLM, ASN, OMA, TOS; Mozaffarian D et al.)",
+        "publisher": "American Journal of Lifestyle Medicine",
+        "year": "2025",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12125019/"
+      },
+      {
+        "id": "S7",
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1), NEJM 387:205–216",
+        "publisher": "New England Journal of Medicine",
+        "year": "2022",
+        "url": "https://doi.org/10.1056/NEJMoa2206038"
+      },
+      {
+        "id": "S8",
+        "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity (STEP 1), NEJM 384:989–1002",
+        "publisher": "New England Journal of Medicine",
+        "year": "2021",
+        "url": "https://doi.org/10.1056/NEJMoa2032183"
+      },
+      {
+        "id": "S9",
+        "title": "Short-chain fatty acids stimulate glucagon-like peptide-1 secretion via the G-protein-coupled receptor FFAR2 (Tolhurst G et al.), Diabetes 61(2):364–371",
+        "publisher": "Diabetes",
+        "year": "2012",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22190648/"
+      }
+    ]
+  },
+  "hold_reason": "Not rendered: Fact-checker verdict REVISE: The science holds up. I checked these against the sources:\n- Holst 2007: native GLP-1 has a half-life under 2 minutes, is made by L-cells, is broken down by DPP-4 and cleared by the kidneys.\n- Ozempic label: half-life about 1 week, 94% sequence homology, albumin binding and DPP-4 stabilisation. The FDALabel version is effective 1 Jun 2026 (Version 20).\n- Mounjaro label: half-life about 5 days.\n- 21 CFR 101.81: the model claim wording, 3 g a day of beta-glucan, and the benefit working through blood cholesterol.\n- Shukla 2015: 11 adults with type 2 diabetes on metformin, the same meal one week apart, measuring glucose and insulin only.\n- The joint advisory: the exact fibre-timing quote and the protein-priority sentence.\n- STEP 1 and SURMOUNT-1: the numbers, populations and comparators.\n- Tolhurst 2012: mouse and cell studies, via FFAR2.\n\nThe framing is careful: the mouse and cell evidence is labelled, the \"may\" is kept, and the advisory isn't over-read as a fibre ban. The safety lines, the kidney-disease caveat and the prescriber line are all present. The one problem that needs fixing is the dates on the Mounjaro sources. S3 and S10 carry Zepbound's dates (Revised 11/2026, DailyMed updated 16 Nov 2026). The Mounjaro label on FDALabel is effective 27 Aug 2026 (Version 40), which matches the known date, so 11/2026 is wrong for Mounjaro. Fix that, plus the minor wording points, and it can render.",
+  "release_tag": "content-2026-11-26",
+  "archive_url": "b2://informed-lab-media/content/2026-11-26/L3-nature-s-ozempic-oats-and-fibre-what-fib/"
+}
