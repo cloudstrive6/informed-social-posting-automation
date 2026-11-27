@@ -1,70 +1,279 @@
-_Based on 77 QA records from 2026-11-13 to 2026-11-26: 45 Shorts, 28 long videos and 4 carousels, all about GLP-1. One record is new since the last pass: **S4 11-26, "An itchy rash or itchy patch of skin"**. It was made and not held, but it repeats known faults. The hero is a floating head. Tags sit on top of captions twice ("Prescriber", "Swelling"). Every card in the allergy list ends on a comma. A bracketed production note was left inside on-screen item text. The Instagram caption adds a question opener._
+_Based on 82 QA records from 2026-11-13 to 2026-11-27: 48 Shorts, 29 long videos and 5 carousels, all about GLP-1. Five records are new since the last pass, all from 11-27: **L1 Foundayo and Sleep Apnea**, **S1 Sleeping Better / Snoring Less**, **S2 Holiday Drinks on Foundayo**, **S3 Queasy the Morning After** and **C1 Bruise carousel**. None was held, but all five repeat known faults:_
+- _"found ao" was heard for Foundayo in L1._
+- _Floating heads in L1, S2 and S3, and a mascot drawn on a person in S3._
+- _A daytime room on a night beat, plus starfield, in S1._
+- _"TWENTY-EIGHT" spelled out, and the safety cards split at the comma, in S3._
+- _The word count was logged wrong in S1._
+- _Captions added "dinner", turned the emergency line into a question and put our own tips under the label (S2, S3, C1)._
 
-_**Where things stand on 11-26:** fact-check holds keep rising (7, 2 of them on 11-26). They come from overstated claims and from dates copied between documents, never from a wrong trial number. Masking came back after two clean days (S1 11-26 at 0.056). Misread drug names caused 2 holds ("tears appetite", "moongiaro"). Beat sync is fixed on Serious Risks. Floating heads, cabinet strips or ornaments, starfield or bokeh, and split safety cards showed up in every 11-26 video piece that had visual notes._
+_**Where things stand on 11-27:** holds are unchanged at 20. No new hold types appeared. The same visual faults (floating heads, starfield, split safety cards, tags over captions) show up in every video piece. Misheard drug names have now reached 4 long videos in 5 days._
 
-_**20 held or failed in this window (no change):** 5 for beat drift (L1 11-14, L1 and L2 11-16, L1 11-21, L1 11-23); 7 for audio or narration (S2 11-13, S1 11-16, L1 11-22, S3 11-22, L1 11-25, L1 11-26, S1 11-26); 7 for sources or fact-check (L2 11-14, C1 11-20, Foundayo 11-20 and 11-21, S2 11-26, L2 11-26, L3 11-26); 1 for packaging (L3 11-25)._
+_**20 held or failed in this window (no change):**_
+- _5 for beat drift: L1 11-14, L1 and L2 11-16, L1 11-21, L1 11-23._
+- _7 for audio or narration: S2 11-13, S1 11-16, L1 11-22, S3 11-22, L1 11-25, L1 11-26, S1 11-26._
+- _7 for sources or fact-check: L2 11-14, C1 11-20, Foundayo 11-20 and 11-21, S2 11-26, L2 11-26, L3 11-26._
+- _1 for packaging: L3 11-25._
 
-_**Ignore:** any finding that cites a 170-word or 90 s Shorts limit; Exp F card findings ("Full breakdown on our channel", the subscribe line) on Shorts with content dates up to 2026-11-16 (S1 and S2 11-14, S3 11-13, S3 11-15). Only the automatic beat-sync gate counts for timing._
+_**Ignore:**_
+- _Any finding that cites a 170-word or 90 s Shorts limit._
+- _Exp F card findings ("Full breakdown on our channel", the subscribe line) on Shorts with content dates up to 2026-11-16 (S1 and S2 11-14, S3 11-13, S3 11-15)._
+- _Offset-beat or wrong-beat findings from records up to 2026-11-09. Those came from a QA bug, and the published videos were in sync._
+- _Only the automatic beat-sync gate counts for timing._
 
-_**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no subscribe line or card, and no "link in the description" line or card, re-renders of older scripts included. Never add them back. Every Short from 11-17 to 11-26 complied._
+_**Shorts closing (owner OK 2026-11-12, content dates from 2026-11-17):** no subscribe line or card, and no "link in the description" line or card. This includes re-renders of older scripts. Never add them back. Every Short from 11-17 to 11-27 complied._
 
 ### Motion Designer
-- **Check beat sync and scene text on the long-form render, not on the plan.** Re-time every cut from the final word timestamps, and again after any scene is regenerated. Fix any cut more than 0.5 s off on the rendered file. Check every stat or headline shot against its own scene ID, because the renderer pulls a later scene's text into earlier shots that share a layout. (5 gate holds: plans 96–100% on time, renders 76–93%. Wrong-scene text 3 times: s31←s23 in L2 11-16, s65←s75 in L1 11-21, s18←s60 in L1 11-23. The re-timed Serious Risks render passed on 11-26.)
-- **Before handoff, run speech-to-text on every scene and compare it with the script. Check drug names first** (tirzepatide, semaglutide, orforglipron, dulaglutide, Mounjaro, Zepbound, Ozempic, Foundayo), then every "point", number, unit, acronym and contraction. If a name is misheard, regenerate that scene with a phonetic respelling, then re-time and re-check it. A misheard name is a ship-blocker; never hand it off with a "quality check" note. ("tears epitide" and "some agglutide" in L2 11-23; "tears appetite" in L1 11-25 (held); "tears appetite" and "moongiaro" in L1 11-26 (held); also "gip", "tenmg", "sub study", "why is", and a dropped "point".)
-- **Every scene has voice from its first word to its last,** the closing scene and the Short's hook included. (3 holds: S1 11-16, L1 11-22, S3 11-22.)
-- **Measure masking last, on the final file of every piece. Never hand off above 0.02; aim for 0.015 or lower.** Duck the music under all narration. Put no stinger on a spoken number, drug name or safety line. Re-measure after every re-render. (Over 0.02 in 11 pieces and part of 5 holds, most recently S1 11-26 at 0.056.)
-- **Build captions and tags from the script's on-screen text field, never from the narration. Numbers are digits that match the stat pill.** Before render, search for POINT, PERCENT, SEVENTY, SIXTEEN, "TYPE TWO", "TWO DIABETES", the raw word "Label", and any [bracketed] production note. (Spelled-out numbers in about 15 Shorts, most recently S2 11-26. "TYPE TWO" 5 times. Raw "Label" 3 times. A bracketed note in S4 11-26's on-screen text.)
-- **The closing safety cards are fixed and pre-split; never run them through the auto-splitter.**
+- **Check beat sync and scene text on the long-form render, not on the plan.**
+  - Re-time every cut from the final word timestamps, and again after any scene is regenerated.
+  - Fix any cut more than 0.5 s off on the rendered file.
+  - Check every stat or headline shot against its own scene ID. The renderer pulls a later scene's text into earlier shots that share a layout.
+  - Evidence: 5 gate holds, with plans 96–100% on time and renders 76–93%. Wrong-scene text 3 times: s31←s23 in L2 11-16, s65←s75 in L1 11-21, s18←s60 in L1 11-23. The re-timed Serious Risks render passed on 11-26.
+- **Before handoff, run speech-to-text on every scene and compare it with the script.**
+  - Check drug names first: tirzepatide, semaglutide, orforglipron, dulaglutide, Mounjaro, Zepbound, Ozempic, Foundayo.
+  - Then check every "point", number, unit, acronym and contraction.
+  - If a name is misheard, regenerate that scene with a phonetic respelling, then re-time and re-check it.
+  - A misheard name is a ship-blocker. Never hand it off with a "quality check" note.
+  - Evidence: "tears epitide" and "some agglutide" (L2 11-23); "tears appetite" (L1 11-25, held); "tears appetite" and "moongiaro" (L1 11-26, held); "found ao" (L1 11-27); also "gip", "tenmg", "sub study", "why is" and a dropped "point".
+- **Every scene has voice from its first word to its last,** including the closing scene and the Short's hook. (3 holds: S1 11-16, L1 11-22, S3 11-22.)
+- **Measure masking last, on the final file of every piece.**
+  - Never hand off above 0.02; aim for 0.015 or lower.
+  - Duck the music under all narration.
+  - Put no stinger on a spoken number, drug name or safety line.
+  - Re-measure after every re-render.
+  - Evidence: over 0.02 in 11 pieces and part of 5 holds, most recently S1 11-26 at 0.056.
+- **Build captions and tags from the script's on-screen text field, never from the narration.**
+  - Numbers are digits that match the stat pill.
+  - Before render, search for POINT, PERCENT, SEVENTY, SIXTEEN, TWENTY, "TYPE TWO", "TWO DIABETES", the raw word "Label" and any [bracketed] production note.
+  - Evidence: spelled-out numbers in about 16 Shorts, most recently "TWENTY-EIGHT" in S3 11-27; "TYPE TWO" 5 times; raw "Label" 3 times; a bracketed note in S4 11-26.
+- **The closing safety cards are fixed and pre-split. Never run them through the auto-splitter.**
   - "NOT PERSONAL ADVICE, SO ASK YOUR PRESCRIBER." is one card.
   - The don't-stop line is exactly two cards: "FOR ANYTHING THAT ISN'T ONE OF THOSE EMERGENCY SIGNS" / "DON'T STOP OR CHANGE YOUR MEDICINE ON YOUR OWN." Use "THAT EMERGENCY SIGN" when only one sign is named.
-  - The emergency card keeps the guide's full wording: "healthcare provider", "stomach area", "with or without vomiting" (cut short in L4 11-26 s65, L1 11-25 s26, S3 11-25).
-  - Allergy and gallbladder sign lists: each card is a whole sign ending on a period, never a comma or semicolon (S2 11-22, S4 11-26).
-  - Read the last 4 cards of every Short before handoff. (Safety line split at the comma about 9 times; don't-stop line broken about 7 times, most recently S1 and S3 11-26.)
-- **Every other caption card is one whole clause on 2 lines or fewer.** Never end a card on a comma, dash, colon, semicolon, bare number or possessive, or on THE, A, AS, CAN, LET, ABOUT, HOW, HAVE, THOSE, TAKE, TYPE, YOUR, POINT, ISN'T or DOESN'T. Never split a compound across cards ("SIDE / EFFECTS"). (Found in nearly every Short; on 11-26: "EXTRA STRANDS CAN", "TIRZEPATIDE —", "SEVERE PAIN IN YOUR".)
-- **Tags:** clear the previous card, tags and bubbles (ghosted bubbles included) before the next card appears. A tag never repeats the word in the caption under it. Shorts: tags stay above y 1150, inside both edges, never behind the caption pill, 2 at most at a time. Long-form: the bottom of every tag, name tags included, stays at y 1000 or less. Labels are about 40px or larger and never truncated. Never render an empty bubble or a dash-placeholder rail. (About 300 Shorts overlap findings, "Prescriber" and "Swelling" in S4 11-26; about 385 long-form off-screen and 305 tiny-text findings; dash rails 4 times.)
-- **Backdrops:** no teal or green cabinet strips, no hanging ornament circles, and no starfield or bokeh on any beat. Night beats get a dark night room. (Cabinet strips or ornaments in about 32 pieces, L4 11-26 included. Starfield or bokeh in about 30. Daytime rooms on night beats 5 times, most recently L1 11-26.)
-- **Draw people as whole characters with neck and shoulders, standing in front of the counter; neither the counter nor the frame edge crops them.** Lock each character's skin tone, hair and outfit. No ring, blob, outline-only or mannequin heroes, and no mascot on a person. Frame 0.0 s shows the main character in full plus the hook's key elements (S4 11-26 had a bare head until 1.1 s). In long-form, the main character fills about a third of the frame height in the first 30 s. Every shot has a labelled hero covering about 25% or more of the frame and draws every element the shot list names, mascots included. (Floating heads in about 40 pieces, most recently L4 and S4 11-26. About 260 near-empty findings. Missing mascots or props in 5 pieces. Continuity breaks in 8.)
+  - The emergency card keeps the guide's full wording: "healthcare provider", "stomach area", "with or without vomiting". It was cut short in L4 11-26 s65, L1 11-25 s26 and S3 11-25.
+  - In allergy and gallbladder sign lists, each card is a whole sign ending on a period, never a comma or semicolon (S2 11-22, S4 11-26).
+  - Read the last 4 cards of every Short before handoff.
+  - Evidence: safety line split at the comma about 10 times; don't-stop line broken about 8 times, most recently S3 11-27.
+- **Every other caption card is one whole clause on 2 lines or fewer.**
+  - Never end a card on a comma, dash, colon, semicolon, bare number or possessive.
+  - Never end a card on THE, A, AS, CAN, LET, ABOUT, HOW, WHEN, HAVE, THOSE, TAKE, TYPE, YOUR, POINT, ISN'T or DOESN'T.
+  - Never split a compound across cards ("SIDE / EFFECTS").
+  - Evidence: found in nearly every Short. On 11-27: "USE CPAP,", "RESULT —", "BLAND PORTIONS WHEN".
+- **Tags:**
+  - Clear the previous card, tags and bubbles (ghosted bubbles included) before the next card appears.
+  - A tag never repeats the word in the caption under it (for example "Sleep clinician" over "YOUR SLEEP CLINICIAN", S1 11-27).
+  - Shorts: tags stay above y 1150, inside both edges, never behind the caption pill, and 2 at most at a time.
+  - Long-form: the bottom of every tag, name tags included, stays at y 1000 or less.
+  - Labels are about 40px or larger and never truncated.
+  - Never render an empty bubble or a dash-placeholder rail.
+  - Evidence: about 320 Shorts overlap findings (11 in S1 11-27); about 405 long-form off-screen and 310 tiny-text findings; dash rails 4 times.
+- **Backdrops:**
+  - No teal or green cabinet strips, no hanging ornament circles, and no starfield or bokeh on any beat.
+  - Night beats get a dark night room.
+  - Evidence: cabinet strips or ornaments in about 33 pieces (L1 11-27 included); starfield or bokeh in about 31 (S1 11-27); daytime rooms on night beats 6 times, most recently S1 11-27.
+- **Draw people as whole characters with neck and shoulders, standing in front of the counter. Neither the counter, the tile strip nor the frame edge crops them.**
+  - Lock each character's skin tone, hair and outfit.
+  - No ring, blob, outline-only, avatar-circle or mannequin heroes.
+  - Never draw a mascot on a person's face or head (S3 11-20, S3 11-27).
+  - Frame 0.0 s shows the main character in full plus the hook's key elements.
+  - In long-form, the main character fills about a third of the frame height in the first 30 s.
+  - Every shot has a labelled hero covering about 25% or more of the frame, and draws every element the shot list names.
+  - Evidence: floating heads in about 43 pieces, most recently L1, S2 and S3 11-27; about 270 near-empty findings; continuity breaks in 8.
 
 ### Scriptwriters
-- **Shorts: stay inside the task's length arm and count every word yourself.** Tight arm: 90–120 words. Standard arm: 135–160. Never over 160. Log the exact count in the post notes (wrong in S2 11-23, unclear in S2 11-25). Scene 1's narration holds the spoken hook (S3 11-22 was held for this). End with "Not personal advice, so ask your prescriber.", then the emergency and don't-stop lines when the topic needs them, then the loop line.
-- **Copy the fixed safety lines exactly, and speak and show each one in full.** The emergency line keeps "stop… and get medical help right away" and "healthcare provider". Don't-stop line: "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own." Say "that emergency sign" when only one is named. Pancreatitis: "with or without vomiting" for tirzepatide, "with or without nausea or vomiting" for Foundayo. Give the full allergy list. List gallbladder signs in the guide's order: upper stomach pain, fever, yellowing of skin or eyes, clay-colored stools (S2 11-26). Fluid tips keep "unless you've been told to limit fluids", our own caveat, so it gets no source tag. Never pair a safety line with "before your next dose" or other dose-timing wording (S4 11-26).
-- **Write narration exactly as it will be spoken, and keep it evergreen.** No digits. Spell out contractions outside the fixed lines. Every spoken number names its comparator. Never write "now", "new", dates or "is requiring" ("now" in L1 11-26 s4, s56, s61).
-- **Keep each finding at its source's exact number, scope, verb and hedge, recaps included.** Non-inferiority against an active drug is weaker than beating placebo; never call it a "tougher test" (L2 11-26 REVISE). "Adverse events" and "adverse reactions" are never "side effects". Postmarketing stays "postmarketing". "May be higher" never becomes "is higher". A median stays "median" on every card (L4 11-26). Never add "most", "mostly", "many", "often", "similar", "even" or "a few days". Never present slower stomach emptying as the cause. SURMOUNT-1's comparator is "placebo plus counseling". Never rank doses the trial didn't compare, never call one trial "not a fluke", never call our own arithmetic "the paper's result". Lifestyle videos never suggest a risk factor alone qualifies someone for the medicine; prediabetes alone is not an approved use (L3 11-26 REVISE). (About 150 findings.)
-- **Run the muted-viewer test, starting with the opening card.** The opening card names the drug, and for a head-to-head the comparator and the outcome too. It shows all of sentence 1's answer, hedge included. Every stat card names the measure (mean or median), drug and dose, both groups, the full population and the timeframe. Never write "no diabetes" and never drop "weight-related". On-screen text is never narrower or stronger than the narration. (About 120 findings, most recently L2, S1, L4 and S4 11-26.)
+- **Shorts length: the length test ended on 2026-11-26.**
+  - If the task still sets an arm, follow it: tight 90–120 words, standard 135–160.
+  - Otherwise write to the topic at 45–70 s.
+  - Never go over 160 spoken words.
+  - Count every word yourself and log the exact count. It was wrong or unclear in S2 11-23, S2 11-25 and S1 11-27.
+  - Scene 1's narration holds the spoken hook (S3 11-22 was held for this).
+  - End with "Not personal advice, so ask your prescriber.", then the emergency and don't-stop lines when the topic needs them, then the loop line.
+- **Copy the fixed safety lines exactly, and speak and show each one in full.**
+  - The emergency line keeps "stop… and get medical help right away" and "healthcare provider".
+  - Don't-stop line: "For anything that isn't one of those emergency signs, don't stop or change your medicine on your own." Say "that emergency sign" when only one is named.
+  - Pancreatitis wording: "with or without vomiting" for tirzepatide, and "with or without nausea or vomiting" for Foundayo (checked again in L1 11-27 s56).
+  - Give the full allergy list.
+  - List gallbladder signs in the guide's order: upper stomach pain, fever, yellowing of skin or eyes, clay-colored stools.
+  - Fluid tips keep "unless you've been told to limit fluids". This is our own caveat: it gets no source tag and is never described as guide wording (S3 11-27 s6).
+  - Never pair a safety line with "before your next dose" or other dose-timing wording.
+- **Write narration exactly as it will be spoken, and keep it evergreen.**
+  - No digits. Spell out contractions outside the fixed lines.
+  - Every spoken number names its comparator.
+  - Never write "now", "new", dates, "is requiring", or "the only" for something that can change. L1 11-26 used "now" in s4, s56 and s61; L1 11-27 s62 said "the" where "a" is safer.
+- **Keep each finding at its source's exact number, scope, verb and hedge, recaps included.**
+  - Non-inferiority against an active drug is weaker than beating placebo. Never call it a "tougher test".
+  - "Adverse events" and "adverse reactions" are never "side effects".
+  - Postmarketing stays "postmarketing".
+  - "May be higher" never becomes "is higher".
+  - A median stays "median" on every card.
+  - Never add "most", "mostly", "many", "often", "similar", "even" or "a few days".
+  - Never present slower stomach emptying as the cause.
+  - SURMOUNT-1's comparator is "placebo plus counseling".
+  - Never rank doses the trial didn't compare, never call one trial "not a fluke", and never call our own arithmetic "the paper's result".
+  - A use that isn't approved (MASH, sleep apnea for Foundayo) says so from the first card.
+  - Prediabetes alone is not an approved use.
+  - Evidence: about 155 findings.
+- **Run the muted-viewer test, starting with the opening card.**
+  - The opening card names the drug and shows sentence 1's answer, hedge included. For a head-to-head it also names the comparator and the outcome.
+  - Every stat card names the measure (mean or median), the drug and dose, both groups, the full population and the timeframe.
+  - Never write "no diabetes" and never drop "weight-related".
+  - On-screen text is never narrower or stronger than the narration.
+  - Evidence: about 125 findings, most recently L1, S2 and S3 11-27.
 
 ### Carousel Designer
-- **Make a carousel only when the scheduler asks, and reuse verified Short text only.** Use the label's term "adverse reactions", keep each trial's full population in the recap, and give every source a real revised date (C1 11-20 was held for a staff note). (All 4 carousels had findings.)
+- **Make a carousel only when the scheduler asks, and reuse verified Short text only.**
+  - Quotes match the source character for character (C1 11-27).
+  - Use the label's term "adverse reactions".
+  - Keep each trial's full population in the recap.
+  - Give every source the revised date printed on the linked document. C1 11-20 was held for a staff note.
+  - Evidence: all 5 carousels had findings.
 
 ### Social Copywriter & packaging
-- **Thumbnail and title numbers show drug and comparator as separate figures; never merge placebo and drug into one range.** Write "44–62% VS 10% PLACEBO", not "10%–62%". For a use that isn't approved, the subtext says so. Titles name the exact device the video covers. (The merged range caused the L3 11-25 hold.)
-- **Long-form descriptions are complete viewer copy of 1,250 characters or fewer.** Line 1 stays empty. Then come the safety block, a quick answer naming both groups, and 2–3 sources, including the Medication Guide whenever you quote its emergency wording. End exactly on "…whether it's right for you." with no markup, brackets or placeholders. (Cut off, leaked markup, a placeholder or a missing ending 7 times.)
-- **Name one watch-next target in the post notes of every long video and Short; the publisher adds the link. Never write a placeholder line.** Follow the playbook's link list. Head-to-heads (vs Ozempic or vs dulaglutide) → Zepbound vs Wegovy. The target matches the piece's drug and population. Never the home page, never MQqAwUKAKSI. (Missing, wrong or a placeholder in 8 pieces, most recently L2 11-26.)
-- **Every caption field ends exactly on "Not personal advice. Talk to your doctor or prescriber about whether it's right for you."** Hashtags and the don't-stop line go before it. Copy the emergency line in the script's own words, and write "that emergency sign" when only one is named. Threads is about 300 characters: cut facts, never safety lines. (Threads over the limit about 46 times. Emergency line paraphrased 6 times.)
-- **Copy facts, measures, populations, device scope and attributions word for word from the verified script, on every platform and in the pinned comment.** Keep the trial population on TikTok and Threads. Keep the "US single-dose pen" scope and the KwikPen/vial line on pen posts. Keep drug names outside quoted label text. Never list our own tips under "the label says". Never add openers the script doesn't have: questions, validation lines, "actually". (About 180 findings, in every batch; question openers 6 times, most recently S4 11-26.)
-- **Titles, thumbnails, first lines and hashtags keep the video's hedge and scope.** Make no cause, timeframe or "common" claim the content doesn't make. In holiday Shorts the holiday is the setting, never the cause ("Diarrhea After Thanksgiving" S3 11-26; "Threw Up After the Big Dinner" S3 11-23). Use one save or share ask, never an open question. Hashtags are only the generic names of drugs whose data the post reports. Never #Foundayo, #GLP1, #weightloss, #obesity, #sideeffects, symptom tags or trial tags. (About 75 pieces.)
+- **Thumbnail and title numbers show drug and comparator as separate figures. Never merge placebo and drug into one range.**
+  - Write "44–62% VS 10% PLACEBO", not "10%–62%".
+  - For a use that isn't approved, the subtext says so.
+  - Titles name the exact device the video covers.
+  - The merged range caused the L3 11-25 hold.
+- **Long-form descriptions are complete viewer copy of 1,250 characters or fewer.**
+  - Line 1 stays empty.
+  - Then come the safety block, a quick answer naming both groups and the measure ("average"), and 2–3 sources. Include the Medication Guide whenever you quote its emergency wording.
+  - Don't add a second generic disclaimer paragraph.
+  - End exactly on "…whether it's right for you." with no markup, brackets or placeholders.
+  - Evidence: cut off, leaked markup, a placeholder or a missing ending 7 times; over length 3 times, most recently L1 11-27 at about 1,295 characters.
+- **Name one watch-next target in the post notes of every long video and Short. The publisher adds the link. Never write a placeholder line.**
+  - Follow the playbook's link list.
+  - Head-to-heads (vs Ozempic or vs dulaglutide) → Zepbound vs Wegovy.
+  - The target matches the piece's drug and population.
+  - Never the home page, and never MQqAwUKAKSI.
+  - Evidence: missing, wrong or a placeholder in 8 pieces.
+- **Every caption field ends exactly on "Not personal advice. Talk to your doctor or prescriber about whether it's right for you."**
+  - Hashtags and the don't-stop line go before it.
+  - Copy the emergency line in the script's own words. Never turn it into a question (S3 11-27 TikTok and Threads).
+  - Write "that emergency sign" when only one is named.
+  - Threads is about 300 characters: cut facts, never safety lines.
+  - Evidence: Threads over the limit about 49 times; emergency line paraphrased 7 times.
+- **Copy facts, measures, populations, device scope and attributions word for word from the verified script, on every platform and in the pinned comment.**
+  - Keep the trial population on TikTok and Threads.
+  - Keep the "US single-dose pen" scope and the KwikPen/vial line on pen posts.
+  - Keep drug names outside quoted label text.
+  - Never put our own tips under "the label says" or straight after label claims (S2 11-27, C1 11-27).
+  - Never add openers the script doesn't have: questions, validation lines, "actually".
+  - Evidence: about 190 findings, in every batch.
+- **Titles, thumbnails, first lines and hashtags keep the video's hedge and scope.**
+  - Make no cause, timeframe or "common" claim the content doesn't make.
+  - In holiday posts the holiday is the setting, never the cause. Never add "dinner" or "meal" as a trigger. Examples: S3 11-27 "dinner", S3 11-26 "Diarrhea After Thanksgiving", S3 11-23 "Threw Up After the Big Dinner".
+  - Use one save or share ask that doesn't predict symptoms coming back. Never an open question.
+  - Hashtags are only the generic names of drugs whose data the post reports. Never #Foundayo, #GLP1, #weightloss, #obesity, #sideeffects, symptom tags or trial tags.
+  - Evidence: about 78 pieces.
 
 ### Everyone
 - **Never re-produce a video that is live or already made. Fix the known faults, then re-render or publish.**
-  - **Serious Risks (L1 11-26, held; until 2026-11-30):** don't script it again; it is re-timed. Regenerate the "tears appetite" and "moongiaro" scenes and re-check the transcript. Drop "now" in s4, s56 and s61. s25: say "postmarketing reports". s26 and s29: no source tags on our own caveat and tip. S2: confirm the Medication Guide's real revised date. Description: cite the Medication Guide for the emergency wording.
-  - **Mounjaro vs Dulaglutide (SURPASS-CVOT, L2 11-26, REVISE):** don't script it again. s9 says non-inferior against an active drug, not a "tougher test". The s1 card names dulaglutide and the outcome (heart attack, stroke or cardiovascular death). s23: no source tag. Post notes: name the watch-next target.
-  - **Nature's Ozempic: Oats and Fibre (L3 11-26, REVISE):** don't script it again. S3, S10 and the stat labels in s4 and s46 use Mounjaro's date (27 Aug 2026), not Zepbound's. s10 and s52: weight-management use needs obesity, or overweight plus a weight-related condition; prediabetes alone isn't an approved use. s31: "adults with type 2 diabetes on metformin".
-  - **Semaglutide (Ozempic) and Kidney Disease (L4 11-26, made):** before it publishes: the s65 card says "healthcare provider" in full; the s2 and s43 cards say "median" 3.4 years; S2 and S6 carry the date printed on each linked document (DailyMed PI "Revised: 5/2026"; if the Medication Guide has no date of its own, take it from DailyMed for that set ID).
-  - **Itchy Rash (S4 11-26, made):** before it publishes: remove the bracketed note from s5 item 7, re-split the allergy cards so each ends on a period, move the "Prescriber" and "Swelling" tags off the captions, add the population to the s3 card, and drop the Instagram question opener.
-  - **Fatty Liver / MASH (L3 11-25, held):** thumbnail "MASH RESOLVED: 44–62% VS 10% PLACEBO" with the subtext "ONE PHASE 2 BIOPSY TRIAL · NOT AN APPROVED USE". Description: label the 30% as placebo and give the full population. Fix the truncated "Tirzepa" tag. Spell out the contractions in s1, s3 and s80. s52: drop "often". Add S12's real revised date.
-  - **Tirzepatide After 6 Months (L1 11-25, held):** regenerate the "tears appetite" scene and re-check the transcript. s13: "placebo plus counseling". s26: full emergency wording on the card. s3: add the sleep apnea approval.
-  - **Zepbound Single-Dose Vial vs Pen (L4 11-25, made; until 2026-11-30):** replace the bracketed watch-next line with the post-note target. Title: "Single-Dose Pen". s19: "press and hold for up to 10 seconds". S2: use pi.lilly.com/us/zepbound-us-mg.pdf. S3 and S4: each leaflet gets its own revised date. s6: also credit the FDA sharps guidance.
-  - **S1 11-26 Hair Shedding (held):** remix to 0.02 or lower and rebuild the don't-stop line as two cards. Don't rewrite the script. **S2 11-26 Right-Rib Pain (REVISE):** add the Medication Guide's "Revised: 11/2026" and reorder the gallbladder signs.
-  - **Foundayo What to Expect (made 11-24, ssb7Zcs3KSY):** never script it again. Confirm the description and pinned comment carry the guide's emergency wording and "permanently stopped treatment because of adverse reactions", with the drug name outside the quoted text.
+  - **Foundayo and Sleep Apnea (L1 11-27, made):** before it publishes:
+    - Regenerate the "found ao" scene and re-check the transcript.
+    - The s1 card says this is not an approved use for Foundayo.
+    - The s2 card gives the full population (adults, BMI 27+, the no-PAP trial). The s69 card names the measure, units, drug and timeframe.
+    - s62: say "a", not "the".
+    - s23: drop "shape of tonsils".
+    - Description: 1,250 characters or fewer, and say "average" for the AHI figure (pinned comment too).
+    - S5: cite "Revised: 11/2026".
+  - **Queasy the Morning After (S3 11-27, made):** before it publishes:
+    - Rebuild the fixed safety cards.
+    - Change "TWENTY-EIGHT" to 28.
+    - Redraw the floating-head hero with no mascot on her cheek.
+    - Drop "dinner" from the Instagram and Facebook captions.
+    - Use the script's own emergency and fluid wording.
+  - **Serious Risks (L1 11-26, held; until 2026-11-30):**
+    - Don't script it again; it is re-timed.
+    - Regenerate the "tears appetite" and "moongiaro" scenes and re-check the transcript.
+    - Drop "now" in s4, s56 and s61.
+    - s25: say "postmarketing reports". s26 and s29: no source tags.
+    - S2: confirm the Medication Guide's real revised date.
+    - Description: cite the Medication Guide.
+  - **Mounjaro vs Dulaglutide (SURPASS-CVOT, L2 11-26, REVISE):**
+    - Don't script it again.
+    - s9 says non-inferior against an active drug.
+    - The s1 card names dulaglutide and the outcome.
+    - s23: no source tag.
+    - Name the watch-next target.
+  - **Nature's Ozempic: Oats and Fibre (L3 11-26, REVISE):**
+    - Don't script it again.
+    - S3, S10 and the s4 and s46 stat labels use Mounjaro's date (27 Aug 2026).
+    - s10 and s52: prediabetes alone isn't an approved use.
+    - s31: "adults with type 2 diabetes on metformin".
+  - **Semaglutide and Kidney Disease (L4 11-26, made):**
+    - The s65 card says "healthcare provider".
+    - The s2 and s43 cards say "median" 3.4 years.
+    - S2 and S6 carry each linked document's printed date (DailyMed PI "Revised: 5/2026").
+  - **Itchy Rash (S4 11-26, made):**
+    - Remove the bracketed note from s5.
+    - Re-split the allergy cards so each ends on a period.
+    - Move the "Prescriber" and "Swelling" tags off the captions.
+    - Add the population to the s3 card.
+    - Drop the Instagram question opener and "before your next dose".
+  - **Fatty Liver / MASH (L3 11-25, held):**
+    - Thumbnail "MASH RESOLVED: 44–62% VS 10% PLACEBO", with the subtext "ONE PHASE 2 BIOPSY TRIAL · NOT AN APPROVED USE".
+    - Description: label the 30% as placebo.
+    - Fix the "Tirzepa" tag.
+    - Spell out the contractions in s1, s3 and s80.
+    - s52: drop "often".
+    - Add S12's date.
+  - **Tirzepatide After 6 Months (L1 11-25, held):**
+    - Regenerate the "tears appetite" scene.
+    - s13: "placebo plus counseling".
+    - s26: full emergency card.
+    - s3: add the sleep apnea approval.
+  - **Zepbound Single-Dose Vial vs Pen (L4 11-25, made; until 2026-11-30):**
+    - Use the post-note target, not the bracketed line.
+    - Title: "Single-Dose Pen".
+    - s19: "press and hold for up to 10 seconds".
+    - S2: pi.lilly.com/us/zepbound-us-mg.pdf.
+    - S3 and S4: each leaflet gets its own date.
+    - s6: also credit the FDA sharps guidance.
+  - **S1 11-26 Hair Shedding (held):** remix to 0.02 or lower and rebuild the don't-stop line as two cards. Don't rewrite the script.
+  - **S2 11-26 Right-Rib Pain (REVISE):** add "Revised: 11/2026" and reorder the gallbladder signs.
+  - **Foundayo What to Expect (ssb7Zcs3KSY):** never script it again. Confirm the description and pinned comment carry the guide's emergency wording and "permanently stopped treatment because of adverse reactions".
   - **Already live, never make again:** Mounjaro vs Ozempic (SURPASS-2) since 11-23; Months 2–6 since 11-16.
-  - **S3 11-22 (holiday slot, until 2026-11-27):** restore the hook, remix to 0.02 or lower, recount to 160 words or fewer. **Backups (Injection Site 11-09, Burping 11-10; until 2026-11-30):** re-time both on the render before they ship.
-- **Every source needs its own working URL and a real revised date that belongs to that exact document. Never a placeholder, bare year, staff note or another drug's date.** Mounjaro and Zepbound have separate labels and dates; never copy one onto the other (L3 11-26 REVISE). A label's printed "Revised" date and its SPL or FDALabel effective date can differ: cite the date of the document you link and say which one it is (L4 11-26). The Medication Guide and the IFU each get their own URL. Find the quoted sentence before you cite it. Source titles list only the sections cited, with numbers. No 4xx, newsroom or search pages. If a PDF's date can't be read, take it from DailyMed or FDALabel for that set ID (S2 11-26 REVISE; C1 11-20 held). Our own tips and safety lines get no source tag. Known dates: Mounjaro PI and Medication Guide 27 Aug 2026 (SPL v40); Zepbound DailyMed 16 Nov 2026, Medication Guide "Revised: 11/2026"; Ozempic printed PI "Revised: 5/2026", FDALabel effective 1 Jun 2026 (v20); Foundayo rev 7/2026; NHS nausea page 17 Nov 2023. (About 110 findings.)
+  - **Backups (Injection Site 11-09, Burping 11-10; until 2026-11-30):** re-time both on the render before they ship.
+- **Every source needs its own working URL and a real revised date that belongs to that exact document.**
+  - Never a placeholder, bare year, staff note or another drug's date.
+  - Mounjaro and Zepbound have separate labels and dates. Never copy one onto the other (L3 11-26).
+  - Cite the date printed on the document you link, and say which date it is (L4 11-26, C1 11-27).
+  - The Medication Guide and the IFU each get their own URL.
+  - Find the quoted sentence before you cite it.
+  - Source titles list only the sections cited, with numbers.
+  - No 4xx, newsroom or search pages.
+  - If a PDF's date can't be read, take it from DailyMed or FDALabel for that set ID.
+  - Our own tips and safety lines get no source tag.
+  - Known dates:
+    - Mounjaro PI and Medication Guide: 27 Aug 2026 (SPL v40).
+    - Zepbound: DailyMed 16 Nov 2026; label, Medication Guide and pen PDFs printed "Revised: 11/2026".
+    - Ozempic: printed PI "Revised: 5/2026"; FDALabel effective 1 Jun 2026 (v20).
+    - Foundayo: rev 7/2026.
+    - NHS nausea page: 17 Nov 2023.
+  - Evidence: about 115 findings.
 - **Give every result its exact scope.**
-  - **Weight trials and labels:** obesity trials enrolled adults with obesity, or overweight plus a weight-related condition, without diabetes; prediabetes alone is not an approved use. The pooled label data are Study 1 (no type 2 diabetes) and Study 2 (type 2 diabetes only), treated for up to 72 weeks. Zepbound is also approved for moderate to severe obstructive sleep apnea in adults with obesity.
-  - **Outcome trials:** SELECT enrolled people with preexisting CV disease and a BMI of 27 or more, without diabetes. SURPASS-2: adults with type 2 diabetes on metformin, 40 weeks, each arm vs semaglutide 1 mg. SURPASS-CVOT: 13,299 adults, 12.2% vs 13.1% (HR 0.92), non-inferior, not shown superior (P=0.09), no placebo group. MASH: one phase 2 biopsy trial, not an approved use.
-  - **Other figures:** SURMOUNT-4: +14.0% regain on placebo, still 9.9% below baseline. 75/25 comes from the 160-person DXA substudy. Low blood sugar "may be higher" with insulin or a sulfonylurea, and is also reported without type 2 diabetes. Pancreatitis: give 0.23 vs 0.11 only alongside 0.14 vs 0.15. Gallstones 1.1% vs 1%; gallbladder inflammation 0.7% vs 0.2%. Hair loss 5.4% vs 0.9%. Injection-site reactions 6–8% vs about 2%.
-  - **Pen:** 21 days in total; press and hold for up to 10 seconds. Only *loose* pens are banned from household trash.
+  - **Weight trials and labels:**
+    - Obesity trials enrolled adults with obesity, or overweight plus a weight-related condition, without diabetes. Prediabetes alone is not an approved use.
+    - The pooled label data are Study 1 (no type 2 diabetes) and Study 2 (type 2 diabetes only), with patients treated "for up to 72 weeks".
+    - Zepbound is also approved for moderate to severe obstructive sleep apnea in adults with obesity. Foundayo is not approved for it.
+  - **Outcome trials:**
+    - SELECT: preexisting CV disease and a BMI of 27 or more, without diabetes.
+    - SURPASS-2: adults with type 2 diabetes on metformin, 40 weeks, each arm vs semaglutide 1 mg.
+    - SURPASS-CVOT: 13,299 adults, 12.2% vs 13.1% (HR 0.92), non-inferior, not shown superior (P=0.09), no placebo group.
+    - MASH: one phase 2 biopsy trial, not an approved use.
+  - **Other figures:**
+    - SURMOUNT-4: +14.0% regain on placebo, still 9.9% below baseline.
+    - 75/25 comes from the 160-person DXA substudy.
+    - Low blood sugar "may be higher" with insulin or a sulfonylurea, and is also reported without type 2 diabetes.
+    - Pancreatitis: give 0.23 vs 0.11 only alongside 0.14 vs 0.15.
+    - Gallstones 1.1% vs 1%; gallbladder inflammation 0.7% vs 0.2%.
+    - Hair loss 5.4% vs 0.9%.
+    - Injection-site reactions 6–8% vs about 2%.
+  - **Pen:**
+    - 21 days in total.
+    - Press and hold for up to 10 seconds.
+    - Only *loose* pens are banned from household trash.
+    - Another person can inject in the stomach and thigh as well as the arm.
   - **Foundayo:** top label dose 17.2 mg, −11.1% in Trial 1; 10.3% vs 2.7% stopped for adverse events at 36 mg.
 
-_Updated 2026-11-26 from 77 QA records (all GLP-1, 11-13 to 11-26)._
+_Updated 2026-11-27 from 82 QA records (all GLP-1, 11-13 to 11-27)._
 
-_Updated 2026-11-26 from 77 QA records._
+_Updated 2026-11-27 from 77 QA records._
